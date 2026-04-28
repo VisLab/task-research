@@ -1,0 +1,158 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://hed-cognitive.org/schemas/process_details.schema.json",
+  "title": "HED process catalog",
+  "description": "Schema for process_details.json — the canonical catalog of cognitive processes in the HED (Hierarchical Event Descriptor) project. Covers structural shape only; cross-checks (e.g., total_processes header equals len(processes), category_id resolves to a defined category) are enforced by code/data_management/validate_catalog.py.",
+
+  "type": "object",
+  "required": [
+    "description",
+    "schema_version",
+    "total_categories",
+    "total_processes",
+    "categories",
+    "processes"
+  ],
+  "properties": {
+    "description": { "type": "string" },
+    "generated_on": { "type": "string" },
+    "source_script": { "type": "string" },
+    "schema_version": { "type": "string" },
+    "total_categories": { "type": "integer", "minimum": 0 },
+    "total_processes": { "type": "integer", "minimum": 0 },
+    "total_processes_used_by_tasks": { "type": "integer", "minimum": 0 },
+    "total_tasks": { "type": "integer", "minimum": 0 },
+    "categories": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/category" }
+    },
+    "processes": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/process" }
+    }
+  },
+
+  "definitions": {
+
+    "category": {
+      "type": "object",
+      "required": ["category_id", "name", "scope", "process_count"],
+      "properties": {
+        "category_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "Snake-case identifier, e.g. associative_learning_and_reinforcement."
+        },
+        "name": { "type": "string", "minLength": 1 },
+        "scope": { "type": "string", "minLength": 1 },
+        "out_of_scope": { "type": "string" },
+        "issues": { "type": "string" },
+        "history": { "type": "string" },
+        "process_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+
+    "process": {
+      "type": "object",
+      "required": ["process_id", "process_name", "category_id", "definition"],
+      "properties": {
+        "process_id": {
+          "type": "string",
+          "pattern": "^hed_[a-z][a-z0-9_]*$",
+          "description": "Process identifier with hed_ prefix."
+        },
+        "process_name": { "type": "string", "minLength": 1 },
+        "category_id": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_]*$",
+          "description": "Must reference a category_id defined in the categories array (cross-check enforced in Python validator, not here)."
+        },
+        "definition": { "type": "string", "minLength": 1 },
+        "notes": { "type": "string" },
+        "aliases": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/process_alias" }
+        },
+        "references": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/reference" }
+        },
+        "tasks": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/task_summary" },
+          "description": "Derived from task_details.json by sync_process_details_tasks.py — do not hand-edit."
+        },
+        "task_count": { "type": "integer", "minimum": 0 }
+      }
+    },
+
+    "process_alias": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Alias text. Used as both an S2 sub-query string and as a phrase-gate substring filter — keep specific enough to avoid noise."
+        },
+        "note": { "type": "string" }
+      }
+    },
+
+    "task_summary": {
+      "type": "object",
+      "required": ["hedtsk_id", "canonical_name"],
+      "properties": {
+        "hedtsk_id": {
+          "type": "string",
+          "pattern": "^hedtsk_[a-z][a-z0-9_]*$"
+        },
+        "canonical_name": { "type": "string", "minLength": 1 }
+      }
+    },
+
+    "reference": {
+      "type": "object",
+      "required": ["roles"],
+      "description": "Bibliographic reference. Many fields are commonly null in real-world data; only roles is strictly required at the schema level. Cross-checks against the publications.json store happen elsewhere.",
+      "properties": {
+        "roles": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/reference_role" },
+          "minItems": 1
+        },
+        "title": { "type": ["string", "null"] },
+        "authors": { "type": ["string", "null"] },
+        "year": { "type": ["integer", "null"] },
+        "journal": { "type": ["string", "null"] },
+        "venue": { "type": ["string", "null"] },
+        "venue_type": { "type": ["string", "null"] },
+        "volume": { "type": ["string", "null"] },
+        "issue": { "type": ["string", "null"] },
+        "pages": { "type": ["string", "null"] },
+        "doi": { "type": ["string", "null"] },
+        "openalex_id": { "type": ["string", "null"] },
+        "pmid": { "type": ["string", "null"] },
+        "url": { "type": ["string", "null"] },
+        "citation_string": { "type": ["string", "null"] },
+        "source": { "type": ["string", "null"] },
+        "confidence": { "type": ["string", "null"] },
+        "verified_on": { "type": ["string", "null"] }
+      }
+    },
+
+    "reference_role": {
+      "type": "string",
+      "enum": [
+        "historical",
+        "review",
+        "experiment",
+        "dataset",
+        "other",
+        "unknown"
+      ],
+      "description": "Role vocabulary fixed by CLAUDE.md (2026-04-23)."
+    }
+  }
+}
