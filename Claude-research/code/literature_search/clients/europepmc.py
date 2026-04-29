@@ -122,8 +122,6 @@ def search(
         parts.append('PUB_TYPE:"research-article"')
     elif pub_type == "review_article":
         parts.append('PUB_TYPE:"review-article"')
-    elif has_mesh:
-        parts.append("(PUB_TYPE:review)")
 
     full_query = " AND ".join(parts)
 

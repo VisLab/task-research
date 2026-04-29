@@ -12,8 +12,12 @@ Endpoints:
         GET https://api.semanticscholar.org/graph/v1/paper/{paperId}/references
 
 _fetch() return semantics:
-    None  -> network/5xx error; caller will NOT cache.
-    {}    -> 404 / not found; caller WILL cache.
+    None  -> network or 5xx error; caller will NOT cache.
+    {}    -> any 4xx response (404 not found, 400 bad request, etc.);
+             caller WILL cache so the same query is not retried.
+             The exact status code is logged at INFO by _get(), so
+             upstream WARNING lines should reference "no data" rather
+             than hard-coding a status.
     {...} -> success; caller WILL cache.
 
 API key (optional): improves reliability and priority queue access.
@@ -51,13 +55,40 @@ FIELDS_SEARCH = (
     "externalIds,openAccessPdf,paperId"
 )
 
-# Fields for /paper/{id}/citations (Stage B): adds intents and isInfluential per edge.
+# Fields for /paper/{id}/citations.
+#
+# Each citation result is wrapped in a `citingPaper` object, so paper-level
+# fields must be prefixed `citingPaper.<field>`. Edge-level fields
+# (`intents`, `isInfluential`, `contexts`, `contextsWithIntent`) are at the
+# top level — no prefix.
+#
+# IMPORTANT: `tldr` is NOT supported on this endpoint, even as
+# `citingPaper.tldr`. S2 returns HTTP 400 with body
+# `{"error":"Unrecognized or unsupported fields: [tldr]"}`. If TLDRs are
+# needed for citing papers, fetch them in a separate /paper/{id} call.
+#
+# An earlier version of this constant listed paper fields without the
+# `citingPaper.` prefix; S2 returns 400 on those too. Diagnosed via the
+# response-body logging added 2026-04-28 in `_get()`.
 FIELDS_CITATIONS = (
-    "title,abstract,tldr,year,authors,venue,"
-    "publicationTypes,fieldsOfStudy,"
-    "citationCount,influentialCitationCount,"
-    "externalIds,openAccessPdf,paperId,"
-    "intents,isInfluential"
+    "intents,isInfluential,"
+    "citingPaper.title,citingPaper.abstract,"
+    "citingPaper.year,citingPaper.authors,citingPaper.venue,"
+    "citingPaper.publicationTypes,citingPaper.fieldsOfStudy,"
+    "citingPaper.citationCount,citingPaper.influentialCitationCount,"
+    "citingPaper.externalIds,citingPaper.openAccessPdf,citingPaper.paperId"
+)
+
+# Same idea for /paper/{id}/references — wrapping object is `citedPaper`.
+# Same `tldr` restriction is assumed (the references endpoint mirrors
+# citations); if it's actually supported there, add `citedPaper.tldr` back.
+FIELDS_REFERENCES = (
+    "intents,isInfluential,"
+    "citedPaper.title,citedPaper.abstract,"
+    "citedPaper.year,citedPaper.authors,citedPaper.venue,"
+    "citedPaper.publicationTypes,citedPaper.fieldsOfStudy,"
+    "citedPaper.citationCount,citedPaper.influentialCitationCount,"
+    "citedPaper.externalIds,citedPaper.openAccessPdf,citedPaper.paperId"
 )
 
 # Always 1 rps: S2 free-tier keys do not provide a higher search rate.
@@ -113,7 +144,15 @@ def _get(
             logger.warning("semanticscholar %d server error; waiting 2 s", status)
             time.sleep(2)
             continue
-        logger.info("semanticscholar %d for %s", status, url)
+        # Other 4xx (most commonly 400 Bad Request from a malformed `fields`
+        # parameter on the citations/references endpoints). Log a snippet
+        # of the response body so the actual S2 error message is visible
+        # rather than just the status code.
+        body_snippet = (resp.text or "")[:200].replace("\n", " ")
+        logger.info(
+            "semanticscholar %d for %s — body: %s",
+            status, url, body_snippet,
+        )
         return {}
     return None
 
@@ -259,7 +298,17 @@ def fetch_citations(
         if data is None:
             return None
         if not data:
-            logger.warning("semanticscholar 404 for citations paper_id=%s", paper_id)
+            # _get() already logged the actual HTTP status at INFO level
+            # (404, 400, or other 4xx). 400 from this endpoint commonly
+            # means S2 doesn't have a usable citation record for the
+            # paperId (merged/aliased/restricted); 404 means paperId not
+            # found at all. Both are operationally identical here: cache
+            # empty, move on.
+            logger.warning(
+                "semanticscholar no citations available for paper_id=%s "
+                "(see preceding INFO line for status)",
+                paper_id,
+            )
             return {"data": []}
         results = data.get("data") or []
         logger.info("semanticscholar citations paper_id=%s raw_count=%d", paper_id, len(results))
@@ -277,7 +326,7 @@ def fetch_references(
     cache_dir: Path,
     limit: int = 1000,
     api_key: str | None = None,
-    fields: str = FIELDS_CITATIONS,
+    fields: str = FIELDS_REFERENCES,
 ) -> list[dict]:
     """Fetch papers cited by paper_id via GET /paper/{paperId}/references.
 
@@ -295,7 +344,13 @@ def fetch_references(
         if data is None:
             return None
         if not data:
-            logger.warning("semanticscholar 404 for references paper_id=%s", paper_id)
+            # See fetch_citations() for the rationale on why both 400 and
+            # 404 land here and are treated identically.
+            logger.warning(
+                "semanticscholar no references available for paper_id=%s "
+                "(see preceding INFO line for status)",
+                paper_id,
+            )
             return {"data": []}
         results = data.get("data") or []
         return {"data": results[:limit]}

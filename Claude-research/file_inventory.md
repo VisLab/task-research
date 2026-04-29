@@ -123,7 +123,7 @@ API client modules for the five literature sources used in Phase 1 and Phase 3.
 | `code/literature_search/clients/openalex.py` | OpenAlex Works API client. | current |
 | `code/literature_search/clients/crossref.py` | CrossRef Works API client. | current |
 | `code/literature_search/clients/europepmc.py` | Europe PMC search API client (DOI or PMID lookup). | current |
-| `code/literature_search/clients/semanticscholar.py` | Semantic Scholar Graph API client. Uses S2_API_KEY from code/.apikeys to lift the rate limit from 1 rps to 100 rps. | current |
+| `code/literature_search/clients/semanticscholar.py` | Semantic Scholar Graph API client. Uses S2_API_KEY from code/.apikeys when present (free-tier keys do NOT raise the search rate limit — the client enforces 1 rps unconditionally). | current |
 | `code/literature_search/clients/unpaywall.py` | Unpaywall API client (open-access PDF discovery). | current |
 
 ---

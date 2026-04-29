@@ -311,7 +311,7 @@
         },
         {
           "path": "code/literature_search/clients/semanticscholar.py",
-          "description": "Semantic Scholar Graph API client. Uses S2_API_KEY from code/.apikeys to lift the rate limit from 1 rps to 100 rps.",
+          "description": "Semantic Scholar Graph API client. Uses S2_API_KEY from code/.apikeys when present (free-tier keys do NOT raise the search rate limit — the client enforces 1 rps unconditionally).",
           "status": "current"
         },
         {

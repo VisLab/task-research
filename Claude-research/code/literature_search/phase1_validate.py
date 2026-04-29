@@ -232,8 +232,9 @@ def main() -> None:
     )
     parser.add_argument("--workspace", default=".",
         help="Path to Claude-research workspace root (default: current directory)")
-    parser.add_argument("--cache-dir", default=None,
-        help="Override cache directory")
+    parser.add_argument("--cache-dir", default="outputs/cache",
+        help="Cache directory relative to workspace (default: outputs/cache, "
+             "shared with phase3_search.py).")
     parser.add_argument("--verbose", "-v", action="store_true",
         help="Enable DEBUG logging")
     args = parser.parse_args()
@@ -245,11 +246,12 @@ def main() -> None:
     )
 
     workspace = Path(args.workspace).resolve()
-    ls_dir = workspace / "outputs" / "literature_search"
-    cache_dir = Path(args.cache_dir) if args.cache_dir else ls_dir / "cache"
+    cache_dir = workspace / args.cache_dir
 
-    if str(ls_dir) not in sys.path:
-        sys.path.insert(0, str(ls_dir))
+    # Code lives at code/literature_search/; ensure imports resolve.
+    code_dir = workspace / "code" / "literature_search"
+    if str(code_dir) not in sys.path:
+        sys.path.insert(0, str(code_dir))
 
     try:
         import requests  # noqa: F401

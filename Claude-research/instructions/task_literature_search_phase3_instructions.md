@@ -112,12 +112,17 @@ Scoring formula (plan §6, weights locked):
 
 Keys are read from environment variables (priority) or `code/.apikeys`:
 ```
-S2_API_KEY=<key>      Semantic Scholar: 1 rps without, 100 rps with
+S2_API_KEY=<key>      Semantic Scholar (free-tier; does NOT lift the
+                      search-endpoint rate limit — both keyed and unkeyed
+                      callers cap at 1 rps. Set it anyway: it gives S2
+                      visibility into who is calling and is required for
+                      some auth-scoped endpoints.)
 NCBI_API_KEY=<key>    Not used by Phase 3 (Europe PMC is used instead)
 ```
 
-Without an S2 key: POC takes ~5 min cold, full run ~60–90 min.  
-With an S2 key: full run ~10 min.
+POC (3 items) takes ~5 min cold, ~0 min warm (cache hits).
+Full run (~5,000 calls) takes ~60–90 min cold; same with or without an
+S2 key, because the free-tier key does not raise the rate limit.
 
 OpenAlex and Europe PMC require no key; polite-pool access via
 `mailto=hedannotation@gmail.com` is already configured.
@@ -181,7 +186,8 @@ Only after POC is approved:
 ```
 python code/literature_search/phase3_search.py --mode full --write
 ```
-Expected wall time: ~10 min with S2 key, ~60–90 min without.
+Expected wall time: ~60–90 min cold (S2 at 1 rps is the bottleneck;
+this is the same with or without a free-tier S2 key).
 
 ---
 

@@ -115,11 +115,14 @@ the day. The empirical behavior has changed multiple times since
 
 The defensive approach is to run S2 once per alias and union the
 results post-hoc. This increases S2 call count roughly 2-4× per
-item, but with an API key S2 is rate-limited at 100 rps, so the
-cost is still well under a minute per item. Without an API key it
-hurts — which is why the instructions doc flags S2 key acquisition
-as a first-class sub-phase 3.1 question rather than burying it as a
-footnote.
+item. **Correction (2026-04-28):** earlier passes of this thinking
+doc assumed a free-tier S2 API key lifted the search rate limit
+from 1 rps to 100 rps. That is not correct — free-tier keys leave
+the search-endpoint rate at 1 rps. So budget for 1 rps regardless
+of whether a key is set. The sub-phase 3.1 question on key
+acquisition still matters (it gives S2 visibility into the caller
+and is required for some auth-scoped endpoints), but it does NOT
+move the wall-clock estimate.
 
 Capping the per-item S2 union at 100 candidates post-merge is
 important. Without a cap, a process with four aliases each pulling
@@ -393,9 +396,13 @@ running:
   crosswalk file. If present, topic-filtered queries are used; if
   not, text-only queries still work but with lower precision. Either
   is correct — the question is which path the full run takes.
-- **API keys for Semantic Scholar and PubMed/NCBI.** Without them,
-  the full run takes ~60–90 minutes instead of ~10. Acceptable but
-  worth confirming the user's preference.
+- **API keys for Semantic Scholar and PubMed/NCBI.** **Corrected
+  2026-04-28:** earlier copy here said the keys reduce wall time
+  from ~60–90 minutes to ~10. That was wrong — a free-tier S2 key
+  does NOT lift the search-endpoint rate limit, and Phase 3 does
+  not currently use NCBI (Europe PMC is used instead). Set the
+  S2 key for visibility/auth-scoped endpoints, but expect ~60–90
+  minutes for the full run regardless.
 - **Whether to include the three proposed POC items, or swap.** The
   POC choices are opinionated; the user may prefer different items
   (e.g., a process with known sparse literature to stress the
@@ -418,7 +425,9 @@ running:
 - Session report: ~10 KB.
 - API calls per full run: ~5,000 total (three passes × three
   sources × 275 items, with pagination ~1.5× on average).
-- Wall time: ~10 minutes with API keys, ~60–90 minutes without.
+- Wall time: ~60–90 minutes cold, regardless of S2 key (S2 caps at
+  1 rps either way — the key is not a free-tier accelerator).
+  Same-day re-runs are near-instant due to the cache.
 - POC wall time: ~2 minutes warm, ~5 minutes cold.
 
 ## 17. What comes after Phase 3

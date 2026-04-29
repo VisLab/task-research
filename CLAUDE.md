@@ -235,7 +235,12 @@ key = os.environ.get("S2_API_KEY") or _read_apikeys_file("S2_API_KEY")
 ```
 
 Current keys in use:
-- `S2_API_KEY` — Semantic Scholar (raises rate from 1 rps to 100 rps)
+- `S2_API_KEY` — Semantic Scholar. Note: a free-tier key does NOT lift the
+  search-endpoint rate limit; both keyed and unkeyed callers are capped at
+  1 request/second. The key is still worth setting because it can help
+  with auth-scoped endpoints and gives Semantic Scholar visibility into
+  who is calling. The S2 client at `code/literature_search/clients/
+  semanticscholar.py` enforces the 1 rps limit unconditionally.
 - `NCBI_API_KEY` — NCBI E-utilities (Phase 3 uses Europe PMC instead, so
   this is not currently used by Phase 3 scripts)
 

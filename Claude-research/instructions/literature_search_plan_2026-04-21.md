@@ -312,7 +312,10 @@ DOI / metadata." The two use different sources.
      ranking.
    - `tldr` field for quick relevance triage.
    - Venue normalization (S2 has cleaner venue strings than CrossRef).
-   Rate-limited; we request a free API key to go from 1 rps to 100 rps.
+   Rate-limited at 1 rps. (Note: a free-tier API key does NOT raise the
+   search-endpoint rate limit. The key is still useful — request one from
+   https://www.semanticscholar.org/product/api — but plan time budgets
+   for 1 rps regardless.)
 
 ### 4.2 Validation (secondary)
 
@@ -620,7 +623,9 @@ python code/literature_search/phase3_search.py --mode poc --write   # POC first
 python code/literature_search/phase3_search.py --mode full --write  # then full
 ```
 
-Budget: ~5,000 API calls. ~10 min with S2 key, ~60–90 min without.
+Budget: ~5,000 API calls. Wall time ~60–90 min (S2 caps at 1 rps and is
+the slow leg; OpenAlex and Europe PMC parallelize off the critical path).
+A free-tier S2 key does NOT raise that limit; plan as if there is no key.
 
 ### Phase 4 — Co-mention search (≈ 1 session)
 

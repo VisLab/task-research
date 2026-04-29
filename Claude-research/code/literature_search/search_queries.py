@@ -40,11 +40,17 @@ class ItemQueryPlan:
     item_kind: str             # "process" or "task"
     primary_name: str
     aliases: list              # list[str] for tasks; list[dict] for processes
-    description: str           # used for query_relevance scoring
+    description: str           # used for query_relevance scoring; also the
+                               # canonical "definition" for processes / the
+                               # `description` field for tasks
     openalex_topic_ids: list   # [] when crosswalk unavailable
     category_id: str | None    # primary category_id (None for multi-category tasks)
     fos_set: set               # pre-computed FoS set for Stage B filtering
     passes: dict               # "all_years" | "recent" | "reviews"
+    # Identity-block extras propagated through to the candidates-JSON output
+    # so each per-item file is self-contained (added 2026-04-28).
+    short_definition: str | None = None     # tasks only
+    inclusion_test: dict | None = None      # tasks only — {procedure, manipulation, measurement}
 
 
 # ---------------------------------------------------------------------------
@@ -139,7 +145,7 @@ def _build_passes(
                 "max_results": 100,
                 "fields_of_study": fields_of_study,
                 "min_citation_count": 20,
-                "publication_types": "JournalArticle,Review",
+                "publication_types": "JournalArticle,Review,Dataset",
             },
         },
         # Last 8 years -- surfaces recent work under-weighted by all_years pass.
@@ -159,7 +165,7 @@ def _build_passes(
                 "max_results": 100,
                 "fields_of_study": fields_of_study,
                 "min_citation_count": None,
-                "publication_types": "JournalArticle",
+                "publication_types": "JournalArticle,Dataset",
             },
         },
         # Review-type filter -- guarantees reviews appear for the selection rule.
@@ -272,6 +278,8 @@ def build_plans_from_json(process_details_path, task_details_path,
             category_id=primary_cat,
             fos_set=fos,
             passes=_build_passes(name, aliases, topic_ids, fos_str),
+            short_definition=task.get("short_definition"),
+            inclusion_test=task.get("inclusion_test"),
         ))
 
     return plans

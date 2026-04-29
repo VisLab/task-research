@@ -286,9 +286,13 @@ Stage C.
 S2 does not accept a `sort` parameter on this endpoint; the client
 sorts by `citationCount` desc after fetching.  One call per seed.
 
-Rate: with the S2 key, citation endpoints run at 10 rps.  Full run:
-275 items × 50 seeds × 1 call = 13,750 calls ≈ 23 minutes.  Cached
-per paperId; a repeat run is free.
+Rate: budget for 1 rps regardless of S2 key. **(Corrected 2026-04-28:**
+this section previously claimed citation endpoints run at 10 rps with a
+key. The user's actual S2 free-tier key does not raise the rate above
+1 rps for any endpoint, so the runtime budget should assume 1 rps
+throughout.) Full run: 275 items × 50 seeds × 1 call = 13,750 calls at
+1 rps ≈ 230 minutes (≈ 3 hours 50 minutes). Cached per paperId; a
+same-day repeat run is free.
 
 ### 5.4 Per-citation filtering
 

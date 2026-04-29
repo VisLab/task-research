@@ -214,21 +214,87 @@ def composite_score(
         neutralize_recency: When True, fix recency component at 0.5 (used for
             the top-candidates slot selection so old landmark papers are not
             penalised by the recency term).
-    """
-    rec_s = 0.5 if neutralize_recency else _recency_score(cand, today_year)
 
-    score = (
-        W_CITATION   * _citation_component(cand)
-        + W_VENUE    * _venue_score(cand)
-        + W_PUBLISHER * _publisher_score(cand)
-        + W_RECENCY  * rec_s
-        + W_RELEVANCE * _relevance_score(cand, item)
-        + W_REVIEW   * _review_bonus(cand)
-    )
-    score += _influence_intent_bump(cand)
-    if cand.pub_id in landmark_pub_ids:
-        score += LM_BONUS
-    return score
+    Equivalent to score_with_components(...)["composite"]; retained as the
+    shorter call site when components aren't needed.
+    """
+    return score_with_components(
+        cand, item, today_year, landmark_pub_ids, neutralize_recency,
+    )["composite"]
+
+
+def score_with_components(
+    cand: Candidate,
+    item: ItemQueryPlan,
+    today_year: int,
+    landmark_pub_ids: set[str],
+    neutralize_recency: bool = False,
+) -> dict:
+    """Compute the composite score AND surface every contributing component.
+
+    Returns a dict shaped like::
+
+        {
+          "composite": 0.935,
+          "components": {
+              "citations":         0.78,   # raw component (before W_*)
+              "venue":             1.0,
+              "publisher":         0.6,
+              "recency":           0.4,
+              "relevance":         0.92,
+              "review":            1.0,
+          },
+          "weighted": {
+              "citations":         W_CITATION   * 0.78,
+              "venue":             W_VENUE      * 1.0,
+              ...
+          },
+          "stage_b_bump":          0.10,    # already weighted (additive)
+          "landmark_bonus":        0.0,     # 0 or LM_BONUS
+          "neutralize_recency":    False,
+        }
+
+    The downstream JSON serializer stores both the raw components (so we
+    can re-score under different weights without re-fetching) and the
+    weighted values (so a reader can see at a glance which weighted term
+    dominated). Sum of `weighted` + `stage_b_bump` + `landmark_bonus`
+    equals `composite`.
+    """
+    citations = _citation_component(cand)
+    venue     = _venue_score(cand)
+    publisher = _publisher_score(cand)
+    recency   = 0.5 if neutralize_recency else _recency_score(cand, today_year)
+    relevance = _relevance_score(cand, item)
+    review    = _review_bonus(cand)
+
+    weighted = {
+        "citations":  W_CITATION   * citations,
+        "venue":      W_VENUE      * venue,
+        "publisher":  W_PUBLISHER  * publisher,
+        "recency":    W_RECENCY    * recency,
+        "relevance":  W_RELEVANCE  * relevance,
+        "review":     W_REVIEW     * review,
+    }
+    stage_b_bump = _influence_intent_bump(cand)
+    landmark_bonus = LM_BONUS if cand.pub_id in landmark_pub_ids else 0.0
+
+    composite = sum(weighted.values()) + stage_b_bump + landmark_bonus
+
+    return {
+        "composite": composite,
+        "components": {
+            "citations":  citations,
+            "venue":      venue,
+            "publisher":  publisher,
+            "recency":    recency,
+            "relevance":  relevance,
+            "review":     review,
+        },
+        "weighted": weighted,
+        "stage_b_bump":      stage_b_bump,
+        "landmark_bonus":    landmark_bonus,
+        "neutralize_recency": neutralize_recency,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -283,6 +349,36 @@ def phrase_gate(
             kept.append(c)
 
     return kept
+
+
+# ---------------------------------------------------------------------------
+# Auto-role assignment
+# ---------------------------------------------------------------------------
+
+def assign_auto_role(cand: Candidate, today_year: int, landmark_pub_ids: set[str]) -> str:
+    """Assign a coarse role label to a candidate.
+
+    The role is a hint to the reviewer ("here's why the ranker thinks this
+    is in the list"), not a filter. The reviewer can override it via the
+    review file's `role_override` field.
+
+    Decision order (first match wins):
+      historical      — pub_id is in the curated historical landmark set.
+      key_review      — is_review or is_meta_analysis is true.
+      recent_primary  — year is within the last 8 years.
+      foundational    — anything else (typically older primary research).
+
+    The "methods" role exists in the role vocabulary but is not auto-assigned
+    here; methods papers are hard to detect heuristically. Reviewers can set
+    role_override = "methods" by hand.
+    """
+    if cand.pub_id in landmark_pub_ids:
+        return "historical"
+    if cand.is_review or cand.is_meta_analysis:
+        return "key_review"
+    if cand.year is not None and cand.year >= today_year - 8:
+        return "recent_primary"
+    return "foundational"
 
 
 # ---------------------------------------------------------------------------

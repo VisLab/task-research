@@ -72,7 +72,7 @@ Decisions embedded in this schema:
 | **OpenAlex** | `api.openalex.org/works` | ~10 req/s polite pool, `mailto=`. Already set up in `OpenAlex/works/fetch_works.py`. | Excellent. Has DOI, year, venue, inverted-index abstract, cited_by_count. | Very broad — includes psychology, neuroscience, cognitive science. | **Primary lookup source.** |
 | **PubMed / Europe PMC** | `www.ebi.ac.uk/europepmc/webservices/rest/search` (JSON) | ~10 req/s, no key needed. | Excellent for biomedical. Has PMID, DOI, abstract, MeSH. | Strong for neuroimaging, neurology, clinical. Weaker for cognitive psychology proper. | **Secondary, biomed-heavy refs.** |
 | **OpenCitations** | `opencitations.net/index/api/v2` | Unauthenticated, rate-limited. | Good for citation edges; metadata is DOI-keyed only. | Depends on COCI/PubMedCitations, which lag. | **Not used for primary lookup.** Optional for downstream citation graph work. |
-| **Semantic Scholar** | `api.semanticscholar.org/graph/v1` | 1 req/s unauthenticated; 100 req/s with a free API key. | Strong — has tldr, abstract, authors, venue. | Very broad. | **Tertiary fallback** when OpenAlex and Europe PMC both miss. |
+| **Semantic Scholar** | `api.semanticscholar.org/graph/v1` | 1 req/s for both unauthenticated and free-tier key callers. (Earlier copy of this row claimed 100 req/s with a free key; corrected 2026-04-28.) | Strong — has tldr, abstract, authors, venue. | Very broad. | **Tertiary fallback** when OpenAlex and Europe PMC both miss. |
 | **Google Scholar** | None. Scraping is ToS-banned. | N/A | The most comprehensive, including grey literature and books. | Would be best if we could use it. | **Manual fallback only**, user-driven, not automated. |
 
 ### One more source I'd add

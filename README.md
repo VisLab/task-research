@@ -301,8 +301,13 @@ S2_API_KEY=...
 NCBI_API_KEY=...
 ```
 
-The `S2_API_KEY` lifts the Semantic Scholar rate limit from 1 rps to 100 rps
-(strongly recommended for Phase 3). Request one from
+**Note on the Semantic Scholar key:** a free-tier `S2_API_KEY` does NOT
+raise the search-endpoint rate limit — both keyed and unkeyed callers are
+capped at 1 request/second. Setting the key is still useful (Semantic
+Scholar gets visibility into who is calling, and certain auth-scoped
+endpoints require it), but don't expect it to speed up Phase 3. The S2
+client at `code/literature_search/clients/semanticscholar.py` enforces
+1 rps unconditionally. Request a key from
 https://www.semanticscholar.org/product/api .
 
 Environment variables take priority over the file. **Never log key values.**

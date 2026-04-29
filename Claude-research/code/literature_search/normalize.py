@@ -10,6 +10,16 @@ v3 additions to Candidate:
     s2_paper_id            — S2 paperId string; required for Stage B seed selection
     stage_b_edges          — list of citation-edge dicts from Stage B orchestration
 
+v4 additions (2026-04-28, JSON-pipeline refactor):
+    composite_score        — final composite from rank_and_select.composite_score
+    score_components       — per-component dict (citations/venue/recency/...)
+    human_subject          — True/False/None classification for species filter
+    tier                   — "picked" | "reserve" | "excluded"
+    exclusion_reason       — string code when tier == "excluded"; None otherwise
+    auto_role              — assigned role from the ranker ("foundational",
+                              "key_review", "recent_primary", "methods",
+                              "historical", or None)
+
 Imports:
     from normalize import Candidate, normalize_openalex, normalize_europepmc, normalize_s2
 """
@@ -55,6 +65,14 @@ class Candidate:
     raw_per_source: dict = field(default_factory=dict)
     stage_b_edges: list[dict] = field(default_factory=list)
     # Each edge dict: {seed_pub_id: str, intents: list[str], is_influential: bool}
+    # v4 additions (JSON-pipeline refactor; populated post-ranking)
+    composite_score: float | None = None
+    score_components: dict = field(default_factory=dict)
+    human_subject: bool | None = None     # None == not yet classified or unknown
+    species_evidence: list[str] = field(default_factory=list)  # for audit
+    tier: str | None = None               # "picked" | "reserve" | "excluded"
+    exclusion_reason: str | None = None
+    auto_role: str | None = None
 
 
 # ---------------------------------------------------------------------------

@@ -44,8 +44,12 @@ from normalize import Candidate, normalize_openalex, normalize_europepmc, normal
 from rank_and_select import (
     dedup_candidates, select_candidates,
     phrase_gate, select_citation_seeds,
+    score_with_components, assign_auto_role,
 )
-from present_candidates import write_item_markdown, write_index
+from species import classify_candidate
+from tier_classify import assign_tiers
+from serialize_candidates import write_candidates_json
+from present_candidates import write_item_markdown, write_index  # legacy, retained until phase3_render.py replaces it
 
 from clients.openalex import search_works, lookup_by_doi as oa_lookup
 from clients.europepmc import search as epmc_search, lookup_by_doi as epmc_lookup
@@ -180,7 +184,10 @@ def _run_stage_b(
                 edges_by_paperid[pid] = []
             edges_by_paperid[pid].append(edge)
 
-    _ACCEPTED_TYPES = {"journalarticle", "review", "metaanalysis"}
+    # Mirrors the Stage A `recent` and `all_years` filter sets on S2,
+    # plus MetaAnalysis (citing papers may legitimately be meta-analyses
+    # even when the seed wasn't). Dataset added 2026-04-28.
+    _ACCEPTED_TYPES = {"journalarticle", "review", "metaanalysis", "dataset"}
     type_fos_kept: list[tuple] = []
 
     for pid, paper in citing_by_paperid.items():
@@ -430,10 +437,13 @@ def main() -> None:
     crosswalk_path = ws / "outputs" / "phase2" / "openalex_crosswalk.json"
 
     s2_api_key = load_api_key("S2_API_KEY", apikeys_path)
+    # Note: free-tier S2 keys do NOT raise the search-endpoint rate limit.
+    # The S2 client throttles to 1 rps either way; the key is loaded for
+    # visibility and auth-scoped endpoints, not for speed.
     if s2_api_key:
-        logger.info("Semantic Scholar API key loaded.")
+        logger.info("Semantic Scholar API key loaded (rate still 1 rps).")
     else:
-        logger.info("No S2 API key — rate limited to 1 rps.")
+        logger.info("No S2 API key (rate 1 rps; same with a free-tier key).")
 
     logger.info("Loading process_details.json and task_details.json ...")
     all_plans = build_plans_from_json(process_path, task_path, crosswalk_path)
@@ -500,53 +510,115 @@ def main() -> None:
                         plan.item_id, len(landmark_extras))
             candidates = dedup_candidates(candidates + landmark_extras)
 
-        top_picks, recent_picks, all_sorted = select_candidates(
-            candidates=candidates,
-            item=plan,
-            today_year=TODAY_YEAR,
-            landmark_pub_ids=hist_pub_ids,
+        # ---- Score every candidate, capturing both composite and components.
+        for c in candidates:
+            score = score_with_components(
+                c, plan, today_year=TODAY_YEAR,
+                landmark_pub_ids=hist_pub_ids,
+            )
+            c.composite_score = score["composite"]
+            # Store the breakdown that's most useful for downstream re-ranking
+            # and for human review: the raw components (multiply by weights to
+            # re-score) and the weighted contributions (read off which terms
+            # dominated). Stage-B and landmark bumps are kept separate.
+            c.score_components = {
+                "raw":            score["components"],
+                "weighted":       score["weighted"],
+                "stage_b_bump":   score["stage_b_bump"],
+                "landmark_bonus": score["landmark_bonus"],
+            }
+            c.auto_role = assign_auto_role(c, TODAY_YEAR, hist_pub_ids)
+
+        # ---- Species classification (filters non-human studies out of the picked tier).
+        for c in candidates:
+            human, evidence = classify_candidate(c)
+            c.human_subject = human
+            c.species_evidence = evidence
+
+        # ---- Tier assignment (picked / reserve / excluded).
+        tier_summary = assign_tiers(
+            ranked=candidates,
+            historical_pub_ids=hist_pub_ids,
+            n_picked=30,
+            n_reserve=30,
+            drop_unknown_species=False,
         )
 
-        all_cand_pub_ids = {c.pub_id for c in all_sorted}
-        all_cand_dois    = {c.doi   for c in all_sorted if c.doi}
+        # ---- Stats for index / summary line.
+        all_cand_pub_ids = {c.pub_id for c in candidates}
+        all_cand_dois    = {c.doi   for c in candidates if c.doi}
         hist_hits = sum(
             1 for r in hist_refs
             if r["pub_id"] in all_cand_pub_ids
             or (r.get("doi") and r["doi"].lower() in all_cand_dois)
         )
+        n_picked = tier_summary["picked"]
+        n_reserve = tier_summary["reserve"]
+        n_excluded = tier_summary["excluded"]
+        n_excluded_non_human = tier_summary["exclusion_reasons"].get("non_human_subjects", 0)
 
         index_rows.append({
             "item_id":      plan.item_id,
             "kind":         plan.item_kind,
-            "n_candidates": len(all_sorted),
-            "n_picked":     len(top_picks) + len(recent_picks),
+            "n_candidates": len(candidates),
+            "n_picked":     n_picked,
+            "n_reserve":    n_reserve,
+            "n_excluded":   n_excluded,
+            "n_excluded_non_human": n_excluded_non_human,
             "n_landmarks":  hist_hits,
             "n_lm_total":   len(hist_refs),
         })
 
         elapsed = time.monotonic() - item_start
         logger.info(
-            "[%s] candidates=%d picked=%d hist_found=%d/%d "
-            "stage_b_seeds=%d stage_b_merged=%d wall=%.1fs",
-            plan.item_id, len(all_sorted), len(top_picks) + len(recent_picks),
+            "[%s] candidates=%d picked=%d reserve=%d excluded=%d "
+            "(non_human=%d) hist_found=%d/%d stage_b_seeds=%d stage_b_merged=%d wall=%.1fs",
+            plan.item_id, len(candidates),
+            n_picked, n_reserve, n_excluded, n_excluded_non_human,
             hist_hits, len(hist_refs),
             stage_b_stats.get("n_seeds", 0), stage_b_stats.get("n_merged", 0),
             elapsed,
         )
 
         if args.write:
-            out_path = write_item_markdown(
+            run_metadata = {
+                "sources": sources,
+                "passes":  passes,
+                "stage_b": {
+                    "seeds":         stage_b_stats.get("n_seeds", 0),
+                    "raw":           stage_b_stats.get("n_raw", 0),
+                    "after_filters": stage_b_stats.get("n_after_gate", 0),
+                    "merged":        stage_b_stats.get("n_merged", 0),
+                },
+                "filters": {
+                    "species": "human_only_or_unknown",
+                    "publication_types_stage_a": ["JournalArticle", "Review", "Dataset", "MetaAnalysis"],
+                    "publication_types_stage_b": ["journalarticle", "review", "metaanalysis", "dataset"],
+                },
+                "tier_thresholds": {
+                    "n_picked": 30,
+                    "n_reserve": 30,
+                    "drop_unknown_species": False,
+                    "min_picked_score": None,
+                },
+                "totals": {
+                    "deduped":  len(candidates),
+                    "picked":   n_picked,
+                    "reserve":  n_reserve,
+                    "excluded": n_excluded,
+                    "landmarks_found": hist_hits,
+                    "landmarks_total": len(hist_refs),
+                },
+                "exclusion_reasons": tier_summary["exclusion_reasons"],
+            }
+
+            json_path = write_candidates_json(
                 item=plan,
-                found_picks=top_picks,
-                recent_picks=recent_picks,
-                all_sorted=all_sorted,
-                landmark_entries=hist_refs,
+                candidates=candidates,
+                run_metadata=run_metadata,
                 output_dir=output_dir,
-                today_year=TODAY_YEAR,
-                stage_b_n_seeds=stage_b_stats.get("n_seeds", 0),
-                stage_b_n_kept=stage_b_stats.get("n_after_gate", 0),
             )
-            logger.info("[%s] Written: %s", plan.item_id, out_path)
+            logger.info("[%s] Wrote candidates JSON: %s", plan.item_id, json_path)
         else:
             logger.info("[%s] dry-run — pass --write to save.", plan.item_id)
 
