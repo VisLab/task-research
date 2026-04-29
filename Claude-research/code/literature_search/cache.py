@@ -1,10 +1,22 @@
 """
-cache.py — Deterministic, date-stamped, immutable disk cache for API responses.
+cache.py — Deterministic, immutable disk cache for API responses.
 
 One public function: cache_get_or_fetch.
 
-Cache layout:
-    <cache_dir>/<source>/<YYYY-MM-DD>/<sha1_16hex>.json
+Two cache layouts, picked per-call via the `stable` flag:
+
+  Date-stamped (default; for queries whose results change over time):
+      <cache_dir>/<source>/<YYYY-MM-DD>/<sha1_16hex>.json
+      A fresh date stamp creates a new subdirectory; re-running on a
+      different day re-fetches. Use for search endpoints, where new
+      papers appear daily and citation counts grow.
+
+  Stable (for lookups whose results are essentially fixed):
+      <cache_dir>/<source>/stable/<sha1_16hex>.json
+      No date in the path. Once written, served indefinitely.
+      Use for lookup-by-DOI calls (a paper's metadata, OA status, etc.
+      is stable; daily re-fetching is wasteful). Pass `stable=True`
+      from the caller.
 
 Each cache file is self-describing:
     {"source": "...", "key": "...", "fetched_on": "...", "response": {...}}
@@ -13,9 +25,8 @@ The key and source are stored alongside the response so that a SHA-1
 key collision is detectable on read (mismatch between the stored key and
 the requested key).
 
-Caches are immutable once written; there is no expiry mechanism.  A
-fresh date stamp produces a new subdirectory and new cache files.
-Re-running on a different day re-fetches everything for that day.
+Stable cache entries have no automatic expiry. To force a refresh of a
+stable entry, delete the file (or the whole `<source>/stable/` directory).
 
 This mirrors the raw/ convention in OpenAlex/pull_openalex.py.
 
@@ -48,8 +59,9 @@ def cache_get_or_fetch(
     key: str,
     fetch: Callable[[], dict | None],
     today: str | None = None,
+    stable: bool = False,
 ) -> dict:
-    """Return the cached JSON for (source, key) on today.
+    """Return the cached JSON for (source, key).
 
     If absent, call fetch() once.  If fetch() returns a non-None value,
     persist it and return it.  If fetch() returns None (server/network
@@ -65,6 +77,13 @@ def cache_get_or_fetch(
                    None signals a transient error (should not be cached).
                    {} signals a legitimate not-found (safe to cache).
         today:     "YYYY-MM-DD" override; defaults to date.today().isoformat().
+                   Ignored when stable=True.
+        stable:    When True, use the stable (no-date) cache layout under
+                   <cache_dir>/<source>/stable/. Use this for lookups whose
+                   results are essentially fixed (e.g. lookup_by_doi calls);
+                   delete the file manually to force a refresh. Default
+                   False keeps the date-stamped layout for search-style
+                   calls whose results change over time.
 
     Returns:
         The response dict, or {} if not found / error.
@@ -73,7 +92,8 @@ def cache_get_or_fetch(
         today = date.today().isoformat()
 
     cache_hex = _cache_key_hex(key)
-    cache_path = Path(cache_dir) / source / today / f"{cache_hex}.json"
+    bucket = "stable" if stable else today
+    cache_path = Path(cache_dir) / source / bucket / f"{cache_hex}.json"
 
     if cache_path.exists():
         try:

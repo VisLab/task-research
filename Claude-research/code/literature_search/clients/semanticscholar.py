@@ -174,6 +174,7 @@ def lookup_by_doi(
         source="semanticscholar",
         key=f"doi:{doi}",
         fetch=_fetch,
+        stable=True,   # DOI metadata is stable; skip date-stamping.
     )
     if not cached:
         logger.info("source=semanticscholar doi=%s status=not_found", doi)

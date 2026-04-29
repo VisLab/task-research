@@ -169,6 +169,7 @@ def lookup_by_doi(
 
     cached = cache_get_or_fetch(
         cache_dir=cache_dir, source="openalex", key=doi, fetch=_fetch,
+        stable=True,   # DOI metadata is stable; skip date-stamping.
     )
     if not cached:
         logger.info("source=openalex doi=%s status=not_found cached=True", doi)

@@ -173,6 +173,7 @@ def lookup_by_doi(
 
     cached = cache_get_or_fetch(
         cache_dir=cache_dir, source="europepmc", key=cache_key, fetch=_fetch,
+        stable=True,   # DOI metadata is stable; skip date-stamping.
     )
     if not cached:
         logger.info("source=europepmc doi=%s status=not_found", doi)
@@ -205,6 +206,7 @@ def lookup_by_pmid(
 
     cached = cache_get_or_fetch(
         cache_dir=cache_dir, source="europepmc", key=cache_key, fetch=_fetch,
+        stable=True,   # PMID metadata is stable; skip date-stamping.
     )
     if not cached:
         logger.info("source=europepmc pmid=%s status=not_found", pmid)

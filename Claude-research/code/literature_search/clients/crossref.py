@@ -93,6 +93,7 @@ def lookup_by_doi(
         source="crossref",
         key=doi,
         fetch=_fetch,
+        stable=True,   # DOI metadata is stable; skip date-stamping.
     )
 
     if not cached:

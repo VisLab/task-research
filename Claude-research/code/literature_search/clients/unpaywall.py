@@ -85,6 +85,7 @@ def lookup_by_doi(
         source="unpaywall",
         key=doi,
         fetch=_fetch,
+        stable=True,   # OA status is essentially fixed; skip date-stamping.
     )
 
     if not cached:
