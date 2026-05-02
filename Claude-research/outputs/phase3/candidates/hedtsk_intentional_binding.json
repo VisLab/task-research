@@ -1,0 +1,811 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:47:05",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_intentional_binding",
+    "name": "Intentional Binding Task",
+    "aliases": [
+      "Temporal Binding Task",
+      "Action-Effect Binding Task",
+      "Libet Clock Binding Task",
+      "Interval Estimation Agency Task"
+    ],
+    "category_id": "awareness_agency_and_metacognition",
+    "short_definition": "Participants judge the perceived time of a voluntary action and/or its sensory effect using a Libet clock; the temporal compression between action and effect (intentional binding) indexes the implicit sense of agency.",
+    "description": "The Intentional Binding Task (Haggard, Clark, & Kalogeras, 2002) measures the implicit sense of agency through perceived temporal shifts between voluntary actions and their sensory consequences. Participants watch a rotating clock hand (Libet clock) and make voluntary key presses that produce a tone after a fixed delay (typically 250 ms). In separate blocks, they report either the perceived time of their action (action binding: judged time shifts toward the tone) or the perceived time of the tone (effect binding: judged time shifts toward the action). The net temporal compression between action and effect — intentional binding — is taken as an implicit, pre-reflective marker of the sense of agency. Involuntary actions (e.g., TMS-induced movements) or externally triggered tones produce temporal repulsion rather than binding, establishing the specificity of the effect to voluntary agency. The paradigm has become the standard implicit measure of sense of agency, complementing explicit agency judgments. It is sensitive to disorders of agency including schizophrenia (reduced binding, especially in patients with passivity experiences), functional neurological disorder, and anarchic hand syndrome. Computational accounts link binding to motor prediction: the forward model predicts sensory consequences of voluntary actions, and the match between prediction and outcome generates the binding effect.",
+    "inclusion_test": {
+      "procedure": "Participants make voluntary actions (key presses) that produce delayed sensory effects (tones) while monitoring a Libet clock; they report the perceived time of either the action or the effect in separate blocks.",
+      "manipulation": "Action type (voluntary vs. involuntary/TMS-induced vs. passive observation); action-effect interval (150, 250, 450, 650 ms); effect probability (certain vs. uncertain); causal belief (participant told action causes vs. does not cause effect); outcome valence (positive vs. negative vs. neutral tone); social agency (self-caused vs. other-caused).",
+      "measurement": "Action binding (shift of perceived action time toward the effect); effect binding (shift of perceived effect time toward the action); overall intentional binding (action binding + effect binding); interval estimation (judged action-effect interval vs. actual); binding magnitude as individual-difference variable."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 10,
+      "picked": 9,
+      "reserve": 0,
+      "excluded": 1,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 1
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_7378a479",
+      "doi": "10.1038/nn827",
+      "url": "https://doi.org/10.1038/nn827",
+      "openalex_id": "https://openalex.org/W2077659983",
+      "pmid": "11896397",
+      "first_author": "Haggard",
+      "authors_display": "Patrick Haggard et al.",
+      "year": 2002,
+      "title": "Voluntary action and conscious awareness",
+      "venue": "Nature Neuroscience",
+      "venue_tier": "flagship",
+      "publisher": "Nature Portfolio",
+      "publication_types": [
+        "article",
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1552,
+      "influential_citation_count": null,
+      "fwci": 7.4503,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.7063569927991713,
+        "breakdown": {
+          "raw": {
+            "citations": 0.42542797119668496,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10635699279917124,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electromyography",
+        "Analysis of Variance",
+        "Electric Stimulation",
+        "Motor Activity",
+        "Awareness",
+        "Time Perception",
+        "Magnetics",
+        "Adult",
+        "Middle Aged"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d4a0d2f0",
+      "doi": "10.3758/s13414-021-02314-0",
+      "url": "https://doi.org/10.3758/s13414-021-02314-0",
+      "openalex_id": null,
+      "pmid": "34075560",
+      "first_author": "Klaffehn",
+      "authors_display": "Klaffehn, A. et al.",
+      "year": 2021,
+      "title": "Temporal binding as multisensory integration: Manipulating perceptual certainty of actions and their effects.",
+      "venue": "Attention, perception & psychophysics",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 37,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8550101",
+      "tldr": null,
+      "abstract": "It has been proposed that statistical integration of multisensory cues may be a suitable framework to explain temporal binding, that is, the finding that causally related events such as an action and its effect are perceived to be shifted towards each other in time. A multisensory approach to temporal binding construes actions and effects as individual sensory signals, which are each perceived with a specific temporal precision. When they are integrated into one multimodal event, like an action-effect chain, the extent to which they affect this event's perception depends on their relative reliability. We test whether this assumption holds true in a temporal binding task by manipulating certainty of actions and effects. Two experiments suggest that a relatively uncertain sensory signal in such action-effect sequences is shifted more towards its counterpart than a relatively certain one. This was especially pronounced for temporal binding of the action towards its effect but could also be shown for effect binding. Other conceptual approaches to temporal binding cannot easily explain these results, and the study therefore adds to the growing body of evidence endorsing a multisensory approach to temporal binding.",
+      "score": {
+        "composite": 0.5126518348953027,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2106073395812109,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05265183489530272,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Acoustic Stimulation",
+        "Reproducibility of Results",
+        "Photic Stimulation",
+        "Cues",
+        "Auditory Perception",
+        "Visual Perception"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_af2ceef8",
+      "doi": "10.1038/s41598-017-08482-0",
+      "url": "https://doi.org/10.1038/s41598-017-08482-0",
+      "openalex_id": null,
+      "pmid": "28808252",
+      "first_author": "Saito",
+      "authors_display": "Saito, N. et al.",
+      "year": 2017,
+      "title": "Altered awareness of action in Parkinson's disease: evaluations by explicit and implicit measures.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5556120",
+      "tldr": null,
+      "abstract": "Deficits in the integration of motor prediction and its feedback have been reported in Parkinson's disease. Conscious awareness of action is proposed to emerge under the integration of motor prediction and its feedback. Thus, it may lead to changes in the awareness of the authorship of action (in other words, the sense of agency) in Parkinson's disease. We have employed both explicit and implicit measures to assess the awareness of action in Parkinson's disease and matched controls. As an explicit measure, an action recognition task requiring explicit judgments was used. Patients showed less attribution of their movements to non-biased and angular-biased visual feedbacks. As an implicit measure, the temporal attraction between the perceived time of actions and their effects, which is known as intentional binding task, was used. While action-effect association was observed in the control group, actions were not experienced as having shifted towards their subsequent effects in the patient group. These tendencies were consistent regardless of the side of the asymmetrical motor symptoms. These results may reflect an underlying abnormality in the awareness of voluntary action in Parkinson's disease.",
+      "score": {
+        "composite": 0.5026189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Parkinson Disease",
+        "Case-Control Studies",
+        "Intention",
+        "Awareness",
+        "Decision Making",
+        "Psychomotor Performance",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_bde442c4",
+      "doi": "10.3758/s13414-020-02105-z",
+      "url": "https://doi.org/10.3758/s13414-020-02105-z",
+      "openalex_id": null,
+      "pmid": "33000439",
+      "first_author": "Render",
+      "authors_display": "Render, A. et al.",
+      "year": 2021,
+      "title": "Influence of arousal on intentional binding: Impaired action binding, intact outcome binding.",
+      "venue": "Attention, perception & psychophysics",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 13,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.3758/s13414-020-02105-z.pdf",
+      "tldr": null,
+      "abstract": "Emotional states have been indicated to affect intentional binding, resulting in an increase or decrease as a function of valence and arousal. Sexual arousal is a complex emotional state proven to impair attentional and perceptual processes, and is therefore highly relevant to feeling in control over one's actions. We suggest that sexual arousal affects intentional binding in the same way as highly negative arousing states such as fear and anger. Ninety participants performed the intentional binding task before and after watching an either sexually arousing or emotionally neutral film clip. Analyses were conducted for the subcomponents action and outcome binding separately including the change in arousal before and after the emotion induction as a continuous measure. Results showed an interactive effect for time of measurement (before and after emotion induction) and arousal change on action binding: a decrease in action binding was noted in participants who reported to be more aroused and an increase in action binding was observed for participants who reported to be less aroused. Results emphasize that alterations in action binding are likely to reflect the deficits in the dopaminergic system involved in action execution. An impaired feeling of control in aroused states may play a crucial role for the underlying psychological mechanisms of impulsive violent behavior.",
+      "score": {
+        "composite": 0.49819874078490356,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Emotions",
+        "Anger",
+        "Fear",
+        "Arousal",
+        "Attention"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3559e856",
+      "doi": "10.1073/pnas.2214327120",
+      "url": "https://doi.org/10.1073/pnas.2214327120",
+      "openalex_id": null,
+      "pmid": "37186822",
+      "first_author": "Roth",
+      "authors_display": "Roth, M. et al.",
+      "year": 2023,
+      "title": "Impaired perception of temporal contiguity between action and effect is associated with disorders of agency in schizophrenia.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10214164",
+      "tldr": null,
+      "abstract": "Delusions of control in schizophrenia are characterized by the striking feeling that one's actions are controlled by external forces. We here tested qualitative predictions inspired by Bayesian causal inference models, which suggest that such misattributions of agency should lead to decreased intentional binding. Intentional binding refers to the phenomenon that subjects perceive a compression of time between their intentional actions and consequent sensory events. We demonstrate that patients with delusions of control perceived less self-agency in our intentional binding task. This effect was accompanied by significant reductions of intentional binding as compared to healthy controls and patients without delusions. Furthermore, the strength of delusions of control tightly correlated with decreases in intentional binding. Our study validated a critical prediction of Bayesian accounts of intentional binding, namely that a pathological reduction of the prior likelihood of a causal relation between one's actions and consequent sensory events-here captured by delusions of control-should lead to lesser intentional binding. Moreover, our study highlights the import of an intact perception of temporal contiguity between actions and their effects for the sense of agency.",
+      "score": {
+        "composite": 0.47009864451848365,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Bayes Theorem",
+        "Emotions",
+        "Intention",
+        "Perception",
+        "Time Perception",
+        "Psychomotor Performance",
+        "Schizophrenia"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_28a2f39c",
+      "doi": "10.1371/journal.pone.0053421",
+      "url": "https://doi.org/10.1371/journal.pone.0053421",
+      "openalex_id": null,
+      "pmid": "23285293",
+      "first_author": "Takahata",
+      "authors_display": "Takahata, K. et al.",
+      "year": 2012,
+      "title": "It's not my fault: postdictive modulation of intentional binding by monetary gains and losses.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 80,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0053421&type=printable",
+      "tldr": null,
+      "abstract": "Sense of agency refers to the feeling that one's voluntary actions caused external events. Past studies have shown that compression of the subjective temporal interval between actions and external events, called intentional binding, is closely linked to the experience of agency. Current theories postulate that the experience of agency is constructed via predictive and postdictive pathways. One remaining problem is the source of human causality bias; people often make misjudgments on the causality of voluntary actions and external events depending on their rewarding or punishing outcomes. Although human causality bias implies that sense of agency can be modified by post-action information, convincing empirical findings for this issue are lacking. Here, we hypothesized that sense of agency would be modified by affective valences of action outcomes. To examine this issue, we investigated how rewarding and punishing outcomes following voluntary action modulate behavioral measures of agency using intentional binding paradigm and classical conditioning procedures. In the acquisition phase, auditory stimuli were paired with positive, neutral or negative monetary outcomes. Tone-reward associations were evaluated using reaction times and preference ratings. In the experimental session, participants performed a variant of intentional binding task, where participants made timing judgments for onsets of actions and sensory outcomes while playing simple slot games. Our results showed that temporal binding was modified by affective valences of action outcomes. Specifically, intentional binding was attenuated when negative outcome occurred, consistent with self-serving bias. Our study not only provides evidence for postdictive modification of agency, but also proposes a possible mechanism of human causality bias.",
+      "score": {
+        "composite": 0.3736069638457772,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2544278553831089,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06360696384577723,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Acoustic Stimulation",
+        "Behavior",
+        "Guilt",
+        "Intention",
+        "Self Concept",
+        "Reward",
+        "Token Economy",
+        "Task Performance and Analysis",
+        "Reaction Time",
+        "Models, Biological",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a6cec70f",
+      "doi": "10.1080/13546805.2010.546074",
+      "url": "https://doi.org/10.1080/13546805.2010.546074",
+      "openalex_id": null,
+      "pmid": "21302161",
+      "first_author": "Moore",
+      "authors_display": "Moore, J. et al.",
+      "year": 2011,
+      "title": "Ketamine administration in healthy volunteers reproduces aberrant agency experiences associated with schizophrenia.",
+      "venue": "Cognitive neuropsychiatry",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Controlled Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 35,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3144485",
+      "tldr": null,
+      "abstract": "<h4>Introduction</h4>Aberrant experience of agency is characteristic of schizophrenia. An understanding of the neurobiological basis of such experience is therefore of considerable importance for developing successful models of the disease. We aimed to characterise the effects of ketamine, a drug model for psychosis, on sense of agency (SoA). SoA is associated with a subjective compression of the temporal interval between an action and its effects: This is known as \"intentional binding\". This action-effect binding provides an indirect measure of SoA. Previous research has found that the magnitude of binding is exaggerated in patients with schizophrenia. We therefore investigated whether ketamine administration to otherwise healthy adults induced a similar pattern of binding.<h4>Methods</h4>14 right-handed healthy participants (8 female; mean age 22.4 years) were given low-dose ketamine (100 ng/mL plasma) and completed the binding task. They also underwent structured clinical interviews.<h4>Results</h4>Ketamine mimicked the performance of schizophrenia patients on the intentional binding task, significantly increasing binding relative to placebo. The size of this effect also correlated with aberrant bodily experiences engendered by the drug.<h4>Conclusions</h4>These data suggest that ketamine may be able to mimic certain aberrant agency experiences that characterise schizophrenia. The link to individual changes in bodily experience suggests that the fundamental change produced by the drug has wider consequences in terms of individuals' experiences of their bodies and movements.",
+      "score": {
+        "composite": 0.29186924493521105,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Psychoses, Substance-Induced",
+        "Ketamine",
+        "Excitatory Amino Acid Antagonists",
+        "Judgment",
+        "Sensation",
+        "Schizophrenia",
+        "Dose-Response Relationship, Drug",
+        "Models, Psychological",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Healthy Volunteers"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_41a5ef82",
+      "doi": "10.3390/brainsci10090659",
+      "url": "https://doi.org/10.3390/brainsci10090659",
+      "openalex_id": null,
+      "pmid": "32971978",
+      "first_author": "Hayashida",
+      "authors_display": "Hayashida, K. et al.",
+      "year": 2020,
+      "title": "Intentional Binding Effects in the Experience of Noticing the Regularity of a Perceptual-Motor Task.",
+      "venue": "Brain sciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/2076-3425/10/9/659/pdf?version=1600831072",
+      "tldr": null,
+      "abstract": "Noticing the regularity of the task is necessary to enhance motor performance. The experience of noticing further motivates improvement in motor performance. Motor control is explained by a comparator model that modifies the motor command to reduce discrepancies between sensory predictions and actual outcomes. A similar model could apply to sense of agency (SoA). SoA refers to the sensation of controlling one's own actions and, through them, the outcomes in the external world. SoA may also be enhanced by the experience of noticing errors. We recently reported gradual enhancement of SoA in participants with high perceptual-motor performance. However, what component of the motor task changed the SoA is unclear. In this study, we aimed to investigate the influence over time of the experience of noticing during a motor task on SoA. Participants performed an implicit regularity perceptual-motor task and an intentional binding task (a method that can quantitatively measure SoA) simultaneously. We separated participants into groups after the experiment based on noticing or not noticing the regularity. SoA was gradually enhanced in the noticing group, compared with that of the non-noticing group. The results suggest that the experience of noticing may enhance SoA during perceptual-motor tasks.",
+      "score": {
+        "composite": 0.2700657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_961df1db",
+      "doi": "10.3389/fpsyt.2024.1441585",
+      "url": "https://doi.org/10.3389/fpsyt.2024.1441585",
+      "openalex_id": null,
+      "pmid": "39386898",
+      "first_author": "Koreki",
+      "authors_display": "Koreki, A. et al.",
+      "year": 2024,
+      "title": "Altered sense of agency in schizophrenia: the aberrant effect of cardiac interoceptive signals.",
+      "venue": "Frontiers in psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants,patients)"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11461937",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Schizophrenia (SZ) is characterized by abnormalities in self-representation, including a disturbed sense of agency (SoA). The continuous processing of sensory information concerning the internal state of the body (interoception) is argued to be fundamental to neural representations of the self. We, therefore, tested if aberrant interoception underpins disturbances in SoA in SZ, focusing on cardiac interoceptive signaling.<h4>Methods</h4>Forty-two SZ and 29 non-clinical participants (healthy controls; HC) performed an intentional binding task to measure SoA during concurrent heartbeat recording. The effect of cardiac interoceptive signals on SoA was measured by the difference in intentional binding effect during systole and diastole. This measure was standardized based on the overall intentional binding effect to control for non-cardiac factors, and then compared between SZ and HC.<h4>Results</h4>Our study revealed a significant difference between SZ and HC groups, with opposite effects of cardiac systole on SoA. Specifically, cardiac systole disrupted SoA in SZ, contrasting with the enhanced SoA in HC. Across the SZ group, the extent to which SoA was disrupted by cardiac systole correlated significantly with a clinical proxy for symptom instability, namely the number of hospital admissions for hallucinations and delusions. Furthermore, the disruption was particularly observed in patients with severe hallucinations.<h4>Conclusions</h4>This study revealed a disturbance in the impact of cardiac interoceptive signals on an implicit index of SoA in schizophrenia. This supports the notion that pathophysiological disruption of the central integration of interoceptive information increases vulnerability to disturbances in self-representation and the associated expression of schizophrenic symptoms.",
+      "score": {
+        "composite": 0.25329562944183154,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ac33d42e",
+      "doi": "10.3389/fpsyg.2025.1664222",
+      "url": "https://doi.org/10.3389/fpsyg.2025.1664222",
+      "openalex_id": null,
+      "pmid": "41426396",
+      "first_author": "Schmidt",
+      "authors_display": "Schmidt, S., & Wagner, G.",
+      "year": 2025,
+      "title": "Implicit and explicit sense of agency in individuals with obsessive-compulsive tendencies.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12714912",
+      "tldr": null,
+      "abstract": "<h4>Introduction</h4>The sense of agency (SoA), or the perception of control over one's actions and their outcomes, has been proposed to be attenuated in individuals with obsessive-compulsive disorder (OCD) and obsessive-compulsive (OC) tendencies. According to the Sense of Agency and Seeking Proxies for Internal States (SPIS) model, individuals with higher OC tendencies (HOC) may exhibit an altered SoA characterized by diminished tone binding but heightened action binding compared to individuals with lower OC tendencies (LOC).<h4>Methods</h4>To investigate this, 29 healthy participants completed a temporal binding task to measure implicit SoA, alongside self-report measures assessing OC symptoms, anxiety, depression, and explicit SoA. Participants were divided into HOC and LOC tendency groups based on median OCI-R scores. Group comparisons and regression analyses were conducted to examine associations between SoA measures and clinical traits.<h4>Results</h4>Significant action and tone binding effects were observed across the entire sample, indicating a robust implicit SoA. Contrary to our hypotheses, no significant differences in action or tone binding effects were found between HOC and LOC groups, suggesting a preserved implicit SoA in individuals with higher OC tendencies. Regression analyses revealed that trait anxiety, rather than OC symptom severity, significantly predicted tone binding in the whole sample, indicating an attenuated SoA with increasing trait anxiety levels. Within the HOC group, OC symptom severity significantly predicted tone binding, challenging the SPIS model's assumption that individuals with high OC tendencies would exhibit diminished tone binding effects. Despite preserved implicit SoA, explicit measures revealed significant group differences, with HOC individuals reporting a lower global SoA.<h4>Discussion</h4>These findings suggest that while implicit, sensorimotor aspects of SoA remain intact in individuals with OC tendencies, alterati",
+      "score": {
+        "composite": 0.22,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

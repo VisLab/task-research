@@ -1,0 +1,227 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:27:44",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_multi_armed_bandit",
+    "name": "Multi-Armed Bandit Task",
+    "aliases": [
+      "MAB",
+      "Bandit Task",
+      "K-Armed Bandit",
+      "Multi-Armed Bandit"
+    ],
+    "category_id": "associative_learning_and_reinforcement",
+    "short_definition": "Repeated choice among options with unknown or changing reward distributions; choice sequences dissociate exploration from exploitation.",
+    "description": "Participants choose among multiple options (the \"arms\" of a slot machine), each yielding rewards with unknown and often changing probabilities. The central challenge is the explore-exploit dilemma: whether to exploit the currently best-known option or explore alternatives that might yield higher returns. Reward probabilities may be stationary or volatile (drifting over time), with the volatile version (restless bandit) requiring continuous updating of value estimates. This paradigm is the dominant tool in computational psychiatry for studying reinforcement learning, and its computational tractability — fitting with Bayesian, Kalman-filter, or upper-confidence-bound models — has made it central to understanding decision-making deficits in addiction, schizophrenia, depression, and anxiety.",
+    "inclusion_test": {
+      "procedure": "Participants choose repeatedly among multiple options (arms) that deliver stochastic rewards drawn from different distributions. They must balance exploring unknown options with exploiting known good ones.",
+      "manipulation": "Number of arms; reward distributions (stationary vs. drifting); horizon length; information asymmetry.",
+      "measurement": "Total reward earned; exploration-exploitation ratio; fit to reinforcement learning models (learning rate, inverse temperature); regret."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 2,
+      "picked": 2,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_c2703790",
+      "doi": "10.1038/nature04766",
+      "url": "https://doi.org/10.1038/nature04766",
+      "openalex_id": "https://openalex.org/W2077611535",
+      "pmid": "16778890",
+      "first_author": "Daw",
+      "authors_display": "Nathaniel D. Daw et al.",
+      "year": 2006,
+      "title": "Cortical substrates for exploratory decisions in humans",
+      "venue": "Nature",
+      "venue_tier": "flagship",
+      "publisher": "Nature Portfolio",
+      "publication_types": [
+        "article",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2334,
+      "influential_citation_count": null,
+      "fwci": 36.4205,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "bronze",
+      "oa_url": "https://www.nature.com/articles/nature04766.pdf",
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.7122599863194411,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4490399452777643,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11225998631944108,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Uncertainty",
+        "Exploratory Behavior",
+        "Gambling",
+        "Reward",
+        "Decision Making",
+        "Choice Behavior",
+        "Models, Neurological",
+        "Models, Psychological"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_578b9be5",
+      "doi": "10.1073/pnas.2218523120",
+      "url": "https://doi.org/10.1073/pnas.2218523120",
+      "openalex_id": null,
+      "pmid": "36730192",
+      "first_author": "Binz",
+      "authors_display": "Binz, M., & Schulz, E.",
+      "year": 2023,
+      "title": "Using cognitive psychology to understand GPT-3.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 110,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9963545",
+      "tldr": null,
+      "abstract": "We study GPT-3, a recent large language model, using tools from cognitive psychology. More specifically, we assess GPT-3's decision-making, information search, deliberation, and causal reasoning abilities on a battery of canonical experiments from the literature. We find that much of GPT-3's behavior is impressive: It solves vignette-based tasks similarly or better than human subjects, is able to make decent decisions from descriptions, outperforms humans in a multiarmed bandit task, and shows signatures of model-based reinforcement learning. Yet, we also find that small perturbations to vignette-based tasks can lead GPT-3 vastly astray, that it shows no signatures of directed exploration, and that it fails miserably in a causal reasoning task. Taken together, these results enrich our understanding of current large language models and pave the way for future investigations using tools from cognitive psychology to study increasingly capable and opaque artificial agents.",
+      "score": {
+        "composite": 0.5206675692906723,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27267027716268905,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06816756929067226,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Learning",
+        "Problem Solving",
+        "Decision Making",
+        "Reinforcement, Psychology",
+        "Cognitive Psychology"
+      ]
+    }
+  ]
+}

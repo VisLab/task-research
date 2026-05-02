@@ -1,0 +1,2174 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:47:28",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_self_paced_reading",
+    "name": "Self-Paced Reading Task",
+    "aliases": [
+      "Moving-Window Reading Task",
+      "Word-by-Word Reading Task",
+      "Non-Cumulative Self-Paced Reading",
+      "Cumulative Self-Paced Reading",
+      "Phrase-by-Phrase Reading Task"
+    ],
+    "category_id": "language_comprehension_and_production",
+    "short_definition": "Participants press a key to reveal each word or phrase of a sentence/passage; reading time per region indexes online processing difficulty and is sensitive to syntactic, semantic, and discourse-level manipulations.",
+    "description": "Self-Paced Reading is the primary behavioral paradigm for studying online language comprehension at the sentence and discourse level. Participants read text presented one word or phrase at a time by pressing a button to advance; the time between button presses at each region is the dependent measure. In the non-cumulative (moving-window) variant, each new word replaces the previous one; in the cumulative variant, words accumulate on screen. Reading time elevations at critical regions reveal processing difficulty caused by syntactic ambiguity (garden-path effects), semantic anomaly, coherence breaks, anaphor resolution, predictability violations, and discourse-level inference demands. The paradigm was developed as an accessible alternative to eye-tracking that preserves the temporal dynamics of incremental comprehension while requiring minimal equipment. Spillover effects (elevated reading times on words following the critical region) are routinely analyzed. Comprehension questions after each trial ensure participants are reading for meaning. Self-paced reading has been central to testing models of sentence processing (surprisal theory, expectation-based parsing), discourse representation theory (situation models), and cross-linguistic processing differences.",
+    "inclusion_test": {
+      "procedure": "Participants read sentences or passages presented one word or phrase at a time, advancing by button press; reading time at each region is recorded. Comprehension questions follow each trial.",
+      "manipulation": "Linguistic manipulation at the critical region: syntactic ambiguity (reduced relative clause, garden-path), semantic plausibility (plausible vs. implausible continuation), discourse coherence (coherent vs. incoherent continuation), anaphor type (pronoun, repeated name, definite NP), word predictability (high vs. low cloze probability), syntactic complexity (embedded clause, long-distance dependency).",
+      "measurement": "Reading time at the critical region (ms); spillover reading time (region + 1, + 2); wrap-up effects (sentence-final reading time); comprehension question accuracy; reading time differences between conditions at the critical region."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 31,
+      "picked": 30,
+      "reserve": 0,
+      "excluded": 1,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 1
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_f864c5c6",
+      "doi": "10.1037//0096-3445.111.2.228",
+      "url": "https://doi.org/10.1037//0096-3445.111.2.228",
+      "openalex_id": "https://openalex.org/W2112340261",
+      "pmid": "6213735",
+      "first_author": "Just",
+      "authors_display": "Marcel Adam Just et al.",
+      "year": 1982,
+      "title": "Paradigms and processes in reading comprehension.",
+      "venue": "Journal of Experimental Psychology General",
+      "venue_tier": "flagship",
+      "publisher": "American Psychological Association",
+      "publication_types": [
+        "article",
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 878,
+      "influential_citation_count": null,
+      "fwci": 8.0102,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "This article compares several methods of presenting text, including a new paradigm that produces reading-time data with many of the characteristics of naturally occurring eye-fixation data. In the new paradigm, called the moving window condition, a reader presses a button to see each successive work in a text, and the previous work is removed when a new work appears. The words appear in the same position that they would in normal test, and word-length information is available in peripheral vision. The results are qualitatively and quantitatively compared to the results obtained by monitoring the eye fixations of subjects reading normal text. The word-level effects are generally similar. Readers pause longer on longer words, on less frequent words, on words that introduce a new topic, and at ends of sentences. The results suggest that readers initiate thr processing of each word as soon as they encounter it rather than buffer words and delay processing. Also considered are two other reading-time paradigms, one in which words are cumulatively displayed on the screen and one in which each successive word is presented at the same location on the screen. Finally, we consider how the tendency to immediately process text might interact with other techniques for text presentation, such as the rapid serial visual presentation (RSVP) condition, and we generate predictions about the nature and limits of the method.",
+      "score": {
+        "composite": 0.6981187654536651,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3924750618146603,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09811876545366507,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Eye Movements",
+        "Memory",
+        "Form Perception",
+        "Visual Fields",
+        "Fixation, Ocular",
+        "Models, Psychological",
+        "Reading"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_f8bbd2e6",
+      "doi": "10.1371/journal.pone.0141417",
+      "url": "https://doi.org/10.1371/journal.pone.0141417",
+      "openalex_id": null,
+      "pmid": "26528814",
+      "first_author": "Hussey",
+      "authors_display": "Hussey, E. et al.",
+      "year": 2015,
+      "title": "Language and Memory Improvements following tDCS of Left Lateral Prefrontal Cortex.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 40,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4631603",
+      "tldr": null,
+      "abstract": "Recent research demonstrates that performance on executive-control measures can be enhanced through brain stimulation of lateral prefrontal regions. Separate psycholinguistic work emphasizes the importance of left lateral prefrontal cortex executive-control resources during sentence processing, especially when readers must override early, incorrect interpretations when faced with temporary ambiguity. Using transcranial direct current stimulation, we tested whether stimulation of left lateral prefrontal cortex had discriminate effects on language and memory conditions that rely on executive-control (versus cases with minimal executive-control demands, even in the face of task difficulty). Participants were randomly assigned to receive Anodal, Cathodal, or Sham stimulation of left lateral prefrontal cortex while they (1) processed ambiguous and unambiguous sentences in a word-by-word self-paced reading task and (2) performed an n-back memory task that, on some trials, contained interference lure items reputed to require executive-control. Across both tasks, we parametrically manipulated executive-control demands and task difficulty. Our results revealed that the Anodal group outperformed the remaining groups on (1) the sentence processing conditions requiring executive-control, and (2) only the most complex n-back conditions, regardless of executive-control demands. Together, these findings add to the mounting evidence for the selective causal role of left lateral prefrontal cortex for executive-control tasks in the language domain. Moreover, we provide the first evidence suggesting that brain stimulation is a promising method to mitigate processing demands encountered during online sentence processing.",
+      "score": {
+        "composite": 0.3854183510920963,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Language",
+        "Memory",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Transcranial Direct Current Stimulation"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ad9b4157",
+      "doi": "10.1371/journal.pone.0279555",
+      "url": "https://doi.org/10.1371/journal.pone.0279555",
+      "openalex_id": null,
+      "pmid": "36584104",
+      "first_author": "Haigh",
+      "authors_display": "Haigh, P. et al.",
+      "year": 2022,
+      "title": "Diving into a pool or volcano? Examining the influence of sentence context and task demands on sentence reading in younger and older adults.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9803221",
+      "tldr": null,
+      "abstract": "Cognitive ageing is often associated with slower lexical processing, which might influence both language production and comprehension. Words are typically used in context, which can further influence word processing and potential age differences. However, it remains unclear how older adults are affected by context during reading. Older adults are reported to have in-tact semantic knowledge, which could potentially help them to process words predicted by semantic information in the preceding context. However, potential difficulties with semantic control might mean older adults have greater difficulty suppressing interfering information from mismatching contexts. In this study we examined the influence of contexts that either predicted a specific target word (\"matched\", e.g., \"The man watched the lava erupt from the volcano\") or predicted another word than the target (\"mismatched\", e.g., \"The swimmer dived into the volcano\") as compared to neutral contexts (e.g., \"They went to see the volcano\"). We also examined the potential role of task demands by asking participants to either just read the sentences for comprehension or to answer questions. Forty younger adults (18-35 years old) and forty older adults (65-80 years old) completed a self-paced reading task in which we measured reading times for the target words. Older adults showed slower reading times overall. Matched sentence contexts facilitated reading times in both age groups. Surprisingly, mismatched sentence contexts did not hinder reading times in either age group. Furthermore, reading times were not influenced by task demands. Together, this shows the importance of studying language in context. While interference from mismatching sentence contexts might have not been substantial enough to delay reading, reading was faster when processing expected words. This suggests older adults can indeed benefit from semantic knowledge to facilitate word processing during comprehension. This occurred even when no addition",
+      "score": {
+        "composite": 0.37169954817282785,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Language",
+        "Comprehension",
+        "Semantics",
+        "Adolescent",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7cc38397",
+      "doi": "10.1007/s10936-019-09686-3",
+      "url": "https://doi.org/10.1007/s10936-019-09686-3",
+      "openalex_id": null,
+      "pmid": "32030581",
+      "first_author": "Schneider",
+      "authors_display": "Schneider, C. et al.",
+      "year": 2020,
+      "title": "Is Immediate Processing of Presupposition Triggers Automatic or Capacity-Limited? A Combination of the PRP Approach with a Self-Paced Reading Task.",
+      "venue": "Journal of psycholinguistic research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s10936-019-09686-3.pdf",
+      "tldr": null,
+      "abstract": "Informally speaking, presuppositions are meaning components which are part of the common ground for speakers in a conversation, that is, background information which is taken for granted by interlocutors. The current literature suggests an immediate processing of presuppositions, starting directly on the word triggering the presupposition. In the present paper, we focused on two presupposition triggers in German, the definite determiner the (German der) and the iterative particle again (German wieder). Experiment 1 replicates the immediate effects which were previously observed in a self-paced reading study. Experiment 2 then investigates whether this immediate processing of presuppositions is automatic or capacity-limited by employing the psychological refractory period approach and the locus of slack-logic, which have been successfully employed for this reason in various fields of cognitive psychology. The results argue against automatic processing, but rather suggest that the immediate processing of presuppositions is capacity-limited. This potentially helps specifying the nature of the involved processes; for example, a memory search for a potential referent.",
+      "score": {
+        "composite": 0.36760128913427215,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Communication",
+        "Memory",
+        "Psycholinguistics",
+        "Reading",
+        "Adult",
+        "Germany",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ceac6afd",
+      "doi": "10.3389/fpsyg.2021.662050",
+      "url": "https://doi.org/10.3389/fpsyg.2021.662050",
+      "openalex_id": null,
+      "pmid": "34531781",
+      "first_author": "Macuch Silva",
+      "authors_display": "Macuch Silva, V., & Franke, M.",
+      "year": 2021,
+      "title": "Pragmatic Prediction in the Processing of Referring Expressions Containing Scalar Quantifiers.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.3389/fpsyg.2021.662050",
+      "tldr": null,
+      "abstract": "Previous research in cognitive science and psycholinguistics has shown that language users are able to predict upcoming linguistic input probabilistically, pre-activating material on the basis of cues emerging from different levels of linguistic abstraction, from phonology to semantics. Current evidence suggests that linguistic prediction also operates at the level of pragmatics, where processing is strongly constrained by context. To test a specific theory of contextually-constrained processing, termed <i>pragmatic surprisal theory</i> here, we used a self-paced reading task where participants were asked to view visual scenes and then read descriptions of those same scenes. Crucially, we manipulated whether the visual context biased readers into specific pragmatic expectations about how the description might unfold word by word. Contrary to the predictions of pragmatic surprisal theory, we found that participants took longer reading the main critical term in scenarios where they were biased by context and pragmatic constraints to expect a given word, as opposed to scenarios where there was no pragmatic expectation for any particular referent.",
+      "score": {
+        "composite": 0.347568407628111,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_6c73a488",
+      "doi": "10.3389/fpsyg.2020.575847",
+      "url": "https://doi.org/10.3389/fpsyg.2020.575847",
+      "openalex_id": null,
+      "pmid": "33041947",
+      "first_author": "Tan",
+      "authors_display": "Tan, M., & Foltz, A.",
+      "year": 2020,
+      "title": "Task Sensitivity in L2 English Speakers' Syntactic Processing: Evidence for Good-Enough Processing in Self-Paced Reading.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2020.575847/pdf",
+      "tldr": null,
+      "abstract": "Native (L1) and second-language (L2) sentence processing can sometimes be shallow. A Good-Enough approach suggests that speakers may engage in shallow processing if the task permits. This study tests English native speakers and native Chinese L2 learners of English to explore whether different task demands affect their sentence processing. In a self-paced reading task, participants read globally or temporarily ambiguous sentences with relative clauses preceded by a matrix clause containing two noun phrases (NPs). Comprehension questions modulated task difficulty: Half the participants received comprehension questions that probed their interpretation of the relative clauses whereas the remaining half received superficial questions unrelated to the relative clauses. Task difficulty affected reading times at the point of disambiguation for both L1 and L2 participants. Additionally, participants' attachment choices for globally ambiguous sentences were consistent with reading times of the disambiguating region in both L1 and L2 readers. The results suggest that both L1 and L2 syntactic processing is modulated by the task at hand. We argue for a similar treatment of shallowness for L1 and L2 speakers in models of sentence processing, along the lines of the Good-Enough approach to language processing.",
+      "score": {
+        "composite": 0.3449622961084982,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_afad9a90",
+      "doi": "10.3389/fpsyg.2019.02346",
+      "url": "https://doi.org/10.3389/fpsyg.2019.02346",
+      "openalex_id": null,
+      "pmid": "31695644",
+      "first_author": "de-Dios-Flores",
+      "authors_display": "de-Dios-Flores, I.",
+      "year": 2019,
+      "title": "Processing Sentences With Multiple Negations: Grammatical Structures That Are Perceived as Unacceptable.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6817463",
+      "tldr": null,
+      "abstract": "This investigation draws from research on negative polarity item (NPI) illusions in order to explore a new and interesting instance of misalignment observed for grammatical sentences containing two negative markers. Previous research has shown that unlicensed NPIs can be perceived as acceptable when occurring soon after a structurally inaccessible negation (e.g., <i>ever</i> in *<i>The bills that no senators voted for have ever become law</i>). Here we examine the opposite configuration: grammatical sentences created by substituting the NPI <i>ever</i> with the negative adverb <i>never</i> (e.g., <i>The bills that no senators voted for have never become law</i>). The processing and acceptability of these sentences were studied using three tasks: a speeded acceptability judgment (Experiment 1), a self-paced reading task (Experiment 2), and an offline acceptability rating (Experiment 3). The results are consistent across measures in showing that the integration of the adverb <i>never</i> is disrupted by the linearly preceding but structurally inaccessible negative quantifier <i>no</i> in the relative clause. In our view, this pattern of results is in line with Parker and Phillips' (2016) proposal that NPI illusions arise when the context containing the inaccessible negation has not been fully encoded by the time the NPI <i>ever</i> is encountered, making the embedded negative quantifier transparently available as a licensor. In a similar vein, the disruption effects observed for grammatical sentences containing two negative elements could arise if the negative quantifier is still being integrated when <i>never</i> is encountered, forcing the parser to deal with two negative elements simultaneously. This interpretation suggests that the same incomplete encodings that could be ameliorating the online perception of unlicensed NPIs could also be responsible for deteriorating the perception of the sentences under investigation here. This would represent an illusion of ungr",
+      "score": {
+        "composite": 0.3349622961084982,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_605156e2",
+      "doi": "10.3389/fpsyg.2019.02455",
+      "url": "https://doi.org/10.3389/fpsyg.2019.02455",
+      "openalex_id": null,
+      "pmid": "31798485",
+      "first_author": "Liu",
+      "authors_display": "Liu, X., & Wang, W.",
+      "year": 2019,
+      "title": "The Effect of Distance on Sentence Processing by Older Adults.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.3389/fpsyg.2019.02455",
+      "tldr": null,
+      "abstract": "In sentences with long-distance dependency relations (\"<i>The man whom the police arrested is thin</i>\"), there are two kinds of distance between the gap (object position of <i>arrested</i>) and the filler <i>man</i>: linear (the intervening words in linear order), and structural (the intervening nodes in the syntactic tree). Previous studies found that older adults have difficulty comprehending sentences with long-distance dependency relations. However, it is not clear whether they are more disrupted by longer structural distance between gaps and fillers, or longer linear distance. There is a distinction between linear distance and structural distance, in that the former is directly related to working memory whereas the latter is associated with syntactic ability. By examining the effect of linear distance and structural distance on sentence processing by older adults, we can identify whether age-related decline in sentence comprehension is attributed to working memory dysfunction or syntactic decline. For this purpose, structural distance and linear distance were manipulated in Mandarin relative clauses (RCs). 30 older adults and 33 younger adults were instructed to perform a self-paced reading task. We found that both groups performed more slowly as structural distance increased, and less accurately when linear distance increased. More importantly, there was a significant interaction between linear distance and age group in the accuracy of comprehension, with linear distance disrupting older adults more than younger adults in offline processing. The findings suggest that the age-related decline in offline sentence comprehension might be attributable to the decline in working memory, rather than syntactic ability. Practical implications, limitations, and directions for future studies are discussed.",
+      "score": {
+        "composite": 0.3317324296789891,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_90fa46cb",
+      "doi": "10.1007/s10936-022-09864-w",
+      "url": "https://doi.org/10.1007/s10936-022-09864-w",
+      "openalex_id": null,
+      "pmid": "35325344",
+      "first_author": "Cheng",
+      "authors_display": "Cheng, Y. et al.",
+      "year": 2022,
+      "title": "Determiner-Number Specification and Non-Local Agreement Computation in L1 and L2 Processing.",
+      "venue": "Journal of psycholinguistic research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s10936-022-09864-w.pdf",
+      "tldr": null,
+      "abstract": "The present study employed a self-paced reading task in conjunction with concurrent acceptability judgements to examine how similar or different English natives and Chinese learners of English are when processing non-local agreement. We also tested how determiner-number specification modulates number agreement computation in both native and non-native processing by manipulating number marking with demonstrative determiners (the versus that/these). Results suggest both groups were sensitive to non-local agreement violations, indexed by longer reading times for sentences containing number violations. Furthermore, we found determiner-number specification facilitated processing of number violations in both native and non-native groups in an acceptability judgement task only, with stronger sensitivity to violations with demonstrative determiners than those with bare determiners. Contrary to some theories that predict qualitative differences between native and non-native processing, we did not find any significant differences between native and non-native speakers, despite the fact that the Chinese speakers of English had to process a novel linguistic feature absent in their native language.",
+      "score": {
+        "composite": 0.3316995481728279,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Brain Mapping",
+        "Language",
+        "Multilingualism",
+        "Semantics"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_bddfb6af",
+      "doi": "10.1371/journal.pone.0093109",
+      "url": "https://doi.org/10.1371/journal.pone.0093109",
+      "openalex_id": null,
+      "pmid": "24664132",
+      "first_author": "Yokoyama",
+      "authors_display": "Yokoyama, S. et al.",
+      "year": 2014,
+      "title": "Animacy or case marker order?: priority information for online sentence comprehension in a head-final language.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0093109&type=printable",
+      "tldr": null,
+      "abstract": "It is well known that case marker information and animacy information are incrementally used to comprehend sentences in head-final languages. However, it is still unclear how these two kinds of information are processed when they are in competition in a sentence's surface expression. The current study used sentences conveying the potentiality of some event (henceforth, potential sentences) in the Japanese language with theoretically canonical word order (dative-nominative/animate-inanimate order) and with scrambled word order (nominative-dative/inanimate-animate order). In Japanese, nominative-first case order and animate-inanimate animacy order are preferred to their reversed patterns in simplex sentences. Hence, in these potential sentences, case information and animacy information are in competition. The experiment consisted of a self-paced reading task testing two conditions (that is, canonical and scrambled potential sentences). Forty-five native speakers of Japanese participated. In our results, the canonical potential sentences showed a scrambling cost at the second argument position (the nominative argument). This result indicates that the theoretically scrambled case marker order (nominative-dative) is processed as a mentally canonical case marker order, suggesting that case information is used preferentially over animacy information when the two are in competition. The implications of our findings are discussed with regard to incremental simplex sentence comprehension models for head-final languages.",
+      "score": {
+        "composite": 0.3316995481728279,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Language",
+        "Comprehension",
+        "Language Tests",
+        "Models, Biological",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_32d9dce7",
+      "doi": "10.3389/fpsyg.2021.765777",
+      "url": "https://doi.org/10.3389/fpsyg.2021.765777",
+      "openalex_id": null,
+      "pmid": "35308076",
+      "first_author": "Ma",
+      "authors_display": "Ma, Z. et al.",
+      "year": 2021,
+      "title": "Acceptance and Online Interpretation of \"Gender-Neutral Pronouns\": Performance Asymmetry by Chinese English as a Foreign Language Learners.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8925987",
+      "tldr": null,
+      "abstract": "The present study (<i>N</i> = 109) set out to examine the role of cross-linguistic differences as a source of potential difficulty in the acceptance and online interpretation of the English singular <i>they</i> by Chinese English as a Foreign Language (EFL) learners across two levels of second-language proficiency. Experiment 1 operationalized performance through an untimed acceptability judgment test and Experiment 2 through a self-paced reading task. Statistical analyses yielded an asymmetric pattern of results. Experiment 1 indicated that unlike native English speakers who generally accepted the singular <i>they</i> with all antecedent types, two Chinese EFL groups consisting of English majors (higher level) and non-English majors (lower level) both rated it as the least acceptable pronoun regardless of their proficiency level. In contrast, Experiment 2 demonstrated that like native English speakers, both Chinese EFL groups were not disrupted in their reading by the use of the singular <i>they</i> most of the time, although its online interpretation was modulated by L2 proficiency levels of the participants. While the English majors were not affected by the use of the singular <i>they</i>, the non-English majors spent a significantly longer time reading the latter region of the sentences where the singular <i>they</i> was used. In short, the results of the two experiments seem to indicate that under no time constraint, L2 speakers showed a heightened degree of grammar sensitivity, whereas when there was a time constraint, their grammatical sensitivity was reduced by a greater need to focus on meaning. The difficulty for Chinese EFL learners to acquire the singular <i>they</i> may be located at the restructuring of their existing knowledge of the plural feature of <i>they</i> [-PLURAL] in their mental lexicon and the adaptation to the sociocultural norms of the target language. The pedagogical implications of the findings are discussed.",
+      "score": {
+        "composite": 0.33166666666666667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_470ab5d4",
+      "doi": "10.3389/fpsyg.2021.610909",
+      "url": "https://doi.org/10.3389/fpsyg.2021.610909",
+      "openalex_id": null,
+      "pmid": "33603700",
+      "first_author": "Delgado",
+      "authors_display": "Delgado, J. et al.",
+      "year": 2021,
+      "title": "Assessing Intervention Effects in Sentence Processing: Object Relatives vs. Subject Control.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants,subject)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.3389/fpsyg.2021.610909",
+      "tldr": null,
+      "abstract": "Object relative clauses are harder to process than subject relative clauses. Under Grillo's (2009) Generalized Minimality framework, complexity effects of object relatives are construed as intervention effects, which result from an interaction between locality constraints on movement (Relativized Minimality) and the sentence processing system. Specifically, intervention of the subject DP in the movement dependency is expected to generate a minimality violation whenever processing limitations render the moved object underspecified, resulting in compromised comprehension. In the present study, assuming Generalized Minimality, we compared the processing of object relatives with the processing of subject control in ditransitives, which, like object relatives, instantiates a syntactic dependency across an intervening DP. This comparison is justified by the current debate on whether Control should be analyzed as movement: if control involves movement of the controller DP, as proposed by Hornstein (1999), a parallel between the processing of object relatives and subject control in ditransitives may be anticipated on the basis of intervention. In addition, we explored whether general cognitive factors contribute to complexity effects ascribed to movement across a DP. Sixty-nine adult speakers of European Portuguese read sentences and answered comprehension probes in a self-paced reading task with moving-window display, comprising four experimental conditions: <i>Subject Relatives</i>; <i>Object Relatives</i>; <i>Subject Control</i>; <i>Object Control</i>. Furthermore, participants performed four supplementary tasks, serving as measures of resistance to interference, lexical knowledge, working memory capacity and lexical access ability. The results from the reading task showed that whereas object relatives were harder to process than subject relatives, subject control was not harder to process than object control, arguing against recent movement accounts of control. Furtherm",
+      "score": {
+        "composite": 0.33166666666666667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_14c37add",
+      "doi": "10.3389/fpsyg.2022.965885",
+      "url": "https://doi.org/10.3389/fpsyg.2022.965885",
+      "openalex_id": null,
+      "pmid": "36312081",
+      "first_author": "Di Pisa",
+      "authors_display": "Di Pisa, G. et al.",
+      "year": 2022,
+      "title": "Effects of markedness in gender processing in Italian as a heritage language: A speed accuracy tradeoff.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.3389/fpsyg.2022.965885",
+      "tldr": null,
+      "abstract": "This study examined potential sources of grammatical gender variability in heritage speakers (HSs) of Italian with a focus on morphological markedness. Fifty-four adult Italian HSs living in Germany and 40 homeland Italian speakers completed an online Self-Paced Reading Task and an offline Grammaticality Judgment Task. Both tasks involved sentences with grammatical and ungrammatical noun-adjective agreement, manipulating markedness. In grammatical sentences, both groups showed a markedness effect: shorter reading times (RTs) and higher accuracy for sentences containing masculine nouns as compared to sentences with feminine nouns. In ungrammatical sentences, although both groups were sensitive to ungrammaticality, only HSs showed a markedness effect, that is, they had significantly longer RTs and higher accuracy when violations were realized on feminine adjectives. Proficiency in the HL was a significant predictor of accuracy and RTs at the individual level. Taken together, results indicate that HSs acquire and process gender in a qualitatively similar way to homeland native speakers. However, RT evidence seems to suggest that at least under particular experimental methods, markedness considerations are more prevalent for HSs resulting in a speed-accuracy tradeoff.",
+      "score": {
+        "composite": 0.3217324296789891,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_73de2cee",
+      "doi": "10.3389/fpsyg.2017.01470",
+      "url": "https://doi.org/10.3389/fpsyg.2017.01470",
+      "openalex_id": null,
+      "pmid": "28928686",
+      "first_author": "Santesteban",
+      "authors_display": "Santesteban, M. et al.",
+      "year": 2017,
+      "title": "On the Nature of Clitics and Their Sensitivity to Number Attraction Effects.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subject)"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5591828",
+      "tldr": null,
+      "abstract": "Pronominal dependencies have been shown to be more resilient to attraction effects than subject-verb agreement. We use this phenomenon to investigate whether antecedent-clitic dependencies in Spanish are computed like agreement or like pronominal dependencies. In Experiment 1, an acceptability judgment self-paced reading task was used. Accuracy data yielded reliable attraction effects in both grammatical and ungrammatical sentences, only in singular (but not plural) clitics. Reading times did not show reliable attraction effects. In Experiment 2, we measured electrophysiological responses to violations, which elicited a biphasic frontal negativity-P600 pattern. Number attraction modulated the frontal negativity but not the amplitude of the P600 component. This differs from ERP findings on subject-verb agreement, since when the baseline matching condition obtained a biphasic pattern, attraction effects only modulated the P600, not the preceding negativity. We argue that these findings support cue-retrieval accounts of dependency resolution and further suggest that the sensitivity to attraction effects shown by clitics resembles more the computation of pronominal dependencies than that of agreement.",
+      "score": {
+        "composite": 0.31760128913427216,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d918586b",
+      "doi": "10.3389/fpsyg.2018.01885",
+      "url": "https://doi.org/10.3389/fpsyg.2018.01885",
+      "openalex_id": null,
+      "pmid": "30405466",
+      "first_author": "Herbay",
+      "authors_display": "Herbay, A. et al.",
+      "year": 2018,
+      "title": "How Do French-English Bilinguals Pull Verb Particle Constructions Off? Factors Influencing Second Language Processing of Unfamiliar Structures at the Syntax-Semantics Interface.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6202929",
+      "tldr": null,
+      "abstract": "An important challenge in bilingualism research is to understand the mechanisms underlying sentence processing in a second language and whether they are comparable to those underlying native processing. Here, we focus on verb-particle constructions (VPCs) that are among the most difficult elements to acquire in L2 English. The verb and the particle form a unit, which often has a non-compositional meaning (e.g., <i>look up</i> or <i>chew out</i>), making the combined structure semantically opaque. However, bilinguals with higher levels of English proficiency can develop a good knowledge of the semantic properties of VPCs (Blais and Gonnerman, 2013). A second difficulty is that in a sentence context, the particle can be shifted after the direct object of the verb (e.g., <i>The professor looked it up).</i> The processing is more challenging when the object is long (e.g., <i>The professor looked the student's last name up</i>). This shifted structure favors syntactic processing at the expense of VPC semantic processing. We sought to determine whether or not bilinguals' reading time (RT) patterns would be similar to those observed for native monolinguals (Gonnerman and Hayes, 2005) when reading VPCs in sentential contexts. French-English bilinguals were tested for English language proficiency, working memory and explicit VPC semantic knowledge. During a self-paced reading task, participants read 78 sentences with VPCs that varied according to parameters that influence native speakers' reading dynamics: verb-particle transparency, particle adjacency and length of the object noun phrase (NP; 2, 3, or 5 words). RTs in a critical region that included verbs, NPs and particles were measured. Results revealed that RTs were modulated by participants' English proficiency, with higher proficiency associated with shorter RTs. Examining participants' explicit semantic knowledge of VPCs and working memory, only readers with more native-like knowledge of VPCs and a high working memory",
+      "score": {
+        "composite": 0.317568407628111,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_7c71f9d6",
+      "doi": "10.3389/fpsyg.2015.00312",
+      "url": "https://doi.org/10.3389/fpsyg.2015.00312",
+      "openalex_id": null,
+      "pmid": "25852623",
+      "first_author": "Nicenboim",
+      "authors_display": "Nicenboim, B. et al.",
+      "year": 2015,
+      "title": "Working memory differences in long-distance dependency resolution.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4369666",
+      "tldr": null,
+      "abstract": "There is a wealth of evidence showing that increasing the distance between an argument and its head leads to more processing effort, namely, locality effects; these are usually associated with constraints in working memory (DLT: Gibson, 2000; activation-based model: Lewis and Vasishth, 2005). In SOV languages, however, the opposite effect has been found: antilocality (see discussion in Levy et al., 2013). Antilocality effects can be explained by the expectation-based approach as proposed by Levy (2008) or by the activation-based model of sentence processing as proposed by Lewis and Vasishth (2005). We report an eye-tracking and a self-paced reading study with sentences in Spanish together with measures of individual differences to examine the distinction between expectation- and memory-based accounts, and within memory-based accounts the further distinction between DLT and the activation-based model. The experiments show that (i) antilocality effects as predicted by the expectation account appear only for high-capacity readers; (ii) increasing dependency length by interposing material that modifies the head of the dependency (the verb) produces stronger facilitation than increasing dependency length with material that does not modify the head; this is in agreement with the activation-based model but not with the expectation account; and (iii) a possible outcome of memory load on low-capacity readers is the increase in regressive saccades (locality effects as predicted by memory-based accounts) or, surprisingly, a speedup in the self-paced reading task; the latter consistent with good-enough parsing (Ferreira et al., 2002). In sum, the study suggests that individual differences in working memory capacity play a role in dependency resolution, and that some of the aspects of dependency resolution can be best explained with the activation-based model together with a prediction component.",
+      "score": {
+        "composite": 0.31573426690685336,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_499f25ea",
+      "doi": "10.1007/s11145-015-9568-x",
+      "url": "https://doi.org/10.1007/s11145-015-9568-x",
+      "openalex_id": null,
+      "pmid": "26321793",
+      "first_author": "Wassenburg",
+      "authors_display": "Wassenburg, S. et al.",
+      "year": 2015,
+      "title": "Children's comprehension monitoring of multiple situational dimensions of a narrative.",
+      "venue": "Reading and writing",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4549376",
+      "tldr": null,
+      "abstract": "Narratives typically consist of information on multiple aspects of a situation. In order to successfully create a coherent representation of the described situation, readers are required to monitor all these situational dimensions during reading. However, little is known about whether these dimensions differ in the ease with which they can be monitored. In the present study, we examined whether children in Grades 4 and 6 monitor four different dimensions (i.e., emotion, causation, time, and space) during reading, using a self-paced reading task containing inconsistencies. Furthermore, to explore what causes failure in inconsistency detection, we differentiated between monitoring processes related to availability and validation of information by manipulating the distance between two pieces of conflicting information. The results indicated that the monitoring processes varied as a function of dimension. Children were able to validate emotional and causal information when it was still active in working memory, but this was not the case for temporal and spatial information. When context and target information were more distant from each other, only emotionally charged information remained available for further monitoring processes. These findings show that the influence of different situational dimensions should be taken into account when studying children's reading comprehension.",
+      "score": {
+        "composite": 0.30169954817282785,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_6d0d288e",
+      "doi": "10.3389/fpsyg.2022.1009265",
+      "url": "https://doi.org/10.3389/fpsyg.2022.1009265",
+      "openalex_id": null,
+      "pmid": "36687888",
+      "first_author": "Shoghi",
+      "authors_display": "Shoghi, S. et al.",
+      "year": 2022,
+      "title": "Does a walk-through video help the parser down the garden-path? A visually enhanced self-paced reading study in Dutch.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2022.1009265/pdf",
+      "tldr": null,
+      "abstract": "The human language processing mechanism assigns a structure to the incoming materials as they unfold. There is evidence that the parser prefers some attachment types over others; however, theories of sentence processing are still in dispute over the stage at which each source of information contributes to the parsing system. The present study aims to identify the nature of initial parsing decisions during sentence processing through manipulating attachment type and verbs' argument structure. To this end, we designed a self-paced reading task using globally ambiguous constructions in Dutch. The structures included double locative prepositional phrases (PPs) where the first PP could attach both to the verb (high attachment) and the noun preceding it (low attachment). To disambiguate the structures, we presented a visual context in the form of short animation clips prior to each reading task. Furthermore, we manipulated the argument structure of the sentences using 2- and 3-argument verbs. The results showed that parsing decisions were influenced by contextual cues depending on the argument structure of the verb. That is, the visual context overcame the preference for high attachment only in the case of 2-argument verbs, while this preference persisted in structures including 3-argument verbs as represented by longer reading times for the low attachment interpretations. These findings can be taken as evidence that our language processing system actively integrates information from linguistic and non-linguistic sources from the initial stages of analysis to build up meaning. We discuss our findings in light of serial and parallel models of sentence processing.",
+      "score": {
+        "composite": 0.3016666666666667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_460d92ee",
+      "doi": "10.3389/fpsyg.2016.00648",
+      "url": "https://doi.org/10.3389/fpsyg.2016.00648",
+      "openalex_id": null,
+      "pmid": "27242577",
+      "first_author": "Kaltsa",
+      "authors_display": "Kaltsa, M. et al.",
+      "year": 2016,
+      "title": "Processing Coordinate Subject-Verb Agreement in L1 and L2 Greek.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subject,subjects)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2016.00648/pdf",
+      "tldr": null,
+      "abstract": "The present study examines the processing of subject-verb (SV) number agreement with coordinate subjects in pre-verbal and post-verbal positions in Greek. Greek is a language with morphological number marked on nominal and verbal elements. Coordinate SV agreement, however, is special in Greek as it is sensitive to the coordinate subject's position: when pre-verbal, the verb is marked for plural while when post-verbal the verb can be in the singular. We conducted two experiments, an acceptability judgment task with adult monolinguals as a pre-study (Experiment 1) and a self-paced reading task as the main study (Experiment 2) in order to obtain acceptance as well as processing data. Forty adult monolingual speakers of Greek participated in Experiment 1 and a hundred and forty one in Experiment 2. Seventy one children participated in Experiment 2: 30 Albanian-Greek sequential bilingual children and 41 Greek monolingual children aged 10-12 years. The adult data in Experiment 1 establish the difference in acceptability between singular VPs in SV and VS constructions reaffirming our hypothesis. Meanwhile, the adult data in Experiment 2 show that plural verbs accelerate processing regardless of subject position. The child online data show that sequential bilingual children have longer reading times (RTs) compared to the age-matched monolingual control group. However, both child groups follow a similar processing pattern in both pre-verbal and post-verbal constructions showing longer RTs immediately after a singular verb when the subject was pre-verbal indicating a grammaticality effect. In the post-verbal coordinate subject sentences, both child groups showed longer RTs on the first subject following the plural verb due to the temporary number mismatch between the verb and the first subject. This effect was resolved in monolingual children but was still present at the end of the sentence for bilingual children indicating difficulties to reanalyze and integrate information.",
+      "score": {
+        "composite": 0.2916995481728279,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_b94ef3fb",
+      "doi": "10.1007/s10339-023-01150-4",
+      "url": "https://doi.org/10.1007/s10339-023-01150-4",
+      "openalex_id": null,
+      "pmid": "37453018",
+      "first_author": "Rolke",
+      "authors_display": "Rolke, B. et al.",
+      "year": 2023,
+      "title": "Processing references in context: when the polar bear does not meet a polar bear.",
+      "venue": "Cognitive processing",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s10339-023-01150-4.pdf",
+      "tldr": null,
+      "abstract": "Discourse understanding is hampered when missing or conflicting context information is given. In four experiments, we investigated what happens (a) when the definite determiner \"the,\" which presupposes existence and uniqueness, does not find a unique referent in the context or (b) when the appropriate use of the indefinite determiner is violated by the presence of a unique referent (Experiment 1 and Experiment 2). To focus on the time-course of processing the uniqueness presupposition of the definite determiner, we embedded the determiner in different sentence structures and varied the context (Experiment 3 and Experiment 4). Reading time served as an index of processing difficulty in a word-by-word self-paced reading task and acceptability judgments provided hints for a possible repair of a presupposition violation. Our results showed that conflicting and missing context information lowered acceptability ratings and was associated with prolonged reading times. The pattern of results differed depending on the nature of the presupposition (Experiments 1 and 2) and whether supplementing missing context information was possible (Experiment 3 and Experiment 4). Our findings suggest that different cognitive processes come into play when interpreting presuppositions in order to get a meaningful interpretation of a discourse.",
+      "score": {
+        "composite": 0.2916666666666667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Animals",
+        "Ursidae",
+        "Humans",
+        "Language",
+        "Semantics"
+      ]
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_8dd68878",
+      "doi": "10.3758/s13421-025-01712-1",
+      "url": "https://doi.org/10.3758/s13421-025-01712-1",
+      "openalex_id": null,
+      "pmid": "40329134",
+      "first_author": "Wong",
+      "authors_display": "Wong, R., & Veldre, A.",
+      "year": 2025,
+      "title": "Anticipatory prediction in older readers.",
+      "venue": "Memory & cognition",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12589329",
+      "tldr": null,
+      "abstract": "It is well-established that skilled, young-adult readers rely on predictive processing during online language comprehension; however, fewer studies have investigated whether this extends to healthy, older adults (60 + years). The aim of the present research was to assess whether older readers make use of lexical prediction by investigating whether they demonstrate processing costs for incorrect predictions in a controlled experimental design. The eye movements of a sample of older adults (60-86 years) were recorded as they read strongly and weakly constraining sentences containing a predictable word or an unpredictable alternative that was either semantically related or unrelated. To determine whether predictive processing depends on the stimuli presentation format, a second experiment presented the same materials in a self-paced reading task in which each word of a sentence appears one at a time at the readers' own pace. Older adults showed processing benefits for expected input on eye-movement measures of reading. They also showed processing costs for unexpected input across both methodologies, but only when semantically unrelated to the best completion. Taken together, the results suggest that the use of predictive processes remains relatively preserved with age. The implications of these findings for understanding whether prediction is a fundamental component of online language comprehension are discussed.",
+      "score": {
+        "composite": 0.2716666666666666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Eye Movements",
+        "Comprehension",
+        "Psycholinguistics",
+        "Aging",
+        "Reading",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Eye Movement Measurements",
+        "Anticipation, Psychological"
+      ]
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_29125685",
+      "doi": "10.1371/journal.pone.0313965",
+      "url": "https://doi.org/10.1371/journal.pone.0313965",
+      "openalex_id": null,
+      "pmid": "39937790",
+      "first_author": "Li",
+      "authors_display": "Li, Y. et al.",
+      "year": 2025,
+      "title": "Testing the Interface Hypothesis: Evidence from processing directions of possession transfer in double object constructions by L1-Mandarin Chinese L2-English learners.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11819539",
+      "tldr": null,
+      "abstract": "The Interface Hypothesis postulates that internal interfaces linking domains within the language system are ultimately acquired at a near-native proficiency level in second language (L2) acquisition. While extensive research in the field of L2 acquisition has demonstrated that L2 learners often fail to completely acquire internal interfaces, the present study adds to this line of research by delving into an understudied phenomenon at the syntax-semantics interface, namely, directions of possession transfer in English Double Object Constructions (DOCs). Specifically, this study focuses on the processing of English DOCs containing verbs with varying or opposing directions of possession transfer. Employing a self-paced reading task and a comprehension task, we examined the performance of 30 native English speakers and 63 first language (L1) Mandarin Chinese learners of English. The findings suggest that L2 learners struggle to fully acquire the intricacies of English DOCs. Additionally, this study reveals that learners encounter challenges in processing English DOCs with left-directional verbs such as buy, compared to those with right-directional verbs such as post and non-directional verbs such as build. This points to an indeterminacy in the processing of the syntax-semantics interface constructions by L2 learners at developmental stages. To account for these findings, we propose an interface indeterminacy account, contending that the indeterminacy in the processing of the syntax-semantics interface constructions by L2 learners stems from the inherent indeterminacy in these constructions. Furthermore, this indeterminacy is likely to be vulnerable to a number of variables, including L1 transfer, learners' L2 proficiency, and processing resources.",
+      "score": {
+        "composite": 0.2716666666666666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Language",
+        "Comprehension",
+        "Learning",
+        "Multilingualism",
+        "Reading",
+        "Semantics",
+        "Adult",
+        "China",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_219acd5b",
+      "doi": "10.1007/s10936-024-10041-4",
+      "url": "https://doi.org/10.1007/s10936-024-10041-4",
+      "openalex_id": null,
+      "pmid": "38381228",
+      "first_author": "Darzhinova",
+      "authors_display": "Darzhinova, L., & Luk, Z.",
+      "year": 2024,
+      "title": "Processing and Comprehension of Locally Ambiguous Participial Relative Clause Sentences in Russian.",
+      "venue": "Journal of psycholinguistic research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10881615",
+      "tldr": null,
+      "abstract": "The study tested how the Recency Preference and Predicate Proximity model (Gibson et al. in Cognition 59(1):23-59, 1996, https://doi.org/10.1016/0010-0277(88)90004-2 ) plays out by examining the attachment preferences of native Russian speakers when processing locally ambiguous participial relative clause sentences with three potential NP attachment sites in Russian. Using a self-paced reading task, reading times and noun phrase selection responses were collected. Results showed significantly shorter reading times at the disambiguating region and higher accuracy rate of selection in the high-attaching condition than in the middle- and low-attaching conditions. No significant differences were found between the middle- and low-attaching conditions. We argue that Predicate Proximity is a much stronger factor than Recency Preference in Russian.",
+      "score": {
+        "composite": 0.26166666666666666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cognition",
+        "Comprehension",
+        "Russia"
+      ]
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3064bd78",
+      "doi": "10.1007/s10339-023-01171-z",
+      "url": "https://doi.org/10.1007/s10339-023-01171-z",
+      "openalex_id": null,
+      "pmid": "38285278",
+      "first_author": "Mannaioli",
+      "authors_display": "Mannaioli, G. et al.",
+      "year": 2024,
+      "title": "Vagueness as an implicit-encoding persuasive strategy: an experimental approach.",
+      "venue": "Cognitive processing",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s10339-023-01171-z.pdf",
+      "tldr": null,
+      "abstract": "The paper provides novel theoretical and experimental perspectives on the functioning of linguistic vagueness as an implicit persuasive strategy. It presents an operative definition of pragmatically marked vagueness, referring to vague expressions whose interpretation is not retrievable by recipients. The phenomenon is illustrated via numerous examples of its use in predominantly persuasive texts (i.e., advertising and political propaganda) in different languages. The psycholinguistic functioning of vague expressions is then illustrated by the results of a self-paced reading task experiment. Data showing shorter reading times associated with markedly vague expressions as compared to expressions that are either (a) lexically more precise or (b) made precise by the context suggest that the former are interpreted in a shallow way, without searching for and/or retrieving exact referents. These results support the validity of a differentiation between context-supported vs. non-supported vague expressions. Furthermore, validation of using marked vagueness as a persuasive implicit strategy which reduces epistemic vigilance is provided.",
+      "score": {
+        "composite": 0.26166666666666666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Language",
+        "Persuasive Communication",
+        "Psycholinguistics",
+        "Reaction Time",
+        "Reading",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 25,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_c6bd20a3",
+      "doi": "10.1093/jos/ffn008",
+      "url": "https://doi.org/10.1093/jos/ffn008",
+      "openalex_id": null,
+      "pmid": "21562618",
+      "first_author": "Szabolcsi",
+      "authors_display": "Szabolcsi, A. et al.",
+      "year": 2008,
+      "title": "The Effect of Negative Polarity Items on Inference Verification.",
+      "venue": "Journal of semantics",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The scalar approach to negative polarity item (NPI) licensing assumes that NPIs are allowable in contexts in which the introduction of the NPI leads to proposition strengthening (e.g. Kadmon & Landman 1993; Krifka 1995; Lahiri 1997; Chierchia 2006). A straightforward processing prediction from such a theory is that NPIs facilitate inference verification from sets to subsets. Three experiments are reported that test this proposal. In each experiment, participants evaluated whether inferences from sets to subsets were valid. Crucially, we manipulated whether the premises contained an NPI. In Experiment 1, participants completed a metalinguistic reasoning task and Experiments 2 and 3 tested reading times using a self-paced reading task. Contrary to expectations, no facilitation was observed when the NPI was present in the premise compared to when it was absent. In fact, the NPI significantly slowed down reading times in the inference region. Our results therefore favour those scalar theories that predict that the NPI is costly to process (Chierchia 2006), or other, non-scalar theories (Ladusaw 1992; Giannakidou 1998; Szabolcsi 2004; Postal 2005) that likewise predict NPI processing cost but, unlike Chierchia (2006), expect the magnitude of the processing cost to vary with the actual pragmatics of the NPI.",
+      "score": {
+        "composite": 0.24173242967898909,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 26,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3545d277",
+      "doi": "10.3389/fpsyg.2024.1321614",
+      "url": "https://doi.org/10.3389/fpsyg.2024.1321614",
+      "openalex_id": null,
+      "pmid": "38550649",
+      "first_author": "Di Pisa",
+      "authors_display": "Di Pisa, G. et al.",
+      "year": 2024,
+      "title": "Being a heritage speaker matters: the role of markedness in subject-verb person agreement in Italian.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subject,subjects)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10972983",
+      "tldr": null,
+      "abstract": "This study examines online processing and offline judgments of subject-verb person agreement with a focus on how this is impacted by markedness in heritage speakers (HSs) of Italian. To this end, 54 adult HSs living in Germany and 40 homeland Italian speakers completed a self-paced reading task (SPRT) and a grammaticality judgment task (GJT). Markedness was manipulated by probing agreement with both first-person (marked) and third-person (unmarked) subjects. Agreement was manipulated by crossing first-person marked subjects with third-person unmarked verbs and vice versa. Crucially, person violations with 1st person subjects (e.g., <i>io</i> *<i>suona la chitarra</i> \"I plays<sub>-3rd-person</sub> the guitar\") yielded significantly shorter RTs in the SPRT and higher accuracy in the GJT than the opposite error type (e.g., <i>il giornalista *esco spesso</i> \"the journalist go<sub>-1st-person</sub> out often\"). This effect is consistent with the claim that when the first element in the dependency is marked (first person), the parser generates stronger predictions regarding upcoming agreeing elements. These results nicely align with work from the same populations investigating the impact of morphological markedness on grammatical gender agreement, suggesting that markedness impacts agreement similarly in two distinct grammatical domains and that sensitivity to markedness is more prevalent for HSs.",
+      "score": {
+        "composite": 0.24166666666666667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 27,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a419e08f",
+      "doi": "10.3390/brainsci10040202",
+      "url": "https://doi.org/10.3390/brainsci10040202",
+      "openalex_id": null,
+      "pmid": "32244525",
+      "first_author": "Cheon",
+      "authors_display": "Cheon, K. et al.",
+      "year": 2020,
+      "title": "Syntactic Comprehension of Relative Clauses and Center Embedding Using Pseudowords.",
+      "venue": "Brain sciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7226570",
+      "tldr": null,
+      "abstract": "Relative clause (RC) formation and center embedding (CE) are two primary syntactic operations fundamental for creating and understanding complex sentences. Ample evidence from previous cross-linguistic studies has revealed several similarities and differences between RC and CE. However, it is not easy to investigate the effect of pure syntactic constraints for RC and CE without the interference of semantic and pragmatic interactions. Here, we show how readers process CE and RC using a self-paced reading task in Korean. More interestingly, we adopted a novel self-paced pseudoword reading task to exploit syntactic operations of the RC and CE, eliminating the semantic and pragmatic interference in sentence comprehension. Our results showed that the main effects of RC and CE conform to previous studies. Furthermore, we found a facilitation effect of sentence comprehension when we combined an RC and CE in a complex sentence. Our study provides a valuable insight into how the purely syntactic processing of RC and CE assists comprehension of complex sentences.",
+      "score": {
+        "composite": 0.24166666666666664,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_86bf5db4",
+      "doi": "10.5334/joc.283",
+      "url": "https://doi.org/10.5334/joc.283",
+      "openalex_id": null,
+      "pmid": "37397350",
+      "first_author": "McConnell",
+      "authors_display": "McConnell, K.",
+      "year": 2023,
+      "title": "Individual Differences in Holistic and Compositional Language Processing.",
+      "venue": "Journal of cognition",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10312246",
+      "tldr": null,
+      "abstract": "Individual differences in cognitive abilities are ubiquitous across the spectrum of proficient language users. Although speakers differ with regard to their memory capacity, ability for inhibiting distraction, and ability to shift between different processing levels, comprehension is generally successful. However, this does not mean it is identical across individuals; listeners and readers may rely on different processing strategies to exploit distributional information in the service of efficient understanding. In the following psycholinguistic reading experiment, we investigate potential sources of individual differences in the processing of co-occurring words. Participants read modifier-noun bigrams like <i>absolute silence</i> in a self-paced reading task. Backward transition probability (BTP) between the two lexemes was used to quantify the prominence of the bigram as a whole in comparison to the frequency of its parts. Of five individual difference measures (processing speed, verbal working memory, cognitive inhibition, global-local scope shifting, and personality), two proved to be significantly associated with the effect of BTP on reading times. Participants who could inhibit a distracting global environment in order to more efficiently retrieve a single part and those that preferred the local level in the shifting task showed greater effects of the co-occurrence probability of the parts. We conclude that some participants are more likely to retrieve bigrams via their parts and their co-occurrence statistics whereas others more readily retrieve the two words together as a single chunked unit.",
+      "score": {
+        "composite": 0.20169954817282787,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2c63564d",
+      "doi": "10.5334/joc.250",
+      "url": "https://doi.org/10.5334/joc.250",
+      "openalex_id": null,
+      "pmid": "36698787",
+      "first_author": "Jevtović",
+      "authors_display": "Jevtović, M. et al.",
+      "year": 2023,
+      "title": "<i>Déjà-lu:</i> When Orthographic Representations are Generated in the Absence of Orthography.",
+      "venue": "Journal of cognition",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "http://www.journalofcognition.org/articles/10.5334/joc.250/galley/727/download/",
+      "tldr": null,
+      "abstract": "When acquiring novel spoken words, English-speaking children generate preliminary orthographic representations even before seeing the words' spellings (Wegener et al., 2018). Interestingly, these <i>orthographic skeletons</i> are generated even when novel words' spellings are uncertain, at least in transparent languages like Spanish (Jevtović et al., 2022). Here we investigate whether this process depends on the orthographic rules of the language, and specifically, whether orthographic skeletons for words with uncertain spellings are generated even when the probability of generating an incorrect representation is high. Forty-six French adults first acquired novel words via aural instruction and were then presented with words' spellings in a self-paced reading task. Importantly, novel words were presented in their unique (consistent words) or one of their two possible spellings (preferred and unpreferred inconsistent words). A significant reading advantage observed for aurally acquired words indicates that participants indeed generated orthographic representations before encountering novel words' spellings. However, while no differences in reading times were found for aurally acquired words with unique and those presented in their preferred spellings, unpreferred spellings yielded significantly longer reading times. This shows that orthographic skeletons for words with multiple spellings were generated even in a language in which the risk of generating an incorrect representation is high. This finding raises a possibility that generating orthographic skeletons during spoken word learning may be beneficial. In line with this conclusion is the finding showing that - in interaction with good phonological short-term memory capacity - generating orthographic skeletons is linked to better word recall.",
+      "score": {
+        "composite": 0.20169954817282787,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_80707139",
+      "doi": "10.1162/opmi_a_00193",
+      "url": "https://doi.org/10.1162/opmi_a_00193",
+      "openalex_id": null,
+      "pmid": "40177300",
+      "first_author": "Pozniak",
+      "authors_display": "Pozniak, C., & Hemforth, B.",
+      "year": 2025,
+      "title": "Interference of Implicit Causality in Relative Clause Processing.",
+      "venue": "Open mind : discoveries in cognitive science",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subject,subjects)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11964117",
+      "tldr": null,
+      "abstract": "Differences in the processing of subject and object relative clauses have been explained by a combination of syntactic, semantic, and pragmatic factors, such as a general subject advantage based on syntactic constraints, effects of animacy, and the discourse status of relative clause internal subjects. In this paper, we will focus on a factor related to verb meaning, the implicit causality of the verb, which biases the principal causer of the event described by the verb. Depending on whether the bias is on the subject or the object, implicit causality can conflict with the foregrounded antecedent of the relative clause, leading to increased difficulty in comprehension. We tested this hypothesis by manipulating implicit causality in subject and object relative clauses. We used both offline (acceptability judgment task) and online (self-paced reading task) methods to observe at which stage of processing implicit causality influences comprehension. Our findings from acceptability judgments showed that object relative clauses with subject-biased verbs were the least acceptable and the least understood. Conversely, object relative clauses with object-biased verbs were as acceptable and easy to understand as subject relative clauses in French. However, results from self-paced reading indicated that subject-biased verbs were more difficult to process regardless of the construction, suggesting that the integration of implicit causality occurs at a later level of processing, such as in acceptability judgments and comprehension questions. Further acceptability judgment tasks suggested that implicit causality influences relative clause acceptability beyond word order and thematic roles. We propose linking the role of implicit causality with the function of a restrictive relative clause and introduce the Aboutness Hypothesis to explain relative clause processing: a relative clause is more acceptable and easier to understand when everything contributes to making the head its opt",
+      "score": {
+        "composite": 0.19166666666666665,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 31,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_650f89ce",
+      "doi": "10.1515/iral.2011.012",
+      "url": "https://doi.org/10.1515/iral.2011.012",
+      "openalex_id": null,
+      "pmid": "22888175",
+      "first_author": "Jackson",
+      "authors_display": "Jackson, C., & van Hell, J.",
+      "year": 2011,
+      "title": "The effects of L2 proficiency level on the processing of wh-questions among Dutch second language speakers of English.",
+      "venue": "IRAL, International review of applied linguistics in language teaching : Revue internationale de linguistique appliquee enseignement des langues. Internationale Zeitschrift fur angewandte Linguistik in der Spracherziehung",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subject)"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Using a self-paced reading task, the present study explores how Dutch-English L2 speakers parse English wh-subject-extractions and wh-object-extractions. Results suggest that English native speakers and highly-proficient Dutch-English L2 speakers do not always exhibit measurable signs of on-line reanalysis when reading subject- versus object-extractions in English. However, less-proficient Dutch-English L2 speakers exhibit greater processing costs on subject-extractions relative to object-extractions, similar to previously reported findings (e.g., Dussias and Piñar, forthcoming; Juffs 2005; Juffs and Harrington 1995). These findings are discussed in light of relevant research surrounding on-line processing among L2 speakers and their ability to adopt native-like processing patterns in the L2.",
+      "score": {
+        "composite": 0.17173242967898908,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.049999999999999996,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

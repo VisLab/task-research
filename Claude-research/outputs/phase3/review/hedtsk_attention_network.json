@@ -1,0 +1,1139 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_attention_network",
+    "name": "Attention Network Task",
+    "aliases": [
+      "Attention Network Test",
+      "ANT",
+      "Clinical Screening ANT"
+    ],
+    "category_id": "selective_and_sustained_attention",
+    "short_definition": "Identify the direction of a central arrow flanked by congruent or incongruent arrows, preceded by various cue types; RT differences across cue and flanker conditions index three independent attention networks (alerting, orienting, executive).",
+    "description": "The Attention Network Test (ANT) combines elements of the Posner cueing paradigm and the Eriksen flanker task to provide separate measures of three attention networks in a single task. Participants respond to the direction of a central arrow flanked by congruent or incongruent flankers, with the target preceded by no cue, a center cue, a double cue, or a spatial cue. The ANT yields three independent efficiency scores: alerting (double cue benefit over no cue), orienting (spatial cue benefit over center cue), and executive control (incongruent flanker cost). The task operationalizes Posner's attention network model.",
+    "inclusion_test": {
+      "procedure": "Flanker task with preceding spatial and temporal cues; participants identify the direction of a central arrow flanked by congruent or incongruent arrows.",
+      "manipulation": "Cue type (no cue, center cue, double cue, spatial cue) crossed with flanker congruency (congruent, incongruent).",
+      "measurement": "Three network scores derived from RT differences: alerting (double cue − no cue), orienting (center cue − spatial cue), executive (incongruent − congruent)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:35:05",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Fan 2002 — Testing the Efficiency and Independence of Attentional Networks (Journal of Cognitive Neuroscience, historical, 3k×)",
+      "doi": "10.1162/089892902317361886",
+      "pub_id": "pub_162f534b",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7440164349589486,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4760657398357948,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1190164349589487,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2002,
+      "venue": "Journal of Cognitive Neuroscience",
+      "citation_count": 3723,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Carrer 2021 — Defining the molecular mechanisms of the mitochondrial permeability transitio… (Nature communications, recent_primary, 64×)",
+      "doi": "10.1038/s41467-021-25161-x",
+      "pub_id": "pub_8e03be16",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5729217026546337,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24168681061853478,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.060421702654633695,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature communications",
+      "citation_count": 64,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Mahajan 2021 — NMR identification of a conserved Drp1 cardiolipin-binding motif essential fo… (Proceedings of the National Acad…, recent_primary, 61×)",
+      "doi": "10.1073/pnas.2023079118",
+      "pub_id": "pub_5d12e1db",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5722377460465338,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23895098418613514,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.059737746046533785,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 61,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Grodd 2020 — The anterior and medial thalamic nuclei and the human limbic system: tracing … (Scientific reports, recent_primary, 80×)",
+      "doi": "10.1038/s41598-020-67770-4",
+      "pub_id": "pub_79e294ce",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5661069638457772,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2544278553831089,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06360696384577723,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 80,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "An 2019 — Scalable synthesis of ant-nest-like bulk porous silicon for high-performance … (Nature communications, recent_primary, 154×)",
+      "doi": "10.1038/s41467-019-09510-5",
+      "pub_id": "pub_d5beb38b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5655004939822041,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2920019759288165,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07300049398220412,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 154,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Fong 2019 — Dynamic functional connectivity during task performance and rest predicts ind… (NeuroImage, recent_primary, 134×)",
+      "doi": "10.1016/j.neuroimage.2018.11.057",
+      "pub_id": "pub_1fdf029b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5635008523261645,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2840034093046579,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07100085232616447,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "NeuroImage",
+      "citation_count": 134,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Yoo 2018 — Connectome-based predictive modeling of attention: Comparing different functi… (NeuroImage, recent_primary, 159×)",
+      "doi": "10.1016/j.neuroimage.2017.11.010",
+      "pub_id": "pub_dd52176f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5559600369726376,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2938401478905503,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07346003697263757,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "NeuroImage",
+      "citation_count": 159,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Fournier 2019 — Predicting future invaders and future invasions. (Proceedings of the National Acad…, recent_primary, 67×)",
+      "doi": "10.1073/pnas.1803456116",
+      "pub_id": "pub_b530c98a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5535747933594242,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2442991734376964,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0610747933594241,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 67,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Luo 2019 — Microbial production of methyl anthranilate, a grape flavor compound. (Proceedings of the National Acad…, recent_primary, 65×)",
+      "doi": "10.1073/pnas.1903875116",
+      "pub_id": "pub_fb4b0eff",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.553142689976061,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24257075990424393,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06064268997606098,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 65,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Schultheiss 2022 — The abundance, biomass, and distribution of ants on Earth. (Proceedings of the National Acad…, recent_primary, 99×)",
+      "doi": "10.1073/pnas.2201550119",
+      "pub_id": "pub_91c50ae8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5491570218959856,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2666280875839421,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06665702189598552,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 99,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Robinson 2018 — A comprehensive portrait of the venom of the giant red bull ant, <i>Myrmecia … (Science advances, recent_primary, 72×)",
+      "doi": "10.1126/sciadv.aau4640",
+      "pub_id": "pub_a714fada",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5446017763431698,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24840710537267913,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06210177634316978,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Science advances",
+      "citation_count": 72,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Fan 2003 — Mapping the genetic variation of executive attention onto brain activity. (Proceedings of the National Acad…, foundational, 250×)",
+      "doi": "10.1073/pnas.0732088100",
+      "pub_id": "pub_251694d9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5049775518979913,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31991020759196515,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07997755189799129,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2003,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 250,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Lamontagne 2021 — Post-acute sequelae of COVID-19: Evidence of mood & cognitive impairment. (Brain, behavior, & immunity - he…, recent_primary, 69×)",
+      "doi": "10.1016/j.bbih.2021.100347",
+      "pub_id": "pub_102d555d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.49649437022673515,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24597748090694052,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06149437022673513,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Brain, behavior, & immunity - health",
+      "citation_count": 69,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 35,
+      "label": "Julvez 2021 — Early life multiple exposures and child cognitive function: A multi-centric b… (Environmental pollution (Barking…, recent_primary, 51×)",
+      "doi": "10.1016/j.envpol.2021.117404",
+      "pub_id": "pub_d6aa86a6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4921918362251246,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Environmental pollution (Barking, Essex : 1987)",
+      "citation_count": 51,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 41,
+      "label": "Jebb 2021 — A Review of Key Likert Scale Development Advances: 1995-2019. (Frontiers in psychology, key_review, 188×)",
+      "doi": "10.3389/fpsyg.2021.637547",
+      "pub_id": "pub_0bbe28d2",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.47837108216307533,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30348432865230124,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07587108216307531,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Frontiers in psychology",
+      "citation_count": 188,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 42,
+      "label": "Fan 2009 — Testing the behavioral interaction and integration of attentional networks. (Brain and cognition, foundational, 278×)",
+      "doi": "10.1016/j.bandc.2009.02.002",
+      "pub_id": "pub_d5da3ed0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4765083464632612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32603338585304475,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08150834646326119,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Brain and cognition",
+      "citation_count": 278,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 43,
+      "label": "Bround 2020 — A 20/20 view of ANT function in mitochondrial biology and necrotic cell death. (Journal of molecular and cellula…, key_review, 76×)",
+      "doi": "10.1016/j.yjmcc.2020.05.012",
+      "pub_id": "pub_40f66203",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.47537392678719786,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25149570714879144,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06287392678719786,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Journal of molecular and cellular cardiology",
+      "citation_count": 76,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 48,
+      "label": "Tang 2007 — Short-term meditation training improves attention and self-regulation. (Proceedings of the National Acad…, foundational, 614×)",
+      "doi": "10.1073/pnas.0707678104",
+      "pub_id": "pub_63884143",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4654490548287055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3717962193148221,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09294905482870552,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2007,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 614,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 49,
+      "label": "Rostovtseva 2008 — Tubulin binding blocks mitochondrial voltage-dependent anion channel and regu… (Proceedings of the National Acad…, foundational, 304×)",
+      "doi": "10.1073/pnas.0806303105",
+      "pub_id": "pub_5da8d907",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.465298014393766,
+        "breakdown": {
+          "raw": {
+            "citations": 0.331192057575064,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.082798014393766,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 304,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 50,
+      "label": "Bouwens van der Vlis 2019 — Deep brain stimulation of the anterior nucleus of the thalamus for drug-resis… (Neurosurgical review, key_review, 70×)",
+      "doi": "10.1007/s10143-017-0941-x",
+      "pub_id": "pub_e2226454",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4641996841428467,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24679873657138676,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06169968414284669,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Neurosurgical review",
+      "citation_count": 70,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 53,
+      "label": "Fort-Vanmeerhaeghe 2020 — Inter-limb asymmetries are associated with decrements in physical performance… (PloS one, recent_primary, 61×)",
+      "doi": "10.1371/journal.pone.0229440",
+      "pub_id": "pub_5b7570d9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4622377460465338,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23895098418613514,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.059737746046533785,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "PloS one",
+      "citation_count": 61,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 54,
+      "label": "Surleac 2020 — Whole genome sequencing snapshot of multi-drug resistant Klebsiella pneumonia… (PloS one, recent_primary, 60×)",
+      "doi": "10.1371/journal.pone.0228079",
+      "pub_id": "pub_5cebeeaf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4620023849519344,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23800953980773776,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05950238495193444,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "PloS one",
+      "citation_count": 60,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 57,
+      "label": "Mizukami 2000 — Plant organ size control: AINTEGUMENTA regulates growth and cell numbers duri… (Proceedings of the National Acad…, foundational, 572×)",
+      "doi": "10.1073/pnas.97.2.942",
+      "pub_id": "pub_863c3daa",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.454425186514497,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3677007460579879,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09192518651449698,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2000,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 572,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 58,
+      "label": "Rueda 2005 — Training, maturation, and genetic influences on the development of executive … (Proceedings of the National Acad…, foundational, 446×)",
+      "doi": "10.1073/pnas.0506897102",
+      "pub_id": "pub_74feb789",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4508308033002503,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35332321320100124,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08833080330025031,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2005,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 446,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 61,
+      "label": "Churkin 2018 — Design of RNAs: comparing programs for inverse RNA folding. (Briefings in bioinformatics, key_review, 53×)",
+      "doi": "10.1093/bib/bbw120",
+      "pub_id": "pub_baef28b1",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.45023810439049416,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23095241756197657,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05773810439049414,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Briefings in bioinformatics",
+      "citation_count": 53,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 63,
+      "label": "Ginj 2006 — Radiolabeled somatostatin receptor antagonists are preferable to agonists for… (Proceedings of the National Acad…, foundational, 340×)",
+      "doi": "10.1073/pnas.0607761103",
+      "pub_id": "pub_3a2ddc8e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4469129320488281,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3376517281953122,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08441293204882805,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2006,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 340,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 65,
+      "label": "Powell 1995 — Polymorphic simple sequence repeat regions in chloroplast genomes: applicatio… (Proceedings of the National Acad…, foundational, 280×)",
+      "doi": "10.1073/pnas.92.17.7759",
+      "pub_id": "pub_b27f24d0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4441117353913755,
+        "breakdown": {
+          "raw": {
+            "citations": 0.326446941565502,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0816117353913755,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 1995,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 280,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 69,
+      "label": "Bernardi 2023 — Identity, structure, and function of the mitochondrial permeability transitio… (Cell death and differentiation, key_review, 270×)",
+      "doi": "10.1038/s41418-023-01187-0",
+      "pub_id": "pub_ded69c0b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.44358724364703783,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3243489745881512,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0810872436470378,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2023,
+      "venue": "Cell death and differentiation",
+      "citation_count": 270,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 71,
+      "label": "Norris 2018 — Brief Mindfulness Meditation Improves Attention in Novices: Evidence From ERP… (Frontiers in human neuroscience, recent_primary, 56×)",
+      "doi": "10.3389/fnhum.2018.00315",
+      "pub_id": "pub_6b3b6203",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.44352069435058583,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Frontiers in human neuroscience",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 73,
+      "label": "Currie 1999 — The agricultural pathology of ant fungus gardens. (Proceedings of the National Acad…, foundational, 215×)",
+      "doi": "10.1073/pnas.96.14.7998",
+      "pub_id": "pub_0f5abfe8",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4403038674028166,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3112154696112662,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07780386740281656,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 1999,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 215,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

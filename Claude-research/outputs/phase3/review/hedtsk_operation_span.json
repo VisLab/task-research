@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_operation_span",
+    "name": "Operation Span Task",
+    "aliases": [
+      "OSPAN",
+      "Complex Span"
+    ],
+    "category_id": "short_term_and_working_memory",
+    "short_definition": "Alternating arithmetic verification and word/letter memory items; complex-span score indexes working memory capacity under processing load.",
+    "description": "The Operation Span Task is a complex span measure of working memory capacity. Participants alternate between a processing task (verifying simple math equations, e.g., \"Is (2 × 3) + 1 = 8?\") and a memory task (remembering letters or words presented after each equation). After a set of 3–7 equation-letter pairs, participants recall the letters in order. The OSPAN score reflects the ability to maintain memory representations while engaging in concurrent processing—a hallmark of working memory capacity (WMC). OSPAN scores are strong predictors of fluid intelligence, reading comprehension, and general executive function.",
+    "inclusion_test": {
+      "procedure": "Participants alternate between processing a distractor task (verifying math equations) and remembering items (letters or words). At the end of each set, they recall items in order.",
+      "manipulation": "Set size (2–7); processing task difficulty; type of memoranda; partial-credit vs. absolute scoring.",
+      "measurement": "Operation span score (items recalled in correct position); processing accuracy (to verify engagement with distractor task)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:46:40",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Turner 1989 — Is working memory capacity task dependent? (Journal of Memory and Language, historical, 2k×)",
+      "doi": "10.1016/0749-596x(89)90040-5",
+      "pub_id": "pub_03491efd",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.5920665339721782,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4482661358887131,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11206653397217828,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": null,
+      "year": 1989,
+      "venue": "Journal of Memory and Language",
+      "citation_count": 2303,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Scharinger 2017 — Comparison of the Working Memory Load in <i>N</i>-Back and Working Memory Spa… (Frontiers in human neuroscience, foundational, 114×)",
+      "doi": "10.3389/fnhum.2017.00006",
+      "pub_id": "pub_8831a343",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5686799905327303,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2747199621309215,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06867999053273037,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2017,
+      "venue": "Frontiers in human neuroscience",
+      "citation_count": 114,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Chen 2019 — Testing a Cognitive Control Model of Human Intelligence. (Scientific reports, recent_primary, 33×)",
+      "doi": "10.1038/s41598-019-39685-2",
+      "pub_id": "pub_947675b2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5643752451865962,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 33,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Loaiza 2011 — The influence of levels of processing on recall from working memory and delay… (Journal of experimental psycholo…, foundational, 25×)",
+      "doi": "10.1037/a0023923",
+      "pub_id": "pub_a50c9ea2",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5638256213856301,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Marcusson-Clavertz 2020 — Sad mood and poor sleep are related to task-unrelated thoughts and experience… (Scientific reports, recent_primary, 13×)",
+      "doi": "10.1038/s41598-020-65739-x",
+      "pub_id": "pub_d9f8aba1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5615320741182369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "McDaniel 2014 — Individual differences in learning and transfer: stable tendencies for learni… (Journal of experimental psycholo…, foundational, 32×)",
+      "doi": "10.1037/a0032963",
+      "pub_id": "pub_9cb31b97",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5139431418032331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Journal of experimental psychology. General",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Redick 2020 — The role of proactive interference in working memory training and transfer. (Psychological research, recent_primary, 11×)",
+      "doi": "10.1007/s00426-019-01172-8",
+      "pub_id": "pub_40761007",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4993008373071,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychological research",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Ivanova 2018 — Neural mechanisms of two different verbal working memory tasks: A VLSM study. (Neuropsychologia, recent_primary, 31×)",
+      "doi": "10.1016/j.neuropsychologia.2018.03.003",
+      "pub_id": "pub_3537e8c1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.49349774086413933,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Neuropsychologia",
+      "citation_count": 31,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Noreen 2020 — Investigating the mediating effect of working memory on intentional forgettin… (Psychological research, recent_primary, 5×)",
+      "doi": "10.1007/s00426-019-01225-y",
+      "pub_id": "pub_0af4a37c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.48926795580093885,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychological research",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Hsueh 2016 — Neurofeedback training of EEG alpha rhythm enhances episodic and working memory. (Human brain mapping, foundational, 61×)",
+      "doi": "10.1002/hbm.23201",
+      "pub_id": "pub_5931c5bb",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4830710793798671,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23895098418613514,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.059737746046533785,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Human brain mapping",
+      "citation_count": 61,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Hakun 2017 — Dynamic range of frontoparietal functional modulation is associated with work… (Brain and cognition, foundational, 17×)",
+      "doi": "10.1016/j.bandc.2017.08.007",
+      "pub_id": "pub_a059a892",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.47516969676238313,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Brain and cognition",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Lau 2023 — Retrospective judgments of confidence in a complex span task. (Scientific reports, recent_primary, 0×)",
+      "doi": "10.1038/s41598-023-45552-y",
+      "pub_id": "pub_3a284c3f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.47333333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific reports",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Mohanathasan 2024 — Listening to two-talker conversations in quiet settings: the role of listener… (Scientific reports, recent_primary, 4×)",
+      "doi": "10.1038/s41598-024-74085-1",
+      "pub_id": "pub_48a50646",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46662896277516486,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Scientific reports",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Loaiza 2021 — The long-term consequences of retrieval demands during working memory. (Memory & cognition, recent_primary, 7×)",
+      "doi": "10.3758/s13421-020-01079-5",
+      "pub_id": "pub_d4256a6b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46343197785181695,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Memory & cognition",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Soemer 2020 — Working memory capacity and (in)voluntary mind wandering. (Psychonomic bulletin & review, recent_primary, 13×)",
+      "doi": "10.3758/s13423-020-01737-4",
+      "pub_id": "pub_4c0740de",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4615320741182369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychonomic bulletin & review",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Goldberg 2021 — Brief breath awareness training yields poorer working memory performance in t… (Cognition & emotion, recent_primary, 5×)",
+      "doi": "10.1080/02699931.2021.1878113",
+      "pub_id": "pub_99913b55",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4592679558009388,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cognition & emotion",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Geiter 2024 — Distractor filtering and task load in working memory training in healthy olde… (Scientific reports, recent_primary, 1×)",
+      "doi": "10.1038/s41598-024-76376-z",
+      "pub_id": "pub_05f81457",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4533662148394946,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Scientific reports",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Claus 2015 — Moderating effect of working memory capacity on acute alcohol effects on BOLD… (Psychopharmacology, foundational, 11×)",
+      "doi": "10.1007/s00213-014-3711-2",
+      "pub_id": "pub_5a5261fb",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4493008373071,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Psychopharmacology",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Tan 2017 — Mapping cerebral pulse pressure and arterial compliance over the adult lifesp… (PloS one, foundational, 41×)",
+      "doi": "10.1371/journal.pone.0171305",
+      "pub_id": "pub_824d3ce3",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4474338150796812,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "PloS one",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Grassi 2017 — Auditory and cognitive performance in elderly musicians and nonmusicians. (PloS one, foundational, 32×)",
+      "doi": "10.1371/journal.pone.0187881",
+      "pub_id": "pub_cba258e8",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4439431418032331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "PloS one",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Loh 2023 — Working memory control predicts fixation duration in scene-viewing. (Psychological research, recent_primary, 7×)",
+      "doi": "10.1007/s00426-022-01694-8",
+      "pub_id": "pub_8bf14fa2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4434319778518169,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Psychological research",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "AuBuchon 2019 — Auditory distraction does more than disrupt rehearsal processes in children's… (Memory & cognition, recent_primary, 7×)",
+      "doi": "10.3758/s13421-018-0879-4",
+      "pub_id": "pub_80150361",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4434319778518169,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Memory & cognition",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Arslan 2017 — Syntactic Recursion Facilitates and Working Memory Predicts Recursive Theory … (PloS one, foundational, 19×)",
+      "doi": "10.1371/journal.pone.0169510",
+      "pub_id": "pub_601bb7d4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.43669472578748725,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "PloS one",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Gathercole 2016 — Working memory training involves learning new skills. (Journal of memory and language, foundational, 110×)",
+      "doi": "10.1016/j.jml.2018.10.003",
+      "pub_id": "pub_95bc4618",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4315009026240056,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27267027716268905,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06816756929067226,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2016,
+      "venue": "Journal of memory and language",
+      "citation_count": 110,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Vergauwe 2015 — Attending to items in working memory: evidence that refreshing and memory sea… (Psychonomic bulletin & review, foundational, 32×)",
+      "doi": "10.3758/s13423-014-0755-6",
+      "pub_id": "pub_765b0ec1",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4239431418032331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Psychonomic bulletin & review",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Sattari 2019 — Does working memory improvement benefit from sleep in older adults? (Neurobiology of sleep and circad…, recent_primary, 27×)",
+      "doi": "10.1016/j.nbscr.2019.01.001",
+      "pub_id": "pub_ca606ed4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4215649556243981,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Neurobiology of sleep and circadian rhythms",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Westbrook 2018 — Task errors by emergency physicians are associated with interruptions, multit… (BMJ quality & safety, recent_primary, 175×)",
+      "doi": "10.1136/bmjqs-2017-007333",
+      "pub_id": "pub_de8319e0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.42150626019976695,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29935837413240124,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07483959353310031,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "BMJ quality & safety",
+      "citation_count": 175,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Borella 2014 — Are age-related differences between young and older adults in an affective wo… (Frontiers in aging neuroscience, foundational, 10×)",
+      "doi": "10.3389/fnagi.2014.00298",
+      "pub_id": "pub_8b6e959e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.42137473417512217,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Frontiers in aging neuroscience",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Wiemers 2019 — The Influence of Individual Differences in Cognitive Ability on Working Memor… (Journal of cognitive enhancement…, recent_primary, 25×)",
+      "doi": "10.1007/s41465-018-0111-2",
+      "pub_id": "pub_eca0875c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4204922880522967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Journal of cognitive enhancement : towards the integration of theory and practice",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Sanbonmatsu 2013 — Who multi-tasks and why? Multi-tasking ability, perceived multi-tasking abili… (PloS one, foundational, 100×)",
+      "doi": "10.1371/journal.pone.0054402",
+      "pub_id": "pub_d499c893",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.42013438018274396,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2672041873976427,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06680104684941067,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "PloS one",
+      "citation_count": 100,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,1129 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "process",
+    "id": "hed_reinforcement_learning",
+    "name": "Reinforcement learning",
+    "aliases": [],
+    "category_id": "associative_learning_and_reinforcement",
+    "definition": "Learning to select actions that maximize cumulative reward through experience with reward prediction errors."
+  },
+  "candidates_run_date": "2026-04-29T15:24:08",
+  "extracted_on": "2026-04-30T11:14:37",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Mnih 2015 — Human-level control through deep reinforcement learning (Nature, foundational, 29k×)",
+      "doi": "10.1038/nature14236",
+      "pub_id": "pub_e74bf79b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.965280721962286,
+        "breakdown": {
+          "raw": {
+            "citations": 1.3011228878491439,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.32528072196228597,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Nature",
+      "citation_count": 29428,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Vinyals 2019 — Grandmaster level in StarCraft II using multi-agent reinforcement learning (Nature, recent_primary, 3k×)",
+      "doi": "10.1038/s41586-019-1724-z",
+      "pub_id": "pub_4e130411",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.9117792032033154,
+        "breakdown": {
+          "raw": {
+            "citations": 0.9271168128132614,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.23177920320331535,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature",
+      "citation_count": 3383,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Silver 2018 — A general reinforcement learning algorithm that masters chess, shogi, and Go … (Science, recent_primary, 3k×)",
+      "doi": "10.1126/science.aar6404",
+      "pub_id": "pub_8dd9f572",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.9031787051277262,
+        "breakdown": {
+          "raw": {
+            "citations": 0.932714820510905,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.23317870512772626,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Science",
+      "citation_count": 3479,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Brunke 2021 — Safe Learning in Robotics: From Learning-Based Control to Safe Reinforcement … (Annu. Rev. Control. Robotics Aut…, key_review, 891×)",
+      "doi": "10.1146/annurev-control-042920-020211",
+      "pub_id": "pub_c1eed23d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8806787007862449,
+        "breakdown": {
+          "raw": {
+            "citations": 0.6827148031449795,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.17067870078624486,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Annu. Rev. Control. Robotics Auton. Syst.",
+      "citation_count": 891,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Abdar 2020 — A Review of Uncertainty Quantification in Deep Learning: Techniques, Applicat… (Information Fusion, key_review, 2k×)",
+      "doi": "10.1016/j.inffus.2021.05.008",
+      "pub_id": "pub_75d5ff13",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8510177381605355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.8040709526421419,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.20101773816053548,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Information Fusion",
+      "citation_count": 2497,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Holroyd 2021 — The Best Laid Plans: Computational Principles of Anterior Cingulate Cortex. (Trends in Cognitive Sciences, key_review, 63×)",
+      "doi": "10.1016/j.tics.2021.01.008",
+      "pub_id": "pub_ea2ec35f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8340499004791337,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3361996019165348,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0840499004791337,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Trends in Cognitive Sciences",
+      "citation_count": 63,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Botvinick 2019 — Reinforcement Learning, Fast and Slow (Trends in Cognitive Sciences, key_review, 680×)",
+      "doi": "10.1016/j.tics.2019.02.006",
+      "pub_id": "pub_df025490",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8244245745366593,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37769829814663725,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09442457453665931,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Trends in Cognitive Sciences",
+      "citation_count": 680,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Degrave 2022 — Magnetic control of tokamak plasmas through deep reinforcement learning (Nature, recent_primary, 679×)",
+      "doi": "10.1038/s41586-021-04301-9",
+      "pub_id": "pub_443dc7f5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.82009241412662,
+        "breakdown": {
+          "raw": {
+            "citations": 0.6003696565064802,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.15009241412662006,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Nature",
+      "citation_count": 679,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Peters 2021 — Modulating the Neuromodulators: Dopamine, Serotonin, and the Endocannabinoid … (Trends in neurosciences, key_review, 110×)",
+      "doi": "10.1016/j.tins.2021.02.001",
+      "pub_id": "pub_341e65c8",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8181675692906722,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27267027716268905,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06816756929067226,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Trends in neurosciences",
+      "citation_count": 110,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Wurman 2022 — Outracing champion Gran Turismo drivers with deep reinforcement learning (Nature, recent_primary, 464×)",
+      "doi": "10.1038/s41586-021-04357-7",
+      "pub_id": "pub_ee884cca",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8128534909042985,
+        "breakdown": {
+          "raw": {
+            "citations": 0.571413963617194,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1428534909042985,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Nature",
+      "citation_count": 464,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Mankowitz 2023 — Faster sorting algorithms discovered using deep reinforcement learning (Nature, recent_primary, 226×)",
+      "doi": "10.1038/s41586-023-06004-9",
+      "pub_id": "pub_b91d6232",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8107716224933286,
+        "breakdown": {
+          "raw": {
+            "citations": 0.48308648997331427,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12077162249332857,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Nature",
+      "citation_count": 226,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Gershman 2019 — Believing in dopamine. (Nature reviews. Neuroscience, key_review, 183×)",
+      "doi": "10.1038/s41583-019-0220-7",
+      "pub_id": "pub_d2bd6e45",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8054830056093825,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3019320224375298,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07548300560938245,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature reviews. Neuroscience",
+      "citation_count": 183,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Holroyd 2002 — The neural basis of human error processing: Reinforcement learning, dopamine,… (Psychological Review, foundational, 3k×)",
+      "doi": "10.1037/0033-295x.109.4.679",
+      "pub_id": "pub_afa47334",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8033815703999153,
+        "breakdown": {
+          "raw": {
+            "citations": 1.0135262815996613,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.2533815703999153,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2002,
+      "venue": "Psychological Review",
+      "citation_count": 3967,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Collins 2020 — Beyond dichotomies in reinforcement learning. (Nature reviews. Neuroscience, key_review, 76×)",
+      "doi": "10.1038/s41583-020-0355-6",
+      "pub_id": "pub_a58582f0",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8028739267871978,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25149570714879144,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06287392678719786,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature reviews. Neuroscience",
+      "citation_count": 76,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Dhawale 2017 — The Role of Variability in Motor Learning (Annual Review of Neuroscience, key_review, 528×)",
+      "doi": "10.1146/annurev-neuro-072116-031548",
+      "pub_id": "pub_55724190",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8007687221817976,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3630748887271906,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09076872218179766,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Annual Review of Neuroscience",
+      "citation_count": 528,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Fawzi 2022 — Discovering faster matrix multiplication algorithms with reinforcement learning. (Nature, recent_primary, 71×)",
+      "doi": "10.1038/s41586-022-05172-4",
+      "pub_id": "pub_a6696ace",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7999786680777204,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5199146723108818,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12997866807772046,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Nature",
+      "citation_count": 71,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Kaufmann 2023 — Champion-level drone racing using deep reinforcement learning (Nature, recent_primary, 541×)",
+      "doi": "10.1038/s41586-023-06419-4",
+      "pub_id": "pub_e7650b0b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.798231548675124,
+        "breakdown": {
+          "raw": {
+            "citations": 0.632926194700496,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.158231548675124,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Nature",
+      "citation_count": 541,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Cross 2020 — Using deep reinforcement learning to reveal how the brain encodes abstract st… (Neuron, recent_primary, 62×)",
+      "doi": "10.1016/j.neuron.2020.11.021",
+      "pub_id": "pub_cc833b3f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7976745640859639,
+        "breakdown": {
+          "raw": {
+            "citations": 0.43069825634385567,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10767456408596392,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Neuron",
+      "citation_count": 62,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Feng 2023 — Dense reinforcement learning for safety validation of autonomous vehicles (Nature, recent_primary, 584×)",
+      "doi": "10.1038/s41586-023-05732-2",
+      "pub_id": "pub_1773f5dc",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7972672732587532,
+        "breakdown": {
+          "raw": {
+            "citations": 0.629069093035013,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.15726727325875325,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2023,
+      "venue": "Nature",
+      "citation_count": 584,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Guo 2025 — DeepSeek-R1 incentivizes reasoning in LLMs through reinforcement learning. (Nature, recent_primary, 90×)",
+      "doi": "10.1038/s41586-025-09422-z",
+      "pub_id": "pub_0932aa52",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7946759597576267,
+        "breakdown": {
+          "raw": {
+            "citations": 0.858703839030507,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.21467595975762674,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Nature",
+      "citation_count": 90,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Hafner 2025 — Mastering diverse control tasks through world models (Nature, recent_primary, 267×)",
+      "doi": "10.1038/s41586-025-08744-2",
+      "pub_id": "pub_a1e8ba17",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7935747841130709,
+        "breakdown": {
+          "raw": {
+            "citations": 0.6542991364522834,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.16357478411307086,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Nature",
+      "citation_count": 267,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Zhang 2019 — Multi-Agent Reinforcement Learning: A Selective Overview of Theories and Algo… (Handbook of Reinforcement Learni…, key_review, 1k×)",
+      "doi": "10.1007/978-3-030-60990-0_12",
+      "pub_id": "pub_40eca26b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7934269236601508,
+        "breakdown": {
+          "raw": {
+            "citations": 0.813707694640603,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.20342692366015075,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Handbook of Reinforcement Learning and Control",
+      "citation_count": 1591,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Pérolat 2022 — Mastering the game of Stratego with model-free multiagent reinforcement learning (Science, recent_primary, 267×)",
+      "doi": "10.1126/science.add4679",
+      "pub_id": "pub_b10a1aa5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7931749059841042,
+        "breakdown": {
+          "raw": {
+            "citations": 0.49269962393641675,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12317490598410419,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Science",
+      "citation_count": 267,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Radulescu 2019 — Holistic Reinforcement Learning: The Role of Structure and Attention. (Trends in cognitive sciences, key_review, 69×)",
+      "doi": "10.1016/j.tics.2019.01.010",
+      "pub_id": "pub_01a074a4",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7914943702267352,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24597748090694052,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06149437022673513,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Trends in cognitive sciences",
+      "citation_count": 69,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Gershman 2016 — Reinforcement Learning and Episodic Memory in Humans and Animals: An Integrat… (Annual Review of Psychology, key_review, 491×)",
+      "doi": "10.1146/annurev-psych-122414-033625",
+      "pub_id": "pub_081a24eb",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7897191883991964,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3588767535967856,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0897191883991964,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Annual Review of Psychology",
+      "citation_count": 491,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "O’Doherty 2016 — Learning, Reward, and Decision Making (Annual Review of Psychology, key_review, 486×)",
+      "doi": "10.1146/annurev-psych-010416-044216",
+      "pub_id": "pub_fd901526",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7895713384068895,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3582853536275581,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08957133840688952,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Annual Review of Psychology",
+      "citation_count": 486,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Luo 2022 — A survey on model-based reinforcement learning (Science China Information Sciences, key_review, 168×)",
+      "doi": "10.1007/s11432-022-3696-5",
+      "pub_id": "pub_8d429c4b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7891955905883516,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4367823623534065,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.10919559058835163,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Science China Information Sciences",
+      "citation_count": 168,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Yang 2021 — Exploration in Deep Reinforcement Learning: From Single-Agent to Multiagent D… (IEEE Transactions on Neural Netw…, key_review, 178×)",
+      "doi": "10.1109/tnnls.2023.3236361",
+      "pub_id": "pub_5f42fff6",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7851828814257157,
+        "breakdown": {
+          "raw": {
+            "citations": 0.42073152570286265,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.10518288142571566,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "IEEE Transactions on Neural Networks and Learning Systems",
+      "citation_count": 178,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Perera 2021 — Applications of reinforcement learning in energy systems (Renewable & Sustainable Energy R…, key_review, 333×)",
+      "doi": "10.1016/j.rser.2020.110618",
+      "pub_id": "pub_71717537",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7830146454504956,
+        "breakdown": {
+          "raw": {
+            "citations": 0.49205858180198214,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.12301464545049554,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Renewable & Sustainable Energy Reviews",
+      "citation_count": 333,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "de Jong 2022 — Mesoaccumbal Dopamine Heterogeneity: What Do Dopamine Firing and Release Have… (Annual review of neuroscience, key_review, 68×)",
+      "doi": "10.1146/annurev-neuro-110920-011929",
+      "pub_id": "pub_d5091e77",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7812861020523432,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24514440820937256,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06128610205234314,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Annual review of neuroscience",
+      "citation_count": 68,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

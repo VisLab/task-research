@@ -1,0 +1,3360 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:28:04",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_multiple_object_tracking",
+    "name": "Multiple Object Tracking Task",
+    "aliases": [
+      "MOT",
+      "Pylyshyn Tracking",
+      "Multiple Object Tracking"
+    ],
+    "category_id": "selective_and_sustained_attention",
+    "short_definition": "Participants track a subset of identical moving objects among distractors for several seconds; tracking accuracy indexes sustained multifocal attention.",
+    "description": "In the Multiple Object Tracking task, participants view a set of identical objects (typically 8–16 circles), a subset of which are briefly designated as targets (by flashing or color). All objects then move independently and randomly for several seconds, and participants must track the targets among distractors. After movement stops, participants identify which objects were the original targets. Performance is measured as tracking accuracy as a function of target load (typically 1–5 targets). The task provides a direct index of how many individual objects can be simultaneously tracked—a measure of visual attention capacity, estimated at approximately 4 objects.",
+    "inclusion_test": {
+      "procedure": "A set of identical objects (dots) move randomly; a subset is designated as targets. After the targets are highlighted, all dots move for several seconds, then participants identify which dots were targets.",
+      "manipulation": "Number of targets; number of distractors; speed of motion; tracking duration.",
+      "measurement": "Tracking accuracy (proportion correct); capacity estimate (Pylyshyn's 4±1); effects of load on accuracy."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 45,
+      "picked": 30,
+      "reserve": 9,
+      "excluded": 6,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 4,
+      "non_human_subjects": 2
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_6c01de3c",
+      "doi": "10.1016/j.cognition.2012.10.003",
+      "url": "https://doi.org/10.1016/j.cognition.2012.10.003",
+      "openalex_id": null,
+      "pmid": "23141025",
+      "first_author": "Drew",
+      "authors_display": "Drew, T. et al.",
+      "year": 2013,
+      "title": "Swapping or dropping? Electrophysiological measures of difficulty during multiple object tracking.",
+      "venue": "Cognition",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 44,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In the multiple object tracking task, participants are asked to keep targets separate from identical distractors as all items move randomly. It is well known that simple manipulations such as object speed and number of distractors dramatically alter the number of targets that are successfully tracked, but very little is known about what causes this variation in performance. One possibility is that participants tend to lose track of objects (dropping) more frequently under these conditions. Another is that the tendency to confuse a target with a distractor increases (swapping). These two mechanisms have very different implications for the attentional architecture underlying tracking. However, behavioral data alone cannot differentiate between these possibilities. In the current study, we used an electrophysiological marker of the number of items being actively tracked to assess which type of errors tended to occur during speed and distractor load manipulations. Our neural measures suggest that increased distractor load led to an increased likelihood of confusing targets with distractors while increased speed led to an increased chance of a target item being dropped. Behavioral experiments designed to test this novel prediction support this assertion.",
+      "score": {
+        "composite": 0.5917657780313869,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Humans",
+        "Electroencephalography",
+        "Eye Movements",
+        "Photic Stimulation",
+        "Motion Perception",
+        "Attention",
+        "Evoked Potentials",
+        "Adult"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_11b4775f",
+      "doi": "10.1073/pnas.2008961117",
+      "url": "https://doi.org/10.1073/pnas.2008961117",
+      "openalex_id": null,
+      "pmid": "32938799",
+      "first_author": "Bill",
+      "authors_display": "Bill, J. et al.",
+      "year": 2020,
+      "title": "Hierarchical structure is employed by humans during visual motion perception.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 16,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In the real world, complex dynamic scenes often arise from the composition of simpler parts. The visual system exploits this structure by hierarchically decomposing dynamic scenes: When we see a person walking on a train or an animal running in a herd, we recognize the individual's movement as nested within a reference frame that is, itself, moving. Despite its ubiquity, surprisingly little is understood about the computations underlying hierarchical motion perception. To address this gap, we developed a class of stimuli that grant tight control over statistical relations among object velocities in dynamic scenes. We first demonstrate that structured motion stimuli benefit human multiple object tracking performance. Computational analysis revealed that the performance gain is best explained by human participants making use of motion relations during tracking. A second experiment, using a motion prediction task, reinforced this conclusion and provided fine-grained information about how the visual system flexibly exploits motion structure.",
+      "score": {
+        "composite": 0.564342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Visual Perception",
+        "Motion Perception",
+        "Base Sequence",
+        "Movement",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2f87d4e0",
+      "doi": "10.1371/journal.pone.0251443",
+      "url": "https://doi.org/10.1371/journal.pone.0251443",
+      "openalex_id": null,
+      "pmid": "34043652",
+      "first_author": "Zhang",
+      "authors_display": "Zhang, Y. et al.",
+      "year": 2021,
+      "title": "Relationship between individual alpha peak frequency and attentional performance in a multiple object tracking task among ice-hockey players.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8158945",
+      "tldr": null,
+      "abstract": "Individual alpha peak frequency (IAPF), the discrete frequency with the highest power value in the alpha oscillation range of the electroencephalogram, is a stable neurophysiological marker and is closely associated with various cognitive functions, including aspects of attention and working memory. However, the relationship between IAPF and attentional performance as well as the effects of engaging attention on IAPF are unknow. Here, we examined whether IAPF values were associated with attentional performance by evaluating accuracy during the performance of a multiple object tracking (MOT) task, a well-established paradigm for investigating goal-driven attention in dynamic environments, and whether engagement in the task affected IAPF values. In total, 18 elite players and 20 intermediate players completed the study. Resting electroencephalogram recordings were obtained for 120 s while players kept their eyes open and an additional 120 s while players' eyes were closed, before and again after performing the MOT task. Tracking accuracy in the MOT task and IAPF values before and after the MOT task were analyzed. As expected, tracking accuracies were higher in elite players than in intermediate-level players. Baseline IAPF values were significantly and positively correlated with the accuracy of target tracking in the MOT task. IAPF values were higher in elite than intermediate players in both the eyes open and closed conditions and both before and after MOT task performance. Interindividual IAPF values did not differ before and after the MOT task. These findings indicate that IAPF is a stable marker, without intraindividual changes associated with engagement in the MOT task. Elite players had higher IAPF values and exhibited more accurate MOT performance than intermediate-level players; thus, baseline IAPF values may be useful to predict attentional performance in the MOT task among athletes.",
+      "score": {
+        "composite": 0.5607342669068534,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Cognition",
+        "Memory, Short-Term",
+        "Task Performance and Analysis",
+        "Attention",
+        "Hockey",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_151c9e8c",
+      "doi": "10.1016/j.neubiorev.2016.01.003",
+      "url": "https://doi.org/10.1016/j.neubiorev.2016.01.003",
+      "openalex_id": null,
+      "pmid": "26802451",
+      "first_author": "Luria",
+      "authors_display": "Luria, R. et al.",
+      "year": 2016,
+      "title": "The contralateral delay activity as a neural measure of visual working memory.",
+      "venue": "Neuroscience and biobehavioral reviews",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Meta-Analysis",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": true,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 216,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The contralateral delay activity (CDA) is a negative slow wave sensitive to the number of objects maintained in visual working memory (VWM). In recent years, a growing number of labs started to use the CDA in order to investigate VWM, leading to many fascinating discoveries. Here, we discuss the recent developments and contribution of the CDA in various research fields. Importantly, we report two meta-analyses that unequivocally validate the relationship between the set-size increase in the CDA amplitude and the individual VWM capacity, and between the CDA and filtering efficiency. We further discuss how the CDA was used to study the role of VWM in visual search, multiple object tracking, grouping, binding, and whether VWM capacity allocation is determined by the items' resolution or instead by the number of objects regardless of their complexity. In addition, we report how the CDA has been used to characterize specific VWM deficits in special populations.",
+      "score": {
+        "composite": 0.5512040571524482,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31148289527645984,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07787072381911496,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Animals",
+        "Humans",
+        "Electroencephalography",
+        "Photic Stimulation",
+        "Memory, Short-Term",
+        "Visual Perception",
+        "Task Performance and Analysis",
+        "Evoked Potentials"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_96b73776",
+      "doi": "10.1016/j.cognition.2005.10.004",
+      "url": "https://doi.org/10.1016/j.cognition.2005.10.004",
+      "openalex_id": null,
+      "pmid": "16359652",
+      "first_author": "Green",
+      "authors_display": "Green, C., & Bavelier, D.",
+      "year": 2006,
+      "title": "Enumeration versus multiple object tracking: the case of action video game players.",
+      "venue": "Cognition",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 234,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Here, we demonstrate that action video game play enhances subjects' ability in two tasks thought to indicate the number of items that can be apprehended. Using an enumeration task, in which participants have to determine the number of quickly flashed squares, accuracy measures showed a near ceiling performance for low numerosities and a sharp drop in performance once a critical number of squares was reached. Importantly, this critical number was higher by about two items in video game players (VGPs) than in non-video game players (NVGPs). A following control study indicated that this improvement was not due to an enhanced ability to instantly apprehend the numerosity of the display, a process known as subitizing, but rather due to an enhancement in the slower more serial process of counting. To confirm that video game play facilitates the processing of multiple objects at once, we compared VGPs and NVGPs on the multiple object tracking task (MOT), which requires the allocation of attention to several items over time. VGPs were able to successfully track approximately two more items than NVGPs. Furthermore, NVGPs trained on an action video game established the causal effect of game playing in the enhanced performance on the two tasks. Together, these studies confirm the view that playing action video games enhances the number of objects that can be apprehended and suggest that this enhancement is mediated by changes in visual short-term memory skills.",
+      "score": {
+        "composite": 0.545690827872824,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31609664482462935,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07902416120615734,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cognition",
+        "Awareness",
+        "Visual Perception",
+        "Reaction Time",
+        "Mathematics",
+        "Video Games"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_86ec81cc",
+      "doi": "10.1038/s41598-022-06308-2",
+      "url": "https://doi.org/10.1038/s41598-022-06308-2",
+      "openalex_id": null,
+      "pmid": "35169206",
+      "first_author": "Faraz",
+      "authors_display": "Faraz, K. et al.",
+      "year": 2022,
+      "title": "Deep learning detection of nanoparticles and multiple object tracking of their dynamic evolution during in situ ETEM studies.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 17,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41598-022-06308-2.pdf",
+      "tldr": null,
+      "abstract": "In situ transmission electron microscopy (TEM) studies of dynamic events produce large quantities of data especially under the form of images. In the important case of heterogeneous catalysis, environmental TEM (ETEM) under gas and temperature allows to follow a large population of supported nanoparticles (NPs) evolving under reactive conditions. Interpreting properly large image sequences gives precious information on the catalytic properties of the active phase by identifying causes for its deactivation. To perform a quantitative, objective and robust treatment, we propose an automatic procedure to track nanoparticles observed in Scanning ETEM (STEM in ETEM). Our approach involves deep learning and computer vision developments in multiple object tracking. At first, a registration step corrects the image displacements and misalignment inherent to the in situ acquisition. Then, a deep learning approach detects the nanoparticles on all frames of video sequences. Finally, an iterative tracking algorithm reconstructs their trajectories. This treatment allows to deduce quantitative and statistical features about their evolution or motion, such as a Brownian behavior and merging or crossing events. We treat the case of in situ calcination of palladium (oxide) / delta-alumina, where the present approach allows a discussion of operating processes such as Ostwald ripening or NP aggregative coalescence.",
+      "score": {
+        "composite": 0.5451696967623831,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d4eb170d",
+      "doi": "10.1038/s41598-018-32046-5",
+      "url": "https://doi.org/10.1038/s41598-018-32046-5",
+      "openalex_id": null,
+      "pmid": "30209327",
+      "first_author": "Schöne",
+      "authors_display": "Schöne, B. et al.",
+      "year": 2018,
+      "title": "Mindful breath awareness meditation facilitates efficiency gains in brain networks: A steady-state visually evoked potentials study.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 17,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6135840",
+      "tldr": null,
+      "abstract": "The beneficial effects of mindfulness-based therapeutic interventions have stimulated a rapidly growing body of scientific research into underlying psychological processes. Resulting evidence indicates that engaging with mindfulness meditation is associated with increased performance on a range of cognitive tasks. However, the mechanisms promoting these improvements require further investigation. We studied changes in behavioural performance of 34 participants during a multiple object tracking (MOT) task that taps core cognitive processes, namely sustained selective visual attention and spatial working memory. Concurrently, we recorded the steady-state visually evoked potential (SSVEP), an EEG signal elicited by the continuously flickering moving objects, and indicator of attentional engagement. Participants were tested before and after practicing eight weeks of mindful breath awareness meditation or progressive muscle relaxation as active control condition. The meditation group improved their MOT-performance and exhibited a reduction of SSVEP amplitudes, whereas no such changes were observed in the relaxation group. Neither group changed in self-reported positive affect and mindfulness, while a marginal increase in negative affect was observed in the mindfulness group. This novel way of combining MOT and SSVEP provides the important insight that mindful breath awareness meditation may lead to refinements of attention networks, enabling more efficient use of attentional resources.",
+      "score": {
+        "composite": 0.5451696967623831,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Meditation",
+        "Awareness",
+        "Memory, Short-Term",
+        "Attention",
+        "Evoked Potentials, Visual",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Mindfulness"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_d5d7b65b",
+      "doi": "10.1371/journal.pone.0157638",
+      "url": "https://doi.org/10.1371/journal.pone.0157638",
+      "openalex_id": null,
+      "pmid": "27384330",
+      "first_author": "Clayton",
+      "authors_display": "Clayton, K. et al.",
+      "year": 2016,
+      "title": "Executive Function, Visual Attention and the Cocktail Party Problem in Musicians and Non-Musicians.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 67,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0157638&type=printable",
+      "tldr": null,
+      "abstract": "The goal of this study was to investigate how cognitive factors influence performance in a multi-talker, \"cocktail-party\" like environment in musicians and non-musicians. This was achieved by relating performance in a spatial hearing task to cognitive processing abilities assessed using measures of executive function (EF) and visual attention in musicians and non-musicians. For the spatial hearing task, a speech target was presented simultaneously with two intelligible speech maskers that were either colocated with the target (0° azimuth) or were symmetrically separated from the target in azimuth (at ±15°). EF assessment included measures of cognitive flexibility, inhibition control and auditory working memory. Selective attention was assessed in the visual domain using a multiple object tracking task (MOT). For the MOT task, the observers were required to track target dots (n = 1,2,3,4,5) in the presence of interfering distractor dots. Musicians performed significantly better than non-musicians in the spatial hearing task. For the EF measures, musicians showed better performance on measures of auditory working memory compared to non-musicians. Furthermore, across all individuals, a significant correlation was observed between performance on the spatial hearing task and measures of auditory working memory. This result suggests that individual differences in performance in a cocktail party-like environment may depend in part on cognitive factors such as auditory working memory. Performance in the MOT task did not differ between groups. However, across all individuals, a significant correlation was found between performance in the MOT and spatial hearing tasks. A stepwise multiple regression analysis revealed that musicianship and performance on the MOT task significantly predicted performance on the spatial hearing task. Overall, these findings confirm the relationship between musicianship and cognitive factors including domain-general selective attention and working",
+      "score": {
+        "composite": 0.5277414600260907,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2442991734376964,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0610747933594241,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Acoustic Stimulation",
+        "Cognition",
+        "Discrimination Learning",
+        "Memory, Short-Term",
+        "Perceptual Masking",
+        "Speech Perception",
+        "Task Performance and Analysis",
+        "Attention",
+        "Hearing",
+        "Music",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_af7432d8",
+      "doi": "10.1371/journal.pone.0168087",
+      "url": "https://doi.org/10.1371/journal.pone.0168087",
+      "openalex_id": null,
+      "pmid": "27977762",
+      "first_author": "Wahn",
+      "authors_display": "Wahn, B. et al.",
+      "year": 2016,
+      "title": "Pupil Sizes Scale with Attentional Load and Task Experience in a Multiple Object Tracking Task.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 49,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5157994",
+      "tldr": null,
+      "abstract": "Previous studies have related changes in attentional load to pupil size modulations. However, studies relating changes in attentional load and task experience on a finer scale to pupil size modulations are scarce. Here, we investigated how these changes affect pupil sizes. To manipulate attentional load, participants covertly tracked between zero and five objects among several randomly moving objects on a computer screen. To investigate effects of task experience, the experiment was conducted on three consecutive days. We found that pupil sizes increased with each increment in attentional load. Across days, we found systematic pupil size reductions. We compared the model fit for predicting pupil size modulations using attentional load, task experience, and task performance as predictors. We found that a model which included attentional load and task experience as predictors had the best model fit while adding performance as a predictor to this model reduced the overall model fit. Overall, results suggest that pupillometry provides a viable metric for precisely assessing attentional load and task experience in visuospatial tasks.",
+      "score": {
+        "composite": 0.5232908070564909,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Pupil",
+        "Humans",
+        "Photic Stimulation",
+        "Visual Perception",
+        "Attention",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_57c548ca",
+      "doi": "10.1167/9.4.10",
+      "url": "https://doi.org/10.1167/9.4.10",
+      "openalex_id": null,
+      "pmid": "19757919",
+      "first_author": "Howe",
+      "authors_display": "Howe, P. et al.",
+      "year": 2009,
+      "title": "Using fMRI to distinguish components of the multiple object tracking task.",
+      "venue": "Journal of vision",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 78,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Multiple object tracking (MOT) has proven to be a powerful technique for studying sustained selective attention. However, surprisingly little is known about its underlying neural mechanisms. Previous fMRI investigations have identified several brain areas thought to be involved in MOT, but there were disagreements between the studies, none distinguished between the act of tracking targets and the act of attending targets, and none attempted to determine which of these brain areas interact with each other. Here we address these three issues. First, using more observers and a random effects analysis, we show that some of the previously identified areas may not play a specific role in MOT. Second, we show that the frontal eye fields (FEF), the anterior intraparietal sulcus (AIPS), the superior parietal lobule (SPL), the posterior intraparietal sulcus (PIPS) and the human motion area (MT+) are differentially activated by the act of tracking, as distinguished from the act of attention. Finally, by using an algorithm modified from the computer science literature, we were able to map the interactions between these brain areas.",
+      "score": {
+        "composite": 0.5199117519539478,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2529803411491245,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.2,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06324508528728112,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.03,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Gyrus Cinguli",
+        "Frontal Lobe",
+        "Occipital Lobe",
+        "Parietal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Eye Movements",
+        "Brain Mapping",
+        "Photic Stimulation",
+        "Motion Perception",
+        "Attention",
+        "Algorithms",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1d409c1b",
+      "doi": "10.1002/hbm.25284",
+      "url": "https://doi.org/10.1002/hbm.25284",
+      "openalex_id": null,
+      "pmid": "33216408",
+      "first_author": "Kolskår",
+      "authors_display": "Kolskår, K. et al.",
+      "year": 2021,
+      "title": "Reliability, sensitivity, and predictive value of fMRI during multiple object tracking as a marker of cognitive training gain in combination with tDCS in stroke survivors.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Multicenter Study",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.25284",
+      "tldr": null,
+      "abstract": "Computerized cognitive training (CCT) combined with transcranial direct current stimulation (tDCS) has showed some promise in alleviating cognitive impairments in patients with brain disorders, but the robustness and possible mechanisms are unclear. In this prospective double-blind randomized clinical trial, we investigated the feasibility and effectiveness of combining CCT and tDCS, and tested the predictive value of and training-related changes in fMRI-based brain activation during attentive performance (multiple object tracking) obtained at inclusion, before initiating training, and after the three-weeks intervention in chronic stroke patients (>6 months since hospital admission). Patients were randomized to one of two groups, receiving CCT and either (a) tDCS targeting left dorsolateral prefrontal cortex (1 mA), or (b) sham tDCS, with 40s active stimulation (1 mA) before fade out of the current. Of note, 77 patients were enrolled in the study, 54 completed the cognitive training, and 48 completed all training and MRI sessions. We found significant improvement in performance across all trained tasks, but no additional gain of tDCS. fMRI-based brain activation showed high reliability, and higher cognitive performance was associated with increased tracking-related activation in the dorsal attention network and default mode network as well as anterior cingulate after compared to before the intervention. We found no significant associations between cognitive gain and brain activation measured before training or in the difference in activation after intervention. Combined, these results show significant training effects on trained cognitive tasks in stroke survivors, with no clear evidence of additional gain of concurrent tDCS.",
+      "score": {
+        "composite": 0.51740093357352,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Combined Modality Therapy",
+        "Therapy, Computer-Assisted",
+        "Sensitivity and Specificity",
+        "Prospective Studies",
+        "Feasibility Studies",
+        "Double-Blind Method",
+        "Reproducibility of Results",
+        "Predictive Value of Tests",
+        "Aged",
+        "Middle Aged",
+        "Survivors",
+        "Female",
+        "Male",
+        "Stroke",
+        "Functional Neuroimaging",
+        "Transcranial Direct Current Stimulation",
+        "Stroke Rehabilitation",
+        "Cognitive Dysfunction",
+        "Cognitive Remediation",
+        "Outcome Assessment, Health Care"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_0235bec6",
+      "doi": "10.1038/s41598-023-44669-4",
+      "url": "https://doi.org/10.1038/s41598-023-44669-4",
+      "openalex_id": null,
+      "pmid": "37833436",
+      "first_author": "Mar",
+      "authors_display": "Mar, C. et al.",
+      "year": 2023,
+      "title": "Cow detection and tracking system utilizing multi-feature tracking algorithm.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41598-023-44669-4.pdf",
+      "tldr": null,
+      "abstract": "In modern cattle farm management systems, video-based monitoring has become important in analyzing the high-level behavior of cattle for monitoring their health and predicting calving for providing timely assistance. Conventionally, sensors have been used for detecting and tracking their activities. As the body-attached sensors cause stress, video cameras can be used as an alternative. However, identifying and tracking individual cattle can be difficult, especially for black and brown varieties that are so similar in appearance. Therefore, we propose a new method of using video cameras for recognizing cattle and tracking their whereabouts. In our approach, we applied a combination of deep learning and image processing techniques to build a robust system. The proposed system processes images in separate stages, namely data pre-processing, cow detection, and cow tracking. Cow detection is performed using a popular instance segmentation network. In the cow tracking stage, for successively associating each cow with the corresponding one in the next frame, we employed the following three features: cow location, appearance features, as well as recent features of the cow region. In doing so, we simply exploited the distance between two gravity center locations of the cow regions. As color and texture suitably define the appearance of an object, we analyze the most appropriate color space to extract color moment features and use a Co-occurrence Matrix (CM) for textural representation. Deep features are extracted from recent cow images using a Convolutional Neural Network (CNN features) and are also jointly applied in the tracking process to boost system performance. We also proposed a robust Multiple Object Tracking (MOT) algorithm for cow tracking by employing multiple features from the cow region. The experimental results proved that our proposed system could handle the problems of MOT and produce reliable performance.",
+      "score": {
+        "composite": 0.5080414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Cattle",
+        "Algorithms",
+        "Videotape Recording",
+        "Image Processing, Computer-Assisted",
+        "Female",
+        "Farms",
+        "Neural Networks, Computer"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ab080b7c",
+      "doi": "10.3758/s13414-019-01674-y",
+      "url": "https://doi.org/10.3758/s13414-019-01674-y",
+      "openalex_id": null,
+      "pmid": "30761503",
+      "first_author": "Crowe",
+      "authors_display": "Crowe, E. et al.",
+      "year": 2019,
+      "title": "Goal-directed unequal attention allocation during multiple object tracking.",
+      "venue": "Attention, perception & psychophysics",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 9,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.3758/s13414-019-01674-y.pdf",
+      "tldr": null,
+      "abstract": "In standard multiple object tracking (MOT) tasks the relative importance of the targets being tracked is equal. This is atypical of everyday situations in which an individual may need to prioritize one target relative to another and so allocate attention unequally. We report three experiments that examined whether participants could unequally split attention using a modified MOT task in which target priority was manipulated. Specifically, we examined the effect of priority on participants' magnitude of error and used a distribution mixture analysis to investigate how priority affected both participants' probability of losing an item and tracking precision. Experiment 1 (trajectory tracking) revealed a higher magnitude of error and higher proportion of guessing for low- compared with high-priority targets. Experiments 2 (trajectory tracking) and 3 (position tracking) examined how fine-grained this ability is by manipulating target priority at finer increments. In line with Experiment 1, results from both these experiments indicated that participants could split attention unequally. There was some evidence that participants could allocate attention unequally at fine increments, but this was less conclusive. Taken together, these experiments demonstrate participants' ability to distribute attention unequally across multiple moving objects but suggest some limitation with the flexibility of attention allocation.",
+      "score": {
+        "composite": 0.5066618442813261,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Probability",
+        "Goals",
+        "Motion Perception",
+        "Task Performance and Analysis",
+        "Attention",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Multitasking Behavior"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_1cff2f9a",
+      "doi": "10.1163/156856888x00122",
+      "url": "https://doi.org/10.1163/156856888x00122",
+      "openalex_id": "https://openalex.org/W2015634454",
+      "pmid": "3153671",
+      "first_author": "Pylyshyn",
+      "authors_display": "Zenon W. Pylyshyn, & Ron W. Storm",
+      "year": 1988,
+      "title": "Tracking multiple independent targets: Evidence for a parallel tracking mechanism*",
+      "venue": "Spatial Vision",
+      "venue_tier": "specialty",
+      "publisher": "Brill",
+      "publication_types": [
+        "article",
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1935,
+      "influential_citation_count": null,
+      "fwci": 11.9018,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "There is considerable evidence that visual attention is concentrated at a single locus in the visual field, and that this locus can be moved independent of eye movements. Two studies are reported which suggest that, while certain aspects of attention require that locations be scanned serially, at least one operation may be carried out in parallel across several independent loci in the visual field. That is the operation of indexing features and tracking their identity. The studies show that: (a) subjects are able to track a subset of up to 5 objects in a field of 10 identical randomly-moving objects in order to distinguish a change in a target from a change in a distractor; and (b) when the speed and distance parameters of the display are designed so that, on the basis of some very conservative assumptions about the speed of attention movement and encoding times, the predicted performance of a serial scanning and updating algorithm would not exceed about 40% accuracy, subjects still manage to do the task with 87% accuracy. These findings are discussed in relation to an earlier, and independently motivated model of feature-binding--called the FINST model--which posits a primitive identity maintenance mechanism that indexes and tracks a limited number of visual objects in parallel. These indexes are hypothesized to serve the function of binding visual features prior to subsequent pattern recognition.",
+      "score": {
+        "composite": 0.4895476610415558,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4381906441662231,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10954766104155578,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Visual Pathways",
+        "Humans",
+        "Eye Movements",
+        "Pattern Recognition, Visual",
+        "Motion Perception",
+        "Attention",
+        "Visual Fields",
+        "Algorithms",
+        "Models, Biological",
+        "Female",
+        "Male",
+        "Vision, Ocular"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_32723075",
+      "doi": "10.1016/j.cognition.2007.11.008",
+      "url": "https://doi.org/10.1016/j.cognition.2007.11.008",
+      "openalex_id": null,
+      "pmid": "18096148",
+      "first_author": "Fehd",
+      "authors_display": "Fehd, H., & Seiffert, A.",
+      "year": 2008,
+      "title": "Eye movements during multiple object tracking: where do participants look?",
+      "venue": "Cognition",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 89,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Similar to the eye movements you might make when viewing a sports game, this experiment investigated where participants tend to look while keeping track of multiple objects. While eye movements were recorded, participants tracked either 1 or 3 of 8 red dots that moved randomly within a square box on a black background. Results indicated that participants fixated closer to targets more often than to distractors. However, on 3-target trials, fixation was closer to the center of the triangle formed by the targets more often than to any individual targets. This center-looking strategy seemed to reflect that people were grouping the targets into a single object rather than simultaneously minimizing all target eccentricities. Here we find that observers deliberately focus their eyes on a location that is different from the objects they are attending, perhaps as a consequence of representing those objects as a group.",
+      "score": {
+        "composite": 0.4684653262042147,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26052797148352547,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06513199287088137,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Eye Movements",
+        "Visual Perception",
+        "Motion Perception",
+        "Attention",
+        "Fixation, Ocular",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_0ef09984",
+      "doi": "10.1371/journal.pone.0221353",
+      "url": "https://doi.org/10.1371/journal.pone.0221353",
+      "openalex_id": null,
+      "pmid": "31437203",
+      "first_author": "Cochrane",
+      "authors_display": "Cochrane, A. et al.",
+      "year": 2019,
+      "title": "Fluid intelligence is related to capacity in memory as well as attention: Evidence from middle childhood and adulthood.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 24,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0221353&type=printable",
+      "tldr": null,
+      "abstract": "Human fluid intelligence emerges from the interactions of various cognitive processes. Although some classic models characterize intelligence as a unitary \"general ability,\" many distinct lines of research have suggested that it is possible to at least partially decompose intelligence into a set of subsidiary cognitive functions. Much of this work has focused on the relationship between intelligence and working memory, and more specifically between intelligence and the capacity-loading aspects of working memory. These theories focus on domain-general processing capacity limitations, rather than limitations specifically linked to working memory tasks. Performance on other capacity-constrained tasks, even those that have typically been given the label of \"attention tasks,\" may thus also be related to fluid intelligence. We tested a wide range of attention and working memory tasks in 7- to 9-year-old children and adults, and we used the results of these cognitive measures to predict intelligence scores. In a set of 13 measures we did not observe a single \"positive manifold\" that would indicate a general-ability understanding of intelligence. Instead, we found that a small number of measures were related to intelligence scores. More specifically, we found two tasks that are typically labeled as \"attentional measures\", Multiple Object Tracking and Enumeration, and two tasks that are typically labeled as \"working memory\" measures, N-back and Spatial Span, were reliably related to intelligence. However, the links between attention and intelligence scores were fully mediated by working memory measures. In contrast, attention scores did not mediate the relations between working memory and intelligence. Furthermore, these patterns were indistinguishable across age groups, indicating a hierarchical cognitive basis of intelligence that is stable from childhood into adulthood.",
+      "score": {
+        "composite": 0.4599245922169964,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Intelligence",
+        "Cognition",
+        "Memory, Short-Term",
+        "Pattern Recognition, Visual",
+        "Space Perception",
+        "Attention",
+        "Intelligence Tests",
+        "Adult",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_e1d2da97",
+      "doi": "10.1080/13506280802281337",
+      "url": "https://doi.org/10.1080/13506280802281337",
+      "openalex_id": null,
+      "pmid": "19609460",
+      "first_author": "Fougnie",
+      "authors_display": "Fougnie, D., & Marois, R.",
+      "year": 2009,
+      "title": "Attentive Tracking Disrupts Feature Binding in Visual Working Memory.",
+      "venue": "Visual cognition",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 68,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "One of the most influential theories in visual cognition proposes that attention is necessary to bind different visual features into coherent object percepts (Treisman & Gelade, 1980). While considerable evidence supports a role for attention in perceptual feature binding, whether attention plays a similar function in visual working memory (VWM) remains controversial. To test the attentional requirements of VWM feature binding, here we gave participants an attention-demanding multiple object tracking task during the retention interval of a VWM task. Results show that the tracking task disrupted memory for color-shape conjunctions above and beyond any impairment to working memory for object features, and that this impairment was larger when the VWM stimuli were presented at different spatial locations. These results demonstrate that the role of visuospatial attention in feature binding is not unique to perception, but extends to the working memory of these perceptual representations as well.",
+      "score": {
+        "composite": 0.4579527687190098,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24514440820937256,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.2,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06128610205234314,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.03,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_914eeac0",
+      "doi": "10.3389/fpsyg.2015.01084",
+      "url": "https://doi.org/10.3389/fpsyg.2015.01084",
+      "openalex_id": null,
+      "pmid": "26284008",
+      "first_author": "Wahn",
+      "authors_display": "Wahn, B., & König, P.",
+      "year": 2015,
+      "title": "Audition and vision share spatial attentional resources, yet attentional load does not disrupt audiovisual integration.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (humans,participants)"
+      ],
+      "citation_count": 41,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4518141",
+      "tldr": null,
+      "abstract": "Humans continuously receive and integrate information from several sensory modalities. However, attentional resources limit the amount of information that can be processed. It is not yet clear how attentional resources and multisensory processing are interrelated. Specifically, the following questions arise: (1) Are there distinct spatial attentional resources for each sensory modality? and (2) Does attentional load affect multisensory integration? We investigated these questions using a dual task paradigm: participants performed two spatial tasks (a multiple object tracking task and a localization task), either separately (single task condition) or simultaneously (dual task condition). In the multiple object tracking task, participants visually tracked a small subset of several randomly moving objects. In the localization task, participants received either visual, auditory, or redundant visual and auditory location cues. In the dual task condition, we found a substantial decrease in participants' performance relative to the results of the single task condition. Importantly, participants performed equally well in the dual task condition regardless of the location cues' modality. This result suggests that having spatial information coming from different modalities does not facilitate performance, thereby indicating shared spatial attentional resources for the auditory and visual modality. Furthermore, we found that participants integrated redundant multisensory information similarly even when they experienced additional attentional load in the dual task condition. Overall, findings suggest that (1) visual and auditory spatial attentional resources are shared and that (2) audiovisual integration of spatial information occurs in an pre-attentive processing stage.",
+      "score": {
+        "composite": 0.4507671484130146,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_f0830714",
+      "doi": "10.1371/journal.pone.0185909",
+      "url": "https://doi.org/10.1371/journal.pone.0185909",
+      "openalex_id": null,
+      "pmid": "29016693",
+      "first_author": "Michaels",
+      "authors_display": "Michaels, J. et al.",
+      "year": 2017,
+      "title": "Driving simulator scenarios and measures to faithfully evaluate risky driving behavior: A comparative study of different driver age groups.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 47,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0185909&type=printable",
+      "tldr": null,
+      "abstract": "To investigate the links between mental workload, age and risky driving, a cross-sectional study was conducted on a driving simulator using several established and some novel measures of driving ability and scenarios of varying complexity. A sample of 115 drivers was divided into three age and experience groups: young inexperienced (18-21 years old), adult experienced (25-55 years old) and older adult (70-86 years old). Participants were tested on three different scenarios varying in mental workload from low to high. Additionally, to gain a better understanding of individuals' ability to capture and integrate relevant information in a highly complex visual environment, the participants' perceptual-cognitive capacity was evaluated using 3-dimensional multiple object tracking (3D-MOT). Results indicate moderate scenario complexity as the best suited to highlight well-documented differences in driving ability between age groups and to elicit naturalistic driving behavior. Furthermore, several of the novel driving measures were shown to provide useful, non-redundant information about driving behavior, complementing more established measures. Finally, 3D-MOT was demonstrated to be an effective predictor of elevated crash risk as well as decreased naturally-adopted mean driving speed, particularly among older adults. In sum, the present experiment demonstrates that in cases of either extreme high or low task demands, drivers can become overloaded or under aroused and thus task measures may lose sensitivity. Moreover, insights from the present study should inform methodological considerations for future driving simulator research. Importantly, future research should continue to investigate the predictive utility of perceptual-cognitive tests in the domain of driving risk assessment.",
+      "score": {
+        "composite": 0.44936660031942244,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22413306794435656,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05603326698608914,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Risk Assessment",
+        "Risk-Taking",
+        "Cognition",
+        "Pattern Recognition, Visual",
+        "Space Perception",
+        "Task Performance and Analysis",
+        "Automobile Driving",
+        "Adolescent",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Workload",
+        "Female",
+        "Male",
+        "High Fidelity Simulation Training"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_349f4aa2",
+      "doi": "10.1167/10.4.19",
+      "url": "https://doi.org/10.1167/10.4.19",
+      "openalex_id": null,
+      "pmid": "20465338",
+      "first_author": "Fehd",
+      "authors_display": "Fehd, H., & Seiffert, A.",
+      "year": 2010,
+      "title": "Looking at the center of the targets helps multiple object tracking.",
+      "venue": "Journal of vision",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 57,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The ability to move our gaze to locations of interest facilitates interactions in everyday life. Where do participants direct gaze when multiple locations are of interest simultaneously? We previously demonstrated that, when tracking several moving targets amidst distractors in a multiple object tracking (MOT) task, participants primarily looked at a central point in between the targets (H. M. Fehd & A. E. Seiffert, 2008). This strategy of center-looking is in contrast to a target-looking strategy where participants would saccade from target to target. Here we investigated what factors influence the use of center-looking as well as its effectiveness. By decreasing object speed, we determined that center-looking is not a result of avoiding costly eye movements during tracking. Decreasing object size showed that peripheral visibility is necessary for tracking, but that center-looking continues up to the limits of peripheral visibility. Further analysis revealed that participants often engaged in both target-looking and center-looking by switching gaze from the center to targets and back again. Directly comparing participants' performance when they either did or did not include center-looking along with target-looking revealed that center-looking facilitates tracking performance. These results suggest that there is value in looking at the center that relates directly to the process of tracking multiple objects.",
+      "score": {
+        "composite": 0.4421057625227926,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23508971675783696,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05877242918945924,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Eye Movements",
+        "Photic Stimulation",
+        "Space Perception",
+        "Motion Perception",
+        "Attention",
+        "Fixation, Ocular",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7431283f",
+      "doi": "10.1007/s10339-020-00954-y",
+      "url": "https://doi.org/10.1007/s10339-020-00954-y",
+      "openalex_id": null,
+      "pmid": "32016685",
+      "first_author": "Harris",
+      "authors_display": "Harris, D. et al.",
+      "year": 2020,
+      "title": "Examining the roles of working memory and visual attention in multiple object tracking expertise.",
+      "venue": "Cognitive processing",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 30,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s10339-020-00954-y.pdf",
+      "tldr": null,
+      "abstract": "When tracking multiple moving targets among visually similar distractors, human observers are capable of distributing attention over several spatial locations. It is unclear, however, whether capacity limitations or perceptual-cognitive abilities are responsible for the development of expertise in multiple object tracking. Across two experiments, we examined the role of working memory and visual attention in tracking expertise. In Experiment 1, individuals who regularly engaged in object tracking sports (soccer and rugby) displayed improved tracking performance, relative to non-tracking sports (swimming, rowing, running) (p = 0.02, η<sub>p</sub><sup>2</sup> = 0.163), but no differences in gaze strategy (ps > 0.31). In Experiment 2, participants trained on an adaptive object tracking task showed improved tracking performance (p = 0.005, d = 0.817), but no changes in gaze strategy (ps > 0.07). They did, however, show significant improvement in a working memory transfer task (p < 0.001, d = 0.970). These findings indicate that the development of tracking expertise is more closely linked to processing capacity limits than perceptual-cognitive strategies.",
+      "score": {
+        "composite": 0.4330381978737059,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Memory, Short-Term",
+        "Visual Perception",
+        "Attention",
+        "Adult",
+        "Female"
+      ]
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_2590dee9",
+      "doi": "10.1371/journal.pone.0058546",
+      "url": "https://doi.org/10.1371/journal.pone.0058546",
+      "openalex_id": null,
+      "pmid": "23516504",
+      "first_author": "Oei",
+      "authors_display": "Oei, A., & Patterson, M.",
+      "year": 2013,
+      "title": "Enhancing cognition with video games: a multiple game training study.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 149,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3596277",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Previous evidence points to a causal link between playing action video games and enhanced cognition and perception. However, benefits of playing other video games are under-investigated. We examined whether playing non-action games also improves cognition. Hence, we compared transfer effects of an action and other non-action types that required different cognitive demands.<h4>Methodology/principal findings</h4>We instructed 5 groups of non-gamer participants to play one game each on a mobile device (iPhone/iPod Touch) for one hour a day/five days a week over four weeks (20 hours). Games included action, spatial memory, match-3, hidden- object, and an agent-based life simulation. Participants performed four behavioral tasks before and after video game training to assess for transfer effects. Tasks included an attentional blink task, a spatial memory and visual search dual task, a visual filter memory task to assess for multiple object tracking and cognitive control, as well as a complex verbal span task. Action game playing eliminated attentional blink and improved cognitive control and multiple-object tracking. Match-3, spatial memory and hidden object games improved visual search performance while the latter two also improved spatial working memory. Complex verbal span improved after match-3 and action game training.<h4>Conclusion/significance</h4>Cognitive improvements were not limited to action game training alone and different games enhanced different aspects of cognition. We conclude that training specific cognitive abilities frequently in a video game improves performance in tasks that share common underlying demands. Overall, these results suggest that many video game-related cognitive improvements may not be due to training of general broad cognitive systems such as executive attentional control, but instead due to frequent utilization of specific cognitive processes during game play. Thus, many video game training related improvements to ",
+      "score": {
+        "composite": 0.4258592146846019,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2901035254050744,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0725258813512686,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Biomedical Enhancement",
+        "Spatial Behavior",
+        "Cognition",
+        "Memory",
+        "Reaction Time",
+        "Video Games",
+        "Female",
+        "Male",
+        "Attentional Blink"
+      ]
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_57f18c6d",
+      "doi": "10.1016/j.heliyon.2020.e04854",
+      "url": "https://doi.org/10.1016/j.heliyon.2020.e04854",
+      "openalex_id": null,
+      "pmid": "32995596",
+      "first_author": "Dørum",
+      "authors_display": "Dørum, E. et al.",
+      "year": 2020,
+      "title": "Functional brain network modeling in sub-acute stroke patients and healthy controls during rest and continuous attentive tracking.",
+      "venue": "Heliyon",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patients)"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7501434",
+      "tldr": null,
+      "abstract": "A cerebral stroke is characterized by compromised brain function due to an interruption in cerebrovascular blood supply. Although stroke incurs focal damage determined by the vascular territory affected, clinical symptoms commonly involve multiple functions and cognitive faculties that are insufficiently explained by the focal damage alone. Functional connectivity (FC) refers to the synchronous activity between spatially remote brain regions organized in a network of interconnected brain regions. Functional magnetic resonance imaging (fMRI) has advanced this system-level understanding of brain function, elucidating the complexity of stroke outcomes, as well as providing information useful for prognostic and rehabilitation purposes. We tested for differences in brain network connectivity between a group of patients with minor ischemic strokes in sub-acute phase (n = 44) and matched controls (n = 100). As neural network configuration is dependent on cognitive effort, we obtained fMRI data during rest and two load levels of a multiple object tracking (MOT) task. Network nodes and time-series were estimated using independent component analysis (ICA) and dual regression, with network edges defined as the partial temporal correlations between node pairs. The full set of edgewise FC went into a cross-validated regularized linear discriminant analysis (rLDA) to classify groups and cognitive load. MOT task performance and cognitive tests revealed no significant group differences. While multivariate machine learning revealed high sensitivity to experimental condition, with classification accuracies between rest and attentive tracking approaching 100%, group classification was at chance level, with negligible differences between conditions. Repeated measures ANOVA showed significantly stronger synchronization between a temporal node and a sensorimotor node in patients across conditions. Overall, the results revealed high sensitivity of FC indices to task conditions, and sugges",
+      "score": {
+        "composite": 0.4180414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1a834e97",
+      "doi": "10.7717/peerj.9803",
+      "url": "https://doi.org/10.7717/peerj.9803",
+      "openalex_id": null,
+      "pmid": "32879809",
+      "first_author": "Jin",
+      "authors_display": "Jin, P. et al.",
+      "year": 2020,
+      "title": "Dynamic visual attention characteristics and their relationship to match performance in skilled basketball players.",
+      "venue": "PeerJ",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 23,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.7717/peerj.9803",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Dynamic visual attention is important in basketball because it may affect the performance of players and thus the match outcome. The goals of this study were to investigate the difference in dynamic visual attention characteristics between highly skilled basketball players and nonathletic college students and to explore the relationship between visual attention and game-related performance among the basketball players.<h4>Methods</h4>In total, 24 highly skilled basketball players and 24 nonathletic college students participated in a multiple object tracking task. The task was conducted so that either the number of targets that were visually tracked or the speed at which a given number of tracked targets moved was altered to examine the difference in dynamic visual attention characteristics between the basketball players and nonathletic college students. The relationship between visual tracking speed (VTS) and game-related statistics, including assists, steals, mistakes, fouls and points scored recorded for every match during the season, was assessed among the basketball players by using Pearson correlations.<h4>Results</h4>A significant main effect of target tracking load was observed (<i>P</i> < 0.001), with visual tracking performance significantly decreased as target number increased. In addition, the speed at which the targets moved had a significant effect on visual tracking performance (<i>P</i> < 0.001), with tracking performance significantly decreased as target speed increased. However, no significant difference was observed in the abilities of basketball players and nonathletic college students to simultaneously track up to six targets. By contrast, a significant interaction between group and target speed was found (<i>P</i> < 0.001), with the visual tracking accuracy of basketball players significantly greater than that of college students at the higher target speeds examined (<i>P</i> < 0.001). Among basketball players, there were posi",
+      "score": {
+        "composite": 0.4126670521465946,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 25,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_8615c6e4",
+      "doi": "10.3389/fpsyg.2019.00817",
+      "url": "https://doi.org/10.3389/fpsyg.2019.00817",
+      "openalex_id": null,
+      "pmid": "31105611",
+      "first_author": "Scharfen",
+      "authors_display": "Scharfen, H., & Memmert, D.",
+      "year": 2019,
+      "title": "The Relationship Between Cognitive Functions and Sport-Specific Motor Skills in Elite Youth Soccer Players.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 57,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2019.00817/pdf",
+      "tldr": null,
+      "abstract": "The aim of the present study was to examine the relationship between basic cognitive functions and sport-specific motor skills in elite youth soccer players. A total of 15 elite youth soccer players aged 11-13 years performed a computer-based test battery measuring the attention window (AW), perceptual load (PL), working memory capacity (WMC), and multiple object tracking (MOT). Another set of tests was used to asses speed abilities and football-specific technical skills (sprint, change of direction, dribbling, ball control, shooting, and juggling). Spearman's correlation tests showed that the diagonal AW was positively associated with dribbling skills (<i>r<sub>s</sub></i> = 0.656) which indicates that a broader AW could be beneficial for highly demanding motor skills like dribbling. WMC was positively related to dribbling (<i>r<sub>s</sub></i> = 0.562), ball control (<i>r<sub>s</sub></i> = 0.669), and ball juggling (<i>r<sub>s</sub></i> = 0.727). Additionally, the cumulated score of all cognitive tests was positively related to the cumulated motor test score (<i>r<sub>s</sub></i> = 0.614) which supports the interplay of physical and psychological skills. Our findings highlight the need for more, and especially longitudinal, studies to enhance the knowledge of cognition-motor skill relationships for talent identification, talent development, and performance in soccer.",
+      "score": {
+        "composite": 0.4121057625227926,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23508971675783696,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05877242918945924,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 26,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3e3c1e2e",
+      "doi": "10.3390/ijerph18094862",
+      "url": "https://doi.org/10.3390/ijerph18094862",
+      "openalex_id": null,
+      "pmid": "34063304",
+      "first_author": "Park",
+      "authors_display": "Park, S. et al.",
+      "year": 2021,
+      "title": "The Effects of the Combination of High-Intensity Interval Training with 3D-Multiple Object Tracking Task on Perceptual-Cognitive Performance: A Randomized Controlled Intervention Trial.",
+      "venue": "International journal of environmental research and public health",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/1660-4601/18/9/4862/pdf",
+      "tldr": null,
+      "abstract": "The ability to process goal-related visual information while ignoring goal-irrelevant information is essential for the human attention system. The study aimed to investigate how perceptual-cognitive performance was affected during high-intensity interval training (HIIT) using a 3D-multiple object tracking (3D-MOT) task called Neurotracker (NT). In an experimental design, 42 healthy adults (age <i>M</i> = 23.3 <i>SD</i> = 2.94, VO<sub>2</sub>max 52.8 ± 5.66 mL·kg<sup>-1</sup>·min<sup>-1</sup>) were randomly assigned to an intervention (HIIT + NT, NT, HIIT) or control group. NT performance (20 trials per session) was measured pre-and post-test (at 5, 15, and 25 min while running on the treadmill). The participants trained twice a week for a 4-week intervention period. There was a significant interaction effect between pre/post-test and groups regarding perceptual-cognitive performance, indicating similar enhancements in the HIIT + NT and the NT group during exercise. HIIT influences physical fitness but did not show any impact on perceptual-cognitive performance. Due to the specific NT task characteristics, improved physical abilities may not directly impact sport-specific perceptual-cognitive performance. Our findings suggest that training resulted in substantial task-specific gains. Therefore, combination training may be proposed as a training program to improve perceptual-cognitive, and physical performance in a time-efficient way.",
+      "score": {
+        "composite": 0.4113747341751221,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher",
+      "mesh_terms": [
+        "Humans",
+        "Exercise Test",
+        "Exercise",
+        "Cognition",
+        "Physical Fitness",
+        "Adult",
+        "High-Intensity Interval Training"
+      ]
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_e005af05",
+      "doi": "10.3389/fnsys.2014.00054",
+      "url": "https://doi.org/10.3389/fnsys.2014.00054",
+      "openalex_id": null,
+      "pmid": "24782722",
+      "first_author": "Oei",
+      "authors_display": "Oei, A., & Patterson, M.",
+      "year": 2014,
+      "title": "Are videogame training gains specific or general?",
+      "venue": "Frontiers in systems neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (human)"
+      ],
+      "citation_count": 35,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3986546",
+      "tldr": null,
+      "abstract": "Many recent studies using healthy adults document enhancements in perception and cognition from playing commercial action videogames (AVGs). Playing action games (e.g., Call of Duty, Medal of Honor) is associated with improved bottom-up lower-level information processing skills like visual-perceptual and attentional processes. One proposal states a general improvement in the ability to interpret and gather statistical information to predict future actions which then leads to better performance across different perceptual/attentional tasks. Another proposal claims all the tasks are separately trained in the AVGs because the AVGs and laboratory tasks contain similar demands. We review studies of action and non-AVGs to show support for the latter proposal. To explain transfer in AVGs, we argue that the perceptual and attention tasks share common demands with the trained videogames (e.g., multiple object tracking (MOT), rapid attentional switches, and peripheral vision). In non-AVGs, several studies also demonstrate specific, limited transfer. One instance of specific transfer is the specific enhancement to mental rotation after training in games with a spatial emphasis (e.g., Tetris). In contrast, the evidence for transfer is equivocal where the game and task do not share common demands (e.g., executive functioning). Thus, the \"common demands\" hypothesis of transfer not only characterizes transfer effects in AVGs, but also non-action games. Furthermore, such a theory provides specific predictions, which can help in the selection of games to train human cognition as well as in the design of videogames purposed for human cognitive and perceptual enhancement. Finally this hypothesis is consistent with the cognitive training literature where most post-training gains are for tasks similar to the training rather than general, non-specific improvements.",
+      "score": {
+        "composite": 0.4052025782685444,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_aac7a9c3",
+      "doi": "10.3389/fpsyg.2020.00196",
+      "url": "https://doi.org/10.3389/fpsyg.2020.00196",
+      "openalex_id": null,
+      "pmid": "32116972",
+      "first_author": "Harris",
+      "authors_display": "Harris, D. et al.",
+      "year": 2020,
+      "title": "Testing the Effects of 3D Multiple Object Tracking Training on Near, Mid and Far Transfer.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2020.00196/pdf",
+      "tldr": null,
+      "abstract": "Cognitive training (CT) aims to develop domain general mental abilities to support functions like decision making, multitasking, and performance under pressure. Research to date has indicated that CT likely aids performance on lab-based cognitive tests, but there has been little demonstration of transfer to tasks representative of real-world high performance environments. This study aimed to assess transfer from a CT intervention to near and mid-level transfer tasks, plus a far transfer test representative of real-world multitasking in a military environment. 84 participants were randomized to four independent training groups, using <i>NeuroTracker</i>, a CT task based on 3D object tracking. There was no evidence for near transfer (to another object tracking task) or for far transfer to a route monitoring task designed to replicate real-world multitasking. There may, however, have been some improvement in working memory performance as a result of training. These findings raise further questions about whether domain general CT will transfer to real-world performance. Effective uses of CT may require more task specific training targeting mid-level transfer effects.",
+      "score": {
+        "composite": 0.4004594065461355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_78ca0ae9",
+      "doi": "10.1523/jneurosci.1777-21.2022",
+      "url": "https://doi.org/10.1523/jneurosci.1777-21.2022",
+      "openalex_id": null,
+      "pmid": "35508382",
+      "first_author": "Ritz",
+      "authors_display": "Ritz, H. et al.",
+      "year": 2022,
+      "title": "Parametric Cognitive Load Reveals Hidden Costs in the Neural Processing of Perfectly Intelligible Degraded Speech.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 11,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Speech is often degraded by environmental noise or hearing impairment. People can compensate for degradation, but this requires cognitive effort. Previous research has identified frontotemporal networks involved in effortful perception, but materials in these works were also less intelligible, and so it is not clear whether activity reflected effort or intelligibility differences. We used functional magnetic resonance imaging to assess the degree to which spoken sentences were processed under distraction and whether this depended on speech quality even when intelligibility of degraded speech was matched to that of clear speech (close to 100%). On each trial, male and female human participants either attended to a sentence or to a concurrent multiple object tracking (MOT) task that imposed parametric cognitive load. Activity in bilateral anterior insula reflected task demands; during the MOT task, activity increased as cognitive load increased, and during speech listening, activity increased as speech became more degraded. In marked contrast, activity in bilateral anterior temporal cortex was speech selective and gated by attention when speech was degraded. In this region, performance of the MOT task with a trivial load blocked processing of degraded speech, whereas processing of clear speech was unaffected. As load increased, responses to clear speech in these areas declined, consistent with reduced capacity to process it. This result dissociates cognitive control from speech processing; substantially less cognitive control is required to process clear speech than is required to understand even very mildly degraded, 100% intelligible speech. Perceptual and control systems clearly interact dynamically during real-world speech comprehension.<b>SIGNIFICANCE STATEMENT</b> Speech is often perfectly intelligible even when degraded, for example, by background sound, phone transmission, or hearing loss. How does degradation alter cognitive demands? Here, we use fMRI to demo",
+      "score": {
+        "composite": 0.39930083730710003,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Temporal Lobe",
+        "Humans",
+        "Hearing Loss",
+        "Speech Intelligibility",
+        "Cognition",
+        "Speech Perception",
+        "Noise",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_2a589e32",
+      "doi": "10.1111/j.1467-9280.2005.01635.x",
+      "url": "https://doi.org/10.1111/j.1467-9280.2005.01635.x",
+      "openalex_id": null,
+      "pmid": "16262778",
+      "first_author": "O'Hearn",
+      "authors_display": "O'Hearn, K. et al.",
+      "year": 2005,
+      "title": "Multiple object tracking in people with Williams syndrome and in normally developing children.",
+      "venue": "Psychological science",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 45,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Multiple object tracking is hypothesized to utilize visual indexes, which may provide rapid, parallel access to a limited number of visual objects, thereby supporting a variety of spatial tasks. We examined whether faulty indexing might play a role in the severe visuospatial deficits found in Williams syndrome. We asked observers to track from one to four targets in a display of eight identical objects. Objects remained stationary (static condition) or moved randomly and independently (moving condition) for 6 s, after which observers pointed to the objects they thought were targets. People with Williams syndrome were impaired in the moving condition, but not the static condition, compared with mental-age-matched control participants. Normal children who were younger than the mental-age-matched control children did not show the same profile as individuals with Williams syndrome, which suggests that the difference between the tasks in Williams syndrome did not reflect simple developmental immaturity. Error analysis revealed that all groups had \"slippery\" indexes, falsely identifying target neighbors, and further suggested that people with Williams syndrome deploy fewer indexes than do people without this disorder.",
+      "score": {
+        "composite": 0.39875057593039337,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22166897038824016,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05541724259706004,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Williams Syndrome",
+        "Perceptual Disorders",
+        "Space Perception",
+        "Visual Perception",
+        "Adolescent",
+        "Child",
+        "Child, Preschool",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 31,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_90011402",
+      "doi": "10.1523/jneurosci.0605-22.2022",
+      "url": "https://doi.org/10.1523/jneurosci.0605-22.2022",
+      "openalex_id": null,
+      "pmid": "36202616",
+      "first_author": "Adamian",
+      "authors_display": "Adamian, N., & Andersen, S.",
+      "year": 2022,
+      "title": "Attentional Enhancement of Tracked Stimuli in Early Visual Cortex Has Limited Capacity.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 9,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Keeping track of the location of multiple moving objects is one of the well documented functions of visual attention. However, the mechanism of attentional selection that supports such continuous tracking is unclear. In particular, it has been proposed that target selection in early visual cortex occurs in parallel, with tracking errors arising because of attentional limitations at later processing stages. Here, we examine whether, instead, total attentional capacity for enhancement of early visual processing of tracked targets is shared between all attended stimuli. If the magnitude of attentional facilitation of multiple tracked targets was a key limiting factor of tracking ability, then one should expect it to drop systematically with increasing set-size of tracked targets. Human observers (male and female) were instructed to track two, four, or six moving objects among a pool of identical distractors. Steady-state visual evoked potentials (SSVEPs) recorded during the tracking period revealed that the processing of tracked targets was consistently amplified compared with the processing of the distractors. The magnitude of this amplification decreased with increasing set size, and at lateral occipital electrodes it closely followed inverse proportionality to the number of tracked items, suggesting that limited attentional resources must be shared among the tracked stimuli. Accordingly, the magnitude of attentional facilitation predicted the behavioral outcome at the end of the trial. Together, these findings demonstrate that the limitations of multiple object tracking (MOT) across set-sizes stem from the limitations of top-down selective attention already at the early stages of visual processing.<b>SIGNIFICANCE STATEMENT</b> The ability to selectively attend to relevant features or objects is the key to flexibility of perception and action in the continuously changing environment. This ability is demonstrated in the multiple object tracking (MOT) task where observ",
+      "score": {
+        "composite": 0.3966618442813261,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Visual Cortex",
+        "Humans",
+        "Photic Stimulation",
+        "Visual Perception",
+        "Motion Perception",
+        "Evoked Potentials, Visual",
+        "Visual Fields",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 32,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_be14ff21",
+      "doi": "10.3389/fpsyg.2018.01290",
+      "url": "https://doi.org/10.3389/fpsyg.2018.01290",
+      "openalex_id": null,
+      "pmid": "30090080",
+      "first_author": "Bennett",
+      "authors_display": "Bennett, S. et al.",
+      "year": 2018,
+      "title": "Stroboscopic Vision When Interacting With Multiple Moving Objects: Perturbation Is Not the Same as Elimination.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants,subject)"
+      ],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6068388",
+      "tldr": null,
+      "abstract": "Motivated by recent findings of improved perceptual processing and perceptual-motor skill following stroboscopic vision training, the current study examined the performance and acquisition effects of stroboscopic vision methods that afford a different visual experience. In Experiment 1, we conducted a within-subject design study to examine performance of a multiple object tracking (MOT) task in different stroboscopic vision conditions (Nike Vapor Strobe<sup>®</sup>, PLATO visual occlusion, and intermittent display presentation) operating at 5.6, 3.2, or 1.8 Hz. We found that participants maintained MOT performance in the Vapor Strobe condition irrespective of strobe rate. However, MOT performance deteriorated as strobe rate was reduced in the other two stroboscopic vision conditions. Moreover, at the lowest strobe rate (1.8 Hz) there was an increase in probe reaction time, thus indicating an increased attentional demand due to the stroboscopic vision. In Experiment 2, we conducted a mixed design study to examine if practice in different stroboscopic vision conditions (Nike Vapor Strobe<sup>®</sup> and PLATO visual occlusion) influenced acquisition of a novel precision-aiming task [i.e., multiple object avoidance (MOA) task] compared to a normal vision group. Participants in the PLATO visual occlusion group exhibited worse performance during practice than the Vapor Strobe and normal vision groups. At post-test, the Vapor Strobe group demonstrated greater success and reduced end-point error than the normal vision and PLATO groups. We interpret these findings as showing that both an intermittent perturbation (Nike Vapor Strobe<sup>®</sup>) and elimination (PLATO visual occlusion and intermittent display presentation) of visual motion and form are more attention demanding (Experiment 1), however, the intermittent perturbation, but not elimination, of visual motion and form can facilitate acquisition of perceptual-motor skill (Experiment 2) in situations where it is nece",
+      "score": {
+        "composite": 0.38740093357352,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 33,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_25a66a74",
+      "doi": "10.3389/fpsyg.2018.00304",
+      "url": "https://doi.org/10.3389/fpsyg.2018.00304",
+      "openalex_id": null,
+      "pmid": "29593608",
+      "first_author": "Bland",
+      "authors_display": "Bland, N. et al.",
+      "year": 2018,
+      "title": "No Evidence for Phase-Specific Effects of 40 Hz HD-tACS on Multiple Object Tracking.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human)"
+      ],
+      "citation_count": 13,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5854687",
+      "tldr": null,
+      "abstract": "Phase synchronization drives connectivity between neural oscillators, providing a flexible mechanism through which information can be effectively and selectively routed between task-relevant cortical areas. The ability to keep track of objects moving between the left and right visual hemifields, for example, requires the integration of information between the two cerebral hemispheres. Both animal and human studies have suggested that coherent (or phase-locked) gamma oscillations (30-80 Hz) might underlie this ability. While most human evidence has been strictly correlational, high-density transcranial alternating current stimulation (HD-tACS) has been used to manipulate ongoing interhemispheric gamma phase relationships. Previous research showed that 40 Hz tACS delivered bilaterally over human motion complex could bias the perception of a bistable ambiguous motion stimulus (Helfrich et al., 2014). Specifically, this work showed that in-phase (0° offset) stimulation boosted endogenous interhemispheric gamma coherence and biased perception toward the horizontal (whereby visual tokens moved <i>between</i> visual hemifields-requiring interhemispheric integration). By contrast, anti-phase (180° offset) stimulation decreased interhemispheric gamma coherence and biased perception toward the vertical (whereby tokens moved <i>within</i> separate visual hemifields). Here we devised a multiple object tracking arena comprised of four quadrants whereby discrete objects moved either entirely within the left and right visual hemifields, or could cross freely between visual hemifields, thus requiring interhemispheric integration. Using the same HD-tACS montages as Helfrich et al. (2014), we found no phase-specific effect of 40 Hz stimulation on overall tracking performance. While tracking performance was generally lower during <i>between</i>-hemifield trials (presumably reflecting a cost of integration), this difference was unchanged by in- vs. anti-phase stimulation. Our null resu",
+      "score": {
+        "composite": 0.3815320741182369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 34,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_63c8fab3",
+      "doi": "10.1371/journal.pcbi.1012075",
+      "url": "https://doi.org/10.1371/journal.pcbi.1012075",
+      "openalex_id": null,
+      "pmid": "38768230",
+      "first_author": "Ryu",
+      "authors_display": "Ryu, J. et al.",
+      "year": 2024,
+      "title": "Versatile multiple object tracking in sparse 2D/3D videos via deformable image registration.",
+      "venue": "PLoS computational biology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 13,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11142724",
+      "tldr": null,
+      "abstract": "Tracking body parts in behaving animals, extracting fluorescence signals from cells embedded in deforming tissue, and analyzing cell migration patterns during development all require tracking objects with partially correlated motion. As dataset sizes increase, manual tracking of objects becomes prohibitively inefficient and slow, necessitating automated and semi-automated computational tools. Unfortunately, existing methods for multiple object tracking (MOT) are either developed for specific datasets and hence do not generalize well to other datasets, or require large amounts of training data that are not readily available. This is further exacerbated when tracking fluorescent sources in moving and deforming tissues, where the lack of unique features and sparsely populated images create a challenging environment, especially for modern deep learning techniques. By leveraging technology recently developed for spatial transformer networks, we propose ZephIR, an image registration framework for semi-supervised MOT in 2D and 3D videos. ZephIR can generalize to a wide range of biological systems by incorporating adjustable parameters that encode spatial (sparsity, texture, rigidity) and temporal priors of a given data class. We demonstrate the accuracy and versatility of our approach in a variety of applications, including tracking the body parts of a behaving mouse and neurons in the brain of a freely moving C. elegans. We provide an open-source package along with a web-based graphical user interface that allows users to provide small numbers of annotations to interactively improve tracking results.",
+      "score": {
+        "composite": 0.38153207411823686,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Mice",
+        "Caenorhabditis elegans",
+        "Imaging, Three-Dimensional",
+        "Computational Biology",
+        "Algorithms",
+        "Image Processing, Computer-Assisted",
+        "Deep Learning"
+      ]
+    },
+    {
+      "rank": 35,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_2576937f",
+      "doi": "10.1523/jneurosci.4015-12.2013",
+      "url": "https://doi.org/10.1523/jneurosci.4015-12.2013",
+      "openalex_id": null,
+      "pmid": "23516299",
+      "first_author": "Störmer",
+      "authors_display": "Störmer, V. et al.",
+      "year": 2013,
+      "title": "Sustained multifocal attentional enhancement of stimulus processing in early visual areas predicts tracking performance.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 51,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Keeping track of multiple moving objects is an essential ability of visual perception. However, the mechanisms underlying this ability are not well understood. We instructed human observers to track five or seven independent randomly moving target objects amid identical nontargets and recorded steady-state visual evoked potentials (SSVEPs) elicited by these stimuli. Visual processing of moving targets, as assessed by SSVEP amplitudes, was continuously facilitated relative to the processing of identical but irrelevant nontargets. The cortical sources of this enhancement were located to areas including early visual cortex V1-V3 and motion-sensitive area MT, suggesting that the sustained multifocal attentional enhancement during multiple object tracking already operates at hierarchically early stages of visual processing. Consistent with this interpretation, the magnitude of attentional facilitation during tracking in a single trial predicted the speed of target identification at the end of the trial. Together, these findings demonstrate that attention can flexibly and dynamically facilitate the processing of multiple independent object locations in early visual areas and thereby allow for tracking of these objects.",
+      "score": {
+        "composite": 0.3705251695584579,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Visual Cortex",
+        "Visual Pathways",
+        "Humans",
+        "Brain Mapping",
+        "Predictive Value of Tests",
+        "Photic Stimulation",
+        "Motion Perception",
+        "Attention",
+        "Adaptation, Physiological",
+        "Evoked Potentials, Visual",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 36,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_5ec3f58e",
+      "doi": "10.1016/j.aap.2013.06.037",
+      "url": "https://doi.org/10.1016/j.aap.2013.06.037",
+      "openalex_id": null,
+      "pmid": "23954688",
+      "first_author": "Bowers",
+      "authors_display": "Bowers, A. et al.",
+      "year": 2013,
+      "title": "Can we improve clinical prediction of at-risk older drivers?",
+      "venue": "Accident; analysis and prevention",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 43,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objectives</h4>To conduct a pilot study to evaluate the predictive value of the Montreal Cognitive Assessment test (MoCA) and a brief test of multiple object tracking (MOT) relative to other tests of cognition and attention in identifying at-risk older drivers, and to determine which combination of tests provided the best overall prediction.<h4>Methods</h4>Forty-seven currently licensed drivers (58-95 years), primarily from a clinical driving evaluation program, participated. Their performance was measured on: (1) a screening test battery, comprising MoCA, MOT, Mini-Mental State Examination (MMSE), Trail-Making Test, visual acuity, contrast sensitivity, and Useful Field of View (UFOV) and (2) a standardized road test.<h4>Results</h4>Eighteen participants were rated at-risk on the road test. UFOV subtest 2 was the best single predictor with an area under the curve (AUC) of .84. Neither MoCA nor MOT was a better predictor of the at-risk outcome than either MMSE or UFOV, respectively. The best four-test combination (MMSE, UFOV subtest 2, visual acuity and contrast sensitivity) was able to identify at-risk drivers with 95% specificity and 80% sensitivity (.91 AUC).<h4>Conclusions</h4>Although the best four-test combination was much better than a single test in identifying at-risk drivers, there is still much work to do in this field to establish test batteries that have both high sensitivity and specificity.",
+      "score": {
+        "composite": 0.36810716385411124,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21909532208311155,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05477383052077789,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Risk Assessment",
+        "Pilot Projects",
+        "Predictive Value of Tests",
+        "Cognition",
+        "Contrast Sensitivity",
+        "Attention",
+        "Mental Status Schedule",
+        "Neuropsychological Tests",
+        "Trail Making Test",
+        "Accidents, Traffic",
+        "Visual Acuity",
+        "Decision Support Techniques",
+        "Automobile Driving",
+        "Automobile Driver Examination",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Visual Field Tests"
+      ]
+    },
+    {
+      "rank": 37,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2b93b7c7",
+      "doi": "10.1038/s41378-023-00577-1",
+      "url": "https://doi.org/10.1038/s41378-023-00577-1",
+      "openalex_id": null,
+      "pmid": "37780810",
+      "first_author": "Hua",
+      "authors_display": "Hua, H. et al.",
+      "year": 2023,
+      "title": "A deformability-based biochip for precise label-free stratification of metastatic subtypes using deep learning.",
+      "venue": "Microsystems & nanoengineering",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 9,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41378-023-00577-1.pdf",
+      "tldr": null,
+      "abstract": "Cellular deformability is a promising biomarker for evaluating the physiological state of cells in medical applications. Microfluidics has emerged as a powerful technique for measuring cellular deformability. However, existing microfluidic-based assays for measuring cellular deformability rely heavily on image analysis, which can limit their scalability for high-throughput applications. Here, we develop a parallel constriction-based microfluidic flow cytometry device and an integrated computational framework (ATMQcD). The ATMQcD framework includes automatic training set generation, multiple object tracking, segmentation, and cellular deformability quantification. The system was validated using cancer cell lines of varying metastatic potential, achieving a classification accuracy of 92.4% for invasiveness assessment and stratifying cancer cells before and after hypoxia treatment. The ATMQcD system also demonstrated excellent performance in distinguishing cancer cells from leukocytes (accuracy = 89.5%). We developed a mechanical model based on power-law rheology to quantify stiffness, which was fitted with measured data directly. The model evaluated metastatic potentials for multiple cancer types and mixed cell populations, even under real-world clinical conditions. Our study presents a highly robust and transferable computational framework for multiobject tracking and deformation measurement tasks in microfluidics. We believe that this platform has the potential to pave the way for high-throughput analysis in clinical applications, providing a powerful tool for evaluating cellular deformability and assessing the physiological state of cells.",
+      "score": {
+        "composite": 0.3666618442813261,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 38,
+      "tier": "excluded",
+      "auto_role": "key_review",
+      "pub_id": "pub_deb2c046",
+      "doi": "10.3390/vision3030037",
+      "url": "https://doi.org/10.3390/vision3030037",
+      "openalex_id": null,
+      "pmid": "31735838",
+      "first_author": "Hyönä",
+      "authors_display": "Hyönä, J. et al.",
+      "year": 2019,
+      "title": "Eye Behavior During Multiple Object Tracking and Multiple Identity Tracking.",
+      "venue": "Vision (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 13,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/2411-5150/3/3/37/pdf?version=1566819271",
+      "tldr": null,
+      "abstract": "We review all published eye-tracking studies to date that have used eye movements to examine multiple object (MOT) or multiple identity tracking (MIT). In both tasks, observers dynamically track multiple moving objects. In MOT the objects are identical, whereas in MIT they have distinct identities. In MOT, observers prefer to fixate on blank space, which is often the center of gravity formed by the moving targets (centroid). In contrast, in MIT observers have a strong preference for the target-switching strategy, presumably to refresh and maintain identity-location bindings for the targets. To account for the qualitative differences between MOT and MIT, two mechanisms have been posited, a position tracking (MOT) and an identity tracking (MOT & MIT) mechanism. Eye-tracking studies of MOT have also demonstrated that observers execute rescue saccades toward targets in danger of becoming occluded or are about to change direction after a collision. Crowding attracts the eyes close to it in order to increase visual acuity for the crowded objects to prevent target loss. It is suggested that future studies should concentrate more on MIT, as MIT more closely resembles tracking in the real world.",
+      "score": {
+        "composite": 0.3615320741182369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 39,
+      "tier": "reserve",
+      "auto_role": "key_review",
+      "pub_id": "pub_0548b8ef",
+      "doi": "10.1186/s42492-021-00086-w",
+      "url": "https://doi.org/10.1186/s42492-021-00086-w",
+      "openalex_id": null,
+      "pmid": "34269925",
+      "first_author": "Xu",
+      "authors_display": "Xu, Z. et al.",
+      "year": 2021,
+      "title": "A survey: which features are required for dynamic visual simultaneous localization and mapping?",
+      "venue": "Visual computing for industry, biomedicine, and art",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8285453",
+      "tldr": null,
+      "abstract": "In recent years, simultaneous localization and mapping in dynamic environments (dynamic SLAM) has attracted significant attention from both academia and industry. Some pioneering work on this technique has expanded the potential of robotic applications. Compared to standard SLAM under the static world assumption, dynamic SLAM divides features into static and dynamic categories and leverages each type of feature properly. Therefore, dynamic SLAM can provide more robust localization for intelligent robots that operate in complex dynamic environments. Additionally, to meet the demands of some high-level tasks, dynamic SLAM can be integrated with multiple object tracking. This article presents a survey on dynamic SLAM from the perspective of feature choices. A discussion of the advantages and disadvantages of different visual features is provided in this article.",
+      "score": {
+        "composite": 0.35923507429477763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 40,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_0a7d1c68",
+      "doi": "10.3389/fpsyg.2013.00323",
+      "url": "https://doi.org/10.3389/fpsyg.2013.00323",
+      "openalex_id": null,
+      "pmid": "23761025",
+      "first_author": "Legault",
+      "authors_display": "Legault, I. et al.",
+      "year": 2013,
+      "title": "Healthy older observers show equivalent perceptual-cognitive training benefits to young adults for multiple object tracking.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants)"
+      ],
+      "citation_count": 41,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3674476",
+      "tldr": null,
+      "abstract": "The capacity to process complex dynamic scenes is of critical importance in real life. For instance, traveling through a crowd while avoiding collisions and maintaining orientation and good motor control requires fluent and continuous perceptual-cognitive processing. It is well documented that effects of healthy aging can influence perceptual-cognitive processes (Faubert, 2002) and that the efficiency of such processes can improve with training even for older adults (Richards et al., 2006). Here we assess the capacity of older participants to improve their tracking speed thresholds in a dynamic, virtual reality environment. Results show that this capacity is significantly affected by healthy aging but that perceptual-cognitive training can significantly reduce age-related effects in older individuals, who show an identical learning function to younger healthy adults. Data support the notion that learning in healthy older persons is maintained for processing complex dynamic scenes.",
+      "score": {
+        "composite": 0.34743381507968124,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 41,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c132b50e",
+      "doi": "10.1186/s41235-021-00313-1",
+      "url": "https://doi.org/10.1186/s41235-021-00313-1",
+      "openalex_id": null,
+      "pmid": "34292418",
+      "first_author": "Treviño",
+      "authors_display": "Treviño, M. et al.",
+      "year": 2021,
+      "title": "How do we measure attention? Using factor analysis to establish construct validity of neuropsychological tests.",
+      "venue": "Cognitive research: principles and implications",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 33,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://cognitiveresearchjournal.springeropen.com/counter/pdf/10.1186/s41235-021-00313-1",
+      "tldr": null,
+      "abstract": "We investigated whether standardized neuropsychological tests and experimental cognitive paradigms measure the same cognitive faculties. Specifically, do neuropsychological tests commonly used to assess attention measure the same construct as attention paradigms used in cognitive psychology and neuroscience? We built on the \"general attention factor\", comprising several widely used experimental paradigms (Huang et al., 2012). Participants (n = 636) completed an on-line battery (TestMyBrain.org) of six experimental tests [Multiple Object Tracking, Flanker Interference, Visual Working Memory, Approximate Number Sense, Spatial Configuration Visual Search, and Gradual Onset Continuous Performance Task (Grad CPT)] and eight neuropsychological tests [Trail Making Test versions A & B (TMT-A, TMT-B), Digit Symbol Coding, Forward and Backward Digit Span, Letter Cancellation, Spatial Span, and Arithmetic]. Exploratory factor analysis in a subset of 357 participants identified a five-factor structure: (1) attentional capacity (Multiple Object Tracking, Visual Working Memory, Digit Symbol Coding, Spatial Span), (2) search (Visual Search, TMT-A, TMT-B, Letter Cancellation); (3) Digit Span; (4) Arithmetic; and (5) Sustained Attention (GradCPT). Confirmatory analysis in 279 held-out participants showed that this model fit better than competing models. A hierarchical model where a general cognitive factor was imposed above the five specific factors fit as well as the model without the general factor. We conclude that Digit Span and Arithmetic tests should not be classified as attention tests. Digit Symbol Coding and Spatial Span tap attentional capacity, while TMT-A, TMT-B, and Letter Cancellation tap search (or attention-shifting) ability. These five tests can be classified as attention tests.",
+      "score": {
+        "composite": 0.34437524518659623,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Factor Analysis, Statistical",
+        "Memory, Short-Term",
+        "Attention",
+        "Neuropsychological Tests",
+        "Trail Making Test"
+      ]
+    },
+    {
+      "rank": 42,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_e06c798c",
+      "doi": "10.1002/ejsc.12153",
+      "url": "https://doi.org/10.1002/ejsc.12153",
+      "openalex_id": null,
+      "pmid": "38874591",
+      "first_author": "Friebe",
+      "authors_display": "Friebe, D. et al.",
+      "year": 2024,
+      "title": "Validity of a motor-cognitive dual-task agility test in elite youth football players.",
+      "venue": "European journal of sport science",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Validation Study",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 8,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11295090",
+      "tldr": null,
+      "abstract": "Agility, as the ability to react rapidly to unforeseen events, is an essential component of football performance. However, existing agility diagnostics often do not reflect the complex motor-cognitive interaction required on the field. Therefore, this study evaluates the criterion and ecological validity of a newly developed motor-cognitive dual-task agility approach in elite youth football players and compare it to a traditional reactive agility test. Twenty-one male youth elite football players (age:17.4 ±0 .6; BMI:23.2 ± 1.8) performed two agility tests (reactive agility, reactive agility with integrated multiple-object-tracking (Dual-Task Agility)) on the SKILLCOURT system. Performance was correlated to motor (sprint, jump), cognitive (executive functions, attention, reaction speed) and football specific tests (Loughborough soccer passing test (LSPT)) as well as indirect game metrics (coaches' rating, playing time). Reactive agility performance showed moderate correlations to attention and choice reaction times (r = 0.48-0.63), as well as to the LSPT (r = 0.51). The dual-task agility test revealed moderate relationships with attention and reaction speed (r = 0.47-0.58), executive functions (r = 0.45-0.63), as well as the game metrics (r = 0.51-0.61). Finally, the dual-task agility test significantly differentiated players based on their coaches' rating and playing time using a median split (p < 0.05; d = 0.8-1.28). Motor-cognitive agility performance in elite youth football players seems to be primarily determined by cognitive functions. The integration of multiple object tracking into reactive agility testing seems to be an ecologically valid approach for performance diagnostics in youth football.",
+      "score": {
+        "composite": 0.33513681525622196,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Exercise Test",
+        "Cognition",
+        "Motor Skills",
+        "Attention",
+        "Reaction Time",
+        "Soccer",
+        "Adolescent",
+        "Male",
+        "Athletic Performance",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 43,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4c21de5b",
+      "doi": "10.3390/s19051188",
+      "url": "https://doi.org/10.3390/s19051188",
+      "openalex_id": null,
+      "pmid": "30857169",
+      "first_author": "Zhang",
+      "authors_display": "Zhang, L. et al.",
+      "year": 2019,
+      "title": "Automatic Individual Pig Detection and Tracking in Pig Farms.",
+      "venue": "Sensors (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 54,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6427794",
+      "tldr": null,
+      "abstract": "Individual pig detection and tracking is an important requirement in many video-based pig monitoring applications. However, it still remains a challenging task in complex scenes, due to problems of light fluctuation, similar appearances of pigs, shape deformations, and occlusions. In order to tackle these problems, we propose a robust on-line multiple pig detection and tracking method which does not require manual marking or physical identification of the pigs and works under both daylight and infrared (nighttime) light conditions. Our method couples a CNN-based detector and a correlation filter-based tracker via a novel hierarchical data association algorithm. In our method, the detector gains the best accuracy/speed trade-off by using the features derived from multiple layers at different scales in a one-stage prediction network. We define a <i>tag-box</i> for each pig as the tracking target, from which features with a more local scope are extracted for learning, and the multiple object tracking is conducted in a key-points tracking manner using learned correlation filters. Under challenging conditions, the tracking failures are modelled based on the relations between responses of the detector and tracker, and the data association algorithm allows the detection hypotheses to be refined; meanwhile the drifted tracks can be corrected by probing the tracking failures followed by the re-initialization of tracking. As a result, the optimal tracklets can sequentially grow with on-line refined detections, and tracking fragments are correctly integrated into respective tracks while keeping the original identifications. Experiments with a dataset captured from a commercial farm show that our method can robustly detect and track multiple pigs under challenging conditions. The promising performance of the proposed method also demonstrates the feasibility of long-term individual pig tracking in a complex environment and thus promises commercial potential.",
+      "score": {
+        "composite": 0.3313370302836204,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2320147878011481,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05800369695028702,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher",
+      "mesh_terms": [
+        "Animals",
+        "Swine",
+        "Algorithms",
+        "Artificial Intelligence",
+        "Image Processing, Computer-Assisted",
+        "Video Recording",
+        "Farms"
+      ]
+    },
+    {
+      "rank": 44,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d5a832ce",
+      "doi": "10.3390/brainsci12010041",
+      "url": "https://doi.org/10.3390/brainsci12010041",
+      "openalex_id": null,
+      "pmid": "35053785",
+      "first_author": "Ji",
+      "authors_display": "Ji, C., & Yang, J.",
+      "year": 2021,
+      "title": "Effects of Physical Exercise and Virtual Training on Visual Attention Levels in Children with Autism Spectrum Disorders.",
+      "venue": "Brain sciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8774033",
+      "tldr": null,
+      "abstract": "This study compared the effects of physical exercise (PE) and virtual training (VT) on the improvement of the visual attention mechanism in children with autism spectrum disorders (ASD). One hundred eighty-nine children with ASD were recruited from Orphan School in Liaoning Province, China. After screening, 100 children ultimately participated in the experiment. Children with ASD were randomly assigned to VT (VT, <i>n</i> = 34), PE (PE, <i>n</i> = 33) and control group (CG, <i>n</i> = 33). The VT group experiment was performed in a virtual environment through the game FIFA21 three times per week for 6 weeks. The PE group played physical football matches three times per week for 6 weeks. Children with ASD in the CG group did not receive VT or PE but only received psychological counseling. Visual attention of children with ASD is evaluated by using the multiple object tracking paradigm (MOT). After 6 weeks of observation, although none of the three groups saw improvements in the correct rate of ring tracking, the observations of the VT and PE groups were significant (<i>p</i> < 0.05) compared to the CG group in finding detection rate of probe stimulus. Through MOT tests, VT and PE improved the detection rate of probe stimulus in children with ASD. Therefore, this paper indicates that VT and PE can improve the visual attention ability of children with ASD.",
+      "score": {
+        "composite": 0.3280414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 45,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c092c610",
+      "doi": "10.7717/peerj.5732",
+      "url": "https://doi.org/10.7717/peerj.5732",
+      "openalex_id": null,
+      "pmid": "30280051",
+      "first_author": "Qiu",
+      "authors_display": "Qiu, F. et al.",
+      "year": 2018,
+      "title": "Influence of sports expertise level on attention in multiple object tracking.",
+      "venue": "PeerJ",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 29,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.7717/peerj.5732",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>This study aimed to investigate whether performance in a multiple object tracking (MOT) task could be improved incrementally with sports expertise, and whether differences between experienced and less experienced athletes, or non-athletes, were modulated by load.<h4>Methods</h4>We asked 22 elite and 20 intermediate basketball players, and 23 non-athletes, to perform an MOT task under three attentional load conditions (two, three, and four targets). Accuracies were analyzed to examine whether different levels of sports expertise influence MOT task performance.<h4>Results</h4>The elite athletes displayed better tracking performance compared with the intermediate or non-athletes when tracking three or four targets. However, no significant difference was found between the intermediate athletes and the non-athletes. Further, no differences were observed among the three groups when tracking two targets.<h4>Discussion</h4>The results suggest that the effects of expertise in team ball sports could transfer to a non-sports-specific attention task. These transfer effects to general cognitive functions occur only in elite athletes with extensive training under higher attentional load.",
+      "score": {
+        "composite": 0.3125635852427704,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

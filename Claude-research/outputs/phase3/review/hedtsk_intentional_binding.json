@@ -1,0 +1,363 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_intentional_binding",
+    "name": "Intentional Binding Task",
+    "aliases": [
+      "Temporal Binding Task",
+      "Action-Effect Binding Task",
+      "Libet Clock Binding Task",
+      "Interval Estimation Agency Task"
+    ],
+    "category_id": "awareness_agency_and_metacognition",
+    "short_definition": "Participants judge the perceived time of a voluntary action and/or its sensory effect using a Libet clock; the temporal compression between action and effect (intentional binding) indexes the implicit sense of agency.",
+    "description": "The Intentional Binding Task (Haggard, Clark, & Kalogeras, 2002) measures the implicit sense of agency through perceived temporal shifts between voluntary actions and their sensory consequences. Participants watch a rotating clock hand (Libet clock) and make voluntary key presses that produce a tone after a fixed delay (typically 250 ms). In separate blocks, they report either the perceived time of their action (action binding: judged time shifts toward the tone) or the perceived time of the tone (effect binding: judged time shifts toward the action). The net temporal compression between action and effect — intentional binding — is taken as an implicit, pre-reflective marker of the sense of agency. Involuntary actions (e.g., TMS-induced movements) or externally triggered tones produce temporal repulsion rather than binding, establishing the specificity of the effect to voluntary agency. The paradigm has become the standard implicit measure of sense of agency, complementing explicit agency judgments. It is sensitive to disorders of agency including schizophrenia (reduced binding, especially in patients with passivity experiences), functional neurological disorder, and anarchic hand syndrome. Computational accounts link binding to motor prediction: the forward model predicts sensory consequences of voluntary actions, and the match between prediction and outcome generates the binding effect.",
+    "inclusion_test": {
+      "procedure": "Participants make voluntary actions (key presses) that produce delayed sensory effects (tones) while monitoring a Libet clock; they report the perceived time of either the action or the effect in separate blocks.",
+      "manipulation": "Action type (voluntary vs. involuntary/TMS-induced vs. passive observation); action-effect interval (150, 250, 450, 650 ms); effect probability (certain vs. uncertain); causal belief (participant told action causes vs. does not cause effect); outcome valence (positive vs. negative vs. neutral tone); social agency (self-caused vs. other-caused).",
+      "measurement": "Action binding (shift of perceived action time toward the effect); effect binding (shift of perceived effect time toward the action); overall intentional binding (action binding + effect binding); interval estimation (judged action-effect interval vs. actual); binding magnitude as individual-difference variable."
+    }
+  },
+  "candidates_run_date": "2026-04-29T19:04:01",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 9
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Haggard 2002 — Voluntary action and conscious awareness (Nature Neuroscience, historical, 1k×)",
+      "doi": "10.1038/nn827",
+      "pub_id": "pub_7378a479",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7063569927991713,
+        "breakdown": {
+          "raw": {
+            "citations": 0.42542797119668496,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10635699279917124,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2002,
+      "venue": "Nature Neuroscience",
+      "citation_count": 1552,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Klaffehn 2021 — Temporal binding as multisensory integration: Manipulating perceptual certain… (Attention, perception & psychoph…, recent_primary, 37×)",
+      "doi": "10.3758/s13414-021-02314-0",
+      "pub_id": "pub_d4a0d2f0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5126518348953027,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2106073395812109,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05265183489530272,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 37,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Saito 2017 — Altered awareness of action in Parkinson's disease: evaluations by explicit a… (Scientific reports, foundational, 18×)",
+      "doi": "10.1038/s41598-017-08482-0",
+      "pub_id": "pub_af2ceef8",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5026189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Scientific reports",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Render 2021 — Influence of arousal on intentional binding: Impaired action binding, intact … (Attention, perception & psychoph…, recent_primary, 13×)",
+      "doi": "10.3758/s13414-020-02105-z",
+      "pub_id": "pub_bde442c4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.49819874078490356,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Roth 2023 — Impaired perception of temporal contiguity between action and effect is assoc… (Proceedings of the National Acad…, recent_primary, 7×)",
+      "doi": "10.1073/pnas.2214327120",
+      "pub_id": "pub_3559e856",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.47009864451848365,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Takahata 2012 — It's not my fault: postdictive modulation of intentional binding by monetary … (PloS one, foundational, 80×)",
+      "doi": "10.1371/journal.pone.0053421",
+      "pub_id": "pub_28a2f39c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3736069638457772,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2544278553831089,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06360696384577723,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "PloS one",
+      "citation_count": 80,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Moore 2011 — Ketamine administration in healthy volunteers reproduces aberrant agency expe… (Cognitive neuropsychiatry, foundational, 35×)",
+      "doi": "10.1080/13546805.2010.546074",
+      "pub_id": "pub_a6cec70f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.29186924493521105,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Cognitive neuropsychiatry",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Koreki 2024 — Altered sense of agency in schizophrenia: the aberrant effect of cardiac inte… (Frontiers in psychiatry, recent_primary, 4×)",
+      "doi": "10.3389/fpsyt.2024.1441585",
+      "pub_id": "pub_961df1db",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.25329562944183154,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Frontiers in psychiatry",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Schmidt 2025 — Implicit and explicit sense of agency in individuals with obsessive-compulsiv… (Frontiers in psychology, recent_primary, 0×)",
+      "doi": "10.3389/fpsyg.2025.1664222",
+      "pub_id": "pub_ac33d42e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.22,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Frontiers in psychology",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

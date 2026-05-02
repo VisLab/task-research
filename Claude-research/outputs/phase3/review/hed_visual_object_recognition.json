@@ -1,0 +1,1133 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "process",
+    "id": "hed_visual_object_recognition",
+    "name": "Visual object recognition",
+    "aliases": [
+      {
+        "name": "object recognition"
+      }
+    ],
+    "category_id": "face_and_object_perception",
+    "definition": "Identification of objects from visual input, invariant over viewpoint, size, and lighting."
+  },
+  "candidates_run_date": "2026-04-29T16:07:14",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Majaj 2015 — Simple Learned Weighted Sums of Inferior Temporal Neuronal Firing Rates Accur… (Journal of Neuroscience, foundational, 227×)",
+      "doi": "10.1523/jneurosci.5181-14.2015",
+      "pub_id": "pub_8d5a9a70",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8825148874466205,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5700595497864821,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.14251488744662053,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 227,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Cichy 2016 — Comparison of deep neural networks to spatio-temporal cortical dynamics of hu… (Scientific reports, foundational, 426×)",
+      "doi": "10.1038/srep27755",
+      "pub_id": "pub_f2721a48",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8738695650267013,
+        "breakdown": {
+          "raw": {
+            "citations": 0.695478260106805,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.17386956502670126,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Scientific reports",
+      "citation_count": 426,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Rajalingham 2014 — Comparison of Object Recognition Behavior in Human and Monkey (Journal of Neuroscience, foundational, 103×)",
+      "doi": "10.1523/jneurosci.0573-15.2015",
+      "pub_id": "pub_e03a552e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8710773291734523,
+        "breakdown": {
+          "raw": {
+            "citations": 0.364309316693809,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09107732917345225,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 103,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "DiCarlo 2012 — How does the brain solve visual object recognition? (Neuron, foundational, 1k×)",
+      "doi": "10.1016/j.neuron.2012.01.010",
+      "pub_id": "pub_5a964fa5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8583931694196983,
+        "breakdown": {
+          "raw": {
+            "citations": 0.7935726776787932,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1983931694196983,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Neuron",
+      "citation_count": 1067,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Peters 2021 — Capturing the objects of vision with neural networks (Nature Human Behaviour, key_review, 77×)",
+      "doi": "10.1038/s41562-021-01194-6",
+      "pub_id": "pub_05027506",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8431593401988913,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3726373607955652,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0931593401988913,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature Human Behaviour",
+      "citation_count": 77,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Gauthier 2016 — Visual Object Recognition: Do We (Finally) Know More Now Than We Did? (Annual Review of Vision Science, key_review, 86×)",
+      "doi": "10.1146/annurev-vision-111815-114621",
+      "pub_id": "pub_8ac5ebc7",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8296906109039842,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31876244361593664,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07969061090398416,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2016,
+      "venue": "Annual Review of Vision Science",
+      "citation_count": 86,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Tang 2017 — Recurrent computations for visual pattern completion (Proceedings of the National Acad…, foundational, 236×)",
+      "doi": "10.1073/pnas.1719397115",
+      "pub_id": "pub_b96fa960",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.825660371769378,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5626414870775118,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.14066037176937796,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 236,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Rajalingham 2018 — Large-Scale, High-Resolution Comparison of the Core Visual Object Recognition… (The Journal of neuroscience : th…, recent_primary, 222×)",
+      "doi": "10.1523/jneurosci.0388-18.2018",
+      "pub_id": "pub_a43d9424",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8233075930185562,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5732303720742247,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.14330759301855617,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 222,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Zeman 2019 — Orthogonal Representations of Object Shape and Category in Deep Convolutional… (Scientific Reports, recent_primary, 61×)",
+      "doi": "10.1038/s41598-020-59175-0",
+      "pub_id": "pub_ea1cd9e9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8198363905650174,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35934556226006964,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08983639056501741,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific Reports",
+      "citation_count": 61,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Peissig 2007 — Visual object recognition: do we know more now than we did 20 years ago? (Annual Review of Psychology, key_review, 166×)",
+      "doi": "10.1146/annurev.psych.58.102904.190114",
+      "pub_id": "pub_33e6aabf",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8190232744056734,
+        "breakdown": {
+          "raw": {
+            "citations": 0.43609309762269344,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.10902327440567336,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2007,
+      "venue": "Annual Review of Psychology",
+      "citation_count": 166,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Seeliger 2017 — Convolutional neural network‐based encoding and decoding of visual object rec… (NeuroImage, foundational, 111×)",
+      "doi": "10.1016/j.neuroimage.2017.07.018",
+      "pub_id": "pub_bad0c333",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8171993190047955,
+        "breakdown": {
+          "raw": {
+            "citations": 0.42879727601918194,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10719931900479548,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "NeuroImage",
+      "citation_count": 111,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Rupp 2017 — Semantic attributes are encoded in human electrocorticographic signals during… (NeuroImage, foundational, 44×)",
+      "doi": "10.1016/j.neuroimage.2016.12.074",
+      "pub_id": "pub_b45b7d6e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8073479002828338,
+        "breakdown": {
+          "raw": {
+            "citations": 0.38939160113133486,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09734790028283372,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "NeuroImage",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Nasr 2019 — Number detectors spontaneously emerge in a deep neural network designed for v… (Science advances, recent_primary, 82×)",
+      "doi": "10.1126/sciadv.aav7903",
+      "pub_id": "pub_3c137896",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7996491250310123,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4785965001240491,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11964912503101227,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Science advances",
+      "citation_count": 82,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Logothetis 1996 — Visual object recognition. (Annual Review of Neuroscience, key_review, 1k×)",
+      "doi": "10.1146/annurev.ne.19.030196.003045",
+      "pub_id": "pub_b720f31a",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7959168629160915,
+        "breakdown": {
+          "raw": {
+            "citations": 0.7836674516643662,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.19591686291609156,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 1996,
+      "venue": "Annual Review of Neuroscience",
+      "citation_count": 1475,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Wichmann 2023 — Are Deep Neural Networks Adequate Behavioural Models of Human Visual Perception? (Annual Review of Vision Science, key_review, 46×)",
+      "doi": "10.1146/annurev-vision-120522-031739",
+      "pub_id": "pub_bbf93589",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7857778540235676,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2831114160942704,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0707778540235676,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Annual Review of Vision Science",
+      "citation_count": 46,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Yang 2022 — Brain-inspired models for visual object recognition: an overview (Artificial Intelligence Review, key_review, 33×)",
+      "doi": "10.1007/s10462-021-10130-z",
+      "pub_id": "pub_a699fe6b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7810419118532629,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Artificial Intelligence Review",
+      "citation_count": 33,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Kheradpisheh 2015 — Deep Networks Can Resemble Human Feed-forward Vision in Invariant Object Reco… (Scientific Reports, foundational, 184×)",
+      "doi": "10.1038/srep32672",
+      "pub_id": "pub_baecef0a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.7794633914724678,
+        "breakdown": {
+          "raw": {
+            "citations": 0.45785356588987103,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11446339147246776,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Scientific Reports",
+      "citation_count": 184,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Podvalny 2019 — A dual role of prestimulus spontaneous neural activity in visual object recog… (Nature Communications, recent_primary, 63×)",
+      "doi": "10.1038/s41467-019-11877-4",
+      "pub_id": "pub_1cd31803",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7790992227383755,
+        "breakdown": {
+          "raw": {
+            "citations": 0.39639689095350206,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09909922273837551,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature Communications",
+      "citation_count": 63,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Lindsay 2020 — Convolutional Neural Networks as a Model of the Visual System: Past, Present,… (Journal of Cognitive Neuroscience, key_review, 503×)",
+      "doi": "10.1162/jocn_a_01544",
+      "pub_id": "pub_8f0e74bd",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7678225308636893,
+        "breakdown": {
+          "raw": {
+            "citations": 0.6112901234547574,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.15282253086368935,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Journal of Cognitive Neuroscience",
+      "citation_count": 503,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Goddard 2016 — Representational dynamics of object recognition: Feedforward and feedback inf… (NeuroImage, foundational, 71×)",
+      "doi": "10.1016/j.neuroimage.2016.01.006",
+      "pub_id": "pub_5063bf55",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.7670007709598559,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3680030838394235,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09200077095985587,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2016,
+      "venue": "NeuroImage",
+      "citation_count": 71,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Mehrer 2021 — An ecologically motivated image dataset for deep learning yields better model… (Proceedings of the National Acad…, recent_primary, 87×)",
+      "doi": "10.1073/pnas.2011417118",
+      "pub_id": "pub_157a6aee",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7648067120269391,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25922684810775637,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06480671202693909,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 87,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Sim 2015 — When Action Observation Facilitates Visual Perception: Activation in Visuo-Mo… (Cerebral Cortex, foundational, 54×)",
+      "doi": "10.1093/cercor/bhu087",
+      "pub_id": "pub_a66108ab",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.7630530192095288,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29221207683811534,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07305301920952884,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2015,
+      "venue": "Cerebral Cortex",
+      "citation_count": 54,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Peelen 2017 — Category selectivity in human visual cortex: Beyond visual object recognition. (Neuropsychologia, key_review, 121×)",
+      "doi": "10.1016/j.neuropsychologia.2017.03.033",
+      "pub_id": "pub_f8ecf773",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7617840553762092,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4471362215048369,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.11178405537620922,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Neuropsychologia",
+      "citation_count": 121,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Okazawa 2020 — Linear Integration of Sensory Evidence over Space and Time Underlies Face Cat… (Journal of Neuroscience, recent_primary, 17×)",
+      "doi": "10.1101/2020.11.27.396705",
+      "pub_id": "pub_79496429",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7568856856882917,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22754274275316655,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05688568568829164,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Bar 2003 — A Cortical Mechanism for Triggering Top-Down Facilitation in Visual Object Re… (Journal of Cognitive Neuroscience, key_review, 911×)",
+      "doi": "10.1162/089892903321662976",
+      "pub_id": "pub_a9034b91",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7531323584555416,
+        "breakdown": {
+          "raw": {
+            "citations": 0.8125294338221665,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.20313235845554162,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2003,
+      "venue": "Journal of Cognitive Neuroscience",
+      "citation_count": 911,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Beeck 2006 — Discrimination Training Alters Object Representations in Human Extrastriate C… (Journal of Neuroscience, foundational, 267×)",
+      "doi": "10.1523/jneurosci.2481-06.2006",
+      "pub_id": "pub_5a0e824b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.7436806622095654,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5747226488382614,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.14368066220956535,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2006,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 267,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Fintzi 2014 — A bimodal tuning curve for spatial frequency across left and right human orbi… (Cerebral Cortex, foundational, 39×)",
+      "doi": "10.1093/cercor/bhs419",
+      "pub_id": "pub_98dd4e6c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.7433377181230625,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35335087249224995,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08833771812306249,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Cerebral Cortex",
+      "citation_count": 39,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 35,
+      "label": "Calderone 2013 — Contributions of low and high spatial frequency processing to impaired object… (Cerebral Cortex, foundational, 70×)",
+      "doi": "10.1093/cercor/bhs169",
+      "pub_id": "pub_f7d2710e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.7416431283055941,
+        "breakdown": {
+          "raw": {
+            "citations": 0.386572513222376,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.096643128305594,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2013,
+      "venue": "Cerebral Cortex",
+      "citation_count": 70,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 37,
+      "label": "Karimi-Rouzbahani 2018 — Three-stage processing of category and variation information by entangled int… (Scientific Reports, recent_primary, 17×)",
+      "doi": "10.1038/s41598-018-30601-8",
+      "pub_id": "pub_38f5ca21",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7368363634290499,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific Reports",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 38,
+      "label": "Kravitz 2008 — How position dependent is visual object recognition? (Trends in Cognitive Sciences, key_review, 123×)",
+      "doi": "10.1016/j.tics.2007.12.006",
+      "pub_id": "pub_c4863022",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7349185943304204,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4596743773216817,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.11491859433042043,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2008,
+      "venue": "Trends in Cognitive Sciences",
+      "citation_count": 123,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

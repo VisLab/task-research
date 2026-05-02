@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_delay_discounting",
+    "name": "Delay Discounting Task",
+    "aliases": [
+      "Temporal Discounting",
+      "Delay of Gratification"
+    ],
+    "category_id": "value_based_decision_making_under_risk_and_uncertainty",
+    "short_definition": "Repeated choices between smaller-sooner and larger-later rewards at varying delays; indifference points estimate a temporal discount function.",
+    "description": "Participants make repeated choices between a smaller immediate reward and a larger delayed reward (e.g., \"$10 now or $25 in 1 week\"). The immediate amount or delay is systematically varied to estimate indifference points, yielding a discount rate reflecting how steeply the subjective value of rewards declines with delay. Steeper discounting reflects greater impulsivity. fMRI reveals differential activation of ventromedial PFC and nucleus accumbens (immediate preference) versus dorsolateral PFC and posterior parietal cortex (delayed preference), supporting dual-system valuation models.",
+    "inclusion_test": {
+      "procedure": "Participants choose between a smaller immediate reward and a larger delayed reward across many trials with varying amounts and delays.",
+      "manipulation": "Reward magnitude; delay duration; ascending vs. descending adjustment procedures.",
+      "measurement": "Indifference point at each delay; discount rate k (hyperbolic model); area under the discount curve (AUC)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:37:31",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 2,
+      "label": "Soutschek 2020 — The right temporoparietal junction enables delay of gratification by allowing… (PLoS biology, recent_primary, 18×)",
+      "doi": "10.1371/journal.pbio.3000800",
+      "pub_id": "pub_88cca471",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6092856200558081,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "PLoS biology",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Szpunar 2014 — A taxonomy of prospection: introducing an organizational framework for future… (Proceedings of the National Acad…, key_review, 196×)",
+      "doi": "10.1073/pnas.1417144111",
+      "pub_id": "pub_e0985531",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5898044760717596,
+        "breakdown": {
+          "raw": {
+            "citations": 0.305884570953705,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07647114273842626,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 196,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Gershman 2020 — Rationally inattentive intertemporal choice. (Nature communications, recent_primary, 35×)",
+      "doi": "10.1038/s41467-020-16852-y",
+      "pub_id": "pub_baf86e3d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5752025782685444,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Bruder 2021 — Reliability assessment of temporal discounting measures in virtual reality en… (Scientific reports, recent_primary, 15×)",
+      "doi": "10.1038/s41598-021-86388-8",
+      "pub_id": "pub_1609779c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5734648593579782,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Sadeghiyeh 2020 — Temporal discounting correlates with directed exploration but not with random… (Scientific reports, recent_primary, 24×)",
+      "doi": "10.1038/s41598-020-60576-4",
+      "pub_id": "pub_eaf697e0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5699245922169964,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Manuel 2019 — Transcranial direct current stimulation (tDCS) over vmPFC modulates interacti… (Scientific reports, recent_primary, 31×)",
+      "doi": "10.1038/s41598-019-55157-z",
+      "pub_id": "pub_bce68737",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5634977408641394,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 31,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Lempert 2020 — Links between autobiographical memory richness and temporal discounting in ol… (Scientific reports, recent_primary, 13×)",
+      "doi": "10.1038/s41598-020-63373-1",
+      "pub_id": "pub_9449dd66",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5615320741182369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Pulcu 2014 — Temporal discounting in major depressive disorder. (Psychological medicine, foundational, 132×)",
+      "doi": "10.1017/s0033291713002584",
+      "pub_id": "pub_e4a8b321",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5574514793345505,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28313925067153556,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07078481266788389,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Psychological medicine",
+      "citation_count": 132,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Ruggeri 2022 — The globalizability of temporal discounting. (Nature human behaviour, recent_primary, 38×)",
+      "doi": "10.1038/s41562-022-01392-w",
+      "pub_id": "pub_95b14f93",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5563611475075798,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Nature human behaviour",
+      "citation_count": 38,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Castrellon 2019 — Mesolimbic dopamine D2 receptors and neural representations of subjective value. (Scientific reports, recent_primary, 16×)",
+      "doi": "10.1038/s41598-019-56858-1",
+      "pub_id": "pub_acdc6aa2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.554342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Terenzi 2019 — Temporal and Effort cost Decision-making in Healthy Individuals with Subclini… (Scientific reports, recent_primary, 13×)",
+      "doi": "10.1038/s41598-018-38284-x",
+      "pub_id": "pub_3387d12c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5515320741182369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Kapetaniou 2021 — The role of oxytocin in delay of gratification and flexibility in non-social … (eLife, recent_primary, 25×)",
+      "doi": "10.7554/elife.61844",
+      "pub_id": "pub_81de4cbc",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5404922880522967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "eLife",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Michaelson 2020 — Same Data Set, Different Conclusions: Preschool Delay of Gratification Predic… (Psychological science, recent_primary, 33×)",
+      "doi": "10.1177/0956797619896270",
+      "pub_id": "pub_43869c47",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5343752451865962,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychological science",
+      "citation_count": 33,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Watts 2018 — Revisiting the Marshmallow Test: A Conceptual Replication Investigating Links… (Psychological science, recent_primary, 115×)",
+      "doi": "10.1177/0956797618761661",
+      "pub_id": "pub_78211337",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5321386440289537,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2752212427824818,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06880531069562044,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Psychological science",
+      "citation_count": 115,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Kvam 2021 — Testing the factor structure underlying behavior using joint cognitive models… (Psychological methods, recent_primary, 20×)",
+      "doi": "10.1037/met0000264",
+      "pub_id": "pub_a0e0cc14",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5207342669068533,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Psychological methods",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Casey 2011 — Behavioral and neural correlates of delay of gratification 40 years later. (Proceedings of the National Acad…, foundational, 300×)",
+      "doi": "10.1073/pnas.1108561108",
+      "pub_id": "pub_fa9cdb9d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5159402639170608,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33042772233490975,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08260693058372744,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 300,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Lempert 2020 — Neural and behavioral correlates of episodic memory are associated with tempo… (Neuropsychologia, recent_primary, 26×)",
+      "doi": "10.1016/j.neuropsychologia.2020.107549",
+      "pub_id": "pub_bff7405b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5110385562176663,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Neuropsychologia",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Rodriguez-Moreno 2021 — Delay discounting and neurocognitive correlates among inner city adolescents … (Developmental cognitive neurosci…, recent_primary, 12×)",
+      "doi": "10.1016/j.dcn.2021.100942",
+      "pub_id": "pub_6eb37781",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5104594065461354,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Chan 2023 — Neural correlates of impulsivity in bipolar disorder: A systematic review and… (Neuroscience and biobehavioral r…, key_review, 24×)",
+      "doi": "10.1016/j.neubiorev.2023.105109",
+      "pub_id": "pub_f7eb9129",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5099245922169964,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Neuroscience and biobehavioral reviews",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Sosa 2021 — The orbitofrontal cortex in temporal cognition. (Behavioral neuroscience, key_review, 22×)",
+      "doi": "10.1037/bne0000430",
+      "pub_id": "pub_dd60f20f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5087176944242322,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Behavioral neuroscience",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Kohl 2019 — Cortical Paired Associative Stimulation Influences Response Inhibition: Corti… (Biological psychiatry, recent_primary, 37×)",
+      "doi": "10.1016/j.biopsych.2018.03.009",
+      "pub_id": "pub_9be5e890",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.505985168228636,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2106073395812109,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05265183489530272,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Biological psychiatry",
+      "citation_count": 37,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Dennis 2020 — Neural correlates of reward magnitude and delay during a probabilistic delay … (Psychopharmacology, recent_primary, 18×)",
+      "doi": "10.1007/s00213-019-05364-3",
+      "pub_id": "pub_428571b1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5059522867224748,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychopharmacology",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Manuel 2020 — Interactions between decision-making and emotion in behavioral-variant fronto… (Social cognitive and affective n…, recent_primary, 16×)",
+      "doi": "10.1093/scan/nsaa085",
+      "pub_id": "pub_e5b39818",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.504342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Gowin 2019 — The relationship between delay discounting and alcohol dependence in individu… (Psychopharmacology, recent_primary, 30×)",
+      "doi": "10.1007/s00213-018-5113-3",
+      "pub_id": "pub_ca3c36f8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5030381978737059,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Psychopharmacology",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Herman 2019 — The impact of Yohimbine-induced arousal on facets of behavioural impulsivity. (Psychopharmacology, recent_primary, 24×)",
+      "doi": "10.1007/s00213-018-5160-9",
+      "pub_id": "pub_9ecdf08b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4999245922169964,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Psychopharmacology",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Cannito 2021 — Temporal Discounting of Money and Face Masks During the COVID-19 Pandemic: Th… (Frontiers in psychology, recent_primary, 17×)",
+      "doi": "10.3389/fpsyg.2021.642102",
+      "pub_id": "pub_8b77f023",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4985030300957165,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Frontiers in psychology",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Ballard 2009 — Dissociable neural representations of future reward magnitude and delay durin… (NeuroImage, foundational, 303×)",
+      "doi": "10.1016/j.neuroimage.2008.11.004",
+      "pub_id": "pub_22a44f93",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4960838127471197,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3310019176551454,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08275047941378635,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "NeuroImage",
+      "citation_count": 303,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 35,
+      "label": "Anandakumar 2018 — Individual differences in functional brain connectivity predict temporal disc… (Developmental cognitive neurosci…, recent_primary, 22×)",
+      "doi": "10.1016/j.dcn.2018.07.003",
+      "pub_id": "pub_54ca809f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.48871769442423213,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 36,
+      "label": "Weber 2016 — Dopamine D2/3- and μ-opioid receptor antagonists reduce cue-induced respondin… (Translational psychiatry, foundational, 64×)",
+      "doi": "10.1038/tp.2016.113",
+      "pub_id": "pub_4285d357",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.483755035987967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24168681061853478,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.060421702654633695,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Translational psychiatry",
+      "citation_count": 64,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 37,
+      "label": "Seaman 2022 — Temporal discounting across adulthood: A systematic review and meta-analysis. (Psychology and aging, key_review, 30×)",
+      "doi": "10.1037/pag0000634",
+      "pub_id": "pub_8be2fa32",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.48303819787370594,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Psychology and aging",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,1133 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "process",
+    "id": "hed_model_free_learning",
+    "name": "Model-free learning",
+    "aliases": [
+      {
+        "name": "model-free reinforcement learning"
+      }
+    ],
+    "category_id": "associative_learning_and_reinforcement",
+    "definition": "Reinforcement learning from cached value estimates updated by prediction errors, without an explicit model of the environment."
+  },
+  "candidates_run_date": "2026-04-29T15:19:19",
+  "extracted_on": "2026-04-30T11:14:35",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Miller 2019 — Habits without values. (Psychological review, recent_primary, 178×)",
+      "doi": "10.1037/rev0000120",
+      "pub_id": "pub_7779ce3d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7461856372675121,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5647425490700482,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.14118563726751204,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Psychological review",
+      "citation_count": 178,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Daw 2005 — Uncertainty-based competition between prefrontal and dorsolateral striatal sy… (Nature Neuroscience, historical, 2k×)",
+      "doi": "10.1038/nn1560",
+      "pub_id": "pub_05375660",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.713960001568374,
+        "breakdown": {
+          "raw": {
+            "citations": 0.45584000627349613,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11396000156837403,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2005,
+      "venue": "Nature Neuroscience",
+      "citation_count": 2625,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Kim 2019 — Task complexity interacts with state-space uncertainty in the arbitration bet… (Nature communications, recent_primary, 34×)",
+      "doi": "10.1038/s41467-019-13632-1",
+      "pub_id": "pub_e6e595e6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6914049328833213,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3456197315332849,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08640493288332123,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 34,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Weissengruber 2019 — Neurostimulation Reveals Context-Dependent Arbitration Between Model-Based an… (Cerebral Cortex, recent_primary, 26×)",
+      "doi": "10.1093/cercor/bhz019",
+      "pub_id": "pub_8c5b4a2d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6765578343264995,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2862313373059976,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0715578343264994,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Cerebral Cortex",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Lee 2014 — Neural computations underlying arbitration between model-based and model-free… (Neuron, foundational, 391×)",
+      "doi": "10.1016/j.neuron.2013.11.028",
+      "pub_id": "pub_ed821f52",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.672057889714113,
+        "breakdown": {
+          "raw": {
+            "citations": 0.6682315588564516,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1670578897141129,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Neuron",
+      "citation_count": 391,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Huang 2020 — Goal-oriented and habitual decisions: Neural signatures of model-based and mo… (NeuroImage, recent_primary, 57×)",
+      "doi": "10.1016/j.neuroimage.2020.116834",
+      "pub_id": "pub_7fa0863c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6660212181075729,
+        "breakdown": {
+          "raw": {
+            "citations": 0.40408487243029123,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10102121810757281,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "NeuroImage",
+      "citation_count": 57,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "O'Doherty 2017 — Learning, Reward, and Decision Making. (Annual review of psychology, key_review, 263×)",
+      "doi": "10.1146/annurev-psych-010416-044216",
+      "pub_id": "pub_339b74fe",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6657084529883834,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3228338119535336,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0807084529883834,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Annual review of psychology",
+      "citation_count": 263,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Heo 2021 — Effects of subclinical depression on prefrontal-striatal model-based and mode… (PLoS computational biology, recent_primary, 11×)",
+      "doi": "10.1371/journal.pcbi.1009003",
+      "pub_id": "pub_ff30ae55",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6609675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PLoS computational biology",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Drummond 2020 — Model-based decision making and model-free learning. (Current Biology, recent_primary, 73×)",
+      "doi": "10.1016/j.cub.2020.06.051",
+      "pub_id": "pub_dfe46cac",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6573973543538728,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3695894174154912,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0923973543538728,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Current Biology",
+      "citation_count": 73,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Steinke 2020 — Parallel model-based and model-free reinforcement learning for card sorting p… (Scientific reports, recent_primary, 20×)",
+      "doi": "10.1038/s41598-020-72407-7",
+      "pub_id": "pub_381f677c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.644011044402934,
+        "breakdown": {
+          "raw": {
+            "citations": 0.316044177611736,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.079011044402934,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Foerde 2021 — Deficient Goal-Directed Control in a Population Characterized by Extreme Goal… (Journal of cognitive neuroscience, recent_primary, 39×)",
+      "doi": "10.1162/jocn_a_01655",
+      "pub_id": "pub_7cb4a412",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6206430628784287,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3825722515137149,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09564306287842872,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 39,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Doll 2012 — The ubiquity of model-based reinforcement learning. (Current opinion in neurobiology, key_review, 235×)",
+      "doi": "10.1016/j.conb.2012.08.003",
+      "pub_id": "pub_dcd1f2ba",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6190856236696126,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3163424946784505,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07908562366961262,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Current opinion in neurobiology",
+      "citation_count": 235,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Kurdi 2019 — Model-free and model-based learning processes in the updating of explicit and… (Proceedings of the National Acad…, recent_primary, 23×)",
+      "doi": "10.1073/pnas.1820238116",
+      "pub_id": "pub_282c5792",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6160497077391698,
+        "breakdown": {
+          "raw": {
+            "citations": 0.244198830956679,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06104970773916975,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Wyckmans 2019 — Reduced model-based decision-making in gambling disorder. (Scientific reports, recent_primary, 55×)",
+      "doi": "10.1038/s41598-019-56161-z",
+      "pub_id": "pub_a402bbf0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6132645037972261,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23305801518890404,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05826450379722601,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 55,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Shahar 2019 — Credit assignment to state-independent task representations and its relations… (Proceedings of the National Acad…, recent_primary, 42×)",
+      "doi": "10.1073/pnas.1821647116",
+      "pub_id": "pub_359e0395",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.609441071304985,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 42,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Konovalov 2020 — Mouse tracking reveals structure knowledge in the absence of model-based choice. (Nature communications, recent_primary, 13×)",
+      "doi": "10.1038/s41467-020-15696-w",
+      "pub_id": "pub_be70db5c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6031987407849035,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Pinosky 2022 — Hybrid control for combining model-based and model-free reinforcement learning (Int. J. Robotics Res., recent_primary, 25×)",
+      "doi": "10.1177/02783649221083331",
+      "pub_id": "pub_288ee022",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6022082769782052,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2488331079128207,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.062208276978205176,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Int. J. Robotics Res.",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Li 2021 — Breaking the Sample Complexity Barrier to Regret-Optimal Model-Free Reinforce… (Neural Information Processing Sy…, recent_primary, 67×)",
+      "doi": "10.1093/imaiai/iaac034",
+      "pub_id": "pub_66c915fd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6017639031786274,
+        "breakdown": {
+          "raw": {
+            "citations": 0.46705561271450935,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11676390317862734,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Neural Information Processing Systems",
+      "citation_count": 67,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Hasanbeig 2019 — Certified Reinforcement Learning with Logic Guidance (Artificial Intelligence, recent_primary, 68×)",
+      "doi": "10.1016/j.artint.2023.103949",
+      "pub_id": "pub_9d329fe8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6001387134945096,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3405548539780384,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0851387134945096,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Artificial Intelligence",
+      "citation_count": 68,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Walsh 2014 — Navigating complex decision spaces: Problems and paradigms in sequential choice. (Psychological bulletin, key_review, 19×)",
+      "doi": "10.1037/a0033455",
+      "pub_id": "pub_d4a98dcf",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.598361392454154,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Psychological bulletin",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Doll 2015 — Model-based choices involve prospective neural activity. (Nature neuroscience, foundational, 208×)",
+      "doi": "10.1038/nn.3981",
+      "pub_id": "pub_c6e9d294",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.592327020897597,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30930808359038797,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07732702089759699,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Nature neuroscience",
+      "citation_count": 208,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Konovalov 2016 — Gaze data reveal distinct choice processes underlying model-based and model-f… (Nature communications, foundational, 42×)",
+      "doi": "10.1038/ncomms12438",
+      "pub_id": "pub_8efcc522",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5794410713049851,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Nature communications",
+      "citation_count": 42,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Otto 2013 — Working-memory capacity protects model-based learning from stress. (Proceedings of the National Acad…, foundational, 330×)",
+      "doi": "10.1073/pnas.1312011110",
+      "pub_id": "pub_2d3d1ae4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5789821148776126,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33592845951045064,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08398211487761266,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 330,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Jin 2022 — Superstitious learning of abstract order from random reinforcement. (Proceedings of the National Acad…, recent_primary, 9×)",
+      "doi": "10.1073/pnas.2202789119",
+      "pub_id": "pub_0269123f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5783285109479928,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Daw 2011 — Model-based influences on humans' choices and striatal prediction errors. (Neuron, foundational, 1k×)",
+      "doi": "10.1016/j.neuron.2011.02.027",
+      "pub_id": "pub_8b706e42",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5777207015617679,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4108828062470714,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10272070156176785,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Neuron",
+      "citation_count": 1207,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Hackel 2024 — Simplifying social learning. (Trends in Cognitive Sciences, key_review, 18×)",
+      "doi": "10.1016/j.tics.2024.01.004",
+      "pub_id": "pub_b3200294",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5776189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2024,
+      "venue": "Trends in Cognitive Sciences",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Doody 2022 — Model-based learning retrospectively updates model-free values. (Scientific reports, recent_primary, 8×)",
+      "doi": "10.1038/s41598-022-05567-3",
+      "pub_id": "pub_58264126",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5768034819228887,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Scientific reports",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 35,
+      "label": "Mitchell 2018 — Control of neural systems at multiple scales using model-free, deep reinforce… (Scientific reports, recent_primary, 8×)",
+      "doi": "10.1038/s41598-018-29134-x",
+      "pub_id": "pub_4af51ff9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5768034819228887,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 38,
+      "label": "Doll 2016 — Variability in Dopamine Genes Dissociates Model-Based and Model-Free Reinforc… (The Journal of neuroscience : th…, foundational, 71×)",
+      "doi": "10.1523/jneurosci.1901-15.2016",
+      "pub_id": "pub_271e18d0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5719021264413723,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24760850576548898,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.061902126441372246,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 71,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 39,
+      "label": "Hafez 2020 — Improving Robot Dual-System Motor Learning with Intrinsically Motivated Meta-… (Robotics Auton. Syst., recent_primary, 16×)",
+      "doi": "10.1016/j.robot.2020.103630",
+      "pub_id": "pub_b620fcdd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5660090303471017,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Robotics Auton. Syst.",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_face_processing",
+    "name": "Face Processing Task",
+    "aliases": [
+      "FFA Localizer",
+      "Face Localizer"
+    ],
+    "category_id": "face_and_object_perception",
+    "short_definition": "Blocked or event-related presentation of faces vs. objects (or scrambled faces) to localize face-selective cortical regions (FFA, OFA, pSTS).",
+    "description": "The FFA Localizer presents alternating blocks of faces and non-face objects (houses, cars, scrambled images) while participants perform passive viewing or a simple task (one-back matching, gender judgment). The contrast of faces > objects identifies face-selective regions, particularly the fusiform face area (FFA) in ventral temporal cortex. The task provides an individually-defined localizer for face-selective cortex and has been fundamental to understanding the neural basis of face perception and the question of domain-specific processing modules.",
+    "inclusion_test": {
+      "procedure": "Blocks of faces alternate with blocks of non-face objects (houses, scrambled images) while participants perform a simple repetition-detection task. The contrast localizes face-selective cortex.",
+      "manipulation": "Stimulus category (faces vs. objects vs. scrambled vs. scenes); block duration; task (1-back, passive viewing).",
+      "measurement": "fMRI contrast (faces > objects) identifying FFA, OFA, STS; extent and magnitude of face-selective activation; lateralization index."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:40:15",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Hein 2018 — Amygdala habituation and uncinate fasciculus connectivity in adolescence: A m… (NeuroImage, recent_primary, 39×)",
+      "doi": "10.1016/j.neuroimage.2018.08.058",
+      "pub_id": "pub_29ac95a8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5567276072936485,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "NeuroImage",
+      "citation_count": 39,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Berman 2010 — Evaluating functional localizers: the case of the FFA. (NeuroImage, key_review, 79×)",
+      "doi": "10.1016/j.neuroimage.2009.12.024",
+      "pub_id": "pub_18ba158b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5367604887998098,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2537086218659055,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06342715546647637,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "NeuroImage",
+      "citation_count": 79,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Maffei 2023 — EEG alpha band functional connectivity reveals distinct cortical dynamics for… (Scientific reports, recent_primary, 7×)",
+      "doi": "10.1038/s41598-023-36860-4",
+      "pub_id": "pub_65f3471e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5034319778518169,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific reports",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Brady 2021 — Holistic processing of faces and words predicts reading accuracy and speed in… (PloS one, recent_primary, 14×)",
+      "doi": "10.1371/journal.pone.0259986",
+      "pub_id": "pub_9ed370f2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.47253070373660916,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PloS one",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Spechler 2015 — Cannabis use in early adolescence: Evidence of amygdala hypersensitivity to s… (Developmental cognitive neurosci…, foundational, 49×)",
+      "doi": "10.1016/j.dcn.2015.08.007",
+      "pub_id": "pub_559949f7",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4699574737231576,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 49,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Taylor 2014 — Neural correlates of a computerized attention modification program in anxious… (Social cognitive and affective n…, foundational, 41×)",
+      "doi": "10.1093/scan/nst128",
+      "pub_id": "pub_2668497a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4574338150796812,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Slane 2014 — Social cognition, face processing, and oxytocin receptor single nucleotide po… (Developmental cognitive neurosci…, foundational, 27×)",
+      "doi": "10.1016/j.dcn.2014.04.001",
+      "pub_id": "pub_7d6e9ed4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.45156495562439813,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Weissman 2022 — Exposure to Violence as an Environmental Pathway Linking Low Socioeconomic St… (Journal of cognitive neuroscience, recent_primary, 27×)",
+      "doi": "10.1162/jocn_a_01825",
+      "pub_id": "pub_4975f741",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4515649556243981,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "King 2023 — Early life stress, low-grade systemic inflammation and weaker suppression of … (Translational psychiatry, recent_primary, 12×)",
+      "doi": "10.1038/s41398-023-02512-4",
+      "pub_id": "pub_9aa27ce6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4504594065461355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Translational psychiatry",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Schwarz 2019 — Properties of face localizer activations and their application in functional … (PloS one, recent_primary, 10×)",
+      "doi": "10.1371/journal.pone.0214997",
+      "pub_id": "pub_f2174503",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4480414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Fox 2009 — Defining the face processing network: optimization of the functional localize… (Human brain mapping, foundational, 259×)",
+      "doi": "10.1002/hbm.20630",
+      "pub_id": "pub_88dc327f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.43382079900028947,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3219498626678245,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08048746566695612,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Human brain mapping",
+      "citation_count": 259,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Vettori 2019 — Reduced neural sensitivity to rapid individual face discrimination in autism … (NeuroImage. Clinical, recent_primary, 44×)",
+      "doi": "10.1016/j.nicl.2018.101613",
+      "pub_id": "pub_b3dfe843",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.42843244469805347,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "NeuroImage. Clinical",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Smith 2012 — Storm in a coffee cup: caffeine modifies brain activation to social signals o… (Social cognitive and affective n…, foundational, 19×)",
+      "doi": "10.1093/scan/nsr058",
+      "pub_id": "pub_b0ca994a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4266947257874873,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Woudstra 2012 — Piccolo genotype modulates neural correlates of emotion processing but not ex… (Translational psychiatry, foundational, 13×)",
+      "doi": "10.1038/tp.2012.29",
+      "pub_id": "pub_4e1b56e6",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4215320741182369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Translational psychiatry",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Menks 2021 — Eye gaze patterns and functional brain responses during emotional face proces… (NeuroImage. Clinical, recent_primary, 6×)",
+      "doi": "10.1016/j.nicl.2020.102519",
+      "pub_id": "pub_48a7fed6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4214991926120757,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "NeuroImage. Clinical",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Callejas 2014 — Dorsal and ventral attention systems underlie social and symbolic cueing. (Journal of cognitive neuroscience, foundational, 51×)",
+      "doi": "10.1162/jocn_a_00461",
+      "pub_id": "pub_c5281cc0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.42052516955845787,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 51,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Liu 2017 — Visual Sampling Predicts Hippocampal Activity. (The Journal of neuroscience : th…, foundational, 89×)",
+      "doi": "10.1523/jneurosci.2610-16.2016",
+      "pub_id": "pub_0e3821e7",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.41846532620421467,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26052797148352547,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06513199287088137,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 89,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Haas 2010 — Individual differences in social behavior predict amygdala response to fearfu… (Neuropsychologia, foundational, 41×)",
+      "doi": "10.1016/j.neuropsychologia.2009.12.030",
+      "pub_id": "pub_2873da74",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.41743381507968125,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Neuropsychologia",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Sethi 2018 — Primary and Secondary Variants of Psychopathy in a Volunteer Sample Are Assoc… (Biological psychiatry. Cognitive…, recent_primary, 32×)",
+      "doi": "10.1016/j.bpsc.2018.04.002",
+      "pub_id": "pub_bada790f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4139431418032331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Acuff 2019 — White matter - emotion processing activity relationships in youth offspring o… (Journal of affective disorders, recent_primary, 15×)",
+      "doi": "10.1016/j.jad.2018.09.010",
+      "pub_id": "pub_df7e7523",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.41346485935797817,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Journal of affective disorders",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Beacher 2011 — Acute tryptophan depletion attenuates conscious appraisal of social emotional… (Psychopharmacology, foundational, 15×)",
+      "doi": "10.1007/s00213-010-1897-5",
+      "pub_id": "pub_aff6e9a9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.41346485935797817,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Psychopharmacology",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Bohorquez-Montoya 2020 — Amygdala response to emotional faces in adolescents with persistent post-conc… (NeuroImage. Clinical, recent_primary, 7×)",
+      "doi": "10.1016/j.nicl.2020.102217",
+      "pub_id": "pub_9da370ff",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.41343197785181696,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "NeuroImage. Clinical",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Cao 2018 — The 5-HTTLPR Polymorphism Affects Network-Based Functional Connectivity in th… (Neuropsychopharmacology : offici…, recent_primary, 26×)",
+      "doi": "10.1038/npp.2017.121",
+      "pub_id": "pub_dfb83e0e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4110385562176663,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Boukezzi 2022 — Exaggerated amygdala response to threat and association with immune hyperacti… (Brain, behavior, and immunity, recent_primary, 22×)",
+      "doi": "10.1016/j.bbi.2022.05.015",
+      "pub_id": "pub_5479f8b4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.40871769442423217,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Brain, behavior, and immunity",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "MacDuffie 2019 — Self-rated amygdala activity: an auto-biological index of affective distress. (Personality neuroscience, recent_primary, 10×)",
+      "doi": "10.1017/pen.2019.1",
+      "pub_id": "pub_573876a3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4080414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Personality neuroscience",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Doucet 2024 — Anxiety symptoms are differentially associated with facial expression process… (Social cognitive and affective n…, recent_primary, 3×)",
+      "doi": "10.1093/scan/nsae085",
+      "pub_id": "pub_9ba1bf0c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.40339909634565574,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Knight 2019 — Convergent Neural Correlates of Empathy and Anxiety During Socioemotional Pro… (Frontiers in human neuroscience, recent_primary, 27×)",
+      "doi": "10.3389/fnhum.2019.00094",
+      "pub_id": "pub_b451c423",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.40156495562439815,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Frontiers in human neuroscience",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Kujawa 2016 — Altered Development of Amygdala-Anterior Cingulate Cortex Connectivity in Anx… (Biological psychiatry. Cognitive…, foundational, 43×)",
+      "doi": "10.1016/j.bpsc.2016.01.006",
+      "pub_id": "pub_200ec2a2",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3981071638541112,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21909532208311155,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05477383052077789,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2016,
+      "venue": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "citation_count": 43,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Grannis 2022 — Multimodal classification of extremely preterm and term adolescents using the… (NeuroImage. Clinical, recent_primary, 4×)",
+      "doi": "10.1016/j.nicl.2022.103078",
+      "pub_id": "pub_db0e8ae1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3866289627751649,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "NeuroImage. Clinical",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Leung 2015 — Early neural activation during facial affect processing in adolescents with A… (NeuroImage. Clinical, foundational, 36×)",
+      "doi": "10.1016/j.nicl.2014.11.009",
+      "pub_id": "pub_20470246",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.38559916166256125,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2090633133169118,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05226582832922795,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "NeuroImage. Clinical",
+      "citation_count": 36,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

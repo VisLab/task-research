@@ -1,0 +1,1133 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "process",
+    "id": "hed_causal_reasoning",
+    "name": "Causal reasoning",
+    "aliases": [
+      {
+        "name": "causal inference"
+      }
+    ],
+    "category_id": "reasoning_and_problem_solving",
+    "definition": "Inference about cause–effect relations from observation and intervention."
+  },
+  "candidates_run_date": "2026-04-29T17:29:59",
+  "extracted_on": "2026-04-30T11:14:33",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Davis 2020 — A Process Model of Causal Reasoning (Cognitive Sciences, recent_primary, 18×)",
+      "doi": "10.1111/cogs.12839",
+      "pub_id": "pub_c60acbc5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7327175979076251,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29087039163050055,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07271759790762514,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Cognitive Sciences",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Rottman 2014 — Reasoning about causal relationships: Inferences on causal networks. (Psychological bulletin, key_review, 163×)",
+      "doi": "10.1037/a0031903",
+      "pub_id": "pub_ce24df9d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6876135030426659,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5304540121706635,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.13261350304266586,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Psychological bulletin",
+      "citation_count": 163,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Castro 2020 — Causality matters in medical imaging. (Nature communications, key_review, 147×)",
+      "doi": "10.1038/s41467-020-17478-w",
+      "pub_id": "pub_3d503847",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6873315913415503,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28932636536620143,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07233159134155036,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 147,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Runge 2019 — Inferring causation from time series in Earth system sciences. (Nature communications, key_review, 193×)",
+      "doi": "10.1038/s41467-019-10105-3",
+      "pub_id": "pub_903c1c49",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6812490250028164,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3049961000112652,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0762490250028163,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 193,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Sperrin 2019 — Explicit causal reasoning is needed to prevent prognostic models being victim… (J. Am. Medical Informatics Assoc., key_review, 30×)",
+      "doi": "10.1093/jamia/ocz197",
+      "pub_id": "pub_e32e91f3",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.663557475982539,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29422990393015613,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07355747598253903,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "J. Am. Medical Informatics Assoc.",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Ruth 2021 — Genetic insights into biological mechanisms governing human ovarian ageing. (Nature, recent_primary, 302×)",
+      "doi": "10.1038/s41586-021-03779-7",
+      "pub_id": "pub_750a2cf8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.657702787810855,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3308111512434199,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08270278781085498,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature",
+      "citation_count": 302,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Leist 2022 — Mapping of machine learning approaches for description, prediction, and causa… (Science advances, key_review, 56×)",
+      "doi": "10.1126/sciadv.abk1942",
+      "pub_id": "pub_861e5cfe",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6535206943505858,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Science advances",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Corbin 2018 — Formalising recall by genotype as an efficient approach to detailed phenotypi… (Nature communications, key_review, 51×)",
+      "doi": "10.1038/s41467-018-03109-y",
+      "pub_id": "pub_0fde5083",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6521918362251246,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature communications",
+      "citation_count": 51,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Schmidt 2020 — Genetic drug target validation using Mendelian randomisation. (Nature communications, recent_primary, 396×)",
+      "doi": "10.1038/s41467-020-16969-0",
+      "pub_id": "pub_76ecb4bc",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6516138178561941,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3464552714247765,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08661381785619413,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 396,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Jordan 2021 — Don't get it or don't spread it: comparing self-interested versus prosocial m… (Scientific reports, recent_primary, 175×)",
+      "doi": "10.1038/s41598-021-97617-5",
+      "pub_id": "pub_706d55d9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6498395935331003,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29935837413240124,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07483959353310031,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 175,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Kuhn 2012 — The development of causal reasoning. (Wiley Interdisciplinary Reviews:…, key_review, 211×)",
+      "doi": "10.1002/wcs.1160",
+      "pub_id": "pub_ec877e37",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6475260766316612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5101043065266446,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.12752607663166116,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2012,
+      "venue": "Wiley Interdisciplinary Reviews: Cognitive Science",
+      "citation_count": 211,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Taschler 2022 — Causal inference on neuroimaging data with Mendelian randomisation. (NeuroImage, key_review, 36×)",
+      "doi": "10.1016/j.neuroimage.2022.119385",
+      "pub_id": "pub_9410646d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.647265828329228,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2090633133169118,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05226582832922795,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "NeuroImage",
+      "citation_count": 36,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Schölkopf 2021 — Toward Causal Representation Learning (Proceedings of the IEEE, key_review, 1k×)",
+      "doi": "10.1109/jproc.2021.3058954",
+      "pub_id": "pub_e88aeb00",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6441492699070459,
+        "breakdown": {
+          "raw": {
+            "citations": 0.8365970796281836,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.2091492699070459,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Proceedings of the IEEE",
+      "citation_count": 1332,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Richens 2020 — Improving the accuracy of medical diagnosis with causal machine learning. (Nature communications, recent_primary, 187×)",
+      "doi": "10.1038/s41467-020-17419-7",
+      "pub_id": "pub_f3861768",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6407942947766482,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30317717910659286,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07579429477664822,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 187,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Mitra 2020 — The vaginal microbiota associates with the regression of untreated cervical i… (Nature communications, recent_primary, 161×)",
+      "doi": "10.1038/s41467-020-15856-y",
+      "pub_id": "pub_1646109a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6386398453519384,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2945593814077538,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07363984535193845,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 161,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Hammerton 2021 — Causal inference with observational data: the need for triangulation of evide… (Psychological medicine, key_review, 151×)",
+      "doi": "10.1017/s0033291720005127",
+      "pub_id": "pub_9bac38bc",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6377175979076252,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2908703916305006,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07271759790762515,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Psychological medicine",
+      "citation_count": 151,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Wu 2020 — Evaluating the impact of long-term exposure to fine particulate matter on mor… (Science advances, recent_primary, 136×)",
+      "doi": "10.1126/sciadv.aba5692",
+      "pub_id": "pub_a6cc9479",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6362137148152736,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2848548592610944,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0712137148152736,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Science advances",
+      "citation_count": 136,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Lassi 2016 — The CHRNA5-A3-B4 Gene Cluster and Smoking: From Discovery to Therapeutics. (Trends in neurosciences, key_review, 61×)",
+      "doi": "10.1016/j.tins.2016.10.005",
+      "pub_id": "pub_6c59e205",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6347377460465338,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23895098418613514,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.059737746046533785,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Trends in neurosciences",
+      "citation_count": 61,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Rehder 2014 — Independence and dependence in human causal reasoning. (Cognitive Psychology, foundational, 84×)",
+      "doi": "10.1016/j.cogpsych.2014.02.002",
+      "pub_id": "pub_16206331",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6343467484701641,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5173869938806566,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12934674847016414,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Cognitive Psychology",
+      "citation_count": 84,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Hemani 2018 — The MR-Base platform supports systematic causal inference across the human ph… (eLife, recent_primary, 6k×)",
+      "doi": "10.7554/elife.34408",
+      "pub_id": "pub_9426a51b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6313971023330405,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5055884093321616,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1263971023330404,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "eLife",
+      "citation_count": 6200,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Runge 2019 — Detecting and quantifying causal associations in large nonlinear time series … (Science advances, recent_primary, 174×)",
+      "doi": "10.1126/sciadv.aau4996",
+      "pub_id": "pub_6d9c6067",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6297571181624055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2990284726496219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07475711816240548,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Science advances",
+      "citation_count": 174,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Chatton 2020 — G-computation, propensity score-based methods, and targeted maximum likelihoo… (Scientific reports, recent_primary, 67×)",
+      "doi": "10.1038/s41598-020-65917-x",
+      "pub_id": "pub_0262d600",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6260747933594241,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2442991734376964,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0610747933594241,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 67,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Rohe 2019 — The neural dynamics of hierarchical Bayesian causal inference in multisensory… (Nature communications, recent_primary, 131×)",
+      "doi": "10.1038/s41467-019-09664-2",
+      "pub_id": "pub_bcc1aa3f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6256755714822222,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28270228592888874,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07067557148222219,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 131,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Yen 2019 — An Exploratory User Study of Visual Causality Analysis (Computer graphics forum (Print), recent_primary, 21×)",
+      "doi": "10.1111/cgf.13680",
+      "pub_id": "pub_e3262e0e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6248395935331004,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29935837413240124,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07483959353310031,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Computer graphics forum (Print)",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Dablander 2019 — Node centrality measures are a poor substitute for causal inference. (Scientific reports, recent_primary, 83×)",
+      "doi": "10.1038/s41598-019-43033-9",
+      "pub_id": "pub_b41c5e7b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6191333632525091,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2565334530100364,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0641333632525091,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 83,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Kular 2018 — DNA methylation as a mediator of HLA-DRB1*15:01 and a protective variant in m… (Nature communications, recent_primary, 154×)",
+      "doi": "10.1038/s41467-018-04732-5",
+      "pub_id": "pub_9921a80f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6180004939822041,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2920019759288165,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07300049398220412,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature communications",
+      "citation_count": 154,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Ferraro 2019 — Causal inference in coupled human and natural systems. (Proceedings of the National Acad…, recent_primary, 67×)",
+      "doi": "10.1073/pnas.1805563115",
+      "pub_id": "pub_9541a1a2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6160747933594242,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2442991734376964,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0610747933594241,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 67,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Raita 2021 — Big Data, Data Science, and Causal Inference: A Primer for Clinicians. (Frontiers in medicine, key_review, 19×)",
+      "doi": "10.3389/fmed.2021.678047",
+      "pub_id": "pub_d61c411b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.613361392454154,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Frontiers in medicine",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Tambe 2019 — Artificial Intelligence in Human Resources Management: Challenges and a Path … (California Management Review, recent_primary, 1k×)",
+      "doi": "10.1177/0008125619867910",
+      "pub_id": "pub_4df9fc91",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.612600467042979,
+        "breakdown": {
+          "raw": {
+            "citations": 0.7504018681719156,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1876004670429789,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "California Management Review",
+      "citation_count": 1042,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Vonk 2023 — Disentangling causality: assumptions in causal discovery and inference (Artificial Intelligence Review, recent_primary, 23×)",
+      "doi": "10.1007/s10462-023-10411-9",
+      "pub_id": "pub_17b1a03c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6110497077391698,
+        "breakdown": {
+          "raw": {
+            "citations": 0.244198830956679,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06104970773916975,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2023,
+      "venue": "Artificial Intelligence Review",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

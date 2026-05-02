@@ -1,0 +1,1687 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:26:47",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_mnemonic_similarity",
+    "name": "Mnemonic Similarity Task",
+    "aliases": [
+      "MST",
+      "Mnemonic Discrimination Task",
+      "Pattern Separation Task",
+      "Mnemonic Similarity"
+    ],
+    "category_id": "long_term_memory",
+    "short_definition": "Incidental encoding of images followed by a test with old, new, and lure items; discrimination of lures from repetitions indexes pattern separation.",
+    "description": "The Mnemonic Similarity Task measures hippocampal pattern separation—the ability to distinguish similar but not identical memory representations. During encoding, participants view a series of everyday object images. At test, they classify each image as \"old\" (previously seen), \"similar\" (a different exemplar of a studied object with slight visual changes), or \"new\" (novel). The critical measure is the ability to correctly identify \"similar\" lures as similar rather than incorrectly endorsing them as old. This discrimination (lure discrimination index) is thought to rely on dentate gyrus/CA3 pattern separation processes and is impaired in early-stage Alzheimer's disease and normal aging.",
+    "inclusion_test": {
+      "procedure": "Participants study a set of images, then view old items, new items, and similar lures (items resembling studied items). They classify each as old, new, or similar.",
+      "manipulation": "Lure similarity (mnemonic similarity parameter); encoding depth; retention interval; number of items.",
+      "measurement": "Lure discrimination index (LDI: p('similar'|lure) − p('similar'|foil)); recognition d-prime; pattern separation score."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 20,
+      "picked": 18,
+      "reserve": 0,
+      "excluded": 2,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 1,
+      "non_human_subjects": 1
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_7674e76e",
+      "doi": "10.1016/j.tics.2019.08.003",
+      "url": "https://doi.org/10.1016/j.tics.2019.08.003",
+      "openalex_id": null,
+      "pmid": "31597601",
+      "first_author": "Stark",
+      "authors_display": "Stark, S. et al.",
+      "year": 2019,
+      "title": "Mnemonic Similarity Task: A Tool for Assessing Hippocampal Integrity.",
+      "venue": "Trends in cognitive sciences",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Review",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 235,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The hippocampus is critical for learning and memory, relying in part on pattern separation processes supported by the dentate gyrus (DG) to prevent interference from overlapping memory representations. In 2007, we designed the Mnemonic Similarity Task (MST), a modified object recognition memory task, to be highly sensitive to hippocampal function by placing strong demands on pattern separation. The MST is now a widely used behavioral task, repeatedly shown to be sensitive to age-related memory decline, hippocampal connectivity, and hippocampal function, with specificity to the DG. Here, we review the utility of the MST, its relationship to hippocampal function, its utility in detecting hippocampal-based memory alterations across the lifespan, and impairments associated with clinical pathology from a variety of disorders.",
+      "score": {
+        "composite": 0.6840856236696127,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3163424946784505,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07908562366961262,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Humans",
+        "Memory Disorders",
+        "Pattern Recognition, Visual",
+        "Memory and Learning Tests",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_36339d14",
+      "doi": "10.1016/j.neuron.2018.01.039",
+      "url": "https://doi.org/10.1016/j.neuron.2018.01.039",
+      "openalex_id": null,
+      "pmid": "29518359",
+      "first_author": "Reagh",
+      "authors_display": "Reagh, Z. et al.",
+      "year": 2018,
+      "title": "Functional Imbalance of Anterolateral Entorhinal Cortex and Hippocampal Dentate/CA3 Underlies Age-Related Object Pattern Separation Deficits.",
+      "venue": "Neuron",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 168,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The entorhinal cortex (EC) is among the earliest brain areas to deteriorate in Alzheimer's disease (AD). However, the extent to which functional properties of the EC are altered in the aging brain, even in the absence of clinical symptoms, is not understood. Recent human fMRI studies have identified a functional dissociation within the EC, similar to what is found in rodents. Here, we used high-resolution fMRI to identify a specific hypoactivity in the anterolateral EC (alEC) commensurate with major behavioral deficits on an object pattern separation task in asymptomatic older adults. Only subtle deficits were found in a comparable spatial condition, with no associated differences in posteromedial EC between young and older adults. We additionally linked this condition to dentate/CA3 hyperactivity, and the ratio of activity between the regions was associated with object mnemonic discrimination impairment. These results provide novel evidence of alEC-dentate/CA3 circuit dysfunction in cognitively normal aged humans.",
+      "score": {
+        "composite": 0.5567521464256043,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2970085857024173,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07425214642560432,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Dentate Gyrus",
+        "Entorhinal Cortex",
+        "Nerve Net",
+        "Humans",
+        "Photic Stimulation",
+        "Aging",
+        "Adolescent",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Female",
+        "Male",
+        "Young Adult",
+        "CA3 Region, Hippocampal",
+        "Discrimination, Psychological"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_60cc8d04",
+      "doi": "10.1038/s41598-020-59419-z",
+      "url": "https://doi.org/10.1038/s41598-020-59419-z",
+      "openalex_id": null,
+      "pmid": "32066765",
+      "first_author": "Whoolery",
+      "authors_display": "Whoolery, C. et al.",
+      "year": 2020,
+      "title": "Multi-domain cognitive assessment of male mice shows space radiation is not harmful to high-level cognition and actually improves pattern separation.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 38,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7026431",
+      "tldr": null,
+      "abstract": "Astronauts on interplanetary missions - such as to Mars - will be exposed to space radiation, a spectrum of highly-charged, fast-moving particles that includes <sup>56</sup>Fe and <sup>28</sup>Si. Earth-based preclinical studies show space radiation decreases rodent performance in low- and some high-level cognitive tasks. Given astronaut use of touchscreen platforms during training and space flight and given the ability of rodent touchscreen tasks to assess functional integrity of brain circuits and multiple cognitive domains in a non-aversive way, here we exposed 6-month-old C57BL/6J male mice to whole-body space radiation and subsequently assessed them on a touchscreen battery. Relative to Sham treatment, <sup>56</sup>Fe irradiation did not overtly change performance on tasks of visual discrimination, reversal learning, rule-based, or object-spatial paired associates learning, suggesting preserved functional integrity of supporting brain circuits. Surprisingly, <sup>56</sup>Fe irradiation improved performance on a dentate gyrus-reliant pattern separation task; irradiated mice learned faster and were more accurate than controls. Improved pattern separation performance did not appear to be touchscreen-, radiation particle-, or neurogenesis-dependent, as <sup>56</sup>Fe and <sup>28</sup>Si irradiation led to faster context discrimination in a non-touchscreen task and <sup>56</sup>Fe decreased new dentate gyrus neurons relative to Sham. These data urge revisitation of the broadly-held view that space radiation is detrimental to cognition.",
+      "score": {
+        "composite": 0.5555278141742465,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Dentate Gyrus",
+        "Neurons",
+        "Animals",
+        "Mice, Inbred C57BL",
+        "Mice",
+        "Iron Isotopes",
+        "Whole-Body Irradiation",
+        "Cognition",
+        "Reversal Learning",
+        "Paired-Associate Learning",
+        "Pattern Recognition, Visual",
+        "Cosmic Radiation",
+        "Space Flight",
+        "Astronauts",
+        "Male",
+        "Biobehavioral Sciences"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_8d4f196d",
+      "doi": "10.1073/pnas.1900804116",
+      "url": "https://doi.org/10.1073/pnas.1900804116",
+      "openalex_id": null,
+      "pmid": "31010929",
+      "first_author": "Sakon",
+      "authors_display": "Sakon, J., & Suzuki, W.",
+      "year": 2019,
+      "title": "A neural signature of pattern separation in the monkey hippocampus.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 39,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The CA3 and dentate gyrus (DG) regions of the hippocampus are considered key for disambiguating sensory inputs from similar experiences in memory, a process termed pattern separation. The neural mechanisms underlying pattern separation, however, have been difficult to compare across species: rodents offer robust recording methods with less human-centric tasks, while humans provide complex behavior with less recording potential. To overcome these limitations, we trained monkeys to perform a visual pattern separation task similar to those used in humans while recording activity from single CA3/DG neurons. We find that, when animals discriminate recently seen novel images from similar (lure) images, behavior indicative of pattern separation, CA3/DG neurons respond to lure images more like novel than repeat images. Using a population of these neurons, we are able to classify novel, lure, and repeat images from each other using this pattern of firing rates. Notably, one subpopulation of these neurons is more responsible for distinguishing lures and repeats-the key discrimination indicative of pattern separation.",
+      "score": {
+        "composite": 0.5458942739603152,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Neural Pathways",
+        "Neurons",
+        "Animals",
+        "Macaca mulatta",
+        "Humans",
+        "Synaptic Transmission",
+        "Models, Neurological",
+        "Female",
+        "CA3 Region, Hippocampal"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_658cac7d",
+      "doi": "10.1016/j.bbr.2017.06.049",
+      "url": "https://doi.org/10.1016/j.bbr.2017.06.049",
+      "openalex_id": null,
+      "pmid": "28673769",
+      "first_author": "Stark",
+      "authors_display": "Stark, S., & Stark, C.",
+      "year": 2017,
+      "title": "Age-related deficits in the mnemonic similarity task for objects and scenes.",
+      "venue": "Behavioural brain research",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 104,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "https://escholarship.org/uc/item/5qd8w73b",
+      "tldr": null,
+      "abstract": "Using the Mnemonic Similarity Task (MST), we have demonstrated an age-related impairment in lure discrimination, or the ability to recognize an item as distinct from one that was similar, but not identical to one viewed earlier. A growing body of evidence links these behavioral changes to age-related alterations in the hippocampus. In this study, we sought to evaluate a novel version of this task, utilizing scenes that might emphasize the role of the hippocampus in contextual and spatial processing. In addition, we investigated whether, by utilizing two stimulus classes (scenes and objects), we could also interrogate the roles of the PRC and PHC in aging. Thus, we evaluated differential contributions to these tasks by relating performance on objects versus scenes to volumes of the hippocampus and surrounding medial temporal lobe structures. We found that while there was an age-related impairment on lure discrimination performance for both objects and scenes, relationships to brain volumes and other measure of memory performance were stronger when using objects. In particular, lure discrimination performance for objects showed a positive relationship with the volume of the hippocampus, specifically the combined dentate gyrus (DG) and CA3 subfields, and the subiculum. We conclude that though using scenes was effective in detecting age-related lure discrimination impairments, it does not provide as strong a brain-behavior relationship as using objects.",
+      "score": {
+        "composite": 0.5423632296820182,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2694529187280729,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06736322968201823,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Memory Disorders",
+        "Analysis of Variance",
+        "Photic Stimulation",
+        "Pattern Recognition, Visual",
+        "Neuropsychological Tests",
+        "Aging",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_3a3e528a",
+      "doi": "10.1101/lm.663507",
+      "url": "https://doi.org/10.1101/lm.663507",
+      "openalex_id": "https://openalex.org/W2143437002",
+      "pmid": "17848502",
+      "first_author": "Kirwan",
+      "authors_display": "C. Brock Kirwan, & Craig E.L. Stark",
+      "year": 2007,
+      "title": "Overcoming interference: An fMRI investigation of pattern separation in the medial temporal lobe",
+      "venue": "Learning & Memory",
+      "venue_tier": "specialty",
+      "publisher": "Cold Spring Harbor Laboratory Press",
+      "publication_types": [
+        "article",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 376,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "diamond",
+      "oa_url": "http://learnmem.cshlp.org/content/14/9/625.full.pdf",
+      "tldr": null,
+      "abstract": "The medial temporal lobe (MTL) supports the formation and retrieval of long-term declarative memories, or memories for facts and everyday events. One challenge posed for this type of memory stems from the highly overlapping nature of common episodes. Within cognitive psychology, it is widely accepted that interference between information learned at different times is a major limitation on memory. In spite of several decades of intense research in the fields of interference theory and the neurobiological underpinnings of declarative memory, there is little direct evidence bearing on how the MTL resolves this interference to form accurate memories of everyday facts and events. Computational models of MTL function have proposed a mechanism in which the MTL, specifically the hippocampus, performs pattern separation, whereby overlapping representations are made less similar. However, there is little evidence bearing on how this process is carried out in the intact human MTL. Using high-resolution fMRI, we conducted a set of experiments that taxed behavioral pattern separation by using highly similar, interfering stimuli in a modified continuous recognition task. Regions within the parahippocampal gyrus demonstrated activity consistent with a \"recall to reject\" strategy. In contrast and critical to performing the task, activity within the hippocampus distinguished between correctly identified true stimulus repetitions, correctly rejected presentations of similar lure stimuli, and false alarms to similar lures. These data support the computational models' assertion that the hippocampus plays a key role in pattern separation.",
+      "score": {
+        "composite": 0.5358656208961002,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3434624835844008,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.06666666666666667,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0858656208961002,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.01,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Face",
+        "Hippocampus",
+        "Parahippocampal Gyrus",
+        "Temporal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Photic Stimulation",
+        "Pattern Recognition, Visual",
+        "Models, Neurological",
+        "Models, Psychological",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2ce38ffc",
+      "doi": "10.1002/hipo.23259",
+      "url": "https://doi.org/10.1002/hipo.23259",
+      "openalex_id": null,
+      "pmid": "32918772",
+      "first_author": "Stark",
+      "authors_display": "Stark, S. et al.",
+      "year": 2021,
+      "title": "Age-related alterations in functional connectivity along the longitudinal axis of the hippocampus and its subfields.",
+      "venue": "Hippocampus",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 39,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Hippocampal circuit alterations that differentially affect hippocampal subfields are associated with age-related memory decline. Additionally, functional organization along the longitudinal axis of the hippocampus has revealed distinctions between anterior and posterior (A-P) connectivity. Here, we examined the functional connectivity (FC) differences between young and older adults at high-resolution within the medial temporal lobe network (entorhinal, perirhinal, and parahippocampal cortices), allowing us to explore how hippocampal subfield connectivity across the longitudinal axis of the hippocampus changes with age. Overall, we found reliably greater connectivity for younger adults than older adults between the hippocampus and parahippocampal cortex (PHC) and perirhinal cortex (PRC). This drop in functional connectivity was more pronounced in the anterior regions of the hippocampus than the posterior ones, consistent for each of the hippocampal subfields. Further, intra-hippocampal connectivity also reflected an age-related decrease in functional connectivity within the anterior hippocampus in older adults that was offset by an increase in posterior hippocampal functional connectivity. Interestingly, the anterior-posterior dysfunction in older adults between hippocampus and PHC was predictive of lure discrimination performance on the Mnemonic similarity task (MST), suggesting a role in memory performance. While age-related dysfunction within the hippocampal subfields has been well-documented, these results suggest that the age-related dysfunction in hippocampal connectivity across the longitudinal axis may also contribute significantly to memory decline in older adults.",
+      "score": {
+        "composite": 0.5083942739603152,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Cerebral Cortex",
+        "Temporal Lobe",
+        "Magnetic Resonance Imaging",
+        "Memory"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_cf565b7f",
+      "doi": "10.1016/j.neurobiolaging.2020.08.004",
+      "url": "https://doi.org/10.1016/j.neurobiolaging.2020.08.004",
+      "openalex_id": null,
+      "pmid": "32905951",
+      "first_author": "Venkatesh",
+      "authors_display": "Venkatesh, A. et al.",
+      "year": 2020,
+      "title": "Age- and memory- related differences in hippocampal gray matter integrity are better captured by NODDI compared to single-tensor diffusion imaging.",
+      "venue": "Neurobiology of aging",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 45,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Single-tensor diffusion imaging (DTI) has traditionally been used to assess integrity of white matter. For example, we previously showed that integrity of limbic white matter tracts declines in healthy aging and relates to episodic memory performance. However, multi-compartment diffusion models may be more informative about microstructural properties of gray matter. The current study examined hippocampal gray matter integrity using both single-tensor and multi-compartment (neurite orientation dispersion and density imaging, NODDI) diffusion imaging. Younger (20-38 years) and older (59-84 years) adults also completed the Mnemonic Similarity Task to measure mnemonic discrimination performance. Results revealed age-related declines in both single-tensor (lower fractional anisotropy, higher mean diffusivity) and multi-compartment (higher restricted, hindered and free diffusion) measures of hippocampal gray matter integrity. As expected, NODDI measures (hindered and free diffusion) captured more age-related variance than DTI measures. Moreover, mnemonic discrimination of highly similar lure items in memory was related to hippocampal gray matter integrity in younger but not older adults. These findings support the notion that age-related differences in gray matter integrity are better captured by multi-compartment versus single-tensor diffusion models and show that the relationship between mnemonic discrimination and hippocampal gray matter integrity is moderated by age.",
+      "score": {
+        "composite": 0.48041724259706003,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22166897038824016,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05541724259706004,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Humans",
+        "Sensitivity and Specificity",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Diffusion Tensor Imaging",
+        "Neuroimaging",
+        "Memory, Episodic",
+        "Gray Matter",
+        "Healthy Aging"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f194d238",
+      "doi": "10.1093/cercor/bhy211",
+      "url": "https://doi.org/10.1093/cercor/bhy211",
+      "openalex_id": null,
+      "pmid": "30192932",
+      "first_author": "Canada",
+      "authors_display": "Canada, K. et al.",
+      "year": 2019,
+      "title": "It's All in the Details: Relations Between Young Children's Developing Pattern Separation Abilities and Hippocampal Subfield Volumes.",
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 49,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The ability to keep similar experiences separate in memory is critical for forming unique and lasting memories, as many events share overlapping features (e.g., birthday parties, holidays). Research on memory in young children suggests their memories often lack high-resolution details, i.e., show impoverished pattern separation (PS). Recently developed assessments of PS suitable for children allow us to relate the formation of distinct, detailed memories for the development of the hippocampus, a neural structure critical for this ability in adults. The hippocampus displays a protracted developmental profile and underlies the ability to form detailed memories. This study examined age-related differences in hippocampal subfield volumes in 4- to 8-year-old children and relations with performance on a mnemonic similarity task (MST) designed to index memory specificity. Results revealed age-moderated associations between MST performance and cornu ammonis 2-4/dentate gyrus subfields. Specifically, age-related differences in the ability to form detailed memories tracked with normative patterns of volume increases followed by reductions over this age range. That is, greater volume correlated with better performance in younger children, whereas smaller volume correlated with better performance in older children. These findings support the hypothesis that developmental differences in hippocampal circuitry contribute to age-related improvements in detailed memory formation during this period.",
+      "score": {
+        "composite": 0.4716241403898243,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Dentate Gyrus",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Organ Size",
+        "Child Development",
+        "Memory",
+        "Child",
+        "Child, Preschool",
+        "Female",
+        "Male",
+        "CA2 Region, Hippocampal",
+        "CA3 Region, Hippocampal",
+        "Memory, Episodic",
+        "Discrimination, Psychological"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_ce390077",
+      "doi": "10.1037/bne0000055",
+      "url": "https://doi.org/10.1037/bne0000055",
+      "openalex_id": null,
+      "pmid": "26030427",
+      "first_author": "Stark",
+      "authors_display": "Stark, S. et al.",
+      "year": 2015,
+      "title": "Stability of age-related deficits in the mnemonic similarity task across task variations.",
+      "venue": "Behavioral neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 135,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "https://doi.org/10.1037/bne0000055",
+      "tldr": null,
+      "abstract": "Several studies in our lab and others have demonstrated age-related declines in mnemonic discrimination during a recognition memory paradigm using repeated items, similar lures, and novel foils. In particular, older adults exhibit a shift in lure discriminability, identifying similar lures as old items at a greater rate than young adults. This shift likely reflects deficits in pattern separation processing as a result of underlying changes in the dentate gyrus of the hippocampus. Here, we explored whether alterations in the task design could rescue the age-related impairment or whether it was ubiquitous as one might expect if the neurobiological mechanisms were truly disturbed by typical aging. Despite overt instructions to study item details during encoding, we replicated the age-related deficit in mnemonic discrimination. We established reliable effects with short lists of stimuli and with repeated testing. Altering the task design from a study/test to a continuous recognition paradigm replicated the age-related shift in lure discrimination as well. Modifying the task to an old/new response (rather than old/similar/new) showed the same effect and a d' analysis showed that lure items were more akin to target items in older adults. Finally, we varied the test instructions in order to promote gist or veridical responses in the old/new task. Even these overt veridical test instructions did not ameliorate older adults' lure discrimination problems. Together, these findings demonstrate the robust nature of this age-related deficit and support the hypothesis that typical aging results in neurobiological changes that underlie this impairment.",
+      "score": {
+        "composite": 0.46610767486558535,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28443069946234123,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07110767486558531,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Memory Disorders",
+        "Pattern Recognition, Visual",
+        "Neuropsychological Tests",
+        "Aging",
+        "Adolescent",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Discrimination, Psychological"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_568a9409",
+      "doi": "10.1016/j.neuropsychologia.2012.12.014",
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2012.12.014",
+      "openalex_id": null,
+      "pmid": "23313292",
+      "first_author": "Stark",
+      "authors_display": "Stark, S. et al.",
+      "year": 2013,
+      "title": "A task to assess behavioral pattern separation (BPS) in humans: Data from healthy aging and mild cognitive impairment.",
+      "venue": "Neuropsychologia",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 433,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Changes in memory performance are one of the hallmark symptoms of mild cognitive impairment and are affected by healthy aging as well. Pattern separation, which refers to the process of orthogonalizing overlapping inputs into distinct memory representations, may be a sensitive marker of these memory changes. Here, we describe a paradigm, the Behavioral Pattern Separation Task-Object Version (BPS-O task), which reveals age-related changes in pattern separation performance. Specifically, we report an age-related decline in pattern separation in healthy adults, ranging from ages 20 to 89. When we classify those individuals aged 60 and older into two groups, Aged Unimpaired (AU) and Aged Impaired (AI) based on their delayed word recall performance, we observe impairments in pattern separation performance in the Impaired group, but no overall impairment in recognition performance. In contrast, those individuals diagnosed with mild cognitive impairment demonstrate worse performance than age-matched controls in both pattern separation and recognition memory performance. Therefore, the BPS-O task provides a sensitive measure for observing changes in memory performance across the lifespan and may be useful for the early detection of memory impairments that may provide an early signal of later development to mild cognitive impairment.",
+      "score": {
+        "composite": 0.46040360532527613,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35161442130110465,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08790360532527616,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Photic Stimulation",
+        "Pattern Recognition, Visual",
+        "Neuropsychological Tests",
+        "Aging",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Cognitive Dysfunction",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_64085310",
+      "doi": "10.3758/s13423-025-02855-7",
+      "url": "https://doi.org/10.3758/s13423-025-02855-7",
+      "openalex_id": null,
+      "pmid": "41712136",
+      "first_author": "Parks",
+      "authors_display": "Parks, C. et al.",
+      "year": 2026,
+      "title": "Towards a unified theory of false memory for similar episodes.",
+      "venue": "Psychonomic bulletin & review",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12920419",
+      "tldr": null,
+      "abstract": "Important advances have been made in understanding the roles that recollection and familiarity, true and false memory, as well as pattern separation and pattern completion, play in episodic memory, using experimental paradigms that examine memory for lures that are similar - but not identical - to prior episodes. These include the Process Dissociation Procedure, the Deese-Roediger-McDermott paradigm, and the Mnemonic Similarity Task. However, research using each of these paradigms has remained largely isolated, and a coherent theoretical integration is lacking. In this perspective paper, we argue that memory for similar lures in all these paradigms can be understood within a unified theory in which memory performance reflects the operation of three distinct processes: false recollection, false familiarity, and recollection rejection. Our proposed approach leverages the theoretical insights provided by examining recognition confidence ratings and analyzing false memory receiver operating characteristics. Using extant data from paradigms across all three literatures that collected recognition confidence judgments, we show that this analytic approach can be used to measure each process. Our findings bridge the existing literatures by showing that these three memory processes are functionally distinct and that they underlie performance in each experimental paradigm. This new approach overcomes key limitations of the earlier methods by separating common memory and decision processes across paradigms, and it provides new opportunities to further understand why factors such as healthy aging disrupt the ability to discriminate between similar episodes.",
+      "score": {
+        "composite": 0.44999999999999996,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.075,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Mental Recall",
+        "Psychological Theory",
+        "Repression, Psychology",
+        "Memory, Episodic",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_bda16f2e",
+      "doi": "10.1002/hipo.23166",
+      "url": "https://doi.org/10.1002/hipo.23166",
+      "openalex_id": null,
+      "pmid": "31588607",
+      "first_author": "Nauer",
+      "authors_display": "Nauer, R. et al.",
+      "year": 2020,
+      "title": "Improving fitness increases dentate gyrus/CA3 volume in the hippocampal head and enhances memory in young adults.",
+      "venue": "Hippocampus",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 48,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Converging evidence suggests a relationship between aerobic exercise and hippocampal neuroplasticity that interactively impacts hippocampally dependent memory. The majority of human studies have focused on the potential for exercise to reduce brain atrophy and attenuate cognitive decline in older adults, whereas animal studies often center on exercise-induced neurogenesis and hippocampal plasticity in the dentate gyrus (DG) of young adult animals. In the present study, initially sedentary young adults (18-35 years) participated in a moderate-intensity randomized controlled exercise intervention trial (ClinicalTrials.gov; NCT02057354) for a duration of 12 weeks. The aims of the study were to investigate the relationship between change in cardiorespiratory fitness (CRF) as determined by estimated V˙O2<sub>MAX</sub> , hippocampally dependent mnemonic discrimination, and change in hippocampal subfield volume. Results show that improving CRF after exercise training is associated with an increased volume in the left DG/CA3 subregion in young adults. Consistent with previous studies that found exercise-induced increases in anterior hippocampus in older adults, this result was specific to the hippocampal head, or most anterior portion, of the subregion. Our results also demonstrate a positive relationship between change in CRF and change in corrected accuracy for trials requiring the highest level of discrimination on a putative behavioral pattern separation task. This relationship was observed in individuals who were initially lower-fit, suggesting that individuals who show greater improvement in their CRF may receive greater cognitive benefit. This work extends animal models by providing evidence for exercise-induced neuroplasticity specific to the neurogenic zone of the human hippocampus.",
+      "score": {
+        "composite": 0.43883171855748476,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Dentate Gyrus",
+        "Humans",
+        "Organ Size",
+        "Exercise",
+        "Memory",
+        "Psychomotor Performance",
+        "Physical Fitness",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Muscle Strength",
+        "Young Adult",
+        "CA3 Region, Hippocampal"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_37dc1275",
+      "doi": "10.1523/jneurosci.1279-19.2019",
+      "url": "https://doi.org/10.1523/jneurosci.1279-19.2019",
+      "openalex_id": null,
+      "pmid": "31541019",
+      "first_author": "Berron",
+      "authors_display": "Berron, D. et al.",
+      "year": 2019,
+      "title": "Higher CSF Tau Levels Are Related to Hippocampal Hyperactivity and Object Mnemonic Discrimination in Older Adults.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Multicenter Study",
+        "Journal Article",
+        "Observational Study"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 77,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6820211",
+      "tldr": null,
+      "abstract": "Mnemonic discrimination, the ability to distinguish similar events in memory, relies on subregions in the human medial temporal lobes (MTLs). Tau pathology is frequently found within the MTL of older adults and therefore likely to affect mnemonic discrimination, even in healthy older individuals. The MTL subregions that are known to be affected early by tau pathology, the perirhinal-transentorhinal region (area 35) and the anterior-lateral entorhinal cortex (alEC), have recently been implicated in the mnemonic discrimination of objects rather than scenes. Here we used an object-scene mnemonic discrimination task in combination with fMRI recordings and analyzed the relationship between subregional MTL activity, memory performance, and levels of total and phosphorylated tau as well as Aβ42/40 ratio in CSF. We show that activity in alEC was associated with mnemonic discrimination of similar objects but not scenes in male and female cognitively unimpaired older adults. Importantly, CSF tau levels were associated with increased fMRI activity in the hippocampus, and both increased hippocampal activity as well as tau levels were associated with mnemonic discrimination of objects, but again not scenes. This suggests that dysfunction of the alEC-hippocampus object mnemonic discrimination network might be a marker for tau-related cognitive decline.<b>SIGNIFICANCE STATEMENT</b> Subregions in the human medial temporal lobe are critically involved in episodic memory and, at the same time, affected by tau pathology. Impaired object mnemonic discrimination performance as well as aberrant activity within the entorhinal-hippocampal circuitry have been reported in earlier studies involving older individuals, but it has thus far remained elusive whether and how tau pathology is implicated in this specific impairment. Using task-related fMRI in combination with measures of tau pathology in CSF, we show that measures of tau pathology are associated with increased hippocampal activity an",
+      "score": {
+        "composite": 0.41556069568040765,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2522427827216307,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06306069568040767,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Entorhinal Cortex",
+        "Temporal Lobe",
+        "Humans",
+        "Peptide Fragments",
+        "tau Proteins",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Memory",
+        "Pattern Recognition, Visual",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Amyloid beta-Peptides",
+        "Healthy Aging",
+        "Discrimination, Psychological"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_f3fc5dbf",
+      "doi": "10.1002/hipo.22162",
+      "url": "https://doi.org/10.1002/hipo.22162",
+      "openalex_id": null,
+      "pmid": "23804525",
+      "first_author": "Ally",
+      "authors_display": "Ally, B. et al.",
+      "year": 2013,
+      "title": "Pattern separation and pattern completion in Alzheimer's disease: evidence of rapid forgetting in amnestic mild cognitive impairment.",
+      "venue": "Hippocampus",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 126,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Over the past four decades, the characterization of memory loss associated with Alzheimer's disease (AD) has been extensively debated. Recent iterations have focused on disordered encoding versus rapid forgetting. To address this issue, we used a behavioral pattern separation task to assess the ability of the hippocampus to create and maintain distinct and orthogonalized visual memory representations in patients with amnestic mild cognitive impairment (aMCI) and mild AD. We specifically used a lag-based continuous recognition paradigm to determine whether patients with aMCI and mild AD fail to encode visual memory representations or whether these patients properly encode representations that are rapidly forgotten. Consistent with the rapid forgetting hypothesis of AD, we found that patients with aMCI demonstrated decreasing pattern separation rates as the lag of interfering objects increased. In contrast, patients with AD demonstrated consistently poor pattern separation rates across three increasingly longer lags. We propose a continuum that reflects underlying hippocampal neuropathology whereby patients with aMCI are able to properly encode information into memory but rapidly lose these memory representations, and patients with AD, who have extensive hippocampal and parahippocampal damage, cannot properly encode information in distinct, orthogonal representations. Our results also revealed that whereas patients with aMCI demonstrated similar behavioral pattern completion rates to healthy older adults, patients with AD showed lower pattern completion rates when we corrected for response bias. Finally, these behavioral pattern separation and pattern completion results are discussed in terms of the dual process model of recognition memory.",
+      "score": {
+        "composite": 0.3826166453463085,
+        "breakdown": {
+          "raw": {
+            "citations": 0.280466581385234,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0701166453463085,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Alzheimer Disease",
+        "Memory Disorders",
+        "Analysis of Variance",
+        "Area Under Curve",
+        "ROC Curve",
+        "Photic Stimulation",
+        "Association Learning",
+        "Pattern Recognition, Visual",
+        "Space Perception",
+        "Neuropsychological Tests",
+        "Time Factors",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Cognitive Dysfunction",
+        "Bias"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a3a811f3",
+      "doi": "10.3390/nu12030638",
+      "url": "https://doi.org/10.3390/nu12030638",
+      "openalex_id": null,
+      "pmid": "32121111",
+      "first_author": "Kim",
+      "authors_display": "Kim, C. et al.",
+      "year": 2020,
+      "title": "Energy Restriction Enhances Adult Hippocampal Neurogenesis-Associated Memory after Four Weeks in an Adult Human Population with Central Obesity; a Randomized Controlled Trial.",
+      "venue": "Nutrients",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 51,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://kclpure.kcl.ac.uk/portal/en/publications/6476b2ef-fa6c-4a5b-9d9a-426a8a67a03f",
+      "tldr": null,
+      "abstract": "Adult neurogenesis, the generation of new neurons throughout life, occurs in the subventricular zone of the dentate gyrus in the human hippocampal formation. It has been shown in rodents that adult hippocampal neurogenesis is needed for pattern separation, the ability to differentially encode small changes derived from similar inputs, and recognition memory, as well as the ability to recognize previously encountered stimuli. Improved hippocampus-dependent cognition and cellular readouts of adult hippocampal neurogenesis have been reported in daily energy restricted and intermittent fasting adult mice. Evidence that nutrition can significantly affect brain structure and function is increasing substantially. This randomized intervention study investigated the effects of intermittent and continuous energy restriction on human hippocampal neurogenesis-related cognition, which has not been reported previously. Pattern separation and recognition memory were measured in 43 individuals with central obesity aged 35-75 years, before and after a four-week dietary intervention using the mnemonic similarity task. Both groups significantly improved pattern separation (<i>P</i> = 0.0005), but only the intermittent energy restriction group had a significant deterioration in recognition memory. There were no significant differences in cognitive improvement between the two diets. This is the first human study to investigate the association between energy restriction with neurogenesis-associated cognitive function. Energy restriction may enhance hippocampus-dependent memory and could benefit those in an ageing population with declining cognition. This study was registered on ClinicalTrials.gov (NCT02679989) on 11 February 2016.",
+      "score": {
+        "composite": 0.38219183622512454,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher",
+      "mesh_terms": [
+        "Hippocampus",
+        "Humans",
+        "Weight Loss",
+        "Caloric Restriction",
+        "Cohort Studies",
+        "Cognition",
+        "Memory",
+        "Body Composition",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Neurogenesis",
+        "Obesity, Abdominal"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_179d22a9",
+      "doi": "10.1001/jamanetworkopen.2022.13875",
+      "url": "https://doi.org/10.1001/jamanetworkopen.2022.13875",
+      "openalex_id": null,
+      "pmid": "35616942",
+      "first_author": "Schwarz",
+      "authors_display": "Schwarz, C. et al.",
+      "year": 2022,
+      "title": "Effects of Spermidine Supplementation on Cognition and Biomarkers in Older Adults With Subjective Cognitive Decline: A Randomized Clinical Trial.",
+      "venue": "JAMA network open",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 58,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://jamanetwork.com/journals/jamanetworkopen/articlepdf/2792725/schwarz_2022_oi_220408_1652900435.83926.pdf",
+      "tldr": null,
+      "abstract": "<h4>Importance</h4>Developing interventions against age-related memory decline and for older adults experiencing neurodegenerative disease is one of the greatest challenges of our generation. Spermidine supplementation has shown beneficial effects on brain and cognitive health in animal models, and there has been preliminary evidence of memory improvement in individuals with subjective cognitive decline.<h4>Objective</h4>To determine the effect of longer-term spermidine supplementation on memory performance and biomarkers in this at-risk group.<h4>Design, setting, and participants</h4>This 12-month randomized, double-masked, placebo-controlled phase 2b trial (the SmartAge trial) was conducted between January 2017 and May 2020. The study was a monocenter trial carried out at an academic clinical research center in Germany. Eligible individuals were aged 60 to 90 years with subjective cognitive decline who were recruited from health care facilities as well as through advertisements in the general population. Data analysis was conducted between January and March 2021.<h4>Interventions</h4>One hundred participants were randomly assigned (1:1 ratio) to 12 months of dietary supplementation with either a spermidine-rich dietary supplement extracted from wheat germ (0.9 mg spermidine/d) or placebo (microcrystalline cellulose). Eighty-nine participants (89%) successfully completed the trial intervention.<h4>Main outcomes and measures</h4>Primary outcome was change in memory performance from baseline to 12-month postintervention assessment (intention-to-treat analysis), operationalized by mnemonic discrimination performance assessed by the Mnemonic Similarity Task. Secondary outcomes included additional neuropsychological, behavioral, and physiological parameters. Safety was assessed in all participants and exploratory per-protocol, as well as subgroup, analyses were performed.<h4>Results</h4>A total of 100 participants (51 in the spermidine group and 49 in the placebo group)",
+      "score": {
+        "composite": 0.3640198606572902,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23607944262916078,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.059019860657290195,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Animals",
+        "Humans",
+        "Neurodegenerative Diseases",
+        "Inflammation",
+        "Spermidine",
+        "Cognition",
+        "Dietary Supplements",
+        "Aged",
+        "Female",
+        "Biomarkers",
+        "Cognitive Dysfunction"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b152f794",
+      "doi": "10.3389/fnins.2013.00066",
+      "url": "https://doi.org/10.3389/fnins.2013.00066",
+      "openalex_id": null,
+      "pmid": "23641193",
+      "first_author": "Déry",
+      "authors_display": "Déry, N. et al.",
+      "year": 2013,
+      "title": "Adult hippocampal neurogenesis reduces memory interference in humans: opposing effects of aerobic exercise and depression.",
+      "venue": "Frontiers in neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (humans)"
+      ],
+      "citation_count": 139,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fnins.2013.00066/pdf",
+      "tldr": null,
+      "abstract": "Since the remarkable discovery of adult neurogenesis in the mammalian hippocampus, considerable effort has been devoted to unraveling the functional significance of these new neurons. Our group has proposed that a continual turnover of neurons in the DG could contribute to the development of event-unique memory traces that act to reduce interference between highly similar inputs. To test this theory, we implemented a recognition task containing some objects that were repeated across trials as well as some objects that were highly similar, but not identical, to ones previously observed. The similar objects, termed lures, overlap substantially with previously viewed stimuli, and thus, may require hippocampal neurogenesis in order to avoid catastrophic interference. Lifestyle factors such as aerobic exercise and stress have been shown to impact the local neurogenic microenvironment, leading to enhanced and reduced levels of DG neurogenesis, respectively. Accordingly, we hypothesized that healthy young adults who take part in a long-term aerobic exercise regime would demonstrate enhanced performance on the visual pattern separation task, specifically at correctly categorizing lures as \"similar.\" Indeed, those who experienced a proportionally large change in fitness demonstrated a significantly greater improvement in their ability to correctly identify lure stimuli as \"similar.\" Conversely, we expected that those who score high on depression scales, an indicator of chronic stress, would exhibit selective deficits at appropriately categorizing lures. As expected, those who scored high on the Beck Depression Inventory (BDI) were significantly worse than those with relatively lower BDI scores at correctly identifying lures as \"similar,\" while performance on novel and repeated stimuli was identical. Taken together, our results support the hypothesis that adult-born neurons in the DG contribute to the orthogonalization of incoming information.",
+      "score": {
+        "composite": 0.34402725173289633,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2861090069315853,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07152725173289633,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_cb7538a0",
+      "doi": "10.1212/wnl.0000000000011477",
+      "url": "https://doi.org/10.1212/wnl.0000000000011477",
+      "openalex_id": null,
+      "pmid": "33408146",
+      "first_author": "Trelle",
+      "authors_display": "Trelle, A. et al.",
+      "year": 2021,
+      "title": "Association of CSF Biomarkers With Hippocampal-Dependent Memory in Preclinical Alzheimer Disease.",
+      "venue": "Neurology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 43,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>To determine whether memory tasks with demonstrated sensitivity to hippocampal function can detect variance related to preclinical Alzheimer disease (AD) biomarkers, we examined associations between performance in 3 memory tasks and CSF β-amyloid (Aβ)<sub>42</sub>/Aβ<sub>40</sub> and phosopho-tau<sub>181</sub> (p-tau<sub>181</sub>) in cognitively unimpaired older adults (CU).<h4>Methods</h4>CU enrolled in the Stanford Aging and Memory Study (n = 153; age 68.78 ± 5.81 years; 94 female) completed a lumbar puncture and memory assessments. CSF Aβ<sub>42</sub>, Aβ<sub>40</sub>, and p-tau<sub>181</sub> were measured with the automated Lumipulse G system in a single-batch analysis. Episodic memory was assayed using a standardized delayed recall composite, paired associate (word-picture) cued recall, and a mnemonic discrimination task that involves discrimination between studied \"target\" objects, novel \"foil\" objects, and perceptually similar \"lure\" objects. Analyses examined cross-sectional relationships among memory performance, age, and CSF measures, controlling for sex and education.<h4>Results</h4>Age and lower Aβ<sub>42</sub>/Aβ<sub>40</sub> were independently associated with elevated p-tau<sub>181</sub>. Age, Aβ<sub>42</sub>/Aβ<sub>40</sub>, and p-tau<sub>181</sub> were each associated with (1) poorer associative memory and (2) diminished improvement in mnemonic discrimination performance across levels of decreased task difficulty (i.e., target-lure similarity). P-tau mediated the effect of Aβ<sub>42</sub>/Aβ<sub>40</sub> on memory. Relationships between CSF proteins and delayed recall were similar but nonsignificant. CSF Aβ<sub>42</sub> was not significantly associated with p-tau<sub>181</sub> or memory.<h4>Conclusions</h4>Tests designed to tax hippocampal function are sensitive to subtle individual differences in memory among CU and correlate with early AD-associated biomarker changes in CSF. These tests may offer utility for identifying CU with p",
+      "score": {
+        "composite": 0.32727383052077785,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21909532208311155,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05477383052077789,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Humans",
+        "Alzheimer Disease",
+        "Memory Disorders",
+        "Peptide Fragments",
+        "tau Proteins",
+        "Cross-Sectional Studies",
+        "Association Learning",
+        "Cues",
+        "Memory",
+        "Mental Recall",
+        "Psychomotor Performance",
+        "Neuropsychological Tests",
+        "Aging",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Amyloid beta-Peptides",
+        "Memory, Episodic",
+        "Biomarkers",
+        "Discrimination, Psychological"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_26d28d5e",
+      "doi": "10.1101/lm.1971111",
+      "url": "https://doi.org/10.1101/lm.1971111",
+      "openalex_id": null,
+      "pmid": "21164173",
+      "first_author": "Lacy",
+      "authors_display": "Lacy, J. et al.",
+      "year": 2011,
+      "title": "Distinct pattern separation related transfer functions in human CA3/dentate and CA1 revealed using high-resolution fMRI and variable mnemonic similarity.",
+      "venue": "Learning & memory (Cold Spring Harbor, N.Y.)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 288,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Producing and maintaining distinct (orthogonal) neural representations for similar events is critical to avoiding interference in long-term memory. Recently, our laboratory provided the first evidence for separation-like signals in the human CA3/dentate. Here, we extended this by parametrically varying the change in input (similarity) while monitoring CA1 and CA3/dentate for separation and completion-like signals using high-resolution fMRI. In the CA1, activity varied in a graded fashion in response to increases in the change in input. In contrast, the CA3/dentate showed a stepwise transfer function that was highly sensitive to small changes in input.",
+      "score": {
+        "composite": 0.31451806069420335,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32807224277681346,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08201806069420337,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Dentate Gyrus",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Analysis of Variance",
+        "Photic Stimulation",
+        "Memory",
+        "Pattern Recognition, Visual",
+        "Reaction Time",
+        "Image Processing, Computer-Assisted",
+        "CA1 Region, Hippocampal",
+        "CA3 Region, Hippocampal",
+        "Discrimination, Psychological",
+        "Transfer, Psychology"
+      ]
+    }
+  ]
+}

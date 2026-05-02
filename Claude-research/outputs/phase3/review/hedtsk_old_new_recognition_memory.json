@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_old_new_recognition_memory",
+    "name": "Old/New Recognition Memory Task",
+    "aliases": [
+      "Recognition Memory Test",
+      "Yes/No Recognition"
+    ],
+    "category_id": "long_term_memory",
+    "short_definition": "Studied items mixed with new lures at test; hit and false-alarm rates yield d' and can be decomposed into recollection and familiarity via ROC or remember/know.",
+    "description": "Participants study a list of stimuli (words, pictures, or faces) during an encoding phase. In the test phase, they view a mixture of studied (old) and unstudied (new) items and make binary old/new recognition judgments. Performance is analyzed using signal detection measures (hits, false alarms, d') and can be further decomposed into familiarity-based (rapid, automatic) and recollection-based (slower, effortful) processes using confidence ratings or remember/know judgments. Neuroimaging consistently implicates the hippocampus, angular gyrus, and default mode network in successful recognition.",
+    "inclusion_test": {
+      "procedure": "Participants study a list of items, then view a test list containing studied (old) items and unstudied (new) items and classify each as old or new.",
+      "manipulation": "Study list length; encoding depth (levels of processing); retention interval; confidence judgment; response deadline.",
+      "measurement": "Hit rate, false alarm rate, d-prime (discriminability), criterion (response bias); ROC curves; remember/know judgments (when combined)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:46:25",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Rugg 2007 — Event-related potentials and recognition memory (Trends in Cognitive Sciences, historical, 1k×)",
+      "doi": "10.1016/j.tics.2007.04.004",
+      "pub_id": "pub_2acf4c95",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7637161355981876,
+        "breakdown": {
+          "raw": {
+            "citations": 0.41486454239275067,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.10371613559818767,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.0,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2007,
+      "venue": "Trends in Cognitive Sciences",
+      "citation_count": 1293,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Squire 2021 — One-trial perceptual learning in the absence of conscious remembering and ind… (Proceedings of the National Acad…, recent_primary, 14×)",
+      "doi": "10.1073/pnas.2104072118",
+      "pub_id": "pub_441f4000",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5725307037366092,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Starita 2019 — Threat learning promotes generalization of episodic memory. (Journal of experimental psycholo…, recent_primary, 48×)",
+      "doi": "10.1037/xge0000551",
+      "pub_id": "pub_b4fcf334",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5696650518908181,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Journal of experimental psychology. General",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Geyer 2020 — Task-based memory systems in contextual-cueing of visual search and explicit … (Scientific reports, recent_primary, 9×)",
+      "doi": "10.1038/s41598-020-71632-4",
+      "pub_id": "pub_054ee312",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.556661844281326,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Johnson 2018 — Direct brain recordings reveal prefrontal cortex dynamics of memory development. (Science advances, recent_primary, 27×)",
+      "doi": "10.1126/sciadv.aat3702",
+      "pub_id": "pub_f99d4aa3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5515649556243981,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Science advances",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Shi 2021 — Comparison of cognitive performance between patients with Parkinson's disease… (Scientific reports, recent_primary, 1×)",
+      "doi": "10.1038/s41598-021-99317-6",
+      "pub_id": "pub_68b1aa36",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5433662148394945,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Trelle 2017 — Declines in representational quality and strategic retrieval processes contri… (Journal of experimental psycholo…, foundational, 25×)",
+      "doi": "10.1037/xlm0000412",
+      "pub_id": "pub_3edd2c62",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5404922880522967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Scimeca 2016 — Striatal prediction errors support dynamic control of declarative memory deci… (Nature communications, foundational, 18×)",
+      "doi": "10.1038/ncomms13061",
+      "pub_id": "pub_77f80f65",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5259522867224748,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Nature communications",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Lewis-Peacock 2014 — Competition between items in working memory leads to forgetting. (Nature communications, foundational, 73×)",
+      "doi": "10.1038/ncomms6768",
+      "pub_id": "pub_0872caae",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5256320431687225,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24919483934155667,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06229870983538917,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Nature communications",
+      "citation_count": 73,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Kisker 2021 — Virtual reality experiences promote autobiographical retrieval mechanisms: El… (Psychological research, recent_primary, 23×)",
+      "doi": "10.1007/s00426-020-01417-x",
+      "pub_id": "pub_20fcb97e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5193337188132613,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Psychological research",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Leong 2023 — Holistic and featural processing's link to face recognition varies by individ… (Scientific reports, recent_primary, 11×)",
+      "doi": "10.1038/s41598-023-44164-w",
+      "pub_id": "pub_948947a1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5093008373071001,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific reports",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Markant 2014 — Leveling the playing field: attention mitigates the effects of intelligence o… (Cognition, foundational, 17×)",
+      "doi": "10.1016/j.cognition.2014.01.006",
+      "pub_id": "pub_24729da4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5051696967623832,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Cognition",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Melega 2023 — Conceptual relatedness promotes memory generalization at the cost of detailed… (Scientific reports, recent_primary, 7×)",
+      "doi": "10.1038/s41598-023-40803-4",
+      "pub_id": "pub_2ca1b142",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5034319778518169,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific reports",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Kark 2020 — Forgotten but not gone: FMRI evidence of implicit memory for negative stimuli… (Neuropsychologia, recent_primary, 6×)",
+      "doi": "10.1016/j.neuropsychologia.2019.107277",
+      "pub_id": "pub_5dd11b9b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4914991926120757,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Neuropsychologia",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Daume 2024 — Persistent activity during working memory maintenance predicts long-term memo… (Neuron, recent_primary, 10×)",
+      "doi": "10.1016/j.neuron.2024.09.013",
+      "pub_id": "pub_aa0033f0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4780414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Neuron",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Clark 2016 — Intrusive memories to traumatic footage: the neural basis of their encoding a… (Psychological medicine, foundational, 40×)",
+      "doi": "10.1017/s0033291715002007",
+      "pub_id": "pub_a57249f3",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.477085017758763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Psychological medicine",
+      "citation_count": 40,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Jimenez 2024 — The dorsomedial prefrontal cortex prioritizes social learning during rest. (Proceedings of the National Acad…, recent_primary, 6×)",
+      "doi": "10.1073/pnas.2309232121",
+      "pub_id": "pub_6b0f2f52",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.47149919261207573,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Lavie 2009 — The role of perceptual load in object recognition. (Journal of experimental psycholo…, foundational, 49×)",
+      "doi": "10.1037/a0016454",
+      "pub_id": "pub_5b791b77",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.46995747372315766,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Journal of experimental psychology. Human perception and performance",
+      "citation_count": 49,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Canli 2002 — Sex differences in the neural basis of emotional memories. (Proceedings of the National Acad…, foundational, 389×)",
+      "doi": "10.1073/pnas.162356599",
+      "pub_id": "pub_3b2b356f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4696896584555726,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3454253004889569,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08635632512223923,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2002,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 389,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Undorf 2021 — Metamemory for pictures of naturalistic scenes: Assessment of accuracy and cu… (Memory & cognition, recent_primary, 9×)",
+      "doi": "10.3758/s13421-021-01170-5",
+      "pub_id": "pub_ab9621f4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46666184428132607,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Memory & cognition",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Kark 2015 — Effect of emotional valence on retrieval-related recapitulation of encoding a… (Neuropsychologia, foundational, 37×)",
+      "doi": "10.1016/j.neuropsychologia.2015.10.014",
+      "pub_id": "pub_93adbb6f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.46598516822863606,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2106073395812109,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05265183489530272,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Neuropsychologia",
+      "citation_count": 37,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Anderson 2006 — Emotion enhances remembrance of neutral events past. (Proceedings of the National Acad…, foundational, 151×)",
+      "doi": "10.1073/pnas.0506308103",
+      "pub_id": "pub_d2a477e3",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4560509312409585,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2908703916305006,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07271759790762515,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2006,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 151,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Wang 2014 — Activity reductions in perirhinal cortex predict conceptual priming and famil… (Neuropsychologia, foundational, 37×)",
+      "doi": "10.1016/j.neuropsychologia.2013.10.006",
+      "pub_id": "pub_9fde3832",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.45598516822863605,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2106073395812109,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05265183489530272,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Neuropsychologia",
+      "citation_count": 37,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Reppa 2020 — The relative contribution of shape and colour to object memory. (Memory & cognition, recent_primary, 8×)",
+      "doi": "10.3758/s13421-020-01058-w",
+      "pub_id": "pub_1f974440",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4551368152562219,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Memory & cognition",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Hosokawa 2021 — Facial memory ability and self-awareness in patients with temporal lobe epile… (PloS one, recent_primary, 3×)",
+      "doi": "10.1371/journal.pone.0248785",
+      "pub_id": "pub_c3a71dc1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4533990963456557,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PloS one",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Bruett 2018 — Expertise Moderates Incidentally Learned Associations Between Words and Images. (Frontiers in psychology, recent_primary, 5×)",
+      "doi": "10.3389/fpsyg.2018.02085",
+      "pub_id": "pub_536d3daa",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.45260128913427217,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Frontiers in psychology",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Jiménez 2020 — Increasing control improves further control, but it does not enhance memory f… (Memory & cognition, recent_primary, 6×)",
+      "doi": "10.3758/s13421-020-01028-2",
+      "pub_id": "pub_3dc0c523",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.45149919261207566,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Memory & cognition",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Brock Kirwan 2012 — Pattern separation deficits following damage to the hippocampus. (Neuropsychologia, foundational, 91×)",
+      "doi": "10.1016/j.neuropsychologia.2012.06.011",
+      "pub_id": "pub_7f4092e0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.44878345743655457,
+        "breakdown": {
+          "raw": {
+            "citations": 0.261800496412885,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06545012410322125,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Neuropsychologia",
+      "citation_count": 91,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Westerberg 2013 — Distinct medial temporal contributions to different forms of recognition in a… (Neuropsychologia, foundational, 31×)",
+      "doi": "10.1016/j.neuropsychologia.2013.06.025",
+      "pub_id": "pub_50ddec37",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.44349774086413934,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Neuropsychologia",
+      "citation_count": 31,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Kang 2023 — Perceptual Generalization of Alcohol-Related Value Characterizes Risky Drinkers. (Psychological science, recent_primary, 1×)",
+      "doi": "10.1177/09567976231181516",
+      "pub_id": "pub_45b05d62",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.44336621483949457,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Psychological science",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

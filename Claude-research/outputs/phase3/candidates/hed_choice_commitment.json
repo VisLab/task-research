@@ -1,0 +1,3070 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:08:19",
+  "item": {
+    "kind": "process",
+    "id": "hed_choice_commitment",
+    "name": "Choice commitment",
+    "aliases": [],
+    "category_id": "value_based_decision_making_under_risk_and_uncertainty",
+    "definition": "The act of locking in a selected option once accumulated evidence or value crosses a decision boundary; measured by response-time distributions, drift-diffusion boundary parameters, and motor preparation signatures."
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 10,
+      "raw": 623,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 46,
+      "picked": 30,
+      "reserve": 11,
+      "excluded": 5,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {
+      "non_human_subjects": 4,
+      "preprint": 1
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_51d7f949",
+      "doi": "10.7554/elife.02260",
+      "url": "https://doi.org/10.7554/elife.02260",
+      "openalex_id": "https://openalex.org/W2170716773",
+      "pmid": "24867216",
+      "first_author": "Hanks",
+      "authors_display": "Timothy Hanks et al.",
+      "year": 2014,
+      "title": "A neural mechanism of speed-accuracy tradeoff in macaque area LIP",
+      "venue": "eLife",
+      "venue_tier": "flagship",
+      "publisher": "eLife Sciences Publications Ltd",
+      "publication_types": [
+        "article",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 249,
+      "influential_citation_count": null,
+      "fwci": 9.4048,
+      "cited_by_percentile_year": 96.0,
+      "oa_status": "gold",
+      "oa_url": "https://elifesciences.org/articles/02260.bib",
+      "tldr": null,
+      "abstract": "Decision making often involves a tradeoff between speed and accuracy. Previous studies indicate that neural activity in the lateral intraparietal area (LIP) represents the gradual accumulation of evidence toward a threshold level, or evidence bound, which terminates the decision process. The level of this bound is hypothesized to mediate the speed-accuracy tradeoff. To test this, we recorded from LIP while monkeys performed a motion discrimination task in two speed-accuracy regimes. Surprisingly, the terminating threshold levels of neural activity were similar in both regimes. However, neurons recorded in the faster regime exhibited stronger evidence-independent activation from the beginning of decision formation, effectively reducing the evidence-dependent neural modulation needed for choice commitment. Our results suggest that control of speed vs accuracy may be exerted through changes in decision-related neural activity itself rather than through changes in the threshold applied to such neural activity to terminate a decision.",
+      "score": {
+        "composite": 0.6699197698316558,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3196790793266233,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07991976983165583,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Neurons",
+        "Animals",
+        "Macaca",
+        "Bayes Theorem",
+        "Reproducibility of Results",
+        "Photic Stimulation",
+        "Behavior, Animal",
+        "Motion Perception",
+        "Decision Making",
+        "Choice Behavior",
+        "Reaction Time",
+        "Neurophysiology",
+        "Models, Neurological",
+        "Time Factors"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_6ce13cfc",
+      "doi": "10.1523/jneurosci.1445-25.2025",
+      "url": "https://doi.org/10.1523/jneurosci.1445-25.2025",
+      "openalex_id": "https://openalex.org/W7126055148",
+      "pmid": null,
+      "first_author": "McCone",
+      "authors_display": "Harvey McCone et al.",
+      "year": 2026,
+      "title": "A Movement-Independent Signature of Urgency during Human Perceptual Decision-Making",
+      "venue": "Journal of Neuroscience",
+      "venue_tier": "flagship",
+      "publisher": "Society for Neuroscience",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "green",
+      "oa_url": "https://pure.qub.ac.uk/en/publications/fcd2d256-ae58-497d-bdb2-88e11b382de0",
+      "tldr": null,
+      "abstract": "How does the brain adjust its decision processes to ensure timely decision completion? Computational modeling and electrophysiological investigations have pointed to dynamic \"urgency\" processes that serve to progressively reduce the quantity of evidence required to reach choice commitment as time elapses. In humans, such urgency dynamics have been observed exclusively in neural signals that accumulate evidence for a specific motor plan. Across three complementary experiments in humans (male and female), we characterize an electrophysiological signal that traces dynamic urgency and exhibits unique properties not observed in effector-selective signals. Firstly, it provides a representation of urgency alone, growing only as a function of time and not evidence strength. Secondly, when choice reports must be withheld until a response cue, this signal peaks and decays long before response execution, mirroring the early termination dynamics of a motor-independent evidence accumulation signal. These properties suggest that the brain may use urgency signals not only to expedite motor planning but also to hasten cognitive deliberation. These data demonstrate that urgency processes operate in a variety of perceptual choice scenarios and that they can be monitored in a model-independent manner via noninvasive brain signals.",
+      "score": {
+        "composite": 0.625,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Adult",
+        "Adult",
+        "Adult",
+        "Brain",
+        "Brain",
+        "Brain",
+        "Choice Behavior",
+        "Choice Behavior",
+        "Choice Behavior",
+        "Decision Making",
+        "Decision Making",
+        "Decision Making",
+        "Electroencephalography",
+        "Electroencephalography",
+        "Electroencephalography",
+        "Female",
+        "Female",
+        "Female",
+        "Humans",
+        "Humans",
+        "Humans",
+        "Male",
+        "Male",
+        "Male",
+        "Movement",
+        "Movement",
+        "Movement",
+        "Psychomotor Performance",
+        "Psychomotor Performance",
+        "Psychomotor Performance",
+        "Reaction Time",
+        "Reaction Time",
+        "Reaction Time",
+        "Young Adult",
+        "Young Adult",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3ca89fdd",
+      "doi": "10.1037/edu0000344",
+      "url": "https://doi.org/10.1037/edu0000344",
+      "openalex_id": "https://openalex.org/W2919965455",
+      "pmid": null,
+      "first_author": "Zhang",
+      "authors_display": "Li‐fang Zhang",
+      "year": 2019,
+      "title": "Do academics’ emotions in teaching affect their organizational commitment?",
+      "venue": "Journal of Educational Psychology",
+      "venue_tier": "specialty",
+      "publisher": "American Psychological Association",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": 1.8809,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "This research pioneered the investigation of the statistically predictive power of academics’ emotions in teaching for their organizational commitment—beyond age, academic rank, academic degree, sex, and taught academic discipline. Two hundred 22 academics from 13 higher educational institutions in Shanghai, mainland China, responded to a revised version of the Emotions in Teaching Inventory (Trigwell, 2009) and the Organizational Commitment Inventory (Ling, Fang, & Zhang, 2002). Results revealed that positive emotions in teaching primarily predicted the adaptive types of organizational commitment, including affective, normative, and ideal commitment, whereas negative emotions in teaching chiefly contributed to the maladaptive types of organizational commitment, including economic and choice commitment. These findings have brought new insights into the literature on emotions in teaching and that on organizational commitment. At the same time, the findings have practical implications for academics and university senior managers. (PsycINFO Database Record (c) 2019 APA, all rights reserved)",
+      "score": {
+        "composite": 0.6040676002401867,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_fd351f2c",
+      "doi": "10.1016/s0742-051x(99)00040-2",
+      "url": "https://doi.org/10.1016/s0742-051x(99)00040-2",
+      "openalex_id": "https://openalex.org/W2063105878",
+      "pmid": null,
+      "first_author": "Weiss",
+      "authors_display": "Eileen Mary Weiss Weiss",
+      "year": 1999,
+      "title": "Perceived workplace conditions and first-year teachers’ morale, career choice commitment, and planned retention: a secondary analysis",
+      "venue": "Teaching and Teacher Education",
+      "venue_tier": "unknown",
+      "publisher": "Elsevier BV",
+      "publication_types": [
+        "article",
+        "Review"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 457,
+      "influential_citation_count": 62,
+      "fwci": 12.8108,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.5886366960172345,
+        "breakdown": {
+          "raw": {
+            "citations": 0.7145467840689377,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.17863669601723442,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_7d48f6a0",
+      "doi": "10.1093/jcr/ucw010",
+      "url": "https://doi.org/10.1093/jcr/ucw010",
+      "openalex_id": "https://openalex.org/W4239138725",
+      "pmid": null,
+      "first_author": "Parker",
+      "authors_display": "Jeffrey R. Parker et al.",
+      "year": 2016,
+      "title": "Decision Comfort",
+      "venue": "Journal of Consumer Research",
+      "venue_tier": "unknown",
+      "publisher": "Oxford University Press",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 80,
+      "influential_citation_count": null,
+      "fwci": 3.0953,
+      "cited_by_percentile_year": 90.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Abstract Contemporary consumer behavior research largely conceptualizes post-decision evaluation processes in terms of decision confidence, anticipated regret and satisfaction, and decision and consumption satisfaction. The current research broadens this view, arguing that people additionally experience varying degrees of decision comfort that are distinct from other post-decision evaluations. The authors argue that comfort is a soft-positive emotion thus far unexamined in relation to decision processes and present nine studies that (1) develop and validate two scales to measure decision comfort, (2) demonstrate the discriminant validity of decision comfort relative to numerous other post-decision constructs, and (3) examine the unique downstream consequences of decision comfort. The results show that an individual may be quite comfortable with a decision despite being uncertain about the optimality and/or the anticipated consequences of that decision (e.g., satisfaction or regret). It is demonstrated that decision comfort responds to affect-relevant cues and tends to rely less on comparisons between the chosen and foregone options (i.e., it tends to be a less comparative evaluation). Decision comfort is also shown to account for a sizable proportion of consumers’ overall decision evaluations and to have meaningful downstream consequences on marketing-relevant variables (e.g., choice commitment and the likelihood of recommending).",
+      "score": {
+        "composite": 0.5736069638457773,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2544278553831089,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06360696384577723,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 6,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_717bcfe8",
+      "doi": "10.1152/jn.00682.2019",
+      "url": "https://doi.org/10.1152/jn.00682.2019",
+      "openalex_id": "https://openalex.org/W3004192165",
+      "pmid": null,
+      "first_author": "Thura",
+      "authors_display": "David Thura, & Paul Cisek",
+      "year": 2020,
+      "title": "Microstimulation of dorsal premotor and primary motor cortex delays the volitional commitment to an action choice",
+      "venue": "Journal of Neurophysiology",
+      "venue_tier": "specialty",
+      "publisher": "American Physiological Society",
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 19,
+      "influential_citation_count": null,
+      "fwci": 1.4781,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "bronze",
+      "oa_url": "https://journals.physiology.org/doi/pdf/10.1152/jn.00682.2019",
+      "tldr": "Brief subthreshold microstimulation in PMd or M1 delayed commitment to an action but not the initiation of the action itself, which is consistent with the proposal that PMd and M1 participate in the commitment process, which occurs when a critical firing rate difference is reached between cells voting for the selected option and those Voting for the competing one.",
+      "abstract": "The neural substrates of decisions between actions are typically investigated by correlating neural activity and subjects' decision behavior, but this does not establish causality. In a reaching decision task, we demonstrate that subthreshold microstimulation of the monkey dorsal premotor cortex or primary motor cortex delays the deliberation duration if applied shortly before choice commitment. This result suggests a causal role of the sensorimotor cortex in the determination of decisions between actions.",
+      "score": {
+        "composite": 0.573361392454154,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Animals",
+        "Animals",
+        "Behavior, Animal",
+        "Behavior, Animal",
+        "Behavior, Animal",
+        "Choice Behavior",
+        "Choice Behavior",
+        "Choice Behavior",
+        "Electric Stimulation",
+        "Electric Stimulation",
+        "Electric Stimulation",
+        "Macaca mulatta",
+        "Macaca mulatta",
+        "Macaca mulatta",
+        "Male",
+        "Male",
+        "Male",
+        "Motor Activity",
+        "Motor Activity",
+        "Motor Activity",
+        "Motor Cortex",
+        "Motor Cortex",
+        "Motor Cortex",
+        "Time Factors",
+        "Time Factors",
+        "Time Factors"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_613221f6",
+      "doi": "10.1080/10696679.2020.1855990",
+      "url": "https://doi.org/10.1080/10696679.2020.1855990",
+      "openalex_id": "https://openalex.org/W3118279881",
+      "pmid": null,
+      "first_author": "Lawson",
+      "authors_display": "Stéphanie Lawson et al.",
+      "year": 2021,
+      "title": "Decisions, decisions: variations in decision-making for access-based consumption",
+      "venue": "The Journal of Marketing Theory and Practice",
+      "venue_tier": "unknown",
+      "publisher": "Taylor & Francis",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 30,
+      "influential_citation_count": null,
+      "fwci": 3.8684,
+      "cited_by_percentile_year": 94.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Consumer decision-making is a focal interest of consumer research and will remain important as marketplace trends, such as the growing prevalence of access-based consumption, continue to evolve. Access-based consumption provides market-mediated transactions where no transfer of ownership takes place. First, a qualitative study explores the differences that arise from viewing decision-making from the perspective of access rather than ownership. Additionally, a multi-group structural model seeks to provide further insights into the variations in decision-making for product access versus purchase. Findings of this research suggest access-based consumption decisions differ from ownership decisions based on choice strategy, choice commitment, ownership commitment, valuation of choice and post-purchase evaluation.",
+      "score": {
+        "composite": 0.5697048645403726,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_122516a4",
+      "doi": "10.1152/jn.00163.2019",
+      "url": "https://doi.org/10.1152/jn.00163.2019",
+      "openalex_id": null,
+      "pmid": "31411932",
+      "first_author": "Derosiere",
+      "authors_display": "Derosiere, G. et al.",
+      "year": 2019,
+      "title": "Motor cortex disruption delays motor processes but not deliberation about action choices.",
+      "venue": "Journal of neurophysiology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 27,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Decisions about actions typically involve a period of deliberation that ends with the commitment to a choice and the motor processes overtly expressing that choice. Previous studies have shown that neural activity in sensorimotor areas, including the primary motor cortex (M1), correlates with deliberation features during action selection. However, the causal contribution of these areas to the decision process remains unclear. Here, we investigated whether M1 determines choice commitment or whether it simply reflects decision signals coming from upstream structures and instead mainly contributes to the motor processes that follow commitment. To do so, we tested the impact of a disruption of M1 activity, induced by continuous theta burst stimulation (cTBS), on the behavior of human subjects in <i>1</i>) a simple reaction time (SRT) task allowing us to estimate the duration of the motor processes and <i>2</i>) a modified version of the tokens task (Cisek P, Puskas GA, El-Murr S. <i>J Neurosci</i> 29: 11560-11571, 2009), which allowed us to estimate subjects' time of commitment as well as accuracy criterion. The efficiency of cTBS was attested by a reduction in motor evoked potential amplitudes following M1 disruption compared with those following a sham stimulation. Furthermore, M1 cTBS lengthened SRTs, indicating that motor processes were perturbed by the intervention. Importantly, all of the behavioral results in the tokens task were similar following M1 disruption and sham stimulation, suggesting that the contribution of M1 to the deliberation process is potentially negligible. Taken together, these findings favor the view that M1 contribution is downstream of the decision process.<b>NEW & NOTEWORTHY</b> Decisions between actions are ubiquitous in the animal realm. Deliberation during action choices entails changes in the activity of the sensorimotor areas controlling those actions, but the causal role of these areas is still often debated. With the use of continuou",
+      "score": {
+        "composite": 0.5682316222910648,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Motor Cortex",
+        "Humans",
+        "Theta Rhythm",
+        "Reward",
+        "Choice Behavior",
+        "Reaction Time",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "excluded",
+      "auto_role": "key_review",
+      "pub_id": "pub_f730bdd3",
+      "doi": "10.1098/rstb.2012.0050",
+      "url": "https://doi.org/10.1098/rstb.2012.0050",
+      "openalex_id": "https://openalex.org/W2021498612",
+      "pmid": null,
+      "first_author": "Boomsma",
+      "authors_display": "Jacobus J. Boomsma",
+      "year": 2013,
+      "title": "Beyond promiscuity: mate-choice commitments in social breeding",
+      "venue": "Philosophical Transactions of the Royal Society B Biological Sciences",
+      "venue_tier": "specialty",
+      "publisher": "Royal Society",
+      "publication_types": [
+        "review"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 161,
+      "influential_citation_count": null,
+      "fwci": 40.7049,
+      "cited_by_percentile_year": 96.0,
+      "oa_status": "bronze",
+      "oa_url": "https://royalsocietypublishing.org/doi/pdf/10.1098/rstb.2012.0050",
+      "tldr": null,
+      "abstract": "Obligate eusociality with distinct caste phenotypes has evolved from strictly monogamous sub-social ancestors in ants, some bees, some wasps and some termites. This implies that no lineage reached the most advanced form of social breeding, unless helpers at the nest gained indirect fitness values via siblings that were identical to direct fitness via offspring. The complete lack of re-mating promiscuity equalizes sex-specific variances in reproductive success. Later, evolutionary developments towards multiple queen-mating retained lifetime commitment between sexual partners, but reduced male variance in reproductive success relative to female's, similar to the most advanced vertebrate cooperative breeders. Here, I (i) discuss some of the unique and highly peculiar mating system adaptations of eusocial insects; (ii) address ambiguities that remained after earlier reviews and extend the monogamy logic to the evolution of soldier castes; (iii) evaluate the evidence for indirect fitness benefits driving the dynamics of (in)vertebrate cooperative breeding, while emphasizing the fundamental differences between obligate eusociality and cooperative breeding; (iv) infer that lifetime commitment is a major driver towards higher levels of organization in bodies, colonies and mutualisms. I argue that evolutionary informative definitions of social systems that separate direct and indirect fitness benefits facilitate transparency when testing inclusive fitness theory.",
+      "score": {
+        "composite": 0.5236398453519384,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2945593814077538,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.4666666666666667,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07363984535193845,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.06999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Adaptation, Biological",
+        "Adaptation, Biological",
+        "Adaptation, Biological",
+        "Adaptation, Biological",
+        "Animals",
+        "Animals",
+        "Animals",
+        "Animals",
+        "Biological Evolution",
+        "Biological Evolution",
+        "Biological Evolution",
+        "Biological Evolution",
+        "Female",
+        "Female",
+        "Female",
+        "Female",
+        "Fertility",
+        "Fertility",
+        "Fertility",
+        "Fertility",
+        "Insecta",
+        "Insecta",
+        "Insecta",
+        "Insecta",
+        "Male",
+        "Male",
+        "Male",
+        "Male",
+        "Models, Biological",
+        "Models, Biological",
+        "Models, Biological",
+        "Models, Biological",
+        "Sexual Behavior, Animal",
+        "Sexual Behavior, Animal",
+        "Sexual Behavior, Animal",
+        "Sexual Behavior, Animal",
+        "Species Specificity",
+        "Species Specificity",
+        "Species Specificity",
+        "Species Specificity",
+        "Mating Preference, Animal",
+        "Mating Preference, Animal",
+        "Mating Preference, Animal",
+        "Mating Preference, Animal",
+        "Genetic Fitness",
+        "Genetic Fitness",
+        "Genetic Fitness",
+        "Genetic Fitness"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7b6dd0f9",
+      "doi": "10.1177/2158244019852489",
+      "url": "https://doi.org/10.1177/2158244019852489",
+      "openalex_id": null,
+      "pmid": null,
+      "first_author": "Demoliner",
+      "authors_display": "Demoliner, S., & Damacena, C.",
+      "year": 2019,
+      "title": "The Effect of Prior Commitment on Consumer Choice",
+      "venue": "SAGE Open",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants,subjects)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": 0,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "https://journals.sagepub.com/doi/pdf/10.1177/2158244019852489",
+      "tldr": null,
+      "abstract": "Commitment to consistency (CC) theories have been widely studied in the field of social influence. However, studies on CC effect have examined only the decisions consumers make for themselves and have neglected the decisions made for others. Prior studies have indicated that the difference between decisions made for oneself and others can be explained by the psychological distance from construal level theory (CLT). Other studies have demonstrated the moderating effect of psychological distance (in the temporal dimension) on CC. The present study analyzed the effect of CC on consumers’ decisions made for themselves and for others and assessed whether the social dimension of psychological distance moderates CC. For this purpose, a study with a 2 (prior commitment: yes vs. no)  × 2 (type of decision: for himself/herself vs. for others) experimental design evaluated 180 participants (between-subjects) living in the United States. The members of the experimental group were manipulated toward a commitment to healthy food products, and the participants’ choices for healthy versus unhealthy food products were analyzed. The results indicated that CC effect occurred not only on choices made for oneself but also when choices were made for others. However, the results did not confirm that the social dimension of psychological distance moderated CC. The results and implications of the use of CC as a strategy to influence consumers’ choice to eat healthy foods are discussed.",
+      "score": {
+        "composite": 0.5100328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_569b6a82",
+      "doi": "10.1093/jeclap/lpt028",
+      "url": "https://doi.org/10.1093/jeclap/lpt028",
+      "openalex_id": "https://openalex.org/W2324494600",
+      "pmid": null,
+      "first_author": "Baratta",
+      "authors_display": "Rossella Baratta",
+      "year": 2013,
+      "title": "European Commission Fines Microsoft for non-compliance with Browser Choice Commitments: A first timer",
+      "venue": "Journal of European Competition Law & Practice",
+      "venue_tier": "unknown",
+      "publisher": "Oxford University Press",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "For the first time, the European Commission fined a company for failing to comply with commitments accepted voluntarily.",
+      "score": {
+        "composite": 0.4959017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_eb700060",
+      "doi": "10.1177/1069072706286474",
+      "url": "https://doi.org/10.1177/1069072706286474",
+      "openalex_id": "https://openalex.org/W1969393544",
+      "pmid": null,
+      "first_author": "Wang",
+      "authors_display": "Naitian Wang et al.",
+      "year": 2006,
+      "title": "The Role of Personality and Career Decision-Making Self-Efficacy in the Career Choice Commitment of College Students",
+      "venue": "Journal of Career Assessment",
+      "venue_tier": "unknown",
+      "publisher": "SAGE Publishing",
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 91,
+      "influential_citation_count": 7,
+      "fwci": 4.50874551,
+      "cited_by_percentile_year": 94.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "This study investigated the effects of personality and career decision-making self-efficacy on progress in career choice commitment in a sample of 184 college students. It was hypothesized that self-efficacy would mediate the relationship between neuroticism and extraversion and career choice commitment. Results revealed significant differences between White students and a composite group of students of color on the study variables. For White students, self-efficacy fully mediated the relationship between extraversion and career choice commitment, whereas for students of color, a partially mediated model fit the data in which neuroticism and extraversion were related to career choice commitment directly and indirectly through self-efficacy. The results of this study are discussed in terms of the implications they might have for career theory and research.",
+      "score": {
+        "composite": 0.4805980908809467,
+        "breakdown": {
+          "raw": {
+            "citations": 0.44239236352378675,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11059809088094669,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 13,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_799bfeba",
+      "doi": "10.2139/ssrn.3894831",
+      "url": "https://doi.org/10.2139/ssrn.3894831",
+      "openalex_id": "https://openalex.org/W4231383082",
+      "pmid": null,
+      "first_author": "Novelli",
+      "authors_display": "Elena Novelli, & Chiara Spina",
+      "year": 2021,
+      "title": "When do Entrepreneurs Benefit from Acting like Scientists? Strategic Choice Commitment, Uncertainty and Performance",
+      "venue": "SSRN Electronic Journal",
+      "venue_tier": "unknown",
+      "publisher": "RELX Group (Netherlands)",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "green",
+      "oa_url": "https://doi.org/10.2139/ssrn.3894831",
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.4800657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "preprint"
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c5649e4b",
+      "doi": "10.47059/revistageintec.v11i3.1998",
+      "url": "https://doi.org/10.47059/revistageintec.v11i3.1998",
+      "openalex_id": "https://openalex.org/W3180958053",
+      "pmid": null,
+      "first_author": "Baruddin",
+      "authors_display": "Wan Noor Maisya Binti Baruddin",
+      "year": 2021,
+      "title": "Relationship between Personality Trait and Career Decision-Making Self-Efficacy on the Commitment to Career Choices among Undergraduate Students of Universiti Teknologi Malaysia",
+      "venue": "Revista Gestão Inovação e Tecnologias",
+      "venue_tier": "unknown",
+      "publisher": "Associação Acadêmica de Propriedade Intelectual",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": 0.2127,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "hybrid",
+      "oa_url": "https://doi.org/10.47059/revistageintec.v11i3.1998",
+      "tldr": null,
+      "abstract": "Graduates who often change their careers, fail to work in the field they are involved in and faced difficulties in the career selection could be related to the problems in their career choice commitment. This study aims to examine the relationship between personality traits and Career Decision Making Self Efficacy (CDMSE) on career choice commitment among undergraduate students of the Faculty of Social Sciences and Humanities (FSSH), Universiti Teknologi Malaysia (UTM). This study uses correlational design and involves three questionnaire instruments which are The International Personality Item Pool-Mini (IPIP-FFM), Career Decision Making Self Efficacy-Short Form, and Commitment to Career Choice scale (CCCs). A total of 200 respondents consisting of year 3 and 4 FSSH students were involved in this study. Pearson correlation analysis showed that only openness trait had a significant negative relationship with TTF (r = -. 165) while extraversion trait (r = -186), agreeableness (r = -. 173) and openness (r = -. 165) has a significant negative relationship with VEC. The CDMSE also showed a significant positive relationship with TTF (r = -. 180) and a significant negative relationship with VEC (r = -. 285). Multiple regression analysis that are conducted showed only openness and CDMSE predict TTF. Combination of CDMSE (β = 0.254, p &lt;0.05) and openness trait (β = -0.243, p &lt;0.05) contributed 7.7% (r = 0.293) to the change in TTF variance [F (2, 197) = 9.255, p &lt;0.05]. For the VEC dimension, only extraversion traits and CDMSE be a predictor. Combination of CDMSE (β = .0.263, p &lt;0.05) and extraversion trait (β = -0.145, p &lt;0.05) contributed 9.3% (r = 0.319) to the change in VEC variance [F (2, 197) = 11.190, p &lt;0.05]. This study has implications specially to encourage students to make a good career decision making and enhance their commitment in career selection process. The findings of this study also can inspire the university institution, career counsel",
+      "score": {
+        "composite": 0.4700328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4c774d49",
+      "doi": "10.35159/kjss.2020.10.29.5.41",
+      "url": "https://doi.org/10.35159/kjss.2020.10.29.5.41",
+      "openalex_id": "https://openalex.org/W3098705988",
+      "pmid": null,
+      "first_author": "Choi",
+      "authors_display": "Seong-Beom Choi, & Tae-Yong Han",
+      "year": 2020,
+      "title": "The Mediation Effects of Career Choice Commitment on the Influence of Grit by College Student on Career Preparation Behavior",
+      "venue": "Korean Journal of Sports Science",
+      "venue_tier": "unknown",
+      "publisher": "The Korean Society of Sports Science",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": 90.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The university students’ goals have a significant effect on their achievement goals on academic procrastination. The purpose of this study would like to practically analyze the mediating effect of career choice commitment in the relation between career preparation behavior and GRIT among university students. The survey students were chosen from 419(M=140, F=326) in Gangwon Province. The result was analyzed in the way of and stepwise multi-regression. Descriptive statistics and correlation analysis was performed using SPSS 22. Then, Sobel test was used to verify the mediation effect of career choice commitment within the pathway connecting GRIT to career preparation behavior. The main findings were as follows. First, GRIT had a significant direct relationship with career preparation behavior. Second, GRIT had a significant positive relationship with career choice commitment. Third, career choice commitment fully mediated the relationship of GRIT and career preparation behavior, meaning that the indirect effect of career choice commitment on career preparation behavior was significant.",
+      "score": {
+        "composite": 0.4600328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d31ea758",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W3200361755",
+      "pmid": null,
+      "first_author": "Kwon",
+      "authors_display": "Young-Hoon Kwon, & Chunho Yang",
+      "year": 2021,
+      "title": "Effects Of Career Exploration Behavior On The Career Choice Commitment And Self-Determination Of University Athletes",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subjects)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Background/Objectives: This study aimed to examine the effects of career exploration behavior on the career choice commitment and self-determination of university athletes.\r\nMethods/Statistical analysis: The research subjects were 377 university athletes. Through the questionnaire, the data of career exploration, career choice commitment, and self-determination was obtained. For data processing, the frequency analysis, exploratory factor analysis, reliability analysis, correlation analysis, and multiple regression analysis were conducted.\r\nFindings: First, the career exploration behavior, career choice commitment, and self-determination of university athletes showed positive correlations. Second, the career exploration behavior had statistically-significantly positive effects on the career choice commitment. Third, the career exploration behavior had statistically-significantly positive effects on the self-determination.\r\nImprovements/Applications: Such results of this study proved the rightfulness to perform the career exploration behavior before deciding career. Eventually, as the period to choose an occupation for lifetime after graduation, the career exploration must be very important to university athletes. In case of university athletes, there are many difficulties to choose a job as they have to decide their own career such as professional athlete or coach. Also, the range of occupation choice for university athletes is narrower than the one for middle/high school athletes, so this study implies that the self-determination should be sufficiently considered for the choice of occupation.",
+      "score": {
+        "composite": 0.45999999999999996,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a9ed64a5",
+      "doi": "10.32038/mbrq.2022.23.03",
+      "url": "https://doi.org/10.32038/mbrq.2022.23.03",
+      "openalex_id": "https://openalex.org/W4309085920",
+      "pmid": null,
+      "first_author": "Zingoni",
+      "authors_display": "Matthew Zingoni",
+      "year": 2022,
+      "title": "A Matter of Mindset: The Benefit of a Growth Mindset After a Career Shock",
+      "venue": "European Journal of Studies in Management and Business",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": 0.2238,
+      "cited_by_percentile_year": 91.0,
+      "oa_status": "diamond",
+      "oa_url": "https://doi.org/10.32038/mbrq.2022.23.03",
+      "tldr": null,
+      "abstract": "The COVID pandemic has created a career shock felt around the world. This study examines the negative effect the pandemic has had on an individual’s career perception, career satisfaction, and career choice commitment. Using a cross-sectional design and a sample of 112 individuals working in the hospitality and tourism industry, findings indicate that the pandemic has had a significant negative influence on an individual’s career perception, career satisfaction, and career choice commitment. Furthermore, an individual’s mindset moderates this relationship such that those with a growth mindset (i.e., those who feel things can change through effort) indicated a less negative career perception and career choice satisfaction than those individuals with a more entity mindset (i.e., those who feel things cannot change through effort). These results suggest that cultivating a growth mindset could be an important factor in successfully responding to a career shock and possibly, in general, more resilient in times of uncertainty.",
+      "score": {
+        "composite": 0.4459017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_5c0c9400",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2939677565",
+      "pmid": null,
+      "first_author": "Choi",
+      "authors_display": "Nak-Hwan Choi",
+      "year": 2019,
+      "title": "The Factors Affecting Decision Confidence and Comfort that Induce Choice Commitment",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Purpose - Present study aimed at investigating the factors that may affect consumers' decision confidence and decision comfort inducing choice commitment taken place at the stage of post-decision/pre-outcome. This study explored whether there are positive effects of dominance and instrumentality of chosen product on the decision confidence, and also identified whether there are positive effects of choice easiness and goal achievement-related affect felt at the chosen product on the decision comfort. Research design, data, and methodology – Portable digital camera as experimental product was used. 260 data were collected from college students. Four were removed from the analyses because they did not complete the questionnaire. Eighteen were removed because they indicated not experiencing the camera in the past. 238 data were used at the analyses to verify hypotheses by structural equation model in AMOS 21.0. Results - First, both of the consumers' decision confidence and decision comfort positively affected choice commitment. Second, the dominance as well as the instrumentality had positive impact upon the decision confidence. Third, the choice easiness and goal achievement-related affect felt at the chosen product had positive impact on the decision comfort. In sum, present study identified the mediation roles of the decision confidence in the effects of both dominance and instrumentality of the chosen product on forming choice commitment, and also found the mediation roles of the decision comfort in the effects of choice easiness and goal achievement-related affect felt at the product on forming choice commitment. Conclusions - Focusing on the stage of post-decision/pre-outcome in decision making process, present study contributes to advancing the choice commitment theories by exploring the positive effects of both dominance and instrumentality of chosen product on the decision confidence, and by finding the positive effects of both choice easiness and goal achieve",
+      "score": {
+        "composite": 0.44,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_35376560",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W3173325464",
+      "pmid": null,
+      "first_author": "천지은",
+      "authors_display": "천지은",
+      "year": 2019,
+      "title": "교육서비스품질과 대학 졸업예정자의 고용가능성의 관계에서 진로효능감과 진로선택몰입의 이중매개효과 검증",
+      "venue": "청소년시설환경",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The purpose of this study was to identify the dual mediating effects of career choice commitment and career efficacy on the relationship between education service quality and employability of senior students in university. For this purpose, a questionnaire survey was utilized for 300 students in Daejeon and analyzed data from 265 responses. And the structural equation model was analyzed to confirm correlation and dual mediating effect between variables. The following conclusions were obtained through this study. First, education service quality, employability, career choice commitment and career efficacy have a significant correlation. Second, education service quality have directly effected employability and indirectly effected employability through career choice commitment. Third, the dual mediating effects between education service quality, career choice commitment, career efficacy and employbility were analyzed. Thus, based on the results of this study, it discussed the systematic quality management on senior student’s educational achievement and sustainable employment. Finally, it suggested the direction of the future research that focuses on the verification of various variables based on personal and environmental characteristics of senior students in university.",
+      "score": {
+        "composite": 0.44,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_48899fa5",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2989572928",
+      "pmid": null,
+      "first_author": "Chun",
+      "authors_display": "Jieun Chun",
+      "year": 2019,
+      "title": "The Dual Mediating Effects of Career Efficacy and Career Choice Commitment on the Relationship between Education Service Quality and Employability of Senior Students in University",
+      "venue": "YOUTH FACILITIES AND ENVIRONMENT",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.44,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_e5132e72",
+      "doi": "10.1080/0144619032000122186",
+      "url": "https://doi.org/10.1080/0144619032000122186",
+      "openalex_id": "https://openalex.org/W2084125422",
+      "pmid": null,
+      "first_author": "Lingard",
+      "authors_display": "Helen Lingard, & Jasmine Lin",
+      "year": 2004,
+      "title": "Career, family and work environment determinants of organizational commitment among women in the Australian construction industry",
+      "venue": "Construction Management and Economics",
+      "venue_tier": "unknown",
+      "publisher": "Taylor & Francis",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 103,
+      "influential_citation_count": null,
+      "fwci": 2.7026,
+      "cited_by_percentile_year": 90.0,
+      "oa_status": "green",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "A survey of women in the Australian construction industry was undertaken to examine the relationship between career, family and work environment variables on women's organizational commitment. Questionnaires were distributed to three hundred women in construction occupations and 109 completed and usable questionnaires were returned. Career choice commitment, satisfaction with career progression, job involvement, supervisory support and perception of the organizational diversity climate were significantly correlated with respondents' organizational commitment. No demographic or family variables were correlated with organizational commitment. Neither did organizational commitment differ significantly between women with dependent children and childless women or women with non‐dependent children. It is concluded that construction firms aiming to improve organizational commitment among female employees should ensure women have access to career development opportunities and ensure just processes are used in allocating organizational rewards. Construction firms are also recommended to implement diversity initiatives and educate employees, particularly supervisors, in supportive management for a diverse workforce.",
+      "score": {
+        "composite": 0.4372247177312858,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26889887092514314,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06722471773128579,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_97c069fa",
+      "doi": "10.1086/668534",
+      "url": "https://doi.org/10.1086/668534",
+      "openalex_id": "https://openalex.org/W2097786515",
+      "pmid": null,
+      "first_author": "Mogilner",
+      "authors_display": "Cassie Mogilner et al.",
+      "year": 2012,
+      "title": "Eternal Quest for the Best: Sequential (vs. Simultaneous) Option Presentation Undermines Choice Commitment",
+      "venue": "Journal of Consumer Research",
+      "venue_tier": "unknown",
+      "publisher": "Oxford University Press",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 63,
+      "influential_citation_count": null,
+      "fwci": 2.7454,
+      "cited_by_percentile_year": 94.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "A series of laboratory and field experiments reveals a detrimental effect of presenting options sequentially (one at a time) versus simultaneously (all at once) on choosers' satisfaction with and commitment to their chosen option. This is because choosers presented with their options simultaneously tend to remain focused on the current set of options, comparing them among each other; whereas choosers presented with their options sequentially tend to imagine a better option, hoping it will become available. This feeling of hope undermines how choosers subsequently experience their selected option, resulting in lower satisfaction and commitment levels. Sequential choosers consequently exhibit lower outcome satisfaction regardless of which option they choose, whether sequentially passed-up options remain available, and whether they have equivalent option information to simultaneous choosers. Thus, enjoying the most satisfaction from one's choice might require being willing to give up the eternal quest for the best.",
+      "score": {
+        "composite": 0.43019728903696725,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24078915614786897,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06019728903696724,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5476fbc0",
+      "doi": "10.21097/ksw.2017.11.12.4.143",
+      "url": "https://doi.org/10.21097/ksw.2017.11.12.4.143",
+      "openalex_id": "https://openalex.org/W2782192810",
+      "pmid": null,
+      "first_author": "Lee",
+      "authors_display": "Soon Young Lee, & Chang-Suk Jung",
+      "year": 2017,
+      "title": "Relationship between Career Decision-Making Type, Career Choice Commitment, and Career Decision Self-Efficacy in Nursing College Students",
+      "venue": "Journal of the Korean society for Wellness",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": 1.1912,
+      "cited_by_percentile_year": 90.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "본 연구는 간호대학생의 진료의사결정 유형과 진로선택몰입 및 진로결정 자기효능감과의 관계를 파악하기 위한 서술적 조사연구이다 이를 위해 간호대학 곳의 학년 명을 대상으로 . 2 4 226 설문조사를 시행하였으며, SPSS/WIN 21.0 program을 이용하여 분석하였다. 연구결과 대상자의 진로의사결정 유형은 합리형 3.77점(±.48), 직관형 3.42점(±.56), 의존형 3.88점(±.43)으로 의존형의 점수가 높고 직관형의 점수는 낮았다. 대상자의 진로의사결정 유형은 진로선택몰입(p.001) 및 진로결정 자기효능감(p.001)과 상관관계가 있었으며, 진로의사결정 유형 중 합리형에 영향을 미치는 요인을 파악하기 위해 회귀분석을 실시 한 결과, 진로결정 자기효능감(p.001)과 대인관계(p=.029)가 영향을 미치는 것으로 나타났으며, 이 중 가장 큰 영향을 미치는 요인은 진로결정 자기효능감(=.673) 이었다. 이에 진로의사결정 유형 중 합리적 의사결정 유형을 높이기 위한 지도와 자기효능감 향상을 위한 교육프로그램 개발이 필요하며, 진로의사결정 유형별 적절한 진로지도 전략이 필요 할 것이다.",
+      "score": {
+        "composite": 0.4300328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_345d4c23",
+      "doi": "10.21719/ijtms.37.6.1",
+      "url": "https://doi.org/10.21719/ijtms.37.6.1",
+      "openalex_id": "https://openalex.org/W4312532138",
+      "pmid": null,
+      "first_author": "Gwak",
+      "authors_display": "Woo-Hyun Gwak, & Sanghee Park",
+      "year": 2022,
+      "title": "A Study on the Effects of Protean Career Attitude of Tourism Students on Career Exploration Behavior and Career Choice Commitment",
+      "venue": "International Journal of Tourism Management and Sciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "본 연구의 목적은 관광계열 대학생들의 프로티언 경력태도가 진로탐색행동과 진로선택몰입에 미치는 영향을 살펴보고, 프로티언 경력태도와 진로선택몰입 간의 구조적 관계에서 진로탐색행동의 매개효과를 검증하는 것이다. 연구의 표본은 4년제와 2년제 관광 관련 학과에 재학 중인 대학생으로 총 209부의 설문을 최종 분석에 활용하였으며, SPSS 21.0을 이용하여 빈도분석, 탐색적 요인분석, 신뢰도 분석, 상관관계분석, 회귀분석을 실시하여 다음과 같은 연구 결과를 도출하였다. 첫째, 프로티언 경력태도의 2개 하위요인 중 자기주도성은 진로탐색행동의 직업세계탐색요인에 유의한 정(+)의 영향을 미치고, 가치지향성은 진로탐색행동의 진로대안탐색에 유의한 정(+)의 영향을 미치는 것으로 나타났다. 둘째, 프로티언 경력태도의 하위요인은 진로선택몰입의 3개 하위요인에 모두 유의한 정(+)의 영향을 미치는 것으로 나타났다. 셋째, 진로탐색행동의 3개 하위요인 중 자기탐색을 제외한 직업세계탐색과 진로대안탐색은 진로선택몰입의 3개 하위요인에 모두 유의한 정(+)의 영향을 미치는 것으로 나타났다. 진로탐색행동의 직업세계탐색은 자기주도성과 진로선택몰입(진로목표선택, 진로목표동일시, 진로선택 확신 및 애착)을 부분매개하였다. 진로탐색행동의 진로대안탐색은 가치지향성과 진로선택몰입의 진로목표동일시, 진로선택 확신 및 애착을 부분매개하고, 진로목표선택을 완전매개하였다. 본 연구결과는 대학에서 진로지도 시 자기주도성과 가치지향성을 바탕으로 한 프로티언 경력태도 함양을 위한 진로교육이 선행되어야 함을 시사한다. 또한, 학생들이 적극적으로 직업세계에 관한 정보탐색을 할 수 있는 환경 조성 및 개인이 추구하는 가치에 부합하는 다양한 직업관련 활동에 참여할 수 있도록 하는 1:1 개인 맞춤형 진로상담의 필요성을 시사한다.",
+      "score": {
+        "composite": 0.43,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 25,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c10aadf9",
+      "doi": "10.22143/hss21.13.6.44",
+      "url": "https://doi.org/10.22143/hss21.13.6.44",
+      "openalex_id": "https://openalex.org/W4319994553",
+      "pmid": null,
+      "first_author": "Sakong",
+      "authors_display": "Yujeong Sakong",
+      "year": 2022,
+      "title": "A Study on the Effect of Major Choice Motive and Major Satisfaction on Actual Career Choice Commitment of Music Majors Who Experienced COVID-19",
+      "venue": "The Journal of Humanities and Social sciences 21",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "연구 목적: 이 연구는 코로나19를 경험한 음악전공자들의 전공선택동기와 전공만족도가 진로선택에 미치는 영향에 대해서 분석하는 것을 목적으로 하였다.연구 방법: 이를 위해 수도권과 비수도권 음악 전공대학생들을 대상으로 설문조사를 실시하였고, 수집한 자료는 SPSS 26.0 및 Amos 23.0 프로그램을 활용하여 경로분석을 실시하였다.연구 내용: 분석된 결과에 따르면 적성이나 흥미와 같은 내적 동기가 진로선택에 있어서 영향을 미치는 것으로 나타났다. 또한 전공만족도가 높을수록 진로선택몰입의 정도가 높은 것으로 확인되었다.결론 및 제언: 전공에 대한 이해도를 높일 수 있는 교육커리큘럼 개발을 통해 음악전공생들이 올바른 전공을 선택할 수 있도록 지원하는 것이 필요할 것이다.",
+      "score": {
+        "composite": 0.43,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 26,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_b0fc8736",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2787516770",
+      "pmid": null,
+      "first_author": "Macaccaro",
+      "authors_display": "Paolo Macaccaro",
+      "year": 2017,
+      "title": "Immunophenotypic characterization of B-lymphopoiesis in KO mice for oncogenic Ser / Thr kinases by multiparameter flow cytometry",
+      "venue": "Padua@research (University of Padova)",
+      "venue_tier": "unknown",
+      "publisher": "University of Padua",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "token:animal (mice)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "green",
+      "oa_url": "http://paduaresearch.cab.unipd.it/10094/1/Paolo_Macaccaro_tesi.pdf",
+      "tldr": null,
+      "abstract": "Protein kinase CK2 and CK1 are a pleiotropic and evolutionary conserved serin-threonin kinase that is involved in several cellular processes. A number of studies revealed many mechanisms through which this kinase regulates cell cycle, apoptosis, cell survival and tumorigenesis.&#13;\\nCK2 participates in many developmental pathways, of which particularly relevant for hemo-lymphopoiesis are those dependent on Hedgehog, NF-ÎºB and STAT3, which regulate cell differentiation, proliferation, self-renewal as well as lineage choice commitment.. CK1 regulates also molecular pathways which are important for multiple myeloma plasma cells survival, like WNT/Î²-catenin pathway and PI3K/AKT pathway. &#13;\\nHowever, despite all this data, little is known about the role of CK2 and CK1 in B-lymphopoiesis and lymphomagenesis. &#13;\\nTo elucidate the physiological and pathogenetic role of CK2 and CK1 in B-lymphocytes, we generated B cell specific conditional KO mice, were we studied the effects of deletion during normal B cell development with multiparameter flow cytometry analysis.&#13;\\nIn the bone marrow (BM), CK2Î² KO mice displayed a reduction of B cells, especially of the recirculating population of transitional and follicular (FO) B-cells. In peripheral blood and spleen the number of B-cells was markedly reduced. In the spleen of CK2Î² KO we observed an imbalance between the amount of FO and marginal zone (MZ) B-cells was found with an absolute reduction of FO B cells by approximately 2-folds and an increase of MZ B-cells and MZB cell precursors by up to three folds.. In vitro class-switch recombination assays demonstrated impairment in IgG1 and IgG3 class-switch and a marked reduction of the generation of antibody-producing cells. In CK1ï¡ KO mice we observed the totally absence of mature B cells and the presence of early precursors B cells. CK1ï¡ HET mice showed a reduction of B cells in bone marrow and an light imbalance of FO B cells an MZB cells in spleen. In vitro class",
+      "score": {
+        "composite": 0.42,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects"
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_3d7a982a",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W4412256305",
+      "pmid": null,
+      "first_author": "Boettke",
+      "authors_display": "Peter J. Boettke et al.",
+      "year": 2017,
+      "title": "Gordon Tullock and the rational choice commitment",
+      "venue": "Research at the University of Copenhagen (University of Copenhagen)",
+      "venue_tier": "unknown",
+      "publisher": "University of Copenhagen",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "green",
+      "oa_url": "https://curis.ku.dk/ws/files/305016849/Liberty_Fund_Tullock_LM_November_2017_Newsletter_FINAL.pdf",
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.42,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_d9f7a8ef",
+      "doi": "10.23844/kjcp.2015.11.27.4.953",
+      "url": "https://doi.org/10.23844/kjcp.2015.11.27.4.953",
+      "openalex_id": "https://openalex.org/W2565477554",
+      "pmid": null,
+      "first_author": "Lee",
+      "authors_display": "Jiwon Lee, & Ki-Hak Lee",
+      "year": 2015,
+      "title": "A Structural Analysis of Career Calling and Life Satisfaction of Undergraduate Students - Testing the Mediating Effects of the Career Choice Commitment and Academic Major Satisfaction",
+      "venue": "THE KOREAN JOURNAL OF COUNSELING AND PSYCHOTHERAPY",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "본 연구에서는 대학생의 진로소명과 삶의 만족의 관계를 살펴보고, 진로소명과 삶의 만족과의 관계에서 진로결정몰입 및 전공만족의 매개효과를 확인하고자 하였다. 이를 위해 대학생 272명(남 136명, 여 136명)을 대상으로 진로소명, 진로결정몰입, 전공만족, 삶의 만족을 측정하는 설문을 실시하였다. 설문 결과에 대해 SPSS 21.0을 활용하여 신뢰도 분석, 기초통계 분석을 실시하였고, AMOS 18.0을 활용하여 구조방정식 모형 분석을 실시하였으며, Bootstrap 방법으로 매개효과의 유의성을 검증하였다. 이를 통한 연구 결과는 다음과 같다. 첫째, 대학생의 진로소명은 삶의 만족에 정적인 영향을 끼치는 것으로 나타나 진로소명 수준이 높을수록 삶의 만족 수준이 높은 것으로 확인되었다. 둘째, 진로소명 수준이 높을수록 진로결정몰입 수준이 높았고, 진로결정몰입 수준이 높을수록 전공만족 수준이 높았으며, 전공만족 수준이 높을수록 삶의 만족 수준이 높은 것으로 나타났다. 이에 진로소명과 삶의 만족의 관계를 진로결정몰입 및 전공만족이 부분 매개하는 것으로 확인되었으며, Bootstrap 분석을 통해 매개효과가 유의한 것으로 검증되었다. 이러한 결과를 바탕으로 본 연구의 의의 및 대학생 상담 실제에서의 시사점과 후속 연구의 필요성에 대해 논하였다.",
+      "score": {
+        "composite": 0.4100328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_abbeccc1",
+      "doi": "10.2139/ssrn.6178678",
+      "url": "https://doi.org/10.2139/ssrn.6178678",
+      "openalex_id": null,
+      "pmid": null,
+      "first_author": "Hur",
+      "authors_display": "Hur, E. et al.",
+      "year": 2026,
+      "title": "Converting preference to actual commitment: The role of option presentation order",
+      "venue": "Social Science Research Network",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": 0,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "",
+      "tldr": null,
+      "abstract": "Marketers often struggle to convert consumer preferences into commitment. Our research identifies a novel factor—option-presentation order—that marketers can leverage to optimize choice sets and increase consumers’ commitment to their chosen option. Across incentive-compatible studies and real-behavior contexts spanning digital and traditional retail, consumers exhibit stronger commitment to their chosen option when they encounter it at the end of, rather than earlier in, a choice set. This effect is driven by perceived effort payoff—the belief that effort spent searching was worthwhile. As such, the effect is attenuated when the effort payoff experience is constrained, such as when all options are presented simultaneously (vs. sequentially) or when consumers rely on secondhand (vs. firsthand) searches. These findings contribute to research on choice architecture, commitment, and curated choice sets by identifying option-presentation order as a lever for bridging the intention–action gap and designing choice environments that strengthen post-choice commitment.",
+      "score": {
+        "composite": 0.385,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.5,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.075,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_20b55739",
+      "doi": "10.35173/natr.20.1.04",
+      "url": "https://doi.org/10.35173/natr.20.1.04",
+      "openalex_id": "https://openalex.org/W4396849242",
+      "pmid": null,
+      "first_author": "Gwak",
+      "authors_display": "Woo-Hyun Gwak",
+      "year": 2024,
+      "title": "A Study on the Effects of Protean Career Attitude of Tourism Students on Job-seeking Stress and Career Choice Commitment",
+      "venue": "Northeast Asia Tourism Research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "본 연구는 관광계열 대학생을 대상으로 프로티언 경력태도와 취업스트레스 및 진로선택몰입의 영향 관계를 규명함으로써 대학의 진로교육 현장에 실무적 시사점을 제시하고자 하였다. 연구의 표본은 2년제, 4년제 대학의 관광 관련 학과에 재학 중인 대학생이며, 2021년 9월 13일부터 11월 8일까지 편의표본추출법을 활용하여 설문을 진행하였다. 총 214부의 응답 중 불성실한 응답을 제외하고 총 209부를 분석에 활용하였으며, 수집한 자료는 SPSS 21.0 프로그램으로 탐색적 요인분석과 신뢰도 분석, 주요 변수에 대한 기술통계, 상관관계분석 등을 실시하였다. 연구결과를 요약하면 다음과 같다. 첫째, 프로티언 경력태도의 하위요인(자기주도성, 가치지향성) 중 자기주도성만 취업스트레스에 유의한 부(-)의 영향을 미치는 것으로 나타났다. 둘째, 프로티언 경력태도의 하위요인인 자기주도성과 가치지향성 모두 진로선택몰입에 유의한 정(+)의 영향을 미치는 것으로 나타났다. 셋째, 취업스트레스는 진로 선택몰입에 유의한 부(-)의 영향을 미치는 것으로 나타났다. 본 연구는 관광계열 대학생의 진로지도 시 자기주도성 향상 및 진로 가치관 정립에 도움을 주는 상담 프로그램을 개발하고 적용해야하며, 취업스트레스를 낮추는데 도움이 되는 스트레스 관리 프로그램이 효율적으로 운영되어야 함을 시사한다.",
+      "score": {
+        "composite": 0.37,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 31,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c29c6bf6",
+      "doi": "10.35498/kotes.2024.se6_1.23",
+      "url": "https://doi.org/10.35498/kotes.2024.se6_1.23",
+      "openalex_id": "https://openalex.org/W4400309434",
+      "pmid": null,
+      "first_author": "Gwak",
+      "authors_display": "Woo-Hyun Gwak, & Sanghee Park",
+      "year": 2024,
+      "title": "A Study on the Relationship between Major Satisfaction, Job-seeking Stress and Career Choice Commitment of Tourism Students",
+      "venue": "Journal of Tourism Enhancement",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "본 연구의 목적은 관광계열 대학생들의 전공만족도가 취업스트레스와 진로선택몰입에 미치는 영향을 살펴보고, 전공만족도와 진로선택몰입 간의 구조적 관계에서 취업스트레스의 매개효과를 검증하는 것이다. 연구의 표본은 4년제와 2년제 관광 관련 학과에 재학 중인 대학생으로 총 209부의 설문을 최종 분석에 활용하였으며, SPSS 21.0을 이용하여 빈도분석, 탐색적 요인분석, 신뢰도 분석, 상관관계분석, 회귀분석을 실시하여 다음과 같은 연구 결과를 도출하였다. 첫째, 관광계열 대학생들의 전공만족도는 취업스트레스에 유의한 부(-)의 영향을 미치는 것으로 나타났다. 둘째, 관광계열 대학생들의 전공만족도는 진로선택몰입의 3개 하위요인(진로목표선택, 진로목표동일시, 진로선택 확신 및 애착)에 모두 유의한 정(+)의 영향을 미치는 것으로 나타났다. 셋째, 취업스트레스는 진로선택몰입의 하위요인(진로목표선택, 진로목표동일시, 진로선택 확신 및 애착)에 유의한 부(-)의 영향을 미치는 것으로 나타났으며, 취업스트레스는 전공만족도와 진로선택몰입을 부분매개하였다. 본 연구결과는 관광계열 대학생들의 효과적인 진로지도를 위해서는 전공만족도를 높이기 위한 학과 차원의 노력과 더불어 취업스트레스를 감소시킬 수 있는 방안도 함께 고려되어야 함을 시사한다. 이는 교육과정 개발 및 궁극적으로는 관광분야의 인적자원 개발을 위한 유용한 자료로 활용될 것이다.",
+      "score": {
+        "composite": 0.37,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 32,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_bff8e910",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2791974032",
+      "pmid": null,
+      "first_author": "Kasten",
+      "authors_display": "Tim Kasten",
+      "year": 2012,
+      "title": "The EU Commission opens proceedings against US software company to investigate possible non-compliance with browser choice commitments (Microsoft)",
+      "venue": "e-Competitions Bulletin",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "On 17 July 2012, the Commission announced that it had opened proceedings against Microsoft in order to investigate whether the company has failed to comply with its 2009 commitments to offer…",
+      "score": {
+        "composite": 0.37,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 33,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_caa52a71",
+      "doi": "10.1901/jeab.1983.40-265",
+      "url": "https://doi.org/10.1901/jeab.1983.40-265",
+      "openalex_id": "https://openalex.org/W2079072467",
+      "pmid": "16812349",
+      "first_author": "Harsh",
+      "authors_display": "John Harsh et al.",
+      "year": 1983,
+      "title": "FACTORS AFFECTING CHOICE OF SIGNALED OR UNSIGNALED FOOD SCHEDULES",
+      "venue": "Journal of the Experimental Analysis of Behavior",
+      "venue_tier": "specialty",
+      "publisher": "Wiley",
+      "publication_types": [
+        "article",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subjects)"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": 0.8367,
+      "cited_by_percentile_year": 90.0,
+      "oa_status": "bronze",
+      "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1901/jeab.1983.40-265",
+      "tldr": null,
+      "abstract": "Choice between signaled and unsignaled food schedules was assessed in two experiments using a shuttlebox. Experiment 1 examined preference with both a five-second signal and a thirty-second signal. Subjects preferred the unsignaled side with a five-second signal but preferred the signaled side with a thirty-second signal. Experiment 2 assessed preference using either a commitment procedure (a shuttle response resulted in exposure to the schedule for a fixed time) or a noncommitment procedure (each shuttle response changed the schedule in effect). Subjects preferred the signaled condition with the commitment procedure but the unsignaled condition with the noncommitment procedure. These results indicate that the discrepant findings of earlier studies are due to procedural differences involving signal duration and choice commitment. The data are consistent with a conditioned reinforcement interpretation of choice.",
+      "score": {
+        "composite": 0.35593462246760554,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 34,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_529ef811",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2373098370",
+      "pmid": null,
+      "first_author": "Ling",
+      "authors_display": "Wq Ling et al.",
+      "year": 2000,
+      "title": "Research on the structure model of Chinese employee's organizational commitment",
+      "venue": "Institutional Repository of Institute of Psychology, Chinese Academy of Sciences (Institute of Psychology, Chinese Academy of Sciences)",
+      "venue_tier": "unknown",
+      "publisher": "Institute of Psychology, Chinese Academy of Sciences",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subjects)"
+      ],
+      "citation_count": 21,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The Qestionnaire Chinese Employee's Organizational Commitment was developed on the basis of interviews, items collecting, 7 pilot-tests of 5000 subjects, and scientific examining. 2000 subjects were surveyed by the formal questionnaire. The psychological structure Chinese employee's organizational commitments was explored by the factor analysis. The results of confirmatory factor analysis show the five-factor model is the reasonable and ideal model. The five-factor model includes Affective Commitment, Normative Commitment, Ideal Commitment, Ideal Commitment, Economic Commitment, and Choice Commitment. The factors that affect the organizational commitment were analyzed and the performances of employees with different organizational commitment were explored.",
+      "score": {
+        "composite": 0.35474094901461667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 35,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_cd3b1d19",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2389864346",
+      "pmid": null,
+      "first_author": "Wu",
+      "authors_display": "Wenting Wu",
+      "year": 2010,
+      "title": "An Empirical Study on the Relationship between Organizational Commitment and Employee Engagement in Agro-related Enterprises",
+      "venue": "Huazhong Nongye Daxue xuebao",
+      "venue_tier": "unknown",
+      "publisher": "Huazhong Agricultural University",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Based on the former scales of organizational commitment and employee engagement,this paper designs the organizational commitment and employee engagement questionnaire by depth interviews.The paper employs multivariate statistical techniques to discuss the structure of Agro-related enterprise’s organizational commitment and employee engagement.The results show that the organizational commitment of agro-related enterprise includes four aspects:ideal commitment,continuance commitment,affection commitment and choice commitment and that the employee engagement of Agro-related enterprise includes seven aspects:organizational identification,commitment,energy,hard work,task focus,focus,internalized values.This paper also applys regression to analyze the impact of organizational commitment on the employee engagement.It shows that ideal commitment,continuance commitment and affection commitment have varying degrees of significant effect on the seven factors of employee engagement.",
+      "score": {
+        "composite": 0.35,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.26666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.04,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 36,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_95a96b5e",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W316839732",
+      "pmid": null,
+      "first_author": "Sclan",
+      "authors_display": "Eileen Mary Sclan",
+      "year": 1993,
+      "title": "The Impact of Perceived Workplace Conditions on Beginning Teachers' Work Commitment, Career Choice Commitment, and Planned Retention.",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.34919737040327586,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 37,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2cc9eb4a",
+      "doi": "10.47772/ijriss.2025.903sedu0161",
+      "url": "https://doi.org/10.47772/ijriss.2025.903sedu0161",
+      "openalex_id": "https://openalex.org/W4409567681",
+      "pmid": null,
+      "first_author": "heng",
+      "authors_display": "Yangwenz heng, & Mohd Muslim Bin Md Zalli",
+      "year": 2025,
+      "title": "Impact of the Theory of Planned Behaviour on University Students’ Commitment to Career Choice — The Case of Wuyi university",
+      "venue": "International Journal of Research and Innovation in Social Science",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The purpose of this paper is to explore the influence of Theory of Planned Behavior (TPB) on university students’ career choice commitment and to conduct an empirical study using Wuyi University as an example. The study applies the theory to the field of university students‘ career choice in order to analyse how factors such as university students’ attitudes, perceived social pressures and their own abilities affect their career choice commitment.",
+      "score": {
+        "composite": 0.33999999999999997,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 38,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3782a51c",
+      "doi": "10.35605/jss.2025.09.34.3.63",
+      "url": "https://doi.org/10.35605/jss.2025.09.34.3.63",
+      "openalex_id": "https://openalex.org/W4415413030",
+      "pmid": null,
+      "first_author": "baek",
+      "authors_display": "ji-won baek, & Suwon Yim",
+      "year": 2025,
+      "title": "Structural Relationships among Autonomous·Controlled Career Motivation, Grit, and Career Choice Commitment: Evidence from Undergraduates in the metropolitan area",
+      "venue": "JOURNAL OF SECRETARIAL STUDIES",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "본 연구는 대학생의 자율적· 통제적 진로동기, 그릿, 진로선택몰입 간의 구조적 관계를 분석하고 자율적· 통제적 진로동기와 진로선택몰입의 관계에서 그릿의 매개효과를 분석하는 것을 목적으로 하였다. 이를 위해 수도권 지역 4년제 대학에 재학 중인 3학년 이상 대학생(휴학생, 졸업유예생 포함)을 대상으로 온라인 설문조사를 실시하였고, 362부의 응답을 최종 분석에 활용하였다. 연구결과는 첫째, 대학생의 자율적 진로동기는 진로선택몰입에 긍정적인 영향을 미쳤다. 반면, 통제적 진로동기는 진로선택몰입에 유의한 영향을 미치지 않았다. 둘째, 자율적 진로동기는 그릿에 긍정적인 영향을, 통제적 진로동기는 그릿에 부정적인 영향을 미쳤다. 셋째, 그릿은 진로선택몰입에 긍정적인 영향을 미쳤다. 넷째, 대학생의 자율적 진로동기와 진로선택몰입 간의 관계에서 그릿은 유의미한 매개효과를 나타냈다. 반면, 통제적 진로동기와 진로선택몰입 간의 관계에서 그릿의 매개효과는 유의하지 않았다. 이러한 결과를 통해 대학생의 자율적· 통제적 진로동기, 그릿, 진로 선택몰입의 관계에 대한 이론적, 실무적 시사점과 후속연구를 위한 제언을 제시하였다.",
+      "score": {
+        "composite": 0.33999999999999997,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 39,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_3f483f08",
+      "doi": "10.15388/psichol.2009.0.2595",
+      "url": "https://doi.org/10.15388/psichol.2009.0.2595",
+      "openalex_id": "https://openalex.org/W2343757696",
+      "pmid": null,
+      "first_author": "Urbanavičiūtė",
+      "authors_display": "Ieva Urbanavičiūtė",
+      "year": 2009,
+      "title": "University undergraduates’ career choice commitment: An analysis of two samples",
+      "venue": "Psichologija",
+      "venue_tier": "unknown",
+      "publisher": "Vilnius University Press",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "diamond",
+      "oa_url": "http://www.journals.vu.lt/psichologija/article/download/2595/1816",
+      "tldr": null,
+      "abstract": "Career development is a rather popular research area. Previous studies have revealed numerous factors that are relevant for the process of career planning during various stages of life. The constantly changing and challenging world, as well as the demand of new competencies in the labour market, draw attention to the time when an individual leaves school and sets future career goals preparing to enter the world of work. There is still an open question which psychological factors could be crucial for the smooth career goal setting at this time. The present study aims to explore one’s future career intentions after one has already chosen a study major. The study had the following goals: to analyse whether career choice commitment (having future career goals related to one’s major) can be predicted by the level of career choice satisfaction, expected real-ideal and real-prestigious job fit, and personality factors such as neuroticism and conscientiousness, conducting analysis in two samples; to explore the differences of the predictors of career goal commitment between Sample 1 and Sample 2. 185 Vilnius University undergraduates (131 females, 54 males) took part in the study. The primary sample was then subdivided into two parts, excluding the middle range data: Sample 1 consisted of participants whose career choice satisfaction was low (n = 55), and Sample 2 consisted of participants whose career choice satisfaction was high (n = 76). A two-step hierarchical regression model analysis was run in both samples. The results revealed multiple significant predictors of career choice commitment in Sample 1: the level of career choice satisfaction (low level in this sample), expected real-prestigious job fit, and, to a lesser extent, expected real-ideal job fit were significant predictors in the primary regression model. Adding neuroticism and conscientiousness to the regression model significantly changed it by increasing its R2, although only neuroticism was a significant p",
+      "score": {
+        "composite": 0.33999999999999997,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.2,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.03,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 40,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_56a455cc",
+      "doi": "10.6007/ijarped/v14-i3/26305",
+      "url": "https://doi.org/10.6007/ijarped/v14-i3/26305",
+      "openalex_id": "https://openalex.org/W4413908439",
+      "pmid": null,
+      "first_author": "Wenzheng",
+      "authors_display": "Yang Wenzheng, & Mohd Muslim Bin Md Zalli",
+      "year": 2025,
+      "title": "The Impact of the Big Five Personality Traits on College Students' Career Choice Commitment: A Case Study of Wuyi University",
+      "venue": "International Journal of Academic Research in Progressive Education and Development",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subjects)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "diamond",
+      "oa_url": "https://hrmars.com/papers_submitted/26305/the-impact-of-the-big-five-personality-traits-on-college-students-career-choice-commitment-a-case-study-of-wuyi-university.pdf",
+      "tldr": null,
+      "abstract": "This study investigates the impact of the Big Five Personality Traits (Extraversion, Agreeableness, Openness, Conscientiousness, and Neuroticism) on college students' career choice commitment, using students from Wuyi University as the research subjects.Data were collected through questionnaires and analyzed using descriptive statistics, correlation analysis, regression analysis, and factor analysis.The results show that Extraversion, Openness, and Conscientiousness have significant positive impacts on career choice commitment, while Neuroticism has a significant negative impact.Agreeableness does not have a significant impact on career choice commitment.This study provides theoretical support for understanding the psychological mechanisms underlying college students' career choice commitment and offers practical guidance for university career counseling and student career planning.",
+      "score": {
+        "composite": 0.33999999999999997,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 41,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_e5faad42",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2355865344",
+      "pmid": null,
+      "first_author": "Yon",
+      "authors_display": "Wang Yon",
+      "year": 2009,
+      "title": "The Research of Correlation between Employee’s Organizational Commitment and Job Engagement",
+      "venue": "Technoeconomics & Management Research",
+      "venue_tier": "unknown",
+      "publisher": "People's Government of Shanxi Province",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "To explore relationship between employee’s organizational commitment and job engagement, an empirical study was conducted. The samples were from employees of diffent corporations in Huaian .The study proves that affective commitment and ideal commitment have remarkable positive correlation with job engagement, normative commitment, economic commitment and choice commitment have weak correlation with job engagement, and also have remarkable positive correlation with job engagement.",
+      "score": {
+        "composite": 0.33999999999999997,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.2,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.03,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 42,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_5086c807",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2355525889",
+      "pmid": null,
+      "first_author": "Zhi-hong",
+      "authors_display": "Xie Zhi-hong",
+      "year": 2009,
+      "title": "The Influential Factors and Empirical Studg of the Private Enterprise Employees's Organizational Commitment",
+      "venue": "Journal of Sichuan University of Science & Engineering",
+      "venue_tier": "unknown",
+      "publisher": "Sichuan University",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "With the organizational commitment questionnaire,the influential factors on organizational commitment were surveyed. The sample included 559 employees who come from 11 private enterprises. All the data were analyzed by SPSS13.0. The results of the research show that the level of private enterprise employees's organizational commitment is moderate,that the level of ideal commitment is much higher than affective commitment,normative commitment,economic commitment and choice commitment,that there is no correlation between gender and organizational commitment,that there is a positive correlation between age and organizational commitment,that there a is negative correlation between education and organizational commitment,that the level of affective commitment,economic commitment,normative commitment and organizational commitment between the married and the not-married has a striking dissimilarity,and that there is a positive correlation between position and organizational commitment. According to the empirical research,some suggestions are given to the private enterprise's HR management.",
+      "score": {
+        "composite": 0.33999999999999997,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.2,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.03,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 43,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_71d6ec9d",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W1556982578",
+      "pmid": null,
+      "first_author": "Puffer",
+      "authors_display": "Keith A. Puffer",
+      "year": 1998,
+      "title": "A study of collegians' family activities, roles, and interpersonal relations and their vocational identity, career choice commitment and decision making: An application of the developmental contextual framework",
+      "venue": "Purdue e-Pubs (Purdue University System)",
+      "venue_tier": "unknown",
+      "publisher": "Purdue University System",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The purpose of the present study was to test the empirical validity of the developmental contextual paradigm of Vondracek, Lerner, and Schulenberg (1986) by exploring the relationships between collegians' family activities, roles, relations, and their vocational identity, career choice commitment, and career decision-making behaviors. Four hundred thirty seven undergraduate students were administered the Vocational Identity Scale, Vocational Exploration and Commitment Scale, Career Factors Inventory, the Family Environment Scale, the Parental Attachment Questionnaire, and a modified Life Roles Salience Scale. Canonical correlation analyses were conducted to test four hypotheses and to explore dimensions common to the career and family variables. Single canonical variates (linear combinations of career and family variables) were identified for female students per hypothesis, but not for male students. In general, a low level of achievement orientation; high levels of intellectual-cultural, active-recreational, and moral-religious orientation; a low commitment to the occupational role by father and mother; a high level of cohesion; strong attachment to parents; and a high commitment to encouraging autonomy and independence by parents were associated with a clear and stable vocational identity, greater commitment levels to career choice, low levels of career choice anxiety and indecisiveness, and low need levels for information about self and the world of work for female undergraduates. These results offer some support about the empirical validity of the developmental contextualistic framework and suggest to career counselors that their female clients' contextual factors may contribute to presenting issues.",
+      "score": {
+        "composite": 0.3381658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 44,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_eefcac36",
+      "doi": "10.3917/rfea.114.0041",
+      "url": "https://doi.org/10.3917/rfea.114.0041",
+      "openalex_id": "https://openalex.org/W1929330582",
+      "pmid": null,
+      "first_author": "Coste",
+      "authors_display": "Françoise Coste",
+      "year": 2007,
+      "title": "Des alliés inattendus pour les femmes américaines : les hommes républicains pro-choice",
+      "venue": "Revue française d’études américaines",
+      "venue_tier": "unknown",
+      "publisher": "Éditions Belin",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "bronze",
+      "oa_url": "https://www.cairn.info/load_pdf.php?ID_ARTICLE=RFEA_114_0041&download=1",
+      "tldr": null,
+      "abstract": "Although the Republican Party officially calls for the criminalization of abortion in the US, this article shows that a certain number of its members, the most prominent of whom are men, do support a woman&#8217;s right to choose. Admittedly, they constitute a minority in the party, few are elected officials and, with occasional exceptions in states like New York, they rarely manage to pass substantial legislation in protection of abortion rights. But despite such weaknesses, pro-choice Republicans proudly consider themselves authentic conservatives, who are upholding the principle of small government, i.e. getting government out of Americans&#8217; pocketbooks and bedrooms. Their pro-choice commitment often hinders their career advancement within a party heavily dominated by pro-lifers, and personal hostility coming from the ranks of the Christian right can sometimes get dangerously out of hand. Yet, pro-choice Republicans persist in their campaign on behalf of American women, fully aware that their electoral strongholds in the North-East and in California make up the only Republican presence left in the Blue States largely dominated by the Democratic Party in national elections.",
+      "score": {
+        "composite": 0.32,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.06666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.01,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 45,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_b2e9497a",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2792731449",
+      "pmid": null,
+      "first_author": "Johanna",
+      "authors_display": "BLOEMER, Johanna",
+      "year": 2007,
+      "title": "Brand choice commitment and involvement",
+      "venue": "Document Server@UHasselt (UHasselt)",
+      "venue_tier": "unknown",
+      "publisher": "Hasselt University",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.32,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.06666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.01,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 46,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_149dde1b",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2605082747",
+      "pmid": null,
+      "first_author": "Coste",
+      "authors_display": "Françoise Coste",
+      "year": 2007,
+      "title": "Unexpected Allies for American Women: Pro-Choice Republican Men",
+      "venue": "Revue française d’études américaines",
+      "venue_tier": "unknown",
+      "publisher": "Éditions Belin",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Although the Republican Party officially calls for the criminalization of abortion in the US, this article shows that a certain number of its members, the most prominent of whom are men, do support a woman's right to choose. Admittedly, they constitute a minority in the party, few are elected officials and, with occasional exceptions in states like New York, they rarely manage to pass substantial legislation in protection of abortion rights. But despite such weaknesses, pro-choice Republicans proudly consider themselves authentic conservatives, who are upholding the principle of small government, i.e. getting government out of Americans' pocketbooks and bedrooms. Their pro-choice commitment often hinders their career advancement within a party heavily dominated by pro-lifers, and personal hostility coming from the ranks of the Christian right can sometimes get dangerously out of hand. Yet, pro-choice Republicans persist in their campaign on behalf of American women, fully aware that their electoral strongholds in the North-East and in California make up the only Republican presence left in the Blue States largely dominated by the Democratic Party in national elections.",
+      "score": {
+        "composite": 0.32,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.06666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.01,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

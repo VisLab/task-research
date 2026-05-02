@@ -98,6 +98,7 @@ def _candidate_to_json(c: Candidate, rank: int) -> dict:
         "venue": c.venue,
         "venue_tier": classify_venue(c.venue),
         "publisher": c.publisher,
+        "publication_types": list(c.publication_types),
         "is_review": c.is_review,
         "is_meta_analysis": c.is_meta_analysis,
         "human_subject": c.human_subject,

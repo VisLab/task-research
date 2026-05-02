@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_emotion_regulation",
+    "name": "Emotion Regulation Task",
+    "aliases": [
+      "Cognitive Reappraisal Task",
+      "ER Task"
+    ],
+    "category_id": "emotion_perception_and_regulation",
+    "short_definition": "View affective images under instructions to reappraise or passively view; self-reported affect, physiological responses, and neural activity index emotion regulation ability.",
+    "description": "Participants view emotionally evocative stimuli (typically IAPS images) and are instructed to either passively view them (\"look\" condition) or regulate their emotional response using cognitive reappraisal (e.g., reinterpreting a car accident as a movie scene). After each trial, participants rate their emotional experience. Reappraisal successfully reduces subjective negative affect and modulates neural activity: it increases dorsolateral and ventrolateral PFC activation while decreasing amygdala activation, demonstrating top-down prefrontal regulation of emotion generation systems.",
+    "inclusion_test": {
+      "procedure": "Participants view emotionally evocative images and are instructed to regulate their emotional response using a specified strategy (e.g., cognitive reappraisal, suppression, or distraction) or to simply attend.",
+      "manipulation": "Regulation strategy (reappraise, suppress, distract, attend); image valence (negative, positive); regulation timing (before vs. during viewing).",
+      "measurement": "Self-reported affect (valence, arousal); physiological responses (SCR, corrugator EMG, startle); fMRI prefrontal-amygdala modulation; ERP (LPP reduction)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:39:33",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Ochsner 2002 — Rethinking Feelings: An fMRI Study of the Cognitive Regulation of Emotion (Journal of Cognitive Neuroscience, historical, 2k×)",
+      "doi": "10.1162/089892902760807212",
+      "pub_id": "pub_75b5591c",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.6133808363280404,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4535233453121616,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1133808363280404,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2002,
+      "venue": "Journal of Cognitive Neuroscience",
+      "citation_count": 2522,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Krause-Utz 2019 — Heart rate variability during a cognitive reappraisal task in female patients… (Psychological medicine, recent_primary, 18×)",
+      "doi": "10.1017/s0033291718002489",
+      "pub_id": "pub_094f8e4c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5792856200558082,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Psychological medicine",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Rosenbaum 2020 — Neural correlates of mindful emotion regulation in high and low ruminators. (Scientific reports, recent_primary, 13×)",
+      "doi": "10.1038/s41598-020-71952-5",
+      "pub_id": "pub_92089a81",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5615320741182369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Pan 2020 — Using questionnaires and task-related EEG signals to reveal hindered reapprai… (Scientific reports, recent_primary, 11×)",
+      "doi": "10.1038/s41598-020-62283-6",
+      "pub_id": "pub_2b54234e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5593008373071,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Beauchamp 2016 — Does inhibitory control training transfer?: behavioral and neural effects on … (Social cognitive and affective n…, foundational, 31×)",
+      "doi": "10.1093/scan/nsw061",
+      "pub_id": "pub_babdf39b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5568310741974727,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 31,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Xing 2019 — Altered dynamic electroencephalography connectome phase-space features of emo… (NeuroImage, recent_primary, 10×)",
+      "doi": "10.1016/j.neuroimage.2018.10.073",
+      "pub_id": "pub_11d75948",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5480414008417889,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "NeuroImage",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Jenness 2021 — Alterations in neural circuits underlying emotion regulation following child … (Psychological medicine, recent_primary, 78×)",
+      "doi": "10.1017/s0033291720000641",
+      "pub_id": "pub_87622127",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5365784186206144,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2529803411491245,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06324508528728112,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Psychological medicine",
+      "citation_count": 78,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "de Voogd 2022 — Meta-analytic evidence for downregulation of the amygdala during working memo… (Human brain mapping, key_review, 9×)",
+      "doi": "10.1002/hbm.25828",
+      "pub_id": "pub_0f493cf7",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5266618442813261,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Human brain mapping",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Schmitgen 2019 — Individualized treatment response prediction of dialectical behavior therapy … (Brain and behavior, recent_primary, 29×)",
+      "doi": "10.1002/brb3.1384",
+      "pub_id": "pub_be2135b1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5258969185761038,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Brain and behavior",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Rodman 2019 — Neurobiological Markers of Resilience to Depression Following Childhood Maltr… (Biological psychiatry, recent_primary, 104×)",
+      "doi": "10.1016/j.biopsych.2019.04.033",
+      "pub_id": "pub_b34a8f9d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5206965630153515,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2694529187280729,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06736322968201823,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Biological psychiatry",
+      "citation_count": 104,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "He 2020 — The right VLPFC and downregulation of social pain: A TMS study. (Human brain mapping, recent_primary, 50×)",
+      "doi": "10.1002/hbm.24881",
+      "pub_id": "pub_59f76718",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5202441046418793,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22764308523418395,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.056910771308545986,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Human brain mapping",
+      "citation_count": 50,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Crum 2021 — Interaction of irritability and anxiety on emotional responding and emotion r… (Psychological medicine, recent_primary, 21×)",
+      "doi": "10.1017/s0033291720001397",
+      "pub_id": "pub_50778e80",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.51807428234795,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Psychological medicine",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Lee 2021 — Neural correlates of emotional reactivity and regulation in traumatized North… (Translational psychiatry, recent_primary, 9×)",
+      "doi": "10.1038/s41398-021-01579-1",
+      "pub_id": "pub_ffc3c58c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5066618442813261,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Translational psychiatry",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Kinney 2019 — Self-report and neurophysiological indicators of emotion processing and regul… (Biological psychology, recent_primary, 29×)",
+      "doi": "10.1016/j.biopsycho.2019.01.019",
+      "pub_id": "pub_8a96e104",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5025635852427703,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Biological psychology",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Petersen 2019 — Resting-state functional connectivity in women with PMDD. (Translational psychiatry, recent_primary, 26×)",
+      "doi": "10.1038/s41398-019-0670-8",
+      "pub_id": "pub_4e7fe4bb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5010385562176662,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Translational psychiatry",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Steward 2019 — A multimodal MRI study of the neural mechanisms of emotion regulation impairm… (Translational psychiatry, recent_primary, 25×)",
+      "doi": "10.1038/s41398-019-0533-3",
+      "pub_id": "pub_e018382a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5004922880522967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Translational psychiatry",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Campbell-Sills 2011 — Functioning of neural systems supporting emotion regulation in anxiety-prone … (NeuroImage, foundational, 102×)",
+      "doi": "10.1016/j.neuroimage.2010.07.041",
+      "pub_id": "pub_46d1cefc",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.500418200813447,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2683394699204547,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06708486748011368,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "NeuroImage",
+      "citation_count": 102,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Andrews 2023 — Reappraisal capacity is unrelated to depressive and anxiety symptoms. (Scientific reports, recent_primary, 4×)",
+      "doi": "10.1038/s41598-023-33917-2",
+      "pub_id": "pub_a0eb8ac0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4966289627751649,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific reports",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Heller 2009 — Reduced capacity to sustain positive emotion in major depression reflects dim… (Proceedings of the National Acad…, foundational, 309×)",
+      "doi": "10.1073/pnas.0910651106",
+      "pub_id": "pub_7c23eedd",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.49636670882169864,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3321335019534613,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08303337548836533,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 309,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Garland 2017 — Deficits in autonomic indices of emotion regulation and reward processing ass… (Psychopharmacology, foundational, 65×)",
+      "doi": "10.1007/s00213-016-4494-4",
+      "pub_id": "pub_51c26ee1",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4939760233093943,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24257075990424393,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06064268997606098,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Psychopharmacology",
+      "citation_count": 65,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Elsayed 2021 — Evidence for dissociable cognitive and neural pathways from poverty versus ma… (Developmental cognitive neurosci…, recent_primary, 3×)",
+      "doi": "10.1016/j.dcn.2021.100952",
+      "pub_id": "pub_14b46c58",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4933990963456557,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Fowler 2017 — Disrupted amygdala-prefrontal connectivity during emotion regulation links st… (Developmental cognitive neurosci…, foundational, 44×)",
+      "doi": "10.1016/j.dcn.2017.09.002",
+      "pub_id": "pub_c9f788d1",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.48843244469805347,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Sokołowski 2022 — Brain activation during cognitive reappraisal depending on regulation goals a… (Social cognitive and affective n…, recent_primary, 18×)",
+      "doi": "10.1093/scan/nsab117",
+      "pub_id": "pub_5c3d7135",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4859522867224748,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Reinecke 2018 — Early effects of exposure-based cognitive behaviour therapy on the neural cor… (Translational psychiatry, recent_primary, 14×)",
+      "doi": "10.1038/s41398-018-0277-5",
+      "pub_id": "pub_752bac9f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.48253070373660917,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Translational psychiatry",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Grande 2021 — Postpartum Stress and Neural Regulation of Emotion among First-Time Mothers. (Cognitive, affective & behaviora…, recent_primary, 27×)",
+      "doi": "10.3758/s13415-021-00914-9",
+      "pub_id": "pub_4af841f5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4815649556243981,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cognitive, affective & behavioral neuroscience",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Hudak 2022 — Neurophysiological Deficits During Reappraisal of Negative Emotional Stimuli … (Biological psychiatry, recent_primary, 11×)",
+      "doi": "10.1016/j.biopsych.2022.01.019",
+      "pub_id": "pub_61b57e1b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.47930083730710005,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Biological psychiatry",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Bomyea 2020 — Change in neural response during emotion regulation is associated with sympto… (Journal of affective disorders, key_review, 19×)",
+      "doi": "10.1016/j.jad.2020.04.001",
+      "pub_id": "pub_68308c57",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4766947257874873,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Journal of affective disorders",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Murphy 2016 — Functional connectivity of the amygdala and subgenual cingulate during cognit… (Developmental cognitive neurosci…, foundational, 28×)",
+      "doi": "10.1016/j.dcn.2015.11.003",
+      "pub_id": "pub_f67b4c80",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.47207288101663136,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Liberzon 2015 — Childhood poverty and recruitment of adult emotion regulatory neurocircuitry. (Social cognitive and affective n…, foundational, 52×)",
+      "doi": "10.1093/scan/nsv045",
+      "pub_id": "pub_f3883aab",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4708008805306829,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2298701887893985,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057467547197349624,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 52,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Reinecke 2015 — Effective emotion regulation strategies improve fMRI and ECG markers of psych… (Translational psychiatry, foundational, 38×)",
+      "doi": "10.1038/tp.2015.160",
+      "pub_id": "pub_632e6cb9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4663611475075798,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Translational psychiatry",
+      "citation_count": 38,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

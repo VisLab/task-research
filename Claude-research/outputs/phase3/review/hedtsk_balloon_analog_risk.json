@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_balloon_analog_risk",
+    "name": "Balloon Analog Risk Task",
+    "aliases": [
+      "BART",
+      "Balloon Task"
+    ],
+    "category_id": "value_based_decision_making_under_risk_and_uncertainty",
+    "short_definition": "Sequential pumping of a virtual balloon for monetary reward with stochastic popping; average pumps per un-popped balloon indexes risk-taking.",
+    "description": "Participants inflate a virtual balloon by clicking a pump button, earning money with each pump. The balloon may explode at any point, causing loss of all accumulated earnings for that trial. Participants can cash out at any time to save their earnings. The average number of pumps before cashing out indexes risk-taking propensity. BART risk-taking correlates with real-world risky behaviors. fMRI reveals activation in ventromedial PFC, anterior insula, and striatal regions during risk assessment.",
+    "inclusion_test": {
+      "procedure": "Participants sequentially pump a virtual balloon for incremental monetary reward; each pump risks the balloon popping and losing that trial's earnings. They can stop and bank at any time.",
+      "manipulation": "Explosion probability function (risk schedule); reward per pump; number of trials.",
+      "measurement": "Adjusted average pumps on un-popped balloons (risk-taking index); total earnings; pump-by-pump decision sequences; response rate across trial segments."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:35:40",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Lejuez 2002 — Evaluation of a behavioral measure of risk taking: The Balloon Analogue Risk … (Journal of Experimental Psycholo…, historical, 2k×)",
+      "doi": "10.1037/1076-898x.8.2.75",
+      "pub_id": "pub_1a4437d4",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7944724112391777,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4445563116233773,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11113907790584432,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2002,
+      "venue": "Journal of Experimental Psychology Applied",
+      "citation_count": 2160,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Wang 2022 — Risk-taking in the human brain: An activation likelihood estimation meta-anal… (Human brain mapping, key_review, 22×)",
+      "doi": "10.1002/hbm.26041",
+      "pub_id": "pub_ed82c714",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6220510277575655,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.6666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.16666666666666666,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Human brain mapping",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Künzel 2019 — Metalearners for estimating heterogeneous treatment effects using machine lea… (Proceedings of the National Acad…, recent_primary, 236×)",
+      "doi": "10.1073/pnas.1804597116",
+      "pub_id": "pub_4522d79b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5924801595820588,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31658730499490173,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07914682624872543,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 236,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Vaucher 2021 — Inferring experimental procedures from text-based representations of chemical… (Nature communications, recent_primary, 29×)",
+      "doi": "10.1038/s41467-021-22951-1",
+      "pub_id": "pub_3e85afbf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5825635852427704,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature communications",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Dir 2019 — Pubertal influences on neural activation during risky decision-making in yout… (Developmental cognitive neurosci…, recent_primary, 20×)",
+      "doi": "10.1016/j.dcn.2019.100634",
+      "pub_id": "pub_ab272847",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5807342669068534,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Toptan 2018 — Circular DNA tumor viruses make circular RNAs. (Proceedings of the National Acad…, recent_primary, 159×)",
+      "doi": "10.1073/pnas.1811728115",
+      "pub_id": "pub_c97bf5f2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5767933703059709,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2938401478905503,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07346003697263757,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 159,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Korucuoglu 2020 — Test-retest reliability of fMRI-measured brain activity during decision makin… (NeuroImage, recent_primary, 33×)",
+      "doi": "10.1016/j.neuroimage.2020.116759",
+      "pub_id": "pub_273fbec1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5743752451865962,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "NeuroImage",
+      "citation_count": 33,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Nash 2021 — Neural processes in antecedent anxiety modulate risk-taking behavior. (Scientific reports, recent_primary, 16×)",
+      "doi": "10.1038/s41598-021-82229-w",
+      "pub_id": "pub_7faffbea",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.574342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Li 2020 — Test-retest reliability of brain responses to risk-taking during the balloon … (NeuroImage, recent_primary, 31×)",
+      "doi": "10.1016/j.neuroimage.2019.116495",
+      "pub_id": "pub_ef38a407",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5734977408641394,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "NeuroImage",
+      "citation_count": 31,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Rao 2008 — Neural correlates of voluntary and involuntary risk taking in the human brain… (NeuroImage, foundational, 246×)",
+      "doi": "10.1016/j.neuroimage.2008.05.046",
+      "pub_id": "pub_24e56d7f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5664116932686103,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3189801064077747,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07974502660194367,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "NeuroImage",
+      "citation_count": 246,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Li 2019 — Predicting protein-ligand interactions based on bow-pharmacological space and… (Scientific reports, recent_primary, 32×)",
+      "doi": "10.1038/s41598-019-43125-6",
+      "pub_id": "pub_81af8275",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5639431418032331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Hardinge 2020 — Full Dynamic Range Quantification using Loop-mediated Amplification (LAMP) by… (Scientific reports, recent_primary, 15×)",
+      "doi": "10.1038/s41598-020-57473-1",
+      "pub_id": "pub_c8d2a597",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5634648593579782,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Tang 2017 — Application of Machine-Learning Models to Predict Tacrolimus Stable Dose in R… (Scientific reports, foundational, 95×)",
+      "doi": "10.1038/srep42192",
+      "pub_id": "pub_f0e2a202",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5593994818255836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26426459396900137,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06606614849225034,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Scientific reports",
+      "citation_count": 95,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Weber 2014 — Prefrontal transcranial direct current stimulation alters activation and conn… (Human brain mapping, foundational, 141×)",
+      "doi": "10.1002/hbm.22429",
+      "pub_id": "pub_829a993f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5583992323156746,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2869302625960316,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0717325656490079,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Human brain mapping",
+      "citation_count": 141,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Kim 2018 — Multidimensional impulsivity as a mediator of early life stress and alcohol d… (Scientific reports, recent_primary, 32×)",
+      "doi": "10.1038/s41598-018-22474-8",
+      "pub_id": "pub_1992ad71",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5539431418032331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Hardinge 2018 — Optimised LAMP allows single copy detection of 35Sp and NOSt in transgenic ma… (Scientific reports, recent_primary, 24×)",
+      "doi": "10.1038/s41598-018-36207-4",
+      "pub_id": "pub_88c55232",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5499245922169964,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Cai 2015 — Epstein-Barr virus-encoded microRNA BART1 induces tumour metastasis by regula… (Nature communications, foundational, 178×)",
+      "doi": "10.1038/ncomms8353",
+      "pub_id": "pub_255bb74c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5484175702405654,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30033694762892815,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07508423690723204,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Nature communications",
+      "citation_count": 178,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Walther 2022 — Prediction of inpatient pressure ulcers based on routine healthcare data usin… (Scientific reports, recent_primary, 16×)",
+      "doi": "10.1038/s41598-022-09050-x",
+      "pub_id": "pub_2cd7d919",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.544342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Scientific reports",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Wright 2018 — ADP-Ribosylation Factor-Like 2 (ARL2) regulates cilia stability and developme… (Scientific reports, recent_primary, 14×)",
+      "doi": "10.1038/s41598-018-35395-3",
+      "pub_id": "pub_6a13edec",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5425307037366092,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Gowen 2019 — Chronotype mediates gender differences in risk propensity and risk-taking. (PloS one, recent_primary, 20×)",
+      "doi": "10.1371/journal.pone.0216619",
+      "pub_id": "pub_2b6e0b07",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5407342669068533,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Pegtel 2010 — Functional delivery of viral miRNAs via exosomes. (Proceedings of the National Acad…, foundational, 1k×)",
+      "doi": "10.1073/pnas.0914843107",
+      "pub_id": "pub_c4d61ab7",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.527049468931521,
+        "breakdown": {
+          "raw": {
+            "citations": 0.41486454239275067,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10371613559818767,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 1293,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Qiu 2014 — EBV microRNA BART 18-5p targets MAP3K2 to facilitate persistence in vivo by i… (Proceedings of the National Acad…, foundational, 56×)",
+      "doi": "10.1073/pnas.1406136111",
+      "pub_id": "pub_7b11ce81",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5218540276839192,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Yakobi 2021 — Boredom proneness is associated with noisy decision-making, not risk-taking. (Experimental brain research, recent_primary, 12×)",
+      "doi": "10.1007/s00221-021-06098-5",
+      "pub_id": "pub_69cc69c7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5104594065461354,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Experimental brain research",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Pei 2020 — Neural processes during adolescent risky decision making are associated with … (Developmental cognitive neurosci…, recent_primary, 22×)",
+      "doi": "10.1016/j.dcn.2020.100794",
+      "pub_id": "pub_f08d9f36",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5087176944242321,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Marquitz 2012 — Infection of Epstein-Barr virus in a gastric carcinoma cell line induces anch… (Proceedings of the National Acad…, foundational, 78×)",
+      "doi": "10.1073/pnas.1202910109",
+      "pub_id": "pub_2f71bc2f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5065784186206145,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2529803411491245,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06324508528728112,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 78,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Guenther 2021 — Heterogeneity in Risk-Taking During the COVID-19 Pandemic: Evidence From the … (Frontiers in psychology, recent_primary, 29×)",
+      "doi": "10.3389/fpsyg.2021.643653",
+      "pub_id": "pub_d35a6f07",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5058969185761037,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Frontiers in psychology",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Braams 2015 — Longitudinal changes in adolescent risk-taking: a comprehensive study of neur… (The Journal of neuroscience : th…, foundational, 400×)",
+      "doi": "10.1523/jneurosci.4764-14.2015",
+      "pub_id": "pub_a0f13870",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5034255923887442,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3470357028883099,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08675892572207748,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 400,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Bowring 2022 — Isolating the sources of pipeline-variability in group-level task-fMRI results. (Human brain mapping, recent_primary, 30×)",
+      "doi": "10.1002/hbm.25713",
+      "pub_id": "pub_41f41855",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4930381978737059,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Human brain mapping",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Abusalah 2022 — Prognostic Epstein-Barr Virus (EBV) miRNA biomarkers for survival outcome in … (PloS one, key_review, 14×)",
+      "doi": "10.1371/journal.pone.0266893",
+      "pub_id": "pub_4bda51ad",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4925307037366092,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "PloS one",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Xu 2020 — The Effect of Response Inhibition Training on Risky Decision-Making Task Perf… (Frontiers in psychology, recent_primary, 17×)",
+      "doi": "10.3389/fpsyg.2020.01806",
+      "pub_id": "pub_4a6afced",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4885030300957165,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Frontiers in psychology",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_psychomotor_vigilance",
+    "name": "Psychomotor Vigilance Task",
+    "aliases": [
+      "PVT",
+      "Psychomotor Vigilance"
+    ],
+    "category_id": "selective_and_sustained_attention",
+    "short_definition": "Simple reaction to visual or auditory stimuli appearing at random intervals over 5–10 minutes; mean RT, lapses, and false starts index sustained attention.",
+    "description": "The Psychomotor Vigilance Task is a sustained-attention reaction time task widely used in sleep research and fatigue monitoring. Participants monitor a display and respond as quickly as possible to a visual stimulus (typically a millisecond counter) that appears at random inter-stimulus intervals (2–10 seconds) over a 5–10 minute period. The primary measure is the number of lapses (responses >500 ms), reflecting momentary failures of sustained attention. The PVT is considered the gold-standard behavioral measure of vigilance and sleepiness because it is simple, has minimal learning effects, and is highly sensitive to sleep deprivation, circadian misalignment, and time-on-task.",
+    "inclusion_test": {
+      "procedure": "A visual stimulus (counter or light) appears at random intervals (2–10 s); participants press a button as quickly as possible upon detection. The task runs for 10 minutes.",
+      "manipulation": "Test duration; inter-stimulus interval range; time of day; sleep deprivation condition.",
+      "measurement": "Mean RT; number of lapses (RT > 500 ms); fastest 10% RT; reciprocal RT transformation."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:49:43",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Elmenhorst 2018 — Cognitive impairments by alcohol and sleep deprivation indicate trait charact… (Proceedings of the National Acad…, recent_primary, 35×)",
+      "doi": "10.1073/pnas.1803770115",
+      "pub_id": "pub_a6a8dcf5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7218692449352111,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Ganesan 2019 — The Impact of Shift Work on Sleep, Alertness and Performance in Healthcare Wo… (Scientific reports, recent_primary, 218×)",
+      "doi": "10.1038/s41598-019-40914-x",
+      "pub_id": "pub_c75e36eb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6746701839712808,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31201406921845637,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07800351730461409,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 218,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Prasad 2018 — Determinants of sleepiness in obstructive sleep apnea. (Sleep, recent_primary, 38×)",
+      "doi": "10.1093/sleep/zsx199",
+      "pub_id": "pub_f7a8428d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6630278141742465,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Sleep",
+      "citation_count": 38,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Penzo 2021 — The paraventricular nucleus of the thalamus: an integrative node underlying h… (Trends in neurosciences, key_review, 112×)",
+      "doi": "10.1016/j.tins.2021.03.001",
+      "pub_id": "pub_20cca64c",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6517593807140585,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2737041895229003,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06842604738072508,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Trends in neurosciences",
+      "citation_count": 112,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Smithies 2021 — The effect of sleep restriction on cognitive performance in elite cognitive p… (Sleep, key_review, 18×)",
+      "doi": "10.1093/sleep/zsab008",
+      "pub_id": "pub_79854469",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6492856200558081,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Sleep",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Behrens 2019 — Decreased psychomotor vigilance of female shift workers after working night s… (PloS one, recent_primary, 32×)",
+      "doi": "10.1371/journal.pone.0219087",
+      "pub_id": "pub_4f252b27",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6306098084698998,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Yamazaki 2021 — Residual, differential neurobehavioral deficits linger after multiple recover… (Sleep, recent_primary, 41×)",
+      "doi": "10.1093/sleep/zsaa224",
+      "pub_id": "pub_bb23ec4c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6107671484130145,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Sleep",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Kiss 2021 — The effect of preferred background music on task-focus in sustained attention. (Psychological research, recent_primary, 35×)",
+      "doi": "10.1007/s00426-020-01400-6",
+      "pub_id": "pub_6bda167b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6085359116018777,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Psychological research",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Dinges 1985 — Microcomputer analyses of performance on a portable, simple visual RT task du… (Behavior Research Methods, Instr…, historical, 1k×)",
+      "doi": "10.3758/bf03200977",
+      "pub_id": "pub_02b2eb12",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.6081351707048943,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4325406828195775,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10813517070489438,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": null,
+      "year": 1985,
+      "venue": "Behavior Research Methods, Instruments, & Computers",
+      "citation_count": 1755,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Dong 2018 — Rest but busy: Aberrant resting-state functional connectivity of triple netwo… (Brain and behavior, recent_primary, 29×)",
+      "doi": "10.1002/brb3.876",
+      "pub_id": "pub_f265f49a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5992302519094371,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Brain and behavior",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Khitrov 2014 — PC-PVT: a platform for psychomotor vigilance task testing, analysis, and pred… (Behavior research methods, foundational, 82×)",
+      "doi": "10.3758/s13428-013-0339-9",
+      "pub_id": "pub_ca2d110b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.593960015211809,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25584006084723615,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06396001521180904,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Behavior research methods",
+      "citation_count": 82,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Rupp 2009 — Banking sleep: realization of benefits during subsequent sleep restriction an… (Sleep, foundational, 161×)",
+      "doi": "10.1093/sleep/32.3.311",
+      "pub_id": "pub_6ec80cb8",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5936398453519385,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2945593814077538,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07363984535193845,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Sleep",
+      "citation_count": 161,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Zhang 2019 — White matter structural differences in OSA patients experiencing residual day… (Sleep medicine, recent_primary, 37×)",
+      "doi": "10.1016/j.sleep.2018.09.011",
+      "pub_id": "pub_e674a7a0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5926518348953027,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2106073395812109,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05265183489530272,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Sleep medicine",
+      "citation_count": 37,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Nir 2017 — Selective neuronal lapses precede human cognitive lapses following sleep depr… (Nature medicine, foundational, 149×)",
+      "doi": "10.1038/nm.4433",
+      "pub_id": "pub_6450fbcd",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5925258813512686,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2901035254050744,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0725258813512686,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Nature medicine",
+      "citation_count": 149,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Lim 2010 — Imaging brain fatigue from sustained mental workload: an ASL perfusion study … (NeuroImage, foundational, 267×)",
+      "doi": "10.1016/j.neuroimage.2009.11.020",
+      "pub_id": "pub_73ee3eb9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5875927837326573,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3237044682639625,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08092611706599062,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "NeuroImage",
+      "citation_count": 267,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Vargas 2017 — Beneficial neurocognitive effects of transcranial laser in older adults. (Lasers in medical science, foundational, 94×)",
+      "doi": "10.1007/s10103-017-2221-y",
+      "pub_id": "pub_2356c2a9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5859145828309731,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2636583313238922,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06591458283097305,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Lasers in medical science",
+      "citation_count": 94,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Parekh 2019 — Slow-wave activity surrounding stage N2 K-complexes and daytime function meas… (Sleep, recent_primary, 28×)",
+      "doi": "10.1093/sleep/zsy256",
+      "pub_id": "pub_e3296d19",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5854062143499646,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Sleep",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Di Muzio 2020 — Nurses and Night Shifts: Poor Sleep Quality Exacerbates Psychomotor Performance. (Frontiers in neuroscience, recent_primary, 37×)",
+      "doi": "10.3389/fnins.2020.579938",
+      "pub_id": "pub_b1377f08",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5826518348953027,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2106073395812109,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05265183489530272,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Frontiers in neuroscience",
+      "citation_count": 37,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Vidafar 2018 — Increased vulnerability to attentional failure during acute sleep deprivation… (Sleep, recent_primary, 38×)",
+      "doi": "10.1093/sleep/zsy098",
+      "pub_id": "pub_200e43ad",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5796944808409131,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Sleep",
+      "citation_count": 38,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Li 2022 — Neurotensin orchestrates valence assignment in the amygdala. (Nature, recent_primary, 72×)",
+      "doi": "10.1038/s41586-022-04964-y",
+      "pub_id": "pub_cde095c0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5654351096765031,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24840710537267913,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06210177634316978,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Nature",
+      "citation_count": 72,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Kim 2007 — Sleep-disordered breathing and psychomotor vigilance in a community-based sam… (Sleep, foundational, 73×)",
+      "doi": "10.1093/sleep/30.10.1309",
+      "pub_id": "pub_f220b300",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5622987098353892,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24919483934155667,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06229870983538917,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2007,
+      "venue": "Sleep",
+      "citation_count": 73,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Trotti 2015 — Clarithromycin in γ-aminobutyric acid-Related hypersomnolence: A randomized, … (Annals of neurology, foundational, 70×)",
+      "doi": "10.1002/ana.24459",
+      "pub_id": "pub_9b959f59",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5616996841428467,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24679873657138676,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06169968414284669,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Annals of neurology",
+      "citation_count": 70,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 37,
+      "label": "Thompson 2013 — Short-time windows of correlation between large-scale functional brain networ… (Human brain mapping, foundational, 195×)",
+      "doi": "10.1002/hbm.22140",
+      "pub_id": "pub_c7277e21",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5530641482364738,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30558992627922865,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07639748156980716,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Human brain mapping",
+      "citation_count": 195,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 38,
+      "label": "Basner 2011 — Maximizing sensitivity of the psychomotor vigilance test (PVT) to sleep loss. (Sleep, foundational, 603×)",
+      "doi": "10.1093/sleep/34.5.581",
+      "pub_id": "pub_cfc68c1a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5493544867222733,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3707512802224266,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09268782005560665,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Sleep",
+      "citation_count": 603,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 39,
+      "label": "Arnal 2015 — Benefits of Sleep Extension on Sustained Attention and Sleep Pressure Before … (Sleep, foundational, 100×)",
+      "doi": "10.5665/sleep.5244",
+      "pub_id": "pub_d3eb9b2b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5468010468494107,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2672041873976427,
+            "venue": 0.7,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06680104684941067,
+            "venue": 0.13999999999999999,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Sleep",
+      "citation_count": 100,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 40,
+      "label": "Kyle 2014 — Sleep restriction therapy for insomnia is associated with reduced objective t… (Sleep, foundational, 132×)",
+      "doi": "10.5665/sleep.3386",
+      "pub_id": "pub_d0dc4b17",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5407848126678839,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28313925067153556,
+            "venue": 0.7,
+            "publisher": 0.0,
+            "recency": 0.5333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07078481266788389,
+            "venue": 0.13999999999999999,
+            "publisher": 0.0,
+            "recency": 0.08,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Sleep",
+      "citation_count": 132,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 41,
+      "label": "Do Monte 2016 — Retrieving fear memories, as time goes by…. (Molecular psychiatry, key_review, 90×)",
+      "doi": "10.1038/mp.2016.78",
+      "pub_id": "pub_d65713d1",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5386252658248778,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2611677299661781,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06529193249154452,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Molecular psychiatry",
+      "citation_count": 90,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 43,
+      "label": "Landolt 2012 — Reduced neurobehavioral impairment from sleep deprivation in older adults: co… (Frontiers in neurology, key_review, 32×)",
+      "doi": "10.3389/fneur.2012.00062",
+      "pub_id": "pub_d5d68a90",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5306098084698998,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Frontiers in neurology",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 44,
+      "label": "Santhi 2007 — Acute sleep deprivation and circadian misalignment associated with transition… (PloS one, foundational, 99×)",
+      "doi": "10.1371/journal.pone.0001233",
+      "pub_id": "pub_a701d405",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5266570218959855,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2666280875839421,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.06666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06665702189598552,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.01,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2007,
+      "venue": "PloS one",
+      "citation_count": 99,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 45,
+      "label": "Mah 2011 — The effects of sleep extension on the athletic performance of collegiate bask… (Sleep, foundational, 323×)",
+      "doi": "10.5665/sleep.1132",
+      "pub_id": "pub_5a1ba238",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5236727268580996,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3346909074323986,
+            "venue": 0.7,
+            "publisher": 0.0,
+            "recency": 0.3333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08367272685809965,
+            "venue": 0.13999999999999999,
+            "publisher": 0.0,
+            "recency": 0.049999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Sleep",
+      "citation_count": 323,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

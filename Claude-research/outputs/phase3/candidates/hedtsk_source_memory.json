@@ -1,0 +1,3630 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:43:19",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_source_memory",
+    "name": "Source Memory Task",
+    "aliases": [
+      "Source Monitoring Task",
+      "Reality Monitoring Task",
+      "Context Memory Task",
+      "Source Judgment Task"
+    ],
+    "category_id": "long_term_memory",
+    "short_definition": "After studying items presented in distinct contexts (speaker, location, modality, time), participants judge each item's encoding source; source accuracy dissociates contextual recollection from item familiarity.",
+    "description": "Source memory tests assess the ability to remember the contextual details of an encoding episode — not just whether an item was encountered (item memory) but where, when, how, or from whom it was learned. In the standard paradigm, items are presented under two or more source conditions (e.g., spoken by a male vs. female voice; shown on the left vs. right of the screen; read vs. imagined). At test, participants first make an old/new recognition judgment, then indicate the source of each recognized item. Source accuracy (correct source attributions conditional on item recognition) is the primary measure, dissociating recollection-based contextual retrieval from familiarity-based item recognition. Johnson's source monitoring framework (Johnson, Hashtroudi, & Lindsay, 1993) distinguishes external source monitoring (which person said it), internal source monitoring (did I do it or imagine it), and reality monitoring (internal vs. external origin). Source memory failures underlie false memories, eyewitness misattributions, and confabulation. The paradigm recruits prefrontal cortex (especially right and medial PFC for monitoring) and hippocampus (binding items to contexts), with a characteristic dissociation from item memory in aging and frontal lesion patients.",
+    "inclusion_test": {
+      "procedure": "Items are studied under two or more contextually distinct source conditions; at test, participants recognize studied items and judge the source (context) in which each item was encoded.",
+      "manipulation": "Source type (voice, spatial location, temporal position, modality, cognitive operation); number of sources (2, 3, or more); encoding depth; source similarity (easy-to-discriminate vs. similar sources); response format (forced-choice source vs. source confidence rating).",
+      "measurement": "Source accuracy (proportion of recognized items with correct source attribution); source d' (signal detection); item-source conditional analysis; remember/know × source interaction; source attribution errors (systematic misattributions); PFC and hippocampal activation differences."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 46,
+      "picked": 30,
+      "reserve": 11,
+      "excluded": 5,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {
+      "non_human_subjects": 3,
+      "excluded_publisher": 2
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_423830bf",
+      "doi": "10.1038/s41598-020-72231-z",
+      "url": "https://doi.org/10.1038/s41598-020-72231-z",
+      "openalex_id": null,
+      "pmid": "32943722",
+      "first_author": "Riggins",
+      "authors_display": "Riggins, T., & Spencer, R.",
+      "year": 2020,
+      "title": "Habitual sleep is associated with both source memory and hippocampal subfield volume during early childhood.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 26,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41598-020-72231-z.pdf",
+      "tldr": null,
+      "abstract": "Previous research has established important developmental changes in sleep and memory during early childhood. These changes have been linked separately to brain development, yet few studies have explored their interrelations during this developmental period. The goal of this report was to explore these associations in 200 (100 female) typically developing 4- to 8-year-old children. We examined whether habitual sleep patterns (24-h sleep duration, nap status) were related to children's performance on a source memory task and hippocampal subfield volumes. Results revealed that, across all participants, after controlling for age, habitual sleep duration was positively related to source memory performance. In addition, in younger (4-6 years, n = 67), but not older (6-8 years, n = 70) children, habitual sleep duration was related to hippocampal head subfield volume (CA2-4/DG). Moreover, within younger children, volume of hippocampal subfields varied as a function of nap status; children who were still napping (n = 28) had larger CA1 volumes in the body compared to children who had transitioned out of napping (n = 39). Together, these findings are consistent with the hypothesis that habitually napping children may have more immature cognitive networks, as indexed by hippocampal integrity. Furthermore, these results shed additional light on why sleep is important during early childhood, a period of substantial brain development.",
+      "score": {
+        "composite": 0.537705222884333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Organ Size",
+        "Cognition",
+        "Memory",
+        "Sleep",
+        "Neuropsychological Tests",
+        "Child",
+        "Child, Preschool",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_04c8a67c",
+      "doi": "10.1093/sleep/zsab113",
+      "url": "https://doi.org/10.1093/sleep/zsab113",
+      "openalex_id": null,
+      "pmid": "33940625",
+      "first_author": "Kurinec",
+      "authors_display": "Kurinec, C. et al.",
+      "year": 2021,
+      "title": "Sleep deprivation impairs binding of information with its context.",
+      "venue": "Sleep",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 17,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Binding information to its context in long-term memory is critical for many tasks, including memory tasks and decision making. Failure to associate information to its context could be an important aspect of sleep deprivation effects on cognition, but little is known about binding problems from being sleep-deprived at the time of encoding. We studied how sleep deprivation affects binding using a well-established paradigm testing the ability to remember auditorily presented words (items) and their speakers (source context). In a laboratory study, 68 healthy young adults were randomly assigned to total sleep deprivation or a well-rested control condition. Participants completed an affective item and source memory task twice: once after 7-hour awake during baseline and again 24 hours later, after nearly 31 hours awake in the total sleep deprivation condition or 7 hours awake in the control condition. Participants listened to negative, positive, and neutral words presented by a male or female speaker and were immediately tested for recognition of the words and their respective speakers. Recognition of items declined during sleep deprivation, but even when items were recognized accurately, recognition of their associated sources also declined. Negative items were less bound with their sources than positive or neutral items, but sleep deprivation did not significantly affect this pattern. Our findings indicate that learning while sleep-deprived disrupts the binding of information to its context independent of item valence. Such binding failures may contribute to sleep deprivation effects on tasks requiring the ability to bind new information together in memory.",
+      "score": {
+        "composite": 0.4818363634290498,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Sleep Deprivation",
+        "Mental Recall",
+        "Wakefulness",
+        "Sleep",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4e9890d4",
+      "doi": "10.1037/xge0001268",
+      "url": "https://doi.org/10.1037/xge0001268",
+      "openalex_id": null,
+      "pmid": "35913879",
+      "first_author": "Cataldo",
+      "authors_display": "Cataldo, A. et al.",
+      "year": 2023,
+      "title": "Abnormal evidence accumulation underlies the positive memory deficit in depression.",
+      "venue": "Journal of experimental psychology. General",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 13,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Healthy adults show better memory for low-arousal positive versus negative stimuli, but depression compromises this positive memory advantage. Existing studies are limited by small samples or analyses that provide limited insight into underlying mechanisms. Our study addresses these concerns by using a multistaged analysis, including diffusion modeling, to identify precise psychological processes underlying the positive memory advantage and its disruption by depression in a large sample. A total of 1,358 participants completed the BDI-II (Beck et al., 1996) and an emotional memory task. At encoding, participants judged whether positive and negative words were positive or self-descriptive. After a free recall test, participants viewed an equal mix of studied and unstudied words and judged whether each was \"old\" or \"new\"; if judged \"old,\" they indicated whether the study source was a valence or self-reference judgment. We replicate the positive memory advantage and its decrease in depression in recall, recognition, and source accuracy. The hierarchical drift diffusion model (HDDM; Wiecki et al., 2013) revealed that higher BDI-II scores are associated with more efficient evidence accumulation for negative words in the recognition and source memory tasks. By contrast, evidence accumulation for positive words is unaffected by BDI-II during the recognition task but becomes less efficient with increased BDI-II during the source memory task. In conclusion, in a well-controlled design with a large sample, we find that depression reduces the positive memory advantage. HDDM analyses suggest that this reflects differential effects of depression on the speed of evidence accumulation during the retrieval of positive versus negative memories. (PsycInfo Database Record (c) 2023 APA, all rights reserved).",
+      "score": {
+        "composite": 0.4781987407849036,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Memory Disorders",
+        "Depression",
+        "Emotions",
+        "Mental Recall",
+        "Adult",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_aea0af09",
+      "doi": "10.1371/journal.pone.0257010",
+      "url": "https://doi.org/10.1371/journal.pone.0257010",
+      "openalex_id": null,
+      "pmid": "34529676",
+      "first_author": "Kusztrits",
+      "authors_display": "Kusztrits, I. et al.",
+      "year": 2021,
+      "title": "Transcranial direct current stimulation (tDCS) enhances internal source monitoring abilities in healthy participants.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8445448",
+      "tldr": null,
+      "abstract": "Source monitoring refers to the ability to identify the origin of a memory, for example, whether you remember saying something or thinking about it, and confusions of these sources have been associated with the experience of auditory verbal hallucinations (AVHs). Both AVHs and source confusions are reported to originate from dysfunctional brain activations in the prefrontal cortex (PFC) and the superior temporal gyrus (STG); specifically, it is assumed that a hypoactive PFC and a hyperactive STG gives rise to AVHs and source confusions. We set out to test this assumption by trying to mimic this hypertemporal/hypofrontal model in healthy individuals with transcranial direct current stimulation (tDCS): the inhibitory cathode was placed over the left PFC and the excitatory anode over the left dorsolateral STG. Participants completed a reality monitoring task (distinguishing between external and internal memory sources) and an internal source monitoring task (distinguishing between two or more internal memory sources) in two separate experiments (offline vs. online tDCS). In the offline experiment (n = 34), both source monitoring tasks were completed after tDCS stimulation, and in the online experiment (n = 27) source monitoring tasks were completed while simultaneously being stimulated with tDCS. We found that internal source monitoring abilities were significantly enhanced during active online tDCS, while reality monitoring abilities were unaffected by stimulation in both experiments. We speculate, based on combining the present findings with previous studies, that there might be different brain areas involved in reality and internal source monitoring. While internal source monitoring seems to involve speech production areas, specifically Broca's area, as suggested in the present study, reality monitoring seems to rely more on the STG and DLPFC, as shown in other studies of the field.",
+      "score": {
+        "composite": 0.4700657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Hallucinations",
+        "Mental Recall",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Transcranial Direct Current Stimulation"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_5ee8b0d5",
+      "doi": "10.1016/j.neuropsychologia.2018.10.001",
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2018.10.001",
+      "openalex_id": null,
+      "pmid": "30326206",
+      "first_author": "Moseley",
+      "authors_display": "Moseley, P. et al.",
+      "year": 2018,
+      "title": "Investigating the roles of medial prefrontal and superior temporal cortex in source monitoring.",
+      "venue": "Neuropsychologia",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6227377",
+      "tldr": null,
+      "abstract": "Source monitoring, or the ability to recall the origin of information, is a crucial aspect of remembering past experience. One facet of this, reality monitoring, refers to the ability to distinguish between internally generated and externally generated information, biases in which have previously been associated with auditory verbal hallucinations in schizophrenia. Neuroimaging evidence suggests that medial prefrontal and superior temporal (STG) regions may play a role in reality monitoring for auditory verbal information, with evidence from a previous neurostimulation experiment also suggesting that modulation of excitability in STG may affect reality monitoring task performance. Here, two experiments are reported that used transcranial direct current stimulation (tDCS) to modulate excitability in medial prefrontal and superior temporal cortex, to further investigate the role of these brain regions in reality monitoring. In the first experiment (N = 36), tDCS was applied during the encoding stage of the task, while in the second experiment, in a separate sample (N = 36), it was applied during the test stage. There was no effect of tDCS compared to a sham condition in either experiment, with Bayesian analysis providing evidence for the null hypothesis in both cases. This suggests that tDCS applied to superior temporal or medial prefrontal regions may not affect reality monitoring performance, and has implications for theoretical models that link reality monitoring to the therapeutic effect of tDCS on auditory verbal hallucinations.",
+      "score": {
+        "composite": 0.44919737040327584,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Temporal Lobe",
+        "Humans",
+        "Hallucinations",
+        "Mental Recall",
+        "Speech Perception",
+        "Visual Perception",
+        "Psycholinguistics",
+        "Reading",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Transcranial Direct Current Stimulation"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_3e1a2a5c",
+      "doi": "10.1016/j.bbr.2016.11.042",
+      "url": "https://doi.org/10.1016/j.bbr.2016.11.042",
+      "openalex_id": null,
+      "pmid": "27908748",
+      "first_author": "Smith",
+      "authors_display": "Smith, A. et al.",
+      "year": 2017,
+      "title": "The chemotherapeutic agent paclitaxel selectively impairs learning while sparing source memory and spatial memory.",
+      "venue": "Behavioural brain research",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 25,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Chemotherapeutic agents are widely used to treat patients with systemic cancer. The efficacy of these therapies is undermined by their adverse side-effect profiles such as cognitive deficits that have a negative impact on the quality of life of cancer survivors. Cognitive side effects occur across a variety of domains, including memory, executive function, and processing speed. Such impairments are exacerbated under cognitive challenges and a subgroup of patients experience long-term impairments. Episodic memory in rats can be examined using a source memory task. In the current study, rats received paclitaxel, a taxane-derived chemotherapeutic agent, and learning and memory functioning was examined using the source memory task. Treatment with paclitaxel did not impair spatial and episodic memory, and paclitaxel treated rats were not more susceptible to cognitive challenges. Under conditions in which memory was not impaired, paclitaxel treatment impaired learning of new rules, documenting a decreased sensitivity to changes in experimental contingencies. These findings provide new information on the nature of cancer chemotherapy-induced cognitive impairments, particularly regarding the incongruent vulnerability of episodic memory and new learning following treatment with paclitaxel.",
+      "score": {
+        "composite": 0.44715895471896333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Rats",
+        "Rats, Long-Evans",
+        "Body Weight",
+        "Paclitaxel",
+        "Antineoplastic Agents, Phytogenic",
+        "Analysis of Variance",
+        "Physical Stimulation",
+        "Maze Learning",
+        "Cognition Disorders",
+        "Male",
+        "Memory, Episodic",
+        "Spatial Memory",
+        "Learning Disabilities"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_01d9b52a",
+      "doi": "10.1038/s41598-023-50687-z",
+      "url": "https://doi.org/10.1038/s41598-023-50687-z",
+      "openalex_id": null,
+      "pmid": "38167871",
+      "first_author": "Gatti",
+      "authors_display": "Gatti, D. et al.",
+      "year": 2024,
+      "title": "Semantic and episodic processes differently predict false memories in the DRM task.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10761856",
+      "tldr": null,
+      "abstract": "There is a fervent debate about the processes underpinning false memories formation. Seminal theories have suggested that semantic memory would be involved in false memories production, while episodic memory would counter their formation. Yet, direct evidence corroborating such view is still lacking. Here, we tested this possibility by asking participants to perform the Deese-Roediger-McDermott (DRM) task, a typical false memory paradigm, in which they had to study lists of words and subsequently to recognize and distinguish them from new words (i.e., the false memory items). The same participants were also required to perform a semantic task and an episodic-source memory task. Our results showed that a higher number of false memories in the DRM task occurred for those participants with better semantic memory abilities, while a lower number of false memories occurred for participants with better episodic abilities. These findings support a key role of semantic processes in false memory formation and, more generally, help clarify the specific contribution of different memory systems to false recognitions.",
+      "score": {
+        "composite": 0.4300657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cognition",
+        "Mental Recall",
+        "Semantics",
+        "Memory, Episodic"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2d5b70c9",
+      "doi": "10.3758/s13421-018-0885-6",
+      "url": "https://doi.org/10.3758/s13421-018-0885-6",
+      "openalex_id": null,
+      "pmid": "30569397",
+      "first_author": "Romeo",
+      "authors_display": "Romeo, T. et al.",
+      "year": 2019,
+      "title": "The impact of lying about a traumatic virtual reality experience on memory.",
+      "venue": "Memory & cognition",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.3758/s13421-018-0885-6.pdf",
+      "tldr": null,
+      "abstract": "The goal of the present experiment was to examine the effect of certain (deceptive) strategies (e.g., false denial) on memory. Specifically, participants were shown a traumatic virtual reality (VR) video of an airplane crash. Following this, participants (N= 94) received questions concerning details from the VR scene in a baseline memory task. Then, participants could choose from 3 options how to cope in response to having experienced the VR scene: tell the truth, falsely deny, or fabricate. The majority opted to tell the truth (n = 81). A subsample of truth tellers were instructed to falsely deny having seen certain details. One week later, all participants received a source monitoring task in which they were asked (1) whether they remembered talking about these details during an interview, and (2) whether they remembered seeing certain details during the VR experience the week before. Participants had to tell the truth during this task. Participants who were instructed to falsely deny showed impaired memory for presented details that had previously been discussed (i.e., denial-induced forgetting) and seen in the VR scene. Also, the presentation of certain details in the baseline memory task seemed to inoculate participants who were instructed to falsely deny from experiencing memory impairment. The current experiment suggests that false denials can have adverse ramifications for memory for what is discussed and seen.",
+      "score": {
+        "composite": 0.4226189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Adaptation, Psychological",
+        "Deception",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Memory, Episodic",
+        "Psychological Trauma",
+        "Virtual Reality"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_084c200b",
+      "doi": "10.1016/j.cortex.2016.11.011",
+      "url": "https://doi.org/10.1016/j.cortex.2016.11.011",
+      "openalex_id": null,
+      "pmid": "27964941",
+      "first_author": "Garrison",
+      "authors_display": "Garrison, J. et al.",
+      "year": 2017,
+      "title": "Testing continuum models of psychosis: No reduction in source monitoring ability in healthy individuals prone to auditory hallucinations.",
+      "venue": "Cortex; a journal devoted to the study of the nervous system and behavior",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 26,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5460393",
+      "tldr": null,
+      "abstract": "People with schizophrenia who hallucinate show impairments in reality monitoring (the ability to distinguish internally generated information from information obtained from external sources) compared to non-hallucinating patients and healthy individuals. While this may be explained at least in part by an increased externalizing bias, it remains unclear whether this impairment is specific to reality monitoring, or whether it also reflects a general deficit in the monitoring of self-generated information (internal source monitoring). Much interest has focused recently on continuum models of psychosis which argue that hallucination-proneness is distributed in clinical and non-clinical groups, but few studies have directly investigated reality monitoring and internal source monitoring abilities in healthy individuals with a proneness to hallucinations. Two experiments are presented here: the first (N = 47, with participants selected for hallucination-proneness from a larger sample of 677 adults) found no evidence of an impairment or externalizing bias on a reality monitoring task in hallucination-prone individuals; the second (N = 124) found no evidence of atypical performance on an internal source monitoring task in hallucination-prone individuals. The significance of these findings is reviewed in light of the clinical evidence and the implications for models of hallucination generation discussed.",
+      "score": {
+        "composite": 0.4177052228843329,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Auditory Cortex",
+        "Humans",
+        "Hallucinations",
+        "Reality Testing",
+        "Task Performance and Analysis",
+        "Psychotic Disorders",
+        "Schizophrenia",
+        "Schizophrenic Psychology",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_bfa7e160",
+      "doi": "10.1016/j.neuropsychologia.2015.09.028",
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2015.09.028",
+      "openalex_id": null,
+      "pmid": "26423665",
+      "first_author": "Ross",
+      "authors_display": "Ross, R. et al.",
+      "year": 2015,
+      "title": "Genetic variation in the serotonin transporter gene influences ERP old/new effects during recognition memory.",
+      "venue": "Neuropsychologia",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 9,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Recognition memory is defined as the ability to recognize a previously encountered stimulus and has been associated with spatially and temporally distinct event-related potentials (ERPs). Allelic variations of the serotonin transporter gene (SLC6A4) have recently been shown to impact memory performance. Common variants of the serotonin transporter-linked polymorphic region (5HTTLPR) of the SLC6A4 gene result in long (l) and short (s) allelic variants with carriers of the s allele having lowered transcriptional efficiency. Thus, the current study examines the effects polymorphisms of the SLC6A4 gene have on performance and ERP amplitudes commonly associated with recognition memory. Electroencephalogram (EEG), genetic, and behavioral data were collected from sixty participants as they performed an item and source memory recognition task. In both tasks, participants studied and encoded 200 words, which were then mixed with 200 new words during retrieval. Participants were monitored with EEG during the retrieval portion of each memory task. EEG electrodes were grouped into four ROIs, left anterior superior, right anterior superior, left posterior superior, and right posterior superior. ERP mean amplitudes during hits in the item and source memory task were compared to correctly recognizing new items (correct rejections). Results show that s-carriers have decreased mean hit amplitudes in both the right anterior superior ROI 1000-1500ms post stimulus during the source memory task and the left anterior superior ROI 300-500ms post stimulus during the item memory task. These results suggest that individual differences due to genetic variation of the serotonin transporter gene influences recognition memory.",
+      "score": {
+        "composite": 0.4133285109479927,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Catechol O-Methyltransferase",
+        "Electroencephalography",
+        "Photic Stimulation",
+        "Pattern Recognition, Visual",
+        "Neuropsychological Tests",
+        "Evoked Potentials",
+        "Heterozygote",
+        "Polymorphism, Genetic",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Serotonin Plasma Membrane Transport Proteins",
+        "Promoter Regions, Genetic",
+        "Young Adult",
+        "Executive Function",
+        "Genetic Association Studies",
+        "Genotyping Techniques",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9cc93ab7",
+      "doi": "10.1016/j.cortex.2018.12.020",
+      "url": "https://doi.org/10.1016/j.cortex.2018.12.020",
+      "openalex_id": null,
+      "pmid": "30716609",
+      "first_author": "Alderson-Day",
+      "authors_display": "Alderson-Day, B. et al.",
+      "year": 2019,
+      "title": "Intentional inhibition but not source memory is related to hallucination-proneness and intrusive thoughts in a university sample.",
+      "venue": "Cortex; a journal devoted to the study of the nervous system and behavior",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 27,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6459394",
+      "tldr": null,
+      "abstract": "Proneness to unusual perceptual states - such as auditory or visual hallucinations - has been proposed to exist on a continuum in the general population, but whether there is a cognitive basis for such a continuum remains unclear. Intentional cognitive inhibition (the ability to wilfully control thoughts and memories) is one mechanism that has been linked to auditory hallucination susceptibility, but most evidence to date has been drawn from clinical samples only. Moreover, such a link has yet to be demonstrated over and above relations to other cognitive skills (source monitoring) and cognitive states (intrusive thoughts) that often correlate with both inhibition and hallucinations. The present study deployed two tests of intentional inhibition ability - the Inhibition of Currently Irrelevant Memories (ICIM) task and Directed Forgetting (DF) task - and one test of source monitoring (a source memory task) to examine how cognitive task performance relates to self-reported i) auditory hallucination-proneness and ii) susceptibility to intrusive thoughts in a non-clinical student sample (N = 76). Hierarchical regression analyses were used to assess the independent and combined contributions of task performance to proneness scores. ICIM performance but not DF or source memory scores were significantly related to both hallucination-proneness and intrusive thoughts. Further analysis suggested that intrusive thoughts may mediate the link between intentional inhibition skills and auditory hallucination-proneness, suggesting a potential pathway from inhibition to perception via intrusions in cognition. The implications for studying cognitive mechanisms of hallucination and their role in \"continuum\" views of psychosis-like experiences are discussed.",
+      "score": {
+        "composite": 0.3882316222910648,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Hallucinations",
+        "Cognition",
+        "Memory",
+        "Psychotic Disorders",
+        "Neuropsychological Tests",
+        "Models, Psychological",
+        "Students",
+        "Universities",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Executive Function",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_834e5f15",
+      "doi": "10.1016/j.neuropsychologia.2009.04.010",
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2009.04.010",
+      "openalex_id": null,
+      "pmid": "19383503",
+      "first_author": "Hayama",
+      "authors_display": "Hayama, H., & Rugg, M.",
+      "year": 2009,
+      "title": "Right dorsolateral prefrontal cortex is engaged during post-retrieval processing of both episodic and semantic information.",
+      "venue": "Neuropsychologia",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 78,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Post-retrieval processes are engaged when the outcome of a retrieval attempt must be monitored or evaluated. Functional neuroimaging studies have implicated right dorsolateral prefrontal cortex (DLPFC) as playing a role in post-retrieval processing. The present study used fMRI to investigate whether retrieval-related neural activity in DLPFC is associated specifically with monitoring the episodic content of a retrieval attempt. During study, subjects were cued to make one of two semantic judgments on serially presented pictures. One study phase was followed by a source memory task, in which subjects responded 'new' to unstudied pictures, and signaled the semantic judgment made on each studied picture. A separate study phase was followed by a task in which the studied items were subjected to a judgment about their semantic attributes. Both tasks required that retrieved information be evaluated prior to response selection, but only the source memory task required evaluation of retrieved episodic information. In both tasks, activity in a common region of right DLPFC was greater for studied than for unstudied items, and the magnitude of this effect did not differ between the tasks. Together with the results of a parallel event-related potential study [Hayama, H. R., Johnson, J. D., & Rugg, M. D. (2008). The relationship between the right frontal old/new ERP effect and post-retrieval monitoring: Specific or non-specific? Neuropsychologia, 46(5), 1211-1223, doi:S0028-3932(07)00390-9], the present findings indicate that putative right DLPFC correlates of post-retrieval processing are not associated exclusively with monitoring or evaluating episodic content. Rather, the effects likely reflect processing associated with monitoring or decision-making in multiple cognitive domains.",
+      "score": {
+        "composite": 0.38324508528728113,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2529803411491245,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06324508528728112,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Analysis of Variance",
+        "Cues",
+        "Mental Recall",
+        "Pattern Recognition, Visual",
+        "Judgment",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Time Factors",
+        "Semantics",
+        "Image Processing, Computer-Assisted",
+        "Female",
+        "Male",
+        "Functional Laterality"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_4eb1a52c",
+      "doi": "10.1016/j.neuropsychologia.2007.11.021",
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2007.11.021",
+      "openalex_id": null,
+      "pmid": "18234241",
+      "first_author": "Hayama",
+      "authors_display": "Hayama, H. et al.",
+      "year": 2008,
+      "title": "The relationship between the right frontal old/new ERP effect and post-retrieval monitoring: specific or non-specific?",
+      "venue": "Neuropsychologia",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 96,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Post-retrieval processes are thought to be engaged when the outcome of an attempt to retrieve information from long-term memory must be monitored or evaluated. Previous research employing event-related potentials (ERPs) has implicated a specific ERP modulation - the 'right frontal old/new effect' - as a correlate of post-retrieval processing. In two experiments we examined whether the right frontal effect is specifically associated with processing of the products of an episodic retrieval attempt. During study, subjects in both experiments made one of two semantic judgments on serially presented pictures. In experiment 1, one study phase was followed by a source memory task, in which subjects responded 'new' to unstudied pictures and signaled the semantic judgment made on each studied picture. A separate study phase was followed by a task in which the studied items required a judgment about their semantic attributes. Robust right frontal effects were elicited by old items in both tasks, indicating that the effects are not selective for the monitoring of the content of information retrieved from episodic memory. In experiment 2, separate study phases were followed by test phases where semantic judgments were made either on old items (as in experiment 1), or on new items. Right frontal effects were elicited by whichever class of items, old or new, required the semantic judgment. Together, these findings indicate that the right frontal old/new effect reflects generic monitoring or decisional processes, rather than processing dedicated to the evaluation of the products of an episodic retrieval attempt.",
+      "score": {
+        "composite": 0.3762161434966551,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2648645739866204,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0662161434966551,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Humans",
+        "Electroencephalography",
+        "Brain Mapping",
+        "Analysis of Variance",
+        "Photic Stimulation",
+        "Memory",
+        "Mental Recall",
+        "Psychomotor Performance",
+        "Reaction Time",
+        "Evoked Potentials",
+        "Fixation, Ocular",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Functional Laterality",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_50ba2a8e",
+      "doi": "10.1016/j.cortex.2016.09.011",
+      "url": "https://doi.org/10.1016/j.cortex.2016.09.011",
+      "openalex_id": null,
+      "pmid": "28029355",
+      "first_author": "Liang",
+      "authors_display": "Liang, J., & Preston, A.",
+      "year": 2017,
+      "title": "Medial temporal lobe reinstatement of content-specific details predicts source memory.",
+      "venue": "Cortex; a journal devoted to the study of the nervous system and behavior",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 35,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Leading theories propose that when remembering past events, medial temporal lobe (MTL) structures reinstate the neural patterns that were active when those events were initially encoded. Accurate reinstatement is hypothesized to support detailed recollection of memories, including their source. While several studies have linked cortical reinstatement to successful retrieval, indexing reinstatement within the MTL network and its relationship to memory performance has proved challenging. Here, we addressed this gap in knowledge by having participants perform an incidental encoding task, during which they visualized people, places, and objects in response to adjective cues. During a surprise memory test, participants saw studied and novel adjectives and indicated the imagery task they performed for each adjective. A multivariate pattern classifier was trained to discriminate the imagery tasks based on functional magnetic resonance imaging (fMRI) responses from hippocampus and MTL cortex at encoding. The classifier was then tested on MTL patterns during the source memory task. We found that MTL encoding patterns were reinstated during successful source retrieval. Moreover, when participants made source misattributions, errors were predicted by reinstatement of incorrect source content in MTL cortex. We further observed a gradient of content-specific reinstatement along the anterior-posterior axis of hippocampus and MTL cortex. Within anterior hippocampus, we found that reinstatement of person content was related to source memory accuracy, whereas reinstatement of place information across the entire hippocampal axis predicted correct source judgments. Content-specific reinstatement was also graded across MTL cortex, with PRc patterns evincing reactivation of people and more posterior regions, including PHc, showing evidence for reinstatement of places and objects. Collectively, these findings provide key evidence that source recollection relies on reinstatement of past e",
+      "score": {
+        "composite": 0.371869244935211,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Temporal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Memory",
+        "Neuropsychological Tests",
+        "Image Processing, Computer-Assisted",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_147a6ef6",
+      "doi": "10.1016/j.nicl.2017.01.028",
+      "url": "https://doi.org/10.1016/j.nicl.2017.01.028",
+      "openalex_id": null,
+      "pmid": "28203529",
+      "first_author": "Garrison",
+      "authors_display": "Garrison, J. et al.",
+      "year": 2017,
+      "title": "Reality monitoring impairment in schizophrenia reflects specific prefrontal cortex dysfunction.",
+      "venue": "NeuroImage. Clinical",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 34,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5292760",
+      "tldr": null,
+      "abstract": "Reality monitoring impairment is often reported in schizophrenia but the neural basis of this deficit is poorly understood. Difficulties with reality monitoring could be attributable to the same pattern of neural dysfunction as other cognitive deficits that characterize schizophrenia, or might instead represent a separable and dissociable impairment. This question was addressed through direct comparison of behavioral performance and neural activity associated with reality monitoring and working memory in patients with schizophrenia and matched healthy controls. Participants performed a word-pair reality monitoring task and a Sternberg working memory task while undergoing fMRI scanning. Distinct behavioral deficits were observed in the patients during performance of each task, which were associated with separable task- and region-specific dysfunction in the medial anterior prefrontal cortex for reality monitoring and dorsolateral prefrontal cortex for working memory. The results suggest that reality monitoring impairment is a distinct neurocognitive deficit in schizophrenia. The findings are consistent with the presence of a range of dissociable cognitive deficits in schizophrenia which may be associated with variable functional and structural dysconnectivity in underlying processing networks.",
+      "score": {
+        "composite": 0.3714614887205739,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Neural Pathways",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Analysis of Variance",
+        "Association Learning",
+        "Memory, Short-Term",
+        "Cognition Disorders",
+        "Schizophrenia",
+        "Neuropsychological Tests",
+        "Image Processing, Computer-Assisted",
+        "Adult",
+        "Female",
+        "Male",
+        "Functional Laterality"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c0108ae7",
+      "doi": "10.1371/journal.pone.0207515",
+      "url": "https://doi.org/10.1371/journal.pone.0207515",
+      "openalex_id": null,
+      "pmid": "30458021",
+      "first_author": "Yang",
+      "authors_display": "Yang, L. et al.",
+      "year": 2018,
+      "title": "East-West cultural differences in encoding objects in imagined social contexts.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0207515&type=printable",
+      "tldr": null,
+      "abstract": "It has been shown in literature that East Asians are more inclined to process context information than individuals in Western cultures. Using a context memory task that requires studying object images in social contexts (i.e., rating objects in an imagined social or experiential scenario), our recent study revealed an age-invariant advantage for Chinese young and older participants compared to their Canadian counterparts in memory for encoding contexts. To examine whether this cultural difference also occurred during encoding, this follow-up report analyzed encoding performance and its relationship to subsequent memory based on the same data from the same task of the same sample. The results revealed that at encoding, Chinese participants provided higher ratings of objects, took longer to rate, and reported more vivid imagery of encoding contexts relative to their Canadian counterparts. Furthermore, only Chinese participants rated objects with recognized context at retrieval higher and slower relative to those with misrecognized context. For Chinese participants, primarily older adults, slower ratings were only related to better context memory but not item memory. Importantly, Chinese participants' context memory advantage disappeared after controlling for encoding differences. Taken together, these results suggest that Chinese participants' memory advantage for social contexts may have its origin in the construction of elaborative and meaningful object-context associations at encoding.",
+      "score": {
+        "composite": 0.37,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Brain Mapping",
+        "Imagination",
+        "Memory",
+        "Mental Recall",
+        "Neuropsychological Tests",
+        "Cultural Diversity",
+        "Adolescent",
+        "Aged",
+        "Canada",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Asian People",
+        "White People"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_90cb4440",
+      "doi": "10.1093/cercor/bht289",
+      "url": "https://doi.org/10.1093/cercor/bht289",
+      "openalex_id": null,
+      "pmid": "24152545",
+      "first_author": "Daselaar",
+      "authors_display": "Daselaar, S. et al.",
+      "year": 2015,
+      "title": "Less wiring, more firing: low-performing older adults compensate for impaired white matter with greater neural activity.",
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 111,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The reliable neuroimaging finding that older adults often show greater activity (over-recruitment) than younger adults is typically attributed to compensation. Yet, the neural mechanisms of over-recruitment in older adults (OAs) are largely unknown. Rodent electrophysiology studies have shown that as number of afferent fibers within a circuit decreases with age, the fibers that remain show higher synaptic field potentials (less wiring, more firing). Extrapolating to system-level measures in humans, we proposed and tested the hypothesis that greater activity in OAs compensates for impaired white-matter connectivity. Using a neuropsychological test battery, we measured individual differences in executive functions associated with the prefrontal cortex (PFC) and memory functions associated with the medial temporal lobes (MTLs). Using event-related functional magnetic resonance imaging, we compared activity for successful versus unsuccessful trials during a source memory task. Finally, we measured white-matter integrity using diffusion tensor imaging. The study yielded 3 main findings. First, low-executive OAs showed greater success-related activity in the PFC, whereas low-memory OAs showed greater success-related activity in the MTLs. Second, low-executive OAs displayed white-matter deficits in the PFC, whereas low-memory OAs displayed white-matter deficits in the MTLs. Finally, in both prefrontal and MTL regions, white-matter decline and success-related activations occurred in close proximity and were negatively correlated. This finding supports the less-wiring-more-firing hypothesis, which provides a testable account of compensatory over-recruitment in OAs.",
+      "score": {
+        "composite": 0.3682973853033872,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2731895412135488,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0682973853033872,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Temporal Lobe",
+        "Neural Pathways",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Memory",
+        "Neuropsychological Tests",
+        "Aging",
+        "Aged",
+        "Female",
+        "Male",
+        "Diffusion Tensor Imaging",
+        "Executive Function",
+        "White Matter"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_92f151a2",
+      "doi": "10.1093/cercor/bhac022",
+      "url": "https://doi.org/10.1093/cercor/bhac022",
+      "openalex_id": null,
+      "pmid": "35169831",
+      "first_author": "Hoffman",
+      "authors_display": "Hoffman, L. et al.",
+      "year": 2022,
+      "title": "The fornix supports episodic memory during childhood.",
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 11,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Episodic memory relies on the coordination of widespread brain regions that reconstruct spatiotemporal details of an episode. These topologically dispersed brain regions can rapidly communicate through structural pathways. Research in animal and human lesion studies implicate the fornix-the major output pathway of the hippocampus-in supporting various aspects of episodic memory. Because episodic memory undergoes marked changes in early childhood, we tested the link between the fornix and episodic memory in an age window of robust memory development (ages 4-8 years). Children were tested on the stories subtest from the Children's Memory Scale, a temporal order memory task, and a source memory task. Fornix streamlines were reconstructed using probabilistic tractography to estimate fornix microstructure. In addition, we measured fornix macrostructure and computed free water. To assess selectivity of our findings, we also reconstructed the uncinate fasciculus. Findings show that children's memory increases from ages 4 to 8 and that fornix micro- and macrostructure increases between ages 4 and 8. Children's memory performance across nearly every memory task correlated with individual differences in fornix, but not uncinate fasciculus, white matter. These findings suggest that the fornix plays an important role in supporting the development of episodic memory, and potentially semantic memory, in early childhood.",
+      "score": {
+        "composite": 0.3659675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Nerve Net",
+        "Humans",
+        "Child",
+        "Child, Preschool",
+        "Fornix, Brain",
+        "Memory, Episodic",
+        "White Matter"
+      ]
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_683045d5",
+      "doi": "10.1037/pne0000161",
+      "url": "https://doi.org/10.1037/pne0000161",
+      "openalex_id": null,
+      "pmid": "31178983",
+      "first_author": "Kraemer",
+      "authors_display": "Kraemer, K. et al.",
+      "year": 2019,
+      "title": "Cognitive Reserve Moderates Older Adults' Memory Errors in Autobiographical Reality Monitoring Task.",
+      "venue": "Psychology & neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants,subjects)"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "False memory rates differ in individuals with high versus low cognitive reserve and between young-old and old-old age groups. Here we tested how two types of false memory (false alarms to new items and source memory) in two age groups differed with cognitive reserve. Subjects were presented with words and either instructed to generate a past event from their memory associated with the word or to imagine a future event associated with the word. At test, participants were instructed to determine whether the event was a past, future, or new event. Results showed overall false memory rates were lower for young-old adults and those with high reserve. Critically, low cognitive reserve was most associated with source memory errors in young-old but not old-old adults. Reflecting the opposite pattern, false alarms to new items were most associated with low cognitive reserve for old-old, but not young-old adults. These results seem to suggest two different classes of false memories in old age. That is, cognitive reserve was most protective for familiar lures in earlier stages of old age, whereas it was most protective for new lures in later stages of old age. These results support the idea that retrieval monitoring deteriorates with age, potentially due to declines in working memory capacity, but that the decline may be attenuated by cognitive reserve. Furthermore, we suggest that different levels of working memory capacity may be required for monitoring source memory versus item memory, leading to differential effects of cognitive reserve depending upon age.",
+      "score": {
+        "composite": 0.3632956294418316,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4815da76",
+      "doi": "10.3389/fnhum.2018.00082",
+      "url": "https://doi.org/10.3389/fnhum.2018.00082",
+      "openalex_id": null,
+      "pmid": "29559903",
+      "first_author": "Subramaniam",
+      "authors_display": "Subramaniam, K. et al.",
+      "year": 2018,
+      "title": "Reality Monitoring and Feedback Control of Speech Production Are Related Through Self-Agency.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subjects)"
+      ],
+      "citation_count": 32,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://escholarship.org/uc/item/1zw072n0",
+      "tldr": null,
+      "abstract": "Self-agency is the experience of being the agent of one's own thoughts and motor actions. The intact experience of self-agency is necessary for successful interactions with the outside world (i.e., reality monitoring) and for responding to sensory feedback of our motor actions (e.g., speech feedback control). Reality monitoring is the ability to distinguish internally self-generated information from outside reality (externally-derived information). In the present study, we examined the relationship of self-agency between lower-level speech feedback monitoring (i.e., monitoring what we hear ourselves say) and a higher-level cognitive reality monitoring task. In particular, we examined whether speech feedback monitoring and reality monitoring were driven by the capacity to experience self-agency-the ability to make <i>reliable</i> predictions about the outcomes of self-generated actions. During the reality monitoring task, subjects made judgments as to whether information was previously self-generated (self-agency judgments) or externally derived (external-agency judgments). During speech feedback monitoring, we assessed self-agency by altering environmental auditory feedback so that subjects listened to a perturbed version of their own speech. When subjects heard minimal perturbations in their auditory feedback while speaking, they made corrective responses, indicating that they judged the perturbations as errors in their speech output. We found that self-agency judgments in the reality-monitoring task were higher in people who had smaller corrective responses (<i>p</i> = 0.05) and smaller inter-trial variability (<i>p</i> = 0.03) during minimal pitch perturbations of their auditory feedback. These results provide support for a unitary process for the experience of self-agency governing low-level speech control and higher level reality monitoring.",
+      "score": {
+        "composite": 0.36060980846989976,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4f6f700d",
+      "doi": "10.1002/bsl.2566",
+      "url": "https://doi.org/10.1002/bsl.2566",
+      "openalex_id": null,
+      "pmid": "35194828",
+      "first_author": "Bücken",
+      "authors_display": "Bücken, C. et al.",
+      "year": 2022,
+      "title": "Simulating denial increases false memory rates for abuse unrelated information.",
+      "venue": "Behavioral sciences & the law",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1002/bsl.2566",
+      "tldr": null,
+      "abstract": "Victims of abuse might deny their traumatic experiences. We studied mnemonic effects of simulating false denial of a child sexual abuse narrative. Participants (N = 127) read and empathized with the main character of this narrative. Next, half were instructed to falsely deny abuse-related information while others responded honestly in an interview. One week later, participants received misinformation for the narrative and interview. In a final source memory task, participants' memory for the narrative and interview was tested. Participants who falsely denied abuse-related information endorsed more abuse-unrelated misinformation about the event than honest participants. Abuse-related false memory rates did not statistically differ between the groups, and false denials were not related to omission errors about (1) the interview and (2) narrative. Hence, victim's memory for abuse-related information related to their experience might not be affected by a false denial, and inconsistencies surrounding the abuse-unrelated information are more likely to take place.",
+      "score": {
+        "composite": 0.35593462246760554,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Narration",
+        "Communication",
+        "Memory",
+        "Mental Recall",
+        "Child Abuse, Sexual",
+        "Child"
+      ]
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_57028349",
+      "doi": "10.3389/fpsyg.2021.716336",
+      "url": "https://doi.org/10.3389/fpsyg.2021.716336",
+      "openalex_id": null,
+      "pmid": "34650480",
+      "first_author": "Dolgoarshinnaia",
+      "authors_display": "Dolgoarshinnaia, A., & Martin-Luengo, B.",
+      "year": 2021,
+      "title": "False Memories in Native and Foreign Languages.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,participants)"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.3389/fpsyg.2021.716336",
+      "tldr": null,
+      "abstract": "Human memory is prone to memory errors and distortion. Evidence from studies on cognitive functions in bilinguals indicates that they might be prone to different types of memory errors compared to monolinguals; however, the effect of language in false memories is still understudied. Source monitoring processes required for proper memory functioning, presumably, rely on inhibitory control, which is also heavily utilized by bilinguals. Moreover, it is suggested that thinking in a second language leads to more systematic and deliberate reasoning. All these results lead to expect that bilinguals are more analytical when processing information in their second language overcoming some memory errors depending on the language of information. To test this hypothesis, we run a classical misinformation experiment with an explicit source monitoring task with a sample of Russian-English bilinguals. The language of the misinformation presentation did not affect the degree of the misinformation effect between the Russian and English languages. Source monitoring demonstrated an overall higher accuracy for attributions to the English source over the Russian source. Furthermore, analysis on incorrect source attributions showed that when participants misattributed the sources of false information (English or Russian narrative), they favored the Russian source over the not presented condition. Taken together, these results imply that high proficiency in the second language does not affect misinformation and that information processing and memory monitoring in bilinguals can differ depending on the language of the information, which seems to lead to some memory errors and not others.",
+      "score": {
+        "composite": 0.35590174096144434,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a17f9ba0",
+      "doi": "10.1162/jocn_a_00086",
+      "url": "https://doi.org/10.1162/jocn_a_00086",
+      "openalex_id": null,
+      "pmid": "21736454",
+      "first_author": "Hayes",
+      "authors_display": "Hayes, S. et al.",
+      "year": 2011,
+      "title": "Neural correlates of confidence during item recognition and source memory retrieval: evidence for both dual-process and strength memory theories.",
+      "venue": "Journal of cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 41,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Although the medial-temporal lobes (MTL), PFC, and parietal cortex are considered primary nodes in the episodic memory network, there is much debate regarding the contributions of MTL, PFC, and parietal subregions to recollection versus familiarity (dual-process theory) and the feasibility of accounts on the basis of a single memory strength process (strength theory). To investigate these issues, the current fMRI study measured activity during retrieval of memories that differed quantitatively in terms of strength (high vs. low-confidence trials) and qualitatively in terms of recollection versus familiarity (source vs. item memory tasks). Support for each theory varied depending on which node of the episodic memory network was considered. Results from MTL best fit a dual-process account, as a dissociation was found between a right hippocampal region showing high-confidence activity during the source memory task and bilateral rhinal regions showing high-confidence activity during the item memory task. Within PFC, several left-lateralized regions showed greater activity for source than item memory, consistent with recollective orienting, whereas a right-lateralized ventrolateral area showed low-confidence activity in both tasks, consistent with monitoring processes. Parietal findings were generally consistent with strength theory, with dorsal areas showing low-confidence activity and ventral areas showing high-confidence activity in both tasks. This dissociation fits with an attentional account of parietal functions during episodic retrieval. The results suggest that both dual-process and strength theories are partly correct, highlighting the need for an integrated model that links to more general cognitive theories to account for observed neural activity during episodic memory retrieval.",
+      "score": {
+        "composite": 0.3541004817463479,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Brain Mapping",
+        "Photic Stimulation",
+        "Judgment",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Memory, Episodic",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 24,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_f26dcb94",
+      "doi": "10.1007/s10071-016-1040-z",
+      "url": "https://doi.org/10.1007/s10071-016-1040-z",
+      "openalex_id": null,
+      "pmid": "27709367",
+      "first_author": "Smith",
+      "authors_display": "Smith, A. et al.",
+      "year": 2017,
+      "title": "A test of the reward-value hypothesis.",
+      "venue": "Animal cognition",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 8,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Rats retain source memory (memory for the origin of information) over a retention interval of at least 1 week, whereas their spatial working memory (radial maze locations) decays within approximately 1 day. We have argued that different forgetting functions dissociate memory systems. However, the two tasks, in our previous work, used different reward values. The source memory task used multiple pellets of a preferred food flavor (chocolate), whereas the spatial working memory task provided access to a single pellet of standard chow-flavored food at each location. Thus, according to the reward-value hypothesis, enhanced performance in the source memory task stems from enhanced encoding/memory of a preferred reward. We tested the reward-value hypothesis by using a standard 8-arm radial maze task to compare spatial working memory accuracy of rats rewarded with either multiple chocolate or chow pellets at each location using a between-subjects design. The reward-value hypothesis predicts superior accuracy for high-valued rewards. We documented equivalent spatial memory accuracy for high- and low-value rewards. Importantly, a 24-h retention interval produced equivalent spatial working memory accuracy for both flavors. These data are inconsistent with the reward-value hypothesis and suggest that reward value does not explain our earlier findings that source memory survives unusually long retention intervals.",
+      "score": {
+        "composite": 0.35180348192288863,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Rats",
+        "Maze Learning",
+        "Memory, Short-Term",
+        "Reward",
+        "Spatial Memory"
+      ]
+    },
+    {
+      "rank": 25,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5bff90d4",
+      "doi": "10.1002/hbm.20487",
+      "url": "https://doi.org/10.1002/hbm.20487",
+      "openalex_id": null,
+      "pmid": "17979123",
+      "first_author": "Kim",
+      "authors_display": "Kim, Y. et al.",
+      "year": 2009,
+      "title": "Cortical network dynamics during source memory retrieval: current density imaging with individual MRI.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "We investigated the neural correlates of source memory retrieval using low-resolution electromagnetic tomography (LORETA) with 64 channels EEG and individual MRI as a realistic head model. Event-related potentials (ERPs) were recorded while 13 healthy subjects performed the source memory task for the voice of the speaker in spoken words. The source correct condition of old words elicited more positive-going potentials than the correct rejection condition of new words at 400-700 ms post-stimulus and the old/new effects also appeared in the right anterior region between 1,000 and 1,200 ms. We conducted source reconstruction at mean latencies of 311, 604, 793, and 1,100 ms and used statistical parametric mapping for the statistical analysis. The results of source analysis suggest that the activation of the right inferior parietal region may reflect retrieval of source information. The source elicited by the difference ERPs between the source correct and source incorrect conditions exhibited dynamic change of current density activation in the overall cortices with time during source memory retrieval. These results indicate that multiple neural systems may underlie the ability to recollect context.",
+      "score": {
+        "composite": 0.3500986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Parietal Lobe",
+        "Nerve Net",
+        "Neural Pathways",
+        "Neurons",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Acoustic Stimulation",
+        "Brain Mapping",
+        "Data Interpretation, Statistical",
+        "Memory",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Evoked Potentials",
+        "Action Potentials",
+        "Signal Processing, Computer-Assisted",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Functional Laterality",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 26,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_03c4641f",
+      "doi": "10.1016/j.cortex.2017.01.022",
+      "url": "https://doi.org/10.1016/j.cortex.2017.01.022",
+      "openalex_id": null,
+      "pmid": "28245935",
+      "first_author": "Deason",
+      "authors_display": "Deason, R. et al.",
+      "year": 2017,
+      "title": "The use of metacognitive strategies to decrease false memories in source monitoring in patients with mild cognitive impairment.",
+      "venue": "Cortex; a journal devoted to the study of the nervous system and behavior",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Patients with amnestic mild cognitive impairment (MCI) and Alzheimer's disease (AD) often demonstrate high rates of false memories, leading to stressful and frustrating situations for both patients and caregivers in everyday life. Sometimes these false memories are due to failures in monitoring the source of the information. In the current study, we examined interventions aimed to enhance the use of the metacognitive \"recall-to-reject\" memory strategy. Such interventions could improve source memory and decrease false memory in patients with MCI. Because the picture superiority effect (better memory for pictures compared to words) has been shown to be present in both patients with MCI and healthy older controls, we investigated whether pictures could help patients with MCI use a recall-to-reject strategy in a simulation of real-world source memory task. In this experiment, patients with MCI and healthy older adults were asked to simulate preparing for and then taking a trip to the market. Subjects first studied 30 pictures of items in their \"cupboard,\" followed by a list of 30 words of items on their \"shopping list.\" At test, participants saw 90 pictures (30 cupboard, 30 list, 30 new) organized as they would be if walking down the market aisles, and are provided with either standard or metacognitive instructions. With standard instructions, they were asked if they needed to buy the item. With the metacognitive instructions, they were asked a series of questions to help guide them through a recall-to-reject strategy to highlight the different sources of memories. Results showed that the metacognitive instructions did significantly reduce the false memory rates for patients with MCI. Further studies need to investigate how to best implement these practical strategies into the everyday lives of patients.",
+      "score": {
+        "composite": 0.3481658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Alzheimer Disease",
+        "Memory",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Metacognition",
+        "Cognitive Dysfunction"
+      ]
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_49c88e4a",
+      "doi": "10.3389/fnagi.2019.00017",
+      "url": "https://doi.org/10.3389/fnagi.2019.00017",
+      "openalex_id": null,
+      "pmid": "30804777",
+      "first_author": "Cansino",
+      "authors_display": "Cansino, S. et al.",
+      "year": 2019,
+      "title": "Predictors of Source Memory Success and Failure in Older Adults.",
+      "venue": "Frontiers in aging neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fnagi.2019.00017/pdf",
+      "tldr": null,
+      "abstract": "Source memory decline has been identified as one of the types of memory most seriously affected during older age. It refers to our capacity to recollect the contextual information in which our experiences take place. Although most elderly adults will be affected by progressive source memory decline, a subset of individuals will not follow this average pattern; instead, their source memory capabilities will remain functional. Likewise, a minority of individuals will manifest an extreme decay of their source memory abilities. The objective of the present study was to identify among 120 potential predictors that significantly contributed to these two extreme source memory outcomes. Spatial source memory was measured in a sample of 519 healthy individuals between 61 and 80 years old. Individuals who performed below the 20th and above the 80th percentiles in the source memory task were defined as individuals whose episodic memory failed and succeeded, respectively. Logistic models identified five and six significant predictors of source memory success and failure in older age, respectively. High source memory performance was mainly predicted by healthy cardiovascular markers and psychological traits, whereas low source memory performance was primarily predicted by consumption habits and by less engagement in mental activities. The models identified relevant biological and life experiences that underlie these unusual source memory outcomes in older age.",
+      "score": {
+        "composite": 0.34593462246760553,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_0ee19062",
+      "doi": "10.1162/jocn.2010.21442",
+      "url": "https://doi.org/10.1162/jocn.2010.21442",
+      "openalex_id": null,
+      "pmid": "20146595",
+      "first_author": "Galli",
+      "authors_display": "Galli, G., & Otten, L.",
+      "year": 2011,
+      "title": "Material-specific neural correlates of recollection: objects, words, and faces.",
+      "venue": "Journal of cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 22,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "It is unclear how neural correlates of episodic memory retrieval differ depending on the type of material that is retrieved. Here, we used a source memory task to compare electrical brain activity for the recollection of three types of stimulus material. At study, healthy adults judged how well visually presented objects, words, and faces fitted with paired auditorily presented names of locations. At test, only visual stimuli were presented. The task was to decide whether an item had been presented earlier and, if so, what location had been paired with the item. Stimulus types were intermixed across trials in Experiment 1 and presented in separate study-test lists in Experiment 2. A graded pattern of memory performance was observed across objects, words, and faces in both experiments. Between 300 and 500 msec, event-related potentials for recollected objects and faces showed a more frontal scalp distribution compared to words in both experiments. Later in the recording epoch, all three stimulus materials elicited recollection effects over left posterior scalp sites. However, these effects extended more anteriorly for objects and faces when stimulus categories were blocked. These findings demonstrate that the neural correlates of recollection are material specific, the crucial difference being between pictorial and verbal material. Faces do not appear to have a special status. The sensitivity of recollection effects to the kind of experimental design suggests that, in addition to type of stimulus material, higher-level control processes affect the cognitive and neural mechanisms underlying episodic retrieval.",
+      "score": {
+        "composite": 0.3453843610908988,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Face",
+        "Cerebral Cortex",
+        "Humans",
+        "Acoustic Stimulation",
+        "Photic Stimulation",
+        "Psychomotor Performance",
+        "Reaction Time",
+        "Word Association Tests",
+        "Names",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Memory, Episodic",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_d458ff9c",
+      "doi": "10.1016/j.nicl.2014.08.006",
+      "url": "https://doi.org/10.1016/j.nicl.2014.08.006",
+      "openalex_id": null,
+      "pmid": "25610794",
+      "first_author": "Hawco",
+      "authors_display": "Hawco, C. et al.",
+      "year": 2015,
+      "title": "Source retrieval is not properly differentiated from object retrieval in early schizophrenia: an fMRI study using virtual reality.",
+      "venue": "NeuroImage. Clinical",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4297883",
+      "tldr": null,
+      "abstract": "Source memory, the ability to identify the context in which a memory occurred, is impaired in schizophrenia and has been related to clinical symptoms such as hallucinations. The neurobiological underpinnings of this deficit are not well understood. Twenty-five patients with recent onset schizophrenia (within the first 4.5 years of treatment) and twenty-four healthy controls completed a source memory task. Participants navigated through a 3D virtual city, and had 20 encounters of an object with a person at a place. Functional magnetic resonance imaging was performed during a subsequent forced-choice recognition test. Two objects were presented and participants were asked to either identify which object was seen (new vs. old object recognition), or identify which of the two old objects was associated with either the person or the place being presented (source memory recognition). Source memory was examined by contrasting person or place with object. Both patients and controls demonstrated significant neural activity to source memory relative to object memory, though activity in controls was much more widespread. Group differences were observed in several regions, including the medial parietal and cingulate cortex, lateral frontal lobes and right superior temporal gyrus. Patients with schizophrenia did not differentiate between source and object memory in these regions. Positive correlations with hallucination proneness were observed in the left frontal and right middle temporal cortices and cerebellum. Patients with schizophrenia have a deficit in the neural circuits which facilitate source memory, which may underlie both the deficits in this domain and be related to auditory hallucinations.",
+      "score": {
+        "composite": 0.33919737040327586,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Memory",
+        "Schizophrenia",
+        "Image Processing, Computer-Assisted",
+        "User-Computer Interface",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_eb797b0b",
+      "doi": "10.1111/psyp.14602",
+      "url": "https://doi.org/10.1111/psyp.14602",
+      "openalex_id": null,
+      "pmid": "38715221",
+      "first_author": "Wynn",
+      "authors_display": "Wynn, S. et al.",
+      "year": 2024,
+      "title": "The role of theta and gamma oscillations in item memory, source memory, and memory confidence.",
+      "venue": "Psychophysiology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Theta and gamma oscillations have been linked to episodic memory processes in various studies. Both oscillations seem to be vital for processes guided by the medial temporal lobe, such as the retrieval of information from memory. While theta oscillations increase with successful memory, it is unclear what the unique contribution of theta is to various subcomponents of memory. On the other hand, memory-related gamma oscillations have been mainly reported in the hippocampus, leaving the role of neocortical gamma in memory underexplored. In this study, we investigated how unique variability in memory accuracy and memory confidence contributes to fluctuations in theta and gamma power. To this end, we recorded EEG from 54 participants while they performed a source memory task. From this task we obtained their item memory accuracy, source memory accuracy, item memory confidence, and source memory confidence. These behavioral measures were put in a trial-by-trial linear mixed effects model to uncover their unique contribution to the oscillatory power in frontal and parietal regions. Our results are in line with the involvement of theta oscillations in both memory accuracy and confidence, but seem to indicate a main role for theta oscillations in memory-related confidence. In addition, we found that gamma oscillations play various roles in memory processing, dependent on brain region.",
+      "score": {
+        "composite": 0.3381658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Parietal Lobe",
+        "Humans",
+        "Electroencephalography",
+        "Theta Rhythm",
+        "Memory",
+        "Mental Recall",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Memory, Episodic",
+        "Gamma Rhythm"
+      ]
+    },
+    {
+      "rank": 31,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_8910dcf1",
+      "doi": "10.1016/j.beproc.2017.09.018",
+      "url": "https://doi.org/10.1016/j.beproc.2017.09.018",
+      "openalex_id": null,
+      "pmid": "28965970",
+      "first_author": "Dalecki",
+      "authors_display": "Dalecki, S. et al.",
+      "year": 2017,
+      "title": "A test of the reward-contrast hypothesis.",
+      "venue": "Behavioural processes",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Source memory, a facet of episodic memory, is the memory of the origin of information. Whereas source memory in rats is sustained for at least a week, spatial memory degraded after approximately a day. Different forgetting functions may suggest that two memory systems (source memory and spatial memory) are dissociated. However, in previous work, the two tasks used baiting conditions consisting of chocolate and chow flavors; notably, the source memory task used the relatively better flavor. Thus, according to the reward-contrast hypothesis, when chocolate and chow were presented within the same context (i.e., within a single radial maze trial), the chocolate location was more memorable than the chow location because of contrast. We tested the reward-contrast hypothesis using baiting configurations designed to produce reward-contrast. The reward-contrast hypothesis predicts that under these conditions, spatial memory will survive a 24-h retention interval. We documented elimination of spatial memory performance after a 24-h retention interval using a reward-contrast baiting pattern. These data suggest that reward contrast does not explain our earlier findings that source memory survives unusually long retention intervals.",
+      "score": {
+        "composite": 0.3359017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Rats",
+        "Rats, Long-Evans",
+        "Motivation",
+        "Association Learning",
+        "Maze Learning",
+        "Reward",
+        "Attention",
+        "Taste",
+        "Male",
+        "Spatial Memory",
+        "Retention, Psychology"
+      ]
+    },
+    {
+      "rank": 32,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1572dcb3",
+      "doi": "10.1093/cercor/bhr334",
+      "url": "https://doi.org/10.1093/cercor/bhr334",
+      "openalex_id": null,
+      "pmid": "22114083",
+      "first_author": "Dew",
+      "authors_display": "Dew, I. et al.",
+      "year": 2012,
+      "title": "Where is ELSA? The early to late shift in aging.",
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 36,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Studies of cognitive and neural aging have recently provided evidence of a shift from an early- to late-onset cognitive control strategy, linked with temporally extended activity in the prefrontal cortex (PFC). It has been uncertain, however, whether this age-related shift is unique to PFC and executive control tasks or whether the functional location might vary depending on the particular cognitive processes that are altered. The present study tested whether an early-to-late shift in aging (ELSA) might emerge in the medial temporal lobes (MTL) during a protracted context memory task comprising both anticipatory cue (retrieval preparation) and retrieval probe (retrieval completion) phases. First, we found reduced MTL activity in older adults during the early retrieval preparation phase coupled with increased MTL activity during the late retrieval completion phase. Second, we found that functional connectivity between MTL and PFC regions was higher during retrieval preparation in young adults but higher during retrieval completion in older adults, suggesting an important interactive relationship between the ELSA pattern in MTL and PFC. Taken together, these results critically suggest that aging results in temporally lagged activity even in regions not typically associated with cognitive control, such as the MTL.",
+      "score": {
+        "composite": 0.32226582832922795,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2090633133169118,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05226582832922795,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Frontal Lobe",
+        "Temporal Lobe",
+        "Neural Pathways",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Photic Stimulation",
+        "Cognition",
+        "Cues",
+        "Memory",
+        "Mental Recall",
+        "Psychomotor Performance",
+        "Reaction Time",
+        "Aging",
+        "Reading",
+        "Image Processing, Computer-Assisted",
+        "Adult",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Anticipation, Psychological"
+      ]
+    },
+    {
+      "rank": 33,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_baa6d7f1",
+      "doi": "10.3389/fpsyg.2022.740925",
+      "url": "https://doi.org/10.3389/fpsyg.2022.740925",
+      "openalex_id": null,
+      "pmid": "35572260",
+      "first_author": "Quirin",
+      "authors_display": "Quirin, M. et al.",
+      "year": 2022,
+      "title": "Not the Master of Your Volitional Mind? The Roles of the Right Medial Prefrontal Cortex and Personality Traits in Unconscious Introjections Versus Self-Chosen Goals.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (humans)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2022.740925/pdf",
+      "tldr": null,
+      "abstract": "Humans are unconditionally confronted with social expectations and norms, up to a degree that they, or some of them, have a hard time recognizing what they actually want. This renders them susceptible for introjection, that is, to unwittingly or \"unconsciously\" mistake social expectations for self-chosen goals. Such introjections compromise an individual's autonomy and mental health and have been shown to be more prevalent in individuals with rumination tendencies and low emotional self-awareness. In this brain imaging study, we draw on a source memory task and found that introjections, as indicated by imposed tasks that are falsely recognized as self-chosen, involved the bilateral medial prefrontal cortex (MPFC) and the dorsal anterior cingulate cortex (ACC). Notably, reduced right MPFC activation within this condition correlated with trait scores of ruminations and reduced emotional self-awareness, but also introversion. Moreover, correct recognition of tasks as self-chosen involved the right MPFC. Accordingly, the right MPFC may play a role in supporting the maintenance of psychological autonomy and counteract introjection, which individuals with certain personality traits seem to be prone to. This research has significant implications for the study of mechanisms underlying autonomous motivation, goal and norm internalization, decision-making, persuasion, education, and clinical conditions such as depression and burnout.",
+      "score": {
+        "composite": 0.3200328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 34,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_728289fa",
+      "doi": "10.1177/1474704917742807",
+      "url": "https://doi.org/10.1177/1474704917742807",
+      "openalex_id": null,
+      "pmid": "29169264",
+      "first_author": "Pandeirada",
+      "authors_display": "Pandeirada, J. et al.",
+      "year": 2017,
+      "title": "Adaptive Memory: Remembering Potential Mates.",
+      "venue": "Evolutionary psychology : an international journal of evolutionary approaches to psychology and behavior",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 8,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.sagepub.com/doi/pdf/10.1177/1474704917742807",
+      "tldr": null,
+      "abstract": "According to the adaptive memory perspective, memory should function more efficiently in fitness-relevant domains. The current work explored whether there is a mnemonic tuning in a fundamental domain for human evolution: reproduction. In two experiments, female participants assessed how desirable potential male candidates (represented by a face and a short descriptor) would be in the context of a long-term mating relationship or in the context of a long-term work relationship. Then, after a short distractor task, participants performed a recognition task for the faces and a source memory task. Finally, they were asked to recall the descriptors presented during encoding. Experiment 1 used a between-subjects design, whereas Experiment 2 employed a within-subject design. In both experiments, participants remembered the faces best when they were encoded in the mating condition. Also, in Experiment 1, source memory performance was better in the mating condition than in the working condition with the reverse being true for free recall of the descriptors. The latter difference was not observed in Experiment 2. These results suggest a potential mnemonic tuning for the faces of potential mate partners.",
+      "score": {
+        "composite": 0.3118034819228886,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Photic Stimulation",
+        "Memory",
+        "Reproduction",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 35,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_bfe71c13",
+      "doi": "10.3758/mc.37.1.42",
+      "url": "https://doi.org/10.3758/mc.37.1.42",
+      "openalex_id": null,
+      "pmid": "19103974",
+      "first_author": "Konopka",
+      "authors_display": "Konopka, A., & Benjamin, A.",
+      "year": 2009,
+      "title": "Schematic knowledge changes what judgments of learning predict in a source memory task.",
+      "venue": "Memory & cognition",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Source monitoring can be influenced by information that is external to the study context, such as beliefs and general knowledge (Johnson, Hashtroudi, & Lindsay, 1993). We investigated the extent to which metamnemonic judgments predict memory for items and sources when schematic information about the sources is or is not provided at encoding. Participants made judgments of learning (JOLs) to statements presented by two speakers and were informed of the occupation of each speaker either before or after the encoding session. Replicating earlier work, prior knowledge decreased participants' tendency to erroneously attribute statements to schematically consistent but episodically incorrect speakers. The origin of this effect can be understood by examining the relationship between JOLs and performance: JOLs were equally predictive of item and source memory in the absence of prior knowledge, but were exclusively predictive of source memory when participants knew of the relationship between speakers and statements during study. Background knowledge determines the information that people solicit in service of metamnemonic judgments, suggesting that these judgments reflect control processes during encoding that reduce schematic errors.",
+      "score": {
+        "composite": 0.30816585927874235,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.2,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.03,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Individuality",
+        "Comprehension",
+        "Association Learning",
+        "Mental Recall",
+        "Speech Perception",
+        "Decision Making",
+        "Judgment",
+        "Attention",
+        "Culture",
+        "Semantics",
+        "Knowledge of Results, Psychological",
+        "Set, Psychology"
+      ]
+    },
+    {
+      "rank": 36,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_d86b88da",
+      "doi": "10.1093/cercor/bhn028",
+      "url": "https://doi.org/10.1093/cercor/bhn028",
+      "openalex_id": null,
+      "pmid": "18321870",
+      "first_author": "Vinogradov",
+      "authors_display": "Vinogradov, S. et al.",
+      "year": 2008,
+      "title": "Deficit in a neural correlate of reality monitoring in schizophrenia patients.",
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 91,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Patients who suffer from the devastating psychiatric illness schizophrenia are plagued by hallucinations, bizarre behavior, and delusional ideas, such as believing that they are controlled by malevolent outside forces. A fundamental human cognitive operation that may contribute to these hallmark symptoms is the ability to maintain accurate and coherent self-referential processing over time, such as occurs during reality monitoring (distinguishing self-generated from externally perceived information). However, the neural bases for a disturbance in this operation in schizophrenia have not been fully explored. Using functional magnetic resonance imaging, we asked clinically stable schizophrenia patients to remember whether or not they had generated a target word during an earlier sentence completion task. We found that, during accurate performance of this self-referential source memory task, the schizophrenia subjects manifest a deficit in rostral medial prefrontal cortex (mPFC) activity--a brain region critically implicated in both the instantiation and the retrieval of self-referential information in healthy subjects. Impairment in rostral mPFC function likely plays a key role in the profound subjective disturbances that characterize schizophrenia and that are the aspect of the disorder most troubling to patients and to society at large.",
+      "score": {
+        "composite": 0.29545012410322125,
+        "breakdown": {
+          "raw": {
+            "citations": 0.261800496412885,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06545012410322125,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Reality Testing",
+        "Self Concept",
+        "Cognition Disorders",
+        "Schizophrenia",
+        "Schizophrenic Psychology",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 37,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f24d7970",
+      "doi": "10.1155/2020/8883046",
+      "url": "https://doi.org/10.1155/2020/8883046",
+      "openalex_id": null,
+      "pmid": "33354206",
+      "first_author": "Huo",
+      "authors_display": "Huo, L. et al.",
+      "year": 2020,
+      "title": "Transcranial Direct Current Stimulation Enhances Episodic Memory in Healthy Older Adults by Modulating Retrieval-Specific Activation.",
+      "venue": "Neural plasticity",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 8,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7735856",
+      "tldr": null,
+      "abstract": "Memory decline has become an issue of major importance in the aging society. Anodal transcranial direct current stimulation (atDCS) is a viable tool to counteract age-associated episodic memory deterioration. However, the underlying neural mechanisms are unclear. In this single-blind, sham-controlled study, we combined atDCS and functional magnetic resonance imaging to assess the behavioral and neural consequences of multiple-session atDCS in older adults. Forty-nine healthy older adults received either 10 sessions of anodal or sham stimulation over the left dorsolateral prefrontal cortex. Before and after stimulation, participants performed a source memory task in the MRI scanner. Compared to sham stimulation, atDCS significantly improved item memory performance. Additionally, atDCS significantly increased regional brain activity around the stimulation area in the prefrontal cortex and extended to the bilateral anterior cingulate cortex. Neural changes in the prefrontal cortex correlated with memory gains. Our findings therefore indicate that multiple-session offline atDCS may improve memory in older adults by inducing neural alterations.",
+      "score": {
+        "composite": 0.2818034819228886,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Single-Blind Method",
+        "Mental Recall",
+        "Neuropsychological Tests",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Memory, Episodic",
+        "Transcranial Direct Current Stimulation"
+      ]
+    },
+    {
+      "rank": 38,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1460a14c",
+      "doi": "10.1027/1618-3169/a000457",
+      "url": "https://doi.org/10.1027/1618-3169/a000457",
+      "openalex_id": null,
+      "pmid": "31603047",
+      "first_author": "Kranz",
+      "authors_display": "Kranz, D. et al.",
+      "year": 2019,
+      "title": "Bald and Bad?",
+      "venue": "Experimental psychology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7037739",
+      "tldr": null,
+      "abstract": "According to (a) the beauty ideal of a full head of hair and (b) the physical attractiveness stereotype (PAS; \"what is beautiful is good\"), bald men should appear less attractive than nonbald men, not only physically but also socially. To explain inconsistent results on this prediction in previous research, we suggest two antagonistic processes: the automatic activation of the PAS at the implicit level and its suppression at the explicit level, the latter process selectively triggered by individuating information about the target person. In line with this account, we only found negative social attractiveness ratings for bald men by same-aged women when individuating target information was lacking (Experiment 1). In contrast, irrespective of whether individuating information was available or not, we reliably found evidence for the PAS in different implicit paradigms (the implicit association test in Experiment 2 and a source monitoring task in Experiment 3). We conclude that individuating information about bald men suppresses PAS application, but not PAS activation.",
+      "score": {
+        "composite": 0.27919737040327586,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Alopecia",
+        "Stereotyping",
+        "Social Perception",
+        "Beauty",
+        "Adult",
+        "Female",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 39,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_2c56a27f",
+      "doi": "10.1080/09658211.2011.595723",
+      "url": "https://doi.org/10.1080/09658211.2011.595723",
+      "openalex_id": null,
+      "pmid": "21919591",
+      "first_author": "Gallo",
+      "authors_display": "Gallo, D. et al.",
+      "year": 2011,
+      "title": "Age-related positivity effects and autobiographical memory detail: evidence from a past/future source memory task.",
+      "venue": "Memory (Hove, England)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 51,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "This study investigated whether the age-related positivity effect strengthens specific event details in autobiographical memory. Participants retrieved past events or imagined future events in response to neutral or emotional cue words. Older adults rated each kind of event more positively than younger adults, demonstrating an age-related positivity effect. We next administered a source memory test. Participants were given the same cue words and tried to retrieve the previously generated event and its source (past or future). Accuracy on this source test should depend on the recollection of specific details about the earlier generated events, providing a more objective measure of those details than subjective ratings. We found that source accuracy was greater for positive than negative future events in both age groups, suggesting that positive future events were more detailed. In contrast, valence did not affect source accuracy for past events in either age group, suggesting that positive and negative past events were equally detailed. Although ageing can bias people to focus on positive aspects of experience, this bias does not appear to strengthen the availability of details for positive relative to negative past events.",
+      "score": {
+        "composite": 0.27719183622512455,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Emotions",
+        "Cues",
+        "Mental Recall",
+        "Aging",
+        "Time",
+        "Adult",
+        "Aged",
+        "Female",
+        "Male",
+        "Memory, Episodic"
+      ]
+    },
+    {
+      "rank": 40,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_24fb345f",
+      "doi": "10.1016/j.schres.2007.05.028",
+      "url": "https://doi.org/10.1016/j.schres.2007.05.028",
+      "openalex_id": null,
+      "pmid": "17629463",
+      "first_author": "Weiss",
+      "authors_display": "Weiss, A. et al.",
+      "year": 2008,
+      "title": "Distinguishing familiarity-based from source-based memory performance in patients with schizophrenia.",
+      "venue": "Schizophrenia research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 19,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>There is substantial current interest in the cognitive deficits associated with schizophrenia, particularly those in the realm of memory. Yet the exact nature of these deficits remains a matter of some debate. This study sought to examine performance on two distinct aspects of memory performance: familiarity-based and source-based memory processes.<h4>Methods</h4>Eighteen medicated outpatients with schizophrenia and eighteen healthy adult control subjects performed an external source memory task. Key measures included the ability to distinguish old (previously experienced) items from new items, the ability to correctly identify the source (male voice or female voice) of previously experienced items, and the reaction time associated with these responses.<h4>Results</h4>Patients with schizophrenia showed an impaired ability to distinguish old from new items, but intact performance in correctly identifying the source of items recognized as old. Whereas control subjects showed a rapid response to items deemed unfamiliar, particularly in rejecting novel items, these responses were slowed in patients with schizophrenia. This was not attributable to a generalized diminution in processing speed, as reaction times to correctly recognized old items (regardless of source accuracy) did not differ between the two groups.<h4>Conclusions</h4>Patients with schizophrenia demonstrated impaired familiarity-based and intact source-based memory performance. In addition, the reaction time for novelty detection, an important component of familiarity-based memory, was significantly delayed in patients compared to controls, while the response times for source-based decisions were completely overlapping. Considered together, these findings suggest a deficit in the familiarity-based aspect of episodic memory in at least some patients with schizophrenia.",
+      "score": {
+        "composite": 0.273361392454154,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Chronic Disease",
+        "Association Learning",
+        "Mental Recall",
+        "Verbal Learning",
+        "Speech Perception",
+        "Attention",
+        "Reaction Time",
+        "Cognition Disorders",
+        "Schizophrenia",
+        "Neuropsychological Tests",
+        "Schizophrenic Psychology",
+        "Speech Acoustics",
+        "Reading",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 41,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_86e51c83",
+      "doi": "10.1016/j.cortex.2007.12.004",
+      "url": "https://doi.org/10.1016/j.cortex.2007.12.004",
+      "openalex_id": null,
+      "pmid": "18472035",
+      "first_author": "Senkfor",
+      "authors_display": "Senkfor, A. et al.",
+      "year": 2008,
+      "title": "Enactment versus conceptual encoding: equivalent item memory but different source memory.",
+      "venue": "Cortex; a journal devoted to the study of the nervous system and behavior",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "It has been suggested that performing a physical action (enactment) is an optimally effective encoding task, due to the incorporation of motoric information in the episodic memory trace, and later retrieval of that information. The current study contrasts old/new recognition of objects after enactment to a conceptual encoding task of cost estimation. Both encoding tasks yielded high accuracy, and robust differences in brain activity as compared to new objects, but no differences between encoding tasks. These results are not supportive of the idea that encoding by enactment leads to the spontaneous retrieval of motoric information. When participants were asked to discriminate between the two classes of studied objects during a source memory task, perform-encoded objects elicited higher accuracy and different brain activity than cost-encoded objects. The extent and nature of what was retrieved from memory thus depended on its utility for the assigned memory test: object information during the old/new recognition test, but additional information about the encoding task when necessary for a source memory test. Event-related potentials (ERPs) recorded during the two memory tests showed two orthogonal effects during an early (300-800 msec) time window: a differentiation between studied and unstudied objects, and a test-type (retrieval orientation) effect that was equivalent for old and new objects. Later brain activity (800-1300 msec) differentiated perform- from cost-encoded objects, but only during the source memory test, suggesting temporally distinct phases of retrieval.",
+      "score": {
+        "composite": 0.2671260732128022,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Imitative Behavior",
+        "Association Learning",
+        "Memory",
+        "Mental Recall",
+        "Concept Formation",
+        "Psychomotor Performance",
+        "Evoked Potentials",
+        "Mathematics",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 42,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_663d8234",
+      "doi": "10.12659/msm.917401",
+      "url": "https://doi.org/10.12659/msm.917401",
+      "openalex_id": null,
+      "pmid": "31830005",
+      "first_author": "Nie",
+      "authors_display": "Nie, A. et al.",
+      "year": 2019,
+      "title": "Sensitivity of Reality Monitoring to Fluency: Evidence from Behavioral Performance and Event-Related Potential (ERP) Old/New Effects.",
+      "venue": "Medical science monitor : international medical journal of experimental and clinical research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6927240",
+      "tldr": null,
+      "abstract": "BACKGROUND Item memory and source memory are differently processed with both behavioral and event-related potential (ERP) evidence. Reality monitoring, a specific type of source memory, which refers to the ability to differentiate external sources from internal sources, has been drawing much attention. Among factors that have an impact on reality monitoring, fluency has not been well-studied. Therefore, the current study aimed to investigate whether fluency could affect reality monitoring, through observations on both behavioral performance and electrophysiological patterns. MATERIAL AND METHODS Adopting ERP techniques, participants were required either to watch the presentation of a name/picture pair, or to imagine a picture for each displayed name, once (low fluency) or twice (high fluency). Later they completed a reality monitoring task of identifying names as perceived, imagined, or novel items. Behavioral performance was measured, and ERP waveforms were recorded. RESULTS Behaviorally, high fluency items were faster and more accurately attributed to the sources than low fluency items. ERP waveforms revealed that late positive component (LPC) occurred for all 4 types of items, while imagined items of low fluency did not record a robust FN400 or late frontal old/new effect. CONCLUSIONS As results revealed, the factor of fluency does influence reality monitoring in terms of accuracy and responding speed. Meanwhile, for imagined items of low fluency, the absence of FN400 and frontal old/new effect also suggests the sensitivity of reality monitoring to fluency, because these representatives of familiarity-based processing and post-retrieval monitoring are inevitably involved in the process of differentiating internal source from external source.",
+      "score": {
+        "composite": 0.26329562944183155,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Brain Mapping",
+        "Photic Stimulation",
+        "Reality Testing",
+        "Imagination",
+        "Memory",
+        "Reaction Time",
+        "Evoked Potentials",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 43,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_0748ba39",
+      "doi": "10.3390/bs3020244",
+      "url": "https://doi.org/10.3390/bs3020244",
+      "openalex_id": null,
+      "pmid": "25379237",
+      "first_author": "Radaelli",
+      "authors_display": "Radaelli, D. et al.",
+      "year": 2013,
+      "title": "The reality monitoring deficit as a common neuropsychological correlate of schizophrenic and affective psychosis.",
+      "venue": "Behavioral sciences (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patients)"
+      ],
+      "citation_count": 11,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4217621",
+      "tldr": null,
+      "abstract": "<h4>Unlabelled</h4>For many decades, Neuropsychological functioning has been a key point in the study of psychotic disorders. The main aim of these studies is to give a description of the neurocognitive \"profile\" of schizophrenia, with only little attention being paid to the common and discriminating features of different psychotic disorders. Recent studies support the hypothesis that patients affected by psychiatric disorders with psychotic symptoms have specific abnormalities of reality testing of ongoing perception, which become evident with source monitoring task. Ninety-eight patients and 50 controls were studied. Patients were divided by diagnosis and previous history of psychotic features and were administered Source Monitoring Task to test reality testing of ongoing perception. Frequencies of correct and false attributions were recorded. To obtain measures of observer sensitivity and response biases, a signal detection analysis was performed.<h4>Aims</h4>Studying neuropsychological correlate of psychosis in euthymic mood disordered patients and patients with schizophrenia with or without delusions.<h4>Results</h4>Patients with psychotic features use more lax criteria in evaluating self-generated, but not perceived stimuli compared to patients without psychotic features.<h4>Conclusions</h4>Our findings support the hypothesis of selective biases in reality monitoring as neuropsychological correlates of psychosis.",
+      "score": {
+        "composite": 0.2159675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 44,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1869a974",
+      "doi": "10.1590/1980-5764-dn-2025-0413",
+      "url": "https://doi.org/10.1590/1980-5764-dn-2025-0413",
+      "openalex_id": null,
+      "pmid": "41878543",
+      "first_author": "Jaeger",
+      "authors_display": "Jaeger, A. et al.",
+      "year": 2026,
+      "title": "Spatial memory retrieval under cueing in behavioral frontotemporal dementia and Alzheimer's disease.",
+      "venue": "Dementia & neuropsychologia",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patients)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC13008346",
+      "tldr": null,
+      "abstract": "Recent studies indicate that episodic memory is impaired in behavioral variant frontotemporal dementia (bvFTD), with deficits as severe as those seen in Alzheimer's disease (AD). Also, both bvFTD and AD patients exhibit executive dysfunction, but the extent to which such dysfunction contributes to memory impairments remains unclear.<h4>Objective</h4>The aim of this study was to investigate interactions between executive functions and episodic memory in AD and bvFTD by manipulating executive control in a spatial source memory task.<h4>Methods</h4>Twenty bvFTD patients, 18 AD patients, and 20 healthy controls completed a source memory test in which they should remember whether objects were previously seen on the left or right side of a computer screen. Critically, arrow cues (66.7% valid, 33.3% invalid) indicated the likely prior location of each object during retrieval.<h4>Results</h4>bvFTD and AD patients showed overall similar memory performances but were impaired compared to controls. While cueing affected memory performances of controls and bvFTD patients, AD patients showed undistinguishable performances after valid and invalid cueing.<h4>Conclusion</h4>These findings support the notion that episodic memory deficits in bvFTD can be as severe as in AD and demonstrate that, unlike bvFTD patients, patients with AD show difficulties in using information conveyed by cues during memory judgments, probably because of underlying attentional deficits.",
+      "score": {
+        "composite": 0.185,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.5,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.075,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 45,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a9371962",
+      "doi": "10.3390/bs15111459",
+      "url": "https://doi.org/10.3390/bs15111459",
+      "openalex_id": null,
+      "pmid": "41301262",
+      "first_author": "Zhang",
+      "authors_display": "Zhang, Y. et al.",
+      "year": 2025,
+      "title": "Beyond Retrieval Competition: Asymmetric Effects of Retroactive and Proactive Interference in Associative Memory.",
+      "venue": "Behavioral sciences (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12649502",
+      "tldr": null,
+      "abstract": "Although associative interference has traditionally been attributed to retrieval competition, emerging evidence suggests that interference may also arise from encoding-based representational processes. The present study examined whether retroactive interference (RI) and proactive interference (PI) can occur in the absence of explicit retrieval competition and whether they reflect distinct underlying mechanisms. Participants studied two lists of word-picture pairs in an AB/AC associative learning paradigm, followed by a non-competitive two-alternative forced-choice (2AFC) associative recognition test and a source memory task. Across both frequentist and Bayesian analyses, recognition accuracy revealed a significant RI effect-lower accuracy for earlier A-B pairs relative to non-overlapping controls-whereas PI manifested as longer reaction times (RTs) for later A-C pairs, despite comparable accuracy. Source judgments showed faster correct responses for overlapping than for non-overlapping pairs, suggesting that cue overlap facilitated more fluent retrieval rather than confusion. These findings indicate that interference can emerge independently of retrieval competition and that RI and PI are supported by dissociable mechanisms: RI reflects encoding-related reorganization that weakens earlier associations, whereas PI reflects increased retrieval effort following differentiation of overlapping traces. Together, the results support a process-interaction framework in which encoding-based reactivation and reorganization shape later retrieval dynamics, demonstrating that associative interference arises from the interplay between encoding and retrieval processes rather than retrieval competition alone.",
+      "score": {
+        "composite": 0.13999999999999999,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 46,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c0731e54",
+      "doi": "10.1192/j.eurpsy.2025.2455",
+      "url": "https://doi.org/10.1192/j.eurpsy.2025.2455",
+      "openalex_id": null,
+      "pmid": "40254409",
+      "first_author": "Adam",
+      "authors_display": "Adam, O. et al.",
+      "year": 2025,
+      "title": "Prefrontal cortex stimulation prevents stress-induced HPA axis reactivity in people at familial risk of schizophrenia.",
+      "venue": "European psychiatry : the journal of the Association of European Psychiatrists",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12090024",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Schizophrenia is a multifactorial disorder with a range of risk factors. Dysregulation in the systems involved in the stress response is a key component of its pathophysiology. Individuals at risk of developing schizophrenia exhibit hyperreactivity to stress and altered cognitive performance, both known as vulnerability markers. This study aims to determine whether stimulation of the prefrontal cortex can reduce reactivity to stress in unaffected siblings of patients with schizophrenia.<h4>Methods</h4>In a randomized, sham-controlled trial, 27 participants were assigned to receive either active (<i>n</i> = 14) or sham (<i>n</i> = 13) transcranial direct current stimulation (tDCS) over the prefrontal cortex for 30 min during exposure to an acute stressor. The stress response was measured biologically, via salivary cortisol levels, and cognitively, through a reality monitoring task, which serves as an intermediate cognitive vulnerability marker.<h4>Results</h4>In contrast to the sham condition, active stimulation significantly reduced cortisol release in response to stress (<i>F</i><sub>(9,216)</sub> = 1.972; <i>p</i> = 0.04) and prevented stress-induced impairment in reality monitoring (<i>F</i><sub>(1,23)</sub> = 9.954; <i>p</i> = 0.004).<h4>Conclusions</h4>These findings suggest that tDCS should be a promising tool for reducing stress-induced biological and cognitive reactivity in a population at risk of schizophrenia.",
+      "score": {
+        "composite": 0.13999999999999999,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Pituitary-Adrenal System",
+        "Hypothalamo-Hypophyseal System",
+        "Prefrontal Cortex",
+        "Saliva",
+        "Humans",
+        "Hydrocortisone",
+        "Stress, Psychological",
+        "Schizophrenia",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Transcranial Direct Current Stimulation"
+      ]
+    }
+  ]
+}

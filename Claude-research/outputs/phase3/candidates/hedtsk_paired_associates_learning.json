@@ -1,0 +1,947 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:29:44",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_paired_associates_learning",
+    "name": "Paired Associates Learning Task",
+    "aliases": [
+      "PAL",
+      "Paired Associate Learning",
+      "Paired Associates Learning"
+    ],
+    "category_id": "associative_learning_and_reinforcement",
+    "short_definition": "Study of cue-target pairs followed by cued recall; proportion recalled indexes associative encoding and retrieval.",
+    "description": "Participants learn arbitrary associations between stimuli and their locations (or between word pairs). In a typical computerized version (CANTAB PAL), abstract patterns appear in boxes around the screen during the study phase, and during test, patterns are presented centrally and participants must identify the correct box location. Difficulty increases across stages from 1-2 to 6-8 pairs. Performance is measured by patterns correctly learned and errors made. The PAL task is particularly sensitive to hippocampal function and shows early sensitivity to amyloid-beta pathology in preclinical Alzheimer's disease.",
+    "inclusion_test": {
+      "procedure": "Participants study pairs of items (word-word, face-name, object-location) and are later cued with one member to recall the other.",
+      "manipulation": "Pair relatedness (semantic, unrelated); number of pairs; study-test cycles; cue type.",
+      "measurement": "Cued recall accuracy; number of cycles to criterion; intrusion errors."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 11,
+      "picked": 9,
+      "reserve": 0,
+      "excluded": 2,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {
+      "non_human_subjects": 2
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_60cc8d04",
+      "doi": "10.1038/s41598-020-59419-z",
+      "url": "https://doi.org/10.1038/s41598-020-59419-z",
+      "openalex_id": null,
+      "pmid": "32066765",
+      "first_author": "Whoolery",
+      "authors_display": "Whoolery, C. et al.",
+      "year": 2020,
+      "title": "Multi-domain cognitive assessment of male mice shows space radiation is not harmful to high-level cognition and actually improves pattern separation.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 38,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7026431",
+      "tldr": null,
+      "abstract": "Astronauts on interplanetary missions - such as to Mars - will be exposed to space radiation, a spectrum of highly-charged, fast-moving particles that includes <sup>56</sup>Fe and <sup>28</sup>Si. Earth-based preclinical studies show space radiation decreases rodent performance in low- and some high-level cognitive tasks. Given astronaut use of touchscreen platforms during training and space flight and given the ability of rodent touchscreen tasks to assess functional integrity of brain circuits and multiple cognitive domains in a non-aversive way, here we exposed 6-month-old C57BL/6J male mice to whole-body space radiation and subsequently assessed them on a touchscreen battery. Relative to Sham treatment, <sup>56</sup>Fe irradiation did not overtly change performance on tasks of visual discrimination, reversal learning, rule-based, or object-spatial paired associates learning, suggesting preserved functional integrity of supporting brain circuits. Surprisingly, <sup>56</sup>Fe irradiation improved performance on a dentate gyrus-reliant pattern separation task; irradiated mice learned faster and were more accurate than controls. Improved pattern separation performance did not appear to be touchscreen-, radiation particle-, or neurogenesis-dependent, as <sup>56</sup>Fe and <sup>28</sup>Si irradiation led to faster context discrimination in a non-touchscreen task and <sup>56</sup>Fe decreased new dentate gyrus neurons relative to Sham. These data urge revisitation of the broadly-held view that space radiation is detrimental to cognition.",
+      "score": {
+        "composite": 0.5763611475075798,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Dentate Gyrus",
+        "Neurons",
+        "Animals",
+        "Mice, Inbred C57BL",
+        "Mice",
+        "Iron Isotopes",
+        "Whole-Body Irradiation",
+        "Cognition",
+        "Reversal Learning",
+        "Paired-Associate Learning",
+        "Pattern Recognition, Visual",
+        "Cosmic Radiation",
+        "Space Flight",
+        "Astronauts",
+        "Male",
+        "Biobehavioral Sciences"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_636185b5",
+      "doi": "10.1017/s0033291717003464",
+      "url": "https://doi.org/10.1017/s0033291717003464",
+      "openalex_id": null,
+      "pmid": "29353562",
+      "first_author": "Gottwald",
+      "authors_display": "Gottwald, J. et al.",
+      "year": 2018,
+      "title": "Impaired cognitive plasticity and goal-directed control in adolescent obsessive-compulsive disorder.",
+      "venue": "Psychological medicine",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 50,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6088771",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Youths with obsessive-compulsive disorder (OCD) experience severe distress and impaired functioning at school and at home. Critical cognitive domains for daily functioning and academic success are learning, memory, cognitive flexibility and goal-directed behavioural control. Performance in these important domains among teenagers with OCD was therefore investigated in this study.<h4>Methods</h4>A total of 36 youths with OCD and 36 healthy comparison subjects completed two memory tasks: Pattern Recognition Memory (PRM) and Paired Associates Learning (PAL); as well as the Intra-Extra Dimensional Set Shift (IED) task to quantitatively gauge learning as well as cognitive flexibility. A subset of 30 participants of each group also completed a Differential-Outcome Effect (DOE) task followed by a Slips-of-Action Task, designed to assess the balance of goal-directed and habitual behavioural control.<h4>Results</h4>Adolescent OCD patients showed a significant learning and memory impairment. Compared with healthy comparison subjects, they made more errors on PRM and PAL and in the first stages of IED involving discrimination and reversal learning. Patients were also slower to learn about contingencies in the DOE task and were less sensitive to outcome devaluation, suggesting an impairment in goal-directed control.<h4>Conclusions</h4>This study advances the characterization of juvenile OCD. Patients demonstrated impairments in all learning and memory tasks. We also provide the first experimental evidence of impaired goal-directed control and lack of cognitive plasticity early in the development of OCD. The extent to which the impairments in these cognitive domains impact academic performance and symptom development warrants further investigation.",
+      "score": {
+        "composite": 0.5002441046418793,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22764308523418395,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.056910771308545986,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Learning",
+        "Association Learning",
+        "Reversal Learning",
+        "Pattern Recognition, Visual",
+        "Obsessive-Compulsive Disorder",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Executive Function",
+        "Cognitive Dysfunction",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1d16b1e3",
+      "doi": "10.1016/j.alcohol.2009.09.032",
+      "url": "https://doi.org/10.1016/j.alcohol.2009.09.032",
+      "openalex_id": null,
+      "pmid": "20113879",
+      "first_author": "Schweinsburg",
+      "authors_display": "Schweinsburg, A. et al.",
+      "year": 2010,
+      "title": "A preliminary study of functional magnetic resonance imaging response during verbal encoding among adolescent binge drinkers.",
+      "venue": "Alcohol (Fayetteville, N.Y.)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 108,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Binge alcohol use is common among teenagers with 28% of 12th graders reporting getting drunk in the past month. Chronic heavy drinking has been associated with verbal learning and memory deficits in adolescents and adults, yet verbal encoding in less frequently drinking teens has not yet been studied. Here, we examined functional magnetic resonance imaging (fMRI) response during verbal encoding among adolescent binge drinkers. Participants recruited from local high schools were of ages 16-18 and consisted of 12 binge drinkers and 12 demographically similar nondrinkers. Participants were all nonsmokers, and drinkers were abstinent from alcohol for an average of 33 days at the time of scanning. Participants performed a verbal paired associates learning task during fMRI acquisition. Drinkers recalled marginally fewer words than nondrinkers (P=.07). Compared with nondrinkers, bingers showed more response in right superior frontal and bilateral posterior parietal cortices but less response in occipital cortex during novel encoding (Ps<.05, clusters >1,512microL). In addition, controls showed significant activation in the left hippocampus during novel encoding, whereas binge drinkers did not. Adolescent binge drinkers demonstrated (1) more response than nondrinkers in frontal and parietal regions, which could suggest greater engagement of working memory systems during encoding; (2) no hippocampal activation to novel word pairs; and (3) slightly poorer word pair recall, which could indicate disadvantaged processing of novel verbal information and a slower learning slope. Longitudinal studies will be needed to ascertain the degree to which emergence of binge drinking is linked temporally to these brain response patterns.",
+      "score": {
+        "composite": 0.43457105800901125,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2716175653693784,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0679043913423446,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Cerebral Cortex",
+        "Frontal Lobe",
+        "Parietal Lobe",
+        "Humans",
+        "Ethanol",
+        "Central Nervous System Depressants",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Case-Control Studies",
+        "Pilot Projects",
+        "Adolescent Behavior",
+        "Alcohol Drinking",
+        "Mental Recall",
+        "Verbal Learning",
+        "Adolescent",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_52b6ef38",
+      "doi": "10.3389/fnagi.2018.00398",
+      "url": "https://doi.org/10.3389/fnagi.2018.00398",
+      "openalex_id": null,
+      "pmid": "30564113",
+      "first_author": "Verdi",
+      "authors_display": "Verdi, S. et al.",
+      "year": 2018,
+      "title": "An Investigation Into Physical Frailty as a Link Between the Gut Microbiome and Cognitive Health.",
+      "venue": "Frontiers in aging neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:animal (rodents)",
+        "token:human (human,humans)",
+        "decision:mixed→human"
+      ],
+      "citation_count": 56,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6288358",
+      "tldr": null,
+      "abstract": "The preservation of cognitive abilities with aging is a priority both for individuals and nations given the aging populations of many countries. Recently the gut microbiome has been identified as a new territory to explore in relation to cognition. Experiments using rodents have identified a link between the gut microbiome and cognitive function, particularly that low microbial diversity leads to poor cognition function. Similar studies in humans could identify novel targets to encourage healthy cognition in an aging population. Here, we investigate the association of gut microbiota and cognitive function in a human cohort considering the influence of physical frailty. We analyzed 16S rRNA gene sequence data, derived from fecal samples obtained from 1,551 individuals over the age of 40. Cognitive data was collected using four cognitive tests: verbal fluency (<i>n</i> = 1,368), Deary-Liewald Reaction Time Test (DLRT; <i>n</i> = 873), Mini Mental State Examination (recall; <i>n</i> = 1,374) and Paired Associates Learning from the Cambridge Neuropsychological Test Automated Battery (CANTAB-PAL; <i>n</i> = 405). We use mixed effects models to identify associations with alpha diversity, operational taxonomic units (OTUs) and taxa and performed further analyses adjusting for physical frailty. We then repeated the analyses in a subset of individuals with dietary data, also excluding those using medications shown to influence gut microbiome composition. DLRT and verbal fluency were negatively associated with alpha diversity of the gut microbiota (False-Discovery Rate, FDR, <i>p</i> < 0.05). However, when considering frailty as a covariate, only associations between the DLRT and diversity measures remained. Repeating analyses excluding Proton pump inhibitor (PPI) and antibiotic users and accounting for diet, we similarly observe significant negative associations between the DLRT and alpha diversity measures and a further negative association between DLRT and the abundance of",
+      "score": {
+        "composite": 0.40185402768391915,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 5,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_40c5ecfb",
+      "doi": "10.1523/jneurosci.2433-12.2012",
+      "url": "https://doi.org/10.1523/jneurosci.2433-12.2012",
+      "openalex_id": null,
+      "pmid": "23035106",
+      "first_author": "Coba",
+      "authors_display": "Coba, M. et al.",
+      "year": 2012,
+      "title": "TNiK is required for postsynaptic and nuclear signaling pathways and cognitive function.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 91,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Traf2 and NcK interacting kinase (TNiK) contains serine-threonine kinase and scaffold domains and has been implicated in cell proliferation and glutamate receptor regulation in vitro. Here we report its role in vivo using mice carrying a knock-out mutation. TNiK binds protein complexes in the synapse linking it to the NMDA receptor (NMDAR) via AKAP9. NMDAR and metabotropic receptors bidirectionally regulate TNiK phosphorylation and TNiK is required for AMPA expression and synaptic function. TNiK also organizes nuclear complexes and in the absence of TNiK, there was a marked elevation in GSK3β and phosphorylation levels of its cognate phosphorylation sites on NeuroD1 with alterations in Wnt pathway signaling. We observed impairments in dentate gyrus neurogenesis in TNiK knock-out mice and cognitive testing using the touchscreen apparatus revealed impairments in pattern separation on a test of spatial discrimination. Object-location paired associate learning, which is dependent on glutamatergic signaling, was also impaired. Additionally, TNiK knock-out mice displayed hyperlocomotor behavior that could be rapidly reversed by GSK3β inhibitors, indicating the potential for pharmacological rescue of a behavioral phenotype. These data establish TNiK as a critical regulator of cognitive functions and suggest it may play a regulatory role in diseases impacting on its interacting proteins and complexes.",
+      "score": {
+        "composite": 0.3687834574365546,
+        "breakdown": {
+          "raw": {
+            "citations": 0.261800496412885,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06545012410322125,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Dentate Gyrus",
+        "Cell Nucleus",
+        "Animals",
+        "Mice, Inbred C57BL",
+        "Mice, Knockout",
+        "Mice",
+        "Glycogen Synthase Kinase 3",
+        "Glutamic Acid",
+        "Nerve Tissue Proteins",
+        "Recombinant Fusion Proteins",
+        "Association Learning",
+        "Discrimination Learning",
+        "Space Perception",
+        "Cognition Disorders",
+        "Protein Processing, Post-Translational",
+        "Phosphorylation",
+        "Phenotype",
+        "Signal Detection, Psychological",
+        "Miniature Postsynaptic Potentials",
+        "Neurogenesis",
+        "Post-Synaptic Density",
+        "Glycogen Synthase Kinase 3 beta",
+        "Protein Serine-Threonine Kinases"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_bf20fc10",
+      "doi": "10.1159/000475900",
+      "url": "https://doi.org/10.1159/000475900",
+      "openalex_id": null,
+      "pmid": "28588366",
+      "first_author": "Chaudhari",
+      "authors_display": "Chaudhari, K. et al.",
+      "year": 2017,
+      "title": "Neurocognitive Effect of Nootropic Drug <i>Brahmi</i> (<i>Bacopa monnieri</i>) in Alzheimer's Disease.",
+      "venue": "Annals of neurosciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:animal (rats)",
+        "token:human (human,humans)",
+        "decision:mixed→human"
+      ],
+      "citation_count": 68,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Alzheimer's disease (AD) is a progressive neurodegenerative disease of the elderly. The rapid increase in its incidence has necessitated development of newer drugs. Ayurvedic herbal medications are increasingly researched due to their biosafety profile and usefulness in cognitive impairment. In this article, we critically reviewed one such <i>Medhya Rasayana</i> (nootropic drug) <i>Brahmi</i>-derived from extract of <i>Bacopa monnieri</i> (EBm). Studies have shown that EBm promotes free radical scavenger mechanisms and protects cells in prefrontal cortex, hippocampus, and striatum against cytotoxicity and DNA damage implicated in AD. It also reduces lipoxygenase activity reducing lipid peroxidation, increases glutathione peroxidase and chelates iron. Administration of EBm was seen to protect the cholinergic neurons and reduce anticholinesterase activity comparable to donepezil, rivastigmine, and galantamine. It also reduces hippocampal β-amyloid deposition and stress-induced hippocampal damage. The neuroprotective effect of EBm is also due to nitric oxide-mediated cerebral vasodilation. EBm improved the total memory score and maximum improvement was seen in logical memory and paired associate learning in humans and reversed phenytoin-induced memory impairment in experimental model. EBm has not shown any serious clinical, neurological, hematological complications, or vital organs damage in experimental studies. Rats showed marked reduction in fertility; however, libido was unaffected. There is no experimental evidence of genotoxicity or teratogenesis by use of EBm. Mild nausea and gastrointestinal upset are seen in humans. <i>Brahmi</i> promises to be a novel agent in AD; however, further human trials are recommended to verify the efficacy and rule out any side effects as evidenced by the experimental models.",
+      "score": {
+        "composite": 0.3646194353856764,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24514440820937256,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06128610205234314,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_b2e6e6f0",
+      "doi": "10.2196/16792",
+      "url": "https://doi.org/10.2196/16792",
+      "openalex_id": null,
+      "pmid": "32749999",
+      "first_author": "Backx",
+      "authors_display": "Backx, R. et al.",
+      "year": 2020,
+      "title": "Comparing Web-Based and Lab-Based Cognitive Assessment Using the Cambridge Neuropsychological Test Automated Battery: A Within-Subjects Counterbalanced Study.",
+      "venue": "Journal of medical Internet research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 87,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.jmir.org/2020/8/e16792/PDF",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Computerized assessments are already used to derive accurate and reliable measures of cognitive function. Web-based cognitive assessment could improve the accessibility and flexibility of research and clinical assessment, widen participation, and promote research recruitment while simultaneously reducing costs. However, differences in context may influence task performance.<h4>Objective</h4>This study aims to determine the comparability of an unsupervised, web-based administration of the Cambridge Neuropsychological Test Automated Battery (CANTAB) against a typical in-person lab-based assessment, using a within-subjects counterbalanced design. The study aims to test (1) reliability, quantifying the relationship between measurements across settings using correlational approaches; (2) equivalence, the extent to which test results in different settings produce similar overall results; and (3) agreement, by quantifying acceptable limits to bias and differences between measurement environments.<h4>Methods</h4>A total of 51 healthy adults (32 women and 19 men; mean age 36.8, SD 15.6 years) completed 2 testing sessions, which were completed on average 1 week apart (SD 4.5 days). Assessments included equivalent tests of emotion recognition (emotion recognition task [ERT]), visual recognition (pattern recognition memory [PRM]), episodic memory (paired associate learning [PAL]), working memory and spatial planning (spatial working memory [SWM] and one touch stockings of Cambridge), and sustained attention (rapid visual information processing [RVP]). Participants were randomly allocated to one of the two groups, either assessed in-person in the laboratory first (n=33) or with unsupervised web-based assessments on their personal computing systems first (n=18). Performance indices (errors, correct trials, and response sensitivity) and median reaction times were extracted. Intraclass and bivariate correlations examined intersetting reliability, linear mixed mod",
+      "score": {
+        "composite": 0.34814004536027243,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25922684810775637,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06480671202693909,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Reproducibility of Results",
+        "Cognition",
+        "Neuropsychological Tests",
+        "Internet",
+        "Adult",
+        "Laboratories",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_95e4d414",
+      "doi": "10.1038/sj.npp.1300889",
+      "url": "https://doi.org/10.1038/sj.npp.1300889",
+      "openalex_id": null,
+      "pmid": "16160707",
+      "first_author": "Ersche",
+      "authors_display": "Ersche, K. et al.",
+      "year": 2006,
+      "title": "Profile of executive and memory function associated with amphetamine and opiate dependence.",
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 193,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Cognitive function was assessed in chronic drug users on neurocognitive measures of executive and memory function. Current amphetamine users were contrasted with current opiate users, and these two groups were compared with former users of these substances (abstinent for at least one year). Four groups of participants were recruited: amphetamine-dependent individuals, opiate-dependent individuals, former users of amphetamines, and/or opiates and healthy non-drug taking controls. Participants were administered the Tower of London (TOL) planning task and the 3D-IDED attentional set-shifting task to assess executive function, and Paired Associates Learning and Delayed Pattern Recognition Memory tasks to assess visual memory function. The three groups of substance users showed significant impairments on TOL planning, Pattern Recognition Memory and Paired Associates Learning. Current amphetamine users displayed a greater degree of impairment than current opiate users. Consistent with previous research showing that healthy men are performing better on visuo-spatial tests than women, our male controls remembered significantly more paired associates than their female counterparts. This relationship was reversed in drug users. While performance of female drug users was normal, male drug users showed significant impairment compared to both their female counterparts and male controls. There was no difference in performance between current and former drug users. Neither years of drug abuse nor years of drug abstinence were associated with performance. Chronic drug users display pronounced neuropsychological impairment in the domains of executive and memory function. Impairment persists after several years of drug abstinence and may reflect neuropathology in frontal and temporal cortices.",
+      "score": {
+        "composite": 0.3195823583361496,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3049961000112652,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0762490250028163,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Temporal Lobe",
+        "Humans",
+        "Brain Damage, Chronic",
+        "Memory Disorders",
+        "Amphetamine-Related Disorders",
+        "Opioid-Related Disorders",
+        "Space Perception",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Sex Characteristics",
+        "Time",
+        "Adult",
+        "Female",
+        "Male",
+        "Learning Disabilities"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_f2091784",
+      "doi": "10.1021/jf9029332",
+      "url": "https://doi.org/10.1021/jf9029332",
+      "openalex_id": null,
+      "pmid": "20047325",
+      "first_author": "Krikorian",
+      "authors_display": "Krikorian, R. et al.",
+      "year": 2010,
+      "title": "Blueberry supplementation improves memory in older adults.",
+      "venue": "Journal of agricultural and food chemistry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 320,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The prevalence of dementia is increasing with expansion of the older adult population. In the absence of effective therapy, preventive approaches are essential to address this public health problem. Blueberries contain polyphenolic compounds, most prominently anthocyanins, which have antioxidant and anti-inflammatory effects. In addition, anthocyanins have been associated with increased neuronal signaling in brain centers, mediating memory function as well as improved glucose disposal, benefits that would be expected to mitigate neurodegeneration. This study investigated the effects of daily consumption of wild blueberry juice in a sample of nine older adults with early memory changes. At 12 weeks, improved paired associate learning (p = 0.009) and word list recall (p = 0.04) were observed. In addition, there were trends suggesting reduced depressive symptoms (p = 0.08) and lower glucose levels (p = 0.10). We also compared the memory performances of the blueberry subjects with a demographically matched sample who consumed a berry placebo beverage in a companion trial of identical design and observed comparable results for paired associate learning. The findings of this preliminary study suggest that moderate-term blueberry supplementation can confer neurocognitive benefit and establish a basis for more comprehensive human trials to study preventive potential and neuronal mechanisms.",
+      "score": {
+        "composite": 0.26687141374703804,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33415232165481884,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08353808041370471,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Plant Extracts",
+        "Memory",
+        "Dietary Supplements",
+        "Aged",
+        "Aged, 80 and over",
+        "Female",
+        "Male",
+        "Blueberry Plants"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_bbb97494",
+      "doi": "10.1136/jnnp.62.5.464",
+      "url": "https://doi.org/10.1136/jnnp.62.5.464",
+      "openalex_id": null,
+      "pmid": "9153602",
+      "first_author": "Abrahams",
+      "authors_display": "Abrahams, S. et al.",
+      "year": 1997,
+      "title": "Relation between cognitive dysfunction and pseudobulbar palsy in amyotrophic lateral sclerosis.",
+      "venue": "Journal of neurology, neurosurgery, and psychiatry",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 164,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objectives</h4>To examine the relation between cognitive dysfunction and pseudobulbar features in patients with amyotrophic lateral sclerosis (ALS).<h4>Methods</h4>The performance of two patient groups, ALS with pseudobulbar palsy (n = 24) and ALS without pseudobulbar palsy (n = 28), was compared with 28 healthy age matched controls on an extensive neuropsychological battery. Tests used were the national adult reading test, short form of the WAIS-R, recognition memory test, Kendrick object learning test, paired associate learning, Wisconsin card sorting test, verbal fluency, Stroop and negative priming tests, a random movement joystick test, and a computerised Tower of Hanoi test.<h4>Results</h4>Tests of executive function showed a pronounced deficit on written verbal fluency in both ALS groups in comparison to controls, which tended to be more prominent in patients with ALS with pseudobulbar palsy. The random movement joystick test (a non-verbal test of intrinsic movement generation) showed an impairment in the generation of random sequences in patients with pseudobulbar palsy only. The computerised Tower of Hanoi showed a subtle planning impairment (shorter planning times) in all the patients with ALS compared with controls on trials requiring more complex solutions. In addition the pseudobulbar patients displayed shorter planning times on complex trials, and tended to solve these trials less accurately. There was also evidence of a deficit for all patients with ALS in comparison with controls on total errors and number of categories achieved on the Wisconsin card sorting test and a strong tendency towards an impairment on a task of selective attention and cognitive inhibition (negative priming). A word recognition memory deficit was showed across both ALS groups.<h4>Conclusions</h4>This study elicited cognitive deficits (involving predominantly executive processes, with some evidence of memory impairment) in patients with ALS and further strengthened the link",
+      "score": {
+        "composite": 0.23723877124506465,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2956217516469253,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07390543791173132,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Humans",
+        "Amyotrophic Lateral Sclerosis",
+        "Paralysis",
+        "Retrospective Studies",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_9fd9c20d",
+      "doi": "10.1136/bmj.312.7034.801",
+      "url": "https://doi.org/10.1136/bmj.312.7034.801",
+      "openalex_id": null,
+      "pmid": "8608285",
+      "first_author": "Prince",
+      "authors_display": "Prince, M. et al.",
+      "year": 1996,
+      "title": "Is the cognitive function of older patients affected by antihypertensive treatment? Results from 54 months of the Medical Research Council's trial of hypertension in older adults.",
+      "venue": "BMJ (Clinical research ed.)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 202,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>To establish whether initiation of treatment with diuretic or beta blocker is associated over 54 months with change in cognitive function.<h4>Design</h4>A cognitive substudy, nested within a randomised, placebo controlled, single blind trial.<h4>Setting</h4>226 general practices from the Medical Research Council's general practice research framework.<h4>Subjects</h4>A subset of 2584 subjects sequentially recruited from among the 4396 participants aged 65-74 in the trial of treatment of hypertension in older adults. The 4396 subjects were randomised to receive diuretic, beta blocker, or placebo. Subjects had mean systolic pressures of 160-209 mm Hg and mean diastolic pressures <115 mm Hg during an eight week run in.<h4>Outcome measures</h4>The rate of change in paired associate learning test (PALT) and trail making test part A (TMT) scores (administered at entry and at 1, 9, 21, and 54 months) over time.<h4>Results</h4>There was no difference in the mean learning test coefficients (rate of change of score over time) between the three treatments: diuretic -0.31 (95% confidence interval -0.23 to -0.39), beta blocker -0.33 (-0.25 to -0.41), placebo -0.30, (-0.24 to -0.36). There was also no difference in the mean trail making coefficients (rate of change in time taken to complete over time) between the three groups: diuretic -2.73 (95% confidence interval -3.57 to -1.88), beta blocker -2.08 (-3.29 to -0.87), placebo -3.01, (-3.69 to -2.32). A less conservative protocol analysis confirmed this negative finding.<h4>Conclusion</h4>Treating moderate hypertension in older people is unlikely to influence, for better or for worse, subsequent cognitive function.",
+      "score": {
+        "composite": 0.22023874029537374,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30762162784816166,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07690540696204042,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Hypertension",
+        "Adrenergic beta-Antagonists",
+        "Diuretics",
+        "Single-Blind Method",
+        "Cognition Disorders",
+        "Psychological Tests",
+        "Psychometrics",
+        "Aged"
+      ]
+    }
+  ]
+}

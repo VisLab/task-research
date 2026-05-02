@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_task_switching",
+    "name": "Task Switching Task",
+    "aliases": [
+      "Set Shifting",
+      "Alternating Runs"
+    ],
+    "category_id": "cognitive_flexibility_and_higher_order_executive_function",
+    "short_definition": "Alternation between two or more simple tasks on cue; switch-cost RT and errors index task-set reconfiguration.",
+    "description": "Task Switching paradigms measure cognitive flexibility by requiring participants to alternate between two or more classification tasks. Participants view stimuli (e.g., bivalent alphanumeric characters like \"G3\") and perform different classifications depending on a task cue (letter: vowel/consonant; digit: odd/even). Tasks alternate in predictable sequences (e.g., AABB) or are cued on each trial. The primary measures are switch costs (increased RT and errors when switching tasks vs. repeating the same task) and mixing costs (increased RT in mixed-task blocks vs. single-task blocks). Switch costs reflect the time for task-set reconfiguration.",
+    "inclusion_test": {
+      "procedure": "Participants alternate between two (or more) simple tasks on the same stimuli, cued by an explicit cue or a predictable alternation schedule.",
+      "manipulation": "Switch vs. repeat trials; cue-stimulus interval (preparation time); task difficulty; number of tasks; cue transparency.",
+      "measurement": "Switch cost (switch − repeat RT and accuracy); mixing cost (mixed block − pure block); preparation effect (switch cost reduction with longer CSI)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:54:59",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Rogers 1995 — Costs of a predictible switch between simple cognitive tasks. (Journal of Experimental Psycholo…, historical, 3k×)",
+      "doi": "10.1037/0096-3445.124.2.207",
+      "pub_id": "pub_2b1c05d1",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7163151193895507,
+        "breakdown": {
+          "raw": {
+            "citations": 0.465260477558203,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11631511938955075,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1995,
+      "venue": "Journal of Experimental Psychology General",
+      "citation_count": 3089,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Dajani 2015 — Demystifying cognitive flexibility: Implications for clinical and development… (Trends in neurosciences, key_review, 590×)",
+      "doi": "10.1016/j.tins.2015.07.003",
+      "pub_id": "pub_1b7b6dc9",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6157062170332039,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3694915347994823,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09237288369987058,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Trends in neurosciences",
+      "citation_count": 590,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Gustavson 2022 — Genetic associations between executive functions and intelligence: A combined… (Journal of experimental psycholo…, recent_primary, 22×)",
+      "doi": "10.1037/xge0001168",
+      "pub_id": "pub_6f655af8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5487176944242321,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Journal of experimental psychology. General",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Reineberg 2015 — Resting-state networks predict individual differences in common and specific … (NeuroImage, foundational, 175×)",
+      "doi": "10.1016/j.neuroimage.2014.09.045",
+      "pub_id": "pub_fe3ef1fd",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5481729268664337,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29935837413240124,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07483959353310031,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "NeuroImage",
+      "citation_count": 175,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Gläscher 2012 — Lesion mapping of cognitive control and value-based decision making in the pr… (Proceedings of the National Acad…, foundational, 314×)",
+      "doi": "10.1073/pnas.1206608109",
+      "pub_id": "pub_9660b1d0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5265983039767959,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33305988257385016,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08326497064346254,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 314,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Selemon 2013 — A role for synaptic plasticity in the adolescent development of executive fun… (Translational psychiatry, key_review, 278×)",
+      "doi": "10.1038/tp.2013.7",
+      "pub_id": "pub_ec8e9e4e",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5248416797965945,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32603338585304475,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08150834646326119,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Translational psychiatry",
+      "citation_count": 278,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Friedman 2022 — The role of prefrontal cortex in cognitive control and executive function. (Neuropsychopharmacology : offici…, key_review, 937×)",
+      "doi": "10.1038/s41386-021-01132-0",
+      "pub_id": "pub_683849ba",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5123924281719051,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3962363793542871,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09905909483857178,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "citation_count": 937,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Friedman 2017 — Unity and diversity of executive functions: Individual differences as a windo… (Cortex; a journal devoted to the…, key_review, 953×)",
+      "doi": "10.1016/j.cortex.2016.04.023",
+      "pub_id": "pub_2947d45e",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5026372439597327,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3972156425055978,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09930391062639946,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Cortex; a journal devoted to the study of the nervous system and behavior",
+      "citation_count": 953,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Canetta 2016 — Maternal immune activation leads to selective functional deficits in offsprin… (Molecular psychiatry, foundational, 177×)",
+      "doi": "10.1038/mp.2015.222",
+      "pub_id": "pub_021ccee4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.49833648101786715,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3000125907381354,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07500314768453385,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Molecular psychiatry",
+      "citation_count": 177,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Gruner 2017 — Cognitive inflexibility in Obsessive-Compulsive Disorder. (Neuroscience, key_review, 169×)",
+      "doi": "10.1016/j.neuroscience.2016.07.030",
+      "pub_id": "pub_2b7e98d6",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4976708746284278,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29735016518037777,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07433754129509444,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Neuroscience",
+      "citation_count": 169,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Fiske 2019 — Neural substrates of early executive function development. (Developmental review : DR, key_review, 145×)",
+      "doi": "10.1016/j.dr.2019.100866",
+      "pub_id": "pub_88dff98d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4954679911826643,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28853863139732394,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07213465784933099,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Developmental review : DR",
+      "citation_count": 145,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Hagan 2020 — A preliminary systematic review and meta-analysis of randomized-controlled tr… (Eating behaviors, key_review, 39×)",
+      "doi": "10.1016/j.eatbeh.2020.101391",
+      "pub_id": "pub_3f98f0a3",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4867276072936485,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Eating behaviors",
+      "citation_count": 39,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Dickerson 2008 — Detection of cortical thickness correlates of cognitive performance: Reliabil… (NeuroImage, foundational, 234×)",
+      "doi": "10.1016/j.neuroimage.2007.08.042",
+      "pub_id": "pub_42b05dca",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.48235749453949067,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31609664482462935,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07902416120615734,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "NeuroImage",
+      "citation_count": 234,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "da Silva Castanheira 2021 — The impact of pandemic-related worry on cognitive functioning and risk-taking. (PloS one, recent_primary, 21×)",
+      "doi": "10.1371/journal.pone.0260061",
+      "pub_id": "pub_cb056277",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.47807428234795,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PloS one",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Bertuccelli 2022 — Cognitive impairment in people with previous COVID-19 infection: A scoping re… (Cortex; a journal devoted to the…, key_review, 73×)",
+      "doi": "10.1016/j.cortex.2022.06.002",
+      "pub_id": "pub_37c68f35",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4756320431687225,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24919483934155667,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06229870983538917,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Cortex; a journal devoted to the study of the nervous system and behavior",
+      "citation_count": 73,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Aspen 2013 — A review of attention biases in women with eating disorders. (Cognition & emotion, key_review, 85×)",
+      "doi": "10.1080/02699931.2012.749777",
+      "pub_id": "pub_3b2e8a9e",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4678072861444796,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25789581124458505,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06447395281114626,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Cognition & emotion",
+      "citation_count": 85,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Bell 2018 — Meta-analysis of cognitive performance in fibromyalgia. (Journal of clinical and experime…, key_review, 101×)",
+      "doi": "10.1080/13803395.2017.1422699",
+      "pub_id": "pub_07aa4a9b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4602769861480405,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2677746112588288,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0669436528147072,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Journal of clinical and experimental neuropsychology",
+      "citation_count": 101,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Soto 2021 — Executive functions and writing skills in children with and without ADHD. (Neuropsychology, recent_primary, 21×)",
+      "doi": "10.1037/neu0000769",
+      "pub_id": "pub_9503044a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.45807428234795,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Neuropsychology",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Konishi 2002 — Hemispheric asymmetry in human lateral prefrontal cortex during cognitive set… (Proceedings of the National Acad…, foundational, 112×)",
+      "doi": "10.1073/pnas.122644899",
+      "pub_id": "pub_9a433377",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4517593807140584,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2737041895229003,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06842604738072508,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2002,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 112,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Kofler 2019 — Executive Functioning Heterogeneity in Pediatric ADHD. (Journal of abnormal child psycho…, recent_primary, 171×)",
+      "doi": "10.1007/s10802-018-0438-2",
+      "pub_id": "pub_08318990",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.44784016765064083,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29802733726922986,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07450683431730747,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Journal of abnormal child psychology",
+      "citation_count": 171,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Zabelina 2019 — Unity and diversity of executive functions in creativity. (Consciousness and cognition, recent_primary, 42×)",
+      "doi": "10.1016/j.concog.2018.12.005",
+      "pub_id": "pub_46e3d8fd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4477744046383184,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Consciousness and cognition",
+      "citation_count": 42,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Irwin 2019 — Do children with attention-deficit/hyperactivity disorder (ADHD) have set shi… (Neuropsychology, recent_primary, 40×)",
+      "doi": "10.1037/neu0000546",
+      "pub_id": "pub_052a7e27",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.447085017758763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Neuropsychology",
+      "citation_count": 40,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Voon 2015 — Cognitive biases in binge eating disorder: the hijacking of decision making. (CNS spectrums, key_review, 55×)",
+      "doi": "10.1017/s1092852915000681",
+      "pub_id": "pub_63f4c005",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.44159783713055933,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23305801518890404,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05826450379722601,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "CNS spectrums",
+      "citation_count": 55,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Martínez-Molina 2022 — Cognitive efficacy and neural mechanisms of music-based neurological rehabili… (Annals of the New York Academy o…, key_review, 20×)",
+      "doi": "10.1111/nyas.14800",
+      "pub_id": "pub_0587acc8",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.43740093357352006,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Annals of the New York Academy of Sciences",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Voon 2010 — Impulsive choice and response in dopamine agonist-related impulse control beh… (Psychopharmacology, foundational, 165×)",
+      "doi": "10.1007/s00213-009-1697-y",
+      "pub_id": "pub_3d3b714a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.43732623005130355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29597158687188097,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07399289671797024,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Psychopharmacology",
+      "citation_count": 165,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Friedman 2021 — Genetic and environmental relations of executive functions to antisocial pers… (International journal of psychop…, recent_primary, 18×)",
+      "doi": "10.1016/j.ijpsycho.2018.12.007",
+      "pub_id": "pub_f56243a7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4359522867224748,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "International journal of psychophysiology : official journal of the International Organization of Psychophysiology",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "LaPlume 2022 — When I'm 64: Age-Related Variability in Over 40,000 Online Cognitive Test Tak… (The journals of gerontology. Ser…, recent_primary, 31×)",
+      "doi": "10.1093/geronb/gbab143",
+      "pub_id": "pub_822d191b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4334977408641394,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "The journals of gerontology. Series B, Psychological sciences and social sciences",
+      "citation_count": 31,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Stephan 2017 — Meta-analyses of clinical neuropsychological tests of executive dysfunction a… (The American journal of drug and…, key_review, 95×)",
+      "doi": "10.1080/00952990.2016.1206113",
+      "pub_id": "pub_dba70d46",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.42939948182558363,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26426459396900137,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06606614849225034,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "The American journal of drug and alcohol abuse",
+      "citation_count": 95,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Bohon 2020 — Performance and brain activity during the Wisconsin Card Sorting Test in adol… (European child & adolescent psyc…, recent_primary, 22×)",
+      "doi": "10.1007/s00787-019-01350-4",
+      "pub_id": "pub_a34f2e76",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.42871769442423213,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "European child & adolescent psychiatry",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 36,
+      "label": "Hernández-Sauret 2024 — Use of transcranial magnetic stimulation (TMS) for studying cognitive control… (Cognitive, affective & behaviora…, key_review, 9×)",
+      "doi": "10.3758/s13415-024-01193-w",
+      "pub_id": "pub_2ea1c8a4",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4266618442813261,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Cognitive, affective & behavioral neuroscience",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

@@ -75,10 +75,43 @@ def _alias_text(a) -> str:
     return ""
 
 
+# Single-token aliases at or below this character length are dropped from
+# the phrase list. They tokenize as standalone "words" in the phrase gate
+# and as substring matches in the relevance scorer, and short tokens are
+# almost always abbreviations that collide with unrelated literature. For
+# example, "FER" (Facial Emotion Recognition) tokenizes against any paper
+# that abbreviates FERONIA receptor kinase as "FER", or that mentions
+# "Fer-1" (ferrostatin-1), and contaminates the picked tier with plant
+# biology and ferroptosis papers. Same risk for "FC", "PD", "DG", "RAT",
+# "SST", and dozens of similar 2-3 letter task acronyms.
+#
+# Multi-word aliases ("Ekman Faces Task") and longer single-word aliases
+# ("Mentalizing", "Vigilance", "OSPAN") are unaffected.
+#
+# 2026-04-28: cutoff set to 4. Diagnosed via hedtsk_facial_emotion_recognition
+# returning 35+ plant-biology papers in the picked tier under the "FER" alias.
+_MIN_SINGLE_TOKEN_ALIAS_LEN = 4
+
+
 def _phrase_list(item: ItemQueryPlan) -> list[str]:
-    """Return the primary name plus all alias strings for ``item``."""
-    alias_strs = [_alias_text(a) for a in (item.aliases or [])]
-    return [item.primary_name] + [a for a in alias_strs if a]
+    """Return the primary name plus all alias strings safe for the phrase
+    gate and relevance scorer.
+
+    Aliases that are single-token AND ≤ 4 characters are dropped (see
+    `_MIN_SINGLE_TOKEN_ALIAS_LEN`). Multi-word aliases and longer
+    single-token aliases pass through unchanged. The primary name is
+    always included regardless of length.
+    """
+    phrases: list[str] = [item.primary_name]
+    for a in (item.aliases or []):
+        s = _alias_text(a).strip()
+        if not s:
+            continue
+        if " " not in s and len(s) <= _MIN_SINGLE_TOKEN_ALIAS_LEN:
+            # Suspected short abbreviation — skip.
+            continue
+        phrases.append(s)
+    return phrases
 
 
 # ---------------------------------------------------------------------------
@@ -490,6 +523,19 @@ def _merge(group: list[Candidate]) -> Candidate:
                 all_edges.append(edge)
                 seen_edges.add(key)
 
+    # Union publication_types across sources. Different sources use different
+    # vocabularies (OpenAlex's "journal-article" vs S2's "JournalArticle" vs
+    # EPMC's "research-article") — keep them all so the conference/proceedings
+    # filter can fire on any source's tag.
+    all_pub_types: list[str] = []
+    seen_pub_types: set[str] = set()
+    for c in group:
+        for pt in (c.publication_types or []):
+            key = pt.lower()
+            if key not in seen_pub_types:
+                all_pub_types.append(pt)
+                seen_pub_types.add(key)
+
     raw_merged: dict = {}
     for c in group:
         raw_merged.update(c.raw_per_source)
@@ -506,6 +552,7 @@ def _merge(group: list[Candidate]) -> Candidate:
         sources=all_sources,
         raw_per_source=raw_merged,
         stage_b_edges=all_edges,
+        publication_types=all_pub_types,
     )
 
 

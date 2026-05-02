@@ -1,0 +1,214 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_weapons_identification",
+    "name": "Weapons Identification Task",
+    "aliases": [
+      "Shooter Bias Task",
+      "Weapons Task",
+      "Payne Task"
+    ],
+    "category_id": "social_cognition_and_strategic_social_choice",
+    "short_definition": "Speeded categorization of tools vs weapons primed by faces of varying race; congruence effects index implicit racial bias in perception.",
+    "description": "Participants view face primes (typically Black and White faces, presented briefly) followed by target objects that are either weapons (guns, knives) or non-threatening objects (tools, household items). Participants must rapidly classify the target object while ignoring the face prime. The paradigm measures implicit racial bias through two routes: behavioral errors (misclassifying tools as weapons more often after Black face primes) and EEG markers of error monitoring (enhanced ERN on racially biased error trials). The ERN enhancement on bias-consistent errors indicates that the anterior cingulate cortex detects the conflict between egalitarian goals and automatic stereotype-driven responses, with ERN amplitude predicting subsequent behavioral correction. This paradigm bridges social psychology, implicit cognition, and cognitive neuroscience by providing a neural signature of bias detection.",
+    "inclusion_test": {
+      "procedure": "A face (Black or White) is flashed briefly, followed by an object (weapon or tool); participants classify the object. Racial bias is indexed by differential accuracy or speed.",
+      "manipulation": "Face race; object type (weapon vs. tool); presentation duration; response deadline.",
+      "measurement": "Signal-detection measures of racial bias (criterion shift); error rate for weapon/tool by face race; RT differences; shooter bias (shoot/don't-shoot variants)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:58:39",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 5
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Payne 2001 — Prejudice and perception: The role of automatic and controlled processes in m… (Journal of Personality and Socia…, historical, 852×)",
+      "doi": "10.1037//0022-3514.81.2.181",
+      "pub_id": "pub_b19fbd10",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.6376841668732756,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3907366674931022,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09768416687327555,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2001,
+      "venue": "Journal of Personality and Social Psychology",
+      "citation_count": 852,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Levsen 2018 — Neural and behavioral effects of regulating emotional responses to errors dur… (Cognitive, affective & behaviora…, recent_primary, 3×)",
+      "doi": "10.3758/s13415-018-0639-8",
+      "pub_id": "pub_f5145517",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4025657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Cognitive, affective & behavioral neuroscience",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Rivers 2017 — The Weapons Identification Task: Recommendations for adequately powered resea… (PloS one, foundational, 6×)",
+      "doi": "10.1371/journal.pone.0177857",
+      "pub_id": "pub_65d9115e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4006658592787423,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "PloS one",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Volpert-Esmond 2020 — Dissociating Automatic Associations: Comparing Two Implicit Measurements of R… (European journal of social psych…, recent_primary, 2×)",
+      "doi": "10.1002/ejsp.2655",
+      "pub_id": "pub_2237a6fb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3984017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "European journal of social psychology",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Stepanova 2012 — Alcohol-related Cues Promote Automatic Racial Bias. (Journal of experimental social p…, foundational, 13×)",
+      "doi": "10.1016/j.jesp.2012.02.006",
+      "pub_id": "pub_29dd57c2",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.32069874078490357,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Journal of experimental social psychology",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

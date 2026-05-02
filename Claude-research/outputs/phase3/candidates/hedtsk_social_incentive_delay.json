@@ -1,0 +1,386 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:36:49",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_social_incentive_delay",
+    "name": "Social Incentive Delay Task",
+    "aliases": [
+      "SID",
+      "Social Incentive Delay"
+    ],
+    "category_id": "reward_anticipation_and_motivation",
+    "short_definition": "MID variant in which cues predict potential social (smiling/frowning face) rather than monetary outcomes; indexes social reward anticipation.",
+    "description": "The Social Incentive Delay Task is a variant of the Monetary Incentive Delay Task (Task 63) that replaces monetary outcomes with social rewards and punishments. Cues signal the potential for positive social feedback (e.g., a smiling face with a thumbs-up), negative social feedback (e.g., a frowning face with a thumbs-down), or neutral outcomes. Participants then respond to a target stimulus, and outcome delivery depends on response speed. The SID was developed to compare the neural substrates of social versus non-social reward anticipation and consumption, testing whether social rewards engage the same striatal dopaminergic circuitry as monetary rewards. The task has been particularly impactful in autism spectrum disorder research, where reduced social reward sensitivity is hypothesized.",
+    "inclusion_test": {
+      "procedure": "Cues signal potential social reward (smiling face), social non-reward (neutral face), or control (geometric shape). After a delay, participants respond to a target; outcome is contingent on response speed.",
+      "manipulation": "Cue type (social reward, social non-reward, non-social control); target duration (titrated); reward magnitude.",
+      "measurement": "RT by cue type; fMRI ventral striatum activation; comparison of social vs. monetary reward anticipation signals."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 4,
+      "picked": 4,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_e080c9f0",
+      "doi": "10.1093/scan/nsn051",
+      "url": "https://doi.org/10.1093/scan/nsn051",
+      "openalex_id": "https://openalex.org/W2124611764",
+      "pmid": "19174537",
+      "first_author": "Spreckelmeyer",
+      "authors_display": "Katja N. Spreckelmeyer et al.",
+      "year": 2009,
+      "title": "Anticipation of monetary and social reward differently activates mesolimbic brain structures in men and women",
+      "venue": "Social Cognitive and Affective Neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": "University of Oxford",
+      "publication_types": [
+        "article",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 429,
+      "influential_citation_count": null,
+      "fwci": 8.5802,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "bronze",
+      "oa_url": "https://academic.oup.com/scan/article-pdf/4/2/158/27105558/nsn051.pdf",
+      "tldr": null,
+      "abstract": "Motivation for goal-directed behaviour largely depends on the expected value of the anticipated reward. The aim of the present study was to examine how different levels of reward value are coded in the brain for two common forms of human reward: money and social approval. To account for gender differences 16 male and 16 female participants performed an incentive delay task expecting to win either money or positive social feedback. fMRI recording during the anticipation phase revealed proportional activation of neural structures constituting the human reward system for increasing levels of reward, independent of incentive type. However, in men activation in the prospect of monetary rewards encompassed a wide network of mesolimbic brain regions compared to only limited activation for social rewards. In contrast, in women, anticipation of either incentive type activated identical brain regions. Our findings represent an important step towards a better understanding of motivated behaviour by taking into account individual differences in reward valuation.",
+      "score": {
+        "composite": 0.6577695822529779,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35107832901191127,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08776958225297782,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Limbic System",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Analysis of Variance",
+        "Photic Stimulation",
+        "Motivation",
+        "Reinforcement, Social",
+        "Pattern Recognition, Visual",
+        "Task Performance and Analysis",
+        "Attention",
+        "Reaction Time",
+        "Sex Characteristics",
+        "Image Processing, Computer-Assisted",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1a079545",
+      "doi": "10.1016/j.neuropsychologia.2013.07.020",
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2013.07.020",
+      "openalex_id": null,
+      "pmid": "23911778",
+      "first_author": "Kohls",
+      "authors_display": "Kohls, G. et al.",
+      "year": 2013,
+      "title": "The nucleus accumbens is involved in both the pursuit of social reward and the avoidance of social punishment.",
+      "venue": "Neuropsychologia",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 132,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Human social motivation is characterized by the pursuit of social reward and the avoidance of social punishment. The ventral striatum/nucleus accumbens (VS/Nacc), in particular, has been implicated in the reward component of social motivation, i.e., the 'wanting' of social incentives like approval. However, it is unclear to what extent the VS/Nacc is involved in avoiding social punishment like disapproval, an intrinsically pleasant outcome. Thus, we conducted an event-related functional magnetic resonance imaging (fMRI) study using a social incentive delay task with dynamic video stimuli instead of static pictures as social incentives in order to examine participants' motivation for social reward gain and social punishment avoidance. As predicted, the anticipation of avoidable social punishment (i.e., disapproval) recruited the VS/Nacc in a manner that was similar to VS/Nacc activation observed during the anticipation of social reward gain (i.e., approval). Stronger VS/Nacc activity was accompanied by faster reaction times of the participants to obtain those desired outcomes. This data support the assumption that dynamic social incentives elicit robust VS/Nacc activity, which likely reflects motivation to obtain social reward and to avoid social punishment. Clinical implications regarding the involvement of the VS/Nacc in social motivation dysfunction in autism and social phobia are discussed.",
+      "score": {
+        "composite": 0.6307848126678839,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28313925067153556,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07078481266788389,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Nucleus Accumbens",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Social Behavior",
+        "Motivation",
+        "Cues",
+        "Punishment",
+        "Reward",
+        "Reaction Time",
+        "Image Processing, Computer-Assisted",
+        "Adult",
+        "Female",
+        "Male",
+        "Functional Neuroimaging"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a981b366",
+      "doi": "10.1001/jamapediatrics.2022.4924",
+      "url": "https://doi.org/10.1001/jamapediatrics.2022.4924",
+      "openalex_id": null,
+      "pmid": "36595277",
+      "first_author": "Maza",
+      "authors_display": "Maza, M. et al.",
+      "year": 2023,
+      "title": "Association of Habitual Checking Behaviors on Social Media With Longitudinal Functional Brain Development.",
+      "venue": "JAMA pediatrics",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 46,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Importance</h4>Social media platforms provide adolescents with unprecedented opportunities for social interactions during a critical developmental period when the brain is especially sensitive to social feedback.<h4>Objective</h4>To explore how adolescents' frequency of checking behaviors on social media platforms is associated with longitudinal changes in functional brain development across adolescence.<h4>Design, setting, and participants</h4>A 3-year longitudinal cohort study of functional magnetic resonance imaging (fMRI) among sixth- and seventh-grade students recruited from 3 public middle schools in rural North Carolina.<h4>Exposures</h4>At wave 1, participants reported the frequency at which they checked Facebook, Instagram, and Snapchat.<h4>Main outcome or measure</h4>Neural responses to the Social Incentive Delay task when anticipating receiving social feedback, measured annually using fMRI for 3 years. Participants saw a cue that indicated whether the social feedback (adolescent faces with emotional expressions) would be a reward, punishment, or neutral; after a delay, a target appeared and students responded by pressing a button as quickly as possible; a display of social feedback depended on trial type and reaction time.<h4>Results</h4>Of 178 participants recruited at age 12 years, 169 participants (mean [SD] age, 12.89 [0.58] years; range, 11.93-14.52 years; 91 [53.8%] female; 38 [22.5%] Black, 60 [35.5%] Latinx, 50 [29.6%] White, 15 [8.9%] multiracial) met the inclusion criteria. Participants with habitual social media checking behaviors showed lower neural sensitivity to social anticipation at age 12 years compared with those with nonhabitual checking behaviors in the left amygdala, posterior insula (PI), and ventral striatum (VS; β, -0.22; 95% CI, -0.33 to -0.11), right amygdala (β, -0.19; 95% CI, -0.30 to -0.08), right anterior insula (AI; β, -0.23; 95% CI, -0.37 to -0.09), and left dorsolateral prefrontal cortex (DLPFC; β, -0.29; 95% CI, -0.44",
+      "score": {
+        "composite": 0.45572853176432576,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22291412705730315,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05572853176432579,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Cohort Studies",
+        "Longitudinal Studies",
+        "Motivation",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male",
+        "Social Media"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_fa6864a6",
+      "doi": "10.3389/fnbeh.2014.00439",
+      "url": "https://doi.org/10.3389/fnbeh.2014.00439",
+      "openalex_id": null,
+      "pmid": "25601830",
+      "first_author": "Cremers",
+      "authors_display": "Cremers, H. et al.",
+      "year": 2014,
+      "title": "Neural sensitivity to social reward and punishment anticipation in social anxiety disorder.",
+      "venue": "Frontiers in behavioral neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants,patients)"
+      ],
+      "citation_count": 73,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4283602",
+      "tldr": null,
+      "abstract": "An imbalance in the neural motivational system may underlie Social Anxiety Disorder (SAD). This study examines social reward and punishment anticipation in SAD, predicting a valence-specific effect: increased striatal activity for punishment avoidance compared to obtaining a reward. Individuals with SAD (n = 20) and age, gender, and education case-matched controls (n = 20) participated in a functional magnetic resonance imaging (fMRI) study. During fMRI scanning, participants performed a Social Incentive Delay (SID) task to measure the anticipation of social reward and punishment. The left putamen (part of the striatum) showed a valence-specific interaction with group after correcting for medication use and comorbidity. The control group showed a relatively stronger activation for reward vs. punishment trials, compared to the social anxiety group. However, post-hoc pairwise comparisons were not significant, indicating that the effect is driven by a relative difference. A connectivity analysis (Psychophysiological interaction) further revealed a general salience effect: SAD patients showed decreased putamen-ACC connectivity compared to controls for both reward and punishment trials. Together these results suggest that the usual motivational preference for social reward is absent in SAD. In addition, cortical control processes during social incentive anticipation may be disrupted in SAD. These results provide initial evidence for altered striatal involvement in both valence-specific and valence-nonspecific processing of social incentives, and stress the relevance of taking motivational processes into account when studying social anxiety.",
+      "score": {
+        "composite": 0.4072987098353892,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24919483934155667,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06229870983538917,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

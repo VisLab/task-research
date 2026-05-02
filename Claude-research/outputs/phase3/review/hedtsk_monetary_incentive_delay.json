@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_monetary_incentive_delay",
+    "name": "Monetary Incentive Delay Task",
+    "aliases": [
+      "MID",
+      "Monetary Incentive Delay"
+    ],
+    "category_id": "reward_anticipation_and_motivation",
+    "short_definition": "Cue predicts potential monetary gain or loss; speeded target response determines outcome. Striatal activity to cues indexes reward anticipation.",
+    "description": "The Monetary Incentive Delay Task is the dominant paradigm for neuroimaging studies of reward anticipation and consumption. On each trial, a cue signals the potential outcome: reward (gain), loss avoidance, or neutral. After a variable delay period, participants respond to a briefly presented target; successful responses earn the reward (or avoid the loss). The critical contrast is neural activity during the anticipation period (cue-to-target), which robustly activates the ventral striatum/nucleus accumbens, versus the outcome period (after response), which more strongly engages ventromedial prefrontal cortex. The MID has been widely adopted in clinical neuroimaging of addiction, depression, and schizophrenia.",
+    "inclusion_test": {
+      "procedure": "A cue signals potential reward, loss, or neutral outcome; after a delay, a target appears and participants make a speeded response. Outcome depends on response speed.",
+      "manipulation": "Cue type (reward magnitude, loss magnitude, neutral); target duration (titrated to ~66% hit rate).",
+      "measurement": "RT by cue condition; fMRI activation in ventral striatum (anticipation) and medial PFC (outcome); hit rate."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:44:19",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Knutson 2000 — FMRI Visualization of Brain Activity during a Monetary Incentive Delay Task (NeuroImage, historical, 1k×)",
+      "doi": "10.1006/nimg.2000.0593",
+      "pub_id": "pub_623af87b",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7720003767068541,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4213348401607497,
+            "venue": 1.0,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10533371004018742,
+            "venue": 0.2,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2000,
+      "venue": "NeuroImage",
+      "citation_count": 1446,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Oldham 2018 — The anticipation and outcome phases of reward and loss processing: A neuroima… (Human brain mapping, key_review, 318×)",
+      "doi": "10.1002/hbm.24184",
+      "pub_id": "pub_b9874bc9",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6601142818584201,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3337904607670141,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.6666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08344761519175352,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.16666666666666666,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Human brain mapping",
+      "citation_count": 318,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Wilson 2018 — The Neural Substrate of Reward Anticipation in Health: A Meta-Analysis of fMR… (Neuropsychology review, key_review, 157×)",
+      "doi": "10.1007/s11065-018-9385-5",
+      "pub_id": "pub_d42ad146",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.649944633460109,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2931118671737693,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.6666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07327796679344233,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.16666666666666666,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Neuropsychology review",
+      "citation_count": 157,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Gordon 2021 — Long-term maturation of human cortical organoids matches key early postnatal … (Nature neuroscience, recent_primary, 290×)",
+      "doi": "10.1038/s41593-021-00802-y",
+      "pub_id": "pub_8942d5a7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6154512177914327,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32847153783239763,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08211788445809941,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature neuroscience",
+      "citation_count": 290,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Andrasfay 2021 — Reductions in 2020 US life expectancy due to COVID-19 and the disproportionat… (Proceedings of the National Acad…, recent_primary, 269×)",
+      "doi": "10.1073/pnas.2014746118",
+      "pub_id": "pub_226f9fd6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.614367067165659,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32413493532930276,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08103373383232569,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 269,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "O'Brien 2015 — Using Genome-scale Models to Predict Biological Capabilities. (Cell, key_review, 528×)",
+      "doi": "10.1016/j.cell.2015.05.019",
+      "pub_id": "pub_0f1f9d71",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.614102055515131,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3630748887271906,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09076872218179766,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Cell",
+      "citation_count": 528,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Bayraktar 2020 — Astrocyte layers in the mammalian cerebral cortex revealed by a single-cell i… (Nature neuroscience, recent_primary, 393×)",
+      "doi": "10.1038/s41593-020-0602-1",
+      "pub_id": "pub_71f004b1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6098373575779208,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3460160969783499,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08650402424458747,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature neuroscience",
+      "citation_count": 393,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Fauver 2020 — Coast-to-Coast Spread of SARS-CoV-2 during the Early Epidemic in the United S… (Cell, recent_primary, 283×)",
+      "doi": "10.1016/j.cell.2020.04.021",
+      "pub_id": "pub_848797ea",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6050987804885024,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3270617886206764,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0817654471551691,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Cell",
+      "citation_count": 283,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Sey 2020 — A computational tool (H-MAGMA) for improved prediction of brain-disorder risk… (Nature neuroscience, recent_primary, 277×)",
+      "doi": "10.1038/s41593-020-0603-0",
+      "pub_id": "pub_22faf89a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6047897070714736,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32582549495256125,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08145637373814031,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature neuroscience",
+      "citation_count": 277,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Polioudakis 2019 — A Single-Cell Transcriptomic Atlas of Human Neocortical Development during Mi… (Neuron, recent_primary, 455×)",
+      "doi": "10.1016/j.neuron.2019.06.011",
+      "pub_id": "pub_64ac6912",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6019526722024028,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35447735547627784,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08861933886906946,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Neuron",
+      "citation_count": 455,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Elliott 2018 — Genome-wide association studies of brain imaging phenotypes in UK Biobank. (Nature, recent_primary, 692×)",
+      "doi": "10.1038/s41586-018-0571-7",
+      "pub_id": "pub_29a7812d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5980107420434198,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37870963484034587,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09467740871008647,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature",
+      "citation_count": 692,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Natu 2019 — Apparent thinning of human visual cortex during childhood is associated with … (Proceedings of the National Acad…, recent_primary, 292×)",
+      "doi": "10.1073/pnas.1904931116",
+      "pub_id": "pub_ffdc42c3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5955503578255541,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3288680979688831,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08221702449222078,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 292,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Walker 2019 — Genetic Control of Expression and Splicing in Developing Human Brain Informs … (Cell, recent_primary, 233×)",
+      "doi": "10.1016/j.cell.2019.09.021",
+      "pub_id": "pub_026bb335",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5922957699751853,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31584974656740794,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07896243664185199,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Cell",
+      "citation_count": 233,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Wang 2018 — The global distribution and spread of the mobilized colistin resistance gene … (Nature communications, recent_primary, 453×)",
+      "doi": "10.1038/s41467-018-03205-z",
+      "pub_id": "pub_a037cf3b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5918890484147096,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3542228603255049,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08855571508137622,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature communications",
+      "citation_count": 453,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Mathieson 2018 — The genomic history of southeastern Europe. (Nature, recent_primary, 395×)",
+      "doi": "10.1038/nature25778",
+      "pub_id": "pub_743ff6e1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5899106457769998,
+        "breakdown": {
+          "raw": {
+            "citations": 0.34630924977466604,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08657731244366651,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature",
+      "citation_count": 395,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Alexopoulos 2019 — Mechanisms and treatment of late-life depression. (Translational psychiatry, key_review, 378×)",
+      "doi": "10.1038/s41398-019-0514-6",
+      "pub_id": "pub_49ecb894",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5892755384736776,
+        "breakdown": {
+          "raw": {
+            "citations": 0.34376882056137714,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08594220514034429,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Translational psychiatry",
+      "citation_count": 378,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Kalia 2018 — Structural basis of mitochondrial receptor binding and constriction by DRP1. (Nature, recent_primary, 314×)",
+      "doi": "10.1038/s41586-018-0211-2",
+      "pub_id": "pub_63d1701f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5865983039767959,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33305988257385016,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08326497064346254,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature",
+      "citation_count": 314,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Wallace 2017 — Knee osteoarthritis has doubled in prevalence since the mid-20th century. (Proceedings of the National Acad…, foundational, 602×)",
+      "doi": "10.1073/pnas.1703856114",
+      "pub_id": "pub_d26f30f4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5859971693098902,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3706553439062273,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09266383597655682,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 602,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Marlétaz 2018 — Amphioxus functional genomics and the origins of vertebrate gene regulation. (Nature, recent_primary, 240×)",
+      "doi": "10.1038/s41586-018-0734-6",
+      "pub_id": "pub_578a2c1b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5827224144150952,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3175563243270473,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07938908108176182,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature",
+      "citation_count": 240,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Lam 2018 — Population genomics of hypervirulent Klebsiella pneumoniae clonal-group 23 re… (Nature communications, recent_primary, 233×)",
+      "doi": "10.1038/s41467-018-05114-7",
+      "pub_id": "pub_0fd9c8eb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5822957699751853,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31584974656740794,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07896243664185199,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature communications",
+      "citation_count": 233,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Miller 2014 — Transcriptional landscape of the prenatal human brain. (Nature, foundational, 1k×)",
+      "doi": "10.1038/nature13185",
+      "pub_id": "pub_5587dad1",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.564632480079779,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4051965869857826,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10129914674644565,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Nature",
+      "citation_count": 1094,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "LeDoux 2017 — The birth, death and resurrection of avoidance: a reconceptualization of a tr… (Molecular psychiatry, key_review, 231×)",
+      "doi": "10.1038/mp.2016.166",
+      "pub_id": "pub_175a4224",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.562171525535115,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3153527688071267,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07883819220178168,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Molecular psychiatry",
+      "citation_count": 231,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "COVID-19 Mental Disorders Collaborators 2021 — Global prevalence and burden of depressive and anxiety disorders in 204 count… (Lancet (London, England), key_review, 3k×)",
+      "doi": "10.1016/s0140-6736(21)02143-7",
+      "pub_id": "pub_634ee50d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5598946138249786,
+        "breakdown": {
+          "raw": {
+            "citations": 0.46624512196658136,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.11656128049164534,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Lancet (London, England)",
+      "citation_count": 3142,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Rosenzweig 2014 — Assessing agricultural risks of climate change in the 21st century in a globa… (Proceedings of the National Acad…, foundational, 549×)",
+      "doi": "10.1073/pnas.1222463110",
+      "pub_id": "pub_ab38c773",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5546655412316132,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3653288315931191,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09133220789827977,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2014,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 549,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Remuzzi 2020 — COVID-19 and Italy: what next? (Lancet (London, England), key_review, 1k×)",
+      "doi": "10.1016/s0140-6736(20)30627-9",
+      "pub_id": "pub_6ca52c57",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5411686785986336,
+        "breakdown": {
+          "raw": {
+            "citations": 0.43134138106120096,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.10783534526530024,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Lancet (London, England)",
+      "citation_count": 1719,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Elkayam 2012 — The structure of human argonaute-2 in complex with miR-20a. (Cell, foundational, 500×)",
+      "doi": "10.1016/j.cell.2012.05.017",
+      "pub_id": "pub_bd17201d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5333149045377037,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3599262848174814,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08998157120437035,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Cell",
+      "citation_count": 500,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Zuo 2010 — The oscillating brain: complex and reliable. (NeuroImage, foundational, 1k×)",
+      "doi": "10.1016/j.neuroimage.2009.09.037",
+      "pub_id": "pub_11f2935d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5259699161703756,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4105463313481691,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10263658283704227,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "NeuroImage",
+      "citation_count": 1200,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 35,
+      "label": "Papazian 2020 — Ventilator-associated pneumonia in adults: a narrative review. (Intensive care medicine, key_review, 549×)",
+      "doi": "10.1007/s00134-020-05980-0",
+      "pub_id": "pub_dac33f37",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5246655412316131,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3653288315931191,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09133220789827977,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Intensive care medicine",
+      "citation_count": 549,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 36,
+      "label": "Sperotto 2021 — Cardiac manifestations in SARS-CoV-2-associated multisystem inflammatory synd… (European journal of pediatrics, key_review, 260×)",
+      "doi": "10.1007/s00431-020-03766-6",
+      "pub_id": "pub_a9b23eda",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.52387636293952,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32217211842474663,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08054302960618666,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "European journal of pediatrics",
+      "citation_count": 260,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 37,
+      "label": "Premraj 2022 — Mid and long-term neurological and neuropsychiatric manifestations of post-CO… (Journal of the neurological scie…, key_review, 507×)",
+      "doi": "10.1016/j.jns.2022.120162",
+      "pub_id": "pub_66d35211",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5235157416919642,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3607296334345237,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09018240835863092,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Journal of the neurological sciences",
+      "citation_count": 507,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

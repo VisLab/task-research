@@ -1,0 +1,1539 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:20:46",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_digit_span",
+    "name": "Digit Span Task",
+    "aliases": [
+      "DS",
+      "Forward/Backward Span",
+      "Digit Span"
+    ],
+    "category_id": "short_term_and_working_memory",
+    "short_definition": "Auditory or visual digit sequences reproduced in forward or backward order; longest correctly reproduced length indexes verbal short-term and working memory span.",
+    "description": "The Digit Span task measures verbal short-term and working memory capacity. In the Forward condition, participants listen to sequences of digits presented at a rate of one per second and immediately repeat them in the same order; sequence length increases until recall fails. In the Backward condition, participants repeat digits in reverse order, adding a manipulation component. The Sequencing condition (from WAIS-IV) requires reordering digits numerically. Digit Span is one of the oldest and most widely administered neuropsychological measures, embedded in the Wechsler intelligence and memory scales. Forward span primarily indexes the phonological loop, while backward span engages central executive processes.",
+    "inclusion_test": {
+      "procedure": "Sequences of digits are presented at a rate of one per second; participants reproduce the sequence in forward, backward, or sequencing order. Length increases until two consecutive failures.",
+      "manipulation": "Direction (forward, backward, sequencing); sequence length; presentation modality (auditory vs. visual).",
+      "measurement": "Span (longest correct sequence); total score; forward-backward difference as index of executive load."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 19,
+      "picked": 19,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_62ddbcf0",
+      "doi": "10.1037/h0043158",
+      "url": "https://doi.org/10.1037/h0043158",
+      "openalex_id": "https://openalex.org/W2579555219",
+      "pmid": null,
+      "first_author": "Miller",
+      "authors_display": "George Miller",
+      "year": 1956,
+      "title": "The magical number seven, plus or minus two: Some limits on our capacity for processing information.",
+      "venue": "Psychological Review",
+      "venue_tier": "flagship",
+      "publisher": "American Psychological Association",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,subjects)"
+      ],
+      "citation_count": 17363,
+      "influential_citation_count": null,
+      "fwci": 19.996,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "First, the span of absolute judgment and the span of immediate memory impose severe limitations on the amount of information that we are able to receive, process, and remember. By organizing the stimulus input simultaneously into several dimensions and successively into a sequence or chunks, we manage to break (or at least stretch) this informational bottleneck. Second, the process of recoding is a very important one in human psychology and deserves much more explicit attention than it has received. In particular, the kind of linguistic recoding that people do seems to me to be the very lifeblood of the thought processes. Recoding procedures are a constant concern to clinicians, social psychologists, linguists, and anthropologists and yet, probably because recoding is less accessible to experimental manipulation than nonsense syllables or T mazes, the traditional experimental psychologist has contributed little or nothing to their analysis. Nevertheless, experimental techniques can be used, methods of recoding can be specified, behavioral indicants can be found. And I anticipate that we will find a very orderly set of relations describing what now seems an uncharted wilderness of individual differences. Third, the concepts and measures provided by the theory of information provide a quantitative way of getting at some of these questions. The theory provides us with a yardstick for calibrating our stimulus materials and for measuring the performance of our subjects. In the interests of communication I have suppressed the technical details of information measurement and have tried to express the ideas in more familiar terms; I hope this paraphrase will not lead you to think they are not useful in research. Informational concepts have already proved valuable in the study of discrimination and of language; they promise a great deal in the study of learning and memory; and it has even been proposed that they can be useful in the study of concept formation. A lot of quest",
+      "score": {
+        "composite": 0.7413012140139541,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5652048560558166,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.14130121401395415,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_517c98b0",
+      "doi": "10.1080/13854046.2020.1769192",
+      "url": "https://doi.org/10.1080/13854046.2020.1769192",
+      "openalex_id": null,
+      "pmid": "32519594",
+      "first_author": "Marra",
+      "authors_display": "Marra, D. et al.",
+      "year": 2020,
+      "title": "Validity of teleneuropsychology for older adults in response to COVID-19: A systematic and critical review.",
+      "venue": "The Clinical neuropsychologist",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Systematic Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 169,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<b>Objective:</b> Due to the recent COVID-19 pandemic, the field of neuropsychology must rapidly evolve to incorporate assessments delivered via telehealth, or teleneuropsychology (TNP). Given the increasing demand to deliver services electronically due to public health concerns, it is important to review available TNP validity studies. This systematic review builds upon the work of Brearly and colleagues' (2017) meta-analysis and provides an updated review of the literature, with special emphasis on test-level validity data.<b>Method:</b> Using similar methodology as Brearly and colleagues (2017) three internet databases (PubMed, EBSCOhost, PsycINFO) were searched for relevant articles published since 2016. Studies with older adults (aged 65+) who underwent face-to-face and TNP assessments in a counterbalanced cross-over design were included. After review, 10 articles were retained. Combined with nine articles from Brearly's analysis, a total of 19 studies were included in the systematic review.<b>Results:</b> Retained studies included samples from 5 different countries, various ethnic/cultural backgrounds, and diverse diagnostic populations. Test-level analysis suggests there are cognitive screeners (MMSE, MoCA), language tests (BNT, Letter Fluency), attention/working memory tasks (Digit Span Total), and memory tests (HVLT-R) with strong support for TNP validity. Other measures are promising but lack sufficient support at this time. Few TNP studies have done in-home assessments and most studies rely on a PC or laptop.<b>Conclusions:</b> Overall, there appears to be good support for TNP assessments in older adults. Challenges to TNP in the current climate are discussed. Finally, a provisional outline of viable TNP procedures used in our clinic is provided.",
+      "score": {
+        "composite": 0.4876708746284278,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29735016518037777,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07433754129509444,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Pneumonia, Viral",
+        "Coronavirus Infections",
+        "Reproducibility of Results",
+        "Neuropsychology",
+        "Neuropsychological Tests",
+        "Telemedicine",
+        "Databases, Factual",
+        "Aged",
+        "Aged, 80 and over",
+        "Female",
+        "Male",
+        "Pandemics",
+        "Betacoronavirus",
+        "COVID-19",
+        "SARS-CoV-2"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_19f5f94e",
+      "doi": "10.1016/j.cogpsych.2004.12.001",
+      "url": "https://doi.org/10.1016/j.cogpsych.2004.12.001",
+      "openalex_id": null,
+      "pmid": "16039935",
+      "first_author": "Cowan",
+      "authors_display": "Cowan, N. et al.",
+      "year": 2005,
+      "title": "On the capacity of attention: its estimation and its role in working memory and cognitive aptitudes.",
+      "venue": "Cognitive psychology",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, U.S. Gov't, P.H.S.",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 602,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Working memory (WM) is the set of mental processes holding limited information in a temporarily accessible state in service of cognition. We provide a theoretical framework to understand the relation between WM and aptitude measures. The WM measures that have yielded high correlations with aptitudes include separate storage-and-processing task components, on the assumption that WM involves both storage and processing. We argue that the critical aspect of successful WM measures is that rehearsal and grouping processes are prevented, allowing a clearer estimate of how many separate chunks of information the focus of attention circumscribes at once. Storage-and-processing tasks correlate with aptitudes, according to this view, largely because the processing task prevents rehearsal and grouping of items to be recalled. In a developmental study, we document that several scope-of-attention measures that do not include a separate processing component, but nevertheless prevent efficient rehearsal or grouping, also correlate well with aptitudes and with storage-and-processing measures. So does digit span in children too young to rehearse.",
+      "score": {
+        "composite": 0.47599716930989017,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3706553439062273,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09266383597655682,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Individuality",
+        "Intelligence",
+        "Discrimination Learning",
+        "Memory, Short-Term",
+        "Speech Perception",
+        "Pattern Recognition, Visual",
+        "Color Perception",
+        "Aptitude",
+        "Attention",
+        "Age Factors",
+        "Mathematical Computing",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Female",
+        "Male",
+        "Statistics as Topic",
+        "Practice, Psychological"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_cbf5646e",
+      "doi": "10.3389/fpsyg.2019.00311",
+      "url": "https://doi.org/10.3389/fpsyg.2019.00311",
+      "openalex_id": null,
+      "pmid": "30881324",
+      "first_author": "Nyongesa",
+      "authors_display": "Nyongesa, M. et al.",
+      "year": 2019,
+      "title": "Assessing Executive Function in Adolescence: A Scoping Review of Existing Measures and Their Psychometric Robustness.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Scoping Review",
+        "review-article",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 63,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6405510",
+      "tldr": null,
+      "abstract": "<b>Background:</b> There is much research examining adolescents' executive function (EF) but there is little information about tools that measure EF, in particular preference of use, their reliability and validity. This information is important as to help both researchers and practitioners select the most relevant and reliable measure of EF to use with adolescents in their context. <b>Aims:</b> We conducted a scoping review to: (a) identify the measures of EF that have been used in studies conducted among adolescents in the past 15 years; (b) identify the most frequently used measures of EF; and (c) establish the psychometric robustness of existing EF measures used with adolescents. <b>Methods:</b> We searched three bibliographic databases (PsycINFO, Ovid Medline, and Web of Science) using key terms \"<i>Adolescents</i>,\" \"<i>Executive Functions</i>,\" and \"<i>measures\"</i>. The search covered research articles published between 1st January 2002 and 31st July 2017. <b>Results:</b> We identified a total of 338 individual measures of EF from 705 eligible studies. The vast majority of these studies (95%) were conducted in high income countries. Of the identified measures, 10 were the most used frequently, with a cumulative percent frequency accounting for nearly half (44%) the frequency of usage of all reported measures of EF. These are: Digit Span (count = 160), Trail Making Test (count = 158), Behavior Rating Inventory of Executive Function (count = 148), Wisconsin Card Sorting Test (count = 140), Verbal Fluency Tasks (count = 88), Stroop Color-Word Test (count = 78), Classical Stroop Task (count = 63), Color-Word Interference Test from Delis-Kaplan battery (count = 62), Rey-Osterrieth Complex Figure Test (count = 62), and Original Continuous Performance Test (count = 58). In terms of paradigms, tasks from Span (count = 235), Stroop (count = 216), Trails (count = 171), Card sorting (count = 166), Continuous performance (count = 99), and Tower (count = 94) paradigms wer",
+      "score": {
+        "composite": 0.46353062237030057,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24078915614786897,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06019728903696724,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a0854181",
+      "doi": "10.1016/s2352-3026(19)30050-x",
+      "url": "https://doi.org/10.1016/s2352-3026(19)30050-x",
+      "openalex_id": null,
+      "pmid": "31078468",
+      "first_author": "Mulrooney",
+      "authors_display": "Mulrooney, D. et al.",
+      "year": 2019,
+      "title": "The changing burden of long-term health outcomes in survivors of childhood acute lymphoblastic leukaemia: a retrospective analysis of the St Jude Lifetime Cohort Study.",
+      "venue": "The Lancet. Haematology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 100,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Treatment for childhood acute lymphoblastic leukemia has evolved over the past five decades, with moderation of traditional chemotherapy and radiotherapy and the introduction of targeted immune-based and cellular-based therapies. The affect of these changes on late health outcomes has not been assessed. Using data from the The St Jude Lifetime (SJLIFE) Cohort, we aimed to characterise the magnitude of morbidity and patterns of late health outcomes among survivors of childhood acute lymphoblastic leukaemia treated over time.<h4>Methods</h4>The St Jude Lifetime (SJLIFE) Cohort is a retrospective cohort study with prospective follow-up and ongoing data accrual designed to facilitate longitudinal, clinically-based assessment of health outcomes among survivors of paediatric malignancies. 980 survivors included in this analysis were diagnosed with paediatric acute lymphoblastic leukaemia at St Jude Children's Research Hospital (SJCRH) between Aug 28, 1963, and July 19, 2003, were aged 18 years old and older at enrolment, had a minimum follow-up of 10 years after diagnosis, and completed an initial on-campus SJLIFE assessment as of data cutoff (June 30, 2015). 272 community control participants, matched to survivors on 5-year age blocks in each sex, were recruited for comparison. Cumulative chemotherapy and radiation dose exposures and major medical events during and after therapy were retrieved from the medical records of the survivors. History or physical examination, laboratory analysis, physical fitness, and neurocognitive testing were done. Health conditions were graded according to a modified version of the Common Terminology Criteria for Adverse Events. Neurocognitive domains of attention (Trial Making Test Part A and Conner's Continuous Performance Test-II) and executive function (Trail Making Test Part B, Controlled Oral Word Association Test, and Wechsler Adult Intelligence Scale-III Digit Span Test Backward) were measured and age-adjusted Z sc",
+      "score": {
+        "composite": 0.440134380182744,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2672041873976427,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06680104684941067,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Hypothalamic Diseases",
+        "Hypogonadism",
+        "Risk Factors",
+        "Case-Control Studies",
+        "Retrospective Studies",
+        "Cohort Studies",
+        "Follow-Up Studies",
+        "Adolescent",
+        "Adult",
+        "Survivors",
+        "Female",
+        "Male",
+        "Precursor Cell Lymphoblastic Leukemia-Lymphoma",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_748f8f4d",
+      "doi": "10.1017/s1355617718000425",
+      "url": "https://doi.org/10.1017/s1355617718000425",
+      "openalex_id": null,
+      "pmid": "30019663",
+      "first_author": "Hughes",
+      "authors_display": "Hughes, M. et al.",
+      "year": 2018,
+      "title": "Change in Cognitive Performance From Midlife Into Old Age: Findings from the Midlife in the United States (MIDUS) Study.",
+      "venue": "Journal of the International Neuropsychological Society : JINS",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 107,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objectives</h4>A substantial body of research has documented age-related declines in cognitive abilities among adults over 60, yet there is much less known about changes in cognitive abilities during midlife. The goal was to examine longitudinal changes in multiple cognitive domains from early midlife through old age in a large national sample, the Midlife in the United States (MIDUS) study.<h4>Methods</h4>The Brief Test of Adult Cognition by Telephone (BTACT) was administered on two occasions (MIDUS 2, MIDUS 3), an average of 9 years apart. At MIDUS 3, those with the cognitive assessment (N=2518) ranged in age from 42 to 92 years (M=64.30; SD=11.20) and had a mean education of 14.68 years (SD=2.63). The BTACT includes assessment of key aging-sensitive cognitive domains: immediate and delayed free recall, number series, category fluency, backward digit span, processing speed, and reaction time for attention switching and inhibitory control, which comprise two factors: episodic memory and executive functioning.<h4>Results</h4>As predicted, all cognitive subtests and factors showed very small but significant declines over 9 years, with differences in the timing and extent of change. Processing speed showed the earliest and steepest decrements. Those with higher educational attainment scored better on all tests except reaction time. Men had better executive functioning and women performed better on episodic memory.<h4>Conclusions</h4>Examining cognitive changes in midlife provides opportunities for early detection of cognitive impairments and possibilities for preventative interventions. (JINS, 2018, 24, 805-820).",
+      "score": {
+        "composite": 0.4311043192299887,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2710839435866214,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06777098589665535,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Longitudinal Studies",
+        "Cognition",
+        "Memory",
+        "Mental Recall",
+        "Attention",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Sex Characteristics",
+        "Telephone",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Educational Status",
+        "United States",
+        "Female",
+        "Male",
+        "Executive Function",
+        "Memory, Episodic",
+        "Cognitive Aging"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_114e202c",
+      "doi": "10.3389/fpsyg.2017.02311",
+      "url": "https://doi.org/10.3389/fpsyg.2017.02311",
+      "openalex_id": null,
+      "pmid": "29367850",
+      "first_author": "Poon",
+      "authors_display": "Poon, K.",
+      "year": 2017,
+      "title": "Hot and Cool Executive Functions in Adolescence: Development and Contributions to Important Developmental Outcomes.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 91,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5767838",
+      "tldr": null,
+      "abstract": "Despite significant theoretical advancement in the area of child neuropsychology, limited attention has been paid to the developmental features of adolescence. The present study intends to address this issue in relation to executive function (EF). EF refers to the psychological processes that underlie goal-directed behavior; recent studies separate cool EF (psychological process involves pure logic and critical analysis) and hot EF (psychological process driven by emotion). Although neurological findings suggest that adolescence is a sensitive period for EF development, data on comparing the developmental progression in hot or cool EFs is highly missing. Moreover, while evidence has confirmed the relationships between EF and day-to-day functioning, whether and how hot and cool EFs contribute to core developmental outcomes in adolescence is still remained unknown. The current study aims to enhance our understanding of the development and impacts of hot and cool EFs in adolescence. A total of 136 typically developing adolescents from age 12 to 17 completed four cool EF tasks including Backward digit span, Contingency naming test, Stockings of Cambridge, and Stroop Color and Word test, and one hot task on Cambridge gambling task. Data on academic performance and psychological adjustment was also collected. Results showed that cool and hot EF exhibited different patterns of age-related growth in adolescence. Specifically, cool EF ascended with age while hot EF showed a bell-shaped development. Moreover, there were correlations among cool EF measures but no association between cool and hot EFs. Further, cool EF was a better predictor of academic performance, while hot EF uniquely related to emotional problems. The results provide evidence for the association among cool EF tests and the differentiation of hot and cool EFs. The bell-shaped development of hot EF might suggest a period of heightened risk-taking propensity in middle adolescence. Given the plastic nature of EF",
+      "score": {
+        "composite": 0.3987834574365546,
+        "breakdown": {
+          "raw": {
+            "citations": 0.261800496412885,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06545012410322125,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_786e5315",
+      "doi": "10.1007/s11682-012-9176-1",
+      "url": "https://doi.org/10.1007/s11682-012-9176-1",
+      "openalex_id": null,
+      "pmid": "22644789",
+      "first_author": "Gibbons",
+      "authors_display": "Gibbons, L. et al.",
+      "year": 2012,
+      "title": "A composite score for executive functioning, validated in Alzheimer's Disease Neuroimaging Initiative (ADNI) participants with baseline mild cognitive impairment.",
+      "venue": "Brain imaging and behavior",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Validation Study",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 454,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The Alzheimer's Disease Neuroimaging Initiative (ADNI) measures abilities broadly related to executive function (EF), including WAIS-R Digit Symbol Substitution, Digit Span Backwards, Trails A and B, Category Fluency, and Clock Drawing. This study investigates whether a composite executive function measure based on these multiple indicators has better psychometric characteristics than the widely used individual components. We applied item response theory methods to 800 ADNI participants to derive an EF composite score (ADNI-EF) from the above measures. We then compared ADNI-EF with component measures in 390 longitudinally-followed participants with mild cognitive impairment (MCI) with respect to: (1) Ability to detect change over time; (2) Ability to predict conversion to dementia; (3) Strength of cross-sectional association with MRI-derived measures of structures involved in frontal systems, and (4) Strength of baseline association with cerebrospinal fluid (CSF) levels of amyloid β₁₋₄₂, total tau, and phosphorylated tau(181P). ADNI-EF showed the greatest change over time, followed closely by Category Fluency. ADNI-EF needed a 40 % smaller sample size to detect change. ADNI-EF was the strongest predictor of AD conversion. ADNI-EF was the only measure significantly associated with all the MRI regions, though other measures were more strongly associated in a few of the regions. ADNI-EF was associated with all the CSF measures. ADNI-EF appears to be a useful composite measure of EF in MCI, as good as or better than any of its composite parts. This study demonstrates an approach to developing a psychometrically sophisticated composite score from commonly-used tests.",
+      "score": {
+        "composite": 0.3919208952667094,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3543502477335043,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08858756193337608,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Alzheimer Disease",
+        "Severity of Illness Index",
+        "Data Interpretation, Statistical",
+        "Neuropsychological Tests",
+        "Psychometrics",
+        "Algorithms",
+        "Aged",
+        "Female",
+        "Male",
+        "Executive Function",
+        "Cognitive Dysfunction"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5bbe9f20",
+      "doi": "10.1016/j.jad.2012.03.012",
+      "url": "https://doi.org/10.1016/j.jad.2012.03.012",
+      "openalex_id": null,
+      "pmid": "22464936",
+      "first_author": "Berman",
+      "authors_display": "Berman, M. et al.",
+      "year": 2012,
+      "title": "Interacting with nature improves cognition and affect for individuals with depression.",
+      "venue": "Journal of affective disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 259,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>This study aimed to explore whether walking in nature may be beneficial for individuals with major depressive disorder (MDD). Healthy adults demonstrate significant cognitive gains after nature walks, but it was unclear whether those same benefits would be achieved in a depressed sample as walking alone in nature might induce rumination, thereby worsening memory and mood.<h4>Methods</h4>Twenty individuals diagnosed with MDD participated in this study. At baseline, mood and short term memory span were assessed using the PANAS and the backwards digit span (BDS) task, respectively. Participants were then asked to think about an unresolved negative autobiographical event to prime rumination, prior to taking a 50-min walk in either a natural or urban setting. After the walk, mood and short-term memory span were reassessed. The following week, participants returned to the lab and repeated the entire procedure, but walked in the location not visited in the first session (i.e., a counterbalanced within-subjects design).<h4>Results</h4>Participants exhibited significant increases in memory span after the nature walk relative to the urban walk, p<.001, η(p)(2)=.53 (a large effect-size). Participants also showed increases in mood, but the mood effects did not correlate with the memory effects, suggesting separable mechanisms and replicating previous work.<h4>Limitations</h4>Sample size and participants' motivation.<h4>Conclusions</h4>These findings extend earlier work demonstrating the cognitive and affective benefits of interacting with nature to individuals with MDD. Therefore, interacting with nature may be useful clinically as a supplement to existing treatments for MDD.",
+      "score": {
+        "composite": 0.3838207990002894,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3219498626678245,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08048746566695612,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Trees",
+        "Walking",
+        "Affect",
+        "Memory, Short-Term",
+        "Environment",
+        "Cities",
+        "Adult",
+        "Female",
+        "Male",
+        "Major Depressive Disorder"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_5e10418d",
+      "doi": "10.5770/cgj.18.189",
+      "url": "https://doi.org/10.5770/cgj.18.189",
+      "openalex_id": null,
+      "pmid": "26740832",
+      "first_author": "Forbes",
+      "authors_display": "Forbes, S. et al.",
+      "year": 2015,
+      "title": "Effect of Nutrients, Dietary Supplements and Vitamins on Cognition: a Systematic Review and Meta-Analysis of Randomized Controlled Trials.",
+      "venue": "Canadian geriatrics journal : CGJ",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 60,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://cgjonline.ca/index.php/cgj/article/download/189/269",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Observational studies have suggested that various nutrients, dietary supplements, and vitamins may delay the onset of age-associated cognitive decline and dementia. We systematically reviewed recent randomized controlled trials investigating the effect of nutritional interventions on cognitive performance in older non-demented adults.<h4>Methods</h4>We searched MEDLINE, CINAHL, Embase, and the Cochrane Library for articles published between 2003 and 2013. We included randomized trials of ≥ 3 months' duration that examined the cognitive effects of a nutritional intervention in non-demented adults > 40 years of age. Meta-analyses were done when sufficient trials were available.<h4>Results</h4>Twenty-four trials met inclusion criteria (six omega-3 fatty acids, seven B vitamins, three vitamin E, eight other interventions). In the meta-analyses, omega-3 fatty acids showed no significant effect on Mini-Mental State Examination (MMSE) scores (four trials, mean difference 0.06, 95% CI -0.08 - 0.19) or digit span forward (three trials, mean difference -0.02, 95% CI -0.30 - 0.25), while B vitamins showed no significant effect on MMSE scores (three trials, mean difference 0.02, 95% CI -0.22 - 0.25). None of the vitamin E studies reported significant effects on cognitive outcomes. Among the other nutritional interventions, statistically significant differences between the intervention and control groups on at least one cognitive domain were found in single studies of green tea extract, Concord grape juice, chromium picolinate, beta-carotene, two different combinations of multiple vitamins, and a dietary approach developed for the control of hypertension.<h4>Conclusions</h4>Omega-3 fatty acids, B vitamins, and vitamin E supplementation did not affect cognition in non-demented middle-aged and older adults. Other nutritional interventions require further evaluation before their use can be advocated for the prevention of age-associated cognitive decline and demen",
+      "score": {
+        "composite": 0.34283571828526777,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23800953980773776,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05950238495193444,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d2da48ea",
+      "doi": "10.12779/dnd.2019.18.3.77",
+      "url": "https://doi.org/10.12779/dnd.2019.18.3.77",
+      "openalex_id": null,
+      "pmid": "31681443",
+      "first_author": "Kang",
+      "authors_display": "Kang, S. et al.",
+      "year": 2019,
+      "title": "The Cortical Neuroanatomy Related to Specific Neuropsychological Deficits in Alzheimer's Continuum.",
+      "venue": "Dementia and neurocognitive disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants,patients)"
+      ],
+      "citation_count": 95,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "http://dnd.or.kr/Synapse/Data/PDFData/0196DND/dnd-18-77.pdf",
+      "tldr": null,
+      "abstract": "<h4>Background and purpose</h4>In Alzheimer's continuum (a comprehensive of preclinical Alzheimer's disease [AD], mild cognitive impairment [MCI] due to AD, and AD dementia), cognitive dysfunctions are often related to cortical atrophy in specific brain regions. The purpose of this study was to investigate the association between anatomical pattern of cortical atrophy and specific neuropsychological deficits.<h4>Methods</h4>A total of 249 participants with Alzheimer's continuum (125 AD dementia, 103 MCI due to AD, and 21 preclinical AD) who were confirmed to be positive for amyloid deposits were collected from the memory disorder clinic in the department of neurology at Samsung Medical Center in Korea between September 2013 and March 2018. To analyze neuropsychological test-specific neural correlates representing the relationship between cortical atrophy measured by cortical thickness and performance in specific neuropsychological tests, a linear regression analysis was performed. Two neural correlates acquired by 2 different standardized scores in neuropsychological tests were also compared.<h4>Results</h4>Cortical atrophy in several specific brain regions was associated with most neuropsychological deficits, including digit span backward, naming, drawing-copying, verbal and visual recall, semantic fluency, phonemic fluency, and response inhibition. There were a few differences between 2 neural correlates obtained by different z-scores.<h4>Conclusions</h4>The poor performance of most neuropsychological tests is closely related to cortical thinning in specific brain areas in Alzheimer's continuum. Therefore, the brain atrophy pattern in patients with Alzheimer's continuum can be predict by an accurate analysis of neuropsychological tests in clinical practice.",
+      "score": {
+        "composite": 0.33939948182558366,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26426459396900137,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06606614849225034,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_24730922",
+      "doi": "10.1001/jamaneurol.2017.3762",
+      "url": "https://doi.org/10.1001/jamaneurol.2017.3762",
+      "openalex_id": null,
+      "pmid": "29255885",
+      "first_author": "Gratwicke",
+      "authors_display": "Gratwicke, J. et al.",
+      "year": 2018,
+      "title": "Bilateral Deep Brain Stimulation of the Nucleus Basalis of Meynert for Parkinson Disease Dementia: A Randomized Clinical Trial.",
+      "venue": "JAMA neurology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 101,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Importance</h4>Deep brain stimulation of the nucleus basalis of Meynert (NBM DBS) has been proposed as a treatment option for Parkinson disease dementia.<h4>Objective</h4>To evaluate the safety and potential symptomatic effects of NBM DBS in patients with Parkinson disease dementia.<h4>Design, setting, and participants</h4>A randomized, double-blind, crossover clinical trial evaluated the results of 6 patients with Parkinson disease dementia who were treated with NBM DBS at a neurosurgical referral center in the United Kingdom from October 26, 2012, to July 31, 2015. Eligible patients met the diagnostic criteria for Parkinson disease dementia, had motor fluctuations, were appropriate surgical candidates aside from the coexistence of dementia, were age 35 to 80 years, were able to give informed consent, had a Mini-Mental State Examination score of 21 to 26, had minimal atrophy seen on results of brain magnetic resonance imaging, and lived at home with a caregiver-informant.<h4>Interventions</h4>After surgery, patients were assigned to receive either active stimulation (bilateral, low-frequency [20 Hz] NBM DBS) or sham stimulation for 6 weeks, followed by the opposite condition for 6 weeks.<h4>Main outcomes and measures</h4>The primary outcome was the difference in scores on each item of an abbreviated cognitive battery (California Verbal Learning Test-II, Wechsler Adult Intelligence Scale-III digit span, verbal fluency, Posner covert attention test, and simple and choice reaction times) between the 2 conditions. Secondary outcomes were exploratory and included differences in scores on standardized measurements of cognitive, psychiatric, and motor symptoms and resting state functional magnetic resonance imaging.<h4>Results</h4>Surgery and stimulation were well tolerated by all 6 patients (all men; mean [SD] age, 65.2 [10.7] years), with no serious adverse events during the trial. No consistent improvements were observed in the primary cognitive outcomes or in resu",
+      "score": {
+        "composite": 0.3302769861480405,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2677746112588288,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0669436528147072,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Basal Nucleus of Meynert",
+        "Humans",
+        "Parkinson Disease",
+        "Dementia",
+        "Hallucinations",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Deep Brain Stimulation",
+        "Cross-Over Studies",
+        "Double-Blind Method",
+        "Image Processing, Computer-Assisted",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Outcome Assessment, Health Care"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_da37d65f",
+      "doi": "10.1080/87565640801982312",
+      "url": "https://doi.org/10.1080/87565640801982312",
+      "openalex_id": null,
+      "pmid": "18473197",
+      "first_author": "Bull",
+      "authors_display": "Bull, R. et al.",
+      "year": 2008,
+      "title": "Short-term memory, working memory, and executive functioning in preschoolers: longitudinal predictors of mathematical achievement at age 7 years.",
+      "venue": "Developmental neuropsychology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 652,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "This study examined whether measures of short-term memory, working memory, and executive functioning in preschool children predict later proficiency in academic achievement at 7 years of age (third year of primary school). Children were tested in preschool (M age = 4 years, 6 months) on a battery of cognitive measures, and mathematics and reading outcomes (from standardized, norm-referenced school-based assessments) were taken on entry to primary school, and at the end of the first and third year of primary school. Growth curve analyses examined predictors of math and reading achievement across the duration of the study and revealed that better digit span and executive function skills provided children with an immediate head start in math and reading that they maintained throughout the first three years of primary school. Visual-spatial short-term memory span was found to be a predictor specifically of math ability. Correlational and regression analyses revealed that visual short-term and working memory were found to specifically predict math achievement at each time point, while executive function skills predicted learning in general rather than learning in one specific domain. The implications of the findings are discussed in relation to further understanding the role of cognitive skills in different mathematical tasks, and in relation to the impact of limited cognitive skills in the classroom environment.",
+      "score": {
+        "composite": 0.31715019811310874,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37526745911910164,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.13333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09381686477977541,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.02,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Longitudinal Studies",
+        "Orientation",
+        "Achievement",
+        "Discrimination Learning",
+        "Memory, Short-Term",
+        "Problem Solving",
+        "Pattern Recognition, Visual",
+        "Color Perception",
+        "Concept Formation",
+        "Aptitude",
+        "Psychomotor Performance",
+        "Attention",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Psychometrics",
+        "Age Factors",
+        "Sex Factors",
+        "Mathematics",
+        "Games, Experimental",
+        "Reading",
+        "Child",
+        "Child, Preschool",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_bd65a017",
+      "doi": "10.1159/000345038",
+      "url": "https://doi.org/10.1159/000345038",
+      "openalex_id": null,
+      "pmid": "23341825",
+      "first_author": "Bossers",
+      "authors_display": "Bossers, W. et al.",
+      "year": 2012,
+      "title": "Recommended measures for the assessment of cognitive and physical performance in older patients with dementia: a systematic review.",
+      "venue": "Dementia and geriatric cognitive disorders extra",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patients)"
+      ],
+      "citation_count": 70,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3551396",
+      "tldr": null,
+      "abstract": "<h4>Unlabelled</h4>AIM/GOAL: To recommend a set of neuropsychological and physical exercise tests for researchers to assess cognition and physical fitness in clinical trials with older patients with dementia; to create consensus, decrease heterogeneity, and improve research quality.<h4>Methods</h4>A literature search (2005-2011) yielded 89 randomized controlled trials. To provide information on test recommendations the frequency of test use, effect size of the test outcome, study quality, and psychometric properties of tests were analyzed.<h4>Results</h4>Fifty-nine neuropsychological tests (cognitive domains: global cognition, executive functioning, memory, and attention) and 10 exercise tests (physical domains: endurance capacity, muscle strength, balance, and mobility) were found.<h4>Conclusion</h4>The Severe Impairment Battery, Mini Mental State Examination, and Alzheimer Disease Assessment Scale - cognitive subscale were recommended to measure global cognition. The Verbal Fluency Test Category/Letters, Clock Drawing Test, and Trail Making Test-B were recommended to measure executive functioning. No specific memory test could be recommended. The Digit Span Forward, Digit Span Backward, and Trail Making Test-A were recommended to measure attention. As physical exercise tests, the Timed Up and Go and Six Meter Walk for mobility, the Six Minute Walk Distance for endurance capacity, and the Tinetti Balance Scale were recommended.",
+      "score": {
+        "composite": 0.31503301747618,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24679873657138676,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06169968414284669,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_33ab7af1",
+      "doi": "10.1159/000314963",
+      "url": "https://doi.org/10.1159/000314963",
+      "openalex_id": null,
+      "pmid": "20484884",
+      "first_author": "Herman",
+      "authors_display": "Herman, T. et al.",
+      "year": 2011,
+      "title": "Properties of the 'timed up and go' test: more than meets the eye.",
+      "venue": "Gerontology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Evaluation Study",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 333,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>The 'timed up and go' test (TUG) is a simple, quick and widely used clinical performance-based measure of lower extremity function, mobility and fall risk. We speculated that its properties may be different from other performance-based tests and assessed whether cognitive function may contribute to the differences among these tests in a cohort of healthy older adults.<h4>Objective</h4>To evaluate psychometric properties of the TUG in healthy older adults in comparison to the Berg balance test (BBT) and the Dynamic Gait Index (DGI).<h4>Methods</h4>The TUG, DGI and BBT were assessed in 265 healthy older adults (76.4 ± 4.3 years; 58.3% women) who participated in a 3-year prospective study. The Mini-Mental State Examination, digit span and verbal fluency measured cognitive function. The one-sample Kolmogorov-Smirnov test evaluated deviations from a normal distribution and Pearson's correlation coefficients quantified associations.<h4>Results</h4>The mean scores of the BBT, DGI and TUG were: 54.0 ± 2.4, 22.8 ± 1.5, 9.5 ± 1.7 s, respectively. The BBT and the DGI were not normally distributed (p < 0.001), but the TUG was (p = 0.713). The TUG times were mildly associated (p < 0.01) with digit span and verbal fluency and were related to future falls, while the BBT and the DGI were not.<h4>Conclusions</h4>The TUG appears to be an appropriate tool for clinical assessment of functional mobility even in healthy older adults. It does not suffer from ceiling effect limitations, is normally distributed and is apparently related to executive function. The BBT and the DGI do not share these beneficial properties. Perhaps the transferring and turning components of the TUG help to convert this relatively simple motor task into a more complex measure that also depends on cognitive resources.",
+      "score": {
+        "composite": 0.2974460450824206,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33645084699634903,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08411271174908726,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Gait",
+        "Risk Factors",
+        "Cohort Studies",
+        "Prospective Studies",
+        "Cognition",
+        "Task Performance and Analysis",
+        "Motor Skills",
+        "Mental Status Schedule",
+        "Psychometrics",
+        "Accidental Falls",
+        "Aged",
+        "Aged, 80 and over",
+        "Female",
+        "Male",
+        "Mobility Limitation",
+        "Postural Balance",
+        "Outcome Assessment, Health Care"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_c8c315ec",
+      "doi": "10.1001/archinternmed.2009.494",
+      "url": "https://doi.org/10.1001/archinternmed.2009.494",
+      "openalex_id": null,
+      "pmid": "20101012",
+      "first_author": "Liu-Ambrose",
+      "authors_display": "Liu-Ambrose, T. et al.",
+      "year": 2010,
+      "title": "Resistance training and executive functions: a 12-month randomized controlled trial.",
+      "venue": "Archives of internal medicine",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 486,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Cognitive decline among seniors is a pressing health care issue. Specific exercise training may combat cognitive decline. We compared the effect of once-weekly and twice-weekly resistance training with that of twice-weekly balance and tone exercise training on the performance of executive cognitive functions in senior women.<h4>Methods</h4>In this single-blinded randomized trial, 155 community-dwelling women aged 65 to 75 years living in Vancouver were randomly allocated to once-weekly (n = 54) or twice-weekly (n = 52) resistance training or twice-weekly balance and tone training (control group) (n = 49). The primary outcome measure was performance on the Stroop test, an executive cognitive test of selective attention and conflict resolution. Secondary outcomes of executive cognitive functions included set shifting as measured by the Trail Making Tests (parts A and B) and working memory as assessed by verbal digit span forward and backward tests. Gait speed, muscular function, and whole-brain volume were also secondary outcome measures.<h4>Results</h4>Both resistance training groups significantly improved their performance on the Stroop test compared with those in the balance and tone group (P < or = .03). Task performance improved by 12.6% and 10.9% in the once-weekly and twice-weekly resistance training groups, respectively; it deteriorated by 0.5% in the balance and tone group. Enhanced selective attention and conflict resolution was significantly associated with increased gait speed. Both resistance training groups demonstrated reductions in whole-brain volume compared with the balance and tone group at the end of the study (P < or = .03).<h4>Conclusion</h4>Twelve months of once-weekly or twice-weekly resistance training benefited the executive cognitive function of selective attention and conflict resolution among senior women.<h4>Trial registration</h4>clinicaltrials.gov Identifier: NCT00426881.",
+      "score": {
+        "composite": 0.27290467174022287,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3582853536275581,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08957133840688952,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Gait",
+        "Exercise",
+        "Single-Blind Method",
+        "Cognition",
+        "Memory",
+        "Trail Making Test",
+        "Aged",
+        "Female",
+        "Muscle Strength",
+        "Resistance Training",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_25f9e7b9",
+      "doi": "10.1212/wnl.0b013e3181a71193",
+      "url": "https://doi.org/10.1212/wnl.0b013e3181a71193",
+      "openalex_id": null,
+      "pmid": "19470968",
+      "first_author": "Greendale",
+      "authors_display": "Greendale, G. et al.",
+      "year": 2009,
+      "title": "Effects of the menopause transition and hormone use on cognitive performance in midlife women.",
+      "venue": "Neurology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 248,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>There is almost no longitudinal information about measured cognitive performance during the menopause transition (MT).<h4>Methods</h4>We studied 2,362 participants from the Study of Women's Health Across the Nation for 4 years. Major exposures were time spent in MT stages, hormone use prior to the final menstrual period, and postmenopausal current hormone use. Outcomes were longitudinal performance in three domains: processing speed (Symbol Digit Modalities Test [SDMT]), verbal memory (East Boston Memory Test [EBMT]), and working memory (Digit Span Backward).<h4>Results</h4>Premenopausal, early perimenopausal, and postmenopausal women scored higher with repeated SDMT administration (p < or = 0.0008), but scores of late perimenopausal women did not improve over time (p = 0.2). EBMT delayed recall scores climbed during premenopause and postmenopause (p < or = 0.01), but did not increase during early or late perimenopause (p > or = 0.14). Initial SDMT, EBMT-immediate, and EBMT-delayed tests were 4%-6% higher among prior hormone users (p < or = 0.001). On the SDMT and EBMT, compared to the premenopausal referent, postmenopausal current hormone users demonstrated poorer cognitive performance (p < or = 0.05) but performance of postmenopausal nonhormone users was indistinguishable from that of premenopausal women.<h4>Conclusions</h4>Consistent with transitioning women's perceived memory difficulties, perimenopause was associated with a decrement in cognitive performance, characterized by women not being able to learn as well as they had during premenopause. Improvement rebounded to premenopausal levels in postmenopause, suggesting that menopause transition-related cognitive difficulties may be time-limited. Hormone initiation prior to the final menstrual period had a beneficial effect whereas initiation after the final menstrual period had a detrimental effect on cognitive performance.",
+      "score": {
+        "composite": 0.25319508950658665,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31944702469301334,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07986175617325333,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Estrogen Replacement Therapy",
+        "Cohort Studies",
+        "Longitudinal Studies",
+        "Cognition",
+        "Memory",
+        "Neuropsychological Tests",
+        "Age Factors",
+        "Menopause",
+        "Time Factors",
+        "Socioeconomic Factors",
+        "Adult",
+        "Middle Aged",
+        "Female"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_156d7694",
+      "doi": "10.1289/ehp.9961",
+      "url": "https://doi.org/10.1289/ehp.9961",
+      "openalex_id": null,
+      "pmid": "17805430",
+      "first_author": "Rosado",
+      "authors_display": "Rosado, J. et al.",
+      "year": 2007,
+      "title": "Arsenic exposure and cognitive performance in Mexican schoolchildren.",
+      "venue": "Environmental health perspectives",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 229,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC1964916",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Previous studies have suggested an effect of high arsenic concentration on cognitive and neurobehavioral function in humans.<h4>Objective</h4>Our goal was to identify demographic and nutritional factors that are associated with As exposure and the influence of this exposure on cognitive function in school-age children.<h4>Methods</h4>We recruited 602 children 6-8 years of age living within 3.5 km of a metallurgic smelter complex in the city of Torreón, Mexico, to participate in a cross-sectional evaluation. Of these, 591 had complete anthropometry, iron, and zinc status by biochemical measurements in serum, blood lead concentration (PbB), and arsenic in urine (UAs), and 557 completed several cognitive performance tests.<h4>Results</h4>The mean for UAs was 58.1 +/- 33.2 microg/L; 52% of the children had UAs concentrations > 50 microg/L, and 50.7% of children had PbB > or = 10 microg/dL. UAs concentration was associated with low socioeconomic status. Nutritional status indicators were not related to UAs concentrations. Linear and logistic regressions adjusted for hemoglobin concentration, PbB, and sociodemographic confounders showed a significant inverse association between UAs and Visual-Spatial Abilities with Figure Design, the Peabody Picture Vocabulary Test, the WISC-RM Digit Span subscale, Visual Search, and Letter Sequencing Tests (p < 0.05). Boys excreted significantly more UAs (p < 0.05) and were affected on different cognitive areas than girls.<h4>Conclusions</h4>Children living in an area contaminated with both As and lead showed that As contamination can affect children's cognitive development, independent of any effect of lead.",
+      "score": {
+        "composite": 0.23204620537222492,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31485148815556635,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07871287203889159,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.01,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Arsenic",
+        "Lead",
+        "Environmental Pollutants",
+        "Intelligence",
+        "Cognition",
+        "Learning",
+        "Attention",
+        "Intelligence Tests",
+        "Environmental Exposure",
+        "Metallurgy",
+        "Child",
+        "Mexico",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_13f19e31",
+      "doi": "10.1289/ehp.7210",
+      "url": "https://doi.org/10.1289/ehp.7210",
+      "openalex_id": null,
+      "pmid": "15626655",
+      "first_author": "Yolton",
+      "authors_display": "Yolton, K. et al.",
+      "year": 2005,
+      "title": "Exposure to environmental tobacco smoke and cognitive abilities among U.S. children and adolescents.",
+      "venue": "Environmental health perspectives",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 227,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC1253717",
+      "tldr": null,
+      "abstract": "We used the Third National Health and Nutrition Examination Survey (NHANES III), conducted from 1988 to 1994, to investigate the relationship between environmental tobacco smoke (ETS) exposure and cognitive abilities among U.S. children and adolescents 6-16 years of age. Serum cotinine was used as a biomarker of ETS exposure. Children were included in the sample if their serum cotinine levels were less than or equal to 15 ng/mL, a level consistent with ETS exposure, and if they denied using any tobacco products in the previous 5 days. Cognitive and academic abilities were assessed using the reading and math subtests of the Wide Range Achievement Test-Revised and the block design and digit span subtests of the Wechsler Intelligence Scale for Children-III. Analyses were conducted using SUDAAN software. Of the 5,365 6- to 16-year-olds included in NHANES III, 4,399 (82%) were included in this analysis. The geometric mean serum cotinine level was 0.23 ng/mL (range, 0.035-15 ng/mL); 80% of subjects had levels < 1 ng/mL. After adjustment for sex, race, region, poverty, parent education and marital status, ferritin, and blood lead concentration, there was a significant inverse relationship between serum cotinine and scores on reading (beta = -2.69, p = 0.001), math (beta = -1.93, p = 0.01), and block design (beta = -0.55, p < 0.001) but not digit span (beta = -0.08, p = 0.52). The estimated ETS-associated decrement in cognitive test scores was greater at lower cotinine levels. A log-linear analysis was selected as the best fit to characterize the increased slope in cognitive deficits at lower levels of exposure. These data, which indicate an inverse association between ETS exposure and cognitive deficits among children even at extremely low levels of exposure, support policy to further restrict children's exposure.",
+      "score": {
+        "composite": 0.22191979069624157,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31434582945163303,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07858645736290826,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Health Surveys",
+        "Epidemiologic Studies",
+        "Intelligence",
+        "Cognition Disorders",
+        "Intelligence Tests",
+        "Tobacco Smoke Pollution",
+        "Environmental Exposure",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    }
+  ]
+}

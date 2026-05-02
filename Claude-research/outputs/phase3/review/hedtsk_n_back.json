@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_n_back",
+    "name": "N-Back Task",
+    "aliases": [
+      "N-Back",
+      "Dual N-Back"
+    ],
+    "category_id": "short_term_and_working_memory",
+    "short_definition": "Continuous stream in which each item must be compared to the one n items back; accuracy and RT index working memory updating and monitoring.",
+    "description": "The N-Back task is a continuous performance paradigm in which participants view a sequence of stimuli (letters, numbers, or spatial locations) and judge whether each current stimulus matches the one presented n trials earlier. Difficulty scales parametrically with n (1-back, 2-back, 3-back). The task engages working memory maintenance, updating, and comparison processes. Performance typically shows decreased accuracy and increased RT with higher n values. The N-back is the most widely used working memory paradigm in neuroimaging, consistently activating dorsolateral prefrontal cortex and parietal regions.",
+    "inclusion_test": {
+      "procedure": "A continuous stream of stimuli is presented; participants indicate when the current item matches the one presented N items back.",
+      "manipulation": "Load level (N = 0, 1, 2, 3); stimulus type (letters, locations, faces); lure trials (N±1 matches); dual N-back (two simultaneous streams).",
+      "measurement": "Hit rate, false alarm rate, d-prime; RT; load-dependent accuracy decline."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:45:36",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Owen 2005 — N-back working memory paradigm: a meta-analysis of normative functional neuro… (Human brain mapping, historical, 2k×)",
+      "doi": "10.1002/hbm.20131",
+      "pub_id": "pub_d07bebec",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7356860054874834,
+        "breakdown": {
+          "raw": {
+            "citations": 0.44941068861660033,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11235267215415008,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2005,
+      "venue": "Human brain mapping",
+      "citation_count": 2349,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Finc 2020 — Dynamic reconfiguration of functional brain networks during working memory tr… (Nature communications, recent_primary, 184×)",
+      "doi": "10.1038/s41467-020-15631-z",
+      "pub_id": "pub_24887ebb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6822281244377262,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30224583108423797,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07556145777105949,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 184,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Meidenbauer 2021 — Load-dependent relationships between frontal fNIRS activity and performance: … (NeuroImage, recent_primary, 40×)",
+      "doi": "10.1016/j.neuroimage.2021.117795",
+      "pub_id": "pub_c6f246f0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.587085017758763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "NeuroImage",
+      "citation_count": 40,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Lamichhane 2020 — Exploring brain-behavior relationships in the N-back task. (NeuroImage, recent_primary, 77×)",
+      "doi": "10.1016/j.neuroimage.2020.116683",
+      "pub_id": "pub_a5c37905",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.586394029013741,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2522427827216307,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06306069568040767,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "NeuroImage",
+      "citation_count": 77,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Mencarelli 2019 — Stimuli, presentation modality, and load-specific brain activity patterns dur… (Human brain mapping, key_review, 71×)",
+      "doi": "10.1002/hbm.24633",
+      "pub_id": "pub_02b3f579",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5652354597747056,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24760850576548898,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.061902126441372246,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Human brain mapping",
+      "citation_count": 71,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Chen 2019 — Testing a Cognitive Control Model of Human Intelligence. (Scientific reports, recent_primary, 33×)",
+      "doi": "10.1038/s41598-019-39685-2",
+      "pub_id": "pub_947675b2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5643752451865962,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 33,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Ruf 2017 — Augmentation of working memory training by transcranial direct current stimul… (Scientific reports, foundational, 111×)",
+      "doi": "10.1038/s41598-017-01055-1",
+      "pub_id": "pub_23ab876a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5616307186367205,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2731895412135488,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0682973853033872,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Scientific reports",
+      "citation_count": 111,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Laine 2018 — The early effects of external and internal strategies on working memory updat… (Scientific reports, recent_primary, 38×)",
+      "doi": "10.1038/s41598-018-22396-5",
+      "pub_id": "pub_b6d09a92",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5563611475075798,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 38,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Haegens 2014 — Inter- and intra-individual variability in alpha peak frequency. (NeuroImage, foundational, 438×)",
+      "doi": "10.1016/j.neuroimage.2014.01.049",
+      "pub_id": "pub_8cee116a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5514027410259053,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35227763077028784,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08806940769257196,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "NeuroImage",
+      "citation_count": 438,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "E 2014 — A meta-analysis of cerebellar contributions to higher cognition from PET and … (Human brain mapping, key_review, 387×)",
+      "doi": "10.1002/hbm.22194",
+      "pub_id": "pub_6a4c0e7a",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5396152398423109,
+        "breakdown": {
+          "raw": {
+            "citations": 0.34512762603591,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0862819065089775,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Human brain mapping",
+      "citation_count": 387,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Rapuano 2020 — Behavioral and brain signatures of substance use vulnerability in childhood. (Developmental cognitive neurosci…, recent_primary, 40×)",
+      "doi": "10.1016/j.dcn.2020.100878",
+      "pub_id": "pub_5b12455e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.517085017758763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 40,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Costers 2020 — Spatiotemporal and spectral dynamics of multi-item working memory as revealed… (Human brain mapping, recent_primary, 34×)",
+      "doi": "10.1002/hbm.24955",
+      "pub_id": "pub_79426bab",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5147948220539073,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Human brain mapping",
+      "citation_count": 34,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Di 2020 — Anterior cingulate cortex differently modulates frontoparietal functional con… (Human brain mapping, recent_primary, 26×)",
+      "doi": "10.1002/hbm.24912",
+      "pub_id": "pub_89fc505f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5110385562176663,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Human brain mapping",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Chung 2018 — Impact of different intensities of intermittent theta burst stimulation on th… (Human brain mapping, recent_primary, 100×)",
+      "doi": "10.1002/hbm.23882",
+      "pub_id": "pub_c0b2dd03",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.510134380182744,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2672041873976427,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06680104684941067,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Human brain mapping",
+      "citation_count": 100,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Sadraee 2021 — fMRI as an outcome measure in clinical trials: A systematic review in clinica… (Brain and behavior, key_review, 20×)",
+      "doi": "10.1002/brb3.2089",
+      "pub_id": "pub_1e344b1e",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.50740093357352,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Brain and behavior",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Brookes 2011 — Changes in brain network activity during working memory tasks: a magnetoencep… (NeuroImage, foundational, 131×)",
+      "doi": "10.1016/j.neuroimage.2010.10.074",
+      "pub_id": "pub_2d9ac9ed",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5040089048155555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28270228592888874,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07067557148222219,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "NeuroImage",
+      "citation_count": 131,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Henckens 2011 — Time-dependent corticosteroid modulation of prefrontal working memory process… (Proceedings of the National Acad…, foundational, 120×)",
+      "doi": "10.1073/pnas.1019128108",
+      "pub_id": "pub_c1220b14",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5027494683502443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2776645400676438,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06941613501691095,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 120,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Vatansever 2017 — Angular default mode network connectivity across working memory load. (Human brain mapping, foundational, 92×)",
+      "doi": "10.1002/hbm.23341",
+      "pub_id": "pub_a0642fd3",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4989399388351502,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26242642200726757,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06560660550181689,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Human brain mapping",
+      "citation_count": 92,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Matysiak 2019 — Working Memory Capacity as a Predictor of Cognitive Training Efficacy in the … (Frontiers in aging neuroscience, recent_primary, 43×)",
+      "doi": "10.3389/fnagi.2019.00126",
+      "pub_id": "pub_cabe7914",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.49144049718744454,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21909532208311155,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05477383052077789,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Frontiers in aging neuroscience",
+      "citation_count": 43,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "He 2020 — Effect of restricting bedtime mobile phone use on sleep, arousal, mood, and w… (PloS one, recent_primary, 44×)",
+      "doi": "10.1371/journal.pone.0228756",
+      "pub_id": "pub_28ab9632",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.47843244469805346,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "PloS one",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Baumert 2020 — Causal underpinnings of working memory and Stroop interference control: Testi… (Cognitive, affective & behaviora…, recent_primary, 40×)",
+      "doi": "10.3758/s13415-019-00726-y",
+      "pub_id": "pub_3887b6f9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.477085017758763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Cognitive, affective & behavioral neuroscience",
+      "citation_count": 40,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Keilp 2013 — Neuropsychological function and suicidal behavior: attention control, memory … (Psychological medicine, foundational, 222×)",
+      "doi": "10.1017/s0033291712001419",
+      "pub_id": "pub_79f37600",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4715988376706586,
+        "breakdown": {
+          "raw": {
+            "citations": 0.313062017349301,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07826550433732525,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Psychological medicine",
+      "citation_count": 222,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Pochon 2002 — The neural system that bridges reward and cognition in humans: an fMRI study. (Proceedings of the National Acad…, foundational, 299×)",
+      "doi": "10.1073/pnas.082111099",
+      "pub_id": "pub_aa17550a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.46589209619076316,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33023505142971926,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08255876285742982,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2002,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 299,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Fuentes-Claramonte 2019 — Shared and differential default-mode related patterns of activity in an autob… (PloS one, recent_primary, 35×)",
+      "doi": "10.1371/journal.pone.0209376",
+      "pub_id": "pub_73a0f981",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46520257826854433,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Vestberg 2017 — Core executive functions are associated with success in young elite soccer pl… (PloS one, foundational, 130×)",
+      "doi": "10.1371/journal.pone.0170845",
+      "pub_id": "pub_5c46b30c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.46389883289046724,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2822619982285357,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07056549955713393,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "PloS one",
+      "citation_count": 130,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Angelidis 2019 — I'm going to fail! Acute cognitive performance anxiety increases threat-inter… (PloS one, recent_primary, 29×)",
+      "doi": "10.1371/journal.pone.0210824",
+      "pub_id": "pub_87ebe8c8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46256358524277036,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "McElree 2001 — Working memory and focal attention. (Journal of experimental psycholo…, foundational, 210×)",
+      "doi": "10.1037/0278-7393.27.3.817",
+      "pub_id": "pub_d8f77f73",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.46079820659095,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30985949303046656,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07746487325761664,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2001,
+      "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+      "citation_count": 210,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Nagel 2013 — Hemispheric lateralization of verbal and spatial working memory during adoles… (Brain and cognition, foundational, 96×)",
+      "doi": "10.1016/j.bandc.2013.02.007",
+      "pub_id": "pub_875f563e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4595494768299884,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2648645739866204,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0662161434966551,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Brain and cognition",
+      "citation_count": 96,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Lees 2021 — Altered Neurocognitive Functional Connectivity and Activation Patterns Underl… (Biological psychiatry. Cognitive…, recent_primary, 70×)",
+      "doi": "10.1016/j.bpsc.2020.09.007",
+      "pub_id": "pub_485b4749",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.45503301747618,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24679873657138676,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06169968414284669,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "citation_count": 70,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Cornblath 2020 — Temporal sequences of brain activity at rest are constrained by white matter … (Communications biology, recent_primary, 126×)",
+      "doi": "10.1038/s42003-020-0961-x",
+      "pub_id": "pub_4b4a6be0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4534499786796418,
+        "breakdown": {
+          "raw": {
+            "citations": 0.280466581385234,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0701166453463085,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Communications biology",
+      "citation_count": 126,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

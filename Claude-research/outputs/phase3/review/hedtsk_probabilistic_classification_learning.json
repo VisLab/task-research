@@ -1,0 +1,1140 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_probabilistic_classification_learning",
+    "name": "Probabilistic Classification Learning Task",
+    "aliases": [
+      "Weather Prediction",
+      "Probabilistic Classification Learning",
+      "Weather Prediction Task",
+      "WPT"
+    ],
+    "category_id": "associative_learning_and_reinforcement",
+    "short_definition": "Multi-cue probabilistic prediction of a binary outcome with trial-by-trial feedback; learning curves index gradual procedural category learning.",
+    "description": "The Weather Prediction Task presents 1-3 cues from a set of 4 possible cards; participants predict a binary outcome (rain/sunshine). Each cue is probabilistically associated with outcomes (e.g., 75%/25%), requiring participants to learn from statistical patterns. Feedback is provided after each prediction. Critically, amnesic patients with medial temporal lobe damage show intact learning despite impaired conscious awareness of the task structure, implicating basal ganglia and striatal systems in implicit probabilistic learning.",
+    "inclusion_test": {
+      "procedure": "Participants predict an outcome (e.g., rain/sun) based on combinations of cues (cards), where each cue is probabilistically (not deterministically) related to outcomes. Learning is incremental across hundreds of trials.",
+      "manipulation": "Cue-outcome probability structure; number of cues per trial; feedback type (corrective, observational); concurrent vs. single task.",
+      "measurement": "Accuracy learning curve; optimal response rate; strategy analysis (multi-cue vs. single-cue); comparison to Parkinson patients (basal ganglia involvement)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:48:42",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Forsyth 2015 — Augmenting NMDA receptor signaling boosts experience-dependent neuroplasticit… (Proceedings of the National Acad…, foundational, 64×)",
+      "doi": "10.1073/pnas.1509262112",
+      "pub_id": "pub_1fd821cd",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6004217026546337,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24168681061853478,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.6,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.060421702654633695,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.15,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 64,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Seyed Majidi 2017 — Cerebellar tDCS does not improve performance in probabilistic classification … (Experimental brain research, foundational, 14×)",
+      "doi": "10.1007/s00221-016-4800-8",
+      "pub_id": "pub_bd01fa71",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5891973704032758,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.8,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Experimental brain research",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Knowlton 1994 — Probabilistic classification learning in amnesia. (Learning & Memory, historical, 603×)",
+      "doi": "10.1101/lm.1.2.106",
+      "pub_id": "pub_07cee2f0",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.5826878200556067,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3707512802224266,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09268782005560665,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1994,
+      "venue": "Learning & Memory",
+      "citation_count": 603,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Wilkinson 2014 — Probabilistic classification learning with corrective feedback is associated … (Human brain mapping, foundational, 21×)",
+      "doi": "10.1002/hbm.22536",
+      "pub_id": "pub_32e5d14f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5647409490146167,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.8,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Human brain mapping",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Alberto 2020 — Fully Untethered Battery-free Biomonitoring Electronic Tattoo with Wireless E… (Scientific reports, recent_primary, 33×)",
+      "doi": "10.1038/s41598-020-62097-6",
+      "pub_id": "pub_de72c708",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5410419118532629,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 33,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Pokharel 2021 — Wireless power transfer system rigid to tissue characteristics using metamate… (Scientific reports, recent_primary, 14×)",
+      "doi": "10.1038/s41598-021-84333-3",
+      "pub_id": "pub_36ec909e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5391973704032759,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Kim 2021 — Deep learning for bias correction of MJO prediction. (Nature communications, recent_primary, 12×)",
+      "doi": "10.1038/s41467-021-23406-3",
+      "pub_id": "pub_befdb8f6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5371260732128021,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Nature communications",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Pham 2021 — Optimal frequency for magnetic resonant wireless power transfer in conducting… (Scientific reports, recent_primary, 7×)",
+      "doi": "10.1038/s41598-021-98153-y",
+      "pub_id": "pub_704f5595",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5300986445184837,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Chen 2021 — Assessing probabilistic modelling for wind speed from numerical weather predi… (Scientific reports, recent_primary, 6×)",
+      "doi": "10.1038/s41598-021-87299-4",
+      "pub_id": "pub_0c4defd0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5281658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Bodini 2021 — Wind plants can impact long-term local atmospheric conditions. (Scientific reports, recent_primary, 5×)",
+      "doi": "10.1038/s41598-021-02089-2",
+      "pub_id": "pub_42f5bf91",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5259346224676056,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Ranaweera 2019 — An active metasurface for field-localizing wireless power transfer using dyna… (Scientific reports, recent_primary, 9×)",
+      "doi": "10.1038/s41598-019-48253-7",
+      "pub_id": "pub_1702d723",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5133285109479928,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Tsai 2022 — Path sampling of recurrent neural networks by incorporating known physics. (Nature communications, recent_primary, 18×)",
+      "doi": "10.1038/s41467-022-34780-x",
+      "pub_id": "pub_971cb3a0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5126189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Nature communications",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Bi 2023 — Accurate medium-range global weather forecasting with 3D neural networks. (Nature, recent_primary, 123×)",
+      "doi": "10.1038/s41586-023-06185-3",
+      "pub_id": "pub_47fe7391",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.509770627552695,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27908251021077995,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06977062755269499,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2023,
+      "venue": "Nature",
+      "citation_count": 123,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Shan 2022 — Wireless power transfer system with enhanced efficiency by using frequency re… (Scientific reports, recent_primary, 13×)",
+      "doi": "10.1038/s41598-021-03570-8",
+      "pub_id": "pub_063f3708",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5081987407849036,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Scientific reports",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Kim 2022 — Wide-range robust wireless power transfer using heterogeneously coupled and f… (Science advances, recent_primary, 10×)",
+      "doi": "10.1126/sciadv.abo4610",
+      "pub_id": "pub_d14890ce",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5047080675084555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Science advances",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Bae 2022 — Scientific multi-agent reinforcement learning for wall-models of turbulent fl… (Nature communications, recent_primary, 10×)",
+      "doi": "10.1038/s41467-022-28957-7",
+      "pub_id": "pub_e32663b6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5047080675084555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Nature communications",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Nair 2018 — The local and global climate forcings induced inhomogeneity of Indian rainfall. (Scientific reports, recent_primary, 10×)",
+      "doi": "10.1038/s41598-018-24021-x",
+      "pub_id": "pub_890e55bf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5047080675084555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Guo 2022 — Conditional QTL mapping for seed germination and seedling traits under salt s… (Scientific reports, recent_primary, 7×)",
+      "doi": "10.1038/s41598-022-25703-3",
+      "pub_id": "pub_310abab9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5000986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Scientific reports",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Zhu 2017 — Demonstration of measuring sea fog with an SNSPD-based Lidar system. (Scientific reports, foundational, 14×)",
+      "doi": "10.1038/s41598-017-15429-y",
+      "pub_id": "pub_6f053c95",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.49919737040327583,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2017,
+      "venue": "Scientific reports",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Celone 2011 — An fMRI investigation of the fronto-striatal learning system in women who exh… (NeuroImage, foundational, 27×)",
+      "doi": "10.1016/j.neuroimage.2011.03.026",
+      "pub_id": "pub_b3ce498f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4982316222910648,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "NeuroImage",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Younesiraad 2018 — Analysis of coupling between magnetic dipoles enhanced by metasurfaces for wi… (Scientific reports, recent_primary, 6×)",
+      "doi": "10.1038/s41598-018-33174-8",
+      "pub_id": "pub_f39332d8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4981658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Barsky 2015 — REM sleep enhancement of probabilistic classification learning is sensitive t… (Neurobiology of learning and memory, foundational, 24×)",
+      "doi": "10.1016/j.nlm.2015.02.015",
+      "pub_id": "pub_91127560",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.49659125888366307,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.8,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Neurobiology of learning and memory",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Shaman 2012 — Forecasting seasonal outbreaks of influenza. (Proceedings of the National Acad…, foundational, 249×)",
+      "doi": "10.1073/pnas.1208772109",
+      "pub_id": "pub_4d3d61d0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.48991976983165586,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3196790793266233,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07991976983165583,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 249,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Bochud-Fragnière 2022 — What Is the Weather Prediction Task Good for? A New Analysis of Learning Stra… (Frontiers in psychology, recent_primary, 5×)",
+      "doi": "10.3389/fpsyg.2022.886339",
+      "pub_id": "pub_11c4ba13",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.48593462246760555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.8,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Frontiers in psychology",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Lipworth 2014 — Magnetic metamaterial superlens for increased range wireless power transfer. (Scientific reports, foundational, 29×)",
+      "doi": "10.1038/srep03642",
+      "pub_id": "pub_d0380a92",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4792302519094371,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2014,
+      "venue": "Scientific reports",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Soriano 2017 — Dissecting the old Mediterranean durum wheat genetic architecture for phenolo… (PloS one, key_review, 48×)",
+      "doi": "10.1371/journal.pone.0178290",
+      "pub_id": "pub_33b18abd",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.46633171855748473,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2017,
+      "venue": "PloS one",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Overeem 2013 — Country-wide rainfall maps from cellular communication networks. (Proceedings of the National Acad…, foundational, 22×)",
+      "doi": "10.1073/pnas.1217961110",
+      "pub_id": "pub_b4e1e9a0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.46538436109089887,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2013,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Karcher 2015 — Examining associations between psychosis risk, social anhedonia, and performa… (Journal of abnormal psychology, foundational, 21×)",
+      "doi": "10.1037/abn0000067",
+      "pub_id": "pub_b32d1ced",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4647409490146167,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.6,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.15,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Journal of abnormal psychology",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Rani 2023 — Machine learning-based optimal crop selection system in smart agriculture. (Scientific reports, recent_primary, 4×)",
+      "doi": "10.1038/s41598-023-42356-y",
+      "pub_id": "pub_5b240d29",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46329562944183156,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2023,
+      "venue": "Scientific reports",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Karcher 2019 — Probabilistic Category Learning and Striatal Functional Activation in Psychos… (Schizophrenia bulletin, recent_primary, 20×)",
+      "doi": "10.1093/schbul/sby033",
+      "pub_id": "pub_abe96a36",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4540676002401867,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Schizophrenia bulletin",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

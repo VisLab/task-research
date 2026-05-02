@@ -1,0 +1,1139 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_multi_armed_bandit",
+    "name": "Multi-Armed Bandit Task",
+    "aliases": [
+      "MAB",
+      "Bandit Task",
+      "K-Armed Bandit"
+    ],
+    "category_id": "associative_learning_and_reinforcement",
+    "short_definition": "Repeated choice among options with unknown or changing reward distributions; choice sequences dissociate exploration from exploitation.",
+    "description": "Participants choose among multiple options (the \"arms\" of a slot machine), each yielding rewards with unknown and often changing probabilities. The central challenge is the explore-exploit dilemma: whether to exploit the currently best-known option or explore alternatives that might yield higher returns. Reward probabilities may be stationary or volatile (drifting over time), with the volatile version (restless bandit) requiring continuous updating of value estimates. This paradigm is the dominant tool in computational psychiatry for studying reinforcement learning, and its computational tractability — fitting with Bayesian, Kalman-filter, or upper-confidence-bound models — has made it central to understanding decision-making deficits in addiction, schizophrenia, depression, and anxiety.",
+    "inclusion_test": {
+      "procedure": "Participants choose repeatedly among multiple options (arms) that deliver stochastic rewards drawn from different distributions. They must balance exploring unknown options with exploiting known good ones.",
+      "manipulation": "Number of arms; reward distributions (stationary vs. drifting); horizon length; information asymmetry.",
+      "measurement": "Total reward earned; exploration-exploitation ratio; fit to reinforcement learning models (learning rate, inverse temperature); regret."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:44:55",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Daw 2006 — Cortical substrates for exploratory decisions in humans (Nature, historical, 2k×)",
+      "doi": "10.1038/nature04766",
+      "pub_id": "pub_c2703790",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7122599863194411,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4490399452777643,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11225998631944108,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2006,
+      "venue": "Nature",
+      "citation_count": 2334,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Corti 2021 — Tackling COVID-19 with neutralizing monoclonal antibodies. (Cell, key_review, 300×)",
+      "doi": "10.1016/j.cell.2021.05.005",
+      "pub_id": "pub_a01b9cab",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6451069305837275,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33042772233490975,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08260693058372744,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cell",
+      "citation_count": 300,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "André 2018 — Anti-NKG2A mAb Is a Checkpoint Inhibitor that Promotes Anti-tumor Immunity by… (Cell, key_review, 917×)",
+      "doi": "10.1016/j.cell.2018.10.014",
+      "pub_id": "pub_be936a6a",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6312471347375959,
+        "breakdown": {
+          "raw": {
+            "citations": 0.39498853895038327,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09874713473759582,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Cell",
+      "citation_count": 917,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Dejnirattisai 2021 — Antibody evasion by the P.1 strain of SARS-CoV-2. (Cell, recent_primary, 507×)",
+      "doi": "10.1016/j.cell.2021.03.055",
+      "pub_id": "pub_28662c59",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.602682408358631,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3607296334345237,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09018240835863092,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cell",
+      "citation_count": 507,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Molgora 2020 — TREM2 Modulation Remodels the Tumor Myeloid Landscape Enhancing Anti-PD-1 Imm… (Cell, recent_primary, 547×)",
+      "doi": "10.1016/j.cell.2020.07.013",
+      "pub_id": "pub_3b25fdbb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.593779477827596,
+        "breakdown": {
+          "raw": {
+            "citations": 0.365117911310384,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.091279477827596,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Cell",
+      "citation_count": 547,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Kim 2021 — A therapeutic neutralizing antibody targeting receptor binding domain of SARS… (Nature communications, recent_primary, 241×)",
+      "doi": "10.1038/s41467-020-20602-5",
+      "pub_id": "pub_1639a65e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5919490165230722,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31779606609228866,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07944901652307217,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature communications",
+      "citation_count": 241,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Chen 2021 — In vivo monoclonal antibody efficacy against SARS-CoV-2 variant strains. (Nature, recent_primary, 239×)",
+      "doi": "10.1038/s41586-021-03720-y",
+      "pub_id": "pub_d32c6540",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5918288964279207,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3173155857116827,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07932889642792068,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature",
+      "citation_count": 239,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Kamada 2019 — PD-1<sup>+</sup> regulatory T cells amplified by PD-1 blockade promote hyperp… (Proceedings of the National Acad…, recent_primary, 789×)",
+      "doi": "10.1073/pnas.1822001116",
+      "pub_id": "pub_3f9a273a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5890735962352739,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3862943849410955,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09657359623527388,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 789,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Kreye 2020 — A Therapeutic Non-self-reactive SARS-CoV-2 Antibody Protects from Lung Pathol… (Cell, recent_primary, 326×)",
+      "doi": "10.1016/j.cell.2020.09.049",
+      "pub_id": "pub_4f75a5d7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5863061323037889,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33522452921515566,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08380613230378892,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Cell",
+      "citation_count": 326,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Liu 2021 — Binding and molecular basis of the bat coronavirus RaTG13 virus to ACE2 in hu… (Cell, recent_primary, 126×)",
+      "doi": "10.1016/j.cell.2021.05.031",
+      "pub_id": "pub_17d4fa95",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5826166453463085,
+        "breakdown": {
+          "raw": {
+            "citations": 0.280466581385234,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0701166453463085,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cell",
+      "citation_count": 126,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Ellwanger 2021 — Prior activation state shapes the microglia response to antihuman TREM2 in a … (Proceedings of the National Acad…, recent_primary, 114×)",
+      "doi": "10.1073/pnas.2017742118",
+      "pub_id": "pub_fa501383",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5811799905327304,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2747199621309215,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06867999053273037,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 114,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Raybould 2019 — Five computational developability guidelines for therapeutic antibody profiling. (Proceedings of the National Acad…, recent_primary, 272×)",
+      "doi": "10.1073/pnas.1810576116",
+      "pub_id": "pub_2f96fed0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5736936734529888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32477469381195534,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08119367345298883,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 272,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Kingsbury 2020 — A single molecular descriptor to predict solution behavior of therapeutic ant… (Science advances, recent_primary, 122×)",
+      "doi": "10.1126/sciadv.abb0372",
+      "pub_id": "pub_b2c416bf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.572153425386874,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27861370154749593,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06965342538687398,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Science advances",
+      "citation_count": 122,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Rattanapisit 2020 — Rapid production of SARS-CoV-2 receptor binding domain (RBD) and spike specif… (Scientific reports, recent_primary, 106×)",
+      "doi": "10.1038/s41598-020-74904-1",
+      "pub_id": "pub_b6f86b41",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5701363394522604,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2705453578090416,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0676363394522604,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 106,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Davis 2019 — Longitudinal Analysis of the Human B Cell Response to Ebola Virus Infection. (Cell, recent_primary, 167×)",
+      "doi": "10.1016/j.cell.2019.04.036",
+      "pub_id": "pub_5af69ae9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5666662447586703,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29666497903468125,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07416624475867031,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Cell",
+      "citation_count": 167,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Ha 2019 — Differential control of human Treg and effector T cells in tumor immunity by … (Proceedings of the National Acad…, recent_primary, 163×)",
+      "doi": "10.1073/pnas.1812186116",
+      "pub_id": "pub_5bebb9e7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5663174474377521,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29526978975100837,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07381744743775209,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 163,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Song 2018 — Synergistic and low adverse effect cancer immunotherapy by immunogenic chemot… (Nature communications, recent_primary, 300×)",
+      "doi": "10.1038/s41467-018-04605-x",
+      "pub_id": "pub_e1ea5a28",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5651069305837274,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33042772233490975,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08260693058372744,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature communications",
+      "citation_count": 300,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Qi 2019 — Optimization of 4-1BB antibody for cancer immunotherapy by balancing agonisti… (Nature communications, recent_primary, 108×)",
+      "doi": "10.1038/s41467-019-10088-1",
+      "pub_id": "pub_ab649aad",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5604043913423447,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2716175653693784,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0679043913423446,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 108,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Zhuo 2019 — Lysates of Lactobacillus acidophilus combined with CTLA-4-blocking antibodies… (Scientific reports, recent_primary, 99×)",
+      "doi": "10.1038/s41598-019-56661-y",
+      "pub_id": "pub_af8ac341",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5591570218959856,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2666280875839421,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06665702189598552,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 99,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Ryan 2018 — Cardiolipin exposure on the outer mitochondrial membrane modulates α-synuclein. (Nature communications, recent_primary, 156×)",
+      "doi": "10.1038/s41467-018-03241-9",
+      "pub_id": "pub_fa278c48",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5556860656060146,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2927442624240585,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07318606560601462,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature communications",
+      "citation_count": 156,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Wang 2022 — Structural basis for SARS-CoV-2 Delta variant recognition of ACE2 receptor an… (Nature communications, recent_primary, 153×)",
+      "doi": "10.1038/s41467-022-28528-w",
+      "pub_id": "pub_f2311473",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5554068082933591,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29162723317343625,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07290680829335906,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Nature communications",
+      "citation_count": 153,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Kidani 2022 — CCR8-targeted specific depletion of clonally expanded Treg cells in tumor tis… (Proceedings of the National Acad…, recent_primary, 151×)",
+      "doi": "10.1073/pnas.2114282119",
+      "pub_id": "pub_6de0c2ca",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5552175979076251,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2908703916305006,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07271759790762515,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 151,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Mao 2018 — Late-life targeting of the IGF-1 receptor improves healthspan and lifespan in… (Nature communications, recent_primary, 123×)",
+      "doi": "10.1038/s41467-018-04805-5",
+      "pub_id": "pub_ed11e907",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.552270627552695,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27908251021077995,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06977062755269499,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature communications",
+      "citation_count": 123,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Romano 2015 — Ipilimumab-dependent cell-mediated cytotoxicity of regulatory T cells ex vivo… (Proceedings of the National Acad…, foundational, 477×)",
+      "doi": "10.1073/pnas.1417320112",
+      "pub_id": "pub_0b64b376",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5418013419865942,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3572053679463768,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0893013419865942,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 477,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Ilik 2020 — SON and SRRM2 are essential for nuclear speckle formation. (eLife, recent_primary, 228×)",
+      "doi": "10.7554/elife.60579",
+      "pub_id": "pub_7402dbcb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5411498027086267,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31459921083450687,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07864980270862672,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "eLife",
+      "citation_count": 228,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Sugiyama 2013 — Anti-CCR4 mAb selectively depletes effector-type FoxP3+CD4+ regulatory T cell… (Proceedings of the National Acad…, foundational, 510×)",
+      "doi": "10.1073/pnas.1316796110",
+      "pub_id": "pub_f93a2124",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5227676356219122,
+        "breakdown": {
+          "raw": {
+            "citations": 0.36107054248764864,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09026763562191216,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 510,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Binz 2023 — Using cognitive psychology to understand GPT-3. (Proceedings of the National Acad…, recent_primary, 110×)",
+      "doi": "10.1073/pnas.2218523120",
+      "pub_id": "pub_578b9be5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5206675692906723,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27267027716268905,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06816756929067226,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 110,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Yang 2010 — A critical cysteine is required for HMGB1 binding to Toll-like receptor 4 and… (Proceedings of the National Acad…, foundational, 630×)",
+      "doi": "10.1073/pnas.1003893107",
+      "pub_id": "pub_0593fcad",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4958208091542693,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3732832366170771,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09332080915426927,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 630,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Yu 2021 — Emerging Causes of Drug-Induced Anaphylaxis: A Review of Anaphylaxis-Associat… (The journal of allergy and clini…, key_review, 157×)",
+      "doi": "10.1016/j.jaip.2020.09.021",
+      "pub_id": "pub_b0e898c4",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4957779667934423,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2931118671737693,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07327796679344233,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "The journal of allergy and clinical immunology. In practice",
+      "citation_count": 157,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Qu 2024 — Immune evasion, infectivity, and fusogenicity of SARS-CoV-2 BA.2.86 and FLip … (Cell, recent_primary, 134×)",
+      "doi": "10.1016/j.cell.2023.12.026",
+      "pub_id": "pub_55f66258",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4935008523261645,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2840034093046579,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07100085232616447,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Cell",
+      "citation_count": 134,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

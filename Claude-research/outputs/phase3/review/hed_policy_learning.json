@@ -1,0 +1,1129 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "process",
+    "id": "hed_policy_learning",
+    "name": "Policy learning",
+    "aliases": [],
+    "category_id": "associative_learning_and_reinforcement",
+    "definition": "Direct learning of a mapping from states to actions without necessarily estimating values."
+  },
+  "candidates_run_date": "2026-04-29T15:21:57",
+  "extracted_on": "2026-04-30T11:14:36",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Kwan 2022 — A Survey on Recent Advances and Challenges in Reinforcement Learning Methods … (Machine Intelligence Research, key_review, 64×)",
+      "doi": "10.1007/s11633-022-1347-y",
+      "pub_id": "pub_90170fa9",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8205203471731174,
+        "breakdown": {
+          "raw": {
+            "citations": 0.36208138869246925,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09052034717311731,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Machine Intelligence Research",
+      "citation_count": 64,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Saha 2020 — Towards sentiment aided dialogue policy learning for multi-intent conversatio… (PloS one, recent_primary, 2×)",
+      "doi": "10.1371/journal.pone.0235367",
+      "pub_id": "pub_4fa8ae01",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7559017409614442,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "PloS one",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Kumar 2020 — Conservative Q-Learning for Offline Reinforcement Learning (Neural Information Processing Sy…, recent_primary, 2k×)",
+      "doi": null,
+      "pub_id": "pub_dbc65f17",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7516507563319815,
+        "breakdown": {
+          "raw": {
+            "citations": 1.0066030253279261,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.25165075633198153,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Neural Information Processing Systems",
+      "citation_count": 2441,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Zhang 2020 — Recent advances and challenges in task-oriented dialog systems (Science China Technological Scie…, key_review, 202×)",
+      "doi": "10.1007/s11431-020-1692-3",
+      "pub_id": "pub_e5100015",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7459059851819323,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5836239407277293,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.14590598518193232,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Science China Technological Sciences",
+      "citation_count": 202,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Di 2020 — A Survey on Autonomous Vehicle Control in the Era of Mixed-Autonomy: From Phy… (Transportation Research Part C: …, key_review, 214×)",
+      "doi": "10.1016/j.trc.2021.103008",
+      "pub_id": "pub_561e5d4b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7078353452653002,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4313413810612009,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.10783534526530023,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Transportation Research Part C: Emerging Technologies",
+      "citation_count": 214,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Zhu 2020 — CrossWOZ: A Large-Scale Chinese Cross-Domain Task-Oriented Dialogue Dataset (Transactions of the Association …, recent_primary, 120×)",
+      "doi": "10.1162/tacl_a_00314",
+      "pub_id": "pub_8c1a8e10",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7009739693434104,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5638958773736413,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.14097396934341033,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Transactions of the Association for Computational Linguistics",
+      "citation_count": 120,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Li 2020 — Guided Dialogue Policy Learning without Adversarial Learning in the Loop (Findings, recent_primary, 27×)",
+      "doi": "10.18653/v1/2020.findings-emnlp.209",
+      "pub_id": "pub_c1e3986d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6720842337332312,
+        "breakdown": {
+          "raw": {
+            "citations": 0.288336934932925,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07208423373323125,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Findings",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Di 2021 — A survey on autonomous vehicle control in the era of mixed-autonomy: From phy… (Transportation Research Part C E…, recent_primary, 220×)",
+      "doi": "10.1016/j.trc.2021.103008",
+      "pub_id": "pub_d2a35fb1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6682337480783874,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4329349923135498,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10823374807838745,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Transportation Research Part C Emerging Technologies",
+      "citation_count": 220,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Luo 2022 — Relay Hindsight Experience Replay: Self-guided continual reinforcement learni… (Neurocomputing, recent_primary, 38×)",
+      "doi": "10.1016/j.neucom.2023.126620",
+      "pub_id": "pub_0b60885f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6679712583369938,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35188503334797505,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08797125833699376,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Neurocomputing",
+      "citation_count": 38,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Park 2021 — Learning to schedule job-shop problems: representation and policy learning us… (International Journal of Product…, recent_primary, 299×)",
+      "doi": "10.1080/00207543.2020.1870013",
+      "pub_id": "pub_e4c551ae",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6664871929411421,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5859487717645684,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1464871929411421,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "International Journal of Production Research",
+      "citation_count": 299,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Neij 2021 — Municipal climate mitigation policy and policy learning - A review (Journal of Cleaner Production, key_review, 46×)",
+      "doi": "10.1016/j.jclepro.2021.128348",
+      "pub_id": "pub_22e5a8a5",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6657285317643258,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22291412705730315,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05572853176432579,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Journal of Cleaner Production",
+      "citation_count": 46,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Cao 2020 — Adaptive Dialog Policy Learning with Hindsight and User Modeling (SIGDIAL Conferences, recent_primary, 11×)",
+      "doi": "10.18653/v1/2020.sigdial-1.40",
+      "pub_id": "pub_913de8ff",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6598201154159332,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23928046166373274,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.059820115415933184,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "SIGDIAL Conferences",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Saha 2020 — Towards Sentiment-Aware Multi-Modal Dialogue Policy Learning (Cognitive Computation, recent_primary, 18×)",
+      "doi": "10.1007/s12559-020-09769-7",
+      "pub_id": "pub_c6ee0248",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6576682756483834,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2306731025935333,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057668275648383324,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Cognitive Computation",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Chen 2020 — Off-policy learning for adaptive optimal output synchronization of heterogene… (Automatica, recent_primary, 110×)",
+      "doi": "10.1016/j.automatica.2020.109081",
+      "pub_id": "pub_4747c7d4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6570695029920806,
+        "breakdown": {
+          "raw": {
+            "citations": 0.42827801196832216,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10706950299208054,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Automatica",
+      "citation_count": 110,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Chi 2024 — Diffusion policy: Visuomotor policy learning via action diffusion (The International Journal of Rob…, recent_primary, 297×)",
+      "doi": "10.1177/02783649241273668",
+      "pub_id": "pub_2fac644c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6524087220694028,
+        "breakdown": {
+          "raw": {
+            "citations": 0.8896348882776113,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.22240872206940282,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2024,
+      "venue": "The International Journal of Robotics Research",
+      "citation_count": 297,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Mees 2021 — CALVIN: A Benchmark for Language-Conditioned Policy Learning for Long-Horizon… (IEEE Robotics and Automation Let…, recent_primary, 524×)",
+      "doi": "10.1109/lra.2022.3180108",
+      "pub_id": "pub_140829c1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6504261832708659,
+        "breakdown": {
+          "raw": {
+            "citations": 0.7617047330834636,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1904261832708659,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "IEEE Robotics and Automation Letters",
+      "citation_count": 524,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Kallus 2019 — More Efficient Policy Learning via Optimal Retargeting (Journal of the American Statisti…, recent_primary, 46×)",
+      "doi": "10.1080/01621459.2020.1788948",
+      "pub_id": "pub_7b951c56",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6446304654657341,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37852186186293624,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09463046546573406,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Journal of the American Statistical Association",
+      "citation_count": 46,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Elfwing 2018 — Sigmoid-weighted linear units for neural network function approximation in re… (Neural Networks, recent_primary, 1k×)",
+      "doi": "10.1016/j.neunet.2017.12.012",
+      "pub_id": "pub_1d7e657c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6388743122671258,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4354972490685032,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1088743122671258,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Neural Networks",
+      "citation_count": 1847,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Lee 2022 — Public Health Roles in Addressing Commercial Determinants of Health (Annual Review of Public Health, key_review, 57×)",
+      "doi": "10.1146/annurev-publhealth-052220-020447",
+      "pub_id": "pub_46ebd7af",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6387724291894592,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23508971675783696,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05877242918945924,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Annual Review of Public Health",
+      "citation_count": 57,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Ehlers 2021 — Agricultural policy in the era of digitalisation (Food Policy, recent_primary, 171×)",
+      "doi": "10.1016/j.foodpol.2020.102019",
+      "pub_id": "pub_5be2f629",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6345068343173075,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29802733726922986,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07450683431730747,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Food Policy",
+      "citation_count": 171,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Rehill 2022 — Policy Learning for Many Outcomes of Interest: Combining Optimal Policy Trees… (Computational Economics, recent_primary, 0×)",
+      "doi": "10.1007/s10614-024-10722-1",
+      "pub_id": "pub_c6d946a6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.63,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Computational Economics",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Saha 2020 — A hierarchical approach for efficient multi-intent dialogue policy learning (Multimedia tools and applications, recent_primary, 6×)",
+      "doi": "10.1007/s11042-020-09070-7",
+      "pub_id": "pub_56fb2c4c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6281658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Multimedia tools and applications",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Zhan 2021 — Policy Learning with Adaptively Collected Data (Management Sciences, recent_primary, 34×)",
+      "doi": "10.1287/mnsc.2023.4921",
+      "pub_id": "pub_155a45a7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6265108109798156,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2660432439192629,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06651081097981572,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Management Sciences",
+      "citation_count": 34,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 39,
+      "label": "Zhang 2021 — Emotion-sensitive deep dyna-Q learning for task-completion dialogue policy le… (Neurocomputing, recent_primary, 14×)",
+      "doi": "10.1016/j.neucom.2021.06.075",
+      "pub_id": "pub_678b583a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6230499818454424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2521999273817693,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06304998184544232,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Neurocomputing",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 40,
+      "label": "Zhu 2021 — A Survey of Deep RL and IL for Autonomous Driving Policy Learning (IEEE Transactions on Intelligent…, recent_primary, 203×)",
+      "doi": "10.1109/tits.2021.3134702",
+      "pub_id": "pub_8ba638d7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6219199784836158,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4476799139344628,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1119199784836157,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "IEEE Transactions on Intelligent Transportation Systems",
+      "citation_count": 203,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 42,
+      "label": "Kallus 2018 — Confounding-Robust Policy Improvement (Neural Information Processing Sy…, recent_primary, 170×)",
+      "doi": null,
+      "pub_id": "pub_cb03a492",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6215338588339552,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5661354353358206,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.14153385883395514,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Neural Information Processing Systems",
+      "citation_count": 170,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 44,
+      "label": "Han 2021 — Reinforcement learning control of constrained dynamic systems with uniformly … (Automatica, recent_primary, 66×)",
+      "doi": "10.1016/j.automatica.2021.109689",
+      "pub_id": "pub_8b945179",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6208603540536682,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2434414162146728,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0608603540536682,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Automatica",
+      "citation_count": 66,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 48,
+      "label": "Kallus 2020 — Minimax-Optimal Policy Learning Under Unobserved Confounding (Management Sciences, recent_primary, 74×)",
+      "doi": "10.1287/mnsc.2020.3699",
+      "pub_id": "pub_893bd105",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6181821096643106,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4727284386572425,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11818210966431063,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Management Sciences",
+      "citation_count": 74,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 49,
+      "label": "Hadjiosif 2021 — Did We Get Sensorimotor Adaptation Wrong? Implicit Adaptation as Direct Polic… (The Journal of neuroscience : th…, recent_primary, 54×)",
+      "doi": "10.1523/jneurosci.2125-20.2021",
+      "pub_id": "pub_e67d7cda",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.618003696950287,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2320147878011481,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05800369695028702,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 54,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 50,
+      "label": "Gault 2018 — Defining and measuring innovation in all sectors of the economy (Research Policy, recent_primary, 411×)",
+      "doi": "10.1016/j.respol.2018.01.007",
+      "pub_id": "pub_ffd0e3d0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6171506304924361,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3486025219697444,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0871506304924361,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Research Policy",
+      "citation_count": 411,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

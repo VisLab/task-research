@@ -1,0 +1,1734 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:17:11",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_attention_network",
+    "name": "Attention Network Task",
+    "aliases": [
+      "Attention Network Test",
+      "ANT",
+      "Clinical Screening ANT"
+    ],
+    "category_id": "selective_and_sustained_attention",
+    "short_definition": "Identify the direction of a central arrow flanked by congruent or incongruent arrows, preceded by various cue types; RT differences across cue and flanker conditions index three independent attention networks (alerting, orienting, executive).",
+    "description": "The Attention Network Test (ANT) combines elements of the Posner cueing paradigm and the Eriksen flanker task to provide separate measures of three attention networks in a single task. Participants respond to the direction of a central arrow flanked by congruent or incongruent flankers, with the target preceded by no cue, a center cue, a double cue, or a spatial cue. The ANT yields three independent efficiency scores: alerting (double cue benefit over no cue), orienting (spatial cue benefit over center cue), and executive control (incongruent flanker cost). The task operationalizes Posner's attention network model.",
+    "inclusion_test": {
+      "procedure": "Flanker task with preceding spatial and temporal cues; participants identify the direction of a central arrow flanked by congruent or incongruent arrows.",
+      "manipulation": "Cue type (no cue, center cue, double cue, spatial cue) crossed with flanker congruency (congruent, incongruent).",
+      "measurement": "Three network scores derived from RT differences: alerting (double cue − no cue), orienting (center cue − spatial cue), executive (incongruent − congruent)."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 21,
+      "picked": 20,
+      "reserve": 0,
+      "excluded": 1,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 1
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_162f534b",
+      "doi": "10.1162/089892902317361886",
+      "url": "https://doi.org/10.1162/089892902317361886",
+      "openalex_id": "https://openalex.org/W2150902492",
+      "pmid": "11970796",
+      "first_author": "Fan",
+      "authors_display": "Jin Fan et al.",
+      "year": 2002,
+      "title": "Testing the Efficiency and Independence of Attentional Networks",
+      "venue": "Journal of Cognitive Neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": "The MIT Press",
+      "publication_types": [
+        "article",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3723,
+      "influential_citation_count": null,
+      "fwci": 15.3663,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In recent years, three attentional networks have been defined in anatomical and functional terms. These functions involve alerting, orienting, and executive attention. Reaction time measures can be used to quantify the processing efficiency within each of these three networks. The Attention Network Test (ANT) is designed to evaluate alerting, orienting, and executive attention within a single 30-min testing session that can be easily performed by children, patients, and monkeys. A study with 40 normal adult subjects indicates that the ANT produces reliable single subject estimates of alerting, orienting, and executive function, and further suggests that the efficiencies of these three networks are uncorrelated. There are, however, some interactions in which alerting and orienting can modulate the degree of interference from flankers. This procedure may prove to be convenient and useful in evaluating attentional abnormalities associated with cases of brain injury, stroke, schizophrenia, and attention-deficit disorder. The ANT may also serve as an activation task for neuroimaging studies and as a phenotype for the study of the influence of genes on attentional networks.",
+      "score": {
+        "composite": 0.702349768292282,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4760657398357948,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1190164349589487,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Head Injuries, Closed",
+        "Diagnosis, Computer-Assisted",
+        "Analysis of Variance",
+        "Reproducibility of Results",
+        "Orientation",
+        "Psychomotor Performance",
+        "Attention",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1fdf029b",
+      "doi": "10.1016/j.neuroimage.2018.11.057",
+      "url": "https://doi.org/10.1016/j.neuroimage.2018.11.057",
+      "openalex_id": null,
+      "pmid": "30521950",
+      "first_author": "Fong",
+      "authors_display": "Fong, A. et al.",
+      "year": 2019,
+      "title": "Dynamic functional connectivity during task performance and rest predicts individual differences in attention across studies.",
+      "venue": "NeuroImage",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 134,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Dynamic functional connectivity (DFC) aims to maximize resolvable information from functional brain scans by considering temporal changes in network structure. Recent work has demonstrated that static, i.e. time-invariant resting-state and task-based FC predicts individual differences in behavior, including attention. Here, we show that DFC predicts attention performance across individuals. Sliding-window FC matrices were generated from fMRI data collected during rest and attention task performance by calculating Pearson's r between every pair of nodes of a whole-brain atlas within overlapping 10-60s time segments. Next, variance in r values across windows was taken to quantify temporal variability in the strength of each connection, resulting in a DFC connectome for each individual. In a leave-one-subject-out-cross-validation approach, partial-least-square-regression (PLSR) models were then trained to predict attention task performance from DFC matrices. Predicted and observed attention scores were significantly correlated, indicating successful out-of-sample predictions across rest and task conditions. Combining DFC and static FC features numerically improves predictions over either model alone, but the improvement was not statistically significant. Moreover, dynamic and combined models generalized to two independent data sets (participants performing the Attention Network Task and the stop-signal task). Edges with significant PLSR coefficients concentrated in visual, motor, and executive-control brain networks; moreover, most of these coefficients were negative. Thus, better attention may rely on more stable, i.e. less variable, information flow between brain regions.",
+      "score": {
+        "composite": 0.5843341856594978,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2840034093046579,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07100085232616447,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Neural Pathways",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Individuality",
+        "Task Performance and Analysis",
+        "Attention",
+        "Models, Neurological",
+        "Rest"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_dd52176f",
+      "doi": "10.1016/j.neuroimage.2017.11.010",
+      "url": "https://doi.org/10.1016/j.neuroimage.2017.11.010",
+      "openalex_id": null,
+      "pmid": "29122720",
+      "first_author": "Yoo",
+      "authors_display": "Yoo, K. et al.",
+      "year": 2018,
+      "title": "Connectome-based predictive modeling of attention: Comparing different functional connectivity features and prediction methods across datasets.",
+      "venue": "NeuroImage",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 159,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Connectome-based predictive modeling (CPM; Finn et al., 2015; Shen et al., 2017) was recently developed to predict individual differences in traits and behaviors, including fluid intelligence (Finn et al., 2015) and sustained attention (Rosenberg et al., 2016a), from functional brain connectivity (FC) measured with fMRI. Here, using the CPM framework, we compared the predictive power of three different measures of FC (Pearson's correlation, accordance, and discordance) and two different prediction algorithms (linear and partial least square [PLS] regression) for attention function. Accordance and discordance are recently proposed FC measures that respectively track in-phase synchronization and out-of-phase anti-correlation (Meskaldji et al., 2015). We defined connectome-based models using task-based or resting-state FC data, and tested the effects of (1) functional connectivity measure and (2) feature-selection/prediction algorithm on individualized attention predictions. Models were internally validated in a training dataset using leave-one-subject-out cross-validation, and externally validated with three independent datasets. The training dataset included fMRI data collected while participants performed a sustained attention task and rested (N = 25; Rosenberg et al., 2016a). The validation datasets included: 1) data collected during performance of a stop-signal task and at rest (N = 83, including 19 participants who were administered methylphenidate prior to scanning; Farr et al., 2014a; Rosenberg et al., 2016b), 2) data collected during Attention Network Task performance and rest (N = 41, Rosenberg et al., in press), and 3) resting-state data and ADHD symptom severity from the ADHD-200 Consortium (N = 113; Rosenberg et al., 2016a). Models defined using all combinations of functional connectivity measure (Pearson's correlation, accordance, and discordance) and prediction algorithm (linear and PLS regression) predicted attentional abilities, with correlations betwe",
+      "score": {
+        "composite": 0.5767933703059709,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2938401478905503,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07346003697263757,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Models, Statistical",
+        "Reproducibility of Results",
+        "Psychomotor Performance",
+        "Attention",
+        "Attention Deficit Disorder with Hyperactivity",
+        "Adult",
+        "Young Adult",
+        "Executive Function",
+        "Connectome",
+        "Datasets as Topic"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_63884143",
+      "doi": "10.1073/pnas.0707678104",
+      "url": "https://doi.org/10.1073/pnas.0707678104",
+      "openalex_id": null,
+      "pmid": "17940025",
+      "first_author": "Tang",
+      "authors_display": "Tang, Y. et al.",
+      "year": 2007,
+      "title": "Short-term meditation training improves attention and self-regulation.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 614,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Recent studies suggest that months to years of intensive and systematic meditation training can improve attention. However, the lengthy training required has made it difficult to use random assignment of participants to conditions to confirm these findings. This article shows that a group randomly assigned to 5 days of meditation practice with the integrative body-mind training method shows significantly better attention and control of stress than a similarly chosen control group given relaxation training. The training method comes from traditional Chinese medicine and incorporates aspects of other meditation and mindfulness training. Compared with the control group, the experimental group of 40 undergraduate Chinese students given 5 days of 20-min integrative training showed greater improvement in conflict scores on the Attention Network Test, lower anxiety, depression, anger, and fatigue, and higher vigor on the Profile of Mood States scale, a significant decrease in stress-related cortisol, and an increase in immunoreactivity. These results provide a convenient method for studying the influence of meditation training by using experimental and control methods similar to those used to test drugs or other interventions.",
+      "score": {
+        "composite": 0.4862823881620389,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3717962193148221,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09294905482870552,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Meditation",
+        "Case-Control Studies",
+        "Attention",
+        "Psychological Tests",
+        "Time Factors",
+        "Social Control, Informal",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_74feb789",
+      "doi": "10.1073/pnas.0506897102",
+      "url": "https://doi.org/10.1073/pnas.0506897102",
+      "openalex_id": null,
+      "pmid": "16192352",
+      "first_author": "Rueda",
+      "authors_display": "Rueda, M. et al.",
+      "year": 2005,
+      "title": "Training, maturation, and genetic influences on the development of executive attention.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 446,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "A neural network underlying attentional control involves the anterior cingulate in addition to lateral prefrontal areas. An important development of this network occurs between 3 and 7 years of age. We have examined the efficiency of attentional networks across age and after 5 days of attention training (experimental group) compared with different types of no training (control groups) in 4-year-old and 6-year-old children. Strong improvement in executive attention and intelligence was found from ages 4 to 6 years. Both 4- and 6-year-olds showed more mature performance after the training than did the control groups. This finding applies to behavioral scores of the executive attention network as measured by the attention network test, event-related potentials recorded from the scalp during attention network test performance, and intelligence test scores. We also documented the role of the temperamental factor of effortful control and the DAT1 gene in individual differences in attention. Overall, our data suggest that the executive attention network appears to develop under strong genetic control, but that it is subject to educational interventions during development.",
+      "score": {
+        "composite": 0.47166413663358364,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35332321320100124,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08833080330025031,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Gyrus Cinguli",
+        "Humans",
+        "DNA Primers",
+        "Electroencephalography",
+        "Electrophoresis, Agar Gel",
+        "Child Development",
+        "Temperament",
+        "Attention",
+        "Intelligence Tests",
+        "Evoked Potentials",
+        "Genotype",
+        "Models, Neurological",
+        "Teaching",
+        "Child",
+        "Child, Preschool",
+        "Oregon",
+        "Female",
+        "Male",
+        "Dopamine Plasma Membrane Transport Proteins"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_251694d9",
+      "doi": "10.1073/pnas.0732088100",
+      "url": "https://doi.org/10.1073/pnas.0732088100",
+      "openalex_id": null,
+      "pmid": "12773616",
+      "first_author": "Fan",
+      "authors_display": "Fan, J. et al.",
+      "year": 2003,
+      "title": "Mapping the genetic variation of executive attention onto brain activity.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 250,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Brain imaging data have repeatedly shown that the anterior cingulate cortex is an important node in the brain network mediating conflict. We previously reported that polymorphisms in dopamine receptor (DRD4) and monoamine oxidase A (MAOA) genes showed significant associations with efficiency of handling conflict as measured by reaction time differences in the Attention Network Test (ANT). To examine whether this genetic variation might contribute to differences in brain activation within the anterior cingulate cortex, we genotyped 16 subjects for the DRD4 and MAOA genes who had been scanned during the ANT. In each of the two genes previously associated with more efficient handling of conflict in reaction time experiments, we found a polymorphism in which persons with the allele associated with better behavioral performance showed significantly more activation in the anterior cingulate while performing the ANT than those with the allele associated with worse performance. The results demonstrate how genetic differences among individuals can be linked to individual differences in neuromodulators and in the efficiency of the operation of an appropriate attentional network.",
+      "score": {
+        "composite": 0.46331088523132463,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31991020759196515,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07997755189799129,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Gyrus Cinguli",
+        "Humans",
+        "Monoamine Oxidase",
+        "Receptors, Dopamine D2",
+        "DNA",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Attention",
+        "Base Sequence",
+        "Polymorphism, Genetic",
+        "Alleles",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Receptors, Dopamine D4",
+        "Genetic Variation",
+        "Conflict, Psychological"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_102d555d",
+      "doi": "10.1016/j.bbih.2021.100347",
+      "url": "https://doi.org/10.1016/j.bbih.2021.100347",
+      "openalex_id": null,
+      "pmid": "34549199",
+      "first_author": "Lamontagne",
+      "authors_display": "Lamontagne, S. et al.",
+      "year": 2021,
+      "title": "Post-acute sequelae of COVID-19: Evidence of mood & cognitive impairment.",
+      "venue": "Brain, behavior, & immunity - health",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants,subjects)"
+      ],
+      "citation_count": 69,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1016/j.bbih.2021.100347",
+      "tldr": null,
+      "abstract": "Acute health consequences associated with coronavirus disease 2019 (COVID-19) infection have been thoroughly characterized; however, long-term impacts are not yet understood. Post-acute sequelae of COVID-19 (PASC), also known as Long COVID syndrome, is the persistence of COVID-19 symptoms long after viral infection. In addition to physical symptoms, those with PASC experience changes in mental health, but few studies have empirically examined these effects. The current study investigated mood and cognitive functioning in individuals who have recovered from COVID-19 infection. We recruited 100 male and female adults (M ​= ​30 years old) with no history of mood or cognitive impairment prior to the COVID-19 pandemic (Jan. 2020). Half of the subjects were healthy controls (i.e., no prior COVID-19 infection) and half had received a past COVID-19 diagnosis (ascertained by PCR or antibody test) but were no longer infectious. Participants completed self-reported measures of stress, depression, and anhedonia, as well as the Attention Network Test (ANT), a behavioural measure of attentional alerting, orienting and executive functioning. Relative to controls, depression and anhedonia were significantly higher in the past-COVID group. Selective impairment in attention was observed in the past-COVID group, marked by deficits in executive functioning while alerting and orienting abilities remained intact. Effects were most pronounced among individuals diagnosed 1-4 months prior to assessment. There were no group differences in pandemic-related experiences with respect to social interaction, social distancing, or isolation. The past-COVID group scored significantly higher on perceived stress; however, this did not moderate any effects observed on mood or cognition. These findings implicate a protracted reaction to the virus, possibly via prolonged inflammation, contributing to sustained mood dysregulation and cognitive impairment. Future research should examine the neural and phys",
+      "score": {
+        "composite": 0.45482770356006846,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24597748090694052,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06149437022673513,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d6aa86a6",
+      "doi": "10.1016/j.envpol.2021.117404",
+      "url": "https://doi.org/10.1016/j.envpol.2021.117404",
+      "openalex_id": null,
+      "pmid": "34077897",
+      "first_author": "Julvez",
+      "authors_display": "Julvez, J. et al.",
+      "year": 2021,
+      "title": "Early life multiple exposures and child cognitive function: A multi-centric birth cohort study in six European countries.",
+      "venue": "Environmental pollution (Barking, Essex : 1987)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 51,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1016/j.envpol.2021.117404",
+      "tldr": null,
+      "abstract": "Epidemiological studies mostly focus on single environmental exposures. This study aims to systematically assess associations between a wide range of prenatal and childhood environmental exposures and cognition. The study sample included data of 1298 mother-child pairs, children were 6-11 years-old, from six European birth cohorts. We measured 87 exposures during pregnancy and 122 cross-sectionally during childhood, including air pollution, built environment, meteorology, natural spaces, traffic, noise, chemicals and life styles. The measured cognitive domains were fluid intelligence (Raven's Coloured Progressive Matrices test, CPM), attention (Attention Network Test, ANT) and working memory (N-Back task). We used two statistical approaches to assess associations between exposure and child cognition: the exposome-wide association study (ExWAS) considering each exposure independently, and the deletion-substitution-addition algorithm (DSA) considering all exposures simultaneously to build a final multiexposure model. Based on this multiexposure model that included the exposure variables selected by ExWAS and DSA models, child organic food intake was associated with higher fluid intelligence (CPM) scores (beta = 1.18; 95% CI = 0.50, 1.87) and higher working memory (N-Back) scores (0.23; 0.05, 0.41), and child fast food intake (-1.25; -2.10, -0.40), house crowding (-0.39; -0.62, -0.16), and child environmental tobacco smoke (ETS) (-0.89; -1.42, -0.35), were all associated with lower CPM scores. Indoor PM<sub>2.5</sub> exposure was associated with lower N-Back scores (-0.09; -0.16, -0.02). Additional associations in the unexpected direction were found: Higher prenatal mercury levels, maternal alcohol consumption and child higher perfluorooctane sulfonic acid (PFOS) levels were associated with better cognitive performance; and higher green exposure during pregnancy with lower cognitive performance. This first comprehensive and systematic study of many prenatal and childho",
+      "score": {
+        "composite": 0.4505251695584579,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cohort Studies",
+        "Cognition",
+        "Environmental Exposure",
+        "Pregnancy",
+        "Child",
+        "Europe",
+        "Female",
+        "Exposome"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9c6e6e30",
+      "doi": "10.1007/s12264-020-00549-9",
+      "url": "https://doi.org/10.1007/s12264-020-00549-9",
+      "openalex_id": null,
+      "pmid": "32929635",
+      "first_author": "Liu",
+      "authors_display": "Liu, Q. et al.",
+      "year": 2020,
+      "title": "Impact of Chronic Stress on Attention Control: Evidence from Behavioral and Event-Related Potential Analyses.",
+      "venue": "Neuroscience bulletin",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 38,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Chronic stress affects brain function, so assessing its hazards is important for mental health. To overcome the limitations of behavioral data, we combined behavioral and event-related potentials (ERPs) in an attention network task. This task allowed us to differentiate between three specific aspects of attention: alerting, orienting, and execution. Forty-one participants under chronic stress and 31 non-stressed participants were enrolled. On the performance level, the chronically stressed group showed a significantly slower task response and lower accuracy. Concerning ERP measures, smaller cue-N1, cue-N2, and larger cue-P3 amplitudes were found in the stressed group, indicating that this group was less able to assign attention to effective information, i.e., they made inefficient use of cues and had difficulty in maintaining alerting. In addition, the stressed group showed larger target-N2 amplitudes, indicating that this group needed to allocate more cognitive resources to deal with the conflict targets task. Subgroup analysis revealed lower target-P3 amplitudes in the stressed than in the non-stressed group. Group differences associated with the attention networks were found at the ERP level. In the stressed group, excessive depletion of resources led to changes in attention control. In this study, we examined the effects of chronic stress on individual executive function from a neurological perspective. The results may benefit the development of interventions to improve executive function in chronically stressed individuals.",
+      "score": {
+        "composite": 0.43636114750757976,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Stress, Psychological",
+        "Cues",
+        "Attention",
+        "Reaction Time",
+        "Evoked Potentials",
+        "Adolescent",
+        "Adult",
+        "Young Adult",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_2f043cbc",
+      "doi": "10.1371/journal.pone.0091254",
+      "url": "https://doi.org/10.1371/journal.pone.0091254",
+      "openalex_id": null,
+      "pmid": "24632735",
+      "first_author": "Verburgh",
+      "authors_display": "Verburgh, L. et al.",
+      "year": 2014,
+      "title": "Executive functioning in highly talented soccer players.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 154,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0091254&type=printable",
+      "tldr": null,
+      "abstract": "Executive functions might be important for successful performance in sports, particularly in team sports requiring quick anticipation and adaptation to continuously changing situations in the field. The executive functions motor inhibition, attention and visuospatial working memory were examined in highly talented soccer players. Eighty-four highly talented youth soccer players (mean age 11.9), and forty-two age-matched amateur soccer players (mean age 11.8) in the age range 8 to 16 years performed a Stop Signal task (motor inhibition), the Attention Network Test (alerting, orienting, and executive attention) and a visuospatial working memory task. The highly talented soccer players followed the talent development program of the youth academy of a professional soccer club and played at the highest national soccer competition for their age. The amateur soccer players played at a regular soccer club in the same geographical region as the highly talented soccer players and play in a regular regional soccer competition. Group differences were tested using analyses of variance. The highly talented group showed superior motor inhibition as measured by stop signal reaction time (SSRT) on the Stop Signal task and a larger alerting effect on the Attention Network Test, indicating an enhanced ability to attain and maintain an alert state. No group differences were found for orienting and executive attention and visuospatial working memory. A logistic regression model with group (highly talented or amateur) as dependent variable and executive function measures that significantly distinguished between groups as predictors showed that these measures differentiated highly talented soccer players from amateur soccer players with 89% accuracy. Highly talented youth soccer players outperform youth amateur players on suppressing ongoing motor responses and on the ability to attain and maintain an alert state; both may be essential for success in soccer.",
+      "score": {
+        "composite": 0.43633382731553744,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2920019759288165,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07300049398220412,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Reaction Time",
+        "Soccer",
+        "Adolescent",
+        "Child",
+        "Male",
+        "Athletic Performance",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_d5da3ed0",
+      "doi": "10.1016/j.bandc.2009.02.002",
+      "url": "https://doi.org/10.1016/j.bandc.2009.02.002",
+      "openalex_id": null,
+      "pmid": "19269079",
+      "first_author": "Fan",
+      "authors_display": "Fan, J. et al.",
+      "year": 2009,
+      "title": "Testing the behavioral interaction and integration of attentional networks.",
+      "venue": "Brain and cognition",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 278,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "One current conceptualization of attention subdivides it into functions of alerting, orienting, and executive control. Alerting describes the function of tonically maintaining the alert state and phasically responding to a warning signal. Automatic and voluntary orienting are involved in the selection of information among multiple sensory inputs. Executive control describes a set of more complex operations that include detecting and resolving conflicts in order to control thoughts or behaviors. Converging evidence supports this theory of attention by showing that each function appears to be subserved by anatomically distinct networks in the brain and differentially innervated by various neuromodulatory systems. Although much research has been dedicated to understanding the functional separation of these networks in both healthy and disease states, the interaction and integration among these networks still remain unclear. In this study, we aimed to characterize possible behavioral interaction and integration in healthy adult volunteers using a revised attention network test (ANT-R) with cue-target interval and cue validity manipulations. We found that whereas alerting improves overall response speed, it exerts negative influence on executive control under certain conditions. A valid orienting cue enhances but an invalid cue diminishes the ability of executive control to overcome conflict. The results support the hypothesis of functional integration and interaction of these brain networks.",
+      "score": {
+        "composite": 0.4348416797965945,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32603338585304475,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08150834646326119,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Analysis of Variance",
+        "Linear Models",
+        "Photic Stimulation",
+        "Cognition",
+        "Cues",
+        "Task Performance and Analysis",
+        "Attention",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Conflict, Psychological"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_8c254bd9",
+      "doi": "10.1007/s00394-018-1843-6",
+      "url": "https://doi.org/10.1007/s00394-018-1843-6",
+      "openalex_id": null,
+      "pmid": "30327868",
+      "first_author": "Barfoot",
+      "authors_display": "Barfoot, K. et al.",
+      "year": 2019,
+      "title": "The effects of acute wild blueberry supplementation on the cognition of 7-10-year-old schoolchildren.",
+      "venue": "European journal of nutrition",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 42,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s00394-018-1843-6.pdf",
+      "tldr": null,
+      "abstract": "<h4>Purpose</h4>Previous evidence suggests consumption of flavonoids, a sub-class of polyphenols, is associated with improved cognitive function across the lifespan. In particular, acute intervention of a flavonoid-rich wild blueberry (WBB) drink has been shown to boost executive function (EF), short-term memory and mood 2-6 h post-consumption in 7-10-year-old children. However, confirmation of the aspects of EF and memory susceptible to WBB ingestion is required, particularly during childhood, a critical period of neurological development. In addition, the child literature on berry flavonoid supplementation and cognition highlights the potential for such interventions to elicit positive benefits to real-world educational scenarios, such as reading, a complex ability which relies upon aspects of cognition already known to improve following WBB.<h4>Methods</h4>Here we examined which aspects of EF and memory are susceptible to acute WBB, as well as investigating whether acute WBB could further benefit reading ability. Fifty-four healthy children, aged 7-10 years, consumed a 200 ml WBB drink (253 mg anthocyanins) or a matched placebo according to a randomised, single-blind, parallel-groups design. Verbal memory (Auditory Verbal Learning Task; AVLT), EF (Modified Attention Network Task; MANT), and reading efficiency (Test of Word Reading Efficiency-2; TOWRE-2) were assessed at baseline and 2 h post-consumption.<h4>Results</h4>For the MANT, significantly quicker RTs were observed for WBB participants when compared to placebo participants on 120 ms trials, without cost to accuracy. Furthermore, WBB participants showed enhanced verbal memory performance on the AVLT, recalling more words than placebo participants on short delay and memory acquisition measures post-consumption. Despite these significant improvements in cognitive performance, no significant effects were observed for reading measures.<h4>Conclusion</h4>Consumption of WBB was found to significantly improve memo",
+      "score": {
+        "composite": 0.4277744046383184,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Single-Blind Method",
+        "Cognition",
+        "Memory, Short-Term",
+        "Reaction Time",
+        "Dietary Supplements",
+        "Reading",
+        "Child",
+        "Female",
+        "Male",
+        "Fruit and Vegetable Juices",
+        "Blueberry Plants"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_6b3b6203",
+      "doi": "10.3389/fnhum.2018.00315",
+      "url": "https://doi.org/10.3389/fnhum.2018.00315",
+      "openalex_id": null,
+      "pmid": "30127731",
+      "first_author": "Norris",
+      "authors_display": "Norris, C. et al.",
+      "year": 2018,
+      "title": "Brief Mindfulness Meditation Improves Attention in Novices: Evidence From ERPs and Moderation by Neuroticism.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 56,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fnhum.2018.00315/pdf",
+      "tldr": null,
+      "abstract": "Past research has found that mindfulness meditation training improves executive attention. Event-related potentials (ERPs) have indicated that this effect could be driven by more efficient allocation of resources on demanding attentional tasks, such as the Flanker Task and the Attention Network Test (ANT). However, it is not clear whether these changes depend on long-term practice. In two studies, we sought to investigate the effects of a brief, 10-min meditation session on attention in novice meditators, compared to a control activity. We also tested moderation by individual differences in neuroticism and the possible underlying neural mechanisms driving these effects, using ERPs. In Study 1, participants randomly assigned to listen to a 10-min meditation tape had better accuracy on incongruent trials on a Flanker task, with no detriment in reaction times (RTs), indicating better allocation of resources. In Study 2, those assigned to listen to a meditation tape performed an ANT more quickly than control participants, with no detriment in performance. Neuroticism moderated both of these effects, and ERPs showed that those individuals lower in neuroticism who meditated for 10 min exhibited a larger N2 to incongruent trials compared to those who listened to a control tape; whereas those individuals higher in neuroticism did not. Together, our results support the hypothesis that even brief meditation improves allocation of attentional resources in some novices.",
+      "score": {
+        "composite": 0.40185402768391915,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_517ba291",
+      "doi": null,
+      "url": null,
+      "openalex_id": null,
+      "pmid": "30923472",
+      "first_author": "McDonough",
+      "authors_display": "McDonough, I. et al.",
+      "year": 2019,
+      "title": "A Review on the Trajectory of Attentional Mechanisms in Aging and the Alzheimer's Disease Continuum through the Attention Network Test.",
+      "venue": "The Yale journal of biology and medicine",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 42,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6430165",
+      "tldr": null,
+      "abstract": "Multiple domains of cognition are known to decline in both normal aging and in the trajectory towards Alzheimer's disease (AD). While declines in episodic memory are most well-known in both normal aging and AD, some of these memory differences might stem from early deteriorations in attention that have consequences for later memory. Further complicating the matter is that attention is a multifaceted construct that might be differentially affected in normal aging and AD. According to cognitive neuroscience models of attention, three types of attention networks exist: alerting, orienting, and executive. Efficiency of these three networks can be captured using the Attention Network Test (ANT). We reviewed the literature investigating differences in attention networks using the ANT as a function of normal aging and the AD trajectory, which included people at risk for AD, preclinical stages of AD, mild cognitive impairment, and those diagnosed with AD. We found that normal aging and the AD trajectory evidenced different patterns of attentional declines. Whereas normal aging was most consistently associated with impairments in alerting, early phases of the AD trajectory were most consistently associated with impairments in executive attention, and later phases of the AD trajectory were mixed. The mixed results with AD are largely attributed to small sample sizes and confounding effects of general slowing. These findings highlight key gaps in the literature linking different phases of AD while also highlighting the usefulness of the ANT to distinguish normal aging from the AD trajectory, especially in the earliest phases of the disease process.",
+      "score": {
+        "composite": 0.3777744046383184,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Alzheimer Disease",
+        "Risk Factors",
+        "Visual Perception",
+        "Attention",
+        "Neuropsychological Tests",
+        "Aging"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1cb6662f",
+      "doi": "10.1038/oby.2011.168",
+      "url": "https://doi.org/10.1038/oby.2011.168",
+      "openalex_id": null,
+      "pmid": "21681221",
+      "first_author": "Yokum",
+      "authors_display": "Yokum, S. et al.",
+      "year": 2011,
+      "title": "Attentional bias to food images associated with elevated weight and future weight gain: an fMRI study.",
+      "venue": "Obesity (Silver Spring, Md.)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 288,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Behavioral studies reveal that obese vs. lean individuals show attentional bias to food stimuli. Yet research has not investigated this relation using objective brain imaging or tested whether attentional bias to food stimuli predicts future weight gain, which are important aims given the prominence of food cues in the environment. We used functional magnetic resonance imaging (fMRI) to examine attentional bias in 35 adolescent girls ranging from lean to obese using an attention network task involving food and neutral stimuli. BMI correlated positively with speed of behavioral response to both appetizing food stimuli and unappetizing food stimuli, but not to neutral stimuli. BMI correlated positively with activation in brain regions related to attention and food reward, including the anterior insula/frontal operculum, lateral orbitofrontal cortex (OFC), ventrolateral prefrontal cortex (vlPFC), and superior parietal lobe, during initial orientation to food cues. BMI also correlated with greater activation in the anterior insula/frontal operculum during reallocation of attention to appetizing food images and with weaker activation in the medial OFC and ventral pallidum during reallocation of attention to unappetizing food images. Greater lateral OFC activation during initial orientation to appetizing food cues predicted future increases in BMI. Results indicate that overweight is related to greater attentional bias to food cues and that youth who show elevated reward circuitry responsivity during food cue exposure are at increased risk for weight gain.",
+      "score": {
+        "composite": 0.3753513940275367,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32807224277681346,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08201806069420337,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Humans",
+        "Obesity",
+        "Weight Gain",
+        "Hyperphagia",
+        "Magnetic Resonance Imaging",
+        "Body Mass Index",
+        "Brain Mapping",
+        "Diet",
+        "Follow-Up Studies",
+        "Photic Stimulation",
+        "Adolescent Behavior",
+        "Reward",
+        "Attention",
+        "Reaction Time",
+        "Models, Psychological",
+        "Food",
+        "Adolescent",
+        "Female",
+        "Overweight"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_581bd6d9",
+      "doi": "10.1523/jneurosci.1833-07.2007",
+      "url": "https://doi.org/10.1523/jneurosci.1833-07.2007",
+      "openalex_id": null,
+      "pmid": "17553991",
+      "first_author": "Fan",
+      "authors_display": "Fan, J. et al.",
+      "year": 2007,
+      "title": "The relation of brain oscillations to attentional networks.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 202,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Previous studies have suggested the relation of particular frequency bands such as theta (4-8 Hz), alpha (8-14 Hz), beta (14-30 Hz), or gamma (>30 Hz) to cognitive functions. However, there has been controversy over which bands are specifically related to attention. We used the attention network test to separate three anatomically defined brain networks that carry out the functions of alerting, orienting, and executive control of attention. High-density scalp electrical recording was performed to record synchronous oscillatory activity and power spectrum analyses based on functional magnetic resonance imaging constrained dipole modeling were conducted for each attentional network. We found that each attentional network has a distinct set of oscillations related to its activity. The alerting network showed a specific decrease in theta-, alpha-, and beta-band activity 200-450 ms after a warning signal. The orienting network showed an increase in gamma-band activity at approximately 200 ms after a spatial cue, indicating the location of a target. The executive control network revealed a complex pattern when a target was surrounded with incongruent flankers compared with congruent flankers. There was an early (<400 ms) increase in gamma-band activity, a later (>400 ms) decrease in beta- and low gamma-band activity after the target onset, and a decrease of all frequency bands before response followed by an increase after the response. These data demonstrate that attention is not related to any single frequency band but that each network has a distinct oscillatory activity and time course.",
+      "score": {
+        "composite": 0.33023874029537376,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30762162784816166,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07690540696204042,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Nerve Net",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Photic Stimulation",
+        "Psychomotor Performance",
+        "Attention",
+        "Reaction Time",
+        "Biological Clocks",
+        "Evoked Potentials",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9f7cd998",
+      "doi": "10.12659/msm.910124",
+      "url": "https://doi.org/10.12659/msm.910124",
+      "openalex_id": null,
+      "pmid": "30378591",
+      "first_author": "Zhou",
+      "authors_display": "Zhou, Y. et al.",
+      "year": 2018,
+      "title": "Bispectral Index Monitoring During Anesthesia Promotes Early Postoperative Recovery of Cognitive Function and Reduces Acute Delirium in Elderly Patients with Colon Carcinoma: A Prospective Controlled Study using the Attention Network Test.",
+      "venue": "Medical science monitor : international medical journal of experimental and clinical research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Clinical Trial",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 40,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6354643",
+      "tldr": null,
+      "abstract": "BACKGROUND Bispectral index (BIS) monitoring can reduce the duration of anesthesia. This study aimed to evaluate the effects of BIS monitoring during surgery for resection of colon carcinoma in elderly patients using the Attention Network Test (ANT) to study alerting, orienting, and executive functions, and the Confusion Assessment Method (CAM). MATERIAL AND METHODS Eighty-one patients (65-75 years) underwent radical surgery for colon carcinoma with general intravenous anesthesia, propofol (6-8 mg/kg/h), vecuronium (0.03-0.05 mg/kg/min), and remifentanil (0.1-0.2 μg/kg/min). The BIS group (n=41) underwent adjustment of anesthesia to maintain a BIS value between 40-60; the non-BIS group (N=40) underwent standard intraoperative hemodynamic monitoring. Primary endpoints were alerting, orienting, and executive functions assessed pre-operatively and on postoperative days 1 and 5 using the ANT; the secondary endpoint was delirium during the first five postoperative days, assessed using the CAM. RESULTS Propofol and remifentanil doses were significantly lower in the BIS group compared with the non-BIS group (P<0.001). Alerting, orienting, and executive functions showed no differences between the two groups pre-operatively but were impaired in both groups on postoperative day 1 compared with pre-operative levels (P<0.001). On postoperative day 5, alerting (P=0.607) and orienting (P=0.851) functions recovered in the BIS group but remained impaired in the non-BIS group (P<0.001). Delirium was significantly lower in the BIS group compared with the non-BIS group (17.5% vs. 27.5%) (P<0.001). CONCLUSIONS BIS-guided anesthesia was associated with reduced anesthetic exposure, early postoperative recovery of alerting and orienting functions, and reduced postoperative delirium.",
+      "score": {
+        "composite": 0.317085017758763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Colonic Neoplasms",
+        "Delirium",
+        "Postoperative Complications",
+        "Anesthetics, Intravenous",
+        "Monitoring, Intraoperative",
+        "Postoperative Care",
+        "Anesthesia, General",
+        "Postoperative Period",
+        "Prospective Studies",
+        "Cognition",
+        "Attention",
+        "Anesthesiology",
+        "Aged",
+        "Female",
+        "Male",
+        "Executive Function",
+        "Consciousness Monitors"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4a6502ac",
+      "doi": "10.1186/s12883-023-03150-5",
+      "url": "https://doi.org/10.1186/s12883-023-03150-5",
+      "openalex_id": null,
+      "pmid": "37003976",
+      "first_author": "Liu",
+      "authors_display": "Liu, X. et al.",
+      "year": 2023,
+      "title": "Effects of motor imagery based brain-computer interface on upper limb function and attention in stroke patients with hemiplegia: a randomized controlled trial.",
+      "venue": "BMC neurology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 38,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10064693",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Seeking positive and comprehensive rehabilitation methods after stroke is an urgent problem to be solved, which is very important to improve the dysfunction of stroke. The aim of this study was to investigate the effects of motor imagery-based brain-computer interface training (MI-BCI) on upper limb function and attention in stroke patients with hemiplegia.<h4>Methods</h4>Sixty stroke patients with impairment of upper extremity function and decreased attention were randomly assigned to the control group (CR group) or the experimental group (BCI group) in a 1:1 ratio. Patients in the CR group received conventional rehabilitation. Patients in the BCI group received 20 min of MI-BCI training five times a week for 3 weeks (15 sessions) in addition to conventional rehabilitation. The primary outcome measures were the changes in Fugl-Meyer Motor Function Assessment of Upper Extremities (FMA-UE) and Attention Network Test (ANT) from baseline to 3 weeks.<h4>Results</h4>About 93% of the patients completed the allocated training. Compared with the CR group, among those in the BCI group, FMA-UE was increased by 8.0 points (95%CI, 5.0 to 10.0; P < 0.001). Alert network response time (32.4ms; 95%CI, 58.4 to 85.6; P < 0.001), orienting network response (5.6ms; 95%CI, 29.8 to 55.8; P = 0.010), and corrects number (8.0; 95%CI, 17.0 to 28.0; P < 0.001) also increased in the BCI group compared with the CR group. Additionally, the executive control network response time (- 105.9ms; 95%CI, - 68.3 to - 23.6; P = 0.002), the total average response time (- 244.8ms; 95%CI, - 155.8 to - 66.2; P = 0.002), and total time (- 122.0ms; 95%CI, - 80.0 to - 35.0; P = 0.001) were reduced in the BCI group compared with the CR group.<h4>Conclusion</h4>MI-BCI combined with conventional rehabilitation training could better enhance upper limb motor function and attention in stroke patients. This training method may be feasible and suitable for individuals with stroke.<h4>Trial registra",
+      "score": {
+        "composite": 0.2863611475075798,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Upper Extremity",
+        "Humans",
+        "Hemiplegia",
+        "Electroencephalography",
+        "Recovery of Function",
+        "Stroke",
+        "Brain-Computer Interfaces",
+        "Stroke Rehabilitation"
+      ]
+    },
+    {
+      "rank": 19,
+      "tier": "excluded",
+      "auto_role": "key_review",
+      "pub_id": "pub_7d2e0165",
+      "doi": "10.3390/jintelligence12020019",
+      "url": "https://doi.org/10.3390/jintelligence12020019",
+      "openalex_id": null,
+      "pmid": "38392175",
+      "first_author": "Klein",
+      "authors_display": "Klein, R. et al.",
+      "year": 2024,
+      "title": "Changes in the Networks of Attention across the Lifespan: A Graphical Meta-Analysis.",
+      "venue": "Journal of Intelligence",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human)"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10889552",
+      "tldr": null,
+      "abstract": "Three Posnerian networks of attention (alerting, orienting, and executive control) have been distinguished on the bases of behavioural, neuropsychological, and neuroscientific evidence. Here, we examined the trajectories of these networks throughout the human lifespan using the various Attention Network Tests (ANTs), which were specifically developed to measure the efficacy of these networks. The ANT Database was used to identify relevant research, resulting in the inclusion of 36 publications. We conducted a graphical meta-analysis using network scores from each study, based on reaction time plotted as a function of age group. Evaluation of attentional networks from childhood to early adulthood suggests that the alerting network develops relatively quickly, and reaches near-adult level by the age of 12. The developmental pattern of the orienting network seems to depend on the information value of the spatial cues. Executive control network scores show a consistent decrease (improvement) with age in childhood. During adulthood (ages 19-75), changes in alerting depend on the modality of the warning signal, while a moderate increase in orienting scores was seen with increasing age. Whereas executive control scores, as measured in reaction time, increase (deterioration) from young adulthood into later adulthood an opposite trend is seen when scores are based on error rates.",
+      "score": {
+        "composite": 0.2814991926120757,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_95b19d2d",
+      "doi": "10.1186/1471-2202-3-14",
+      "url": "https://doi.org/10.1186/1471-2202-3-14",
+      "openalex_id": null,
+      "pmid": "12366871",
+      "first_author": "Fossella",
+      "authors_display": "Fossella, J. et al.",
+      "year": 2002,
+      "title": "Assessing the molecular genetics of attention networks.",
+      "venue": "BMC neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Clinical Trial",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 228,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC130047",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Current efforts to study the genetic underpinnings of higher brain functions have been lacking appropriate phenotypes to describe cognition. One of the problems is that many cognitive concepts for which there is a single word (e.g. attention) have been shown to be related to several anatomical networks. Recently, we have developed an Attention Network Test (ANT) that provides a separate measure for each of three anatomically defined attention networks.<h4>Results</h4>In this study we have measured the efficiency of neural networks related to aspects of attention using the ANT in a population of 200 adult subjects. We then examined genetic polymorphisms in four candidate genes (DRD4, DAT, COMT and MAOA) that have been shown to contribute to the risk of developing various psychiatric disorders where attention is disrupted. We find modest associations of several polymorphisms with the efficiency of executive attention but not with overall performance measures such as reaction time.<h4>Conclusions</h4>These results suggest that genetic variation may underlie inter-subject variation in the efficiency of executive attention. This study also shows that genetic influences on executive attention may be specific to certain anatomical networks rather than affecting performance in a global or non-specific manner. Lastly, this study further validates the ANT as an endophenotypic assay suitable for assessing how genes influence certain anatomical networks that may be disrupted in various psychiatric disorders.",
+      "score": {
+        "composite": 0.22198313604196004,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31459921083450687,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07864980270862672,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Nerve Net",
+        "Humans",
+        "Dopamine",
+        "Monoamine Oxidase",
+        "Catechol O-Methyltransferase",
+        "Membrane Transport Proteins",
+        "Membrane Glycoproteins",
+        "Receptors, Dopamine D2",
+        "Nerve Tissue Proteins",
+        "Cognition",
+        "Attention",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Sex Factors",
+        "Gene Frequency",
+        "Alleles",
+        "Reference Values",
+        "Adolescent",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Dopamine Plasma Membrane Transport Proteins",
+        "Receptors, Dopamine D4",
+        "Genetic Testing"
+      ]
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_8d0b0a54",
+      "doi": "10.1186/1471-2202-2-14",
+      "url": "https://doi.org/10.1186/1471-2202-2-14",
+      "openalex_id": null,
+      "pmid": "11580865",
+      "first_author": "Fan",
+      "authors_display": "Fan, J. et al.",
+      "year": 2001,
+      "title": "Assessing the heritability of attentional networks.",
+      "venue": "BMC neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Clinical Trial",
+        "Twin Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 171,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC57000",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Current efforts to study the genetics of higher functions have been lacking appropriate phenotypes to describe cognition. One of the problems is that many cognitive concepts for which there is a single word (e.g. attention) have been shown to be related to several anatomical networks. Recently we have developed an Attention Network Test (ANT) that provides a separate measure for each of three anatomically defined attention networks. In this small scale study, we ran 26 pairs of MZ and DZ twins in an effort to determine if any of these networks show sufficient evidence of heritability to warrant further exploration of their genetic basis.<h4>Results</h4>The efficiency of the executive attention network, that mediates stimulus and response conflict, shows sufficient heritability to warrant further study. Alerting and overall reaction time show some evidence for heritability and in our study the orienting network shows no evidence of heritability.<h4>Conclusions</h4>These results suggest that genetic variation contributes to normal individual differences in higher order executive attention involving dopamine rich frontal areas including the anterior cingulate. At least the executive portion of the ANT may serve as a valid endophenotype for larger twin studies and subsequent molecular genetic analysis in normal subject populations.",
+      "score": {
+        "composite": 0.2178401676506408,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29802733726922986,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07450683431730747,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Gyrus Cinguli",
+        "Frontal Lobe",
+        "Nerve Net",
+        "Humans",
+        "Orientation",
+        "Cognition",
+        "Attention",
+        "Reaction Time",
+        "Neurophysiology",
+        "Twins, Dizygotic",
+        "Twins, Monozygotic",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Genetic Variation"
+      ]
+    }
+  ]
+}

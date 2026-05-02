@@ -1,0 +1,2780 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:33:44",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_ravens_progressive_matrices",
+    "name": "Raven's Progressive Matrices Task",
+    "aliases": [
+      "Raven's Progressive Matrices Test",
+      "Raven's Progressive Matrices",
+      "RPM",
+      "Raven's",
+      "Progressive Matrices"
+    ],
+    "category_id": "reasoning_and_problem_solving",
+    "short_definition": "Matrix completion items requiring induction of a rule from a 3x3 array of figures; items correct is a standard measure of non-verbal reasoning.",
+    "description": "Participants view a matrix pattern with a missing element and select the correct completion from a set of alternatives. The patterns involve systematic variations in features such as shape, size, color, orientation, and number, governed by rules that increase in complexity across test items. Solving each item requires extracting the governing rules and applying them to predict the missing element. Raven's Progressive Matrices is the most widely used culture-reduced measure of fluid intelligence (Gf) and abstract relational reasoning, and is among the most extensively studied psychometric instruments in all of psychology. It has been central to debates about the neural basis of general intelligence, g-loading, and the structure of reasoning.",
+    "inclusion_test": {
+      "procedure": "Participants view a 3×3 matrix of geometric patterns with one cell missing and select the pattern that completes the matrix from a set of alternatives.",
+      "manipulation": "Number of relational rules to integrate; rule types (distribution of values, quantitative progression, figure addition); number of response options.",
+      "measurement": "Number correct (raw score, often converted to IQ-scale); accuracy by item difficulty; response time."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 34,
+      "picked": 30,
+      "reserve": 2,
+      "excluded": 2,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 2
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_b81a8084",
+      "doi": "10.1037/0033-295x.97.3.404",
+      "url": "https://doi.org/10.1037/0033-295x.97.3.404",
+      "openalex_id": "https://openalex.org/W2067737176",
+      "pmid": "2381998",
+      "first_author": "Carpenter",
+      "authors_display": "Patricia A. Carpenter et al.",
+      "year": 1990,
+      "title": "What one intelligence test measures: A theoretical account of the processing in the Raven Progressive Matrices Test.",
+      "venue": "Psychological Review",
+      "venue_tier": "flagship",
+      "publisher": "American Psychological Association",
+      "publication_types": [
+        "article",
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1645,
+      "influential_citation_count": null,
+      "fwci": 12.7401,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The cognitive processes in a widely used, nonverbal test of analytic intelligence, the Raven Progressive Matrices Test (Raven, 1962), are analyzed in terms of which processes distinguish between higher scoring and lower scoring subjects and which processes are common to all subjects and all items on the test. The analysis is based on detailed performance characteristics, such as verbal protocols, eye-fixation patterns, and errors. The theory is expressed as a pair of computer simulation models that perform like the median or best college students in the sample. The processing characteristic common to all subjects is an incremental, reiterative strategy for encoding and inducing the regularities in each problem. The processes that distinguish among individuals are primarily the ability to induce abstract relations and the ability to dynamically manage a large set of problem-solving goals in working memory.",
+      "score": {
+        "composite": 0.7571988168318096,
+        "breakdown": {
+          "raw": {
+            "citations": 0.42879526732723844,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10719881683180961,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Discrimination Learning",
+        "Problem Solving",
+        "Form Perception",
+        "Pattern Recognition, Visual",
+        "Concept Formation",
+        "Attention",
+        "Intelligence Tests",
+        "Psychometrics",
+        "Adult"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_163ea060",
+      "doi": "10.1038/s41598-019-46728-1",
+      "url": "https://doi.org/10.1038/s41598-019-46728-1",
+      "openalex_id": null,
+      "pmid": "31320656",
+      "first_author": "Madsen",
+      "authors_display": "Madsen, S. et al.",
+      "year": 2019,
+      "title": "Speech perception is similar for musicians and non-musicians across a wide range of conditions.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 47,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6639310",
+      "tldr": null,
+      "abstract": "It remains unclear whether musical training is associated with improved speech understanding in a noisy environment, with different studies reaching differing conclusions. Even in those studies that have reported an advantage for highly trained musicians, it is not known whether the benefits measured in laboratory tests extend to more ecologically valid situations. This study aimed to establish whether musicians are better than non-musicians at understanding speech in a background of competing speakers or speech-shaped noise under more realistic conditions, involving sounds presented in space via a spherical array of 64 loudspeakers, rather than over headphones, with and without simulated room reverberation. The study also included experiments testing fundamental frequency discrimination limens (F0DLs), interaural time differences limens (ITDLs), and attentive tracking. Sixty-four participants (32 non-musicians and 32 musicians) were tested, with the two groups matched in age, sex, and IQ as assessed with Raven's Advanced Progressive matrices. There was a significant benefit of musicianship for F0DLs, ITDLs, and attentive tracking. However, speech scores were not significantly different between the two groups. The results suggest no musician advantage for understanding speech in background noise or talkers under a variety of conditions.",
+      "score": {
+        "composite": 0.5360332669860892,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22413306794435656,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05603326698608914,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Acoustic Stimulation",
+        "Speech",
+        "Pitch Discrimination",
+        "Speech Perception",
+        "Attention",
+        "Noise",
+        "Music",
+        "Child",
+        "Child, Preschool",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1a9b2615",
+      "doi": "10.1007/s00213-018-5049-7",
+      "url": "https://doi.org/10.1007/s00213-018-5049-7",
+      "openalex_id": null,
+      "pmid": "30357434",
+      "first_author": "Prochazkova",
+      "authors_display": "Prochazkova, L. et al.",
+      "year": 2018,
+      "title": "Exploring the effect of microdosing psychedelics on creativity in an open-label natural setting.",
+      "venue": "Psychopharmacology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Clinical Trial, Phase I",
+        "Pragmatic Clinical Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 90,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s00213-018-5049-7.pdf",
+      "tldr": null,
+      "abstract": "<h4>Introduction</h4>Taking microdoses (a mere fraction of normal doses) of psychedelic substances, such as truffles, recently gained popularity, as it allegedly has multiple beneficial effects including creativity and problem-solving performance, potentially through targeting serotonergic 5-HT<sub>2A</sub> receptors and promoting cognitive flexibility, crucial to creative thinking. Nevertheless, enhancing effects of microdosing remain anecdotal, and in the absence of quantitative research on microdosing psychedelics, it is impossible to draw definitive conclusions on that matter. Here, our main aim was to quantitatively explore the cognitive-enhancing potential of microdosing psychedelics in healthy adults.<h4>Methods</h4>During a microdosing event organized by the Dutch Psychedelic Society, we examined the effects of psychedelic truffles (which were later analyzed to quantify active psychedelic alkaloids) on two creativity-related problem-solving tasks: the Picture Concept Task assessing convergent thinking and the Alternative Uses Task assessing divergent thinking. A short version of the Ravens Progressive Matrices task assessed potential changes in fluid intelligence. We tested once before taking a microdose and once while the effects were expected to be manifested.<h4>Results</h4>We found that both convergent and divergent thinking performance was improved after a non-blinded microdose, whereas fluid intelligence was unaffected.<h4>Conclusion</h4>While this study provides quantitative support for the cognitive-enhancing properties of microdosing psychedelics, future research has to confirm these preliminary findings in more rigorous placebo-controlled study designs. Based on these preliminary results, we speculate that psychedelics might affect cognitive metacontrol policies by optimizing the balance between cognitive persistence and flexibility. We hope this study will motivate future microdosing studies with more controlled designs to test this hypothesis.",
+      "score": {
+        "composite": 0.4752919324915445,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2611677299661781,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06529193249154452,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Hallucinogens",
+        "Nootropic Agents",
+        "Photic Stimulation",
+        "Motivation",
+        "Intelligence",
+        "Problem Solving",
+        "Thinking",
+        "Intelligence Tests",
+        "Dose-Response Relationship, Drug",
+        "Adult",
+        "Female",
+        "Male",
+        "Clinical Trials, Phase I as Topic",
+        "Young Adult",
+        "Creativity"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_05bf510b",
+      "doi": "10.1371/journal.pone.0127052",
+      "url": "https://doi.org/10.1371/journal.pone.0127052",
+      "openalex_id": null,
+      "pmid": "25996934",
+      "first_author": "Ronfani",
+      "authors_display": "Ronfani, L. et al.",
+      "year": 2015,
+      "title": "The Complex Interaction between Home Environment, Socioeconomic Status, Maternal IQ and Early Child Neurocognitive Development: A Multivariate Analysis of Data Collected in a Newborn Cohort Study.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 96,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4440732",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>The relative role of socioeconomic status (SES), home environment and maternal intelligence, as factors affecting child cognitive development in early childhood is still unclear. The aim of this study is to analyze the association of SES, home environment and maternal IQ with child neurodevelopment at 18 months.<h4>Methods</h4>The data were collected prospectively in the PHIME study, a newborn cohort study carried out in Italy between 2007 and 2010. Maternal nonverbal abilities (IQ) were evaluated using the Standard Progressive Matrices, a version of the Raven's Progressive Matrices; a direct evaluation of the home environment was carried out with the AIRE instrument, designed using the HOME (Home Observation for Measurement of the Environment) model; the socioeconomic characteristics were evaluated using the SES index which takes into account parents occupation, type of employment, educational level, homeownership. The study outcome was child neurodevelopment evaluated at 18 months, with the Bayley Scales of Infant and Toddler Development Third Edition (BSID III). Linear regression analyses and mediation analyses were carried out to evaluate the association between the three exposures, and the scaled scores of the three main scales of BSID III (cognitive, language and motor scale), with adjustment for a wide range of potential explanatory variables.<h4>Results</h4>Data from 502 mother-child pairs were analyzed. Mediation analysis showed a relationship between SES and maternal IQ, with a complete mediation effect of home environment in affecting cognitive and language domains. A direct significant effect of maternal IQ on the BSID III motor development scale and the mediation effect of home environment were found.<h4>Conclusions</h4>Our results show that home environment was the variable with greater influence on neurodevelopment at 18 months. The observation of how parents and children interact in the home context is crucial to adequately evaluat",
+      "score": {
+        "composite": 0.45621614349665507,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2648645739866204,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0662161434966551,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Multivariate Analysis",
+        "Prospective Studies",
+        "Motor Activity",
+        "Child Development",
+        "Language Development",
+        "Intelligence",
+        "Family",
+        "Mother-Child Relations",
+        "Cognition",
+        "Social Class",
+        "Socioeconomic Factors",
+        "Adult",
+        "Infant",
+        "Italy",
+        "Female",
+        "Male",
+        "Public Health Surveillance"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1e8b3bec",
+      "doi": "10.1111/j.1467-9280.2007.01954.x",
+      "url": "https://doi.org/10.1111/j.1467-9280.2007.01954.x",
+      "openalex_id": null,
+      "pmid": "17680932",
+      "first_author": "Dawson",
+      "authors_display": "Dawson, M. et al.",
+      "year": 2007,
+      "title": "The level and nature of autistic intelligence.",
+      "venue": "Psychological science",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 203,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Autistics are presumed to be characterized by cognitive impairment, and their cognitive strengths (e.g., in Block Design performance) are frequently interpreted as low-level by-products of high-level deficits, not as direct manifestations of intelligence. Recent attempts to identify the neuroanatomical and neurofunctional signature of autism have been positioned on this universal, but untested, assumption. We therefore assessed a broad sample of 38 autistic children on the preeminent test of fluid intelligence, Raven's Progressive Matrices. Their scores were, on average, 30 percentile points, and in some cases more than 70 percentile points, higher than their scores on the Wechsler scales of intelligence. Typically developing control children showed no such discrepancy, and a similar contrast was observed when a sample of autistic adults was compared with a sample of nonautistic adults. We conclude that intelligence has been underestimated in autistics.",
+      "score": {
+        "composite": 0.4469765343208684,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3079061372834736,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.06666666666666667,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0769765343208684,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.01,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Analysis of Variance",
+        "Intelligence",
+        "Cognition",
+        "Autistic Disorder",
+        "Intelligence Tests",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_e5545346",
+      "doi": "10.1002/lio2.172",
+      "url": "https://doi.org/10.1002/lio2.172",
+      "openalex_id": null,
+      "pmid": "30186962",
+      "first_author": "Kramer",
+      "authors_display": "Kramer, S. et al.",
+      "year": 2018,
+      "title": "Cognitive Functions in Adult Cochlear Implant Users, Cochlear Implant Candidates, and Normal-Hearing Listeners.",
+      "venue": "Laryngoscope investigative otolaryngology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 34,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/lio2.172",
+      "tldr": null,
+      "abstract": "<h4>Objectives</h4>Increasing evidence suggests that hearing loss may be linked to cognitive decline, and that cochlear implantation may lead to improvements in cognition. The goal of this study was to examine the effects of severe-to-profound hearing loss and cochlear implantation in post-lingually deafened adults, compared with age-matched normal-hearing (NH) peers. Participants were tested on several non-auditory measures of cognition: working memory (WM) (digit span, object span, symbol span), non-verbal reasoning (Raven's progressive matrices), information-processing speed and inhibitory control (Stroop test), speed of phonological and lexical access (Test of Word Reading Efficiency), and verbal learning and memory (California Verbal Learning Test). Demographic measures were also collected.<h4>Methods</h4>Cohort study at tertiary neurotology center. Forty-three post-lingually deafened experienced CI users, 19 post-lingually deafened CI candidates, and 40 age-matched NH controls with no cognitive impairment were enrolled. Comparisons among the groups on the cognitive measures were performed.<h4>Results</h4>Adult CI users and CI candidates demonstrated worse (or a trend towards worse) performance as compared with NH peers on non-verbal reasoning, information-processing speed, speed of lexical access, and verbal learning and memory. However, after controlling for gender, socioeconomic status (SES), and vocabulary knowledge among groups, some of these differences were no longer significant. Similarly, large differences were not found in most cognitive abilities between experienced CI users and CI candidates.<h4>Conclusions</h4>Adult CI users, CI candidates, and NH peers generally demonstrated equivalent non-auditory cognitive abilities, after controlling for gender, SES, and vocabulary knowledge. These findings provide support for a link between cognitive decline and hearing loss, but this association may be partly attributable to group differences in SES and vocab",
+      "score": {
+        "composite": 0.43146148872057394,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_83355b74",
+      "doi": "10.1002/hbm.21297",
+      "url": "https://doi.org/10.1002/hbm.21297",
+      "openalex_id": null,
+      "pmid": "21557387",
+      "first_author": "Langer",
+      "authors_display": "Langer, N. et al.",
+      "year": 2012,
+      "title": "Functional brain network efficiency predicts intelligence.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 194,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The neuronal causes of individual differences in mental abilities such as intelligence are complex and profoundly important. Understanding these abilities has the potential to facilitate their enhancement. The purpose of this study was to identify the functional brain network characteristics and their relation to psychometric intelligence. In particular, we examined whether the functional network exhibits efficient small-world network attributes (high clustering and short path length) and whether these small-world network parameters are associated with intellectual performance. High-density resting state electroencephalography (EEG) was recorded in 74 healthy subjects to analyze graph-theoretical functional network characteristics at an intracortical level. Ravens advanced progressive matrices were used to assess intelligence. We found that the clustering coefficient and path length of the functional network are strongly related to intelligence. Thus, the more intelligent the subjects are the more the functional brain network resembles a small-world network. We further identified the parietal cortex as a main hub of this resting state network as indicated by increased degree centrality that is associated with higher intelligence. Taken together, this is the first study that substantiates the neural efficiency hypothesis as well as the Parieto-Frontal Integration Theory (P-FIT) of intelligence in the context of functional brain network characteristics. These theories are currently the most established intelligence theories in neuroscience. Our findings revealed robust evidence of an efficiently organized resting state functional brain network for highly productive cognitions.",
+      "score": {
+        "composite": 0.426323443616078,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30529377446431205,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07632344361607801,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Nerve Net",
+        "Humans",
+        "Electroencephalography",
+        "Brain Mapping",
+        "Predictive Value of Tests",
+        "Intelligence",
+        "Intelligence Tests",
+        "Models, Neurological",
+        "Adult",
+        "Male"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d6aa86a6",
+      "doi": "10.1016/j.envpol.2021.117404",
+      "url": "https://doi.org/10.1016/j.envpol.2021.117404",
+      "openalex_id": null,
+      "pmid": "34077897",
+      "first_author": "Julvez",
+      "authors_display": "Julvez, J. et al.",
+      "year": 2021,
+      "title": "Early life multiple exposures and child cognitive function: A multi-centric birth cohort study in six European countries.",
+      "venue": "Environmental pollution (Barking, Essex : 1987)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 51,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1016/j.envpol.2021.117404",
+      "tldr": null,
+      "abstract": "Epidemiological studies mostly focus on single environmental exposures. This study aims to systematically assess associations between a wide range of prenatal and childhood environmental exposures and cognition. The study sample included data of 1298 mother-child pairs, children were 6-11 years-old, from six European birth cohorts. We measured 87 exposures during pregnancy and 122 cross-sectionally during childhood, including air pollution, built environment, meteorology, natural spaces, traffic, noise, chemicals and life styles. The measured cognitive domains were fluid intelligence (Raven's Coloured Progressive Matrices test, CPM), attention (Attention Network Test, ANT) and working memory (N-Back task). We used two statistical approaches to assess associations between exposure and child cognition: the exposome-wide association study (ExWAS) considering each exposure independently, and the deletion-substitution-addition algorithm (DSA) considering all exposures simultaneously to build a final multiexposure model. Based on this multiexposure model that included the exposure variables selected by ExWAS and DSA models, child organic food intake was associated with higher fluid intelligence (CPM) scores (beta = 1.18; 95% CI = 0.50, 1.87) and higher working memory (N-Back) scores (0.23; 0.05, 0.41), and child fast food intake (-1.25; -2.10, -0.40), house crowding (-0.39; -0.62, -0.16), and child environmental tobacco smoke (ETS) (-0.89; -1.42, -0.35), were all associated with lower CPM scores. Indoor PM<sub>2.5</sub> exposure was associated with lower N-Back scores (-0.09; -0.16, -0.02). Additional associations in the unexpected direction were found: Higher prenatal mercury levels, maternal alcohol consumption and child higher perfluorooctane sulfonic acid (PFOS) levels were associated with better cognitive performance; and higher green exposure during pregnancy with lower cognitive performance. This first comprehensive and systematic study of many prenatal and childho",
+      "score": {
+        "composite": 0.41719183622512457,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cohort Studies",
+        "Cognition",
+        "Environmental Exposure",
+        "Pregnancy",
+        "Child",
+        "Europe",
+        "Female",
+        "Exposome"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_27c6c49a",
+      "doi": "10.1016/j.nicl.2019.102015",
+      "url": "https://doi.org/10.1016/j.nicl.2019.102015",
+      "openalex_id": null,
+      "pmid": "31795049",
+      "first_author": "Syan",
+      "authors_display": "Syan, S. et al.",
+      "year": 2019,
+      "title": "Deficits in executive function and suppression of default mode network in obesity.",
+      "venue": "NeuroImage. Clinical",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 34,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6861638",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Although nutritional and metabolic factors are well established in obesity, neurocognitive determinants are less understood. Using data from the Human Connectome Project, this study concurrently investigated neurocognitive performance, neural activation during a working memory task, and cortical brain morphometry in relation to obesity in a group of young adults, 22-35 years old.<h4>Methods</h4>Using a case-control design, obese individuals (n = 243, body mass index [BMI] ≥ 30 kg/m<sup>2</sup>) were compared to a control group of lean BMI individuals (n = 469, BMI = 18-24.9 kg/m<sup>2</sup>). Performance tests comprised a battery of behavioral neurocognitive assessments. Neural activity was measured as blood-oxygenation-level-dependent (BOLD) activity during an N-Back task using functional magnetic resonance imaging (fMRI). Cortical morphometry included indices of volume, thickness, and surface area.<h4>Results</h4>Relative to the control group, the obese group exhibited significantly worse performance in terms of the National Institutes of Health Toolkit (NIH) 9-Hole Peg Board, Penn Working Memory Test, Delay Discounting, Penn Progressive Matrices, NIH Picture Vocabulary Test, Dimensional Change Card Sort Test and the in-scanner N-Back working memory test (FDR-corrected ps<0.05; ds = 0.231-0.405). The obese group also exhibited significantly greater BOLD activation in N-Back task-negative regions, including the ventromedial prefrontal cortex, posterior cingulate, and right precentral gyrus (FDR-corrected ps<0.05). Supplemental functional connectivity analyses provided evidence that the implicated regions were part of the default mode network. Significant differences in morphometry were present in the medial orbitofrontal cortex, rostral anterior cingulate cortex, inferior and superior parietal gyri, and temporal pole (FDR-corrected p<0.001). A data-driven integrative model classified 73.8% of participants correctly.<h4>Conclusions and relevance</",
+      "score": {
+        "composite": 0.3914614887205739,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Nerve Net",
+        "Humans",
+        "Obesity",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Case-Control Studies",
+        "Memory, Short-Term",
+        "Psychomotor Performance",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_31ce0865",
+      "doi": "10.1093/jpepsy/jsad089",
+      "url": "https://doi.org/10.1093/jpepsy/jsad089",
+      "openalex_id": null,
+      "pmid": "38244996",
+      "first_author": "Williams",
+      "authors_display": "Williams, M. et al.",
+      "year": 2024,
+      "title": "Neurodevelopmental assessments used to measure preschoolers' cognitive development in Latin America: a systematic review.",
+      "venue": "Journal of pediatric psychology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "Systematic Review",
+        "review-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>The objective of this study was to systematically review the standardized neurodevelopmental assessments used to study preschool-aged children's cognitive development in Spanish-speaking Latin America.<h4>Methods</h4>The authors systematically searched PubMed, PsycINFO, and ERIC databases for peer-reviewed articles from Spanish-speaking Latin American countries. Articles were included if they measured cognitive development among children aged 2-6 years using at least one standardized assessment tool; 97 articles were included and reviewed in accordance with PRISMA guidelines to assess their use of these tools.<h4>Results</h4>Ninety-seven studies across 13 countries used a total of 41 assessments to measure cognitive development; most widely used were the Wechsler intelligence scales (n = 46/97), particularly the Wechsler Preschool and Primary Scale of Intelligence and Wechsler Intelligence Scale for Children (n = 23 and 29, respectively). Other common assessments included the McCarthy Scales of Children's Abilities (n = 9), Raven's Progressive Matrices (n = 9), Child Neuropsychological Assessment (n = 8), and Peabody Picture Vocabulary Test (n = 7). In regions where normative data for a given assessment were unpublished, authors commonly used norms from the United States, Mexico, or Spain or did not report standard scores in their analyses.<h4>Conclusions</h4>The wide range of tools used in these studies presents a challenge for generalizing results when measuring the neurodevelopment of Latin American preschool-aged children. The low availability of normative data for specific regions reveals concerns if some tools are culturally and linguistically appropriate even when Spanish is a common language, particularly in low-resource settings. Future work to forge greater consistency in the use of validated measures, clarity in reporting research methods, and publication of regional normative data would benefit the field.",
+      "score": {
+        "composite": 0.39006576301232243,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.4,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.1,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Child Development",
+        "Cognition",
+        "Neuropsychological Tests",
+        "Child",
+        "Child, Preschool",
+        "Latin America"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5deff4bb",
+      "doi": "10.1002/hbm.20831",
+      "url": "https://doi.org/10.1002/hbm.20831",
+      "openalex_id": null,
+      "pmid": "19530215",
+      "first_author": "Soulières",
+      "authors_display": "Soulières, I. et al.",
+      "year": 2009,
+      "title": "Enhanced visual processing contributes to matrix reasoning in autism.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 118,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Recent behavioral investigations have revealed that autistics perform more proficiently on Raven's Standard Progressive Matrices (RSPM) than would be predicted by their Wechsler intelligence scores. A widely-used test of fluid reasoning and intelligence, the RSPM assays abilities to flexibly infer rules, manage goal hierarchies, and perform high-level abstractions. The neural substrates for these abilities are known to encompass a large frontoparietal network, with different processing models placing variable emphasis on the specific roles of the prefrontal or posterior regions. We used functional magnetic resonance imaging to explore the neural bases of autistics' RSPM problem solving. Fifteen autistic and eighteen non-autistic participants, matched on age, sex, manual preference and Wechsler IQ, completed 60 self-paced randomly-ordered RSPM items along with a visually similar 60-item pattern matching comparison task. Accuracy and response times did not differ between groups in the pattern matching task. In the RSPM task, autistics performed with similar accuracy, but with shorter response times, compared to their non-autistic controls. In both the entire sample and a subsample of participants additionally matched on RSPM performance to control for potential response time confounds, neural activity was similar in both groups for the pattern matching task. However, for the RSPM task, autistics displayed relatively increased task-related activity in extrastriate areas (BA18), and decreased activity in the lateral prefrontal cortex (BA9) and the medial posterior parietal cortex (BA7). Visual processing mechanisms may therefore play a more prominent role in reasoning in autistics.",
+      "score": {
+        "composite": 0.389174889625844,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2766995585033762,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06917488962584405,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Image Interpretation, Computer-Assisted",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Intelligence",
+        "Visual Perception",
+        "Reaction Time",
+        "Autistic Disorder",
+        "Intelligence Tests",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_c6ea8bcd",
+      "doi": "10.1162/jocn.2007.19.12.2060",
+      "url": "https://doi.org/10.1162/jocn.2007.19.12.2060",
+      "openalex_id": null,
+      "pmid": "17892392",
+      "first_author": "Shafto",
+      "authors_display": "Shafto, M. et al.",
+      "year": 2007,
+      "title": "On the tip-of-the-tongue: neural correlates of increased word-finding failures in normal aging.",
+      "venue": "Journal of cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 101,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Tip-of-the-tongue (TOT) experiences are frustrating word-finding failures where people are temporarily unable to produce a word they are certain they know. TOT frequency increases with normal aging during adulthood, and behavioral evidence suggests that the underlying deficit is in retrieving the complete phonology of the target word during production. The present study investigated the neural correlates of this phonological retrieval deficit. We obtained 3-D T1-weighted structural magnetic resonance images (MRI) for healthy participants between 19 and 88 years old and used voxel-based morphometry to measure gray matter density throughout the brain. In a separate session, participants named celebrities cued by pictures and descriptions, indicating when they had a TOT, and also completed Raven's Progressive Matrices (RPM), a task that does not involve phonological production. The number of TOTs increased with age and also with gray matter atrophy in the left insula, an area implicated in phonological production. The relation between TOTs and left insula atrophy cannot be attributed to the correlation of each variable with age because TOTs were related to insula atrophy even with age effects removed. Moreover, errors on the RPM increased with age, but performance did not correlate with gray matter density in the insula. These results provide, for the first time, an association between a region in the neural language system and the rise in age-related word-finding failures and suggest that age-related atrophy in neural regions important for phonological production may contribute to age-related word production failures.",
+      "score": {
+        "composite": 0.3769436528147072,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2677746112588288,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.06666666666666667,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0669436528147072,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.01,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Language Disorders",
+        "Imaging, Three-Dimensional",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Language",
+        "Mental Recall",
+        "Age Factors",
+        "Aging",
+        "Reading",
+        "Adolescent",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c56c6754",
+      "doi": "10.3389/fnhum.2019.00191",
+      "url": "https://doi.org/10.3389/fnhum.2019.00191",
+      "openalex_id": null,
+      "pmid": "31244629",
+      "first_author": "Friedman",
+      "authors_display": "Friedman, N. et al.",
+      "year": 2019,
+      "title": "EEG-Based Prediction of Cognitive Load in Intelligence Tests.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subject,subjects)"
+      ],
+      "citation_count": 31,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fnhum.2019.00191/pdf",
+      "tldr": null,
+      "abstract": "Measuring and assessing the cognitive load associated with different tasks is crucial for many applications, from the design of instructional materials to monitoring the mental well-being of aircraft pilots. The goal of this paper is to utilize EEG to infer the cognitive workload of subjects during intelligence tests. We chose the well established advanced progressive matrices test, an ideal framework because it presents problems at increasing levels of difficulty and has been rigorously validated in past experiments. We train classic machine learning models using basic EEG measures as well as measures of network connectivity and signal complexity. Our findings demonstrate that cognitive load can be well predicted using these features, even for a low number of channels. We show that by creating an individually tuned neural network for each subject, we can improve prediction compared to a generic model and that such models are robust to decreasing the number of available channels as well.",
+      "score": {
+        "composite": 0.37016440753080604,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_6aa4fbb7",
+      "doi": "10.3766/jaaa.18106",
+      "url": "https://doi.org/10.3766/jaaa.18106",
+      "openalex_id": null,
+      "pmid": "31580802",
+      "first_author": "Tamati",
+      "authors_display": "Tamati, T. et al.",
+      "year": 2020,
+      "title": "High- and Low-Performing Adult Cochlear Implant Users on High-Variability Sentence Recognition: Differences in Auditory Spectral Resolution and Neurocognitive Functioning.",
+      "venue": "Journal of the American Academy of Audiology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 47,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Postlingually deafened adult cochlear implant (CI) users routinely display large individual differences in the ability to recognize and understand speech, especially in adverse listening conditions. Although individual differences have been linked to several sensory (''bottom-up'') and cognitive (''top-down'') factors, little is currently known about the relative contributions of these factors in high- and low-performing CI users.<h4>Purpose</h4>The aim of the study was to investigate differences in sensory functioning and neurocognitive functioning between high- and low-performing CI users on the Perceptually Robust English Sentence Test Open-set (PRESTO), a high-variability sentence recognition test containing sentence materials produced by multiple male and female talkers with diverse regional accents.<h4>Research design</h4>CI users with accuracy scores in the upper (HiPRESTO) or lower quartiles (LoPRESTO) on PRESTO in quiet completed a battery of behavioral tasks designed to assess spectral resolution and neurocognitive functioning.<h4>Study sample</h4>Twenty-one postlingually deafened adult CI users, with 11 HiPRESTO and 10 LoPRESTO participants.<h4>Data collection and analysis</h4>A discriminant analysis was carried out to determine the extent to which measures of spectral resolution and neurocognitive functioning discriminate HiPRESTO and LoPRESTO CI users. Auditory spectral resolution was measured using the Spectral-Temporally Modulated Ripple Test (SMRT). Neurocognitive functioning was assessed with visual measures of working memory (digit span), inhibitory control (Stroop), speed of lexical/phonological access (Test of Word Reading Efficiency), and nonverbal reasoning (Raven's Progressive Matrices).<h4>Results</h4>HiPRESTO and LoPRESTO CI users were discriminated primarily by performance on the SMRT and secondarily by the Raven's test. No other neurocognitive measures contributed substantially to the discriminant function.<h4>Conclusion",
+      "score": {
+        "composite": 0.3560332669860891,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22413306794435656,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05603326698608914,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cochlear Implantation",
+        "Cochlear Implants",
+        "Speech",
+        "Speech Perception",
+        "Adult",
+        "Female",
+        "Male",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_078719bf",
+      "doi": "10.4088/jcp.13m08927",
+      "url": "https://doi.org/10.4088/jcp.13m08927",
+      "openalex_id": null,
+      "pmid": "24816373",
+      "first_author": "Ayutyanont",
+      "authors_display": "Ayutyanont, N. et al.",
+      "year": 2014,
+      "title": "The Alzheimer's prevention initiative composite cognitive test score: sample size estimates for the evaluation of preclinical Alzheimer's disease treatments in presenilin 1 E280A mutation carriers.",
+      "venue": "The Journal of clinical psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Review",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 72,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>To identify a cognitive composite that is sensitive to tracking preclinical Alzheimer's disease decline to be used as a primary end point in treatment trials.<h4>Method</h4>We capitalized on longitudinal data collected from 1995 to 2010 from cognitively unimpaired presenilin 1 (PSEN1) E280A mutation carriers from the world's largest known early-onset autosomal dominant Alzheimer's disease kindred to identify a composite cognitive test with the greatest statistical power to track preclinical Alzheimer's disease decline and estimate the number of carriers age 30 years and older needed to detect a treatment effect in the Alzheimer's Prevention Initiative's (API) preclinical Alzheimer's disease treatment trial. The mean-to-standard-deviation ratios (MSDRs) of change over time were calculated in a search for the optimal combination of 1 to 7 cognitive tests/subtests drawn from the neuropsychological test battery in cognitively unimpaired mutation carriers during a 2- and 5-year follow-up period (n = 78 and 57), using data from noncarriers (n = 31 and 56) during the same time period to correct for aging and practice effects. Combinations that performed well were then evaluated for robustness across follow-up years, occurrence of selected items within top-performing combinations, and representation of relevant cognitive domains.<h4>Results</h4>The optimal test combination included Consortium to Establish a Registry for Alzheimer's Disease (CERAD) Word List Recall, CERAD Boston Naming Test (high frequency items), Mini-Mental State Examination (MMSE) Orientation to Time, CERAD Constructional Praxis, and Raven's Progressive Matrices (Set A), with an MSDR of 1.62. This composite is more sensitive than using either the CERAD Word List Recall (MSDR = 0.38) or the entire CERAD-Col battery (MSDR = 0.76). A sample size of 75 cognitively normal PSEN1 E280A mutation carriers aged 30 years and older per treatment arm allows for a detectable treatment effect of 29% in",
+      "score": {
+        "composite": 0.3521017763431698,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24840710537267913,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.4,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06210177634316978,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.08,
+            "relevance": 0.1,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Alzheimer Disease",
+        "Chromosome Aberrations",
+        "Disease Progression",
+        "Genetic Predisposition to Disease",
+        "Cohort Studies",
+        "Longitudinal Studies",
+        "Reproducibility of Results",
+        "DNA Mutational Analysis",
+        "Neuropsychological Tests",
+        "Psychometrics",
+        "Genes, Dominant",
+        "Alleles",
+        "Adult",
+        "Middle Aged",
+        "Presenilin-1",
+        "Genetic Carrier Screening"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9d211413",
+      "doi": "10.3390/e22121380",
+      "url": "https://doi.org/10.3390/e22121380",
+      "openalex_id": null,
+      "pmid": "33279924",
+      "first_author": "Perpetuini",
+      "authors_display": "Perpetuini, D. et al.",
+      "year": 2020,
+      "title": "Working Memory Decline in Alzheimer's Disease Is Detected by Complexity Analysis of Multimodal EEG-fNIRS.",
+      "venue": "Entropy (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive"
+      ],
+      "citation_count": 33,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/1099-4300/22/12/1380/pdf?version=1607324385",
+      "tldr": null,
+      "abstract": "Alzheimer's disease (AD) is characterized by working memory (WM) failures that can be assessed at early stages through administering clinical tests. Ecological neuroimaging, such as Electroencephalography (EEG) and functional Near Infrared Spectroscopy (fNIRS), may be employed during these tests to support AD early diagnosis within clinical settings. Multimodal EEG-fNIRS could measure brain activity along with neurovascular coupling (NC) and detect their modifications associated with AD. Data analysis procedures based on signal complexity are suitable to estimate electrical and hemodynamic brain activity or their mutual information (NC) during non-structured experimental paradigms. In this study, sample entropy of whole-head EEG and frontal/prefrontal cortex fNIRS was evaluated to assess brain activity in early AD and healthy controls (HC) during WM tasks (i.e., Rey-Osterrieth complex figure and Raven's progressive matrices). Moreover, conditional entropy between EEG and fNIRS was evaluated as indicative of NC. The findings demonstrated the capability of complexity analysis of multimodal EEG-fNIRS to detect WM decline in AD. Furthermore, a multivariate data-driven analysis, performed on these entropy metrics and based on the General Linear Model, allowed classifying AD and HC with an AUC up to 0.88. EEG-fNIRS may represent a powerful tool for the clinical evaluation of WM decline in early AD.",
+      "score": {
+        "composite": 0.3510419118532629,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c0b2bcf3",
+      "doi": "10.1044/2019_jslhr-h-18-0472",
+      "url": "https://doi.org/10.1044/2019_jslhr-h-18-0472",
+      "openalex_id": null,
+      "pmid": "31330118",
+      "first_author": "Moberly",
+      "authors_display": "Moberly, A., & Reed, J.",
+      "year": 2019,
+      "title": "Making Sense of Sentences: Top-Down Processing of Speech by Adult Cochlear Implant Users.",
+      "venue": "Journal of speech, language, and hearing research : JSLHR",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Evaluation Study",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 40,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Purpose Speech recognition relies upon a listener's successful pairing of the acoustic-phonetic details from the bottom-up input with top-down linguistic processing of the incoming speech stream. When the speech is spectrally degraded, such as through a cochlear implant (CI), this role of top-down processing is poorly understood. This study explored the interactions of top-down processing, specifically the use of semantic context during sentence recognition, and the relative contributions of different neurocognitive functions during speech recognition in adult CI users. Method Data from 41 experienced adult CI users were collected and used in analyses. Participants were tested for recognition and immediate repetition of speech materials in the clear. They were asked to repeat 2 sets of sentence materials, 1 that was semantically meaningful and 1 that was syntactically appropriate but semantically anomalous. Participants also were tested on 4 visual measures of neurocognitive functioning to assess working memory capacity (Digit Span; Wechsler, 2004), speed of lexical access (Test of Word Reading Efficiency; Torgeson, Wagner, & Rashotte, 1999), inhibitory control (Stroop; Stroop, 1935), and nonverbal fluid reasoning (Raven's Progressive Matrices; Raven, 2000). Results Individual listeners' inhibitory control predicted recognition of meaningful sentences when controlling for performance on anomalous sentences, our proxy for the quality of the bottom-up input. Additionally, speed of lexical access and nonverbal reasoning predicted recognition of anomalous sentences. Conclusions Findings from this study identified inhibitory control as a potential mechanism at work when listeners make use of semantic context during sentence recognition. Moreover, speed of lexical access and nonverbal reasoning were associated with recognition of sentences that lacked semantic context. These results motivate the development of improved comprehensive rehabilitative approaches for adult pat",
+      "score": {
+        "composite": 0.3437516844254297,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Hearing Loss",
+        "Cochlear Implantation",
+        "Postoperative Period",
+        "Cochlear Implants",
+        "Nonverbal Communication",
+        "Memory, Short-Term",
+        "Problem Solving",
+        "Auditory Threshold",
+        "Speech Perception",
+        "Speech Acoustics",
+        "Phonetics",
+        "Adult",
+        "Female",
+        "Male",
+        "Inhibition, Psychological",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_68949373",
+      "doi": "10.1186/s12889-019-6856-4",
+      "url": "https://doi.org/10.1186/s12889-019-6856-4",
+      "openalex_id": null,
+      "pmid": "31196019",
+      "first_author": "Poh",
+      "authors_display": "Poh, B. et al.",
+      "year": 2019,
+      "title": "Low socioeconomic status and severe obesity are linked to poor cognitive performance in Malaysian children.",
+      "venue": "BMC public health",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 37,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6565598",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Socioeconomic factors and nutritional status have been associated with childhood cognitive development. However, previous Malaysian studies had been conducted with small populations and had inconsistent results. Thus, this present study aims to determine the association between socioeconomic and nutritional status with cognitive performance in a nationally representative sample of Malaysian children.<h4>Methods</h4>A total of 2406 Malaysian children aged 5 to 12 years, who had participated in the South East Asian Nutrition Surveys (SEANUTS), were included in this study. Cognitive performance [non-verbal intelligence quotient (IQ)] was measured using Raven's Progressive Matrices, while socioeconomic characteristics were determined using parent-report questionnaires. Body mass index (BMI) was calculated using measured weight and height, while BMI-for-age Z-score (BAZ) and height-for-age Z-score (HAZ) were determined using WHO 2007 growth reference.<h4>Results</h4>Overall, about a third (35.0%) of the children had above average non-verbal IQ (high average: 110-119; superior: ≥120 and above), while only 12.2% were categorized as having low/borderline IQ (< 80). Children with severe obesity (BAZ > 3SD), children from very low household income families and children whose parents had only up to primary level education had the highest prevalence of low/borderline non-verbal IQ, compared to their non-obese and higher socioeconomic counterparts. Parental lack of education was associated with low/borderline/below average IQ [paternal, OR = 2.38 (95%CI 1.22, 4.62); maternal, OR = 2.64 (95%CI 1.32, 5.30)]. Children from the lowest income group were twice as likely to have low/borderline/below average IQ [OR = 2.01 (95%CI 1.16, 3.49)]. Children with severe obesity were twice as likely to have poor non-verbal IQ than children with normal BMI [OR = 2.28 (95%CI 1.23, 4.24)].<h4>Conclusions</h4>Children from disadvantaged backgrounds (that is those from very low in",
+      "score": {
+        "composite": 0.3426518348953027,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2106073395812109,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05265183489530272,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Obesity, Morbid",
+        "Body Mass Index",
+        "Nutrition Surveys",
+        "Prevalence",
+        "Child Development",
+        "Parents",
+        "Cognition",
+        "Cognition Disorders",
+        "Intelligence Tests",
+        "Nutritional Status",
+        "Social Class",
+        "Poverty",
+        "Child",
+        "Child, Preschool",
+        "Income",
+        "Malaysia",
+        "Female",
+        "Male",
+        "Surveys and Questionnaires"
+      ]
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4d3baa54",
+      "doi": "10.1097/mao.0000000000001998",
+      "url": "https://doi.org/10.1097/mao.0000000000001998",
+      "openalex_id": null,
+      "pmid": "30444843",
+      "first_author": "Mattingly",
+      "authors_display": "Mattingly, J. et al.",
+      "year": 2018,
+      "title": "Nonverbal Reasoning as a Contributor to Sentence Recognition Outcomes in Adults With Cochlear Implants.",
+      "venue": "Otology & neurotology : official publication of the American Otological Society, American Neurotology Society [and] European Academy of Otology and Neurotology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 29,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Hypothesis</h4>Significant variability in speech recognition persists among postlingually deafened adults with cochlear implants (CIs). We hypothesize that scores of nonverbal reasoning predict sentence recognition in adult CI users.<h4>Background</h4>Cognitive functions contribute to speech recognition outcomes in adults with hearing loss. These functions may be particularly important for CI users who must interpret highly degraded speech signals through their devices. This study used a visual measure of reasoning (the ability to solve novel problems), the Raven's Progressive Matrices (RPM), to predict sentence recognition in CI users.<h4>Methods</h4>Participants were 39 postlingually deafened adults with CIs and 43 age-matched normal-hearing (NH) controls. CI users were assessed for recognition of words in sentences in quiet, and NH controls listened to eight-channel vocoded versions to simulate the degraded signal delivered by a CI. A computerized visual task of the RPM, requiring participants to identify the correct missing piece in a 3×3 matrix of geometric designs, was also performed. Particular items from the RPM were examined for their associations with sentence recognition abilities, and a subset of items on the RPM was tested for the ability to predict degraded sentence recognition in the NH controls.<h4>Results</h4>The overall number of items answered correctly on the 48-item RPM significantly correlated with sentence recognition in CI users (r = 0.35-0.47) and NH controls (r = 0.36-0.57). An abbreviated 12-item version of the RPM was created and performance also correlated with sentence recognition in CI users (r = 0.40-0.48) and NH controls (r = 0.49-0.56).<h4>Conclusions</h4>Nonverbal reasoning skills correlated with sentence recognition in both CI and NH subjects. Our findings provide further converging evidence that cognitive factors contribute to speech processing by adult CI users and can help explain variability in outcomes. Our abbreviated ve",
+      "score": {
+        "composite": 0.32923025190943705,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Deafness",
+        "Hearing Tests",
+        "Cochlear Implantation",
+        "Cochlear Implants",
+        "Language",
+        "Speech",
+        "Cognition",
+        "Problem Solving",
+        "Speech Perception",
+        "Neuropsychological Tests",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_24c5c518",
+      "doi": "10.1111/j.1467-7687.2008.00743.x",
+      "url": "https://doi.org/10.1111/j.1467-7687.2008.00743.x",
+      "openalex_id": null,
+      "pmid": "19120413",
+      "first_author": "Crone",
+      "authors_display": "Crone, E. et al.",
+      "year": 2009,
+      "title": "Neurocognitive development of relational reasoning.",
+      "venue": "Developmental science",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 122,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Relational reasoning is an essential component of fluid intelligence, and is known to have a protracted developmental trajectory. To date, little is known about the neural changes that underlie improvements in reasoning ability over development. In this event-related functional magnetic resonance imaging (fMRI) study, children aged 8-12 and adults aged 18-25 performed a relational reasoning task adapted from Raven's Progressive Matrices. The task included three levels of relational reasoning demands: REL-0, REL-1, and REL-2. Children exhibited disproportionately lower accuracy than adults on trials that required integration of two relations (REL-2). Like adults, children engaged lateral prefrontal cortex (PFC) and parietal cortex during task performance; however, they exhibited different time courses and activation profiles, providing insight into their approach to the problems. As in prior studies, adults exhibited increased rostrolateral PFC (RLPFC) activation when relational integration was required (REL-2 > REL-1, REL-0). Children also engaged RLPFC most strongly for REL-2 problems at early stages of processing, but this differential activation relative to REL-1 trials was not sustained throughout the trial. These results suggest that the children recruited RLPFC while processing relations, but failed to use it to integrate across two relations. Relational integration is critical for solving a variety of problems, and for appreciating analogies; the current findings suggest that developmental improvements in this function rely on changes in the profile of engagement of RLPFC, as well as dorsolateral PFC and parietal cortex.",
+      "score": {
+        "composite": 0.31965342538687397,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27861370154749593,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.2,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06965342538687398,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.03,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Behavior",
+        "Intelligence",
+        "Cognition",
+        "Problem Solving",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4b22c40c",
+      "doi": "10.1213/ane.0000000000005389",
+      "url": "https://doi.org/10.1213/ane.0000000000005389",
+      "openalex_id": null,
+      "pmid": "33497062",
+      "first_author": "Ing",
+      "authors_display": "Ing, C. et al.",
+      "year": 2021,
+      "title": "Prenatal Exposure to General Anesthesia and Childhood Behavioral Deficit.",
+      "venue": "Anesthesia and analgesia",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Observational Study"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 42,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Exposure to surgery and anesthesia in early childhood has been found to be associated with an increased risk of behavioral deficits. While the US Food and Drug Administration (FDA) has warned against prenatal exposure to anesthetic drugs, little clinical evidence exists to support this recommendation. This study evaluates the association between prenatal exposure to general anesthesia due to maternal procedures during pregnancy and neuropsychological and behavioral outcome scores at age 10.<h4>Methods</h4>This is an observational cohort study of children born in Perth, Western Australia, with 2 generations of participants contributing data to the Raine Study. In the Raine Study, the first generation (Gen1) are mothers enrolled during pregnancy, and the second generation (Gen2) are the children born to these mothers from 1989 to 1992 with neuropsychological and behavioral tests at age 10 (n=2024). In the primary analysis, 6 neuropsychological and behavioral tests were evaluated at age 10: Raven's Colored Progressive Matrices (CPM), McCarron Assessment of Neuromuscular Development (MAND), Peabody Picture Vocabulary Test (PPVT), Symbol Digit Modality Test (SDMT) with written and oral scores, Clinical Evaluation of Language Fundamentals (CELF) with Expressive, Receptive, and Total language scores, and Child Behavior Checklist (CBCL) with Internalizing, Externalizing, and Total behavior scores. Outcome scores of children prenatally exposed to general anesthesia were compared to children without prenatal exposure using multivariable linear regression models adjusting for demographic and clinical covariates (sex, race, income, and maternal education, alcohol or tobacco use, and clinical diagnoses: diabetes, epilepsy, hypertension, psychiatric disorders, or thyroid dysfunction). Bonferroni adjustment was used for the 6 independent tests in the primary analysis, so a corrected P value <.0083 (P = .05 divided by 6 tests, or a 99.17% confidence interval [CI]",
+      "score": {
+        "composite": 0.31444107130498505,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Nervous System",
+        "Humans",
+        "Prenatal Exposure Delayed Effects",
+        "Anesthetics, General",
+        "Anesthesia, General",
+        "Risk Assessment",
+        "Risk Factors",
+        "Child Behavior",
+        "Child Development",
+        "Child Behavior Disorders",
+        "Age Factors",
+        "Pregnancy",
+        "Child",
+        "Western Australia",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_caabcf33",
+      "doi": "10.1177/1073191112446655",
+      "url": "https://doi.org/10.1177/1073191112446655",
+      "openalex_id": null,
+      "pmid": "22605785",
+      "first_author": "Bilker",
+      "authors_display": "Bilker, W. et al.",
+      "year": 2012,
+      "title": "Development of abbreviated nine-item forms of the Raven's standard progressive matrices test.",
+      "venue": "Assessment",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Validation Study",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 225,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The Raven's standard progressive matrices (RSPM) is a 60-item test for measuring abstract reasoning, considered a nonverbal estimate of fluid intelligence, and often included in clinical assessment batteries and research on patients with cognitive deficits. The goal was to develop and apply a predictive model approach to reduce the number of items necessary to yield a score equivalent to that derived from the full scale. The approach is based on a Poisson predictive model. A parsimonious subset of items that accurately predicts the total score was sought, as was a second nonoverlapping alternate form for repeated administrations. A split sample was used for model fitting and validation, with cross-validation to verify results. Using nine RSPM items as predictors, correlations of .9836 and .9782 were achieved for the reduced forms and .9063 and .8978 for the validation data. Thus, a 9-item subset of RSPM predicts the total score for the 60-item scale with good accuracy. A comparison of psychometric properties between 9-item forms, a published 30-item form, and the 60-item set is presented. The two 9-item forms provide a 75% administration time savings compared with the 30-item form, while achieving similar item- and test-level characteristics and equal correlations to 60-item based scores.",
+      "score": {
+        "composite": 0.3084589288868863,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31383571554754514,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07845892888688628,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Models, Statistical",
+        "Poisson Distribution",
+        "Reproducibility of Results",
+        "Predictive Value of Tests",
+        "Intelligence",
+        "Cognition",
+        "Problem Solving",
+        "Cognition Disorders",
+        "Schizophrenia",
+        "Intelligence Tests",
+        "Neuropsychological Tests",
+        "Psychometrics",
+        "Algorithms",
+        "Models, Psychological",
+        "Adolescent",
+        "Adult",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 23,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_b30707ce",
+      "doi": "10.3390/bs10100158",
+      "url": "https://doi.org/10.3390/bs10100158",
+      "openalex_id": null,
+      "pmid": "33080874",
+      "first_author": "Tikhomirova",
+      "authors_display": "Tikhomirova, T. et al.",
+      "year": 2020,
+      "title": "Predicting Academic Achievement with Cognitive Abilities: Cross-Sectional Study across School Education.",
+      "venue": "Behavioral sciences (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 34,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7602962",
+      "tldr": null,
+      "abstract": "The relationship between cognitive abilities and academic achievement across schooling from the first to the eleventh grade was analyzed. Information processing speed, visuospatial working memory, number sense, and fluid intelligence were considered predictors of general academic achievement, which was derived from grades in mathematics, language, and biology. This cross-sectional study involved 1560 pupils who were in grades 1-11 at general education schools and were aged from 6.8 to 19.1 years (50.4% were boys). Information processing speed, visuospatial working memory, and number sense were measured using the Choice Reaction Time, Corsi Block-Tapping, and Number Sense computerized tests, respectively. Fluid intelligence was measured using the paper-and-pencil version of the Standard Progressive Matrices test. Correlation analysis and structural equation modeling were carried out. It was shown that it is possible to describe the structure of the relationship between cognitive abilities and academic achievement for all levels of schooling with a single model. In this model, information processing speed is the key predictor of fluid intelligence, working memory, and number sense, which in turn contribute to individual differences in academic success. Additionally, the specificity of the relationship between individual indicators of cognitive abilities and academic achievement at each level of schooling was revealed.",
+      "score": {
+        "composite": 0.3014614887205739,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_3900c3b4",
+      "doi": "10.1212/wnl.0b013e31828c2fc8",
+      "url": "https://doi.org/10.1212/wnl.0b013e31828c2fc8",
+      "openalex_id": null,
+      "pmid": "23516317",
+      "first_author": "Snitz",
+      "authors_display": "Snitz, B. et al.",
+      "year": 2013,
+      "title": "Cognitive trajectories associated with β-amyloid deposition in the oldest-old without dementia.",
+      "venue": "Neurology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Multicenter Study",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 71,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>To determine whether a high prevalence (55%) of Aβ deposition in a cohort of individuals remaining dementia-free into their 9th and 10th decades is associated with cognitive decline prior to imaging.<h4>Methods</h4>A total of 194 participants (mean age 85.5 years, range 82-95) who completed the Ginkgo Evaluation of Memory Study (GEMS) and remained dementia-free subsequently completed Pittsburgh compound B-PET imaging. We examined cross-sectional associations between Aβ status and performance on a broad neuropsychological test battery completed at GEMS entry 7-9 years prior to neuroimaging. We also longitudinally examined cognition over annual evaluations using linear mixed models.<h4>Results</h4>At GEMS screening (2000-2002), participants who were Aβ-positive in 2009 had lower performance on the Stroop test (p < 0.01) and Raven's Progressive Matrices (p = 0.05), with trend level difference for Block Design (p = 0.07). Longitudinal analyses showed significant slope differences for immediate and delayed recall of the Rey-Osterrieth figure, semantic fluency, and Trail-Making Test parts A and B, indicating greater performance decline prior to neuroimaging for Aβ-positive relative to Aβ-negative participants (ps < 0.05).<h4>Conclusions</h4>Highly prevalent Aβ deposition in oldest-older adults is associated with cognitive decline in visual memory, semantic fluency, and psychomotor speed beginning 7-9 years prior to neuroimaging. Mean differences in nonmemory domains, primarily executive functions, between Aβ-status groups may be detectable 7-9 years before neuroimaging.",
+      "score": {
+        "composite": 0.29190212644137226,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24760850576548898,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.061902126441372246,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06999999999999999,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Ginkgo biloba",
+        "Dementia",
+        "Aniline Compounds",
+        "Thiazoles",
+        "Plant Preparations",
+        "Positron-Emission Tomography",
+        "Magnetic Resonance Imaging",
+        "Phytotherapy",
+        "Linear Models",
+        "Retrospective Studies",
+        "Longitudinal Studies",
+        "Cross-Sectional Studies",
+        "Double-Blind Method",
+        "Cognition Disorders",
+        "Psychiatric Status Rating Scales",
+        "Neuropsychological Tests",
+        "Aged",
+        "Aged, 80 and over",
+        "Female",
+        "Male",
+        "Amyloid beta-Peptides"
+      ]
+    },
+    {
+      "rank": 25,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_060d6809",
+      "doi": "10.14639/0392-100x-1291",
+      "url": "https://doi.org/10.14639/0392-100x-1291",
+      "openalex_id": null,
+      "pmid": "28516959",
+      "first_author": "Serra",
+      "authors_display": "Serra, A. et al.",
+      "year": 2017,
+      "title": "Adaptive psychological structure in childhood hearing impairment: audiological correlations.",
+      "venue": "Acta otorhinolaryngologica Italica : organo ufficiale della Societa italiana di otorinolaringologia e chirurgia cervico-facciale",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5463505",
+      "tldr": null,
+      "abstract": "The present research deals with the clinical and social problems present during linguistic and cognitive development of deaf children. Currently, the development of Theory of Mind represents an important research field in deafness studies. These international studies highlighted a significant alteration in the development of Theory of Mind in deaf children compared to normal hearing children, especially in cases of congenital or preverbal hearing loss. In particular, the research focuses on the skills of deaf children in recognising emotions and desires, through both perceptive and cognitive methods, by evaluation of psycho-cognitive skills of children with severe hearing loss using a set of questions to be administered to hearing loss patients. The experiment was performed on a group composed of 10 children (5 males and 5 females) aged 4 to 9 years and 54 to 108 months, affected by bilateral congenital hearing loss (severe to total), or hearing loss that developed in preverbal children the year before entering elementary school, or during the fourth year of elementary school. The selection criteria were based on: audiologic evaluation, neuro-psychological tests administered to assess general, cognitive as well as praxis and perceptive abilities, and clinical observations performed to assess psychopathology using tests that assess development of both visual perceptive (Coloured Progressive Matrices) and graphic representational abilities (Test of Human Figure Drawings and the Family Drawing Test). The instrument \"cognitive\" was the \"Deaf Children Series\", arranged by us, that consists of a mental status examination (MSE) that evaluates: level of cognitive (knowledge-related) ability, emotional mood, and speech and thought patterns at the time of evaluation. Deaf children show a reduced responsiveness to the expressions of sadness on the perceptive side. Through the test, we observed a psychodynamic defense mechanism considering perceptive understanding performance. ",
+      "score": {
+        "composite": 0.2859017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Hearing Loss",
+        "Audiometry",
+        "Adaptation, Psychological",
+        "Child",
+        "Child, Preschool",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 26,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1edb425f",
+      "doi": "10.1136/jnnp.2005.086660",
+      "url": "https://doi.org/10.1136/jnnp.2005.086660",
+      "openalex_id": null,
+      "pmid": "16690696",
+      "first_author": "Contarino",
+      "authors_display": "Contarino, M. et al.",
+      "year": 2007,
+      "title": "Cognitive outcome 5 years after bilateral chronic stimulation of subthalamic nucleus in patients with Parkinson's disease.",
+      "venue": "Journal of neurology, neurosurgery, and psychiatry",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 93,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Aim</h4>To assess the long-term cognitive and behavioural outcome after bilateral deep brain stimulation (DBS) of the subthalamic nucleus (STN) in patients affected by Parkinson's disease, with a 5-year follow-up after surgery.<h4>Methods</h4>11 patients with Parkinson's disease treated by bilateral DBS of STN underwent cognitive and behavioural assessments before implantation, and 1 and 5 years after surgery. Postoperative cognitive assessments were carried out with stimulators turned on.<h4>Results</h4>A year after surgery, there was a marginally significant decline on a letter verbal fluency task (p = 0.045) and a significant improvement on Mini-Mental State Examination (p = 0.009). 5 years after surgery, a significant decline was observed on a letter verbal fluency task (p = 0.007) and an abstract reasoning task (p = 0.009), namely Raven's Progressive Matrices 1947. No significant postoperative change was observed on other cognitive variables. No patient developed dementia 5 years after surgery. A few days after the implantation, two patients developed transient manic symptoms with hypersexuality and one patient developed persistent apathy.<h4>Conclusion</h4>The decline of verbal fluency observed 5 years after implantation for DBS in STN did not have a clinically meaningful effect on daily living activities in our patients with Parkinson's disease. As no patient developed global cognitive deterioration in our sample, these findings suggest that DBS of STN is associated with a low cognitive and behavioural morbidity over a 5-year follow-up, when selection criteria for neurosurgery are strict.",
+      "score": {
+        "composite": 0.255761413270487,
+        "breakdown": {
+          "raw": {
+            "citations": 0.263045653081948,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.065761413270487,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.01,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Subthalamic Nucleus",
+        "Humans",
+        "Parkinson Disease",
+        "Deep Brain Stimulation",
+        "Follow-Up Studies",
+        "Cognition Disorders",
+        "Mood Disorders",
+        "Bipolar Disorder",
+        "Mental Status Schedule",
+        "Patient Selection",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_8036de91",
+      "doi": "10.1289/ehp.0900611",
+      "url": "https://doi.org/10.1289/ehp.0900611",
+      "openalex_id": null,
+      "pmid": "20019912",
+      "first_author": "Park",
+      "authors_display": "Park, H. et al.",
+      "year": 2009,
+      "title": "Exposure to hydroxylated polychlorinated biphenyls (OH-PCBs) in the prenatal period and subsequent neurodevelopment in eastern Slovakia.",
+      "venue": "Environmental health perspectives",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 88,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1289/ehp.0900611",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Hydroxylated polychlorinated biphenyls (OH-PCBs), unlike PCBs, are in general readily excreted yet are still detected in humans and animals. Active transport of OH-PCBs across the placenta and hydroxylation of PCBs by the fetus suggest the potential for greater impact on the fetus compared with the parent PCB compounds, but little is known about their health effects, particularly in humans.<h4>Objectives</h4>The objective of this study was to evaluate the associations between prenatal OH-PCB exposure and neurodevelopment in children at 16 months of age in eastern Slovakia.<h4>Methods</h4>A birth cohort (n = 1,134) was enrolled during 2002-2004. We analyzed six OH-PCB metabolites (4-OH-CB-107, 3-OH-CB-153, 4-OH-CB-146, 3'-OH-CB-138, 4-OH-CB-187, and 4'-OH-CB-172) in a subset of the cohort. The Bayley Scales of Infant Development were administered to the children at the 16-month follow-up visit. We developed multiple linear regression models predicting standardized scores for the Mental Development Index (MDI) and Psychomotor Development Index (PDI) from maternal (n = 147) and cord (n = 80) serum OH-PCB concentrations, adjusting for sex of child, district, HOME (Home Observation for Measurement of the Environment) score, and maternal score on Raven's Progressive Matrices.<h4>Results</h4>Cord 4-OH-CB-107 was significantly associated with lower MDI (beta = -2.27; p = 0.01) and PDI (beta = -4.50; p = 0.004). Also, maternal 4-OH-CB-107 was significantly associated with lower MDI (beta = -1.76; p = 0.03) but not PDI. No other OH-PCB metabolites were associated with decreased PDI or MDI.<h4>Conclusions</h4>Our findings showed a significant association of 4-OH-CB-107 with decreased MDI, which can possibly be mediated by endocrine disruption, altered neurotransmitter functions, or reduced thyroid hormone concentrations in brain.",
+      "score": {
+        "composite": 0.25497026617837265,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25988106471349054,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.2,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06497026617837263,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.03,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Prenatal Exposure Delayed Effects",
+        "Polychlorinated Biphenyls",
+        "Environmental Pollutants",
+        "Linear Models",
+        "Psychomotor Performance",
+        "Environmental Exposure",
+        "Pregnancy",
+        "Adolescent",
+        "Adult",
+        "Infant",
+        "Slovakia",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_7cd3e2bd",
+      "doi": "10.1136/jnnp.74.1.94",
+      "url": "https://doi.org/10.1136/jnnp.74.1.94",
+      "openalex_id": null,
+      "pmid": "12486275",
+      "first_author": "Starr",
+      "authors_display": "Starr, J. et al.",
+      "year": 2003,
+      "title": "Brain white matter lesions detected by magnetic resonance [correction of resosnance] imaging are associated with balance and gait speed.",
+      "venue": "Journal of neurology, neurosurgery, and psychiatry",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 169,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>To investigate the relations between premorbid and current mental ability, mood, and white matter signal abnormalities detected by T2 weighted brain magnetic resonance imaging (MRI) and impairment of balance and mobility in older adults.<h4>Methods</h4>97 subjects from the Aberdeen 1921 birth cohort underwent brain MRI, evaluation of balance, and measurement of gait speed. White matter hyperintensities detected on T2 weighted MRI scans were rated by three independent raters on three variables: white matter lesions; periventricular lesions; and brain stem lesions.<h4>Results</h4>Decreased gait speed was correlated with impaired visual acuity (p = 0.020), shorter stature (p = 0.008), a lower childhood IQ (p = 0.030), a lower current Raven's progressive matrices score (Raven score) (p < 0.001), a higher hospital anxiety and depression scale (HADS) score (p = 0.004), and an increased grade of brain stem lesions on MRI. Inability to balance was correlated with Raven score (p = 0.042), brain stem lesions (p = 0.003), white matter lesions (p = 0.003), and periventricular lesions (p = 0.038). Binary logistic regression identified brain stem lesions (odds ratio (OR) 0.22; 95% confidence interval 0.09 to 0.54) and HADS depression score (OR 0.75; 0.58 to 0.97) as the only significant associations with balance. Structural equation modelling detected an association between two latent traits representing white matter disease and an integrating function, respectively.<h4>Conclusions</h4>In this cohort, white matter lesions, periventricular lesions, and brain stem lesions were associated with impaired balance. Current mental ability was strongly related to gait speed. There appears to be a concordance between motor skills and intellect in old age, which is degraded by white matter disease.",
+      "score": {
+        "composite": 0.25433754129509445,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29735016518037777,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07433754129509444,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Brain Stem",
+        "Humans",
+        "Brain Diseases",
+        "Gait Disorders, Neurologic",
+        "Magnetic Resonance Imaging",
+        "Gait",
+        "Multivariate Analysis",
+        "Cohort Studies",
+        "Longitudinal Studies",
+        "Depression",
+        "Intelligence Tests",
+        "Neuropsychological Tests",
+        "Comorbidity",
+        "Visual Acuity",
+        "Aged",
+        "Scotland",
+        "Female",
+        "Male",
+        "Postural Balance"
+      ]
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_06add709",
+      "doi": "10.3389/fpubh.2025.1654470",
+      "url": "https://doi.org/10.3389/fpubh.2025.1654470",
+      "openalex_id": null,
+      "pmid": "41211409",
+      "first_author": "Bakhti",
+      "authors_display": "Bakhti, R. et al.",
+      "year": 2025,
+      "title": "A narrative review of school-based screening tools for dyslexia among students.",
+      "venue": "Frontiers in public health",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12591040",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Early detection and intervention of dyslexia in children and young people (CYP) can help mitigate its negative impacts. Schools play a crucial role as a key point of contact for dyslexia screening.<h4>Objective</h4>In this review, we examined the range of screening tools and reported sensitivities and specificities in school settings to identify CYP with dyslexia and explored variations in how tools captured the socio-demographic characteristics of screened student's groups.<h4>Design</h4>Narrative review.<h4>Methods</h4>We searched five electronic databases: EMBASE, MEDLINE, PsychInfo, Cochrane, and Scopus (2010-2023) to identify worldwide school-based dyslexia screening studies conducted in CYP aged 4-16 years. Three independent researchers screened the papers, and data were extracted on the sensitivity and specificity of the screening tools, the informants involved, the prevalence of dyslexia among those who screened positive, and the socio-demographic characteristics of the identified CYP.<h4>Results</h4>Sixteen of 6,041 articles met the eligibility criteria. The study population ranged from 95 to 9,964 participants. We identified 17 different types of school-based dyslexia screening tools. Most studies combined screening tools (mean number of 3.7, standard deviation = 2.7) concurrently to identify dyslexia. Three studies used a staged approach of two and three stages. Developmental Dyslexia and Dysorthographia and Raven Progressive Matrices were the most used tools. The percentage of cases screening positive for dyslexia ranged from 3.1 to 33.0%. Among CYP identified by screening with dyslexia, there were missing socio-demographic data on gender (50%) and socio-economic status (81%) and none on ethnicity.<h4>Conclusion</h4>A variety of screening tools are used to identify children and young people (CYP) with dyslexia in school settings. However, it is unclear whether this wide range of tools is necessary or reflects variations in definitions.",
+      "score": {
+        "composite": 0.25,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Dyslexia",
+        "Mass Screening",
+        "Sensitivity and Specificity",
+        "Schools",
+        "Students",
+        "Adolescent",
+        "Child",
+        "Child, Preschool",
+        "School Health Services",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_999ae900",
+      "doi": "10.1289/ehp.0901070",
+      "url": "https://doi.org/10.1289/ehp.0901070",
+      "openalex_id": null,
+      "pmid": "20406721",
+      "first_author": "Edwards",
+      "authors_display": "Edwards, S. et al.",
+      "year": 2010,
+      "title": "Prenatal exposure to airborne polycyclic aromatic hydrocarbons and children's intelligence at 5 years of age in a prospective cohort study in Poland.",
+      "venue": "Environmental health perspectives",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 215,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC2944097",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>In this prospective cohort study of Caucasian mothers and children in Krakow, Poland, we evaluated the role of prenatal exposure to urban air pollutants in the pathogenesis of neurobehavioral disorders.<h4>Objectives</h4>The objective of this study was to investigate the relationship between prenatal polycyclic aromatic hydrocarbon (PAH) exposure and child intelligence at 5 years of age, controlling for potential confounders suspected to play a role in neurodevelopment.<h4>Methods</h4>A cohort of pregnant, healthy, nonsmoking women was enrolled in Krakow, Poland, between 2001 and 2006. During pregnancy, participants were invited to complete a questionnaire and undergo 48-hr personal air monitoring to estimate their babies' exposure, and to provide a blood sample and/or a cord blood sample at the time of delivery. Two hundred fourteen children were followed through 5 years of age, when their nonverbal reasoning ability was assessed using the Raven Coloured Progressive Matrices (RCPM).<h4>Results</h4>We found that higher (above the median of 17.96 ng/m3) prenatal exposure to airborne PAHs (range, 1.8-272.2 ng/m3) was associated with decreased RCPM scores at 5 years of age, after adjusting for potential confounding variables (n = 214). Further adjusting for maternal intelligence, lead, or dietary PAHs did not alter this association. The reduction in RCPM score associated with high airborne PAH exposure corresponded to an estimated average decrease of 3.8 IQ points.<h4>Conclusions</h4>These results suggest that prenatal exposure to airborne PAHs adversely affects children's cognitive development by 5 years of age, with potential implications for school performance. They are consistent with a recent finding in a parallel cohort in New York City.",
+      "score": {
+        "composite": 0.22780386740281655,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3112154696112662,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07780386740281656,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.04,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Prenatal Exposure Delayed Effects",
+        "Air Pollutants",
+        "Prospective Studies",
+        "Intelligence",
+        "Pregnancy",
+        "Adolescent",
+        "Adult",
+        "Child, Preschool",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Polycyclic Aromatic Hydrocarbons"
+      ]
+    },
+    {
+      "rank": 31,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_22d4ce63",
+      "doi": "10.1136/jnnp.74.4.419",
+      "url": "https://doi.org/10.1136/jnnp.74.4.419",
+      "openalex_id": null,
+      "pmid": "12640053",
+      "first_author": "Abe",
+      "authors_display": "Abe, Y. et al.",
+      "year": 2003,
+      "title": "Occipital hypoperfusion in Parkinson's disease without dementia: correlation to impaired cortical visual processing.",
+      "venue": "Journal of neurology, neurosurgery, and psychiatry",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 91,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>The purpose of this study was to analyse changes in regional cerebral blood flow (rCBF) in Parkinson's disease (PD) without dementia.<h4>Methods</h4>Twenty eight non-demented patients with PD and 17 age matched normal subjects underwent single photon emission computed tomography with N-isopropyl-p-[(123)I]iodoamphetamine to measure rCBF. The statistical parametric mapping 96 programme was used for statistical analysis.<h4>Results</h4>The PD patients showed significantly reduced rCBF in the bilateral occipital and posterior parietal cortices (p<0.01, corrected for multiple comparison p<0.05), when compared with the control subjects. There was a strong positive correlation between the score of Raven's coloured progressive matrices (RCPM) and the rCBF in the right visual association area (p<0.01, corrected for multiple comparison p<0.05) among the PD patients.<h4>Conclusions</h4>This study showed occipital and posterior parietal hypoperfusion in PD patients without dementia. Furthermore, it was demonstrated that occipital hypoperfusion is likely to underlie impairment of visual cognition according to the RCPM test, which is not related to motor impairment.",
+      "score": {
+        "composite": 0.19545012410322127,
+        "breakdown": {
+          "raw": {
+            "citations": 0.261800496412885,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06545012410322125,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Occipital Lobe",
+        "Visual Cortex",
+        "Humans",
+        "Parkinson Disease",
+        "Dementia",
+        "Vision Disorders",
+        "Tomography, Emission-Computed, Single-Photon",
+        "Severity of Illness Index",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Cerebrovascular Circulation",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 32,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_21f31e05",
+      "doi": "10.1136/jnnp.58.2.174",
+      "url": "https://doi.org/10.1136/jnnp.58.2.174",
+      "openalex_id": null,
+      "pmid": "7876847",
+      "first_author": "Pillon",
+      "authors_display": "Pillon, B. et al.",
+      "year": 1995,
+      "title": "Neuropsychological pattern of striatonigral degeneration: comparison with Parkinson's disease and progressive supranuclear palsy.",
+      "venue": "Journal of neurology, neurosurgery, and psychiatry",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 76,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "To study the neuropsychological pattern of striatonigral degeneration (SND), 14 consecutive patients with probable SND were submitted to an extensive battery of neuropsychological tests. Compared with controls the performance of patients with SND was impaired on category and phonemic fluency, frontal behaviours, trail making test A and B, and free recall of the Grober and Buschke test, but normal on the revised WAIS verbal scale, Raven 47 coloured progressive matrices, Wechsler memory scale, California verbal learning test, Wisconsin card sorting test, and the Stroop interference condition. The performance of patients with SND was also compared with that of 14 patients with Parkinson's disease and 14 patients with progressive supranuclear palsy (PSP) matched for age at onset, duration of disease, severity of intellectual deterioration, and depression. The results showed that the dysexecutive syndrome of SND is similar to that of Parkinson's disease and less severe than in PSP.",
+      "score": {
+        "composite": 0.1928739267871979,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25149570714879144,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06287392678719786,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Substantia Nigra",
+        "Corpus Striatum",
+        "Humans",
+        "Parkinson Disease",
+        "Supranuclear Palsy, Progressive",
+        "Nerve Degeneration",
+        "Analysis of Variance",
+        "Neuropsychological Tests",
+        "Middle Aged"
+      ]
+    },
+    {
+      "rank": 33,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_abb38daa",
+      "doi": "10.1136/jnnp.50.10.1312",
+      "url": "https://doi.org/10.1136/jnnp.50.10.1312",
+      "openalex_id": null,
+      "pmid": "3681309",
+      "first_author": "Davous",
+      "authors_display": "Davous, P. et al.",
+      "year": 1987,
+      "title": "A comparative evaluation of the short orientation memory concentration test of cognitive impairment.",
+      "venue": "Journal of neurology, neurosurgery, and psychiatry",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 73,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In order to assess the relative sensitivity and specificity of Katzman's short orientation memory concentration test (OMCT), 89 non demented patients and 44 patients affected by vascular or degenerative dementia were consecutively evaluated by three different mental status tests. The OMCT appeared equivalent to the Mini Mental State Examination in identifying dementia. Optimum sensitivity and specificity, respectively 88% and 94%, were achieved by a 10/11 cut-off score, giving a 11% false positive rate. Among patients with Alzheimer's disease, the OMCT score was correlated with mean values of a simple reaction time. It was also correlated with the Wechsler global MQ and the orientation, logical memory and paired associates items of the scale. There was no relationship between the OMCT score and the coloured Progressive Matrices IQ. The OMCT was reliable when given at 1 month interval. Serial evaluations did not show any significant practice effect.",
+      "score": {
+        "composite": 0.1922987098353892,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24919483934155667,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06229870983538917,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Nervous System Diseases",
+        "Alzheimer Disease",
+        "Memory",
+        "Mental Disorders",
+        "Cognition Disorders",
+        "Psychiatric Status Rating Scales",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 34,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_4191d4ca",
+      "doi": "10.1098/rspb.2003.2492",
+      "url": "https://doi.org/10.1098/rspb.2003.2492",
+      "openalex_id": null,
+      "pmid": "14561278",
+      "first_author": "Rae",
+      "authors_display": "Rae, C. et al.",
+      "year": 2003,
+      "title": "Oral creatine monohydrate supplementation improves brain performance: a double-blind, placebo-controlled, cross-over trial.",
+      "venue": "Proceedings. Biological sciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Controlled Clinical Trial",
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 139,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Creatine supplementation is in widespread use to enhance sports-fitness performance, and has been trialled successfully in the treatment of neurological, neuromuscular and atherosclerotic disease. Creatine plays a pivotal role in brain energy homeostasis, being a temporal and spatial buffer for cytosolic and mitochondrial pools of the cellular energy currency, adenosine triphosphate and its regulator, adenosine diphosphate. In this work, we tested the hypothesis that oral creatine supplementation (5 g d(-1) for six weeks) would enhance intelligence test scores and working memory performance in 45 young adult, vegetarian subjects in a double-blind, placebo-controlled, cross-over design. Creatine supplementation had a significant positive effect (p < 0.0001) on both working memory (backward digit span) and intelligence (Raven's Advanced Progressive Matrices), both tasks that require speed of processing. These findings underline a dynamic and significant role of brain energy capacity in influencing brain performance.",
+      "score": {
+        "composite": 0.18152725173289633,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2861090069315853,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07152725173289633,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Creatinine",
+        "Cross-Over Studies",
+        "Double-Blind Method",
+        "Intelligence",
+        "Memory",
+        "Brain Chemistry",
+        "Dietary Supplements",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    }
+  ]
+}

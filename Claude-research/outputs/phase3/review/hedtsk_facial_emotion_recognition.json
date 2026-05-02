@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_facial_emotion_recognition",
+    "name": "Facial Emotion Recognition Task",
+    "aliases": [
+      "Ekman Faces Task",
+      "FER"
+    ],
+    "category_id": "emotion_perception_and_regulation",
+    "short_definition": "Identification of an emotion category from a face image; accuracy and RT per emotion index emotion decoding ability.",
+    "description": "Participants view photographs of facial expressions (typically from the Ekman and Friesen Pictures of Facial Affect or similar validated sets) and identify the emotion portrayed. The standard set includes six basic emotions (anger, disgust, fear, happiness, sadness, surprise) plus neutral. Accuracy and RT are measured across emotion categories. The task engages a network including the amygdala (particularly for fear), fusiform face area, superior temporal sulcus, and prefrontal cortex. It is widely used in clinical research on schizophrenia, autism, and mood disorders.",
+    "inclusion_test": {
+      "procedure": "Participants view face photographs displaying basic emotions and identify the expressed emotion from a fixed set (happy, sad, angry, fearful, disgusted, surprised, neutral).",
+      "manipulation": "Emotion category; expression intensity (morphed continua); presentation duration; face race/gender.",
+      "measurement": "Accuracy per emotion; confusion matrices; unbiased hit rate; RT."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:40:30",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Wang 2020 — RALF1-FERONIA complex affects splicing dynamics to modulate stress responses … (Science advances, recent_primary, 89×)",
+      "doi": "10.1126/sciadv.aaz1622",
+      "pub_id": "pub_56733f14",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5884653262042147,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26052797148352547,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06513199287088137,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Science advances",
+      "citation_count": 89,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Kim 2019 — The iron deficiency response in <i>Arabidopsis thaliana</i> requires the phos… (Proceedings of the National Acad…, recent_primary, 128×)",
+      "doi": "10.1073/pnas.1916892116",
+      "pub_id": "pub_523a7656",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5836761455997628,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2813712490657175,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07034281226642937,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 128,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Zhao 2018 — Leucine-rich repeat extensin proteins regulate plant salt tolerance in <i>Ara… (Proceedings of the National Acad…, recent_primary, 255×)",
+      "doi": "10.1073/pnas.1816991115",
+      "pub_id": "pub_c6c40155",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.583596385382623,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3210522081971587,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08026305204928967,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 255,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Belavgeni 2019 — Exquisite sensitivity of adrenocortical carcinomas to induction of ferroptosis. (Proceedings of the National Acad…, recent_primary, 81×)",
+      "doi": "10.1073/pnas.1912700116",
+      "pub_id": "pub_d9cacf90",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5771178992649242,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25513826372636356,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06378456593159089,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 81,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Gao 2022 — A receptor-channel trio conducts Ca<sup>2+</sup> signalling for pollen tube r… (Nature, recent_primary, 84×)",
+      "doi": "10.1038/s41586-022-04923-7",
+      "pub_id": "pub_a2468f8d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5676379931222666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2572186391557329,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06430465978893322,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Nature",
+      "citation_count": 84,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Liao 2022 — DJ-1 upregulates the Nrf2/GPX4 signal pathway to inhibit trophoblast ferropto… (Scientific reports, recent_primary, 65×)",
+      "doi": "10.1038/s41598-022-07065-y",
+      "pub_id": "pub_2616f9bf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5639760233093943,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24257075990424393,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06064268997606098,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Scientific reports",
+      "citation_count": 65,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Chen 2016 — FERONIA interacts with ABI2-type phosphatases to facilitate signaling cross-t… (Proceedings of the National Acad…, foundational, 195×)",
+      "doi": "10.1073/pnas.1608449113",
+      "pub_id": "pub_cdfcdeb5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5597308149031405,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30558992627922865,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07639748156980716,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2016,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 195,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Du 2016 — Receptor kinase complex transmits RALF peptide signal to inhibit root growth … (Proceedings of the National Acad…, foundational, 136×)",
+      "doi": "10.1073/pnas.1609626113",
+      "pub_id": "pub_30775904",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5545470481486069,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2848548592610944,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0712137148152736,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2016,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 136,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Malivert 2021 — FERONIA and microtubules independently contribute to mechanical integrity in … (PLoS biology, recent_primary, 50×)",
+      "doi": "10.1371/journal.pbio.3001454",
+      "pub_id": "pub_be808328",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5502441046418793,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22764308523418395,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.056910771308545986,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "PLoS biology",
+      "citation_count": 50,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Xia 2015 — Long noncoding RNA FER1L4 suppresses cancer cell growth by acting as a compet… (Scientific reports, foundational, 121×)",
+      "doi": "10.1038/srep13445",
+      "pub_id": "pub_c304388b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.542868599791429,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27814106583238263,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06953526645809566,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Scientific reports",
+      "citation_count": 121,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Boisson-Dernier 2015 — Receptor-like cytoplasmic kinase MARIS functions downstream of CrRLK1L-depend… (Proceedings of the National Acad…, foundational, 115×)",
+      "doi": "10.1073/pnas.1512375112",
+      "pub_id": "pub_3072bba6",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5421386440289537,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2752212427824818,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06880531069562044,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2015,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 115,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Huang 2023 — Stigma receptors control intraspecies and interspecies barriers in Brassicaceae. (Nature, recent_primary, 99×)",
+      "doi": "10.1038/s41586-022-05640-x",
+      "pub_id": "pub_0e8c1b48",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5399903552293188,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2666280875839421,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06665702189598552,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2023,
+      "venue": "Nature",
+      "citation_count": 99,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Gronnier 2022 — Regulation of immune receptor kinase plasma membrane nanoscale organization b… (eLife, recent_primary, 79×)",
+      "doi": "10.7554/elife.74162",
+      "pub_id": "pub_2cabb696",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5267604887998097,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2537086218659055,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06342715546647637,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "eLife",
+      "citation_count": 79,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Yu 2012 — FERONIA receptor kinase pathway suppresses abscisic acid signaling in Arabido… (Proceedings of the National Acad…, foundational, 237×)",
+      "doi": "10.1073/pnas.1212547109",
+      "pub_id": "pub_28b3b2f3",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5225411044653386,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3168310845280211,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07920777113200528,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2012,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 237,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Duan 2010 — FERONIA receptor-like kinase regulates RHO GTPase signaling of root hair deve… (Proceedings of the National Acad…, foundational, 522×)",
+      "doi": "10.1073/pnas.1005366107",
+      "pub_id": "pub_5dd4811c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5139369466328831,
+        "breakdown": {
+          "raw": {
+            "citations": 0.362414453198199,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09060361329954975,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2010,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 522,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Li 2015 — Glycosylphosphatidylinositol-anchored proteins as chaperones and co-receptors… (eLife, foundational, 256×)",
+      "doi": "10.7554/elife.06587",
+      "pub_id": "pub_0be8d8e5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5136528158182108,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3212779299395097,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08031948248487743,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2015,
+      "venue": "eLife",
+      "citation_count": 256,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Martínez 2019 — Differential Patterns of Visual Sensory Alteration Underlying Face Emotion Re… (Biological psychiatry, recent_primary, 62×)",
+      "doi": "10.1016/j.biopsych.2019.05.016",
+      "pub_id": "pub_518a3093",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5133026745349644,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23987736480652397,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05996934120163099,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Biological psychiatry",
+      "citation_count": 62,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Dolder 2018 — Direct comparison of the acute subjective, emotional, autonomic, and endocrin… (Psychopharmacology, recent_primary, 92×)",
+      "doi": "10.1007/s00213-017-4650-5",
+      "pub_id": "pub_adab2524",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5089399388351502,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26242642200726757,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06560660550181689,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Psychopharmacology",
+      "citation_count": 92,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Schwarz 2020 — FIT, a regulatory hub for iron deficiency and stress signaling in roots, and … (Journal of experimental botany, key_review, 95×)",
+      "doi": "10.1093/jxb/eraa012",
+      "pub_id": "pub_a161d668",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4993994818255837,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26426459396900137,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06606614849225034,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Journal of experimental botany",
+      "citation_count": 95,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Zhang 2020 — RALF-FERONIA Signaling: Linking Plant Immune Response with Cell Growth. (Plant communications, key_review, 93×)",
+      "doi": "10.1016/j.xplc.2020.100084",
+      "pub_id": "pub_94774f1c",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4990947466038203,
+        "breakdown": {
+          "raw": {
+            "citations": 0.263045653081948,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.065761413270487,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Plant communications",
+      "citation_count": 93,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Guo 2009 — Three related receptor-like kinases are required for optimal cell elongation … (Proceedings of the National Acad…, foundational, 239×)",
+      "doi": "10.1073/pnas.0812346106",
+      "pub_id": "pub_ed63a12b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.492662229761254,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3173155857116827,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07932889642792068,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2009,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 239,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Wang 2009 — Molecular mechanism of membrane constriction and tubulation mediated by the F… (Proceedings of the National Acad…, foundational, 174×)",
+      "doi": "10.1073/pnas.0902974106",
+      "pub_id": "pub_1dc54be8",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4880904514957388,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2990284726496219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07475711816240548,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 174,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Miotto 2020 — Insight into the mechanism of ferroptosis inhibition by ferrostatin-1. (Redox biology, recent_primary, 663×)",
+      "doi": "10.1016/j.redox.2019.101328",
+      "pub_id": "pub_e7b17eaf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.47739199306362595,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3762346389211706,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09405865973029265,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Redox biology",
+      "citation_count": 663,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Kim 2021 — Characterization of ferroptosis in kidney tubular cell death under diabetic c… (Cell death & disease, recent_primary, 257×)",
+      "doi": "10.1038/s41419-021-03452-x",
+      "pub_id": "pub_bf736966",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4737090271059239,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3215027750903623,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08037569377259057,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cell death & disease",
+      "citation_count": 257,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Chen 2020 — FERONIA cytoplasmic domain: node of varied signal outputs. (aBIOTECH, key_review, 12×)",
+      "doi": "10.1007/s42994-020-00017-y",
+      "pub_id": "pub_5cac3f63",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4704594065461355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "aBIOTECH",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Chen 2020 — Erianin, a novel dibenzyl compound in Dendrobium extract, inhibits lung cance… (Signal transduction and targeted…, recent_primary, 317×)",
+      "doi": "10.1038/s41392-020-0149-3",
+      "pub_id": "pub_0861c4ab",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4667355029982885,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3336086786598206,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08340216966495514,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Signal transduction and targeted therapy",
+      "citation_count": 317,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Shou 2021 — Inhibition of keratinocyte ferroptosis suppresses psoriatic inflammation. (Cell death & disease, recent_primary, 158×)",
+      "doi": "10.1038/s41419-021-04284-5",
+      "pub_id": "pub_fb790c44",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46670262149212727,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2934771526351757,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07336928815879393,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cell death & disease",
+      "citation_count": 158,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Yamada 2020 — Ferroptosis driven by radical oxidation of n-6 polyunsaturated fatty acids me… (Cell death & disease, recent_primary, 278×)",
+      "doi": "10.1038/s41419-020-2334-2",
+      "pub_id": "pub_330b2ead",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4648416797965945,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32603338585304475,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08150834646326119,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Cell death & disease",
+      "citation_count": 278,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 35,
+      "label": "Ling 2002 — The tomato fer gene encoding a bHLH protein controls iron-uptake responses in… (Proceedings of the National Acad…, foundational, 249×)",
+      "doi": "10.1073/pnas.212448699",
+      "pub_id": "pub_aeea2a5c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4632531031649892,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3196790793266233,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07991976983165583,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2002,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 249,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 36,
+      "label": "Webster 2021 — Review: Posed vs. Genuine Facial Emotion Recognition and Expression in Autism… (Frontiers in psychology, key_review, 14×)",
+      "doi": "10.3389/fpsyg.2021.653112",
+      "pub_id": "pub_88bd91d5",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4625307037366092,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Frontiers in psychology",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

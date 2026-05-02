@@ -1,0 +1,229 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:32:16",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_psychological_refractory_period",
+    "name": "Psychological Refractory Period Task",
+    "aliases": [
+      "PRP",
+      "Psychological Refractory Period"
+    ],
+    "category_id": "selective_and_sustained_attention",
+    "short_definition": "Two tasks presented with a short SOA; RT for the second task lengthens as SOA shortens, indexing a central response-selection bottleneck.",
+    "description": "Two stimuli are presented in rapid succession (S1 then S2, separated by a variable stimulus onset asynchrony or SOA), each requiring its own speeded response (R1 and R2). The robust finding is that R2 is slowed as the SOA decreases — the psychological refractory period effect — because central response-selection processes for S2 must wait until response selection for S1 is complete. Pashler (1994) provided the definitive review establishing the central bottleneck model: perceptual processing and motor execution can overlap between tasks, but response selection (choosing which response to make) represents a serial bottleneck. The PRP paradigm remains the primary tool for mapping the architecture of cognitive processing stages and understanding the limits of multitasking.",
+    "inclusion_test": {
+      "procedure": "Two stimuli requiring separate speeded responses are presented in rapid succession with a variable stimulus-onset asynchrony (SOA). Both responses are required.",
+      "manipulation": "SOA between S1 and S2 (50–1000 ms); task difficulty of each task; response modality overlap.",
+      "measurement": "RT2 as a function of SOA (PRP effect: RT2 slowing at short SOAs); RT1 (usually unaffected); locus of interference per bottleneck models."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 2,
+      "picked": 2,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_c4bac4de",
+      "doi": "10.1037/0033-2909.116.2.220",
+      "url": "https://doi.org/10.1037/0033-2909.116.2.220",
+      "openalex_id": "https://openalex.org/W2051914653",
+      "pmid": "7972591",
+      "first_author": "Pashler",
+      "authors_display": "Harold Pashler",
+      "year": 1994,
+      "title": "Dual-task interference in simple tasks: Data and theory.",
+      "venue": "Psychological Bulletin",
+      "venue_tier": "flagship",
+      "publisher": "American Psychological Association",
+      "publication_types": [
+        "review",
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3042,
+      "influential_citation_count": null,
+      "fwci": 5.8741,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "People often have trouble performing 2 relatively simple tasks concurrently. The causes of this interference and its implications for the nature of attentional limitations have been controversial for 40 years, but recent experimental findings are beginning to provide some answers. Studies of the psychological refractory period effect indicate a stubborn bottleneck encompassing the process of choosing actions and probably memory retrieval generally, together with certain other cognitive operations. Other limitations associated with task preparation, sensory-perceptual processes, and timing can generate additional and distinct forms of interference. These conclusions challenge widely accepted ideas about attentional resources and probe reaction time methodologies. They also suggest new ways of thinking about continuous dual-task performance, effects of extraneous stimulation (e.g., stop signals), and automaticity. Implications for higher mental processes are discussed.",
+      "score": {
+        "composite": 0.8910932672543337,
+        "breakdown": {
+          "raw": {
+            "citations": 0.46437306901733477,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.11609326725433369,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Automatism",
+        "Task Performance and Analysis",
+        "Attention",
+        "Reaction Time"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_84e7cad4",
+      "doi": "10.1016/j.neuron.2012.09.015",
+      "url": "https://doi.org/10.1016/j.neuron.2012.09.015",
+      "openalex_id": null,
+      "pmid": "23177968",
+      "first_author": "Wyart",
+      "authors_display": "Wyart, V. et al.",
+      "year": 2012,
+      "title": "Rhythmic fluctuations in evidence accumulation during decision making in the human brain.",
+      "venue": "Neuron",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 213,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Categorical choices are preceded by the accumulation of sensory evidence in favor of one action or another. Current models describe evidence accumulation as a continuous process occurring at a constant rate, but this view is inconsistent with accounts of a psychological refractory period during sequential information processing. During multisample perceptual categorization, we found that the neural encoding of momentary evidence in human electrical brain signals and its subsequent impact on choice fluctuated rhythmically according to the phase of ongoing parietal delta oscillations (1-3 Hz). By contrast, lateralized beta-band power (10-30 Hz) overlying human motor cortex encoded the integrated evidence as a response preparation signal. These findings draw a clear distinction between central and motor stages of perceptual decision making, with successive samples of sensory evidence competing to pass through a serial processing bottleneck before being mapped onto action.",
+      "score": {
+        "composite": 0.5626692209584216,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3106768838336864,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0776692209584216,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Electroencephalography",
+        "Beta Rhythm",
+        "Delta Rhythm",
+        "Brain Mapping",
+        "Photic Stimulation",
+        "Decision Making",
+        "Psychophysics",
+        "Periodicity",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Brain Waves"
+      ]
+    }
+  ]
+}

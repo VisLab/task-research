@@ -1,0 +1,396 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:45:27",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_autobiographical_memory",
+    "name": "Autobiographical Memory Task",
+    "aliases": [
+      "Autobiographical Memory Interview",
+      "AMI",
+      "Cue-Word Autobiographical Memory Task",
+      "Galton-Crovitz Task",
+      "Autobiographical Memory Test"
+    ],
+    "category_id": "long_term_memory",
+    "short_definition": "Participants retrieve specific personal memories in response to cue words or structured prompts; specificity, detail, and temporal distribution of retrieved episodes index autobiographical memory function.",
+    "description": "Autobiographical memory tasks assess the ability to retrieve specific personal episodes from one's past. The Galton-Crovitz cue-word task presents generic words (e.g., 'garden,' 'river,' 'knife') and asks participants to retrieve a specific personal memory associated with each and date it. The Autobiographical Memory Interview (Kopelman, Wilson, & Baddeley, 1989) uses a structured interview format probing both personal semantic knowledge (names, addresses) and autobiographical incidents across life periods (childhood, early adulthood, recent). The Autobiographical Memory Test (Williams & Broadbent, 1986) presents positive and negative cue words and measures whether participants retrieve specific episodes (bounded in time and place) vs. overgeneral memories (categories or extended periods). Overgeneral autobiographical memory — the tendency to retrieve categorical summaries rather than specific episodes — is a robust marker of depression, PTSD, and suicidality. The temporal distribution of memories typically shows a reminiscence bump (disproportionate recall of events from ages 10-30), recency effect, and childhood amnesia gradient. The paradigm engages a distributed network including hippocampus, medial prefrontal cortex, posterior cingulate, and lateral temporal cortex.",
+    "inclusion_test": {
+      "procedure": "Participants retrieve specific personal memories in response to cue words, category prompts, or structured interview questions; retrieved memories are scored for specificity, detail, emotional content, and temporal distribution.",
+      "manipulation": "Cue type (word, sentence, photograph, odor); cue valence (positive, negative, neutral); retrieval instruction (specific episode vs. free retrieval); time period constraint (childhood, recent, specific decade); retrieval time limit.",
+      "measurement": "Specificity (proportion of specific vs. overgeneral memories); retrieval latency; phenomenological detail ratings (vividness, emotional intensity, sensory detail); temporal distribution (reminiscence bump, recency); Autobiographical Memory Interview scores (personal semantic + autobiographical incident)."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 4,
+      "picked": 4,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a61ccb6b",
+      "doi": "10.1037/0096-3445.136.1.23",
+      "url": "https://doi.org/10.1037/0096-3445.136.1.23",
+      "openalex_id": null,
+      "pmid": "17324083",
+      "first_author": "Dalgleish",
+      "authors_display": "Dalgleish, T. et al.",
+      "year": 2007,
+      "title": "Reduced specificity of autobiographical memory and depression: the role of executive control.",
+      "venue": "Journal of experimental psychology. General",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 224,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC2225543",
+      "tldr": null,
+      "abstract": "It has been widely established that depressed mood states and clinical depression, as well as a range of other psychiatric disorders, are associated with a relative difficulty in accessing specific autobiographical information in response to emotion-related cue words on an Autobiographical Memory Test (AMT; J. M. G. Williams & K. Broadbent, 1986). In 8 studies the authors examined the extent to which this relationship is a function of impaired executive control associated with these mood states and clinical disorders. Studies 1-4 demonstrated that performance on the AMT is associated with performance on measures of executive control, independent of depressed mood. Furthermore, Study 1 showed that executive control (as measured by verbal fluency) mediated the relationship between both depressed mood and a clinical diagnosis of eating disorder and AMT performance. Using a stratified sample in Study 5, the authors confirmed the positive association between depressed mood and impaired performance on the AMT. Studies 6-8 involved experimental manipulations of the parameters of the AMT designed to further indicate that reduced executive control is to a significant extent driving the relationship between depressed mood and AMT performance. The potential role of executive control in accounting for other aspects of the AMT literature is discussed.",
+      "score": {
+        "composite": 0.4383947408065517,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3135789632262068,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0783947408065517,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Memory Disorders",
+        "Severity of Illness Index",
+        "Prevalence",
+        "Depression",
+        "Cues",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Diagnostic and Statistical Manual of Mental Disorders",
+        "Adult",
+        "Female",
+        "Male",
+        "Autobiographies as Topic"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_71f1b3a8",
+      "doi": "10.1016/j.brat.2010.03.013",
+      "url": "https://doi.org/10.1016/j.brat.2010.03.013",
+      "openalex_id": null,
+      "pmid": "20399418",
+      "first_author": "Sumner",
+      "authors_display": "Sumner, J. et al.",
+      "year": 2010,
+      "title": "Overgeneral autobiographical memory as a predictor of the course of depression: a meta-analysis.",
+      "venue": "Behaviour research and therapy",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Meta-Analysis",
+        "research-article",
+        "Review",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": true,
+      "is_meta_analysis": true,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 225,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Overgeneral autobiographical memory (OGM) is a robust phenomenon in depression, but the extent to which OGM predicts the course of depression is not well-established. This meta-analysis synthesized data from 15 studies to examine the degree to which OGM 1) correlates with depressive symptoms at follow-up, and 2) predicts depressive symptoms at follow-up over and above initial depressive symptoms. Although the effects are small, specific and categoric/overgeneral memories generated during the Autobiographical Memory Test significantly predicted the course of depression. Fewer specific memories and more categoric/overgeneral memories were associated with higher follow-up depressive symptoms, and predicted higher follow-up symptoms over and above initial symptoms. Potential moderators were also examined. The age and clinical depression status of participants, as well as the length of follow-up between the two depressive symptom assessments, significantly moderated the predictive relationship between OGM and the course of depression. The predictive relationship between specific memories and follow-up depressive symptoms became greater with increasing age and a shorter length of follow-up, and the predictive relationship was stronger for participants with clinical depression diagnoses than for nonclinical participants. These findings highlight OGM as a predictor of the course of depression, and future studies should investigate the mechanisms underlying this relationship.",
+      "score": {
+        "composite": 0.39845892888688633,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31383571554754514,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07845892888688628,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Memory Disorders",
+        "Disease Progression",
+        "Prognosis",
+        "Follow-Up Studies",
+        "Memory",
+        "Depressive Disorder",
+        "Psychiatric Status Rating Scales",
+        "Psychological Tests",
+        "Age Factors",
+        "Time Factors"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_c35172e9",
+      "doi": "10.1176/appi.ajp.2017.16060637",
+      "url": "https://doi.org/10.1176/appi.ajp.2017.16060637",
+      "openalex_id": null,
+      "pmid": "28407727",
+      "first_author": "Young",
+      "authors_display": "Young, K. et al.",
+      "year": 2017,
+      "title": "Randomized Clinical Trial of Real-Time fMRI Amygdala Neurofeedback for Major Depressive Disorder: Effects on Symptoms and Autobiographical Memory Recall.",
+      "venue": "The American journal of psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 231,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Patients with depression show blunted amygdala hemodynamic activity to positive stimuli, including autobiographical memories. The authors examined the therapeutic efficacy of real-time functional MRI neurofeedback (rtfMRI-nf) training aimed at increasing the amygdala's hemodynamic response to positive memories in patients with depression.<h4>Method</h4>In a double-blind, placebo-controlled, randomized clinical trial, unmedicated adults with depression (N=36) were randomly assigned to receive two sessions of rtfMRI-nf either from the amygdala (N=19) or from a parietal control region not involved in emotional processing (N=17). Clinical scores and autobiographical memory performance were assessed at baseline and 1 week after the final rtfMRI-nf session. The primary outcome measure was change in score on the Montgomery-Åsberg Depression Rating Scale (MADRS), and the main analytic approach consisted of a linear mixed-model analysis.<h4>Results</h4>In participants in the experimental group, the hemodynamic response in the amygdala increased relative to their own baseline and to the control group. Twelve participants in the amygdala rtfMRI-nf group, compared with only two in the control group, had a >50% decrease in MADRS score. Six participants in the experimental group, compared with one in the control group, met conventional criteria for remission at study end, resulting in a number needed to treat of 4. In participants receiving amygdala rtfMRI-nf, the percent of positive specific memories recalled increased relative to baseline and to the control group.<h4>Conclusions</h4>rtfMRI-nf training to increase the amygdala hemodynamic response to positive memories significantly decreased depressive symptoms and increased the percent of specific memories recalled on an autobiographical memory test. These data support a role of the amygdala in recovery from depression.",
+      "score": {
+        "composite": 0.29883819220178165,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3153527688071267,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07883819220178168,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Amygdala",
+        "Humans",
+        "Image Interpretation, Computer-Assisted",
+        "Magnetic Resonance Imaging",
+        "Double-Blind Method",
+        "Adolescent",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Hemodynamics",
+        "Young Adult",
+        "Neurofeedback",
+        "Memory, Episodic",
+        "Major Depressive Disorder"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_9bd3967a",
+      "doi": "10.1523/jneurosci.20-15-05853.2000",
+      "url": "https://doi.org/10.1523/jneurosci.20-15-05853.2000",
+      "openalex_id": null,
+      "pmid": "10908628",
+      "first_author": "Viskontas",
+      "authors_display": "Viskontas, I. et al.",
+      "year": 2000,
+      "title": "Remote episodic memory deficits in patients with unilateral temporal lobe epilepsy and excisions.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 152,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The nature of remote memory impairment in patients with medial temporal lobe damage is the subject of some debate. While some investigators have found that retrograde amnesia in such patients is temporally graded, with relative sparing of remote memories (Squire and Alvarez, 1995), others contend that impairment is of very long duration and that remote memories are not necessarily spared (Sanders and Warrington, 1971; Nadel and Moscovitch, 1997). In this study, remote memory was assessed in 25 patients with unilateral temporal lobe epilepsy and 22 non-neurologically impaired controls using the Autobiographical Memory Interview (Kopelman et al., 1989). Results indicate that patients have impaired personal episodic memory but intact personal semantic memory. The impairment extends even to the most remote time periods in early childhood, long before seizure onset in many patients. As well, patients awaiting temporal lobectomy for control of seizures perform as poorly as those who have already undergone resective surgery. These results support the hypothesis that temporal lobe damage or dysfunction, caused by recurrent seizures or surgical excision, results in extensive retrograde amnesia for personal episodic memories. Interestingly, patients with radiological evidence of hippocampal sclerosis were not significantly more impaired than those without obvious sclerosis. These results indicate that even minimal damage to medial temporal lobes results in significant impairment to autobiographical episodic memory. These findings are more compatible with a memory loss or retrieval deficit rather than a consolidation account of remote memory impairment.",
+      "score": {
+        "composite": 0.28281251226999027,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29125004907996116,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07281251226999029,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Temporal Lobe",
+        "Humans",
+        "Epilepsy, Temporal Lobe",
+        "Memory Disorders",
+        "Observer Variation",
+        "Analysis of Variance",
+        "Mental Recall",
+        "Neuropsychological Tests",
+        "Adult",
+        "Middle Aged"
+      ]
+    }
+  ]
+}

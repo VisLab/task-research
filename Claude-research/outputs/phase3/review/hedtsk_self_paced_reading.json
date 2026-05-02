@@ -1,0 +1,1141 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_self_paced_reading",
+    "name": "Self-Paced Reading Task",
+    "aliases": [
+      "Moving-Window Reading Task",
+      "Word-by-Word Reading Task",
+      "Non-Cumulative Self-Paced Reading",
+      "Cumulative Self-Paced Reading",
+      "Phrase-by-Phrase Reading Task"
+    ],
+    "category_id": "language_comprehension_and_production",
+    "short_definition": "Participants press a key to reveal each word or phrase of a sentence/passage; reading time per region indexes online processing difficulty and is sensitive to syntactic, semantic, and discourse-level manipulations.",
+    "description": "Self-Paced Reading is the primary behavioral paradigm for studying online language comprehension at the sentence and discourse level. Participants read text presented one word or phrase at a time by pressing a button to advance; the time between button presses at each region is the dependent measure. In the non-cumulative (moving-window) variant, each new word replaces the previous one; in the cumulative variant, words accumulate on screen. Reading time elevations at critical regions reveal processing difficulty caused by syntactic ambiguity (garden-path effects), semantic anomaly, coherence breaks, anaphor resolution, predictability violations, and discourse-level inference demands. The paradigm was developed as an accessible alternative to eye-tracking that preserves the temporal dynamics of incremental comprehension while requiring minimal equipment. Spillover effects (elevated reading times on words following the critical region) are routinely analyzed. Comprehension questions after each trial ensure participants are reading for meaning. Self-paced reading has been central to testing models of sentence processing (surprisal theory, expectation-based parsing), discourse representation theory (situation models), and cross-linguistic processing differences.",
+    "inclusion_test": {
+      "procedure": "Participants read sentences or passages presented one word or phrase at a time, advancing by button press; reading time at each region is recorded. Comprehension questions follow each trial.",
+      "manipulation": "Linguistic manipulation at the critical region: syntactic ambiguity (reduced relative clause, garden-path), semantic plausibility (plausible vs. implausible continuation), discourse coherence (coherent vs. incoherent continuation), anaphor type (pronoun, repeated name, definite NP), word predictability (high vs. low cloze probability), syntactic complexity (embedded clause, long-distance dependency).",
+      "measurement": "Reading time at the critical region (ms); spillover reading time (region + 1, + 2); wrap-up effects (sentence-final reading time); comprehension question accuracy; reading time differences between conditions at the critical region."
+    }
+  },
+  "candidates_run_date": "2026-04-29T19:04:24",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Just 1982 — Paradigms and processes in reading comprehension. (Journal of Experimental Psycholo…, historical, 878×)",
+      "doi": "10.1037//0096-3445.111.2.228",
+      "pub_id": "pub_f864c5c6",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.6981187654536651,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3924750618146603,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09811876545366507,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1982,
+      "venue": "Journal of Experimental Psychology General",
+      "citation_count": 878,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Hussey 2015 — Language and Memory Improvements following tDCS of Left Lateral Prefrontal Co… (PloS one, foundational, 40×)",
+      "doi": "10.1371/journal.pone.0141417",
+      "pub_id": "pub_f8bbd2e6",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3854183510920963,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "PloS one",
+      "citation_count": 40,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Haigh 2022 — Diving into a pool or volcano? Examining the influence of sentence context an… (PloS one, recent_primary, 1×)",
+      "doi": "10.1371/journal.pone.0279555",
+      "pub_id": "pub_ad9b4157",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.37169954817282785,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "PloS one",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Schneider 2020 — Is Immediate Processing of Presupposition Triggers Automatic or Capacity-Limi… (Journal of psycholinguistic rese…, recent_primary, 5×)",
+      "doi": "10.1007/s10936-019-09686-3",
+      "pub_id": "pub_7cc38397",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.36760128913427215,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Journal of psycholinguistic research",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Macuch Silva 2021 — Pragmatic Prediction in the Processing of Referring Expressions Containing Sc… (Frontiers in psychology, recent_primary, 2×)",
+      "doi": "10.3389/fpsyg.2021.662050",
+      "pub_id": "pub_ceac6afd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.347568407628111,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Frontiers in psychology",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Tan 2020 — Task Sensitivity in L2 English Speakers' Syntactic Processing: Evidence for G… (Frontiers in psychology, recent_primary, 4×)",
+      "doi": "10.3389/fpsyg.2020.575847",
+      "pub_id": "pub_6c73a488",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3449622961084982,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Frontiers in psychology",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "de-Dios-Flores 2019 — Processing Sentences With Multiple Negations: Grammatical Structures That Are… (Frontiers in psychology, recent_primary, 4×)",
+      "doi": "10.3389/fpsyg.2019.02346",
+      "pub_id": "pub_afad9a90",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3349622961084982,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Frontiers in psychology",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Liu 2019 — The Effect of Distance on Sentence Processing by Older Adults. (Frontiers in psychology, recent_primary, 3×)",
+      "doi": "10.3389/fpsyg.2019.02455",
+      "pub_id": "pub_605156e2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3317324296789891,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Frontiers in psychology",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Cheng 2022 — Determiner-Number Specification and Non-Local Agreement Computation in L1 and… (Journal of psycholinguistic rese…, recent_primary, 1×)",
+      "doi": "10.1007/s10936-022-09864-w",
+      "pub_id": "pub_90fa46cb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3316995481728279,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Journal of psycholinguistic research",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Yokoyama 2014 — Animacy or case marker order?: priority information for online sentence compr… (PloS one, foundational, 1×)",
+      "doi": "10.1371/journal.pone.0093109",
+      "pub_id": "pub_bddfb6af",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3316995481728279,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "PloS one",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Ma 2021 — Acceptance and Online Interpretation of \"Gender-Neutral Pronouns\": Performanc… (Frontiers in psychology, recent_primary, 0×)",
+      "doi": "10.3389/fpsyg.2021.765777",
+      "pub_id": "pub_32d9dce7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.33166666666666667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Frontiers in psychology",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Delgado 2021 — Assessing Intervention Effects in Sentence Processing: Object Relatives vs. S… (Frontiers in psychology, recent_primary, 0×)",
+      "doi": "10.3389/fpsyg.2021.610909",
+      "pub_id": "pub_470ab5d4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.33166666666666667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Frontiers in psychology",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Di Pisa 2022 — Effects of markedness in gender processing in Italian as a heritage language:… (Frontiers in psychology, recent_primary, 3×)",
+      "doi": "10.3389/fpsyg.2022.965885",
+      "pub_id": "pub_14c37add",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3217324296789891,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Frontiers in psychology",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Santesteban 2017 — On the Nature of Clitics and Their Sensitivity to Number Attraction Effects. (Frontiers in psychology, foundational, 5×)",
+      "doi": "10.3389/fpsyg.2017.01470",
+      "pub_id": "pub_73de2cee",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.31760128913427216,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Frontiers in psychology",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Herbay 2018 — How Do French-English Bilinguals Pull Verb Particle Constructions Off? Factor… (Frontiers in psychology, recent_primary, 2×)",
+      "doi": "10.3389/fpsyg.2018.01885",
+      "pub_id": "pub_d918586b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.317568407628111,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Frontiers in psychology",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Nicenboim 2015 — Working memory differences in long-distance dependency resolution. (Frontiers in psychology, foundational, 20×)",
+      "doi": "10.3389/fpsyg.2015.00312",
+      "pub_id": "pub_7c71f9d6",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.31573426690685336,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2015,
+      "venue": "Frontiers in psychology",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Wassenburg 2015 — Children's comprehension monitoring of multiple situational dimensions of a n… (Reading and writing, foundational, 1×)",
+      "doi": "10.1007/s11145-015-9568-x",
+      "pub_id": "pub_499f25ea",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.30169954817282785,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2015,
+      "venue": "Reading and writing",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Shoghi 2022 — Does a walk-through video help the parser down the garden-path? A visually en… (Frontiers in psychology, recent_primary, 0×)",
+      "doi": "10.3389/fpsyg.2022.1009265",
+      "pub_id": "pub_6d0d288e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3016666666666667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Frontiers in psychology",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Kaltsa 2016 — Processing Coordinate Subject-Verb Agreement in L1 and L2 Greek. (Frontiers in psychology, foundational, 1×)",
+      "doi": "10.3389/fpsyg.2016.00648",
+      "pub_id": "pub_460d92ee",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.2916995481728279,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Frontiers in psychology",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Rolke 2023 — Processing references in context: when the polar bear does not meet a polar b… (Cognitive processing, recent_primary, 0×)",
+      "doi": "10.1007/s10339-023-01150-4",
+      "pub_id": "pub_b94ef3fb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.2916666666666667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Cognitive processing",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Wong 2025 — Anticipatory prediction in older readers. (Memory & cognition, recent_primary, 0×)",
+      "doi": "10.3758/s13421-025-01712-1",
+      "pub_id": "pub_8dd68878",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.2716666666666666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Memory & cognition",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Li 2025 — Testing the Interface Hypothesis: Evidence from processing directions of poss… (PloS one, recent_primary, 0×)",
+      "doi": "10.1371/journal.pone.0313965",
+      "pub_id": "pub_29125685",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.2716666666666666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "PloS one",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Darzhinova 2024 — Processing and Comprehension of Locally Ambiguous Participial Relative Clause… (Journal of psycholinguistic rese…, recent_primary, 0×)",
+      "doi": "10.1007/s10936-024-10041-4",
+      "pub_id": "pub_219acd5b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.26166666666666666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Journal of psycholinguistic research",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Mannaioli 2024 — Vagueness as an implicit-encoding persuasive strategy: an experimental approach. (Cognitive processing, recent_primary, 0×)",
+      "doi": "10.1007/s10339-023-01171-z",
+      "pub_id": "pub_3064bd78",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.26166666666666666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Cognitive processing",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Szabolcsi 2008 — The Effect of Negative Polarity Items on Inference Verification. (Journal of semantics, foundational, 3×)",
+      "doi": "10.1093/jos/ffn008",
+      "pub_id": "pub_c6bd20a3",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.24173242967898909,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "Journal of semantics",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Di Pisa 2024 — Being a heritage speaker matters: the role of markedness in subject-verb pers… (Frontiers in psychology, recent_primary, 0×)",
+      "doi": "10.3389/fpsyg.2024.1321614",
+      "pub_id": "pub_3545d277",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.24166666666666667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Frontiers in psychology",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "McConnell 2023 — Individual Differences in Holistic and Compositional Language Processing. (Journal of cognition, recent_primary, 1×)",
+      "doi": "10.5334/joc.283",
+      "pub_id": "pub_86bf5db4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.20169954817282787,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Journal of cognition",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Jevtović 2023 — <i>Déjà-lu:</i> When Orthographic Representations are Generated in the Absenc… (Journal of cognition, recent_primary, 1×)",
+      "doi": "10.5334/joc.250",
+      "pub_id": "pub_2c63564d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.20169954817282787,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Journal of cognition",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Pozniak 2025 — Interference of Implicit Causality in Relative Clause Processing. (Open mind : discoveries in cogni…, recent_primary, 0×)",
+      "doi": "10.1162/opmi_a_00193",
+      "pub_id": "pub_80707139",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.19166666666666665,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Open mind : discoveries in cognitive science",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Jackson 2011 — The effects of L2 proficiency level on the processing of wh-questions among D… (IRAL, International review of ap…, foundational, 3×)",
+      "doi": "10.1515/iral.2011.012",
+      "pub_id": "pub_650f89ce",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.17173242967898908,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.049999999999999996,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "IRAL, International review of applied linguistics in language teaching : Revue internationale de linguistique appliquee enseignement des langues. Internationale Zeitschrift fur angewandte Linguistik in der Spracherziehung",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

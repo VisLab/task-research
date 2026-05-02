@@ -1,0 +1,2745 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:17:48",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_balloon_analog_risk",
+    "name": "Balloon Analog Risk Task",
+    "aliases": [
+      "BART",
+      "Balloon Task",
+      "Balloon Analog Risk"
+    ],
+    "category_id": "value_based_decision_making_under_risk_and_uncertainty",
+    "short_definition": "Sequential pumping of a virtual balloon for monetary reward with stochastic popping; average pumps per un-popped balloon indexes risk-taking.",
+    "description": "Participants inflate a virtual balloon by clicking a pump button, earning money with each pump. The balloon may explode at any point, causing loss of all accumulated earnings for that trial. Participants can cash out at any time to save their earnings. The average number of pumps before cashing out indexes risk-taking propensity. BART risk-taking correlates with real-world risky behaviors. fMRI reveals activation in ventromedial PFC, anterior insula, and striatal regions during risk assessment.",
+    "inclusion_test": {
+      "procedure": "Participants sequentially pump a virtual balloon for incremental monetary reward; each pump risks the balloon popping and losing that trial's earnings. They can stop and bank at any time.",
+      "manipulation": "Explosion probability function (risk schedule); reward per pump; number of trials.",
+      "measurement": "Adjusted average pumps on un-popped balloons (risk-taking index); total earnings; pump-by-pump decision sequences; response rate across trial segments."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 35,
+      "picked": 30,
+      "reserve": 3,
+      "excluded": 2,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "non_human_subjects": 1,
+      "excluded_publisher": 1
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_1a4437d4",
+      "doi": "10.1037/1076-898x.8.2.75",
+      "url": "https://doi.org/10.1037/1076-898x.8.2.75",
+      "openalex_id": "https://openalex.org/W2146196757",
+      "pmid": null,
+      "first_author": "Lejuez",
+      "authors_display": "Carl W. Lejuez et al.",
+      "year": 2002,
+      "title": "Evaluation of a behavioral measure of risk taking: The Balloon Analogue Risk Task (BART).",
+      "venue": "Journal of Experimental Psychology Applied",
+      "venue_tier": "flagship",
+      "publisher": "American Psychological Association",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2160,
+      "influential_citation_count": null,
+      "fwci": 9.0179,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The present study (N = 86) sought to evaluate a laboratory-based behavioral measure of risk taking (the Balloon Analogue Risk Task; BART) and to test associations between this measure and self-report measures of risk-related constructs as well as self-reported real-world risk behaviors. The BART evidenced sound experimental properties, and riskiness on the BART was correlated with scores on measures of sensation seeking, impulsivity, and deficiencies in behavioral constraint. Also, riskiness on the BART was correlated with the self-reported occurrence of addictive, health, and safety risk behaviors, with the task accounting for variance in these behaviors beyond that accounted for by demographics and self-report measures of risk-related constructs. These results indicate that the BART may be a useful tool in the assessment of risk taking.",
+      "score": {
+        "composite": 0.7111390779058444,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4445563116233773,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11113907790584432,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Adolescent",
+        "Adolescent",
+        "Adolescent",
+        "Adult",
+        "Adult",
+        "Adult",
+        "Arousal",
+        "Arousal",
+        "Arousal",
+        "Female",
+        "Female",
+        "Female",
+        "Humans",
+        "Humans",
+        "Humans",
+        "Impulsive Behavior",
+        "Impulsive Behavior",
+        "Impulsive Behavior",
+        "Internal-External Control",
+        "Internal-External Control",
+        "Internal-External Control",
+        "Male",
+        "Male",
+        "Male",
+        "Personality Assessment",
+        "Personality Assessment",
+        "Personality Assessment",
+        "Psychometrics",
+        "Psychometrics",
+        "Psychometrics",
+        "Risk-Taking",
+        "Risk-Taking",
+        "Risk-Taking",
+        "Behavior, Addictive",
+        "Behavior, Addictive",
+        "Behavior, Addictive"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_ed82c714",
+      "doi": "10.1002/hbm.26041",
+      "url": "https://doi.org/10.1002/hbm.26041",
+      "openalex_id": null,
+      "pmid": "36441844",
+      "first_author": "Wang",
+      "authors_display": "Wang, M. et al.",
+      "year": 2022,
+      "title": "Risk-taking in the human brain: An activation likelihood estimation meta-analysis of the balloon analog risk task (BART).",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Meta-Analysis",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": true,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 22,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9704781",
+      "tldr": null,
+      "abstract": "The Balloon Analog Risk Task (BART) is increasingly used to assess risk-taking behavior and brain function. However, the brain networks underlying risk-taking during the BART and its reliability remain controversial. Here, we combined the activation likelihood estimation (ALE) meta-analysis with both task-based and task-free functional connectivity (FC) analysis to quantitatively synthesize brain networks involved in risk-taking during the BART, and compared the differences between adults and adolescents studies. Based on 22 pooled publications, the ALE meta-analysis revealed multiple brain regions in the reward network, salience network, and executive control network underlying risk-taking during the BART. Compared with adult risk-taking, adolescent risk-taking showed greater activation in the insula, putamen, and prefrontal regions. The combination of meta-analytic connectivity modeling with task-free FC analysis further confirmed the involvement of the reward, salience, and cognitive control networks in the BART. These findings demonstrate the core brain networks for risk-taking during the BART and support the utility of the BART for future neuroimaging and developmental research.",
+      "score": {
+        "composite": 0.6220510277575655,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.6666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.16666666666666666,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Likelihood Functions",
+        "Reproducibility of Results",
+        "Risk-Taking",
+        "Aircraft",
+        "Adolescent",
+        "Adult"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ab272847",
+      "doi": "10.1016/j.dcn.2019.100634",
+      "url": "https://doi.org/10.1016/j.dcn.2019.100634",
+      "openalex_id": null,
+      "pmid": "30889545",
+      "first_author": "Dir",
+      "authors_display": "Dir, A. et al.",
+      "year": 2019,
+      "title": "Pubertal influences on neural activation during risky decision-making in youth with ADHD and disruptive behavior disorders.",
+      "venue": "Developmental cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1016/j.dcn.2019.100634",
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Risk-taking during adolescence is a leading cause of mortality; Neuroscience research examining pubertal effects on decision-making is needed to better inform interventions, particularly among youth with attention-deficit/hyperactivity (ADHD) and disruptive behavior disorders (DBD), who are particularly prone to risky decision-making. We examined effects of pubertal development on risky decision-making and neural activation during decision-making among youth with ADHD/DBDs.<h4>Method</h4>Forty-six 11-12-year-olds (29.4% girls; 54.9% white; Tanner M(SD) = 2.08(1.32)) who met DSM-5 criteria for ADHD/DBD completed the Balloon Analog Risk Task (BART) during fMRI scanning. We examined effects of Tanner stage, sex, and age on risky decision-making (mean wager at which individuals stopped balloon inflation) and neural activation in the middle frontal gyrus and the ventral striatum during the choice and outcome phases of decision-making.<h4>Results</h4>Those in earlier pubertal stages made riskier decisions during the BART compared to those in later Tanner stages (β=-0.62, p =  .02). Later pubertal stage was associated with greater activation in the left middle frontal gyrus (β=0.61, p = .03) during the choice phase and in the right ventral striatum in response to rewards (β=0.59, p = .03).<h4>Conclusion</h4>Youth with ADHD/DBD in later stages of puberty, regardless of age, show greater ventral striatal activation in response to rewards.",
+      "score": {
+        "composite": 0.5807342669068534,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Risk-Taking",
+        "Decision Making",
+        "Attention Deficit and Disruptive Behavior Disorders",
+        "Sexual Maturation",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_41f41855",
+      "doi": "10.1002/hbm.25713",
+      "url": "https://doi.org/10.1002/hbm.25713",
+      "openalex_id": null,
+      "pmid": "34773436",
+      "first_author": "Bowring",
+      "authors_display": "Bowring, A. et al.",
+      "year": 2022,
+      "title": "Isolating the sources of pipeline-variability in group-level task-fMRI results.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 30,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/hbm.25713",
+      "tldr": null,
+      "abstract": "Task-fMRI researchers have great flexibility as to how they analyze their data, with multiple methodological options to choose from at each stage of the analysis workflow. While the development of tools and techniques has broadened our horizons for comprehending the complexities of the human brain, a growing body of research has highlighted the pitfalls of such methodological plurality. In a recent study, we found that the choice of software package used to run the analysis pipeline can have a considerable impact on the final group-level results of a task-fMRI investigation (Bowring et al., 2019, BMN). Here we revisit our work, seeking to identify the stages of the pipeline where the greatest variation between analysis software is induced. We carry out further analyses on the three datasets evaluated in BMN, employing a common processing strategy across parts of the analysis workflow and then utilizing procedures from three software packages (AFNI, FSL, and SPM) across the remaining steps of the pipeline. We use quantitative methods to compare the statistical maps and isolate the main stages of the workflow where the three packages diverge. Across all datasets, we find that variation between the packages' results is largely attributable to a handful of individual analysis stages, and that these sources of variability were heterogeneous across the datasets (e.g., choice of first-level signal model had the most impact for the balloon analog risk task dataset, while first-level noise model and group-level model were more influential for the false belief and antisaccade task datasets, respectively). We also observe areas of the analysis workflow where changing the software package causes minimal differences in the final results, finding that the group-level results were largely unaffected by which software package was used to model the low-frequency fMRI drifts.",
+      "score": {
+        "composite": 0.5763715312070392,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Image Processing, Computer-Assisted"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_24e56d7f",
+      "doi": "10.1016/j.neuroimage.2008.05.046",
+      "url": "https://doi.org/10.1016/j.neuroimage.2008.05.046",
+      "openalex_id": null,
+      "pmid": "18582578",
+      "first_author": "Rao",
+      "authors_display": "Rao, H. et al.",
+      "year": 2008,
+      "title": "Neural correlates of voluntary and involuntary risk taking in the human brain: an fMRI Study of the Balloon Analog Risk Task (BART).",
+      "venue": "NeuroImage",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 246,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Increasing effort has been devoted to understanding the neural mechanisms underlying decision making during risk, yet little is known about the effect of voluntary choice on risk taking. The Balloon Analog Risk Task (BART), in which subjects inflate a virtual balloon that can either grow larger or explode [Lejuez, C.W., Read, J.P., Kahler, C.W., Richards, J.B., Ramsey, S.E., Stuart, G.L., Strong, D.R., Brown, R.A., 2002. Evaluation of a behavioral measure of risk taking: the Balloon Analogue Risk Task BART. J. Exp. Psychol. Appl. 8, 75-84.], provides an ecologically valid model to assess human risk taking propensity and behaviour. In the present study, we modified this task for use during functional magnetic resonance imaging (fMRI) and administered it in both an active choice mode and a passive no-choice mode in order to examine the neural correlates of voluntary and involuntary risk taking in the human brain. Voluntary risk in the active choice task is associated with robust activation in mesolimbic-frontal regions, including the midbrain, ventral and dorsal striatum, anterior insula, dorsal lateral prefrontal cortex (DLPFC), and anterior cingulate/medial frontal cortex (ACC/MFC), in addition to activation in visual pathway regions. However, these mesolimbic-frontal activation patterns were not observed for involuntary risk in the passive no-choice task. Decision making was associated with neural activity in the right DLPFC. These findings demonstrate the utility of the modified BART paradigms for using during fMRI to assess risk taking in the human brain, and suggest that recruitment of the brain mesolimbic-frontal pathway during risk-taking is contingent upon the agency of the risk taker. The present paradigm may be extended to pathological populations to determine the specific neural components of their impaired risk behavior.",
+      "score": {
+        "composite": 0.5664116932686103,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3189801064077747,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07974502660194367,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Risk-Taking",
+        "Choice Behavior",
+        "Volition",
+        "Task Performance and Analysis",
+        "Evoked Potentials",
+        "Adult",
+        "Female",
+        "Male",
+        "Statistics as Topic",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_829a993f",
+      "doi": "10.1002/hbm.22429",
+      "url": "https://doi.org/10.1002/hbm.22429",
+      "openalex_id": null,
+      "pmid": "24453107",
+      "first_author": "Weber",
+      "authors_display": "Weber, M. et al.",
+      "year": 2014,
+      "title": "Prefrontal transcranial direct current stimulation alters activation and connectivity in cortical and subcortical reward systems: a tDCS-fMRI study.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 141,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Transcranial direct current stimulation (tDCS) is a noninvasive brain stimulation technique used both experimentally and therapeutically to modulate regional brain function. However, few studies have directly measured the aftereffects of tDCS on brain activity or examined changes in task-related brain activity consequent to prefrontal tDCS. To investigate the neural effects of tDCS, we collected fMRI data from 22 human subjects, both at rest and while performing the Balloon Analog Risk Task (BART), before and after true or sham transcranial direct current stimulation. TDCS decreased resting blood perfusion in orbitofrontal cortex and the right caudate and increased task-related activity in the right dorsolateral prefrontal cortex (DLPFC) and anterior cingulate cortex (ACC) in response to losses but not wins or increasing risk. Network analysis showed that whole-brain connectivity of the right ACC correlated positively with the number of pumps subjects were willing to make on the BART, and that tDCS reduced connectivity between the right ACC and the rest of the brain. Whole-brain connectivity of the right DLPFC also correlated negatively with pumps on the BART, as prior literature would suggest. Our results suggest that tDCS can alter activation and connectivity in regions distal to the electrodes.",
+      "score": {
+        "composite": 0.5583992323156746,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2869302625960316,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0717325656490079,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Prefrontal Cortex",
+        "Neural Pathways",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Reward",
+        "Neuropsychological Tests",
+        "Cerebrovascular Circulation",
+        "Rest",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Transcranial Direct Current Stimulation"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2b6e0b07",
+      "doi": "10.1371/journal.pone.0216619",
+      "url": "https://doi.org/10.1371/journal.pone.0216619",
+      "openalex_id": null,
+      "pmid": "31120931",
+      "first_author": "Gowen",
+      "authors_display": "Gowen, R. et al.",
+      "year": 2019,
+      "title": "Chronotype mediates gender differences in risk propensity and risk-taking.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1371/journal.pone.0216619",
+      "tldr": null,
+      "abstract": "Risk-taking is a complex form of decision-making that involves calculated assessments of potential costs and rewards that may be immediate or delayed. Thus, making predictions about inter-individual variation in risk-taking due to personality traits, decision styles or other attributes can be difficult. The association of risk-taking with gender is well-supported; males report higher propensity for risk-taking and show higher risk-taking on tasks measuring actual risk-taking behavior. Risk-taking also appears to be associated with circadian phenotypes (chronotypes), with evening-types reporting higher levels of risk-taking-but this association may be confounded by the fact that, in certain age groups, males are more likely to be evening-types. Here, we test for gender by chronotype effects on risk-taking in young adults (n = 610) using a self-reported risk propensity questionnaire, the health domain of the DOSPERT, and a behavioral task measuring risk-taking, the Balloon Analog Risk Task (BART). Our results show that males report and take significantly more risks than females in this population. In addition, evening-type individuals have significantly higher self-reported risk propensity and tend to take more risks on the BART. Interestingly, there is no significant difference in risk propensity or risk-taking behavior across male circadian phenotypes, but evening-type females significantly report and take more risk than female intermediate and morning types. In regression analyses, we found both gender and chronotype predict risk propensity and risk-taking. Path analysis confirms that chronotype has an indirect effect on gender differences in both risk propensity and risk-taking. Furthermore, we found that trait anxiety (STAI) and sleep disturbance (PROMIS), significantly correlate with chronotype and gender in the complete dataset, but do not independently predict differences in female risk-taking. These results suggest that chronotype mediates gender effects on r",
+      "score": {
+        "composite": 0.5407342669068533,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Incidence",
+        "Risk-Taking",
+        "Anxiety Disorders",
+        "Sex Factors",
+        "Circadian Rhythm",
+        "Adolescent",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Sleep Wake Disorders"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_be7db2d4",
+      "doi": "10.1162/jocn_a_01061",
+      "url": "https://doi.org/10.1162/jocn_a_01061",
+      "openalex_id": null,
+      "pmid": "28129057",
+      "first_author": "McCormick",
+      "authors_display": "McCormick, E., & Telzer, E.",
+      "year": 2017,
+      "title": "Adaptive Adolescent Flexibility: Neurodevelopment of Decision-making and Learning in a Risky Context.",
+      "venue": "Journal of cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 43,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Research on adolescence has largely focused on the particular biological and neural changes that place teens at risk for negative outcomes linked to increases in sensation-seeking and risky behavior. However, there is a growing interest in the adaptive function of adolescence, with work highlighting the dual nature of adolescence as a period of potential risk and opportunity. We examined how behavioral and neural sensitivity to risk and reward varies as a function of age using the Balloon Analog Risk Task. Seventy-seven children and adolescents (ages 8-17 years) completed the Balloon Analog Risk Task during an fMRI session. Results indicate that adolescents show greater learning throughout the task. Furthermore, older participants showed increased neural responses to reward in the OFC and ventral striatum, increased activation to risk in the mid-cingulate cortex, as well as increased functional OFC-medial PFC coupling in both risk and reward contexts. Age-related changes in regional activity and interregional connectivity explain the link between age and increases in flexible learning. These results support the idea that adolescents' sensitivity to risk and reward supports adaptive learning and behavioral approaches for reward acquisition.",
+      "score": {
+        "composite": 0.5314404971874445,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21909532208311155,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05477383052077789,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Adaptation, Psychological",
+        "Risk-Taking",
+        "Learning",
+        "Reward",
+        "Decision Making",
+        "Neuropsychological Tests",
+        "Models, Psychological",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male",
+        "Executive Function",
+        "Psychology, Adolescent"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_126e323f",
+      "doi": "10.1037/pha0000453",
+      "url": "https://doi.org/10.1037/pha0000453",
+      "openalex_id": null,
+      "pmid": "34043402",
+      "first_author": "Mahoney",
+      "authors_display": "Mahoney, J. et al.",
+      "year": 2021,
+      "title": "Deep brain stimulation of the nucleus accumbens/ventral capsule for severe and intractable opioid and benzodiazepine use disorder.",
+      "venue": "Experimental and clinical psychopharmacology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 21,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Given high relapse rates and the prevalence of overdose deaths, novel treatments for substance use disorder (SUD) are desperately needed for those who are treatment refractory. The objective of this study was to evaluate the safety of deep brain stimulation (DBS) for SUD and the effects of DBS on substance use, substance craving, emotional symptoms, and frontal/executive functions. DBS electrodes were implanted bilaterally within the Nucleus Accumbens/Ventral anterior internal capsule (NAc/VC) of a man in his early 30s with >10-year history of severe treatment refractory opioid and benzodiazepine use disorders. DBS of the NAc/VC was found to be safe with no serious adverse events noted and the participant remained abstinent and engaged in comprehensive treatment at the 12-week endpoint (and 12-month extended follow-up). Using a 0-100 visual analog scale, substance cravings decreased post-DBS implantation; most substantially in benzodiazepine craving following the final DBS titration (1.0 ± 2.2) compared to baseline (53.4 ± 29.5; p < .001). A trend toward improvement in frontal/executive function was observed on the balloon analog risk task performance following the final titration (217.7 ± 76.2) compared to baseline (131.3 ± 28.1, p = .066). FDG PET demonstrated an increase in glucose metabolism in the dorsolateral prefrontal and medial premotor cortices at the 12-week endpoint compared to post-surgery/pre-DBS titration. Heart Rate Variability (HRV) improved following the final titration (rMSSD = 56.0 ± 11.7) compared to baseline (19.2 ± 8.2; p < .001). In a participant with severe, treatment refractory opioid and benzodiazepine use disorder, DBS of the NAc/VC was safe, reduced substance use and craving, and improved frontal and executive functions. Confirmation of these findings with future studies is needed. (PsycInfo Database Record (c) 2021 APA, all rights reserved).",
+      "score": {
+        "composite": 0.5214076156812834,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Nucleus Accumbens",
+        "Internal Capsule",
+        "Humans",
+        "Substance-Related Disorders",
+        "Benzodiazepines",
+        "Analgesics, Opioid",
+        "Deep Brain Stimulation",
+        "Pilot Projects",
+        "Adult",
+        "Male"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_899bf569",
+      "doi": "10.1093/cercor/bhz269",
+      "url": "https://doi.org/10.1093/cercor/bhz269",
+      "openalex_id": null,
+      "pmid": "31828300",
+      "first_author": "Korucuoglu",
+      "authors_display": "Korucuoglu, O. et al.",
+      "year": 2020,
+      "title": "Adolescent Decision-Making Under Risk: Neural Correlates and Sex Differences.",
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Twin Study",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 17,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "An increased propensity for risk taking is a hallmark of adolescent behavior with significant health and social consequences. Here, we elucidated cortical and subcortical regions associated with risky and risk-averse decisions and outcome evaluation using the Balloon Analog Risk Task in a large sample of adolescents (n = 256, 56% female, age 14 ± 0.6), including the level of risk as a parametric modulator. We also identified sex differences in neural activity. Risky decisions engaged regions that are parts of the salience, dorsal attention, and frontoparietal networks, but only the insula was sensitive to increasing risks in parametric analyses. During risk-averse decisions, the same networks covaried with parametric levels of risk. The dorsal striatum was engaged by both risky and risk-averse decisions, but was not sensitive to escalating risk. Negative-outcome processing showed greater activations than positive-outcome processing. Insula, lateral orbitofrontal cortex, middle, rostral, and superior frontal areas, rostral and caudal anterior cingulate cortex were activated only by negative outcomes, with a subset of regions associated with negative outcomes showing greater activation in females. Taken together, these results suggest that safe decisions are predicted by more accurate neural representation of increasing risk levels, whereas reward-related processes play a relatively minor role.",
+      "score": {
+        "composite": 0.5085030300957165,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Adolescent Behavior",
+        "Risk-Taking",
+        "Decision Making",
+        "Psychomotor Performance",
+        "Twins",
+        "Sex Characteristics",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a1c24043",
+      "doi": "10.1016/j.bpsc.2019.10.016",
+      "url": "https://doi.org/10.1016/j.bpsc.2019.10.016",
+      "openalex_id": null,
+      "pmid": "32007432",
+      "first_author": "Dir",
+      "authors_display": "Dir, A. et al.",
+      "year": 2020,
+      "title": "Atypical Cortical Activation During Risky Decision Making in Disruptive Behavior Disordered Youths With Histories of Suicidal Ideation.",
+      "venue": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 15,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Suicidality is a leading cause of death among adolescents. In addition to other psychiatric conditions, youths with attention-deficit/hyperactivity disorder (ADHD) and disruptive behavior disorders (DBDs) are at heightened risk for suicide. Decision-making deficits are a hallmark symptom of ADHD and DBDs and are also implicated in suicidal behavior. We examined behavioral and neural differences in decision making among youths with ADHD and DBDs with (SI+) and without (SI-) histories of suicidal ideation.<h4>Methods</h4>The Balloon Analog Risk Task, a risky decision-making task, was completed by 57 youths with ADHD and DBDs (38% SI+) during functional magnetic resonance imaging. Mean stop wager (mean wager at which youths bank money) was the primary measure of risk taking. We conducted whole-brain and region-of-interest analyses in the anterior cingulate cortex and orbitofrontal cortex (OFC) during choice (win vs. inflate) and outcome (inflate vs. explode) contrasts using parametric modulators accounting for probability of balloon explosion.<h4>Results</h4>There were no differences between SI+ and SI- youths in Balloon Analog Risk Task performance. SI+ youths showed decreasing activation in the right medial frontal gyrus when choosing inflate as explosion probability increased compared with SI- youths. During explosions, SI- youths showed increasing activation in the left OFC as explosions became more likely. SI+ showed increasing left medial OFC activity in response to inflations as explosion probability increased.<h4>Conclusions</h4>SI+ youths may show heightened sensitivity to immediate reward and decreased sensitivity to potential loss as evidenced by medial frontal gyrus activity. OFC findings suggest that SI+ youths may be drawn to reward even when there is high probability of loss.",
+      "score": {
+        "composite": 0.5067981926913114,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Reward",
+        "Decision Making",
+        "Adolescent",
+        "Suicidal Ideation",
+        "Problem Behavior"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d35a6f07",
+      "doi": "10.3389/fpsyg.2021.643653",
+      "url": "https://doi.org/10.3389/fpsyg.2021.643653",
+      "openalex_id": null,
+      "pmid": "33868115",
+      "first_author": "Guenther",
+      "authors_display": "Guenther, B. et al.",
+      "year": 2021,
+      "title": "Heterogeneity in Risk-Taking During the COVID-19 Pandemic: Evidence From the UK Lockdown.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 29,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8046913",
+      "tldr": null,
+      "abstract": "In two pre-registered online studies during the COVID-19 pandemic and the early 2020 lockdown (one of which with a UK representative sample) we elicit risk-tolerance for 1,254 UK residents using four of the most widely applied risk-taking tasks in behavioral economics and psychology. Specifically, participants completed the incentive-compatible Balloon Analog Risk Task (BART) and the Binswanger-Eckel-Grossman (BEG) multiple lotteries task, as well as the Domain-Specific Risk-Taking Task (DOSPERT) and the self-reported questions for risk-taking used in the German Socio-economic Panel (SOEP) study. In addition, participants in the UK representative sample answered a range of questions about COVID-19-related risky behaviors selected from the UCL COVID-19 Social Survey and the ICL-YouGov survey on COVID-19 behaviors. Consistently with pre-COVID-19 times, we find that risk tolerance during the UK lockdown (i) was higher in men than in women and (ii) decreased with age. Undocumented in pre-COVID-19 times, we find some evidence for healthier participants displaying significantly higher risk-tolerance for self-reported risk measures. We find no systematic nor robust patterns of association between the COVID-19 risky behaviors and the four risk-taking tasks in our study. Moreover, we find no evidence in support of the so-called \"risk compensation\" hypothesis. If anything, it appears that participants who took greater risk in real-life COVID-19-relevant risky behaviors (e.g., isolating or taking precautions) also exhibited higher risk-tolerance in our experimental and self-reported risk-taking measures.",
+      "score": {
+        "composite": 0.5058969185761037,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a0f13870",
+      "doi": "10.1523/jneurosci.4764-14.2015",
+      "url": "https://doi.org/10.1523/jneurosci.4764-14.2015",
+      "openalex_id": null,
+      "pmid": "25948271",
+      "first_author": "Braams",
+      "authors_display": "Braams, B. et al.",
+      "year": 2015,
+      "title": "Longitudinal changes in adolescent risk-taking: a comprehensive study of neural responses to rewards, pubertal development, and risk-taking behavior.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 400,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Prior studies have highlighted adolescence as a period of increased risk-taking, which is postulated to result from an overactive reward system in the brain. Longitudinal studies are pivotal for testing these brain-behavior relations because individual slopes are more sensitive for detecting change. The aim of the current study was twofold: (1) to test patterns of age-related change (i.e., linear, quadratic, and cubic) in activity in the nucleus accumbens, a key reward region in the brain, in relation to change in puberty (self-report and testosterone levels), laboratory risk-taking and self-reported risk-taking tendency; and (2) to test whether individual differences in pubertal development and risk-taking behavior were contributors to longitudinal change in nucleus accumbens activity. We included 299 human participants at the first time point and 254 participants at the second time point, ranging between ages 8-27 years, time points were separated by a 2 year interval. Neural responses to rewards, pubertal development (self-report and testosterone levels), laboratory risk-taking (balloon analog risk task; BART), and self-reported risk-taking tendency (Behavior Inhibition System/Behavior Activation System questionnaire) were collected at both time points. The longitudinal analyses confirmed the quadratic age pattern for nucleus accumbens activity to rewards (peaking in adolescence), and the same quadratic pattern was found for laboratory risk-taking (BART). Nucleus accumbens activity change was further related to change in testosterone and self-reported reward-sensitivity (BAS Drive). Thus, this longitudinal analysis provides new insight in risk-taking and reward sensitivity in adolescence: (1) confirming an adolescent peak in nucleus accumbens activity, and (2) underlining a critical role for pubertal hormones and individual differences in risk-taking tendency.",
+      "score": {
+        "composite": 0.5034255923887442,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3470357028883099,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08675892572207748,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Nucleus Accumbens",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Longitudinal Studies",
+        "Adolescent Behavior",
+        "Risk-Taking",
+        "Adolescent Development",
+        "Reward",
+        "Puberty",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4a6afced",
+      "doi": "10.3389/fpsyg.2020.01806",
+      "url": "https://doi.org/10.3389/fpsyg.2020.01806",
+      "openalex_id": null,
+      "pmid": "32793080",
+      "first_author": "Xu",
+      "authors_display": "Xu, P. et al.",
+      "year": 2020,
+      "title": "The Effect of Response Inhibition Training on Risky Decision-Making Task Performance.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants,subjects)"
+      ],
+      "citation_count": 17,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7393991",
+      "tldr": null,
+      "abstract": "Response inhibition is an important component of executive function and plays an indispensable role in decision-making and other advanced cognitive processes. At the same time, we need an effective way to improve decision-making in the face of complex and limited information. This study mainly explored the influence of response inhibition training on college students' risky decision-making. The recruited students were randomly divided into the training group (<i>n</i> = 28) and the control group (<i>n</i> = 28). The training group engaged in Go/NoGo and stop-signal tasks for 2 weeks, while the control group was given the task of reading and summarizing popular science articles related to self-control. The Stroop task and Balloon Analog Risk Task were used to evaluate the pretest and posttest performance in inhibitory control and risky decision-making tasks, respectively, for all subjects. The results showed that response inhibition training can be effectively transferred to interference control task performance. The results showed that both the reward acquired and adjusted Balloon Analog Risk Task score (adj BART) significantly improved compared to the pretest in the training group, while the control group showed no significant differences in the reward acquired and the adj BART between the pretest and the posttest. Although response inhibition training increased risky behaviors in the Balloon Analog Risk Task, it substantially reduced overly conservative behaviors and participants gained more money.",
+      "score": {
+        "composite": 0.4885030300957165,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_651b45dd",
+      "doi": "10.1016/j.addbeh.2018.04.005",
+      "url": "https://doi.org/10.1016/j.addbeh.2018.04.005",
+      "openalex_id": null,
+      "pmid": "29660594",
+      "first_author": "Ellingson",
+      "authors_display": "Ellingson, J. et al.",
+      "year": 2018,
+      "title": "Methodological factors as a potential source of discordance between self-report and behavioral measures of impulsivity and related constructs.",
+      "venue": "Addictive behaviors",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "There is a consistent but poorly understood finding that self-report and behavioral measures of impulsivity are weakly correlated or uncorrelated. There are many possible explanations for this observation, including differences in how these instruments are administered and scored. The present study examined the utility of alternative scoring algorithms for self-report measures that aim to identify participants' peak impulsivity (or self-control), informed by estimates of item difficulty from Item Response Theory (IRT) analyses. College students were administered self-report questionnaires (Zuckerman Sensation Seeking Scale [ZSS], Barratt Impulsiveness Scale [BIS-11], behavioral measures related to risk-taking and impulsivity (Balloon Analog Risk Task [BART], Experiential Discounting Task [EDT]), and the substance use module of a clinical interview (past-six-month alcohol and marijuana use). IRT analyses were conducted on self-report measures to estimate item difficulty. Scoring algorithms ranked items by difficulty and scored items based on consecutive items endorsed or denied. A maximal scoring algorithm increased the concordance between the BIS-11 and BART (r = 0.08 vs. -0.07), but there was no evidence of increased incremental validity for substance-use. Findings suggest that methodological factors may help explain the poor concordance of self-report and behavioral measures of impulsivity, but the magnitude of these correlations remained quite small. Further, alternative scoring algorithms were correlated with substance use but did not explain any variance that was distinct from typical algorithms. Future directions are discussed for elucidating the discrepancy between self-report and behavioral measures of impulsivity-related constructs, such as using large self-report item pools to develop computer adaptive tests.",
+      "score": {
+        "composite": 0.4837927398794688,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Impulsive Behavior",
+        "Risk-Taking",
+        "Neuropsychological Tests",
+        "Algorithms",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Self Report",
+        "Delay Discounting",
+        "Self-Control",
+        "Alcohol Drinking in College",
+        "Marijuana Use"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_14262644",
+      "doi": "10.3389/fnins.2019.00345",
+      "url": "https://doi.org/10.3389/fnins.2019.00345",
+      "openalex_id": null,
+      "pmid": "31037055",
+      "first_author": "Hüpen",
+      "authors_display": "Hüpen, P. et al.",
+      "year": 2019,
+      "title": "Impulsivity Moderates Skin Conductance Activity During Decision Making in a Modified Version of the Balloon Analog Risk Task.",
+      "venue": "Frontiers in neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fnins.2019.00345/pdf",
+      "tldr": null,
+      "abstract": "Individual differences in traits such as impulsivity and processing of risk and reward have been linked to decision making and may underlie divergent decision making strategies. It is, however, unclear whether and how far individual differences in these characteristics jointly influence decision making. Here, we aimed to investigate the roles of skin conductance responses, a psychophysiological marker of risk processing and impulsivity, as assessed by the Barratt Impulsiveness Scale 11 on decision making. Forty-six healthy participants performed a modified version of the Balloon Analog Risk Task (BART), where reward and explosion risk are manipulated separately. Participants are informed about whether they play a high versus low reward and high versus low explosion risk condition. The exact risk and reward contingencies are, however, unknown to participants. Participants were less risk-taking under high, compared to low explosion risk and under high reward, compared to low reward on the modified BART, which served as a validation of the paradigm. Risk-taking was negatively related to skin conductance responses under high explosion risk. This relationship was primarily driven by individuals with relatively high levels of impulsivity. However, impulsivity alone was not found to be related to decision making on the modified BART. These results extend evidence that skin conductance responses may guide decision making in situations, where participants are informed about risk level (high vs. low), which might be differentially moderated by different levels of impulsivity.",
+      "score": {
+        "composite": 0.47379273987946885,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_317807ff",
+      "doi": "10.1016/j.jpsychires.2015.04.007",
+      "url": "https://doi.org/10.1016/j.jpsychires.2015.04.007",
+      "openalex_id": null,
+      "pmid": "25959618",
+      "first_author": "Brown",
+      "authors_display": "Brown, E. et al.",
+      "year": 2015,
+      "title": "Integrating frequency and magnitude information in decision-making in schizophrenia: An account of patient performance on the Iowa Gambling Task.",
+      "venue": "Journal of psychiatric research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 46,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>The Iowa Gambling Task (IGT; Bechara et al., 1994) has frequently been used to assess risky decision making in clinical populations, including patients with schizophrenia (SZ). Poor performance on the IGT is often attributed to reduced sensitivity to punishment, which contrasts with recent findings from reinforcement learning studies in schizophrenia.<h4>Methods</h4>In order to investigate possible sources of IGT performance deficits in SZ patients, we combined data from the IGT from 59 SZ patients and 43 demographically-matched controls with data from the Balloon Analog Risk Task (BART) in the same participants. Our analyses sought to specifically uncover the role of punishment sensitivity and delineate the capacity to integrate frequency and magnitude information in decision-making under risk.<h4>Results</h4>Although SZ patients, on average, made more choices from disadvantageous decks than controls did on the IGT, they avoided decks with frequent punishments at a rate similar to controls. Patients also exhibited excessive loss-avoidance behavior on the BART.<h4>Conclusions</h4>We argue that, rather than stemming from reduced sensitivity to negative consequences, performance deficits on the IGT in SZ patients are more likely the result of a reinforcement learning deficit, specifically involving the integration of frequencies and magnitudes of rewards and punishments in the trial-by-trial estimation of expected value.",
+      "score": {
+        "composite": 0.4723951984309924,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22291412705730315,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05572853176432579,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Antipsychotic Agents",
+        "Gambling",
+        "Decision Making",
+        "Psychotic Disorders",
+        "Schizophrenia",
+        "Neuropsychological Tests",
+        "Schizophrenic Psychology",
+        "Adolescent",
+        "Adult",
+        "Middle Aged",
+        "Iowa",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_cfb212f7",
+      "doi": "10.1371/journal.pone.0217089",
+      "url": "https://doi.org/10.1371/journal.pone.0217089",
+      "openalex_id": null,
+      "pmid": "31188839",
+      "first_author": "Heinrich",
+      "authors_display": "Heinrich, E. et al.",
+      "year": 2019,
+      "title": "Cognitive function and mood at high altitude following acclimatization and use of supplemental oxygen and adaptive servoventilation sleep treatments.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 41,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6561544",
+      "tldr": null,
+      "abstract": "Impairments in cognitive function, mood, and sleep quality occur following ascent to high altitude. Low oxygen (hypoxia) and poor sleep quality are both linked to impaired cognitive performance, but their independent contributions at high altitude remain unknown. Adaptive servoventilation (ASV) improves sleep quality by stabilizing breathing and preventing central apneas without supplemental oxygen. We compared the efficacy of ASV and supplemental oxygen sleep treatments for improving daytime cognitive function and mood in high-altitude visitors (N = 18) during acclimatization to 3,800 m. Each night, subjects were randomly provided with ASV, supplemental oxygen (SpO2 > 95%), or no treatment. Each morning subjects completed a series of cognitive function tests and questionnaires to assess mood and multiple aspects of cognitive performance. We found that both ASV and supplemental oxygen (O2) improved daytime feelings of confusion (ASV: p < 0.01; O2: p < 0.05) and fatigue (ASV: p < 0.01; O2: p < 0.01) but did not improve other measures of cognitive performance at high altitude. However, performance improved on the trail making tests (TMT) A and B (p < 0.001), the balloon analog risk test (p < 0.0001), and the psychomotor vigilance test (p < 0.01) over the course of three days at altitude after controlling for effects of sleep treatments. Compared to sea level, subjects reported higher levels of confusion (p < 0.01) and performed worse on the TMT A (p < 0.05) and the emotion recognition test (p < 0.05) on nights when they received no treatment at high altitude. These results suggest that stabilizing breathing (ASV) or increasing oxygenation (supplemental oxygen) during sleep can reduce feelings of fatigue and confusion, but that daytime hypoxia may play a larger role in other cognitive impairments reported at high altitude. Furthermore, this study provides evidence that some aspects of cognition (executive control, risk inhibition, sustained attention) improve with accl",
+      "score": {
+        "composite": 0.46743381507968124,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Sleep Apnea, Central",
+        "Oxygen",
+        "Polysomnography",
+        "Treatment Outcome",
+        "Affect",
+        "Cognition",
+        "Altitude",
+        "Acclimatization",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Self Report",
+        "Interactive Ventilatory Support"
+      ]
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9579c2bf",
+      "doi": "10.1080/10826084.2019.1639753",
+      "url": "https://doi.org/10.1080/10826084.2019.1639753",
+      "openalex_id": null,
+      "pmid": "31305203",
+      "first_author": "Treloar Padovano",
+      "authors_display": "Treloar Padovano, H. et al.",
+      "year": 2019,
+      "title": "Risk-Taking Propensity, Affect, and Alcohol Craving in Adolescents' Daily Lives.",
+      "venue": "Substance use & misuse",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 15,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<i>Background:</i> Alcohol craving is common among adolescents, stronger among those with more alcohol-related problems, and predicts drinking levels in their daily lives. Yet, the conditions that predict momentary changes in craving in real time among adolescents remain unclear. <i>Objectives:</i> This study examined the interactive effects of momentary risk-taking propensity and affect on adolescents' alcohol craving by leveraging ecological momentary assessment (EMA) methods. <i>Methods:</i> Participants were 29 adolescents ages 15-19 years (55% female; 69% White; 10% Black; 17% Hispanic); 45% met criteria for alcohol dependence. Following a laboratory session that captured self-report and behavioral assessments, including the well-established Balloon Analog Risk Task (BART), participants completed multiple daily assessments of alcohol craving, positive and negative affect, and risk propensity for approximately one week. Momentary risk propensity was captured in real-world settings via an EMA behavioral task (\"Balloon Game\"). <i>Results:</i> Mixed-effects models with EMA reports (Level 1) nested within participants (Level 2) revealed the majority (74%) of variability in \"Balloon Game\" performance was due to within-person, momentary, fluctuations. Greater momentary positive affect predicted increased alcohol craving, but only when participants exhibited heightened risk-taking propensity. Negative affect did not influence the relation between momentary risk-taking and craving. <i>Conclusions/Importance:</i> Momentary fluctuations in positive affect predicted acute increases in craving but only in moments when adolescents demonstrated higher levels of risk-taking propensity, as captured with an EMA-delivered behavioral task. Momentary risk-taking assessments offer new avenues to substantiate dominant theories on the driving mechanisms of craving and alcohol use among adolescents.",
+      "score": {
+        "composite": 0.4567981926913115,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Alcoholism",
+        "Alcohol Drinking",
+        "Risk-Taking",
+        "Affect",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Craving",
+        "Ecological Momentary Assessment"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_8161528f",
+      "doi": "10.3389/fnhum.2014.00661",
+      "url": "https://doi.org/10.3389/fnhum.2014.00661",
+      "openalex_id": null,
+      "pmid": "25221496",
+      "first_author": "Gorini",
+      "authors_display": "Gorini, A. et al.",
+      "year": 2014,
+      "title": "Modulation of risky choices in recently abstinent dependent cocaine users: a transcranial direct-current stimulation study.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants,subjects)"
+      ],
+      "citation_count": 68,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fnhum.2014.00661/pdf",
+      "tldr": null,
+      "abstract": "Previous neurobiological and neuropsychological investigations have shown that risk-taking behaviors and addictions share many structural and functional aspects. In particular, both are characterized by an irresistible need to obtain immediate rewards and by specific alterations in brain circuits responsible for such behaviors. In this study, we used transcranial direct-current stimulation over the dorsolateral prefrontal cortex (DLPFC) of two samples of subjects (18 dependent cocaine users and 18 control subjects) to investigate the effects of left and right cortical excitability on two risk tasks: (1) the balloon analog risk task (BART) and (2) the game of dice task (GDT). All subjects randomly received a left anodal/right cathodal stimulation (LAn+), a right anodal/left cathodal stimulation (RAn+), and a sham (placebo) stimulation each run at least 48 h apart. Participants were asked to perform the BART and the GDT immediately before and after each stimulation. Our results reveal that the activation of the DLPFC (left and right) results in a reduction of risky behaviors at the BART task both in controls subjects and cocaine dependent users. The effect of tDCS on GDT, instead, is more complex. Cocaine users increased safe behavior after right DLPFC anodal stimulation, while risk-taking behavior increased after left DLPFC anodal stimulation. Control subjects' performance was only affected by the anodal stimulation of the right DLPFC, resulting in an increase of safe bets. These results support the hypothesis that excessive risk propensity in dependent cocaine users might be due to a hypoactivation of the right DLPFC and an unbalance interhemispheric interaction. In conclusion, since risky decision-making seems to be, at least in part, responsible for maintenance and relapse of addiction, we argue that a neuromodulation-based approach could represent a valuable adjunct in the clinical treatment of addiction.",
+      "score": {
+        "composite": 0.4479527687190098,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24514440820937256,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06128610205234314,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_9b523a89",
+      "doi": "10.1007/s10862-011-9237-6",
+      "url": "https://doi.org/10.1007/s10862-011-9237-6",
+      "openalex_id": null,
+      "pmid": "33132494",
+      "first_author": "Humphreys",
+      "authors_display": "Humphreys, K., & Lee, S.",
+      "year": 2011,
+      "title": "Risk Taking and Sensitivity to Punishment in Children with ADHD, ODD, ADHD+ODD, and Controls.",
+      "venue": "Journal of psychopathology and behavioral assessment",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 53,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "We used the Balloon Analog Risk Task (BART) to examine risk taking and sensitivity to punishment, two relevant aspects of behavioral inhibition, in 203 school-age children with attention-deficit/hyperactivity disorder (ADHD), oppositional defiant disorder (ODD), ADHD+ODD, and controls. Participants earned points on the BART by pumping 30 separate balloons that exploded at variable intervals. No points were earned on a trial when a balloon exploded. The number of pumps across all balloons estimated risk taking and the reduction in pumps following balloon explosions was interpreted as an indicator of sensitivity to negative punishment. We found that all groups significantly differed from one another on risk taking. The ADHD+ODD group pumped the most, followed by the ODD, ADHD, and the control group, respectively. For sensitivity to negative punishment, all groups performed differently, with the ODD group showing the least sensitivity to an exploded balloon, followed by the ADHD, control, and ADHD+ODD groups, respectively. Children with ADHD+ODD demonstrated significantly different patterns of risk taking and sensitivity to negative punishment than children with either ADHD-only or ODD-only. ADHD youth with comorbid ODD had the greatest levels of risk taking, but they were also the most sensitive to negative punishment. The relationship between ADHD and ODD, as well as the nature of comorbidity in constructs related to risk taking and related behaviors, are discussed.",
+      "score": {
+        "composite": 0.4344047710571608,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23095241756197657,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05773810439049414,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_3a8a95d1",
+      "doi": "10.3389/fnins.2012.00080",
+      "url": "https://doi.org/10.3389/fnins.2012.00080",
+      "openalex_id": null,
+      "pmid": "22675289",
+      "first_author": "Schonberg",
+      "authors_display": "Schonberg, T. et al.",
+      "year": 2012,
+      "title": "Decreasing ventromedial prefrontal cortex activity during sequential risk-taking: an FMRI investigation of the balloon analog risk task.",
+      "venue": "Frontiers in neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 97,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3366349",
+      "tldr": null,
+      "abstract": "Functional imaging studies examining the neural correlates of risk have mainly relied on paradigms involving exposure to simple chance gambles and an economic definition of risk as variance in the probability distribution over possible outcomes. However, there is little evidence that choices made during gambling tasks predict naturalistic risk-taking behaviors such as drug use, extreme sports, or even equity investing. To better understand the neural basis of naturalistic risk-taking, we scanned participants using fMRI while they completed the Balloon Analog Risk Task, an experimental measure that includes an active decision/choice component and that has been found to correlate with a number of naturalistic risk-taking behaviors. In the task, as in many naturalistic settings, escalating risk-taking occurs under uncertainty and might be experienced either as the accumulation of greater potential rewards, or as exposure to increasing possible losses (and decreasing expected value). We found that areas previously linked to risk and risk-taking (bilateral anterior insula, anterior cingulate cortex, and right dorsolateral prefrontal cortex) were activated as participants continued to inflate balloons. Interestingly, we found that ventromedial prefrontal cortex (vmPFC) activity decreased as participants further expanded balloons. In light of previous findings implicating the vmPFC in value calculation, this result suggests that escalating risk-taking in the task might be perceived as exposure to increasing possible losses (and decreasing expected value) rather than the increasing potential total reward relative to the starting point of the trial. A better understanding of how neural activity changes with risk-taking behavior in the task offers insight into the potential neural mechanisms driving naturalistic risk-taking.",
+      "score": {
+        "composite": 0.4330312667303126,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26545840025458384,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06636460006364596,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_9065b4c6",
+      "doi": "10.3389/fnins.2012.00022",
+      "url": "https://doi.org/10.3389/fnins.2012.00022",
+      "openalex_id": null,
+      "pmid": "22347844",
+      "first_author": "Sela",
+      "authors_display": "Sela, T. et al.",
+      "year": 2012,
+      "title": "Transcranial alternating current stimulation increases risk-taking behavior in the balloon analog risk task.",
+      "venue": "Frontiers in neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 84,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3278979",
+      "tldr": null,
+      "abstract": "The process of evaluating risks and benefits involves a complex neural network that includes the dorsolateral prefrontal cortex (DLPFC). It has been proposed that in conflict and reward situations, theta-band (4-8 Hz) oscillatory activity in the frontal cortex may reflect an electrophysiological mechanism for coordinating neural networks monitoring behavior, as well as facilitating task-specific adaptive changes. The goal of the present study was to investigate the hypothesis that theta-band oscillatory balance between right and left frontal and prefrontal regions, with a predominance role to the right hemisphere (RH), is crucial for regulatory control during decision-making under risk. In order to explore this hypothesis, we used transcranial alternating current stimulation, a novel technique that provides the opportunity to explore the functional role of neuronal oscillatory activities and to establish a causal link between specific oscillations and functional lateralization in risky decision-making situations. For this aim, healthy participants were randomly allocated to one of three stimulation groups (LH stimulation/RH stimulation/Sham stimulation), with active AC stimulation delivered in a frequency-dependent manner (at 6.5 Hz; 1 mA peak-to-peak). During the AC stimulation, participants performed the Balloon Analog Risk Task. This experiment revealed that participants receiving LH stimulation displayed riskier decision-making style compared to sham and RH stimulation groups. However, there was no difference in decision-making behaviors between sham and RH stimulation groups. The current study extends the notion that DLPFC activity is critical for adaptive decision-making in the context of risk-taking and emphasis the role of theta-band oscillatory activity during risky decision-making situations.",
+      "score": {
+        "composite": 0.4309713264555999,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2572186391557329,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06430465978893322,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_e8f43920",
+      "doi": "10.1556/2006.5.2016.081",
+      "url": "https://doi.org/10.1556/2006.5.2016.081",
+      "openalex_id": null,
+      "pmid": "27958761",
+      "first_author": "Weinstein",
+      "authors_display": "Weinstein, A. et al.",
+      "year": 2016,
+      "title": "Delay discounting, risk-taking, and rejection sensitivity among individuals with Internet and Video Gaming Disorders.",
+      "venue": "Journal of behavioral addictions",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 27,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5370373",
+      "tldr": null,
+      "abstract": "Background and aims There is a previous evidence for impulsivity in individuals with Internet and Video Gaming Disorders. The aim of this study was to examine whether Internet and video game addictions are associated with experiential delay discounting, risk-taking, and sensitivity to social rejection using computerized tasks and questionnaires. Methods Twenty participants (mean age 24, SD = 1.55) with high score on the Problematic Online Gaming Questionnaire (POGQ) were compared with 20 participants (mean age 24.8, SD = 1.34) with low score on the POGQ. They performed on computerized Balloon Analog Risk Task and Experiential Delay discounting Task (EDT), and filled in the sensitivity to social rejection questionnaire. Results Participants with high POGQ scores had lower measures of delay discounting, higher measures of risk-taking, and higher measures of sensitivity to social rejection compared with participants with low POGQ scores. Discussion The results of this study support the previous evidence of risk-taking and provide new evidence for difficulties in delay discounting and sensitivity to social rejection among those who score high on Internet and video games. Conclusions The results suggest that Internet- and video game-addicted individuals seek immediate gratification and cannot wait for later reward. Furthermore, these individuals spend time in the virtual world, where they feel safe, and avoid social interactions presumably due to fears of social rejection.",
+      "score": {
+        "composite": 0.42489828895773146,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Behavior, Addictive",
+        "Risk-Taking",
+        "Social Behavior",
+        "Personality",
+        "Psychiatric Status Rating Scales",
+        "Psychological Tests",
+        "Video Games",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Delay Discounting"
+      ]
+    },
+    {
+      "rank": 25,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_ac2315a1",
+      "doi": "10.1038/npp.2010.47",
+      "url": "https://doi.org/10.1038/npp.2010.47",
+      "openalex_id": null,
+      "pmid": "20375994",
+      "first_author": "Jentsch",
+      "authors_display": "Jentsch, J. et al.",
+      "year": 2010,
+      "title": "Behavioral characteristics and neural mechanisms mediating performance in a rodent version of the Balloon Analog Risk Task.",
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 53,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The tendency for some individuals to partake in high-risk behaviors (eg, substance abuse, gambling, risky sexual activities) is a matter of great public health concern, yet the characteristics and neural bases of this vulnerability are largely unknown. Recent work shows that this susceptibility can be partially predicted by laboratory measures of reward seeking under risk, including the Balloon Analog Risk Task. Rats were trained to respond on two levers: one of which (the 'add lever') increased the size of a potential food reward and a second (the 'cash-out lever') that led to delivery of accrued reward. Crucially, each add-lever response was also associated with a risk that the trial would fail and no reward would be delivered. The relative probabilities that each add-lever press would lead to an addition food pellet or to trial failure (risk) were orthogonally varied. Rats exhibited a pattern of responding characteristic of incentive motivation and risk aversion, with a subset of rats showing traits of high-risk taking and/or suboptimal responding. Neural inactivation studies suggest that the orbitofrontal cortex supports greater reward seeking in the presence or absence of risk, whereas the medial prefrontal cortex is required for optimization of patterns of responding. These findings provide new information about the neural circuitry of decision making under risk and reveal new insights into the biological determinants of risk-taking behaviors that may be useful in developing biomarkers of vulnerability.",
+      "score": {
+        "composite": 0.4244047710571608,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23095241756197657,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05773810439049414,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Animals",
+        "Rats",
+        "Rats, Long-Evans",
+        "Baclofen",
+        "Muscimol",
+        "GABA Agonists",
+        "Drug Combinations",
+        "Analysis of Variance",
+        "Probability",
+        "Behavior, Animal",
+        "Risk-Taking",
+        "Conditioning, Operant",
+        "Reward",
+        "Decision Making",
+        "Male"
+      ]
+    },
+    {
+      "rank": 26,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_c1064a3b",
+      "doi": "10.1177/0269881114550352",
+      "url": "https://doi.org/10.1177/0269881114550352",
+      "openalex_id": null,
+      "pmid": "25237125",
+      "first_author": "Hanson",
+      "authors_display": "Hanson, K. et al.",
+      "year": 2014,
+      "title": "Adolescent marijuana users have elevated risk-taking on the balloon analog risk task.",
+      "venue": "Journal of psychopharmacology (Oxford, England)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 47,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Adolescents who engage in regular marijuana use may have a higher propensity to take unsafe risks despite the possible negative consequences. We compared adolescents with a history of regular marijuana use to non-using teens on a behavioral measure of risk-taking. Given the involvement of the pre-frontal cortex in both risk-taking and executive functioning, we also examined whether risk-taking was associated with measures of executive functioning.<h4>Method</h4>Fifty-eight demographically similar community youth (ages 17-20; 29% female), including 24 marijuana users and 34 non-using controls, completed the computerized Balloon Analog Risk Task (BART; Lejuez et al., 2002) and measures of substance use and executive function. Primary BART outcome measures included total number of popped balloons and average adjusted pumps (mean pumps excluding popped balloons).<h4>Results</h4>Marijuana users had more popped balloons than controls (p<0.05) but did not differ on average adjusted pumps. Using hierarchical multiple regression controlling for age, riskier BART performance (popped balloons) was predictive of past 18-month hard drug use (β=0.30; p<0.05). Having a higher number of popped balloons was also predictive of past 18-month marijuana use (p<0.05), but age was a stronger predictor than marijuana use. Marijuana users performed worse on one test of executive functioning (psychomotor set-shifting, p<0.05), but this did not correlate with risk-taking.<h4>Conclusions</h4>Our finding of elevated risk-taking among marijuana users is consistent with previous research that substance users may have impaired risk processing. Further, our results suggest that risk-taking is not always associated with executive dysfunction, implying the involvement of distinct neural subsystems.",
+      "score": {
+        "composite": 0.4226999336527558,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22413306794435656,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05603326698608914,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Adolescent Behavior",
+        "Marijuana Smoking",
+        "Risk-Taking",
+        "Psychological Tests",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Drug Users",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a9581e92",
+      "doi": "10.1371/journal.pone.0111739",
+      "url": "https://doi.org/10.1371/journal.pone.0111739",
+      "openalex_id": null,
+      "pmid": "25372136",
+      "first_author": "Sohn",
+      "authors_display": "Sohn, S. et al.",
+      "year": 2014,
+      "title": "Multidimensional measures of impulsivity in obsessive-compulsive disorder: cannot wait and stop.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 58,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4221112",
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Although the relationship between obsessive compulsive disorder (OCD) and impulsivity has long been debated, impulsivity has not been systematically examined in clinical samples of OCD. Meanwhile, recent findings suggest that impulsivity is multi-dimensional construct that can be examined through several constructs. Therefore, this study is aimed to evaluate multiple facets of impulsivity in OCD.<h4>Method</h4>The recruitment includes 80 OCD and 76 healthy control participants. Participants completed a test battery comprising three behavioral tasks of stop signal task (SST), delay discounting task (DDT) and balloon analog risk test (BART), and one self-report measure of the Barratt Impulsiveness scale (BIS-11).<h4>Results</h4>OCD subjects showed significantly lower stop signal reaction time of SST reflecting higher action impulsivity and higher delay discounting parameter of DDT suggesting increased choice impulsivity but significantly lower adjusted mean pump of BART implying lower risk taking propensity of BART than healthy control.<h4>Conclusion</h4>Increased Action and choice impulsivity, and decreased risk taking propensities were found in OCD. These findings seem to be consistent with clinical characteristics of OCD such as greater preference for or avoid risky situations (avoidance), inability to wait tension relief may provoke safety behaviors (compulsion) and inability to stop already started behaviors (repetition).",
+      "score": {
+        "composite": 0.4223531939906235,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23607944262916078,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.059019860657290195,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Case-Control Studies",
+        "Impulsive Behavior",
+        "Obsessive-Compulsive Disorder",
+        "Neuropsychological Tests",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b1589981",
+      "doi": "10.1523/jneurosci.0314-07.2007",
+      "url": "https://doi.org/10.1523/jneurosci.0314-07.2007",
+      "openalex_id": null,
+      "pmid": "17553993",
+      "first_author": "Fecteau",
+      "authors_display": "Fecteau, S. et al.",
+      "year": 2007,
+      "title": "Activation of prefrontal cortex by transcranial direct current stimulation reduces appetite for risk during ambiguous decision making.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 269,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "As adult humans, we are continuously faced with decisions in which proper weighing of the risk involved is critical. Excessively risky or overly cautious decision making can both have disastrous real-world consequences. Weighing of risks and benefits toward decision making involves a complex neural network that includes the dorsolateral prefrontal cortex (DLPFC), but its role remains unclear. Repetitive transcranial magnetic stimulation studies have shown that disruption of the DLPFC increases risk-taking behavior. Transcranial direct current stimulation (tDCS) allows upregulation of activity in the DLPFC, and we predicted that it might promote more cautious decision making. Healthy participants received one of the following treatments while they performed the Balloon Analog Risk Task: (1) right anodal/left cathodal DLPFC tDCS, (2) left anodal/right cathodal DLPFC tDCS, or (3) sham tDCS. This experiment revealed that participants receiving either one of the bilateral DLPFC tDCS strategies adopted a risk-averse response style. In a control experiment, we tested whether unilateral DLPFC stimulation (anodal tDCS over the right or left DLPFC with the cathodal electrode over the contralateral supraorbital area) was sufficient to decrease risk-taking behaviors. This experiment showed no difference in decision-making behaviors between the groups of unilateral DLPFC stimulation and sham stimulation. These findings extend the notion that DLPFC activity is critical for adaptive decision making, possibly by suppressing riskier responses. Anodal tDCS over DLPFC by itself did not significantly change risk-taking behaviors; however, when the contralateral DLPFC was modulated with cathodal tCDS, an important decrease in risk taking was observed. Also, the induced cautious decision-making behavior was observed only when activity of both DLPFCs was modulated. The ability to modify risk-taking behavior may be translated into therapeutic interventions for disorders such as drug abuse,",
+      "score": {
+        "composite": 0.4177004004989924,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32413493532930276,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08103373383232569,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Risk-Taking",
+        "Decision Making",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Transcranial Magnetic Stimulation"
+      ]
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2b68c108",
+      "doi": "10.14814/phy2.14827",
+      "url": "https://doi.org/10.14814/phy2.14827",
+      "openalex_id": null,
+      "pmid": "33991443",
+      "first_author": "Frost",
+      "authors_display": "Frost, S. et al.",
+      "year": 2021,
+      "title": "Improvements in sleep-disordered breathing during acclimatization to 3800 m and the impact on cognitive function.",
+      "venue": "Physiological reports",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8123551",
+      "tldr": null,
+      "abstract": "Sojourners to high altitude often experience poor sleep quality due to sleep-disordered breathing. Additionally, multiple aspects of cognitive function are impaired at high altitude. However, the impact of acclimatization on sleep-disordered breathing and whether poor sleep is a major contributor to cognitive impairments at high altitude remains uncertain. We conducted nocturnal actigraphy and polygraphy, as well as daytime cognitive function tests, in 15 participants (33% women) at sea level and over 3 days of partial acclimatization to high altitude (3800 m). Our goal was to determine if sleep-disordered breathing improved over time and if sleep-disordered breathing was associated with cognitive function. The apnea-hypopnea index and oxygen desaturation index increased on night 1 (adj. p = 0.026 and adj. p = 0.026, respectively), but both improved over the subsequent 2 nights. These measures were matched by poorer self-reported sleep quality on the Stanford Sleepiness Scale and PROMIS questionnaires following 1 night at high altitude (adj. p = 0.027 and adj. p = 0.022, respectively). The reaction time on the psychomotor vigilance task was slower at high altitude and did not improve (SL: 199 ± 27, ALT1: 224 ± 33, ALT2: 216 ± 41, ALT3: 212 ± 27 ms). The reaction times on the balloon analog risk task decreased at high altitude (SL: 474 ± 235, ALT1: 375 ± 159, ALT2: 291 ± 102, ALT3: 267 ± 90 ms), perhaps indicating increased risk-taking behavior. Finally, multiple cognitive function measures were associated with sleep-disordered breathing and measures of subjective sleep quality, rather than low daytime arterial oxygen saturation. These data indicate that sleep-disordered breathing at moderately high altitude improves with partial acclimatization and that some aspects of cognitive performance in unacclimatized sojourners may be impacted by poor sleep rather than hypoxemia alone.",
+      "score": {
+        "composite": 0.4137927398794688,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Sleep Apnea Syndromes",
+        "Altitude Sickness",
+        "Cognition",
+        "Altitude",
+        "Acclimatization",
+        "Oxygen Consumption",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_8d2202a4",
+      "doi": "10.1093/jat/bkv012",
+      "url": "https://doi.org/10.1093/jat/bkv012",
+      "openalex_id": null,
+      "pmid": "25745105",
+      "first_author": "Desrosiers",
+      "authors_display": "Desrosiers, N. et al.",
+      "year": 2015,
+      "title": "Smoked cannabis' psychomotor and neurocognitive effects in occasional and frequent smokers.",
+      "venue": "Journal of analytical toxicology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, N.I.H., Intramural",
+        "Clinical Trial",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 95,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "https://academic.oup.com/jat/article-pdf/39/4/251/17157170/bkv012.pdf",
+      "tldr": null,
+      "abstract": "Δ9-Tetrahydrocannabinol (THC), the primary psychoactive constituent in cannabis, impairs psychomotor performance, cognition and driving ability; thus, driving under the influence of cannabis is a public safety concern. We documented cannabis' psychomotor, neurocognitive, subjective and physiological effects in occasional and frequent smokers to investigate potential differences between these smokers. Fourteen frequent (≥4x/week) and 11 occasional (<2x/week) cannabis smokers entered a secure research unit ∼19 h prior to smoking one 6.8% THC cigarette. Cognitive and psychomotor performance was evaluated with the critical tracking (CTT), divided attention (DAT), n-back (working memory) and Balloon Analog Risk (BART) (risk-taking) tasks at -1.75, 1.5, 3.5, 5.5 and 22.5 h after starting smoking. GLM (General Linear Model) repeated measures ANOVA was utilized to compare scores. Occasional smokers had significantly more difficulty compensating for CTT tracking error compared with frequent smokers 1.5 h after smoking. Divided attention performance declined significantly especially in occasional smokers, with session × group effects for tracking error, hits, false alarms and reaction time. Cannabis smoking did not elicit session × group effects on the n-back or BART. Controlled cannabis smoking impaired psychomotor function, more so in occasional smokers, suggesting some tolerance to psychomotor impairment in frequent users. These data have implications for cannabis-associated impairment in driving under the influence of cannabis cases.",
+      "score": {
+        "composite": 0.39939948182558366,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26426459396900137,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06606614849225034,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Marijuana Smoking",
+        "Impulsive Behavior",
+        "Risk-Taking",
+        "Cognition",
+        "Memory, Short-Term",
+        "Psychomotor Performance",
+        "Blood Pressure",
+        "Heart Rate",
+        "Adolescent",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Spatial Memory"
+      ]
+    },
+    {
+      "rank": 31,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_0a57685e",
+      "doi": "10.2196/10292",
+      "url": "https://doi.org/10.2196/10292",
+      "openalex_id": null,
+      "pmid": "29925497",
+      "first_author": "Zhu",
+      "authors_display": "Zhu, Y. et al.",
+      "year": 2018,
+      "title": "A Newly Designed Mobile-Based Computerized Cognitive Addiction Therapy App for the Improvement of Cognition Impairments and Risk Decision Making in Methamphetamine Use Disorder: Randomized Controlled Trial.",
+      "venue": "JMIR mHealth and uHealth",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants,patients)"
+      ],
+      "citation_count": 33,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://jmir.org/api/download?alt_name=mhealth_v6i6e10292_app1.pdf",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Cognitive rehabilitation therapy has been found to improve cognitive deficits and impulse control problems in methamphetamine use disorder (MUD). However, there is limited research regarding this therapy's feasibility when using mobile-based health technologies in supporting recovery from MUD in China.<h4>Objective</h4>The main aim of this study was to test whether 4 weeks of a newly designed computerized cognitive addiction therapy (CCAT) app can improve cognitive impairments, eliminate drug-related attention bias, and attenuate risk decision-making behaviors in participants with MUD.<h4>Methods</h4>Forty MUD participants were assigned randomly to either the CCAT group (n=20), who received 4 weeks of CCAT plus regular detoxification treatment as usual, or the control group (n=20), who only received the regular detoxification treatment as usual, in drug rehabilitation centers in Shanghai. The CCAT was designed by combine methamphetamine use-related picture stimuli with cognitive training with the aim of improving cognitive function and eliminating drug-related attention bias. The CogState Battery, Delay Discounting Task (DDT), Iowa Gambling Task (IGT), and Balloon Analog Risk Task (BART) were administered face-to-face to all participants before and after CCAT interventions.<h4>Results</h4>Forty male patients were recruited. The mean age was 32.70 (SD 5.27) years in the CCAT group and mean 35.05 (SD 8.02) years in the control group. Compared to the control group, CCAT improved working memory in the CCAT group (P=.01). Group×time interactions were observed among DDT, IGT, and BART tasks, with rates of discounting delayed rewards, IGT, and BART scores (P<.001) being reduced among those who received CCAT, whereas no changes were found in the control group.<h4>Conclusions</h4>The newly designed CCAT can help to improve cognitive impairment and impulsive control in MUD. Further study is needed to understand the underlying brain mechanisms of the cogniti",
+      "score": {
+        "composite": 0.3977085785199295,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 32,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_cc3cb689",
+      "doi": "10.3390/brainsci9100248",
+      "url": "https://doi.org/10.3390/brainsci9100248",
+      "openalex_id": null,
+      "pmid": "31554273",
+      "first_author": "Giustiniani",
+      "authors_display": "Giustiniani, J. et al.",
+      "year": 2019,
+      "title": "Behavioral and Electrophysiological Arguments in Favor of a Relationship between Impulsivity, Risk-Taking, and Success on the Iowa Gambling Task.",
+      "venue": "Brain sciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/2076-3425/9/10/248/pdf?version=1569322987",
+      "tldr": null,
+      "abstract": "The aim of the present study was to investigate the relationship between trait impulsivity, risk-taking, and decision-making performance. We recruited 20 healthy participants who performed the Iowa Gambling Task (IGT) and the Balloon Analog Risk Task (BART) to measure decision-making and risk-taking. The impulsivity was measured by the Barratt Impulsiveness Scale. Resting-state neural activity was recorded to explore whether brain oscillatory rhythms provide important information about the dispositional trait of impulsivity. We found a significant correlation between the ability to develop a successful strategy and the propensity to take more risks in the first trials of the BART. Risk-taking was negatively correlated with cognitive impulsivity in participants who were unable to develop a successful strategy. Neither risk-taking nor decision-making was correlated with cortical asymmetry. In a more exploratory approach, the group was sub-divided in function of participants' performances at the IGT. We found that the group who developed a successful strategy at the IGT was more prone to risk, whereas the group who failed showed a greater cognitive impulsivity. These results emphasize the need for individuals to explore their environment to develop a successful strategy in uncertain situations, which may not be possible without taking risks.",
+      "score": {
+        "composite": 0.39379273987946883,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 33,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_1cc3cbb7",
+      "doi": "10.1097/adm.0000000000000129",
+      "url": "https://doi.org/10.1097/adm.0000000000000129",
+      "openalex_id": null,
+      "pmid": "25918968",
+      "first_author": "Krmpotich",
+      "authors_display": "Krmpotich, T. et al.",
+      "year": 2015,
+      "title": "Impaired Decision-Making, Higher Impulsivity, and Drug Severity in Substance Dependence and Pathological Gambling.",
+      "venue": "Journal of addiction medicine",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 43,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objectives</h4>Substance use disorder is characterized by impaired decision making, impulsivity, and risk taking. Pathological gambling shares many of these characteristics, and having both diagnoses may be associated with greater problems than either diagnosis alone. We investigated whether among substance-dependent individuals, comorbid pathological gambling would be associated with worse decision making, greater impulsivity, risk taking, and drug severity.<h4>Methods</h4>Ninety-six substance-dependent individuals were recruited from a residential treatment program and divided into 1 of the 2 groups depending on whether they met Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition, criteria for pathological gambling (SDPG, n = 26) or not (SD, n = 70). Ninety-two controls were recruited from the community. Participants completed a decision-making task (modified Iowa Gambling Task), measures of impulsivity (Barratt Impulsivity Scale and Delay Discounting), and risk taking (Balloon Analog Risk Task). Decision making was analyzed using a computational model. We tested for group differences using analysis of covariance or Kruskal-Wallis and appropriate post-hoc tests.<h4>Results</h4>The groups differed in decision-making parameters (P < 0.001) and self-reported impulsivity (P < 0.001). All post-hoc comparisons were significant on these measures, and indicated stepwise changes in controls, followed by SD, followed by SDPG, with SDPG performing worse on decision making and being more impulsive. Compared with SD, SDPG had greater drug severity (P < 0.001). No group differences were observed in delay discounting or risk taking.<h4>Conclusions</h4>Compared with individuals with substance dependence without pathological gambling, those with both disorders demonstrated worse decision making and significantly more drug-related symptoms. When evaluating patients with substance dependence, clinicians should consider diagnostic assessments for gambling, as th",
+      "score": {
+        "composite": 0.37144049718744454,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21909532208311155,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05477383052077789,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Substance-Related Disorders",
+        "Impulsive Behavior",
+        "Risk-Taking",
+        "Gambling",
+        "Decision Making",
+        "Comorbidity",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 34,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_6b914ead",
+      "doi": "10.1097/fbp.0b013e32833113a3",
+      "url": "https://doi.org/10.1097/fbp.0b013e32833113a3",
+      "openalex_id": null,
+      "pmid": "19724194",
+      "first_author": "Meda",
+      "authors_display": "Meda, S. et al.",
+      "year": 2009,
+      "title": "Investigating the behavioral and self-report constructs of impulsivity domains using principal component analysis.",
+      "venue": "Behavioural pharmacology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 145,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Impulsivity, often defined as a human behavior characterized by the inclination of an individual to act on urge rather than thought, with diminished regard to consequences, encompasses a range of maladaptive behaviors, which are in turn affected by distinct neural systems. Congruent with the above definition, behavioral studies have consistently shown that the underlying construct of impulsivity is multidimensional in nature. However, research to date has been inconclusive regarding the different domains or constructs that constitute this behavior. In addition there is also no clear consensus as to whether self-report and laboratory based measures of impulsivity measure the same or different domains. This study aimed to: (i) characterize the underlying multidimensional construct of impulsivity using a sample with varying degrees of putative impulsivity related to substance misuse, including subjects who were at-risk of substance use or addicted (ARA), and (ii) assess relationships between self-report and laboratory measures of impulsivity, using a principal component-based factor analysis. In addition, our supplementary goal was to evaluate the structural constructs of impulsivity within each group separately (healthy and ARA). We used five self-report measures (Behavioral Inhibition System/Behavioral Activation System, Barratt Impulsivity Scale-11, Padua Inventory, Zuckerman Sensation Seeking Scale, and Sensitivity to Punishment and Sensitivity to Reward Questionnaire) and two computer-based laboratory tasks (Balloon Analog Risk Task and the Experiential Discounting Task) to measure the aspects of impulsivity in a total of 176 adult subjects. Subjects included healthy controls (n = 89), nonalcoholic subjects with family histories of alcoholism (family history positive; n = 36) and both former (n = 20) and current (n = 31) cocaine users. Subjects with a family history of alcoholism and cocaine abusers were grouped together as 'at-risk/addicted' (ARA) to evaluate our",
+      "score": {
+        "composite": 0.32880132451599764,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28853863139732394,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.2,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07213465784933099,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.03,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Substance-Related Disorders",
+        "Behavior",
+        "Impulsive Behavior",
+        "Risk-Taking",
+        "Self Concept",
+        "Psychometrics",
+        "Principal Component Analysis",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Surveys and Questionnaires"
+      ]
+    },
+    {
+      "rank": 35,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_7a8547a3",
+      "doi": "10.1159/000207501",
+      "url": "https://doi.org/10.1159/000207501",
+      "openalex_id": null,
+      "pmid": "19372694",
+      "first_author": "Crowley",
+      "authors_display": "Crowley, M. et al.",
+      "year": 2009,
+      "title": "Risk-taking and the feedback negativity response to loss among at-risk adolescents.",
+      "venue": "Developmental neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 50,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Event-related brain potentials were examined in 32 adolescents (50% female) from a high-risk sample, who were exposed to cocaine and other drugs prenatally. Adolescents were selected for extreme high- or low-risk behavior on the Balloon Analog Risk Task, a measure of real-world risk-taking propensity. The feedback error-related negativity (fERN), an event-related potential (ERP) that occurs when an expected reward does not occur, was examined in a game in which choices lead to monetary gains and losses with feedback delayed 1 or 2 s. The fERN was clearly visible in the fronto-central scalp region in this adolescent sample. Feedback type, feedback delay, risk status, and sex were all associated with fERN variability. Monetary feedback also elicited a P300-like component, moderated by delay and sex. Delaying reward feedback may provide a means for studying complementary functioning of dopamine and norepinephrine systems.",
+      "score": {
+        "composite": 0.31357743797521265,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22764308523418395,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.2,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.056910771308545986,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.03,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Risk",
+        "Feedback, Psychological",
+        "Risk-Taking",
+        "Motivation",
+        "Reward",
+        "Neuropsychological Tests",
+        "Psychometrics",
+        "Evoked Potentials",
+        "Event-Related Potentials, P300",
+        "Sex Characteristics",
+        "Adolescent",
+        "Female",
+        "Male"
+      ]
+    }
+  ]
+}

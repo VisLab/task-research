@@ -1,0 +1,545 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_contextual_cueing",
+    "name": "Contextual Cueing Task",
+    "aliases": [
+      "CC Task"
+    ],
+    "category_id": "implicit_and_statistical_learning",
+    "short_definition": "Visual search in which some distractor configurations repeat across blocks; faster search on repeated configurations indexes implicit spatial context learning.",
+    "description": "Participants perform visual search for a T-shaped target among L-shaped distractors. Critically, half the search displays repeat across blocks (with the target always in the same location within a given repeated display), while the other half are newly generated on each block. Search becomes faster for repeated displays over blocks, even though participants cannot consciously recognize which displays have been repeated. Chun and Jiang (1998) demonstrated that this contextual cueing effect reflects implicit learning and memory for spatial configurations that guide spatial attention to the likely target location. The paradigm has become a standard tool for studying the interface between attention, implicit learning, and long-term memory.",
+    "inclusion_test": {
+      "procedure": "Visual search through letter arrays; some spatial configurations repeat across blocks while others are novel. Participants find and respond to a target embedded in the display.",
+      "manipulation": "Repeated vs. novel display configurations; number of repetitions across blocks; explicit awareness of repetition.",
+      "measurement": "RT advantage for repeated over novel configurations (contextual cueing effect); learning curve across blocks; recognition test for repeated displays."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:36:39",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 14
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Chun 1998 — Contextual Cueing: Implicit Learning and Memory of Visual Context Guides Spat… (Cognitive Psychology, historical, 1k×)",
+      "doi": "10.1006/cogp.1998.0681",
+      "pub_id": "pub_aefe83b8",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.6099458608729404,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4397834434917619,
+            "venue": 1.0,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10994586087294048,
+            "venue": 0.2,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1998,
+      "venue": "Cognitive Psychology",
+      "citation_count": 1989,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Simon 2011 — Dopamine transporter genotype predicts implicit sequence learning. (Behavioural brain research, foundational, 27×)",
+      "doi": "10.1016/j.bbr.2010.08.043",
+      "pub_id": "pub_9278531c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4632316222910648,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Behavioural brain research",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Weiss 2021 — Eye Tracking Supported Human Factors Testing Improving Patient Training. (Journal of medical systems, recent_primary, 2×)",
+      "doi": "10.1007/s10916-021-01729-4",
+      "pub_id": "pub_df5c261c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4509017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of medical systems",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Zang 2021 — Task-Irrelevant Context Learned Under Rapid Display Presentation: Selective A… (Frontiers in psychology, recent_primary, 2×)",
+      "doi": "10.3389/fpsyg.2021.675848",
+      "pub_id": "pub_42a755af",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4309017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Frontiers in psychology",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Negash 2015 — Relationship of contextual cueing and hippocampal volume in amnestic mild cog… (Journal of the International Neu…, foundational, 13×)",
+      "doi": "10.1017/s1355617715000223",
+      "pub_id": "pub_b1f8f934",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4131987407849036,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Journal of the International Neuropsychological Society : JINS",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Garrett 2014 — Predicting clinical outcome using brain activation associated with set-shifti… (Journal of psychiatric research, foundational, 22×)",
+      "doi": "10.1016/j.jpsychires.2014.06.013",
+      "pub_id": "pub_8ff4f175",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4103843610908988,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Journal of psychiatric research",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Kunar 2008 — Time to Guide: Evidence for Delayed Attentional Guidance in Contextual Cueing. (Visual cognition, foundational, 41×)",
+      "doi": "10.1080/13506280701751224",
+      "pub_id": "pub_caa897f5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3991004817463479,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.13333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.02,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "Visual cognition",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Gröpel 2022 — Provider Visual Attention Correlates With the Quality of Pediatric Resuscitat… (Frontiers in pediatrics, recent_primary, 5×)",
+      "doi": "10.3389/fped.2022.867304",
+      "pub_id": "pub_810ad0f1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3909346224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Frontiers in pediatrics",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Schroeder 2015 — Emotional Distraction and Bodily Reaction: Modulation of Autonomous Responses… (Frontiers in cellular neuroscience, foundational, 7×)",
+      "doi": "10.3389/fncel.2015.00482",
+      "pub_id": "pub_7dcc9721",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3650986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Frontiers in cellular neuroscience",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Atkinson 2026 — Implicit learning across varying temporal scales in individuals with and with… (Journal of affective disorders, recent_primary, 0×)",
+      "doi": "10.1016/j.jad.2025.120728",
+      "pub_id": "pub_bd2e57f0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.36,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2026,
+      "venue": "Journal of affective disorders",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Manelis 2012 — Procedural learning and associative memory mechanisms contribute to contextua… (Learning & memory (Cold Spring H…, foundational, 28×)",
+      "doi": "10.1101/lm.025973.112",
+      "pub_id": "pub_98a17a5e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.353739547683298,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Learning & memory (Cold Spring Harbor, N.Y.)",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Greene 2007 — Hippocampal differentiation without recognition: an fMRI analysis of the cont… (Learning & memory (Cold Spring H…, foundational, 78×)",
+      "doi": "10.1101/lm.609807",
+      "pub_id": "pub_44767200",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3182450852872811,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2529803411491245,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.06666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06324508528728112,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.01,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2007,
+      "venue": "Learning & memory (Cold Spring Harbor, N.Y.)",
+      "citation_count": 78,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Meyer 2013 — Acute stress differentially affects spatial configuration learning in high an… (European journal of psychotrauma…, foundational, 25×)",
+      "doi": "10.3402/ejpt.v4i0.19854",
+      "pub_id": "pub_85a413c9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.30215895471896337,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "European journal of psychotraumatology",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Bennett 2008 — Two forms of implicit learning in young adults with dyslexia. (Annals of the New York Academy o…, foundational, 30×)",
+      "doi": "10.1196/annals.1416.006",
+      "pub_id": "pub_7b34afa8",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.2747048645403726,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.02,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "Annals of the New York Academy of Sciences",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

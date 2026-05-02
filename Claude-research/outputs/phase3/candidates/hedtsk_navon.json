@@ -1,0 +1,3619 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:28:33",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_navon",
+    "name": "Navon Task",
+    "aliases": [
+      "Global-Local Task",
+      "Navon Letters"
+    ],
+    "category_id": "selective_and_sustained_attention",
+    "short_definition": "Hierarchical letters in which large letters are composed of small ones; RT differences between global and local identification index attentional scope.",
+    "description": "The Navon Task investigates hierarchical processing in vision using compound stimuli—large (global) letters composed of smaller (local) letters (e.g., a large \"H\" made of small \"S\" letters). Participants identify either the global or local letter depending on instruction. The robust finding of global precedence shows faster identification of global than local forms, with global-to-local interference exceeding local-to-global interference. The task dissociates dorsal/ventral visual stream contributions and is sensitive to hemispheric specialization (left hemisphere for local, right for global processing).",
+    "inclusion_test": {
+      "procedure": "A large letter (global) composed of small letters (local) is presented; participants identify the letter at the designated level (global or local).",
+      "manipulation": "Target level (global vs. local); congruency (same vs. different letter at two levels); exposure duration; visual field.",
+      "measurement": "RT and accuracy; global precedence effect (faster global); asymmetric interference (global disrupts local more than reverse); congruency effect."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 49,
+      "picked": 30,
+      "reserve": 17,
+      "excluded": 2,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 2
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_a4c769ed",
+      "doi": "10.1016/0010-0285(77)90012-3",
+      "url": "https://doi.org/10.1016/0010-0285(77)90012-3",
+      "openalex_id": "https://openalex.org/W2066380143",
+      "pmid": null,
+      "first_author": "Navon",
+      "authors_display": "David Navon",
+      "year": 1977,
+      "title": "Forest before trees: The precedence of global features in visual perception",
+      "venue": "Cognitive Psychology",
+      "venue_tier": "flagship",
+      "publisher": "Elsevier BV",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 4005,
+      "influential_citation_count": null,
+      "fwci": 7.7607,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.7200729911714713,
+        "breakdown": {
+          "raw": {
+            "citations": 0.48029196468588503,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12007299117147126,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9c4da8db",
+      "doi": "10.1038/s41598-021-87933-1",
+      "url": "https://doi.org/10.1038/s41598-021-87933-1",
+      "openalex_id": null,
+      "pmid": "33875735",
+      "first_author": "Wong",
+      "authors_display": "Wong, H. et al.",
+      "year": 2021,
+      "title": "The other-race effect and holistic processing across racial groups.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 23,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8055977",
+      "tldr": null,
+      "abstract": "It is widely accepted that holistic processing is important for face perception. However, it remains unclear whether the other-race effect (ORE) (i.e. superior recognition for own-race faces) arises from reduced holistic processing of other-race faces. To address this issue, we adopted a cross-cultural design where Malaysian Chinese, African, European Caucasian and Australian Caucasian participants performed four different tasks: (1) yes-no face recognition, (2) composite, (3) whole-part and (4) global-local tasks. Each face task was completed with unfamiliar own- and other-race faces. Results showed a pronounced ORE in the face recognition task. Both composite-face and whole-part effects were found; however, these holistic effects did not appear to be stronger for other-race faces than for own-race faces. In the global-local task, Malaysian Chinese and African participants demonstrated a stronger global processing bias compared to both European- and Australian-Caucasian participants. Importantly, we found little or no cross-task correlation between any of the holistic processing measures and face recognition ability. Overall, our findings cast doubt on the prevailing account that the ORE in face recognition is due to reduced holistic processing in other-race faces. Further studies should adopt an interactionist approach taking into account cultural, motivational, and socio-cognitive factors.",
+      "score": {
+        "composite": 0.5793337188132612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Pattern Recognition, Visual",
+        "Visual Perception",
+        "Task Performance and Analysis",
+        "Cross-Cultural Comparison",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Facial Recognition",
+        "Recognition, Psychology",
+        "Ethnicity",
+        "Asian People",
+        "White People",
+        "Black People"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_f4d6c604",
+      "doi": "10.1038/srep26289",
+      "url": "https://doi.org/10.1038/srep26289",
+      "openalex_id": null,
+      "pmid": "27222225",
+      "first_author": "Chmielewski",
+      "authors_display": "Chmielewski, W., & Beste, C.",
+      "year": 2016,
+      "title": "Perceptual conflict during sensorimotor integration processes - a neurophysiological study in response inhibition.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 15,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4879540",
+      "tldr": null,
+      "abstract": "A multitude of sensory inputs needs to be processed during sensorimotor integration. A crucial factor for detecting relevant information is its complexity, since information content can be conflicting at a perceptual level. This may be central to executive control processes, such as response inhibition. This EEG study aims to investigate the system neurophysiological mechanisms behind effects of perceptual conflict on response inhibition. We systematically modulated perceptual conflict by integrating a Global-local task with a Go/Nogo paradigm. The results show that conflicting perceptual information, in comparison to non-conflicting perceptual information, impairs response inhibition performance. This effect was evident regardless of whether the relevant information for response inhibition is displayed on the global, or local perceptual level. The neurophysiological data suggests that early perceptual/ attentional processing stages do not underlie these modulations. Rather, processes at the response selection level (P3), play a role in changed response inhibition performance. This conflict-related impairment of inhibitory processes is associated with activation differences in (inferior) parietal areas (BA7 and BA40) and not as commonly found in the medial prefrontal areas. This suggests that various functional neuroanatomical structures may mediate response inhibition and that the functional neuroanatomical structures involved depend on the complexity of sensory integration processes.",
+      "score": {
+        "composite": 0.5234648593579782,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Brain Mapping",
+        "Cognition",
+        "Perception",
+        "Task Performance and Analysis",
+        "Psychomotor Performance",
+        "Adult",
+        "Female",
+        "Male",
+        "Nervous System Physiological Phenomena",
+        "Sensory Gating",
+        "Young Adult",
+        "Executive Function",
+        "Sensorimotor Cortex",
+        "Conflict, Psychological"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c850c495",
+      "doi": "10.3758/s13414-019-01800-w",
+      "url": "https://doi.org/10.3758/s13414-019-01800-w",
+      "openalex_id": null,
+      "pmid": "31290133",
+      "first_author": "Marsh",
+      "authors_display": "Marsh, J. et al.",
+      "year": 2020,
+      "title": "How the deployment of visual attention modulates auditory distraction.",
+      "venue": "Attention, perception & psychophysics",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6994418",
+      "tldr": null,
+      "abstract": "Classically, attentional selectivity has been conceptualized as a passive by-product of capacity limits on stimulus processing. Here, we examine the role of more active cognitive control processes in attentional selectivity, focusing on how distraction from task-irrelevant sound is modulated by levels of task engagement in a visually presented short-term memory task. Task engagement was varied by manipulating the load involved in the encoding of the (visually presented) to-be-remembered items. Using a list of Navon letters (where a large letter is composed of smaller, different-identity letters), participants were oriented to attend and serially recall the list of large letters (low encoding load) or to attend and serially recall the list of small letters (high encoding load). Attentional capture by a single deviant noise burst within a task-irrelevant tone sequence (the deviation effect) was eliminated under high encoding load (Experiment 1). However, distraction from a continuously changing sequence of tones (the changing-state effect) was immune to the influence of load (Experiment 2). This dissociation in the amenability of the deviation effect and the changing-state effect to cognitive control supports a duplex-mechanism over a unitary-mechanism account of auditory distraction in which the deviation effect is due to attentional capture whereas the changing-state effect reflects direct interference between the processing of the sound and processes involved in the focal task. That the changing-state effect survives high encoding load also goes against an alternative explanation of the attenuation of the deviation effect under high load in terms of the depletion of a limited perceptual resource that would result in diminished auditory processing.",
+      "score": {
+        "composite": 0.5204594065461354,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Memory, Short-Term",
+        "Mental Recall",
+        "Auditory Perception",
+        "Perceptual Masking",
+        "Visual Perception",
+        "Task Performance and Analysis",
+        "Attention",
+        "Noise",
+        "Sound",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_cabaaf67",
+      "doi": "10.1038/srep19136",
+      "url": "https://doi.org/10.1038/srep19136",
+      "openalex_id": null,
+      "pmid": "26754087",
+      "first_author": "Noguchi",
+      "authors_display": "Noguchi, Y., & Tomoike, K.",
+      "year": 2016,
+      "title": "Strongly-motivated positive affects induce faster responses to local than global information of visual stimuli: an approach using large-size Navon letters.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4709574",
+      "tldr": null,
+      "abstract": "Recent studies argue that strongly-motivated positive emotions (e.g. desire) narrow a scope of attention. This argument is mainly based on an observation that, while humans normally respond faster to global than local information of a visual stimulus (global advantage), positive affects eliminated the global advantage by selectively speeding responses to local (but not global) information. In other words, narrowing of attentional scope was indirectly evidenced by the elimination of global advantage (the same speed of processing between global and local information). No study has directly shown that strongly-motivated positive affects induce faster responses to local than global information while excluding a bias for global information (global advantage) in a baseline (emotionally-neutral) condition. In the present study, we addressed this issue by eliminating the global advantage in a baseline (neutral) state. Induction of positive affects under this state resulted in faster responses to local than global information. Our results provided direct evidence that positive affects in high motivational intensity narrow a scope of attention.",
+      "score": {
+        "composite": 0.5114991926120757,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Analysis of Variance",
+        "Reproducibility of Results",
+        "Photic Stimulation",
+        "Affect",
+        "Motivation",
+        "Reaction Time",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_02d0f455",
+      "doi": "10.3758/s13414-020-02093-0",
+      "url": "https://doi.org/10.3758/s13414-020-02093-0",
+      "openalex_id": null,
+      "pmid": "32686062",
+      "first_author": "Boccia",
+      "authors_display": "Boccia, M. et al.",
+      "year": 2020,
+      "title": "The detail is more pleasant than the whole: Global and local prime affect esthetic appreciation of artworks showing whole-part ambiguity.",
+      "venue": "Attention, perception & psychophysics",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.3758/s13414-020-02093-0.pdf",
+      "tldr": null,
+      "abstract": "Esthetic experience is the result of the coordination of different cognitive processes. It has been widely reported that top-down processes of orienting of attention interact with bottom-up perceptual facilitation occurring during esthetic experience of artworks. Here we use whole-part ambiguity as a tool to test the effect of global and local prime on esthetic appreciation of complex visual artworks. To this aim 139 healthy young individuals completed an esthetic judgment of Arcimboldo's ambiguous artworks, which were preceded by a local or global prime. Their perceptual style was also assessed using a Navon task. We found that local prime significantly enhanced esthetic appreciation of ambiguous portraits. Also, we found that prime level interacted with individual's perceptual style: participants showing local perceptual style liked less ambiguous portraits when they were preceded by global prime. Overall, the present findings shed some light on the processes involved in esthetic experience, pointing towards a pivotal role of re-direction of attention towards perceptual features of the artworks and its interaction with individual factors, such as perceptual style.",
+      "score": {
+        "composite": 0.5033990963456557,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Emotions",
+        "Visual Perception",
+        "Esthetics",
+        "Judgment"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_42964b50",
+      "doi": "10.1016/j.neuroimage.2010.01.089",
+      "url": "https://doi.org/10.1016/j.neuroimage.2010.01.089",
+      "openalex_id": null,
+      "pmid": "20123030",
+      "first_author": "Hedden",
+      "authors_display": "Hedden, T., & Gabrieli, J.",
+      "year": 2010,
+      "title": "Shared and selective neural correlates of inhibition, facilitation, and shifting processes during executive control.",
+      "venue": "NeuroImage",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 104,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "A network of prefrontal and parietal regions has been implicated in executive control processes. However, the extent to which individual regions within this network are engaged in component control processes, such as inhibition of task-irrelevant stimulus attributes or shifting (switching) between attentional foci, remains controversial. Participants (N=17) underwent functional magnetic resonance imaging while performing a global-local task in which the global and local levels could facilitate or interfere with one another. Stimuli were presented in blocks in which participants either constantly shifted between the global and local levels, or consistently responded to one level only. Activations related to inhibition and shifting processes were observed in a large network of bilateral prefrontal, parietal, and basal ganglia regions. Region of interest analyses were used to classify each region within this network as being common to inhibition and shifting, or preferential to one component process. Several regions were classified as being preferential to inhibition, including regions within the dorsolateral and ventrolateral prefrontal cortex, the parietal lobes, and the temporal-parietal junction. A limited set of regions in the parietal lobes and left dorsolateral prefrontal cortex were classified as preferential to shifting. There was a very large set of regions displaying activation common to both inhibition and shifting processes, including regions within the dorsolateral prefrontal cortex, anterior cingulate, and basal ganglia. Several of these common regions were also involved during facilitation, suggesting that they are responsive to the number of task-salient channels of information, rather than purely to demands on control processes.",
+      "score": {
+        "composite": 0.4906965630153516,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2694529187280729,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06736322968201823,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Basal Ganglia",
+        "Prefrontal Cortex",
+        "Parietal Lobe",
+        "Neural Pathways",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Attention",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Adolescent",
+        "Adult",
+        "Young Adult",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_3e87b025",
+      "doi": "10.1007/s00426-015-0727-0",
+      "url": "https://doi.org/10.1007/s00426-015-0727-0",
+      "openalex_id": null,
+      "pmid": "26612201",
+      "first_author": "Colzato",
+      "authors_display": "Colzato, L. et al.",
+      "year": 2017,
+      "title": "More attentional focusing through binaural beats: evidence from the global-local task.",
+      "venue": "Psychological research",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 45,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5233742",
+      "tldr": null,
+      "abstract": "A recent study showed that binaural beats have an impact on the efficiency of allocating attention over time. We were interested to see whether this impact affects attentional focusing or, even further, the top-down control over irrelevant information. Healthy adults listened to gamma-frequency (40 Hz) binaural beats, which are assumed to increase attentional concentration, or a constant tone of 340 Hz (control condition) for 3 min before and during a global-local task. While the size of the congruency effect (indicating the failure to suppress task-irrelevant information) was unaffected by the binaural beats, the global-precedence effect (reflecting attentional focusing) was considerably smaller after gamma-frequency binaural beats than after the control condition. Our findings suggest that high-frequency binaural beats bias the individual attentional processing style towards a reduced spotlight of attention.",
+      "score": {
+        "composite": 0.48875057593039334,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22166897038824016,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05541724259706004,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Acoustic Stimulation",
+        "Auditory Perception",
+        "Attention",
+        "Psychoacoustics",
+        "Adult",
+        "Female",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a1a05712",
+      "doi": "10.1093/scan/nsm003",
+      "url": "https://doi.org/10.1093/scan/nsm003",
+      "openalex_id": null,
+      "pmid": "18985129",
+      "first_author": "Duchaine",
+      "authors_display": "Duchaine, B. et al.",
+      "year": 2007,
+      "title": "No global processing deficit in the Navon task in 14 developmental prosopagnosics.",
+      "venue": "Social cognitive and affective neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 115,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Faces are represented in a more configural or holistic manner than other objects. Substantial evidence indicates that this representation results from face-specific mechanisms, but some have argued that it is produced by configural mechanisms that can be applied to many objects including words. The face-specific hypothesis predicts that non-face configural processes will often be normal in prosopagnosic subjects, whereas the domain-general configural hypothesis predicts they will be deficient on all configural tasks. Although the weight of the evidence favors the face-specific hypothesis, a recent study reopened this issue when it was found that three out of five developmental prosopagnosics showed a larger local processing bias than controls in a global-local task (i.e. a Navon task). To examine this issue more thoroughly we tested a significantly larger sample of prosopagnosics (14 participants) who had severe face memory and face perception deficits. In contrast to the previous report, the developmental prosopagnosics performed normally in the global-local task. Like controls, they showed a typical global advantage and typical global-to-local consistency effects. The results demonstrate that the configural processing required by the Navon task is dissociable from face configural processing.",
+      "score": {
+        "composite": 0.4854719773622871,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2752212427824818,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06880531069562044,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Prosopagnosia",
+        "Facial Expression",
+        "Severity of Illness Index",
+        "Pattern Recognition, Visual",
+        "Neuropsychological Tests",
+        "Adolescent",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_7caa242c",
+      "doi": "10.3389/fpsyg.2017.00674",
+      "url": "https://doi.org/10.3389/fpsyg.2017.00674",
+      "openalex_id": null,
+      "pmid": "28512442",
+      "first_author": "Gerván",
+      "authors_display": "Gerván, P. et al.",
+      "year": 2017,
+      "title": "Posterior-Anterior Brain Maturation Reflected in Perceptual, Motor and Cognitive Performance.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subjects)"
+      ],
+      "citation_count": 24,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5411422",
+      "tldr": null,
+      "abstract": "Based on several postmortem morphometric and <i>in vivo</i> imaging studies it has been postulated that brain maturation roughly follows a caudal to rostral direction. In this study, we linked this maturational pattern to psychological function employing a series of well-established behavioral tasks. We addressed three distinct functions and brain regions with a perceptual (contour integration, CI), motor (finger tapping, FT), and executive control (Navon global-local) task. Our purpose was to investigate basic visual integration functions relying on primary visual cortex (V1) in CI; motor coordination function related to primary motor cortex (M1) in FT, and the executive control component, switching, related to the dorsolateral prefrontal region of the brain in the Navon task. 122 volunteer subjects were recruited to participate in this study between the ages of 10 and 20 (females <i>n</i> = 63, males <i>n</i> = 59). Employing conventional statistical methods, we found that 10 and 12 year olds are performing significantly weaker than 20 year olds in all three tasks. In the CI and Navon global-local tasks, even 14 years old perform poorer than adults. We have also investigated the developmental trajectories by fitting sigmoid curves on our data streams. The analysis of the developmental trajectories of the three tasks showed a posterior to anterior pattern in the emergence of the developmental functions with the earliest development in the visual CI task (V1), followed by motor development in the FT task (M1), and cognitive development as measured in the Navon global-local task (DLPC) being the slowest. Gender difference was also present in FT task showing an earlier maturation for girls in the motor domain.",
+      "score": {
+        "composite": 0.46325792555032974,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_986500fa",
+      "doi": "10.1016/j.jpsychires.2014.06.003",
+      "url": "https://doi.org/10.1016/j.jpsychires.2014.06.003",
+      "openalex_id": null,
+      "pmid": "24972487",
+      "first_author": "Kerwin",
+      "authors_display": "Kerwin, L. et al.",
+      "year": 2014,
+      "title": "Impairment in local and global processing and set-shifting in body dysmorphic disorder.",
+      "venue": "Journal of psychiatric research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 29,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Body dysmorphic disorder (BDD) is characterized by distressing and often debilitating preoccupations with misperceived defects in appearance. Research suggests that aberrant visual processing may contribute to these misperceptions. This study used two tasks to probe global and local visual processing as well as set-shifting in individuals with BDD. Eighteen unmedicated individuals with BDD and 17 non-clinical controls completed two global-local tasks. The embedded figures task requires participants to determine which of three complex figures contains a simpler figure embedded within it. The Navon task utilizes incongruent stimuli comprised of a large letter (global level) made up of smaller letters (local level). The outcome measures were response time and accuracy rate. On the embedded figures task, BDD individuals were slower and less accurate than controls. On the Navon task, BDD individuals processed both global and local stimuli slower and less accurately than controls, and there was a further decrement in performance when shifting attention between the different levels of stimuli. Worse insight correlated with poorer performance on both tasks. Taken together, these results suggest abnormal global and local processing for non-appearance related stimuli among BDD individuals, in addition to evidence of poor set-shifting abilities. Moreover, these abnormalities appear to relate to the important clinical variable of poor insight. Further research is needed to explore these abnormalities and elucidate their possible role in the development and/or persistence of BDD symptoms.",
+      "score": {
+        "composite": 0.4558969185761037,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Case-Control Studies",
+        "Self Concept",
+        "Body Image",
+        "Visual Perception",
+        "Task Performance and Analysis",
+        "Neuropsychological Tests",
+        "Adult",
+        "Female",
+        "Male",
+        "Body Dysmorphic Disorders",
+        "Set, Psychology"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_052a7e27",
+      "doi": "10.1037/neu0000546",
+      "url": "https://doi.org/10.1037/neu0000546",
+      "openalex_id": null,
+      "pmid": "30945912",
+      "first_author": "Irwin",
+      "authors_display": "Irwin, L. et al.",
+      "year": 2019,
+      "title": "Do children with attention-deficit/hyperactivity disorder (ADHD) have set shifting deficits?",
+      "venue": "Neuropsychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 40,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Set shifting, or cognitive flexibility, is a core executive function involving the ability to quickly and efficiently shift back and forth between mental sets. Meta-analysis suggests medium-magnitude shifting impairments in attention-deficit/hyperactivity disorder (ADHD). However, this conclusion may be premature because the evidence-base relies exclusively on tasks that have been criticized for poor construct validity and may better reflect general neuropsychological functioning rather than shifting specifically.<h4>Method</h4>A well-characterized sample of 77 children ages 8-13 (M = 10.46, SD = 1.54; 32 girls; 66% Caucasian/non-Hispanic) with ADHD (n = 43) and without ADHD (n = 34) completed the criterion global-local set shifting task and 2 counterbalanced control tasks that were identical in all aspects except the key processes.<h4>Results</h4>The experimental manipulation was successful at evoking set shifting demands during the global-local versus both nonshift control tasks (p < .001; ω2 = .12-.14). Mixed-model analyses of variance (ANOVAs) revealed that the ADHD group did not demonstrate disproportional decrements in speed shift costs on the shifting versus nonshift control tasks (p = .30; ω2 = .002), suggesting no evidence of impaired set shifting abilities in ADHD. In contrast, the ADHD group made disproportionately more shifting errors than the non-ADHD group (p = .03; ω2 = 0.03) that were more parsimoniously attributable to prerequisite (nonshifting) processes necessary for successful performance on the global-local task.<h4>Conclusions</h4>Children with ADHD's impaired performance on shifting tasks may be attributable to difficulties maintaining competing rule sets and/or inhibiting currently active rule sets prior to shifting. However, when these higher-order processes are executed successfully, there is no significant evidence to suggest a unique set shifting deficit in ADHD. (PsycINFO Database Record (c) 2019 APA, all rights reserve",
+      "score": {
+        "composite": 0.447085017758763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Attention Deficit Disorder with Hyperactivity",
+        "Neuropsychological Tests",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male",
+        "Executive Function",
+        "Set, Psychology"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d3107501",
+      "doi": "10.3758/s13414-023-02741-1",
+      "url": "https://doi.org/10.3758/s13414-023-02741-1",
+      "openalex_id": null,
+      "pmid": "37468789",
+      "first_author": "Wyche",
+      "authors_display": "Wyche, N. et al.",
+      "year": 2024,
+      "title": "An updating-based working memory load alters the dynamics of eye movements but not their spatial extent during free viewing of natural scenes.",
+      "venue": "Attention, perception & psychophysics",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10805812",
+      "tldr": null,
+      "abstract": "The relationship between spatial deployments of attention and working memory load is an important topic of study, with clear implications for real-world tasks such as driving. Previous research has generally shown that attentional breadth broadens under higher load, while exploratory eye-movement behaviour also appears to change with increasing load. However, relatively little research has compared the effects of working memory load on different kinds of spatial deployment, especially in conditions that require updating of the contents of working memory rather than simple retrieval. The present study undertook such a comparison by measuring participants' attentional breadth (via an undirected Navon task) and their exploratory eye-movement behaviour (a free-viewing recall task) under low and high updating working memory loads. While spatial aspects of task performance (attentional breadth, and peripheral extent of image exploration in the free-viewing task) were unaffected by the load manipulation, the exploratory dynamics of the free-viewing task (including fixation durations and scan-path lengths) changed under increasing load. These findings suggest that temporal dynamics, rather than the spatial extent of exploration, are the primary mechanism affected by working memory load during the spatial deployment of attention. Further, individual differences in exploratory behaviour were observed on the free-viewing task: all metrics were highly correlated across working memory load blocks. These findings suggest a need for further investigation of individual differences in eye-movement behaviour; potential factors associated with these individual differences, including working memory capacity and persistence versus flexibility orientations, are discussed.",
+      "score": {
+        "composite": 0.42339909634565576,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Eye Movements",
+        "Individuality",
+        "Memory, Short-Term",
+        "Mental Recall",
+        "Attention"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5081ca22",
+      "doi": "10.3389/fpsyg.2014.01274",
+      "url": "https://doi.org/10.3389/fpsyg.2014.01274",
+      "openalex_id": null,
+      "pmid": "25520675",
+      "first_author": "Brand",
+      "authors_display": "Brand, J., & Johnson, A.",
+      "year": 2014,
+      "title": "Attention to local and global levels of hierarchical Navon figures affects rapid scene categorization.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4251296",
+      "tldr": null,
+      "abstract": "In four experiments, we investigated how attention to local and global levels of hierarchical Navon figures affected the selection of diagnostic spatial scale information used in scene categorization. We explored this issue by asking observers to classify hybrid images (i.e., images that contain low spatial frequency (LSF) content of one image, and high spatial frequency (HSF) content from a second image) immediately following global and local Navon tasks. Hybrid images can be classified according to either their LSF, or HSF content; thus, making them ideal for investigating diagnostic spatial scale preference. Although observers were sensitive to both spatial scales (Experiment 1), they overwhelmingly preferred to classify hybrids based on LSF content (Experiment 2). In Experiment 3, we demonstrated that LSF based hybrid categorization was faster following global Navon tasks, suggesting that LSF processing associated with global Navon tasks primed the selection of LSFs in hybrid images. In Experiment 4, replicating Experiment 3 but suppressing the LSF information in Navon letters by contrast balancing the stimuli examined this hypothesis. Similar to Experiment 3, observers preferred to classify hybrids based on LSF content; however and in contrast, LSF based hybrid categorization was slower following global than local Navon tasks.",
+      "score": {
+        "composite": 0.41483252594540904,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_06ed06d4",
+      "doi": "10.1038/s41598-025-28666-3",
+      "url": "https://doi.org/10.1038/s41598-025-28666-3",
+      "openalex_id": null,
+      "pmid": "41345484",
+      "first_author": "Leong",
+      "authors_display": "Leong, B. et al.",
+      "year": 2025,
+      "title": "Persistent task-specific impairment of holistic face processing in acquired prosopagnosia.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Case Reports"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12678792",
+      "tldr": null,
+      "abstract": "Face recognition deficits observed in Acquired Prosopagnosia are typically associated with impaired holistic processing. Nonetheless, whether this deficit is task-dependent, face-specific, and persistent over time has been under investigated. The present study examined the role of holistic processing in a case of acquired prosopagnosia (Patient DS). Patient DS, along with several neurotypical participants, completed the three standard measures of holistic face processing: the face inversion, part-whole, and composite face tasks, as well as a measure of non-face global processing: the Navon task. Our single-case analyses indicated that, compared to neurotypical participants, DS showed (1) impaired inversion effects, but (2) comparable part-whole and composite face effects, as well as (3) comparable global precedence effect in the Navon task. Interestingly, the same pattern of preserved and impaired holistic processing was observed in a second evaluation of DS four years later. While these findings suggest that holistic processing deficits in Acquired Prosopagnosia may be task-specific and persist over time-pointing toward the potential chronicity of the impairment-they should be interpreted with caution, given the floor effects and the single-case design.",
+      "score": {
+        "composite": 0.41333333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Face",
+        "Humans",
+        "Prosopagnosia",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_125f680c",
+      "doi": "10.1038/s41598-025-11692-6",
+      "url": "https://doi.org/10.1038/s41598-025-11692-6",
+      "openalex_id": null,
+      "pmid": "40685471",
+      "first_author": "Busch",
+      "authors_display": "Busch, N. et al.",
+      "year": 2025,
+      "title": "Withstand control: standing posture differentially affects space-based and feature-based cognitive control through enhanced physiological arousal.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12277459",
+      "tldr": null,
+      "abstract": "Can simply standing upright sharpen our minds? Whereas initial works proposed that standing posture reduces distractor interference in the Stroop task, subsequent replication attempts yielded mixed results. Importantly, previous studies mostly ignored individual fitness factors like BMI, physical activity level, and cardiac measures, which have recently been suggested to explain mixed findings. Here, we addressed these inconsistencies by controlling for such fitness characteristics in N = 36 healthy adults. Additionally, we expanded upon previous research by examining posture's influence on previously unexplored space-based cognitive control using the Navon task. We found evidence against an effect of standing posture on Stroop interference, while, in contrast, standing posture significantly improved spatial conflict processing in the Navon task. Most importantly, this effect was fully mediated by enhanced physiological arousal as indexed by reduced HRV, directly supporting the proposed mechanism of how standing influences cognitive control through increased postural demands. Our findings challenge the idea of a unified attentional control system, revealing that posture differentially influences conflict processing depending on its task-specific nature. These insights may advance theoretical understanding and have practical implications: in increasingly sedentary societies, simple changes like standing could selectively enhance certain cognitive functions, improving effective work and learning environments.",
+      "score": {
+        "composite": 0.41333333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cognition",
+        "Arousal",
+        "Attention",
+        "Heart Rate",
+        "Posture",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Stroop Test",
+        "Standing Position"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_57a1b0ca",
+      "doi": "10.1038/s41598-025-92905-w",
+      "url": "https://doi.org/10.1038/s41598-025-92905-w",
+      "openalex_id": null,
+      "pmid": "40102557",
+      "first_author": "Santirocchi",
+      "authors_display": "Santirocchi, A. et al.",
+      "year": 2025,
+      "title": "Relations between suggestibility, working memory and response inhibition in middle childhood.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11920167",
+      "tldr": null,
+      "abstract": "Individual difference in children's interrogative suggestibility should be theoretically associated with working memory and response inhibition skills. Yet, previous studies have reached mixed conclusions regarding the role of cognitive factors. In the present research, we re-examined this question in a sample of 203 children attending primary or middle school. They were administered the Gudjonsson Suggestibility Scale, a verbal span task (to measure the capacity of the phonological loop), and two inhibitory tasks (the Stroop Color and Word Test and the Global-Local Task). In line with our predictions, children having higher span scores were less suggestible than children having lower span scores (although the effect did not survive after controlling for class differences). On the other hand, the associations with inhibitory measures were null or even in contrast with our expectations, showing lower suggestibility indices in children who were less efficient in inhibiting the elaboration of the semantic meaning of words in the Stroop test. We conclude that individual differences in working memory and inhibitory skills have a limited impact on interrogative suggestibility, at least during middle childhood.",
+      "score": {
+        "composite": 0.41333333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Suggestion",
+        "Individuality",
+        "Cognition",
+        "Memory, Short-Term",
+        "Child",
+        "Female",
+        "Male",
+        "Stroop Test",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_640c4f26",
+      "doi": "10.3758/s13414-024-02937-z",
+      "url": "https://doi.org/10.3758/s13414-024-02937-z",
+      "openalex_id": null,
+      "pmid": "39134921",
+      "first_author": "Wyche",
+      "authors_display": "Wyche, N. et al.",
+      "year": 2024,
+      "title": "Openness to experience predicts eye movement behavior during scene viewing.",
+      "venue": "Attention, perception & psychophysics",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11480192",
+      "tldr": null,
+      "abstract": "Individuals' abilities to perform goal-directed spatial deployments of attention are distinguishable from their broader preferences for how they use spatial attention when circumstances do not compel a specific deployment strategy. Although these preferences are likely to play a major role in how we interact with the visual world during daily life, they remain relatively understudied. This exploratory study investigated two key questions about these preferences: firstly, are individuals consistent in their preferences for how they deploy their spatial attention when making shifts of attention versus adopting an attentional breadth? Secondly, which other factors are associated with these preferences? Across two experiments, we measured how participants preferred to deploy both attentional breadth (using an adapted Navon task) and eye movements (using a free-viewing task). We also measured participants' working memory capacities (Experiment 1), and their personalities and world beliefs (Experiment 2). In both experiments, there were consistent individual differences in preference for attentional breadth and eye movement characteristics, but these two kinds of preference were unrelated to each other. Working memory capacity was not linked to these preferences. Conversely, the personality trait of Openness to Experience robustly predicted two aspects of eye movement behavior preference, such that higher levels of Openness predicted smaller saccades and shorter scan paths. This suggests that personality dimensions may predict preferences for more absorbed engagement with visual information. However, it appears that individuals' preferences for shifts of attention during scene viewing do not necessarily relate to the breadth of attention they choose to adopt.",
+      "score": {
+        "composite": 0.4033333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Eye Movements",
+        "Personality",
+        "Individuality",
+        "Memory, Short-Term",
+        "Space Perception",
+        "Visual Perception",
+        "Attention",
+        "Saccades",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_cc6c981f",
+      "doi": "10.1371/journal.pone.0206605",
+      "url": "https://doi.org/10.1371/journal.pone.0206605",
+      "openalex_id": null,
+      "pmid": "30372467",
+      "first_author": "Hine",
+      "authors_display": "Hine, K., & Itoh, Y.",
+      "year": 2018,
+      "title": "Warm-up cognitive activity enhances inhibitory function.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6205605",
+      "tldr": null,
+      "abstract": "Society is aging worldwide. To promote the health and quality of life in elderly people, we must find a way to enhance and improve cognitive function, especially inhibitory function that suppresses inappropriate behaviors. Previous studies have indicated that warm-up cognitive activities enhanced the activation of appropriate behavior. As with the activation of appropriate behavior, inhibitory function is expected to be enhanced by a warm-up activity, although this theory has not yet been directly tested. Here, we investigated whether inhibitory function in a task was enhanced by a warm-up activity. We used a Navon task as a warm-up activity, in which reading small letters (local Navon task) required inhibitory function more than reading a large letter (global Navon task). The Stroop task was used as the subsequent task. Our results showed that the accuracy of the Stroop task after the local Navon task was higher than after the global Navon task. This outcome suggests that inhibitory function in the Stroop task was enhanced by the local Navon task, which was an inhibitory warm-up cognitive activity. Moreover, this study contributes to the development of new techniques of cognitive training to prevent the decline in inhibitory function during aging or other clinical scenarios, such as attention-deficit/hyperactivity disorder (ADHD).",
+      "score": {
+        "composite": 0.4033333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cognition",
+        "Pattern Recognition, Visual",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Stroop Test",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b23754f9",
+      "doi": "10.1371/journal.pone.0098625",
+      "url": "https://doi.org/10.1371/journal.pone.0098625",
+      "openalex_id": null,
+      "pmid": "24992321",
+      "first_author": "Dale",
+      "authors_display": "Dale, G., & Arnell, K.",
+      "year": 2014,
+      "title": "Lost in the forest, stuck in the trees: dispositional global/local bias is resistant to exposure to high and low spatial frequencies.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 11,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4081004",
+      "tldr": null,
+      "abstract": "Visual stimuli can be perceived at a broad, \"global\" level, or at a more focused, \"local\" level. While research has shown that many individuals demonstrate a preference for global information, there are large individual differences in the degree of global/local bias, such that some individuals show a large global bias, some show a large local bias, and others show no bias. The main purpose of the current study was to examine whether these dispositional differences in global/local bias could be altered through various manipulations of high/low spatial frequency. Through 5 experiments, we examined various measures of dispositional global/local bias and whether performance on these measures could be altered by manipulating previous exposure to high or low spatial frequency information (with high/low spatial frequency faces, gratings, and Navon letters). Ultimately, there was little evidence of change from pre-to-post manipulation on the dispositional measures, and dispositional global/local bias was highly reliable pre- to post-manipulation. The results provide evidence that individual differences in global/local bias or preference are relatively resistant to exposure to spatial frequency information, and suggest that the processing mechanisms underlying high/low spatial frequency use and global/local bias may be more independent than previously thought.",
+      "score": {
+        "composite": 0.39930083730710003,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Photic Stimulation",
+        "Visual Perception",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ce2a7ee1",
+      "doi": "10.3389/fpsyg.2021.546483",
+      "url": "https://doi.org/10.3389/fpsyg.2021.546483",
+      "openalex_id": null,
+      "pmid": "33841222",
+      "first_author": "Álvarez-San Millán",
+      "authors_display": "Álvarez-San Millán, A. et al.",
+      "year": 2021,
+      "title": "Forest Before Trees: Letter Stimulus and Sex Modulate Global Precedence in Visual Perception.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2021.546483/pdf",
+      "tldr": null,
+      "abstract": "The global precedence effect (GPE), originally referring to processing hierarchical visual stimuli composed of letters, is characterised by both global advantage and global interference. We present herein a study of how this effect is modulated by the variables letter and sex. The Navon task, using the letters \"H\" and \"S,\" was administered to 78 males and 168 females (69 follicular women, 52 luteal women, and 47 hormonal contraceptive users). No interaction occurred between the letter and sex variables, but significant main effects arose from each of these. Reaction times (RTs) revealed that the letter \"H\" was identified more rapidly in the congruent condition both in the global and the local task, and the letter \"S\" in the incongruent condition for the local task. Also, although RTs showed a GPE in both males and females, males displayed shorter reaction times in both global and local tasks. Furthermore, luteal women showed higher <i>d'</i> index (discrimination sensitivity) in the congruent condition for the local task than both follicular women and hormonal contraceptive users, as well as longer exploration time of the irrelevant level during the global task than males. We conclude that, according to the linear periodicity law, the GPE is enhanced for compound letters with straight vs. curved strokes, whereas it is stronger in males than in females. Relevantly, luteal phase of the menstrual cycle seems to tilt women to rely on finer grained information, thus exhibiting an analytical processing style in global/local visual processing.",
+      "score": {
+        "composite": 0.3992679558009389,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_92b9a7ac",
+      "doi": "10.1371/journal.pone.0020602",
+      "url": "https://doi.org/10.1371/journal.pone.0020602",
+      "openalex_id": null,
+      "pmid": "21698275",
+      "first_author": "Colzato",
+      "authors_display": "Colzato, L. et al.",
+      "year": 2011,
+      "title": "Khat use is associated with impaired working memory and cognitive flexibility.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 56,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0020602&type=printable",
+      "tldr": null,
+      "abstract": "<h4>Rationale</h4>Khat consumption has increased during the last decades in Eastern Africa and has become a global phenomenon spreading to ethnic communities in the rest of the world, such as The Netherlands, United Kingdom, Canada, and the United States. Very little is known, however, about the relation between khat use and cognitive control functions in khat users.<h4>Objective</h4>We studied whether khat use is associated with changes in working memory (WM) and cognitive flexibility, two central cognitive control functions.<h4>Methods</h4>Khat users and khat-free controls were matched in terms of sex, ethnicity, age, alcohol and cannabis consumption, and IQ (Raven's progressive matrices). Groups were tested on cognitive flexibility, as measured by a Global-Local task, and on WM using an N-back task.<h4>Result</h4>Khat users performed significantly worse than controls on tasks tapping into cognitive flexibility as well as monitoring of information in WM.<h4>Conclusions</h4>The present findings suggest that khat use impairs both cognitive flexibility and the updating of information in WM. The inability to monitor information in WM and to adjust behavior rapidly and flexibly may have repercussions for daily life activities.",
+      "score": {
+        "composite": 0.39185402768391914,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Catha",
+        "Memory Disorders",
+        "Cognition Disorders",
+        "Adult",
+        "Africa, Eastern",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_6dca2eea",
+      "doi": "10.1002/eat.22772",
+      "url": "https://doi.org/10.1002/eat.22772",
+      "openalex_id": null,
+      "pmid": "28963792",
+      "first_author": "Becker",
+      "authors_display": "Becker, K. et al.",
+      "year": 2017,
+      "title": "Global/local processing style: Explaining the relationship between trait anxiety and binge eating.",
+      "venue": "The International journal of eating disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Anxiety is a risk factor for disordered eating, but the mechanisms by which anxiety promotes disordered eating are poorly understood. One possibility is local versus global cognitive processing style, defined as a relative tendency to attend to details at the expense of the \"big picture.\" Anxiety may narrow attention, in turn, enhancing local and/or compromising global processing. We examined relationships between global/local processing style, anxiety, and disordered eating behaviors in a transdiagnostic outpatient clinical sample. We hypothesized that local (vs. global) processing bias would mediate the relationship between anxiety and disordered eating behaviors.<h4>Method</h4>Ninety-three participants completed the eating disorder examination-questionnaire (EDE-Q), State-Trait Anxiety Inventory (STAI)-trait subscale, and the Navon task (a test of processing style in which large letters are composed of smaller letters both congruent and incongruent with the large letter). The sample was predominantly female (95%) with a mean age of 27.4 years (SD = 12.1 years).<h4>Results</h4>Binge eating, but not fasting, purging, or excessive exercise, was correlated with lower levels of global processing style. There was a significant indirect effect between anxiety and binge eating via reduced global level global/local processing.<h4>Discussion</h4>In individuals with disordered eating, being more generally anxious may encourage a detailed-oriented bias, preventing individuals from maintaining the bigger picture and making them more likely to engage in maladaptive behaviors (e.g., binge eating).",
+      "score": {
+        "composite": 0.3880414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Risk Factors",
+        "Anxiety",
+        "Personality Inventory",
+        "Adult",
+        "Female",
+        "Male",
+        "Binge-Eating Disorder"
+      ]
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_95b2cd86",
+      "doi": "10.1016/j.physbeh.2016.07.012",
+      "url": "https://doi.org/10.1016/j.physbeh.2016.07.012",
+      "openalex_id": null,
+      "pmid": "27445034",
+      "first_author": "Scheuringer",
+      "authors_display": "Scheuringer, A., & Pletzer, B.",
+      "year": 2016,
+      "title": "Sex differences in the Kimchi-Palmer task revisited: Global reaction times, but not number of global choices differ between adult men and women.",
+      "venue": "Physiology & behavior",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 16,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7115960",
+      "tldr": null,
+      "abstract": "Research, directly assessing sex-dependent differences in global versus local processing is sparse, but predominantly suggesting that men show a stronger global processing bias than women. Utilizing the Kimchi-Palmer task however, sex differences in the number of global choices can only be found in children, but not in adults. In the current study 52 men and 46 women completed a computerized version of the Kimchi Palmer task, in order to investigate whether sex-differences in global-local processing in the Kimchi-Palmer task are reflected in choice reaction times rather than choices per se. While no sex differences were found in the number of global choices, we found that especially women are faster in making local choices than men, while men are faster in making global choices than women. We did not find support for the assumption that this sex difference was modulated by menstrual cycle phase of women, since the difference between reaction times to global and local choices was consistent across the menstrual cycle of women. Accordingly there was no relationship between progesterone and global-local processing in the Kimchi-Palmer task. However, like in studies utilizing the Navon task, testosterone was positively related to the number of global choices in both men and women. To our knowledge, this is the first study including reaction times as outcome measure in a Kimchi Palmer paradigm and also the first study demonstrating sex differences in the Kimchi Palmer task in adults.",
+      "score": {
+        "composite": 0.384342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Saliva",
+        "Humans",
+        "Testosterone",
+        "Progesterone",
+        "Enzyme-Linked Immunosorbent Assay",
+        "Photic Stimulation",
+        "Affect",
+        "Visual Perception",
+        "Choice Behavior",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Menstrual Cycle",
+        "Sex Characteristics",
+        "Computers",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 25,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b953008e",
+      "doi": "10.1371/journal.pone.0071625",
+      "url": "https://doi.org/10.1371/journal.pone.0071625",
+      "openalex_id": null,
+      "pmid": "23940773",
+      "first_author": "Fu",
+      "authors_display": "Fu, Q. et al.",
+      "year": 2013,
+      "title": "Who learns more? Cultural differences in implicit sequence learning.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3737123",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>It is well documented that East Asians differ from Westerners in conscious perception and attention. However, few studies have explored cultural differences in unconscious processes such as implicit learning.<h4>Methodology/principal findings</h4>The global-local Navon letters were adopted in the serial reaction time (SRT) task, during which Chinese and British participants were instructed to respond to global or local letters, to investigate whether culture influences what people acquire in implicit sequence learning. Our results showed that from the beginning British expressed a greater local bias in perception than Chinese, confirming a cultural difference in perception. Further, over extended exposure, the Chinese learned the target regularity better than the British when the targets were global, indicating a global advantage for Chinese in implicit learning. Moreover, Chinese participants acquired greater unconscious knowledge of an irrelevant regularity than British participants, indicating that the Chinese were more sensitive to contextual regularities than the British.<h4>Conclusions/significance</h4>The results suggest that cultural biases can profoundly influence both what people consciously perceive and unconsciously learn.",
+      "score": {
+        "composite": 0.38343197785181693,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Awareness",
+        "Learning",
+        "Pattern Recognition, Visual",
+        "Reaction Time",
+        "Cross-Cultural Comparison",
+        "China",
+        "England",
+        "Female",
+        "Male",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 26,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_51a48a64",
+      "doi": "10.3389/fnagi.2022.893818",
+      "url": "https://doi.org/10.3389/fnagi.2022.893818",
+      "openalex_id": null,
+      "pmid": "36204552",
+      "first_author": "Álvarez-San Millán",
+      "authors_display": "Álvarez-San Millán, A. et al.",
+      "year": 2022,
+      "title": "Progressive attenuation of visual global precedence across healthy aging and Alzheimer's disease.",
+      "venue": "Frontiers in aging neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 8,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9530062",
+      "tldr": null,
+      "abstract": "In the perception of Navon hierarchical stimuli (e.g., large letters made up of small letters), young adults identify large letters faster than small ones (known as 'global advantage') and identify more slowly small letters when they form a different (or incongruent) large letter (known as 'unidirectional global interference'). Since some global/local perceptual alterations might be occurring with aging, we investigated whether these effects vary across healthy aging and Alzheimer's disease (AD). Here, the Navon letter task was administered to 26 healthy elderly (HE), 21 adults with mild cognitive impairment (MCI), and 26 adults with AD. The same task was administered 1 year later, and different neuropsychological variables were incorporated into the analyses. The cross-sectional study revealed no global advantage but did reveal both global and local interferences in all groups when response times were analyzed. Regarding discrimination sensitivity, HE showed unidirectional global interference, while AD displayed better discrimination of local than global letters in the incongruent condition, which denotes less interference by global distractors than by local ones. The longitudinal study revealed that 1 year later the participants with MCI showed a slowdown in inhibiting local distractors in the global task, revealing a certain bias toward focus in their attention on small stimuli. The elders with AD reflected a generalized slowing of their responses with a clear bias toward local analysis of stimuli, also suggested by their better discrimination in the incongruent local task at the second moment of assessment. Furthermore, all response timing measures in the Navon task were correlated with several neuropsychological indexes of highly sensitive neuropsychological tests, suggesting that performance in this task may also have a potential diagnostic value for differentiating typical from atypical cognitive aging. All these results support the need for a multidomain app",
+      "score": {
+        "composite": 0.37513681525622194,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4fbf1da8",
+      "doi": "10.3389/fpsyg.2018.01821",
+      "url": "https://doi.org/10.3389/fpsyg.2018.01821",
+      "openalex_id": null,
+      "pmid": "30319514",
+      "first_author": "Mukherjee",
+      "authors_display": "Mukherjee, S. et al.",
+      "year": 2018,
+      "title": "Perceptual Broadening Leads to More Prosociality.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6167552",
+      "tldr": null,
+      "abstract": "A link between perceptual processing styles and (pro)social behavior has gathered supporting empirical evidence to show that people raised or trained in traditions of collectiveness, compassion, and prosocial beliefs are biased to the global level in perceptual processing. In this research, we studied the reciprocal link - whether contextually broadening perceptual scope of attention via global processing could make people more prosocial. We hypothesized that global processing linked previously to an interdependent compassionate self-orientation would make people more prosocial, compared to local processing. Four experiments manipulated perceptual scope through a Global-Local task using hierarchical stimuli. It was found that participants who performed a global processing perceptual task volunteered to donate more money across different donation frames, compared to those who performed a local processing task. While previous research showed prosocial mindsets lead to perceptual broadening, the current results suggest that perceptual broadening also leads to more prosociality, thus establishing a reciprocal link between perceptual broadening (attentional scope), and acting prosocially. It is proposed that perceptual scope of attention is one of the generic cognitive processes that underlie prosocial decisions. Explanations based on scope of attention can potentially be used as a framework that enables researchers to link the effects of different contextual cues on prosocial decisions.",
+      "score": {
+        "composite": 0.3714991926120757,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3f68e0f3",
+      "doi": "10.1017/s0033291725101815",
+      "url": "https://doi.org/10.1017/s0033291725101815",
+      "openalex_id": null,
+      "pmid": "40999790",
+      "first_author": "van Steenbergen",
+      "authors_display": "van Steenbergen, H. et al.",
+      "year": 2025,
+      "title": "Seeing the bigger picture: endogenous opioids mediate attentional broadening after reward receipt.",
+      "venue": "Psychological medicine",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12527506",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Contemporary society faces significant challenges that can lead to stress-induced tunnel vision. Positive affect can counteract these effects by expanding humans' attentional scope, potentially promoting resilience and creativity. This preregistered triple-blind study investigated the role of endogenous opioids in mediating attentional broadening following reward receipt.<h4>Methods</h4>Using a placebo-controlled crossover design, 40 volunteers underwent two sessions separated by at least 1 week, receiving either 50 mg of naltrexone or a placebo. Participants completed a Navon letters task designed to contrast the effects of reward receipt versus reward anticipation on attentional scope.<h4>Results</h4>As predicted, our results show that the attentional broadening observed after reward receipt under placebo was eliminated when opioid receptors were blocked. Naltrexone did not result in blunted reward anticipation effects on task performance or attentional narrowing.<h4>Conclusions</h4>This study highlights the role of endogenous opioids in attentional breadth and their potential for cognitive flexibility and resilience through natural positive experiences, with potential implications for mental health and stress management.",
+      "score": {
+        "composite": 0.3633662148394945,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Naltrexone",
+        "Opioid Peptides",
+        "Narcotic Antagonists",
+        "Cross-Over Studies",
+        "Double-Blind Method",
+        "Reward",
+        "Attention",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Anticipation, Psychological"
+      ]
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_148c71d6",
+      "doi": "10.3758/s13423-025-02741-2",
+      "url": "https://doi.org/10.3758/s13423-025-02741-2",
+      "openalex_id": null,
+      "pmid": "41116145",
+      "first_author": "Schweigkofler",
+      "authors_display": "Schweigkofler, F. et al.",
+      "year": 2025,
+      "title": "Understanding Navon: A detailed structural and conceptual analysis of a basic local-global task.",
+      "venue": "Psychonomic bulletin & review",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12627199",
+      "tldr": null,
+      "abstract": "When perceiving visual information, either the local parts or more commonly the global whole can dominate on a perceptual-cognitive level (local/global bias). Using hierarchical figures consisting of smaller local elements forming a larger global shape, researchers have tried to understand how this local-global bias emerges. However, despite extensive research, local-global biases remain an elusive concept (possibly partially due to inadequacies of the task design itself), with implicit assumptions untested and different effect metrics being in use. To provide conceptual clarity, this study presents a detailed description of metrics and effects (content validity) and discusses four major assumptions in the current literature. Where possible, these assumptions are tested on a basic local-global task (the so-called Navon task) across 18 datasets (> 8,000 participants). The metric reliability is tested on nine datasets (> 7,000 participants). Our conceptual reasoning attempts to disentangle the complexity of interference effects in hierarchical figure tasks and discusses a potential facilitation effect. Our empirical results most importantly indicate: (1) the independence of the biased precedence and biased interference metrics, underlining that local-global biases do not reflect a unitary construct, (2) the independence of local-to-global and global-to-local interference, and (3) a low split-half reliability for interference metrics. Based on these insights we argue for further re-evaluating the concept (and theory) of local-global biases, prioritizing research on a thorough conceptual (and theoretical) understanding of local-global tasks, a more consistent use of bias-related metrics in future studies, and a possible need for a more mechanistic approach to facilitate effective future research on hierarchical figure tasks.",
+      "score": {
+        "composite": 0.3633333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Reproducibility of Results",
+        "Pattern Recognition, Visual",
+        "Concept Formation",
+        "Adult",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_0cc7dc38",
+      "doi": "10.3389/fpsyg.2015.01647",
+      "url": "https://doi.org/10.3389/fpsyg.2015.01647",
+      "openalex_id": null,
+      "pmid": "26579030",
+      "first_author": "Zmigrod",
+      "authors_display": "Zmigrod, S. et al.",
+      "year": 2015,
+      "title": "Zooming into creativity: individual differences in attentional global-local biases are linked to creative thinking.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,participants)"
+      ],
+      "citation_count": 19,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4626568",
+      "tldr": null,
+      "abstract": "While recent studies have investigated how processes underlying human creativity are affected by particular visual-attentional states, we tested the impact of more stable attention-related preferences. These were assessed by means of Navon's global-local task, in which participants respond to the global or local features of large letters constructed from smaller letters. Three standard measures were derived from this task: the sizes of the global precedence effect, the global interference effect (i.e., the impact of incongruent letters at the global level on local processing), and the local interference effect (i.e., the impact of incongruent letters at the local level on global processing). These measures were correlated with performance in a convergent-thinking creativity task (the Remote Associates Task), a divergent-thinking creativity task (the Alternate Uses Task), and a measure of fluid intelligence (Raven's matrices). Flexibility in divergent thinking was predicted by the local interference effect while convergent thinking was predicted by intelligence only. We conclude that a stronger attentional bias to visual information about the \"bigger picture\" promotes cognitive flexibility in searching for multiple solutions.",
+      "score": {
+        "composite": 0.3566947257874873,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 31,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_8e5499a6",
+      "doi": "10.1371/journal.pone.0006043",
+      "url": "https://doi.org/10.1371/journal.pone.0006043",
+      "openalex_id": null,
+      "pmid": "19557181",
+      "first_author": "Colzato",
+      "authors_display": "Colzato, L. et al.",
+      "year": 2009,
+      "title": "Reduced attentional scope in cocaine polydrug users.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 16,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC2698287",
+      "tldr": null,
+      "abstract": "Cocaine is Europe's second preferred recreational drug after cannabis but very little is known about possible cognitive impairments in the upcoming type of recreational cocaine user (monthly consumption). We asked whether recreational use of cocaine impacts early attentional selection processes. Cocaine-free polydrug controls (n = 18) and cocaine polydrug users (n = 18) were matched on sex, age, alcohol consumption, and IQ (using the Raven's progressive matrices), and were tested by using the Global-Local task to measure the scope of attention. Cocaine polydrug users attended significantly more to local aspects of attended events, which fits with the idea that a reduced scope of attention may be associated with the perpetuation of the use of the drug.",
+      "score": {
+        "composite": 0.354342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Substance-Related Disorders",
+        "Cocaine-Related Disorders",
+        "Cocaine",
+        "Case-Control Studies",
+        "Cognition",
+        "Problem Solving",
+        "Attention",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Adult",
+        "Female",
+        "Male",
+        "Illicit Drugs"
+      ]
+    },
+    {
+      "rank": 32,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_4d695cf9",
+      "doi": "10.1093/schbul/sbp090",
+      "url": "https://doi.org/10.1093/schbul/sbp090",
+      "openalex_id": null,
+      "pmid": "19737806",
+      "first_author": "Coleman",
+      "authors_display": "Coleman, M. et al.",
+      "year": 2009,
+      "title": "Schizophrenia patients show deficits in shifts of attention to different levels of global-local stimuli: evidence for magnocellular dysfunction.",
+      "venue": "Schizophrenia bulletin",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 34,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Abnormalities of attention and visual perception are well documented in schizophrenia. The global-local task is a measure of attention and perceptual organization that utilizes visual stimuli comprised of large letters (global level) made up of smaller letters (local level). Subjects identify target letters appearing at either the global or local level of the stimulus. In this study, we used a version of the global-local task specifically designed to examine lateralized hemispheric processing and attention shifting in 30 schizophrenia patients and 24 normal controls. Global-local stimuli were presented in couplets (consecutive pairs). Reaction time for the second target in a couplet was compared under conditions in which the target remained at the same level (global-global, local-local) and when the target changed levels (global-local, local-global). Level-specific priming (ie, global to global and local to local) and the local-to-global level shift were similar in both groups. Schizophrenia patients were significantly slower, however, shifting attention from the global to the local level. These results implicate an impairment in shifting attentional resources from predominantly right lateralized magnocellular/dorsal stream processing of global targets to predominantly left lateralized parvocellular/ventral stream processing of local targets. Local interference effects in global processing provide further support for impaired magnocellular processing in schizophrenia patients.",
+      "score": {
+        "composite": 0.34479482205390727,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Geniculate Bodies",
+        "Visual Cortex",
+        "Visual Pathways",
+        "Humans",
+        "Perceptual Disorders",
+        "Brain Mapping",
+        "Discrimination Learning",
+        "Reversal Learning",
+        "Field Dependence-Independence",
+        "Pattern Recognition, Visual",
+        "Size Perception",
+        "Attention",
+        "Dominance, Cerebral",
+        "Reaction Time",
+        "Psychotic Disorders",
+        "Schizophrenia",
+        "Schizophrenic Psychology",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 33,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_9b109a48",
+      "doi": "10.1016/j.jmp.2009.06.006",
+      "url": "https://doi.org/10.1016/j.jmp.2009.06.006",
+      "openalex_id": null,
+      "pmid": "23750050",
+      "first_author": "Johnson",
+      "authors_display": "Johnson, S. et al.",
+      "year": 2010,
+      "title": "Systems Factorial Technology provides new insights on global-local information processing in autism spectrum disorders.",
+      "venue": "Journal of mathematical psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participant,participants)"
+      ],
+      "citation_count": 16,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Previous studies of global-local processing in autism spectrum disorders (ASDs) have indicated mixed findings, with some evidence of a local processing bias, or preference for detail-level information, and other results suggesting typical global advantage, or preference for the whole or gestalt. Findings resulting from this paradigm have been used to argue for or against a detail focused processing bias in ASDs, and thus have important theoretical implications. We applied Systems Factorial Technology, and the associated Double Factorial Paradigm (both defined in the text), to examine information processing characteristics during a divided attention global-local task in high-functioning individuals with an ASD and typically developing controls. Group data revealed global advantage for both groups, contrary to some current theories of ASDs. Information processing models applied to each participant revealed that task performance, although showing no differences at the group level, was supported by different cognitive mechanisms in ASD participants compared to controls. All control participants demonstrated inhibitory parallel processing and the majority demonstrated a minimum-time stopping rule. In contrast, ASD participants showed exhaustive parallel processing with mild facilitatory interactions between global and local information. Thus our results indicate fundamental differences in the stopping rules and channel dependencies in individuals with an ASD.",
+      "score": {
+        "composite": 0.344342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 34,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_504d2a94",
+      "doi": "10.3389/fpsyg.2023.1219821",
+      "url": "https://doi.org/10.3389/fpsyg.2023.1219821",
+      "openalex_id": null,
+      "pmid": "38023009",
+      "first_author": "Fitousi",
+      "authors_display": "Fitousi, D., & Azizi, O.",
+      "year": 2023,
+      "title": "Navon letters and composite faces: same or different processing mechanisms?",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (patients)"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10652416",
+      "tldr": null,
+      "abstract": "Navon letters and composite faces are two fascinating demonstrations of hierarchical organization in perception. Many researchers believe that the two types of stimuli and their associated tasks gauge comparable holistic mechanisms. This belief is so common that the two paradigms are now being applied in tandem to measure impaired holistic processing in prosopagnosic patients. But are Navon letters and composite faces processed in a similar fashion? In the present study we take a closer look at their apparent affinity. We gain novel insights into their underlying mechanisms by fitting parameters of the <i>linear ballistic accumulator</i> (LBA) model to empirical correct and incorrect response times (RTs). The results reveal major differences in processing between the two tasks. We conclude that despite the presence of a compelling surface similarity, Navon compound letters and composite faces tap into separate psychological processes.",
+      "score": {
+        "composite": 0.33339909634565573,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 35,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_ee15062e",
+      "doi": "10.3389/fpsyg.2013.00914",
+      "url": "https://doi.org/10.3389/fpsyg.2013.00914",
+      "openalex_id": null,
+      "pmid": "24376429",
+      "first_author": "Braboszcz",
+      "authors_display": "Braboszcz, C. et al.",
+      "year": 2013,
+      "title": "Plasticity of visual attention in Isha yoga meditation practitioners before and after a 3-month retreat.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3859885",
+      "tldr": null,
+      "abstract": "Meditation has lately received considerable interest from cognitive neuroscience. Studies suggest that daily meditation leads to long lasting attentional and neuronal plasticity. We present changes related to the attentional systems before and after a 3 month intensive meditation retreat. We used three behavioral psychophysical tests - a Stroop task, an attentional blink task, and a global-local letter task-to assess the effect of Isha yoga meditation on attentional resource allocation. 82 Isha yoga practitioners were tested at the beginning and at the end of the retreat. Our results showed an increase in correct responses specific to incongruent stimuli in the Stroop task. Congruently, a positive correlation between previous meditation experience and accuracy to incongruent Stroop stimuli was also observed at baseline. We also observed a reduction of the attentional blink. Unexpectedly, a negative correlation between previous meditation experience and attentional blink performance at baseline was observed. Regarding spatial attention orientation as assessed using the global-local letter task, participants showed a bias toward local processing. Only slight differences in performance were found pre- vs. post- meditation retreat. Biasing toward the local stimuli in the global-local task and negative correlation of previous meditation experience with attentional blink performance is consistent with Isha practices being focused-attention practices. Given the relatively small effect sizes and the absence of a control group, our results do not allow clear support nor rejection of the hypothesis of meditation-driven neuronal plasticity in the attentional system for Isha yoga practice.",
+      "score": {
+        "composite": 0.3325307037366092,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 36,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_e092d43b",
+      "doi": "10.1111/psyp.70032",
+      "url": "https://doi.org/10.1111/psyp.70032",
+      "openalex_id": null,
+      "pmid": "40038052",
+      "first_author": "Hausinger",
+      "authors_display": "Hausinger, T. et al.",
+      "year": 2025,
+      "title": "Spatio-Temporal Decoding of the Navon Task Challenges Rigid Hemispheric Asymmetries in Global-Local Processing.",
+      "venue": "Psychophysiology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11879918",
+      "tldr": null,
+      "abstract": "Functional hemispheric asymmetries are considered a key factor in intra- and interindividual variability of global precedence effects. However, research in this area is permeated by a considerable number of inconsistent findings which may stem from significant methodological limitations. In pursuit of a more detailed model of global-local processing by combining both high temporal and spatial resolution, we employed Multivariate Pattern Analysis (MVPA) on Magnetoencephalography (MEG) recordings from 63 participants performing a divided visual field, divided attention Navon paradigm. The resulting decoding accuracies between various hierarchical letter forms and target levels were used to pinpoint potentially involved spatial networks and temporal processing sequences. Linear Discriminant Analysis (LDA) revealed temporal precedence of global over local letter form decoding accuracy peaks. Furthermore, searchlight analysis provided a nuanced spatial mapping that not only validated previously established core regions (lingual gyrus for local processing; inferior occipital gyrus for global processing) but also identified potential regions implicated in global-local integration. Yet, we observed substantial variation in lateralization patterns across our study sample, challenging the conventional assumption of right-hemispheric dominance for global and left-hemispheric dominance for local processing in the context of MVPA. Overall, our findings validate and broaden the scope of prior research by providing, for the first time, accurate temporal and spatial data on global-local processing from a single measurement. Moreover, we introduce interindividual variability in lateralization patterns as a potential factor contributing to past inconsistencies.",
+      "score": {
+        "composite": 0.3233662148394945,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Humans",
+        "Magnetoencephalography",
+        "Brain Mapping",
+        "Pattern Recognition, Visual",
+        "Psychomotor Performance",
+        "Attention",
+        "Adult",
+        "Female",
+        "Male",
+        "Functional Laterality",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 37,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_16c45446",
+      "doi": "10.1177/10870547231153952",
+      "url": "https://doi.org/10.1177/10870547231153952",
+      "openalex_id": null,
+      "pmid": "36779530",
+      "first_author": "Akerman",
+      "authors_display": "Akerman, A. et al.",
+      "year": 2023,
+      "title": "Global-Local Processing in ADHD Is Not Limited to the Visuospatial Domain: Novel Evidence From the Auditory Domain.",
+      "venue": "Journal of attention disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1177/10870547231153952",
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Global-local visuospatial processing has been widely investigated in both healthy and clinical populations. Recent studies indicated that individuals with ADHD lack a global processing bias. However, the extant literature regarding global-local processing style focuses solely on the visual modality.<h4>Methods</h4>ADHD (<i>N</i> = 21) and typically developed (TD) controls (<i>N</i> = 24) underwent an auditory global-local task, in which they had to decide whether the melody is ascending or descending in global or local conditions.<h4>Results</h4>TD controls exhibited a classic global processing bias in the auditory task. The ADHD group exhibited no global processing bias, indicating similar processing for global and local dimensions, implying that individuals with ADHD are distracted by incongruent information in global and local conditions similarly, in both visual and auditory tasks.<h4>Conclusion</h4>A lack of global processing bias in ADHD is not limited to the visuospatial modality and likely reflects a broader and more general processing style.",
+      "score": {
+        "composite": 0.31926795580093886,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Attention Deficit Disorder with Hyperactivity"
+      ]
+    },
+    {
+      "rank": 38,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a4837672",
+      "doi": "10.1002/eat.70077",
+      "url": "https://doi.org/10.1002/eat.70077",
+      "openalex_id": null,
+      "pmid": "41913089",
+      "first_author": "McPherson",
+      "authors_display": "McPherson, I. et al.",
+      "year": 2026,
+      "title": "Neurocognitive Profile of Avoidant/Restrictive Food Intake Disorder: Cognitive Flexibility, Delay Discounting, and Detail Orientation.",
+      "venue": "The International journal of eating disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Neurocognitive deficits are well-documented across psychiatric disorders and may indicate novel treatment targets. However, empirical data on the neurocognitive profile of avoidant/restrictive food intake disorder (ARFID) are lacking. To address this gap, this study examined three core neurocognitive domains altered in other eating disorders-cognitive flexibility, delay discounting, and detail orientation-in adults with ARFID and healthy controls (HCs).<h4>Method</h4>Adults (18-45 years) with ARFID (n = 49) and HCs (n = 21) completed computerized tasks assessing cognitive flexibility (Category Switch Task), delay discounting (Delay Discounting Task), and detail orientation (Navon Task). We hypothesized that, relative to HCs, adults with ARFID would show poorer cognitive flexibility, steeper delay discounting, and greater detail orientation.<h4>Results</h4>Compared to HCs, adults with ARFID showed larger response-time switch costs (U = 9456, p = 0.023) but smaller error-rate switch costs (U = 6832, p = 0.044). Consequently, set-shifting efficiency did not differ between groups (inverse efficiency score switch costs: U = 537, p = 0.672), indicating an accuracy-over-speed strategy supporting cognitive flexibility in ARFID. No group differences emerged in delay discounting (U = 618, p = 0.091) or detail orientation (U = 8016, p = 0.938). Regression analyses indicated that ARFID phenotype severity explained variance in task performance: greater fear of aversive consequences was associated with better set-shifting (p = 0.005), and greater lack of interest with reduced delay discounting (p = 0.004).<h4>Discussion</h4>Contrary to expectations, adults with ARFID matched HCs in overall cognitive flexibility efficiency by strategically slowing responses, challenging assumptions of innate cognitive rigidity. Future research should test whether interventions that increase processing speed while preserving accuracy could improve everyday adaptability and eating ",
+      "score": {
+        "composite": 0.31833333333333336,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 39,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_bfe32104",
+      "doi": "10.1111/bjop.12598",
+      "url": "https://doi.org/10.1111/bjop.12598",
+      "openalex_id": null,
+      "pmid": "36117407",
+      "first_author": "Iniesta",
+      "authors_display": "Iniesta, A. et al.",
+      "year": 2023,
+      "title": "Transfer effects from language processing to visual attention dynamics: The impact of orthographic transparency.",
+      "venue": "British journal of psychology (London, England : 1953)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/bjop.12598",
+      "tldr": null,
+      "abstract": "The consistency between letters and sounds varies across languages. These differences have been proposed to be associated with different reading mechanisms (lexical vs. phonological), processing grain sizes (coarse vs. fine) and attentional windows (whole words vs. individual letters). This study aimed to extend this idea to writing to dictation. For that purpose, we evaluated whether the use of different types of processing has a differential impact on local windowing attention: phonological (local) processing in a transparent language (Spanish) and lexical (global) processing of an opaque language (English). Spanish and English monolinguals (Experiment 1) and Spanish-English bilinguals (Experiment 2) performed a writing to dictation task followed by a global-local task. The first key performance showed a critical dissociation between languages: the response times (RTs) from the Spanish writing to dictation task was modulated by word length, whereas the RTs from the English writing to dictation task was modulated by word frequency and age of acquisition, as evidence that language transparency biases processing towards phonological or lexical strategies. In addition, after a Spanish task, participants more efficiently processed local information, which resulted in both the benefit of global congruent information and the reduced cost of incongruent global information. Additionally, the results showed that bilinguals adapt their attentional processing depending on the orthographic transparency.",
+      "score": {
+        "composite": 0.31662896277516484,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Language",
+        "Reaction Time",
+        "Multilingualism",
+        "Reading",
+        "Writing"
+      ]
+    },
+    {
+      "rank": 40,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_e2e0e742",
+      "doi": "10.3389/fpsyg.2010.00156",
+      "url": "https://doi.org/10.3389/fpsyg.2010.00156",
+      "openalex_id": null,
+      "pmid": "21833222",
+      "first_author": "Colzato",
+      "authors_display": "Colzato, L. et al.",
+      "year": 2010,
+      "title": "Buddha as an Eye Opener: A Link between Prosocial Attitude and Attentional Control.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3153771",
+      "tldr": null,
+      "abstract": "Increasing evidence suggests that religious practice induces systematic biases in attentional control. We used Navon's global-local task to compare attentional bias in Taiwanese Zen Buddhists and Taiwanese atheists; two groups brought up in the same country and culture and matched with respect to race, intelligence, sex, and age. Given the Buddhist emphasis on compassion for the physical and social environment, we expected a more global bias in Buddhist than in Atheist participants. In line with these expectations, Buddhists showed a larger global-precedence effect and increased interference from global distracters when processing local information. This pattern reinforces the idea that people's attentional processing style reflects biases rewarded by their religious practices.",
+      "score": {
+        "composite": 0.2980414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 41,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_27307af9",
+      "doi": "10.3389/fninf.2024.1080173",
+      "url": "https://doi.org/10.3389/fninf.2024.1080173",
+      "openalex_id": null,
+      "pmid": "38528885",
+      "first_author": "Ontivero-Ortega",
+      "authors_display": "Ontivero-Ortega, M. et al.",
+      "year": 2024,
+      "title": "Intra-V1 functional networks and classification of observed stimuli.",
+      "venue": "Frontiers in neuroinformatics",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participant,subject)"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.3389/fninf.2024.1080173",
+      "tldr": null,
+      "abstract": "<h4>Introduction</h4>Previous studies suggest that co-fluctuations in neural activity within V1 (measured with fMRI) carry information about observed stimuli, potentially reflecting various cognitive mechanisms. This study explores the neural sources shaping this information by using different fMRI preprocessing methods. The common response to stimuli shared by all individuals can be emphasized by using inter-subject correlations or de-emphasized by deconvolving the fMRI with hemodynamic response functions (HRFs) before calculating the correlations. The latter approach shifts the balance towards participant-idiosyncratic activity.<h4>Methods</h4>Here, we used multivariate pattern analysis of intra-V1 correlation matrices to predict the Level or Shape of observed Navon letters employing the types of correlations described above. We assessed accuracy in inter-subject prediction of specific conjunctions of properties, and attempted intra-subject cross-classification of stimulus properties (i.e., prediction of one feature despite changes in the other). Weight maps from successful classifiers were projected onto the visual field. A control experiment investigated eye-movement patterns during stimuli presentation.<h4>Results</h4>All inter-subject classifiers accurately predicted the Level and Shape of specific observed stimuli. However, successful intra-subject cross-classification was achieved only for stimulus Level, but not Shape, regardless of preprocessing scheme. Weight maps for successful Level classification differed between inter-subject correlations and deconvolved correlations. The latter revealed asymmetries in visual field link strength that corresponded to known perceptual asymmetries. Post-hoc measurement of eyeball fMRI signals did not find differences in gaze between stimulus conditions, and a control experiment (with derived simulations) also suggested that eye movements do not explain the stimulus-related changes in V1 topology.<h4>Discussion</h4>Our fi",
+      "score": {
+        "composite": 0.28662896277516486,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 42,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_e5bab9f0",
+      "doi": "10.3390/bs7010013",
+      "url": "https://doi.org/10.3390/bs7010013",
+      "openalex_id": null,
+      "pmid": "28335460",
+      "first_author": "Boccia",
+      "authors_display": "Boccia, M. et al.",
+      "year": 2017,
+      "title": "Neuropsychology of Aesthetic Judgment of Ambiguous and Non-Ambiguous Artworks.",
+      "venue": "Behavioral sciences (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants,patients)"
+      ],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/2076-328X/7/1/13/pdf?version=1489821848",
+      "tldr": null,
+      "abstract": "Several affective and cognitive processes have been found to be pivotal in affecting aesthetic experience of artworks and both neuropsychological as well as psychiatric symptoms have been found to affect artistic production. However, there is a paucity of studies directly investigating effects of brain lesions on aesthetic judgment. Here, we assessed the effects of unilateral brain damage on aesthetic judgment of artworks showing part/whole ambiguity. We asked 19 unilaterally brain-damaged patients (10 left and 9 right brain damaged patients, respectively LBDP and RBDP) and 20 age- and education-matched healthy individuals (controls, C) to rate 10 Arcimboldo's ambiguous portraits (AP), 10 realistic Renaissance portraits (RP), 10 still life paintings (SL), and 10 Arcimboldo's modified portraits where only objects/parts are detectable (AO). They were also administered a Navon task, a facial recognition test, and evaluated on visuo-perceptual and visuo-constructional abilities. Patients included in the study did not show any deficits that could affect the capability to explore and enjoy artworks. SL and RP was not affected by brain damage regardless of its laterality. On the other hand, we found that RBDP liked AP more than the C participants. Furthermore, we found a positive correlation between aesthetic judgment of AP and visuo-perceptual skills even if the single case analyses failed to find a systematic association between neuropsychological deficits and aesthetic judgment of AP. On the whole, the present data suggest that a right hemisphere lesion may affect aesthetic judgment of ambiguous artworks, even in the absence of exploration or constructional deficits.",
+      "score": {
+        "composite": 0.28343197785181695,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 43,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4b587806",
+      "doi": "10.1177/03010066251345778",
+      "url": "https://doi.org/10.1177/03010066251345778",
+      "openalex_id": null,
+      "pmid": "40525597",
+      "first_author": "Teunisse",
+      "authors_display": "Teunisse, M. et al.",
+      "year": 2025,
+      "title": "Pupil size tracks attentional breadth in the Navon task.",
+      "venue": "Perception",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12417611",
+      "tldr": null,
+      "abstract": "Processing limitations necessitate the selection and prioritization of parts of the visual input-that is visual attention. Visual attention cannot just shift in space, but also changes in size, so-called attentional breadth. A common paradigm to assess attentional breadth is the Navon task wherein participants are instructed to attend global or local features in ambiguous figures. Differences in response times and accuracy then allow inferences about attentional breadth. Here we tested an alternative, overt-behavior free marker of attentional breadth in the Navon task: pupil size changes. Participants were asked to report the parity of either the global or the local number making up an adjusted Navon stimulus. Global and local numbers differed in luminance. We found no differences in pupil size when either a bright or dark feature was attended. However, we did find a larger pupil size when the global compared with when the local number was attended. This effect could be attributed to multiple factors. First, as accuracy was lower when reporting global compared with local features, task difficulty likely affected pupil size. Second, the observed effect possibly reflects higher effort necessary for a wide compared with a narrow attentional breadth-in our specific task layout. Third, we speculate that attentional breadth may effort-independently contribute to this difference in pupil size. Future work could tease apart these factors by changing task layout and stimulus sizes. Together, our data show that pupil size may serve as a physiological marker of attentional breadth in the Navon task.",
+      "score": {
+        "composite": 0.24336621483949453,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Pupil",
+        "Humans",
+        "Pattern Recognition, Visual",
+        "Visual Perception",
+        "Attention",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 44,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7d565cab",
+      "doi": "10.1186/s44247-023-00011-6",
+      "url": "https://doi.org/10.1186/s44247-023-00011-6",
+      "openalex_id": null,
+      "pmid": "38014369",
+      "first_author": "Arima",
+      "authors_display": "Arima, Y.",
+      "year": 2023,
+      "title": "Effects of chest movements while sitting on Navon task performance and stress levels.",
+      "venue": "BMC digital health",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10097445",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>This study explored physical activity during remote work, most of which takes place while sitting in front of a computer. The purpose of Experiment 1 was to develop a classification for body motion by creating a neural net that can distinguish among several kinds of chest movement. Experiment 2 examined the effects of chest movements on stress and performance on the Navon test to validate the model developed in Experiment 1.<h4>Method and results</h4>The procedures for this study were as follows.Experiment 1: Creation of the body movement classification model and preliminary experiment for Experiment 2.Data from five participants were used to construct a machine-learning categorization model. The other three participants participated in a pilot study for Experiment 2.Experiment 2: Model validation and confirmation of stress measurement validity.We recruited 34 new participants to test the validity of the model developed in Experiment 1. We asked 10 of the 34 participants to retake the stress measurement since the results of the stress assessment were unreliable.Using LSTM models, we classified six categories of chest movement in Experiment 1: walking, standing up and sitting down, sitting still, rotating, swinging, and rocking. The LSTM models yielded an accuracy rate of 83.8%. Experiment 2 tested the LSTM model and found that Navon task performance correlated with swinging chest movement. Due to the limited reliability of the stress measurement results, we were unable to draw a conclusion regarding the effects of body movements on stress. In terms of cognitive performance, swinging of the chest reduced RT and increased accuracy on the Navon task (β = .015 [-.003,.054], R<sup>2</sup> = .31).<h4>Conclusions</h4>LSTM classification successfully distinguished subtle movements of the chest; however, only swinging was related to cognitive performance. Chest movements reduced the reaction time, improving cognitive performance. However, the stress measur",
+      "score": {
+        "composite": 0.24336621483949453,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 45,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f6aa8c20",
+      "doi": "10.1186/s40359-023-01381-2",
+      "url": "https://doi.org/10.1186/s40359-023-01381-2",
+      "openalex_id": null,
+      "pmid": "37828554",
+      "first_author": "Liu",
+      "authors_display": "Liu, W. et al.",
+      "year": 2023,
+      "title": "Effects of cell phone presence on the control of visual attention during the Navon task.",
+      "venue": "BMC psychology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://bmcpsychology.biomedcentral.com/counter/pdf/10.1186/s40359-023-01381-2",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Although cell phones can provide great convenience to our lives, research has shown that they can also affect our behavior, even when not in use. It seems that having a cell phone nearby may not be ideal when the user needs to concentrate on work. However, little is known about whether cell phone presence specifically impairs attentional control.<h4>Methods</h4>This study investigated whether cell phone presence can influence attentional control in the Navon task, which involves spatial switching of attention between global and local levels.<h4>Results</h4>It was found that the reaction time for all types of trials decreased when the participants had a cell phone nearby compared to when they had a mobile battery nearby. It was also found that phone dependency led to more incorrect responses among participants, but this effect was independent of the influence of phone presence on the Navon task performance.<h4>Conclusions</h4>These findings indicate that cell phone presence may have a positive influence on the perceptual process of the Navon letter, suggesting that the effects of phone presence are not always negative. One implication provided by this study is that it is possible to challenge the assertion that cell phones should always be excluded from the workplace by highlighting the positive effects of their presence.",
+      "score": {
+        "composite": 0.24336621483949453,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Task Performance and Analysis",
+        "Reaction Time",
+        "Cell Phone"
+      ]
+    },
+    {
+      "rank": 46,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2864eab4",
+      "doi": "10.3390/vision7030055",
+      "url": "https://doi.org/10.3390/vision7030055",
+      "openalex_id": null,
+      "pmid": "37756129",
+      "first_author": "Trawiński",
+      "authors_display": "Trawiński, T. et al.",
+      "year": 2023,
+      "title": "The Effect of Prior Viewing Position and Spatial Scale on the Viewing of Paintings.",
+      "venue": "Vision (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10534493",
+      "tldr": null,
+      "abstract": "The visual inspection of scenes is disrupted when participants are forced to begin inspection away from the centre of an image. The present study explored the effect of the starting point on the visual inspection of paintings. Eye movements were recorded while participants viewed paintings for later identification in a yes/no discrimination task. The viewing of each painting was preceded by the presentation of a pseudo-randomly positioned Navon figure. Participants were instructed using a cue to attend to either the local or global level of the Navon figure. Each painting was split into regions of interest (ROIs) defined by face, theme, and context to allow the analysis of eye movements. These data were directly compared with a subset of those initially reported in our previous study in which the same experiment was run but without the inclusion of the Navon figure. The inclusion of the Navon task lowered the discrimination accuracy in the yes/no discrimination task. More importantly, eye movements to the paintings were disrupted across the entire period over which they were viewed and not just in the period following the offset of the Navon figure. The results show the sensitivity of eye movements to the conditions present at the beginning of viewing. The results have implications for the viewing of paintings (and other images) in the real world, where the starting conditions for inspection cannot be controlled.",
+      "score": {
+        "composite": 0.24336621483949453,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 47,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f0886a3b",
+      "doi": "10.1177/20416695251364206",
+      "url": "https://doi.org/10.1177/20416695251364206",
+      "openalex_id": null,
+      "pmid": "40873864",
+      "first_author": "Wang",
+      "authors_display": "Wang, H., & Yang, Z.",
+      "year": 2025,
+      "title": "Gender differences in face pareidolia: The effect of cognitive style and judgment criteria.",
+      "venue": "i-Perception",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1177/20416695251364206",
+      "tldr": null,
+      "abstract": "Face pareidolia refers to perceiving facial features on inanimate objects. Previous studies have identified gender differences in pareidolia, but the factors behind these differences remain unclear. This study examined potential influences, including task requirement, low-frequency information encoding ability, and cognitive style. University student participants reported what they saw in face-like object images and rated their face-likeness. A delayed matching task with blurred faces assessed encoding ability, and the Navon task examined cognitive style. Results showed that gender differences were influenced by task demands: women were more likely than men to perceive faces in objects, and this was not related to facial configuration processing. Additionally, a global processing tendency predicted higher pareidolia in women but not in men. Our findings suggest that gender differences in pareidolia are shaped by judgment criteria, with women adopting more relaxed criteria. This research contributes to understanding gender differences in social cognition.",
+      "score": {
+        "composite": 0.2333333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 48,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_61824249",
+      "doi": "10.1177/03010066251328886",
+      "url": "https://doi.org/10.1177/03010066251328886",
+      "openalex_id": null,
+      "pmid": "40165414",
+      "first_author": "Hagan",
+      "authors_display": "Hagan, R. et al.",
+      "year": 2025,
+      "title": "Olfactory scene analysis: Does analytical visual processing predict superior identification of component odours in a complex mixture?",
+      "venue": "Perception",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12086288",
+      "tldr": null,
+      "abstract": "Most familiar odours are complex mixtures of volatile molecules, which the olfactory system synthesizes into a perceptual whole. However, odours are rarely encountered in isolation and thus, the brain must also separate distinct odour objects from complex backgrounds. While in vision, individual differences in scene analysis have been widely reported, to date, little attention has been paid to the cognitive processes underlying this olfactory ability. The aim of the present study was to determine whether local processing performance in visual tasks predicts participants' ability to identify component odours in multicomponent mixtures. Fifty-nine participants (F = 39), aged 16-55, completed two visual perception tasks, (Navon and Block Design), an odour-mixture task designed to test participants' ability to identify multi-component odour objects in binary/ternary mixtures and the Autism Quotient (AQ) Questionnaire, which measures autistic traits in the general population. While performance indices on neither visual task, nor scores on the AQ, were associated with odour mixture task performance, there was moderate evidence to support an association between reaction time on the Navon task and binary odour mixture task performance. These results provide insight into the cognitive processes underpinning olfactory scene analysis and support previous reports that faster processing speed is associated with superior selective attention.",
+      "score": {
+        "composite": 0.2333333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Visual Perception",
+        "Attention",
+        "Adolescent",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Olfactory Perception",
+        "Young Adult",
+        "Odorants"
+      ]
+    },
+    {
+      "rank": 49,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_165196df",
+      "doi": "10.1177/17470218241266795",
+      "url": "https://doi.org/10.1177/17470218241266795",
+      "openalex_id": null,
+      "pmid": "39082793",
+      "first_author": "Hine",
+      "authors_display": "Hine, K. et al.",
+      "year": 2025,
+      "title": "Influence of global/local processing on perceived colour transparency.",
+      "venue": "Quarterly journal of experimental psychology (2006)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12095879",
+      "tldr": null,
+      "abstract": "Our cognitive processing is flexible and affected by global/local dominance in prior cognitive tasks. Similar to cognitive processing, perceptual processing, especially colour perception related to global/local processing, may be affected by prior global/local dominance; however, this possibility has not yet been assessed. Here, we examined whether prior tasks involving global/local processing influenced colour perception related to global/local processing. As colour perception is related to global/local processing, we focused on perceived colour transparency, in which a transparent layer is perceived in front of a background layer, even though these stimuli are physically in the same layer. When viewing the colour transparency stimulus, we expected that the perceived colour of a specific region, when focusing on only the local region, would differ from that when focusing on the whole image. In our study, the participants completed a global or local Navon task, followed by a colour-matching task that assessed how they saw colours using colour transparency stimuli. The degree of optical illusion (i.e., perceived colour transparency) after the global Navon task was greater than that after the local Navon task. Thus, prior global/local processing, a flexible mode of cognitive processing, influenced colour perception. This study provides new insight into perceptual flexibility, especially in colour perception.",
+      "score": {
+        "composite": 0.2333333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Analysis of Variance",
+        "Photic Stimulation",
+        "Optical Illusions",
+        "Color Perception",
+        "Reaction Time",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    }
+  ]
+}

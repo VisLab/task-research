@@ -1,0 +1,1139 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_implicit_association",
+    "name": "Implicit Association Task",
+    "aliases": [
+      "Implicit Association Test",
+      "IAT",
+      "Implicit Association"
+    ],
+    "category_id": "social_cognition_and_strategic_social_choice",
+    "short_definition": "Speeded categorization of stimuli belonging to two target concepts and two evaluative attributes using shared response keys; congruence-condition RT difference indexes implicit association.",
+    "description": "Participants rapidly classify stimuli from four categories using two response keys. Two categories are target concepts (e.g., \"flowers\" vs. \"insects\") and two are evaluative attributes (e.g., \"pleasant\" vs. \"unpleasant\"). In the critical comparison, one block pairs congruent categories on the same key (flowers + pleasant) and another pairs incongruent categories (flowers + unpleasant). The IAT effect — faster responding in the congruent block — is interpreted as reflecting the strength of automatic associations between the concepts and attributes. Greenwald et al. (1998) introduced the IAT as a measure of implicit attitudes, and it has become one of the most widely administered psychological tests, with applications spanning racial bias, self-esteem, clinical anxiety, consumer preferences, and political attitudes.",
+    "inclusion_test": {
+      "procedure": "Participants sort stimuli from two target categories (e.g., Black/White faces) and two attribute categories (e.g., pleasant/unpleasant words) using two response keys. Critical comparison is between compatible and incompatible pairings.",
+      "manipulation": "Target-attribute pairing (compatible vs. incompatible blocks); category exemplars; number of practice and test trials.",
+      "measurement": "IAT D-score (standardized RT difference between incompatible and compatible blocks); error rates."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:41:52",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Greenwald 1998 — Measuring individual differences in implicit cognition: The implicit associat… (Journal of Personality and Socia…, historical, 9k×)",
+      "doi": "10.1037/0022-3514.74.6.1464",
+      "pub_id": "pub_1d1d31bb",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.8593803968213507,
+        "breakdown": {
+          "raw": {
+            "citations": 0.527521587285403,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.13188039682135075,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": null,
+      "year": 1998,
+      "venue": "Journal of Personality and Social Psychology",
+      "citation_count": 9056,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Hedge 2018 — Low and variable correlation between reaction time costs and accuracy costs e… (Psychological bulletin, key_review, 38×)",
+      "doi": "10.1037/bul0000164",
+      "pub_id": "pub_071dd91a",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6480278141742465,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Psychological bulletin",
+      "citation_count": 38,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Hahn 2014 — Awareness of implicit attitudes. (Journal of experimental psycholo…, foundational, 70×)",
+      "doi": "10.1037/a0035028",
+      "pub_id": "pub_dbd52cfc",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6291996841428467,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24679873657138676,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06169968414284669,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Journal of experimental psychology. General",
+      "citation_count": 70,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Kurdi 2019 — The relationship between implicit intergroup attitudes and beliefs. (Proceedings of the National Acad…, recent_primary, 36×)",
+      "doi": "10.1073/pnas.1820240116",
+      "pub_id": "pub_e439a40d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6072658283292279,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2090633133169118,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05226582832922795,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 36,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Ho 2018 — Reduced dorsal striatal gray matter volume predicts implicit suicidal ideatio… (Social cognitive and affective n…, recent_primary, 33×)",
+      "doi": "10.1093/scan/nsy089",
+      "pub_id": "pub_c3303e2b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5985419118532629,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 33,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Fiscella 2021 — Is physician implicit bias associated with differences in care by patient rac… (PloS one, recent_primary, 39×)",
+      "doi": "10.1371/journal.pone.0257794",
+      "pub_id": "pub_62d02efb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5908942739603151,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PloS one",
+      "citation_count": 39,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Sukhera 2019 — The Implicit Association Test in health professions education: A meta-narrati… (Perspectives on medical education, key_review, 51×)",
+      "doi": "10.1007/s40037-019-00533-8",
+      "pub_id": "pub_4470a9ba",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5846918362251246,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.75,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.1875,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Perspectives on medical education",
+      "citation_count": 51,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Schnierle 2019 — Implicit Bias: What Every Pediatrician Should Know About the Effect of Bias o… (Current problems in pediatric an…, key_review, 50×)",
+      "doi": "10.1016/j.cppeds.2019.01.003",
+      "pub_id": "pub_ce187e78",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.584410771308546,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22764308523418395,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.75,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.056910771308545986,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.1875,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Current problems in pediatric and adolescent health care",
+      "citation_count": 50,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Banakou 2013 — Illusory ownership of a virtual child body causes overestimation of object si… (Proceedings of the National Acad…, foundational, 223×)",
+      "doi": "10.1073/pnas.1306779110",
+      "pub_id": "pub_fce08a56",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5733302668095485,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31332106723819364,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07833026680954841,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 223,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Reuben 2014 — How stereotypes impair women's careers in science. (Proceedings of the National Acad…, foundational, 111×)",
+      "doi": "10.1073/pnas.1314788111",
+      "pub_id": "pub_f356d956",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5732973853033873,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2731895412135488,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0682973853033872,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 111,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Meissner 2019 — Predicting Behavior With Implicit Measures: Disillusioning Findings, Reasonab… (Frontiers in psychology, key_review, 58×)",
+      "doi": "10.3389/fpsyg.2019.02483",
+      "pub_id": "pub_02aaf01a",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5665198606572902,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23607944262916078,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.75,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.059019860657290195,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.1875,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Frontiers in psychology",
+      "citation_count": 58,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Greenwald 2022 — Best research practices for using the Implicit Association Test. (Behavior research methods, recent_primary, 56×)",
+      "doi": "10.3758/s13428-021-01624-3",
+      "pub_id": "pub_a3a8b7f0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5660206943505858,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Behavior research methods",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Motzkus 2019 — Pre-clinical medical student reflections on implicit bias: Implications for l… (PloS one, recent_primary, 24×)",
+      "doi": "10.1371/journal.pone.0225058",
+      "pub_id": "pub_66c596f0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5640912588836631,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Brent 2023 — A comparison of self-reported risk and protective factors and the death impli… (Psychological medicine, recent_primary, 22×)",
+      "doi": "10.1017/s0033291721001215",
+      "pub_id": "pub_d0196587",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5628843610908988,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Psychological medicine",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Nubile 2021 — Epithelial and stromal remodelling following femtosecond laser-assisted strom… (Scientific reports, recent_primary, 30×)",
+      "doi": "10.1038/s41598-021-81626-5",
+      "pub_id": "pub_35bb6856",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5622048645403726,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "De Dreu 2011 — Oxytocin promotes human ethnocentrism. (Proceedings of the National Acad…, foundational, 359×)",
+      "doi": "10.1073/pnas.1015316108",
+      "pub_id": "pub_26bd9075",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5601977558832038,
+        "breakdown": {
+          "raw": {
+            "citations": 0.34079102353281515,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08519775588320379,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 359,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Moreno 2022 — Implicit Cognition Tests for the Assessment of Suicide Risk: a Systematic Rev… (Current psychiatry reports, key_review, 16×)",
+      "doi": "10.1007/s11920-022-01316-5",
+      "pub_id": "pub_9aac0ed0",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5585090303471016,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.75,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.1875,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Current psychiatry reports",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Hwang 2019 — GABA-stimulated adipose-derived stem cells suppress subcutaneous adipose infl… (Proceedings of the National Acad…, recent_primary, 66×)",
+      "doi": "10.1073/pnas.1822067116",
+      "pub_id": "pub_0e0d06af",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5533603540536682,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2434414162146728,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0608603540536682,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 66,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Afulani 2021 — Understanding disparities in person-centred maternity care: the potential rol… (Health policy and planning, recent_primary, 30×)",
+      "doi": "10.1093/heapol/czaa190",
+      "pub_id": "pub_d04cdb44",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5472048645403725,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Health policy and planning",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Price 2009 — Effects of intravenous ketamine on explicit and implicit measures of suicidal… (Biological psychiatry, foundational, 443×)",
+      "doi": "10.1016/j.biopsych.2009.04.029",
+      "pub_id": "pub_0d752871",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5457333323029947,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35293332921197873,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08823333230299468,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Biological psychiatry",
+      "citation_count": 443,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Ho 2021 — Smaller caudate gray matter volume is associated with greater implicit suicid… (Journal of affective disorders, recent_primary, 24×)",
+      "doi": "10.1016/j.jad.2020.09.046",
+      "pub_id": "pub_c86905b9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.544091258883663,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of affective disorders",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Stanley 2011 — Implicit race attitudes predict trustworthiness judgments and economic trust … (Proceedings of the National Acad…, foundational, 99×)",
+      "doi": "10.1073/pnas.1014345108",
+      "pub_id": "pub_b86bd3db",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5416570218959855,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2666280875839421,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06665702189598552,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 99,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Stone 2020 — Testing active learning workshops for reducing implicit stereotyping of Hispa… (Stigma and health, recent_primary, 35×)",
+      "doi": "10.1037/sah0000179",
+      "pub_id": "pub_e70973c6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.539369244935211,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Stigma and health",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Zeidan 2019 — Implicit Bias Education and Emergency Medicine Training: Step One? Awareness. (AEM education and training, recent_primary, 66×)",
+      "doi": "10.1002/aet2.10124",
+      "pub_id": "pub_c86b50c1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5383603540536682,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2434414162146728,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0608603540536682,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "AEM education and training",
+      "citation_count": 66,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Glenn 2017 — Suicide and self-injury-related implicit cognition: A large-scale examination… (Journal of abnormal psychology, foundational, 65×)",
+      "doi": "10.1037/abn0000230",
+      "pub_id": "pub_c7f1a9e3",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.538142689976061,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24257075990424393,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06064268997606098,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Journal of abnormal psychology",
+      "citation_count": 65,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Miller 2020 — Assessment and Treatment Recommendations for Pediatric Pain: The Influence of… (The journal of pain, recent_primary, 28×)",
+      "doi": "10.1016/j.jpain.2019.07.002",
+      "pub_id": "pub_84dde935",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5362395476832981,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "The journal of pain",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Lowe 2020 — Individuation and implicit racial bias in genetic counseling communication. (Patient education and counseling, recent_primary, 22×)",
+      "doi": "10.1016/j.pec.2019.10.016",
+      "pub_id": "pub_c6871015",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5328843610908989,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Patient education and counseling",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Nosek 2009 — National differences in gender-science stereotypes predict national sex diffe… (Proceedings of the National Acad…, foundational, 188×)",
+      "doi": "10.1073/pnas.0809921106",
+      "pub_id": "pub_9367ca3d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5308710821630753,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30348432865230124,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07587108216307531,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 188,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Izquierdo 2019 — Implicit attitudes toward dieting and thinness distinguish fat-phobic and non… (The International journal of eat…, recent_primary, 35×)",
+      "doi": "10.1002/eat.22981",
+      "pub_id": "pub_444c0e52",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5293692449352111,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "The International journal of eating disorders",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Sabin 2012 — Implicit and explicit anti-fat bias among a large sample of medical doctors b… (PloS one, foundational, 250×)",
+      "doi": "10.1371/journal.pone.0048448",
+      "pub_id": "pub_6660997d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5274775518979913,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31991020759196515,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.75,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07997755189799129,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.1875,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "PloS one",
+      "citation_count": 250,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

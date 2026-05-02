@@ -1,0 +1,2256 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:45:52",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_causal_learning",
+    "name": "Causal Learning Task",
+    "aliases": [
+      "Contingency Judgment Task",
+      "Contingency Learning Task",
+      "Causal Judgment Task",
+      "Causal Induction Task",
+      "Delta-P Task",
+      "Allergy Prediction Task"
+    ],
+    "category_id": "reasoning_and_problem_solving",
+    "short_definition": "Participants observe cue-outcome pairings across trials and judge the causal strength of the relationship; judgment profiles across contingency conditions index causal induction and associative learning mechanisms.",
+    "description": "Causal learning tasks measure how people acquire and represent causal relationships from observed co-occurrences. In the standard contingency judgment paradigm, participants observe a series of trials in which a candidate cause (e.g., a food, a medicine, a button press) is either present or absent and an outcome (e.g., an allergic reaction, a health improvement, a light turning on) either occurs or does not. After observing multiple trials, participants rate the causal strength of the relationship (typically -100 to +100 or 0 to 100). The normative benchmark is delta-P (P(outcome|cause) - P(outcome|no cause)), but human judgments systematically deviate: they are sensitive to outcome density, show cue competition effects (blocking, overshadowing), and are influenced by prior causal beliefs. Associative models (Rescorla-Wagner) and statistical models (causal power; Cheng, 1997) compete to explain these patterns. The paradigm bridges associative learning, causal reasoning, and Bayesian inference literatures. It is the human analogue of animal conditioning studies and is foundational for understanding how people learn cause-effect relationships in medicine, engineering, and everyday reasoning.",
+    "inclusion_test": {
+      "procedure": "Participants observe a series of trials presenting the presence/absence of candidate causes and occurrence/non-occurrence of outcomes, then judge the causal strength of cause-outcome relationships.",
+      "manipulation": "Contingency (delta-P value: positive, zero, negative); outcome base rate (common vs. rare outcomes); cue competition (blocking, overshadowing, relative validity); number of trials; trial-by-trial vs. summary presentation; number of candidate causes; temporal contiguity between cause and outcome.",
+      "measurement": "Causal strength ratings; trial-by-trial prediction accuracy; judgment latency; sensitivity to contingency components (P(O|C) and P(O|~C) separately); blocking magnitude; correspondence between judgments and normative models (delta-P, causal power, Rescorla-Wagner)."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 30,
+      "picked": 30,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_edcec506",
+      "doi": "10.1037/a0022970",
+      "url": "https://doi.org/10.1037/a0022970",
+      "openalex_id": null,
+      "pmid": "21534705",
+      "first_author": "Luhmann",
+      "authors_display": "Luhmann, C., & Ahn, W.",
+      "year": 2011,
+      "title": "Expectations and interpretations during causal learning.",
+      "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In existing models of causal induction, 4 types of covariation information (i.e., presence/absence of an event followed by presence/absence of another event) always exert identical influences on causal strength judgments (e.g., joint presence of events always suggests a generative causal relationship). In contrast, we suggest that, due to expectations developed during causal learning, learners give varied interpretations to covariation information as it is encountered and that these interpretations influence the resulting causal beliefs. In Experiments 1A-1C, participants' interpretations of observations during a causal learning task were dynamic, expectation based, and, furthermore, strongly tied to subsequent causal judgments. Experiment 2 demonstrated that adding trials of joint absence or joint presence of events, whose roles have been traditionally interpreted as increasing causal strengths, could result in decreased overall causal judgments and that adding trials where one event occurs in the absence of another, whose roles have been traditionally interpreted as decreasing causal strengths, could result in increased overall causal judgments. We discuss implications for traditional models of causal learning and how a more top-down approach (e.g., Bayesian) would be more compatible with the current findings.",
+      "score": {
+        "composite": 0.4204223532227412,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Indoles",
+        "Fatty Acids",
+        "Regression Analysis",
+        "Photic Stimulation",
+        "Feedback, Psychological",
+        "Learning",
+        "Decision Making",
+        "Choice Behavior",
+        "Judgment",
+        "Models, Psychological",
+        "Students",
+        "Universities",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_82a7db08",
+      "doi": "10.1037/a0024851",
+      "url": "https://doi.org/10.1037/a0024851",
+      "openalex_id": null,
+      "pmid": "21843025",
+      "first_author": "Mutter",
+      "authors_display": "Mutter, S. et al.",
+      "year": 2012,
+      "title": "Aging and retrospective revaluation of causal learning.",
+      "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In a 2-stage causal learning task, young and older participants first learned which foods presented in compound were followed by an allergic reaction (e.g., STEAK-BEANS→ REACTION) and then the causal efficacy of 1 food from these compounds was revalued (e.g., BEANS→ NO REACTION). In Experiment 1, unrelated food pairs were used, and although there were no age differences in compound- or single-cue-outcome learning, older adults did not retrospectively revalue the causal efficacy of the absent target cues (e.g., STEAK). However, they had weaker within-compound associations for the unrelated foods, and this may have prevented them from retrieving the representations of these cues. In Experiment 2, older adults still showed no retrospective revaluation of absent cues even though compound food cues with pre-existing associations were used (e.g., STEAK-POTATO), and they received additional learning trials. Finally, in Experiment 3, older adults revalued the causal efficacy of the target cues when small, unobtrusive icons of these cues were present during single-cue revaluation. These findings suggest that age-related deficits in causal learning for absent cues are due to ineffective associative binding and reactivation processes.",
+      "score": {
+        "composite": 0.41161602667573005,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Hypersensitivity",
+        "Analysis of Variance",
+        "Retrospective Studies",
+        "Predictive Value of Tests",
+        "Photic Stimulation",
+        "Feedback, Psychological",
+        "Food Preferences",
+        "Association Learning",
+        "Cues",
+        "Neuropsychological Tests",
+        "Aging",
+        "Adolescent",
+        "Adult",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_3914cb38",
+      "doi": "10.1037/a0014929",
+      "url": "https://doi.org/10.1037/a0014929",
+      "openalex_id": null,
+      "pmid": "19271850",
+      "first_author": "Marsh",
+      "authors_display": "Marsh, J., & Ahn, W.",
+      "year": 2009,
+      "title": "Spontaneous assimilation of continuous values and temporal information in causal induction.",
+      "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Existing models of causal induction primarily rely on the contingency between the presence and the absence of a causal candidate and an effect. Yet, classification of observations into these four types of covariation data may not be straightforward because (a) most causal candidates, in real life, are continuous with ambiguous, intermediate values and because (b) effects may unfold after some temporal lag, providing ambiguous contingency information. Although past studies suggested various reasons why ambiguous information may not be used during causal induction, the authors examined whether learners spontaneously use ambiguous information through a process called causal assimilation. In particular, the authors examined whether learners willingly place ambiguous observations into one of the categories relevant to the causal hypothesis, in accordance with their current causal beliefs. In Experiment 1, people's frequency estimates of contingency data reflected that information ambiguous along a continuous quantity dimension was spontaneously categorized and assimilated in a causal induction task. This assimilation process was moderated by the strength of the upheld causal hypothesis (Experiment 2), could alter the overall perception of a causal relationship (Experiment 3), and could occur over temporal sequences (Experiment 4).",
+      "score": {
+        "composite": 0.4097818859544724,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Association Learning",
+        "Cues",
+        "Problem Solving",
+        "Pattern Recognition, Visual",
+        "Size Perception",
+        "Decision Making",
+        "Judgment",
+        "Culture",
+        "Male",
+        "Discrimination, Psychological"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_71c539ec",
+      "doi": "10.1371/journal.pone.0191907",
+      "url": "https://doi.org/10.1371/journal.pone.0191907",
+      "openalex_id": null,
+      "pmid": "29385184",
+      "first_author": "Barberia",
+      "authors_display": "Barberia, I. et al.",
+      "year": 2018,
+      "title": "A short educational intervention diminishes causal illusions and specific paranormal beliefs in undergraduates.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5792014",
+      "tldr": null,
+      "abstract": "Cognitive biases such as causal illusions have been related to paranormal and pseudoscientific beliefs and, thus, pose a real threat to the development of adequate critical thinking abilities. We aimed to reduce causal illusions in undergraduates by means of an educational intervention combining training-in-bias and training-in-rules techniques. First, participants directly experienced situations that tend to induce the Barnum effect and the confirmation bias. Thereafter, these effects were explained and examples of their influence over everyday life were provided. Compared to a control group, participants who received the intervention showed diminished causal illusions in a contingency learning task and a decrease in the precognition dimension of a paranormal belief scale. Overall, results suggest that evidence-based educational interventions like the one presented here could be used to significantly improve critical thinking skills in our students.",
+      "score": {
+        "composite": 0.3983332391034272,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Illusions",
+        "Prejudice",
+        "Thinking",
+        "Judgment",
+        "Parapsychology",
+        "Culture",
+        "Students",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_619bb5f5",
+      "doi": "10.1371/journal.pone.0131378",
+      "url": "https://doi.org/10.1371/journal.pone.0131378",
+      "openalex_id": null,
+      "pmid": "26177025",
+      "first_author": "Blanco",
+      "authors_display": "Blanco, F. et al.",
+      "year": 2015,
+      "title": "Individuals Who Believe in the Paranormal Expose Themselves to Biased Information and Develop More Causal Illusions than Nonbelievers in the Laboratory.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 30,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0131378&type=printable",
+      "tldr": null,
+      "abstract": "In the reasoning literature, paranormal beliefs have been proposed to be linked to two related phenomena: a biased perception of causality and a biased information-sampling strategy (believers tend to test fewer hypotheses and prefer confirmatory information). In parallel, recent contingency learning studies showed that, when two unrelated events coincide frequently, individuals interpret this ambiguous pattern as evidence of a causal relationship. Moreover, the latter studies indicate that sampling more cause-present cases than cause-absent cases strengthens the illusion. If paranormal believers actually exhibit a biased exposure to the available information, they should also show this bias in the contingency learning task: they would in fact expose themselves to more cause-present cases than cause-absent trials. Thus, by combining the two traditions, we predicted that believers in the paranormal would be more vulnerable to developing causal illusions in the laboratory than nonbelievers because there is a bias in the information they experience. In this study, we found that paranormal beliefs (measured using a questionnaire) correlated with causal illusions (assessed by using contingency judgments). As expected, this correlation was mediated entirely by the believers' tendency to expose themselves to more cause-present cases. The association between paranormal beliefs, biased exposure to information, and causal illusions was only observed for ambiguous materials (i.e., the noncontingent condition). In contrast, the participants' ability to detect causal relationships which did exist (i.e., the contingent condition) was unaffected by their susceptibility to believe in paranormal phenomena.",
+      "score": {
+        "composite": 0.3754191502546583,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Illusions",
+        "Thinking",
+        "Judgment",
+        "Parapsychology",
+        "Culture",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b6a1c6f0",
+      "doi": "10.1007/s00213-010-1934-4",
+      "url": "https://doi.org/10.1007/s00213-010-1934-4",
+      "openalex_id": null,
+      "pmid": "20631992",
+      "first_author": "Chase",
+      "authors_display": "Chase, H. et al.",
+      "year": 2011,
+      "title": "5-HT modulation by acute tryptophan depletion of human instrumental contingency judgements.",
+      "venue": "Psychopharmacology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s00213-010-1934-4.pdf",
+      "tldr": null,
+      "abstract": "<h4>Introduction</h4>The concept of 'depressive realism', that depression leads to more accurate perception of causal control, has been influential in the field of depression research, but remains controversial. Recent work testing contingency learning has suggested that contextual processing might determine realism-like effects. Serotonin (5-hydroxytryptamine, (5-HT)), which is implicated in the pathophysiology of depression, might also influence contextual processing. Using acute tryptophan depletion (ATD), we tested the hypothesis that dysfunctional serotoninergic neurotransmission influences contingency judgements in dysphoric subjects via an effect on contextual processing.<h4>Materials and methods</h4>We employed a novel contingency learning task to obtain separate measures (ratings) of the causal effect of participants' responses and efficacy of the background context over an outcome. Participants, without a history of depression, completed this task on and off ATD in a double-blind, placebo-controlled, within-subjects design.<h4>Results</h4>As with other work on contingency learning, the effects of ATD were related to baseline mood levels. Although no overall effects of ATD were observed, the subgroup of participants with low Beck depression inventory (BDI) scores showed reduced ratings of contextual control and improved accuracy of contingency judgements under positive contingencies following ATD, compared to placebo. High BDI participants demonstrated low accuracy in contingency judgements, regardless of serotoninergic status.<h4>Conclusions</h4>No effect of ATD on contingency judgements was observed in the group as a whole, but effects were observed in a subgroup of participants with low BDI scores. We discuss these data in light of the context processing hypothesis, and prior research on 5-HT and depressive realism.",
+      "score": {
+        "composite": 0.36491165611756154,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Serotonin",
+        "Tryptophan",
+        "Double-Blind Method",
+        "Affect",
+        "Learning",
+        "Judgment",
+        "Psychiatric Status Rating Scales",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_be6add94",
+      "doi": "10.1371/journal.pone.0065088",
+      "url": "https://doi.org/10.1371/journal.pone.0065088",
+      "openalex_id": null,
+      "pmid": "23776445",
+      "first_author": "Corlett",
+      "authors_display": "Corlett, P. et al.",
+      "year": 2013,
+      "title": "Ketamine effects on memory reconsolidation favor a learning model of delusions.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 49,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0065088&type=printable",
+      "tldr": null,
+      "abstract": "Delusions are the persistent and often bizarre beliefs that characterise psychosis. Previous studies have suggested that their emergence may be explained by disturbances in prediction error-dependent learning. Here we set up complementary studies in order to examine whether such a disturbance also modulates memory reconsolidation and hence explains their remarkable persistence. First, we quantified individual brain responses to prediction error in a causal learning task in 18 human subjects (8 female). Next, a placebo-controlled within-subjects study of the impact of ketamine was set up on the same individuals. We determined the influence of this NMDA receptor antagonist (previously shown to induce aberrant prediction error signal and lead to transient alterations in perception and belief) on the evolution of a fear memory over a 72 hour period: they initially underwent Pavlovian fear conditioning; 24 hours later, during ketamine or placebo administration, the conditioned stimulus (CS) was presented once, without reinforcement; memory strength was then tested again 24 hours later. Re-presentation of the CS under ketamine led to a stronger subsequent memory than under placebo. Moreover, the degree of strengthening correlated with individual vulnerability to ketamine's psychotogenic effects and with prediction error brain signal. This finding was partially replicated in an independent sample with an appetitive learning procedure (in 8 human subjects, 4 female). These results suggest a link between altered prediction error, memory strength and psychosis. They point to a core disruption that may explain not only the emergence of delusional beliefs but also their persistence.",
+      "score": {
+        "composite": 0.36233842610411,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Ketamine",
+        "Receptors, N-Methyl-D-Aspartate",
+        "Magnetic Resonance Imaging",
+        "Case-Control Studies",
+        "Delusions",
+        "Fear",
+        "Association Learning",
+        "Conditioning, Classical",
+        "Memory",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_6e41cf31",
+      "doi": "10.1371/journal.pone.0071303",
+      "url": "https://doi.org/10.1371/journal.pone.0071303",
+      "openalex_id": null,
+      "pmid": "23967189",
+      "first_author": "Barberia",
+      "authors_display": "Barberia, I. et al.",
+      "year": 2013,
+      "title": "Implementation and assessment of an intervention to debias adolescents against causal illusions.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 27,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0071303&type=printable",
+      "tldr": null,
+      "abstract": "Researchers have warned that causal illusions are at the root of many superstitious beliefs and fuel many people's faith in pseudoscience, thus generating significant suffering in modern society. Therefore, it is critical that we understand the mechanisms by which these illusions develop and persist. A vast amount of research in psychology has investigated these mechanisms, but little work has been done on the extent to which it is possible to debias individuals against causal illusions. We present an intervention in which a sample of adolescents was introduced to the concept of experimental control, focusing on the need to consider the base rate of the outcome variable in order to determine if a causal relationship exists. The effectiveness of the intervention was measured using a standard contingency learning task that involved fake medicines that typically produce causal illusions. Half of the participants performed the contingency learning task before participating in the educational intervention (the control group), and the other half performed the task after they had completed the intervention (the experimental group). The participants in the experimental group made more realistic causal judgments than did those in the control group, which served as a baseline. To the best of our knowledge, this is the first evidence-based educational intervention that could be easily implemented to reduce causal illusions and the many problems associated with them, such as superstitions and belief in pseudoscience.",
+      "score": {
+        "composite": 0.3539459080053505,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Illusions",
+        "Prejudice",
+        "Learning",
+        "Perception",
+        "Judgment",
+        "Adolescent"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_0ff29722",
+      "doi": "10.1371/journal.pone.0040252",
+      "url": "https://doi.org/10.1371/journal.pone.0040252",
+      "openalex_id": null,
+      "pmid": "22768344",
+      "first_author": "Catena",
+      "authors_display": "Catena, A. et al.",
+      "year": 2012,
+      "title": "The brain network of expectancy and uncertainty processing.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 39,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3388057",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>The Stimulus Preceding Negativity (SPN) is a non-motor slow cortical potential elicited by temporally predictable stimuli, customarily interpreted as a physiological index of expectancy. Its origin would be the brain activity responsible for generating the anticipatory mental representation of an expected upcoming event. The SPN manifests itself as a slow cortical potential with negative slope, growing in amplitude as the stimulus approximates. The uncertainty hypothesis we present here postulates that the SPN is linked to control-related areas in the prefrontal cortex that become more active before the occurrence of an upcoming outcome perceived as uncertain.<h4>Methods/findings</h4>We tested the uncertainty hypothesis by using a repeated measures design in a Human Contingency Learning task with two levels of uncertainty. In the high uncertainty condition, the outcome is unpredictable. In the mid uncertainty condition, the outcome can be learnt to be predicted in 75% of the trials. Our experiment shows that the Stimulus Preceding Negativity is larger for probabilistically unpredictable (uncertain) outcomes than for probabilistically predictable ones. sLoreta estimations of the brain activity preceding the outcome suggest that prefrontal and parietal areas can be involved in its generation. Prefrontal sites activation (Anterior Cingulate and Dorsolateral Prefrontal Cortex) seems to be related to the degree of uncertainty. Activation in posterior parietal areas, however, does not correlates with uncertainty.<h4>Conclusions/significance</h4>We suggest that the Stimulus Preceding Negativity reflects the attempt to predict the outcome, when posterior brain areas fail to generate a stable expectancy. Uncertainty is thus conceptualized, not just as the absence of learned expectancy, but as a state with psychological and physiological entity.",
+      "score": {
+        "composite": 0.34910855967460086,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Uncertainty",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Brain Waves"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5abca6dd",
+      "doi": "10.1371/journal.pone.0046203",
+      "url": "https://doi.org/10.1371/journal.pone.0046203",
+      "openalex_id": null,
+      "pmid": "23029435",
+      "first_author": "Blanco",
+      "authors_display": "Blanco, F. et al.",
+      "year": 2012,
+      "title": "Mediating role of activity level in the depressive realism effect.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 26,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0046203&type=printable",
+      "tldr": null,
+      "abstract": "Several classic studies have concluded that the accuracy of identifying uncontrollable situations depends heavily on depressive mood. Nondepressed participants tend to exhibit an optimistic illusion of control, whereas depressed participants tend to better detect a lack of control. Recently, we suggested that the different activity levels (measured as the probability of responding during a contingency learning task) exhibited by depressed and nondepressed individuals is partly responsible for this effect. The two studies presented in this paper provide further support for this mediational hypothesis, in which mood is the distal cause of the illusion of control operating through activity level, the proximal cause. In Study 1, the probability of responding, P(R), was found to be a mediator variable between the depressive symptoms and the judgments of control. In Study 2, we intervened directly on the mediator variable: The P(R) for both depressed and nondepressed participants was manipulated through instructions. Our results confirm that P(R) manipulation produced differences in the participants' perceptions of uncontrollability. Importantly, the intervention on the mediator variable cancelled the effect of the distal cause; the participants' judgments of control were no longer mood dependent when the P(R) was manipulated. This result supports the hypothesis that the so-called depressive realism effect is actually mediated by the probability of responding.",
+      "score": {
+        "composite": 0.34341950859861864,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Illusions",
+        "Probability",
+        "Depression",
+        "Affect",
+        "Reality Testing",
+        "Learning",
+        "Perception",
+        "Judgment",
+        "Research Design",
+        "Adult"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3a20dfb3",
+      "doi": "10.3389/fpsyg.2019.00024",
+      "url": "https://doi.org/10.3389/fpsyg.2019.00024",
+      "openalex_id": null,
+      "pmid": "30733692",
+      "first_author": "Barberia",
+      "authors_display": "Barberia, I. et al.",
+      "year": 2019,
+      "title": "Persistence of Causal Illusions After Extensive Training.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6353834",
+      "tldr": null,
+      "abstract": "We carried out an experiment using a conventional causal learning task but extending the number of learning trials participants were exposed to. Participants in the standard training group were exposed to 48 learning trials before being asked about the potential causal relationship under examination, whereas for participants in the long training group the length of training was extended to 288 trials. In both groups, the event acting as the potential cause had zero correlation with the occurrence of the outcome, but both the outcome density and the cause density were high, therefore providing a breeding ground for the emergence of a causal illusion. In contradiction to the predictions of associative models such the Rescorla-Wagner model, we found moderate evidence against the hypothesis that extending the learning phase alters the causal illusion. However, assessing causal impressions recurrently did weaken participants' causal illusions.",
+      "score": {
+        "composite": 0.34284035892708786,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2b838358",
+      "doi": "10.3389/fpsyg.2020.560273",
+      "url": "https://doi.org/10.3389/fpsyg.2020.560273",
+      "openalex_id": null,
+      "pmid": "33192826",
+      "first_author": "Blanco",
+      "authors_display": "Blanco, F. et al.",
+      "year": 2020,
+      "title": "When Success Is Not Enough: The Symptom Base-Rate Can Influence Judgments of Effectiveness of a Successful Treatment.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants,patients)"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7644667",
+      "tldr": null,
+      "abstract": "Patients' beliefs about the effectiveness of their treatments are key to the success of any intervention. However, since these beliefs are usually formed by sequentially accumulating evidence in the form of the covariation between the treatment use and the symptoms, it is not always easy to detect when a treatment is actually working. In Experiments 1 and 2, we presented participants with a contingency learning task in which a fictitious treatment was actually effective to reduce the symptoms of fictitious patients. However, the base-rate of the symptoms was manipulated so that, for half of participants, the symptoms were very frequent before the treatment, whereas for the rest of participants, the symptoms were less frequently observed. Although the treatment was equally effective in all cases according to the objective contingency between the treatment and healings, the participants' beliefs on the effectiveness of the treatment were influenced by the base-rate of the symptoms, so that those who observed frequent symptoms before the treatment tended to produce lower judgments of effectiveness. Experiment 3 showed that participants were probably basing their judgments on an estimate of effectiveness relative to the symptom base-rate, rather than on contingency in absolute terms. Data, materials, and R scripts to reproduce the figures are publicly available at the Open Science Framework: https://osf.io/emzbj/.",
+      "score": {
+        "composite": 0.3390099151561172,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_86e86f50",
+      "doi": "10.1371/journal.pone.0140608",
+      "url": "https://doi.org/10.1371/journal.pone.0140608",
+      "openalex_id": null,
+      "pmid": "26468653",
+      "first_author": "Shou",
+      "authors_display": "Shou, Y., & Smithson, M.",
+      "year": 2015,
+      "title": "Adapting to an Uncertain World: Cognitive Capacity and Causal Reasoning with Ambiguous Observations.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0140608&type=printable",
+      "tldr": null,
+      "abstract": "Ambiguous causal evidence in which the covariance of the cause and effect is partially known is pervasive in real life situations. Little is known about how people reason about causal associations with ambiguous information and the underlying cognitive mechanisms. This paper presents three experiments exploring the cognitive mechanisms of causal reasoning with ambiguous observations. Results revealed that the influence of ambiguous observations manifested by missing information on causal reasoning depended on the availability of cognitive resources, suggesting that processing ambiguous information may involve deliberative cognitive processes. Experiment 1 demonstrated that subjects did not ignore the ambiguous observations in causal reasoning. They also had a general tendency to treat the ambiguous observations as negative evidence against the causal association. Experiment 2 and Experiment 3 included a causal learning task requiring a high cognitive demand in which paired stimuli were presented to subjects sequentially. Both experiments revealed that processing ambiguous or missing observations can depend on the availability of cognitive resources. Experiment 2 suggested that the contribution of working memory capacity to the comprehensiveness of evidence retention was reduced when there were ambiguous or missing observations. Experiment 3 demonstrated that an increase in cognitive demand due to a change in the task format reduced subjects' tendency to treat ambiguous-missing observations as negative cues.",
+      "score": {
+        "composite": 0.3357471672204469,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Uncertainty",
+        "Adaptation, Psychological",
+        "Cognition",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_874a659e",
+      "doi": "10.1177/1747021818755326",
+      "url": "https://doi.org/10.1177/1747021818755326",
+      "openalex_id": null,
+      "pmid": "29451106",
+      "first_author": "Díaz-Lago",
+      "authors_display": "Díaz-Lago, M., & Matute, H.",
+      "year": 2019,
+      "title": "Thinking in a Foreign language reduces the causality bias.",
+      "venue": "Quarterly journal of experimental psychology (2006)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 9,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.sagepub.com/doi/pdf/10.1177/1747021818755326",
+      "tldr": null,
+      "abstract": "The purpose of this research is to investigate the impact of a foreign language on the causality bias (i.e., the illusion that two events are causally related when they are not). We predict that using a foreign language could reduce the illusions of causality. A total of 36 native English speakers participated in Experiment 1, 80 native Spanish speakers in Experiment 2. They performed a standard contingency learning task, which can be used to detect causal illusions. Participants who performed the task in their native tongue replicated the illusion of causality effect, whereas those performing the task in their foreign language were more accurate in detecting that the two events were causally unrelated. Our results suggest that presenting the information in a foreign language could be used as a strategy to debias individuals against causal illusions, thereby facilitating more accurate judgements and decisions in non-contingent situations. They also contribute to the debate on the nature and underlying mechanisms of the foreign language effect, given that the illusion of causality is rooted in basic associative processes.",
+      "score": {
+        "composite": 0.31904279666227847,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Illusions",
+        "Thinking",
+        "Psycholinguistics",
+        "Multilingualism",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3c7daadd",
+      "doi": "10.1371/journal.pone.0340732",
+      "url": "https://doi.org/10.1371/journal.pone.0340732",
+      "openalex_id": null,
+      "pmid": "41576059",
+      "first_author": "Rosales",
+      "authors_display": "Rosales, M. et al.",
+      "year": 2026,
+      "title": "Behavioral differences between infants at and not at elevated risk for autism during a contingency paradigm.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12829924",
+      "tldr": null,
+      "abstract": "<h4>Introduction</h4>Motor impairments have been reported in infants at elevated likelihood of autism and those later diagnosed with autism. However, empirical studies comparing higher to lower likelihood infants are lacking, limiting our understanding of these motor impairments. This study aimed to determine and describe the behavioral differences between infants at higher (HLA) versus lower likelihood (LLA) of autism during a contingency learning paradigm.<h4>Methods</h4>Thirty full-term infants (6-9 months of age) at HLA and LLA (n = 15 per group) participated in a contingency learning paradigm. Movements of the infant's right leg activated an infant-sized humanoid robot to reinforce production of right leg movements. Gaze behaviors, the number of times the infants activated the robot, and evidence supporting learning were examined and compared between groups.<h4>Results</h4>Gaze and motor behavioral data suggest no discernable group differences in terms of overall looking duration, anticipatory gazes, and number of robot activations. However, four of the infants at HLA displayed visual motor patterns that were qualitatively different.<h4>Conclusion</h4>Results from our study suggest that infants at HLA and LLA are using similar behaviors to learn a contingency learning task, but heterogeneity within the HLA group is noted and requires further study.",
+      "score": {
+        "composite": 0.3107142857142857,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.075,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Infant Behavior",
+        "Learning",
+        "Autistic Disorder",
+        "Fixation, Ocular",
+        "Infant",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7e8c38b4",
+      "doi": "10.1016/j.isci.2023.107643",
+      "url": "https://doi.org/10.1016/j.isci.2023.107643",
+      "openalex_id": null,
+      "pmid": "37705957",
+      "first_author": "Ongchoco",
+      "authors_display": "Ongchoco, J. et al.",
+      "year": 2023,
+      "title": "Excessive teleological thinking is driven by aberrant associations and not by failure of reasoning.",
+      "venue": "iScience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (humans)"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "http://www.cell.com/article/S2589004223017200/pdf",
+      "tldr": null,
+      "abstract": "Teleological thought - the tendency to ascribe purpose to objects and events - is useful in some cases (encouraging explanation-seeking), but harmful in others (fueling delusions and conspiracy theories). What drives excessive and maladaptive teleological thinking? In causal learning, there is a fundamental distinction between associative learning versus learning via propositional mechanisms. Here, we propose that directly contrasting the contributions of these two pathways can elucidate the roots of excess teleology. We modified a causal learning task such that we could encourage associative versus propositional mechanisms in different instances. Across three experiments (total N = 600), teleological tendencies were correlated with delusion-like ideas and uniquely explained by aberrant <i>associative</i> learning, but not by learning via <i>propositional</i> rules. Computational modeling suggested that the relationship between associative learning and teleological thinking can be explained by excessive prediction errors that imbue random events with more significance - providing a new understanding for how humans make meaning of lived events.",
+      "score": {
+        "composite": 0.30900991515611725,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_560470ac",
+      "doi": "10.3389/fpsyg.2017.00120",
+      "url": "https://doi.org/10.3389/fpsyg.2017.00120",
+      "openalex_id": null,
+      "pmid": "28232809",
+      "first_author": "Griffiths",
+      "authors_display": "Griffiths, O. et al.",
+      "year": 2017,
+      "title": "Compound Stimulus Presentation Does Not Deepen Extinction in Human Causal Learning.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human)"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5298964",
+      "tldr": null,
+      "abstract": "Models of associative learning have proposed that cue-outcome learning critically depends on the degree of prediction error encountered during training. Two experiments examined the role of error-driven extinction learning in a human causal learning task. Target cues underwent extinction in the presence of additional cues, which differed in the degree to which they predicted the outcome, thereby manipulating outcome expectancy and, in the absence of any change in reinforcement, prediction error. These prediction error manipulations have each been shown to modulate extinction learning in aversive conditioning studies. While both manipulations resulted in increased prediction error during training, neither enhanced extinction in the present human learning task (one manipulation resulted in less extinction at test). The results are discussed with reference to the types of associations that are regulated by prediction error, the types of error terms involved in their regulation, and how these interact with parameters involved in training.",
+      "score": {
+        "composite": 0.30578004872660813,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_e04eb927",
+      "doi": "10.1080/17470218.2016.1206128",
+      "url": "https://doi.org/10.1080/17470218.2016.1206128",
+      "openalex_id": null,
+      "pmid": "27376771",
+      "first_author": "Tobias-Webb",
+      "authors_display": "Tobias-Webb, J. et al.",
+      "year": 2017,
+      "title": "Let me take the wheel: Illusory control and sense of agency.",
+      "venue": "Quarterly journal of experimental psychology (2006)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5399809",
+      "tldr": null,
+      "abstract": "Illusory control refers to an effect in games of chance where features associated with skilful situations increase expectancies of success. Past work has operationalized illusory control in terms of subjective ratings or behaviour, with limited consideration of the relationship between these definitions, or the broader construct of agency. This study used a novel card-guessing task in 78 participants to investigate the relationship between subjective and behavioural illusory control. We compared trials in which participants (a) had no opportunity to exercise illusory control, (b) could exercise illusory control for free, or (c) could pay to exercise illusory control. Contingency Judgment and Intentional Binding tasks assessed explicit and implicit sense of agency, respectively. On the card-guessing task, confidence was higher when participants exerted control than in the baseline condition. In a complementary model, participants were more likely to exercise control when their confidence was high, and this effect was accentuated in the pay condition relative to the free condition. Decisions to pay were positively correlated with control ratings on the Contingency Judgment task, but were not significantly related to Intentional Binding. These results establish an association between subjective and behavioural illusory control and locate the construct within the cognitive literature on agency.",
+      "score": {
+        "composite": 0.3028403589270878,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Intention",
+        "Individuality",
+        "Internal-External Control",
+        "Choice Behavior",
+        "Judgment",
+        "Psychomotor Performance",
+        "Models, Psychological",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Statistics as Topic",
+        "Young Adult",
+        "Surveys and Questionnaires"
+      ]
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a3f33d92",
+      "doi": "10.1111/acer.12393",
+      "url": "https://doi.org/10.1111/acer.12393",
+      "openalex_id": null,
+      "pmid": "24821534",
+      "first_author": "Vanes",
+      "authors_display": "Vanes, L. et al.",
+      "year": 2014,
+      "title": "Contingency learning in alcohol dependence and pathological gambling: learning and unlearning reward contingencies.",
+      "venue": "Alcoholism, clinical and experimental research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 48,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://kclpure.kcl.ac.uk/ws/files/56897849/Contingency_Learning_in_Alcohol_VANES_Published_Jun2014_GOLD_VoR.pdf",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Patients with alcohol dependence (AD) and pathological gambling (PG) are characterized by dysfunctional reward processing and their ability to adapt to alterations of reward contingencies is impaired. However, most neurocognitive tasks investigating reward processing involve a complex mix of elements, such as working memory, immediate and delayed rewards, and risk-taking. As a consequence, it is not clear whether contingency learning is altered in AD or PG. Therefore, the current study aimed to examine performance in a deterministic contingency learning task, investigating discrimination, reversal, and extinction learning.<h4>Methods</h4>Thirty-three alcohol-dependent patients (ADs), 28 pathological gamblers (PGs), and 18 healthy controls (HCs) performed a contingency learning task in which they learned stimulus-reward associations that were first reversed and later extinguished while receiving deterministic feedback throughout. Accumulated points, number of perseverative errors and trials required to reach a criterion in each learning phase were compared between groups using nonparametric Kruskal-Wallis rank-sum tests. Regression analyses were performed to compare learning curves.<h4>Results</h4>PGs and ADs did not differ from HCs in discrimination learning, reversal learning, or extinction learning, on the nonparametric tests. Regression analyses, however, showed differences in the initial speed of learning: PGs were significantly faster in discrimination learning compared to ADs, and both PGs and ADs learned slower than HCs in the reversal learning and extinction phases of the task.<h4>Conclusions</h4>Learning rates for reversal and extinction were slower for the alcohol-dependent group and PG group compared to HCs, suggesting that reversing and extinguishing learned contingencies require more effort in ADs and PGs. This implicates a diminished flexibility to overcome previously learned contingencies.",
+      "score": {
+        "composite": 0.29204600427177047,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Alcoholism",
+        "Case-Control Studies",
+        "Feedback, Psychological",
+        "Gambling",
+        "Discrimination Learning",
+        "Reward",
+        "Reversal Learning",
+        "Adult",
+        "Middle Aged",
+        "Male",
+        "Extinction, Psychological",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_c8d64566",
+      "doi": "10.1016/j.cogdev.2011.04.002",
+      "url": "https://doi.org/10.1016/j.cogdev.2011.04.002",
+      "openalex_id": null,
+      "pmid": "21966091",
+      "first_author": "Williamson",
+      "authors_display": "Williamson, R., & Meltzoff, A.",
+      "year": 2011,
+      "title": "Own and Others' Prior Experiences Influence Children's Imitation of Causal Acts.",
+      "venue": "Cognitive development",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 23,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Young children learn from others' examples, and they do so selectively. We examine whether the efficacy of prior experiences influences children's imitation. Thirty-six-month-olds had initial experience on a causal learning task either by performing the task themselves or by watching an adult perform it. The nature of the experience was manipulated such that the actor had either an easy or a difficult experience completing the task. Next, a second adult demonstrated an innovative technique for completing it. Children who had a difficult first-person experience, and those who had witnessed another person having difficulty, were significantly more likely to adopt and imitate the adult's innovation than those who had or witnessed an easy experience. Children who observed another were also more likely to imitate than were those who had the initial experience themselves. Imitation is influenced by prior experience, both when it is obtained through one's own hands-on motor manipulation and when it derives from observing the acts of others.",
+      "score": {
+        "composite": 0.2917146711942136,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_55ec6d38",
+      "doi": "10.3389/fpsyg.2012.00460",
+      "url": "https://doi.org/10.3389/fpsyg.2012.00460",
+      "openalex_id": null,
+      "pmid": "23162508",
+      "first_author": "Greville",
+      "authors_display": "Greville, W., & Buehner, M.",
+      "year": 2012,
+      "title": "Assessing evidence for a common function of delay in causal learning and reward discounting.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2012.00460/pdf",
+      "tldr": null,
+      "abstract": "Time occupies a central role in both the induction of causal relationships and determining the subjective value of rewards. Delays devalue rewards and also impair learning of relationships between events. The mathematical relation between the time until a delayed reward and its present value has been characterized as a hyperbola-like function, and increasing delays of reinforcement tend to elicit judgments or response rates that similarly show a negatively accelerated decay pattern. Furthermore, neurological research implicates both the hippocampus and prefrontal cortex in both these processes. Since both processes are broadly concerned with the concepts of reward, value, and time, involve a similar functional form, and have been identified as involving the same specific brain regions, it seems tempting to assume that the two processes are underpinned by the same cognitive or neural mechanisms. We set out to determine experimentally whether a common cognitive mechanism underlies these processes, by contrasting individual performances on causal judgment and delay discounting tasks. Results from each task corresponded with previous findings in the literature, but no relation was found between the two tasks. The task was replicated and extended by including two further measures, the Barrett Impulsiveness Scale (BIS), and a causal attribution task. Performance on this latter task was correlated with results on the causal judgment task, and also with the non-planning component of the BIS, but the results from the delay discounting task was not correlated with either causal learning task nor the BIS. Implications for current theories of learning are considered.",
+      "score": {
+        "composite": 0.2814614529347326,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.2857142857142857,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.07142857142857142,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_e95dc404",
+      "doi": "10.1016/j.beth.2008.11.001",
+      "url": "https://doi.org/10.1016/j.beth.2008.11.001",
+      "openalex_id": null,
+      "pmid": "20171324",
+      "first_author": "Orinstein",
+      "authors_display": "Orinstein, A. et al.",
+      "year": 2010,
+      "title": "Expanding the intertrial interval during extinction: response cessation and recovery.",
+      "venue": "Behavior therapy",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 11,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "We examined trial spacing during extinction following a human contingency learning task. Specifically, we assessed if an expanding retrieval practice schedule (Bjork & Bjork, 1992, 2006), in which the spacing between extinction trials was progressively increased, would result in faster immediate extinction and less recovery from extinction than uniformly spaced extinction trials. We used an ABB vs. ABA renewal design and observed that, whereas the expanding group extinguished faster during extinction treatment, the expanding and constant groups showed the same level of extinction with an immediate test in the extinction context (ABB) and the two groups showed equivalent ABA renewal at test in the training context. We conclude that the faster extinction observed in the expanding groups could be misleading in clinical treatment, if the therapist used the absence of fear during extinction as the basis for terminating treatment.",
+      "score": {
+        "composite": 0.27168178968805246,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cues",
+        "Neuropsychological Tests",
+        "Time Factors",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Extinction, Psychological",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7a38ed17",
+      "doi": "10.1186/s41235-018-0149-9",
+      "url": "https://doi.org/10.1186/s41235-018-0149-9",
+      "openalex_id": null,
+      "pmid": "30693393",
+      "first_author": "Chow",
+      "authors_display": "Chow, J. et al.",
+      "year": 2019,
+      "title": "Bridging the divide between causal illusions in the laboratory and the real world: the effects of outcome density with a variable continuous outcome.",
+      "venue": "Cognitive research: principles and implications",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,participants,patient)"
+      ],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6352562",
+      "tldr": null,
+      "abstract": "Illusory causation refers to a consistent error in human learning in which the learner develops a false belief that two unrelated events are causally associated. Laboratory studies usually demonstrate illusory causation by presenting two events-a cue (e.g., drug treatment) and a discrete outcome (e.g., patient has recovered from illness)-probabilistically across many trials such that the presence of the cue does not alter the probability of the outcome. Illusory causation in these studies is further augmented when the base rate of the outcome is high, a characteristic known as the outcome density effect. Illusory causation and the outcome density effect provide laboratory models of false beliefs that emerge in everyday life. However, unlike laboratory research, the real-world beliefs to which illusory causation is most applicable (e.g., ineffective health therapies) often involve consequences that are not readily classified in a discrete or binary manner. This study used a causal learning task framed as a medical trial to investigate whether similar outcome density effects emerged when using continuous outcomes. Across two experiments, participants observed outcomes that were either likely to be relatively low (low outcome density) or likely to be relatively high (high outcome density) along a numerical scale from 0 (no health improvement) to 100 (full recovery). In Experiment 1, a bimodal distribution of outcome magnitudes, incorporating variance around a high and low modal value, produced illusory causation and outcome density effects equivalent to a condition with two fixed outcome values. In Experiment 2, the outcome density effect was evident when using unimodal skewed distributions of outcomes that contained more ambiguous values around the midpoint of the scale. Together, these findings provide empirical support for the relevance of the outcome density bias to real-world situations in which outcomes are not binary but occur to differing degrees. This has impl",
+      "score": {
+        "composite": 0.2697818859544724,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_cdf4f214",
+      "doi": "10.3389/fpsyg.2012.00368",
+      "url": "https://doi.org/10.3389/fpsyg.2012.00368",
+      "openalex_id": null,
+      "pmid": "23060837",
+      "first_author": "Msetfi",
+      "authors_display": "Msetfi, R. et al.",
+      "year": 2012,
+      "title": "Dysphoric Mood States are Related to Sensitivity to Temporal Changes in Contingency.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2012.00368/pdf",
+      "tldr": null,
+      "abstract": "A controversial finding in the field of causal learning is that mood contributes to the accuracy of perceptions of uncorrelated relationships. When asked to report the degree of control between an action and its outcome, people with dysphoria or depression are claimed to be more realistic in reporting non-contingency (e.g., Alloy and Abramson, 1979). The strongest evidence for this depressive realism (DR) effect is derived from data collected with experimental procedures in which the dependent variables are verbal or written ratings of contingency or cause, and, perhaps more importantly, the independent variable in these procedures may be ambiguous and difficult to define. In order to address these possible confounds, we used a two-response free-operant causal learning task in which the dependent measures were performance based. Participants were required to respond to maximize the occurrence of a temporally contiguous outcome that was programmed with different probabilities, which also varied temporally across two responses. Dysphoric participants were more sensitive to the changing outcome contingencies than controls even though they responded at a similar rate. During probe trials, in which the outcome was masked, their performance recovered more quickly than that of the control group. These data provide unexpected support for the DR hypothesis suggesting that dysphoria is associated with heightened sensitivity to temporal shifts in contingency.",
+      "score": {
+        "composite": 0.26581293023276936,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 25,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c24f09d6",
+      "doi": "10.1186/s41235-020-00237-2",
+      "url": "https://doi.org/10.1186/s41235-020-00237-2",
+      "openalex_id": null,
+      "pmid": "32748083",
+      "first_author": "Double",
+      "authors_display": "Double, K. et al.",
+      "year": 2020,
+      "title": "Causal illusions in the classroom: how the distribution of student outcomes can promote false instructional beliefs.",
+      "venue": "Cognitive research: principles and implications",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://cognitiveresearchjournal.springeropen.com/track/pdf/10.1186/s41235-020-00237-2",
+      "tldr": null,
+      "abstract": "Teachers sometimes believe in the efficacy of instructional practices that have little empirical support. These beliefs have proven difficult to efface despite strong challenges to their evidentiary basis. Teachers typically develop causal beliefs about the efficacy of instructional practices by inferring their effect on students' academic performance. Here, we evaluate whether causal inferences about instructional practices are susceptible to an outcome density effect using a contingency learning task. In a series of six experiments, participants were ostensibly presented with students' assessment outcomes, some of whom had supposedly received teaching via a novel technique and some of whom supposedly received ordinary instruction. The distributions of the assessment outcomes was manipulated to either have frequent positive outcomes (high outcome density condition) or infrequent positive outcomes (low outcome density condition). For both continuous and categorical assessment outcomes, participants in the high outcome density condition rated the novel instructional technique as effective, despite the fact that it either had no effect or had a negative effect on outcomes, while the participants in the low outcome density condition did not. These results suggest that when base rates of performance are high, participants may be particularly susceptible to drawing inaccurate inferences about the efficacy of instructional practices.",
+      "score": {
+        "composite": 0.25161602667573,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cues",
+        "Thinking",
+        "Students",
+        "Teaching",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Academic Performance",
+        "Practice, Psychological"
+      ]
+    },
+    {
+      "rank": 26,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1ec38db9",
+      "doi": "10.1162/opmi_a_00141",
+      "url": "https://doi.org/10.1162/opmi_a_00141",
+      "openalex_id": null,
+      "pmid": "38828432",
+      "first_author": "Chow",
+      "authors_display": "Chow, J. et al.",
+      "year": 2024,
+      "title": "Instruction on the Scientific Method Provides (Some) Protection Against Illusions of Causality.",
+      "venue": "Open mind : discoveries in cognitive science",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participant,participants)"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11142631",
+      "tldr": null,
+      "abstract": "People tend to overestimate the efficacy of an ineffective treatment when they experience the treatment and its supposed outcome co-occurring frequently. This is referred to as the <i>outcome density</i> effect. Here, we attempted to improve the accuracy of participants' assessments of an ineffective treatment by instructing them about the scientific practice of comparing treatment effects against a relevant base-rate, i.e., when no treatment is delivered. The effect of these instructions was assessed in both a trial-by-trial contingency learning task, where cue administration was either decided by the participant (Experiments 1 & 2) or pre-determined by the experimenter (Experiment 3), as well as in summary format where all information was presented on a single screen (Experiment 4). Overall, we found two means by which base-rate instructions influence efficacy ratings for the ineffective treatment: 1) When information was presented sequentially, the benefit of base-rate instructions on illusory belief was mediated by reduced sampling of cue-present trials, and 2) When information was presented in summary format, we found a <i>direct</i> effect of base-rate instruction on reducing causal illusion. Together, these findings suggest that simple instructions on the scientific method were able to decrease participants' (over-)weighting of cue-outcome coincidences when making causal judgements, as well as decrease their tendency to over-sample cue-present events. However, the effect of base-rate instructions on correcting illusory beliefs was incomplete, and participants still showed illusory causal judgements when the probability of the outcome occurring was high. Thus, simple textual information about assessing causal relationships is partially effective in influencing people's judgements of treatment efficacy, suggesting an important role of scientific instruction in debiasing cognitive errors.",
+      "score": {
+        "composite": 0.23900991515611725,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_fe2b9da7",
+      "doi": "10.2196/10114",
+      "url": "https://doi.org/10.2196/10114",
+      "openalex_id": null,
+      "pmid": "30413398",
+      "first_author": "Msetfi",
+      "authors_display": "Msetfi, R. et al.",
+      "year": 2018,
+      "title": "Using Mobile Phones to Examine and Enhance Perceptions of Control in Mildly Depressed and Nondepressed Volunteers: Intervention Study.",
+      "venue": "JMIR mHealth and uHealth",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6251979",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Perceived control is strongly linked to healthy outcomes, mental healthiness, and psychological well-being. This is particularly important when people have little control over things that are happening to them. Perceived control studies have been performed extensively in laboratory settings and show that perceived control can be increased by experimental manipulations. Although these studies suggest that it may be possible to improve people's mental health by increasing their perceived control, there is very little evidence to date to suggest that perceived control can also be influenced in the real world.<h4>Objective</h4>The first aim of this study was to test for evidence of a link between noncontrol situations and psychological well-being in the real world using a mobile phone app. The second and arguably more important aim of the study was to test whether a simple instructional intervention on the nature of alternative causes would enhance people's perceptions of their own control in these noncontrol situations.<h4>Methods</h4>We implemented a behavioral action-outcome contingency judgment task using a mobile phone app. An opportunity sample of 106 healthy volunteers scoring low (n=56, no depression) or high (n=50, mild depression) on a depression scale participated. They were given no control over the occurrence of a low- or high-frequency stimulus that was embedded in everyday phone interactions during a typical day lasting 8 hours. The intervention involved instructions that either described a consistent alternative cause against which to assess their own control, or dynamic alternative causes of the outcome. Throughout the day, participants rated their own control over the stimulus using a quantitative judgment scale.<h4>Results</h4>Participants with no evidence of depression overestimated their control, whereas those who were most depressed were more accurate in their control ratings. Instructions given to all participants about the natu",
+      "score": {
+        "composite": 0.23578004872660813,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f5eb6dc0",
+      "doi": "10.1016/j.bpsc.2024.12.006",
+      "url": "https://doi.org/10.1016/j.bpsc.2024.12.006",
+      "openalex_id": null,
+      "pmid": "39710316",
+      "first_author": "Castiello",
+      "authors_display": "Castiello, S. et al.",
+      "year": 2025,
+      "title": "Delusional Unreality and Predictive Processing.",
+      "venue": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Phenomenological psychopathologists have recently highlighted how people with delusions experience multiple realities (delusional and nondelusional) and have suggested that this double bookkeeping cannot be explained via predictive processing. Here, we present data from Kamin blocking and extinction learning that show how predictive processing might, in principle, explain a pervasive sense of dual reality.<h4>Methods</h4>This cross-sectional study involved 3 participant groups: patients with schizophrenia (SZ) (n = 42), healthy participants with elevated esoteric beliefs (EEBs) (clairaudient psychics) (n = 31), and healthy control participants (HCs) with neither illness nor significant delusional ideation (n = 62). We examined belief formation using a Kamin blocking causal learning task with extinction and delusions with the 40-item Peters Delusion Inventory, specifically the unreality item \"Do things around you ever feel unreal, as though it was all part of an experiment?\" as a proxy for unreality experiences and beliefs. A clinician also assessed symptoms with a structured clinical interview.<h4>Results</h4>Some people with SZ did not report a sense of unreality, and some people with elevated esoteric beliefs (but no psychotic illness) reported unreality experiences. No HCs reported them (despite reporting other delusion-like beliefs). Unreality experiences in clinical delusions and nonclinical delusion-like beliefs were associated with different types of aberrant prediction error processing.<h4>Conclusions</h4>These data suggest how predictive processing may explain the sense of unreality. They indicate that different prediction error dysfunctions are associated with delusions with different contents. In this case, we have used predictive processing to address a salient issue raised by our phenomenological colleagues, namely the impact of psychosis on experiences of and beliefs about reality.",
+      "score": {
+        "composite": 0.23574716722044692,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cross-Sectional Studies",
+        "Delusions",
+        "Schizophrenia",
+        "Schizophrenic Psychology",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Extinction, Psychological"
+      ]
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_5de106d3",
+      "doi": "10.5709/acp-0255-8",
+      "url": "https://doi.org/10.5709/acp-0255-8",
+      "openalex_id": null,
+      "pmid": "32523638",
+      "first_author": "Wang",
+      "authors_display": "Wang, T. et al.",
+      "year": 2019,
+      "title": "Executive Control in Learning: Evidence for the Dissociation of Rule Learning and Associative Learning.",
+      "venue": "Advances in cognitive psychology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.5709/acp-0255-8",
+      "tldr": null,
+      "abstract": "The dual-process account and the propositional account of learning hold opposite views regarding the recruitment of higher-level processes in rule learning and associative learning. Taking an individual differences perspective, the current study focused on the relationship between rule learning and associative learning and investigated to what extent executive control accounts for rule learning and associative learning. Two studies were conducted. In Study 1, a sample of 184 university students completed paired associative learning and rule learning tasks, as well as measures of working memory capacity, short-term storage, and executive control. Theory-based bifactor models were used to achieve a purified representation of executive control. The results showed that the latent correlation between associative learning and rule learning was rather small. Executive control showed a substantial relationship with rule learning, whereas no significant link was found with associative learning. In Study 2, a sample of 211 university students completed a three-term contingency learning task and an executive control task. The results replicated the finding that executive control was not significantly related to associative learning. Taken together, these results suggest a dissociation between rule learning and associative learning in terms of their underlying processes, which supports the dual-process account of learning.",
+      "score": {
+        "composite": 0.23574716722044692,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_bd4f52b9",
+      "doi": "10.1111/1460-6984.70017",
+      "url": "https://doi.org/10.1111/1460-6984.70017",
+      "openalex_id": null,
+      "pmid": "39977834",
+      "first_author": "Maes",
+      "authors_display": "Maes, J. et al.",
+      "year": 2025,
+      "title": "Incidental learning and social-communicative abilities in children with developmental language disorder: Further evaluating the implicit learning deficit hypothesis.",
+      "venue": "International journal of language & communication disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11842015",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>The implicit learning deficit hypothesis claims that impaired implicit learning underlies deficits in social-communicative abilities associated with developmental language disorder (DLD). However, previous research testing this hypothesis revealed inconsistent results and largely used process-impure sequential learning tasks.<h4>Aims</h4>This study further tested the hypothesis using a novel process-pure implicit associative learning task.<h4>Methods and procedures</h4>The performance of 9- to 13-year-old children with (N = 60) and without DLD (typically developing, TD, N = 52) on a contingency learning task (CLT) was compared. The task entailed the incidental learning of the contingency between simultaneously presented figure-colour combinations. Also, the association of CLT performance with three aspects of social-communicative abilities was assessed: facial emotion recognition ability, social responsiveness and language abilities.<h4>Outcomes and results</h4>Compared to the TD group, the DLD group performed equally on the CLT but showed worse performance on the measures of emotion recognition and social abilities. In neither group was CLT performance significantly related to any of the three social-communicative abilities.<h4>Conclusions and implications</h4>These results do not support the implicit learning deficit hypothesis. The demonstrated intact implicit learning ability suggests the potential of using interventions to improve social-communicative abilities in children with DLD that are based on incidental or implicit learning rather than on intentional or explicit learning.<h4>What this paper adds</h4>What is already known on the subject Individuals with developmental language disorder (DLD) not only have linguistic problems but also impaired abilities in social and emotional domains. According to the implicit learning deficit hypothesis, these impairments are largely due to a compromised ability to incidentally or implicitly learn regul",
+      "score": {
+        "composite": 0.20161602667573,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Language Development Disorders",
+        "Emotions",
+        "Learning",
+        "Association Learning",
+        "Language Tests",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male",
+        "Social Skills",
+        "Facial Recognition",
+        "Learning Disabilities"
+      ]
+    }
+  ]
+}

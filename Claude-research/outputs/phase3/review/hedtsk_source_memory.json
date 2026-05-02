@@ -1,0 +1,1140 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_source_memory",
+    "name": "Source Memory Task",
+    "aliases": [
+      "Source Monitoring Task",
+      "Reality Monitoring Task",
+      "Context Memory Task",
+      "Source Judgment Task"
+    ],
+    "category_id": "long_term_memory",
+    "short_definition": "After studying items presented in distinct contexts (speaker, location, modality, time), participants judge each item's encoding source; source accuracy dissociates contextual recollection from item familiarity.",
+    "description": "Source memory tests assess the ability to remember the contextual details of an encoding episode — not just whether an item was encountered (item memory) but where, when, how, or from whom it was learned. In the standard paradigm, items are presented under two or more source conditions (e.g., spoken by a male vs. female voice; shown on the left vs. right of the screen; read vs. imagined). At test, participants first make an old/new recognition judgment, then indicate the source of each recognized item. Source accuracy (correct source attributions conditional on item recognition) is the primary measure, dissociating recollection-based contextual retrieval from familiarity-based item recognition. Johnson's source monitoring framework (Johnson, Hashtroudi, & Lindsay, 1993) distinguishes external source monitoring (which person said it), internal source monitoring (did I do it or imagine it), and reality monitoring (internal vs. external origin). Source memory failures underlie false memories, eyewitness misattributions, and confabulation. The paradigm recruits prefrontal cortex (especially right and medial PFC for monitoring) and hippocampus (binding items to contexts), with a characteristic dissociation from item memory in aging and frontal lesion patients.",
+    "inclusion_test": {
+      "procedure": "Items are studied under two or more contextually distinct source conditions; at test, participants recognize studied items and judge the source (context) in which each item was encoded.",
+      "manipulation": "Source type (voice, spatial location, temporal position, modality, cognitive operation); number of sources (2, 3, or more); encoding depth; source similarity (easy-to-discriminate vs. similar sources); response format (forced-choice source vs. source confidence rating).",
+      "measurement": "Source accuracy (proportion of recognized items with correct source attribution); source d' (signal detection); item-source conditional analysis; remember/know × source interaction; source attribution errors (systematic misattributions); PFC and hippocampal activation differences."
+    }
+  },
+  "candidates_run_date": "2026-04-29T19:00:12",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Riggins 2020 — Habitual sleep is associated with both source memory and hippocampal subfield… (Scientific reports, recent_primary, 26×)",
+      "doi": "10.1038/s41598-020-72231-z",
+      "pub_id": "pub_423830bf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.537705222884333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Kurinec 2021 — Sleep deprivation impairs binding of information with its context. (Sleep, recent_primary, 17×)",
+      "doi": "10.1093/sleep/zsab113",
+      "pub_id": "pub_04c8a67c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4818363634290498,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Sleep",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Cataldo 2023 — Abnormal evidence accumulation underlies the positive memory deficit in depre… (Journal of experimental psycholo…, recent_primary, 13×)",
+      "doi": "10.1037/xge0001268",
+      "pub_id": "pub_4e9890d4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4781987407849036,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Journal of experimental psychology. General",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Kusztrits 2021 — Transcranial direct current stimulation (tDCS) enhances internal source monit… (PloS one, recent_primary, 3×)",
+      "doi": "10.1371/journal.pone.0257010",
+      "pub_id": "pub_aea0af09",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4700657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PloS one",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Moseley 2018 — Investigating the roles of medial prefrontal and superior temporal cortex in … (Neuropsychologia, recent_primary, 14×)",
+      "doi": "10.1016/j.neuropsychologia.2018.10.001",
+      "pub_id": "pub_5ee8b0d5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.44919737040327584,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Neuropsychologia",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Gatti 2024 — Semantic and episodic processes differently predict false memories in the DRM… (Scientific reports, recent_primary, 3×)",
+      "doi": "10.1038/s41598-023-50687-z",
+      "pub_id": "pub_01d9b52a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4300657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Scientific reports",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Romeo 2019 — The impact of lying about a traumatic virtual reality experience on memory. (Memory & cognition, recent_primary, 18×)",
+      "doi": "10.3758/s13421-018-0885-6",
+      "pub_id": "pub_2d5b70c9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4226189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Memory & cognition",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Garrison 2017 — Testing continuum models of psychosis: No reduction in source monitoring abil… (Cortex; a journal devoted to the…, foundational, 26×)",
+      "doi": "10.1016/j.cortex.2016.11.011",
+      "pub_id": "pub_084c200b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4177052228843329,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Cortex; a journal devoted to the study of the nervous system and behavior",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Ross 2015 — Genetic variation in the serotonin transporter gene influences ERP old/new ef… (Neuropsychologia, foundational, 9×)",
+      "doi": "10.1016/j.neuropsychologia.2015.09.028",
+      "pub_id": "pub_bfa7e160",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4133285109479927,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Neuropsychologia",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Alderson-Day 2019 — Intentional inhibition but not source memory is related to hallucination-pron… (Cortex; a journal devoted to the…, recent_primary, 27×)",
+      "doi": "10.1016/j.cortex.2018.12.020",
+      "pub_id": "pub_9cc93ab7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3882316222910648,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Cortex; a journal devoted to the study of the nervous system and behavior",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Hayama 2009 — Right dorsolateral prefrontal cortex is engaged during post-retrieval process… (Neuropsychologia, foundational, 78×)",
+      "doi": "10.1016/j.neuropsychologia.2009.04.010",
+      "pub_id": "pub_834e5f15",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.38324508528728113,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2529803411491245,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06324508528728112,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Neuropsychologia",
+      "citation_count": 78,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Hayama 2008 — The relationship between the right frontal old/new ERP effect and post-retrie… (Neuropsychologia, foundational, 96×)",
+      "doi": "10.1016/j.neuropsychologia.2007.11.021",
+      "pub_id": "pub_4eb1a52c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3762161434966551,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2648645739866204,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0662161434966551,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "Neuropsychologia",
+      "citation_count": 96,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Liang 2017 — Medial temporal lobe reinstatement of content-specific details predicts sourc… (Cortex; a journal devoted to the…, foundational, 35×)",
+      "doi": "10.1016/j.cortex.2016.09.011",
+      "pub_id": "pub_50ba2a8e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.371869244935211,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Cortex; a journal devoted to the study of the nervous system and behavior",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Garrison 2017 — Reality monitoring impairment in schizophrenia reflects specific prefrontal c… (NeuroImage. Clinical, foundational, 34×)",
+      "doi": "10.1016/j.nicl.2017.01.028",
+      "pub_id": "pub_147a6ef6",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3714614887205739,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "NeuroImage. Clinical",
+      "citation_count": 34,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Yang 2018 — East-West cultural differences in encoding objects in imagined social contexts. (PloS one, recent_primary, 0×)",
+      "doi": "10.1371/journal.pone.0207515",
+      "pub_id": "pub_c0108ae7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.37,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "PloS one",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Daselaar 2015 — Less wiring, more firing: low-performing older adults compensate for impaired… (Cerebral cortex (New York, N.Y. …, foundational, 111×)",
+      "doi": "10.1093/cercor/bht289",
+      "pub_id": "pub_90cb4440",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3682973853033872,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2731895412135488,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0682973853033872,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "citation_count": 111,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Hoffman 2022 — The fornix supports episodic memory during childhood. (Cerebral cortex (New York, N.Y. …, recent_primary, 11×)",
+      "doi": "10.1093/cercor/bhac022",
+      "pub_id": "pub_92f151a2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3659675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Kraemer 2019 — Cognitive Reserve Moderates Older Adults' Memory Errors in Autobiographical R… (Psychology & neuroscience, recent_primary, 4×)",
+      "doi": "10.1037/pne0000161",
+      "pub_id": "pub_683045d5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3632956294418316,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Psychology & neuroscience",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Subramaniam 2018 — Reality Monitoring and Feedback Control of Speech Production Are Related Thro… (Frontiers in human neuroscience, recent_primary, 32×)",
+      "doi": "10.3389/fnhum.2018.00082",
+      "pub_id": "pub_4815da76",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.36060980846989976,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Frontiers in human neuroscience",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Bücken 2022 — Simulating denial increases false memory rates for abuse unrelated information. (Behavioral sciences & the law, recent_primary, 5×)",
+      "doi": "10.1002/bsl.2566",
+      "pub_id": "pub_4f6f700d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.35593462246760554,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Behavioral sciences & the law",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Dolgoarshinnaia 2021 — False Memories in Native and Foreign Languages. (Frontiers in psychology, recent_primary, 2×)",
+      "doi": "10.3389/fpsyg.2021.716336",
+      "pub_id": "pub_57028349",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.35590174096144434,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Frontiers in psychology",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Hayes 2011 — Neural correlates of confidence during item recognition and source memory ret… (Journal of cognitive neuroscience, foundational, 41×)",
+      "doi": "10.1162/jocn_a_00086",
+      "pub_id": "pub_a17f9ba0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3541004817463479,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Kim 2009 — Cortical network dynamics during source memory retrieval: current density ima… (Human brain mapping, foundational, 7×)",
+      "doi": "10.1002/hbm.20487",
+      "pub_id": "pub_5bff90d4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3500986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Human brain mapping",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Deason 2017 — The use of metacognitive strategies to decrease false memories in source moni… (Cortex; a journal devoted to the…, foundational, 6×)",
+      "doi": "10.1016/j.cortex.2017.01.022",
+      "pub_id": "pub_03c4641f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3481658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Cortex; a journal devoted to the study of the nervous system and behavior",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Cansino 2019 — Predictors of Source Memory Success and Failure in Older Adults. (Frontiers in aging neuroscience, recent_primary, 5×)",
+      "doi": "10.3389/fnagi.2019.00017",
+      "pub_id": "pub_49c88e4a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.34593462246760553,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Frontiers in aging neuroscience",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Galli 2011 — Material-specific neural correlates of recollection: objects, words, and faces. (Journal of cognitive neuroscience, foundational, 22×)",
+      "doi": "10.1162/jocn.2010.21442",
+      "pub_id": "pub_0ee19062",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3453843610908988,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Hawco 2015 — Source retrieval is not properly differentiated from object retrieval in earl… (NeuroImage. Clinical, foundational, 14×)",
+      "doi": "10.1016/j.nicl.2014.08.006",
+      "pub_id": "pub_d458ff9c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.33919737040327586,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "NeuroImage. Clinical",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Wynn 2024 — The role of theta and gamma oscillations in item memory, source memory, and m… (Psychophysiology, recent_primary, 6×)",
+      "doi": "10.1111/psyp.14602",
+      "pub_id": "pub_eb797b0b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3381658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Psychophysiology",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Dew 2012 — Where is ELSA? The early to late shift in aging. (Cerebral cortex (New York, N.Y. …, foundational, 36×)",
+      "doi": "10.1093/cercor/bhr334",
+      "pub_id": "pub_1572dcb3",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.32226582832922795,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2090633133169118,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05226582832922795,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "citation_count": 36,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Quirin 2022 — Not the Master of Your Volitional Mind? The Roles of the Right Medial Prefron… (Frontiers in psychology, recent_primary, 1×)",
+      "doi": "10.3389/fpsyg.2022.740925",
+      "pub_id": "pub_baa6d7f1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3200328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Frontiers in psychology",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

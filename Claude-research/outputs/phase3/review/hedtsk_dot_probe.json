@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_dot_probe",
+    "name": "Dot-Probe Task",
+    "aliases": [
+      "Visual Probe Task",
+      "Attentional Probe"
+    ],
+    "category_id": "selective_and_sustained_attention",
+    "short_definition": "A pair of cues (often threat/neutral) is followed by a probe at one cue location; RT difference by cue type indexes attentional bias.",
+    "description": "The Dot-Probe Task measures attentional bias toward or away from emotionally salient stimuli. On each trial, a pair of stimuli (e.g., one threatening face and one neutral face) appears briefly (typically 500 ms), followed by a probe (dot or arrow) at the location of one stimulus. Participants respond to the probe (detect or classify it). Attentional bias is inferred from faster responses to probes replacing the emotional stimulus (vigilance toward threat) versus slower responses (avoidance). The task is a cornerstone of research on anxiety-related attentional biases and has been central to Attentional Bias Modification (ABM) treatments.",
+    "inclusion_test": {
+      "procedure": "Two stimuli (e.g., a threatening face and a neutral face) appear briefly on screen; one is replaced by a probe (dot or letter) that participants locate or classify.",
+      "manipulation": "Stimulus valence (threat, positive, neutral); stimulus duration; probe location (congruent with threat vs. incongruent).",
+      "measurement": "RT difference between congruent and incongruent probe trials (attentional bias score); vigilance vs. avoidance patterns."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:39:17",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Winer 2016 — Reward devaluation: Dot-probe meta-analytic evidence of avoidance of positive… (Psychological bulletin, key_review, 118×)",
+      "doi": "10.1037/bul0000022",
+      "pub_id": "pub_be975f63",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6025082229591774,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2766995585033762,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06917488962584405,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Psychological bulletin",
+      "citation_count": 118,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "MacLeod 1986 — Attentional bias in emotional disorders. (Journal of Abnormal Psychology, historical, 2k×)",
+      "doi": "10.1037/0021-843x.95.1.15",
+      "pub_id": "pub_d5e04022",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.5928252977731538,
+        "breakdown": {
+          "raw": {
+            "citations": 0.451301191092615,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11282529777315375,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": null,
+      "year": 1986,
+      "venue": "Journal of Abnormal Psychology",
+      "citation_count": 2427,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Cannito 2020 — Health anxiety and attentional bias toward virus-related stimuli during the C… (Scientific reports, recent_primary, 47×)",
+      "doi": "10.1038/s41598-020-73599-8",
+      "pub_id": "pub_41e807f2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5793666003194224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22413306794435656,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05603326698608914,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 47,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Veerapa 2020 — Attentional bias towards negative stimuli in healthy individuals and the effe… (Scientific reports, recent_primary, 42×)",
+      "doi": "10.1038/s41598-020-68490-5",
+      "pub_id": "pub_a284775a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5777744046383184,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 42,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Harrewijn 2020 — Combining fMRI during resting state and an attention bias task in children. (NeuroImage, recent_primary, 18×)",
+      "doi": "10.1016/j.neuroimage.2019.116301",
+      "pub_id": "pub_b839fc51",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5659522867224749,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "NeuroImage",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "White 2016 — Behavioral and neural stability of attention bias to threat in healthy adoles… (NeuroImage, foundational, 65×)",
+      "doi": "10.1016/j.neuroimage.2016.04.058",
+      "pub_id": "pub_c4710f22",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5439760233093943,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24257075990424393,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06064268997606098,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "NeuroImage",
+      "citation_count": 65,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Kret 2016 — Bonobos (Pan paniscus) show an attentional bias toward conspecifics' emotions. (Proceedings of the National Acad…, foundational, 56×)",
+      "doi": "10.1073/pnas.1522060113",
+      "pub_id": "pub_aa55ada7",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5418540276839192,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Hoepfel 2022 — Experiences of maltreatment in childhood and attention to facial emotions in … (Scientific reports, recent_primary, 10×)",
+      "doi": "10.1038/s41598-022-08290-1",
+      "pub_id": "pub_33888191",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5380414008417889,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Scientific reports",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "He 2018 — Automatic detection advantage of network information among Internet addicts: … (Scientific reports, recent_primary, 10×)",
+      "doi": "10.1038/s41598-018-25442-4",
+      "pub_id": "pub_2d33b510",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5380414008417889,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Wirth 2020 — It occurs after all: Attentional bias towards happy faces in the dot-probe task. (Attention, perception & psychoph…, recent_primary, 21×)",
+      "doi": "10.3758/s13414-020-02017-y",
+      "pub_id": "pub_93450699",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5280742823479501,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Hori 2021 — Childhood maltreatment history and attention bias variability in healthy adul… (Translational psychiatry, recent_primary, 18×)",
+      "doi": "10.1038/s41398-021-01247-4",
+      "pub_id": "pub_03c4b893",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5159522867224748,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Translational psychiatry",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Price 2019 — Computational Modeling Applied to the Dot-Probe Task Yields Improved Reliabil… (Biological psychiatry, recent_primary, 66×)",
+      "doi": "10.1016/j.biopsych.2018.09.022",
+      "pub_id": "pub_c8d446a2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5141936873870016,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2434414162146728,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0608603540536682,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Biological psychiatry",
+      "citation_count": 66,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Abend 2020 — Levels of early-childhood behavioral inhibition predict distinct neurodevelop… (Psychological medicine, recent_primary, 23×)",
+      "doi": "10.1017/s0033291718003999",
+      "pub_id": "pub_ccf50b21",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5093337188132613,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychological medicine",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Schmidt 2015 — Prebiotic intake reduces the waking cortisol response and alters emotional bi… (Psychopharmacology, foundational, 322×)",
+      "doi": "10.1007/s00213-014-3810-0",
+      "pub_id": "pub_de8178be",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4969613170695765,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3345119349449728,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0836279837362432,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Psychopharmacology",
+      "citation_count": 322,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Young 2017 — Real-Time Functional Magnetic Resonance Imaging Amygdala Neurofeedback Change… (Biological psychiatry, foundational, 70×)",
+      "doi": "10.1016/j.biopsych.2017.03.013",
+      "pub_id": "pub_ccfe0d24",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.49503301747618,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24679873657138676,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06169968414284669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Biological psychiatry",
+      "citation_count": 70,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Fu 2017 — Frontolimbic functioning during threat-related attention: Relations to early … (Biological psychology, foundational, 66×)",
+      "doi": "10.1016/j.biopsycho.2015.08.010",
+      "pub_id": "pub_e73eabb4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.49419368738700153,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2434414162146728,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0608603540536682,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Biological psychology",
+      "citation_count": 66,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Kappenman 2015 — Electrocortical evidence for rapid allocation of attention to threat in the d… (Social cognitive and affective n…, foundational, 102×)",
+      "doi": "10.1093/scan/nsu098",
+      "pub_id": "pub_66541af3",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.480418200813447,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2683394699204547,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06708486748011368,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 102,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Price 2016 — Vigilance in the laboratory predicts avoidance in the real world: A dimension… (Developmental cognitive neurosci…, foundational, 38×)",
+      "doi": "10.1016/j.dcn.2016.03.001",
+      "pub_id": "pub_fcc3f551",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.47636114750757974,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 38,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Britton 2015 — Neural changes with attention bias modification for anxiety: a randomized trial. (Social cognitive and affective n…, foundational, 52×)",
+      "doi": "10.1093/scan/nsu141",
+      "pub_id": "pub_6ad517e8",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4708008805306829,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2298701887893985,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057467547197349624,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 52,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Liu 2015 — How disgust facilitates avoidance: an ERP study on attention modulation by th… (Social cognitive and affective n…, foundational, 47×)",
+      "doi": "10.1093/scan/nsu094",
+      "pub_id": "pub_02de5cc5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.46936660031942246,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22413306794435656,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05603326698608914,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 47,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Norman 2015 — Attachment-security priming attenuates amygdala activation to social and ling… (Social cognitive and affective n…, foundational, 41×)",
+      "doi": "10.1093/scan/nsu127",
+      "pub_id": "pub_35bb679d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.46743381507968124,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Lee 2014 — Emotional arousal amplifies the effects of biased competition in the brain. (Social cognitive and affective n…, foundational, 65×)",
+      "doi": "10.1093/scan/nsu015",
+      "pub_id": "pub_1040abf7",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4639760233093943,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24257075990424393,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06064268997606098,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 65,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Gruber 2021 — Associations between hypomania proneness and attentional bias to happy, but n… (Cognition & emotion, recent_primary, 6×)",
+      "doi": "10.1080/02699931.2020.1810638",
+      "pub_id": "pub_5504bd2e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46149919261207567,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cognition & emotion",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Beevers 2019 — Association between negative cognitive bias and depression: A symptom-level a… (Journal of abnormal psychology, recent_primary, 77×)",
+      "doi": "10.1037/abn0000405",
+      "pub_id": "pub_ce528831",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.45639402901374104,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2522427827216307,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06306069568040767,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Journal of abnormal psychology",
+      "citation_count": 77,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Britton 2013 — Training-associated changes and stability of attention bias in youth: Implica… (Developmental cognitive neurosci…, foundational, 71×)",
+      "doi": "10.1016/j.dcn.2012.11.001",
+      "pub_id": "pub_3a7a684d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4552354597747056,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24760850576548898,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.061902126441372246,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 71,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Carlson 2020 — The stability and reliability of attentional bias measures in the dot-probe t… (Motivation and emotion, recent_primary, 28×)",
+      "doi": "10.1007/s11031-020-09834-6",
+      "pub_id": "pub_9e5c00b1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4520728810166314,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Motivation and emotion",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Thigpen 2018 — What does the dot-probe task measure? A reverse correlation analysis of elect… (Psychophysiology, recent_primary, 22×)",
+      "doi": "10.1111/psyp.13058",
+      "pub_id": "pub_beb17beb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.44871769442423215,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Psychophysiology",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Abend 2018 — Association between attention bias to threat and anxiety symptoms in children… (Depression and anxiety, recent_primary, 73×)",
+      "doi": "10.1002/da.22706",
+      "pub_id": "pub_5db4cad5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4456320431687225,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24919483934155667,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06229870983538917,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Depression and anxiety",
+      "citation_count": 73,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Wilson 2018 — Exploring attentional bias towards threatening faces in chimpanzees using the… (PloS one, recent_primary, 13×)",
+      "doi": "10.1371/journal.pone.0207378",
+      "pub_id": "pub_31593fce",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4415320741182369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "PloS one",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Wardle 2012 — Amphetamine as a social drug: effects of d-amphetamine on social processing a… (Psychopharmacology, foundational, 42×)",
+      "doi": "10.1007/s00213-012-2708-y",
+      "pub_id": "pub_3ff5fee2",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4377744046383184,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Psychopharmacology",
+      "citation_count": 42,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

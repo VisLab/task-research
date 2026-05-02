@@ -1,0 +1,1028 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_two_stage_decision",
+    "name": "Two-Stage Decision Task",
+    "aliases": [
+      "Two-Step Task",
+      "Daw Task",
+      "MB/MF Task"
+    ],
+    "category_id": "associative_learning_and_reinforcement",
+    "short_definition": "Sequential two-choice task with probabilistic transitions to second-stage states and drifting rewards; choice patterns dissociate model-based from model-free control.",
+    "description": "Participants make two sequential choices per trial. The first-stage choice leads (with fixed transition probabilities — 70% common, 30% rare) to one of two second-stage states, each containing its own pair of options. Second-stage options yield rewards with slowly drifting probabilities. Daw et al. (2011) designed this task to dissociate model-based reinforcement learning (using knowledge of the transition structure to plan) from model-free reinforcement learning (repeating previously rewarded actions regardless of transition type). The diagnostic signature is the interaction between reward and transition type on subsequent first-stage choices: model-based agents show opposite stay/switch patterns after common vs. rare transitions, while model-free agents show the same pattern regardless of transition type.",
+    "inclusion_test": {
+      "procedure": "First stage: choose between two options that lead probabilistically (70/30) to one of two second-stage choice sets. Second stage: choose between two options with drifting reward probabilities. This separates model-based from model-free learning.",
+      "manipulation": "Transition structure (common vs. rare); reward probability drift rate; reward magnitude.",
+      "measurement": "Stay probability as a function of previous trial outcome × transition type; model-based index; computational model fits (hybrid MB/MF learning rates, mixing weight)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:56:31",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 27
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Daw 2011 — Model-Based Influences on Humans' Choices and Striatal Prediction Errors (Neuron, historical, 1k×)",
+      "doi": "10.1016/j.neuron.2011.02.027",
+      "pub_id": "pub_8b706e42",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7594049070271796,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4376196281087184,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1094049070271796,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Neuron",
+      "citation_count": 1916,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Kasal 2021 — Fronto-striatal structures related with model-based control as an endophenoty… (Scientific reports, recent_primary, 3×)",
+      "doi": "10.1038/s41598-021-91179-2",
+      "pub_id": "pub_66bfb348",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5325657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Doody 2022 — Model-based learning retrospectively updates model-free values. (Scientific reports, recent_primary, 8×)",
+      "doi": "10.1038/s41598-022-05567-3",
+      "pub_id": "pub_58264126",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5143034819228887,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Scientific reports",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Gijsen 2022 — Active inference and the two-step task. (Scientific reports, recent_primary, 6×)",
+      "doi": "10.1038/s41598-022-21766-4",
+      "pub_id": "pub_4acb5e80",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5106658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Scientific reports",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Voon 2020 — The neurochemical substrates of habitual and goal-directed control. (Translational psychiatry, recent_primary, 23×)",
+      "doi": "10.1038/s41398-020-0762-5",
+      "pub_id": "pub_43a9d46c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4885003854799279,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Translational psychiatry",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Shahar 2021 — Assigning the right credit to the wrong action: compulsivity in the general p… (Translational psychiatry, recent_primary, 7×)",
+      "doi": "10.1038/s41398-021-01642-x",
+      "pub_id": "pub_7889da2e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4825986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Translational psychiatry",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Shahar 2019 — Improving the reliability of model-based decision-making estimates in the two… (PLoS computational biology, recent_primary, 108×)",
+      "doi": "10.1371/journal.pcbi.1006803",
+      "pub_id": "pub_2edc957d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46040439134234457,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2716175653693784,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0679043913423446,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PLoS computational biology",
+      "citation_count": 108,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Voon 2015 — Motivation and value influences in the relative balance of goal-directed and … (Translational psychiatry, foundational, 73×)",
+      "doi": "10.1038/tp.2015.165",
+      "pub_id": "pub_0918978c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.45479870983538917,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24919483934155667,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06229870983538917,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Translational psychiatry",
+      "citation_count": 73,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Miranda 2020 — Combined model-free and model-sensitive reinforcement learning in non-human p… (PLoS computational biology, recent_primary, 18×)",
+      "doi": "10.1371/journal.pcbi.1007944",
+      "pub_id": "pub_7cc37898",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4451189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "PLoS computational biology",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Grosskurth 2019 — No substantial change in the balance between model-free and model-based contr… (PLoS computational biology, recent_primary, 9×)",
+      "doi": "10.1371/journal.pcbi.1007443",
+      "pub_id": "pub_36503e33",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.42582851094799273,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PLoS computational biology",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Feher da Silva 2018 — A note on the analysis of two-stage task results: How changes in task structu… (PloS one, recent_primary, 14×)",
+      "doi": "10.1371/journal.pone.0195328",
+      "pub_id": "pub_7aac5fab",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4216973704032758,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "PloS one",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Akam 2015 — Simple Plans or Sophisticated Habits? State, Transition and Learning Interact… (PLoS computational biology, foundational, 103×)",
+      "doi": "10.1371/journal.pcbi.1004648",
+      "pub_id": "pub_38f358d5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4197247177312858,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26889887092514314,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06722471773128579,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "PLoS computational biology",
+      "citation_count": 103,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Ger 2024 — Using recurrent neural network to estimate irreducible stochasticity in human… (eLife, recent_primary, 5×)",
+      "doi": "10.7554/elife.90082",
+      "pub_id": "pub_57a34e12",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.40843462246760553,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "eLife",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Liang 2020 — A deep learning framework for prostate localization in cone beam CT-guided ra… (Medical physics, recent_primary, 15×)",
+      "doi": "10.1002/mp.14355",
+      "pub_id": "pub_26492018",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4026315260246448,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Medical physics",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Sato 2023 — Opponent learning with different representations in the cortico-basal ganglia… (PLoS computational biology, recent_primary, 6×)",
+      "doi": "10.1371/journal.pcbi.1011206",
+      "pub_id": "pub_8d0544b6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.38066585927874236,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "PLoS computational biology",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Brown 2022 — A double-blind study assessing the impact of orbitofrontal theta burst stimul… (Journal of psychopathology and c…, recent_primary, 4×)",
+      "doi": "10.1037/abn0000733",
+      "pub_id": "pub_2175d522",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3657956294418315,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Journal of psychopathology and clinical science",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Sjoerds 2016 — Slips of Action and Sequential Decisions: A Cross-Validation Study of Tasks A… (Frontiers in behavioral neurosci…, foundational, 35×)",
+      "doi": "10.3389/fnbeh.2016.00234",
+      "pub_id": "pub_cd10360a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.35436924493521105,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Frontiers in behavioral neuroscience",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Hasz 2018 — Deliberation and Procedural Automation on a Two-Step Task for Rats. (Frontiers in integrative neurosc…, recent_primary, 32×)",
+      "doi": "10.3389/fnint.2018.00030",
+      "pub_id": "pub_7f6c48f8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.35310980846989976,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Frontiers in integrative neuroscience",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Doñamayor 2018 — The involuntary nature of binge drinking: goal directedness and awareness of … (Addiction biology, recent_primary, 26×)",
+      "doi": "10.1111/adb.12505",
+      "pub_id": "pub_08a8935f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3502052228843329,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Addiction biology",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "van Timmeren 2026 — Does the Habit Theory of Addictions Extend to Disordered Gambling? (Current addiction reports, key_review, 0×)",
+      "doi": "10.1007/s40429-026-00715-5",
+      "pub_id": "pub_25b2ad37",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.34750000000000003,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2026,
+      "venue": "Current addiction reports",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Veit 2023 — Emulative learning of a two-step task in free-ranging domestic pigs. (Animal cognition, recent_primary, 4×)",
+      "doi": "10.1007/s10071-022-01740-3",
+      "pub_id": "pub_1ba4defa",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.33579562944183156,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Animal cognition",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Huang 2026 — Deciding for others diminishes model-based decision-making but depends on ind… (NPJ science of learning, recent_primary, 0×)",
+      "doi": "10.1038/s41539-025-00397-0",
+      "pub_id": "pub_d583d6e7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.2975,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2026,
+      "venue": "NPJ science of learning",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Li 2018 — Extraction of Information Related to Adverse Drug Events from Electronic Heal… (JMIR medical informatics, recent_primary, 42×)",
+      "doi": "10.2196/12159",
+      "pub_id": "pub_62cd2bef",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.29694107130498504,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "JMIR medical informatics",
+      "citation_count": 42,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Sankhe 2024 — Model-free decision-making underlies motor errors in rapid sequential movemen… (Communications psychology, recent_primary, 0×)",
+      "doi": "10.1038/s44271-024-00123-3",
+      "pub_id": "pub_74fc449b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.2825,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Communications psychology",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Robinson 2024 — Model-based and model-free mechanisms in methamphetamine use disorder. (Addiction biology, recent_primary, 3×)",
+      "doi": "10.1111/adb.13356",
+      "pub_id": "pub_f20489df",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.26256576301232243,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Addiction biology",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Eken 2025 — Clinical and neurocognitive correlates of obsessive-compulsive personality di… (Journal of mood and anxiety diso…, recent_primary, 0×)",
+      "doi": "10.1016/j.xjmad.2025.100155",
+      "pub_id": "pub_13f38e31",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.2525,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2025,
+      "venue": "Journal of mood and anxiety disorders",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Brands 2025 — Signatures of Perseveration and Heuristic-Based Directed Exploration in Two-S… (Computational psychiatry (Cambri…, recent_primary, 2×)",
+      "doi": "10.5334/cpsy.101",
+      "pub_id": "pub_a8e8d09a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.1684017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2025,
+      "venue": "Computational psychiatry (Cambridge, Mass.)",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

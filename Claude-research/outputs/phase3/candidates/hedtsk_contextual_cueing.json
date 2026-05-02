@@ -1,0 +1,1169 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:18:51",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_contextual_cueing",
+    "name": "Contextual Cueing Task",
+    "aliases": [
+      "CC Task"
+    ],
+    "category_id": "implicit_and_statistical_learning",
+    "short_definition": "Visual search in which some distractor configurations repeat across blocks; faster search on repeated configurations indexes implicit spatial context learning.",
+    "description": "Participants perform visual search for a T-shaped target among L-shaped distractors. Critically, half the search displays repeat across blocks (with the target always in the same location within a given repeated display), while the other half are newly generated on each block. Search becomes faster for repeated displays over blocks, even though participants cannot consciously recognize which displays have been repeated. Chun and Jiang (1998) demonstrated that this contextual cueing effect reflects implicit learning and memory for spatial configurations that guide spatial attention to the likely target location. The paradigm has become a standard tool for studying the interface between attention, implicit learning, and long-term memory.",
+    "inclusion_test": {
+      "procedure": "Visual search through letter arrays; some spatial configurations repeat across blocks while others are novel. Participants find and respond to a target embedded in the display.",
+      "manipulation": "Repeated vs. novel display configurations; number of repetitions across blocks; explicit awareness of repetition.",
+      "measurement": "RT advantage for repeated over novel configurations (contextual cueing effect); learning curve across blocks; recognition test for repeated displays."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 15,
+      "picked": 14,
+      "reserve": 0,
+      "excluded": 1,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 1
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_aefe83b8",
+      "doi": "10.1006/cogp.1998.0681",
+      "url": "https://doi.org/10.1006/cogp.1998.0681",
+      "openalex_id": "https://openalex.org/W2109884388",
+      "pmid": "9679076",
+      "first_author": "Chun",
+      "authors_display": "Marvin M. Chun, & Yuhong Jiang",
+      "year": 1998,
+      "title": "Contextual Cueing: Implicit Learning and Memory of Visual Context Guides Spatial Attention",
+      "venue": "Cognitive Psychology",
+      "venue_tier": "flagship",
+      "publisher": "Elsevier BV",
+      "publication_types": [
+        "article",
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1989,
+      "influential_citation_count": null,
+      "fwci": 8.4151,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "hybrid",
+      "oa_url": "https://doi.org/10.1006/cogp.1998.0681",
+      "tldr": null,
+      "abstract": "Global context plays an important, but poorly understood, role in visual tasks. This study demonstrates that a robust memory for visual context exists to guide spatial attention. Global context was operationalized as the spatial layout of objects in visual search displays. Half of the configurations were repeated across blocks throughout the entire session, and targets appeared within consistent locations in these arrays. Targets appearing in learned configurations were detected more quickly. This newly discovered form of search facilitation is termed contextual cueing. Contextual cueing is driven by incidentally learned associations between spatial configurations (context) and target locations. This benefit was obtained despite chance performance for recognizing the configurations, suggesting that the memory for context was implicit. The results show how implicit learning and memory of visual context can guide spatial attention towards task-relevant aspects of a scene.",
+      "score": {
+        "composite": 0.6099458608729404,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4397834434917619,
+            "venue": 1.0,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10994586087294048,
+            "venue": 0.2,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Learning",
+        "Memory",
+        "Space Perception",
+        "Visual Perception",
+        "Attention",
+        "Reaction Time"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_9278531c",
+      "doi": "10.1016/j.bbr.2010.08.043",
+      "url": "https://doi.org/10.1016/j.bbr.2010.08.043",
+      "openalex_id": null,
+      "pmid": "20817043",
+      "first_author": "Simon",
+      "authors_display": "Simon, J. et al.",
+      "year": 2011,
+      "title": "Dopamine transporter genotype predicts implicit sequence learning.",
+      "venue": "Behavioural brain research",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 27,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Implicit learning, the non-conscious acquisition of sequential and spatial environmental regularities, underlies skills such as language, social intuition, or detecting a target in a complex scene. We examined relationships between a variation of the dopamine transporter (DAT1) gene (SLC6A3), which influences dopamine transporter expression in the striatum, and two forms of implicit learning that differ in the regularity to be learned and in striatal involvement. Participants, grouped as 9-repeat carriers or 10/10 homozygotes, completed the triplets learning task (TLT) and the spatial contextual cueing task (SCCT). The TLT assesses sequence learning, recruiting the striatal system, particularly as training continues. In contrast, the SCCT assesses spatial context learning, recruiting medial temporal brain networks. For both tasks, participants demonstrated learning in faster and/or more accurate responses to repeating patterns or spatial arrays. As predicted, TLT learning was greater for the 9-repeat carriers than the 10/10 group (despite equal overall accuracy and response speed) whereas there were no significant group differences in SCCT. Thus, presence of the DAT1 9-repeat allele was beneficial only for implicit sequence learning, indicating the influence of DAT1 genotype on one form of implicit learning and supporting evidence that implicit learning of sequential dependencies and spatial layouts recruit different neural systems.",
+      "score": {
+        "composite": 0.4632316222910648,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Analysis of Variance",
+        "Orientation",
+        "Learning",
+        "Pattern Recognition, Visual",
+        "Space Perception",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Genotype",
+        "Alleles",
+        "Female",
+        "Male",
+        "Dopamine Plasma Membrane Transport Proteins"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_df5c261c",
+      "doi": "10.1007/s10916-021-01729-4",
+      "url": "https://doi.org/10.1007/s10916-021-01729-4",
+      "openalex_id": null,
+      "pmid": "33768346",
+      "first_author": "Weiss",
+      "authors_display": "Weiss, K. et al.",
+      "year": 2021,
+      "title": "Eye Tracking Supported Human Factors Testing Improving Patient Training.",
+      "venue": "Journal of medical systems",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s10916-021-01729-4.pdf",
+      "tldr": null,
+      "abstract": "The handling of left ventricular assist devices (LVADs) can be challenging for patients and requires appropriate training. The devices' usability impacts patients' safety and quality of life. In this study, an eye tracking supported human factors testing was performed to reveal problems during use and test the trainings' effectiveness. In total 32 HeartWare HVAD patients (including 6 pre-VAD patients) and 3 technical experts as control group performed a battery change (BC) and a controller change (CC) as an everyday and emergency scenario on a training device. By tracking the patients' gaze point, task duration and pump-off time were evaluated. Patients with LVAD support ≥1 year showed significantly shorter BC task duration than patients with LVAD support <1 year (p = 0.008). In contrast their CC task duration (p = 0.002) and pump-off times (median = 12.35 s) were higher than for LVAD support patients <1 year (median = 5.3 s) with p = 0.001. The shorter BC task duration for patients with LVAD support ≥1 year indicate that with time patients establish routines and gain confidence using their device. The opposite effect was found for CC task duration and pump-off times. This implies the need for intermittent re-training of less frequent tasks to increase patients' safety.",
+      "score": {
+        "composite": 0.4509017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Heart-Assist Devices",
+        "Retrospective Studies",
+        "Time Factors",
+        "Quality of Life",
+        "Heart Failure",
+        "Eye-Tracking Technology"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_42a755af",
+      "doi": "10.3389/fpsyg.2021.675848",
+      "url": "https://doi.org/10.3389/fpsyg.2021.675848",
+      "openalex_id": null,
+      "pmid": "34093371",
+      "first_author": "Zang",
+      "authors_display": "Zang, X. et al.",
+      "year": 2021,
+      "title": "Task-Irrelevant Context Learned Under Rapid Display Presentation: Selective Attention in Associative Blocking.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2021.675848/pdf",
+      "tldr": null,
+      "abstract": "In the contextual cueing task, visual search is faster for targets embedded in invariant displays compared to targets found in variant displays. However, it has been repeatedly shown that participants do not learn repeated contexts when these are irrelevant to the task. One potential explanation lays in the idea of <i>associative blocking</i>, where salient cues (task-relevant old items) block the learning of invariant associations in the task-irrelevant subset of items. An alternative explanation is that the associative blocking rather hinders the allocation of attention to task-irrelevant subsets, but not the learning <i>per se</i>. The current work examined these two explanations. In two experiments, participants performed a visual search task under a rapid presentation condition (300 ms) in Experiment 1, or under a longer presentation condition (2,500 ms) in Experiment 2. In both experiments, the search items within both old and new displays were presented in two colors which defined the irrelevant and task-relevant items within each display. The participants were asked to search for the target in the relevant subset in the learning phase. In the transfer phase, the instructions were reversed and task-irrelevant items became task-relevant (and vice versa). In line with previous studies, the search of task-irrelevant subsets resulted in no cueing effect post-transfer in the longer presentation condition; however, a reliable cueing effect was generated by task-irrelevant subsets learned under the rapid presentation. These results demonstrate that under rapid display presentation, global attentional selection leads to global context learning. However, under a longer display presentation, global attention is blocked, leading to the exclusive learning of invariant relevant items in the learning session.",
+      "score": {
+        "composite": 0.4309017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b1f8f934",
+      "doi": "10.1017/s1355617715000223",
+      "url": "https://doi.org/10.1017/s1355617715000223",
+      "openalex_id": null,
+      "pmid": "25991413",
+      "first_author": "Negash",
+      "authors_display": "Negash, S. et al.",
+      "year": 2015,
+      "title": "Relationship of contextual cueing and hippocampal volume in amnestic mild cognitive impairment patients and cognitively normal older adults.",
+      "venue": "Journal of the International Neuropsychological Society : JINS",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 13,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "There is currently some debate as to whether hippocampus mediates contextual cueing. In the present study, we examined contextual cueing in patients diagnosed with mild cognitive impairment (MCI) and healthy older adults, with the main goal of investigating the role of hippocampus in this form of learning. Amnestic MCI (aMCI) patients and healthy controls completed the contextual cueing task, in which they were asked to search for a target (a horizontal T) in an array of distractors (rotated L's). Unbeknownst to them, the spatial arrangement of elements on some displays was repeated thus making the configuration a contextual cue to the location of the target. In contrast, the configuration for novel displays was generated randomly on each trial. The difference in response times between repeated and novel configurations served as a measure of contextual learning. aMCI patients, as a group, were able to learn spatial contextual cues as well as healthy older adults. However, better learning on this task was associated with higher hippocampal volume, particularly in right hemisphere. Furthermore, contextual cueing performance was significantly associated with hippocampal volume, even after controlling for age and MCI status. These findings support the role of the hippocampus in learning of spatial contexts, and also suggest that the contextual cueing paradigm can be useful in detecting neuropathological changes associated with the hippocampus.",
+      "score": {
+        "composite": 0.4131987407849036,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Analysis of Variance",
+        "Association Learning",
+        "Cues",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Image Processing, Computer-Assisted",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Cognitive Dysfunction"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_8ff4f175",
+      "doi": "10.1016/j.jpsychires.2014.06.013",
+      "url": "https://doi.org/10.1016/j.jpsychires.2014.06.013",
+      "openalex_id": null,
+      "pmid": "25027478",
+      "first_author": "Garrett",
+      "authors_display": "Garrett, A. et al.",
+      "year": 2014,
+      "title": "Predicting clinical outcome using brain activation associated with set-shifting and central coherence skills in Anorexia Nervosa.",
+      "venue": "Journal of psychiatric research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 22,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Patients with Anorexia Nervosa (AN) have neuropsychological deficits in Set-Shifting (SS) and central coherence (CC) consistent with an inflexible thinking style and overly detailed processing style, respectively. This study investigates brain activation during SS and CC tasks in patients with AN and tests whether this activation is a biomarker that predicts response to treatment.<h4>Methods</h4>FMRI data were collected from 21 females with AN while performing an SS task (the Wisconsin Card Sort) and a CC task (embedded figures), and used to predict outcome following 16 weeks of treatment (either 16 weeks of cognitive behavioral therapy or 8 weeks cognitive remediation therapy followed by 8 weeks of cognitive behavioral therapy).<h4>Results</h4>Significant activation during the SS task included bilateral dorsolateral and ventrolateral prefrontal cortex and left anterior middle frontal gyrus. Higher scores on the neuropsychological test of SS (measured outside the scanner at baseline) were correlated with greater DLPFC and VLPFC/insula activation. Improvements in SS following treatment were significantly predicted by a combination of low VLPFC/insula and high anterior middle frontal activation (R squared = .68, p = .001). For the CC task, visual and parietal cortical areas were activated, but were not significantly correlated with neuropsychological measures of CC and did not predict outcome.<h4>Conclusion</h4>Cognitive flexibility requires the support of several prefrontal cortex resources. As previous studies suggest that the VLPFC is important for selecting context-appropriate responses, patients who have difficulties with this skill may benefit the most from cognitive therapy with or without cognitive remediation therapy. The ability to sustain inhibition of an unwanted response, subserved by the anterior middle frontal gyrus, is a cognitive feature that predicts favorable outcome to cognitive treatment. CC deficits may not be an effective pred",
+      "score": {
+        "composite": 0.4103843610908988,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Prefrontal Cortex",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Anorexia Nervosa",
+        "Neuropsychological Tests",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Young Adult",
+        "Sense of Coherence",
+        "Cognitive Behavioral Therapy",
+        "Set, Psychology"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_caa897f5",
+      "doi": "10.1080/13506280701751224",
+      "url": "https://doi.org/10.1080/13506280701751224",
+      "openalex_id": null,
+      "pmid": "18846248",
+      "first_author": "Kunar",
+      "authors_display": "Kunar, M. et al.",
+      "year": 2008,
+      "title": "Time to Guide: Evidence for Delayed Attentional Guidance in Contextual Cueing.",
+      "venue": "Visual cognition",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 41,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Contextual cueing experiments show that, when displays are repeated, reaction times (RTs) to find a target decrease over time even when the observers are not aware of the repetition. Recent evidence suggests that this benefit in standard contextual cueing tasks is not likely to be due to an improvement in attentional guidance (Kunar, Flusberg, Horowitz & Wolfe, 2007). Nevertheless, we ask whether guidance can help participants find the target in a repeated display, if they are given sufficient time to encode the display. In Experiment 1 we increased the display complexity so that it took participants longer to find the target. Here we found a larger effect of guidance than in a condition with shorter RTs. Experiment 2 gave participants prior exposure to the display context. The data again showed that with more time participants could implement guidance to help find the target, provided that there was something in the search stimuli locations to guide attention to. The data suggest that although the benefit in a standard contextual cueing task is unlikely to be a result of guidance, guidance can play a role if it is given time to develop.",
+      "score": {
+        "composite": 0.3991004817463479,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.13333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.02,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_810ad0f1",
+      "doi": "10.3389/fped.2022.867304",
+      "url": "https://doi.org/10.3389/fped.2022.867304",
+      "openalex_id": null,
+      "pmid": "35685920",
+      "first_author": "Gröpel",
+      "authors_display": "Gröpel, P. et al.",
+      "year": 2022,
+      "title": "Provider Visual Attention Correlates With the Quality of Pediatric Resuscitation: An Observational Eye-Tracking Study.",
+      "venue": "Frontiers in pediatrics",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participant,participants)"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9171025",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Eye-tracking devices are an innovative tool to understand providers' attention during stressful medical tasks. The knowledge about what gaze behaviors improve (or harm) the quality of clinical care can substantially improve medical training. The aim of this study is to identify gaze behaviors that are related to the quality of pediatric resuscitation.<h4>Methods</h4>Forty students and healthcare providers performed a simulated pediatric life support scenario, consisting of a chest compression task and a ventilation task, while wearing eye-tracking glasses. Skill Reporter software measured chest compression (CC) quality and Neo Training software measured ventilation quality. Main eye-tracking parameters were ratio [the number of participants who attended a certain area of interest (AOI)], dwell time (total amount of time a participant attended an AOI), the number of revisits (how often a participant returned his gaze to an AOI), and the number of transitions between AOIs.<h4>Results</h4>The most salient AOIs were infant chest and ventilation mask (ratio = 100%). During CC task, 41% of participants also focused on ventilation bag and 59% on study nurse. During ventilation task, the ratio was 61% for ventilation bag and 36% for study nurse. Percentage of correct CC rate was positively correlated with dwell time on infant chest (<i>p</i> = 0.044), while the overall CC quality was negatively correlated with dwelling outside of pre-defined task-relevant AOIs (<i>p</i> = 0.018). Furthermore, more dwell time on infant chest predicted lower leakage (<i>p</i> = 0.042). The number of transitions between AOIs was unrelated to CC parameters, but correlated negatively with mask leak during ventilations (<i>p</i> = 0.014). Participants with high leakage shifted their gaze more often between ventilation bag, ventilation mask, and task-irrelevant environment.<h4>Conclusion</h4>Infant chest and ventilation mask are the most salient AOIs in pediatric basic life supp",
+      "score": {
+        "composite": 0.3909346224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_7dcc9721",
+      "doi": "10.3389/fncel.2015.00482",
+      "url": "https://doi.org/10.3389/fncel.2015.00482",
+      "openalex_id": null,
+      "pmid": "26733808",
+      "first_author": "Schroeder",
+      "authors_display": "Schroeder, P. et al.",
+      "year": 2015,
+      "title": "Emotional Distraction and Bodily Reaction: Modulation of Autonomous Responses by Anodal tDCS to the Prefrontal Cortex.",
+      "venue": "Frontiers in cellular neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,subjects)"
+      ],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4683355",
+      "tldr": null,
+      "abstract": "Prefrontal electric stimulation has been demonstrated to effectively modulate cognitive processing. Specifically, the amelioration of cognitive control (CC) over emotional distraction by transcranial direct current stimulation (tDCS) points toward targeted therapeutic applications in various psychiatric disorders. In addition to behavioral measures, autonomous nervous system (ANS) responses are fundamental bodily signatures of emotional information processing. However, interactions between the modulation of CC by tDCS and ANS responses have received limited attention. We here report on ANS data gathered in healthy subjects that performed an emotional CC task parallel to the modulation of left prefrontal cortical activity by 1 mA anodal or sham tDCS. Skin conductance responses (SCRs) to negative and neutral pictures of human scenes were reduced by anodal as compared to sham tDCS. Individual SCR amplitude variations were associated with the amount of distraction. Moreover, the stimulation-driven performance- and SCR-modulations were related in form of a quadratic, inverse-U function. Thus, our results indicate that non-invasive brain stimulation (i.e., anodal tDCS) can modulate autonomous responses synchronous to behavioral improvements, but the range of possible concurrent improvements from prefrontal stimulation is limited. Interactions between cognitive, affective, neurophysiological, and vegetative responses to emotional content can shape brain stimulation effectiveness and require theory-driven integration in potential treatment protocols.",
+      "score": {
+        "composite": 0.3650986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_bd2e57f0",
+      "doi": "10.1016/j.jad.2025.120728",
+      "url": "https://doi.org/10.1016/j.jad.2025.120728",
+      "openalex_id": null,
+      "pmid": "41260366",
+      "first_author": "Atkinson",
+      "authors_display": "Atkinson, L. et al.",
+      "year": 2026,
+      "title": "Implicit learning across varying temporal scales in individuals with and without mood instability.",
+      "venue": "Journal of affective disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7618815",
+      "tldr": null,
+      "abstract": "Mood instability and cognitive impairment are important features of several psychiatric disorders, including bipolar disorder (BD). However, little is known about how they might be related when measured simultaneously and longitudinally. This 10-week prospective, between-subjects experimental study used digital remote monitoring to capture mood and cognition, and instability in these measures. Two groups of participants were recruited: a 'high MDQ' group (n = 37), scoring ≥7 on the Mood Disorder Questionnaire (MDQ) with high daily mood instability, and a 'low MDQ' group (n = 37), scoring ≤5 on the MDQ with low daily mood instability. Five days a week, for 10 weeks, participants completed mood ratings and a contextual cueing task that assessed implicit learning of regularities presented over different temporal scales. Participants with high MDQ scores demonstrated shallower slopes of learning for contextual cueing across days, but not within experimental sessions, compared to individuals with low MDQ scores. Mood instability was not associated with greater instability in reaction times to novel targets. For all participants, learning slopes were significantly steeper for targets repeated more frequently across experimental sessions, e.g. daily compared to alternate days, and within experimental sessions e.g. repeated compared to novel trials, demonstrating successful contextual cueing over varying temporal scales. Our findings highlight that individuals with high levels of mood instability may be less effective at detecting and integrating stimulus regularities across days. Concurrent and high-frequency digital remote monitoring of mood and cognition is feasible and can be used to elucidate relationships between mood instability and cognition.",
+      "score": {
+        "composite": 0.36,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Prospective Studies",
+        "Affect",
+        "Learning",
+        "Cues",
+        "Reaction Time",
+        "Mood Disorders",
+        "Bipolar Disorder",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Surveys and Questionnaires"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_98a17a5e",
+      "doi": "10.1101/lm.025973.112",
+      "url": "https://doi.org/10.1101/lm.025973.112",
+      "openalex_id": null,
+      "pmid": "23073642",
+      "first_author": "Manelis",
+      "authors_display": "Manelis, A., & Reder, L.",
+      "year": 2012,
+      "title": "Procedural learning and associative memory mechanisms contribute to contextual cueing: Evidence from fMRI and eye-tracking.",
+      "venue": "Learning & memory (Cold Spring Harbor, N.Y.)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 28,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Using a combination of eye tracking and fMRI in a contextual cueing task, we explored the mechanisms underlying the facilitation of visual search for repeated spatial configurations. When configurations of distractors were repeated, greater activation in the right hippocampus corresponded to greater reductions in the number of saccades to locate the target. A psychophysiological interactions analysis for repeated configurations revealed that a strong functional connectivity between this area in the right hippocampus and the left superior parietal lobule early in learning was significantly reduced toward the end of the task. Practice related changes (which we call \"procedural learning\") in activation in temporo-occipital and parietal brain regions depended on whether or not spatial context was repeated. We conclude that context repetition facilitates visual search through chunk formation that reduces the number of effective distractors that have to be processed during the search. Context repetition influences procedural learning in a way that allows for continuous and effective chunk updating.",
+      "score": {
+        "composite": 0.353739547683298,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Image Interpretation, Computer-Assisted",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Learning",
+        "Cues",
+        "Memory",
+        "Pattern Recognition, Visual",
+        "Reaction Time",
+        "Saccades",
+        "Adult",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a912aad3",
+      "doi": "10.3390/brainsci10070446",
+      "url": "https://doi.org/10.3390/brainsci10070446",
+      "openalex_id": null,
+      "pmid": "32668806",
+      "first_author": "Marek",
+      "authors_display": "Marek, N., & Pollmann, S.",
+      "year": 2020,
+      "title": "Contextual-Cueing beyond the Initial Field of View-A Virtual Reality Experiment.",
+      "venue": "Brain sciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/2076-3425/10/7/446/pdf?version=1594651554",
+      "tldr": null,
+      "abstract": "In visual search, participants can incidentally learn spatial target-distractor configurations, leading to shorter search times for repeated compared to novel configurations. Usually, this is tested within the limited visual field provided by a computer monitor. While contextual cueing is typically investigated on two-dimensional screens, we present for the first time an implementation of a classic contextual cueing task (search for a T-shape among L-shapes) in a three-dimensional virtual environment. This enabled us to test if the typical finding of incidental learning of repeated search configurations, manifested by shorter search times, would hold in a three-dimensional virtual reality (VR) environment. One specific aspect that was tested by combining virtual reality and contextual cueing was if contextual cueing would hold for targets outside the initial field of view (FOV), requiring head movements to be found. In keeping with two-dimensional search studies, reduced search times were observed after the first epoch and remained stable in the remaining experiment. Importantly, comparable search time reductions were observed for targets both within and outside of the initial FOV. The results show that a repeated distractors-only configuration in the initial FOV can guide search for target locations requiring a head movement to be seen.",
+      "score": {
+        "composite": 0.3509346224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_44767200",
+      "doi": "10.1101/lm.609807",
+      "url": "https://doi.org/10.1101/lm.609807",
+      "openalex_id": null,
+      "pmid": "17690338",
+      "first_author": "Greene",
+      "authors_display": "Greene, A. et al.",
+      "year": 2007,
+      "title": "Hippocampal differentiation without recognition: an fMRI analysis of the contextual cueing task.",
+      "venue": "Learning & memory (Cold Spring Harbor, N.Y.)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 78,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "A central role of the hippocampus is to consolidate conscious forms of learning and memory, while performance on implicit tasks appears to depend upon other structures. Recently, considerable debate has emerged about whether hippocampal-dependent tasks necessarily entail task awareness. In the contextual cueing task, repetition facilitation is implicit, but impaired in patients with amnesia. Whether the hippocampus alone or other MTL structures are required is unclear. Event-related functional magnetic resonance imaging revealed hippocampal activity that differentiates novel from repeated arrays. This pattern of results was observed without recognition of the repeating arrays. This finding provides support for the claim that the hippocampus is involved in processes outside the domain of conscious learning and memory.",
+      "score": {
+        "composite": 0.3182450852872811,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2529803411491245,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.06666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06324508528728112,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.01,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Temporal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Consciousness",
+        "Memory",
+        "Pattern Recognition, Visual",
+        "Reaction Time",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Unconscious, Psychology",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_85a413c9",
+      "doi": "10.3402/ejpt.v4i0.19854",
+      "url": "https://doi.org/10.3402/ejpt.v4i0.19854",
+      "openalex_id": null,
+      "pmid": "23671762",
+      "first_author": "Meyer",
+      "authors_display": "Meyer, T. et al.",
+      "year": 2013,
+      "title": "Acute stress differentially affects spatial configuration learning in high and low cortisol-responding healthy adults.",
+      "venue": "European journal of psychotraumatology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants,subject)"
+      ],
+      "citation_count": 25,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.tandfonline.com/doi/pdf/10.3402/ejpt.v4i0.19854?needAccess=true",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Stress and stress hormones modulate memory formation in various ways that are relevant to our understanding of stress-related psychopathology, such as posttraumatic stress disorder (PTSD). Particular relevance is attributed to efficient memory formation sustained by the hippocampus and parahippocampus. This process is thought to reduce the occurrence of intrusions and flashbacks following trauma, but may be negatively affected by acute stress. Moreover, recent evidence suggests that the efficiency of visuo-spatial processing and learning based on the hippocampal area is related to PTSD symptoms.<h4>Objective</h4>The current study investigated the effect of acute stress on spatial configuration learning using a spatial contextual cueing task (SCCT) known to heavily rely on structures in the parahippocampus.<h4>Method</h4>Acute stress was induced by subjecting participants (N = 34) to the Maastricht Acute Stress Test (MAST). Following a counterbalanced within-subject approach, the effects of stress and the ensuing hormonal (i.e., cortisol) activity on subsequent SCCT performance were compared to SCCT performance following a no-stress control condition.<h4>Results</h4>Acute stress did not impact SCCT learning overall, but opposing effects emerged for high versus low cortisol responders to the MAST. Learning scores following stress were reduced in low cortisol responders, while high cortisol-responding participants showed improved learning.<h4>Conclusions</h4>The effects of stress on spatial configuration learning were moderated by the magnitude of endogenous cortisol secretion. These findings suggest a possible mechanism by which cortisol responses serve an adaptive function during stress and trauma, and this may prove to be a promising route for future research in this area.",
+      "score": {
+        "composite": 0.30215895471896337,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_7b34afa8",
+      "doi": "10.1196/annals.1416.006",
+      "url": "https://doi.org/10.1196/annals.1416.006",
+      "openalex_id": null,
+      "pmid": "19076397",
+      "first_author": "Bennett",
+      "authors_display": "Bennett, I. et al.",
+      "year": 2008,
+      "title": "Two forms of implicit learning in young adults with dyslexia.",
+      "venue": "Annals of the New York Academy of Sciences",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 30,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Implicit learning is thought to underlie the acquisition of many skills including reading. Previous research has shown that some forms of implicit learning are reduced in individuals with dyslexia (e.g., sequence learning), whereas other forms are spared (e.g., spatial context learning). However, it has been proposed that dyslexia-related motor dysfunction may have contributed to the implicit sequence learning deficits reported earlier. To assess implicit sequence learning in the absence of a motor sequence, 16 young adults diagnosed with dyslexia (20.6 +/- 1.5 years) and 18 healthy controls (20.8 +/- 2.0 years) completed a triplet frequency learning task (TRIP) that involved learning a sequential regularity in which the location of certain events followed a repeating pattern, but motor responses did not. Participants also completed the spatial contextual cueing task (SCCT), which involved learning a spatial regularity in which the location of distractors in some visual arrays predicted the target location. In addition, neuropsychological tests of real-word and pseudo-word reading were administered. TRIP task analyses revealed no between-group differences in pattern learning, but a positive correlation between individual learning scores and reading ability indicated that poor readers learned less well than did good readers. Thus, earlier reports of reduced implicit sequence learning in dyslexics cannot be entirely accounted for by motor sequencing deficits. No significant correlations or group differences in learning were found for SCCT. These findings offer additional evidence for a link between poor reading and impaired implicit sequence learning.",
+      "score": {
+        "composite": 0.2747048645403726,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.02,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Dyslexia",
+        "Case-Control Studies",
+        "Learning",
+        "Neuropsychological Tests",
+        "Reading",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    }
+  ]
+}

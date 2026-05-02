@@ -1,0 +1,768 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_think_no_think",
+    "name": "Think/No-Think Task",
+    "aliases": [
+      "TNT Task",
+      "Think No-Think"
+    ],
+    "category_id": "long_term_memory",
+    "short_definition": "Cue words are presented with instructions to either retrieve or suppress their learned associate; later memory for suppressed items indexes retrieval-induced forgetting through inhibition.",
+    "description": "Participants first learn cue-target word pairs (e.g., \"ordeal–roach\"). In the critical phase, cues are presented and participants are instructed either to recall the target (Think) or to prevent the target from coming to mind (No-Think). On a final test, suppressed (No-Think) items show reduced recall relative to baseline items that were learned but not presented during the critical phase. Anderson and Green (2001) introduced this paradigm as a memory analog of the Go/No-Go motor inhibition task, arguing that just as people can stop a motor action, they can suppress retrieval of unwanted memories. The paradigm has become central to research on memory suppression, PTSD, and the role of prefrontal control over hippocampal memory retrieval.",
+    "inclusion_test": {
+      "procedure": "Participants learn cue-target word pairs to criterion. In the critical phase, cues are presented and participants either actively recall the target (think) or suppress retrieval (no-think). A final test probes all pairs.",
+      "manipulation": "Think vs. no-think vs. baseline (not presented in critical phase); number of suppression repetitions; independent probe test (IP: novel cue for same target).",
+      "measurement": "Suppression-induced forgetting (baseline − no-think recall); think benefit (think − baseline); IP test (demonstrates inhibitory vs. associative interference account)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:55:13",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 20
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Anderson 2001 — Suppressing unwanted memories by executive control (Nature, historical, 1k×)",
+      "doi": "10.1038/35066572",
+      "pub_id": "pub_ca2edc96",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7018057046306808,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4072228185227233,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10180570463068082,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2001,
+      "venue": "Nature",
+      "citation_count": 1133,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Guo 2018 — A supramodal role of the basal ganglia in memory and motor inhibition: Meta-a… (Neuropsychologia, key_review, 98×)",
+      "doi": "10.1016/j.neuropsychologia.2017.11.033",
+      "pub_id": "pub_3f01aeee",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5598448827646774,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26604619772537635,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06651154943134409,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Neuropsychologia",
+      "citation_count": 98,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Waldhauser 2018 — The neural dynamics of deficient memory control in heavily traumatized refugees. (Scientific reports, recent_primary, 21×)",
+      "doi": "10.1038/s41598-018-31400-x",
+      "pub_id": "pub_78831933",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5480742823479501,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Ashton 2023 — A mindful approach to controlling intrusive thoughts. (Scientific reports, recent_primary, 5×)",
+      "doi": "10.1038/s41598-023-37447-9",
+      "pub_id": "pub_19d69034",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.49926795580093886,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific reports",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Depue 2012 — A neuroanatomical model of prefrontal inhibitory modulation of memory retrieval. (Neuroscience and biobehavioral r…, key_review, 70×)",
+      "doi": "10.1016/j.neubiorev.2012.02.012",
+      "pub_id": "pub_cfca5b79",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.49503301747618,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24679873657138676,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06169968414284669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Neuroscience and biobehavioral reviews",
+      "citation_count": 70,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Noreen 2020 — Investigating the mediating effect of working memory on intentional forgettin… (Psychological research, recent_primary, 5×)",
+      "doi": "10.1007/s00426-019-01225-y",
+      "pub_id": "pub_0af4a37c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.48926795580093885,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychological research",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Scotti 2022 — Directed forgetting of pictures of everyday objects. (Journal of vision, recent_primary, 4×)",
+      "doi": "10.1167/jov.22.10.8",
+      "pub_id": "pub_1247876b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4866289627751649,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Journal of vision",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Hellerstedt 2016 — Tracking the intrusion of unwanted memories into awareness with event-related… (Neuropsychologia, foundational, 44×)",
+      "doi": "10.1016/j.neuropsychologia.2016.07.008",
+      "pub_id": "pub_43790fc5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.47843244469805346,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Neuropsychologia",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Nardo 2024 — Everything you ever wanted to know about the Think/No-Think task, but forgot … (Behavior research methods, recent_primary, 17×)",
+      "doi": "10.3758/s13428-024-02349-9",
+      "pub_id": "pub_446749e7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4685030300957165,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Behavior research methods",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Castiglione 2021 — Unwanted Memory Intrusions Recruit Broad Motor Suppression. (Journal of cognitive neuroscience, recent_primary, 8×)",
+      "doi": "10.1162/jocn_a_01642",
+      "pub_id": "pub_e62ffbe8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4651368152562219,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Vitkova 2024 — Long-lasting negativity in the left motoric brain structures during word memo… (Scientific reports, recent_primary, 2×)",
+      "doi": "10.1038/s41598-024-60378-y",
+      "pub_id": "pub_c6502b01",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.45923507429477767,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Scientific reports",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Castiglione 2019 — Preventing a Thought from Coming to Mind Elicits Increased Right Frontal Beta… (Cerebral cortex (New York, N.Y. …, recent_primary, 95×)",
+      "doi": "10.1093/cercor/bhz017",
+      "pub_id": "pub_3eae205e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4393994818255837,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26426459396900137,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06606614849225034,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "citation_count": 95,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Satish 2022 — EEG evidence that morally relevant autobiographical memories can be suppressed. (Cognitive, affective & behaviora…, recent_primary, 10×)",
+      "doi": "10.3758/s13415-022-01029-5",
+      "pub_id": "pub_a3e45026",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4380414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Cognitive, affective & behavioral neuroscience",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Noreen 2015 — What Do We Really Know about Cognitive Inhibition? Task Demands and Inhibitor… (PloS one, foundational, 32×)",
+      "doi": "10.1371/journal.pone.0134951",
+      "pub_id": "pub_6f41d4e5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4239431418032331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "PloS one",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Murray 2015 — Older adults can suppress unwanted memories when given an appropriate strategy. (Psychology and aging, foundational, 21×)",
+      "doi": "10.1037/a0038611",
+      "pub_id": "pub_a5ad0f54",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.39807428234795006,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Psychology and aging",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Metcalfe 2012 — Neural correlates of people's hypercorrection of their false beliefs. (Journal of cognitive neuroscience, foundational, 20×)",
+      "doi": "10.1162/jocn_a_00228",
+      "pub_id": "pub_9de293ec",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.38740093357352,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Niessen 2020 — Stop Thinking: An Experience Sampling Study on Suppressing Distractive Though… (Frontiers in psychology, recent_primary, 4×)",
+      "doi": "10.3389/fpsyg.2020.01616",
+      "pub_id": "pub_19bf53de",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3866289627751649,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Frontiers in psychology",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Murray 2011 — Effects of emotion and age on performance during a think/no-think memory task. (Psychology and aging, foundational, 25×)",
+      "doi": "10.1037/a0023214",
+      "pub_id": "pub_baf11fe9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3604922880522967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Psychology and aging",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Depue 2012 — Increased inhibition and enhancement of memory retrieval are associated with … (Hippocampus, foundational, 10×)",
+      "doi": "10.1002/hipo.20952",
+      "pub_id": "pub_065d2827",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3580414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Hippocampus",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Nemeth 2014 — The impact of intermediate-term alcohol abstinence on memory retrieval and su… (Frontiers in psychology, foundational, 6×)",
+      "doi": "10.3389/fpsyg.2014.01396",
+      "pub_id": "pub_639d2bce",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3314991926120757,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Frontiers in psychology",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

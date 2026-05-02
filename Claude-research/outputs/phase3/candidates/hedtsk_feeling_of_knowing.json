@@ -1,0 +1,433 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:43:58",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_feeling_of_knowing",
+    "name": "Feeling-of-Knowing Task",
+    "aliases": [
+      "FOK Task",
+      "Feeling-of-Knowing Judgment",
+      "Hart FOK Paradigm"
+    ],
+    "category_id": "awareness_agency_and_metacognition",
+    "short_definition": "After failing to recall a studied item, participants rate the likelihood they could recognize the answer; the accuracy of these predictions (gamma correlation with recognition) indexes metacognitive monitoring of unretrieved memory.",
+    "description": "The Feeling-of-Knowing task measures the accuracy of metacognitive judgments about information that cannot currently be recalled. In the standard Hart (1965) paradigm, participants study cue-target pairs, attempt cued recall, and then — for items they failed to recall — rate their confidence that they would recognize the correct answer among alternatives. A subsequent recognition test determines the accuracy of these predictions. The key dependent measure is resolution — the correspondence between feeling-of-knowing magnitude and recognition performance, typically quantified by the Goodman-Kruskal gamma correlation. Feeling-of-knowing judgments are thought to rely on partial retrieval of target attributes, cue familiarity, and accessibility of related information, rather than direct access to trace strength. The paradigm dissociates from Judgment-of-Learning tasks in timing (post-retrieval-failure vs. post-encoding), prediction target (recognition vs. recall), and cognitive basis (partial retrieval and cue familiarity vs. encoding fluency). Feeling-of-knowing accuracy is sensitive to frontal lobe damage, aging, Alzheimer's disease, and schizophrenia, and is more closely tied to executive functioning than Judgment-of-Learning accuracy.",
+    "inclusion_test": {
+      "procedure": "Participants study cue-target pairs, attempt cued recall, and for each unrecalled item rate their feeling of knowing (likelihood of future recognition); a subsequent recognition test assesses prediction accuracy.",
+      "manipulation": "Cue familiarity (high vs. low); target accessibility (related vs. unrelated cues); number of recognition alternatives; delay between judgment and recognition test; domain (episodic vs. semantic general knowledge).",
+      "measurement": "Feeling-of-knowing magnitude (mean rating); resolution (gamma correlation between ratings and recognition accuracy); calibration (correspondence between predicted and actual recognition probabilities); response latency for feeling-of-knowing judgments."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 5,
+      "picked": 5,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_c65b260f",
+      "doi": "10.1037/h0022263",
+      "url": "https://doi.org/10.1037/h0022263",
+      "openalex_id": "https://openalex.org/W2006471401",
+      "pmid": "5825050",
+      "first_author": "Hart",
+      "authors_display": "Jamie Hart",
+      "year": 1965,
+      "title": "Memory and the feeling-of-knowing experience.",
+      "venue": "Journal of Educational Psychology",
+      "venue_tier": "specialty",
+      "publisher": "American Psychological Association",
+      "publication_types": [
+        "article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 781,
+      "influential_citation_count": null,
+      "fwci": 3.0975,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.5764262729441617,
+        "breakdown": {
+          "raw": {
+            "citations": 0.38570509177664686,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09642627294416171,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Learning",
+        "Memory",
+        "Information Theory"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f4cf52bc",
+      "doi": "10.3389/fpsyt.2021.631518",
+      "url": "https://doi.org/10.3389/fpsyt.2021.631518",
+      "openalex_id": null,
+      "pmid": "33868048",
+      "first_author": "Bastin",
+      "authors_display": "Bastin, C. et al.",
+      "year": 2021,
+      "title": "Anosognosia in Mild Cognitive Impairment: Lack of Awareness of Memory Difficulties Characterizes Prodromal Alzheimer's Disease.",
+      "venue": "Frontiers in psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants,patients)"
+      ],
+      "citation_count": 41,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8044313",
+      "tldr": null,
+      "abstract": "While anosognosia is often present in Alzheimer's disease, the degree of awareness of cognitive difficulties in the earlier stages, such as Mild Cognitive Impairment (MCI), is less clear. Using a questionnaire and Feeling-of-Knowing tasks, the aims of this study were (1) to test the hypothesis that anosognosia is present specifically in prodromal AD stage in patients that, owing to a more severe AD neuropathology, will rapidly progress to overt dementia and (2) to assess the neural bases of self-awareness for memory functioning. A group of 44 patients with amnestic MCI and a group of 29 healthy older participants (CTRL) performed two Feeling-of-Knowing tasks (episodic and semantic FOK) and responded to the Functional Memory Scale (MARS), also completed by one of their relatives. They underwent FDG-PET and structural MRI. The participants were followed clinically for 4 years. At the end of follow-up, 23 patients with MCI developed Alzheimer's disease (converters) and 21 patients still presented symptoms of MCI without progression (non-converters). The analyses focused on the data from inclusion stratified according to clinical status 4 years later (converters, non-converters, CTRL). On the episodic FOK task, converters patients overestimated their ability to later recognize unrecalled words and they showed prediction accuracy (Hamann coefficient) at the level of chance. No difficulty was observed in any group with the semantic FOK task. On the MARS, converters patients had a higher anosognosia score than non-converters patients and CTRL, which did not differ from each other. Correlations between self-awareness scores and neuroimaging data using small volume correction analyses in a priori regions of interest in converters indicated that inaccurate episodic FOK judgments was related to changes in brain areas that might support interpretation of retrieved content for judging the likelihood of recognition. For the MARS, the association between anosognosia and decreased ",
+      "score": {
+        "composite": 0.44910048174634787,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1fc3257c",
+      "doi": "10.1037/neu0000458",
+      "url": "https://doi.org/10.1037/neu0000458",
+      "openalex_id": null,
+      "pmid": "29878837",
+      "first_author": "Bertrand",
+      "authors_display": "Bertrand, E. et al.",
+      "year": 2018,
+      "title": "Cortical thickness and metacognition in cognitively diverse older adults.",
+      "venue": "Neuropsychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 26,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Metacognition, or the ability to accurately identify, appraise, and monitor one's deficits, is commonly impaired in Alzheimer's disease (AD). Poor metacognition prevents correct appraisal of a range of physical, cognitive, and emotional symptoms and facilitates anosognosia, which has important clinical implications for individuals (e.g., diminished treatment adherence, increased engagement in high-risk situations) and caregivers (e.g., higher burden). However, the neural correlates of metacognitive disturbance are still debated in the literature, partly because of the subjective nature of traditional awareness measures.<h4>Method</h4>An objective Feeling of Knowing (FOK) task was used to measure metamemory capacity in a group of cognitively diverse older adults, including 14 with mild to moderate AD and 20 cognitively healthy older adults. The association between three different objective metamemory measures of the FOK task and regional cortical thickness (12 bilateral regions of interest [ROIs] hypothesized to support self-awareness) was analyzed using partial correlations.<h4>Results</h4>Less accurate metamemory at the local and global levels was associated with reduced right posterior cingulate cortical thickness, r = -0.42, p = .02 and reduced right medial prefrontal, r = -0.39, p = .029, respectively.<h4>Conclusions</h4>To our knowledge, this was the first study to examine metacognition in relation to cortical thickness. Both global and local metamemory functions appear to rely on the integrity of right sided midline regions, known to be important for processing self-referential information. Findings are conceptualized with regard to the Default Mode Network, and also considered in relation to recent findings pointing to the right insula as a region critical for self-awareness. (PsycINFO Database Record",
+      "score": {
+        "composite": 0.4102052228843329,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Humans",
+        "Alzheimer Disease",
+        "Magnetic Resonance Imaging",
+        "Memory",
+        "Aging",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Metacognition"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_cf3a08f6",
+      "doi": "10.1016/j.neuropsychologia.2008.12.009",
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2008.12.009",
+      "openalex_id": null,
+      "pmid": "19124034",
+      "first_author": "Paynter",
+      "authors_display": "Paynter, C. et al.",
+      "year": 2009,
+      "title": "Knowing we know before we know: ERP correlates of initial feeling-of-knowing.",
+      "venue": "Neuropsychologia",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 36,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Subjects performed a rapid feeling-of-knowing task developed by (Reder, L. M., & Ritter, F. (1992). What determines initial feeling of knowing? Familiarity with question terms, not with the answer. Journal of Experimental Psychology: Learning, Memory, and Cognition, 18, 435-451), while event-related potentials (ERPs) were recorded to identify the time course of \"feeling-of-knowing\" signals. Subjects were shown a series of math problems, some of which were repeated multiple times during the course of the experiment, and subjects had to rapidly decide whether the answer to a given problem could be quickly retrieved from memory (retrieval trials) or had to be calculated on scrap paper (calculate trials). Behavioral results replicated the 1992 study, showing that subjects can estimate whether the answer is known much faster than the answer can be retrieved. ERPs time-locked to the onset of the math problem showed that accurate retrieval trials were associated with greater positivity for an early frontal P2 component (epoched from 180 to 280ms) and a frontal-central P3 component (epoched from 300 to 550ms). Moreover, this feeling-of-knowing signal was not found for subjects who never obtained a successful on-time retrieval. We interpret these findings as suggesting that initial feeling-of-knowing relies on a rapid assessment of the \"perceptual fluency\" with which the stimulus is processed. If a stimulus is deemed sufficiently familiar, the activation level of an internal problem representation is used to arrive at a decision of whether to search for the answer or to calculate it.",
+      "score": {
+        "composite": 0.38476582832922795,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2090633133169118,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05226582832922795,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Electroencephalography",
+        "Cognition",
+        "Awareness",
+        "Mental Recall",
+        "Problem Solving",
+        "Psychomotor Performance",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Evoked Potentials",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_55019029",
+      "doi": "10.3389/fpsyg.2022.917576",
+      "url": "https://doi.org/10.3389/fpsyg.2022.917576",
+      "openalex_id": null,
+      "pmid": "36072052",
+      "first_author": "Yeung",
+      "authors_display": "Yeung, M.",
+      "year": 2022,
+      "title": "Stability and consistency of metamemory judgments within a session.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9443848",
+      "tldr": null,
+      "abstract": "There has been much interest in assessing individual and group differences in metamemory skills. These endeavors require or would benefit from enhanced knowledge about the stability and consistency of metamemory judgments over successive trials. However, few studies have examined these aspects. Thus, the present study investigated and compared the within-session stability and consistency of three major types of metamemory judgment: judgment of learning (JOL), feeling-of-knowing judgment (FOK), and retrospective confidence judgment (RCJ), using a single-task paradigm. A total of 38 healthy young adults (17 males, 21 females) completed three trials of a face-scene associative learning task designed to assess metamemory. In each trial, participants rated their JOLs while studying a new set of face-scene pairs, and then rated their FOKs and RCJs while their memory was being tested. The stability and consistency of the mean confidence ratings and the relationships between confidence rating and memory performance, indexed by two gamma estimates, were analyzed and compared across types of metamemory judgments. Over trials, there was a significant decrease in the mean rating for JOL but not for FOK or RCJ. Also, the gamma scores of JOL, but not that of FOK or RCJ, significantly improved with practice. Furthermore, for each type of metamemory judgment, the mean confidence rating showed excellent consistency across trials. Depending on the judgment type and gamma estimation method, the consistency of gamma scores ranged from poor to excellent. Thus, the present study clarified the temporal dynamics of various types of metamemory judgments and the consistency of metamemory measures.",
+      "score": {
+        "composite": 0.34256576301232244,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

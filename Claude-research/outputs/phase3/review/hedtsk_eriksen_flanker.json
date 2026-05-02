@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_eriksen_flanker",
+    "name": "Eriksen Flanker Task",
+    "aliases": [
+      "Flanker",
+      "Flanker Task"
+    ],
+    "category_id": "inhibitory_control_and_conflict_monitoring",
+    "short_definition": "A central target flanked by congruent or incongruent distractors; RT and error differences index selective attention and conflict resolution.",
+    "description": "The Eriksen Flanker Task measures selective attention and the ability to inhibit responses to irrelevant flanking stimuli. Participants view a brief display of five items arranged horizontally, with a central target flanked by two non-target items on each side. The central target requires a specific response, while flanking items may be congruent (same response), incongruent (opposite response), or neutral. Participants respond via speeded button press while ignoring flankers. The flanker compatibility effect (slowed RT and increased errors on incongruent trials) indexes the degree of response competition and the efficiency of attentional filtering.",
+    "inclusion_test": {
+      "procedure": "Participants identify a central target (arrow or letter) flanked by congruent, incongruent, or neutral distractors.",
+      "manipulation": "Flanker congruency; flanker-target distance; proportion congruent; response deadline.",
+      "measurement": "RT and accuracy; congruency effect (incongruent − congruent RT); delta plots (interference across RT distribution); conflict adaptation (Gratton effect)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:40:02",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "McDermott 2017 — Spatiotemporal oscillatory dynamics of visual selective attention during a fl… (NeuroImage, foundational, 103×)",
+      "doi": "10.1016/j.neuroimage.2017.05.014",
+      "pub_id": "pub_9fc58d87",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.7272247177312858,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26889887092514314,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06722471773128579,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "NeuroImage",
+      "citation_count": 103,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Li 2018 — Gain control explains the effect of distraction in human perceptual, cognitiv… (Proceedings of the National Acad…, recent_primary, 36×)",
+      "doi": "10.1073/pnas.1805224115",
+      "pub_id": "pub_04f2c54e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7222658283292279,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2090633133169118,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05226582832922795,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 36,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Ridderinkhof 2021 — The arrow of time: Advancing insights into action control from the arrow vers… (Attention, perception & psychoph…, recent_primary, 47×)",
+      "doi": "10.3758/s13414-020-02167-z",
+      "pub_id": "pub_90d0b4a8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7160332669860892,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22413306794435656,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05603326698608914,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 47,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Eriksen 1974 — Effects of noise letters upon the identification of a target letter in a nons… (Perception & Psychophysics, historical, 7k×)",
+      "doi": "10.3758/bf03203267",
+      "pub_id": "pub_7e2a3692",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.6887071535983551,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5148286143934201,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12870715359835502,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": null,
+      "year": 1974,
+      "venue": "Perception & Psychophysics",
+      "citation_count": 7273,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Montalti 2023 — Unveiling the influence of task-relevance of emotional faces on behavioral re… (Scientific reports, recent_primary, 26×)",
+      "doi": "10.1038/s41598-023-47385-1",
+      "pub_id": "pub_cb5c65e5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.687705222884333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific reports",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Mennes 2011 — Linking inter-individual differences in neural activation and behavior to int… (NeuroImage, foundational, 183×)",
+      "doi": "10.1016/j.neuroimage.2010.10.046",
+      "pub_id": "pub_4c1eda13",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6754830056093825,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3019320224375298,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07548300560938245,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "NeuroImage",
+      "citation_count": 183,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Eisma 2021 — Frontal midline theta differentiates separate cognitive control strategies wh… (Scientific reports, recent_primary, 54×)",
+      "doi": "10.1038/s41598-021-94162-z",
+      "pub_id": "pub_6829f6f0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6746703636169536,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2320147878011481,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05800369695028702,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 54,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Mennes 2010 — Inter-individual differences in resting-state functional connectivity predict… (NeuroImage, foundational, 299×)",
+      "doi": "10.1016/j.neuroimage.2010.01.002",
+      "pub_id": "pub_00654c34",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6725587628574299,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33023505142971926,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08255876285742982,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "NeuroImage",
+      "citation_count": 299,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Tang 2020 — Infant behavioral inhibition predicts personality and social outcomes three d… (Proceedings of the National Acad…, recent_primary, 83×)",
+      "doi": "10.1073/pnas.1917376117",
+      "pub_id": "pub_1e4b12d4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6708000299191758,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2565334530100364,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0641333632525091,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 83,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Formenti 2021 — Differences in inhibitory control and motor fitness in children practicing op… (Scientific reports, recent_primary, 39×)",
+      "doi": "10.1038/s41598-021-82698-z",
+      "pub_id": "pub_c17bc779",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6700609406269818,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 39,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Imburgio 2020 — Establishing norms for error-related brain activity during the arrow Flanker … (NeuroImage, recent_primary, 44×)",
+      "doi": "10.1016/j.neuroimage.2020.116694",
+      "pub_id": "pub_750e9250",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6617657780313868,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "NeuroImage",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Buzzell 2019 — Adolescent cognitive control, theta oscillations, and social observation. (NeuroImage, recent_primary, 59×)",
+      "doi": "10.1016/j.neuroimage.2019.04.077",
+      "pub_id": "pub_8ac87e24",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.655929800082265,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2370525336623931,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.059263133415598274,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "NeuroImage",
+      "citation_count": 59,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Van den Bussche 2020 — Too anxious to control: the relation between math anxiety and inhibitory cont… (Scientific reports, recent_primary, 25×)",
+      "doi": "10.1038/s41598-020-76920-7",
+      "pub_id": "pub_ae2477e1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.65382562138563,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Martínez-Pérez 2020 — The role of chronotype in the interaction between the alerting and the execut… (Scientific reports, recent_primary, 24×)",
+      "doi": "10.1038/s41598-020-68755-z",
+      "pub_id": "pub_69201187",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6532579255503297,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Rowe 2007 — Positive affect increases the breadth of attentional selection. (Proceedings of the National Acad…, foundational, 412×)",
+      "doi": "10.1073/pnas.0605198104",
+      "pub_id": "pub_0e927477",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6471857199360326,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3487428797441303,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08718571993603258,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2007,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 412,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Fischer 2018 — Cortical beta power reflects decision dynamics and uncovers multiple facets o… (Nature communications, recent_primary, 60×)",
+      "doi": "10.1038/s41467-018-07456-8",
+      "pub_id": "pub_c0dc55dc",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6461690516186012,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23800953980773776,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05950238495193444,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature communications",
+      "citation_count": 60,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Buzzell 2017 — Development of the error-monitoring system from ages 9-35: Unique insight pro… (NeuroImage, foundational, 72×)",
+      "doi": "10.1016/j.neuroimage.2017.05.045",
+      "pub_id": "pub_f3b92e6e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6387684430098365,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24840710537267913,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06210177634316978,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "NeuroImage",
+      "citation_count": 72,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Hübner 2019 — Conflict resolution in the Eriksen flanker task: Similarities and differences… (PloS one, recent_primary, 48×)",
+      "doi": "10.1371/journal.pone.0214203",
+      "pub_id": "pub_e0bf819e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6363317185574847,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Zavala 2016 — Human subthalamic nucleus-medial frontal cortex theta phase coherence is invo… (NeuroImage, foundational, 68×)",
+      "doi": "10.1016/j.neuroimage.2016.05.031",
+      "pub_id": "pub_55550495",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6279527687190098,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24514440820937256,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06128610205234314,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "NeuroImage",
+      "citation_count": 68,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Costi 2021 — Peripheral immune cell reactivity and neural response to reward in patients w… (Translational psychiatry, recent_primary, 66×)",
+      "doi": "10.1038/s41398-021-01668-1",
+      "pub_id": "pub_11dd2c4e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6175270207203348,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2434414162146728,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0608603540536682,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Translational psychiatry",
+      "citation_count": 66,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "McSweeney 2021 — Longitudinal age- and sex-related change in background aperiodic activity dur… (Developmental cognitive neurosci…, recent_primary, 48×)",
+      "doi": "10.1016/j.dcn.2021.101035",
+      "pub_id": "pub_c50c426d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6129983852241514,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Dubreuil-Vall 2021 — Transcranial Direct Current Stimulation to the Left Dorsolateral Prefrontal C… (Biological psychiatry. Cognitive…, recent_primary, 34×)",
+      "doi": "10.1016/j.bpsc.2020.11.006",
+      "pub_id": "pub_e09c5a74",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6114614887205739,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "citation_count": 34,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Taylor 2021 — Neural oscillations underlying selective attention follow sexually divergent … (Developmental cognitive neurosci…, recent_primary, 36×)",
+      "doi": "10.1016/j.dcn.2021.100961",
+      "pub_id": "pub_b324bcc7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6089324949958946,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2090633133169118,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05226582832922795,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 36,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Atmaca 2011 — The joint flanker effect: sharing tasks with real and imagined co-actors. (Experimental brain research, foundational, 103×)",
+      "doi": "10.1007/s00221-011-2709-9",
+      "pub_id": "pub_f501a1b1",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6072247177312857,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26889887092514314,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06722471773128579,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Experimental brain research",
+      "citation_count": 103,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Hedge 2018 — Low and variable correlation between reaction time costs and accuracy costs e… (Psychological bulletin, key_review, 38×)",
+      "doi": "10.1037/bul0000164",
+      "pub_id": "pub_071dd91a",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6063611475075799,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Psychological bulletin",
+      "citation_count": 38,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Engelbregt 2021 — Effects of binaural and monaural beat stimulation on attention and EEG. (Experimental brain research, recent_primary, 29×)",
+      "doi": "10.1007/s00221-021-06155-z",
+      "pub_id": "pub_9829584f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6058969185761037,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Experimental brain research",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Zhang 2017 — Anatomical and functional organization of the human substantia nigra and its … (eLife, foundational, 109×)",
+      "doi": "10.7554/elife.26653",
+      "pub_id": "pub_5d126751",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6047032451231149,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2721463138257929,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06803657845644823,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "eLife",
+      "citation_count": 109,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Anwyl-Irvine 2020 — Gorilla in our midst: An online behavioral experiment builder. (Behavior research methods, recent_primary, 859×)",
+      "doi": "10.3758/s13428-019-01237-x",
+      "pub_id": "pub_310a5704",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6044691304258056,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3912098550365561,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09780246375913902,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Behavior research methods",
+      "citation_count": 859,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Hedge 2022 — Strategy and processing speed eclipse individual differences in control abili… (Journal of experimental psycholo…, key_review, 28×)",
+      "doi": "10.1037/xlm0001028",
+      "pub_id": "pub_9c0b8dec",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6020728810166314,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Riesel 2019 — Error-related brain activity as a transdiagnostic endophenotype for obsessive… (Psychological medicine, recent_primary, 79×)",
+      "doi": "10.1017/s0033291719000199",
+      "pub_id": "pub_4a268473",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.600093822133143,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2537086218659055,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06342715546647637,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Psychological medicine",
+      "citation_count": 79,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

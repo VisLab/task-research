@@ -1,0 +1,3599 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:38:33",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_tower_of_london",
+    "name": "Tower of London Task",
+    "aliases": [
+      "TOL",
+      "Shallice Tower Task",
+      "Tower of London"
+    ],
+    "category_id": "reasoning_and_problem_solving",
+    "short_definition": "Rearrange colored beads on pegs to match a goal state in the minimum number of moves; pre-execution latency and move efficiency index planning.",
+    "description": "The Tower of London Task is a planning and problem-solving task. Participants are presented with two configurations of colored beads on pegs: a start state and a goal state. They must plan and execute a sequence of moves to transform the start state into the goal state in the minimum number of moves, following movement constraints (one bead at a time, peg capacity limits). Problem difficulty is manipulated by the minimum number of moves required (2-7). Performance is measured by moves to solution, planning time, and accuracy. The task is a key measure of prefrontal executive function, particularly planning and look-ahead.",
+    "inclusion_test": {
+      "procedure": "Three pegs hold colored discs in a start configuration; participants move discs one at a time to reach a goal configuration in the minimum number of moves.",
+      "manipulation": "Problem difficulty (minimum moves: 2–7); number of discs; time constraints; one-touch (planning only) vs. execution versions.",
+      "measurement": "Number of problems solved in minimum moves; excess moves; planning time (first-move latency); total solution time."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 46,
+      "picked": 30,
+      "reserve": 10,
+      "excluded": 6,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 6
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_fdbc42a7",
+      "doi": "10.1016/j.neubiorev.2012.02.007",
+      "url": "https://doi.org/10.1016/j.neubiorev.2012.02.007",
+      "openalex_id": null,
+      "pmid": "22353426",
+      "first_author": "Just",
+      "authors_display": "Just, M. et al.",
+      "year": 2012,
+      "title": "Autism as a neural systems disorder: a theory of frontal-posterior underconnectivity.",
+      "venue": "Neuroscience and biobehavioral reviews",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Review",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 403,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The underconnectivity theory of autism attributes the disorder to lower anatomical and functional systems connectivity between frontal and more posterior cortical processing. Here we review evidence for the theory and present a computational model of an executive functioning task (Tower of London) implementing the assumptions of underconnectivity. We make two modifications to a previous computational account of performance and brain activity in typical individuals in the Tower of London task (Newman et al., 2003): (1) the communication bandwidth between frontal and parietal areas was decreased and (2) the posterior centers were endowed with more executive capability (i.e., more autonomy, an adaptation is proposed to arise in response to the lowered frontal-posterior bandwidth). The autism model succeeds in matching the lower frontal-posterior functional connectivity (lower synchronization of activation) seen in fMRI data, as well as providing insight into behavioral response time results. The theory provides a unified account of how a neural dysfunction can produce a neural systems disorder and a psychological disorder with the widespread and diverse symptoms of autism.",
+      "score": {
+        "composite": 0.6035334765283997,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3474672394469324,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0868668098617331,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Frontal Lobe",
+        "Parietal Lobe",
+        "Neural Pathways",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Behavior",
+        "Social Behavior",
+        "Mental Processes",
+        "Cognition",
+        "Perception",
+        "Autistic Disorder",
+        "Neuropsychological Tests",
+        "Cerebrovascular Circulation",
+        "Models, Neurological",
+        "Computer Simulation",
+        "Neuroimaging"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_d1334471",
+      "doi": "10.1073/pnas.1117104109",
+      "url": "https://doi.org/10.1073/pnas.1117104109",
+      "openalex_id": null,
+      "pmid": "22308408",
+      "first_author": "Hahn",
+      "authors_display": "Hahn, A. et al.",
+      "year": 2012,
+      "title": "Differential modulation of the default mode network via serotonin-1A receptors.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 103,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Reflecting one's mental self is a fundamental process for evaluating the personal relevance of life events and for moral decision making and future envisioning. Although the corresponding network has been receiving growing attention, the driving neurochemical mechanisms of the default mode network (DMN) remain unknown. Here we combined positron emission tomography and functional magnetic resonance imaging to investigate modulations of the DMN via serotonin-1A receptors (5-HT(1A)), separated for 5-HT autoinhibition (dorsal raphe nucleus) and local inhibition (heteroreceptors in projection areas). Using two independent approaches, regional 5-HT(1A) binding consistently predicted DMN activity in the retrosplenial cortex for resting-state functional magnetic resonance imaging and the Tower of London task. On the other hand, both local and autoinhibitory 5-HT(1A) binding inversely modulated the posterior cingulate cortex, the strongest hub in the resting human brain. In the frontal part of the DMN, a negative association was found between the dorsal medial prefrontal cortex and local 5-HT(1A) inhibition. Our results indicate a modulation of key areas involved in self-referential processing by serotonergic neurotransmission, whereas variations in 5-HT(1A) binding explained a considerable amount of the individual variability in the DMN. Moreover, the brain regions associated with distinct introspective functions seem to be specifically regulated by the different 5-HT(1A) binding sites. Together with previously reported modulations of dopamine and GABA, this regional specialization suggests complex interactions of several neurotransmitters driving the default mode network.",
+      "score": {
+        "composite": 0.5938913843979524,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26889887092514314,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06722471773128579,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Receptor, Serotonin, 5-HT1A",
+        "Positron-Emission Tomography",
+        "Magnetic Resonance Imaging"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f361f239",
+      "doi": "10.1038/s41598-020-77814-4",
+      "url": "https://doi.org/10.1038/s41598-020-77814-4",
+      "openalex_id": null,
+      "pmid": "33244182",
+      "first_author": "Kim",
+      "authors_display": "Kim, M. et al.",
+      "year": 2020,
+      "title": "The effects of selective serotonin reuptake inhibitors on brain functional networks during goal-directed planning in obsessive-compulsive disorder.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7691328",
+      "tldr": null,
+      "abstract": "Whether brain network connectivity during goal-directed planning in patients with obsessive-compulsive disorder (OCD) is abnormal and restored by treatment with selective serotonin reuptake inhibitors (SSRIs) remains unknown. This study investigated whether the disrupted network connectivity during the Tower of London (ToL) planning task in medication-free OCD patients could be restored by SSRI treatment. Seventeen medication-free OCD patients and 21 matched healthy controls (HCs) underwent functional magnetic resonance imaging (fMRI) while performing the ToL task at baseline and again after 16 weeks of SSRI treatment. Internetwork connectivity was compared across the groups and treatment statuses (pretreatment versus posttreatment). At baseline, compared with the HCs, the OCD patients showed lower internetwork connectivity between the dorsal attention network and the default-mode network during the ToL planning task. After 16 weeks of SSRI treatment, the OCD patients showed improved clinical symptoms accompanied by normalized network connectivity, although their improved behavioral performance in the ToL task did not reach that of the HCs. Our findings support the conceptualization of OCD as a network disease characterized by an imbalance between brain networks during goal-directed planning and suggest that internetwork connectivity may serve as an early biomarker of the effects of SSRIs on goal-directed planning.",
+      "score": {
+        "composite": 0.5625307037366092,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Neural Pathways",
+        "Humans",
+        "Brain Mapping",
+        "Motivation",
+        "Goals",
+        "Attention",
+        "Obsessive-Compulsive Disorder",
+        "Adult",
+        "London",
+        "Female",
+        "Male",
+        "Selective Serotonin Reuptake Inhibitors"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9ce4147c",
+      "doi": "10.1038/s41467-018-03657-3",
+      "url": "https://doi.org/10.1038/s41467-018-03657-3",
+      "openalex_id": null,
+      "pmid": "29581425",
+      "first_author": "Lorenz",
+      "authors_display": "Lorenz, R. et al.",
+      "year": 2018,
+      "title": "Dissociating frontoparietal brain networks with neuroadaptive Bayesian optimization.",
+      "venue": "Nature communications",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 41,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://kclpure.kcl.ac.uk/portal/en/publications/deb64e75-0aab-4856-9888-f93768494355",
+      "tldr": null,
+      "abstract": "Understanding the unique contributions of frontoparietal networks (FPN) in cognition is challenging because they overlap spatially and are co-activated by diverse tasks. Characterizing these networks therefore involves studying their activation across many different cognitive tasks, which previously was only possible with meta-analyses. Here, we use neuroadaptive Bayesian optimization, an approach combining real-time analysis of functional neuroimaging data with machine-learning, to discover cognitive tasks that segregate ventral and dorsal FPN activity. We identify and subsequently refine two cognitive tasks, Deductive Reasoning and Tower of London, which maximally dissociate the dorsal from ventral FPN. We subsequently investigate these two FPNs in the context of a wider range of FPNs and demonstrate the importance of studying the whole activity profile across tasks to uniquely differentiate any FPN. Our findings deviate from previous meta-analyses and hypothesized functional labels for these FPNs. Taken together the results form the starting point for a neurobiologically-derived cognitive taxonomy.",
+      "score": {
+        "composite": 0.5574338150796813,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Parietal Lobe",
+        "Nerve Net",
+        "Humans",
+        "Brain Mapping",
+        "Bayes Theorem",
+        "Cognition",
+        "Neuropsychological Tests",
+        "Adaptation, Physiological",
+        "Adult",
+        "Female",
+        "Male",
+        "Meta-Analysis as Topic",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_18068541",
+      "doi": "10.1371/journal.pone.0223127",
+      "url": "https://doi.org/10.1371/journal.pone.0223127",
+      "openalex_id": null,
+      "pmid": "31589626",
+      "first_author": "Parciauskaite",
+      "authors_display": "Parciauskaite, V. et al.",
+      "year": 2019,
+      "title": "40-Hz auditory steady-state responses and the complex information processing: An exploratory study in healthy young males.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 22,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0223127&type=printable",
+      "tldr": null,
+      "abstract": "Electroencephalographic (EEG) activity in the gamma (30-80 Hz) range is related to a variety of sensory and cognitive processes which are frequently impaired in schizophrenia. Auditory steady-state response at 40-Hz (40-Hz ASSR) is utilized as an index of gamma activity and is proposed as a biomarker of schizophrenia. Nevertheless, the link between ASSRs and cognitive functions is not clear. This study explores a possible relationship between the performance on cognitive tasks and the 40-Hz ASSRs in a controlled uniform sample of young healthy males, as age and sex may have complex influence on ASSRs. Twenty-eight young healthy male volunteers participated (mean age ± SD 25.8±3.3) in the study. The 40-Hz click trains (500 ms) were presented 150 times with an inter-stimulus interval set at 700-1000 ms. The phase-locking index (PLI) and event-related power perturbation (ERSP) of the ASSR were calculated in the 200-500 ms latency range, which corresponds to the steady part of the response. The Psychology Experiment Building Language (PEBL) task battery was used to assess five cognitive subdomains: the Choice response time task, the Stroop test, the Tower of London test, the Lexical decision task and the Semantic categorisation task. Pearson's correlation coefficients were calculated to access the relationships; no multiple-test correction was applied as the tests were explorative in nature. A significant positive correlation was observed for the late-latency gamma and the mean number of steps in the Tower of London task reflecting planning and problem-solving abilities. These findings support the concept that 40-Hz ASSR might highlight top-down mechanisms which are related to cognitive functioning. Therefore, 40-Hz ASSRs can be used to explore the relationship between cognitive functioning and neurophysiological indices of brain activity.",
+      "score": {
+        "composite": 0.5420510277575654,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Acoustic Stimulation",
+        "Cognition",
+        "Task Performance and Analysis",
+        "Evoked Potentials, Auditory",
+        "Time Factors",
+        "Health",
+        "Male",
+        "Electronic Data Processing"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_9b3a5ede",
+      "doi": "10.1098/rstb.1982.0082",
+      "url": "https://doi.org/10.1098/rstb.1982.0082",
+      "openalex_id": "https://openalex.org/W2142004577",
+      "pmid": "6125971",
+      "first_author": "Shallice",
+      "authors_display": "T Shallice",
+      "year": 1982,
+      "title": "Specific impairments of planning",
+      "venue": "Philosophical transactions of the Royal Society of London. Series B, Biological sciences",
+      "venue_tier": "specialty",
+      "publisher": "Royal Society",
+      "publication_types": [
+        "article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3672,
+      "influential_citation_count": null,
+      "fwci": 2.298,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "An information-processing model is outlined that predicts that performance on non-routine tasks can be impaired independently of performance on routine tasks. The model is related to views on frontal lobe functions, particularly those of Luria. Two methods of obtaining more rigorous tests of the model are discussed. One makes use of ideas from artificial intelligence to derive a task heavily loaded on planning abilities. A group of patients with left anterior lesions has a specific deficit on the task. Subsidiary investigations support the inference that this is a planning impairment.",
+      "score": {
+        "composite": 0.49881683904017937,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4752673561607176,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1188168390401794,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Humans",
+        "Discrimination Learning",
+        "Mental Recall",
+        "Problem Solving",
+        "Visual Perception",
+        "Attention",
+        "Cognition Disorders",
+        "Psychological Tests",
+        "Models, Neurological"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_313c99c0",
+      "doi": "10.1002/hbm.20414",
+      "url": "https://doi.org/10.1002/hbm.20414",
+      "openalex_id": null,
+      "pmid": "17525987",
+      "first_author": "Fitzgerald",
+      "authors_display": "Fitzgerald, P. et al.",
+      "year": 2008,
+      "title": "An fMRI study of prefrontal brain activation during multiple tasks in patients with major depressive disorder.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 133,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Previous research has provided conflicting information regarding the pattern of brain activation associated with cognitive performance in depressed people. We aimed to assess brain activation related to cognitive performance during planning and working memory tasks.<h4>Method</h4>fMRI scans were conducted using a modified Tower of London task and a 2-back task in 13 patients with major depressive disorder and a matched control group.<h4>Results</h4>Task performance was impaired in the depressed group on the Tower of London task but there were no differences between the groups in task performance on the n-back task. The patient group showed widespread increased brain activation in both tasks. There was considerable overlap in increased activation between the two tasks, especially in right prefrontal cortical regions.<h4>Conclusions</h4>Patients with depression exhibit increased brain activation, especially in right prefrontal regions, across several types of cognitive task activity. Patients with depression may recruit greater brain regions to achieve similar or even poorer task performance than control subjects.",
+      "score": {
+        "composite": 0.49755990222649604,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2835729422393176,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0708932355598294,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Prefrontal Cortex",
+        "Nerve Net",
+        "Humans",
+        "Disease Progression",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Predictive Value of Tests",
+        "Cognition",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Evoked Potentials",
+        "Cerebrovascular Circulation",
+        "Adult",
+        "Female",
+        "Male",
+        "Functional Laterality",
+        "Major Depressive Disorder"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_597ded22",
+      "doi": "10.1371/journal.pone.0256228",
+      "url": "https://doi.org/10.1371/journal.pone.0256228",
+      "openalex_id": null,
+      "pmid": "34473722",
+      "first_author": "Mohamed",
+      "authors_display": "Mohamed, S. et al.",
+      "year": 2021,
+      "title": "Basic and complex cognitive functions in Adult ADHD.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 29,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8412315",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Many clinical studies reported deficits in basic and complex cognitive functions in adults with Attention-Deficit/Hyperactivity Disorder (ADHD). However, the extent in which deficits in basic functions (i.e., processing speed and distractibility) contribute to complex cognitive impairments (i.e., working memory, planning, cognitive flexibility, memory functions) in adults with ADHD is not well-studied. So far, literature show only one study, revealing that basic functions explain 27-74% of executive dysfunctions. Yet, the authors reported that findings could be affected by the selection of neuropsychological tests. The goal of the present research is to replicate such a finding using a different sample and a different set of neuropsychological tests.<h4>Methods</h4>Forty-eight adult patients with ADHD were compared with 48 healthy controls in basic cognitive functions, namely processing speed and distractibility and more complex cognitive functions, namely selective attention, cognitive flexibility, planning, working memory, verbal fluency, and verbal memory. Basic and complex cognitive functions were assessed using the Vigilance and Sustained Attention, Selective Attention, N-Back, Tower of London, Trail Making Test, Word Fluency, and Verbal Learning and Memory.<h4>Results and conclusion</h4>Logistic regression analyses showed that impairments in complex cognitive functions explained 25% of the variance in ADHD diagnosis. The explained variance dropped from 25% to 9% after considering basic functions of processing speed and distractibility. This 64% reduction highlights the importance of basic functions for impairments in complex functions in patients with ADHD.",
+      "score": {
+        "composite": 0.4825635852427704,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Case-Control Studies",
+        "Cognition",
+        "Memory, Short-Term",
+        "Attention",
+        "Cognition Disorders",
+        "Attention Deficit Disorder with Hyperactivity",
+        "Neuropsychological Tests",
+        "Adult",
+        "Female",
+        "Male",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_088de6c2",
+      "doi": "10.3389/fpsyt.2021.709875",
+      "url": "https://doi.org/10.3389/fpsyt.2021.709875",
+      "openalex_id": null,
+      "pmid": "34690828",
+      "first_author": "Xiang",
+      "authors_display": "Xiang, Y. et al.",
+      "year": 2021,
+      "title": "Prefrontal Cortex Activation During Verbal Fluency Task and Tower of London Task in Schizophrenia and Major Depressive Disorder.",
+      "venue": "Frontiers in psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patient,patients)"
+      ],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyt.2021.709875/pdf",
+      "tldr": null,
+      "abstract": "<b>Background:</b> Cognitive dysfunction is a common clinical feature of mental disorders. A number of functional near-infrared spectroscopy (fNIRS) studies have shown reduced prefrontal activation during the verbal fluency task (VFT) in schizophrenia (SZ) and major depressive disorder (MDD). However, no studies have examined and compared the brain activation patterns during the Tower of London (TOL), which is another classic, high-sensitivity executive function testing tool, in these two serious mental disorders. This study aimed to assess the characteristics of brain activation during the two different cognitive tasks in SZ and MDD patients. <b>Methods:</b> This study recruited 30 patients with SZ, 30 patients with MDD, and 30 demographically matched healthy controls (HCs). The hemodynamic changes of the prefrontal cortex (PFC) were measured using 32-channel fNIRS during performance of the TOL task and VFT task. <b>Results:</b> SZ patients showed poorer VFT performance than MDD patients and HCs, and the two patient groups showed poorer TOL performance than HCs. Compared to HCs, both of the patient groups exhibited a significant decreased activation in the extensive PFC. Particularly in certain channels in the dorsolateral PFC (DLPFC), SZ patients exhibited significantly decreased hemodynamic changes than the MDD patients. <b>Conclusions:</b> Patients with SZ and MDD have different levels of impairment in different cognitive domains and different patterns of brain activation during the two cognitive tasks. Further research is needed to determine the use of fNIRS for clinical evaluation and diagnosis.",
+      "score": {
+        "composite": 0.48073426690685334,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5a282505",
+      "doi": "10.1002/hbm.21102",
+      "url": "https://doi.org/10.1002/hbm.21102",
+      "openalex_id": null,
+      "pmid": "20669165",
+      "first_author": "de Ruiter",
+      "authors_display": "de Ruiter, M. et al.",
+      "year": 2011,
+      "title": "Cerebral hyporesponsiveness and cognitive impairment 10 years after chemotherapy for breast cancer.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 210,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Chemotherapy is associated with cognitive impairment in a subgroup of breast cancer survivors, but the neural circuitry underlying this side effect is largely unknown. Moreover, long-term impairment has not been studied well. In the present study, functional magnetic resonance imaging (fMRI) and neuropsychological testing were performed in breast cancer survivors almost 10 years after high-dose adjuvant chemotherapy (chemo group, n = 19) and in breast cancer survivors for whom chemotherapy had not been indicated (control group, n = 15). BOLD activation and performance were measured during an executive function task involving planning abilities (Tower of London) and a paired associates task for assessment of episodic memory. For the chemo group versus the control group, we found hyporesponsiveness of dorsolateral prefrontal cortex in the Tower of London, and of parahippocampal gyrus in the paired associates task. Also, the chemo group showed significantly impaired planning performance and borderline significantly impaired recognition memory as compared to findings in the control group. Whole-brain analyses demonstrated hyporesponsiveness of the chemo versus the control group in very similar regions of bilateral posterior parietal cortex during both the Tower of London and the paired associates task. Neuropsychological testing showed a relatively stable pattern of cognitive impairment in the chemo group over time. These results indicate that high-dose adjuvant chemotherapy is associated with long-term cognitive impairments. These impairments are underpinned by (a) task-specific hyporesponsiveness of dorsolateral prefrontal cortex and parahippocampal gyrus, and (b) a generalized hyporesponsiveness of lateral posterior parietal cortex encompassing attentional processing.",
+      "score": {
+        "composite": 0.45079820659094993,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30985949303046656,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07746487325761664,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Breast Neoplasms",
+        "Antineoplastic Agents",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Follow-Up Studies",
+        "Cognition",
+        "Mental Recall",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Image Processing, Computer-Assisted",
+        "Databases, Factual",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_dec2d0ce",
+      "doi": "10.1073/pnas.94.24.13293",
+      "url": "https://doi.org/10.1073/pnas.94.24.13293",
+      "openalex_id": null,
+      "pmid": "9371839",
+      "first_author": "Dehaene",
+      "authors_display": "Dehaene, S., & Changeux, J.",
+      "year": 1997,
+      "title": "A hierarchical neuronal network for planning behavior.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 94,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Planning a goal-directed sequence of behavior is a higher function of the human brain that relies on the integrity of prefrontal cortical areas. In the Tower of London test, a puzzle in which beads sliding on pegs must be moved to match a designated goal configuration, patients with lesioned prefrontal cortex show deficits in planning a goal-directed sequence of moves. We propose a neuronal network model of sequence planning that passes this test and, when lesioned, fails in a way that mimics prefrontal patients' behavior. Our model comprises a descending planning system with hierarchically organized plan, operation, and gesture levels, and an ascending evaluative system that analyzes the problem and computes internal reward signals that index the correct/erroneous status of the plan. Multiple parallel pathways connecting the evaluative and planning systems amend the plan and adapt it to the current problem. The model illustrates how specialized hierarchically organized neuronal assemblies may collectively emulate central executive or supervisory functions of the human brain.",
+      "score": {
+        "composite": 0.44924791616430637,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2636583313238922,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06591458283097305,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Nerve Net",
+        "Humans",
+        "Behavior",
+        "Models, Biological"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_ba4ce53c",
+      "doi": "10.1007/s00213-010-2042-1",
+      "url": "https://doi.org/10.1007/s00213-010-2042-1",
+      "openalex_id": null,
+      "pmid": "21049267",
+      "first_author": "Ramaekers",
+      "authors_display": "Ramaekers, J. et al.",
+      "year": 2011,
+      "title": "Tolerance and cross-tolerance to neurocognitive effects of THC and alcohol in heavy cannabis users.",
+      "venue": "Psychopharmacology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Controlled Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 113,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3045517",
+      "tldr": null,
+      "abstract": "<h4>Introduction</h4>Previous research has shown that heavy cannabis users develop tolerance to the impairing effects of Δ9-tetrahydrocannabinol (THC) on neurocognitive functions. Animal studies suggest that chronic cannabis consumption may also produce cross-tolerance for the impairing effects of alcohol, but supportive data in humans is scarce.<h4>Purpose</h4>The present study was designed to assess tolerance and cross-tolerance to the neurocognitive effects of THC and alcohol in heavy cannabis users.<h4>Methods</h4>Twenty-one heavy cannabis users participated in a double-blind, placebo-controlled, three-way study. Subjects underwent three alcohol-dosing conditions that were designed to achieve a steady blood alcohol concentration of about 0, 0.5, and 0.7 mg/ml during a 5-h time window. In addition, subjects smoked a THC cigarette (400 μg/kg) at 3 h post-onset of alcohol dosing during every alcohol condition. Performance tests were conducted repeatedly between 0 and 7 h after onset of drinking and included measures of perceptual motor control (critical tracking task), dual task processing (divided-attention task), motor inhibition (stop-signal task), and cognition (Tower of London).<h4>Results</h4>Alcohol significantly impaired critical tracking, divided attention, and stop-signal performance. THC generally did not affect task performance. However, combined effects of THC and alcohol on divided attention were bigger than those by alcohol alone.<h4>Conclusion</h4>In conclusion, the present study generally confirms that heavy cannabis users develop tolerance to the impairing effects of THC on neurocognitive task performance. Yet, heavy cannabis users did not develop cross-tolerance to the impairing effects of alcohol, and the presence of the latter even selectively potentiated THC effects on measures of divided attention.",
+      "score": {
+        "composite": 0.44188690919008033,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2742143034269881,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06855357585674703,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Marijuana Abuse",
+        "Ethanol",
+        "Central Nervous System Depressants",
+        "Psychotropic Drugs",
+        "Administration, Inhalation",
+        "Administration, Oral",
+        "Double-Blind Method",
+        "Alcohol Drinking",
+        "Marijuana Smoking",
+        "Impulsive Behavior",
+        "Motor Activity",
+        "Cognition",
+        "Attention",
+        "Neuropsychological Tests",
+        "Placebo Effect",
+        "Drug Tolerance",
+        "Time Factors",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Executive Function",
+        "Dronabinol"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9babc647",
+      "doi": "10.1016/j.rasd.2019.02.008",
+      "url": "https://doi.org/10.1016/j.rasd.2019.02.008",
+      "openalex_id": null,
+      "pmid": "32405319",
+      "first_author": "Walsh",
+      "authors_display": "Walsh, M. et al.",
+      "year": 2019,
+      "title": "Age Group Differences in Executive Network Functional Connectivity and Relationships with Social Behavior in Men with Autism Spectrum Disorder.",
+      "venue": "Research in autism spectrum disorders",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 27,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Research suggests adults with autism spectrum disorder (ASD) may use executive functions to compensate for social difficulties. Given hallmark age-related declines in executive functioning and the executive brain network in normal aging, there is concern that older adults with ASD may experience further declines in social functioning as they age. In a male-only sample, we hypothesized: 1) older adults with ASD would demonstrate greater ASD-related social behavior than young adults with ASD, 2) adults with ASD would demonstrate a greater age group reduction in connectivity of the executive brain network than neurotypical (NT) adults, and 3) that behavioral and neural mechanisms of executive functioning would predict ASD-related social difficulties in adults with ASD.<h4>Methods</h4>Participants were a cross-sectional sample of non-intellectually disabled young (ages 18-25) and middle-aged (ages 40-70) adult men with ASD and NT development (young adult ASD: <i>n</i>=24; middle-age ASD: <i>n</i>=25; young adult NT: <i>n</i>=15; middle-age NT: <i>n</i>=21). We assessed ASD-related social behavior via the self-report Social Responsiveness Scale-2 (SRS-2) Total Score, with exploratory analyses of the Social Cognition Subscale. We assessed neural executive function via connectivity of the resting-state executive network (EN) as measured by independent component analysis. Correlations were investigated between SRS-2 Total Scores (with exploratory analyses of the Social Cognition Subscale), EN functional connectivity of the dorsolateral prefrontal cortex (dlPFC), and a behavioral measure of executive function, Tower of London (ToL) Total Moves.<h4>Results</h4>We did not confirm a significant age group difference for adults with ASD on the SRS-2 Total Score; however, exploratory analysis revealed middle-age men with ASD had higher scores on the SRS-2 Social Cognition Subscale than young adult men with ASD. Exacerbated age group reductions in EN functional c",
+      "score": {
+        "composite": 0.4415649556243981,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_4324c6fa",
+      "doi": "10.1002/hbm.20999",
+      "url": "https://doi.org/10.1002/hbm.20999",
+      "openalex_id": null,
+      "pmid": "20336685",
+      "first_author": "Kempton",
+      "authors_display": "Kempton, M. et al.",
+      "year": 2011,
+      "title": "Dehydration affects brain structure and function in healthy adolescents.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 102,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "It was recently observed that dehydration causes shrinkage of brain tissue and an associated increase in ventricular volume. Negative effects of dehydration on cognitive performance have been shown in some but not all studies, and it has also been reported that an increased perceived effort may be required following dehydration. However, the effects of dehydration on brain function are unknown. We investigated this question using functional magnetic resonance imaging (fMRI) in 10 healthy adolescents (mean age = 16.8, five females). Each subject completed a thermal exercise protocol and nonthermal exercise control condition in a cross-over repeated measures design. Subjects lost more weight via perspiration in the thermal exercise versus the control condition (P < 0.0001), and lateral ventricle enlargement correlated with the reduction in body mass (r = 0.77, P = 0.01). Dehydration following the thermal exercise protocol led to a significantly stronger increase in fronto-parietal blood-oxygen-level-dependent (BOLD) response during an executive function task (Tower of London) than the control condition, whereas cerebral perfusion during rest was not affected. The increase in BOLD response after dehydration was not paralleled by a change in cognitive performance, suggesting an inefficient use of brain metabolic activity following dehydration. This pattern indicates that participants exerted a higher level of neuronal activity in order to achieve the same performance level. Given the limited availability of brain metabolic resources, these findings suggest that prolonged states of reduced water intake may adversely impact executive functions such as planning and visuo-spatial processing.",
+      "score": {
+        "composite": 0.440418200813447,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2683394699204547,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06708486748011368,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Dehydration",
+        "Magnetic Resonance Imaging",
+        "Body Temperature",
+        "Exercise",
+        "Brain Mapping",
+        "Analysis of Variance",
+        "Cross-Over Studies",
+        "Cognition",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Image Processing, Computer-Assisted",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_0109e68e",
+      "doi": "10.1002/brb3.1357",
+      "url": "https://doi.org/10.1002/brb3.1357",
+      "openalex_id": null,
+      "pmid": "31283112",
+      "first_author": "Ohoshi",
+      "authors_display": "Ohoshi, Y. et al.",
+      "year": 2019,
+      "title": "Microstructural abnormalities in callosal fibers and their relationship with cognitive function in schizophrenia: A tract-specific analysis study.",
+      "venue": "Brain and behavior",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 19,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/brb3.1357",
+      "tldr": null,
+      "abstract": "<h4>Introduction</h4>The corpus callosum serves the essential role of relaying cognitive information between the homologous regions in the left and the right hemispheres of the brain. Cognitive impairment is a core dysfunction of schizophrenia, but much of its pathophysiology is unknown. The aim of this study was to elucidate the association between microstructural abnormalities of the corpus callosum and cognitive dysfunction in schizophrenia.<h4>Methods</h4>We examined stepwise multiple regression analysis to investigate the relationship of the fractional anisotropy (FA) of callosal fibers in each segment with z-scores of each brief assessment of cognition in schizophrenia subtest and cognitive composite score in all subjects (19 patients with schizophrenia [SZ group] and 19 healthy controls [HC group]). Callosal fibers were separated into seven segments based on their cortical projection using tract-specific analysis of diffusion tensor imaging.<h4>Results</h4>The FA of callosal fibers in the temporal segment was significantly associated with z-scores of token motor test, Tower of London test, and the composite score. In the SZ group, the FA of callosal fibers in the temporal segment was significantly associated with the z-score of the Tower of London test. In addition, the FA of callosal fibers in temporal segment showed significant negative association with the positive and negative syndrome scale negative score in the SZ group. Compared to the HC group, the FA in temporal segment was significantly decreased in the SZ group.<h4>Conclusion</h4>Our results suggest that microstructural abnormalities in the callosal white matter fibers connecting bilateral temporal lobe cortices contribute to poor executive function and severe negative symptom in patients with schizophrenia.",
+      "score": {
+        "composite": 0.4366947257874873,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Corpus Callosum",
+        "Humans",
+        "Cognition",
+        "Schizophrenia",
+        "Neuropsychological Tests",
+        "Schizophrenic Psychology",
+        "Anisotropy",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Diffusion Tensor Imaging",
+        "Executive Function",
+        "White Matter"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_f8acb4fe",
+      "doi": "10.1523/jneurosci.0065-09.2009",
+      "url": "https://doi.org/10.1523/jneurosci.0065-09.2009",
+      "openalex_id": null,
+      "pmid": "19494149",
+      "first_author": "Dockery",
+      "authors_display": "Dockery, C. et al.",
+      "year": 2009,
+      "title": "Enhancement of planning ability by transcranial direct current stimulation.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 247,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The functional neuroanatomy of executive function critically involves the dorsolateral prefrontal cortex. Transcranial direct current stimulation (tDCS) has been established as a noninvasive tool for transient modulation of cortical function. Here, we examined the effects of tDCS of the left dorsolateral prefrontal cortex on planning function by using the Tower of London task to evaluate performance during and after anodal, cathodal (1 mA, 15 min), and sham tDCS in 24 healthy volunteers. The key finding was a double dissociation of polarity and training phase: improved performance was found with cathodal tDCS applied during acquisition and early consolidation, when preceding anodal tDCS, but not in the later training session. In contrast, anodal tDCS enhanced performance when applied in the later sessions following cathodal tDCS. Our results indicate that both anodal and cathodal tDCS can improve planning performance as quantified by the Tower of London test. Most importantly, these data demonstrate training-phase-specific effects of tDCS. We propose that excitability decreasing cathodal tDCS mediates its early beneficial effect through noise reduction of neuronal activity, whereas a further adaptive configuration of specific neuronal connections is supported by excitability enhancing anodal tDCS in the later training phase by enhanced efficacy of active connections. This gain of function was sustained in a follow-up 6 and 12 months after training. In conclusion, the specific coupling of stimulation and training phase interventions may support the treatment of cognitive disorders involving frontal lobe functions.",
+      "score": {
+        "composite": 0.4364701757255229,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3192140362354248,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0798035090588562,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Analysis of Variance",
+        "Electric Stimulation",
+        "Mental Processes",
+        "Learning",
+        "Psychomotor Performance",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Time Factors",
+        "Adult",
+        "Female",
+        "Male",
+        "Transcranial Magnetic Stimulation",
+        "Functional Laterality",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_e234b989",
+      "doi": "10.1093/cercor/bhl006",
+      "url": "https://doi.org/10.1093/cercor/bhl006",
+      "openalex_id": null,
+      "pmid": "16772313",
+      "first_author": "Just",
+      "authors_display": "Just, M. et al.",
+      "year": 2007,
+      "title": "Functional and anatomical cortical underconnectivity in autism: evidence from an FMRI study of an executive function task and corpus callosum morphometry.",
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 668,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The brain activation of a group of high-functioning autistic participants was measured using functional magnetic resonance imaging during the performance of a Tower of London task, in comparison with a control group matched with respect to intelligent quotient, age, and gender. The 2 groups generally activated the same cortical areas to similar degrees. However, there were 3 indications of underconnectivity in the group with autism. First, the degree of synchronization (i.e., the functional connectivity or the correlation of the time series of the activation) between the frontal and parietal areas of activation was lower for the autistic than the control participants. Second, relevant parts of the corpus callosum, through which many of the bilaterally activated cortical areas communicate, were smaller in cross-sectional area in the autistic participants. Third, within the autism group but not within the control group, the size of the genu of the corpus callosum was correlated with frontal-parietal functional connectivity. These findings suggest that the neural basis of altered cognition in autism entails a lower degree of integration of information across certain cortical areas resulting from reduced intracortical connectivity. The results add support to a new theory of cortical underconnectivity in autism, which posits a deficit in integration of information at the neural and cognitive levels.",
+      "score": {
+        "composite": 0.43083391196543624,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37666898119507825,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09416724529876956,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Corpus Callosum",
+        "Neural Pathways",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Cognition",
+        "Autistic Disorder",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_cb4203c5",
+      "doi": "10.1093/sleep/32.2.205",
+      "url": "https://doi.org/10.1093/sleep/32.2.205",
+      "openalex_id": null,
+      "pmid": "19238808",
+      "first_author": "Killgore",
+      "authors_display": "Killgore, W. et al.",
+      "year": 2009,
+      "title": "Sustaining executive functions during sleep deprivation: A comparison of caffeine, dextroamphetamine, and modafinil.",
+      "venue": "Sleep",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 75,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objectives</h4>Stimulant medications appear effective at restoring simple alertness and psychomotor vigilance in sleep deprived individuals, but it is not clear whether these medications are effective at restoring higher order complex cognitive capacities such as planning, sequencing, and decision making.<h4>Design</h4>After 44 hours awake, participants received a double-blind dose of one of 3 stimulant medications or placebo. After 45-50 hours awake, participants were tested on computerized versions of the 5-Ring Tower of Hanoi (TOH), the Tower of London (TOL), and the Wisconsin Card Sorting Test (WCST).<h4>Setting</h4>In-residence sleep-laboratory facility at the Walter Reed Army Institute of Research.<h4>Participants</h4>Fifty-four healthy adults (29 men, 25 women), ranging in age from 18 to 36 years.<h4>Interventions</h4>Participants were randomly assigned to 1 of 3 stimulant medication groups, including caffeine, 600 mg (n=12), modafinil, 400 mg (n=12), dextroamphetamine, 20 mg (n=16), or placebo (n=14).<h4>Measurements and results</h4>At the doses tested, modafinil and dextroamphetamine groups completed the TOL task in significantly fewer moves than the placebo group, and the modafinil group demonstrated greater deliberation before making moves. In contrast, subjects receiving caffeine completed the TOH in fewer moves than all 3 of the other groups, although speed of completion was not influenced by the stimulants. Finally, the modafinil group outperformed all other groups on indices of perseverative responding and perseverative errors from the WCST.<h4>Conclusions</h4>Although comparisons across tasks cannot be made due to the different times of administration, within-task comparisons suggest that, at the doses tested here, each stimulant may produce differential advantages depending on the cognitive demands of the task.",
+      "score": {
+        "composite": 0.4160180497347973,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25073886560585573,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06268471640146393,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Sleep Deprivation",
+        "Dextroamphetamine",
+        "Benzhydryl Compounds",
+        "Caffeine",
+        "Central Nervous System Stimulants",
+        "Double-Blind Method",
+        "Discrimination Learning",
+        "Problem Solving",
+        "Pattern Recognition, Visual",
+        "Decision Making",
+        "Psychomotor Performance",
+        "Arousal",
+        "Attention",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Dose-Response Relationship, Drug",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Modafinil"
+      ]
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_ada650be",
+      "doi": "10.1371/journal.pone.0039804",
+      "url": "https://doi.org/10.1371/journal.pone.0039804",
+      "openalex_id": null,
+      "pmid": "22870191",
+      "first_author": "Hinkley",
+      "authors_display": "Hinkley, L. et al.",
+      "year": 2012,
+      "title": "The role of corpus callosum development in functional connectivity and cognitive processing.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 129,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://escholarship.org/uc/item/6291p8gh",
+      "tldr": null,
+      "abstract": "The corpus callosum is hypothesized to play a fundamental role in integrating information and mediating complex behaviors. Here, we demonstrate that lack of normal callosal development can lead to deficits in functional connectivity that are related to impairments in specific cognitive domains. We examined resting-state functional connectivity in individuals with agenesis of the corpus callosum (AgCC) and matched controls using magnetoencephalographic imaging (MEG-I) of coherence in the alpha (8-12 Hz), beta (12-30 Hz) and gamma (30-55 Hz) bands. Global connectivity (GC) was defined as synchronization between a region and the rest of the brain. In AgCC individuals, alpha band GC was significantly reduced in the dorsolateral pre-frontal (DLPFC), posterior parietal (PPC) and parieto-occipital cortices (PO). No significant differences in GC were seen in either the beta or gamma bands. We also explored the hypothesis that, in AgCC, this regional reduction in functional connectivity is explained primarily by a specific reduction in interhemispheric connectivity. However, our data suggest that reduced connectivity in these regions is driven by faulty coupling in both inter- and intrahemispheric connectivity. We also assessed whether the degree of connectivity correlated with behavioral performance, focusing on cognitive measures known to be impaired in AgCC individuals. Neuropsychological measures of verbal processing speed were significantly correlated with resting-state functional connectivity of the left medial and superior temporal lobe in AgCC participants. Connectivity of DLPFC correlated strongly with performance on the Tower of London in the AgCC cohort. These findings indicate that the abnormal callosal development produces salient but selective (alpha band only) resting-state functional connectivity disruptions that correlate with cognitive impairment. Understanding the relationship between impoverished functional connectivity and cognition is a key step in iden",
+      "score": {
+        "composite": 0.41378791749412824,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2818183366431796,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0704545841607949,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Corpus Callosum",
+        "Humans",
+        "Beta Rhythm",
+        "Magnetoencephalography",
+        "Speech",
+        "Cognition",
+        "Auditory Perception",
+        "Adolescent",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Agenesis of Corpus Callosum"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1ac4cec7",
+      "doi": "10.1007/s10802-015-0044-5",
+      "url": "https://doi.org/10.1007/s10802-015-0044-5",
+      "openalex_id": null,
+      "pmid": "26096194",
+      "first_author": "Holmes",
+      "authors_display": "Holmes, C. et al.",
+      "year": 2016,
+      "title": "Linking Executive Function and Peer Problems from Early Childhood Through Middle Adolescence.",
+      "venue": "Journal of abnormal child psychology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 93,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Peer interactions and executive function play central roles in the development of healthy children, as peer problems have been indicative of lower cognitive competencies such as self-regulatory behavior and poor executive function has been indicative of problem behaviors and social dysfunction. However, few studies have focused on the relation between peer interactions and executive function and the underlying mechanisms that may create this link. Using a national sample (n = 1164, 48.6% female) from the Study of Early Child Care and Youth Development (SECCYD), we analyzed executive function and peer problems (including victimization and rejection) across three waves within each domain (executive function or peer problems), beginning in early childhood and ending in middle adolescence. Executive function was measured as a multi-method, multi-informant composite including reports from parents on the Children's Behavior Questionnaire and Child Behavior Checklist and child's performance on behavioral tasks including the Continuous Performance Task, Woodcock-Johnson, Tower of Hanoi, Operation Span Task, Stroop, and Tower of London. Peer problems were measured as a multi-informant composite including self, teacher, and afterschool caregiver reports on multiple peer-relationship scales. Using a cross-lagged design, our Structural Equation Modeling findings suggested that experiencing peer problems contributed to lower executive function later in childhood and better executive function reduced the likelihood of experiencing peer problems later in childhood and middle adolescence, although these relations weakened as a child moves into adolescence. The results highlight that peer relationships are involved in the development of strengths and deficits in executive function and vice versa.",
+      "score": {
+        "composite": 0.40909474660382034,
+        "breakdown": {
+          "raw": {
+            "citations": 0.263045653081948,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.065761413270487,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Peer Group",
+        "Interpersonal Relations",
+        "Adolescent",
+        "Child",
+        "Child, Preschool",
+        "Friends",
+        "Female",
+        "Male",
+        "Executive Function",
+        "Bullying",
+        "Rejection, Psychology"
+      ]
+    },
+    {
+      "rank": 21,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_8e8cc87c",
+      "doi": "10.3390/brainsci9100280",
+      "url": "https://doi.org/10.3390/brainsci9100280",
+      "openalex_id": null,
+      "pmid": "31627376",
+      "first_author": "Meyers",
+      "authors_display": "Meyers, J. et al.",
+      "year": 2019,
+      "title": "Association of Polygenic Liability for Alcohol Dependence and EEG Connectivity in Adolescence and Young Adulthood.",
+      "venue": "Brain sciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/2076-3425/9/10/280/pdf?version=1571307066",
+      "tldr": null,
+      "abstract": "Differences in the connectivity of large-scale functional brain networks among individuals with alcohol use disorders (AUD), as well as those at risk for AUD, point to dysfunctional neural communication and related cognitive impairments. In this study, we examined how polygenic risk scores (PRS), derived from a recent GWAS of DSM-IV Alcohol Dependence (AD) conducted by the Psychiatric Genomics Consortium, relate to longitudinal measures of interhemispheric and intrahemispheric EEG connectivity (alpha, theta, and beta frequencies) in adolescent and young adult offspring from the Collaborative Study on the Genetics of Alcoholism (COGA) assessed between ages 12 and 31. Our findings indicate that AD PRS (<i>p</i>-threshold < 0.001) was associated with increased fronto-central, tempo-parietal, centro-parietal, and parietal-occipital interhemispheric theta and alpha connectivity in males only from ages 18-31 (beta coefficients ranged from 0.02-0.06, <i>p</i>-values ranged from 10<sup>-6</sup>-10<sup>-12</sup>), but not in females. Individuals with higher AD PRS also demonstrated more performance deficits on neuropsychological tasks (Tower of London task, visual span test) as well as increased risk for lifetime DSM-5 alcohol and opioid use disorders. We conclude that measures of neural connectivity, together with neurocognitive performance and substance use behavior, can be used to further understanding of how genetic risk variants from large GWAS of AUD may influence brain function. In addition, these data indicate the importance of examining sex and developmental effects, which otherwise may be masked. Understanding of neural mechanisms linking genetic variants emerging from GWAS to risk for AUD throughout development may help to identify specific points when neurocognitive prevention and intervention efforts may be most effective.",
+      "score": {
+        "composite": 0.4007342669068533,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ec4e4b92",
+      "doi": "10.3389/fped.2021.775589",
+      "url": "https://doi.org/10.3389/fped.2021.775589",
+      "openalex_id": null,
+      "pmid": "35127588",
+      "first_author": "Liang",
+      "authors_display": "Liang, X. et al.",
+      "year": 2021,
+      "title": "Physical Activity and Executive Function in Children With ADHD: The Mediating Role of Sleep.",
+      "venue": "Frontiers in pediatrics",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8813634",
+      "tldr": null,
+      "abstract": "This study examined the mediating role of sleep in the relationship between physical activity and executive function in children with attention deficit hyperactivity disorder (ADHD). Fifty-six children with ADHD were recruited from Shenzhen Children's Hospital. Participants wore an accelerometer for seven consecutive days to measure physical activity and sleep quality. Activity counts were analyzed to measure moderate-to-vigorous physical activity (MVPA). Four sleep parameters, including sleep latency (SL), sleep efficiency, total sleep time, and wake after sleep onset were recorded from the actigraph. Three core executive functions, inhibitory control; working memory (WM); and cognitive flexibility (CF), were assessed from computer-based tasks: the flanker task, and the Tower of London and Trail Making Tests, respectively. The regression results showed that MVPA was negatively associated with SL (-0.169; 95%CI [-0.244, -0.112]). WM (total scores) was positively related to MVPA (0.028, 95%CI [0.008, 0.048]), but negatively related to SL (-0.105, 95%CI [-0.167, -0.030]). CF (part B errors) was negatively associated with MVPA (-0.031, 95%CI [-0.055, -0.005]) and positively correlated with SL (0.184, 95%CI [0.092, -0.260]). The indirect effect of SL was found for MVPA and WM (0.018, 95%CI [0.015, 0.034]), supporting the indirect partial mediation. Similarly, the indirect effect of SL was found between MVPA and CF (-0.031, 95%CI [-0.060, -0.012]), supporting the indirect partial mediation. The mediating role of SL in children with ADHD suggests that the intensity of physical activity plays a key role in linking sleep quality and executive function in this group.",
+      "score": {
+        "composite": 0.39595228672247484,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1ab59323",
+      "doi": "10.1093/brain/awu201",
+      "url": "https://doi.org/10.1093/brain/awu201",
+      "openalex_id": null,
+      "pmid": "25080285",
+      "first_author": "Nombela",
+      "authors_display": "Nombela, C. et al.",
+      "year": 2014,
+      "title": "Genetic impact on cognition and brain function in newly diagnosed Parkinson's disease: ICICLE-PD study.",
+      "venue": "Brain : a journal of neurology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 125,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4163033",
+      "tldr": null,
+      "abstract": "Parkinson's disease is associated with multiple cognitive impairments and increased risk of dementia, but the extent of these deficits varies widely among patients. The ICICLE-PD study was established to define the characteristics and prevalence of cognitive change soon after diagnosis, in a representative cohort of patients, using a multimodal approach. Specifically, we tested the 'Dual Syndrome' hypothesis for cognitive impairment in Parkinson's disease, which distinguishes an executive syndrome (affecting the frontostriatal regions due to dopaminergic deficits) from a posterior cortical syndrome (affecting visuospatial, mnemonic and semantic functions related to Lewy body pathology and secondary cholinergic loss). An incident Parkinson's disease cohort (n = 168, median 8 months from diagnosis to participation) and matched control group (n = 85) were recruited to a neuroimaging study at two sites in the UK. All participants underwent clinical, neuropsychological and functional magnetic resonance imaging assessments. The three neuroimaging tasks (Tower of London, Spatial Rotations and Memory Encoding Tasks) were designed to probe executive, visuospatial and memory encoding domains, respectively. Patients were also genotyped for three polymorphisms associated with cognitive change in Parkinson's disease and related disorders: (i) rs4680 for COMT Val158Met polymorphism; (ii) rs9468 for MAPT H1 versus H2 haplotype; and (iii) rs429358 for APOE-ε2, 3, 4. We identified performance deficits in all three cognitive domains, which were associated with regionally specific changes in cortical activation. Task-specific regional activations in Parkinson's disease were linked with genetic variation: the rs4680 polymorphism modulated the effect of levodopa therapy on planning-related activations in the frontoparietal network; the MAPT haplotype modulated parietal activations associated with spatial rotations; and APOE allelic variation influenced the magnitude of activation associ",
+      "score": {
+        "composite": 0.3933355560411255,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2800088908311688,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0700022227077922,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Parkinson Disease",
+        "Catechol O-Methyltransferase",
+        "Mitogen-Activated Protein Kinases",
+        "Apolipoproteins E",
+        "tau Proteins",
+        "Magnetic Resonance Imaging",
+        "Cohort Studies",
+        "Longitudinal Studies",
+        "Cognition",
+        "Imagination",
+        "Memory",
+        "Space Perception",
+        "Psychomotor Performance",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Rotation",
+        "Image Processing, Computer-Assisted",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Neuroimaging"
+      ]
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c346f602",
+      "doi": "10.3389/fneur.2020.588285",
+      "url": "https://doi.org/10.3389/fneur.2020.588285",
+      "openalex_id": null,
+      "pmid": "33329334",
+      "first_author": "Aprile",
+      "authors_display": "Aprile, I. et al.",
+      "year": 2020,
+      "title": "Robotic Rehabilitation: An Opportunity to Improve Cognitive Functions in Subjects With Stroke. An Explorative Study.",
+      "venue": "Frontiers in neurology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patient,patients,subjects)"
+      ],
+      "citation_count": 25,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fneur.2020.588285/pdf",
+      "tldr": null,
+      "abstract": "<b>Background:</b> After a stroke, up to three-quarters of acute and subacute stroke survivors exhibit cognitive impairment, with a significant impact on functional recovery, quality of life, and social engagement. Robotic therapy has shown its effectiveness on motor recovery, but its effectiveness on cognitive recovery has not fully investigated. <b>Objective:</b> This study aims to assess the impact of a technological rehabilitation intervention on cognitive functions in patients with stroke, using a set of three robots and one sensor-based device for upper limb rehabilitation. <b>Methods:</b> This is a pilot study in which 51 patients were enrolled. An upper limb rehabilitation program was performed using three robots and one sensor-based device. The intervention comprised motor/cognitive exercises, especially selected among the available ones to train also cognitive functions. Patients underwent 30 rehabilitation sessions, each session lasting 45 minutes, 5 days a week. Patients were assessed before and after the treatment with several cognitive tests (Oxford Cognitive Scale, Symbol Digit Modalities Test, Digit Span, Rey-Osterrieth Complex Figure, Tower of London, and Stroop test). In addition, motor (Fugl-Meyer Assessment and Motricity Index) and disability (modified Barthel Index) scales were used. <b>Results:</b> According to the Oxford Cognitive Scale domains, a significant percentage of patients exhibited cognitive deficits. Excluding <i>perception</i> (with only one patient impaired), the domain with the lowest percentage of patients showing a pathological score was <i>praxis</i> (about 25%), while the highest percentage of impaired patients was found in <i>calculation</i> (about 70%). After the treatment, patients improved in all the investigated cognitive domains, as measured by the selected cognitive assessment scales. Moreover, motor and disability scales confirmed the efficacy of robotics on upper limb rehabilitation in patients with stroke. <b>Conclu",
+      "score": {
+        "composite": 0.3904922880522967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 25,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_84dee835",
+      "doi": "10.3389/fpsyg.2018.01818",
+      "url": "https://doi.org/10.3389/fpsyg.2018.01818",
+      "openalex_id": null,
+      "pmid": "30319512",
+      "first_author": "Naeem",
+      "authors_display": "Naeem, K. et al.",
+      "year": 2018,
+      "title": "The Importance of Socioeconomic Status as a Modulator of the Bilingual Advantage in Cognitive Ability.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 23,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6168657",
+      "tldr": null,
+      "abstract": "Between-group variability in socioeconomic status (SES) has been identified as a potentially important contributory factor in studies reporting cognitive advantages in bilinguals over monolinguals (the so called \"bilingual advantage\"). The present study addresses the potential importance of this alternative explanatory variable in a study of low and high SES bilingual and monolingual performance on the Simon task and the Tower of London (TOL) task. Results indicated an overall bilingual response time advantage on the Simon task, despite equivalent error rates. Socioeconomic status was an important modulator in this effect, with evidence that bilingualism may be particularly important in promoting speed of processing advantages in low status individuals but have little impact in high status individuals. However, there was a <i>monolingual</i> advantage on the TOL test of executive planning ability. Together, our findings run counter to the central assertion of the bilingual advantage account, that the process of multi-language acquisition confers a broad cognitive advantage in executive function. We discuss these findings in the context of SES as an important modulator in published studies advocating a bilingual cognitive advantage.",
+      "score": {
+        "composite": 0.3893337188132613,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 26,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d19d04d7",
+      "doi": "10.3389/fpsyg.2018.00069",
+      "url": "https://doi.org/10.3389/fpsyg.2018.00069",
+      "openalex_id": null,
+      "pmid": "29449824",
+      "first_author": "Meijers",
+      "authors_display": "Meijers, J. et al.",
+      "year": 2018,
+      "title": "Reduced Self-Control after 3 Months of Imprisonment; A Pilot Study.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 19,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2018.00069/pdf",
+      "tldr": null,
+      "abstract": "<b>Background:</b> Prison can be characterized as an impoverished environment encouraging a sedentary lifestyle with limited autonomy and social interaction, which may negatively affect self-control and executive function. Here, we aim to study the effects of imprisonment on self-control and executive functions, and we report the change in neuropsychological outcome after 3 months of imprisonment. <b>Materials and Methods:</b> Participants were 37 male inmates in a remand prison in Amsterdam, Netherlands, who completed six tests of a computerized neuropsychological test battery (the Cambridge Automated Neuropsychological Test Battery) in the first week of arrival. Participants were retested after 3 months of imprisonment. Change in performance was tested using the Wilcoxon Signed-Rank test. <b>Results:</b> After 3 months of imprisonment, risk taking significantly increased (measured as an increase in the proportion of available points used for betting) and attention significantly deteriorated (measured as increased variability in reaction times on a sustained attention task), with large to medium effect sizes. In contrast, planning significantly improved (measured with a task analog to the Tower of London) with a medium effect size. <b>Discussion:</b> Our study suggests that 3 months of imprisonment in an impoverished environment may lead to reduced self-control, measured as increased risk taking and reduced attentional performance. This is a significant and societally relevant finding, as released prisoners may be less capable of living a lawful life than they were prior to their imprisonment, and may be more prone to impulsive risk-taking behavior. In other words, the impoverished environment may contribute to an enhanced risk of reoffending.",
+      "score": {
+        "composite": 0.3866947257874873,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_78616294",
+      "doi": "10.1080/09297049.2018.1526272",
+      "url": "https://doi.org/10.1080/09297049.2018.1526272",
+      "openalex_id": null,
+      "pmid": "30269648",
+      "first_author": "Prussien",
+      "authors_display": "Prussien, K. et al.",
+      "year": 2019,
+      "title": "Associations of transcranial doppler velocity, age, and gender with cognitive function in children with sickle cell anemia in Nigeria.",
+      "venue": "Child neuropsychology : a journal on normal and abnormal development in childhood and adolescence",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 19,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Children with sickle cell anemia (SCA) have elevated cerebral blood velocity relative to healthy peers. The primary aim of this study was to evaluate the association between cerebral blood velocity, measured by transcranial Doppler (TCD) ultrasound, age, and gender with cognitive function in children with SCA in Nigeria. Eighty-three children (M<sub>age</sub> = 9.10, SD = 1.90 years; 55% female) with SCA in Nigeria completed cognitive assessments and a TCD ultrasound. The association between TCD velocity and measures of perceptual reasoning (Raven's Progressive Matrices), working memory (WISC-IV Digit Span), and executive planning (Tower of London, TOL) were assessed. Results showed that elevated TCD velocity significantly predicted lower scores on TOL Time Violations and Total Problem-Solving Time when controlling for BMI, hemoglobin level, and parent education, suggesting that TCD velocity is related to the efficiency of executive function. Further, age was negatively related to children's performance on the Ravens Matrices and TOL Total Correct, and boys showed greater deficits on the TOL Total Correct relative to girls. Moderation analyses for gender showed that there was a conditional negative association between TCD velocity and Digit Span for boys, but not for girls. Findings suggest that children with SCA in Nigeria with elevated TCD velocity are at risk for deficits in efficiency of executive planning, and boys with elevated TCD velocity are particularly at increased risk for deficits in auditory working memory. Implications of this study are important for interventions to reduce cerebral blood velocity and the use of TCD in this population.",
+      "score": {
+        "composite": 0.3766947257874873,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Anemia, Sickle Cell",
+        "Ultrasonography, Doppler, Transcranial",
+        "Blood Flow Velocity",
+        "Gender Identity",
+        "Cognition",
+        "Age Factors",
+        "Child",
+        "Child, Preschool",
+        "Nigeria",
+        "Female",
+        "Male",
+        "Cognitive Dysfunction"
+      ]
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_348fca76",
+      "doi": "10.3389/fneur.2018.00920",
+      "url": "https://doi.org/10.3389/fneur.2018.00920",
+      "openalex_id": null,
+      "pmid": "30420834",
+      "first_author": "Matías-Guiu",
+      "authors_display": "Matías-Guiu, J. et al.",
+      "year": 2018,
+      "title": "Identification of Cortical and Subcortical Correlates of Cognitive Performance in Multiple Sclerosis Using Voxel-Based Morphometry.",
+      "venue": "Frontiers in neurology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patients)"
+      ],
+      "citation_count": 36,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6216547",
+      "tldr": null,
+      "abstract": "<b>Objective:</b> Cognitive impairment is an important feature in multiple sclerosis (MS) and has been associated to several Magnetic Resonance Imaging (MRI) markers, but especially brain atrophy. However, the relationship between specific neuropsychological tests examining several cognitive functions and brain volumes has been little explored. Furthermore, because MS frequently damage subcortical regions, it may be an interesting model to examine the role of subcortical areas in cognitive functioning. Our aim was to identify correlations between specific brain regions and performance in neuropsychological tests evaluating different cognitive functions in a large series of patients with MS. <b>Methods:</b> A total of 375 patients were evaluated with a comprehensive neuropsychological battery and with MRI. Voxel-based morphometry was conducted to analyse the correlation between cognitive performance and gray matter damage, using Statistical Parametric Mapping with the toolboxes VBM8 and Lesion Segmentation Tool. <b>Results:</b> The following correlations were found: Corsi block-tapping test with right insula; Trail Making Test with caudate nucleus, thalamus, and several cortical regions including the posterior cingulate and inferior frontal gyrus; Symbol Digit Modalities Test with caudate nucleus, thalamus, posterior cingulate, several frontal regions, insula, and cerebellum; Stroop Color and Word Test with caudate nucleus and putamen; Free and Cued Selective Reminding Test and Rey-Osterrieth Complex Figure with thalamus, precuneus, and parahippocampal gyrus; Boston Naming Test with thalamus, caudate nucleus, and hippocampus; semantic verbal fluency with thalamus and phonological verbal fluency with caudate nucleus; and Tower of London test with frontal lobe, caudate nucleus, and posterior cingulate. <b>Conclusion:</b> Our study provides valuable data on the cortical and subcortical basis of cognitive function in MS. Neuropsychological tests mainly assessing attentio",
+      "score": {
+        "composite": 0.37559916166256124,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2090633133169118,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05226582832922795,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f34bd3cd",
+      "doi": "10.3389/fpsyt.2018.00214",
+      "url": "https://doi.org/10.3389/fpsyt.2018.00214",
+      "openalex_id": null,
+      "pmid": "29892235",
+      "first_author": "Fu",
+      "authors_display": "Fu, L. et al.",
+      "year": 2018,
+      "title": "Reduced Prefrontal Activation During the Tower of London and Verbal Fluency Task in Patients With Bipolar Depression: A Multi-Channel NIRS Study.",
+      "venue": "Frontiers in psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants,patients)"
+      ],
+      "citation_count": 32,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5985469",
+      "tldr": null,
+      "abstract": "<b>Background:</b> The Tower of London (TOL) task is one of the most commonly used tests for evaluating executive functions, and can indicate planning and problem-solving abilities. The aim of this study was to evaluate hemodynamic changes between the task period and rest period in patients with bipolar depression during the TOL task and the verbal fluency task (VFT) using near-infrared spectroscopy (NIRS). <b>Methods:</b> Forty-three patients with bipolar depression and 32 healthy controls (HCs) matched for sex, age, handedness, and years of education were enrolled in this study. All participants were aged between 16 and 50. All patients in our study were taking medications such as antidepressants, antipsychotics and mood stabilizers at the time of measurement. Changes in oxygenated hemoglobin (oxy-Hb) levels in frontal areas during the TOL task and VFT were evaluated using a 41-channel NIRS system. <b>Results:</b> During the TOL task, the patients with bipolar depression exhibited significantly smaller changes in the bilateral dorsal-lateral prefrontal cortex (DLPFC) than the HCs. During the VFT task, the patients with bipolar depression exhibited significantly smaller changes in the right ventrolateral prefrontal cortex (VLPFC), the right DLPFC and both the right and left prefrontal cortex (PFC) than the HCs. <b>Limitations:</b> Our sample size was small, and the effects of medication cannot be excluded. <b>Conclusions:</b> These results indicate that planning and problem solving dysfunction is related to the impairment of the prefrontal cortex in patients with bipolar depression, and NIRS can be used to assess planning and problem solving abilities, which are essential to daily life in patients with bipolar disorder.",
+      "score": {
+        "composite": 0.37394314180323307,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d2634ac6",
+      "doi": "10.1210/clinem/dgaa695",
+      "url": "https://doi.org/10.1210/clinem/dgaa695",
+      "openalex_id": null,
+      "pmid": "33017843",
+      "first_author": "Morelli",
+      "authors_display": "Morelli, V. et al.",
+      "year": 2021,
+      "title": "Mental Health in Patients With Adrenal Incidentalomas: Is There a Relation With Different Degrees of Cortisol Secretion?",
+      "venue": "The Journal of clinical endocrinology and metabolism",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 25,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://academic.oup.com/jcem/article-pdf/106/1/e130/35174931/dgaa695.pdf",
+      "tldr": null,
+      "abstract": "<h4>Context</h4>Cushing's syndrome frequently causes mental health impairment. Data in patients with adrenal incidentaloma (AI) are lacking.<h4>Objective</h4>We aimed to evaluate psychiatric and neurocognitive functions in AI patients, in relation to the presence of subclinical hypercortisolism (SH), and the effect of adrenalectomy on mental health.<h4>Design</h4>We enrolled 62 AI patients (64.8 ± 8.9 years) referred to our centers. Subclinical hypercortisolism was diagnosed when cortisol after 1mg-dexamethasone suppression test was >50 nmol/L, in the absence of signs of overt hypercortisolism, in 43 patients (SH+).<h4>Interventions</h4>The structured clinical interview for the Diagnostic and Statistical Manual of Mental Disorders-5, and 5 psychiatric scales were performed. The Brief Assessment of Cognition in Schizophrenia (Verbal and Working Memory, Token and Symbol Task, Verbal Fluency, Tower of London) was explored in 26 patients (≤65 years).<h4>Results</h4>The prevalence of psychiatric disorders was 27.4% (SH+ 30.2% vs SH- 21.1%, P = 0.45). SH+ showed a higher prevalence of middle insomnia (by the Hamilton Depression Rating Scale) compared with SH- (51% vs 22%, P = 0.039). Considering the Sheehan Disability Scale, SH+ showed a higher disability score (7 vs 3, P = 0.019), higher perceived stress (4.2 ± 1.9 vs 2.9 ± 1.9, P = 0.015), and lower perceived social support (75 vs 80, P = 0.036) than SH-. High perceived stress was independently associated with SH (odds ratio [OR] = 5.46, confidence interval 95% 1.4-21.8, P = 0.016). Interestingly, SH+ performed better in verbal fluency (49.5 ± 38.9 vs 38.9 ± 9.0, P = 0.012), symbol coding (54.1 ± 6.7 vs 42.3 ± 15.5, P = 0.013), and Tower of London (15.1 vs 10.9, P = 0.009) than SH-. In 8 operated SH+, no significant changes were found.<h4>Conclusions</h4>Subclinical hypercortisolism may influence patients' mental health and cognitive performances, requiring an integrated treatment.",
+      "score": {
+        "composite": 0.3404922880522967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Adrenal Gland Neoplasms",
+        "Cushing Syndrome",
+        "Hydrocortisone",
+        "Prevalence",
+        "Risk Factors",
+        "Cohort Studies",
+        "Mental Health",
+        "Mental Disorders",
+        "Cognition Disorders",
+        "Interview, Psychological",
+        "Neuropsychological Tests",
+        "Adult",
+        "Aged",
+        "Middle Aged",
+        "Italy",
+        "Female",
+        "Male",
+        "Asymptomatic Diseases"
+      ]
+    },
+    {
+      "rank": 31,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_66694c1c",
+      "doi": "10.3390/nu14010001",
+      "url": "https://doi.org/10.3390/nu14010001",
+      "openalex_id": null,
+      "pmid": "35010877",
+      "first_author": "García-Cordero",
+      "authors_display": "García-Cordero, J. et al.",
+      "year": 2021,
+      "title": "Neurocognitive Effects of Cocoa and Red-Berries Consumption in Healthy Adults.",
+      "venue": "Nutrients",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/2072-6643/14/1/1/pdf?version=1640140074",
+      "tldr": null,
+      "abstract": "In recent decades, the elderly population has increased at higher rates than any other population group, resulting in an increase in age-related diseases such as neurodegenerative and cognitive impairment. To address this global health problem, it is necessary to search for new dietary strategies that can prevent the main neurocognitive problems associated with the ageing process. Therefore, the aim of the present study was to analyze the effect of cocoa flavanols and red berry anthocyanins on brain-derived neurotrophic factor (BDNF) and nerve growth factor receptor (NGF-R) and to stablish the possible improvement in cognitive performance by using a battery of neurocognitive tests that included the Verbal Learning Test Spain-Complutense, the Spatial Recall Test 10/36 BRB-N, the Wechsler Adult Intelligence Scale III and IV, the STROOP Task and the Tower of London Test. A randomized, double-blind, parallel-group study was performed in 60 healthy volunteers between 50 and 75 years old who consumed a cocoa powder, a red berries mixture or a combination of both for 12 weeks. After the intervention, we observed a reduction in the time needed to start (<i>p</i> = 0.031) and finish (<i>p</i> = 0.018) the neurocognitive test known as the Tower of London in all groups, but the decrease in time to finish the task was more pronounced in the intervention with the combination of cocoa-red berries group. We failed to show any significant difference in BDNF and NGF-R sera levels. However we found a negative correlation between BDNF and the number of movements required to finish the TOL in women (<i>p</i> = 0.044). In conclusion, our study showed an improvement in executive function, without any change in neurotrofin levels, for all intervention arms.",
+      "score": {
+        "composite": 0.33595228672247485,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher",
+      "mesh_terms": [
+        "Humans",
+        "Cacao",
+        "Fruit",
+        "Anthocyanins",
+        "Flavonols",
+        "Brain-Derived Neurotrophic Factor",
+        "Receptors, Nerve Growth Factor",
+        "Double-Blind Method",
+        "Cognition",
+        "Intelligence Tests",
+        "Neuropsychological Tests",
+        "Aged",
+        "Middle Aged",
+        "Spain",
+        "Female",
+        "Male",
+        "Executive Function",
+        "Cognitive Dysfunction"
+      ]
+    },
+    {
+      "rank": 32,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_aa45ab71",
+      "doi": "10.3390/brainsci10020115",
+      "url": "https://doi.org/10.3390/brainsci10020115",
+      "openalex_id": null,
+      "pmid": "32093319",
+      "first_author": "Kamarajan",
+      "authors_display": "Kamarajan, C. et al.",
+      "year": 2020,
+      "title": "Random Forest Classification of Alcohol Use Disorder Using fMRI Functional Connectivity, Neuropsychological Functioning, and Impulsivity Measures.",
+      "venue": "Brain sciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants)"
+      ],
+      "citation_count": 34,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/2076-3425/10/2/115/pdf?version=1582204315",
+      "tldr": null,
+      "abstract": "Individuals with alcohol use disorder (AUD) are known to manifest a variety of neurocognitive impairments that can be attributed to alterations in specific brain networks. The current study aims to identify specific features of brain connectivity, neuropsychological performance, and impulsivity traits that can classify adult males with AUD (<i>n</i> = 30) from healthy controls (CTL, <i>n</i> = 30) using the Random Forest (RF) classification method. The predictor variables were: (i) fMRI-based within-network functional connectivity (FC) of the Default Mode Network (DMN), (ii) neuropsychological scores from the Tower of London Test (TOLT), and the Visual Span Test (VST), and (iii) impulsivity factors from the Barratt Impulsiveness Scale (BIS). The RF model, with a classification accuracy of 76.67%, identified fourteen DMN connections, two neuropsychological variables (memory span and total correct scores of the forward condition of the VST), and all impulsivity factors as significantly important for classifying participants into either the AUD or CTL group. Specifically, the AUD group manifested hyperconnectivity across the bilateral anterior cingulate cortex and the prefrontal cortex as well as between the bilateral posterior cingulate cortex and the left inferior parietal lobule, while showing hypoconnectivity in long-range anterior-posterior and interhemispheric long-range connections. Individuals with AUD also showed poorer memory performance and increased impulsivity compared to CTL individuals. Furthermore, there were significant associations among FC, impulsivity, neuropsychological performance, and AUD status. These results confirm the previous findings that alterations in specific brain networks coupled with poor neuropsychological functioning and heightened impulsivity may characterize individuals with AUD, who can be efficiently identified using classification algorithms such as Random Forest.",
+      "score": {
+        "composite": 0.3347948220539072,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 33,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ef97283a",
+      "doi": "10.3390/ijerph182211745",
+      "url": "https://doi.org/10.3390/ijerph182211745",
+      "openalex_id": null,
+      "pmid": "34831501",
+      "first_author": "Giordano",
+      "authors_display": "Giordano, G. et al.",
+      "year": 2021,
+      "title": "Sports, Executive Functions and Academic Performance: A Comparison between Martial Arts, Team Sports, and Sedentary Children.",
+      "venue": "International journal of environmental research and public health",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 16,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/1660-4601/18/22/11745/pdf?version=1636619465",
+      "tldr": null,
+      "abstract": "It is well known that curricular physical activity benefits children's executive functions and academic performance. Therefore, this study aimed to determine whether there is an influence of extracurricular sports on executive functions and academic performance. However, it is less known which specific types of the sport better enhance executive functions in children; to investigate this issue, this study compared the performance on executive functions tasks and academic performance in one hundred and two boys and girls with an average age of 11.84 years recruited from Italian schools and gyms (<i>N</i> = 102), who participated in martial arts or team sports or were sedentary children. Executive functions were measured with the tests: Attenzione e Concentrazione, Digit Span test, Tower of London, IOWA Gambling task BVN 5-11, and BVN 12-18. Results demonstrated that children practicing martial arts showed better executive functioning and higher school marks than those involved in team sports or not involved in any sports. Furthermore, participants aged 12 to 15 years old outperformed in cool and hot executive functions tasks and had a better academic performance. Thus, the present findings supported the view that regular practice of extracurricular sports enhances executive functions development and consequently influences academic performance.",
+      "score": {
+        "composite": 0.334342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher",
+      "mesh_terms": [
+        "Humans",
+        "Exercise",
+        "Schools",
+        "Martial Arts",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male",
+        "Executive Function",
+        "Team Sports"
+      ]
+    },
+    {
+      "rank": 34,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3fa04856",
+      "doi": "10.3390/bs10030062",
+      "url": "https://doi.org/10.3390/bs10030062",
+      "openalex_id": null,
+      "pmid": "32121585",
+      "first_author": "Kamarajan",
+      "authors_display": "Kamarajan, C. et al.",
+      "year": 2020,
+      "title": "Random Forest Classification of Alcohol Use Disorder Using EEG Source Functional Connectivity, Neuropsychological Functioning, and Impulsivity Measures.",
+      "venue": "Behavioral sciences (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 25,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "http://hdl.handle.net/20.500.12648/7910",
+      "tldr": null,
+      "abstract": "<b>:</b> Individuals with alcohol use disorder (AUD) manifest a variety of impairments that can be attributed to alterations in specific brain networks. The current study aims to identify features of EEG-based functional connectivity, neuropsychological performance, and impulsivity that can classify individuals with AUD (N = 30) from unaffected controls (CTL, N = 30) using random forest classification. The features included were: (i) EEG source functional connectivity (FC) of the default mode network (DMN) derived using eLORETA algorithm, (ii) neuropsychological scores from the Tower of London test (TOLT) and the visual span test (VST), and (iii) impulsivity factors from the Barratt impulsiveness scale (BIS). The random forest model achieved a classification accuracy of 80% and identified 29 FC connections (among 66 connections per frequency band), 3 neuropsychological variables from VST (total number of correctly performed trials in forward and backward sequences and average time for correct trials in forward sequence) and all four impulsivity scores (motor, non-planning, attentional, and total) as significantly contributing to classifying individuals as either AUD or CTL. Although there was a significant age difference between the groups, most of the top variables that contributed to the classification were not significantly correlated with age. The AUD group showed a predominant pattern of hyperconnectivity among 25 of 29 significant connections, indicating aberrant network functioning during resting state suggestive of neural hyperexcitability and impulsivity. Further, parahippocampal hyperconnectivity with other DMN regions was identified as a major hub region dysregulated in AUD (13 connections overall), possibly due to neural damage from chronic drinking, which may give rise to cognitive impairments, including memory deficits and blackouts. Furthermore, hypoconnectivity observed in four connections (prefrontal nodes connecting posterior right-hemispheric regi",
+      "score": {
+        "composite": 0.3304922880522967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 35,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b917623b",
+      "doi": "10.1523/jneurosci.0774-07.2007",
+      "url": "https://doi.org/10.1523/jneurosci.0774-07.2007",
+      "openalex_id": null,
+      "pmid": "17475791",
+      "first_author": "Williams-Gray",
+      "authors_display": "Williams-Gray, C. et al.",
+      "year": 2007,
+      "title": "Catechol O-methyltransferase Val158Met genotype influences frontoparietal activity during planning in patients with Parkinson's disease.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 146,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Cognitive dysfunction commonly occurs even in the early stages of Parkinson's disease (PD). Impairment on frontostriatally based executive tasks is particularly well described but affects only a proportion of early PD patients. Our previous work suggests that a common functional polymorphism (val(158)met) within the catechol O-methyltransferase (COMT) gene underlies some of this executive heterogeneity. In particular, an increasing number of methionine alleles, resulting in lower enzyme activity, is associated with impaired performance on the \"Tower of London\" planning task. The main objective of this study was to investigate the underlying neural basis of this genotype-phenotype effect in PD using functional magnetic resonance imaging. We scanned 31 patients with early PD who were homozygous for either valine (val) (n = 16) or methionine (met) (n = 15) at the COMT val(158)met polymorphism during performance of an executive task comprising both Tower of London (planning) and simple subtracting (\"control\") problems. A cross-group comparison between genetic subgroups revealed that response times for planning problems were significantly longer in met compared with val homozygotes, whereas response times for control problems did not differ. Furthermore, imaging data revealed a significant reduction in blood oxygen level-dependent signal across the frontoparietal network involved in planning in met/met compared with val/val patients. Hence, we have demonstrated that COMT genotype impacts on executive function in PD through directly influencing frontoparietal activation. Furthermore, the directionality of the genotype-phenotype effect observed in this study, when interpreted in the context of the existing literature, adds weight to the hypothesis that the relationship between prefrontal function and dopamine levels follows as an inverted U-shaped curve.",
+      "score": {
+        "composite": 0.32556679285226237,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2889338380757162,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07223345951892905,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Parietal Lobe",
+        "Humans",
+        "Parkinson Disease",
+        "Catechol O-Methyltransferase",
+        "Valine",
+        "Methionine",
+        "Brain Mapping",
+        "Problem Solving",
+        "Genotype",
+        "Polymorphism, Genetic",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 36,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_381da121",
+      "doi": "10.1136/jnnp.51.6.757",
+      "url": "https://doi.org/10.1136/jnnp.51.6.757",
+      "openalex_id": null,
+      "pmid": "3404183",
+      "first_author": "Morris",
+      "authors_display": "Morris, R. et al.",
+      "year": 1988,
+      "title": "Planning and spatial working memory in Parkinson's disease.",
+      "venue": "Journal of neurology, neurosurgery, and psychiatry",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 210,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The higher level cognitive function of planning was studied in a group of medicated Parkinson's disease patients and a group of matched control subjects, using a computerised version of Shallice's Tower of London task. Baseline measurement of the ability to execute a given plan of action, to generate low level strategies required for efficient searching, and spatial working memory capacity, all of which contribute to performance on the planning task, established that the Parkinson's disease group was unimpaired on any of these measures. On the Tower of London task, the Parkinson's disease group was also unimpaired in terms of the average number of moves required to solve a problem. However, a specific planning deficit was evident when \"thinking\" times were analysed, and this was after the confounding influence of motor initiation and execution times had been carefully extracted from total performance times. This finding is discussed in relation to putative functions of the frontal lobes and basal ganglia, and an attention-switching hypothesis is developed to account for it.",
+      "score": {
+        "composite": 0.32413153992428334,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30985949303046656,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07746487325761664,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Humans",
+        "Parkinson Disease",
+        "Orientation",
+        "Memory",
+        "Mental Recall",
+        "Problem Solving",
+        "Concept Formation",
+        "Psychomotor Performance",
+        "Attention",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Microcomputers",
+        "Software",
+        "Aged",
+        "Middle Aged",
+        "Neurocognitive Disorders"
+      ]
+    },
+    {
+      "rank": 37,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_475e1fa9",
+      "doi": "10.1007/s10802-007-9123-6",
+      "url": "https://doi.org/10.1007/s10802-007-9123-6",
+      "openalex_id": null,
+      "pmid": "17629724",
+      "first_author": "Solanto",
+      "authors_display": "Solanto, M. et al.",
+      "year": 2007,
+      "title": "Neurocognitive functioning in AD/HD, predominantly inattentive and combined subtypes.",
+      "venue": "Journal of abnormal child psychology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 123,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The Predominantly Inattentive (PI) and Combined (CB) subtypes of AD/HD differ in cognitive tempo, age of onset, gender ratio, and comorbidity, yet a differentiating endophenotype has not been identified. The aim of this study was to test rigorously diagnosed PI, CB, and typical children on measures selected for their potential to reveal hypothesized differences between the subtypes in specific neurocognitive systems (anterior vs. posterior attentional systems) and processes (arousal vs. activation). Thirty-four CB and 26 PI children meeting full DSM-IV criteria for subtype both in school and at home, without confounding reading disability or emotional disorder, were enrolled along with 20 typically developing children. Neurocognitive functions measured included attention, inhibitory control, working memory, learning, and executive functions. Tasks included the Stroop, Wisconsin Card Sorting Test, Continuous Performance Test (CPT). Buschke Selective Reminding Test, ad the Tower of London (TOL), as well as instruments developed by Posner and Sternberg, and tasks assessing the impact on reaction time of [corrected] varying preparatory intervals and stimulus/response complexity. After co-varying for IQ, subtypes differed primarily on measures of impulsivity during tests of vigilance (CPT) and executive function (TOL), with the CB group showing greater impulsivity than both other groups. In addition, the PI group showed worse performance than CB and control groups on the WISC-III Processing Speed Index. Whether analyzed with or without an IQ co-variate, there was no support in the data for hypothesized differences between subtypes in functioning of the anterior vs. posterior attentional systems, nor in involvement of arousal vs. activation processes. The results indicate that the PI and CB subtypes are best differentiated by ratings, observations and tests of cognitive tempo and behavioral impulsivity. Neuropsychological methods have yet to identify critical neuropsychol",
+      "score": {
+        "composite": 0.32310396088602833,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27908251021077995,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06977062755269499,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Multivariate Analysis",
+        "Impulsive Behavior",
+        "Cognition",
+        "Memory",
+        "Arousal",
+        "Attention",
+        "Reaction Time",
+        "Attention Deficit Disorder with Hyperactivity",
+        "Neuropsychological Tests",
+        "Higher Nervous Activity",
+        "Models, Neurological",
+        "Child",
+        "Female",
+        "Male",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 38,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_95e4d414",
+      "doi": "10.1038/sj.npp.1300889",
+      "url": "https://doi.org/10.1038/sj.npp.1300889",
+      "openalex_id": null,
+      "pmid": "16160707",
+      "first_author": "Ersche",
+      "authors_display": "Ersche, K. et al.",
+      "year": 2006,
+      "title": "Profile of executive and memory function associated with amphetamine and opiate dependence.",
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 193,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Cognitive function was assessed in chronic drug users on neurocognitive measures of executive and memory function. Current amphetamine users were contrasted with current opiate users, and these two groups were compared with former users of these substances (abstinent for at least one year). Four groups of participants were recruited: amphetamine-dependent individuals, opiate-dependent individuals, former users of amphetamines, and/or opiates and healthy non-drug taking controls. Participants were administered the Tower of London (TOL) planning task and the 3D-IDED attentional set-shifting task to assess executive function, and Paired Associates Learning and Delayed Pattern Recognition Memory tasks to assess visual memory function. The three groups of substance users showed significant impairments on TOL planning, Pattern Recognition Memory and Paired Associates Learning. Current amphetamine users displayed a greater degree of impairment than current opiate users. Consistent with previous research showing that healthy men are performing better on visuo-spatial tests than women, our male controls remembered significantly more paired associates than their female counterparts. This relationship was reversed in drug users. While performance of female drug users was normal, male drug users showed significant impairment compared to both their female counterparts and male controls. There was no difference in performance between current and former drug users. Neither years of drug abuse nor years of drug abstinence were associated with performance. Chronic drug users display pronounced neuropsychological impairment in the domains of executive and memory function. Impairment persists after several years of drug abstinence and may reflect neuropathology in frontal and temporal cortices.",
+      "score": {
+        "composite": 0.3195823583361496,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3049961000112652,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0762490250028163,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Temporal Lobe",
+        "Humans",
+        "Brain Damage, Chronic",
+        "Memory Disorders",
+        "Amphetamine-Related Disorders",
+        "Opioid-Related Disorders",
+        "Space Perception",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Sex Characteristics",
+        "Time",
+        "Adult",
+        "Female",
+        "Male",
+        "Learning Disabilities"
+      ]
+    },
+    {
+      "rank": 39,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_5b9ab132",
+      "doi": "10.1136/jnnp.57.1.79",
+      "url": "https://doi.org/10.1136/jnnp.57.1.79",
+      "openalex_id": null,
+      "pmid": "8301310",
+      "first_author": "Robbins",
+      "authors_display": "Robbins, T. et al.",
+      "year": 1994,
+      "title": "Cognitive deficits in progressive supranuclear palsy, Parkinson's disease, and multiple system atrophy in tests sensitive to frontal lobe dysfunction.",
+      "venue": "Journal of neurology, neurosurgery, and psychiatry",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Case Reports"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 150,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Groups of patients with idiopathic Parkinson's disease, multiple system atrophy, and progressive supranuclear palsy or Steele-Richardson-Olszewski syndrome, matched for overall clinical disability, were compared using three computerised cognitive tests previously shown to be sensitive to frontal lobe dysfunction. On a test of planning based on the Tower of London task, all three groups were impaired, but in different ways. The groups with palsy and Parkinson's disease were slower in the measure of initial thinking time, whereas the group with multiple system atrophy was only slower in a measure of thinking time subsequent to the first move, resembling patients with frontal lobe damage. On a test of spatial working memory, each group showed deficits relative to their matched control groups, but the three groups differed in their strategy for dealing with this task. On a test of attentional set shifting, each group was again impaired, mainly at the extradimensional shifting stage, but the group with Steele-Richardson-Olszewski syndrome exhibited the greatest deficit. The results are compared with previous findings in patients with Alzheimer's disease or frontal lobe damage. It is concluded that these basal ganglia disorders share a distinctive pattern of cognitive deficits on tests of frontal lobe dysfunction, but there are differences in the exact nature of the impairments, in comparison not only with frontal lobe damage but also with one another.",
+      "score": {
+        "composite": 0.3192887237099509,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29048822817313685,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07262205704328421,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Humans",
+        "Parkinson Disease",
+        "Supranuclear Palsy, Progressive",
+        "Memory Disorders",
+        "Atrophy",
+        "Space Perception",
+        "Thinking",
+        "Task Performance and Analysis",
+        "Attention",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Time Factors",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 40,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_caa82f4e",
+      "doi": "10.1016/j.eurpsy.2006.05.002",
+      "url": "https://doi.org/10.1016/j.eurpsy.2006.05.002",
+      "openalex_id": null,
+      "pmid": "17127035",
+      "first_author": "Delorme",
+      "authors_display": "Delorme, R. et al.",
+      "year": 2007,
+      "title": "Shared executive dysfunctions in unaffected relatives of patients with autism and obsessive-compulsive disorder.",
+      "venue": "European psychiatry : the journal of the Association of European Psychiatrists",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 81,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Executive dysfunctions have been studied as a potential endophenotype associated with the genetic basis of autism. Given that recent findings from clinical and molecular genetic studies suggest that autism and obsessive-compulsive disorder (OCD) could share a common pattern of heritability, we assessed executive functions as a possible common cognitive endophenotype in unaffected family members of individuals with either autism or OCD.<h4>Methods</h4>Five tests assessing executive functions (Tower of London, verbal fluency, design fluency, trail making and association fluency) were proposed to 58 unaffected first-degree relatives (parents and siblings) of probands with autism and 64 unaffected first-degree relatives of OCD patients. Results were compared with those of 47 healthy controls matched for age, sex, and level of education.<h4>Results</h4>In the Tower of London test, both groups of unaffected relatives showed significantly lower scores and longer response times compared with controls. No differences were observed between autism and OCD relatives and healthy controls in the four other tasks (verbal fluency, design fluency, trail making test and association fluency).<h4>Conclusions</h4>Our findings show the existence of executive dysfunction in the unaffected first-degree relatives of probands with OCD, similar to those observed in the relatives of patients with autism. These results support and extend previous cognitive studies on probands indicating executive dysfunctions in autism and OCD. Planning and working memory processes could thus represent a common cognitive endophenotype in autism and OCD that could help in the identification of genes conferring vulnerability to these disorders.",
+      "score": {
+        "composite": 0.31711789926492423,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25513826372636356,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06378456593159089,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Family",
+        "Parents",
+        "Siblings",
+        "Obsessive-Compulsive Disorder",
+        "Cognition Disorders",
+        "Autistic Disorder",
+        "Psychiatric Status Rating Scales",
+        "Neuropsychological Tests",
+        "Reference Values",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Educational Status",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 41,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_40ceb243",
+      "doi": "10.2147/ndt.s199927",
+      "url": "https://doi.org/10.2147/ndt.s199927",
+      "openalex_id": null,
+      "pmid": "31190837",
+      "first_author": "Grau",
+      "authors_display": "Grau, A. et al.",
+      "year": 2019,
+      "title": "Cognitive impairment in eating disorder patients of short and long-term duration: a case-control study.",
+      "venue": "Neuropsychiatric disease and treatment",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (patients)"
+      ],
+      "citation_count": 19,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.dovepress.com/getfile.php?fileID=49975",
+      "tldr": null,
+      "abstract": "<b>Introduction:</b> Several studies have noted the potentially negative effect of eating disorders (ED) on cognitive performance. <b>Objective:</b> To compare the impact of the duration of abnormal eating behaviors on cognitive performance in a sample of people with short- and long-term eating disorders and in two control groups matched for age. <b>Method:</b> The neuropsychological performance of 82 women diagnosed with an eating disorder were compared with two control groups from the community of 66 healthy women. Time of duration of the disorder was less than two years in half of the clinical sample, and more than 10 years in the other half. The following instruments were used to measure neuropsychological performance: the Matrix Test, the Stroop task, the Trail-Making Test, the Tower of London Test, the Posner Spatial Task, the Rey's Complex Figure, the Wechsler Vocabulary Test, and the Hayling Completion Test. <b>Results:</b> It showed that persons with long-term ED presented more impaired neuropsychological profiles, but not in all areas. In contrast, the short-term ED group presented similar profiles to the control groups. <b>Discussion:</b> This study highlights the positive association between cognitive impairment and time of evolution of ED, above all in perceptual measures and non-verbal memory. Considering the effect of the evolution of ED cognitive performance (especially in long-term patients) may further our understanding of the development of the disorder and the factors that may favor its persistence.",
+      "score": {
+        "composite": 0.3166947257874873,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 42,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ca37ee62",
+      "doi": "10.1044/2019_jslhr-l-18-0367",
+      "url": "https://doi.org/10.1044/2019_jslhr-l-18-0367",
+      "openalex_id": null,
+      "pmid": "31343936",
+      "first_author": "Larson",
+      "authors_display": "Larson, C. et al.",
+      "year": 2019,
+      "title": "The Relationship Between Language and Planning in Children With Language Impairment.",
+      "venue": "Journal of speech, language, and hearing research : JSLHR",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Purpose This study examined the relationship between language and planning, a higher order executive function skill, in children with specific language impairment (SLI) and typically developing (TD) children. We hypothesized differences between groups in planning performance and in the role of verbal mediation during planning. Method Thirty-one children with SLI and 50 TD age-matched peers (8-12 years) participated in the study. We assessed language ability via a standardized language measure and planning via a dual-task Tower of London paradigm with 3 conditions: no secondary task (baseline), articulatory suppression secondary task (disrupted verbal mediation), and motor suppression secondary task (control for secondary task demand). Results We found similar overall accuracy between children with SLI and TD peers on the Tower of London. Children with SLI executed trials more slowly at baseline than TD peers but not under articulatory suppression, and children with SLI spent less time planning than TD children at baseline and under articulatory suppression. There was a significant interaction among group, language ability, and planning time under articulatory suppression. Children with SLI who had relatively better language ability spent less time planning than children with SLI who had poorer language ability when verbal mediation was disrupted. This pattern was reversed for TD children. Conclusions This study provides evidence for a relationship between language and planning, yet this relationship differed between children with SLI compared to TD peers. Findings suggest that children with SLI use nonlinguistic perceptual strategies to a greater degree than verbal strategies on visuospatial planning tasks and that intervention might address strategy use for planning.",
+      "score": {
+        "composite": 0.31595228672247483,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Verbal Behavior",
+        "Child Language",
+        "Task Performance and Analysis",
+        "Language Tests",
+        "Child",
+        "Female",
+        "Male",
+        "Executive Function",
+        "Specific Language Disorder"
+      ]
+    },
+    {
+      "rank": 43,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_eae0e7d9",
+      "doi": "10.3390/biomedicines10051096",
+      "url": "https://doi.org/10.3390/biomedicines10051096",
+      "openalex_id": null,
+      "pmid": "35625833",
+      "first_author": "Gaebler",
+      "authors_display": "Gaebler, A. et al.",
+      "year": 2022,
+      "title": "The Interplay between Vitamin D, Exposure of Anticholinergic Antipsychotics and Cognition in Schizophrenia.",
+      "venue": "Biomedicines",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patients)"
+      ],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/2227-9059/10/5/1096/pdf?version=1652099023",
+      "tldr": null,
+      "abstract": "Vitamin D deficiency is a frequent finding in schizophrenia and may contribute to neurocognitive dysfunction, a core element of the disease. However, there is limited knowledge about the neuropsychological profile of vitamin D deficiency-related cognitive deficits and their underlying molecular mechanisms. As an inductor of cytochrome P450 3A4, a lack of vitamin D might aggravate cognitive deficits by increased exposure to anticholinergic antipsychotics. This cross-sectional study aims to assess the relationship between 25-OH-vitamin D-serum concentrations, anticholinergic drug exposure and neurocognitive functioning (Brief Assessment of Cognition in Schizophrenia, BACS, and Trail Making Test, TMT) in 141 patients with schizophrenia. The anticholinergic drug exposure was estimated by adjusting the concentration of each drug for its individual muscarinic receptor affinity. Using regression analysis, we observed a positive relationship between vitamin D levels and processing speed (TMT-A and BACS Symbol Coding) as well as executive functioning (TMT-B and BACS Tower of London). Moreover, a negative impact of vitamin D on anticholinergic drug exposure emerged, but the latter did not significantly affect cognition. When other cognitive items were included as regressors, the impact of vitamin D remained only significant for the TMT-A. Among the different cognitive impairments in schizophrenia, vitamin D deficiency may most directly affect processing speed, which in turn may aggravate deficits in executive functioning. This finding is not explained by a cytochrome P450-mediated increased exposure to anticholinergic antipsychotics.",
+      "score": {
+        "composite": 0.3025307037366092,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 44,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_419c507e",
+      "doi": "10.1080/16066350701340719",
+      "url": "https://doi.org/10.1080/16066350701340719",
+      "openalex_id": null,
+      "pmid": "17852522",
+      "first_author": "Marton",
+      "authors_display": "Marton, K.",
+      "year": 2008,
+      "title": "Visuo-spatial processing and executive functions in children with specific language impairment.",
+      "venue": "International journal of language & communication disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 89,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Individual differences in complex working memory tasks reflect simultaneous processing, executive functions, and attention control. Children with specific language impairment (SLI) show a deficit in verbal working memory tasks that involve simultaneous processing of information.<h4>Aims</h4>The purpose of the study was to examine executive functions and visuospatial processing and working memory in children with SLI and in their typically developing peers (TLD). Experiment 1 included 40 children with SLI (age = 5; 3-6;10) and 40 children with TLD (age = 5; 3-6;7); Experiment 2 included 25 children with SLI (age = 8;2-11; 2) and 25 children with TLD (age = 8; 3-11; 0). It was examined whether the difficulties that children with SLI show in verbal working memory tasks are also present in visuo-spatial working memory.<h4>Methods & procedures</h4>In Experiment 1, children's performance was measured with three visuo-spatial processing tasks: space visualization, position in space, and design copying. The stimuli in Experiment 2 were two widely used neuropsychological tests: the Wisconsin Card Sorting Test-64 (WCST-64) and the Tower of London test (TOL).<h4>Outcomes & results</h4>In Experiment 1, children with SLI performed more poorly than their age-matched peers in all visuo-spatial working memory tasks. There was a subgroup within the SLI group that included children whose parents and teachers reported a weakness in the child's attention control. These children showed particular difficulties in the tasks of Experiment 1. The results support Engle's attention control theory: individuals need good attention control to perform well in visuo-spatial working memory tasks. In Experiment 2, the children with SLI produced more perseverative errors and more rule violations than their peers.<h4>Conclusions</h4>Executive functions have a great impact on SLI children's working memory performance, regardless of domain. Tasks that require an increased amount of at",
+      "score": {
+        "composite": 0.28846532620421467,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26052797148352547,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.13333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06513199287088137,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.02,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Language Development Disorders",
+        "Analysis of Variance",
+        "Case-Control Studies",
+        "Comprehension",
+        "Memory",
+        "Psycholinguistics",
+        "Attention",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Child",
+        "Child, Preschool",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 45,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_51bcfb99",
+      "doi": "10.5535/arm.2011.35.4.450",
+      "url": "https://doi.org/10.5535/arm.2011.35.4.450",
+      "openalex_id": null,
+      "pmid": "22506159",
+      "first_author": "Kim",
+      "authors_display": "Kim, B. et al.",
+      "year": 2011,
+      "title": "Effect of virtual reality on cognition in stroke patients.",
+      "venue": "Annals of rehabilitation medicine",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (patients)"
+      ],
+      "citation_count": 85,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3309247",
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>To investigate the effect of virtual reality on the recovery of cognitive impairment in stroke patients.<h4>Method</h4>Twenty-eight patients (11 males and 17 females, mean age 64.2) with cognitive impairment following stroke were recruited for this study. All patients were randomly assigned to one of two groups, the virtual reality (VR) group (n=15) or the control group (n=13). The VR group received both virtual reality training and computer-based cognitive rehabilitation, whereas the control group received only computer-based cognitive rehabilitation. To measure, activity of daily living cognitive and motor functions, the following assessment tools were used: computerized neuropsychological test and the Tower of London (TOL) test for cognitive function assessment, Korean-Modified Barthel index (K-MBI) for functional status evaluation, and the motricity index (MI) for motor function assessment. All recruited patients underwent these evaluations before rehabilitation and four weeks after rehabilitation.<h4>Results</h4>The VR group showed significant improvement in the K-MMSE, visual and auditory continuous performance tests (CPT), forward digit span test (DST), forward and backward visual span tests (VST), visual and verbal learning tests, TOL, K-MBI, and MI scores, while the control group showed significant improvement in the K-MMSE, forward DST, visual and verbal learning tests, trail-making test-type A, TOL, K-MBI, and MI scores after rehabilitation. The changes in the visual CPT and backward VST in the VR group after rehabilitation were significantly higher than those in the control group.<h4>Conclusion</h4>Our findings suggest that virtual reality training combined with computer-based cognitive rehabilitation may be of additional benefit for treating cognitive impairment in stroke patients.",
+      "score": {
+        "composite": 0.25780728614447956,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25789581124458505,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06447395281114626,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 46,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_e3693969",
+      "doi": "10.1136/jnnp.58.5.598",
+      "url": "https://doi.org/10.1136/jnnp.58.5.598",
+      "openalex_id": null,
+      "pmid": "7745410",
+      "first_author": "Lange",
+      "authors_display": "Lange, K. et al.",
+      "year": 1995,
+      "title": "Comparison of executive and visuospatial memory function in Huntington's disease and dementia of Alzheimer type matched for degree of dementia.",
+      "venue": "Journal of neurology, neurosurgery, and psychiatry",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 120,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Groups of patients with Hungington's disease and probable dementia of Alzheimer type (DAT) matched for level of dementia on the basis of mini mental state examination scores were compared in several tests of visual memory and tests sensitive to frontal lobe dysfunction. Whereas recall of patients with DAT tended to be worse on the Kendrick object learning test, the two groups were equivalent on tests of sensorimotor ability and delayed matching to sample performance. By contrast, the patients with Huntington's disease were significantly worse on tests of pattern and spatial recognition, simultaneous matching to sample, visuospatial paired associates, and on three tests sensitive to frontal lobe dysfunction--namely, the Tower of London test of planning, spatial working memory, and a visual discrimination learning and reversal paradigm. The impairments in these tests, however, did not always qualitatively resemble those seen in patients with frontal lobe damage and may be more characteristic of primary neostriatal deficit. In the visual discrimination paradigm the patients with Hungtington's disease were significantly worse than the patients with DAT at the simple reversal stage, where they displayed significant preservation to the previously rewarded alternative. The results are consistent with the hypothesis that patients with Huntington's disease exhibit deficits in tests sensitive to frontostriatal dysfunction and that this form of intellectual deterioration is qualitatively distinct from that seen in Alzheimer's disease.",
+      "score": {
+        "composite": 0.2327494683502443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2776645400676438,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06941613501691095,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Huntington Disease",
+        "Alzheimer Disease",
+        "Analysis of Variance",
+        "Memory",
+        "Space Perception",
+        "Visual Perception",
+        "Neuropsychological Tests",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    }
+  ]
+}

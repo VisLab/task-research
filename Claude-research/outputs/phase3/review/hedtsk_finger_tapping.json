@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_finger_tapping",
+    "name": "Finger Tapping Task",
+    "aliases": [
+      "FTT",
+      "Tapping Task"
+    ],
+    "category_id": "motor_preparation_timing_and_execution",
+    "short_definition": "Repetitive single-finger or sequence tapping at fastest or paced rates; taps-per-interval and tap-timing variability index motor speed and rhythm control.",
+    "description": "Participants tap their fingers (typically index finger) in a repetitive manner at a self-paced or externally paced rate. Self-paced tapping is typically at 2-3 Hz; externally paced versions use an auditory or visual metronome. The task consists of tapping blocks (20-40 seconds) alternating with rest periods. Performance metrics include tapping frequency, inter-tap interval variability, and accuracy. It is the most commonly used simple motor paradigm for motor cortex mapping, clinical motor assessment, and studying motor control. Contralateral primary motor cortex and supplementary motor area are consistently activated.",
+    "inclusion_test": {
+      "procedure": "Participants tap a key or button with a single finger as rapidly as possible (maximum rate) or in synchrony with a metronome (paced tapping).",
+      "manipulation": "Hand (dominant vs. non-dominant); pacing rate; tapping duration; sequence complexity (single finger vs. sequence).",
+      "measurement": "Tapping rate (taps/sec); inter-tap interval variability; synchronization error and drift in paced conditions."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:41:04",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Masina 2021 — Neurophysiological and behavioural effects of conventional and high definitio… (Scientific reports, recent_primary, 44×)",
+      "doi": "10.1038/s41598-021-87371-z",
+      "pub_id": "pub_a5b7824f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6717657780313868,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Maes 2021 — GABA levels are differentially associated with bimanual motor performance in … (NeuroImage, recent_primary, 28×)",
+      "doi": "10.1016/j.neuroimage.2021.117871",
+      "pub_id": "pub_2e18b9cb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6654062143499647,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "NeuroImage",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Gagnon 2012 — Short separation channel location impacts the performance of short channel re… (NeuroImage, foundational, 228×)",
+      "doi": "10.1016/j.neuroimage.2011.08.095",
+      "pub_id": "pub_2dcaaf13",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6053164693752934,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31459921083450687,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07864980270862672,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "NeuroImage",
+      "citation_count": 228,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Qiu 2012 — Contrast-enhanced functional blood volume imaging (CE-fBVI): enhanced sensiti… (NeuroImage, foundational, 46×)",
+      "doi": "10.1016/j.neuroimage.2012.05.010",
+      "pub_id": "pub_822cfabb",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5823951984309924,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22291412705730315,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05572853176432579,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "NeuroImage",
+      "citation_count": 46,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Kübel 2018 — Deficient supplementary motor area at rest: Neural basis of limb kinetic defi… (Human brain mapping, recent_primary, 23×)",
+      "doi": "10.1002/hbm.24204",
+      "pub_id": "pub_09cf3c97",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5726670521465946,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Human brain mapping",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Mednick 2008 — Comparing the benefits of caffeine, naps and placebo on verbal, motor and per… (Behavioural brain research, foundational, 62×)",
+      "doi": "10.1016/j.bbr.2008.04.028",
+      "pub_id": "pub_d25b0051",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.569969341201631,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23987736480652397,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05996934120163099,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "Behavioural brain research",
+      "citation_count": 62,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Gulde 2021 — State and trait of finger tapping performance in multiple sclerosis. (Scientific reports, recent_primary, 10×)",
+      "doi": "10.1038/s41598-021-96485-3",
+      "pub_id": "pub_74f23064",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5680414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Abdelnour 2009 — Real-time imaging of human brain function by near-infrared spectroscopy using… (NeuroImage, foundational, 106×)",
+      "doi": "10.1016/j.neuroimage.2009.01.033",
+      "pub_id": "pub_6faa705d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.564303006118927,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2705453578090416,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0676363394522604,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "NeuroImage",
+      "citation_count": 106,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Gao 2019 — Suppression of glioblastoma by a drug cocktail reprogramming tumor cells into… (Scientific reports, recent_primary, 22×)",
+      "doi": "10.1038/s41598-019-39852-5",
+      "pub_id": "pub_05109b90",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5587176944242321,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Gentile 2020 — Mutual interaction between motor cortex activation and pain in fibromyalgia: … (PloS one, recent_primary, 28×)",
+      "doi": "10.1371/journal.pone.0228158",
+      "pub_id": "pub_57a17783",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5554062143499646,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "PloS one",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Steel 2019 — Differential impact of reward and punishment on functional connectivity after… (NeuroImage, recent_primary, 17×)",
+      "doi": "10.1016/j.neuroimage.2019.01.009",
+      "pub_id": "pub_976b5d0d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5551696967623831,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "NeuroImage",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Takamizawa 2019 — Transfer entropy for synchronized behavior estimation of interpersonal relati… (Scientific reports, recent_primary, 12×)",
+      "doi": "10.1038/s41598-019-47525-6",
+      "pub_id": "pub_a95da1f5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5504594065461355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Notturno 2014 — Local and remote effects of transcranial direct current stimulation on the el… (Human brain mapping, foundational, 51×)",
+      "doi": "10.1002/hbm.22322",
+      "pub_id": "pub_7508e705",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5438585028917913,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Human brain mapping",
+      "citation_count": 51,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Witt 2008 — Functional neuroimaging correlates of finger-tapping task variations: an ALE … (NeuroImage, key_review, 326×)",
+      "doi": "10.1016/j.neuroimage.2008.04.025",
+      "pub_id": "pub_7a29d580",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5371394656371222,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33522452921515566,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08380613230378892,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "NeuroImage",
+      "citation_count": 326,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Tzourio-Mazoyer 2015 — Between-hand difference in ipsilateral deactivation is associated with hand l… (Frontiers in human neuroscience, foundational, 40×)",
+      "doi": "10.3389/fnhum.2015.00005",
+      "pub_id": "pub_71162e27",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5337516844254298,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Frontiers in human neuroscience",
+      "citation_count": 40,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Wilson 2014 — Circadian modulation of motor-related beta oscillatory responses. (NeuroImage, foundational, 87×)",
+      "doi": "10.1016/j.neuroimage.2014.08.013",
+      "pub_id": "pub_0e364b2c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5281400453602725,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25922684810775637,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06480671202693909,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "NeuroImage",
+      "citation_count": 87,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Körmendi 2021 — Topography of Movement-Related Delta and Theta Brain Oscillations. (Brain topography, recent_primary, 17×)",
+      "doi": "10.1007/s10548-021-00854-0",
+      "pub_id": "pub_02aea071",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5185030300957165,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Brain topography",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Merchant 2020 — The role of the inferior parietal lobule in writer's cramp. (Brain : a journal of neurology, recent_primary, 30×)",
+      "doi": "10.1093/brain/awaa138",
+      "pub_id": "pub_03c7574a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5163715312070393,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Brain : a journal of neurology",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Damme 2020 — Detecting motor slowing in clinical high risk for psychosis in a computerized… (European archives of psychiatry …, recent_primary, 22×)",
+      "doi": "10.1007/s00406-019-01059-0",
+      "pub_id": "pub_cb58a070",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5120510277575655,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "European archives of psychiatry and clinical neuroscience",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Macuga 2012 — Neural representations involved in observed, imagined, and imitated actions a… (NeuroImage, foundational, 113×)",
+      "doi": "10.1016/j.neuroimage.2011.09.083",
+      "pub_id": "pub_f05a5e4e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5118869091900804,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2742143034269881,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06855357585674703,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "NeuroImage",
+      "citation_count": 113,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Rosjat 2021 — Stimulus transformation into motor action: Dynamic graph analysis reveals a p… (Human brain mapping, recent_primary, 13×)",
+      "doi": "10.1002/hbm.25313",
+      "pub_id": "pub_37028ed4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5115320741182369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Human brain mapping",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Trager 2020 — A validated measure of rigidity in Parkinson's disease using alternating fing… (Parkinsonism & related disorders, recent_primary, 21×)",
+      "doi": "10.1016/j.parkreldis.2020.10.047",
+      "pub_id": "pub_d212c2c2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5114076156812833,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Parkinsonism & related disorders",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Cochen De Cock 2020 — Rhythm disturbances as a potential early marker of Parkinson's disease in idi… (Annals of clinical and translati…, recent_primary, 19×)",
+      "doi": "10.1002/acn3.50982",
+      "pub_id": "pub_89cb07e3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5100280591208206,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Annals of clinical and translational neurology",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Wang 2020 — Finger Tapping Task Activation vs. TMS Hotspot: Different Locations and Netwo… (Brain topography, recent_primary, 18×)",
+      "doi": "10.1007/s10548-019-00741-9",
+      "pub_id": "pub_65a56533",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5092856200558081,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Brain topography",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Berman 2012 — Self-modulation of primary motor cortex activity with motor and motor imagery… (NeuroImage, foundational, 76×)",
+      "doi": "10.1016/j.neuroimage.2011.07.035",
+      "pub_id": "pub_d9d9919e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5062072601205312,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25149570714879144,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06287392678719786,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "NeuroImage",
+      "citation_count": 76,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Killory 2011 — Impaired attention and network connectivity in childhood absence epilepsy. (NeuroImage, foundational, 123×)",
+      "doi": "10.1016/j.neuroimage.2011.03.036",
+      "pub_id": "pub_aa0ee93e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5031039608860284,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27908251021077995,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06977062755269499,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "NeuroImage",
+      "citation_count": 123,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Albouy 2013 — Interaction between hippocampal and striatal systems predicts subsequent cons… (PloS one, foundational, 93×)",
+      "doi": "10.1371/journal.pone.0059490",
+      "pub_id": "pub_af0f3731",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5024280799371537,
+        "breakdown": {
+          "raw": {
+            "citations": 0.263045653081948,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.065761413270487,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "PloS one",
+      "citation_count": 93,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Muthuraman 2014 — Beamformer source analysis and connectivity on concurrent EEG and MEG data du… (PloS one, foundational, 38×)",
+      "doi": "10.1371/journal.pone.0091441",
+      "pub_id": "pub_5ba8aff1",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4996944808409131,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "PloS one",
+      "citation_count": 38,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Novembre 2017 — Interpersonal synchrony enhanced through 20 Hz phase-coupled dual brain stimu… (Social cognitive and affective n…, foundational, 95×)",
+      "doi": "10.1093/scan/nsw172",
+      "pub_id": "pub_879e7e69",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.49939948182558364,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26426459396900137,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06606614849225034,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 95,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Zhang 2012 — Selection and inhibition mechanisms for human voluntary action decisions. (NeuroImage, foundational, 45×)",
+      "doi": "10.1016/j.neuroimage.2012.06.058",
+      "pub_id": "pub_29185a9c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4987505759303934,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22166897038824016,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05541724259706004,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "NeuroImage",
+      "citation_count": 45,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

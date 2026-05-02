@@ -243,8 +243,26 @@ Current keys in use:
   semanticscholar.py` enforces the 1 rps limit unconditionally.
 - `NCBI_API_KEY` — NCBI E-utilities (Phase 3 uses Europe PMC instead, so
   this is not currently used by Phase 3 scripts)
+- `OPENALEX_MAILTO` — polite-pool email for both Crossref and OpenAlex.
+  Default `hedannotation@gmail.com`. Same value used across all HED
+  metadata repos. Sent as `mailto=` URL parameter on every Crossref /
+  OpenAlex call to opt into the polite pool (faster, more reliable
+  rate limits; free, no signup beyond providing the address).
 
 Never log or print key values. Never hardcode them in source files.
+
+---
+
+## Cache convention (cross-repo)
+
+`.status/cache_convention.md` defines the on-disk cache layout shared
+across all HED metadata repositories (this repo, `openneuro-metadata`,
+and any future ones). When writing a new client module or script that
+hits Crossref / OpenAlex / Europe PMC / Semantic Scholar / Unpaywall,
+read that file before deciding where cache files go. In one line: the
+cache root is resolved as `--cache-dir` arg → `$HED_CACHE_DIR` env var
+→ `outputs/cache/`. Hard-coded cache paths in committed code are
+forbidden.
 
 ---
 

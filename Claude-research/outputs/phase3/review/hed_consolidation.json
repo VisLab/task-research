@@ -1,0 +1,1133 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "process",
+    "id": "hed_consolidation",
+    "name": "Consolidation",
+    "aliases": [
+      {
+        "name": "memory consolidation"
+      }
+    ],
+    "category_id": "long_term_memory",
+    "definition": "Post-encoding stabilization of memory traces, dependent on time and often on sleep; includes synaptic and systems consolidation."
+  },
+  "candidates_run_date": "2026-04-29T16:43:37",
+  "extracted_on": "2026-04-30T11:14:34",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "McGaugh 2000 — Memory--a century of consolidation. (Science, historical, 4k×)",
+      "doi": "10.1126/science.287.5451.248",
+      "pub_id": "pub_dab5ab4f",
+      "auto_role": "historical",
+      "score": {
+        "composite": 1.0132356621769583,
+        "breakdown": {
+          "raw": {
+            "citations": 0.952942648707833,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.23823566217695824,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": null,
+      "year": 2000,
+      "venue": "Science",
+      "citation_count": 4194,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Tononi 2014 — Sleep and the price of plasticity: from synaptic and cellular homeostasis to … (Neuron, key_review, 1k×)",
+      "doi": "10.1016/j.neuron.2013.12.025",
+      "pub_id": "pub_dfc6bdaa",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.9371473928371248,
+        "breakdown": {
+          "raw": {
+            "citations": 0.828589571348499,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.20714739283712474,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Neuron",
+      "citation_count": 1547,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Sara 2017 — Sleep to Remember (Journal of Neuroscience, key_review, 63×)",
+      "doi": "10.1523/jneurosci.0297-16.2017",
+      "pub_id": "pub_e64400c5",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.9352466112962091,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3009864451848362,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07524661129620905,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2017,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 63,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Cowan 2020 — Sleep Spindles Promote the Restructuring of Memory Representations in Ventrom… (Journal of Neuroscience, recent_primary, 78×)",
+      "doi": "10.1523/jneurosci.1946-19.2020",
+      "pub_id": "pub_716319e6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.9270976967294476,
+        "breakdown": {
+          "raw": {
+            "citations": 0.34839078691779035,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08709769672944759,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 78,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Hahn 2020 — Slow oscillation-spindle coupling predicts enhanced memory formation from chi… (eLife, recent_primary, 117×)",
+      "doi": "10.7554/elife.53730",
+      "pub_id": "pub_d105ea68",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.9230039981241015,
+        "breakdown": {
+          "raw": {
+            "citations": 0.49201599249640593,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12300399812410148,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "eLife",
+      "citation_count": 117,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Klinzing 2019 — Mechanisms of systems memory consolidation during sleep (Nature Neuroscience, key_review, 882×)",
+      "doi": "10.1038/s41593-019-0467-3",
+      "pub_id": "pub_0e5b654f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.9113103474571315,
+        "breakdown": {
+          "raw": {
+            "citations": 0.7252413898285259,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.18131034745713148,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Nature Neuroscience",
+      "citation_count": 882,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Tambini 2019 — Awake Reactivation of Prior Experiences Consolidates Memories and Biases Cogn… (Trends in Cognitive Sciences, key_review, 156×)",
+      "doi": "10.1016/j.tics.2019.07.008",
+      "pub_id": "pub_169f0f8f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8869821212109285,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5279284848437136,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.1319821212109284,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Trends in Cognitive Sciences",
+      "citation_count": 156,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Chen 2017 — Deciphering Neural Codes of Memory during Sleep. (Trends in Neurosciences, key_review, 64×)",
+      "doi": "10.1016/j.tins.2017.03.005",
+      "pub_id": "pub_7e28e42b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8854710249138755,
+        "breakdown": {
+          "raw": {
+            "citations": 0.301884099655502,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0754710249138755,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2017,
+      "venue": "Trends in Neurosciences",
+      "citation_count": 64,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Schmid 2020 — Sleep-dependent motor memory consolidation in healthy adults: A meta-analysis. (Neuroscience and Biobehavioral R…, key_review, 47×)",
+      "doi": "10.1016/j.neubiorev.2020.07.028",
+      "pub_id": "pub_76699e5b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8749352006874974,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37974080274998967,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09493520068749742,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Neuroscience and Biobehavioral Reviews",
+      "citation_count": 47,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Norman 2019 — Hippocampal sharp-wave ripples linked to visual episodic recollection in humans (Science, recent_primary, 215×)",
+      "doi": "10.1126/science.aax1030",
+      "pub_id": "pub_7a33c83a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8749152909247416,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5796611636989664,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1449152909247416,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Science",
+      "citation_count": 215,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Carr 2011 — Hippocampal replay in the awake state: a potential substrate for memory conso… (Nature neuroscience, key_review, 675×)",
+      "doi": "10.1038/nn.2732",
+      "pub_id": "pub_e1dd5e7f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8721217768407433,
+        "breakdown": {
+          "raw": {
+            "citations": 0.688487107362973,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.17212177684074326,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Nature neuroscience",
+      "citation_count": 675,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Hu 2020 — Promoting memory consolidation during sleep: A meta-analysis of targeted memo… (Psychological bulletin, key_review, 169×)",
+      "doi": "10.1037/bul0000223",
+      "pub_id": "pub_c69f3293",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8700266511142977,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5201066044571907,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.13002665111429768,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychological bulletin",
+      "citation_count": 169,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Deuker 2013 — Memory Consolidation by Replay of Stimulus-Specific Neural Activity (Journal of Neuroscience, foundational, 251×)",
+      "doi": "10.1523/jneurosci.0414-13.2013",
+      "pub_id": "pub_db997b68",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8639635342976657,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5758541371906627,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.14396353429766567,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 251,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Ladenbauer 2016 — Brain stimulation during an afternoon nap boosts slow oscillatory activity an… (NeuroImage, foundational, 91×)",
+      "doi": "10.1016/j.neuroimage.2016.06.057",
+      "pub_id": "pub_49427bcb",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8605980908809466,
+        "breakdown": {
+          "raw": {
+            "citations": 0.44239236352378675,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11059809088094669,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2016,
+      "venue": "NeuroImage",
+      "citation_count": 91,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Oudiette 2013 — The Role of Memory Reactivation during Wakefulness and Sleep in Determining W… (Journal of Neuroscience, foundational, 193×)",
+      "doi": "10.1523/jneurosci.5497-12.2013",
+      "pub_id": "pub_07d881c8",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8601774550865285,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5607098203461143,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.14017745508652857,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 193,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Wilhelm 2011 — Sleep Selectively Enhances Memory Expected to Be of Future Relevance (Journal of Neuroscience, foundational, 402×)",
+      "doi": "10.1523/jneurosci.3575-10.2011",
+      "pub_id": "pub_256c09a2",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8591783711897719,
+        "breakdown": {
+          "raw": {
+            "citations": 0.6367134847590876,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1591783711897719,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 402,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Paller 2020 — Memory and Sleep: How Sleep Cognition Can Change the Waking Mind for the Better. (Annual Review of Psychology, key_review, 121×)",
+      "doi": "10.1146/annurev-psych-010419-050815",
+      "pub_id": "pub_f34f822f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8583878779002622,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3735515116010485,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09338787790026212,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Annual Review of Psychology",
+      "citation_count": 121,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Vahdat 2017 — Network-wide reorganization of procedural memory during NREM sleep revealed b… (eLife, foundational, 74×)",
+      "doi": "10.7554/elife.24987",
+      "pub_id": "pub_9d34c7e6",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8563456112872739,
+        "breakdown": {
+          "raw": {
+            "citations": 0.34538244514909544,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08634561128727386,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "eLife",
+      "citation_count": 74,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Muehlroth 2018 — Precise Slow Oscillation–Spindle Coupling Promotes Memory Consolidation in Yo… (Scientific Reports, recent_primary, 195×)",
+      "doi": "10.1038/s41598-018-36557-z",
+      "pub_id": "pub_eef4e40d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.855193537174721,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5407741486988837,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.13519353717472093,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific Reports",
+      "citation_count": 195,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Stickgold 2005 — Sleep-dependent memory consolidation (Nature, key_review, 1k×)",
+      "doi": "10.1038/nature04286",
+      "pub_id": "pub_9f78b2a1",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8521013896987822,
+        "breakdown": {
+          "raw": {
+            "citations": 0.8084055587951289,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.20210138969878222,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2005,
+      "venue": "Nature",
+      "citation_count": 1819,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Ladenbauer 2017 — Promoting Sleep Oscillations and Their Functional Coupling by Transcranial St… (Journal of Neuroscience, key_review, 201×)",
+      "doi": "10.1523/jneurosci.0260-17.2017",
+      "pub_id": "pub_ae075f3a",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8483474738762244,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5533898955048977,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.13834747387622442,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 201,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Wamsley 2019 — Memory Consolidation during Waking Rest. (Trends in Cognitive Sciences, recent_primary, 98×)",
+      "doi": "10.1016/j.tics.2018.12.007",
+      "pub_id": "pub_2eef7bea",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8465043158533333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4660172634133329,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11650431585333322,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Trends in Cognitive Sciences",
+      "citation_count": 98,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Lutz 2018 — Sleep Strengthens Predictive Sequence Coding (Journal of Neuroscience, recent_primary, 22×)",
+      "doi": "10.1523/jneurosci.1352-18.2018",
+      "pub_id": "pub_016583d6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8454830056093824,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3019320224375298,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07548300560938245,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Albouy 2013 — Hippocampus and striatum: Dynamics and interaction during acquisition and sle… (Hippocampus, key_review, 256×)",
+      "doi": "10.1002/hipo.22183",
+      "pub_id": "pub_a119920d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8376175936622329,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5504703746489312,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.1376175936622328,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2013,
+      "venue": "Hippocampus",
+      "citation_count": 256,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Batterink 2016 — Phase of Spontaneous Slow Oscillations during Sleep Influences Memory-Related… (Journal of Neuroscience, foundational, 75×)",
+      "doi": "10.1523/jneurosci.3175-15.2016",
+      "pub_id": "pub_b4230eda",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8365373278436304,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3461493113745216,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0865373278436304,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 75,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "King 2017 — Sleeping on the motor engram: The multifaceted nature of sleep‐related motor … (Neuroscience and Biobehavioral R…, key_review, 180×)",
+      "doi": "10.1016/j.neubiorev.2017.04.026",
+      "pub_id": "pub_db638e24",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8309341749187795,
+        "breakdown": {
+          "raw": {
+            "citations": 0.523736699675118,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.1309341749187795,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2017,
+      "venue": "Neuroscience and Biobehavioral Reviews",
+      "citation_count": 180,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Helfrich 2021 — Aperiodic sleep networks promote memory consolidation. (Trends in Cognitive Sciences, key_review, 48×)",
+      "doi": "10.1016/j.tics.2021.04.009",
+      "pub_id": "pub_6e8d707c",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8301843299996512,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32073731999860483,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08018432999965121,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Trends in Cognitive Sciences",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Groch 2017 — Targeted Reactivation during Sleep Differentially Affects Negative Memories i… (Journal of Neuroscience, foundational, 39×)",
+      "doi": "10.1523/jneurosci.1912-16.2017",
+      "pub_id": "pub_a589d063",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.828443596219557,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2737743848782279,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06844359621955698,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 39,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Seehagen 2015 — Timely sleep facilitates declarative memory consolidation in infants (Proceedings of the National Acad…, foundational, 151×)",
+      "doi": "10.1073/pnas.1414000112",
+      "pub_id": "pub_227479bc",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8277669201668669,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35106768066746785,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08776692016686696,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2015,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 151,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Murty 2017 — Selectivity in Postencoding Connectivity with High-Level Visual Cortex Is Ass… (Journal of Neuroscience, foundational, 123×)",
+      "doi": "10.1523/jneurosci.4032-15.2016",
+      "pub_id": "pub_173395c2",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.827475850437028,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4699034017481116,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1174758504370279,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 123,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

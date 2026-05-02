@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_psychological_refractory_period",
+    "name": "Psychological Refractory Period Task",
+    "aliases": [
+      "PRP",
+      "Psychological Refractory Period"
+    ],
+    "category_id": "selective_and_sustained_attention",
+    "short_definition": "Two tasks presented with a short SOA; RT for the second task lengthens as SOA shortens, indexing a central response-selection bottleneck.",
+    "description": "Two stimuli are presented in rapid succession (S1 then S2, separated by a variable stimulus onset asynchrony or SOA), each requiring its own speeded response (R1 and R2). The robust finding is that R2 is slowed as the SOA decreases — the psychological refractory period effect — because central response-selection processes for S2 must wait until response selection for S1 is complete. Pashler (1994) provided the definitive review establishing the central bottleneck model: perceptual processing and motor execution can overlap between tasks, but response selection (choosing which response to make) represents a serial bottleneck. The PRP paradigm remains the primary tool for mapping the architecture of cognitive processing stages and understanding the limits of multitasking.",
+    "inclusion_test": {
+      "procedure": "Two stimuli requiring separate speeded responses are presented in rapid succession with a variable stimulus-onset asynchrony (SOA). Both responses are required.",
+      "manipulation": "SOA between S1 and S2 (50–1000 ms); task difficulty of each task; response modality overlap.",
+      "measurement": "RT2 as a function of SOA (PRP effect: RT2 slowing at short SOAs); RT1 (usually unaffected); locus of interference per bottleneck models."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:49:26",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Pashler 1994 — Dual-task interference in simple tasks: Data and theory. (Psychological Bulletin, historical, 3k×)",
+      "doi": "10.1037/0033-2909.116.2.220",
+      "pub_id": "pub_c4bac4de",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.849426600587667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.46437306901733477,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.11609326725433369,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1994,
+      "venue": "Psychological Bulletin",
+      "citation_count": 3042,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Busnelli 2021 — Efficacy of therapies and interventions for repeated embryo implantation fail… (Scientific reports, key_review, 68×)",
+      "doi": "10.1038/s41598-021-81439-6",
+      "pub_id": "pub_e61bd984",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6446194353856765,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24514440820937256,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06128610205234314,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 68,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Bansal 2021 — Platelet-rich plasma (PRP) in osteoarthritis (OA) knee: Correct dose critical… (Scientific reports, recent_primary, 118×)",
+      "doi": "10.1038/s41598-021-83025-2",
+      "pub_id": "pub_3a0b7507",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6025082229591774,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2766995585033762,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06917488962584405,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 118,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Agarwal 2021 — An intrinsically disordered pathological prion variant Y145Stop converts into… (Proceedings of the National Acad…, recent_primary, 57×)",
+      "doi": "10.1073/pnas.2100968118",
+      "pub_id": "pub_1efb3399",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5921057625227926,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23508971675783696,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05877242918945924,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 57,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Botelho 2020 — The 2018 periodontitis case definition improves accuracy performance of full-… (Scientific reports, recent_primary, 56×)",
+      "doi": "10.1038/s41598-020-63700-6",
+      "pub_id": "pub_5ae3c427",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5818540276839191,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Metrick 2019 — Million-fold sensitivity enhancement in proteopathic seed amplification assay… (Proceedings of the National Acad…, recent_primary, 74×)",
+      "doi": "10.1073/pnas.1909322116",
+      "pub_id": "pub_f17fa31f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5758263331784408,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24997199938042958,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.062492999845107394,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 74,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Etulain 2018 — An optimised protocol for platelet-rich plasma preparation to improve its ang… (Scientific reports, recent_primary, 81×)",
+      "doi": "10.1038/s41598-018-19419-6",
+      "pub_id": "pub_70e60e41",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5671178992649242,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25513826372636356,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06378456593159089,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 81,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Prusiner 2015 — Evidence for α-synuclein prions causing multiple system atrophy in humans wit… (Proceedings of the National Acad…, foundational, 586×)",
+      "doi": "10.1073/pnas.1514475112",
+      "pub_id": "pub_5f75bf57",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5656079186017944,
+        "breakdown": {
+          "raw": {
+            "citations": 0.369098341073844,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.092274585268461,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 586,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Prusiner 1998 — Prions. (Proceedings of the National Acad…, key_review, 4k×)",
+      "doi": "10.1073/pnas.95.23.13363",
+      "pub_id": "pub_075508cc",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5541355694608435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4832089445100407,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.12080223612751018,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 1998,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 4212,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Um 2013 — Metabotropic glutamate receptor 5 is a coreceptor for Alzheimer aβ oligomer b… (Neuron, foundational, 467×)",
+      "doi": "10.1016/j.neuron.2013.06.036",
+      "pub_id": "pub_23262c77",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5423286514813466,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3559812725920528,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0889953181480132,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Neuron",
+      "citation_count": 467,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Um 2012 — Alzheimer amyloid-β oligomer bound to postsynaptic prion protein activates Fy… (Nature neuroscience, foundational, 514×)",
+      "doi": "10.1038/nn.3178",
+      "pub_id": "pub_e748a589",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5337138302552785,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3615219876877809,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09038049692194522,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Nature neuroscience",
+      "citation_count": 514,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Hermann 2021 — Biomarkers and diagnostic guidelines for sporadic Creutzfeldt-Jakob disease. (The Lancet. Neurology, key_review, 224×)",
+      "doi": "10.1016/s1474-4422(20)30477-4",
+      "pub_id": "pub_2a187660",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5217280741398851,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3135789632262068,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0783947408065517,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "The Lancet. Neurology",
+      "citation_count": 224,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Wyart 2012 — Rhythmic fluctuations in evidence accumulation during decision making in the … (Neuron, foundational, 213×)",
+      "doi": "10.1016/j.neuron.2012.09.015",
+      "pub_id": "pub_84e7cad4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5210025542917549,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3106768838336864,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0776692209584216,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Neuron",
+      "citation_count": 213,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Laurén 2009 — Cellular prion protein mediates impairment of synaptic plasticity by amyloid-… (Nature, foundational, 1k×)",
+      "doi": "10.1038/nature07761",
+      "pub_id": "pub_f099c96f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5161614741476129,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4113125632571184,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1028281408142796,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Nature",
+      "citation_count": 1216,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Freir 2011 — Interaction between prion protein and toxic amyloid β assemblies can be thera… (Nature communications, foundational, 231×)",
+      "doi": "10.1038/ncomms1341",
+      "pub_id": "pub_953ec579",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.512171525535115,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3153527688071267,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07883819220178168,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Nature communications",
+      "citation_count": 231,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Miron 2021 — Use of platelet-rich fibrin for the treatment of periodontal intrabony defect… (Clinical oral investigations, key_review, 109×)",
+      "doi": "10.1007/s00784-021-03825-8",
+      "pub_id": "pub_a23b29a9",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5113699117897815,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2721463138257929,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06803657845644823,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Clinical oral investigations",
+      "citation_count": 109,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Balducci 2010 — Synthetic amyloid-beta oligomers impair long-term memory independently of cel… (Proceedings of the National Acad…, foundational, 364×)",
+      "doi": "10.1073/pnas.0911829107",
+      "pub_id": "pub_39400198",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5087307391183347,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3415896231400053,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08539740578500132,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 364,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Sharara 2021 — A narrative review of platelet-rich plasma (PRP) in reproductive medicine. (Journal of assisted reproduction…, key_review, 75×)",
+      "doi": "10.1007/s10815-021-02146-9",
+      "pub_id": "pub_0efe4295",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5060180497347972,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25073886560585573,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06268471640146393,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of assisted reproduction and genetics",
+      "citation_count": 75,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Wang 2017 — Bone grafts and biomaterials substitutes for bone defect repair: A review. (Bioactive materials, key_review, 1k×)",
+      "doi": "10.1016/j.bioactmat.2017.05.007",
+      "pub_id": "pub_1e2ba7e2",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5039559836727618,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4024906013577141,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.10062265033942852,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2017,
+      "venue": "Bioactive materials",
+      "citation_count": 1044,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Fuggle 2020 — Alternative and complementary therapies in osteoarthritis and cartilage repair. (Aging clinical and experimental …, key_review, 85×)",
+      "doi": "10.1007/s40520-020-01515-1",
+      "pub_id": "pub_b9d46db7",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.49780728614447955,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25789581124458505,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06447395281114626,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Aging clinical and experimental research",
+      "citation_count": 85,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Di Nicola 2020 — Degenerative osteoarthritis a reversible chronic disease. (Regenerative therapy, key_review, 74×)",
+      "doi": "10.1016/j.reth.2020.07.007",
+      "pub_id": "pub_916f9fa6",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4958263331784407,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24997199938042958,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.062492999845107394,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Regenerative therapy",
+      "citation_count": 74,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Le 2018 — Current Clinical Recommendations for Use of Platelet-Rich Plasma. (Current reviews in musculoskelet…, key_review, 222×)",
+      "doi": "10.1007/s12178-018-9527-7",
+      "pub_id": "pub_31ffe47e",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4915988376706586,
+        "breakdown": {
+          "raw": {
+            "citations": 0.313062017349301,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07826550433732525,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Current reviews in musculoskeletal medicine",
+      "citation_count": 222,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Han 2019 — Meta-analysis Comparing Platelet-Rich Plasma vs Hyaluronic Acid Injection in … (Pain medicine (Malden, Mass.), key_review, 76×)",
+      "doi": "10.1093/pm/pnz011",
+      "pub_id": "pub_20c7a528",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.48620726012053117,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25149570714879144,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06287392678719786,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Pain medicine (Malden, Mass.)",
+      "citation_count": 76,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Lana 2019 — Leukocyte-rich PRP versus leukocyte-poor PRP <i>-</i> The role of monocyte/ma… (Journal of clinical orthopaedics…, key_review, 76×)",
+      "doi": "10.1016/j.jcot.2019.05.008",
+      "pub_id": "pub_f3feaf1b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.48620726012053117,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25149570714879144,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06287392678719786,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Journal of clinical orthopaedics and trauma",
+      "citation_count": 76,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Stevens 2019 — Platelet-rich plasma for androgenetic alopecia: A review of the literature an… (International journal of women's…, key_review, 66×)",
+      "doi": "10.1016/j.ijwd.2018.08.004",
+      "pub_id": "pub_0fc264ff",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4841936873870015,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2434414162146728,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0608603540536682,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "International journal of women's dermatology",
+      "citation_count": 66,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Nestor 2021 — Treatment options for androgenetic alopecia: Efficacy, side effects, complian… (Journal of cosmetic dermatology, key_review, 196×)",
+      "doi": "10.1111/jocd.14537",
+      "pub_id": "pub_2f00c22a",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4798044760717596,
+        "breakdown": {
+          "raw": {
+            "citations": 0.305884570953705,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07647114273842626,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of cosmetic dermatology",
+      "citation_count": 196,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Zahn 2000 — NMR solution structure of the human prion protein. (Proceedings of the National Acad…, foundational, 781×)",
+      "doi": "10.1073/pnas.97.1.145",
+      "pub_id": "pub_e822eb17",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.47975960627749503,
+        "breakdown": {
+          "raw": {
+            "citations": 0.38570509177664686,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09642627294416171,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2000,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 781,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Filardo 2021 — PRP Injections for the Treatment of Knee Osteoarthritis: A Meta-Analysis of R… (Cartilage, key_review, 167×)",
+      "doi": "10.1177/1947603520931170",
+      "pub_id": "pub_a61879c6",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4774995780920036,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29666497903468125,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07416624475867031,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cartilage",
+      "citation_count": 167,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Cook 2018 — Clinical Update: Why PRP Should Be Your First Choice for Injection Therapy in… (Current reviews in musculoskelet…, key_review, 83×)",
+      "doi": "10.1007/s12178-018-9524-x",
+      "pub_id": "pub_e2ffc5ee",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4774666965858424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2565334530100364,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0641333632525091,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Current reviews in musculoskeletal medicine",
+      "citation_count": 83,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 36,
+      "label": "Kennedy 2018 — Platelet-Rich Plasma and Cartilage Repair. (Current reviews in musculoskelet…, key_review, 75×)",
+      "doi": "10.1007/s12178-018-9516-x",
+      "pub_id": "pub_3a7c0c20",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4760180497347973,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25073886560585573,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06268471640146393,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Current reviews in musculoskeletal medicine",
+      "citation_count": 75,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

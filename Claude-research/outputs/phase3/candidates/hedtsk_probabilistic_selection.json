@@ -1,0 +1,249 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:31:59",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_probabilistic_selection",
+    "name": "Probabilistic Selection Task",
+    "aliases": [
+      "PST",
+      "Probabilistic Stimulus Selection Task",
+      "PSS",
+      "Frank Task",
+      "Probabilistic Selection"
+    ],
+    "category_id": "associative_learning_and_reinforcement",
+    "short_definition": "Learn to choose between stimulus pairs through probabilistic feedback, then select among novel recombinations; choose-A vs. avoid-B accuracy dissociates positive and negative reinforcement learning.",
+    "description": "The Probabilistic Selection Task, developed by Frank and colleagues, assesses the separable contributions of positive and negative reinforcement learning, linked to striatal Go and NoGo pathway function respectively. During training, participants learn to choose between pairs of stimuli (AB, CD, EF) where each stimulus has a fixed probability of reward (e.g., A=80%, B=20%). At test, stimuli are recombined into novel pairs (e.g., A vs. C, B vs. D). Choosing A in novel contexts indexes Go learning (approach from positive feedback), while avoiding B indexes NoGo learning (avoidance from negative feedback). The task was specifically designed to probe basal ganglia dopaminergic mechanisms and is sensitive to dopaminergic medication effects in Parkinson's disease.",
+    "inclusion_test": {
+      "procedure": "Participants learn to choose between stimulus pairs through probabilistic feedback (80/20 or 70/30 contingencies), then are tested on novel recombinations without feedback to dissociate Go learning (choose A) from NoGo learning (avoid B).",
+      "manipulation": "Feedback probability; number of training pairs; transfer test composition; dopaminergic manipulation (medication status in Parkinson's).",
+      "measurement": "Training accuracy; transfer test accuracy (choose-A vs. avoid-B dissociation); fit to actor-critic or opponent-actor learning models."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 2,
+      "picked": 2,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_60b23cf1",
+      "doi": "10.1126/science.1102941",
+      "url": "https://doi.org/10.1126/science.1102941",
+      "openalex_id": "https://openalex.org/W2163647009",
+      "pmid": "15528409",
+      "first_author": "Frank",
+      "authors_display": "Michael J. Frank et al.",
+      "year": 2004,
+      "title": "By Carrot or by Stick: Cognitive Reinforcement Learning in Parkinsonism",
+      "venue": "Science",
+      "venue_tier": "flagship",
+      "publisher": "American Association for the Advancement of Science",
+      "publication_types": [
+        "article",
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Research Support, Non-U.S. Gov't",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2019,
+      "influential_citation_count": null,
+      "fwci": 14.563,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "To what extent do we learn from the positive versus negative outcomes of our decisions? The neuromodulator dopamine plays a key role in these reinforcement learning processes. Patients with Parkinson's disease, who have depleted dopamine in the basal ganglia, are impaired in tasks that require learning from trial and error. Here, we show, using two cognitive procedural learning tasks, that Parkinson's patients off medication are better at learning to avoid choices that lead to negative outcomes than they are at learning from positive outcomes. Dopamine medication reverses this bias, making patients more sensitive to positive than negative outcomes. This pattern was predicted by our biologically based computational model of basal ganglia-dopamine interactions in cognition, which has separate pathways for \"Go\" and \"NoGo\" responses that are differentially modulated by positive and negative reinforcement.",
+      "score": {
+        "composite": 0.7101624393035646,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4406497572142585,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11016243930356462,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Basal Ganglia",
+        "Frontal Lobe",
+        "Humans",
+        "Parkinson Disease",
+        "Dopamine",
+        "Antiparkinson Agents",
+        "Matched-Pair Analysis",
+        "Probability",
+        "Feedback, Psychological",
+        "Cognition",
+        "Learning",
+        "Models, Neurological",
+        "Computer Simulation",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Reinforcement, Psychology"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_d876ceef",
+      "doi": "10.1016/j.biopsych.2006.09.042",
+      "url": "https://doi.org/10.1016/j.biopsych.2006.09.042",
+      "openalex_id": null,
+      "pmid": "17300757",
+      "first_author": "Waltz",
+      "authors_display": "Waltz, J. et al.",
+      "year": 2007,
+      "title": "Selective reinforcement learning deficits in schizophrenia support predictions from computational models of striatal-cortical dysfunction.",
+      "venue": "Biological psychiatry",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Clinical Trial",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 259,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Rewards and punishments may make distinct contributions to learning via separate striatal-cortical pathways. We investigated whether fronto-striatal dysfunction in schizophrenia (SZ) is characterized by selective impairment in either reward- (Go) or punishment-driven (NoGo) learning.<h4>Methods</h4>We administered two versions of a probabilistic selection task to 40 schizophrenia patients and 31 control subjects, using difficult to verbalize stimuli (experiment 1) and nameable objects (experiment 2). In an acquisition phase, participants learned to choose between three different stimulus pairs (AB, CD, EF) presented in random order, based on probabilistic feedback (80%, 70%, 60%). We used analyses of variance (ANOVAs) to assess the effects of group and reinforcement probability on two measures of contingency learning. To characterize the preference of subjects for choosing the most rewarded stimulus and avoiding the most punished stimulus, we subsequently tested participants with novel pairs of stimuli involving either A or B, providing no feedback.<h4>Results</h4>Control subjects demonstrated superior performance during the first 40 acquisition trials in each of the 80% and 70% conditions versus the 60% condition; patients showed similarly impaired (<60%) performance in all three conditions. In novel test pairs, patients showed decreased preference for the most rewarded stimulus (A; t = 2.674; p = .01). Patients were unimpaired at avoiding the most negative stimulus (B; t = .737).<h4>Conclusions</h4>The results of these experiments provide additional evidence for the presence of deficits in reinforcement learning in SZ, suggesting that reward-driven learning may be more profoundly impaired than punishment-driven learning.",
+      "score": {
+        "composite": 0.45548746566695614,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3219498626678245,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08048746566695612,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Basal Ganglia",
+        "Humans",
+        "Receptors, Dopamine D2",
+        "Antipsychotic Agents",
+        "Data Interpretation, Statistical",
+        "Models, Statistical",
+        "Cognition",
+        "Reinforcement Schedule",
+        "Reward",
+        "Psychomotor Performance",
+        "Schizophrenia",
+        "Psychiatric Status Rating Scales",
+        "Schizophrenic Psychology",
+        "Feedback",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Learning Disabilities"
+      ]
+    }
+  ]
+}

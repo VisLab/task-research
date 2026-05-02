@@ -1,0 +1,1143 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_rapid_serial_visual_presentation",
+    "name": "Rapid Serial Visual Presentation Task",
+    "aliases": [
+      "RSVP Task",
+      "Attentional Blink Task",
+      "AB Task",
+      "RSVP Attentional Blink",
+      "RSVP Target Detection",
+      "RSVP Stream Task",
+      "Dual-Target RSVP"
+    ],
+    "category_id": "selective_and_sustained_attention",
+    "short_definition": "A rapid stream of visual items is presented at a single location (typically 6-20 items/second); participants detect one or more targets among distractors. Target detection accuracy, especially for a second target shortly after a first (attentional blink), indexes temporal attention allocation.",
+    "description": "Rapid Serial Visual Presentation (RSVP) is a paradigm for studying the temporal dynamics of visual attention. A stream of visual items (letters, digits, words, images, or complex scenes) is presented sequentially at a single spatial location at rates of 6-20 items per second. Participants must detect, identify, or categorize one or more targets embedded among distractors. The signature finding is the attentional blink (Raymond, Shapiro, & Arnell, 1992): when two targets appear in the stream, detection of the second target (T2) is severely impaired when it follows the first target (T1) by approximately 200-500 ms (lag 2-5), recovering at longer lags. Lag-1 sparing (intact T2 detection when T2 immediately follows T1) is a robust exception. The attentional blink reveals fundamental bottlenecks in temporal attention and has generated competing theoretical accounts: the two-stage model (Chun & Potter, 1995), the episodic simultaneous type/serial token model (Bowman & Wyble, 2007), and the boost-and-bounce model (Olivers & Meeter, 2008). Beyond the attentional blink, RSVP is used to study categorical perception (rapid scene gist extraction), emotion-attention interactions (emotion-induced blindness), and rapid image triage. Applications include brain-computer interfaces (RSVP-based P300 spellers and image triage systems, including satellite imagery analysis), clinical assessment of temporal attention in ADHD and dyslexia, and speed-reading technologies.",
+    "inclusion_test": {
+      "procedure": "A rapid serial stream of visual items is presented at a single location; participants detect, identify, or categorize one or more targets embedded among distractors. Presentation rate is typically 6-20 items per second.",
+      "manipulation": "Number of targets (single vs. dual); T1-T2 lag (temporal separation between targets); target-distractor similarity; stream rate (items per second); target category (letter among digits, face among objects, scene category); distractor set composition; emotional content of targets or distractors.",
+      "measurement": "Target detection accuracy (T1 and T2); attentional blink magnitude (T2 accuracy deficit at short lags, conditional on correct T1 detection); lag-1 sparing; T1-T2 intrusion errors (order reversals); P300 ERP amplitude for detected targets; d-prime for target discrimination."
+    }
+  },
+  "candidates_run_date": "2026-04-29T19:04:54",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Raymond 1992 — Temporary suppression of visual processing in an RSVP task: An attentional bl… (Journal of Experimental Psycholo…, historical, 1k×)",
+      "doi": "10.1037/0096-1523.18.3.849",
+      "pub_id": "pub_d2378d6f",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7343023714538803,
+        "breakdown": {
+          "raw": {
+            "citations": 0.41220948581552164,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10305237145388041,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": null,
+      "year": 1992,
+      "venue": "Journal of Experimental Psychology Human Perception & Performance",
+      "citation_count": 1235,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Ross 2020 — 40-Hz Binaural beats enhance training to mitigate the attentional blink. (Scientific reports, recent_primary, 23×)",
+      "doi": "10.1038/s41598-020-63980-y",
+      "pub_id": "pub_09506580",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.517250385479928,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Marti 2017 — Discrete and continuous mechanisms of temporal selection in rapid visual stre… (Nature communications, foundational, 76×)",
+      "doi": "10.1038/s41467-017-02079-x",
+      "pub_id": "pub_f2dc9410",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5041239267871979,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25149570714879144,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06287392678719786,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Nature communications",
+      "citation_count": 76,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Sdoia 2019 — Access to consciousness of briefly presented visual events is modulated by tr… (Scientific reports, recent_primary, 5×)",
+      "doi": "10.1038/s41598-019-47527-4",
+      "pub_id": "pub_dad86d3e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4871846224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "English 2019 — Autistic-traits, not anxiety, modulate implicit emotional guidance of attenti… (Scientific reports, recent_primary, 2×)",
+      "doi": "10.1038/s41598-019-54813-8",
+      "pub_id": "pub_8422c7ec",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4771517409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Sharma 2022 — Caffeine and attentional control: improved and impaired performance in health… (Psychopharmacology, recent_primary, 6×)",
+      "doi": "10.1007/s00213-021-06054-9",
+      "pub_id": "pub_7031f215",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.45066585927874236,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Psychopharmacology",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Xiong 2019 — Reading with letter transpositions in central and peripheral vision. (Journal of vision, recent_primary, 5×)",
+      "doi": "10.1167/19.3.17",
+      "pub_id": "pub_f870a024",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.44718462246760554,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Journal of vision",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Cutrone 2018 — On spatial attention and its field size on the repulsion effect. (Journal of vision, recent_primary, 10×)",
+      "doi": "10.1167/18.6.8",
+      "pub_id": "pub_269d73cc",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.44595806750845546,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Journal of vision",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Karabay 2018 — The acute effects of cocoa flavanols on temporal and spatial attention. (Psychopharmacology, recent_primary, 24×)",
+      "doi": "10.1007/s00213-018-4861-4",
+      "pub_id": "pub_d7cda286",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4378412588836631,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Psychopharmacology",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Brown 2016 — Effects of clonidine and scopolamine on multiple target detection in rapid se… (Psychopharmacology, foundational, 10×)",
+      "doi": "10.1007/s00213-015-4111-y",
+      "pub_id": "pub_5034313e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4372080675084555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Psychopharmacology",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Kranczioch 2017 — Individual differences in dual-target RSVP task performance relate to entrain… (PloS one, foundational, 6×)",
+      "doi": "10.1371/journal.pone.0178934",
+      "pub_id": "pub_8c4c6ecb",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4319158592787423,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.375,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.09375,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "PloS one",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Zhao 2022 — The interplay between audiovisual temporal synchrony and semantic congruency … (Human brain mapping, recent_primary, 14×)",
+      "doi": "10.1002/hbm.25797",
+      "pub_id": "pub_a3a1af24",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.43044737040327585,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Human brain mapping",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Willems 2016 — Time to see the bigger picture: Individual differences in the attentional blink. (Psychonomic bulletin & review, key_review, 26×)",
+      "doi": "10.3758/s13423-015-0977-2",
+      "pub_id": "pub_3da4820f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4289552228843329,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.125,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.03125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Psychonomic bulletin & review",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Boonstra 2020 — Conscious perception and the modulatory role of dopamine: no effect of the do… (Psychopharmacology, recent_primary, 2×)",
+      "doi": "10.1007/s00213-020-05579-9",
+      "pub_id": "pub_c7c67819",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.42715174096144426,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychopharmacology",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Wang 2022 — Social-specific impairment of negative emotion perception in alexithymia. (Social cognitive and affective n…, recent_primary, 8×)",
+      "doi": "10.1093/scan/nsab099",
+      "pub_id": "pub_ec251f78",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4230534819228886,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Kimata 2023 — The temporal cost of deploying attention limits accurate target identificatio… (Scientific reports, recent_primary, 0×)",
+      "doi": "10.1038/s41598-023-30748-z",
+      "pub_id": "pub_522caf29",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.42125,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific reports",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Wang 2022 — Perceptive and affective impairments in emotive eye-region processing in alex… (Social cognitive and affective n…, recent_primary, 4×)",
+      "doi": "10.1093/scan/nsac013",
+      "pub_id": "pub_ecdee92c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.41454562944183154,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Visser 2022 — No evidence for superior distractor filtering amongst individuals high in aut… (Attention, perception & psychoph…, recent_primary, 0×)",
+      "doi": "10.3758/s13414-022-02575-3",
+      "pub_id": "pub_1889ddd8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.41125,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Elton 2021 — Acute depletion of dopamine precursors in the human brain: effects on functio… (Neuropsychopharmacology : offici…, recent_primary, 12×)",
+      "doi": "10.1038/s41386-021-00993-9",
+      "pub_id": "pub_9a1c9dc1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.40962607321280214,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Willems 2016 — An Individual Differences Approach to Temporal Integration and Order Reversal… (PloS one, foundational, 9×)",
+      "doi": "10.1371/journal.pone.0156538",
+      "pub_id": "pub_2b4464b1",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.39582851094799276,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "PloS one",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Barbot 2018 — Attention enhances apparent perceptual organization. (Psychonomic bulletin & review, recent_primary, 14×)",
+      "doi": "10.3758/s13423-017-1365-x",
+      "pub_id": "pub_4cc1c411",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3904473704032758,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Psychonomic bulletin & review",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Abrams 2010 — Voluntary attention increases perceived spatial frequency. (Attention, perception & psychoph…, foundational, 47×)",
+      "doi": "10.3758/app.72.6.1510",
+      "pub_id": "pub_f74d0a15",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.38728326698608917,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22413306794435656,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.26666666666666666,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05603326698608914,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.04,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 47,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Barnhoorn 2015 — QRTEngine: An easy solution for running online reaction time experiments usin… (Behavior research methods, foundational, 68×)",
+      "doi": "10.3758/s13428-014-0530-7",
+      "pub_id": "pub_2500887e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3825361020523431,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24514440820937256,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06128610205234314,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Behavior research methods",
+      "citation_count": 68,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Creswell 2021 — The Influence of Smoking Motivation on the Associations Among Cigarette Cravi… (Nicotine & tobacco research : of…, recent_primary, 15×)",
+      "doi": "10.1093/ntr/ntab028",
+      "pub_id": "pub_3993483b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3813815260246448,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nicotine & tobacco research : official journal of the Society for Research on Nicotine and Tobacco",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Arkin 2020 — Deficits and compensation: Attentional control cortical networks in schizophr… (NeuroImage. Clinical, recent_primary, 25×)",
+      "doi": "10.1016/j.nicl.2020.102348",
+      "pub_id": "pub_db1c443b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.37840895471896335,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "NeuroImage. Clinical",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Oei 2013 — Enhancing cognition with video games: a multiple game training study. (PloS one, foundational, 149×)",
+      "doi": "10.1371/journal.pone.0058546",
+      "pub_id": "pub_2590dee9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3737758813512686,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2901035254050744,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0725258813512686,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "PloS one",
+      "citation_count": 149,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Smith 2021 — Functional connectivity associated with individual differences on the emotion… (Neuroimage. Reports, recent_primary, 0×)",
+      "doi": "10.1016/j.ynirp.2021.100065",
+      "pub_id": "pub_cd7c19fa",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3725,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Neuroimage. Reports",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Piech 2011 — Attentional capture by emotional stimuli is preserved in patients with amygda… (Neuropsychologia, foundational, 25×)",
+      "doi": "10.1016/j.neuropsychologia.2011.08.004",
+      "pub_id": "pub_8affe649",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.36840895471896334,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Neuropsychologia",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Jakubowska 2021 — The role of individual differences in attentional blink phenomenon and real-t… (Heliyon, recent_primary, 5×)",
+      "doi": "10.1016/j.heliyon.2021.e06724",
+      "pub_id": "pub_af96a9c3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3671846224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Heliyon",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Sinke 2015 — Phasic and tonic pain differentially impact the interruptive function of pain. (PloS one, foundational, 20×)",
+      "doi": "10.1371/journal.pone.0118363",
+      "pub_id": "pub_6a327fc6",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.36531760024018667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.03125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "PloS one",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

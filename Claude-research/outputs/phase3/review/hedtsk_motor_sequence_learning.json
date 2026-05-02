@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_motor_sequence_learning",
+    "name": "Motor Sequence Learning Task",
+    "aliases": [
+      "Sequence Learning",
+      "Finger Sequence Task"
+    ],
+    "category_id": "motor_preparation_timing_and_execution",
+    "short_definition": "Repeated execution of a fixed finger sequence; within- and across-session speed and accuracy changes index motor skill learning.",
+    "description": "Participants are trained to execute finger sequences (e.g., pressing buttons in a specific order: 4-1-3-2-4) either continuously or in discrete blocks. Learning is indexed by decreasing RT, reduced movement duration, and decreased errors. Neuroimaging shows early learning engages cerebellum and prefrontal cortex, while consolidated sequences show greater striatal and reduced cerebellar engagement, reflecting a shift from explicit, attention-demanding processes to implicit, automatic execution. Sleep promotes offline consolidation of motor sequences.",
+    "inclusion_test": {
+      "procedure": "Participants repeatedly perform a fixed sequence of finger movements (e.g., 4-1-3-2-4) in response to spatial cues. Over practice, performance speeds up and becomes more automatic.",
+      "manipulation": "Sequence length and complexity; explicit vs. implicit instruction; amount of practice; sleep consolidation intervals.",
+      "measurement": "Sequence execution time; error rate; offline gains (improvement after sleep); transfer to new sequences."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:44:34",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Santolin 2018 — Constraints on Statistical Learning Across Species. (Trends in cognitive sciences, key_review, 93×)",
+      "doi": "10.1016/j.tics.2017.10.003",
+      "pub_id": "pub_b82caecb",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6190947466038204,
+        "breakdown": {
+          "raw": {
+            "citations": 0.263045653081948,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.065761413270487,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Trends in cognitive sciences",
+      "citation_count": 93,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Davachi 2015 — How the hippocampus preserves order: the role of prediction and context. (Trends in cognitive sciences, key_review, 240×)",
+      "doi": "10.1016/j.tics.2014.12.004",
+      "pub_id": "pub_b195f361",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6027224144150951,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3175563243270473,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07938908108176182,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Trends in cognitive sciences",
+      "citation_count": 240,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Henin 2021 — Learning hierarchical sequence representations across human cortex and hippoc… (Science advances, recent_primary, 100×)",
+      "doi": "10.1126/sciadv.abc4530",
+      "pub_id": "pub_e54b8bcf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.600134380182744,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2672041873976427,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06680104684941067,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Science advances",
+      "citation_count": 100,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "King 2020 — Baseline sensorimotor GABA levels shape neuroplastic processes induced by mot… (Human brain mapping, recent_primary, 26×)",
+      "doi": "10.1002/hbm.25041",
+      "pub_id": "pub_67f5fd5b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5943718895509995,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Human brain mapping",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Hardwick 2013 — A quantitative meta-analysis and review of motor learning in the human brain. (NeuroImage, key_review, 483×)",
+      "doi": "10.1016/j.neuroimage.2012.11.020",
+      "pub_id": "pub_ff197294",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5928152313625668,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3579275921169335,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08948189802923337,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "NeuroImage",
+      "citation_count": 483,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Laventure 2016 — NREM2 and Sleep Spindles Are Instrumental to the Consolidation of Motor Seque… (PLoS biology, foundational, 91×)",
+      "doi": "10.1371/journal.pbio.1002429",
+      "pub_id": "pub_8f007273",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5921167907698879,
+        "breakdown": {
+          "raw": {
+            "citations": 0.261800496412885,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06545012410322125,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "PLoS biology",
+      "citation_count": 91,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Reddy 2021 — Theta-phase dependent neuronal coding during sequence learning in human singl… (Nature communications, recent_primary, 56×)",
+      "doi": "10.1038/s41467-021-25150-0",
+      "pub_id": "pub_9800485e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5918540276839191,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature communications",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Shinde 2021 — Effects of tDCS dose and electrode montage on regional cerebral blood flow an… (NeuroImage, recent_primary, 42×)",
+      "doi": "10.1016/j.neuroimage.2021.118144",
+      "pub_id": "pub_968a173c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5877744046383184,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "NeuroImage",
+      "citation_count": 42,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Jacobacci 2020 — Rapid hippocampal plasticity supports motor sequence learning. (Proceedings of the National Acad…, recent_primary, 75×)",
+      "doi": "10.1073/pnas.2009576117",
+      "pub_id": "pub_7ea405c4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5860180497347973,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25073886560585573,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06268471640146393,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 75,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Maruyama 2021 — Cognitive control affects motor learning through local variations in GABA wit… (Scientific reports, recent_primary, 30×)",
+      "doi": "10.1038/s41598-021-97974-1",
+      "pub_id": "pub_f8433ae0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5830381978737059,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Gann 2021 — Hippocampal and striatal responses during motor learning are modulated by pre… (NeuroImage, recent_primary, 22×)",
+      "doi": "10.1016/j.neuroimage.2021.118158",
+      "pub_id": "pub_c96fec23",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5787176944242322,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "NeuroImage",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Dahms 2020 — The importance of different learning stages for motor sequence learning after… (Human brain mapping, key_review, 58×)",
+      "doi": "10.1002/hbm.24793",
+      "pub_id": "pub_66da40b3",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5723531939906235,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23607944262916078,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.059019860657290195,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Human brain mapping",
+      "citation_count": 58,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Laventure 2018 — Beyond spindles: interactions between sleep spindles and boundary frequencies… (Sleep, recent_primary, 20×)",
+      "doi": "10.1093/sleep/zsy142",
+      "pub_id": "pub_567fd32e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5707342669068534,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Sleep",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Marin Bosch 2020 — Effect of acute physical exercise on motor sequence memory. (Scientific reports, recent_primary, 24×)",
+      "doi": "10.1038/s41598-020-72108-1",
+      "pub_id": "pub_5a829461",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5699245922169964,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Horváth 2020 — Divided attention does not affect the acquisition and consolidation of transi… (Scientific reports, recent_primary, 18×)",
+      "doi": "10.1038/s41598-020-79232-y",
+      "pub_id": "pub_848575cd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5659522867224749,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Wang 2019 — Representation of spatial sequences using nested rules in human prefrontal co… (NeuroImage, recent_primary, 32×)",
+      "doi": "10.1016/j.neuroimage.2018.10.061",
+      "pub_id": "pub_78474d4c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5639431418032331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "NeuroImage",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Mozaffar 2019 — Deep learning predicts path-dependent plasticity. (Proceedings of the National Acad…, recent_primary, 31×)",
+      "doi": "10.1073/pnas.1911815116",
+      "pub_id": "pub_dcf7e3dd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5634977408641394,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 31,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Ferrari 2018 — TMS Over the Cerebellum Interferes with Short-term Memory of Visual Sequences. (Scientific reports, recent_primary, 33×)",
+      "doi": "10.1038/s41598-018-25151-y",
+      "pub_id": "pub_c15f4b57",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5543752451865962,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 33,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Howard 2019 — A functional Magnetic Resonance Imaging study of patients with Polar Type II/… (Scientific reports, recent_primary, 15×)",
+      "doi": "10.1038/s41598-019-42754-1",
+      "pub_id": "pub_249d33ba",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5534648593579782,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Berlot 2020 — A critical re-evaluation of fMRI signatures of motor sequence learning. (eLife, recent_primary, 72×)",
+      "doi": "10.7554/elife.55241",
+      "pub_id": "pub_1f3fdd37",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5454351096765031,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24840710537267913,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06210177634316978,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "eLife",
+      "citation_count": 72,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Hardwicke 2016 — Postretrieval new learning does not reliably induce human memory updating via… (Proceedings of the National Acad…, foundational, 57×)",
+      "doi": "10.1073/pnas.1601440113",
+      "pub_id": "pub_a24279d1",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5421057625227925,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23508971675783696,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05877242918945924,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 57,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Reifenstein 2021 — Synaptic learning rules for sequence learning. (eLife, recent_primary, 28×)",
+      "doi": "10.7554/elife.67171",
+      "pub_id": "pub_5abe8cff",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5420728810166314,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "eLife",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Cone 2021 — Learning precise spatiotemporal sequences via biophysically realistic learnin… (eLife, recent_primary, 24×)",
+      "doi": "10.7554/elife.63751",
+      "pub_id": "pub_0b1f76b6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5399245922169964,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "eLife",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Maheu 2019 — Brain signatures of a multiscale process of sequence learning in humans. (eLife, recent_primary, 75×)",
+      "doi": "10.7554/elife.41541",
+      "pub_id": "pub_0975371c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5360180497347973,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25073886560585573,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06268471640146393,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "eLife",
+      "citation_count": 75,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Sporn 2020 — Alterations in the amplitude and burst rate of beta oscillations impair rewar… (eLife, recent_primary, 33×)",
+      "doi": "10.7554/elife.50654",
+      "pub_id": "pub_6a783cd5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5343752451865962,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "eLife",
+      "citation_count": 33,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Esser 2022 — What triggers explicit awareness in implicit sequence learning? Implications … (Psychological research, key_review, 12×)",
+      "doi": "10.1007/s00426-021-01594-3",
+      "pub_id": "pub_6403b24c",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5304594065461354,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Psychological research",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Debas 2014 — Off-line consolidation of motor sequence learning results in greater integrat… (NeuroImage, foundational, 70×)",
+      "doi": "10.1016/j.neuroimage.2014.05.022",
+      "pub_id": "pub_5d438fbf",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.52503301747618,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24679873657138676,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06169968414284669,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "NeuroImage",
+      "citation_count": 70,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Wander 2013 — Distributed cortical adaptation during learning of a brain-computer interface… (Proceedings of the National Acad…, foundational, 115×)",
+      "doi": "10.1073/pnas.1221127110",
+      "pub_id": "pub_7426cd1e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5221386440289538,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2752212427824818,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06880531069562044,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 115,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Tavor 2020 — Short-term plasticity following motor sequence learning revealed by diffusion… (Human brain mapping, recent_primary, 42×)",
+      "doi": "10.1002/hbm.24814",
+      "pub_id": "pub_f7204142",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5177744046383184,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Human brain mapping",
+      "citation_count": 42,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Vaillancourt 2013 — Dopamine overdose hypothesis: evidence and clinical implications. (Movement disorders : official jo…, key_review, 126×)",
+      "doi": "10.1002/mds.25687",
+      "pub_id": "pub_b4ce167d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5167833120129751,
+        "breakdown": {
+          "raw": {
+            "citations": 0.280466581385234,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0701166453463085,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Movement disorders : official journal of the Movement Disorder Society",
+      "citation_count": 126,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

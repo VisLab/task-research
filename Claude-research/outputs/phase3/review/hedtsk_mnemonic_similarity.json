@@ -1,0 +1,1139 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_mnemonic_similarity",
+    "name": "Mnemonic Similarity Task",
+    "aliases": [
+      "MST",
+      "Mnemonic Discrimination Task",
+      "Pattern Separation Task"
+    ],
+    "category_id": "long_term_memory",
+    "short_definition": "Incidental encoding of images followed by a test with old, new, and lure items; discrimination of lures from repetitions indexes pattern separation.",
+    "description": "The Mnemonic Similarity Task measures hippocampal pattern separation—the ability to distinguish similar but not identical memory representations. During encoding, participants view a series of everyday object images. At test, they classify each image as \"old\" (previously seen), \"similar\" (a different exemplar of a studied object with slight visual changes), or \"new\" (novel). The critical measure is the ability to correctly identify \"similar\" lures as similar rather than incorrectly endorsing them as old. This discrimination (lure discrimination index) is thought to rely on dentate gyrus/CA3 pattern separation processes and is impaired in early-stage Alzheimer's disease and normal aging.",
+    "inclusion_test": {
+      "procedure": "Participants study a set of images, then view old items, new items, and similar lures (items resembling studied items). They classify each as old, new, or similar.",
+      "manipulation": "Lure similarity (mnemonic similarity parameter); encoding depth; retention interval; number of items.",
+      "measurement": "Lure discrimination index (LDI: p('similar'|lure) − p('similar'|foil)); recognition d-prime; pattern separation score."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:44:01",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Stark 2019 — Mnemonic Similarity Task: A Tool for Assessing Hippocampal Integrity. (Trends in cognitive sciences, key_review, 235×)",
+      "doi": "10.1016/j.tics.2019.08.003",
+      "pub_id": "pub_7674e76e",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6840856236696127,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3163424946784505,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07908562366961262,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Trends in cognitive sciences",
+      "citation_count": 235,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Huang 2020 — Origins and Proliferative States of Human Oligodendrocyte Precursor Cells. (Cell, recent_primary, 182×)",
+      "doi": "10.1016/j.cell.2020.06.027",
+      "pub_id": "pub_1d61ca55",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5779041259133788,
+        "breakdown": {
+          "raw": {
+            "citations": 0.301616503653515,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07540412591337875,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Cell",
+      "citation_count": 182,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Xiang 2021 — Quantitatively analyzing the failure processes of rechargeable Li metal batte… (Science advances, recent_primary, 52×)",
+      "doi": "10.1126/sciadv.abj3423",
+      "pub_id": "pub_3a736eeb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5699675471973497,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2298701887893985,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057467547197349624,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Science advances",
+      "citation_count": 52,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Niebling 2021 — FoldAffinity: binding affinities from nDSF experiments. (Scientific reports, recent_primary, 50×)",
+      "doi": "10.1038/s41598-021-88985-z",
+      "pub_id": "pub_8ae7e52b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.569410771308546,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22764308523418395,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.056910771308545986,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 50,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Wang 2019 — Macrophage achieves self-protection against oxidative stress-induced ageing t… (Nature communications, recent_primary, 189×)",
+      "doi": "10.1038/s41467-019-08680-6",
+      "pub_id": "pub_ecd80a28",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5684474643371343,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3037898573485371,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07594746433713427,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 189,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Kraus 2019 — Prognosis and improved outcomes in major depression: a review. (Translational psychiatry, key_review, 281×)",
+      "doi": "10.1038/s41398-019-0460-3",
+      "pub_id": "pub_c702644d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5641631542319313,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3266526169277253,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08166315423193132,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Translational psychiatry",
+      "citation_count": 281,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Kim 2020 — <i>O</i>-GlcNAcylation on LATS2 disrupts the Hippo pathway by inhibiting its … (Proceedings of the National Acad…, recent_primary, 46×)",
+      "doi": "10.1073/pnas.1913469117",
+      "pub_id": "pub_16861597",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5582285317643257,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22291412705730315,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05572853176432579,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 46,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Reagh 2018 — Functional Imbalance of Anterolateral Entorhinal Cortex and Hippocampal Denta… (Neuron, recent_primary, 168×)",
+      "doi": "10.1016/j.neuron.2018.01.039",
+      "pub_id": "pub_36339d14",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5567521464256043,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2970085857024173,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07425214642560432,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Neuron",
+      "citation_count": 168,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Chen 2021 — Comparative efficacy and cognitive function of magnetic seizure therapy vs. e… (Translational psychiatry, key_review, 25×)",
+      "doi": "10.1038/s41398-021-01560-y",
+      "pub_id": "pub_1311fd9f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5496589547189633,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Translational psychiatry",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Lai 2018 — A comparison between scalp- and source-reconstructed EEG networks. (Scientific reports, recent_primary, 93×)",
+      "doi": "10.1038/s41598-018-30869-w",
+      "pub_id": "pub_68f00b21",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.548261413270487,
+        "breakdown": {
+          "raw": {
+            "citations": 0.263045653081948,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.065761413270487,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 93,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Sakon 2019 — A neural signature of pattern separation in the monkey hippocampus. (Proceedings of the National Acad…, recent_primary, 39×)",
+      "doi": "10.1073/pnas.1900804116",
+      "pub_id": "pub_8d4f196d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5458942739603152,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 39,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Vasseur 2018 — Adaptive diversification of growth allometry in the plant <i>Arabidopsis thal… (Proceedings of the National Acad…, recent_primary, 66×)",
+      "doi": "10.1073/pnas.1709141115",
+      "pub_id": "pub_61852944",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5433603540536682,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2434414162146728,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0608603540536682,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 66,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Stark 2017 — Age-related deficits in the mnemonic similarity task for objects and scenes. (Behavioural brain research, foundational, 104×)",
+      "doi": "10.1016/j.bbr.2017.06.049",
+      "pub_id": "pub_658cac7d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5423632296820182,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2694529187280729,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06736322968201823,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Behavioural brain research",
+      "citation_count": 104,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Bartoschik 2018 — Near-native, site-specific and purification-free protein labeling for quantit… (Scientific reports, recent_primary, 60×)",
+      "doi": "10.1038/s41598-018-23154-3",
+      "pub_id": "pub_2d9209eb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5420023849519344,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23800953980773776,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05950238495193444,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 60,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Peraza 2018 — Electroencephalographic derived network differences in Lewy body dementia com… (Scientific reports, recent_primary, 53×)",
+      "doi": "10.1038/s41598-018-22984-5",
+      "pub_id": "pub_d4da9379",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5402381043904941,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23095241756197657,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05773810439049414,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 53,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Kirwan 2007 — Overcoming interference: An fMRI investigation of pattern separation in the m… (Learning & Memory, historical, 376×)",
+      "doi": "10.1101/lm.663507",
+      "pub_id": "pub_3a3e528a",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.5358656208961002,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3434624835844008,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.06666666666666667,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0858656208961002,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.01,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2007,
+      "venue": "Learning & Memory",
+      "citation_count": 376,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Wang 2014 — Interplay of mevalonate and Hippo pathways regulates RHAMM transcription via … (Proceedings of the National Acad…, foundational, 268×)",
+      "doi": "10.1073/pnas.1319190110",
+      "pub_id": "pub_5f9cf464",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5234800254649706,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32392010185988246,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08098002546497061,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 268,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Bae 2020 — STK25 suppresses Hippo signaling by regulating SAV1-STRIPAK antagonism. (eLife, recent_primary, 40×)",
+      "doi": "10.7554/elife.54863",
+      "pub_id": "pub_029cb8db",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5162516844254297,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "eLife",
+      "citation_count": 40,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Stark 2021 — Age-related alterations in functional connectivity along the longitudinal axi… (Hippocampus, recent_primary, 39×)",
+      "doi": "10.1002/hipo.23259",
+      "pub_id": "pub_2ce38ffc",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5083942739603152,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Hippocampus",
+      "citation_count": 39,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Miller 2019 — Comprehensive profiling of the STE20 kinase family defines features essential… (PLoS biology, recent_primary, 41×)",
+      "doi": "10.1371/journal.pbio.2006540",
+      "pub_id": "pub_43a9a306",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5066004817463479,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PLoS biology",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Bae 2017 — SAV1 promotes Hippo kinase activation through antagonizing the PP2A phosphata… (eLife, foundational, 115×)",
+      "doi": "10.7554/elife.30278",
+      "pub_id": "pub_086d567c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5013053106956205,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2752212427824818,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06880531069562044,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "eLife",
+      "citation_count": 115,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Zylberberg 2016 — The influence of evidence volatility on choice, reaction time and confidence … (eLife, foundational, 104×)",
+      "doi": "10.7554/elife.17688",
+      "pub_id": "pub_472521a5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.48986322968201823,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2694529187280729,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06736322968201823,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "eLife",
+      "citation_count": 104,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Sun 2021 — Implications of hydrogen sulfide in liver pathophysiology: Mechanistic insigh… (Journal of advanced research, key_review, 68×)",
+      "doi": "10.1016/j.jare.2020.05.010",
+      "pub_id": "pub_cb193712",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4837861020523431,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24514440820937256,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06128610205234314,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Journal of advanced research",
+      "citation_count": 68,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Benster 2023 — Pre-clinical indications of brain stimulation treatments for non-affective ps… (Translational psychiatry, key_review, 15×)",
+      "doi": "10.1038/s41398-023-02673-2",
+      "pub_id": "pub_c515d0f3",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4826315260246448,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Translational psychiatry",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Sun 2018 — Magnetic seizure therapy reduces suicidal ideation and produces neuroplastici… (Translational psychiatry, recent_primary, 56×)",
+      "doi": "10.1038/s41398-018-0302-8",
+      "pub_id": "pub_6d449dfc",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4810206943505858,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Translational psychiatry",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "van Dellen 2018 — Minimum spanning tree analysis of the human connectome. (Human brain mapping, recent_primary, 48×)",
+      "doi": "10.1002/hbm.24014",
+      "pub_id": "pub_176fedd0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.47883171855748474,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Human brain mapping",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Canada 2019 — It's All in the Details: Relations Between Young Children's Developing Patter… (Cerebral cortex (New York, N.Y. …, recent_primary, 49×)",
+      "doi": "10.1093/cercor/bhy211",
+      "pub_id": "pub_f194d238",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4716241403898243,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "citation_count": 49,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 35,
+      "label": "Satoi 2020 — Surgical indication for and desirable outcomes of conversion surgery in patie… (Annals of gastroenterological su…, key_review, 56×)",
+      "doi": "10.1002/ags3.12295",
+      "pub_id": "pub_9c838742",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4710206943505858,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Annals of gastroenterological surgery",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 36,
+      "label": "Xu 2021 — Hydrogen sulfide: Recent progress and perspectives for the treatment of derma… (Journal of advanced research, key_review, 22×)",
+      "doi": "10.1016/j.jare.2020.02.003",
+      "pub_id": "pub_a11467d5",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4678843610908988,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Journal of advanced research",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 37,
+      "label": "Epelboin 2021 — Human Q Fever on the Guiana Shield and Brazil: Recent Findings and Remaining … (Current tropical medicine reports, key_review, 18×)",
+      "doi": "10.1007/s40475-021-00243-4",
+      "pub_id": "pub_7d168be3",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4651189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Current tropical medicine reports",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

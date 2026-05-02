@@ -1,0 +1,1142 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_causal_learning",
+    "name": "Causal Learning Task",
+    "aliases": [
+      "Contingency Judgment Task",
+      "Contingency Learning Task",
+      "Causal Judgment Task",
+      "Causal Induction Task",
+      "Delta-P Task",
+      "Allergy Prediction Task"
+    ],
+    "category_id": "reasoning_and_problem_solving",
+    "short_definition": "Participants observe cue-outcome pairings across trials and judge the causal strength of the relationship; judgment profiles across contingency conditions index causal induction and associative learning mechanisms.",
+    "description": "Causal learning tasks measure how people acquire and represent causal relationships from observed co-occurrences. In the standard contingency judgment paradigm, participants observe a series of trials in which a candidate cause (e.g., a food, a medicine, a button press) is either present or absent and an outcome (e.g., an allergic reaction, a health improvement, a light turning on) either occurs or does not. After observing multiple trials, participants rate the causal strength of the relationship (typically -100 to +100 or 0 to 100). The normative benchmark is delta-P (P(outcome|cause) - P(outcome|no cause)), but human judgments systematically deviate: they are sensitive to outcome density, show cue competition effects (blocking, overshadowing), and are influenced by prior causal beliefs. Associative models (Rescorla-Wagner) and statistical models (causal power; Cheng, 1997) compete to explain these patterns. The paradigm bridges associative learning, causal reasoning, and Bayesian inference literatures. It is the human analogue of animal conditioning studies and is foundational for understanding how people learn cause-effect relationships in medicine, engineering, and everyday reasoning.",
+    "inclusion_test": {
+      "procedure": "Participants observe a series of trials presenting the presence/absence of candidate causes and occurrence/non-occurrence of outcomes, then judge the causal strength of cause-outcome relationships.",
+      "manipulation": "Contingency (delta-P value: positive, zero, negative); outcome base rate (common vs. rare outcomes); cue competition (blocking, overshadowing, relative validity); number of trials; trial-by-trial vs. summary presentation; number of candidate causes; temporal contiguity between cause and outcome.",
+      "measurement": "Causal strength ratings; trial-by-trial prediction accuracy; judgment latency; sensitivity to contingency components (P(O|C) and P(O|~C) separately); blocking magnitude; correspondence between judgments and normative models (delta-P, causal power, Rescorla-Wagner)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T19:02:50",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Luhmann 2011 — Expectations and interpretations during causal learning. (Journal of experimental psycholo…, foundational, 10×)",
+      "doi": "10.1037/a0022970",
+      "pub_id": "pub_edcec506",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4204223532227412,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Mutter 2012 — Aging and retrospective revaluation of causal learning. (Journal of experimental psycholo…, foundational, 2×)",
+      "doi": "10.1037/a0024851",
+      "pub_id": "pub_82a7db08",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.41161602667573005,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Marsh 2009 — Spontaneous assimilation of continuous values and temporal information in cau… (Journal of experimental psycholo…, foundational, 20×)",
+      "doi": "10.1037/a0014929",
+      "pub_id": "pub_3914cb38",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4097818859544724,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Barberia 2018 — A short educational intervention diminishes causal illusions and specific par… (PloS one, recent_primary, 18×)",
+      "doi": "10.1371/journal.pone.0191907",
+      "pub_id": "pub_71c539ec",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3983332391034272,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "PloS one",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Blanco 2015 — Individuals Who Believe in the Paranormal Expose Themselves to Biased Informa… (PloS one, foundational, 30×)",
+      "doi": "10.1371/journal.pone.0131378",
+      "pub_id": "pub_619bb5f5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3754191502546583,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "PloS one",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Chase 2011 — 5-HT modulation by acute tryptophan depletion of human instrumental contingen… (Psychopharmacology, foundational, 14×)",
+      "doi": "10.1007/s00213-010-1934-4",
+      "pub_id": "pub_b6a1c6f0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.36491165611756154,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Psychopharmacology",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Corlett 2013 — Ketamine effects on memory reconsolidation favor a learning model of delusions. (PloS one, foundational, 49×)",
+      "doi": "10.1371/journal.pone.0065088",
+      "pub_id": "pub_be6add94",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.36233842610411,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "PloS one",
+      "citation_count": 49,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Barberia 2013 — Implementation and assessment of an intervention to debias adolescents agains… (PloS one, foundational, 27×)",
+      "doi": "10.1371/journal.pone.0071303",
+      "pub_id": "pub_6e41cf31",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3539459080053505,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "PloS one",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Catena 2012 — The brain network of expectancy and uncertainty processing. (PloS one, foundational, 39×)",
+      "doi": "10.1371/journal.pone.0040252",
+      "pub_id": "pub_0ff29722",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.34910855967460086,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "PloS one",
+      "citation_count": 39,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Blanco 2012 — Mediating role of activity level in the depressive realism effect. (PloS one, foundational, 26×)",
+      "doi": "10.1371/journal.pone.0046203",
+      "pub_id": "pub_5abca6dd",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.34341950859861864,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "PloS one",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Barberia 2019 — Persistence of Causal Illusions After Extensive Training. (Frontiers in psychology, recent_primary, 12×)",
+      "doi": "10.3389/fpsyg.2019.00024",
+      "pub_id": "pub_3a20dfb3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.34284035892708786,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Frontiers in psychology",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Blanco 2020 — When Success Is Not Enough: The Symptom Base-Rate Can Influence Judgments of … (Frontiers in psychology, recent_primary, 4×)",
+      "doi": "10.3389/fpsyg.2020.560273",
+      "pub_id": "pub_2b838358",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3390099151561172,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Frontiers in psychology",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Shou 2015 — Adapting to an Uncertain World: Cognitive Capacity and Causal Reasoning with … (PloS one, foundational, 1×)",
+      "doi": "10.1371/journal.pone.0140608",
+      "pub_id": "pub_86e86f50",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3357471672204469,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "PloS one",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Díaz-Lago 2019 — Thinking in a Foreign language reduces the causality bias. (Quarterly journal of experimenta…, recent_primary, 9×)",
+      "doi": "10.1177/1747021818755326",
+      "pub_id": "pub_874a659e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.31904279666227847,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Quarterly journal of experimental psychology (2006)",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Rosales 2026 — Behavioral differences between infants at and not at elevated risk for autism… (PloS one, recent_primary, 0×)",
+      "doi": "10.1371/journal.pone.0340732",
+      "pub_id": "pub_3c7daadd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3107142857142857,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.075,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2026,
+      "venue": "PloS one",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Ongchoco 2023 — Excessive teleological thinking is driven by aberrant associations and not by… (iScience, recent_primary, 4×)",
+      "doi": "10.1016/j.isci.2023.107643",
+      "pub_id": "pub_7e8c38b4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.30900991515611725,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "iScience",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Griffiths 2017 — Compound Stimulus Presentation Does Not Deepen Extinction in Human Causal Lea… (Frontiers in psychology, foundational, 3×)",
+      "doi": "10.3389/fpsyg.2017.00120",
+      "pub_id": "pub_560470ac",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.30578004872660813,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Frontiers in psychology",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Tobias-Webb 2017 — Let me take the wheel: Illusory control and sense of agency. (Quarterly journal of experimenta…, foundational, 12×)",
+      "doi": "10.1080/17470218.2016.1206128",
+      "pub_id": "pub_e04eb927",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3028403589270878,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Quarterly journal of experimental psychology (2006)",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Vanes 2014 — Contingency learning in alcohol dependence and pathological gambling: learnin… (Alcoholism, clinical and experim…, foundational, 48×)",
+      "doi": "10.1111/acer.12393",
+      "pub_id": "pub_a3f33d92",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.29204600427177047,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Alcoholism, clinical and experimental research",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Williamson 2011 — Own and Others' Prior Experiences Influence Children's Imitation of Causal Acts. (Cognitive development, foundational, 23×)",
+      "doi": "10.1016/j.cogdev.2011.04.002",
+      "pub_id": "pub_c8d64566",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.2917146711942136,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2011,
+      "venue": "Cognitive development",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Greville 2012 — Assessing evidence for a common function of delay in causal learning and rewa… (Frontiers in psychology, foundational, 1×)",
+      "doi": "10.3389/fpsyg.2012.00460",
+      "pub_id": "pub_55ec6d38",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.2814614529347326,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.2857142857142857,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.07142857142857142,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2012,
+      "venue": "Frontiers in psychology",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Orinstein 2010 — Expanding the intertrial interval during extinction: response cessation and r… (Behavior therapy, foundational, 11×)",
+      "doi": "10.1016/j.beth.2008.11.001",
+      "pub_id": "pub_e95dc404",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.27168178968805246,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Behavior therapy",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Chow 2019 — Bridging the divide between causal illusions in the laboratory and the real w… (Cognitive research: principles a…, recent_primary, 20×)",
+      "doi": "10.1186/s41235-018-0149-9",
+      "pub_id": "pub_7a38ed17",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.2697818859544724,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Cognitive research: principles and implications",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Msetfi 2012 — Dysphoric Mood States are Related to Sensitivity to Temporal Changes in Conti… (Frontiers in psychology, foundational, 7×)",
+      "doi": "10.3389/fpsyg.2012.00368",
+      "pub_id": "pub_cdf4f214",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.26581293023276936,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Frontiers in psychology",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Double 2020 — Causal illusions in the classroom: how the distribution of student outcomes c… (Cognitive research: principles a…, recent_primary, 2×)",
+      "doi": "10.1186/s41235-020-00237-2",
+      "pub_id": "pub_c24f09d6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.25161602667573,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Cognitive research: principles and implications",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Chow 2024 — Instruction on the Scientific Method Provides (Some) Protection Against Illus… (Open mind : discoveries in cogni…, recent_primary, 4×)",
+      "doi": "10.1162/opmi_a_00141",
+      "pub_id": "pub_1ec38db9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.23900991515611725,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Open mind : discoveries in cognitive science",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Msetfi 2018 — Using Mobile Phones to Examine and Enhance Perceptions of Control in Mildly D… (JMIR mHealth and uHealth, recent_primary, 3×)",
+      "doi": "10.2196/10114",
+      "pub_id": "pub_fe2b9da7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.23578004872660813,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "JMIR mHealth and uHealth",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Castiello 2025 — Delusional Unreality and Predictive Processing. (Biological psychiatry. Cognitive…, recent_primary, 1×)",
+      "doi": "10.1016/j.bpsc.2024.12.006",
+      "pub_id": "pub_f5eb6dc0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.23574716722044692,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Wang 2019 — Executive Control in Learning: Evidence for the Dissociation of Rule Learning… (Advances in cognitive psychology, recent_primary, 1×)",
+      "doi": "10.5709/acp-0255-8",
+      "pub_id": "pub_5de106d3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.23574716722044692,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Advances in cognitive psychology",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Maes 2025 — Incidental learning and social-communicative abilities in children with devel… (International journal of languag…, recent_primary, 2×)",
+      "doi": "10.1111/1460-6984.70017",
+      "pub_id": "pub_bd4f52b9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.20161602667573,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "International journal of language & communication disorders",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

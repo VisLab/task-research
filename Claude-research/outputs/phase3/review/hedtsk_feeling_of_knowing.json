@@ -1,0 +1,214 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_feeling_of_knowing",
+    "name": "Feeling-of-Knowing Task",
+    "aliases": [
+      "FOK Task",
+      "Feeling-of-Knowing Judgment",
+      "Hart FOK Paradigm"
+    ],
+    "category_id": "awareness_agency_and_metacognition",
+    "short_definition": "After failing to recall a studied item, participants rate the likelihood they could recognize the answer; the accuracy of these predictions (gamma correlation with recognition) indexes metacognitive monitoring of unretrieved memory.",
+    "description": "The Feeling-of-Knowing task measures the accuracy of metacognitive judgments about information that cannot currently be recalled. In the standard Hart (1965) paradigm, participants study cue-target pairs, attempt cued recall, and then — for items they failed to recall — rate their confidence that they would recognize the correct answer among alternatives. A subsequent recognition test determines the accuracy of these predictions. The key dependent measure is resolution — the correspondence between feeling-of-knowing magnitude and recognition performance, typically quantified by the Goodman-Kruskal gamma correlation. Feeling-of-knowing judgments are thought to rely on partial retrieval of target attributes, cue familiarity, and accessibility of related information, rather than direct access to trace strength. The paradigm dissociates from Judgment-of-Learning tasks in timing (post-retrieval-failure vs. post-encoding), prediction target (recognition vs. recall), and cognitive basis (partial retrieval and cue familiarity vs. encoding fluency). Feeling-of-knowing accuracy is sensitive to frontal lobe damage, aging, Alzheimer's disease, and schizophrenia, and is more closely tied to executive functioning than Judgment-of-Learning accuracy.",
+    "inclusion_test": {
+      "procedure": "Participants study cue-target pairs, attempt cued recall, and for each unrecalled item rate their feeling of knowing (likelihood of future recognition); a subsequent recognition test assesses prediction accuracy.",
+      "manipulation": "Cue familiarity (high vs. low); target accessibility (related vs. unrelated cues); number of recognition alternatives; delay between judgment and recognition test; domain (episodic vs. semantic general knowledge).",
+      "measurement": "Feeling-of-knowing magnitude (mean rating); resolution (gamma correlation between ratings and recognition accuracy); calibration (correspondence between predicted and actual recognition probabilities); response latency for feeling-of-knowing judgments."
+    }
+  },
+  "candidates_run_date": "2026-04-29T19:00:52",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 5
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Hart 1965 — Memory and the feeling-of-knowing experience. (Journal of Educational Psychology, historical, 781×)",
+      "doi": "10.1037/h0022263",
+      "pub_id": "pub_c65b260f",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.5764262729441617,
+        "breakdown": {
+          "raw": {
+            "citations": 0.38570509177664686,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09642627294416171,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1965,
+      "venue": "Journal of Educational Psychology",
+      "citation_count": 781,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Bastin 2021 — Anosognosia in Mild Cognitive Impairment: Lack of Awareness of Memory Difficu… (Frontiers in psychiatry, recent_primary, 41×)",
+      "doi": "10.3389/fpsyt.2021.631518",
+      "pub_id": "pub_f4cf52bc",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.44910048174634787,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Frontiers in psychiatry",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Bertrand 2018 — Cortical thickness and metacognition in cognitively diverse older adults. (Neuropsychology, recent_primary, 26×)",
+      "doi": "10.1037/neu0000458",
+      "pub_id": "pub_1fc3257c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4102052228843329,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Neuropsychology",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Paynter 2009 — Knowing we know before we know: ERP correlates of initial feeling-of-knowing. (Neuropsychologia, foundational, 36×)",
+      "doi": "10.1016/j.neuropsychologia.2008.12.009",
+      "pub_id": "pub_cf3a08f6",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.38476582832922795,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2090633133169118,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05226582832922795,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Neuropsychologia",
+      "citation_count": 36,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Yeung 2022 — Stability and consistency of metamemory judgments within a session. (Frontiers in psychology, recent_primary, 3×)",
+      "doi": "10.3389/fpsyg.2022.917576",
+      "pub_id": "pub_55019029",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.34256576301232244,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Frontiers in psychology",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

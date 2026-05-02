@@ -1,0 +1,1140 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_self_referential_encoding",
+    "name": "Self-Referential Encoding Task",
+    "aliases": [
+      "SRET",
+      "Self-Reference Effect Paradigm",
+      "Self-Referential Processing Task",
+      "Trait Adjective Endorsement Task"
+    ],
+    "category_id": "awareness_agency_and_metacognition",
+    "short_definition": "Participants judge whether trait adjectives describe themselves vs. another person or a semantic property; the self-reference effect (superior recall for self-encoded items) and endorsement patterns index self-concept and self-referential processing.",
+    "description": "The Self-Referential Encoding Task exploits the robust finding that information encoded in relation to the self is remembered better than information encoded in other ways (the self-reference effect; Rogers, Kuiper, & Kirker, 1977). In the standard paradigm, participants view trait adjectives and make judgments under different encoding conditions: 'Does this word describe you?' (self-reference), 'Does this word describe [other person]?' (other-reference), 'Is this a positive word?' (semantic), or 'Is this word in uppercase?' (structural). A surprise recall or recognition test follows. The self-reference effect is the recall advantage for self-encoded items over semantic or other-reference conditions. Beyond the memory effect, the pattern of adjective endorsement (which traits are endorsed as self-descriptive) provides a direct window into self-concept content. This has made the task central to depression research: depressed individuals endorse more negative and fewer positive adjectives as self-descriptive, and show reduced or reversed self-reference memory effects for positive material. The paradigm engages cortical midline structures (medial prefrontal cortex, posterior cingulate) associated with self-referential processing, making it a standard fMRI probe of the default mode network.",
+    "inclusion_test": {
+      "procedure": "Participants judge trait adjectives under self-reference and comparison encoding conditions (other-reference, semantic, structural); a subsequent memory test assesses the self-reference effect on recall or recognition.",
+      "manipulation": "Encoding condition (self, other, semantic, structural); valence of adjectives (positive, negative, neutral); other-reference target (close other vs. distant other vs. celebrity); self-relevance (high vs. low); presentation modality.",
+      "measurement": "Self-reference effect (recall/recognition advantage for self-encoded items); endorsement rate by valence and condition; endorsement latency; recall bias (proportion positive vs. negative recalled); cortical midline activation (medial prefrontal cortex, posterior cingulate)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T19:01:58",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Rogers 1977 — Self-reference and the encoding of personal information. (Journal of Personality and Socia…, historical, 1k×)",
+      "doi": "10.1037/0022-3514.35.9.677",
+      "pub_id": "pub_233990e0",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.6444893028948204,
+        "breakdown": {
+          "raw": {
+            "citations": 0.41795721157928156,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10448930289482039,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": null,
+      "year": 1977,
+      "venue": "Journal of Personality and Social Psychology",
+      "citation_count": 1364,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Arsenovic 2017 — SensorFRET: A Standardless Approach to Measuring Pixel-based Spectral Bleed-t… (Scientific reports, foundational, 15×)",
+      "doi": "10.1038/s41598-017-15411-8",
+      "pub_id": "pub_c1c670c8",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5001315260246448,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Scientific reports",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Auerbach 2016 — Self-referential processing in adolescents: Stability of behavioral and ERP m… (Psychophysiology, foundational, 54×)",
+      "doi": "10.1111/psyp.12686",
+      "pub_id": "pub_70280205",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.458003696950287,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2320147878011481,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05800369695028702,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Psychophysiology",
+      "citation_count": 54,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Dainer-Best 2017 — Sustained engagement of attention is associated with increased negative self-… (Biological psychology, foundational, 35×)",
+      "doi": "10.1016/j.biopsycho.2017.09.005",
+      "pub_id": "pub_2b8c5a5a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.451869244935211,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Biological psychology",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Speed 2016 — Depression risk and electrocortical reactivity during self-referential emotio… (Journal of abnormal psychology, foundational, 65×)",
+      "doi": "10.1037/abn0000173",
+      "pub_id": "pub_853ea4bb",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.440642689976061,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24257075990424393,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06064268997606098,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Journal of abnormal psychology",
+      "citation_count": 65,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Barbora 2021 — Targeted antiviral treatment using non-ionizing radiation therapy for SARS-Co… (PloS one, recent_primary, 7×)",
+      "doi": "10.1371/journal.pone.0251780",
+      "pub_id": "pub_07b17969",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4300986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PloS one",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Hitchcock 2023 — Self-judgment dissected: A computational modeling analysis of self-referentia… (Cognitive, affective & behaviora…, recent_primary, 14×)",
+      "doi": "10.3758/s13415-022-01033-9",
+      "pub_id": "pub_2a05b4de",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4291973704032758,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Cognitive, affective & behavioral neuroscience",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Beevers 2019 — Association between negative cognitive bias and depression: A symptom-level a… (Journal of abnormal psychology, recent_primary, 77×)",
+      "doi": "10.1037/abn0000405",
+      "pub_id": "pub_ce528831",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4230606956804077,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2522427827216307,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06306069568040767,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Journal of abnormal psychology",
+      "citation_count": 77,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Thurston 2017 — Self-views in social anxiety disorder: The impact of CBT versus MBSR. (Journal of anxiety disorders, foundational, 18×)",
+      "doi": "10.1016/j.janxdis.2017.01.001",
+      "pub_id": "pub_7f9069e0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4126189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Journal of anxiety disorders",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Liu 2023 — Behavioral and ERP indices of self-schematic processing show differential ass… (Biological psychology, recent_primary, 8×)",
+      "doi": "10.1016/j.biopsycho.2023.108594",
+      "pub_id": "pub_cd82be0f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4118034819228886,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Biological psychology",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Connolly 2016 — Information processing biases concurrently and prospectively predict depressi… (Cognition & emotion, foundational, 49×)",
+      "doi": "10.1080/02699931.2015.1010488",
+      "pub_id": "pub_ae2506b0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4066241403898243,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Cognition & emotion",
+      "citation_count": 49,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Dainer-Best 2018 — Negative self-referential processing is associated with genetic variation in … (PloS one, recent_primary, 9×)",
+      "doi": "10.1371/journal.pone.0198950",
+      "pub_id": "pub_8d0e52f3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4033285109479927,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "PloS one",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Ouyang 2025 — Ultrafast energy transfer beyond the Förster approximation in organic photovo… (Science advances, recent_primary, 4×)",
+      "doi": "10.1126/sciadv.adr5973",
+      "pub_id": "pub_d37630bd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.40329562944183156,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2025,
+      "venue": "Science advances",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Dainer-Best 2018 — Determining optimal parameters of the self-referent encoding task: A large-sc… (Psychological assessment, recent_primary, 35×)",
+      "doi": "10.1037/pas0000602",
+      "pub_id": "pub_5fc65bb3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.40186924493521103,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Psychological assessment",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Allison 2021 — Neurophysiological Markers Related to Negative Self-referential Processing Di… (Biological psychiatry global ope…, recent_primary, 13×)",
+      "doi": "10.1016/j.bpsgos.2021.04.001",
+      "pub_id": "pub_33ee240f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3981987407849036,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Biological psychiatry global open science",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Goldstein 2015 — Stability of self-referent encoding task performance and associations with ch… (Cognition & emotion, foundational, 43×)",
+      "doi": "10.1080/02699931.2014.990358",
+      "pub_id": "pub_85c9ce68",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.39477383052077786,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21909532208311155,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05477383052077789,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Cognition & emotion",
+      "citation_count": 43,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Lou 2019 — Review of Abnormal Self-Knowledge in Major Depressive Disorder. (Frontiers in psychiatry, key_review, 15×)",
+      "doi": "10.3389/fpsyt.2019.00130",
+      "pub_id": "pub_f73f33ec",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.39013152602464485,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Frontiers in psychiatry",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Auerbach 2015 — Self-referential processing in depressed adolescents: A high-density event-re… (Journal of abnormal psychology, foundational, 117×)",
+      "doi": "10.1037/abn0000023",
+      "pub_id": "pub_cbef5435",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3890527421634514,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2762109686538056,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0690527421634514,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Journal of abnormal psychology",
+      "citation_count": 117,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Liu 2020 — Depressogenic self-schemas are associated with smaller regional grey matter v… (NeuroImage. Clinical, recent_primary, 10×)",
+      "doi": "10.1016/j.nicl.2020.102422",
+      "pub_id": "pub_0ea0ca08",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3847080675084555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "NeuroImage. Clinical",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Liu 2024 — Trial-level ERPs predicted behavioral responses during self-referential proce… (Social cognitive and affective n…, recent_primary, 4×)",
+      "doi": "10.1093/scan/nsae011",
+      "pub_id": "pub_8e2e9175",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.37329562944183153,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Castagna 2023 — Catch the drift: Depressive symptoms track neural response during more effici… (Journal of affective disorders r…, recent_primary, 3×)",
+      "doi": "10.1016/j.jadr.2023.100593",
+      "pub_id": "pub_a5be335b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3700657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2023,
+      "venue": "Journal of affective disorders reports",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Burge 2025 — Blue light influences negative thoughts of self. (Sleep, recent_primary, 0×)",
+      "doi": "10.1093/sleep/zsaf034",
+      "pub_id": "pub_d5310941",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.37,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Sleep",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Liu 2026 — Bidirectional associations between self-referential processing and depressive… (Developmental cognitive neurosci…, recent_primary, 0×)",
+      "doi": "10.1016/j.dcn.2025.101658",
+      "pub_id": "pub_c6a67c18",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.365,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2026,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Ciruela 2010 — Lighting up multiprotein complexes: lessons from GPCR oligomerization. (Trends in biotechnology, key_review, 68×)",
+      "doi": "10.1016/j.tibtech.2010.05.002",
+      "pub_id": "pub_53875e21",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.3612861020523431,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24514440820937256,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06128610205234314,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Trends in biotechnology",
+      "citation_count": 68,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Ferré 2010 — G protein-coupled receptor heteromers as new targets for drug development. (Progress in molecular biology an…, key_review, 40×)",
+      "doi": "10.1016/s1877-1173(10)91002-8",
+      "pub_id": "pub_bca98567",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.3537516844254297,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Progress in molecular biology and translational science",
+      "citation_count": 40,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Auerbach 2016 — Electrocortical Reactivity During Self-referential Processing in Female Youth… (Biological psychiatry. Cognitive…, foundational, 17×)",
+      "doi": "10.1016/j.bpsc.2016.04.004",
+      "pub_id": "pub_1322f47e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.35183636342904984,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Iannazzi 2025 — Task-based neural correlates of self-focused attention associated with cognit… (Biological psychology, recent_primary, 3×)",
+      "doi": "10.1016/j.biopsycho.2025.109022",
+      "pub_id": "pub_eb6570b5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3400657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Biological psychology",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Allison 2023 — Self-referential Processing in Remitted Depression: An Event-Related Potentia… (Biological psychiatry global ope…, recent_primary, 12×)",
+      "doi": "10.1016/j.bpsgos.2021.12.005",
+      "pub_id": "pub_67dca118",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3371260732128022,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Biological psychiatry global open science",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Liu 2023 — The development of depressogenic self-schemas: Associations with children's r… (Development and psychopathology, recent_primary, 7×)",
+      "doi": "10.1017/s0954579421000341",
+      "pub_id": "pub_29ee073b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.33009864451848364,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Development and psychopathology",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Schuckit 2013 — Stability of scores and correlations with drinking behaviors over 15 years fo… (Drug and alcohol dependence, foundational, 20×)",
+      "doi": "10.1016/j.drugalcdep.2012.08.022",
+      "pub_id": "pub_91ee8d52",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.32406760024018666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Drug and alcohol dependence",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

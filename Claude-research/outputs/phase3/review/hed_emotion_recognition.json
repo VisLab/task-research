@@ -1,0 +1,1134 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "process",
+    "id": "hed_emotion_recognition",
+    "name": "Emotion recognition",
+    "aliases": [
+      {
+        "name": "Emotion perception",
+        "note": "Broader term; recognition is the operationalized form (identification of a named emotion category)."
+      }
+    ],
+    "category_id": "emotion_perception_and_regulation",
+    "definition": "Identification of emotional states from cues such as facial expression or vocal prosody."
+  },
+  "candidates_run_date": "2026-04-29T15:51:29",
+  "extracted_on": "2026-04-30T11:14:34",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Zekelman 2022 — White matter association tracts underlying language and theory of mind: An in… (NeuroImage, recent_primary, 44×)",
+      "doi": "10.1016/j.neuroimage.2021.118739",
+      "pub_id": "pub_20948829",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7250991113647202,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "NeuroImage",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Marini 2021 — The impact of facemasks on emotion recognition, trust attribution and re-iden… (Scientific reports, recent_primary, 147×)",
+      "doi": "10.1038/s41598-021-84806-5",
+      "pub_id": "pub_5b6184b2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7100861364851251,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5403445459405003,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.13508613648512507,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 147,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Azar 2024 — Detecting emotions through EEG signals based on modified convolutional fuzzy … (Scientific Reports, recent_primary, 30×)",
+      "doi": "10.1038/s41598-024-60977-9",
+      "pub_id": "pub_d3aa8fb6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6997541867996144,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2590167471984575,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06475418679961438,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Scientific Reports",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Kastendieck 2023 — Influence of child and adult faces with face masks on emotion perception and … (Scientific Reports, recent_primary, 13×)",
+      "doi": "10.1038/s41598-023-40007-w",
+      "pub_id": "pub_212aaaaa",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6932480630441454,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21299225217658158,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053248063044145394,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2023,
+      "venue": "Scientific Reports",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Khan 2022 — CNN-XGBoost fusion-based affective state recognition using EEG spectrogram im… (Scientific Reports, recent_primary, 64×)",
+      "doi": "10.1038/s41598-022-18257-x",
+      "pub_id": "pub_0d889e88",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.690365146817381,
+        "breakdown": {
+          "raw": {
+            "citations": 0.38146058726952403,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09536514681738101,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Scientific Reports",
+      "citation_count": 64,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Cui 2023 — Emotion recognition based on group phase locking value using convolutional ne… (Scientific Reports, recent_primary, 34×)",
+      "doi": "10.1038/s41598-023-30458-6",
+      "pub_id": "pub_937ccf69",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6903141001627403,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3012564006509615,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07531410016274037,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific Reports",
+      "citation_count": 34,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Yeung 2021 — A systematic review and meta-analysis of facial emotion recognition in autism… (Neuroscience and Biobehavioral R…, key_review, 133×)",
+      "doi": "10.1016/j.neubiorev.2021.104518",
+      "pub_id": "pub_142fef8c",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6858860019818185,
+        "breakdown": {
+          "raw": {
+            "citations": 0.48354400792727414,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.12088600198181854,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Neuroscience and Biobehavioral Reviews",
+      "citation_count": 133,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Ortega 2023 — Inferential Emotion Tracking reveals impaired context-based emotion processin… (Scientific Reports, recent_primary, 6×)",
+      "doi": "10.1038/s41598-023-35371-6",
+      "pub_id": "pub_07ccf942",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6681658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific Reports",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Schirmer 2017 — Emotion Perception from Face, Voice, and Touch: Comparisons and Convergence. (Trends in cognitive sciences, key_review, 171×)",
+      "doi": "10.1016/j.tics.2017.01.001",
+      "pub_id": "pub_d277e694",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6595068343173075,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29802733726922986,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07450683431730747,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Trends in cognitive sciences",
+      "citation_count": 171,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Pollak 2009 — Development of perceptual expertise in emotion recognition. (Cognition, foundational, 144×)",
+      "doi": "10.1016/j.cognition.2008.10.010",
+      "pub_id": "pub_b0209d61",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6520351771251296,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2881407085005183,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07203517712512958,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Cognition",
+      "citation_count": 144,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Wang 2023 — Deep learning-based EEG emotion recognition: Current trends and future perspe… (Frontiers in psychology, key_review, 28×)",
+      "doi": "10.3389/fpsyg.2023.1126994",
+      "pub_id": "pub_07924a20",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6459883366014116,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3639533464056464,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0909883366014116,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Frontiers in psychology",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Karthiga 2024 — Eeg based smart emotion recognition using meta heuristic optimization and hyb… (Scientific Reports, recent_primary, 16×)",
+      "doi": "10.1038/s41598-024-80448-5",
+      "pub_id": "pub_15577106",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6410583526063435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22423341042537398,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.056058352606343495,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2024,
+      "venue": "Scientific Reports",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Li 2021 — Cross-Subject EEG Emotion Recognition With Self-Organized Graph Neural Network (Frontiers in Neuroscience, recent_primary, 112×)",
+      "doi": "10.3389/fnins.2021.611653",
+      "pub_id": "pub_40a5588e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6407241585580804,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5028966342323218,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12572415855808045,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Frontiers in Neuroscience",
+      "citation_count": 112,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Aslam 2022 — Channels and Features Identification: A Review and a Machine-Learning Based M… (Frontiers in Neuroscience, key_review, 15×)",
+      "doi": "10.3389/fnins.2022.844851",
+      "pub_id": "pub_93786e7e",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6401808482838867,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2207233931355466,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05518084828388665,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Frontiers in Neuroscience",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Zhao 2023 — Differential responses in the mirror neuron system during imitation of indivi… (NeuroImage, recent_primary, 18×)",
+      "doi": "10.1016/j.neuroimage.2023.120263",
+      "pub_id": "pub_adf790aa",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6377175979076252,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29087039163050055,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07271759790762514,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "NeuroImage",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Zhang 2020 — Emotion recognition using multi-modal data and machine learning techniques: A… (Information Fusion, key_review, 661×)",
+      "doi": "10.1016/j.inffus.2020.01.011",
+      "pub_id": "pub_f7b3687e",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6361264199056988,
+        "breakdown": {
+          "raw": {
+            "citations": 0.6445056796227955,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.16112641990569887,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Information Fusion",
+      "citation_count": 661,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Fischer 2018 — Gender differences in emotion perception and self-reported emotional intellig… (PloS one, recent_primary, 85×)",
+      "doi": "10.1371/journal.pone.0190712",
+      "pub_id": "pub_3e3e45d2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6344739528111463,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25789581124458505,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06447395281114626,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "PloS one",
+      "citation_count": 85,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Akhand 2023 — Improved EEG-based emotion recognition through information enhancement in con… (Scientific Reports, recent_primary, 37×)",
+      "doi": "10.1038/s41598-023-40786-2",
+      "pub_id": "pub_9bef7f0a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6327011571545446,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2708046286181781,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06770115715454453,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific Reports",
+      "citation_count": 37,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Hiser 2018 — The Multifaceted Role of the Ventromedial Prefrontal Cortex in Emotion, Decis… (Biological psychiatry, key_review, 679×)",
+      "doi": "10.1016/j.biopsych.2017.10.030",
+      "pub_id": "pub_8848efd0",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6294033043074169,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37761321722966734,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09440330430741684,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Biological psychiatry",
+      "citation_count": 679,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Cortes 2021 — Effects of aging on emotion recognition from dynamic multimodal expressions a… (Scientific reports, recent_primary, 34×)",
+      "doi": "10.1038/s41598-021-82135-1",
+      "pub_id": "pub_f8f1119d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.626461488720574,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 34,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Giordano 2021 — The representational dynamics of perceived voice emotions evolve from categor… (Nature human behaviour, recent_primary, 33×)",
+      "doi": "10.1038/s41562-021-01073-0",
+      "pub_id": "pub_9bd63c5b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6260419118532629,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature human behaviour",
+      "citation_count": 33,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Grahlow 2021 — The impact of face masks on emotion recognition performance and perception of… (PLoS ONE, recent_primary, 88×)",
+      "doi": "10.1371/journal.pone.0262840",
+      "pub_id": "pub_e986d5af",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.62491371034112,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3996548413644798,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09991371034111995,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PLoS ONE",
+      "citation_count": 88,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Pierce 2020 — The basal ganglia and the cerebellum in human emotion. (Social cognitive and affective n…, key_review, 124×)",
+      "doi": "10.1093/scan/nsaa076",
+      "pub_id": "pub_23508e44",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6248868883254947,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27954755330197856,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06988688832549464,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 124,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Huang 2023 — A study on computer vision for facial emotion recognition (Scientific Reports, recent_primary, 126×)",
+      "doi": "10.1038/s41598-023-35446-4",
+      "pub_id": "pub_36691df9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6240185790477168,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4360743161908671,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10901857904771678,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2023,
+      "venue": "Scientific Reports",
+      "citation_count": 126,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Dar 2024 — Insights from EEG analysis of evoked memory recalls using deep learning for e… (Scientific Reports, recent_primary, 12×)",
+      "doi": "10.1038/s41598-024-61832-7",
+      "pub_id": "pub_5187aff3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6221260732128021,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2024,
+      "venue": "Scientific Reports",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Saffaryazdi 2022 — Using Facial Micro-Expressions in Combination With EEG and Physiological Sign… (Frontiers in Psychology, recent_primary, 56×)",
+      "doi": "10.3389/fpsyg.2022.864047",
+      "pub_id": "pub_8ddd7f43",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6173733057927523,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32949322317100915,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08237330579275229,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Frontiers in Psychology",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Hamzah 2024 — EEG-based emotion recognition systems; comprehensive study (Heliyon, key_review, 42×)",
+      "doi": "10.1016/j.heliyon.2024.e31485",
+      "pub_id": "pub_a8d2b7ab",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.614490393564227,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2779615742569075,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06949039356422687,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Heliyon",
+      "citation_count": 42,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Xu 2022 — Subject-independent EEG emotion recognition with hybrid spatio-temporal GRU-C… (Medical and Biological Engineeri…, recent_primary, 74×)",
+      "doi": "10.1007/s11517-022-02686-x",
+      "pub_id": "pub_efc62e87",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6126409666228328,
+        "breakdown": {
+          "raw": {
+            "citations": 0.43056386649133127,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10764096662283282,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Medical and Biological Engineering and Computing",
+      "citation_count": 74,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Alswaidan 2020 — A survey of state-of-the-art approaches for emotion recognition in text (Knowledge and Information Systems, key_review, 245×)",
+      "doi": "10.1007/s10115-020-01449-0",
+      "pub_id": "pub_5e839c72",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6119844180703905,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5479376722815622,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.13698441807039055,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Knowledge and Information Systems",
+      "citation_count": 245,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Canal 2021 — A survey on facial emotion recognition techniques: A state-of-the-art literat… (Information Sciences, key_review, 283×)",
+      "doi": "10.1016/j.ins.2021.10.005",
+      "pub_id": "pub_98befcc8",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6119134139328946,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5076536557315782,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.12691341393289454,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Information Sciences",
+      "citation_count": 283,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,3880 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:22:43",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_face_processing",
+    "name": "Face Processing Task",
+    "aliases": [
+      "FFA Localizer",
+      "Face Localizer"
+    ],
+    "category_id": "face_and_object_perception",
+    "short_definition": "Blocked or event-related presentation of faces vs. objects (or scrambled faces) to localize face-selective cortical regions (FFA, OFA, pSTS).",
+    "description": "The FFA Localizer presents alternating blocks of faces and non-face objects (houses, cars, scrambled images) while participants perform passive viewing or a simple task (one-back matching, gender judgment). The contrast of faces > objects identifies face-selective regions, particularly the fusiform face area (FFA) in ventral temporal cortex. The task provides an individually-defined localizer for face-selective cortex and has been fundamental to understanding the neural basis of face perception and the question of domain-specific processing modules.",
+    "inclusion_test": {
+      "procedure": "Blocks of faces alternate with blocks of non-face objects (houses, scrambled images) while participants perform a simple repetition-detection task. The contrast localizes face-selective cortex.",
+      "manipulation": "Stimulus category (faces vs. objects vs. scrambled vs. scenes); block duration; task (1-back, passive viewing).",
+      "measurement": "fMRI contrast (faces > objects) identifying FFA, OFA, STS; extent and magnitude of face-selective activation; lateralization index."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 49,
+      "picked": 30,
+      "reserve": 16,
+      "excluded": 3,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {
+      "non_human_subjects": 1,
+      "excluded_publisher": 2
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_29ac95a8",
+      "doi": "10.1016/j.neuroimage.2018.08.058",
+      "url": "https://doi.org/10.1016/j.neuroimage.2018.08.058",
+      "openalex_id": null,
+      "pmid": "30172004",
+      "first_author": "Hein",
+      "authors_display": "Hein, T. et al.",
+      "year": 2018,
+      "title": "Amygdala habituation and uncinate fasciculus connectivity in adolescence: A multi-modal approach.",
+      "venue": "NeuroImage",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 39,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Despite prior extensive investigations of the interactions between the amygdala and prefrontal cortex, few studies have simultaneously considered activation and structural connectivity in this circuit, particularly as it pertains to adolescent socioemotional development. The current multi-modal study delineated the correspondence between uncinate fasciculus (UF) connectivity and amygdala habituation in a large adolescent sample that was drawn from a population-based sample. We then examined the influence of demographic variables (age, gender, and pubertal status) on the relation between UF connectivity and amygdala habituation. 106 participants (15-17 years) completed DTI and an fMRI emotional face processing task. Left UF fractional anisotropy was associated with left amygdala habituation to fearful faces, suggesting that increased structural connectivity of the UF may facilitate amygdala regulation. Pubertal status moderated this structure-function relation, such that the association was stronger in those who were less mature. Therefore, UF connectivity may be particularly important for emotion regulation during early puberty. This study is the first to link structural and functional limbic circuitry in a large adolescent sample with substantial representation of ethnic minority participants, providing a more comprehensive understanding of socioemotional development in an understudied population.",
+      "score": {
+        "composite": 0.5567276072936485,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Amygdala",
+        "Prefrontal Cortex",
+        "Neural Pathways",
+        "Humans",
+        "Facial Expression",
+        "Emotions",
+        "Adolescent Development",
+        "Puberty",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Habituation, Psychophysiologic",
+        "Diffusion Tensor Imaging",
+        "Functional Neuroimaging",
+        "White Matter"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_18ba158b",
+      "doi": "10.1016/j.neuroimage.2009.12.024",
+      "url": "https://doi.org/10.1016/j.neuroimage.2009.12.024",
+      "openalex_id": null,
+      "pmid": "20025980",
+      "first_author": "Berman",
+      "authors_display": "Berman, M. et al.",
+      "year": 2010,
+      "title": "Evaluating functional localizers: the case of the FFA.",
+      "venue": "NeuroImage",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Review",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 79,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Functional localizers are routinely used in neuroimaging studies to test hypotheses about the function of specific brain areas. The specific tasks and stimuli used to localize particular regions vary widely from study to study even when the same cortical region is targeted. Thus, it is important to ask whether task and stimulus changes lead to differences in localization or whether localization procedures are largely immune to differences in tasks and contrasting stimuli. We present two experiments and a literature review that explore whether face localizer tasks yield differential localization in the fusiform gyrus as a function of task and contrasting stimuli. We tested standard localization tasks-passive viewing, 1-back, and 2-back memory tests--and did not find differences in localization based on task. We did, however, find differences in the extent, strength and patterns/reliabilities of the activation in the fusiform gyrus based on comparison stimuli (faces vs. houses compared to faces vs. scrambled stimuli).",
+      "score": {
+        "composite": 0.5367604887998098,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2537086218659055,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06342715546647637,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Face",
+        "Brain",
+        "Temporal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Photic Stimulation",
+        "Cues",
+        "Memory",
+        "Visual Perception",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Signal Processing, Computer-Assisted",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_65f3471e",
+      "doi": "10.1038/s41598-023-36860-4",
+      "url": "https://doi.org/10.1038/s41598-023-36860-4",
+      "openalex_id": null,
+      "pmid": "37337009",
+      "first_author": "Maffei",
+      "authors_display": "Maffei, A. et al.",
+      "year": 2023,
+      "title": "EEG alpha band functional connectivity reveals distinct cortical dynamics for overt and covert emotional face processing.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10279636",
+      "tldr": null,
+      "abstract": "Current knowledge regarding how the focus of our attention during face processing influences neural responses largely comes from neuroimaging studies reporting on regional brain activations. The present study was designed to add novel insights to this research by studying how attention can differentially impact the way cortical regions interact during emotional face processing. High-density electroencephalogram was recorded in a sample of fifty-two healthy participants during an emotional face processing task. The task required participants to either attend to the expressions (i.e., overt processing) or attend to a perceptual distractor, which rendered the expressions task-irrelevant (i.e., covert processing). Functional connectivity in the alpha band was estimated in source space and modeled using graph theory to quantify whole-brain integration and segregation. Results revealed that overt processing of facial expressions is linked to reduced cortical segregation and increased cortical integration, this latter specifically for negative expressions of fear and sadness. Furthermore, we observed increased communication efficiency during overt processing of negative expressions between the core and the extended face processing systems. Overall, these findings reveal that attention makes the interaction among the nodes involved in face processing more efficient, also uncovering a connectivity signature of the prioritized processing mechanism of negative expressions, that is an increased cross-communication within the nodes of the face processing network.",
+      "score": {
+        "composite": 0.5034319778518169,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Electroencephalography",
+        "Facial Expression",
+        "Brain Mapping",
+        "Emotions",
+        "Fear",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9ed370f2",
+      "doi": "10.1371/journal.pone.0259986",
+      "url": "https://doi.org/10.1371/journal.pone.0259986",
+      "openalex_id": null,
+      "pmid": "34910756",
+      "first_author": "Brady",
+      "authors_display": "Brady, N. et al.",
+      "year": 2021,
+      "title": "Holistic processing of faces and words predicts reading accuracy and speed in dyslexic readers.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0259986&type=printable",
+      "tldr": null,
+      "abstract": "We compared the performance of dyslexic and typical readers on two perceptual tasks, the Vanderbilt Holistic Face Processing Task and the Holistic Word Processing Task. Both yield a metric of holistic processing that captures the extent to which participants automatically attend to information that is spatially nearby but irrelevant to the task at hand. Our results show, for the first time, that holistic processing of faces is comparable in dyslexic and typical readers but that dyslexic readers show greater holistic processing of words. Remarkably, we show that these metrics predict the performance of dyslexic readers on a standardized reading task, with more holistic processing in both tasks associated with higher accuracy and speed. In contrast, a more holistic style on the words task predicts less accurate reading of both words and pseudowords for typical readers. We discuss how these findings may guide our conceptualization of the visual deficit in dyslexia.",
+      "score": {
+        "composite": 0.47253070373660916,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Dyslexia",
+        "Case-Control Studies",
+        "Pattern Recognition, Visual",
+        "Reaction Time",
+        "Reading",
+        "Adult",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_559949f7",
+      "doi": "10.1016/j.dcn.2015.08.007",
+      "url": "https://doi.org/10.1016/j.dcn.2015.08.007",
+      "openalex_id": null,
+      "pmid": "26347227",
+      "first_author": "Spechler",
+      "authors_display": "Spechler, P. et al.",
+      "year": 2015,
+      "title": "Cannabis use in early adolescence: Evidence of amygdala hypersensitivity to signals of threat.",
+      "venue": "Developmental cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 49,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4801124",
+      "tldr": null,
+      "abstract": "Cannabis use in adolescence may be characterized by differences in the neural basis of affective processing. In this study, we used an fMRI affective face processing task to compare a large group (n=70) of 14-year olds with a history of cannabis use to a group (n=70) of never-using controls matched on numerous characteristics including IQ, SES, alcohol and cigarette use. The task contained short movies displaying angry and neutral faces. Results indicated that cannabis users had greater reactivity in the bilateral amygdalae to angry faces than neutral faces, an effect that was not observed in their abstinent peers. In contrast, activity levels in the cannabis users in cortical areas including the right temporal-parietal junction and bilateral dorsolateral prefrontal cortex did not discriminate between the two face conditions, but did differ in controls. Results did not change after excluding subjects with any psychiatric symptomology. Given the high density of cannabinoid receptors in the amygdala, our findings suggest cannabis use in early adolescence is associated with hypersensitivity to signals of threat. Hypersensitivity to negative affect in adolescence may place the subject at-risk for mood disorders in adulthood.",
+      "score": {
+        "composite": 0.4699574737231576,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Face",
+        "Amygdala",
+        "Cerebral Cortex",
+        "Humans",
+        "Alcoholism",
+        "Marijuana Abuse",
+        "Magnetic Resonance Imaging",
+        "Facial Expression",
+        "Longitudinal Studies",
+        "Smoking",
+        "Fear",
+        "Visual Perception",
+        "Psychomotor Performance",
+        "Intelligence Tests",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Functional Laterality"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_2668497a",
+      "doi": "10.1093/scan/nst128",
+      "url": "https://doi.org/10.1093/scan/nst128",
+      "openalex_id": null,
+      "pmid": "23934417",
+      "first_author": "Taylor",
+      "authors_display": "Taylor, C. et al.",
+      "year": 2014,
+      "title": "Neural correlates of a computerized attention modification program in anxious subjects.",
+      "venue": "Social cognitive and affective neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 41,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Computerized attention modification is a relatively new and empirically validated treatment approach for different types of anxiety disorders. However, its neural basis and processes involved are poorly understood. This study examined the effect of a one-time application of an attention modification program (AMP) on neural substrates underlying emotion processing in individuals with high social anxiety. Fourteen individuals with elevated social anxiety symptoms completed an emotional face processing task during functional magnetic resonance imaging before and after AMP, and were subsequently exposed to a laboratory stressor. Results revealed the following: First, there was attenuated activation from pre- to post-AMP in the bilateral amygdala, bilateral insula and subgenual anterior cingulate cortex. Second, post-AMP, individuals exhibited increased activation in several regions of the prefrontal cortex (PFC). Third, those individuals with greater enhancement of ventromedial PFC activation after AMP showed diminished attentional allocation for threat and attenuated anxiety reactivity to the stressor. We conclude that AMP exerts effects that are similar to those previously reported for standard anxiolytics; however, it also appears to foster deployment of top-down brain processes aimed to regulate anxiety.",
+      "score": {
+        "composite": 0.4574338150796812,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Therapy, Computer-Assisted",
+        "Brain Mapping",
+        "Analysis of Variance",
+        "Photic Stimulation",
+        "Emotions",
+        "Anxiety",
+        "Pattern Recognition, Visual",
+        "Attention",
+        "Psychiatric Status Rating Scales",
+        "Image Processing, Computer-Assisted",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_7d6e9ed4",
+      "doi": "10.1016/j.dcn.2014.04.001",
+      "url": "https://doi.org/10.1016/j.dcn.2014.04.001",
+      "openalex_id": null,
+      "pmid": "24814480",
+      "first_author": "Slane",
+      "authors_display": "Slane, M. et al.",
+      "year": 2014,
+      "title": "Social cognition, face processing, and oxytocin receptor single nucleotide polymorphisms in typically developing children.",
+      "venue": "Developmental cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 27,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1016/j.dcn.2014.04.001",
+      "tldr": null,
+      "abstract": "Recent research has provided evidence of a link between behavioral measures of social cognition (SC) and neural and genetic correlates. Differences in face processing and variations in the oxytocin receptor (OXTR) gene have been associated with SC deficits and autism spectrum disorder (ASD) traits. Much work has examined the qualitative differences between those with ASD and typically developing (TD) individuals, but very little has been done to quantify the natural variation in ASD-like traits in the typical population. The present study examines this variation in TD children using a multidimensional perspective involving behavior assessment, neural electroencephalogram (EEG) testing, and OXTR genotyping. Children completed a series of neurocognitive assessments, provided saliva samples for sequencing, and completed a face processing task while connected to an EEG. No clear pattern emerged for EEG covariates or genotypes for individual OXTR single nucleotide polymorphisms (SNPs). However, SNPs rs2254298 and rs53576 consistently interacted such that the AG/GG allele combination of these SNPs was associated with poorer performance on neurocognitive measures. These results suggest that neither SNP in isolation is risk-conferring, but rather that the combination of rs2254298(A/G) and rs53576(G/G) confers a deleterious effect on SC across several neurocognitive measures.",
+      "score": {
+        "composite": 0.45156495562439813,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Face",
+        "Humans",
+        "Oxytocin",
+        "Receptors, Oxytocin",
+        "Genetic Markers",
+        "Electroencephalography",
+        "Social Behavior",
+        "Child Development",
+        "Parents",
+        "Cognition",
+        "Child Development Disorders, Pervasive",
+        "Genotype",
+        "Phenotype",
+        "Polymorphism, Single Nucleotide",
+        "Alleles",
+        "Adolescent",
+        "Child",
+        "Child, Preschool",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4975f741",
+      "doi": "10.1162/jocn_a_01825",
+      "url": "https://doi.org/10.1162/jocn_a_01825",
+      "openalex_id": null,
+      "pmid": "35104853",
+      "first_author": "Weissman",
+      "authors_display": "Weissman, D. et al.",
+      "year": 2022,
+      "title": "Exposure to Violence as an Environmental Pathway Linking Low Socioeconomic Status with Altered Neural Processing of Threat and Adolescent Psychopathology.",
+      "venue": "Journal of cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 27,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Low childhood socioeconomic status (SES) is associated with increased risk for psychopathology, in part because of heightened exposure to environmental adversity. Adverse experiences can be characterized along dimensions, including threat and deprivation, that contribute to psychopathology via distinct mechanisms. The current study investigated a neural mechanism through which threat and deprivation may contribute to socioeconomic disparities in psychopathology. Participants were 177 youths (83 girls) aged 10-13 years recruited from a cohort followed since the age of 3 years. SES was assessed using the income-to-needs ratio at the age of 3 years. At the age of 10-13 years, retrospective and current exposure to adverse experiences and symptoms of psychopathology were assessed. At this same time point, participants also completed a face processing task (passive viewing of fearful and neutral faces) during an fMRI scan. Lower childhood SES was associated with greater exposure to threat and deprivation experiences. Both threat and deprivation were associated with higher depression symptoms, whereas threat experiences were uniquely linked to posttraumatic stress disorder symptoms. Greater exposure to threat, but not deprivation, was associated with higher activation in dorsomedial pFC to fearful compared with neutral faces. The dorsomedial pFC is a hub of the default mode network thought to be involved in internally directed attention and cognition. Experiences of threat, but not deprivation, are associated with greater engagement of this region in response to threat cues. Threat-related adversity contributes to socioeconomic disparities in adolescent psychopathology through distinct mechanisms from deprivation.",
+      "score": {
+        "composite": 0.4515649556243981,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Retrospective Studies",
+        "Fear",
+        "Mental Disorders",
+        "Social Class",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Exposure to Violence"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9aa27ce6",
+      "doi": "10.1038/s41398-023-02512-4",
+      "url": "https://doi.org/10.1038/s41398-023-02512-4",
+      "openalex_id": null,
+      "pmid": "37339948",
+      "first_author": "King",
+      "authors_display": "King, S. et al.",
+      "year": 2023,
+      "title": "Early life stress, low-grade systemic inflammation and weaker suppression of the default mode network (DMN) during face processing in Schizophrenia.",
+      "venue": "Translational psychiatry",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10282071",
+      "tldr": null,
+      "abstract": "Childhood trauma (CT) is associated with lower cognitive and social cognitive function in schizophrenia. Recent evidence suggests that the relationship between CT and cognition is mediated by both low-grade systemic inflammation and reduced connectivity of the default mode network (DMN) during resting state. This study sought to test whether the same pattern of associations was observed for DMN connectivity during task based activity. Fifty-three individuals with schizophrenia (SZ) or schizoaffective disorder (SZA) and one hundred and seventy six healthy participants were recruited from the Immune Response and Social Cognition (iRELATE) project. A panel of pro-inflammatory markers that included IL-6, IL-8, IL-10, tumour necrosis factor-alpha (TNFa), and C-reactive protein (CRP), were measured in plasma using ELISA. DMN connectivity was measured during an fMRI social cognitive face processing task. Patients showed evidence of low grade systemic inflammation and significantly increased connectivity between the left lateral parietal (LLP) cortex-cerebellum and LLP-left angular gyrus compared to healthy participants. Across the entire sample, IL-6 predicted increased connectivity between LLP-cerebellum, LLP-precuneus, and mPFC-bilateral-precentral-gyri and left postcentral gyrus. In turn, and again in the entire sample, IL-6 (but no other inflammatory marker) mediated the relationship between childhood physical neglect and LLP-cerebellum. Physical neglect scores also significantly predicted the positive association between IL-6 and LLP-precuneus connectivity. This is to our knowledge the first study that provides evidence that higher plasma IL-6 mediates the association between higher childhood neglect and increased DMN connectivity during task based activity. Consistent with our hypothesis, exposure to trauma is associated with weaker suppression of the DMN during a face processing task, and this association was mediated via increased inflammatory response. The finding",
+      "score": {
+        "composite": 0.4504594065461355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Inflammation",
+        "Interleukin-6",
+        "Case-Control Studies",
+        "Schizophrenia",
+        "Schizophrenic Psychology",
+        "Child Abuse, Sexual",
+        "Adult",
+        "Female",
+        "Male",
+        "Facial Recognition",
+        "Adverse Childhood Experiences",
+        "Emotional Abuse"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f2174503",
+      "doi": "10.1371/journal.pone.0214997",
+      "url": "https://doi.org/10.1371/journal.pone.0214997",
+      "openalex_id": null,
+      "pmid": "31013276",
+      "first_author": "Schwarz",
+      "authors_display": "Schwarz, L. et al.",
+      "year": 2019,
+      "title": "Properties of face localizer activations and their application in functional magnetic resonance imaging (fMRI) fingerprinting.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6478291",
+      "tldr": null,
+      "abstract": "Functional localizers are particularly prevalent in functional magnetic resonance imaging (fMRI) studies concerning face processing. In this study, we extend the knowledge on face localizers regarding four important aspects: First, activation differences in occipital and fusiform face areas (OFA/FFA) and amygdala are characterized by increased activation while precuneus and medial prefrontal cortex show decreased deactivation to faces versus control stimuli. The face-selective posterior superior temporal sulcus is a hybrid area exhibiting increased activation within its inferior and decreased deactivation within its superior part. Second, the employed control stimuli can impact on whether a region is classified in group analyses as face-selective or not. We specifically investigated this for recently described cytoarchitectonic subregions of the fusiform cortex (FG-2/FG-4). Averaged activity across voxels in FG-4 was stronger for faces than objects, houses, or landscapes. In FG-2, averaged activity was only significantly stronger in comparison with landscapes, but small peaks within this area were detected for comparison versus objects and houses. Third, reproducibility of individual peak activations is excellent for right FFA and quite good for right OFA, whereas within all other areas it was too low to provide valid information on time-invariant individual peaks. Finally, the fine-grained spatial activation patterns in right OFA and FFA are both time-invariant within each individual and sufficiently different between individuals to enable identification of individual participants with near-perfect precision (fMRI fingerprinting).",
+      "score": {
+        "composite": 0.4480414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Face",
+        "Temporal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_88dc327f",
+      "doi": "10.1002/hbm.20630",
+      "url": "https://doi.org/10.1002/hbm.20630",
+      "openalex_id": null,
+      "pmid": "18661501",
+      "first_author": "Fox",
+      "authors_display": "Fox, C. et al.",
+      "year": 2009,
+      "title": "Defining the face processing network: optimization of the functional localizer in fMRI.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 259,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Functional localizers that contrast brain signal when viewing faces versus objects are commonly used in functional magnetic resonance imaging studies of face processing. However, current protocols do not reliably show all regions of the core system for face processing in all subjects when conservative statistical thresholds are used, which is problematic in the study of single subjects. Furthermore, arbitrary variations in the applied thresholds are associated with inconsistent estimates of the size of face-selective regions-of-interest (ROIs). We hypothesized that the use of more natural dynamic facial images in localizers might increase the likelihood of identifying face-selective ROIs in individual subjects, and we also investigated the use of a method to derive the statistically optimal ROI cluster size independent of thresholds. We found that dynamic facial stimuli were more effective than static stimuli, identifying 98% (versus 72% for static) of ROIs in the core face processing system and 69% (versus 39% for static) of ROIs in the extended face processing system. We then determined for each core face processing ROI, the cluster size associated with maximum statistical face-selectivity, which on average was approximately 50 mm(3) for the fusiform face area, the occipital face area, and the posterior superior temporal sulcus. We suggest that the combination of (a) more robust face-related activity induced by a dynamic face localizer and (b) a cluster-size determination based on maximum face-selectivity increases both the sensitivity and the specificity of the characterization of face-related ROIs in individual subjects.",
+      "score": {
+        "composite": 0.43382079900028947,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3219498626678245,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08048746566695612,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Face",
+        "Brain",
+        "Visual Pathways",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Facial Expression",
+        "Brain Mapping",
+        "Pattern Recognition, Visual",
+        "Nonlinear Dynamics",
+        "Time Factors",
+        "Image Processing, Computer-Assisted",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Discrimination, Psychological"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_b3dfe843",
+      "doi": "10.1016/j.nicl.2018.101613",
+      "url": "https://doi.org/10.1016/j.nicl.2018.101613",
+      "openalex_id": null,
+      "pmid": "30522972",
+      "first_author": "Vettori",
+      "authors_display": "Vettori, S. et al.",
+      "year": 2019,
+      "title": "Reduced neural sensitivity to rapid individual face discrimination in autism spectrum disorder.",
+      "venue": "NeuroImage. Clinical",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 44,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1016/j.nicl.2018.101613",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Individuals with autism spectrum disorder (ASD) are characterized by impairments in social communication and interaction. Although difficulties at processing social signals from the face in ASD have been observed and emphasized for many years, there is a lot of inconsistency across both behavioral and neural studies.<h4>Methods</h4>We recorded scalp electroencephalography (EEG) in 23 8-to-12 year old boys with ASD and 23 matched typically developing boys using a fast periodic visual stimulation (FPVS) paradigm, providing objective (i.e., frequency-tagged), fast (i.e., few minutes) and highly sensitive measures of rapid face categorization, without requiring any explicit face processing task. We tested both the sensitivity to rapidly (i.e., at a glance) categorize faces among other objects and to individuate unfamiliar faces.<h4>Outcomes</h4>While general neural synchronization to the visual stimulation and neural responses indexing generic face categorization were undistinguishable between children with ASD and typically developing controls, neural responses indexing individual face discrimination over the occipito-temporal cortex were substantially reduced in the individuals with ASD. This difference vanished when faces were presented upside-down, due to the lack of significant face inversion effect in ASD.<h4>Interpretation</h4>These data provide original evidence for a selective high-level impairment in individual face discrimination in ASD in an implicit task. The objective and rapid assessment of this function opens new perspectives for ASD diagnosis in clinical settings.",
+      "score": {
+        "composite": 0.42843244469805347,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Electroencephalography",
+        "Photic Stimulation",
+        "Child",
+        "Male",
+        "Autism Spectrum Disorder",
+        "Facial Recognition",
+        "Discrimination, Psychological"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b0ca994a",
+      "doi": "10.1093/scan/nsr058",
+      "url": "https://doi.org/10.1093/scan/nsr058",
+      "openalex_id": null,
+      "pmid": "21972425",
+      "first_author": "Smith",
+      "authors_display": "Smith, J. et al.",
+      "year": 2012,
+      "title": "Storm in a coffee cup: caffeine modifies brain activation to social signals of threat.",
+      "venue": "Social cognitive and affective neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Controlled Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 19,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Caffeine, an adenosine A₁ and A(2A) receptor antagonist, is the most popular psychostimulant drug in the world, but it is also anxiogenic. The neural correlates of caffeine-induced anxiety are currently unknown. This study investigated the effects of caffeine on brain regions implicated in social threat processing and anxiety. Participants were 14 healthy male non/infrequent caffeine consumers. In a double-blind placebo-controlled crossover design, they underwent blood oxygenation level-dependent functional magnetic resonance imaging (fMRI) while performing an emotional face processing task 1 h after receiving caffeine (250 mg) or placebo in two fMRI sessions (counterbalanced, 1-week washout). They rated anxiety and mental alertness, and their blood pressure was measured, before and 2 h after treatment. Results showed that caffeine induced threat-related (angry/fearful faces > happy faces) midbrain-periaqueductal gray activation and abolished threat-related medial prefrontal cortex wall activation. Effects of caffeine on extent of threat-related amygdala activation correlated negatively with level of dietary caffeine intake. In concurrence with these changes in threat-related brain activation, caffeine increased self-rated anxiety and diastolic blood pressure. Caffeine did not affect primary visual cortex activation. These results are the first to demonstrate potential neural correlates of the anxiogenic effect of caffeine, and they implicate the amygdala as a key site for caffeine tolerance.",
+      "score": {
+        "composite": 0.4266947257874873,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Face",
+        "Brain",
+        "Humans",
+        "Caffeine",
+        "Magnetic Resonance Imaging",
+        "Facial Expression",
+        "Brain Mapping",
+        "Double-Blind Method",
+        "Social Behavior",
+        "Anxiety",
+        "Expressed Emotion",
+        "Fear",
+        "Image Processing, Computer-Assisted",
+        "Adult",
+        "Aged",
+        "Middle Aged",
+        "Male",
+        "Young Adult",
+        "Arterial Pressure"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_4e1b56e6",
+      "doi": "10.1038/tp.2012.29",
+      "url": "https://doi.org/10.1038/tp.2012.29",
+      "openalex_id": null,
+      "pmid": "22832909",
+      "first_author": "Woudstra",
+      "authors_display": "Woudstra, S. et al.",
+      "year": 2012,
+      "title": "Piccolo genotype modulates neural correlates of emotion processing but not executive functioning.",
+      "venue": "Translational psychiatry",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 13,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/tp201229.pdf",
+      "tldr": null,
+      "abstract": "Major depressive disorder (MDD) is characterized by affective symptoms and cognitive impairments, which have been associated with changes in limbic and prefrontal activity as well as with monoaminergic neurotransmission. A genome-wide association study implicated the polymorphism rs2522833 in the piccolo (PCLO) gene--involved in monoaminergic neurotransmission--as a risk factor for MDD. However, the role of the PCLO risk allele in emotion processing and executive function or its effect on their neural substrate has never been studied. We used functional magnetic resonance imaging (fMRI) to investigate PCLO risk allele carriers vs noncarriers during an emotional face processing task and a visuospatial planning task in 159 current MDD patients and healthy controls. In PCLO risk allele carriers, we found increased activity in the left amygdala during processing of angry and sad faces compared with noncarriers, independent of psychopathological status. During processing of fearful faces, the PCLO risk allele was associated with increased amygdala activation in MDD patients only. During the visuospatial planning task, we found no genotype effect on performance or on BOLD signal in our predefined areas as a function of increasing task load. The PCLO risk allele was found to be specifically associated with altered emotion processing, but not with executive dysfunction. Moreover, the PCLO risk allele appears to modulate amygdala function during fearful facial processing in MDD and may constitute a possible link between genotype and susceptibility for depression via altered processing of fearful stimuli. The current results may therefore aid in better understanding underlying neurobiological mechanisms in MDD.",
+      "score": {
+        "composite": 0.4215320741182369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Amygdala",
+        "Humans",
+        "Genetic Predisposition to Disease",
+        "Oxygen",
+        "Neuropeptides",
+        "Cytoskeletal Proteins",
+        "Image Interpretation, Computer-Assisted",
+        "Magnetic Resonance Imaging",
+        "Image Enhancement",
+        "Facial Expression",
+        "Emotions",
+        "Pattern Recognition, Visual",
+        "Dominance, Cerebral",
+        "Synaptic Transmission",
+        "Genotype",
+        "Polymorphism, Genetic",
+        "Alleles",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Genome-Wide Association Study",
+        "Executive Function",
+        "Genetic Carrier Screening",
+        "Major Depressive Disorder"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_48a7fed6",
+      "doi": "10.1016/j.nicl.2020.102519",
+      "url": "https://doi.org/10.1016/j.nicl.2020.102519",
+      "openalex_id": null,
+      "pmid": "33316763",
+      "first_author": "Menks",
+      "authors_display": "Menks, W. et al.",
+      "year": 2021,
+      "title": "Eye gaze patterns and functional brain responses during emotional face processing in adolescents with conduct disorder.",
+      "venue": "NeuroImage. Clinical",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7735971",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Conduct disorder (CD) is characterized by severe aggressive and antisocial behavior. Initial evidence suggests neural deficits and aberrant eye gaze pattern during emotion processing in CD; both concepts, however, have not yet been studied simultaneously. The present study assessed the functional brain correlates of emotional face processing with and without consideration of concurrent eye gaze behavior in adolescents with CD compared to typically developing (TD) adolescents.<h4>Methods</h4>58 adolescents (23CD/35TD; average age = 16 years/range = 14-19 years) underwent an implicit emotional face processing task. Neuroimaging analyses were conducted for a priori-defined regions of interest (insula, amygdala, and medial orbitofrontal cortex) and using a full-factorial design assessing the main effects of emotion (neutral, anger, fear), group and the interaction thereof (cluster-level, p < .05 FWE-corrected) with and without consideration of concurrent eye gaze behavior (i.e., time spent on the eye region).<h4>Results</h4>Adolescents with CD showed significant hypo-activations during emotional face processing in right anterior insula compared to TD adolescents, independent of the emotion presented. In-scanner eye-tracking data revealed that adolescents with CD spent significantly less time on the eye, but not mouth region. Correcting for eye gaze behavior during emotional face processing reduced group differences previously observed for right insula.<h4>Conclusions</h4>Atypical insula activation during emotional face processing in adolescents with CD may partly be explained by attentional mechanisms (i.e., reduced gaze allocation to the eyes, independent of the emotion presented). An increased understanding of the mechanism causal for emotion processing deficits observed in CD may ultimately aid the development of personalized intervention programs.",
+      "score": {
+        "composite": 0.4214991926120757,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Facial Expression",
+        "Emotions",
+        "Conduct Disorder",
+        "Fixation, Ocular",
+        "Adolescent",
+        "Adult",
+        "Young Adult",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_c5281cc0",
+      "doi": "10.1162/jocn_a_00461",
+      "url": "https://doi.org/10.1162/jocn_a_00461",
+      "openalex_id": null,
+      "pmid": "23937692",
+      "first_author": "Callejas",
+      "authors_display": "Callejas, A. et al.",
+      "year": 2014,
+      "title": "Dorsal and ventral attention systems underlie social and symbolic cueing.",
+      "venue": "Journal of cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 51,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Eye gaze is a powerful cue for orienting attention in space. Studies examining whether gaze and symbolic cues recruit the same neural mechanisms have found mixed results. We tested whether there is a specialized attentional mechanism for social cues. We separately measured BOLD activity during orienting and reorienting attention following predictive gaze and symbolic cues. Results showed that gaze and symbolic cues exerted their influence through the same neural networks but also produced some differential modulations. Dorsal frontoparietal regions in left intraparietal sulcus (IPS) and bilateral MT(+)/lateral occipital cortex only showed orienting effects for symbolic cues, whereas right posterior IPS showed larger validity effects following gaze cues. Both exceptions may reflect the greater automaticity of gaze cues: Symbolic orienting may require more effort, while disengaging attention during reorienting may be more difficult following gaze cues. Face-selective regions, identified with a face localizer, showed selective activations for gaze cues reflecting sensory processing but no attentional modulations. Therefore, no evidence was found linking face-selective regions to a hypothetical, specialized mechanism for orienting attention to gaze cues. However, a functional connectivity analysis showed greater connectivity between face-selective regions and right posterior IPS, posterior STS, and inferior frontal gyrus during gaze cueing, consistent with proposals that face-selective regions may send gaze signals to parts of the dorsal and ventral frontoparietal attention networks. Finally, although the default-mode network is thought to be involved in social cognition, this role does not extend to gaze orienting as these regions were more deactivated following gaze cues and showed less functional connectivity with face-selective regions during gaze cues.",
+      "score": {
+        "composite": 0.42052516955845787,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Parietal Lobe",
+        "Humans",
+        "Photic Stimulation",
+        "Orientation",
+        "Interpersonal Relations",
+        "Cues",
+        "Psychomotor Performance",
+        "Attention",
+        "Reaction Time",
+        "Symbolism"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_0e3821e7",
+      "doi": "10.1523/jneurosci.2610-16.2016",
+      "url": "https://doi.org/10.1523/jneurosci.2610-16.2016",
+      "openalex_id": null,
+      "pmid": "28100742",
+      "first_author": "Liu",
+      "authors_display": "Liu, Z. et al.",
+      "year": 2017,
+      "title": "Visual Sampling Predicts Hippocampal Activity.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 89,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Eye movements serve to accumulate information from the visual world, contributing to the formation of coherent memory representations that support cognition and behavior. The hippocampus and the oculomotor network are well connected anatomically through an extensive set of polysynaptic pathways. However, the extent to which visual sampling behavior is related to functional responses in the hippocampus during encoding has not been studied directly in human neuroimaging. In the current study, participants engaged in a face processing task while brain responses were recorded with fMRI and eye movements were monitored simultaneously. The number of gaze fixations that a participant made on a given trial was correlated significantly with hippocampal activation such that more fixations were associated with stronger hippocampal activation. Similar results were also found in the fusiform face area, a face-selective perceptual processing region. Notably, the number of fixations was associated with stronger hippocampal activation when the presented faces were novel, but not when the faces were repeated. Increases in fixations during viewing of novel faces also led to larger repetition-related suppression in the hippocampus, indicating that this fixation-hippocampal relationship may reflect the ongoing development of lasting representations. Together, these results provide novel empirical support for the idea that visual exploration and hippocampal binding processes are inherently linked.<h4>Significance statement</h4>The hippocampal and oculomotor networks have each been studied extensively for their roles in the binding of information and gaze function, respectively. Despite the evidence that individuals with amnesia whose damage includes the hippocampus show alterations in their eye movement patterns and recent findings that the two systems are anatomically connected, it has not been demonstrated whether visual exploration is related to hippocampal activity in neurologically",
+      "score": {
+        "composite": 0.41846532620421467,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26052797148352547,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06513199287088137,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Eye Movements",
+        "Photic Stimulation",
+        "Pattern Recognition, Visual",
+        "Forecasting",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_2873da74",
+      "doi": "10.1016/j.neuropsychologia.2009.12.030",
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2009.12.030",
+      "openalex_id": null,
+      "pmid": "20036269",
+      "first_author": "Haas",
+      "authors_display": "Haas, B. et al.",
+      "year": 2010,
+      "title": "Individual differences in social behavior predict amygdala response to fearful facial expressions in Williams syndrome.",
+      "venue": "Neuropsychologia",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 41,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Williams syndrome (WS) is a genetic condition often paired with abnormal social functioning and behavior. In particular, those with WS are characterized as being relatively hypersocial, overly emotional/empathic, and socially uninhibited or fearless. In addition, WS is associated with abnormal amygdala structure and function. Very little is known however about the relationship between specific social behaviors and altered amygdala function in WS. This study was designed to compare three models that relate abnormal social behavior with amygdala function in WS (indiscriminate sociability, emotional and empathic sociability and social fearlessness). We used a social behavior assessment procedure (Salk Institute Sociability Questionnaire), functional magnetic resonance imaging and an implicit emotion face processing task to test these models. Our findings provide support for a model of abnormal social fearlessness by showing that in WS, abnormal amygdala response to fear is paired with an increased tendency to approach strangers. Specifically, individuals with WS that exhibited less amygdala response to fearful facial expressions (compared to neutral) also exhibited an increased tendency to approach strangers. These findings contribute to our understanding of social and emotional functioning in neurodevelopmental conditions and provide evidence that in WS, amygdala response to fear modulates social behavior.",
+      "score": {
+        "composite": 0.41743381507968125,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Amygdala",
+        "Humans",
+        "Williams Syndrome",
+        "Facial Expression",
+        "Social Behavior",
+        "Social Desirability",
+        "Fear",
+        "Adult",
+        "Female",
+        "Male",
+        "Surveys and Questionnaires"
+      ]
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_bada790f",
+      "doi": "10.1016/j.bpsc.2018.04.002",
+      "url": "https://doi.org/10.1016/j.bpsc.2018.04.002",
+      "openalex_id": null,
+      "pmid": "29752216",
+      "first_author": "Sethi",
+      "authors_display": "Sethi, A. et al.",
+      "year": 2018,
+      "title": "Primary and Secondary Variants of Psychopathy in a Volunteer Sample Are Associated With Different Neurocognitive Mechanisms.",
+      "venue": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 32,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Recent work has indicated that there at least two distinct subtypes of psychopathy. Primary psychopathy is characterized by low anxiety and thought to result from a genetic predisposition, whereas secondary psychopathy is characterized by high anxiety and thought to develop in response to environmental adversity. Primary psychopathy is robustly associated with reduced neural activation to others' emotions and, in particular, distress. However, it has been proposed that the secondary presentation has different neurocognitive correlates.<h4>Methods</h4>Primary (n = 50), secondary (n = 100), and comparison (n = 82) groups were drawn from a large volunteer sample (N = 1444) using a quartile-split approach across psychopathic trait (affective-interpersonal) and anxiety measures. Participants performed a widely utilized emotional face processing task during functional magnetic resonance imaging.<h4>Results</h4>The primary group showed reduced amygdala and insula activity in response to fear. The secondary group did not differ from the comparison group in these regions. Instead, the secondary group showed reduced activity compared with the comparison group in other areas, including the superior temporal sulcus/inferior parietal lobe, thalamus, pallidum, and substantia nigra. Both psychopathy groups also showed reduced activity in response to fear in the anterior cingulate cortex. During anger processing, the secondary group exhibited reduced activity in the anterior cingulate cortex compared with the primary group.<h4>Conclusions</h4>Distinct neural correlates of fear processing characterize individuals with primary and secondary psychopathy. The reduced neural response to fear that characterizes individuals with the primary variant of psychopathic traits is not observed in individuals with the secondary presentation. The neurocognitive mechanisms underpinning secondary psychopathy warrant further systematic investigation.",
+      "score": {
+        "composite": 0.4139431418032331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Photic Stimulation",
+        "Emotions",
+        "Fear",
+        "Empathy",
+        "Antisocial Personality Disorder",
+        "Image Processing, Computer-Assisted",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Volunteers"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_df7e7523",
+      "doi": "10.1016/j.jad.2018.09.010",
+      "url": "https://doi.org/10.1016/j.jad.2018.09.010",
+      "openalex_id": null,
+      "pmid": "30243195",
+      "first_author": "Acuff",
+      "authors_display": "Acuff, H. et al.",
+      "year": 2019,
+      "title": "White matter - emotion processing activity relationships in youth offspring of bipolar parents.",
+      "venue": "Journal of affective disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 15,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Early detection of Bipolar Disorder (BD) is critical for targeting interventions to delay or prevent illness onset. Yet, the absence of objective BD biomarkers makes accurately identifying at-risk youth difficult. In this study, we examined how relationships between white matter tract (WMT) structure and activity in emotion processing neural circuitry differentiate youth at risk for BD from youth at risk for other psychiatric disorders.<h4>Methods</h4>Offspring (ages 8-17) of parents with BD (OBP, n = 32), offspring of comparison parents with non-BD psychopathology (OCP, n = 30), and offspring of healthy parents (OHP, n = 24) underwent diffusion tensor and functional magnetic resonance imaging while performing an emotional face processing task. Penalized and multiple regression analyses included GROUP(OBP,OCP)xWMT interactions as main independent variables, and emotion processing activity as dependent variables, to determine significant group differences in WMT-activity relationships.<h4>Results</h4>8 GROUPxWMT interaction variables contributed to 16.5% of the variance in amygdala and prefrontal cortical activity to happy faces. Of these, significant group differences in slopes (inverse for OBP, positive for OCP) existed for the relationship between forceps minor radial diffusivity and rostral anterior cingulate activity (p = 0.014). Slopes remained significantly different in unmedicated youth without psychiatric disorders (p = 0.017) and were moderated by affective lability symptoms (F(1,29) = 5.566, p = 0.036).<h4>Limitations</h4>Relatively small sample sizes were included.<h4>Conclusions</h4>Forceps minor radial diffusivity-rostral anterior cingulate activity relationships may reflect underlying neuropathological processes that contribute to affectively labile youth at risk for BD and may help differentiate them from youth at risk for other psychiatric disorders.",
+      "score": {
+        "composite": 0.41346485935797817,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Amygdala",
+        "Gyrus Cinguli",
+        "Frontal Lobe",
+        "Prefrontal Cortex",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Facial Expression",
+        "Case-Control Studies",
+        "Emotions",
+        "Parents",
+        "Bipolar Disorder",
+        "Anisotropy",
+        "Adolescent",
+        "Child",
+        "Child of Impaired Parents",
+        "Female",
+        "Male",
+        "Diffusion Tensor Imaging",
+        "White Matter"
+      ]
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_aff6e9a9",
+      "doi": "10.1007/s00213-010-1897-5",
+      "url": "https://doi.org/10.1007/s00213-010-1897-5",
+      "openalex_id": null,
+      "pmid": "20596858",
+      "first_author": "Beacher",
+      "authors_display": "Beacher, F. et al.",
+      "year": 2011,
+      "title": "Acute tryptophan depletion attenuates conscious appraisal of social emotional signals in healthy female volunteers.",
+      "venue": "Psychopharmacology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 15,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3032182",
+      "tldr": null,
+      "abstract": "<h4>Rationale</h4>Acute tryptophan depletion (ATD) decreases levels of central serotonin. ATD thus enables the cognitive effects of serotonin to be studied, with implications for the understanding of psychiatric conditions, including depression.<h4>Objective</h4>To determine the role of serotonin in conscious (explicit) and unconscious/incidental processing of emotional information.<h4>Materials and methods</h4>A randomized, double-blind, cross-over design was used with 15 healthy female participants. Subjective mood was recorded at baseline and after 4 h, when participants performed an explicit emotional face processing task, and a task eliciting unconscious processing of emotionally aversive and neutral images presented subliminally using backward masking.<h4>Results</h4>ATD was associated with a robust reduction in plasma tryptophan at 4 h but had no effect on mood or autonomic physiology. ATD was associated with significantly lower attractiveness ratings for happy faces and attenuation of intensity/arousal ratings of angry faces. ATD also reduced overall reaction times on the unconscious perception task, but there was no interaction with emotional content of masked stimuli. ATD did not affect breakthrough perception (accuracy in identification) of masked images.<h4>Conclusions</h4>ATD attenuates the attractiveness of positive faces and the negative intensity of threatening faces, suggesting that serotonin contributes specifically to the appraisal of the social salience of both positive and negative salient social emotional cues. We found no evidence that serotonin affects unconscious processing of negative emotional stimuli. These novel findings implicate serotonin in conscious aspects of active social and behavioural engagement and extend knowledge regarding the effects of ATD on emotional perception.",
+      "score": {
+        "composite": 0.41346485935797817,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Serotonin",
+        "Tryptophan",
+        "Facial Expression",
+        "Cross-Over Studies",
+        "Double-Blind Method",
+        "Emotions",
+        "Affect",
+        "Cognition",
+        "Cues",
+        "Psychomotor Performance",
+        "Reaction Time",
+        "Adult",
+        "Female",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9da370ff",
+      "doi": "10.1016/j.nicl.2020.102217",
+      "url": "https://doi.org/10.1016/j.nicl.2020.102217",
+      "openalex_id": null,
+      "pmid": "32109760",
+      "first_author": "Bohorquez-Montoya",
+      "authors_display": "Bohorquez-Montoya, L. et al.",
+      "year": 2020,
+      "title": "Amygdala response to emotional faces in adolescents with persistent post-concussion symptoms.",
+      "venue": "NeuroImage. Clinical",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7044530",
+      "tldr": null,
+      "abstract": "Approximately 30% of adolescents with concussion develop persistent post-concussion symptoms (PPCS) that include emotional symptoms. Elevated amygdalae reactivity to emotional faces has been reported in a variety of psychopathologies characterized by emotional symptoms overlapping with those in PPCS. We tested the hypothesis that amygdalae reactivity to emotional faces in adolescents with PPCS+ is elevated compared to concussed adolescents without PPCS and healthy controls. Concussed adolescents (ages 14-18) with (PPCS+; n = 23) and without PPCS (PPCS-; n = 13) participated in visits at least 4 weeks post-injury. Adolescents without prior concussion served as controls (HC; n = 15). All participants completed a detailed clinical battery and a common emotional face processing task that involved matching of emotional faces or shapes. Compared to HC and PPCS-, adolescents with PPCS+ had elevated depression symptoms, anhedonia, general psychological symptoms, and anxiety symptoms. Contrary to our hypothesis, PPCS+ had lower amygdalae activity to the emotional faces versus shapes condition relative to HC and a trend for lower activity relative to PPCS-. There was a non-significant inverse association between anhedonia amygdalae activity in adolescents with PPCS. Results suggest that adolescents with PPCS have altered amygdalae activity during the processing of emotional face stimuli.",
+      "score": {
+        "composite": 0.41343197785181696,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Amygdala",
+        "Humans",
+        "Post-Concussion Syndrome",
+        "Image Interpretation, Computer-Assisted",
+        "Magnetic Resonance Imaging",
+        "Emotions",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_dfb83e0e",
+      "doi": "10.1038/npp.2017.121",
+      "url": "https://doi.org/10.1038/npp.2017.121",
+      "openalex_id": null,
+      "pmid": "28589968",
+      "first_author": "Cao",
+      "authors_display": "Cao, H. et al.",
+      "year": 2018,
+      "title": "The 5-HTTLPR Polymorphism Affects Network-Based Functional Connectivity in the Visual-Limbic System in Healthy Adults.",
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 26,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The serotonin transporter-linked polymorphic region 5-HTTLPR is a key genetic regulator of 5-HTT expression in the human brain where the short allele S has been implicated in emotion dysregulation. However, the neural mechanism underlying the association between this variant and emotion processing is still unclear. Earlier studies suggested an effect of 5-HTTLPR on amygdala activation during emotional face processing. However, this association has been questioned in recent studies employing larger sample sizes and meta-analyses. Here, we examined a sample of 223 healthy subjects with a well-established fMRI emotional face processing task to (1) re-evaluate the association between 5-HTTLPR and amygdala activation, (2) explore potential network-based functional connectivity phenotypes for associations with 5-HTTLPR, and (3) probe the reliability, behavioral significance and potential structural confounds of the identified network phenotype. Our results revealed no significant effect of 5-HTTLPR on amygdala activation (P>0.79). However, the number of S alleles was significantly correlated with functional connectivity of a visual-limbic subnetwork (P<sub>FWE</sub>=0.03). The subnetwork cluster included brain regions that are pivotal to emotion regulation such as the hippocampus, orbitofrontal cortex, anterior cingulate gyrus, fusiform gyrus, and subcortex. Notably, individuals with lower subnetwork connectivity had significantly higher emotion suppression scores (P=0.01). Further, the connectivity metrics were test-retest reliable and independent from subnetwork gray matter volume and white matter anisotropy. Our data provide evidence for a functional network-based phenotype linking genetic variation in 5-HTTLPR to emotion regulation, and suggest that further critical evaluations of the association between 5-HTTLPR and amygdala activation are warranted.",
+      "score": {
+        "composite": 0.4110385562176663,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Limbic System",
+        "Amygdala",
+        "Gyrus Cinguli",
+        "Cerebral Cortex",
+        "Prefrontal Cortex",
+        "Nerve Net",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Emotions",
+        "Phenotype",
+        "Polymorphism, Genetic",
+        "Adult",
+        "Female",
+        "Male",
+        "Serotonin Plasma Membrane Transport Proteins",
+        "Young Adult",
+        "Connectome",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_5479f8b4",
+      "doi": "10.1016/j.bbi.2022.05.015",
+      "url": "https://doi.org/10.1016/j.bbi.2022.05.015",
+      "openalex_id": null,
+      "pmid": "35636614",
+      "first_author": "Boukezzi",
+      "authors_display": "Boukezzi, S. et al.",
+      "year": 2022,
+      "title": "Exaggerated amygdala response to threat and association with immune hyperactivity in depression.",
+      "venue": "Brain, behavior, and immunity",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants,subjects)"
+      ],
+      "citation_count": 22,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Depression is characterized by altered neurobiological responses to threat and inflammation may be involved in the development and maintenance of symptoms. However, the mechanistic pathways underlying the relationship between the neural underpinnings of threat, inflammation and depressive symptoms remain unknown.<h4>Methods</h4>Twenty participants with major depressive disorder (MDD) and 17 healthy controls (HCs) completed this study. Peripheral blood mononuclear cells (PBMCs) were collected and stimulated ex vivo with lipopolysaccharide (LPS). We then measured a broad array of secreted proteins and performed principal component analysis to compute an aggregated immune reactivity score. Subjects completed a well-validated emotional face processing task during functional magnetic resonance imaging (fMRI). Amygdala activation was measured during perception of threat for the main contrast of interest: fear > happy face. Participants completed the Mood and Anxiety Symptom Questionnaire (MASQ) and the Perceived Stress Scale (PSS). Correlation analyses between amygdala activation, the aggregate immune score, and symptom were computed across groups. A mediation analysis was also performed across groups to further explore the relationship between these three variables.<h4>Results</h4>In line with our hypotheses and with prior work, the MDD group showed greater amygdala activation in response to threat compared to the HC group [t<sub>35</sub> = -2.038, p = 0.049]. Internal consistency of amygdala activation to threat was found to be moderate. Response to an ex vivo immune challenge was greater in MDD than HC based on the computed immune reactivity score (PC1; t<sub>35</sub> = 2.674, p = 0.011). Amygdala activation was positively correlated with the immune score (r = 0.331, p = 0.045). Moreover, higher amygdala activation was associated with greater anxious arousal measured by the MASQ (r = 0.390, p = 0.017). Exploring the role of stress, we found that high",
+      "score": {
+        "composite": 0.40871769442423217,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 25,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_573876a3",
+      "doi": "10.1017/pen.2019.1",
+      "url": "https://doi.org/10.1017/pen.2019.1",
+      "openalex_id": null,
+      "pmid": "32435736",
+      "first_author": "MacDuffie",
+      "authors_display": "MacDuffie, K. et al.",
+      "year": 2019,
+      "title": "Self-rated amygdala activity: an auto-biological index of affective distress.",
+      "venue": "Personality neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.cambridge.org/core/services/aop-cambridge-core/content/view/5D1B9D8D950C6120D645D3E85E09E164/S2513988619000014a.pdf/div-class-title-self-rated-amygdala-activity-an-auto-biological-index-of-affective-distress-div.pdf",
+      "tldr": null,
+      "abstract": "Auto-biological beliefs-beliefs about one's own biology-are an understudied component of personal identity. Research participants who are led to believe they are biologically vulnerable to affective disorders report more symptoms and less ability to control their mood; however, little is known about the impact of self-originating beliefs about risk for psychopathology, and whether such beliefs correspond to empirically derived estimates of actual vulnerability. Participants in a neuroimaging study (<i>n</i> = 1256) completed self-report measures of affective symptoms, perceived stress, and neuroticism, and an emotional face processing task in the scanner designed to elicit threat responses from the amygdala. A subsample (<i>n</i> = 63) additionally rated their own perceived neural response to threat (i.e., amygdala activity) compared to peers. Self-ratings of neural threat response were uncorrelated with actual threat-related amygdala activity measured via BOLD fMRI. However, self-ratings predicted subjective distress across a variety of self-report measures. In contrast, in the full sample, threat-related amygdala activity was uncorrelated with self-report measures of affective distress. These findings suggest that beliefs about one's own biological threat response-while unrelated to measured neural activation-may be informative indicators of psychological functioning.",
+      "score": {
+        "composite": 0.4080414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 26,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9ba1bf0c",
+      "doi": "10.1093/scan/nsae085",
+      "url": "https://doi.org/10.1093/scan/nsae085",
+      "openalex_id": null,
+      "pmid": "39587034",
+      "first_author": "Doucet",
+      "authors_display": "Doucet, G. et al.",
+      "year": 2024,
+      "title": "Anxiety symptoms are differentially associated with facial expression processing in boys and girls.",
+      "venue": "Social cognitive and affective neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11631531",
+      "tldr": null,
+      "abstract": "Facial expressions convey important social information and can initiate behavioral change through the processing and understanding of emotions. However, while this ability is known to evolve throughout development, it remains unclear whether this ability differs between girls and boys or how other variables such as level of anxiety can modulate it. Furthermore, understanding the underlying neural mechanisms of facial expression processing and how they are linked by sex and anxiety during development is essential, as alterations in this processing have been associated with psychiatric disorders. Herein, 191 typically developing youth (6- to 15-years old) completed an implicit face processing task involving three facial expressions (angry, happy, and neutral) during functional magnetic resonance imaging. We conducted linear models on the fMRI data to investigate the impact sex and anxiety on brain responses to emotional faces, accounting for age. Our findings indicated a significant anxiety-by-sex interaction in a posterior network covering bilateral visual and medial temporal cortices during the happy > neutral contrast. Specifically, girls with higher anxiety showed weaker activation while boys showed the opposite pattern. These findings suggest that the inter-subject variability reported in typically developing individuals in response to facial emotions may be related to many factors, including sex and anxiety level.",
+      "score": {
+        "composite": 0.40339909634565574,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Facial Expression",
+        "Brain Mapping",
+        "Photic Stimulation",
+        "Emotions",
+        "Anxiety",
+        "Sex Characteristics",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_b451c423",
+      "doi": "10.3389/fnhum.2019.00094",
+      "url": "https://doi.org/10.3389/fnhum.2019.00094",
+      "openalex_id": null,
+      "pmid": "30949039",
+      "first_author": "Knight",
+      "authors_display": "Knight, L. et al.",
+      "year": 2019,
+      "title": "Convergent Neural Correlates of Empathy and Anxiety During Socioemotional Processing.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,participants)"
+      ],
+      "citation_count": 27,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6438321",
+      "tldr": null,
+      "abstract": "Empathy is characterized by the ability to understand and share an emotional experience with another person and is closely tied to compassion and concern for others. Consequently, this increased emotional awareness and sensitivity may also be related to increased anxiety. Taken from another perspective, higher general anxiety may translate into increased concern for others, or concern for how one's actions might affect others, and therefore may be linked to increased empathy. Furthermore, self-reflection is positively related to perspective-taking and empathic concern, while rumination is closely tied to anxiety, thus providing an additional connecting point between empathy and anxiety through enhanced internally generated thought. While previous literature suggests a relationship between empathy and anxiety, this has yet to be empirically studied using neuroimaging tools aimed at investigating the underlying neural correlates that may support these convergent responses. We therefore conducted an functional magnetic resonance imaging (fMRI) study (<i>N</i> = 49) in which participants viewed fearful and neutral human faces and rated how the faces made them feel, to promote introspection. Participants also completed questionnaires assessing empathy Toronto Empathy Questionnaire (TEQ), trait anxiety State Trait Anxiety Inventory (STAI), worry Penn State Worry Questionnaire (PSWQ) and rumination Ruminative Responses Scale (RRS). Behaviorally, empathy positively correlated with worry, worry and rumination positively correlated with anxiety, and significant indirect relationships were found between empathy and anxiety through worry and rumination. Using the neuroimaging face processing task as a backdrop on which the neurobiological mechanisms of empathy and anxiety may interact, regressions of questionnaires with brain activations revealed that empathy related to activation in the temporoparietal junction (TPJ), anxiety related to bilateral insula activation, and worry r",
+      "score": {
+        "composite": 0.40156495562439815,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_200ec2a2",
+      "doi": "10.1016/j.bpsc.2016.01.006",
+      "url": "https://doi.org/10.1016/j.bpsc.2016.01.006",
+      "openalex_id": null,
+      "pmid": "27525316",
+      "first_author": "Kujawa",
+      "authors_display": "Kujawa, A. et al.",
+      "year": 2016,
+      "title": "Altered Development of Amygdala-Anterior Cingulate Cortex Connectivity in Anxious Youth and Young Adults.",
+      "venue": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 43,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Development of cortico-amygdala circuitry underlies the maturation of emotion processing and regulation, and age-related changes in amygdala connectivity with anterior cingulate cortex (ACC) have been shown to mediate normative developmental decreases in anxiety. It remains unclear whether developmental changes in this circuitry relate to pathological anxiety in youth. The current functional magnetic resonance imaging (fMRI) study addresses this question by examining amygdala functional connectivity in anxious and healthy individuals spanning the developmental period from childhood through adulthood.<h4>Methods</h4>Youth and young adults (age 7-25) with current anxiety disorders (<i>n=</i>57) and healthy comparisons (<i>n=</i>61) completed an fMRI emotional face processing task known to elicit amygdala activation in youth and adults. We examined interaction effects of anxiety group and age on amygdala connectivity with frontolimbic regions during processing of happy, angry, and fearful faces.<h4>Results</h4>Anxiety interacted with age to predict amygdala-ACC connectivity across emotional faces. Among healthy comparisons, age was negatively related to connectivity. In contrast, age was positively associated with amygdala-ACC connectivity in the anxious group. Group effects were also observed on amygdala connectivity with midcingulate and middle frontal gyri. Effects of anxiety and age on amygdala activation were not significant.<h4>Conclusions</h4>Results indicate that anxiety is characterized by altered patterns of age-related changes in amygdala connectivity during emotional face processing. Positive associations between age and amygdala-ACC connectivity among anxious youth and young adults may indicate failure to establish early bottom-up connections in childhood and/or less top-down regulation of the amygdala into adulthood.",
+      "score": {
+        "composite": 0.3981071638541112,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21909532208311155,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05477383052077789,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_db0e8ae1",
+      "doi": "10.1016/j.nicl.2022.103078",
+      "url": "https://doi.org/10.1016/j.nicl.2022.103078",
+      "openalex_id": null,
+      "pmid": "35687994",
+      "first_author": "Grannis",
+      "authors_display": "Grannis, C. et al.",
+      "year": 2022,
+      "title": "Multimodal classification of extremely preterm and term adolescents using the fusiform gyrus: A machine learning approach.",
+      "venue": "NeuroImage. Clinical",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9189188",
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Extremely preterm birth has been associated with atypical visual and neural processing of faces, as well as differences in gray matter structure in visual processing areas relative to full-term peers. In particular, the right fusiform gyrus, a core visual area involved in face processing, has been shown to have structural and functional differences between preterm and full-term individuals from childhood through early adulthood. The current study used multiple neuroimaging modalities to build a machine learning model based on the right fusiform gyrus to classify extremely preterm birth status.<h4>Method</h4>Extremely preterm adolescents (n = 20) and full-term peers (n = 24) underwent structural and functional magnetic resonance imaging. Group differences in gray matter density, measured via voxel-based morphometry (VBM), and blood-oxygen level-dependent (BOLD) response to face stimuli were explored within the right fusiform. Using group difference clusters as seed regions, analyses investigating outgoing white matter streamlines, regional homogeneity, and functional connectivity during a face processing task and at rest were conducted. A data driven approach was utilized to determine the most discriminative combination of these features within a linear support vector machine classifier.<h4>Results</h4>Group differences in two partially overlapping clusters emerged: one from the VBM analysis showing less density in the extremely preterm cohort and one from BOLD response to faces showing greater activation in the extremely preterm relative to full-term youth. A classifier fit to the data from the cluster identified in the BOLD analysis achieved an accuracy score of 88.64% when BOLD, gray matter density, regional homogeneity, and functional connectivity during the task and at rest were included. A classifier fit to the data from the cluster identified in the VBM analysis achieved an accuracy score of 95.45% when only BOLD, gray matter density, and reg",
+      "score": {
+        "composite": 0.3866289627751649,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Temporal Lobe",
+        "Humans",
+        "Premature Birth",
+        "Magnetic Resonance Imaging",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Infant, Newborn",
+        "Female",
+        "Infant, Extremely Premature",
+        "Machine Learning"
+      ]
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_20470246",
+      "doi": "10.1016/j.nicl.2014.11.009",
+      "url": "https://doi.org/10.1016/j.nicl.2014.11.009",
+      "openalex_id": null,
+      "pmid": "25610782",
+      "first_author": "Leung",
+      "authors_display": "Leung, R. et al.",
+      "year": 2015,
+      "title": "Early neural activation during facial affect processing in adolescents with Autism Spectrum Disorder.",
+      "venue": "NeuroImage. Clinical",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 36,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4300004",
+      "tldr": null,
+      "abstract": "Impaired social interaction is one of the hallmarks of Autism Spectrum Disorder (ASD). Emotional faces are arguably the most critical visual social stimuli and the ability to perceive, recognize, and interpret emotions is central to social interaction and communication, and subsequently healthy social development. However, our understanding of the neural and cognitive mechanisms underlying emotional face processing in adolescents with ASD is limited. We recruited 48 adolescents, 24 with high functioning ASD and 24 typically developing controls. Participants completed an implicit emotional face processing task in the MEG. We examined spatiotemporal differences in neural activation between the groups during implicit angry and happy face processing. While there were no differences in response latencies between groups across emotions, adolescents with ASD had lower accuracy on the implicit emotional face processing task when the trials included angry faces. MEG data showed atypical neural activity in adolescents with ASD during angry and happy face processing, which included atypical activity in the insula, anterior and posterior cingulate and temporal and orbitofrontal regions. Our findings demonstrate differences in neural activity during happy and angry face processing between adolescents with and without ASD. These differences in activation in social cognitive regions may index the difficulties in face processing and in comprehension of social reward and punishment in the ASD group. Thus, our results suggest that atypical neural activation contributes to impaired affect processing, and thus social cognition, in adolescents with ASD.",
+      "score": {
+        "composite": 0.38559916166256125,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2090633133169118,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05226582832922795,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetoencephalography",
+        "Facial Expression",
+        "Brain Mapping",
+        "Emotions",
+        "Pattern Recognition, Visual",
+        "Social Perception",
+        "Child Development Disorders, Pervasive",
+        "Image Processing, Computer-Assisted",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 31,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d5a8fb75",
+      "doi": "10.1111/ejn.15592",
+      "url": "https://doi.org/10.1111/ejn.15592",
+      "openalex_id": null,
+      "pmid": "34989038",
+      "first_author": "Young",
+      "authors_display": "Young, K. et al.",
+      "year": 2022,
+      "title": "Individual differences in threat and reward neural circuitry activation: Testing dimensional models of early adversity, anxiety and depression.",
+      "venue": "The European journal of neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 16,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "https://escholarship.org/uc/item/0cz91211",
+      "tldr": null,
+      "abstract": "Altered functioning of the brain's threat and reward circuitry has been linked to early life adversity and to symptoms of anxiety and depression. To date, however, these relationships have been studied largely in isolation and in categorical-based approaches. It is unclear to what extent early life adversity and psychopathology have unique effects on brain functioning during threat and reward processing. We examined functional brain activity during a face processing task in threat (amygdala and ventromedial prefrontal cortex) and reward (ventral striatum and orbitofrontal cortex) regions of interest among a sample (N = 103) of young adults (aged 18-19 years) in relation to dimensional measures of early life adversity and symptoms of anxiety and depression. Results demonstrated a significant association between higher scores on the deprivation adversity dimension and greater activation of reward neural circuitry during viewing of happy faces, with the largest effect sizes observed in the orbitofrontal cortex. We found no significant associations between the threat adversity dimension, or symptom dimensions of anxiety and depression, and neural activation in threat or reward circuitries. These results lend partial support to theories of adversity-related alterations in neural activation and highlight the importance of testing dimensional models of adversity and psychopathology in large sample sizes to further our understanding of the biological processes implicated.",
+      "score": {
+        "composite": 0.384342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Depression",
+        "Anxiety",
+        "Individuality",
+        "Reward",
+        "Young Adult",
+        "Ventral Striatum"
+      ]
+    },
+    {
+      "rank": 32,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_d2a64ea7",
+      "doi": "10.3389/fnhum.2016.00279",
+      "url": "https://doi.org/10.3389/fnhum.2016.00279",
+      "openalex_id": null,
+      "pmid": "27378880",
+      "first_author": "Troiani",
+      "authors_display": "Troiani, V. et al.",
+      "year": 2016,
+      "title": "Characterization of Face-Selective Patches in Orbitofrontal Cortex.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "token:animal (monkeys)"
+      ],
+      "citation_count": 33,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4906043",
+      "tldr": null,
+      "abstract": "Face processing involves a complex, multimodal brain network. While visual-perceptual face patches in posterior parts of the brain have been studied for over a decade, the existence and properties of face-selective regions in orbitofrontal cortex (OFC) is a relatively new area of research. While regions of OFC are implicated in the emotional processing of faces, this is typically interpreted as a domain-general response to affective value rather than a face- or socially-specific response. However, electrophysiology studies in monkeys have identified neurons in OFC that respond more to faces than any other stimuli. Here, we characterize the prevalence and location of OFC face-selective regions in 20 healthy college students. We did this by including another biologically motivating category (appetizing foods) in a variant of the standard face localizer. Results show that face-selective patches can be identified at the individual level. Furthermore, in both a region of interest (ROI) and a whole brain analysis, medial regions of the OFC were face-selective, while lateral regions were responsive to faces and foods, indicating a domain-general response in lateral OFC. Medial OFC (mOFC) response to faces scales in relationship to a measure of social motivation that is distinct from face processing abilities associated with fusiform cortex.",
+      "score": {
+        "composite": 0.3743752451865962,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects"
+    },
+    {
+      "rank": 33,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_be5a2153",
+      "doi": "10.1016/j.biopsych.2024.06.020",
+      "url": "https://doi.org/10.1016/j.biopsych.2024.06.020",
+      "openalex_id": null,
+      "pmid": "38945386",
+      "first_author": "Gao",
+      "authors_display": "Gao, Y. et al.",
+      "year": 2025,
+      "title": "Longitudinal Changes in Functional Neural Activation and Sensitization During Face Processing in Fragile X Syndrome.",
+      "venue": "Biological psychiatry",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Fragile X syndrome (FXS) is a genetic condition associated with increased risk for social anxiety and avoidance. Using functional near-infrared spectroscopy (fNIRS), we previously demonstrated aberrant neural activity responding to faces in young girls with FXS cross-sectionally. Here, we tested the hypothesis that abnormalities in neural activation and sensitization would increase with age in 65 girls with FXS (ages 6-16 years) relative to an age-matched control group of 52 girls who had comparable cognitive function and clinical symptoms.<h4>Methods</h4>fNIRS data were collected at 2 time points (mean [SD] = 2.8 [0.6] years apart) during a face processing task. Linear mixed-effect models examined longitudinal neural profiles in girls with FXS and control participants. Correlational analysis was performed to examine associations between neural sensitization (increasing neural response to repeated stimuli) and clinical ratings.<h4>Results</h4>In the FXS group, 24 participants had 1 fNIRS scan, and 32 had 2 scans. In the control group, 28 participants had 1 fNIRS scan, and 22 had 2 scans. Brain activations in the superior frontal gyrus were higher in girls with FXS than control participants at both time points. Neural sensitization also increased in girls with FXS at a higher rate than control participants in the superior frontal gyrus when responding to upright faces. For the FXS group, sensitization in the superior frontal gyrus positively correlated with longitudinal increases in anxiety and social avoidance scores.<h4>Conclusions</h4>Girls with FXS show increasingly abnormal neural activation and sensitization responding to faces over time. Aberrant neural sensitization in girls with FXS is associated with longitudinal changes in anxiety and social skills.",
+      "score": {
+        "composite": 0.36923507429477764,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Fragile X Syndrome",
+        "Spectroscopy, Near-Infrared",
+        "Longitudinal Studies",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 34,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1786149a",
+      "doi": "10.1016/j.nicl.2023.103408",
+      "url": "https://doi.org/10.1016/j.nicl.2023.103408",
+      "openalex_id": null,
+      "pmid": "37087819",
+      "first_author": "Safar",
+      "authors_display": "Safar, K. et al.",
+      "year": 2023,
+      "title": "Atypical oscillatory dynamics during emotional face processing in paediatric obsessive-compulsive disorder with MEG.",
+      "venue": "NeuroImage. Clinical",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1016/j.nicl.2023.103408",
+      "tldr": null,
+      "abstract": "Children and youth with obsessive-compulsive disorder (OCD) demonstrate difficulties with social, emotional and cognitive functions in addition to the core diagnosis of obsessions and compulsions. This is the first magnetoencephalography (MEG) study to examine whole-brain neurophysiological functional connectivity of emotional face processing networks in paediatric OCD. Seventy-two participants (OCD: n = 36; age 8-17 yrs; typically developing controls: n = 36, age 8-17 yrs) completed an implicit emotional face processing task in the MEG. Functional connectivity networks in canonical frequency bands were compared between groups, and within OCD and control groups between emotions (angry vs. happy). Between groups, participants with OCD showed increased functional connectivity in the gamma band to angry faces, suggesting atypical perception of angry faces in OCD. Within groups, the OCD group showed greater engagement of the beta band, suggesting the over-use of top-down processing when perceiving happy versus angry emotions, while controls engaged in bottom-up gamma processing, also greater to happy faces. Over-activation of top-down processing has been linked to difficulties modifying one's cognitive set. Findings establish altered patterns of neurophysiological connectivity in children with OCD, and are striking in their oscillatory specificity. Our results contribute to a greater understanding of the neurobiology of the disorder, and are foundational for the possibility of alternative targets for intervention.",
+      "score": {
+        "composite": 0.35662896277516487,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Magnetoencephalography",
+        "Emotions",
+        "Obsessive-Compulsive Disorder",
+        "Adolescent",
+        "Child",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 35,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c5af51b8",
+      "doi": "10.1111/cogs.13130",
+      "url": "https://doi.org/10.1111/cogs.13130",
+      "openalex_id": null,
+      "pmid": "35411960",
+      "first_author": "Mannix",
+      "authors_display": "Mannix, T., & Sørensen, T.",
+      "year": 2022,
+      "title": "Face-Processing Differences Present in Grapheme-Color Synesthetes.",
+      "venue": "Cognitive science",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9286625",
+      "tldr": null,
+      "abstract": "Grapheme-color synesthesia is a heterogeneous neurological phenomenon whereby the experience of a grapheme automatically and involuntarily elicits an experience of color. While the majority of synesthesia research has focused on inducer-specific influences of synesthetic associations, more recent efforts have examined potential broader differences. Based on spontaneous reports from synesthetes detailing problems with face recognition, in conjunction with the geographical proximity of neurological regions relevant to both synesthesia and face processing, we sought to examine whether synesthetes demonstrated atypical face-processing abilities. A total of 16 grapheme-color synesthetes and 16 age-and-gender matched controls (±3 years) completed the Cambridge Face Memory Test (CFMT; Duchaine & Nakayama, 2006) of face memory, the Vanderbilt Holistic Face Processing Task (VHPT-F; Richler, Floyd, & Gauthier, 2014) of holistic face processing, as well as a standardized self-report questionnaire the Faces and Emotions Questionnaire (Freeman, Palermo, & Brock, 2015). The results revealed significantly poorer performance in synesthete's ability to recognize faces in the CFMT that was driven by a reduction in upright advantage. Results also revealed a significant reduction in overall accuracy on the VHPT-F for synesthetes, who despite this displayed a comparable holistic processing advantage compared to matched controls. Finally, synesthetes also rated themselves as significantly worse at face recognition. We suggest that this pattern may reflect differences in the development of individualized perceptual strategies.",
+      "score": {
+        "composite": 0.35336621483949454,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Perceptual Disorders",
+        "Photic Stimulation",
+        "Pattern Recognition, Visual",
+        "Color Perception",
+        "Facial Recognition",
+        "Synesthesia"
+      ]
+    },
+    {
+      "rank": 36,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_bf4e8193",
+      "doi": "10.1093/scan/nsaf076",
+      "url": "https://doi.org/10.1093/scan/nsaf076",
+      "openalex_id": null,
+      "pmid": "40705676",
+      "first_author": "Safar",
+      "authors_display": "Safar, K. et al.",
+      "year": 2025,
+      "title": "Mapping neural signatures of face processing in young children: an OPM-MEG study.",
+      "venue": "Social cognitive and affective neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12478022",
+      "tldr": null,
+      "abstract": "Facial expressions are fundamental to social communication, with emotional face processing developing throughout childhood. However, the neural mechanisms underlying this process in young children remain underexplored due to challenges in neuroimaging this population. Optically pumped magnetometers (OPMs), a wearable magnetoencephalography (MEG) technology, offer potential advantages for studying these responses early in life. This study investigated evoked responses and functional connectivity in 45 children (3-5 years) during an emotional face processing task using OPM-MEG. The M170 component, a key marker of face processing, and whole-brain functional connectivity of eight regions of interest were assessed. Children exhibited a robust M170 response to emotional faces in the bilateral fusiform gyri. Peak amplitude increased with age, but no significant latency changes were observed. A significant network of increased connectivity following emotional face onset, involving connections between the amygdalae, insulae, occipital, and frontal regions was found. This study provides the first evidence of M170 responses and large-scale connectivity to emotional faces in young children using OPM-MEG. Findings highlight the feasibility of OPMs for developmental neuroimaging and provide insights into the maturation of emotion-related neural circuits in early childhood. These results establish a foundation for future face processing research in clinical paediatric populations, such as autism.",
+      "score": {
+        "composite": 0.35333333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetoencephalography",
+        "Facial Expression",
+        "Brain Mapping",
+        "Emotions",
+        "Child, Preschool",
+        "Female",
+        "Male",
+        "Facial Recognition",
+        "Wearable Electronic Devices"
+      ]
+    },
+    {
+      "rank": 37,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_a4fe0b41",
+      "doi": "10.3389/fnhum.2014.00393",
+      "url": "https://doi.org/10.3389/fnhum.2014.00393",
+      "openalex_id": null,
+      "pmid": "24926249",
+      "first_author": "van den Bulk",
+      "authors_display": "van den Bulk, B. et al.",
+      "year": 2014,
+      "title": "Amygdala activation during emotional face processing in adolescents with affective disorders: the role of underlying depression and anxiety symptoms.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 30,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4046490",
+      "tldr": null,
+      "abstract": "Depressive and anxiety disorders are often first diagnosed during adolescence and it is known that they persist into adulthood. Previous studies often tried to dissociate depressive and anxiety disorders, but high comorbidity makes this difficult and maybe even impossible. The goal of this study was to use neuroimaging to test what the unique contribution is of depression and anxiety symptomatology on emotional processing and amygdala activation, and to compare the results with a healthy control group. We included 25 adolescents with depressive and/or anxiety disorders and 26 healthy adolescents. Participants performed an emotional face processing task while in the MRI scanner. We were particularly interested in the relation between depression/anxiety symptomatology and patterns of amygdala activation. There were no significant differences in activation patterns between the control group and the clinical group on whole brain level and ROI level. However, we found that dimensional scores on an anxiety but not a depression subscale significantly predicted brain activation in the right amygdala when processing fearful, happy and neutral faces. These results suggest that anxiety symptoms are a better predictor for differentiating activation patterns in the amygdala than depression symptoms. Although the current study includes a relatively large sample of treatment naïve adolescents with depression/anxiety disorders, results might be influenced by differences between studies in recruitment strategies or methodology. Future research should include larger samples with a more equal distribution of adolescents with a clinical diagnosis of depression and/or anxiety. To conclude, this study shows that abnormal amygdala responses to emotional faces in depression and anxiety seems to be more dependent on anxiety symptoms than on depression symptoms, and thereby highlights the need for more research to better characterize clinical groups in future studies.",
+      "score": {
+        "composite": 0.35303819787370594,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 38,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_06626e02",
+      "doi": "10.1017/s135561770808140x",
+      "url": "https://doi.org/10.1017/s135561770808140x",
+      "openalex_id": null,
+      "pmid": "18954473",
+      "first_author": "Bookheimer",
+      "authors_display": "Bookheimer, S. et al.",
+      "year": 2008,
+      "title": "Frontal contributions to face processing differences in autism: evidence from fMRI of inverted face processing.",
+      "venue": "Journal of the International Neuropsychological Society : JINS",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 95,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Functional neuroimaging studies of face processing deficits in autism have typically focused on visual processing regions, such as the fusiform face area (FFA), which have shown reduced activity in autism spectrum disorders (ASD), though inconsistently. We recently reported reduced activity in the inferior frontal region in ASD, implicating impaired mirror-neuron systems during face processing. In the present study, we used fMRI during a face processing task in which subjects had to match faces presented in the upright versus inverted position. Typically developing (TD) children showed a classic behavioral inversion effect, increased reaction time for inverted faces, while this effect was significantly reduced in ASD subjects. The fMRI data showed similar responses in the fusiform face area for ASD and TD children, with both groups demonstrating increased activation for inverted faces. However, the groups did differ in several brain regions implicated in social cognition, particularly prefrontal cortex and amygdala. These data suggest that the behavioral differences in processing upright versus inverted faces for TD children are related not to visual information processing but to the social significance of the stimuli. Our results are consistent with other recent studies implicating frontal and limbic dysfunction during face processing in autism.",
+      "score": {
+        "composite": 0.32939948182558365,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26426459396900137,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06606614849225034,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Face",
+        "Frontal Lobe",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Case-Control Studies",
+        "Photic Stimulation",
+        "Pattern Recognition, Visual",
+        "Reaction Time",
+        "Autistic Disorder",
+        "Image Processing, Computer-Assisted",
+        "Adolescent",
+        "Child",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 39,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_e84a9b70",
+      "doi": "10.3390/s19102377",
+      "url": "https://doi.org/10.3390/s19102377",
+      "openalex_id": null,
+      "pmid": "31126117",
+      "first_author": "Król",
+      "authors_display": "Król, M., & Król, M.",
+      "year": 2019,
+      "title": "A Novel Eye Movement Data Transformation Technique that Preserves Temporal Information: A Demonstration in a Face Processing Task.",
+      "venue": "Sensors (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6567129",
+      "tldr": null,
+      "abstract": "Existing research has shown that human eye-movement data conveys rich information about underlying mental processes, and that the latter may be inferred from the former. However, most related studies rely on spatial information about which different areas of visual stimuli were looked at, without considering the order in which this occurred. Although powerful algorithms for making pairwise comparisons between eye-movement sequences (scanpaths) exist, the problem is how to compare two groups of scanpaths, e.g., those registered with vs. without an experimental manipulation in place, rather than individual scanpaths. Here, we propose that the problem might be solved by projecting a scanpath similarity matrix, obtained via a pairwise comparison algorithm, to a lower-dimensional space (the comparison and dimensionality-reduction techniques we use are ScanMatch and t-SNE). The resulting distributions of low-dimensional vectors representing individual scanpaths can be statistically compared. To assess if the differences result from temporal scanpath features, we propose to statistically compare the cross-validated accuracies of two classifiers predicting group membership: (1) based exclusively on spatial metrics; (2) based additionally on the obtained scanpath representation vectors. To illustrate, we compare autistic vs. typically-developing individuals looking at human faces during a lab experiment and find significant differences in temporal scanpath features.",
+      "score": {
+        "composite": 0.3014991926120757,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher",
+      "mesh_terms": [
+        "Face",
+        "Humans",
+        "Eye Movements",
+        "Monte Carlo Method",
+        "Photic Stimulation",
+        "Algorithms",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Autism Spectrum Disorder"
+      ]
+    },
+    {
+      "rank": 40,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_20446781",
+      "doi": "10.1155/2017/2824615",
+      "url": "https://doi.org/10.1155/2017/2824615",
+      "openalex_id": null,
+      "pmid": "29430081",
+      "first_author": "Kasagi",
+      "authors_display": "Kasagi, M. et al.",
+      "year": 2017,
+      "title": "Association between Scale-Free Brain Dynamics and Behavioral Performance: Functional MRI Study in Resting State and Face Processing Task.",
+      "venue": "Behavioural neurology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 11,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "http://downloads.hindawi.com/journals/bn/2017/2824615.pdf",
+      "tldr": null,
+      "abstract": "The scale-free dynamics of human brain activity, characterized by an elaborate temporal structure with scale-free properties, can be quantified using the power-law exponent (PLE) as an index. Power laws are well documented in nature in general, particularly in the brain. Some previous fMRI studies have demonstrated a lower PLE during cognitive-task-evoked activity than during resting state activity. However, PLE modulation during cognitive-task-evoked activity and its relationship with an associated behavior remain unclear. In this functional fMRI study in the resting state and face processing + control task, we investigated PLE during both the resting state and task-evoked activities, as well as its relationship with behavior measured using mean reaction time (mRT) during the task. We found that (1) face discrimination-induced BOLD signal changes in the medial prefrontal cortex (mPFC), posterior cingulate cortex (PCC), amygdala, and fusiform face area; (2) PLE significantly decreased during task-evoked activity specifically in mPFC compared with resting state activity; (3) most importantly, in mPFC, mRT significantly negatively correlated with both resting state PLE and the resting-task PLE difference. These results may lead to a better understanding of the associations between task performance parameters (e.g., mRT) and the scale-free dynamics of spontaneous and task-evoked brain activities.",
+      "score": {
+        "composite": 0.28930083730710004,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Amygdala",
+        "Gyrus Cinguli",
+        "Prefrontal Cortex",
+        "Temporal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Reaction Time",
+        "Adult",
+        "Male",
+        "Young Adult",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 41,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_96d89cc6",
+      "doi": "10.1097/md.0000000000005358",
+      "url": "https://doi.org/10.1097/md.0000000000005358",
+      "openalex_id": null,
+      "pmid": "27828859",
+      "first_author": "Tadayonnejad",
+      "authors_display": "Tadayonnejad, R. et al.",
+      "year": 2016,
+      "title": "Aberrant pulvinar effective connectivity in generalized social anxiety disorder.",
+      "venue": "Medicine",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5106065",
+      "tldr": null,
+      "abstract": "Recent neuroimaging findings in general social anxiety disorder (gSAD) have extended our understanding of the neural mechanisms of gSAD beyond an amygdala-centric fear-based hyperactivity model to include other brain regions and networks relevant to salient cues. In particular, higher order areas compromising visual networks that process emotional and social information have been implicated. The pulvinar anchors this network and is a key regulatory node that mediates complex sensory inputs and the integration between limbic and frontal brain systems. However, the role of the pulvinar and specifically alteration of its effective connectivity with the rest of the brain has not been examined in the pathophysiology of gSAD, a disorder characterized by aberrant socio-emotional processing. The main aim of this study was to examine the pulvinar network effective connectivity in gSAD. In this study, we recruited 21 individuals with gSAD and 19 demographically matched healthy controls (HC), who performed an emotional face processing task while brain activity was recorded using functional magnetic resonance imaging (fMRI). To examine pulvinar-based network dynamics, Granger causality (GC) based effective connectivity (EC) analysis was applied on fMRI data to compare gSAD and HC. The EC analysis revealed heightened casual influential dynamics between pulvinar in higher order visual and frontal regions in gSAD. In conclusion, these preliminary data suggest a novel network-based cortico-pulvino-cortical neural mechanism in the pathophysiology of gSAD.",
+      "score": {
+        "composite": 0.28595228672247486,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Pulvinar",
+        "Nerve Net",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Cross-Sectional Studies",
+        "Adult",
+        "Female",
+        "Male",
+        "Phobia, Social"
+      ]
+    },
+    {
+      "rank": 42,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_8ab65e9f",
+      "doi": "10.1111/jon.13185",
+      "url": "https://doi.org/10.1111/jon.13185",
+      "openalex_id": null,
+      "pmid": "38169075",
+      "first_author": "Nowling",
+      "authors_display": "Nowling, D. et al.",
+      "year": 2024,
+      "title": "Sex differences in development of functional connections in the face processing network.",
+      "venue": "Journal of neuroimaging : official journal of the American Society of Neuroimaging",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background and purpose</h4>Understanding sex differences in typical development of the face processing network is important for elucidating disruptions during atypical development in sex-linked developmental disorders like autism spectrum disorder. Based on prior sex difference studies in other cognitive domains, this study examined whether females show increased integration of core and extended face regions with age for face viewing, while males would show increased segregation.<h4>Methods</h4>This study used a cross-sectional design with typically developing children and adults (n = 133) and a functional MRI face localizer task. Psychophysiological interaction (PPI) analysis examined functional connectivity between canonical and extended face processing network regions with age, with greater segregation indexed by decreased core-extended region connectivity with age and greater integration indexed by increased core-extended region connectivity with age.<h4>Results</h4>PPI analysis confirmed increased segregation for males-right fusiform face area (FFA) coupling to right inferior frontal gyrus (IFG) opercular when viewing faces and left amygdala when viewing objects decreased with age. Females showed increased integration with age (increased coupling of the right FFA to right IFG opercular region and right occipital face area [OFA] to right IFG orbital when viewing faces and objects, respectively) and increased segregation (decreased coupling with age of the right OFA with IFG opercular region when viewing faces).<h4>Conclusions</h4>Development of core and extended face processing network connectivity follows sexually dimorphic paths. These differential changes mostly occur across childhood and adolescence, with males experiencing segregation and females both segregation and integration changes in connectivity.",
+      "score": {
+        "composite": 0.2792350742947776,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Cross-Sectional Studies",
+        "Photic Stimulation",
+        "Pattern Recognition, Visual",
+        "Sex Characteristics",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Female",
+        "Male",
+        "Autism Spectrum Disorder",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 43,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ad5c739e",
+      "doi": "10.1177/15500594231222979",
+      "url": "https://doi.org/10.1177/15500594231222979",
+      "openalex_id": null,
+      "pmid": "38298008",
+      "first_author": "Catalano",
+      "authors_display": "Catalano, L. et al.",
+      "year": 2024,
+      "title": "An ERP Study of Face Processing in Schizophrenia, Bipolar Disorder, and Socially Isolated Individuals from the Community.",
+      "venue": "Clinical EEG and neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "People with schizophrenia (SCZ) and bipolar disorder (BD) have impairments in processing social information, including faces. The neural correlates of face processing are widely studied with the N170 ERP component. However, it is unclear whether N170 deficits reflect neural abnormalities associated with these clinical conditions or differences in social environments. The goal of this study was to determine whether N170 deficits would still be present in SCZ and BD when compared with socially isolated community members. Participants included 66 people with SCZ, 37 with BD, and 125 community members (76 \"Community-Isolated\"; 49 \"Community-Connected\"). Electroencephalography was recorded during a face processing task in which participants identified the gender of a face, the emotion of a face (angry, happy, neutral), or the number of stories in a building. We examined group differences in the N170 face effect (greater amplitudes for faces vs buildings) and the N170 emotion effect (greater amplitudes for emotional vs neutral expressions). Groups significantly differed in levels of social isolation (Community-Isolated > SCZ > BD = Community-Connected). SCZ participants had significantly reduced N170 amplitudes to faces compared with both community groups, which did not differ from each other. The BD group was intermediate and did not differ from any group. There were no significant group differences in the processing of specific emotional facial expressions. The N170 is abnormal in SCZ even when compared to socially isolated community members. Hence, the N170 seems to reflect a social processing impairment in SCZ that is separate from level of social isolation.",
+      "score": {
+        "composite": 0.2733662148394945,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Facial Expression",
+        "Social Isolation",
+        "Emotions",
+        "Bipolar Disorder",
+        "Schizophrenia",
+        "Evoked Potentials",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 44,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_68b953ae",
+      "doi": "10.1007/s00429-025-02992-8",
+      "url": "https://doi.org/10.1007/s00429-025-02992-8",
+      "openalex_id": null,
+      "pmid": "40810908",
+      "first_author": "Hammond",
+      "authors_display": "Hammond, C. et al.",
+      "year": 2025,
+      "title": "Altered effective connectivity of emotion perception and regulation networks during an emotional face perception task in adults with alcohol use disorder.",
+      "venue": "Brain structure & function",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12354520",
+      "tldr": null,
+      "abstract": "Impairments in emotional regulation and mood symptoms are interrelated and associated with alcohol use disorder (AUD) risk, but the underlying aberrant neural circuitry involved is poorly understood. In the present study, we examined alterations in effective (directional) connectivity (EC) during emotional face processing in individuals with and without AUD. We utilized functional MRI data from the Human Connectome Project obtained during an emotional face processing task in 70 participants with AUD and 70 controls (CON). Focusing on ventromedial prefrontal cortex (VMPFC), bilateral ventrolateral prefrontal cortex (VLPFC), amygdala (AMY), and fusiform gyrus (FG), and right (R) hypothalamus (HTN) nodes, we performed dynamic causal modeling analysis to test group-level differences in EC. Linear regressions characterized EC relationships with measures of cumulative alcohol exposure and depression and anxiety. Compared to CON participants, AUD participants had lower ECs from VMPFC → bilateral VLPFC, left (L)-VLPFC → L-VLPFC and VMPFC, R-VLPFC → L-FG, R-FG → HTN, and R-AMY → L-VLPFC; and greater ECs from VMPFC → VMPFC, L-VLPFC → R-VLPFC and bilateral FG, L-FG → R-AMY and HTN, R-AMY → VMPFC and L-FG, and L-AMY → HTN connectivities. In regression analyses, these cortical-to-cortical and cortical-to-subcortical ECs were associated with cumulative alcohol exposure. EC from R-VLPFC to L-FG was negatively associated with depression. Individuals with AUD have disrupted EC in cortical-to-cortical and cortical-to-subcortical circuits during emotional face processing in brain regions purported to govern emotion control, which may explain linkages between cumulative alcohol exposure and depression.",
+      "score": {
+        "composite": 0.2733333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Neural Pathways",
+        "Humans",
+        "Alcoholism",
+        "Magnetic Resonance Imaging",
+        "Facial Expression",
+        "Emotions",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Connectome",
+        "Facial Recognition",
+        "Emotional Regulation"
+      ]
+    },
+    {
+      "rank": 45,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_ebada32e",
+      "doi": "10.1176/appi.ajp.2012.11081245",
+      "url": "https://doi.org/10.1176/appi.ajp.2012.11081245",
+      "openalex_id": null,
+      "pmid": "22535257",
+      "first_author": "Kim",
+      "authors_display": "Kim, P. et al.",
+      "year": 2012,
+      "title": "Differing amygdala responses to facial expressions in children and adults with bipolar disorder.",
+      "venue": "The American journal of psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, N.I.H., Intramural",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 33,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Child and adult bipolar patients show both behavioral deficits in face emotion processing and abnormal amygdala activation. However, amygdala function in pediatric relative to adult bipolar patients has not been compared directly. The authors used functional MRI to compare amygdala activity during a face processing task in children and adults with bipolar disorder and in healthy comparison subjects.<h4>Method</h4>Amygdala responses to emotional facial expressions were examined in pediatric (N=18) and adult (N=17) bipolar patients and in healthy child (N=15) and adult (N=22) volunteers. Participants performed a gender identification task while viewing fearful, angry, and neutral faces.<h4>Results</h4>In response to fearful faces, bipolar patients across age groups exhibited right amygdala hyperactivity relative to healthy volunteers. However, when responses to all facial expressions were combined, pediatric patients exhibited greater right amygdala activation than bipolar adults and healthy children.<h4>Conclusions</h4>Amygdala hyperactivity in response to fearful faces is present in both youths and adults with bipolar disorder. However, compared with bipolar adults and healthy child volunteers, pediatric bipolar patients showed amygdala hyperactivity in response to a broad array of emotional faces. Thus, abnormal amygdala activation during face processing appears to be more pervasive in children than in adults with bipolar disorder. Longitudinal studies are needed to elucidate the mechanisms of this developmental difference, thus facilitating developmentally sensitive diagnosis and treatment.",
+      "score": {
+        "composite": 0.2543752451865962,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Amygdala",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Facial Expression",
+        "Case-Control Studies",
+        "Emotions",
+        "Bipolar Disorder",
+        "Age Factors",
+        "Adolescent",
+        "Adult",
+        "Middle Aged",
+        "Child",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Functional Neuroimaging"
+      ]
+    },
+    {
+      "rank": 46,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_0f8ae255",
+      "doi": "10.1186/2045-5380-1-6",
+      "url": "https://doi.org/10.1186/2045-5380-1-6",
+      "openalex_id": null,
+      "pmid": "22738183",
+      "first_author": "Simmons",
+      "authors_display": "Simmons, A. et al.",
+      "year": 2011,
+      "title": "Altered amygdala activation during face processing in Iraqi and Afghanistani war veterans.",
+      "venue": "Biology of mood & anxiety disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patients,subjects)"
+      ],
+      "citation_count": 41,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://biolmoodanxietydisord.biomedcentral.com/counter/pdf/10.1186/2045-5380-1-6",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Exposure to combat can have a significant impact across a wide array of domains, and may manifest as post-traumatic stress disorder (PTSD), a debilitating mental illness that is associated with neural and affective sequelae. This study tested the hypothesis that combat-exposed individuals with and without PTSD, relative to healthy control subjects with no history of PTSD or combat exposure, would show amygdala hyperactivity during performance of a well-validated face processing task. We further hypothesized that differences in the prefrontal cortex would best differentiate the combat-exposed groups with and without PTSD.<h4>Methods</h4>Twelve men with PTSD related to combat in Operations Enduring Freedom and/or Iraqi Freedom, 12 male combat-exposed control patients with a history of Operations Enduring Freedom and/or Iraqi Freedom combat exposure but no history of PTSD, and 12 healthy control male patients with no history of combat exposure or PTSD completed a face-matching task during functional magnetic resonance imaging.<h4>Results</h4>The PTSD group showed greater amygdala activation to fearful versus happy faces than both the combat-exposed control and healthy control groups. Both the PTSD and the combat-exposed control groups showed greater amygdala activation to all faces versus shapes relative to the healthy control group. However, the combat-exposed control group relative to the PTSD group showed greater prefrontal/parietal connectivity with the amygdala, while the PTSD group showed greater connectivity with the subgenual cingulate. The strength of connectivity in the PTSD group was inversely related to avoidance scores.<h4>Conclusions</h4>These observations are consistent with the hypothesis that PTSD is associated with a deficiency in top-down modulation of amygdala activation by the prefrontal cortex and shows specific sensitivity to fearful faces.",
+      "score": {
+        "composite": 0.2474338150796812,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 47,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_6e1c3725",
+      "doi": "10.1186/s13229-024-00635-z",
+      "url": "https://doi.org/10.1186/s13229-024-00635-z",
+      "openalex_id": null,
+      "pmid": "39709442",
+      "first_author": "Moerkerke",
+      "authors_display": "Moerkerke, M. et al.",
+      "year": 2024,
+      "title": "Impact of chronic intranasal oxytocin administration on face expression processing in autistic children: a randomized controlled trial using fMRI.",
+      "venue": "Molecular autism",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11662540",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Difficulties with (non-verbal) social communication, including facial expression processing, constitute a hallmark of autism. Intranasal administration of oxytocin has been considered a potential therapeutic option for improving social difficulties in autism, either by enhancing the salience of social cues or by reducing the social stress and anxiety experienced in social encounters.<h4>Methods</h4>We recorded fMRI brain activity while presenting neutral, fearful and scrambled faces, to compare the neural face processing signature of autistic children (n = 58) with that of matched non-autistic controls (n = 38). Next, in the autistic children group, we implemented this fMRI face processing task in a double-blind, placebo-controlled, multiple-dose oxytocin clinical trial, to evaluate the impact of four-week repeated oxytocin administration (24 IU daily dose) on brain activity in face processing regions.<h4>Results</h4>No significant diagnostic-group differences were identified between autistic versus non-autistic children with regard to neural face processing. Furthermore, no significant treatment effects were found in the oxytocin clinical trial. However, exploratory analyses (uncorrected for multiple comparisons) demonstrated decreases in brain activity in the left superior temporal sulcus (STS) and inferior frontal region in the oxytocin compared to the placebo group, and change-from-baseline analyses in the oxytocin group revealed significantly reduced neural activity in the core face-processing network (STS, inferior occipital, and posterior fusiform), as well as in amygdala and inferior frontal region.<h4>Conclusion</h4>These findings suggest an attenuating effect of multiple-dose oxytocin administration on neural face processing, potentially supporting the anxiolytic account of oxytocin.",
+      "score": {
+        "composite": 0.24339909634565576,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Oxytocin",
+        "Magnetic Resonance Imaging",
+        "Facial Expression",
+        "Administration, Intranasal",
+        "Double-Blind Method",
+        "Autistic Disorder",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 48,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_63bba56d",
+      "doi": "10.3390/brainsci1010003",
+      "url": "https://doi.org/10.3390/brainsci1010003",
+      "openalex_id": null,
+      "pmid": "24962612",
+      "first_author": "Walla",
+      "authors_display": "Walla, P. et al.",
+      "year": 2011,
+      "title": "Dysfunctional Incidental Olfaction in Mild Cognitive Impairment (MCI): An Electroencephalography (EEG) Study.",
+      "venue": "Brain sciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants,patient,patients)"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4061781",
+      "tldr": null,
+      "abstract": "Our study provides evidence that Mild Cognitive Impairment (MCI) is associated with olfactory dysfunction on both conscious and non-conscious levels. MCI patients and age-matched controls underwent a face processing task during which sympathy decisions had to be made via button presses. Incidentally, some of the faces were associated with a simultaneously presented odour. Although attention was paid to faces, brain activities were analysed with respect to odour versus no-odour conditions. Behavioural differences were found related to overall face recognition performance, but these were not statistically significant. However, odour-related neurophysiology differed between both groups. Normal controls demonstrated brain activity differences between odour and no-odour conditions that resemble difference activity patterns in healthy young participants as described in a previous magnetoencephalography (MEG) study [1]. They showed odour-related activity patterns between about 160 ms and 320 ms after stimulus onset and between about 640 ms and 720 ms. On the other hand, the patient group did not show any such difference activities. Based on previous research we interpret the early odour-related brain activity pattern in controls as being associated with subliminal olfaction and the later activity pattern with conscious olfaction. None of these were found in MCI patients, although it has to be emphasised that our sample size was rather small. We confirm previous findings about olfactory related dysfunction in patients with MCI and conclude from our findings that even subliminal odour-related information processing is impaired.",
+      "score": {
+        "composite": 0.21926795580093883,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 49,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a703f390",
+      "doi": "10.1186/s12888-024-06400-z",
+      "url": "https://doi.org/10.1186/s12888-024-06400-z",
+      "openalex_id": null,
+      "pmid": "39695511",
+      "first_author": "Sarovic",
+      "authors_display": "Sarovic, D. et al.",
+      "year": 2024,
+      "title": "Differential late-stage face processing in autism: a magnetoencephalographic study of fusiform gyrus activation.",
+      "venue": "BMC psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://bmcpsychiatry.biomedcentral.com/counter/pdf/10.1186/s12888-024-06400-z",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Autism is associated with alterations of social communication, such as during face-to-face interactions. This study aimed to probe face processing in autistics with normal IQ utilizing magnetoencephalography to examine event-related fields within the fusiform gyrus during face perception.<h4>Methods</h4>A case-control cohort of 22 individuals diagnosed with autism and 20 age-matched controls (all male, age 29.3 ± 6.9 years) underwent magnetoencephalographic scanning during an active task while observing neutral faces, face-like pareidolic objects, and non-face objects. The fusiform face area was identified using a face localizer for each participant, and the cortical activation pattern was normalized onto an average brain for subsequent analysis.<h4>Results</h4>Early post-stimulus activation amplitudes (before 100-200 ms) indicated differentiation between stimuli containing fundamental facial features and non-face objects in both groups. In contrast, later activation (400-550 ms) differentiated real faces from both pareidolic and non-face objects across both groups and faces from objects in controls but not in autistics. There was no effect of autistic-like traits.<h4>Conclusions</h4>The absence of group differences in early activation suggest intact face detection in autistics possessing a normal IQ. Later activation captures a greater degree of the complexity and social information from actual faces. Although both groups distinguished faces from pareidolic and non-face objects, the control group exhibited a slightly heightened differentiation at this latency, indicating a potential disadvantage for autistics in real face processing. The subtle difference in late-stage face processing observed in autistic individuals may reflect specific cognitive mechanisms related to face perception in autism.",
+      "score": {
+        "composite": 0.2033333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Temporal Lobe",
+        "Humans",
+        "Magnetoencephalography",
+        "Case-Control Studies",
+        "Autistic Disorder",
+        "Adult",
+        "Male",
+        "Young Adult",
+        "Facial Recognition"
+      ]
+    }
+  ]
+}

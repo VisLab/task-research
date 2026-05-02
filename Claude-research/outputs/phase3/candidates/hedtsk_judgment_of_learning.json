@@ -1,0 +1,291 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:44:14",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_judgment_of_learning",
+    "name": "Judgment-of-Learning Task",
+    "aliases": [
+      "JOL Task",
+      "Judgment-of-Learning Paradigm",
+      "Metacognitive Prediction Task"
+    ],
+    "category_id": "awareness_agency_and_metacognition",
+    "short_definition": "After studying each item, participants predict the likelihood they will recall it on a later test; calibration and resolution of these predictions index metacognitive monitoring of encoding.",
+    "description": "The Judgment-of-Learning task measures the accuracy of metacognitive predictions made during or shortly after encoding. In the standard Nelson and Dunlosky (1991) paradigm, participants study word pairs and, after each pair (immediate) or after a delay (delayed), rate the likelihood (0-100%) that they will recall the target when given the cue on a later test. A cued recall test follows, and prediction accuracy is assessed through resolution (gamma correlation between judgments and recall) and calibration (mean judgment vs. mean recall). A landmark finding is the delayed-judgment-of-learning effect: predictions made after a brief delay are far more accurate than immediate ones, because delayed judgments rely on retrieval fluency (a valid cue) rather than short-term memory availability (a poor cue). Judgment-of-Learning research connects to self-regulated learning: learners use these judgments to allocate study time, select items for restudy, and decide when to terminate study. The paradigm is foundational in metamemory research and dissociates from Feeling-of-Knowing tasks in timing (post-encoding vs. post-retrieval-failure), prediction target (recall vs. recognition), and underlying basis (encoding fluency vs. partial retrieval).",
+    "inclusion_test": {
+      "procedure": "Participants study items (typically word pairs), then predict the likelihood of recalling each item on a future test; a subsequent recall test assesses prediction accuracy.",
+      "manipulation": "Judgment timing (immediate vs. delayed); item difficulty (related vs. unrelated pairs); encoding conditions (number of presentations, elaborative vs. rote); cue type (cue-only vs. cue-target at judgment); self-paced vs. fixed study time; reactivity (whether making judgments alters learning).",
+      "measurement": "Resolution (gamma correlation between judgments and recall); calibration (mean judgment - mean recall); over/underconfidence (signed calibration); absolute accuracy; judgment latency; study-time allocation as a behavioral consequence of judgments."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 3,
+      "picked": 3,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_b2a99ad8",
+      "doi": "10.1111/j.1467-9280.1991.tb00147.x",
+      "url": "https://doi.org/10.1111/j.1467-9280.1991.tb00147.x",
+      "openalex_id": "https://openalex.org/W2006172948",
+      "pmid": null,
+      "first_author": "Nelson",
+      "authors_display": "Thomas O. Nelson, & John Dunlosky",
+      "year": 1991,
+      "title": "When People's Judgments of Learning (JOLs) are Extremely Accurate at Predicting Subsequent Recall: The “Delayed-JOL Effect”",
+      "venue": "Psychological Science",
+      "venue_tier": "flagship",
+      "publisher": "SAGE Publishing",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 578,
+      "influential_citation_count": null,
+      "fwci": 3.3408,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Judgments of learning (JOLs), which pertain to knowing what one knows and which help to guide self-paced study during acquisition, have almost never been very accurate at predicting subsequent recall. We recently discovered a situation in which the JOLs can be made to be extremely accurate. Here we report the conditions under which such high accuracy occurs, namely, when the JOL made on the stimulus cue is delayed until shortly after study rather than being made immediately after study. Discussion is focused both on theoretical explanations (to be explored in future research) and on potential applications of the delayed-JOL effect.",
+      "score": {
+        "composite": 0.6520759627569748,
+        "breakdown": {
+          "raw": {
+            "citations": 0.36830385102789903,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09207596275697476,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_cc4fd482",
+      "doi": "10.1007/s10803-016-2895-1",
+      "url": "https://doi.org/10.1007/s10803-016-2895-1",
+      "openalex_id": null,
+      "pmid": "27565653",
+      "first_author": "Grainger",
+      "authors_display": "Grainger, C. et al.",
+      "year": 2016,
+      "title": "Judgment of Learning Accuracy in High-functioning Adolescents and Adults with Autism Spectrum Disorder.",
+      "venue": "Journal of autism and developmental disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 11,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s10803-016-2895-1.pdf",
+      "tldr": null,
+      "abstract": "This study explored whether adults and adolescents with autism spectrum disorder (ASD) demonstrate difficulties making metacognitive judgments, specifically judgments of learning. Across two experiments, the study examined whether individuals with ASD could accurately judge whether they had learnt a piece of information (in this case word pairs). In Experiment 1, adults with ASD demonstrated typical accuracy on a standard 'cue-alone' judgment of learning (JOL) task, compared to age- and IQ-matched neurotypical adults. Additionally, in Experiment 2, adolescents with ASD demonstrated typical accuracy on both a standard 'cue-alone' JOL task, and a 'cue-target' JOL task. These results suggest that JOL accuracy is unimpaired in ASD. These results have important implications for both theories of metacognition in ASD and educational practise.",
+      "score": {
+        "composite": 0.3584675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Learning",
+        "Judgment",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Theory of Mind",
+        "Metacognition",
+        "Autism Spectrum Disorder"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_e3cf93be",
+      "doi": "10.1177/17470218241239829",
+      "url": "https://doi.org/10.1177/17470218241239829",
+      "openalex_id": null,
+      "pmid": "38438309",
+      "first_author": "Navarro-Báez",
+      "authors_display": "Navarro-Báez, S. et al.",
+      "year": 2025,
+      "title": "Predicting the memorability of scene pictures: Improved accuracy through one's own experience.",
+      "venue": "Quarterly journal of experimental psychology (2006)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.sagepub.com/doi/pdf/10.1177/17470218241239829",
+      "tldr": null,
+      "abstract": "There are conflicting findings regarding the accuracy of metamemory for scene pictures. Judgements of stimulus memorability in general (<i>memorability judgements</i> [MJs]) have been reported to be unpredictive of actual image memorability. However, other studies have found that <i>judgements of learning</i> (JOLs)-predictions of one's own later memory performance for recently studied items-are moderately predictive of people's own actual recognition memory for pictures. The current study directly compared the relative accuracy and cue basis of JOLs and MJs for scene pictures. In Experiments 1 and 2, participants completed an MJ task and a JOL task in counterbalanced order. In the MJ task, they judged the general memorability of each picture. In the JOL task, they studied pictures and made JOLs during a learning phase, followed by a recognition memory test. Results showed that MJs were predictive of general scene memorability and relied on the same cues as JOLs, but MJ accuracy considerably improved after the JOL task. Experiment 3 demonstrated that prior learning experiences drove this increase in MJ accuracy. This work demonstrates that people can predict not only their own future memory performance for scene pictures with moderate accuracy but also the general memorability of scene pictures. In addition, experiences with one's own learning and memory support the ability to assess scene memorability in general. This research contributes to our understanding of the basis and accuracy of different metamemory judgements.",
+      "score": {
+        "composite": 0.22253288150616118,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Photic Stimulation",
+        "Learning",
+        "Cues",
+        "Pattern Recognition, Visual",
+        "Judgment",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Metacognition",
+        "Recognition, Psychology"
+      ]
+    }
+  ]
+}

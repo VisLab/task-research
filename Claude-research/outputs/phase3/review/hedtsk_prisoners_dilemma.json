@@ -1,0 +1,1140 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_prisoners_dilemma",
+    "name": "Prisoner's Dilemma Task",
+    "aliases": [
+      "Prisoner's Dilemma",
+      "PD",
+      "Iterated Prisoner's Dilemma",
+      "Iterated PD"
+    ],
+    "category_id": "social_cognition_and_strategic_social_choice",
+    "short_definition": "Two-player one-shot or iterated game with cooperate/defect choices and asymmetric payoffs; choice patterns index cooperation and strategic reasoning.",
+    "description": "The Prisoner's Dilemma is a canonical game theory paradigm for studying cooperation and defection under strategic interdependence. Two players simultaneously choose to cooperate or defect. Mutual cooperation yields moderate rewards for both; mutual defection yields low rewards for both; but if one defects while the other cooperates, the defector receives the highest reward and the cooperator receives nothing (or a penalty). The dominant strategy in single-shot play is to defect, yet human participants frequently cooperate, particularly in iterated versions. The task is central to research on trust, reciprocity, altruism, and the neural substrates of social decision-making.",
+    "inclusion_test": {
+      "procedure": "Two players simultaneously choose to cooperate or defect; payoffs depend on both choices according to a matrix where mutual cooperation beats mutual defection but defection is individually tempting.",
+      "manipulation": "Payoff matrix values; one-shot vs. iterated; partner identity (human, computer, in-group); communication allowed or not.",
+      "measurement": "Cooperation rate; payoff earned; tit-for-tat and other strategy classification; first-move cooperation."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:48:20",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Patsoukis 2020 — Revisiting the PD-1 pathway. (Science advances, key_review, 387×)",
+      "doi": "10.1126/sciadv.abd2712",
+      "pub_id": "pub_f1b21eac",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6262819065089775,
+        "breakdown": {
+          "raw": {
+            "citations": 0.34512762603591,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0862819065089775,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Science advances",
+      "citation_count": 387,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Sanmamed 2018 — A Paradigm Shift in Cancer Immunotherapy: From Enhancement to Normalization. (Cell, key_review, 1k×)",
+      "doi": "10.1016/j.cell.2018.09.035",
+      "pub_id": "pub_dfaec619",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6202152898647921,
+        "breakdown": {
+          "raw": {
+            "citations": 0.40086115945916845,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.10021528986479211,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Cell",
+      "citation_count": 1015,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "André 2018 — Anti-NKG2A mAb Is a Checkpoint Inhibitor that Promotes Anti-tumor Immunity by… (Cell, key_review, 917×)",
+      "doi": "10.1016/j.cell.2018.10.014",
+      "pub_id": "pub_be936a6a",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6187471347375958,
+        "breakdown": {
+          "raw": {
+            "citations": 0.39498853895038327,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09874713473759582,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Cell",
+      "citation_count": 917,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Booth 2017 — The Role of Astrocyte Dysfunction in Parkinson's Disease Pathogenesis. (Trends in neurosciences, key_review, 454×)",
+      "doi": "10.1016/j.tins.2017.04.001",
+      "pub_id": "pub_ae51d50a",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.598587561933376,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3543502477335043,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08858756193337608,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Trends in neurosciences",
+      "citation_count": 454,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Mariathasan 2018 — TGFβ attenuates tumour response to PD-L1 blockade by contributing to exclusio… (Nature, recent_primary, 4k×)",
+      "doi": "10.1038/nature25501",
+      "pub_id": "pub_6783a434",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5903308297469838,
+        "breakdown": {
+          "raw": {
+            "citations": 0.481323318987935,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12033082974698375,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature",
+      "citation_count": 4077,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Paillusson 2016 — There's Something Wrong with my MAM; the ER-Mitochondria Axis and Neurodegene… (Trends in neurosciences, key_review, 365×)",
+      "doi": "10.1016/j.tins.2016.01.008",
+      "pub_id": "pub_8b810f96",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.58543700741954,
+        "breakdown": {
+          "raw": {
+            "citations": 0.34174802967815987,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08543700741953997,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Trends in neurosciences",
+      "citation_count": 365,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Schürch 2020 — Coordinated Cellular Neighborhoods Orchestrate Antitumoral Immunity at the Co… (Cell, recent_primary, 706×)",
+      "doi": "10.1016/j.cell.2020.07.005",
+      "pub_id": "pub_f167d09a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.584966906128153,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37986762451261225,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09496690612815306,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Cell",
+      "citation_count": 706,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Oh 2020 — Intratumoral CD4<sup>+</sup> T Cells Mediate Anti-tumor Cytotoxicity in Human… (Cell, recent_primary, 596×)",
+      "doi": "10.1016/j.cell.2020.05.017",
+      "pub_id": "pub_21b540dd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5825190908863921,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37007636354556817,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09251909088639204,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Cell",
+      "citation_count": 596,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Barkal 2019 — CD24 signalling through macrophage Siglec-10 is a target for cancer immunothe… (Nature, recent_primary, 1k×)",
+      "doi": "10.1038/s41586-019-1456-0",
+      "pub_id": "pub_d894445e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5812726853343322,
+        "breakdown": {
+          "raw": {
+            "citations": 0.40509074133732875,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10127268533433219,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature",
+      "citation_count": 1092,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Poggio 2019 — Suppression of Exosomal PD-L1 Induces Systemic Anti-tumor Immunity and Memory. (Cell, recent_primary, 1k×)",
+      "doi": "10.1016/j.cell.2019.02.016",
+      "pub_id": "pub_43c453f8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5811663532609466,
+        "breakdown": {
+          "raw": {
+            "citations": 0.404665413043786,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1011663532609465,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Cell",
+      "citation_count": 1084,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Kim 2019 — Transneuronal Propagation of Pathologic α-Synuclein from the Gut to the Brain… (Neuron, recent_primary, 1k×)",
+      "doi": "10.1016/j.neuron.2019.05.035",
+      "pub_id": "pub_3af09782",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5810860884246112,
+        "breakdown": {
+          "raw": {
+            "citations": 0.40434435369844474,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10108608842461118,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Neuron",
+      "citation_count": 1078,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Chen 2018 — Exosomal PD-L1 contributes to immunosuppression and is associated with anti-P… (Nature, recent_primary, 2k×)",
+      "doi": "10.1038/s41586-018-0392-8",
+      "pub_id": "pub_d70c3549",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5810180088955742,
+        "breakdown": {
+          "raw": {
+            "citations": 0.44407203558229674,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11101800889557419,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature",
+      "citation_count": 2142,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Bailey 2018 — Comprehensive Characterization of Cancer Driver Genes and Mutations. (Cell, recent_primary, 1k×)",
+      "doi": "10.1016/j.cell.2018.02.060",
+      "pub_id": "pub_58087367",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5766795808685166,
+        "breakdown": {
+          "raw": {
+            "citations": 0.42671832347406613,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10667958086851653,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Cell",
+      "citation_count": 1587,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Han 2019 — Anti-tumour immunity controlled through mRNA m<sup>6</sup>A methylation and Y… (Nature, recent_primary, 790×)",
+      "doi": "10.1038/s41586-019-0916-x",
+      "pub_id": "pub_3e78b844",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5765919066594675,
+        "breakdown": {
+          "raw": {
+            "citations": 0.38636762663786983,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09659190665946746,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature",
+      "citation_count": 790,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Kamada 2019 — PD-1<sup>+</sup> regulatory T cells amplified by PD-1 blockade promote hyperp… (Proceedings of the National Acad…, recent_primary, 789×)",
+      "doi": "10.1073/pnas.1822001116",
+      "pub_id": "pub_3f9a273a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5765735962352739,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3862943849410955,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09657359623527388,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 789,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Chen 2019 — NR4A transcription factors limit CAR T cell function in solid tumours. (Nature, recent_primary, 713×)",
+      "doi": "10.1038/s41586-019-0985-x",
+      "pub_id": "pub_c544c0a5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5751095120934496,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3804380483737983,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09510951209344957,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature",
+      "citation_count": 713,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Wang 2019 — Fibrinogen-like Protein 1 Is a Major Immune Inhibitory Ligand of LAG-3. (Cell, recent_primary, 679×)",
+      "doi": "10.1016/j.cell.2018.11.010",
+      "pub_id": "pub_79c86ca9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5744033043074168,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37761321722966734,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09440330430741684,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Cell",
+      "citation_count": 679,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Wagner 2019 — A Single-Cell Atlas of the Tumor and Immune Ecosystem of Human Breast Cancer. (Cell, recent_primary, 633×)",
+      "doi": "10.1016/j.cell.2019.03.005",
+      "pub_id": "pub_5f8fbfdb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5733894625085643,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3735578500342569,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09338946250856422,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Cell",
+      "citation_count": 633,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Yang 2019 — m<sup>6</sup>A mRNA demethylase FTO regulates melanoma tumorigenicity and res… (Nature communications, recent_primary, 593×)",
+      "doi": "10.1038/s41467-019-10669-0",
+      "pub_id": "pub_ef0c448d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5724461718989496,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3697846875957984,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0924461718989496,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 593,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Neal 2018 — Organoid Modeling of the Tumor Immune Microenvironment. (Cell, recent_primary, 1k×)",
+      "doi": "10.1016/j.cell.2018.11.021",
+      "pub_id": "pub_c78d5888",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5720336524660171,
+        "breakdown": {
+          "raw": {
+            "citations": 0.40813460986406835,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10203365246601709,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Cell",
+      "citation_count": 1151,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Jerby-Arnon 2018 — A Cancer Cell Program Promotes T Cell Exclusion and Resistance to Checkpoint … (Cell, recent_primary, 1k×)",
+      "doi": "10.1016/j.cell.2018.09.006",
+      "pub_id": "pub_8f532e07",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5719201272691972,
+        "breakdown": {
+          "raw": {
+            "citations": 0.40768050907678843,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10192012726919711,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Cell",
+      "citation_count": 1142,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Ott 2017 — An immunogenic personal neoantigen vaccine for patients with melanoma. (Nature, foundational, 2k×)",
+      "doi": "10.1038/nature22991",
+      "pub_id": "pub_b36faee3",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5710786699834542,
+        "breakdown": {
+          "raw": {
+            "citations": 0.44431467993381696,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11107866998345424,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Nature",
+      "citation_count": 2151,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Cancer Genome Atlas Research Network. Electronic address: wheeler@bcm.edu 2017 — Comprehensive and Integrative Genomic Characterization of Hepatocellular Carc… (Cell, foundational, 1k×)",
+      "doi": "10.1016/j.cell.2017.05.046",
+      "pub_id": "pub_010f317f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5694049070271796,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4376196281087184,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1094049070271796,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Cell",
+      "citation_count": 1916,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Keren 2018 — A Structured Tumor-Immune Microenvironment in Triple Negative Breast Cancer R… (Cell, recent_primary, 882×)",
+      "doi": "10.1016/j.cell.2018.08.039",
+      "pub_id": "pub_08a3957e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5681844835615414,
+        "breakdown": {
+          "raw": {
+            "citations": 0.39273793424616565,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09818448356154141,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Cell",
+      "citation_count": 882,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Gordon 2017 — PD-1 expression by tumour-associated macrophages inhibits phagocytosis and tu… (Nature, foundational, 1k×)",
+      "doi": "10.1038/nature22396",
+      "pub_id": "pub_d935f21b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5681186756735995,
+        "breakdown": {
+          "raw": {
+            "citations": 0.432474702694398,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1081186756735995,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Nature",
+      "citation_count": 1753,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Sampson 2016 — Gut Microbiota Regulate Motor Deficits and Neuroinflammation in a Model of Pa… (Cell, foundational, 2k×)",
+      "doi": "10.1016/j.cell.2016.11.018",
+      "pub_id": "pub_27f283c0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5641516455988524,
+        "breakdown": {
+          "raw": {
+            "citations": 0.45660658239540974,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11415164559885244,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Cell",
+      "citation_count": 2660,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Huang 2017 — T-cell invigoration to tumour burden ratio associated with anti-PD-1 response. (Nature, foundational, 1k×)",
+      "doi": "10.1038/nature22079",
+      "pub_id": "pub_5ddacdc6",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5639821349075947,
+        "breakdown": {
+          "raw": {
+            "citations": 0.41592853963037907,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10398213490759477,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Nature",
+      "citation_count": 1317,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Qi 2022 — Single-cell and spatial analysis reveal interaction of FAP<sup>+</sup> fibrob… (Nature communications, recent_primary, 643×)",
+      "doi": "10.1038/s41467-022-29366-6",
+      "pub_id": "pub_b0ffd7e5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5636159833819636,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3744639335278545,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09361598338196363,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Nature communications",
+      "citation_count": 643,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Hugo 2016 — Genomic and Transcriptomic Features of Response to Anti-PD-1 Therapy in Metas… (Cell, foundational, 2k×)",
+      "doi": "10.1016/j.cell.2016.02.065",
+      "pub_id": "pub_dab8340f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5633578702170822,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4534314808683288,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1133578702170822,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Cell",
+      "citation_count": 2518,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Leuzy 2019 — Tau PET imaging in neurodegenerative tauopathies-still a challenge. (Molecular psychiatry, key_review, 461×)",
+      "doi": "10.1038/s41380-018-0342-8",
+      "pub_id": "pub_54f05a24",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5588085492548034,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35523419701921344,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08880854925480336,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Molecular psychiatry",
+      "citation_count": 461,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

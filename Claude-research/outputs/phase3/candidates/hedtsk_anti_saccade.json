@@ -1,0 +1,1433 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:16:30",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_anti_saccade",
+    "name": "Anti-Saccade Task",
+    "aliases": [
+      "AST",
+      "Antisaccade",
+      "Anti-Saccade"
+    ],
+    "category_id": "motor_preparation_timing_and_execution",
+    "short_definition": "Participants must suppress a prepotent saccade toward a peripheral cue and generate a voluntary saccade to the opposite location; errors and saccade latency index oculomotor inhibition.",
+    "description": "The Anti-Saccade Task measures voluntary control over reflexive eye movements. Participants fixate centrally while a peripheral stimulus suddenly appears in the left or right visual field. Instead of looking toward the stimulus (the reflexive prosaccade), participants must look in the opposite direction (antisaccade). This requires inhibiting the automatic orienting response and generating a volitional saccade. Performance is measured by antisaccade accuracy, latency, and the rate of prosaccadic intrusions (errors). The task indexes voluntary oculomotor control and prefrontal inhibitory function.",
+    "inclusion_test": {
+      "procedure": "A peripheral cue appears; participants must suppress the reflexive saccade toward it and instead generate a voluntary saccade to the mirror-opposite location.",
+      "manipulation": "Prosaccade vs. antisaccade blocks or interleaved trials; cue eccentricity; gap vs. overlap conditions.",
+      "measurement": "Saccade direction errors (% erroneous prosaccades on antisaccade trials); saccade latency; corrective saccade latency."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 17,
+      "picked": 14,
+      "reserve": 0,
+      "excluded": 3,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "non_human_subjects": 3
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_7a8b2121",
+      "doi": "10.1016/0042-6989(78)90218-3",
+      "url": "https://doi.org/10.1016/0042-6989(78)90218-3",
+      "openalex_id": "https://openalex.org/W2136760581",
+      "pmid": null,
+      "first_author": "Hallett",
+      "authors_display": "Peter Hallett",
+      "year": 1978,
+      "title": "Primary and secondary saccades to goals defined by instructions",
+      "venue": "Vision Research",
+      "venue_tier": "specialty",
+      "publisher": "Elsevier BV",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1252,
+      "influential_citation_count": null,
+      "fwci": 0.9042,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.5832500961859743,
+        "breakdown": {
+          "raw": {
+            "citations": 0.41300038474389766,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10325009618597442,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Adult",
+        "Adult",
+        "Adult",
+        "Eye Movements",
+        "Eye Movements",
+        "Eye Movements",
+        "Feedback",
+        "Feedback",
+        "Feedback",
+        "Female",
+        "Female",
+        "Female",
+        "Fixation, Ocular",
+        "Fixation, Ocular",
+        "Fixation, Ocular",
+        "Fovea Centralis",
+        "Fovea Centralis",
+        "Fovea Centralis",
+        "Humans",
+        "Humans",
+        "Humans",
+        "Male",
+        "Male",
+        "Male",
+        "Motion Perception",
+        "Motion Perception",
+        "Motion Perception",
+        "Saccades",
+        "Saccades",
+        "Saccades"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_ba1e3e27",
+      "doi": "10.1007/s11065-021-09489-1",
+      "url": "https://doi.org/10.1007/s11065-021-09489-1",
+      "openalex_id": null,
+      "pmid": "33742354",
+      "first_author": "Waldthaler",
+      "authors_display": "Waldthaler, J. et al.",
+      "year": 2021,
+      "title": "Antisaccades in Parkinson's Disease: A Meta-Analysis.",
+      "venue": "Neuropsychology review",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Meta-Analysis",
+        "Research Support, Non-U.S. Gov't",
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": true,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 42,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s11065-021-09489-1.pdf",
+      "tldr": null,
+      "abstract": "The usefulness of eye-tracking tasks as potential biomarkers for motor or cognitive disease burden in Parkinson's disease (PD) has been subject of debate for many years. Several studies suggest that the performance in the antisaccade task may be altered in patients with PD and associated with motor disease severity or executive dysfunction. In this meta-analysis, random effects models were used to synthesize the existing evidence on antisaccade error rates and latency in PD. Furthermore, meta-regressions were performed to assess the role of motor and cognitive disease severity, dopaminergic medication and methodological factors. Additionally, the impact of acute levodopa administration and activation of deep brain stimulation was evaluated in two separate sub-analyses.This meta-analysis confirms that antisaccade latency and error rate are significantly increased in PD. Disease duration, Unified Parkinson's disease rating scale score and Hoehn and Yahr stage mediate the effect of PD on antisaccade latency with higher motor burden being associated with increased antisaccade latency.Acute administration of levodopa had no significant effects on antisaccade performance in a small number of eligible studies. Deep brain stimulation in the subthalamic nucleus, on the other hand, may alter the speed accuracy trade-off supporting an increase of impulsivity following deep brain stimulation in PD.According to the results of the meta-analysis, antisaccade latency may provide a potential marker for disease severity and progression in PD which needs further confirmation in longitudinal studies.",
+      "score": {
+        "composite": 0.5777744046383184,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Subthalamic Nucleus",
+        "Humans",
+        "Parkinson Disease",
+        "Levodopa",
+        "Deep Brain Stimulation",
+        "Cognition Disorders"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_df8d2cc4",
+      "doi": "10.1007/s11065-021-09495-3",
+      "url": "https://doi.org/10.1007/s11065-021-09495-3",
+      "openalex_id": null,
+      "pmid": "33959887",
+      "first_author": "Opwonya",
+      "authors_display": "Opwonya, J. et al.",
+      "year": 2022,
+      "title": "Saccadic Eye Movement in Mild Cognitive Impairment and Alzheimer's Disease: A Systematic Review and Meta-Analysis.",
+      "venue": "Neuropsychology review",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Meta-Analysis",
+        "Research Support, Non-U.S. Gov't",
+        "Systematic Review",
+        "review-article",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": true,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 77,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s11065-021-09495-3.pdf",
+      "tldr": null,
+      "abstract": "Alzheimer's disease (AD) is the leading cause of dementia, and mild cognitive impairment (MCI) is considered the transitional state to AD dementia (ADD) and other types of dementia, whose symptoms are accompanied by altered eye movement. In this work, we reviewed the existing literature and conducted a meta-analysis to extract relevant eye movement parameters that are significantly altered owing to ADD and MCI. We conducted a systematic review of 35 eligible original publications in saccade paradigms and a meta-analysis of 27 articles with specified task conditions, which used mainly gap and overlap conditions in both prosaccade and antisaccade paradigms. The meta-analysis revealed that prosaccade and antisaccade latencies and frequency of antisaccade errors showed significant alterations for both MCI and ADD. First, both prosaccade and antisaccade paradigms differentiated patients with ADD and MCI from controls, however, antisaccade paradigms was more effective than prosaccade paradigms in distinguishing patients from controls. Second, during prosaccade in the gap and overlap conditions, patients with ADD had significantly longer latencies than patients with MCI, and the trend was similar during antisaccade in the gap condition as patients with ADD had significantly more errors than patients with MCI. The anti-effect magnitude was similar between controls and patients, and the magnitude of the latency of the gap effect varied among healthy controls and MCI and ADD subjects, but the effect size of the latency remained large in both patients. These findings suggest that, using gap effect, anti-effect, and specific choices of saccade paradigms and conditions, distinctions could be made between MCI and ADD patients as well as between patients and controls.",
+      "score": {
+        "composite": 0.556394029013741,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2522427827216307,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06306069568040767,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Alzheimer Disease",
+        "Saccades",
+        "Cognitive Dysfunction"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_cc5327be",
+      "doi": "10.1371/journal.pbio.1002328",
+      "url": "https://doi.org/10.1371/journal.pbio.1002328",
+      "openalex_id": null,
+      "pmid": "26713863",
+      "first_author": "Marek",
+      "authors_display": "Marek, S. et al.",
+      "year": 2015,
+      "title": "The Contribution of Network Organization and Integration to the Development of Cognitive Control.",
+      "venue": "PLoS biology",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 267,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4694653",
+      "tldr": null,
+      "abstract": "Cognitive control, which continues to mature throughout adolescence, is supported by the ability for well-defined organized brain networks to flexibly integrate information. However, the development of intrinsic brain network organization and its relationship to observed improvements in cognitive control are not well understood. In the present study, we used resting state functional magnetic resonance imaging (RS-fMRI), graph theory, the antisaccade task, and rigorous head motion control to characterize and relate developmental changes in network organization, connectivity strength, and integration to inhibitory control development. Subjects were 192 10-26-y-olds who were imaged during 5 min of rest. In contrast to initial studies, our results indicate that network organization is stable throughout adolescence. However, cross-network integration, predominantly of the cingulo-opercular/salience network, increased with age. Importantly, this increased integration of the cingulo-opercular/salience network significantly moderated the robust effect of age on the latency to initiate a correct inhibitory control response. These results provide compelling evidence that the transition to adult-level inhibitory control is dependent upon the refinement and strengthening of integration between specialized networks. Our findings support a novel, two-stage model of neural development, in which networks stabilize prior to adolescence and subsequently increase their integration to support the cross-domain incorporation of information processing critical for mature cognitive control.",
+      "score": {
+        "composite": 0.514259450399324,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3237044682639625,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08092611706599062,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Nerve Net",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Cross-Sectional Studies",
+        "Adolescent Development",
+        "Child Development",
+        "Cognition",
+        "Models, Neurological",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Female",
+        "Neurogenesis",
+        "Young Adult",
+        "Functional Neuroimaging",
+        "Self-Control",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_c233f0b7",
+      "doi": "10.1016/j.bandc.2008.08.019",
+      "url": "https://doi.org/10.1016/j.bandc.2008.08.019",
+      "openalex_id": null,
+      "pmid": "18938009",
+      "first_author": "Luna",
+      "authors_display": "Luna, B. et al.",
+      "year": 2008,
+      "title": "Development of eye-movement control.",
+      "venue": "Brain and cognition",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 224,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Cognitive control of behavior continues to improve through adolescence in parallel with important brain maturational processes including synaptic pruning and myelination, which allow for efficient neuronal computations and the functional integration of widely distributed circuitries supporting top-down control of behavior. This is also a time when psychiatric disorders, such as schizophrenia and mood disorders, emerge reflecting a particularly vulnerability to impairments in development during adolescence. Oculomotor studies provide a unique neuroscientific approach to make precise associations between cognitive control and brain circuitry during development that can inform us of impaired systems in psychopathology. In this review, we first describe the development of pursuit, fixation, and visually-guided saccadic eye movements, which collectively indicate early maturation of basic sensorimotor processes supporting reflexive, exogenously-driven eye movements. We then describe the literature on the development of the cognitive control of eye movements as reflected in the ability to inhibit a prepotent eye movement in the antisaccade task, as well as making an eye movement guided by on-line spatial information in working memory in the oculomotor delayed response task. Results indicate that the ability to make eye movements in a voluntary fashion driven by endogenous plans shows a protracted development into adolescence. Characterizing the transition through adolescence to adult-level cognitive control of behavior can inform models aimed at understanding the neurodevelopmental basis of psychiatric disorders.",
+      "score": {
+        "composite": 0.47172807413988505,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3135789632262068,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0783947408065517,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Eye Movements",
+        "Cognition",
+        "Psychomotor Performance",
+        "Fixation, Ocular",
+        "Saccades",
+        "Adolescent",
+        "Adult"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_c6a1ac16",
+      "doi": "10.1073/pnas.0403507101",
+      "url": "https://doi.org/10.1073/pnas.0403507101",
+      "openalex_id": null,
+      "pmid": "15489272",
+      "first_author": "Juan",
+      "authors_display": "Juan, C. et al.",
+      "year": 2004,
+      "title": "Dissociation of spatial attention and saccade preparation.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 179,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The goal of this experiment was to determine whether the allocation of attention necessarily requires saccade preparation. To dissociate the focus of attention from the endpoint of a saccade, macaque monkeys were trained to perform visual search for a uniquely colored rectangle and shift gaze either toward or opposite this color singleton according to its orientation. A vertical singleton cued a prosaccade, a horizontal singleton, an antisaccade. Saccade preparation was probed by measuring the direction of saccades evoked by intracortical microstimulation of the frontal eye fields at variable times after presentation of the search array. Eye movements evoked on prosaccade trials deviated progressively toward the singleton that was also the endpoint of the correct eye movement. However, eye movements evoked on antisaccade trials never deviated toward the singleton but only progressively toward the location opposite the singleton. This occurred even though previous work showed that on antisaccade trials most neurons in frontal eye fields initially select the singleton while attention is allocated to distinguish its shape. Thus, sensorimotor structures can covertly orient attention without preparing a saccade.",
+      "score": {
+        "composite": 0.4584982077103759,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30065949750817034,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07516487437704258,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Macaca",
+        "Electric Stimulation",
+        "Spatial Behavior",
+        "Attention",
+        "Reaction Time",
+        "Species Specificity",
+        "Saccades"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_d46abd3c",
+      "doi": "10.1073/pnas.92.3.925",
+      "url": "https://doi.org/10.1073/pnas.92.3.925",
+      "openalex_id": null,
+      "pmid": "7846080",
+      "first_author": "O'Driscoll",
+      "authors_display": "O'Driscoll, G. et al.",
+      "year": 1995,
+      "title": "Functional neuroanatomy of antisaccade eye movements investigated with positron emission tomography.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 177,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Increasing interest in the role of the frontal lobe in relation to psychiatric and neurologic disorders has popularized tests of frontal function. One of these is the antisaccade task, in which both frontal lobe patients and schizophrenics are impaired despite normal performance on (pro)saccadic tasks. We used position emission tomography to examine the cerebral blood flow changes associated with the performance of antisaccades in normal individuals. We found that the areas of the brain that were more active during antisaccades than saccades were highly consistent with the oculomotor circuit, including frontal eye fields (FEFs), supplementary motor area, thalamus, and putamen. Superior parietal lobe and primary visual cortex were also significantly more active. In contrast, prefrontal areas 46 and 9 were not more active during antisaccades than during saccades. Performance of some frontal patients on the antisaccade task has been likened to a bradykinesia, or the inability to initiate a willed movement. It is the necessity to will the movement and inhibit competing responses that intuitively linked this task to the dorsolateral prefrontal cortex in frontal patients. Our data suggest that it is the FEFs in prefrontal cortex that differentiate between conditions in which the required oculomotor response changes while the stimulus remains the same, rather than areas 46 and 9, which, in human studies, have been linked to the performance of complex cognitive tasks. Such a conclusion is consistent with single-unit studies of nonhuman primates that have found that the FEFs, the executive portion of the oculomotor circuit, can trigger, inhibit, and set the target of saccades.",
+      "score": {
+        "composite": 0.45833648101786717,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3000125907381354,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07500314768453385,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Prefrontal Cortex",
+        "Animals",
+        "Humans",
+        "Tomography, Emission-Computed",
+        "Eye Movements",
+        "Brain Mapping",
+        "Cerebrovascular Circulation",
+        "Saccades",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_ccb0bb18",
+      "doi": "10.3389/fpsyg.2015.01809",
+      "url": "https://doi.org/10.3389/fpsyg.2015.01809",
+      "openalex_id": null,
+      "pmid": "26696915",
+      "first_author": "Carvalho",
+      "authors_display": "Carvalho, N. et al.",
+      "year": 2015,
+      "title": "Eye Movement in Unipolar and Bipolar Depression: A Systematic Review of the Literature.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patients)"
+      ],
+      "citation_count": 48,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4678228",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>The analysis of eye movements (EM) by eye-tracking has been carried out for several decades to investigate mood regulation, emotional information processing, and psychomotor disturbances in depressive disorders.<h4>Method</h4>A systematic review of all English language PubMed articles using the terms \"saccadic eye movements\" OR \"eye-tracking\" AND \"depression\" OR \"bipolar disorders\" was conducted using PRISMA guidelines. The aim of this review was to characterize the specific alterations of EM in unipolar and bipolar depression.<h4>Results</h4>Findings regarding psychomotor disturbance showed an increase in reaction time in prosaccade and antisaccade tasks in both unipolar and bipolar disorders. In both disorders, patients have been reported to have an attraction for negative emotions, especially for negative pictures in unipolar and threatening images in bipolar disorder. However, the pattern could change with aging, elderly unipolar patients disengaging key features of sad and neutral stimuli. METHODological limitations generally include small sample sizes with mixed unipolar and bipolar depressed patients.<h4>Conclusion</h4>Eye movement analysis can be used to discriminate patients with depressive disorders from controls, as well as patients with bipolar disorder from patients with unipolar depression. General knowledge concerning psychomotor alterations and affective regulation strategies associated with each disorder can also be gained thanks to the analysis. Future directions for research on eye movement and depression are proposed in this review.",
+      "score": {
+        "composite": 0.4196650518908181,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_d1f54c30",
+      "doi": "10.1093/schbul/sbl060",
+      "url": "https://doi.org/10.1093/schbul/sbl060",
+      "openalex_id": null,
+      "pmid": "17135482",
+      "first_author": "Turetsky",
+      "authors_display": "Turetsky, B. et al.",
+      "year": 2007,
+      "title": "Neurophysiological endophenotypes of schizophrenia: the viability of selected candidate measures.",
+      "venue": "Schizophrenia bulletin",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 397,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In an effort to reveal susceptibility genes, schizophrenia research has turned to the endophenotype strategy. Endophenotypes are characteristics that reflect the actions of genes predisposing an individual to a disorder, even in the absence of diagnosable pathology. Individual endophenotypes are presumably determined by fewer genes than the more complex phenotype of schizophrenia and would, therefore, reduce the complexity of genetic analyses. Unfortunately, despite there being rational criteria to define a viable endophenotype, the term is sometimes applied indiscriminately to characteristics that are deviant in affected individuals. Schizophrenia patients exhibit deficits in several neurophysiological measures of information processing that have been proposed as candidate endophenotypes. Successful processing of sensory inputs requires the ability to inhibit intrinsic responses to redundant stimuli and, reciprocally, to facilitate responses to less frequent salient stimuli. There is evidence to suggest that both these processes are \"impaired\" in schizophrenia. Measures of inhibitory failure include prepulse inhibition of the startle reflex, P50 auditory evoked potential suppression, and antisaccade eye movements. Measures of impaired deviance detection include mismatch negativity and the P300 event-related potential. The purpose of this review is to systematically evaluate the endophenotype candidacy of these key neurophysiological abilities. For each candidate, we describe typical experimental procedures, the current understanding of the underlying neurobiology, the nature of the abnormality in schizophrenia, the reliability, stability and heritability of the measure, and any reported gene associations. We conclude with a discussion of the few studies thus far that have employed a multivariate approach with these candidates.",
+      "score": {
+        "composite": 0.4099835647644423,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3466009257244358,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08665023143110895,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Genetic Predisposition to Disease",
+        "Discrimination Learning",
+        "Arousal",
+        "Attention",
+        "Schizophrenia",
+        "Contingent Negative Variation",
+        "Event-Related Potentials, P300",
+        "Evoked Potentials, Auditory",
+        "Neural Inhibition",
+        "Saccades",
+        "Genotype",
+        "Phenotype",
+        "Twin Studies as Topic",
+        "Reflex, Startle"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_7878cae3",
+      "doi": "10.1098/rstb.2016.0192",
+      "url": "https://doi.org/10.1098/rstb.2016.0192",
+      "openalex_id": null,
+      "pmid": "28242726",
+      "first_author": "Coe",
+      "authors_display": "Coe, B., & Munoz, D.",
+      "year": 2017,
+      "title": "Mechanisms of saccade suppression revealed in the anti-saccade task.",
+      "venue": "Philosophical transactions of the Royal Society of London. Series B, Biological sciences",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 114,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The anti-saccade task has emerged as an important tool for investigating the complex nature of voluntary behaviour. In this task, participants are instructed to suppress the natural response to look at a peripheral visual stimulus and look in the opposite direction instead. Analysis of saccadic reaction times (SRT: the time from stimulus appearance to the first saccade) and the frequency of direction errors (i.e. looking toward the stimulus) provide insight into saccade suppression mechanisms in the brain. Some direction errors are reflexive responses with very short SRTs (express latency saccades), while other direction errors are driven by automated responses and have longer SRTs. These different types of errors reveal that the anti-saccade task requires different forms of suppression, and neurophysiological experiments in macaques have revealed several potential mechanisms. At the start of an anti-saccade trial, pre-emptive top-down inhibition of saccade generating neurons in the frontal eye fields and superior colliculus must be present before the stimulus appears to prevent express latency direction errors. After the stimulus appears, voluntary anti-saccade commands must compete with, and override, automated visually initiated saccade commands to prevent longer latency direction errors. The frequencies of these types of direction errors, as well as SRTs, change throughout the lifespan and reveal time courses for development, maturation, and ageing. Additionally, patients diagnosed with a variety of neurological and/or psychiatric disorders affecting the frontal lobes and/or basal ganglia produce markedly different SRT distributions and types of direction errors, which highlight specific deficits in saccade suppression and inhibitory control. The anti-saccade task therefore provides valuable insight into the neural mechanisms of saccade suppression and is a valuable tool in a clinical setting.This article is part of the themed issue 'Movement suppression: brain ",
+      "score": {
+        "composite": 0.3920133238660637,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2747199621309215,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06867999053273037,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Reaction Time",
+        "Saccades",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_87b5cbb3",
+      "doi": "10.1093/cercor/bhp225",
+      "url": "https://doi.org/10.1093/cercor/bhp225",
+      "openalex_id": null,
+      "pmid": "19875675",
+      "first_author": "Geier",
+      "authors_display": "Geier, C. et al.",
+      "year": 2010,
+      "title": "Immaturities in reward processing and its influence on inhibitory control in adolescence.",
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 276,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC2882823",
+      "tldr": null,
+      "abstract": "The nature of immature reward processing and the influence of rewards on basic elements of cognitive control during adolescence are currently not well understood. Here, during functional magnetic resonance imaging, healthy adolescents and adults performed a modified antisaccade task in which trial-by-trial reward contingencies were manipulated. The use of a novel fast, event-related design enabled developmental differences in brain function underlying temporally distinct stages of reward processing and response inhibition to be assessed. Reward trials compared with neutral trials resulted in faster correct inhibitory responses across ages and in fewer inhibitory errors in adolescents. During reward trials, the blood oxygen level-dependent signal was attenuated in the ventral striatum in adolescents during cue assessment, then overactive during response preparation, suggesting limitations during adolescence in reward assessment and heightened reactivity in anticipation of reward compared with adults. Importantly, heightened activity in the frontal cortex along the precentral sulcus was also observed in adolescents during reward-trial response preparation, suggesting reward modulation of oculomotor control regions supporting correct inhibitory responding. Collectively, this work characterizes specific immaturities in adolescent brain systems that support reward processing and describes the influence of reward on inhibitory control. In sum, our findings suggest mechanisms that may underlie adolescents' vulnerability to poor decision-making and risk-taking behavior.",
+      "score": {
+        "composite": 0.36473754705684863,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32561685489406117,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08140421372351529,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Eye Movements",
+        "Brain Mapping",
+        "Analysis of Variance",
+        "Risk-Taking",
+        "Adolescent Development",
+        "Cues",
+        "Reward",
+        "Attention",
+        "Reaction Time",
+        "Age Factors",
+        "Time Factors",
+        "Image Processing, Computer-Assisted",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Psychology, Adolescent",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_63d8d68c",
+      "doi": "10.1523/jneurosci.2825-10.2010",
+      "url": "https://doi.org/10.1523/jneurosci.2825-10.2010",
+      "openalex_id": null,
+      "pmid": "21084608",
+      "first_author": "Hwang",
+      "authors_display": "Hwang, K. et al.",
+      "year": 2010,
+      "title": "Strengthening of top-down frontal cognitive control networks underlying the development of inhibitory control: a functional magnetic resonance imaging effective connectivity study.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 206,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The ability to voluntarily inhibit responses to task-irrelevant stimuli, which is a fundamental component of cognitive control, has a protracted development through adolescence. Previous human developmental imaging studies have found immaturities in localized brain activity in children and adolescents. However, little is known about how these regions integrate with age to form the distributed networks known to support cognitive control. In the present study, we used Granger causality analysis to characterize developmental changes in effective connectivity underlying inhibitory control (antisaccade task) compared with reflexive responses (prosaccade task) in human participants. By childhood, few top-down connectivities were evident with increased parietal interconnectivity. By adolescence, connections from prefrontal cortex increased and parietal interconnectivity decreased. From adolescence to adulthood, there was evidence of increased number and strength of frontal connections to cortical regions as well as subcortical regions. Together, results suggest that developmental improvements in inhibitory control may be supported by age-related enhancements in top-down effective connectivity between frontal, oculomotor, and subcortical regions.",
+      "score": {
+        "composite": 0.3605211763471208,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3087513720551498,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07718784301378745,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Nerve Net",
+        "Neural Pathways",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Psychomotor Performance",
+        "Age Factors",
+        "Neural Inhibition",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_24776822",
+      "doi": "10.1093/brain/awn099",
+      "url": "https://doi.org/10.1093/brain/awn099",
+      "openalex_id": null,
+      "pmid": "18550622",
+      "first_author": "Thakkar",
+      "authors_display": "Thakkar, K. et al.",
+      "year": 2008,
+      "title": "Response monitoring, repetitive behaviour and anterior cingulate abnormalities in autism spectrum disorders (ASD).",
+      "venue": "Brain : a journal of neurology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 255,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC2525446",
+      "tldr": null,
+      "abstract": "Autism spectrum disorders (ASD) are characterized by inflexible and repetitive behaviour. Response monitoring involves evaluating the consequences of behaviour and making adjustments to optimize outcomes. Deficiencies in this function, and abnormalities in the anterior cingulate cortex (ACC) on which it relies, have been reported as contributing factors to autistic disorders. We investigated whether ACC structure and function during response monitoring were associated with repetitive behaviour in ASD. We compared ACC activation to correct and erroneous antisaccades using rapid presentation event-related functional MRI in 14 control and ten ASD participants. Because response monitoring is the product of coordinated activity in ACC networks, we also examined the microstructural integrity of the white matter (WM) underlying this brain region using diffusion tensor imaging (DTI) measures of fractional anisotropy (FA) in 12 control and 12 adult ASD participants. ACC activation and FA were examined in relation to Autism Diagnostic Interview-Revised ratings of restricted and repetitive behaviour. Relative to controls, ASD participants: (i) made more antisaccade errors and responded more quickly on correct trials; (ii) showed reduced discrimination between error and correct responses in rostral ACC (rACC), which was primarily due to (iii) abnormally increased activation on correct trials and (iv) showed reduced FA in WM underlying ACC. Finally, in ASD (v) increased activation on correct trials and reduced FA in rACC WM were related to higher ratings of repetitive behaviour. These findings demonstrate functional and structural abnormalities of the ACC in ASD that may contribute to repetitive behaviour. rACC activity following errors is thought to reflect affective appraisal of the error. Thus, the hyperactive rACC response to correct trials can be interpreted as a misleading affective signal that something is awry, which may trigger repetitive attempts at correction. Another",
+      "score": {
+        "composite": 0.343596385382623,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3210522081971587,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08026305204928967,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Gyrus Cinguli",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Diffusion Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Photic Stimulation",
+        "Feedback, Psychological",
+        "Stereotyped Behavior",
+        "Psychomotor Performance",
+        "Autistic Disorder",
+        "Saccades",
+        "Adult",
+        "Female",
+        "Male",
+        "Eye Movement Measurements"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_c7281715",
+      "doi": "10.1523/jneurosci.20-01-00387.2000",
+      "url": "https://doi.org/10.1523/jneurosci.20-01-00387.2000",
+      "openalex_id": null,
+      "pmid": "10627615",
+      "first_author": "Everling",
+      "authors_display": "Everling, S., & Munoz, D.",
+      "year": 2000,
+      "title": "Neuronal correlates for preparatory set associated with pro-saccades and anti-saccades in the primate frontal eye field.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 413,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Diversity in behavioral responses to sensory stimuli has been attributed to variations in preparatory set. Variability in oculomotor responses toward identical visual stimuli has been well documented, but the neuronal processes underlying this variability are poorly understood. Here, we report evidence for set-related activity for saccadic eye movements in single neurons in the frontal eye field (FEF) in monkeys trained on a task in which they either had to look toward a visual stimulus (pro-saccade) or away from the stimulus (anti-saccade) depending on a previous instruction. A portion of FEF neurons were identified as neurons projecting directly to the superior colliculus (SC) with antidromic activation techniques. Saccade-related neurons in the FEF had lower prestimulus and stimulus-related activity on anti-saccade trials compared with pro-saccade trials. The level of prestimulus activity correlated with saccadic reaction times, express saccade occurrence, and errors in the anti-saccade task. In addition, saccade-related activity in the FEF was higher for pro-saccades than for anti-saccades. These results demonstrate that the direct descending pathway from the FEF to the SC carries preparatory set-related activity for pro-saccades and anti-saccades. The results also provide insights into the neuronal basis of variations in saccadic reaction times and in the control of the prepotent response to glance to a flashed stimulus.",
+      "score": {
+        "composite": 0.33055405785328196,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3488828980797946,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08722072451994865,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Neural Pathways",
+        "Neurons",
+        "Animals",
+        "Macaca mulatta",
+        "Behavior, Animal",
+        "Psychomotor Performance",
+        "Reaction Time",
+        "Electrophysiology",
+        "Action Potentials",
+        "Saccades",
+        "Male",
+        "Superior Colliculi"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_113c06dc",
+      "doi": "10.1523/jneurosci.19-07-02740.1999",
+      "url": "https://doi.org/10.1523/jneurosci.19-07-02740.1999",
+      "openalex_id": null,
+      "pmid": "10087086",
+      "first_author": "Everling",
+      "authors_display": "Everling, S. et al.",
+      "year": 1999,
+      "title": "Role of primate superior colliculus in preparation and execution of anti-saccades and pro-saccades.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 293,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "We investigated how the brain switches between the preparation of a movement where a stimulus is the target of the movement, and a movement where a stimulus serves as a landmark for an instructed movement elsewhere. Monkeys were trained on a pro-/anti-saccade paradigm in which they either had to generate a pro-saccade toward a visual stimulus or an anti-saccade away from the stimulus to its mirror position, depending on the color of an initial fixation point. Neural activity was recorded in the superior colliculus (SC), a structure that is known to be involved in the generation of fast saccades, to determine whether it was also involved in the generation of anti-saccades. On anti-saccade trials, fixation during the instruction period was associated with an increased activity of collicular fixation-related neurons and a decreased activity of saccade-related neurons. Stimulus-related and saccade-related activity was reduced on anti-saccade trials. Our results demonstrate that the anti-saccade task involves (and may require) the attenuation of preparatory and stimulus-related activity in the SC to avoid unwanted pro-saccades. Because the attenuated pre-saccade activity that we found in the SC may be insufficient by itself to elicit correct anti-saccades, additional movement signals from other brain areas are presumably required.",
+      "score": {
+        "composite": 0.32559967435842363,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3290653641003611,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08226634102509027,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Neurons",
+        "Animals",
+        "Macaca mulatta",
+        "Linear Models",
+        "Photic Stimulation",
+        "Saccades",
+        "Male",
+        "Superior Colliculi"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_bc7596d4",
+      "doi": "10.1001/archpsyc.64.11.1242",
+      "url": "https://doi.org/10.1001/archpsyc.64.11.1242",
+      "openalex_id": null,
+      "pmid": "17984393",
+      "first_author": "Greenwood",
+      "authors_display": "Greenwood, T. et al.",
+      "year": 2007,
+      "title": "Initial heritability analyses of endophenotypic measures for schizophrenia: the consortium on the genetics of schizophrenia.",
+      "venue": "Archives of general psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Multicenter Study",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 294,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Context</h4>Exploration of the genetic architecture of specific endophenotypes may be a powerful strategy for understanding the genetic basis of schizophrenia.<h4>Objective</h4>To characterize the genetic architecture of some key endophenotypic measures selected for their reported heritabilities in schizophrenia.<h4>Design</h4>Family-based heritability study.<h4>Setting</h4>Seven sites across the United States.<h4>Participants</h4>At the time of these initial data analyses, the members of 183 nuclear families ascertained through probands with schizophrenia had been assessed for these endophenotypes.<h4>Main outcome measures</h4>Variance component models were used to assess the heritability of and the environmental and genetic correlations among the endophenotypes. The Consortium on the Genetics of Schizophrenia assesses the neurophysiologic measures of prepulse inhibition of acoustic startle, P50 event-related potential suppression, and the antisaccade task for eye movements and the neurocognitive measures of the Continuous Performance Test (Degraded Stimulus version), the California Verbal Learning Test, the Letter-Number Sequencing test, and 6 measures from the University of Pennsylvania Computerized Neurocognitive Battery. The heritabilities of these 12 measures are the focus of this article.<h4>Results</h4>All of the endophenotypes and the University of Pennsylvania Computerized Neurocognitive Battery measures were found to be significantly heritable (P < or = .005), with heritabilities ranging from 24% to 55%. Significant environmental and genetic correlations were also observed between many of the endophenotypic measures.<h4>Conclusion</h4>This is the first large-scale, multisite, family-based heritability study of a collection of endophenotypes for schizophrenia and suggests that endophenotypes are important measures to consider in characterizing the genetic basis of schizophrenia.",
+      "score": {
+        "composite": 0.23564882343245508,
+        "breakdown": {
+          "raw": {
+            "citations": 0.329261960396487,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08231549009912174,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.01,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Genetic Predisposition to Disease",
+        "Risk Factors",
+        "Pedigree",
+        "Schizophrenia",
+        "Neuropsychological Tests",
+        "Environment",
+        "Inheritance Patterns",
+        "Phenotype",
+        "Adolescent",
+        "Adult",
+        "Aged",
+        "Middle Aged",
+        "United States",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_28848899",
+      "doi": "10.1212/wnl.52.5.917",
+      "url": "https://doi.org/10.1212/wnl.52.5.917",
+      "openalex_id": null,
+      "pmid": "10102406",
+      "first_author": "Minshew",
+      "authors_display": "Minshew, N. et al.",
+      "year": 1999,
+      "title": "Oculomotor evidence for neocortical systems but not cerebellar dysfunction in autism.",
+      "venue": "Neurology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, U.S. Gov't, P.H.S.",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 172,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>To investigate the functional integrity of cerebellar and frontal systems in autism using oculomotor paradigms.<h4>Background</h4>Cerebellar and neocortical systems models of autism have been proposed. Courchesne and colleagues have argued that cognitive deficits such as shifting attention disturbances result from dysfunction of vermal lobules VI and VII. Such a vermal deficit should be associated with dysmetric saccadic eye movements because of the major role these areas play in guiding the motor precision of saccades. In contrast, neocortical models of autism predict intact saccade metrics, but impairments on tasks requiring the higher cognitive control of saccades.<h4>Methods</h4>A total of 26 rigorously diagnosed nonmentally retarded autistic subjects and 26 matched healthy control subjects were assessed with a visually guided saccade task and two volitional saccade tasks, the oculomotor delayed-response task and the antisaccade task.<h4>Results</h4>Metrics and dynamics of the visually guided saccades were normal in autistic subjects, documenting the absence of disturbances in cerebellar vermal lobules VI and VII and in automatic shifts of visual attention. Deficits were demonstrated on both volitional saccade tasks, indicating dysfunction in the circuitry of prefrontal cortex and its connections with the parietal cortex, and associated cognitive impairments in spatial working memory and in the ability to voluntarily suppress context-inappropriate responses.<h4>Conclusions</h4>These findings demonstrate intrinsic neocortical, not cerebellar, dysfunction in autism, and parallel deficits in higher order cognitive mechanisms and not in elementary attentional and sensorimotor systems in autism.",
+      "score": {
+        "composite": 0.2179240773835739,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2983629762009623,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07459074405024058,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Oculomotor Muscles",
+        "Cerebellum",
+        "Humans",
+        "Analysis of Variance",
+        "Intelligence",
+        "Task Performance and Analysis",
+        "Reaction Time",
+        "Autistic Disorder",
+        "Saccades",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,880 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_directed_forgetting",
+    "name": "Directed Forgetting Task",
+    "aliases": [
+      "DF Task",
+      "Item-Method DF",
+      "List-Method DF"
+    ],
+    "category_id": "long_term_memory",
+    "short_definition": "Study-phase cues instruct participants to remember or forget specific items or lists; later memory tests index intentional forgetting.",
+    "description": "Participants study items (typically words) under instructions that each item should either be remembered or forgotten. In the item method, a remember or forget cue follows each individual item. In the list method, a single cue midway through the study phase instructs participants to forget everything studied so far. On a subsequent memory test, recall and recognition of forget-cued items is impaired relative to remember-cued items. The paradigm provides the primary laboratory tool for studying intentional forgetting and memory control, with theoretical implications for understanding inhibitory control over memory, context change, and selective rehearsal.",
+    "inclusion_test": {
+      "procedure": "Items are presented one at a time or in lists; after each item (item method) or after a full list (list method), a cue instructs the participant to remember or forget it. A final test probes all items.",
+      "manipulation": "Remember vs. forget cues; item vs. list method; retention interval; item type (words, pictures, emotional content).",
+      "measurement": "Recall/recognition accuracy for remember-cued vs. forget-cued items; directed forgetting effect (remember advantage); intrusion of forget items."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:39:01",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 23
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Chiu 2021 — Separation of item and context in item-method directed forgetting. (NeuroImage, recent_primary, 16×)",
+      "doi": "10.1016/j.neuroimage.2021.117983",
+      "pub_id": "pub_09d822e9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5535090303471017,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "NeuroImage",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Xie 2018 — Individuals with depressive tendencies experience difficulty in forgetting ne… (Scientific reports, recent_primary, 21×)",
+      "doi": "10.1038/s41598-018-19570-0",
+      "pub_id": "pub_83b18672",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5272409490146167,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Fawcett 2016 — The representational consequences of intentional forgetting: Impairments to b… (Journal of experimental psycholo…, foundational, 39×)",
+      "doi": "10.1037/xge0000128",
+      "pub_id": "pub_1b453ca4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5158942739603152,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Journal of experimental psychology. General",
+      "citation_count": 39,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Taylor 2021 — Intention matters more than attention: Item-method directed forgetting of ite… (Attention, perception & psychoph…, recent_primary, 0×)",
+      "doi": "10.3758/s13414-020-02220-x",
+      "pub_id": "pub_3005d26a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.47250000000000003,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Scotti 2022 — Directed forgetting of pictures of everyday objects. (Journal of vision, recent_primary, 4×)",
+      "doi": "10.1167/jov.22.10.8",
+      "pub_id": "pub_1247876b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46579562944183156,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Journal of vision",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Gamboa 2018 — The challenge of forgetting: Neurobiological mechanisms of auditory directed … (Human brain mapping, recent_primary, 6×)",
+      "doi": "10.1002/hbm.23840",
+      "pub_id": "pub_38c80773",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.45066585927874236,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Human brain mapping",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Wang 2019 — Can self-referential information improve directed forgetting? Evidence from a… (PloS one, recent_primary, 2×)",
+      "doi": "10.1371/journal.pone.0211280",
+      "pub_id": "pub_7cc23cf7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.40840174096144427,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Eich 2021 — Cortical thickness in the right inferior frontal gyrus mediates age-related p… (Neurobiology of aging, recent_primary, 9×)",
+      "doi": "10.1016/j.neurobiolaging.2021.06.001",
+      "pub_id": "pub_01a9d21b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.40582851094799277,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Neurobiology of aging",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Jiménez-Balado 2021 — Reduced Hippocampal GABA+ Is Associated With Poorer Episodic Memory in Health… (Frontiers in behavioral neurosci…, recent_primary, 12×)",
+      "doi": "10.3389/fnbeh.2021.695416",
+      "pub_id": "pub_248d4a25",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3896260732128022,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Frontiers in behavioral neuroscience",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Bowen 2020 — Influence of Reward Motivation on Directed Forgetting in Younger and Older Ad… (Frontiers in psychology, recent_primary, 15×)",
+      "doi": "10.3389/fpsyg.2020.01764",
+      "pub_id": "pub_6e994007",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.38263152602464484,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Frontiers in psychology",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Hubbard 2023 — Differential Recruitment of Inhibitory Control Processes by Directed Forgetti… (The Journal of neuroscience : th…, recent_primary, 15×)",
+      "doi": "10.1523/jneurosci.0696-22.2023",
+      "pub_id": "pub_01163e0f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3526315260246448,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Gao 2017 — Frontal Control Process in Intentional Forgetting: Electrophysiological Evide… (Frontiers in neuroscience, foundational, 7×)",
+      "doi": "10.3389/fnins.2017.00757",
+      "pub_id": "pub_5ec1abea",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3425986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Frontiers in neuroscience",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Zwissler 2015 — 'Forget me (not)?' - Remembering Forget-Items Versus Un-Cued Items in Directe… (Frontiers in psychology, foundational, 18×)",
+      "doi": "10.3389/fpsyg.2015.01741",
+      "pub_id": "pub_2eecf58c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.33511895338914155,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Frontiers in psychology",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Corlier 2022 — Principal component analysis suggests multiple dimensions of memory inhibitio… (Frontiers in psychology, recent_primary, 1×)",
+      "doi": "10.3389/fpsyg.2022.1020915",
+      "pub_id": "pub_7a1c0d20",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3325328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Frontiers in psychology",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Gallant 2014 — Positivity effect in source attributions of arousal-matched emotional and non… (Frontiers in psychology, foundational, 13×)",
+      "doi": "10.3389/fpsyg.2014.01334",
+      "pub_id": "pub_bec3deeb",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.32069874078490357,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Frontiers in psychology",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Ding 2025 — Pupil Fluctuations Signal Intentional Forgetting of Natural Scenes. (Psychophysiology, recent_primary, 2×)",
+      "doi": "10.1111/psyp.70119",
+      "pub_id": "pub_bb68218b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3084017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Psychophysiology",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Baumann 2013 — Directed forgetting in post-traumatic-stress-disorder: a study of refugee imm… (Frontiers in behavioral neurosci…, foundational, 10×)",
+      "doi": "10.3389/fnbeh.2013.00094",
+      "pub_id": "pub_afcc8df4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3072080675084555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Frontiers in behavioral neuroscience",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Chien 2023 — Does stereotype threat influence age-related differences on directed forgetti… (Frontiers in psychology, recent_primary, 0×)",
+      "doi": "10.3389/fpsyg.2023.1296662",
+      "pub_id": "pub_932a304e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.2925,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Frontiers in psychology",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Oh 2019 — Clustering and Switching Patterns in Semantic Fluency and Their Relationship … (Dementia and neurocognitive diso…, recent_primary, 12×)",
+      "doi": "10.12779/dnd.2019.18.2.47",
+      "pub_id": "pub_85fc651a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.28962607321280215,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Dementia and neurocognitive disorders",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Blix 2011 — Intentional forgetting of emotional words after trauma: a study with victims … (Frontiers in psychology, foundational, 10×)",
+      "doi": "10.3389/fpsyg.2011.00235",
+      "pub_id": "pub_f3bf1bee",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.2872080675084555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2011,
+      "venue": "Frontiers in psychology",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Taylor 2026 — Forgetting by any other name: The effect of instruction framing on item-metho… (Quarterly journal of experimenta…, recent_primary, 0×)",
+      "doi": "10.1177/17470218251364812",
+      "pub_id": "pub_3d35d666",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.2575,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.5,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.075,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2026,
+      "venue": "Quarterly journal of experimental psychology (2006)",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "El Haj 2015 — \"Forget to whom you have told this proverb\": directed forgetting of destinati… (Behavioural neurology, foundational, 19×)",
+      "doi": "10.1155/2015/215971",
+      "pub_id": "pub_5f2890de",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.25586139245415396,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Behavioural neurology",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Collette 2014 — The Role of Memory Traces Quality in Directed Forgetting: A Comparison of You… (Psychologica Belgica, foundational, 5×)",
+      "doi": "10.5334/pb.au",
+      "pub_id": "pub_5e21f130",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.2284346224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.08,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Psychologica Belgica",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

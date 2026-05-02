@@ -1,0 +1,1141 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_prospective_memory",
+    "name": "Prospective Memory Task",
+    "aliases": [
+      "Event-Based Prospective Memory",
+      "Time-Based Prospective Memory",
+      "PM Task",
+      "Einstein-McDaniel Paradigm",
+      "PMTASK"
+    ],
+    "category_id": "long_term_memory",
+    "short_definition": "Participants perform an ongoing task while remembering to execute a deferred intention when a target event occurs (event-based) or after a time interval (time-based); PM hit rate indexes the ability to remember to remember.",
+    "description": "Prospective memory (PM) is the ability to remember to carry out an intended action in the future. In the standard Einstein-McDaniel paradigm, participants perform a continuous ongoing task (e.g., pleasantness rating, lexical decision) while simultaneously holding the intention to execute a secondary action when a specific cue appears (event-based PM: e.g., press a key when an animal word appears) or after a fixed time interval (time-based PM: e.g., press a key every 2 minutes). The critical measure is whether the participant detects the PM cue and executes the intended action. PM is theoretically distinct from retrospective memory: the challenge is not remembering the content of the intention but spontaneously retrieving it at the right moment without an external prompt. The multiprocess framework (McDaniel & Einstein, 2000) proposes that PM retrieval can be supported by automatic, reflexive-associative processes or by resource-demanding strategic monitoring, depending on cue focality, ongoing-task absorption, and individual differences. PM failures are a leading cause of real-world memory complaints and are sensitive to aging, traumatic brain injury, ADHD, and schizophrenia.",
+    "inclusion_test": {
+      "procedure": "Participant performs a continuous ongoing task while holding a delayed intention; on designated trials (event cue) or at designated times (time cue), the participant must interrupt the ongoing task to execute the prospective action.",
+      "manipulation": "PM cue type (event-based vs. time-based); cue focality (focal cue processed as part of ongoing task vs. non-focal cue requiring monitoring); ongoing-task demand (low vs. high load); PM target frequency; delay between intention formation and PM window; number of PM targets.",
+      "measurement": "PM hit rate (proportion of cues correctly detected and acted upon); ongoing-task cost (RT and accuracy difference between PM blocks and baseline blocks); time-monitoring behavior (clock-checking frequency in time-based PM); false alarms to lure items."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:59:53",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Einstein 1990 — Normal aging and prospective memory. (Journal of Experimental Psycholo…, historical, 987×)",
+      "doi": "10.1037/0278-7393.16.4.717",
+      "pub_id": "pub_ab63bd9b",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.699810789614266,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3992431584570644,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0998107896142661,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": null,
+      "year": 1990,
+      "venue": "Journal of Experimental Psychology Learning Memory and Cognition",
+      "citation_count": 987,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Waldum 2016 — Why are you late? Investigating the role of time management in time-based pro… (Journal of experimental psycholo…, foundational, 12×)",
+      "doi": "10.1037/xge0000183",
+      "pub_id": "pub_3861ceb9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5621260732128022,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Journal of experimental psychology. General",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Cheng 2017 — Altered resting-state hippocampal functional networks associated with chemoth… (Scientific reports, foundational, 50×)",
+      "doi": "10.1038/srep45135",
+      "pub_id": "pub_7fe481a9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5085774379752126,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22764308523418395,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.056910771308545986,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Scientific reports",
+      "citation_count": 50,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Burgess 2022 — Prefrontal cortical activation associated with prospective memory while walki… (NeuroImage, recent_primary, 20×)",
+      "doi": "10.1016/j.neuroimage.2022.119392",
+      "pub_id": "pub_cead4c36",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5057342669068534,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "NeuroImage",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Waldum 2013 — A role for memory in prospective timing informs timing in prospective memory. (Journal of experimental psycholo…, foundational, 27×)",
+      "doi": "10.1037/a0030113",
+      "pub_id": "pub_6b539281",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5015649556243982,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Journal of experimental psychology. General",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Smith 2017 — Prospective memory in context: Moving through a familiar space. (Journal of experimental psycholo…, foundational, 17×)",
+      "doi": "10.1037/xlm0000303",
+      "pub_id": "pub_0f5546d0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4935030300957165,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Volle 2011 — The role of rostral prefrontal cortex in prospective memory: a voxel-based le… (Neuropsychologia, foundational, 96×)",
+      "doi": "10.1016/j.neuropsychologia.2011.02.045",
+      "pub_id": "pub_3248d5c3",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4812161434966551,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2648645739866204,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0662161434966551,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Neuropsychologia",
+      "citation_count": 96,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Scullin 2013 — The Dynamic Multiprocess Framework: evidence from prospective memory with con… (Cognitive psychology, foundational, 113×)",
+      "doi": "10.1016/j.cogpsych.2013.07.001",
+      "pub_id": "pub_86087cba",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4802202425234137,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2742143034269881,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06855357585674703,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Cognitive psychology",
+      "citation_count": 113,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Scullin 2013 — Failing to forget: prospective memory commission errors can result from spont… (Journal of experimental psycholo…, foundational, 28×)",
+      "doi": "10.1037/a0029198",
+      "pub_id": "pub_2e52a958",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4604062143499647,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Scullin 2019 — Rapid eye movement sleep mediates age-related decline in prospective memory c… (Sleep, recent_primary, 26×)",
+      "doi": "10.1093/sleep/zsz055",
+      "pub_id": "pub_3381c3c6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4593718895509996,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Sleep",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Laera 2024 — The cost of monitoring in time-based prospective memory. (Scientific reports, recent_primary, 1×)",
+      "doi": "10.1038/s41598-024-52501-w",
+      "pub_id": "pub_c1a5b82d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4533662148394946,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Scientific reports",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "McDaniel 2011 — The neuropsychology of prospective memory in normal aging: a componential app… (Neuropsychologia, key_review, 124×)",
+      "doi": "10.1016/j.neuropsychologia.2010.12.029",
+      "pub_id": "pub_5a7c5a08",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4515535549921613,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27954755330197856,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06988688832549464,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Neuropsychologia",
+      "citation_count": 124,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Woods 2021 — Enhancing cue salience improves aspects of naturalistic time-based prospectiv… (Neuropsychology, recent_primary, 10×)",
+      "doi": "10.1037/neu0000644",
+      "pub_id": "pub_9f097985",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.44804140084178884,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Neuropsychology",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Bugg 2011 — Revealing list-level control in the Stroop task by uncovering its benefits an… (Journal of experimental psycholo…, foundational, 48×)",
+      "doi": "10.1037/a0024670",
+      "pub_id": "pub_5890a30d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4479983852241514,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Journal of experimental psychology. Human perception and performance",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Cottini 2023 — Improving children's ability to remember intentions: a literature review on s… (Psychological research, key_review, 4×)",
+      "doi": "10.1007/s00426-023-01834-8",
+      "pub_id": "pub_6834d023",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4449622961084982,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Psychological research",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Smith 2010 — What Costs Do Reveal and Moving Beyond the Cost Debate: Reply to Einstein and… (Journal of experimental psycholo…, foundational, 47×)",
+      "doi": "10.1037/a0019183",
+      "pub_id": "pub_ade634be",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.43769993365275583,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22413306794435656,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05603326698608914,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2010,
+      "venue": "Journal of experimental psychology. Learning, memory, and cognition",
+      "citation_count": 47,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Wu 2021 — The degeneration changes of basal forebrain are associated with prospective m… (Brain and behavior, recent_primary, 4×)",
+      "doi": "10.1002/brb3.2239",
+      "pub_id": "pub_59623b36",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4366289627751649,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Brain and behavior",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Loft 2011 — Prospective memory in an air traffic control simulation: external aids that s… (Journal of experimental psycholo…, foundational, 17×)",
+      "doi": "10.1037/a0022845",
+      "pub_id": "pub_658a8ac3",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4335030300957165,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Journal of experimental psychology. Applied",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Landsiedel 2020 — Increasing Extrinsic Motivation Improves Time-Based Prospective Memory in Adu… (Journal of autism and developmen…, recent_primary, 10×)",
+      "doi": "10.1007/s10803-019-04340-2",
+      "pub_id": "pub_6db610a2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4180414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Journal of autism and developmental disorders",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "McFarland 2009 — Frontal lobe involvement in a task of time-based prospective memory. (Neuropsychologia, foundational, 69×)",
+      "doi": "10.1016/j.neuropsychologia.2009.02.023",
+      "pub_id": "pub_7234fe23",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.41482770356006843,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24597748090694052,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06149437022673513,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Neuropsychologia",
+      "citation_count": 69,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Seesjärvi 2025 — A naturalistic virtual reality task reveals difficulties in time-based prospe… (Scientific reports, recent_primary, 0×)",
+      "doi": "10.1038/s41598-025-08944-w",
+      "pub_id": "pub_2193c259",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.41333333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Scientific reports",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Woods 2020 — Supporting strategic processes can improve time-based prospective memory in t… (Neuropsychology, recent_primary, 31×)",
+      "doi": "10.1037/neu0000602",
+      "pub_id": "pub_dda7ba7e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4118310741974727,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Neuropsychology",
+      "citation_count": 31,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Böhm 2021 — Nighttime sleep benefits the prospective component of prospective memory. (Memory & cognition, recent_primary, 3×)",
+      "doi": "10.3758/s13421-021-01187-w",
+      "pub_id": "pub_ca673cb5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.41173242967898904,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Memory & cognition",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Ball 2018 — The importance of age-related differences in prospective memory: Evidence fro… (Psychonomic bulletin & review, recent_primary, 14×)",
+      "doi": "10.3758/s13423-017-1318-4",
+      "pub_id": "pub_3d897b47",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4008640370699425,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Psychonomic bulletin & review",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Scullin 2018 — Thought probes during prospective memory encoding: Evidence for perfunctory p… (PloS one, recent_primary, 9×)",
+      "doi": "10.1371/journal.pone.0198646",
+      "pub_id": "pub_59d50401",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3949951776146594,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "PloS one",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Cona 2012 — Electrophysiological correlates of strategic monitoring in event-based and ti… (PloS one, foundational, 34×)",
+      "doi": "10.1371/journal.pone.0031659",
+      "pub_id": "pub_5666ecdd",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3947948220539072,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "PloS one",
+      "citation_count": 34,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Walser 2013 — Intention retrieval and deactivation following an acute psychosocial stressor. (PloS one, foundational, 15×)",
+      "doi": "10.1371/journal.pone.0085685",
+      "pub_id": "pub_a84b3733",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.39346485935797815,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "PloS one",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Gordon 2011 — Structural correlates of prospective memory. (Neuropsychologia, foundational, 65×)",
+      "doi": "10.1016/j.neuropsychologia.2011.09.035",
+      "pub_id": "pub_1f3e4976",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.39230935664272765,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24257075990424393,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06064268997606098,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Neuropsychologia",
+      "citation_count": 65,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Román-Caballero 2025 — Time-Based and Event-Based Prospective Memory in Mild Cognitive Impairment an… (Neuropsychology review, key_review, 6×)",
+      "doi": "10.1007/s11065-023-09626-y",
+      "pub_id": "pub_8dcfe9d8",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.389832525945409,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Neuropsychology review",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Guo 2019 — The Practice Effect on Time-Based Prospective Memory: The Influences of Ongoi… (Frontiers in psychology, recent_primary, 11×)",
+      "doi": "10.3389/fpsyg.2019.02002",
+      "pub_id": "pub_35618251",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3893008373071001,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Frontiers in psychology",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

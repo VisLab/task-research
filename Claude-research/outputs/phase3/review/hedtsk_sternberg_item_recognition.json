@@ -1,0 +1,731 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_sternberg_item_recognition",
+    "name": "Sternberg Item Recognition Task",
+    "aliases": [
+      "Sternberg Memory Scanning",
+      "Memory Search Task"
+    ],
+    "category_id": "short_term_and_working_memory",
+    "short_definition": "Short memory set followed by a probe; yes/no judgment of set membership. RT typically scales linearly with set size.",
+    "description": "The Sternberg task measures the speed of short-term memory scanning. On each trial, participants encode a brief study list of 1-6 items, then after a retention interval, judge whether a test probe was in the studied list. The critical finding is that RT increases linearly with memory set size for both positive and negative probes, suggesting serial exhaustive scanning. The slope of the RT-by-set-size function indexes memory scanning speed, while the intercept indexes stimulus encoding and response execution time.",
+    "inclusion_test": {
+      "procedure": "Participants memorize a small set of items (1–6 digits or letters), then a probe appears and they indicate whether it was in the memory set.",
+      "manipulation": "Set size (1–6); probe type (positive/present vs. negative/absent); degraded probes; varied vs. fixed set across trials.",
+      "measurement": "RT as a function of set size (slope = scanning rate, ~38 ms/item); intercept; accuracy."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:54:13",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 19
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Sternberg 1966 — High-Speed Scanning in Human Memory (Science, historical, 3k×)",
+      "doi": "10.1126/science.153.3736.652",
+      "pub_id": "pub_c562b217",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7186144522451209,
+        "breakdown": {
+          "raw": {
+            "citations": 0.47445780898048356,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11861445224512089,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1966,
+      "venue": "Science",
+      "citation_count": 3621,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Verster 2012 — Predicting psychopharmacological drug effects on actual driving performance (… (Psychopharmacology, foundational, 41×)",
+      "doi": "10.1007/s00213-011-2484-0",
+      "pub_id": "pub_47848891",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4374338150796812,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Psychopharmacology",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Adamovich 2024 — Task-specific topology of brain networks supporting working memory and inhibi… (Human brain mapping, recent_primary, 4×)",
+      "doi": "10.1002/hbm.70024",
+      "pub_id": "pub_9f8f5fcd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.40662896277516486,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Human brain mapping",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Schneider-Garces 2010 — Span, CRUNCH, and beyond: working memory capacity and the aging brain. (Journal of cognitive neuroscience, foundational, 300×)",
+      "doi": "10.1162/jocn.2009.21230",
+      "pub_id": "pub_df000b1b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.40594026391706073,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33042772233490975,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08260693058372744,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 300,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Kragel 2015 — Neural activity in the medial temporal lobe reveals the fidelity of mental ti… (The Journal of neuroscience : th…, foundational, 35×)",
+      "doi": "10.1523/jneurosci.3378-14.2015",
+      "pub_id": "pub_f376a8b4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.38520257826854437,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Newsome 2015 — Disruption of caudate working memory activation in chronic blast-related trau… (NeuroImage. Clinical, foundational, 29×)",
+      "doi": "10.1016/j.nicl.2015.04.024",
+      "pub_id": "pub_f661aa9d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3825635852427704,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "NeuroImage. Clinical",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Toppi 2017 — Different Topological Properties of EEG-Derived Networks Describe Working Mem… (Frontiers in human neuroscience, foundational, 23×)",
+      "doi": "10.3389/fnhum.2017.00637",
+      "pub_id": "pub_42298ea2",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3793337188132613,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Frontiers in human neuroscience",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Turcotte 2022 — Managing Increased Cognitive Load in a Guided Search. (Perceptual and motor skills, recent_primary, 3×)",
+      "doi": "10.1177/00315125221076440",
+      "pub_id": "pub_94666a82",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.36339909634565576,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Perceptual and motor skills",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Wilde 2011 — Brain imaging correlates of verbal working memory in children following traum… (International journal of psychop…, foundational, 48×)",
+      "doi": "10.1016/j.ijpsycho.2011.04.006",
+      "pub_id": "pub_ffbbb937",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3496650518908181,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "International journal of psychophysiology : official journal of the International Organization of Psychophysiology",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Mets 2011 — Next-day effects of ramelteon (8 mg), zopiclone (7.5 mg), and placebo on high… (Sleep, foundational, 78×)",
+      "doi": "10.5665/sleep.1272",
+      "pub_id": "pub_3ce09d35",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.33657841862061444,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2529803411491245,
+            "venue": 0.7,
+            "publisher": 0.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06324508528728112,
+            "venue": 0.13999999999999999,
+            "publisher": 0.0,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Sleep",
+      "citation_count": 78,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Duncko 2009 — Working memory performance after acute exposure to the cold pressor stress  i… (Neurobiology of learning and memory, foundational, 78×)",
+      "doi": "10.1016/j.nlm.2009.01.006",
+      "pub_id": "pub_ab30157d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.33657841862061444,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2529803411491245,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06324508528728112,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Neurobiology of learning and memory",
+      "citation_count": 78,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Shang 2024 — Category-based attention facilitates memory search. (eNeuro, recent_primary, 3×)",
+      "doi": "10.1523/eneuro.0012-24.2024",
+      "pub_id": "pub_80d1eebb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3233990963456557,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "eNeuro",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Jungeblut 2021 — An Investigation of the Slope Parameters of Reaction Times and P3 Latencies i… (Journal of cognition, recent_primary, 3×)",
+      "doi": "10.5334/joc.158",
+      "pub_id": "pub_de3b9215",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3133990963456557,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of cognition",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Schweickert 2014 — Parallel effects of memory set activation and search on timing and working me… (Frontiers in psychology, foundational, 1×)",
+      "doi": "10.3389/fpsyg.2014.00779",
+      "pub_id": "pub_0fb27481",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.31336621483949456,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2014,
+      "venue": "Frontiers in psychology",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Vinkhuyzen 2010 — Individual differences in processing speed and working memory speed as assess… (Behavior genetics, foundational, 5×)",
+      "doi": "10.1007/s10519-009-9315-7",
+      "pub_id": "pub_72ac5b85",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.30926795580093885,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Behavior genetics",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Singh 2015 — FFT transformed quantitative EEG analysis of short term memory load. (Annals of neurosciences, foundational, 9×)",
+      "doi": "10.5214/ans.0972.7531.220308",
+      "pub_id": "pub_3ae88d4d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.2666618442813261,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Annals of neurosciences",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Patat 1995 — Lack of interaction between a new antihistamine, mizolastine, and lorazepam o… (British journal of clinical phar…, foundational, 24×)",
+      "doi": "10.1111/j.1365-2125.1995.tb04406.x",
+      "pub_id": "pub_1581576a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.24992459221699642,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 1995,
+      "venue": "British journal of clinical pharmacology",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Fairweather 1995 — The psychomotor and cognitive effects of litoxetine in young and middle aged … (British journal of clinical phar…, foundational, 4×)",
+      "doi": "10.1111/j.1365-2125.1995.tb05767.x",
+      "pub_id": "pub_481954bd",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.22662896277516487,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 1995,
+      "venue": "British journal of clinical pharmacology",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Danjou 1999 — A comparison of the residual effects of zaleplon and zolpidem following admin… (British journal of clinical phar…, foundational, 70×)",
+      "doi": "10.1046/j.1365-2125.1999.00024.x",
+      "pub_id": "pub_889c672b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.20503301747618002,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24679873657138676,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06169968414284669,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 1999,
+      "venue": "British journal of clinical pharmacology",
+      "citation_count": 70,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

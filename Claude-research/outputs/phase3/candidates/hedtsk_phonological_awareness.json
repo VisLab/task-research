@@ -1,0 +1,3417 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:30:17",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_phonological_awareness",
+    "name": "Phonological Awareness Task",
+    "aliases": [
+      "Rhyme Judgment",
+      "Phoneme Deletion"
+    ],
+    "category_id": "language_comprehension_and_production",
+    "short_definition": "Rhyme judgment, phoneme deletion, or phoneme blending tasks index sensitivity to the sound structure of language.",
+    "description": "Participants view or hear pairs of words and judge whether they rhyme. The task requires analysis of the sound structure of words, comparison of phonological representations, and a binary decision. Control conditions involve matching for orthographic similarity or judging word identity. fMRI reveals activation in left inferior frontal regions (pars opercularis), left temporoparietal areas, and left superior temporal cortex. The task is widely used in reading research and dyslexia studies, as phonological awareness is a strong predictor of reading ability.",
+    "inclusion_test": {
+      "procedure": "Participants make explicit judgments about the sound structure of spoken words: rhyme detection, phoneme deletion, phoneme segmentation, or blending.",
+      "manipulation": "Task type (rhyme, onset, phoneme deletion, blending); word complexity; real word vs. nonword targets.",
+      "measurement": "Accuracy; RT; correlation with reading ability in developmental populations."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 46,
+      "picked": 30,
+      "reserve": 16,
+      "excluded": 0,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_80ab6393",
+      "doi": "10.1016/j.neuroimage.2021.118083",
+      "url": "https://doi.org/10.1016/j.neuroimage.2021.118083",
+      "openalex_id": null,
+      "pmid": "33878381",
+      "first_author": "Wang",
+      "authors_display": "Wang, J. et al.",
+      "year": 2021,
+      "title": "Reciprocal relations between reading skill and the neural basis of phonological awareness in 7- to 9-year-old children.",
+      "venue": "NeuroImage",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8361856",
+      "tldr": null,
+      "abstract": "By using a longitudinal design and functional magnetic resonance imaging (fMRI), our previous study (Wang et al., 2020) found a scaffolding effect of early phonological processing in the superior temporal gyrus (STG) in 6-year-old children on later behavioral reading skill in 7.5-year-old children. Other than this previous study, nothing is known about longitudinal change in the bidirectional relation between reading skill and phonological processing in the brain. To fill this gap, in the current study, we used the same experimental paradigm as in Wang et al. (2020) to measure children's reading skill and brain activity during an auditory phonological awareness task, but with children who were 7.5 years old at Time 1 (T1) and about 1.5 years later when they were 9 years old at Time 2 (T2). The phonological awareness task included both small grain (i.e., onset) and large grain (i.e., rhyme) conditions. In a univariate analysis, we found that better reading skill at T1 predicted lower brain activation in IFG at T2 for onset processing after controlling for brain activation and non-verbal IQ at T1. This suggests that early reading ability reduces the effort of phonemic access, thus supporting the refinement hypothesis. When using general psychophysiological interaction (gPPI), we found that higher functional connectivity from IFG to STG for rhyme processing at T1 predicted better reading skill at T2 after controlling for reading skill and non-verbal IQ at T1. This suggests that the early effectiveness of accessing rhyme representations scaffolds reading acquisition. As both results did not survive multiple comparison corrections, replication of these findings is needed. However, both findings are consistent with prior studies demonstrating that phonological access in the frontal lobe becomes important in older elementary school readers. Moreover, the refinement effect for onsets is consistent with the hypothesis that learning to read allows for better access of small g",
+      "score": {
+        "composite": 0.5725307037366092,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Temporal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Longitudinal Studies",
+        "Child Development",
+        "Speech Perception",
+        "Psycholinguistics",
+        "Reading",
+        "Phonetics",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_6555911c",
+      "doi": "10.1016/j.neuroimage.2019.01.040",
+      "url": "https://doi.org/10.1016/j.neuroimage.2019.01.040",
+      "openalex_id": null,
+      "pmid": "30665008",
+      "first_author": "Yen",
+      "authors_display": "Yen, M. et al.",
+      "year": 2019,
+      "title": "Adaptive paradigms for mapping phonological regions in individual participants.",
+      "venue": "NeuroImage",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 35,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Phonological encoding depends on left-lateralized regions in the supramarginal gyrus and the ventral precentral gyrus. Localization of these phonological regions in individual participants-including individuals with language impairments-is important in several research and clinical contexts. To localize these regions, we developed two paradigms that load on phonological encoding: a rhyme judgment task and a syllable counting task. Both paradigms relied on an adaptive staircase design to ensure that each individual performed each task at a similarly challenging level. The goal of this study was to assess the validity and reliability of the two paradigms, in terms of their ability to consistently produce left-lateralized activations of the supramarginal gyrus and ventral precentral gyrus in neurologically normal individuals with presumptively normal language localization. Sixteen participants were scanned with fMRI as they performed the rhyme judgment paradigm, the syllable counting paradigm, and an adaptive semantic paradigm that we have described previously. We found that the rhyme and syllable paradigms both yielded left-lateralized supramarginal and ventral precentral activations in the majority of participants. The rhyme paradigm produced more lateralized and more reliable activations, and so should be favored in future applications. In contrast, the semantic paradigm did not reveal supramarginal or precentral activations in most participants, suggesting that the recruitment of these regions is indeed driven by phonological encoding, not language processing in general. In sum, the adaptive rhyme judgment paradigm was effective in localizing left-lateralized phonological encoding regions in individual participants, and, in conjunction with the adaptive semantic paradigm, can be used to map individual language networks.",
+      "score": {
+        "composite": 0.5652025782685444,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Parietal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Reproducibility of Results",
+        "Language",
+        "Psycholinguistics",
+        "Reading",
+        "Adult",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Functional Laterality",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d04d4688",
+      "doi": "10.1016/j.bandl.2019.104696",
+      "url": "https://doi.org/10.1016/j.bandl.2019.104696",
+      "openalex_id": null,
+      "pmid": "31655417",
+      "first_author": "Ip",
+      "authors_display": "Ip, K. et al.",
+      "year": 2019,
+      "title": "Morphological processing in Chinese engages left temporal regions.",
+      "venue": "Brain and language",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Morphological awareness, the ability to manipulate the smallest units of meaning, is critical for Chinese literacy. This is because Chinese characters typically reflect the morphemic, or morpho-syllabic units of language. Yet, the neurocognitive mechanisms underlying Chinese speakers' morphological processing remain understudied. Proficient readers (N = 14) completed morphological and phonological judgment tasks in Chinese, in both auditory and visual modalities, during fMRI imaging. Key to our inquiry were patterns of activation in left temporal regions, especially the superior temporal gyrus, which is critical for phonological processing and reading success. The findings revealed that morphological tasks elicited robust activation in superior and middle temporal regions commonly associated with automated phonological and lexico-semantic analyses. In contrast, the rhyme judgment task elicited greater activation in left frontal lobe regions, reflecting the analytical complexity of sound-to-print mapping in Chinese. The findings suggest that left temporal regions are sensitive to salient morpho-syllabic characteristics of a given language.",
+      "score": {
+        "composite": 0.4959522867224748,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Temporal Lobe",
+        "Humans",
+        "Brain Mapping",
+        "Judgment",
+        "Reading",
+        "Semantics",
+        "Adult",
+        "Female",
+        "Male",
+        "Asian People"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ff84bbbc",
+      "doi": "10.1016/j.dcn.2018.01.011",
+      "url": "https://doi.org/10.1016/j.dcn.2018.01.011",
+      "openalex_id": null,
+      "pmid": "29454219",
+      "first_author": "Wang",
+      "authors_display": "Wang, J. et al.",
+      "year": 2018,
+      "title": "Reading skill related to left ventral occipitotemporal cortex during a phonological awareness task in 5-6-year old children.",
+      "venue": "Developmental cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 23,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6047864",
+      "tldr": null,
+      "abstract": "The left ventral occipitotemporal cortex (vOT) is important in visual word recognition. Studies have shown that the left vOT is generally observed to be involved in spoken language processing in skilled readers, suggesting automatic access to corresponding orthographic information. However, little is known about where and how the left vOT is involved in the spoken language processing of young children with emerging reading ability. In order to answer this question, we examined the relation of reading ability in 5-6-year-old kindergarteners to the activation of vOT during an auditory phonological awareness task. Two experimental conditions: onset word pairs that shared the first phoneme and rhyme word pairs that shared the final biphone/triphone, were compared to allow a measurement of vOT's activation to small (i.e., onsets) and large grain sizes (i.e., rhymes). We found that higher reading ability was associated with better accuracy of the onset, but not the rhyme, condition. In addition, higher reading ability was only associated with greater sensitivity in the posterior left vOT for the contrast of the onset versus rhyme condition. These results suggest that acquisition of reading results in greater specialization of the posterior vOT to smaller rather than larger grain sizes in young children.",
+      "score": {
+        "composite": 0.48933371881326126,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Occipital Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Reading",
+        "Phonetics",
+        "Child",
+        "Child, Preschool",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b8656c40",
+      "doi": "10.1073/pnas.0609399104",
+      "url": "https://doi.org/10.1073/pnas.0609399104",
+      "openalex_id": null,
+      "pmid": "17360506",
+      "first_author": "Hoeft",
+      "authors_display": "Hoeft, F. et al.",
+      "year": 2007,
+      "title": "Functional and morphometric brain dissociation between dyslexia and reading ability.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 282,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In functional neuroimaging studies, individuals with dyslexia frequently exhibit both hypoactivation, often in the left parietotemporal cortex, and hyperactivation, often in the left inferior frontal cortex, but there has been no evidence to suggest how to interpret the differential relations of hypoactivation and hyperactivation to dyslexia. To address this question, we measured brain activation by functional MRI during visual word rhyme judgment compared with visual cross-hair fixation rest, and we measured gray matter morphology by voxel-based morphometry in dyslexic adolescents in comparison with (i) an age-matched group, and (ii) a reading-matched group younger than the dyslexic group but equal to the dyslexic group in reading performance. Relative to the age-matched group (n = 19; mean 14.4 years), the dyslexic group (n = 19; mean 14.4 years) exhibited hypoactivation in left parietal and bilateral fusiform cortices and hyperactivation in left inferior and middle frontal gyri, caudate, and thalamus. Relative to the reading-matched group (n = 12; mean 9.8 years), the dyslexic group (n = 12; mean 14.5 years) also exhibited hypoactivation in left parietal and fusiform regions but equal activation in all four areas that had exhibited hyperactivation relative to age-matched controls as well. In regions that exhibited atypical activation in the dyslexic group, only the left parietal region exhibited reduced gray matter volume relative to both control groups. Thus, areas of hyperactivation in dyslexia reflected processes related to the level of current reading ability independent of dyslexia. In contrast, areas of hypoactivation in dyslexia reflected functional atypicalities related to dyslexia itself, independent of current reading ability, and related to atypical brain morphology in dyslexia.",
+      "score": {
+        "composite": 0.4750477243918448,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32685756423404577,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08171439105851144,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Frontal Lobe",
+        "Humans",
+        "Dyslexia",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Reading",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_d1607dbf",
+      "doi": "10.1016/j.neuropsychologia.2014.06.015",
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2014.06.015",
+      "openalex_id": null,
+      "pmid": "24953957",
+      "first_author": "Norton",
+      "authors_display": "Norton, E. et al.",
+      "year": 2014,
+      "title": "Functional neuroanatomical evidence for the double-deficit hypothesis of developmental dyslexia.",
+      "venue": "Neuropsychologia",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 67,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The double-deficit hypothesis of dyslexia posits that both rapid naming and phonological impairments can cause reading difficulties, and that individuals who have both of these deficits show greater reading impairments compared to those with a single deficit. Despite extensive behavioral research, the brain basis of poor reading with a double-deficit has never been investigated. The goal of the study was to evaluate the double-deficit hypothesis using functional MRI. Activation patterns during a printed word rhyme judgment task in 90 children with a wide range of reading abilities showed dissociation between brain regions that were sensitive to phonological awareness (left inferior frontal and inferior parietal regions) and rapid naming (right cerebellar lobule VI). More specifically, the double-deficit group showed less activation in the fronto-parietal reading network compared to children with only a deficit in phonological awareness, who in turn showed less activation than the typically-reading group. On the other hand, the double-deficit group showed less cerebellar activation compared to children with only a rapid naming deficit, who in turn showed less activation than the typically-reading children. Functional connectivity analyses revealed that bilateral prefrontal regions were key for linking brain regions associated with phonological awareness and rapid naming, with the double-deficit group being the most aberrant in their connectivity. Our study provides the first functional neuroanatomical evidence for the double-deficit hypothesis of developmental dyslexia.",
+      "score": {
+        "composite": 0.46440812669275744,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2442991734376964,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0610747933594241,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Neural Pathways",
+        "Humans",
+        "Dyslexia",
+        "Magnetic Resonance Imaging",
+        "Judgment",
+        "Language Tests",
+        "Neuropsychological Tests",
+        "Models, Psychological",
+        "Reading",
+        "Phonetics",
+        "Signal Processing, Computer-Assisted",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b400f243",
+      "doi": "10.1016/j.bandl.2014.12.002",
+      "url": "https://doi.org/10.1016/j.bandl.2014.12.002",
+      "openalex_id": null,
+      "pmid": "25585276",
+      "first_author": "McNorgan",
+      "authors_display": "McNorgan, C., & Booth, J.",
+      "year": 2015,
+      "title": "Skill dependent audiovisual integration in the fusiform induces repetition suppression.",
+      "venue": "Brain and language",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 19,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Learning to read entails mapping existing phonological representations to novel orthographic representations and is thus an ideal context for investigating experience driven audiovisual integration. Because two dominant brain-based theories of reading development hinge on the sensitivity of the visual-object processing stream to phonological information, we were interested in how reading skill relates to audiovisual integration in this area. Thirty-two children between 8 and 13 years of age spanning a range of reading skill participated in a functional magnetic resonance imaging experiment. Participants completed a rhyme judgment task to word pairs presented unimodally (auditory- or visual-only) and cross-modally (auditory followed by visual). Skill-dependent sub-additive audiovisual modulation was found in left fusiform gyrus, extending into the putative visual word form area, and was correlated with behavioral orthographic priming. These results suggest learning to read promotes facilitatory audiovisual integration in the ventral visual-object processing stream and may optimize this region for orthographic processing.",
+      "score": {
+        "composite": 0.45669472578748727,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Temporal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Speech Perception",
+        "Judgment",
+        "Reading",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male",
+        "Repetition Priming"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_0492e46d",
+      "doi": "10.1002/hbm.22134",
+      "url": "https://doi.org/10.1002/hbm.22134",
+      "openalex_id": null,
+      "pmid": "22711328",
+      "first_author": "Hurschler",
+      "authors_display": "Hurschler, M. et al.",
+      "year": 2013,
+      "title": "Right and left perisylvian cortex and left inferior frontal cortex mediate sentence-level rhyme detection in spoken language as revealed by sparse fMRI.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 9,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In this study, we used functional magnetic resonance imaging to investigate the neural basis of auditory rhyme processing at the sentence level in healthy adults. In an explicit rhyme detection task, participants were required to decide whether the ending syllable of a metrically spoken pseudosentence rhymed or not. Participants performing this task revealed bilateral activation in posterior-superior temporal gyri with a much more extended cluster of activation in the right hemisphere. These findings suggest that the right hemisphere primarily supports suprasegmental tasks, such as the segmentation of speech into syllables; thus, our findings are in line with the \"asymmetric sampling in time\" model suggested by Poeppel (: Speech Commun 41:245-255). The direct contrast between rhymed and nonrhymed trials revealed a stronger BOLD response for rhymed trials in the frontal operculum and the anterior insula of the left hemisphere. Our results suggest an involvement of these frontal regions not only in articulatory rehearsal processes, but especially in the detection of a matching syllable, as well as in the execution of rhyme judgment.",
+      "score": {
+        "composite": 0.4266618442813261,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Auditory Perception",
+        "Semantics",
+        "Image Processing, Computer-Assisted",
+        "Adult",
+        "Female",
+        "Male",
+        "Functional Laterality",
+        "Signal Detection, Psychological",
+        "Young Adult",
+        "Surveys and Questionnaires"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_d5a20afb",
+      "doi": "10.1371/journal.pone.0153603",
+      "url": "https://doi.org/10.1371/journal.pone.0153603",
+      "openalex_id": null,
+      "pmid": "27100778",
+      "first_author": "Zhang",
+      "authors_display": "Zhang, Y. et al.",
+      "year": 2016,
+      "title": "Association of DCDC2 Polymorphisms with Normal Variations in Reading Abilities in a Chinese Population.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 16,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4839751",
+      "tldr": null,
+      "abstract": "The doublecortin domain-containing 2 (DCDC2) gene, which is located on chromosome 6p22.1, has been widely suggested to be a candidate gene for dyslexia, but its role in typical reading development over time remains to be clarified. In the present study, we explored the role of DCDC2 in contributing to the individual differences in reading development from ages 6 to 11 years by analysing data from 284 unrelated children who were participating in the Chinese Longitudinal Study of Reading Development (CLSRD). The associations of eight single nucleotide polymorphisms (SNPs) in DCDC2 with the latent intercept and slope of children's reading scores were examined in the first step. There was significant support for an association of rs807724 with the intercept for the reading comprehension measure of reading fluency, and the minor \"G\" allele was associated with poor reading performance. Next, we further tested the rs807724 SNP in association with the reading ability at each tested time and revealed that, in addition to significant associations with the two main reading measures (reading fluency and Chinese character reading) over multiple testing occasions, this SNP also showed associations with reading-related cognitive skills, including morphological production, orthographic judgment and phonological processing skills (rapid number naming, phoneme deletion, and tone detection). This study provides support for DCDC2 as a risk gene for reading disability and suggests that this gene is also operative for typical reading development in the Han population.",
+      "score": {
+        "composite": 0.424342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Dyslexia",
+        "Genetic Predisposition to Disease",
+        "Microtubule-Associated Proteins",
+        "Longitudinal Studies",
+        "Genotype",
+        "Polymorphism, Single Nucleotide",
+        "Reading",
+        "Child",
+        "China",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_f68840b8",
+      "doi": "10.1162/jocn_a_00581",
+      "url": "https://doi.org/10.1162/jocn_a_00581",
+      "openalex_id": null,
+      "pmid": "24456399",
+      "first_author": "Gullick",
+      "authors_display": "Gullick, M., & Booth, J.",
+      "year": 2014,
+      "title": "Individual differences in crossmodal brain activity predict arcuate fasciculus connectivity in developing readers.",
+      "venue": "Journal of cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 31,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Crossmodal integration of auditory and visual information, such as phonemes and graphemes, is a critical skill for fluent reading. Previous work has demonstrated that white matter connectivity along the arcuate fasciculus (AF) is predicted by reading skill and that crossmodal processing particularly activates the posterior STS (pSTS). However, the relationship between this crossmodal activation and white matter integrity has not been previously reported. We investigated the interrelationship of crossmodal integration, both in terms of behavioral performance and pSTS activity, with AF tract coherence using a rhyme judgment task in a group of 47 children with a range of reading abilities. We demonstrate that both response accuracy and pSTS activity for crossmodal (auditory-visual) rhyme judgments was predictive of fractional anisotropy along the left AF. Unimodal (auditory-only or visual-only) pSTS activity was not significantly related to AF connectivity. Furthermore, activity in other reading-related ROIs did not show the same AV-only AF coherence relationship, and AV pSTS activity was not related to connectivity along other language-related tracts. This study is the first to directly show that crossmodal brain activity is specifically related to connectivity in the AF, supporting its role in phoneme-grapheme integration ability. More generally, this study helps to define an interdependent neural network for reading-related integration.",
+      "score": {
+        "composite": 0.4134977408641394,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Perforant Pathway",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Acoustic Stimulation",
+        "Brain Mapping",
+        "Predictive Value of Tests",
+        "Photic Stimulation",
+        "Individuality",
+        "Auditory Perception",
+        "Visual Perception",
+        "Reading",
+        "Vocabulary",
+        "Image Processing, Computer-Assisted",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male",
+        "Functional Laterality"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7c7b8474",
+      "doi": "10.1002/dys.1614",
+      "url": "https://doi.org/10.1002/dys.1614",
+      "openalex_id": null,
+      "pmid": "31016832",
+      "first_author": "Tilanus",
+      "authors_display": "Tilanus, E. et al.",
+      "year": 2019,
+      "title": "Predicting responsiveness to a sustained reading and spelling intervention in children with dyslexia.",
+      "venue": "Dyslexia (Chichester, England)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6593814",
+      "tldr": null,
+      "abstract": "The present study aimed to predict responsiveness to a sustained two-phase reading and spelling intervention with a focus on declarative and procedural learning respectively in 122 second-grade Dutch children with dyslexia. We related their responsiveness to intervention to precursor measures (phonological awareness, rapid automatized naming ability, letter knowledge, and verbal working memory) and related word and pseudoword reading and spelling outcomes of the sustained intervention to initial reading and spelling abilities, and first-phase, initial treatment success. Results showed that children with dyslexia improved in reading accuracy and efficiency and in spelling skills during the two phases of the intervention although the gap with typical readers increased. In reading efficiency, rapid automatized naming, and in reading and spelling accuracy phoneme deletion predicted children's responsiveness to intervention. Additionally, children's initial reading abilities at the start of the intervention directly (and indirectly, via initial treatment success, in reading efficiency) predicted posttest outcomes. Responsiveness to intervention in spelling was predicted by phoneme deletion, and spelling at posttest was indirectly, via initial treatment success, predicted by children's initial spelling abilities. Finally, children's initial treatment success directly predicted reading efficiency and spelling outcomes at posttest.",
+      "score": {
+        "composite": 0.4080414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Dyslexia",
+        "Treatment Outcome",
+        "Awareness",
+        "Memory, Short-Term",
+        "Teaching",
+        "Reading",
+        "Linguistics",
+        "Phonetics",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1a2b0e03",
+      "doi": "10.1038/ejhg.2016.194",
+      "url": "https://doi.org/10.1038/ejhg.2016.194",
+      "openalex_id": null,
+      "pmid": "28074887",
+      "first_author": "Carrion-Castillo",
+      "authors_display": "Carrion-Castillo, A. et al.",
+      "year": 2017,
+      "title": "Association analysis of dyslexia candidate genes in a Dutch longitudinal sample.",
+      "venue": "European journal of human genetics : EJHG",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 25,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Dyslexia is a common specific learning disability with a substantive genetic component. Several candidate genes have been proposed to be implicated in dyslexia susceptibility, such as DYX1C1, ROBO1, KIAA0319, and DCDC2. Associations with variants in these genes have also been reported with a variety of psychometric measures tapping into the underlying processes that might be impaired in dyslexic people. In this study, we first conducted a literature review to select single nucleotide polymorphisms (SNPs) in dyslexia candidate genes that had been repeatedly implicated across studies. We then assessed the SNPs for association in the richly phenotyped longitudinal data set from the Dutch Dyslexia Program. We tested for association with several quantitative traits, including word and nonword reading fluency, rapid naming, phoneme deletion, and nonword repetition. In this, we took advantage of the longitudinal nature of the sample to examine if associations were stable across four educational time-points (from 7 to 12 years). Two SNPs in the KIAA0319 gene were nominally associated with rapid naming, and these associations were stable across different ages. Genetic association analysis with complex cognitive traits can be enriched through the use of longitudinal information on trait development.",
+      "score": {
+        "composite": 0.4004922880522967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Dyslexia",
+        "Cytoskeletal Proteins",
+        "Microtubule-Associated Proteins",
+        "Receptors, Immunologic",
+        "Nerve Tissue Proteins",
+        "Nuclear Proteins",
+        "Longitudinal Studies",
+        "Child Development",
+        "Polymorphism, Single Nucleotide",
+        "Child",
+        "Netherlands",
+        "Female",
+        "Male",
+        "Roundabout Proteins"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a9d13550",
+      "doi": "10.1016/j.bandl.2010.01.003",
+      "url": "https://doi.org/10.1016/j.bandl.2010.01.003",
+      "openalex_id": null,
+      "pmid": "20223512",
+      "first_author": "Welcome",
+      "authors_display": "Welcome, S. et al.",
+      "year": 2010,
+      "title": "Alternate reading strategies and variable asymmetry of the planum temporale in adult resilient readers.",
+      "venue": "Brain and language",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Resilient readers are characterized by impaired phonological processing despite skilled text comprehension. We investigated orthographic and semantic processing in resilient readers to examine mechanisms of compensation for poor phonological decoding. Performance on phonological (phoneme deletion, pseudoword reading), orthographic (orthographic choice, orthographic analogy), and semantic (semantic priming, homograph resolution) tasks was compared between resilient, poor and proficient readers. Asymmetry of the planum temporale was investigated in order to determine whether atypical readers showed unusual morphology in this language-relevant region. Resilient readers showed deficits on phonological tasks similar to those shown by poor readers. We obtained no evidence that resilient readers compensate via superior orthographic processing, as they showed neither exceptional orthographic skill nor increased reliance on orthography to guide pronunciation. Resilient readers benefited more than poor or proficient readers from semantic relationships between words and experienced greater difficulty when such relationships were not present. We suggest, therefore, that resilient readers compensate for poor phonological decoding via greater reliance on word meaning relationships. The reading groups did not differ in mean asymmetry of the planum temporale. However, resilient readers showed greater variability in planar asymmetry than proficient readers. Poor readers also showed a trend towards greater variability in planar asymmetry, with more poor readers than proficient readers showing extreme asymmetry. Such increased variability suggests that university students with less reading skill display less well regulated brain anatomy than proficient readers.",
+      "score": {
+        "composite": 0.4004594065461355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Dyslexia",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Comprehension",
+        "Pattern Recognition, Visual",
+        "Reading",
+        "Image Processing, Computer-Assisted",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_d785f91b",
+      "doi": "10.1371/journal.pone.0119734",
+      "url": "https://doi.org/10.1371/journal.pone.0119734",
+      "openalex_id": null,
+      "pmid": "25751539",
+      "first_author": "Welcome",
+      "authors_display": "Welcome, S., & Alton, A.",
+      "year": 2015,
+      "title": "Individual differences in the effect of orthographic/phonological conflict on rhyme and spelling decisions.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0119734&type=printable",
+      "tldr": null,
+      "abstract": "In typical readers, orthographic knowledge has been shown to influence phonological decisions. In the present study, we used visual rhyme and spelling tasks to investigate the interaction of orthographic and phonological information in adults with varying reading skill. Word pairs that shared both orthography and phonology (e.g., throat/boat), differed in both orthography and phonology (e.g., snow/arm), shared only orthography (e.g., farm/warm), and shared only phonology (e.g., vote/boat) were visually presented to university students who varied in reading ability. For rhyme judgment, participants were slower and less accurate to accept rhyming pairs when words were spelled differently and to reject non-rhyming pairs when words were spelled similarly. Similarly, for spelling judgments, participants were slower and less accurate when indicating that word endings were spelled differently when words rhymed, and slower and less accurate when indicating that words were spelled similarly when words did not rhyme. Crucially, while these effects were clear at the group level, there were large individual differences in the extent to which participants were impacted by conflict. In two separate samples, reading skill was associated with the extent to which orthographic conflict impacted rhyme decisions such that individuals with better nonword reading performance were less impacted by orthographic conflict. Thus, university students with poorer reading skills may differ from their peers either in the reading strategies they use or in the degree to which they automatically access word form information. Understanding these relationships is important for understanding the roles that reading processes play in readers of different skill.",
+      "score": {
+        "composite": 0.39662896277516485,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Speech Perception",
+        "Decision Making",
+        "Reading",
+        "Vocabulary",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_0e90420b",
+      "doi": "10.3389/fnins.2019.01287",
+      "url": "https://doi.org/10.3389/fnins.2019.01287",
+      "openalex_id": null,
+      "pmid": "31849595",
+      "first_author": "Łuniewska",
+      "authors_display": "Łuniewska, M. et al.",
+      "year": 2019,
+      "title": "Children With Dyslexia and Familial Risk for Dyslexia Present Atypical Development of the Neuronal Phonological Network.",
+      "venue": "Frontiers in neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 16,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6895138",
+      "tldr": null,
+      "abstract": "Learning to read changes the brain language system. Phonological processing is the language domain most crucial for reading, but it is still unknown how reading acquisition modifies the neural phonological network in children who either develop dyslexia or are at risk of dyslexia. For the two first years of formal education, we followed 90 beginning readers with (<i>n</i> = 55) and without (<i>n</i> = 35) familial risk of dyslexia who became typical readers (<i>n</i> = 70) or developed dyslexia (<i>n</i> = 20). We used functional magnetic resonance imaging to identify the neural correlates of phonological awareness using an auditory rhyme judgment task. This task was applied when participants were starting formal education, and repeated 2 years later. By applying two alternative group splits, we analyzed the effects of dyslexia and the effects of familial risk of dyslexia separately. We found that the phonological brain network undergoes reorganization during the first 2 years of formal education. This process proceeds differently depending on the presence of a familial history of dyslexia and reading impairment. Typical readers without risk for dyslexia activate structures responsible for phonological processing already at the beginning of literacy. This group shows reduced brain activation over time during phonological processing, perhaps due to automatization of phonological skills. Children who develop reading impairment present a delay in the development of phonological structures such as the bilateral superior temporal gyri, left middle temporal gyrus, right insula and right frontal cortex, where we observed time and group interaction. Finally, typical readers with familial risk of dyslexia also present an atypical development of the neural phonological structures, visible both at the beginning of reading instruction and 2 years later. These children used a presumably efficient neural mechanism of phonological processing, based on the activation of the precent",
+      "score": {
+        "composite": 0.394342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_2d861233",
+      "doi": "10.1162/jocn_a_00373",
+      "url": "https://doi.org/10.1162/jocn_a_00373",
+      "openalex_id": null,
+      "pmid": "23448521",
+      "first_author": "Macsweeney",
+      "authors_display": "Macsweeney, M. et al.",
+      "year": 2013,
+      "title": "The neurobiology of rhyme judgment by deaf and hearing adults: an ERP study.",
+      "venue": "Journal of cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "We used electrophysiology to determine the time course and distribution of neural activation during an English word rhyme task in hearing and congenitally deaf adults. Behavioral performance by hearing participants was at ceiling and their ERP data replicated two robust effects repeatedly observed in the literature. First, a sustained negativity, termed the contingent negative variation, was elicited following the first stimulus word. This negativity was asymmetric, being more negative over the left than right sites. The second effect we replicated in hearing participants was an enhanced negativity (N450) to nonrhyming second stimulus words. This was largest over medial, parietal regions of the right hemisphere. Accuracy on the rhyme task by the deaf group as a whole was above chance level, yet significantly poorer than hearing participants. We examined only ERP data from deaf participants who performed the task above chance level (n = 9). We observed indications of subtle differences in ERP responses between deaf and hearing groups. However, overall the patterns in the deaf group were very similar to that in the hearing group. Deaf participants, just as hearing participants, showed greater negativity to nonrhyming than rhyming words. Furthermore the onset latency of this effect was the same as that observed in hearing participants. Overall, the neural processes supporting explicit phonological judgments are very similar in deaf and hearing people, despite differences in the modality of spoken language experience. This supports the suggestion that phonological processing is to a large degree amodal or supramodal.",
+      "score": {
+        "composite": 0.3904594065461355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Deafness",
+        "Electroencephalography",
+        "Brain Mapping",
+        "Analysis of Variance",
+        "Photic Stimulation",
+        "Judgment",
+        "Reaction Time",
+        "Neurobiology",
+        "Periodicity",
+        "Evoked Potentials",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Functional Laterality",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_93d8c006",
+      "doi": "10.1162/jocn_a_00278",
+      "url": "https://doi.org/10.1162/jocn_a_00278",
+      "openalex_id": null,
+      "pmid": "22849403",
+      "first_author": "Geva",
+      "authors_display": "Geva, S. et al.",
+      "year": 2012,
+      "title": "The effect of aging on the neural correlates of phonological word retrieval.",
+      "venue": "Journal of cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 23,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Age has a differential effect on cognition, with word retrieval being one of the cognitive domains most affected by aging. This study examined the functional and structural neural correlates of phonological word retrieval in younger and older adults using word and picture rhyme judgment tasks. Although the behavioral performance in the fMRI task was similar for the two age groups, the older adults had increased activation in the right pars triangularis across tasks and in the right pars orbitalis for the word task only. Increased activation together with preserved performance in the older participants would suggest that increased activation was related to compensatory processing. We validated this hypothesis by showing that right pars triangularis activation during correct rhyme judgments was highest in participants who made overall more errors, therefore being most error-prone. Our findings demonstrate that the effect of aging differ in adjacent but distinct right inferior frontal regions. The differential effect of age on word and picture tasks also provides new clues to the level of processing that is most affected by age in speech production tasks. Specifically, we suggest that right inferior frontal activation in older participants is needed to inhibit errors.",
+      "score": {
+        "composite": 0.38933371881326123,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Photic Stimulation",
+        "Verbal Behavior",
+        "Speech",
+        "Judgment",
+        "Psychomotor Performance",
+        "Reaction Time",
+        "Aging",
+        "Adult",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_492aabe8",
+      "doi": "10.3389/fpsyg.2019.01149",
+      "url": "https://doi.org/10.3389/fpsyg.2019.01149",
+      "openalex_id": null,
+      "pmid": "31191388",
+      "first_author": "Rudner",
+      "authors_display": "Rudner, M. et al.",
+      "year": 2019,
+      "title": "Visual Rhyme Judgment in Adults With Mild-to-Severe Hearing Loss.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 8,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6546845",
+      "tldr": null,
+      "abstract": "Adults with poorer peripheral hearing have slower phonological processing speed measured using visual rhyme tasks, and it has been suggested that this is due to fading of phonological representations stored in long-term memory. Representations of both vowels and consonants are likely to be important for determining whether or not two printed words rhyme. However, it is not known whether the relation between phonological processing speed and hearing loss is specific to the lower frequency ranges which characterize vowels or higher frequency ranges that characterize consonants. We tested the visual rhyme ability of 212 adults with hearing loss. As in previous studies, we found that rhyme judgments were slower and less accurate when there was a mismatch between phonological and orthographic information. A substantial portion of the variance in the speed of making correct rhyme judgment decisions was explained by lexical access speed. Reading span, a measure of working memory, explained further variance in match but not mismatch conditions, but no additional variance was explained by auditory variables. This pattern of findings suggests possible reliance on a lexico-semantic word-matching strategy for solving the rhyme judgment task. Future work should investigate the relation between adoption of a lexico-semantic strategy during phonological processing tasks and hearing aid outcome.",
+      "score": {
+        "composite": 0.38513681525622195,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b69f6158",
+      "doi": "10.1002/ana.24266",
+      "url": "https://doi.org/10.1002/ana.24266",
+      "openalex_id": null,
+      "pmid": "25164766",
+      "first_author": "Pillay",
+      "authors_display": "Pillay, S. et al.",
+      "year": 2014,
+      "title": "Cerebral localization of impaired phonological retrieval during rhyme judgment.",
+      "venue": "Annals of neurology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 69,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Computation of a prearticulatory phonological representation (phonological access, or phonological retrieval) is an essential process in speech production whose neural localization is not clear. This study combined a specific behavioral measure of phonological access and multivariate voxel-based lesion-symptom mapping (VLSM) in a series of left hemisphere stroke patients to identify brain regions critical for this process.<h4>Methods</h4>Phonological access was assessed in 40 chronic ischemic stroke patients using a silent rhyming task to avoid confounds with motor planning and articulation deficits. Additional covariates were incorporated in the VLSM analysis to control for orthographic and working memory demands of the rhyming task, and for age, education, and total lesion volume. The resulting t statistic maps were thresholded at voxelwise p < 0.001 and cluster-corrected at a familywise error of p < 0.05.<h4>Results</h4>Phonological access impairment was correlated with damage to a focal region of cortex and white matter caudal to the posterior sylvian fissure, which included the posterior supramarginal gyrus and adjacent anterior angular gyrus, planum temporale, and posterior superior temporal gyrus. No correlation was observed with Broca's area, insula, or sensorimotor cortex. An additional VLSM showed no correlation between damage in this posterior perisylvian region and spoken word comprehension.<h4>Interpretation</h4>This is the first demonstration of a specific lesion correlate for phonological access impairment. Although this posterior perisylvian region overlaps with some versions of the classical Wernicke area, the present results demonstrate its involvement in prearticulatory phonological production rather than speech perception or lexical-semantic processes.",
+      "score": {
+        "composite": 0.38482770356006846,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24597748090694052,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06149437022673513,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Brain Mapping",
+        "Speech",
+        "Memory",
+        "Auditory Perception",
+        "Speech Perception",
+        "Judgment",
+        "Psychomotor Performance",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Functional Laterality",
+        "Stroke"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5c547058",
+      "doi": "10.1007/s11145-017-9748-y",
+      "url": "https://doi.org/10.1007/s11145-017-9748-y",
+      "openalex_id": null,
+      "pmid": "28932019",
+      "first_author": "Jap",
+      "authors_display": "Jap, B. et al.",
+      "year": 2017,
+      "title": "Towards identifying dyslexia in Standard Indonesian: the development of a reading assessment battery.",
+      "venue": "Reading and writing",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5574966",
+      "tldr": null,
+      "abstract": "With its transparent orthography, Standard Indonesian is spoken by over 160 million inhabitants and is the primary language of instruction in education and the government in Indonesia. An assessment battery of reading and reading-related skills was developed as a starting point for the diagnosis of dyslexia in beginner learners. Founded on the International Dyslexia Association's definition of dyslexia, the test battery comprises nine empirically motivated reading and reading-related tasks assessing word reading, pseudoword reading, arithmetic, rapid automatized naming, phoneme deletion, forward and backward digit span, verbal fluency, orthographic choice (spelling), and writing. The test was validated by computing the relationships between the outcomes on the reading-skills and reading-related measures by means of correlation and factor analyses. External variables, i.e., school grades and teacher ratings of the reading and learning abilities of individual students, were also utilized to provide evidence of its construct validity. Four variables were found to be significantly related with reading-skill measures: phonological awareness, rapid naming, spelling, and digit span. The current study on reading development in Standard Indonesian confirms findings from other languages with transparent orthographies and suggests a test battery including preliminary norm scores for screening and assessment of elementary school children learning to read Standard Indonesian.",
+      "score": {
+        "composite": 0.3733990963456557,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_07a96b63",
+      "doi": "10.3389/fnhum.2019.00390",
+      "url": "https://doi.org/10.3389/fnhum.2019.00390",
+      "openalex_id": null,
+      "pmid": "31798430",
+      "first_author": "Randazzo",
+      "authors_display": "Randazzo, M. et al.",
+      "year": 2019,
+      "title": "Children With Reading Difficulty Rely on Unimodal Neural Processing for Phonemic Awareness.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fnhum.2019.00390/pdf",
+      "tldr": null,
+      "abstract": "Phonological awareness skills in children with reading difficulty (RD) may reflect impaired automatic integration of orthographic and phonological representations. However, little is known about the underlying neural mechanisms involved in phonological awareness for children with RD. Eighteen children with RD, ages 9-13, participated in a functional magnetic resonance imaging (fMRI) study designed to assess the relationship of two constructs of phonological awareness, phoneme synthesis, and phoneme analysis, with crossmodal rhyme judgment. Participants completed a rhyme judgment task presented in two modality conditions; unimodal auditory only and crossmodal audiovisual. Measures of phonological awareness were correlated with unimodal, but not crossmodal, lexical processing. Moreover, these relationships were found only in unisensory brain regions, and not in multisensory brain areas. The results of this study suggest that children with RD rely on unimodal representations and unisensory brain areas, and provide insight into the role of phonemic awareness in mapping between auditory and visual modalities during literacy acquisition.",
+      "score": {
+        "composite": 0.36923507429477764,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_8cf55ed9",
+      "doi": "10.3389/fnins.2016.00262",
+      "url": "https://doi.org/10.3389/fnins.2016.00262",
+      "openalex_id": null,
+      "pmid": "27375421",
+      "first_author": "Younger",
+      "authors_display": "Younger, J. et al.",
+      "year": 2016,
+      "title": "Weighing the Cost and Benefit of Transcranial Direct Current Stimulation on Different Reading Subskills.",
+      "venue": "Frontiers in neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 16,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4894873",
+      "tldr": null,
+      "abstract": "Adults struggling with low reading skills are underserved by limited available treatments. While brain stimulation techniques such as transcranial direct current stimulation (tDCS) has the potential to improve a variety of cognitive functions, little work has been done examining its potential to treat reading disabilities. Research on the effects of tDCS on reading abilities has been somewhat inconsistent perhaps in part due to discrepancies between studies in the nature of the tasks. In the current study, we examined the effect of tDCS to the left inferior parietal lobe (L IPL) on two reading tasks in low-to-average readers. We compared performance on a sight word efficiency (SWE) task and a rhyme judgment task before and after either stimulation to the L IPL, right superior parietal lobe (R SPL), or sham stimulation. Readers who received stimulation to the L IPL showed greater improvements on the SWE task, but less improvement on the rhyme judgment task compared to the R SPL and sham groups. This study demonstrates for the first time both a positive and negative effect of stimulation under the same stimulation parameters within the same participants. The results highlight the need to consider multiple tasks when assessing the potential of using tDCS as a treatment.",
+      "score": {
+        "composite": 0.36434236368043504,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_8fb38846",
+      "doi": "10.1044/2019_jslhr-l-rsnp-19-0031",
+      "url": "https://doi.org/10.1044/2019_jslhr-l-rsnp-19-0031",
+      "openalex_id": null,
+      "pmid": "31756153",
+      "first_author": "Wilson",
+      "authors_display": "Wilson, S. et al.",
+      "year": 2019,
+      "title": "Language Mapping in Aphasia.",
+      "venue": "Journal of speech, language, and hearing research : JSLHR",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 16,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Purpose Recovery from aphasia is thought to depend on neural plasticity, that is, functional reorganization of surviving brain regions such that they take on new or expanded roles in language processing. To make progress in characterizing the nature of this process, we need feasible, reliable, and valid methods for identifying language regions of the brain in individuals with aphasia. This article reviews 3 recent studies from our lab in which we have developed and validated several novel functional magnetic resonance imaging paradigms for language mapping in aphasia. Method In the 1st study, we investigated the reliability and validity of 4 language mapping paradigms in neurologically normal older adults. In the 2nd study, we developed a novel adaptive semantic matching paradigm and assessed its feasibility, reliability, and validity in individuals with and without aphasia. In the 3rd study, we developed and evaluated 2 additional adaptive paradigms-rhyme judgment and syllable counting-for mapping phonological encoding regions. Results We found that the adaptive semantic matching paradigm could be performed by most individuals with aphasia and yielded reliable and valid maps of core perisylvian language regions in each individual participant. The psychometric properties of this paradigm were superior to those of other commonly used paradigms such as narrative comprehension and picture naming. The adaptive rhyme judgment paradigm was capable of identifying fronto-parietal phonological encoding regions in individual participants. Conclusion Adaptive language mapping paradigms offer a promising approach for future research on the neural basis of recovery from aphasia. Presentation Video https://doi.org/10.23641/asha.10257584.",
+      "score": {
+        "composite": 0.36434236368043504,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Aphasia",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Reproducibility of Results",
+        "Language",
+        "Forecasting",
+        "Phonetics",
+        "Semantics"
+      ]
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b5f38292",
+      "doi": "10.1093/cercor/bhp129",
+      "url": "https://doi.org/10.1093/cercor/bhp129",
+      "openalex_id": null,
+      "pmid": "19571269",
+      "first_author": "Yoncheva",
+      "authors_display": "Yoncheva, Y. et al.",
+      "year": 2010,
+      "title": "Auditory selective attention to speech modulates activity in the visual word form area.",
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 103,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC2820701",
+      "tldr": null,
+      "abstract": "Selective attention to speech versus nonspeech signals in complex auditory input could produce top-down modulation of cortical regions previously linked to perception of spoken, and even visual, words. To isolate such top-down attentional effects, we contrasted 2 equally challenging active listening tasks, performed on the same complex auditory stimuli (words overlaid with a series of 3 tones). Instructions required selectively attending to either the speech signals (in service of rhyme judgment) or the melodic signals (tone-triplet matching). Selective attention to speech, relative to attention to melody, was associated with blood oxygenation level-dependent (BOLD) increases during functional magnetic resonance imaging (fMRI) in left inferior frontal gyrus, temporal regions, and the visual word form area (VWFA). Further investigation of the activity in visual regions revealed overall deactivation relative to baseline rest for both attention conditions. Topographic analysis demonstrated that while attending to melody drove deactivation equivalently across all fusiform regions of interest examined, attending to speech produced a regionally specific modulation: deactivation of all fusiform regions, except the VWFA. Results indicate that selective attention to speech can topographically tune extrastriate cortex, leading to increased activity in VWFA relative to surrounding regions, in line with the well-established connectivity between areas related to spoken and visual word perception in skilled readers.",
+      "score": {
+        "composite": 0.3505580510646191,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26889887092514314,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06722471773128579,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Visual Cortex",
+        "Neural Pathways",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Acoustic Stimulation",
+        "Brain Mapping",
+        "Analysis of Variance",
+        "Photic Stimulation",
+        "Speech Perception",
+        "Decision Making",
+        "Attention",
+        "Reaction Time",
+        "Periodicity",
+        "Time Factors",
+        "Vocabulary",
+        "Image Processing, Computer-Assisted",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 25,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_69218b95",
+      "doi": "10.1080/02687038.2015.1081137",
+      "url": "https://doi.org/10.1080/02687038.2015.1081137",
+      "openalex_id": null,
+      "pmid": "27041784",
+      "first_author": "Meier",
+      "authors_display": "Meier, E. et al.",
+      "year": 2016,
+      "title": "Understanding semantic and phonological processing deficits in adults with aphasia: Effects of category and typicality.",
+      "venue": "Aphasiology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants)"
+      ],
+      "citation_count": 15,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Semantic and phonological processing deficits are often present in aphasia. The degree of interdependence between the deficits has been widely studied with variable findings. Semantic variables such as category and typicality have been found to influence semantic processing in healthy individuals and persons with aphasia but their influence on phonological processing is unknown.<h4>Aims</h4>This study examined the nature of semantic and phonological access in aphasia by comparing adults with aphasia to healthy control participants. Semantic and phonological tasks were used to assess the difference in processing requirements between and within each group as well as examine the effects of category and typicality on different stages of semantic and phonological processing.<h4>Methods & procedures</h4>Thirty-two persons with aphasia and ten neurologically healthy adults were administered nine tasks: Category Superordinate, Category Coordinate, Semantic Feature, Rhyme Judgment (No-Name), Syllable Judgment (No-Name), Phoneme Verification (No-Name), Rhyme Judgment (Name-Provided), Syllable Judgment (Name-Provided), and Phoneme Verification (Name-Provided). Accuracy and reaction time data were collected for each of these tasks and between-group and within-group differences were analyzed via MANOVA/MANCOVA and hierarchical clustering analyses.<h4>Outcomes & results</h4>Persons with aphasia performed with significantly lower accuracy than controls on phonological tasks but performed comparably on semantic tasks. Participants with aphasia were significantly slower than controls on all semantic and phonological tasks. Clustering of the nine tasks by accuracy revealed different processing requirements in the participants with aphasia compared to the control group while clustering by reaction time revealed similar trends in both groups in that phonological (no-name) items required the most processing time. Significant effects of category and typicality were not",
+      "score": {
+        "composite": 0.34346485935797816,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 26,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_f03dc0df",
+      "doi": "10.3389/fpsyg.2014.00838",
+      "url": "https://doi.org/10.3389/fpsyg.2014.00838",
+      "openalex_id": null,
+      "pmid": "25140161",
+      "first_author": "Farquharson",
+      "authors_display": "Farquharson, K. et al.",
+      "year": 2014,
+      "title": "Phonological and lexical influences on phonological awareness in children with specific language impairment and dyslexia.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 15,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4121527",
+      "tldr": null,
+      "abstract": "Children with dyslexia and/or specific language impairment have marked deficits in phonological processing, putting them at an increased risk for reading deficits. The current study sought to examine the influence of word-level phonological and lexical characteristics on phonological awareness. Children with dyslexia and/or specific language impairment were tested using a phoneme deletion task in which stimuli differed orthogonally by sound similarity and neighborhood density. Phonological and lexical factors influenced performance differently across groups. Children with dyslexia appeared to have a more immature and aberrant pattern of phonological and lexical influence (e.g., favoring sparse and similar features). Children with SLI performed less well than children who were typically developing, but followed a similar pattern of performance (e.g., favoring dense and dissimilar features). Collectively, our results point to both quantitative and qualitative differences in lexical organization and phonological representations in children with SLI and in children with dyslexia.",
+      "score": {
+        "composite": 0.34346485935797816,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_cf3146be",
+      "doi": "10.3389/fnhum.2015.00417",
+      "url": "https://doi.org/10.3389/fnhum.2015.00417",
+      "openalex_id": null,
+      "pmid": "26236223",
+      "first_author": "Goto",
+      "authors_display": "Goto, T. et al.",
+      "year": 2015,
+      "title": "Lateralized frontal activity for Japanese phonological processing during child development.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4505106",
+      "tldr": null,
+      "abstract": "Phonological awareness is essential for reading, and is common to all language systems, including alphabetic languages and Japanese. This cognitive factor develops during childhood, and is thought to be associated with shifts in brain activity. However, the nature of this neurobiological developmental shift is unclear for speakers of Japanese, which is not an alphabetical language. The present study aimed to reveal a shift in brain functions for processing phonological information in native-born Japanese children. We conducted a phonological awareness task and examined hemodynamic activity in 103 children aged 7-12 years. While younger children made mistakes and needed more time to sort phonological information in reverse order, older children completed the task quickly and accurately. Additionally, younger children exhibited increased activity in the bilateral dorsolateral prefrontal cortex (DLPFC), which may be evidence of immature phonological processing skills. Older children exhibited dominant activity in the left compared with the right DLPFC, suggesting that they had already acquired phonological processing skills. We also found significant effects of age and lateralized activity on behavioral performance. During earlier stages of development, the degree of left lateralization appears to have a smaller effect on behavioral performance. Conversely, in later stages of development, the degree of left lateralization appears to have a stronger influence on behavioral performance. These initial findings regarding a neurobiological developmental shift in Japanese speakers suggest that common brain regions play a critical role in the development of phonological processing skills among different languages systems, such as Japanese and alphabetical languages.",
+      "score": {
+        "composite": 0.34343197785181695,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_318d3a03",
+      "doi": "10.3389/fnhum.2013.00388",
+      "url": "https://doi.org/10.3389/fnhum.2013.00388",
+      "openalex_id": null,
+      "pmid": "23888137",
+      "first_author": "McNorgan",
+      "authors_display": "McNorgan, C. et al.",
+      "year": 2013,
+      "title": "Cross-modal integration in the brain is related to phonological awareness only in typical readers, not in those with reading difficulty.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 28,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3719029",
+      "tldr": null,
+      "abstract": "Fluent reading requires successfully mapping between visual orthographic and auditory phonological representations and is thus an intrinsically cross-modal process, though reading difficulty has often been characterized as a phonological deficit. However, recent evidence suggests that orthographic information influences phonological processing in typical developing (TD) readers, but that this effect may be blunted in those with reading difficulty (RD), suggesting that the core deficit underlying reading difficulties may be a failure to integrate orthographic and phonological information. Twenty-six (13 TD and 13 RD) children between 8 and 13 years of age participated in a functional magnetic resonance imaging (fMRI) experiment designed to assess the role of phonemic awareness in cross-modal processing. Participants completed a rhyme judgment task for word pairs presented unimodally (auditory only) and cross-modally (auditory followed by visual). For typically developing children, correlations between elision and neural activation were found for the cross-modal but not unimodal task, whereas in children with RD, no correlation was found. The results suggest that elision taps both phonemic awareness and cross-modal integration in typically developing readers, and that these processes are decoupled in children with reading difficulty.",
+      "score": {
+        "composite": 0.34207288101663136,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_47190c98",
+      "doi": "10.3389/fnhum.2013.00899",
+      "url": "https://doi.org/10.3389/fnhum.2013.00899",
+      "openalex_id": null,
+      "pmid": "24399956",
+      "first_author": "White-Schwoch",
+      "authors_display": "White-Schwoch, T., & Kraus, N.",
+      "year": 2013,
+      "title": "Physiologic discrimination of stop consonants relates to phonological skills in pre-readers: a biomarker for subsequent reading ability?(†).",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3871883",
+      "tldr": null,
+      "abstract": "Reading development builds upon the accurate representation of the phonological structure of spoken language. This representation and its neural foundations have been studied extensively with respect to reading due to pervasive performance deficits on basic phonological tasks observed in children with dyslexia. The subcortical auditory system - a site of intersection for sensory and cognitive input - is exquisitely tuned to code fine timing differences between phonemes, and so likely plays a foundational role in the development of phonological processing and, eventually, reading. This temporal coding of speech varies systematically with reading ability in school age children. Little is known, however, about subcortical speech representation in pre-school age children. We measured auditory brainstem responses to the stop consonants [ba] and [ga] in a cohort of 4-year-old children and assessed their phonological skills. In a typical auditory system, brainstem responses to [ba] and [ga] are out of phase (i.e., differ in time) due to formant frequency differences in the consonant-vowel transitions of the stimuli. We found that children who performed worst on the phonological awareness task insufficiently code this difference, revealing a physiologic link between early phonological skills and the neural representation of speech. We discuss this finding in light of existing theories of the role of the auditory system in developmental dyslexia, and argue for a systems-level perspective for understanding the importance of precise temporal coding for learning to read.",
+      "score": {
+        "composite": 0.33740093357352,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_e06bf78b",
+      "doi": "10.3389/fpsyg.2013.00241",
+      "url": "https://doi.org/10.3389/fpsyg.2013.00241",
+      "openalex_id": null,
+      "pmid": "23653613",
+      "first_author": "Classon",
+      "authors_display": "Classon, E. et al.",
+      "year": 2013,
+      "title": "Early ERP Signature of Hearing Impairment in Visual Rhyme Judgment.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 11,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3644703",
+      "tldr": null,
+      "abstract": "Postlingually acquired hearing impairment (HI) is associated with changes in the representation of sound in semantic long-term memory. An indication of this is the lower performance on visual rhyme judgment tasks in conditions where phonological and orthographic cues mismatch, requiring high reliance on phonological representations. In this study, event-related potentials (ERPs) were used for the first time to investigate the neural correlates of phonological processing in visual rhyme judgments in participants with acquired HI and normal hearing (NH). Rhyme task word pairs rhymed or not and had matching or mismatching orthography. In addition, the inter-stimulus interval (ISI) was manipulated to be either long (800 ms) or short (50 ms). Long ISIs allow for engagement of explicit, top-down processes, while short ISIs limit the involvement of such mechanisms. We hypothesized lower behavioral performance and N400 and N2 deviations in HI in the mismatching rhyme judgment conditions, particularly in short ISI. However, the results showed a different pattern. As expected, behavioral performance in the mismatch conditions was lower in HI than in NH in short ISI, but ERPs did not differ across groups. In contrast, HI performed on a par with NH in long ISI. Further, HI, but not NH, showed an amplified N2-like response in the non-rhyming, orthographically mismatching condition in long ISI. This was also the rhyme condition in which participants in both groups benefited the most from the possibility to engage top-down processes afforded with the longer ISI. Taken together, these results indicate an early ERP signature of HI in this challenging phonological task, likely reflecting use of a compensatory strategy. This strategy is suggested to involve increased reliance on explicit mechanisms such as articulatory recoding and grapheme-to-phoneme conversion.",
+      "score": {
+        "composite": 0.3293008373071001,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 31,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c4a2ea11",
+      "doi": "10.3389/fpsyg.2023.1164510",
+      "url": "https://doi.org/10.3389/fpsyg.2023.1164510",
+      "openalex_id": null,
+      "pmid": "37346418",
+      "first_author": "Laure",
+      "authors_display": "Laure, Y., & Armon-Lotem, S.",
+      "year": 2023,
+      "title": "Hebrew-L2 speakers process auditory templatic words through their L1 processing mechanism with awareness of L2.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10281025",
+      "tldr": null,
+      "abstract": "Bilingualism involves cross-linguistic influence (CLI) prompted by communicative function, which impacts the activation of the bilingual's L1/L2 language processing mechanisms. The current study examines the extent of CLI when semantic information is reduced. Semitic languages are known for their templatic words composed of intertwined sub-lexical root and template morphemes, entailing non-linear morphological processing. As the roots constitute the semantic core, comprehension was found to impact morphological processing among Hebrew-L2 readers. Herein, we assessed the processing mechanism activated among adult Hebrew-L2 bilinguals in an auditory rhyme judgment task that requires linear processing. The task was provided with Hebrew templatic word pairs comprising accentuated (meta)linguistic information irrespective of semantics: phonological co-occurrence restrictions (root), grammatical information of vocalic melodies (template), and contrastive stress. We hypothesized that CLI in Hebrew-L2 speakers would be reflected in low accuracy rates in rhyming pairs when linguistic information is accentuated, indicating distraction from the linear processing due to activation levels of the L2 processing mechanism caused by competing linguistic cues drawn on transferred linguistic information. We compared the performance of 58 adult Hebrew native speakers with 54 Hebrew-L2 speakers with Semitic and non-Semitic-L1. The findings demonstrate that Hebrew-L2 speakers performed the task using their L1 processing mechanism with varying activation levels of L2, showing awareness of the morphological processing due to the vocalic melody for non-Semitic-L1 and awareness of contrastive stress for Semitic-L1. The results confirm CLI also when semantics is reduced, elucidating how much CLI modulates the bilingual's language processing mechanism.",
+      "score": {
+        "composite": 0.32336621483949457,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 32,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_5deac129",
+      "doi": "10.1016/j.jml.2009.07.003",
+      "url": "https://doi.org/10.1016/j.jml.2009.07.003",
+      "openalex_id": null,
+      "pmid": "20160986",
+      "first_author": "Connine",
+      "authors_display": "Connine, C., & Darnieder, L.",
+      "year": 2009,
+      "title": "Perceptual learning of co-articulation in speech.",
+      "venue": "Journal of memory and language",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Four experiments investigated the novel issue of learning to accommodate the coarticulated nature of speech. Experiment 1 established a co-articulatory mismatch effect for a set of vowel-consonant (VC) syllables (reaction times were faster for co-articulation matching than for mismatching stimuli). A rhyme judgment training task on words (Experiment 2) or VC stimuli (Experiment 3) with mismatching information was followed by a phoneme monitoring task on a set of VC stimuli; training and test stimuli contained physically identical (same condition) or new (different condition) mismatching coarticulatory information (along with a set containing matching coarticulatory information). A third group received no training. A coarticulatory mismatch effect was found without training but not when the same mismatching tokens were used at training and test. Both word (Experiment 2) and syllable (Experiment 3) training stimuli eliminated the mismatch effect; overall reaction times were somewhat slower when the training stimuli were words. Perceptual learning generalized to new tokens only when the acoustic manifestation of the critical co-articulatory information in the training stimuli was sufficiently large (Experiments 3 and 4). The results are discussed in terms of speech processing and perceptual learning in speech perception.",
+      "score": {
+        "composite": 0.3214991926120757,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 33,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_8f944ea5",
+      "doi": "10.1121/1.5026239",
+      "url": "https://doi.org/10.1121/1.5026239",
+      "openalex_id": null,
+      "pmid": "29604710",
+      "first_author": "Flanagan",
+      "authors_display": "Flanagan, S., & Goswami, U.",
+      "year": 2018,
+      "title": "The role of phase synchronisation between low frequency amplitude modulations in child phonology and morphology speech tasks.",
+      "venue": "The Journal of the Acoustical Society of America",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Recent models of the neural encoding of speech suggest a core role for amplitude modulation (AM) structure, particularly regarding AM phase alignment. Accordingly, speech tasks that measure linguistic development in children may exhibit systematic properties regarding AM structure. Here, the acoustic structure of spoken items in child phonological and morphological tasks, phoneme deletion and plural elicitation, was investigated. The phase synchronisation index (PSI), reflecting the degree of phase alignment between pairs of AMs, was computed for 3 AM bands (delta, theta, beta/low gamma; 0.9-2.5 Hz, 2.5-12 Hz, 12-40 Hz, respectively), for five spectral bands covering 100-7250 Hz. For phoneme deletion, data from 94 child participants with and without dyslexia was used to relate AM structure to behavioural performance. Results revealed that a significant change in magnitude of the phase synchronisation index (ΔPSI) of slower AMs (delta-theta) systematically accompanied both phoneme deletion and plural elicitation. Further, children with dyslexia made more linguistic errors as the delta-theta ΔPSI increased. Accordingly, ΔPSI between slower temporal modulations in the speech signal systematically distinguished test items from accurate responses and predicted task performance. This may suggest that sensitivity to slower AM information in speech is a core aspect of phonological and morphological development.",
+      "score": {
+        "composite": 0.3204594065461355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Dyslexia",
+        "Case-Control Studies",
+        "Longitudinal Studies",
+        "Speech",
+        "Child Language",
+        "Speech Perception",
+        "Speech Acoustics",
+        "Phonetics",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 34,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_0c1144cd",
+      "doi": "10.1097/aud.0b013e3181e5d188",
+      "url": "https://doi.org/10.1097/aud.0b013e3181e5d188",
+      "openalex_id": null,
+      "pmid": "20562623",
+      "first_author": "Lewis",
+      "authors_display": "Lewis, D. et al.",
+      "year": 2010,
+      "title": "Relationship between speech perception in noise and phonological awareness skills for children with normal hearing.",
+      "venue": "Ear and hearing",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 29,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objectives</h4>Speech perception difficulties experienced by children in adverse listening environments have been well documented. It has been suggested that phonological awareness may be related to children's ability to understand speech in noise. The goal of this study was to provide data that will allow a clearer characterization of this potential relation in typically developing children. Doing so may result in a better understanding of how children learn to listen in noise as well as providing information to identify children who are at risk for difficulties listening in noise.<h4>Design</h4>Thirty-six children (5 to 7 yrs) with normal hearing participated in the study. Three phonological awareness tasks (syllable counting, initial consonant same, and phoneme deletion), representing a range of skills, were administered. For perception in noise tasks, nonsense syllables, monosyllabic words, and meaningful sentences with three key words were presented (50 dB SPL) at three signal to noise ratios (0, +5, and +10 dB).<h4>Results</h4>Among the speech in noise tasks, there was a significant effect of signal to noise ratio, with children performing less well at 0-dB signal to noise ratio for all stimuli. A significant age effect occurred only for word recognition, with 7-yr-olds scoring significantly higher than 5-yr olds. For all three phonological awareness tasks, an age effect existed with 7-year-olds again performing significantly better than 5-yr-olds. However, when examining the relation between speech recognition in noise and phonological awareness skills, no single variable accounted for a significant part of the variance in performance on nonsense syllables, words, or sentences. However, there was an association between vocabulary knowledge and speech perception in noise.<h4>Conclusions</h4>Although phonological awareness skills are strongly related to reading and some children with reading difficulties also demonstrate poor speech perception in noise, res",
+      "score": {
+        "composite": 0.3158969185761037,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.04,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Acoustic Stimulation",
+        "Child Development",
+        "Language Development",
+        "Speech Perception",
+        "Hearing",
+        "Noise",
+        "Reading",
+        "Phonetics",
+        "Child",
+        "Child, Preschool"
+      ]
+    },
+    {
+      "rank": 35,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_89364114",
+      "doi": "10.1523/jneurosci.4931-05.2006",
+      "url": "https://doi.org/10.1523/jneurosci.4931-05.2006",
+      "openalex_id": null,
+      "pmid": "17050709",
+      "first_author": "Hoeft",
+      "authors_display": "Hoeft, F. et al.",
+      "year": 2006,
+      "title": "Neural basis of dyslexia: a comparison between dyslexic and nondyslexic children equated for reading ability.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 145,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Adults and children with developmental dyslexia exhibit reduced parietotemporal activation in functional neuroimaging studies of phonological processing. These studies used age-matched and/or intelligence quotient-matched control groups whose reading ability and scanner task performance were often superior to that of the dyslexic group. It is unknown, therefore, whether differences in activation reflect simply poorer performance in the scanner, the underlying level of reading ability, or more specific neural correlates of dyslexia. To resolve this uncertainty, we conducted a functional magnetic resonance imaging study, with a rhyme judgment task, in which we compared dyslexic children with two control groups: age-matched children and reading-matched children (younger normal readers equated for reading ability or scanner-performance to the dyslexic children). Dyslexic children exhibited reduced activation relative to both age-matched and reading-matched children in the left parietotemporal cortex and five other regions, including the right parietotemporal cortex. The dyslexic children also exhibited reduced activation bilaterally in the parietotemporal cortex when compared with children equated for task performance during scanning. Nine of the 10 dyslexic children exhibited reduced left parietotemporal activation compared with their individually selected age-matched or reading-matched control children. Additionally, normal reading fifth graders showed more activation in the same bilateral parietotemporal regions than normal-reading third graders. These findings indicate that the activation differences seen in the dyslexic children cannot be accounted for by either current reading level or scanner task performance, but instead represent a distinct developmental atypicality in the neural systems that support learning to read.",
+      "score": {
+        "composite": 0.31546799118266433,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28853863139732394,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07213465784933099,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Humans",
+        "Dyslexia",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Reaction Time",
+        "Language Tests",
+        "Reading",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 36,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_a3b16b60",
+      "doi": "10.1016/j.appdev.2006.12.007",
+      "url": "https://doi.org/10.1016/j.appdev.2006.12.007",
+      "openalex_id": null,
+      "pmid": "20396646",
+      "first_author": "Páez",
+      "authors_display": "Páez, M. et al.",
+      "year": 2007,
+      "title": "Dual language and literacy development of Spanish-speaking preschool children.",
+      "venue": "Journal of applied developmental psychology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 43,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "This article describes oral language and early literacy skills in Spanish and English for a sample of 319 bilingual children in Massachusetts and Maryland (ECS) and a comparison group of 144 monolingual Spanish-speaking children in Puerto Rico (PRC). Children were assessed as they entered and exited pre-kindergarten programs. Data collection included four subtests of the Woodcock Language Proficiency Battery and a researcher-developed phonological awareness task. Results show that, on average, children in the ECS sample performed below average in both English and Spanish when compared to monolingual norms and, despite some early literacy and oral language gains during their pre-kindergarten year, continue to lag behind monolingual children of the same age. Children in the ECS sample performed better in the early literacy tasks than in the oral language tasks in both English and Spanish. On average, the PRC sample scored significantly better than the ECS sample in Spanish oral language skills, but lower in phonological awareness skills. Educational implications and directions for future research are discussed.",
+      "score": {
+        "composite": 0.30810716385411124,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21909532208311155,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05477383052077789,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 37,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_837301cb",
+      "doi": "10.3389/fpsyg.2024.1436710",
+      "url": "https://doi.org/10.3389/fpsyg.2024.1436710",
+      "openalex_id": null,
+      "pmid": "39391852",
+      "first_author": "Lesecq",
+      "authors_display": "Lesecq, L. et al.",
+      "year": 2024,
+      "title": "Do gifted children without specific learning disabilities read more efficiently than typically developing children?",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11464429",
+      "tldr": null,
+      "abstract": "<h4>Introduction</h4>There are no published data on the written language skills of gifted children (GC). The objective of the present study was to evaluate reading abilities of GC vs. normative data from typically developing French children (TDC). Like English, French is considered to be an opaque language.<h4>Method</h4>GC completed the Wechsler Intelligence Scales and a battery of language tests. Only children with a score two standard deviations (SD) above the norm were included. GC with current or past academic difficulties or specific learning disorders were excluded. The GC's scores were compared with TDC's normative scores for language tests in a chi-square-test and corrected for multiple comparisons.<h4>Results</h4>Forty-five GC were included. The highest GC's mean scores were for the WISC's Verbal Comprehension Index (VCI) and the lowest for the Processing Speed Index (from more than two SDs to one SD higher above the TDC's normative scores). GC were between 1.3 and 4.7 times more likely than TDC to achieve a high score. After correction, the distributions of the GC's and TDC's scores differed significantly with regard to spoonerism, phoneme deletion, and rapid automatic naming (<i>p</i> < 0.001), word and sentence repetition (<i>p</i> ≤ 0.007), and the reading of meaningful text (<i>p</i> = 0.03). GC and TDC did not differ significantly for reading meaningless texts and spelling accuracy.<h4>Discussion</h4>As described in the literature, the GC in the present study had heterogeneous scores on the Wechsler Intelligence Scales. The GC performed better than TDC in assessments of the underlying skills of reading and when reading of meaningful texts. This advantage was lost in the absence of context, as shown by the lack of significant GC vs. TDC differences for reading meaningless texts and for spelling accuracy. Hence, GC presented a heterogeneous profile with regard to the underlying skills of reading and reading abilities. The present data should help to im",
+      "score": {
+        "composite": 0.2833333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 38,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_b5f52d38",
+      "doi": "10.1044/2015_jslhr-l-14-0092",
+      "url": "https://doi.org/10.1044/2015_jslhr-l-14-0092",
+      "openalex_id": null,
+      "pmid": "25682521",
+      "first_author": "Park",
+      "authors_display": "Park, J. et al.",
+      "year": 2015,
+      "title": "Processing Speed Measures as Clinical Markers for Children With Language Impairment.",
+      "venue": "Journal of speech, language, and hearing research : JSLHR",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Purpose</h4>This study investigated the relative utility of linguistic and nonlinguistic processing speed tasks as predictors of language impairment (LI) in children across 2 time points.<h4>Method</h4>Linguistic and nonlinguistic reaction time data, obtained from 131 children (89 children with typical development [TD] and 42 children with LI; 74 boys and 57 girls) were analyzed in the 3rd and 8th grades. Receiver operating characteristic curve analyses and likelihood ratios were used to compare the diagnostic usefulness of each task. A binary logistic regression was used to test whether combined measures enhanced diagnostic accuracy.<h4>Results</h4>In 3rd grade, a linguistic task, grammaticality judgment, provided the best discrimination between LI and TD groups. In 8th grade, a combination of linguistic and nonlinguistic tasks, rhyme judgment and simple response time, provided the best discrimination between groups.<h4>Conclusions</h4>Processing speed tasks were moderately predictive of LI status at both time points. Better LR+ than LR- values suggested that slow processing speed was more predictive of the presence than the absence of LI. A nonlinguistic processing measure contributed to the prediction of LI only at 8th grade, consistent with the view that nonlinguistic and linguistic processing speeds follow different developmental trajectories.",
+      "score": {
+        "composite": 0.2680414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Language Disorders",
+        "Likelihood Functions",
+        "Logistic Models",
+        "ROC Curve",
+        "Child Language",
+        "Intelligence",
+        "Mental Processes",
+        "Reaction Time",
+        "Psychological Tests",
+        "Language Tests",
+        "Time Factors",
+        "Linguistics",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 39,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_899d581d",
+      "doi": "10.3389/fnins.2025.1519934",
+      "url": "https://doi.org/10.3389/fnins.2025.1519934",
+      "openalex_id": null,
+      "pmid": "40040847",
+      "first_author": "Ning",
+      "authors_display": "Ning, R. et al.",
+      "year": 2025,
+      "title": "Working memory capacity moderates the effect of hearing aid experience on phonological processing performance.",
+      "venue": "Frontiers in neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11876422",
+      "tldr": null,
+      "abstract": "<h4>Purpose</h4>Individuals with acquired hearing impairment often experience declines in phonological processing abilities, a phenomenon thought to be mediated by working memory capacity (WMC). However, the role of hearing aid use in this context remains underexplored. Therefore, in the current study, we aimed (1) to tease apart the effect of hearing impairment and hearing aid use on phonological processing performance, and (2) to investigate the effect of hearing aid use on phonological processing in more detail, while considering the involvement of WMC.<h4>Method</h4>Using mixed effect models, we investigated rhyme judgment performance and its reliance on WMC among three groups of participants: a group of hearing aid users (<i>n</i> = 202), a group of hearing-impaired individuals without hearing aid (<i>n</i> = 54), and a group of normal hearing controls (<i>n</i> = 201). We also examined how years of hearing aid use was associated with rhyme judgment performance and its reliance on WMC in hearing aid users.<h4>Results</h4>We found that hearing impairment was associated with increased dependence of rhyme judgment performance on WMC regardless of the use of hearing aids. Furthermore, hearing aid use was overall positively associated with rhyme judgment performance, with this relationship influenced by variations in WMC.<h4>Conclusion</h4>WMC influences the effectiveness of hearing aids for phonological processing. This role may result from working memory's involvement in the processing of output signals from hearing aids, as well as in the strategies hearing aid users implement to deal with phonological processing tasks.",
+      "score": {
+        "composite": 0.2633662148394945,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 40,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_a3ecdd8e",
+      "doi": "10.4103/jrms.jrms_250_17",
+      "url": "https://doi.org/10.4103/jrms.jrms_250_17",
+      "openalex_id": null,
+      "pmid": "29387124",
+      "first_author": "Karahmadi",
+      "authors_display": "Karahmadi, M. et al.",
+      "year": 2017,
+      "title": "Study of the effect of Memantine therapy on the treatment of dyslexia in children.",
+      "venue": "Journal of research in medical sciences : the official journal of Isfahan University of Medical Sciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5767814",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Reading disorder (RD) is one of the important complaints in children with learning disorders (LD) that is prevalent in 4% of children in the United States. Treating this disorder includes education of reading practices and treating psychological disorders, and there are no exact medications prescribed in these children. Memantine has been effective in treating memory problems in Alzheimer Dementia, obsessive-compulsive disorder, autism disorder, and other psychological diseases. The aim of this study is to evaluate the effect of memantine in improving RD in children.<h4>Materials and methods</h4>In this randomized clinical trial, 62 children, with RD in Pediatric Psychiatry Clinics of Noor and Ali-Asghar Hospital in Isfahan from 2015 to 2016, were participated. They were randomly assigned to two groups of equal number, one receiving education plus memantine and the other education plus placebo. RD was evaluated at the beginning, 1 and 3 months after intervention by Iranian standard reading and dyslexia test (Nama).<h4>Results</h4>Mean (standard deviation) age of participants was 7.55 (0.60) years. Most of the participants were boy (55%), most having parents in 36-45-year-old age group (52% and 48% for fathers and mothers, respectively), and also most parents in diploma and bachelor educational group (61% and 60% for fathers and mothers, respectively). There were statistical significant difference in trend of total score (<i>P</i> = 0.034), word chain (<i>P</i> < 0.001), rhyming (<i>P</i> < 0.001), text comprehension (<i>P</i> < 0.001), and letter fluency (<i>P</i> = 0.002), subscale between two groups. However, the difference of time trend between two groups was not significant in word reading (<i>P</i> = 0.14), word comprehension (<i>P</i> = 0.06), phoneme deletion (<i>P</i> = 0.12), reading nonwords (<i>P</i> = 0.32), and category fluency (<i>P</i> = 0.06).<h4>Conclusion</h4>Adding memantine to educational practices is effective in improving RD ",
+      "score": {
+        "composite": 0.2633662148394945,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 41,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_66695189",
+      "doi": "10.1044/2023_jslhr-23-00337",
+      "url": "https://doi.org/10.1044/2023_jslhr-23-00337",
+      "openalex_id": null,
+      "pmid": "37870878",
+      "first_author": "Wang",
+      "authors_display": "Wang, J. et al.",
+      "year": 2023,
+      "title": "Learning to Read Strengthens Functional Connectivity Between the Ventral Occipitotemporal Cortex and the Superior Temporal Gyrus During an Auditory Phonological Awareness Task.",
+      "venue": "Journal of speech, language, and hearing research : JSLHR",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Purpose</h4>It is often assumed that phonological awareness only reflects children's phonological skill. However, orthographic representations have been found to be automatically involved during phonological awareness tasks, which we refer to as automatic orthographic activation. Although previous longitudinal neural studies have addressed how phonological processing during phonological awareness tasks is bidirectionally related to reading skill in developing children, we do not know how automatic orthographic activation plays a role in reading skill.<h4>Method</h4>To address this gap, we measured 40 children's reading skill and brain activity during an auditory phonological task at two time points using functional magnetic resonance imaging. Children were 5.5 to 6.5 years old at the first time point and were followed up approximately 1.5 years later when they were 7 to 8 years old.<h4>Results</h4>We found that earlier reading skill predicted children's later functional connectivity during onset processing between the left superior temporal gyrus, a phonological region, and the left posterior ventral occipitotemporal cortex, an orthographic region representing letters.<h4>Conclusion</h4>This finding, together with previous studies, suggests that learning to read influences phonological awareness not only by refining phonological representations but also via strengthening the automatic mapping between phonemes and letters during spoken language processing.",
+      "score": {
+        "composite": 0.2533990963456557,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Temporal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Awareness",
+        "Reading",
+        "Phonetics",
+        "Child"
+      ]
+    },
+    {
+      "rank": 42,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_c81b7cad",
+      "doi": "10.1186/1471-2202-8-52",
+      "url": "https://doi.org/10.1186/1471-2202-8-52",
+      "openalex_id": null,
+      "pmid": "17640332",
+      "first_author": "Rüsseler",
+      "authors_display": "Rüsseler, J. et al.",
+      "year": 2007,
+      "title": "Semantic, syntactic, and phonological processing of written words in adult developmental dyslexic readers: an event-related brain potential study.",
+      "venue": "BMC neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 39,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC1952064",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>The present study used event-related brain potentials to investigate semantic, phonological and syntactic processes in adult German dyslexic and normal readers in a word reading task. Pairs of German words were presented one word at a time. Subjects had to perform a semantic judgment task (house-window; are they semantically related?), a rhyme judgment task (house-mouse; do they rhyme?) and a gender judgment task (das-Haus [the-house]; is the gender correct? [in German, house has a neutral gender: das Haus]).<h4>Results</h4>Normal readers responded faster compared to dyslexic readers in all three tasks. Onset latencies of the N400 component were delayed in dyslexic readers in the rhyme judgment and in the gender judgment task, but not in the semantic judgment task. N400 and the anterior negativity peak amplitudes did not differ between the two groups. However, the N400 persisted longer in the dyslexic group in the rhyme judgment and in the semantic judgment tasks.<h4>Conclusion</h4>These findings indicate that dyslexics are phonologically impaired (delayed N400 in the rhyme judgment task) but that they also have difficulties in other, non-phonological aspects of reading (longer response times, longer persistence of the N400). Specifically, semantic and syntactic integration seem to require more effort for dyslexic readers and take longer irrespective of the reading task that has to be performed.",
+      "score": {
+        "composite": 0.2067276072936485,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.01,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Dyslexia",
+        "Electroencephalography",
+        "Analysis of Variance",
+        "Random Allocation",
+        "Photic Stimulation",
+        "Reaction Time",
+        "Evoked Potentials",
+        "Time Factors",
+        "Reading",
+        "Semantics",
+        "Adult",
+        "Female",
+        "Male",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 43,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_71c2d568",
+      "doi": "10.47176/mjiri.38.77",
+      "url": "https://doi.org/10.47176/mjiri.38.77",
+      "openalex_id": null,
+      "pmid": "39416371",
+      "first_author": "Mazaheri",
+      "authors_display": "Mazaheri, S. et al.",
+      "year": 2024,
+      "title": "Comparing the Effectiveness of Two Kinds of Reading Interventions on Reading Outcomes in Third to Fifth Grade Farsi Speaker Students with Dyslexia: An Exploratory Study.",
+      "venue": "Medical journal of the Islamic Republic of Iran",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11480675",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>This research marks the exploration into comparing the effectiveness of two reading interventions in improving reading outcomes for third to fifth-grade Farsi-speaking students with dyslexia.<h4>Methods</h4>In this randomized control trial study, twenty students in Tehran were randomly assigned to a multi-component group and a comprehension-based intervention group, each receiving 36 sessions of 45 minutes. The effectiveness of the interventions was evaluated using adjusted mean differences with a one-way ANCOVA.<h4>Results</h4>The results revealed the comprehension-based intervention's superior effect size across most outcomes, except for the letters string. The effect size was large for word reading 0.93 (CI -0.002 to 1.85), medium for phoneme deletion 0.67 (CI -0.23 to 1.5), small for text comprehension 0.25 (CI -0.62 to 1.13), and trivial for both rhyme identification 0.1 (-0.77 to 0.98) and non-word reading 0.11 (CI -0.76 to 0.98). The multi-component intervention had a greater effect size on letters string than the other intervention, although it was small -0.21 (CI -1.09 to 0.66).<h4>Conclusion</h4>The study concluded that comprehension-based intervention was more effective for Farsi-speaking students with dyslexia in grades 3-5, emphasizing the need for diverse intervention approaches to address their specific needs.",
+      "score": {
+        "composite": 0.2033333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 44,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_04a53cb2",
+      "doi": null,
+      "url": null,
+      "openalex_id": null,
+      "pmid": "21720567",
+      "first_author": "Rinaldi",
+      "authors_display": "Rinaldi, C., & Páez, M.",
+      "year": 2008,
+      "title": "Preschool Matters: Predicting Reading Difficulties for Spanish-Speaking Bilingual Students in First Grade.",
+      "venue": "Learning disabilities (Weston, Mass.)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "This article reports on a longitudinal analysis of factors that predict the word reading skills in English and Spanish for a sample of 234 Spanish-speaking students in first grade. The children were assessed at the end of preschool, kindergarten, and first grade. Data include three subtests of the Woodcock Language Proficiency Battery and a researcher-developed phonological awareness task. Results showed that, on average, children's English word reading skills were similar to those of monolingual norms, while their Spanish word readings skills were, on average, one standard deviation below the mean. English vocabulary, English recalling skills, Spanish vocabulary, and Spanish word reading skills in preschool were found to be significant predictors of English word reading skills in first grade. Educational implications for assessment and instruction for this population during the early childhood years are discussed.",
+      "score": {
+        "composite": 0.1914991926120757,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.02,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 45,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_a19b7a81",
+      "doi": "10.1097/00011363-200610000-00006",
+      "url": "https://doi.org/10.1097/00011363-200610000-00006",
+      "openalex_id": null,
+      "pmid": "20396623",
+      "first_author": "Páez",
+      "authors_display": "Páez, M., & Rinaldi, C.",
+      "year": 2006,
+      "title": "Predicting English Word Reading Skills for Spanish-Speaking Students in First Grade.",
+      "venue": "Topics in language disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "This article describes the word reading skills in English and Spanish for a sample of 244 Spanish-speaking, English-learning (hence, bilingual) students in first grade and presents a predictive model for English word reading skills. The children in the study were assessed at the end of kindergarten and first grade, respectively. Data were gathered with 3 subtests of the Woodcock Language Proficiency Battery and a researcher-developed phonological awareness task. Results showed that, on average, children's English word reading skills were similar to monolingual norms whereas their Spanish word reading skills averaged 1 SD below the mean. English vocabulary, English phonological awareness, and Spanish word reading skills in kindergarten were found to be significant predictors of English word reading skills in first grade. Educational implications for screening language and reading skills and promising areas for targeted instruction for this population are discussed.",
+      "score": {
+        "composite": 0.18595228672247482,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 46,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_51fcbf8e",
+      "doi": "10.2196/76435",
+      "url": "https://doi.org/10.2196/76435",
+      "openalex_id": null,
+      "pmid": "40750096",
+      "first_author": "Grossard",
+      "authors_display": "Grossard, C. et al.",
+      "year": 2025,
+      "title": "Children's Improvement After Language and Rhythm Training With the Digital Medical Device Poppins for Dyslexia: Single-Arm Intervention Study.",
+      "venue": "JMIR serious games",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12357122",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Specific learning disorder in reading (SLD reading), commonly named dyslexia, is a neurodevelopmental condition affecting reading. Current best practice recommendations for SLD reading emphasize the necessity of including graphophonological interventions. The serious game Mila-Learn, which is based on rhythm training, showed promising results in a prior randomized trial. However, it lacked a component of graphophonological training.<h4>Objective</h4>This study aimed to evaluate the effectiveness of Poppins, a new digital medical device that combines rhythm-based and graphophonological training for improving reading and phonological skills in children with SLD reading. We also explored its performance against Mila-Learn, the earlier version based on rhythm training only.<h4>Methods</h4>A single-arm study without an active control group was conducted with 38 children (aged 7-11 years) diagnosed with SLD reading. The participants completed an 8-week training program with Poppins (five 20-minute sessions per week). Pre- and posttraining assessments measured reading accuracy and speed, phoneme deletion, and phonological discrimination. Statistical analysis included pre- and postcomparisons (primary analysis) and comparisons with children's improvement from a previous randomized controlled trial of Mila-Learn, an earlier version of the device (exploratory analysis).<h4>Results</h4>The participants demonstrated significant improvements in reading accuracy (+11.46 words correctly read; P<.001), reading speed (+10.26 words read; P<.001), and phoneme deletion (+2.87 points; P<.001). No significant change was observed in reading comprehension for younger participants (grades 2-3; P=.09), although improvements were noted in older children (grades 4-5, P=.03). Exploratory analysis comparing children's improvements with Mila-Learn and Poppins revealed similar gains in reading accuracy and speed but revealed superior improvement in phonological skills for the Po",
+      "score": {
+        "composite": 0.1733333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

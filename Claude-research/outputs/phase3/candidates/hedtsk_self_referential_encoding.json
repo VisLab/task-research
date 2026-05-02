@@ -1,0 +1,1254 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:45:01",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_self_referential_encoding",
+    "name": "Self-Referential Encoding Task",
+    "aliases": [
+      "SRET",
+      "Self-Reference Effect Paradigm",
+      "Self-Referential Processing Task",
+      "Trait Adjective Endorsement Task"
+    ],
+    "category_id": "awareness_agency_and_metacognition",
+    "short_definition": "Participants judge whether trait adjectives describe themselves vs. another person or a semantic property; the self-reference effect (superior recall for self-encoded items) and endorsement patterns index self-concept and self-referential processing.",
+    "description": "The Self-Referential Encoding Task exploits the robust finding that information encoded in relation to the self is remembered better than information encoded in other ways (the self-reference effect; Rogers, Kuiper, & Kirker, 1977). In the standard paradigm, participants view trait adjectives and make judgments under different encoding conditions: 'Does this word describe you?' (self-reference), 'Does this word describe [other person]?' (other-reference), 'Is this a positive word?' (semantic), or 'Is this word in uppercase?' (structural). A surprise recall or recognition test follows. The self-reference effect is the recall advantage for self-encoded items over semantic or other-reference conditions. Beyond the memory effect, the pattern of adjective endorsement (which traits are endorsed as self-descriptive) provides a direct window into self-concept content. This has made the task central to depression research: depressed individuals endorse more negative and fewer positive adjectives as self-descriptive, and show reduced or reversed self-reference memory effects for positive material. The paradigm engages cortical midline structures (medial prefrontal cortex, posterior cingulate) associated with self-referential processing, making it a standard fMRI probe of the default mode network.",
+    "inclusion_test": {
+      "procedure": "Participants judge trait adjectives under self-reference and comparison encoding conditions (other-reference, semantic, structural); a subsequent memory test assesses the self-reference effect on recall or recognition.",
+      "manipulation": "Encoding condition (self, other, semantic, structural); valence of adjectives (positive, negative, neutral); other-reference target (close other vs. distant other vs. celebrity); self-relevance (high vs. low); presentation modality.",
+      "measurement": "Self-reference effect (recall/recognition advantage for self-encoded items); endorsement rate by valence and condition; endorsement latency; recall bias (proportion positive vs. negative recalled); cortical midline activation (medial prefrontal cortex, posterior cingulate)."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 17,
+      "picked": 17,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_233990e0",
+      "doi": "10.1037/0022-3514.35.9.677",
+      "url": "https://doi.org/10.1037/0022-3514.35.9.677",
+      "openalex_id": "https://openalex.org/W4210302606",
+      "pmid": null,
+      "first_author": "Rogers",
+      "authors_display": "Tim Rogers et al.",
+      "year": 1977,
+      "title": "Self-reference and the encoding of personal information.",
+      "venue": "Journal of Personality and Social Psychology",
+      "venue_tier": "mainstream",
+      "publisher": "American Psychological Association",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1364,
+      "influential_citation_count": null,
+      "fwci": 66.2065,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.6444893028948204,
+        "breakdown": {
+          "raw": {
+            "citations": 0.41795721157928156,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10448930289482039,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_70280205",
+      "doi": "10.1111/psyp.12686",
+      "url": "https://doi.org/10.1111/psyp.12686",
+      "openalex_id": null,
+      "pmid": "27302282",
+      "first_author": "Auerbach",
+      "authors_display": "Auerbach, R. et al.",
+      "year": 2016,
+      "title": "Self-referential processing in adolescents: Stability of behavioral and ERP markers.",
+      "venue": "Psychophysiology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 54,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The self-referential encoding task (SRET)-an implicit measure of self-schema-has been used widely to probe cognitive biases associated with depression, including among adolescents. However, research testing the stability of behavioral and electrocortical effects is sparse. Therefore, the current study sought to evaluate the stability of behavioral markers and ERPs elicited from the SRET over time in healthy, female adolescents (n = 31). At baseline, participants were administered a diagnostic interview and a self-report measure of depression severity. In addition, they completed the SRET while 128-channel ERP data were recorded to examine early (P1) and late (late positive potential [LPP]) ERPs. Three months later, participants were readministered the depression self-report measure and the SRET in conjunction with ERPs. Results revealed that healthy adolescents endorsed, recalled, and recognized more positive and fewer negative words at each assessment, and these effects were stable over time (rs = .44-.83). Similarly, they reported a faster reaction time when endorsing self-relevant positive words, as opposed to negative words, at both the initial and follow-up assessment (r = .82). Second, ERP responses, specifically potentiated P1 and late LPP positivity to positive versus negative words, were consistent over time (rs = .56-.83), and the internal reliability of ERPs were robust at each time point (rs = .52-.80). As a whole, these medium-to-large effects suggest that the SRET is a reliable behavioral and neural probe of self-referential processing.",
+      "score": {
+        "composite": 0.420503696950287,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2320147878011481,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05800369695028702,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Follow-Up Studies",
+        "Depression",
+        "Affect",
+        "Adolescent Development",
+        "Neuropsychological Tests",
+        "Evoked Potentials",
+        "Adolescent",
+        "Female",
+        "Self Report"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_33ee240f",
+      "doi": "10.1016/j.bpsgos.2021.04.001",
+      "url": "https://doi.org/10.1016/j.bpsgos.2021.04.001",
+      "openalex_id": null,
+      "pmid": "36324429",
+      "first_author": "Allison",
+      "authors_display": "Allison, G. et al.",
+      "year": 2021,
+      "title": "Neurophysiological Markers Related to Negative Self-referential Processing Differentiate Adolescent Suicide Ideators and Attempters.",
+      "venue": "Biological psychiatry global open science",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 13,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9616352",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Adolescent suicide is a major public health concern, and presently, there is a limited understanding of the neurophysiological correlates of suicidal behaviors. Cognitive models of suicide indicate that negative views of the self are related to suicidal thoughts and behaviors, and this study investigated whether behavioral and neural correlates of self-referential processing differentiate suicide ideators from recent attempters.<h4>Methods</h4>Adolescents with depression reporting current suicidal ideation and no lifetime suicide attempts (suicide ideators, <i>n</i> = 30) and past-year suicide attempts (recent attempters, <i>n</i> = 26) completed a self-referential encoding task while high-density electroencephalogram data were recorded. Behavioral analyses focused on negative processing bias (i.e., tendency to attribute negative information as being self-relevant) and drift rate (i.e., slope of reaction time and response type that corresponds to how quickly information is accumulated to make a decision about whether words are self-referent). Neurophysiological markers probing components reflecting early semantic monitoring (P2), engagement (early late positive potential), and effortful encoding (late late positive potential) also were tested.<h4>Results</h4>Adolescent suicide ideators and recent suicide attempters reported comparable symptom severity, suicide ideation, and mental disorders. Although there were no behavioral differences, compared with suicide ideators, suicide attempters exhibited greater P2 amplitudes for negative versus positive words, which may reflect enhanced attention and arousal in response to negative self-referential stimuli. There were no group differences for the early or late late positive potential.<h4>Conclusions</h4>Enhanced sensory arousal in response to negative stimuli-that is, attentional orienting to semantic, emotional, and self-relevant features-differentiates adolescent suicide attempters from ideators and t",
+      "score": {
+        "composite": 0.4106987407849036,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_853ea4bb",
+      "doi": "10.1037/abn0000173",
+      "url": "https://doi.org/10.1037/abn0000173",
+      "openalex_id": null,
+      "pmid": "27175985",
+      "first_author": "Speed",
+      "authors_display": "Speed, B. et al.",
+      "year": 2016,
+      "title": "Depression risk and electrocortical reactivity during self-referential emotional processing in 8 to 14 year-old girls.",
+      "venue": "Journal of abnormal psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 65,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "https://doi.org/10.1037/abn0000173",
+      "tldr": null,
+      "abstract": "Cognitive vulnerabilities, such as a negative self-referential processing bias, have been theorized to play a causal role in the development of depression. Indeed, depression is associated with the endorsement and recall of more negative and fewer positive emotional words (i.e., recall biases) in the self-referential encoding task (SRET). In addition, currently depressed adults and adolescents, compared to healthy controls, show an enhanced late positive potential (LPP), an event-related potential (ERP) component that reflects sustained attentional engagement, during the processing of negative relative to positive words in the SRET. However, it is unclear whether these behavioral and neural measures in the SRET are indicators of risk for depression, or are concomitants of the disorder. The present study included 121 8 to 14 year-old girls with no lifetime history of depression, and examined the association between maternal history of depression (i.e., risk) and both behavioral and ERP measures while viewing positive and negative adjectives during the SRET. Lifetime history of major depressive disorder and/or dysthymia in the biological mother was assessed via a semistructured diagnostic interview. Results indicated that participants with maternal history of depression, compared with those with no maternal history of depression, demonstrated an enhanced LPP to negative words. There were no group differences in the LPP to positive words. Maternal history of depression was also related to faster response time when rejecting negative words. Participant's current depression symptoms were associated with increased negative recall bias and decreased positive recall bias. The present study provides novel evidence that abnormal electrocortical reactivity to negative self-referential words indexes vulnerability for depression in 8 to 14 year-old girls. (PsycINFO Database Record",
+      "score": {
+        "composite": 0.403142689976061,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24257075990424393,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06064268997606098,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Humans",
+        "Electroencephalography",
+        "Risk Factors",
+        "Emotions",
+        "Affect",
+        "Self Concept",
+        "Mothers",
+        "Mental Recall",
+        "Reaction Time",
+        "Depressive Disorder",
+        "Mental Status Schedule",
+        "Evoked Potentials",
+        "Adolescent",
+        "Child",
+        "Female"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_f73f33ec",
+      "doi": "10.3389/fpsyt.2019.00130",
+      "url": "https://doi.org/10.3389/fpsyt.2019.00130",
+      "openalex_id": null,
+      "pmid": "30984035",
+      "first_author": "Lou",
+      "authors_display": "Lou, Y. et al.",
+      "year": 2019,
+      "title": "Review of Abnormal Self-Knowledge in Major Depressive Disorder.",
+      "venue": "Frontiers in psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patients)"
+      ],
+      "citation_count": 15,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyt.2019.00130/pdf",
+      "tldr": null,
+      "abstract": "<b>Background:</b> Major depressive disorder (MDD) is an affective disorder that is harmful to both physical and mental health. Abnormal self-knowledge, which refers to abnormal judgments about oneself, is a core symptom of depression. However, little research has summarized how and why patients with MDD differ from healthy individuals in terms of self-knowledge. <b>Objective:</b> To gain a better understanding of MDD, we reviewed previous studies that focused on the behavioral and neurological changes of self-knowledge in this illness. <b>Main Findings:</b> On the behavioral level, depressed individuals exhibited negative self-knowledge in an explicit way, while more heterogeneous patterns were reported in implicit results. On the neurological level, depressed individuals, as compared with non-depressed controls, showed abnormal self-referential processing in both early perception and higher cognitive processing phases during the Self-Referential Encoding Task. Furthermore, fMRI studies have reported aberrant activity in the medial prefrontal cortex area for negative self-related items in depression. These results revealed several behavioral features and brain mechanisms underlying abnormal self-knowledge in depression. <b>Future Studies:</b> The neural mechanism of implicit self-knowledge in MDD remains unclear. Future research should examine the importance of others' attitudes on the self-concept of individuals with MDD, and whether abnormal self-views may be modified through cognitive or pharmacological approaches. In addition, differences in abnormal self-knowledge due to genetic variation between depressed and non-depressed populations remain unconfirmed. Importantly, it remains unknown whether abnormal self-knowledge could be used as a specific marker to distinguish healthy individuals from those with MDD. <b>Conclusion:</b> This review extends our understanding of the relationship between self-knowledge and depression by indicating several abnormalities amon",
+      "score": {
+        "composite": 0.40263152602464486,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_cbef5435",
+      "doi": "10.1037/abn0000023",
+      "url": "https://doi.org/10.1037/abn0000023",
+      "openalex_id": null,
+      "pmid": "25643205",
+      "first_author": "Auerbach",
+      "authors_display": "Auerbach, R. et al.",
+      "year": 2015,
+      "title": "Self-referential processing in depressed adolescents: A high-density event-related potential study.",
+      "venue": "Journal of abnormal psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 117,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Despite the alarming increase in the prevalence of depression during adolescence, particularly among female adolescents, the pathophysiology of depression in adolescents remains largely unknown. Event-related potentials (ERPs) provide an ideal approach to investigate cognitive-affective processes associated with depression in adolescents, especially in the context of negative self-referential processing biases. In this study, healthy (n = 30) and depressed (n = 22) female adolescents completed a self-referential encoding task while ERP data were recorded. To examine cognitive-affective processes associated with self-referential processing, P1, P2, and late positive potential (LPP) responses to negative and positive words were investigated, and intracortical sources of scalp effects were probed using low-resolution electromagnetic tomography (LORETA). Additionally, we tested whether key cognitive processes (e.g., maladaptive self-view, self-criticism) previously implicated in depression related to ERP components. Relative to healthy female subjects, depressed females endorsed more negative and fewer positive words, and free recalled and recognized fewer positive words. With respect to ERPs, compared with healthy female adolescents, depressed adolescents exhibited greater P1 amplitudes following negative words, which was associated with a more maladaptive self-view and self-criticism. In both early and late LPP responses, depressed females showed greater activity following negative versus positive words, whereas healthy females demonstrated the opposite pattern. For both P1 and LPP, LORETA revealed reduced inferior frontal gyrus activity in response to negative words in depressed versus healthy female adolescents. Collectively, these findings suggest that the P1 and LPP reflect biased self-referential processing in female adolescents with depression. Potential treatment implications are discussed. (PsycINFO Database Record",
+      "score": {
+        "composite": 0.40155274216345144,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2762109686538056,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0690527421634514,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Affect",
+        "Self Concept",
+        "Evoked Potentials",
+        "Adolescent",
+        "Female",
+        "Major Depressive Disorder"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2a05b4de",
+      "doi": "10.3758/s13415-022-01033-9",
+      "url": "https://doi.org/10.3758/s13415-022-01033-9",
+      "openalex_id": null,
+      "pmid": "36168080",
+      "first_author": "Hitchcock",
+      "authors_display": "Hitchcock, P. et al.",
+      "year": 2023,
+      "title": "Self-judgment dissected: A computational modeling analysis of self-referential processing and its relationship to trait mindfulness facets and depression symptoms.",
+      "venue": "Cognitive, affective & behavioral neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Cognitive theories of depression, and mindfulness theories of well-being, converge on the notion that self-judgment plays a critical role in mental health. However, these theories have rarely been tested via tasks and computational modeling analyses that can disentangle the information processes operative in self-judgments. We applied a drift-diffusion computational model to the self-referential encoding task (SRET) collected before and after an 8-week mindfulness intervention (n = 96). A drift-rate regression parameter representing positive-relative to negative-self-referential judgment strength positively related to mindful awareness and inversely related to depression, both at baseline and over time; however, this parameter did not significantly relate to the interaction between mindful awareness and nonjudgmentalness. At the level of individual depression symptoms, at baseline, a spectrum of symptoms (inversely) correlated with the drift-rate regression parameter, suggesting that many distinct depression symptoms relate to valenced self-judgment between subjects. By contrast, over the intervention, changes in only a smaller subset of anhedonia-related depression symptoms showed substantial relationships with this parameter. Both behavioral and model-derived measures showed modest split-half and test-retest correlations. Results support cognitive theories that implicate self-judgment in depression and mindfulness theories, which imply that mindful awareness should lead to more positive self-views.",
+      "score": {
+        "composite": 0.39169737040327585,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Depression",
+        "Cognition",
+        "Judgment",
+        "Computer Simulation",
+        "Mindfulness"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_7f9069e0",
+      "doi": "10.1016/j.janxdis.2017.01.001",
+      "url": "https://doi.org/10.1016/j.janxdis.2017.01.001",
+      "openalex_id": null,
+      "pmid": "28108059",
+      "first_author": "Thurston",
+      "authors_display": "Thurston, M. et al.",
+      "year": 2017,
+      "title": "Self-views in social anxiety disorder: The impact of CBT versus MBSR.",
+      "venue": "Journal of anxiety disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "This study examines the impact of Cognitive-Behavioral Group Therapy (CBGT) versus Mindfulness-Based Stress Reduction (MBSR) versus Waitlist (WL) on self-views in patients with social anxiety disorder (SAD). One hundred eight unmedicated patients with SAD were randomly assigned to 12 weeks of CBGT, MBSR, or WL, and completed a self-referential encoding task (SRET) that assessed self-endorsement of positive and negative self-views pre- and post-treatment. At baseline, 40 healthy controls (HCs) also completed the SRET. At baseline, patients with SAD endorsed greater negative and lesser positive self-views than HCs. Compared to baseline, patients in both CBGT and MBSR decreased negative self-views and increased positive self-views. Improvement in self-views, specifically increases in positive (but not decreases in negative) self-views, predicted CBGT- and MBSR-related decreases in social anxiety symptoms. Enhancement of positive self-views may be a shared therapeutic process for both CBGT and MBSR for SAD.",
+      "score": {
+        "composite": 0.3751189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Treatment Outcome",
+        "Stress, Psychological",
+        "Self Concept",
+        "Psychotherapy, Group",
+        "Models, Psychological",
+        "Mindfulness",
+        "Phobia, Social",
+        "Cognitive Behavioral Therapy"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1322f47e",
+      "doi": "10.1016/j.bpsc.2016.04.004",
+      "url": "https://doi.org/10.1016/j.bpsc.2016.04.004",
+      "openalex_id": null,
+      "pmid": "28626812",
+      "first_author": "Auerbach",
+      "authors_display": "Auerbach, R. et al.",
+      "year": 2016,
+      "title": "Electrocortical Reactivity During Self-referential Processing in Female Youth With Borderline Personality Disorder.",
+      "venue": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 17,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Borderline personality disorder (BPD) is debilitating, and theoretical models have postulated that cognitive-affective biases contribute to the onset and maintenance of BPD symptoms. Despite advances, our understanding of BPD pathophysiology in youth is limited. The present study used event-related potentials (ERPs) to identify cognitive-affective processes that underlie negative self-referential processing in BPD youth.<h4>Methods</h4>Healthy females (<i>n</i> = 33) and females with BPD (<i>n</i> = 26) 13 to 22 years of age completed a self-referential encoding task while 128-channel electroencephalography data were recorded to examine early (i.e., P1 and P2) and late (late positive potential [LPP]) ERP components. Whole-brain standardized low-resolution electromagnetic tomography explored intracortical sources underlying significant scalp ERP effects.<h4>Results</h4>Compared to healthy females, participants with BPD endorsed, recalled, and recognized fewer positive and more negative words. Moreover, unlike the healthy group, females with BPD had faster reaction times to endorse negative versus positive words. In the scalp ERP analyses, the BPD group had greater P2 and late LPP positivity to negative as opposed to positive words. For P2 and late LPP, whole-brain standardized low-resolution electromagnetic tomography analyses suggested that females with BPD overrecruit frontolimbic circuitry in response to negative stimuli.<h4>Conclusions</h4>Collectively, these findings show that females with BPD process negative self-relevant information differently than healthy females. Clinical implications and future directions are discussed.",
+      "score": {
+        "composite": 0.36433636342904985,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_eb6570b5",
+      "doi": "10.1016/j.biopsycho.2025.109022",
+      "url": "https://doi.org/10.1016/j.biopsycho.2025.109022",
+      "openalex_id": null,
+      "pmid": "40221123",
+      "first_author": "Iannazzi",
+      "authors_display": "Iannazzi, E. et al.",
+      "year": 2025,
+      "title": "Task-based neural correlates of self-focused attention associated with cognitive behavioral therapy response.",
+      "venue": "Biological psychology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Self-focused attention (SFA), a form of self-referential processing, is maladaptive in various psychiatric disorders and may be associated with poor treatment response. This study examined SFA in individuals with social anxiety disorder (SAD) and body dysmorphic disorder (BDD), testing the hypothesis that SFA is associated with hyperactivity within default network (DN) regions and with treatment response during cognitive-behavioral therapy. Participants included 30 patients with primary SAD or BDD and 28 healthy controls, who displayed above average and below average scores (respectively) on the Public Self-Consciousness Scale, which measured trait SFA. SFA was also measured by a self-referential encoding task, which yielded both behavioral reaction time measures and task-related fMRI measures of SFA. Results indicated significantly longer reaction times at pre-treatment for self vs. other trials in patients compared to controls, with patients showing notable improvement post-treatment. Neuroimaging revealed greater activation in DN regions, including the medial prefrontal cortex, during self vs. other trials in all participants; however, there were no significant group differences at pre- or post-treatment, nor in the changes from pre- to post-treatment. Neural measures of SFA were significantly associated with treatment response, whereas behavioral measures were not. These findings suggest that activity in DN regions may serve as a transdiagnostic biomarker of maladaptive SFA that is associated with treatment response.",
+      "score": {
+        "composite": 0.3525657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Treatment Outcome",
+        "Brain Mapping",
+        "Self Concept",
+        "Attention",
+        "Reaction Time",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Body Dysmorphic Disorders",
+        "Phobia, Social",
+        "Cognitive Behavioral Therapy"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_67dca118",
+      "doi": "10.1016/j.bpsgos.2021.12.005",
+      "url": "https://doi.org/10.1016/j.bpsgos.2021.12.005",
+      "openalex_id": null,
+      "pmid": "36712564",
+      "first_author": "Allison",
+      "authors_display": "Allison, G. et al.",
+      "year": 2023,
+      "title": "Self-referential Processing in Remitted Depression: An Event-Related Potential Study.",
+      "venue": "Biological psychiatry global open science",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants,subjects)"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1016/j.bpsgos.2021.12.005",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Identifying mechanisms of major depressive disorder that continue into remission is critical, as these mechanisms may contribute to subsequent depressive episodes. Biobehavioral markers related to depressogenic self-referential processing biases have been identified in adults with depression. Thus, we investigated whether these risk factors persisted during remission as well as contributed to the occurrence of stress and depressive symptoms over time.<h4>Methods</h4>At baseline, adults with remitted depression (<i>n</i> = 33) and healthy control subjects (<i>n</i> = 33) were administered diagnostic and stress interviews as well as self-report symptom measures. In addition, participants completed a self-referential encoding task while electroencephalography data were acquired. Stress interviews and self-report symptom measures were readministered at the 6-month follow-up assessment.<h4>Results</h4>Drift diffusion modeling showed that compared with healthy individuals, adults with remitted depression exhibited a slower drift rate to negative stimuli, indicating a slower tendency to reject negative stimuli as self-relevant. At the 6-month follow-up assessment, a slower drift rate to negative stimuli predicted greater interpersonal stress severity among individuals with remitted depression but not healthy individuals while controlling for both baseline depression symptoms and interpersonal stress severity. Highlighting the specificity of this effect, results were nonsignificant when predicting noninterpersonal stress. For self-relevant positive words endorsed, adults with remitted depression exhibited smaller left- than right-hemisphere late positive potential amplitudes; healthy control subjects did not show hemispheric differences.<h4>Conclusions</h4>Self-referential processing deficits persist into remission. In line with the stress generation framework, these biases predicted the occurrence of interpersonal stress, which may provide insight about ",
+      "score": {
+        "composite": 0.34962607321280215,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a5be335b",
+      "doi": "10.1016/j.jadr.2023.100593",
+      "url": "https://doi.org/10.1016/j.jadr.2023.100593",
+      "openalex_id": null,
+      "pmid": "37396954",
+      "first_author": "Castagna",
+      "authors_display": "Castagna, P. et al.",
+      "year": 2023,
+      "title": "Catch the drift: Depressive symptoms track neural response during more efficient decision-making for negative self-referents.",
+      "venue": "Journal of affective disorders reports",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1016/j.jadr.2023.100593",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Adolescence is a time of heightened risk for developing depression and also a critical period for the development and integration of self-identity. Despite this, the relation between the neurophysiological correlates of self-referential processing and major depressive symptoms in youth is not well understood. Here, we leverage computational modeling of the self-referential encoding task (SRET) to identify behavioral moderators of the association between the posterior late positive potential (LPP), an event-related potential associated with emotion regulation, and youth self-reported symptoms of depression. Specifically, within a drift-diffusion framework, we evaluated whether the association between the posterior LPP and youth symptoms of major depression was moderated by drift rate, a parameter reflecting processing efficiency during self-evaluative decisions.<h4>Methods</h4>A sample of 106 adolescents, aged 12 to 17 (53% male; <i>M</i><sub>age</sub> = 14.49, <i>SD</i> = 1.70), completed the SRET with concurrent high-density electroencephalography and self-report measures of depression and anxiety.<h4>Results</h4>Findings indicated a significant moderation: for youth showing greater processing efficiency (drift rate) when responding to negative compared to positive words, larger posterior LPPs predicted greater depressive symptom severity.<h4>Limitations</h4>We relied on a community sample and our study was cross-sectional in nature. Future longitudinal work with clinically depressed youth would be beneficial.<h4>Conclusions</h4>Our results suggest a neurobehavioral model of adolescent depression wherein efficient processing of negative information co-occurs with increased demands on affective self-regulation. Our findings also have clinical relevance; youth's neurophysiological response (posterior LPP) and performance during the SRET may serve as a novel target for tracking treatment-related changes in one's self-identity.",
+      "score": {
+        "composite": 0.33256576301232244,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d5310941",
+      "doi": "10.1093/sleep/zsaf034",
+      "url": "https://doi.org/10.1093/sleep/zsaf034",
+      "openalex_id": null,
+      "pmid": "39994882",
+      "first_author": "Burge",
+      "authors_display": "Burge, M. et al.",
+      "year": 2025,
+      "title": "Blue light influences negative thoughts of self.",
+      "venue": "Sleep",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1093/sleep/zsaf034",
+      "tldr": null,
+      "abstract": "Darkness is equated with sadness. This study explored how light that differentially impacts non-visual photoreception (blue-enriched vs. blue-depleted light) affects how we feel about ourselves. In a repeated-measured design, 35 participants (22 female participants, 13 male participants, Mage = 20.29, SD = 2.09) completed the self-referential encoding task (SRET) under both blue-enriched or blue-depleted light conditions, with light conditions randomized and counterbalanced between sessions. The SRET involved participants deciding whether positive (e.g. \"good\") and negative (e.g. \"terrible\") words were self-descriptive. Trial-by-trial performance analysis using logistic mixed effects models revealed that blue-enriched light significantly increased the likelihood of rejecting negative words as self-descriptive. A hierarchical drift-diffusion model (HDDM) further examined latent decision-making processes and found evidence accumulation to be faster under blue-enriched light when rejecting negative descriptors, suggesting rejecting negative self-descriptors was easier under blue-enriched light. We find light can acutely influence self-perception, with blue-enriched light decreasing negative self-thoughts.",
+      "score": {
+        "composite": 0.33249999999999996,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Self Concept",
+        "Thinking",
+        "Decision Making",
+        "Light",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Blue Light"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_98889a83",
+      "doi": "10.3389/fnhum.2012.00295",
+      "url": "https://doi.org/10.3389/fnhum.2012.00295",
+      "openalex_id": null,
+      "pmid": "23133411",
+      "first_author": "Goldin",
+      "authors_display": "Goldin, P. et al.",
+      "year": 2012,
+      "title": "Randomized controlled trial of mindfulness-based stress reduction versus aerobic exercise: effects on the self-referential brain network in social anxiety disorder.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patients)"
+      ],
+      "citation_count": 72,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fnhum.2012.00295/pdf",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Social anxiety disorder (SAD) is characterized by distorted self-views. The goal of this study was to examine whether mindfulness-based stress reduction (MBSR) alters behavioral and brain measures of negative and positive self-views.<h4>Methods</h4>Fifty-six adult patients with generalized SAD were randomly assigned to MBSR or a comparison aerobic exercise (AE) program. A self-referential encoding task was administered at baseline and post-intervention to examine changes in behavioral and neural responses in the self-referential brain network during functional magnetic resonance imaging. Patients were cued to decide whether positive and negative social trait adjectives were self-descriptive or in upper case font.<h4>Results</h4>Behaviorally, compared to AE, MBSR produced greater decreases in negative self-views, and equivalent increases in positive self-views. Neurally, during negative self versus case, compared to AE, MBSR led to increased brain responses in the posterior cingulate cortex (PCC). There were no differential changes for positive self versus case. Secondary analyses showed that changes in endorsement of negative and positive self-views were associated with decreased social anxiety symptom severity for MBSR, but not AE. Additionally, MBSR-related increases in dorsomedial prefrontal cortex (DMPFC) activity during negative self-view versus case were associated with decreased social anxiety related disability and increased mindfulness. Analysis of neural temporal dynamics revealed MBSR-related changes in the timing of neural responses in the DMPFC and PCC for negative self-view versus case.<h4>Conclusion</h4>These findings suggest that MBSR attenuates maladaptive habitual self-views by facilitating automatic (i.e., uninstructed) recruitment of cognitive and attention regulation neural networks. This highlights potentially important links between self-referential and cognitive-attention regulation systems and suggests that MBSR may enhanc",
+      "score": {
+        "composite": 0.3246017763431698,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24840710537267913,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06210177634316978,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_07ca324f",
+      "doi": "10.3389/fninf.2023.1244347",
+      "url": "https://doi.org/10.3389/fninf.2023.1244347",
+      "openalex_id": null,
+      "pmid": "38274390",
+      "first_author": "Tan",
+      "authors_display": "Tan, G. et al.",
+      "year": 2023,
+      "title": "Transdiagnostic clustering of self-schema from self-referential judgements identifies subtypes of healthy personality and depression.",
+      "venue": "Frontiers in neuroinformatics",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patients)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10808829",
+      "tldr": null,
+      "abstract": "<h4>Introduction</h4>The heterogeneity of depressive and anxiety disorders complicates clinical management as it may account for differences in trajectory and treatment response. Self-schemas, which can be determined by Self-Referential Judgements (SRJs), are heterogeneous yet stable. SRJs have been used to characterize personality in the general population and shown to be prognostic in depressive and anxiety disorders.<h4>Methods</h4>In this study, we used SRJs from a Self-Referential Encoding Task (SRET) to identify clusters from a clinical sample of 119 patients recruited from the Institute of Mental Health presenting with depressive or anxiety symptoms and a non-clinical sample of 115 healthy adults. The generated clusters were examined in terms of most endorsed words, cross-sample correspondence, association with depressive symptoms and the Depressive Experiences Questionnaire and diagnostic category.<h4>Results</h4>We identify a 5-cluster solution in each sample and a 7-cluster solution in the combined sample. When perturbed, metrics such as optimum cluster number, criterion value, likelihood, DBI and CHI remained stable and cluster centers appeared stable when using BIC or ICL as criteria. Top endorsed words in clusters were meaningful across theoretical frameworks from personality, psychodynamic concepts of relatedness and self-definition, and valence in self-referential processing. The clinical clusters were labeled \"Neurotic\" (C1), \"Extraverted\" (C2), \"Anxious to please\" (C3), \"Self-critical\" (C4), \"Conscientious\" (C5). The non-clinical clusters were labeled \"Self-confident\" (N1), \"Low endorsement\" (N2), \"Non-neurotic\" (N3), \"Neurotic\" (N4), \"High endorsement\" (N5). The combined clusters were labeled \"Self-confident\" (NC1), \"Externalising\" (NC2), \"Neurotic\" (NC3), \"Secure\" (NC4), \"Low endorsement\" (NC5), \"High endorsement\" (NC6), \"Self-critical\" (NC7). Cluster differences were observed in endorsement of positive and negative words, latency biases, recall b",
+      "score": {
+        "composite": 0.2825328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_81dcac0a",
+      "doi": "10.1186/s40479-022-00189-7",
+      "url": "https://doi.org/10.1186/s40479-022-00189-7",
+      "openalex_id": null,
+      "pmid": "35854373",
+      "first_author": "Maffly-Kipp",
+      "authors_display": "Maffly-Kipp, J. et al.",
+      "year": 2022,
+      "title": "The self-reference effect as a behavioral indicator of identity disturbances associated with borderline personality features in a non-clinical sample.",
+      "venue": "Borderline personality disorder and emotion dysregulation",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants)"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9297558",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Identity disturbances are a common feature of personality pathology and BPD. The Self-Reference Effect paradigm is a method used to measure the impact of self-relevant processing on encoding/memory, whereby self-relevant information is typically advantaged in cognitive processes. We postulated that difficulties with identity might impede the process by which one encodes self-relevant information. Based on this reasoning, we predicted that high levels of identity disturbance could be associated with atypical impact of the SRE.<h4>Methods</h4>Undergraduate participants were randomized into one of three groups where they were exposed to 60 trait adjectives for seven seconds each. Depending on condition, participants either indicated whether a word was/wasn't capitalized (Capitalization condition), whether it was a good synonym for \"openness\" (Synonyms condition), or whether it described them as a person (Self-reference condition). After a brief delay, all participants were asked to recall as many of the 60 words as possible. Finally, we measured identity disturbance using the Borderline Features-Identity Problems (BOR-I) scale from the Personality Assessment Inventory.<h4>Results</h4>We found significant but modest correlations between Recall and scores on the BOR-I subscale in the Self-Reference condition, but not the two control conditions. Contrary to expectations, the interaction between BOR-I and Condition was not a significant predictor of Recall, suggesting that identity disturbance did not significantly moderate the SRE.<h4>Conclusions</h4>While our primary hypothesis was not supported, there is a need for multimethod approaches to studying personality pathology. Future research should continue to examine the extent to which behavioral paradigms like the SRE might be useful indicators of identity disturbance/personality pathology, with an emphasis on the use of clinical populations.",
+      "score": {
+        "composite": 0.26256576301232243,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f237d602",
+      "doi": "10.3389/fpsyt.2024.1463116",
+      "url": "https://doi.org/10.3389/fpsyt.2024.1463116",
+      "openalex_id": null,
+      "pmid": "39995765",
+      "first_author": "Tan",
+      "authors_display": "Tan, E. et al.",
+      "year": 2024,
+      "title": "Evaluating the relative predictive validity of measures of self-referential processing for depressive symptom severity.",
+      "venue": "Frontiers in psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11847881",
+      "tldr": null,
+      "abstract": "<h4>Introduction</h4>The self-referential encoding task (SRET) has a number of implicit measures which are associated with various facets of depression, including depressive symptoms. While some measures have proven robust in predicting depressive symptoms, their effectiveness can vary depending on the methodology used. Hence, understanding the relative contributions of population differences, word lists and calculation methods to these associations with depression, is crucial for translating the SRET into a clinical screening tool.<h4>Methods</h4>This study systematically investigated the predictive accuracy of various SRET measures across different samples, including one clinical population matched with healthy controls and two university student populations, exposed to differing word lists. Participants completed the standard SRET and its variations, including Likert scales and matrix formats. Both standard and novel SRET measures were calculated and compared for their relative and incremental contribution to their associations with depression, with mean squared error (MSE) used as the primary metric for measuring predictive accuracy.<h4>Results</h4>Results showed that most SRET measures significantly predicted depressive symptoms in clinical populations but not in healthy populations. Notably, models with task modifications, such as Matrix Endorsement Bias and Likert Endorsement Sum Bias, achieved the lowest mean squared error (MSE), indicating better predictive accuracy compared to standard Endorsement Bias measures.<h4>Discussion</h4>These findings imply that task modifications such as utilising Likert-response options and the use of longer word lists may enhance the effectiveness of screening methods in both clinical and research settings, potentially improving early detection and intervention for depression.",
+      "score": {
+        "composite": 0.2425,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

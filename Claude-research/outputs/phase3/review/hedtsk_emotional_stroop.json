@@ -1,0 +1,1137 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_emotional_stroop",
+    "name": "Emotional Stroop Task",
+    "aliases": [
+      "Affective Stroop"
+    ],
+    "category_id": "selective_and_sustained_attention",
+    "short_definition": "Color-naming of emotionally valenced words; RT slowing on threat-related words indexes attentional bias to affective content.",
+    "description": "A variant of the classic Stroop in which participants name the ink color of words that vary in emotional valence (threat-related, positive, neutral). Emotional interference is measured as the slowing of color naming for emotional relative to neutral words, indexing the degree to which emotional content captures attentional resources. The task is widely used in anxiety and PTSD research, where threat-related words produce disproportionate interference. The emotional interference effect reflects automatic processing of affectively significant information.",
+    "inclusion_test": {
+      "procedure": "Color words are replaced by emotionally valenced or threat-related words; participants name the ink color while ignoring word meaning.",
+      "manipulation": "Word valence/threat relevance (disorder-specific, general threat, neutral); blocked vs. mixed presentation.",
+      "measurement": "RT slowing for threat/emotional words relative to neutral (emotional Stroop interference); accuracy."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:39:45",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Williams 1996 — The emotional Stroop task and psychopathology. (Psychological Bulletin, historical, 2k×)",
+      "doi": "10.1037/0033-2909.120.1.3",
+      "pub_id": "pub_fa360079",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.8871104433097579,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4484417732390317,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.11211044330975793,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1996,
+      "venue": "Psychological Bulletin",
+      "citation_count": 2310,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Song 2017 — The influence of emotional interference on cognitive control: A meta-analysis… (Scientific reports, key_review, 83×)",
+      "doi": "10.1038/s41598-017-02266-2",
+      "pub_id": "pub_7e922730",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6491333632525091,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2565334530100364,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0641333632525091,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Scientific reports",
+      "citation_count": 83,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Watanabe 2019 — Mental fatigue is linked with attentional bias for sad stimuli. (Scientific reports, recent_primary, 5×)",
+      "doi": "10.1038/s41598-019-45428-0",
+      "pub_id": "pub_4e95f4ec",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5809346224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Sato 2018 — Effects of Social Exclusion on Effortful Control and Mentalizing in relation … (Scientific reports, recent_primary, 4×)",
+      "doi": "10.1038/s41598-018-32775-7",
+      "pub_id": "pub_ada3a28f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5682956294418315,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Crum 2021 — Interaction of irritability and anxiety on emotional responding and emotion r… (Psychological medicine, recent_primary, 21×)",
+      "doi": "10.1017/s0033291720001397",
+      "pub_id": "pub_50778e80",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5597409490146167,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Psychological medicine",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Lee 2023 — The impact of pandemic-related stress on attentional bias and anxiety in alex… (Scientific reports, recent_primary, 5×)",
+      "doi": "10.1038/s41598-023-33326-5",
+      "pub_id": "pub_b2d543d9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5409346224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific reports",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Pan 2019 — The altered early components and the decisive later process underlying attent… (Social cognitive and affective n…, recent_primary, 22×)",
+      "doi": "10.1093/scan/nsz098",
+      "pub_id": "pub_6c53f680",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5403843610908988,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Straub 2022 — Limitations of cognitive control on emotional distraction - Congruency in the… (Cognitive, affective & behaviora…, key_review, 11×)",
+      "doi": "10.3758/s13415-021-00935-4",
+      "pub_id": "pub_b7727e64",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5309675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Cognitive, affective & behavioral neuroscience",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Li 2023 — Investigating mechanism of the effect of emotional facial expressions on atte… (Scientific reports, recent_primary, 2×)",
+      "doi": "10.1038/s41598-023-33197-w",
+      "pub_id": "pub_4db3cb2b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5309017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific reports",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Hwang 2016 — Dual neurocircuitry dysfunctions in disruptive behavior disorders: emotional … (Psychological medicine, foundational, 67×)",
+      "doi": "10.1017/s0033291716000118",
+      "pub_id": "pub_a3400a43",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5260747933594241,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2442991734376964,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0610747933594241,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Psychological medicine",
+      "citation_count": 67,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Hutten 2022 — Cannabis containing equivalent concentrations of delta-9-tetrahydrocannabinol… (Psychopharmacology, recent_primary, 16×)",
+      "doi": "10.1007/s00213-022-06248-9",
+      "pub_id": "pub_df97a8c6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5260090303471017,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Psychopharmacology",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Khanna 2017 — Veterans with post-traumatic stress disorder exhibit altered emotional proces… (Psychological medicine, foundational, 25×)",
+      "doi": "10.1017/s0033291717000460",
+      "pub_id": "pub_5dd2653c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5221589547189633,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Psychological medicine",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Martínez-Fernández 2018 — Different effects of levodopa and subthalamic stimulation on emotional confli… (Human brain mapping, recent_primary, 11×)",
+      "doi": "10.1002/hbm.24341",
+      "pub_id": "pub_b4a0f1e4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5209675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Human brain mapping",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Provenzano 2019 — Mood congruency effects are mediated by shifts in salience and central execut… (Social cognitive and affective n…, recent_primary, 5×)",
+      "doi": "10.1093/scan/nsz065",
+      "pub_id": "pub_9c1f6cc7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5209346224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Imbir 2021 — Electrophysiological correlates of interference control in the modified emoti… (PloS one, recent_primary, 7×)",
+      "doi": "10.1371/journal.pone.0258177",
+      "pub_id": "pub_6391b742",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5050986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PloS one",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Herber 2024 — The role of affective control, strategy repertoire and subjective emotion reg… (Scientific reports, recent_primary, 2×)",
+      "doi": "10.1038/s41598-024-72336-9",
+      "pub_id": "pub_24b995d9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5009017409614444,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Scientific reports",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Cheng 2026 — A neuroimaging functional connectivity signature of emotional conflict monito… (Scientific reports, recent_primary, 0×)",
+      "doi": "10.1038/s41598-026-41082-5",
+      "pub_id": "pub_e0dfe926",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2026,
+      "venue": "Scientific reports",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Blair 2012 — Reduced dorsal anterior cingulate cortical activity during emotional regulati… (Biological psychiatry, foundational, 128×)",
+      "doi": "10.1016/j.biopsych.2012.04.013",
+      "pub_id": "pub_951d8142",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.49534281226642934,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2813712490657175,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07034281226642937,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Biological psychiatry",
+      "citation_count": 128,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Almdahl 2021 — Inhibition of emotions in healthy aging: age-related differences in brain net… (Brain and behavior, recent_primary, 13×)",
+      "doi": "10.1002/brb3.2052",
+      "pub_id": "pub_bb43059f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4931987407849036,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Brain and behavior",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Veroude 2013 — Changes in neural mechanisms of cognitive control during the transition from … (Developmental cognitive neurosci…, foundational, 48×)",
+      "doi": "10.1016/j.dcn.2012.12.002",
+      "pub_id": "pub_559684b5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.49133171855748475,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Tupak 2013 — Inhibitory transcranial magnetic theta burst stimulation attenuates prefronta… (Human brain mapping, foundational, 43×)",
+      "doi": "10.1002/hbm.21421",
+      "pub_id": "pub_e2d04172",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4897738305207779,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21909532208311155,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05477383052077789,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Human brain mapping",
+      "citation_count": 43,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Hwang 2014 — Neurodevelopmental changes in the responsiveness of systems involved in top d… (Neuropsychologia, foundational, 20×)",
+      "doi": "10.1016/j.neuropsychologia.2014.08.003",
+      "pub_id": "pub_7d002d95",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4890676002401867,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Neuropsychologia",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Imbir 2020 — Valence and arousal of words in visual and conceptual interference control ef… (PloS one, recent_primary, 4×)",
+      "doi": "10.1371/journal.pone.0241694",
+      "pub_id": "pub_e58e4b7a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4882956294418315,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "PloS one",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Ögel Balaban 2020 — The development of narrative skills in Turkish-speaking children: A complexit… (PloS one, recent_primary, 3×)",
+      "doi": "10.1371/journal.pone.0232579",
+      "pub_id": "pub_737a3191",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4850657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "PloS one",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Liu 2025 — Virtual reality enhanced mindfulness and yoga intervention for postpartum dep… (Scientific reports, recent_primary, 5×)",
+      "doi": "10.1038/s41598-025-96165-6",
+      "pub_id": "pub_d1221c40",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.48093462246760554,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Scientific reports",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Price 2011 — Deficient prefrontal attentional control in late-life generalized anxiety dis… (Translational psychiatry, foundational, 80×)",
+      "doi": "10.1038/tp.2011.46",
+      "pub_id": "pub_136e7867",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4786069638457772,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2544278553831089,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06360696384577723,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Translational psychiatry",
+      "citation_count": 80,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Froeliger 2012 — Nicotine withdrawal modulates frontal brain function during an affective Stro… (Psychopharmacology, foundational, 32×)",
+      "doi": "10.1007/s00213-011-2522-y",
+      "pub_id": "pub_fa918a60",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.47560980846989975,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Psychopharmacology",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Ypsilanti 2021 — Feelings of fear, sadness, and loneliness during the COVID-19 pandemic: Findi… (Journal of affective disorders, recent_primary, 12×)",
+      "doi": "10.1016/j.jad.2021.08.031",
+      "pub_id": "pub_1f2844a2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.47212607321280214,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of affective disorders",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Cisler 2011 — The emotional Stroop task and posttraumatic stress disorder: a meta-analysis. (Clinical psychology review, key_review, 92×)",
+      "doi": "10.1016/j.cpr.2011.03.007",
+      "pub_id": "pub_06fa5121",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.47060660550181693,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26242642200726757,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06560660550181689,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Clinical psychology review",
+      "citation_count": 92,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Hornung 2017 — The human body odor compound androstadienone leads to anger-dependent effects… (PloS one, foundational, 10×)",
+      "doi": "10.1371/journal.pone.0175055",
+      "pub_id": "pub_85a367dd",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.46970806750845545,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "PloS one",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

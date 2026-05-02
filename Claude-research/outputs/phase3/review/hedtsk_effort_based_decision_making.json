@@ -1,0 +1,1141 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_effort_based_decision_making",
+    "name": "Effort-Based Decision-Making Task",
+    "aliases": [
+      "EEfRT",
+      "Effort Expenditure for Rewards Task",
+      "Effort Discounting Task",
+      "Effort-Cost Paradigm",
+      "Effort Choice Task"
+    ],
+    "category_id": "reward_anticipation_and_motivation",
+    "short_definition": "Participants choose between a low-effort/low-reward option and a high-effort/high-reward option on each trial; the indifference point indexes effort discounting and motivational willingness to exert effort for reward.",
+    "description": "Effort-based decision-making tasks measure the willingness to exert physical or cognitive effort in exchange for reward. In the Effort Expenditure for Rewards Task (EEfRT; Treadway et al., 2009), participants on each trial choose between an easy task (e.g., pressing a button with the dominant index finger 30 times in 7 seconds for a small reward) and a hard task (pressing with the non-dominant pinky finger 100 times in 21 seconds for a larger, variable reward). Reward magnitude and probability are manipulated across trials to map the effort-reward tradeoff. The proportion of hard-task choices is the primary measure, indexing motivational drive. Effort discounting variants (Botvinick, Huffstetler, & McGuire, 2009) use a titration procedure to find the reward value at which effortful and easy options are equally preferred (the indifference point). The paradigm has become central to research on motivational anhedonia — the reduced willingness to exert effort for reward that characterizes depression, schizophrenia, and Parkinson's disease. Computational models decompose behavior into effort sensitivity, reward sensitivity, and probability weighting parameters. The framework connects to dopaminergic theories of motivation: effort willingness is modulated by dopamine function in the ventral striatum and anterior cingulate cortex.",
+    "inclusion_test": {
+      "procedure": "On each trial, participants choose between a low-effort/low-reward option and a high-effort/high-reward option, then execute the chosen action; trials vary reward magnitude and probability.",
+      "manipulation": "Reward magnitude (small vs. large); reward probability (high vs. low); effort demand level (physical vs. cognitive; graded difficulty); effort type (button pressing, grip force, N-back); block structure (fixed vs. adaptive staircase).",
+      "measurement": "Proportion of high-effort choices; effort indifference point (reward at which hard and easy options are equally chosen); RT for choice; completion rate on hard trials; computational model parameters (effort sensitivity, reward sensitivity, probability weighting)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T19:00:36",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Jurgelis 2021 — Heightened effort discounting is a common feature of both apathy and fatigue. (Scientific reports, recent_primary, 23×)",
+      "doi": "10.1038/s41598-021-01287-2",
+      "pub_id": "pub_de79651c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5376670521465946,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Arulpragasam 2018 — Corticoinsular circuits encode subjective value expectation and violation for… (Proceedings of the National Acad…, recent_primary, 76×)",
+      "doi": "10.1073/pnas.1800444115",
+      "pub_id": "pub_538d0b8b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5245405934538645,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25149570714879144,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06287392678719786,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 76,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Choe 2019 — Calculated avoidance: Math anxiety predicts math avoidance in effort-based de… (Science advances, recent_primary, 32×)",
+      "doi": "10.1126/sciadv.aay1062",
+      "pub_id": "pub_8e97499a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5222764751365665,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Science advances",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Lawn 2016 — Acute and chronic effects of cannabinoids on effort-related decision-making a… (Psychopharmacology, foundational, 75×)",
+      "doi": "10.1007/s00213-016-4383-x",
+      "pub_id": "pub_95c713e6",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.48601804973479723,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25073886560585573,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06268471640146393,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Psychopharmacology",
+      "citation_count": 75,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Culbreth 2020 — Effort in daily life: relationships between experimental tasks and daily expe… (Motivation science, recent_primary, 15×)",
+      "doi": "10.1037/mot0000159",
+      "pub_id": "pub_915d9096",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4651315260246448,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Motivation science",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Hughes 2015 — Asymmetric frontal cortical activity predicts effort expenditure for reward. (Social cognitive and affective n…, foundational, 18×)",
+      "doi": "10.1093/scan/nsu149",
+      "pub_id": "pub_a399a35d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.45595228672247484,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Addicott 2020 — Effort-based decision making varies by smoking status. (Psychopharmacology, recent_primary, 6×)",
+      "doi": "10.1007/s00213-019-05437-3",
+      "pub_id": "pub_7c8912c4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.449832525945409,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychopharmacology",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Cathomas 2021 — Associations Between Negative Symptoms and Effort Discounting in Patients Wit… (Schizophrenia bulletin open, recent_primary, 12×)",
+      "doi": "10.1093/schizbullopen/sgab022",
+      "pub_id": "pub_31a34872",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.43045940654613546,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Schizophrenia bulletin open",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Nunez 2022 — Pharmacological investigations of effort-based decision-making in humans: Nal… (PloS one, recent_primary, 3×)",
+      "doi": "10.1371/journal.pone.0275027",
+      "pub_id": "pub_661b1fe6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4233990963456557,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "PloS one",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Lasselin 2017 — Lipopolysaccharide Alters Motivated Behavior in a Monetary Reward Task: a Ran… (Neuropsychopharmacology : offici…, foundational, 101×)",
+      "doi": "10.1038/npp.2016.191",
+      "pub_id": "pub_09688f44",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.42027698614804054,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2677746112588288,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0669436528147072,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "citation_count": 101,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Slaney 2023 — Objective measures of reward sensitivity and motivation in people with high <… (Psychological medicine, recent_primary, 19×)",
+      "doi": "10.1017/s0033291722001052",
+      "pub_id": "pub_e4d0053f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.41502805912082064,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Psychological medicine",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Treadway 2012 — Effort-based decision-making in major depressive disorder: a translational mo… (Journal of abnormal psychology, foundational, 495×)",
+      "doi": "10.1037/a0028813",
+      "pub_id": "pub_51164b07",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.41316972389835077,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35934556226006964,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08983639056501741,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Journal of abnormal psychology",
+      "citation_count": 495,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "McCarthy 2016 — Inefficient effort allocation and negative symptoms in individuals with schiz… (Schizophrenia research, foundational, 98×)",
+      "doi": "10.1016/j.schres.2015.12.017",
+      "pub_id": "pub_6c5f368a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4098448827646774,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26604619772537635,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06651154943134409,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Schizophrenia research",
+      "citation_count": 98,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Soder 2021 — Dose-response effects of d-amphetamine on effort-based decision-making and re… (Neuropsychopharmacology : offici…, recent_primary, 49×)",
+      "doi": "10.1038/s41386-020-0779-8",
+      "pub_id": "pub_1e44578e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.40829080705649096,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "citation_count": 49,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Treadway 2009 — Worth the 'EEfRT'? The effort expenditure for rewards task as an objective me… (PloS one, foundational, 535×)",
+      "doi": "10.1371/journal.pone.0006598",
+      "pub_id": "pub_b2687bfe",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.40429233190548514,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3638359942886073,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09095899857215183,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "PloS one",
+      "citation_count": 535,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Hahn 2026 — Effects of methamphetamine on human effort task performance are unrelated to … (Psychopharmacology, recent_primary, 0×)",
+      "doi": "10.1007/s00213-025-06853-4",
+      "pub_id": "pub_3b8e8efb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3983333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2026,
+      "venue": "Psychopharmacology",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Bryant 2017 — Struggling toward reward: Recent experience of anhedonia interacts with motiv… (PloS one, foundational, 18×)",
+      "doi": "10.1371/journal.pone.0173439",
+      "pub_id": "pub_ca457f6b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.39428562005580814,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "PloS one",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Ohmann 2022 — Examining the reliability and validity of two versions of the Effort-Expendit… (PloS one, recent_primary, 8×)",
+      "doi": "10.1371/journal.pone.0262902",
+      "pub_id": "pub_7362d25f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.39347014858955526,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "PloS one",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Prettyman 2021 — Relationship of ventral striatum activation during effort discounting to clin… (NPJ schizophrenia, recent_primary, 15×)",
+      "doi": "10.1038/s41537-021-00178-9",
+      "pub_id": "pub_7a016792",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3917981926913115,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "NPJ schizophrenia",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Le Heron 2018 — Distinct effects of apathy and dopamine on effort-based decision-making in Pa… (Brain : a journal of neurology, recent_primary, 120×)",
+      "doi": "10.1093/brain/awy110",
+      "pub_id": "pub_a05d8e23",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3910828016835776,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2776645400676438,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06941613501691095,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Brain : a journal of neurology",
+      "citation_count": 120,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Hartmann 2015 — Apathy but not diminished expression in schizophrenia is associated with disc… (Schizophrenia bulletin, foundational, 147×)",
+      "doi": "10.1093/schbul/sbu102",
+      "pub_id": "pub_3d42cd48",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.383998258008217,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28932636536620143,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07233159134155036,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Schizophrenia bulletin",
+      "citation_count": 147,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Boyle 2020 — Motivation and sensitivity to monetary reward in late-life insomnia: moderati… (Neuropsychopharmacology : offici…, recent_primary, 15×)",
+      "doi": "10.1038/s41386-020-0735-7",
+      "pub_id": "pub_6f2ebfb0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3817981926913115,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Bernacer 2025 — Association between ADHD symptoms, physical effort discounting, and unhealthy… (Scientific reports, recent_primary, 1×)",
+      "doi": "10.1038/s41598-025-02024-9",
+      "pub_id": "pub_f1c5462d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.38169954817282786,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Scientific reports",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Reddy 2015 — Effort-Based Decision-Making Paradigms for Clinical Trials in Schizophrenia: … (Schizophrenia bulletin, foundational, 121×)",
+      "doi": "10.1093/schbul/sbv089",
+      "pub_id": "pub_69cd771f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.38120193312476236,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27814106583238263,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06953526645809566,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Schizophrenia bulletin",
+      "citation_count": 121,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Barch 2014 — Effort, anhedonia, and function in schizophrenia: reduced effort allocation p… (Journal of abnormal psychology, foundational, 234×)",
+      "doi": "10.1037/a0036299",
+      "pub_id": "pub_4b789c9a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.38069082787282404,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31609664482462935,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07902416120615734,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Journal of abnormal psychology",
+      "citation_count": 234,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "McCarthy 2015 — Motivation and effort in individuals with social anhedonia. (Schizophrenia research, foundational, 23×)",
+      "doi": "10.1016/j.schres.2015.03.030",
+      "pub_id": "pub_218690ce",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3793337188132613,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Schizophrenia research",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Ohmann 2020 — A low dosage of the dopamine D2-receptor antagonist sulpiride affects effort … (Personality neuroscience, recent_primary, 8×)",
+      "doi": "10.1017/pen.2020.7",
+      "pub_id": "pub_68a10d84",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3734701485895553,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Personality neuroscience",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Addicott 2019 — Methylphenidate increases willingness to perform effort in adults with ADHD. (Pharmacology, biochemistry, and …, recent_primary, 15×)",
+      "doi": "10.1016/j.pbb.2019.06.008",
+      "pub_id": "pub_7072a360",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.37179819269131154,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Pharmacology, biochemistry, and behavior",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Boyle 2025 — Inflammation-induced depressed mood and reward responsivity as a function of … (Translational psychiatry, recent_primary, 2×)",
+      "doi": "10.1038/s41398-025-03752-2",
+      "pub_id": "pub_4448e177",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.36923507429477764,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Translational psychiatry",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Acuff 2023 — Effort-related decision making and cannabis use among college students. (Experimental and clinical psycho…, recent_primary, 8×)",
+      "doi": "10.1037/pha0000544",
+      "pub_id": "pub_51e784af",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.36513681525622194,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Experimental and clinical psychopharmacology",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,1140 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_virtual_radial_arm_maze",
+    "name": "Virtual Radial Arm Maze Task",
+    "aliases": [
+      "Radial Arm Maze",
+      "vRAM",
+      "Virtual Radial Arm Maze",
+      "RAM"
+    ],
+    "category_id": "spatial_cognition_and_navigation",
+    "short_definition": "Virtual multi-arm maze in which participants retrieve rewards from each arm once; working-memory and reference-memory errors index spatial memory.",
+    "description": "The Virtual Radial Arm Maze is a spatial memory task adapted from the rodent paradigm. Participants navigate a central platform connected to 8 (or more) radial arms, some of which contain rewards. They must visit all rewarded arms while avoiding revisits (working memory errors) and unbaited arms (reference memory errors). The task dissociates reference memory (knowing which arms are baited across trials) from working memory (remembering which arms have been visited within a trial). Virtual versions rendered on computer screens or in VR maintain the spatial navigation demands while enabling human testing with precise measurement. The task engages hippocampal spatial memory systems and has been used extensively in pharmacological and developmental research.",
+    "inclusion_test": {
+      "procedure": "In a virtual radial arm maze (typically 8 arms radiating from a center), some arms are baited with reward. Participants visit arms to collect rewards, using spatial cues to remember which arms have been visited.",
+      "manipulation": "Number of arms; number of baited arms; intra-maze vs. extra-maze cues; delay between visits.",
+      "measurement": "Reference memory errors (entering never-baited arms); working memory errors (re-entering already-visited baited arms); total errors to criterion."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:50:06",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Olton 1976 — Remembrance of places passed: Spatial memory in rats. (Journal of Experimental Psycholo…, historical, 1k×)",
+      "doi": "10.1037/0097-7403.2.2.97",
+      "pub_id": "pub_420da56f",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.5888272410438699,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4353089641754793,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10882724104386983,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1976,
+      "venue": "Journal of Experimental Psychology Animal Behavior Processes",
+      "citation_count": 1841,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Rechtman 2020 — Sex-specific associations between co-exposure to multiple metals and visuospa… (Translational psychiatry, recent_primary, 28×)",
+      "doi": "10.1038/s41398-020-01041-8",
+      "pub_id": "pub_c30142ce",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.578739547683298,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.15,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Translational psychiatry",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Mastorakos 2021 — Temporally distinct myeloid cell responses mediate damage and repair after ce… (Nature neuroscience, recent_primary, 98×)",
+      "doi": "10.1038/s41593-020-00773-6",
+      "pub_id": "pub_a56826d6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5665115494313441,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26604619772537635,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06651154943134409,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature neuroscience",
+      "citation_count": 98,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Mou 2021 — Analog memristive synapse based on topotactic phase transition for high-perfo… (Science advances, recent_primary, 40×)",
+      "doi": "10.1126/sciadv.abh0648",
+      "pub_id": "pub_ce21c391",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5537516844254297,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Science advances",
+      "citation_count": 40,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Dilthey 2019 — Strain-level metagenomic assignment and compositional estimation for long rea… (Nature communications, recent_primary, 118×)",
+      "doi": "10.1038/s41467-019-10934-2",
+      "pub_id": "pub_ab71b890",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.549174889625844,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2766995585033762,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06917488962584405,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 118,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Michael 2018 — High contiguity Arabidopsis thaliana genome assembly with a single nanopore f… (Nature communications, recent_primary, 209×)",
+      "doi": "10.1038/s41467-018-03016-2",
+      "pub_id": "pub_3fa2ca1d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5473961111881794,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30958444475271774,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07739611118817943,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Nature communications",
+      "citation_count": 209,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Sivan 2019 — All WSe<sub>2</sub> 1T1R resistive RAM cell for future monolithic 3D embedded… (Nature communications, recent_primary, 67×)",
+      "doi": "10.1038/s41467-019-13176-4",
+      "pub_id": "pub_36d90c16",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5410747933594241,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2442991734376964,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0610747933594241,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 67,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Keemink 2018 — FISSA: A neuropil decontamination toolbox for calcium imaging signals. (Scientific reports, recent_primary, 68×)",
+      "doi": "10.1038/s41598-018-21640-2",
+      "pub_id": "pub_f7b52523",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5312861020523432,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24514440820937256,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06128610205234314,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 68,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Sherry 2017 — Control of transcriptional activity by design of charge patterning in the int… (Proceedings of the National Acad…, foundational, 111×)",
+      "doi": "10.1073/pnas.1706083114",
+      "pub_id": "pub_0d2f41e1",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5282973853033872,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2731895412135488,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0682973853033872,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 111,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Vaghefi 2019 — Detection of smoking status from retinal images; a Convolutional Neural Netwo… (Scientific reports, recent_primary, 25×)",
+      "doi": "10.1038/s41598-019-43670-0",
+      "pub_id": "pub_4e015bb9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5271589547189633,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Simon 2018 — Multi-radial LBP Features as a Tool for Rapid Glomerular Detection and Assess… (Scientific reports, recent_primary, 50×)",
+      "doi": "10.1038/s41598-018-20453-7",
+      "pub_id": "pub_ba054e1b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.526910771308546,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22764308523418395,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.056910771308545986,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 50,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Sanderson 2018 — Inhibitory modulation of cytochrome c oxidase activity with specific near-inf… (Scientific reports, recent_primary, 47×)",
+      "doi": "10.1038/s41598-018-21869-x",
+      "pub_id": "pub_7e744848",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5260332669860892,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22413306794435656,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05603326698608914,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 47,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Smedley 2015 — Next-generation diagnostics and disease-gene discovery with the Exomiser. (Nature protocols, foundational, 325×)",
+      "doi": "10.1038/nprot.2015.124",
+      "pub_id": "pub_1fd23d27",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5237618002985523,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3350472011942095,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08376180029855237,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Nature protocols",
+      "citation_count": 325,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Deorowicz 2016 — FAMSA: Fast and accurate multiple sequence alignment of huge protein families. (Scientific reports, foundational, 150×)",
+      "doi": "10.1038/srep33964",
+      "pub_id": "pub_7fc4487d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5226220570432842,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29048822817313685,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07262205704328421,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2016,
+      "venue": "Scientific reports",
+      "citation_count": 150,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Shi 2018 — Neuroinspired unsupervised learning and pruning with subquantum CBRAM arrays. (Nature communications, recent_primary, 34×)",
+      "doi": "10.1038/s41467-018-07682-0",
+      "pub_id": "pub_20528d6f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.521461488720574,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Nature communications",
+      "citation_count": 34,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Mondal 2018 — Discovery of microRNA-target modules of African rice (Oryza glaberrima) under… (Scientific reports, recent_primary, 27×)",
+      "doi": "10.1038/s41598-017-18206-z",
+      "pub_id": "pub_9eb57b9b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5182316222910648,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Feng 2012 — Identifying ChIP-seq enrichment using MACS. (Nature protocols, foundational, 1k×)",
+      "doi": "10.1038/nprot.2012.101",
+      "pub_id": "pub_b70f2901",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.516244715144567,
+        "breakdown": {
+          "raw": {
+            "citations": 0.42497886057826806,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10624471514456701,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2012,
+      "venue": "Nature protocols",
+      "citation_count": 1540,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Wang 2013 — Target analysis by integration of transcriptome and ChIP-seq data with BETA. (Nature protocols, foundational, 445×)",
+      "doi": "10.1038/nprot.2013.150",
+      "pub_id": "pub_15443b90",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5082983858434864,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3531935433739458,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08829838584348645,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2013,
+      "venue": "Nature protocols",
+      "citation_count": 445,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Wong 2023 — Linear time complexity de novo long read genome assembly with GoldRush. (Nature communications, recent_primary, 25×)",
+      "doi": "10.1038/s41467-023-38716-x",
+      "pub_id": "pub_f6307b06",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.48715895471896337,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Nature communications",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "McRose 2023 — The chemical ecology of coumarins and phenazines affects iron acquisition by … (Proceedings of the National Acad…, recent_primary, 25×)",
+      "doi": "10.1073/pnas.2217951120",
+      "pub_id": "pub_28ce08f3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.48715895471896337,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2023,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Meng 2012 — CLE-like (CLEL) peptides control the pattern of root growth and lateral root … (Proceedings of the National Acad…, foundational, 142×)",
+      "doi": "10.1073/pnas.1119864109",
+      "pub_id": "pub_4a9d29aa",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.48183414072125763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2873365628850305,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07183414072125763,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2012,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 142,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Badawy 2022 — A review of the modern principles and applications of solid-phase extraction … (Analytical sciences : the intern…, key_review, 144×)",
+      "doi": "10.1007/s44211-022-00190-8",
+      "pub_id": "pub_6e42dbdd",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4520351771251296,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2881407085005183,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07203517712512958,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Analytical sciences : the international journal of the Japan Society for Analytical Chemistry",
+      "citation_count": 144,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Desvoyes 2021 — A perspective on cell proliferation kinetics in the root apical meristem. (Journal of experimental botany, key_review, 14×)",
+      "doi": "10.1093/jxb/erab303",
+      "pub_id": "pub_02755f56",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.44919737040327584,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Journal of experimental botany",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Alexoudi 2020 — Optical RAM and integrated optical memories: a survey. (Light, science & applications, key_review, 23×)",
+      "doi": "10.1038/s41377-020-0325-9",
+      "pub_id": "pub_5067736f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.44600038547992793,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Light, science & applications",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Li 2021 — Evaluation and application of tools for the identification of known microRNAs… (Applications in plant sciences, key_review, 11×)",
+      "doi": "10.1002/aps3.11414",
+      "pub_id": "pub_3b06c8f6",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4459675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Applications in plant sciences",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 36,
+      "label": "Uchida 2019 — Stem cells within the shoot apical meristem: identity, arrangement and commun… (Cellular and molecular life scie…, key_review, 26×)",
+      "doi": "10.1007/s00018-018-2980-z",
+      "pub_id": "pub_341d2e44",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.43770522288433295,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Cellular and molecular life sciences : CMLS",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 37,
+      "label": "Hayssen 2022 — Systematic review of venous thromboembolism risk categories derived from Capr… (Journal of vascular surgery. Ven…, key_review, 52×)",
+      "doi": "10.1016/j.jvsv.2022.05.003",
+      "pub_id": "pub_fc9ae613",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.43746754719734965,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2298701887893985,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.057467547197349624,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Journal of vascular surgery. Venous and lymphatic disorders",
+      "citation_count": 52,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 38,
+      "label": "Kavanaugh 1994 — Cell-surface receptors for gibbon ape leukemia virus and amphotropic murine r… (Proceedings of the National Acad…, foundational, 418×)",
+      "doi": "10.1073/pnas.91.15.7071",
+      "pub_id": "pub_432568f4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4373944887724123,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3495779550896492,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0873944887724123,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 1994,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 418,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 39,
+      "label": "LaBove 2021 — Ten-Year experience with vertical rectus abdominis myocutaneous flap for reco… (JPRAS open, key_review, 5×)",
+      "doi": "10.1016/j.jpra.2020.11.010",
+      "pub_id": "pub_f3e21b3f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4359346224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "JPRAS open",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 40,
+      "label": "Glaubitz 2014 — TASSEL-GBS: a high capacity genotyping by sequencing analysis pipeline. (PloS one, foundational, 1k×)",
+      "doi": "10.1371/journal.pone.0090346",
+      "pub_id": "pub_ba8a0349",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4315611337791568,
+        "breakdown": {
+          "raw": {
+            "citations": 0.40624453511662717,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10156113377915679,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "PloS one",
+      "citation_count": 1114,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

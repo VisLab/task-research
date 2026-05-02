@@ -1,0 +1,72 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:31:11",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_prisoners_dilemma",
+    "name": "Prisoner's Dilemma Task",
+    "aliases": [
+      "Prisoner's Dilemma",
+      "PD",
+      "Iterated Prisoner's Dilemma",
+      "Iterated PD"
+    ],
+    "category_id": "social_cognition_and_strategic_social_choice",
+    "short_definition": "Two-player one-shot or iterated game with cooperate/defect choices and asymmetric payoffs; choice patterns index cooperation and strategic reasoning.",
+    "description": "The Prisoner's Dilemma is a canonical game theory paradigm for studying cooperation and defection under strategic interdependence. Two players simultaneously choose to cooperate or defect. Mutual cooperation yields moderate rewards for both; mutual defection yields low rewards for both; but if one defects while the other cooperates, the defector receives the highest reward and the cooperator receives nothing (or a penalty). The dominant strategy in single-shot play is to defect, yet human participants frequently cooperate, particularly in iterated versions. The task is central to research on trust, reciprocity, altruism, and the neural substrates of social decision-making.",
+    "inclusion_test": {
+      "procedure": "Two players simultaneously choose to cooperate or defect; payoffs depend on both choices according to a matrix where mutual cooperation beats mutual defection but defection is individually tempting.",
+      "manipulation": "Payoff matrix values; one-shot vs. iterated; partner identity (human, computer, in-group); communication allowed or not.",
+      "measurement": "Cooperation rate; payoff earned; tit-for-tat and other strategy classification; first-move cooperation."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 0,
+      "picked": 0,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": []
+}

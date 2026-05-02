@@ -1,0 +1,1142 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_heartbeat_detection",
+    "name": "Heartbeat Detection Task",
+    "aliases": [
+      "Heartbeat Counting Task",
+      "Heartbeat Perception Task",
+      "Heartbeat Tracking Task",
+      "Schandry Task",
+      "Cardiac Interoceptive Accuracy Task",
+      "Whitehead Heartbeat Discrimination Task"
+    ],
+    "category_id": "awareness_agency_and_metacognition",
+    "short_definition": "Participants count or discriminate their own heartbeats without external feedback; the correspondence between perceived and actual heartbeat counts (or discrimination accuracy) indexes interoceptive sensitivity.",
+    "description": "The Heartbeat Detection Task is the standard paradigm for measuring interoceptive accuracy — the ability to perceive internal physiological signals. In the Schandry (1981) heartbeat counting variant, participants silently count their heartbeats during timed intervals (e.g., 25, 35, 45 seconds) without taking their pulse; an interoceptive accuracy score is computed from the discrepancy between counted and actual heartbeats (recorded via ECG or pulse oximetry). In the Whitehead heartbeat discrimination variant, participants judge whether an external stimulus (tone or light) is presented synchronously or asynchronously with their heartbeat; d-prime indexes perceptual sensitivity. Interoceptive accuracy is central to theories of emotion (the somatic marker hypothesis; Damasio, 1994), anxiety (interoceptive hypersensitivity models), and embodied cognition (predictive interoception). Individual differences in heartbeat detection correlate with emotional intensity, anxiety sensitivity, and decision-making quality. The paradigm has generated substantial methodological debate: the counting variant may partially reflect beliefs about heart rate rather than true perception, motivating the discrimination variant and newer alternatives.",
+    "inclusion_test": {
+      "procedure": "Participants perceive their own heartbeats — either counting them during timed intervals (counting variant) or judging synchrony between external stimuli and cardiac events (discrimination variant) — while actual heartbeats are recorded physiologically.",
+      "manipulation": "Task variant (counting vs. discrimination); interval duration; stimulus timing relative to R-wave (synchronous vs. delayed); attention condition (interoceptive focus vs. exteroceptive distraction); pharmacological manipulation (beta-blockers, isoproterenol).",
+      "measurement": "Interoceptive accuracy score (1 - |counted - actual| / actual); heartbeat discrimination d-prime; confidence ratings (interoceptive sensibility); heart rate variability as a covariate; heartbeat-evoked potential (HEP) amplitude as a neural index."
+    }
+  },
+  "candidates_run_date": "2026-04-29T19:01:37",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Schandry 1981 — Heart Beat Perception and Emotional Experience (Psychophysiology, historical, 1k×)",
+      "doi": "10.1111/j.1469-8986.1981.tb02486.x",
+      "pub_id": "pub_d5ef642f",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.6042325442616945,
+        "breakdown": {
+          "raw": {
+            "citations": 0.41693017704677837,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10423254426169459,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1981,
+      "venue": "Psychophysiology",
+      "citation_count": 1340,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Young 2021 — Individual differences in sensory and expectation driven interoceptive proces… (Scientific reports, recent_primary, 12×)",
+      "doi": "10.1038/s41598-021-89417-8",
+      "pub_id": "pub_80d0955e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5228403589270879,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Yoris 2020 — Multicentric evidence of emotional impairments in hypertensive heart disease. (Scientific reports, recent_primary, 16×)",
+      "doi": "10.1038/s41598-020-70451-x",
+      "pub_id": "pub_08a7bfdc",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5167233160613874,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Tan 2018 — The role of mid-insula in the relationship between cardiac interoceptive atte… (Scientific reports, recent_primary, 49×)",
+      "doi": "10.1038/s41598-018-35635-6",
+      "pub_id": "pub_6a20ff64",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5123384261041101,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 49,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Imafuku 2020 — Interoception is associated with the impact of eye contact on spontaneous fac… (Scientific reports, recent_primary, 8×)",
+      "doi": "10.1038/s41598-020-76393-8",
+      "pub_id": "pub_3df792bf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5075177676371744,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Klabunde 2019 — Functional neuroanatomy of interoceptive processing in children and adolescen… (Scientific reports, recent_primary, 16×)",
+      "doi": "10.1038/s41598-019-52776-4",
+      "pub_id": "pub_df16fa1f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5067233160613874,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Koeppel 2020 — Interoceptive accuracy and its impact on neuronal responses to olfactory stim… (Human brain mapping, recent_primary, 25×)",
+      "doi": "10.1002/hbm.24985",
+      "pub_id": "pub_d91f77d0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.49858752614753477,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.2857142857142857,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.07142857142857142,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Human brain mapping",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Candia-Rivera 2022 — Confounding effects of heart rate, breathing rate, and frontal fNIRS on inter… (Scientific reports, recent_primary, 15×)",
+      "doi": "10.1038/s41598-022-25119-z",
+      "pub_id": "pub_72690483",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.49584581173893055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Scientific reports",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Michal 2014 — Striking discrepancy of anomalous body experiences with normal interoceptive … (PloS one, foundational, 56×)",
+      "doi": "10.1371/journal.pone.0089823",
+      "pub_id": "pub_c39612d7",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.48137783720772864,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5714285714285714,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "PloS one",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Sakuragi 2023 — Effect of subconscious changes in bodily response on thought shifting in peop… (Scientific reports, recent_primary, 7×)",
+      "doi": "10.1038/s41598-023-43861-w",
+      "pub_id": "pub_95fd6c83",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.45581293023276936,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific reports",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Salamone 2018 — Altered neural signatures of interoception in multiple sclerosis. (Human brain mapping, recent_primary, 55×)",
+      "doi": "10.1002/hbm.24319",
+      "pub_id": "pub_0a424da7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4539787895115117,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23305801518890404,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05826450379722601,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Human brain mapping",
+      "citation_count": 55,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Yoris 2018 — Multilevel convergence of interoceptive impairments in hypertension: New evid… (Human brain mapping, recent_primary, 48×)",
+      "doi": "10.1002/hbm.23933",
+      "pub_id": "pub_a844111b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.45204600427177044,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Human brain mapping",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Ferentzi 2022 — Mental heartbeat tracking and rating of emotional pictures are not related. (Psychological research, recent_primary, 1×)",
+      "doi": "10.1007/s00426-021-01593-4",
+      "pub_id": "pub_f40f74b1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4414614529347326,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2857142857142857,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.07142857142857142,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Psychological research",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Rominger 2021 — Does contingent biofeedback improve cardiac interoception? A preregistered re… (PloS one, recent_primary, 19×)",
+      "doi": "10.1371/journal.pone.0248246",
+      "pub_id": "pub_a7302702",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.42907567816843967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PloS one",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Tanaka 2021 — Effects of interoceptive accuracy in autonomic responses to external stimuli … (PloS one, recent_primary, 7×)",
+      "doi": "10.1371/journal.pone.0256914",
+      "pub_id": "pub_6d1edf64",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.41581293023276933,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PloS one",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Salvato 2024 — Exploring the relationship between cardiac awareness and balance. (Scientific reports, recent_primary, 3×)",
+      "doi": "10.1038/s41598-024-79324-z",
+      "pub_id": "pub_f17295d8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4157800487266081,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Scientific reports",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Schultchen 2019 — Interoceptive deficits in patients with obsessive-compulsive disorder in the … (PloS one, recent_primary, 25×)",
+      "doi": "10.1371/journal.pone.0217237",
+      "pub_id": "pub_91cbb2ba",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4128732404332491,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Herbert 2012 — Interoception across modalities: on the relationship between cardiac awarenes… (PloS one, foundational, 183×)",
+      "doi": "10.1371/journal.pone.0036646",
+      "pub_id": "pub_475fcf90",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4069115770379539,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3019320224375298,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.2857142857142857,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07548300560938245,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.07142857142857142,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "PloS one",
+      "citation_count": 183,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Weineck 2019 — Improving interoceptive ability through the practice of power posing: A pilot… (PloS one, recent_primary, 16×)",
+      "doi": "10.1371/journal.pone.0211453",
+      "pub_id": "pub_d95f80dc",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4067233160613874,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Seabury 2023 — Interoceptive differences in elite sprint and long-distance runners: A multid… (PloS one, recent_primary, 12×)",
+      "doi": "10.1371/journal.pone.0278067",
+      "pub_id": "pub_6288ca27",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3985546446413736,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.2857142857142857,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.07142857142857142,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "PloS one",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Erle 2019 — Level-2 visuo-spatial perspective-taking and interoception - More evidence fo… (PloS one, recent_primary, 7×)",
+      "doi": "10.1371/journal.pone.0219005",
+      "pub_id": "pub_f69ac851",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3958129302327693,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Butler 2021 — Do interoception and attending to the upper limbs affect body ownership and b… (PloS one, recent_primary, 1×)",
+      "doi": "10.1371/journal.pone.0259988",
+      "pub_id": "pub_27f6d4a0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3957471672204469,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PloS one",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Noda 2022 — Interoception is associated with anxiety and depression in pregnant women: A … (PloS one, recent_primary, 12×)",
+      "doi": "10.1371/journal.pone.0267507",
+      "pub_id": "pub_0a60c1e3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.39284035892708785,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "PloS one",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Wiersema 2018 — Interoceptive awareness in attention deficit hyperactivity disorder. (PloS one, recent_primary, 12×)",
+      "doi": "10.1371/journal.pone.0205221",
+      "pub_id": "pub_b78a238c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.39284035892708785,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "PloS one",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Kleckner 2015 — Methodological recommendations for a heartbeat detection-based measure of int… (Psychophysiology, foundational, 90×)",
+      "doi": "10.1111/psyp.12503",
+      "pub_id": "pub_adf83b67",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3910062182058302,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2611677299661781,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06529193249154452,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Psychophysiology",
+      "citation_count": 90,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Jung 2017 — Role of interoceptive accuracy in topographical changes in emotion-induced bo… (PloS one, foundational, 19×)",
+      "doi": "10.1371/journal.pone.0183211",
+      "pub_id": "pub_619358b9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.38907567816843963,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "PloS one",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Salamone 2020 — Dynamic neurocognitive changes in interoception after heart transplant. (Brain communications, recent_primary, 23×)",
+      "doi": "10.1093/braincomms/fcaa095",
+      "pub_id": "pub_6d99aca3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.38171467119421365,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Brain communications",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Tanaka 2025 — Heartbeat evoked potentials reflect interoceptive awareness during an emotion… (Scientific reports, recent_primary, 2×)",
+      "doi": "10.1038/s41598-025-92854-4",
+      "pub_id": "pub_d0b235a3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.38161602667573,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Scientific reports",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Sedeño 2014 — How do you feel when you can't feel your body? Interoception, functional conn… (PloS one, foundational, 84×)",
+      "doi": "10.1371/journal.pone.0098769",
+      "pub_id": "pub_7a34b99c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3800189455032189,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2572186391557329,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06430465978893322,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "PloS one",
+      "citation_count": 84,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Yao 2018 — Oxytocin Modulates Attention Switching Between Interoceptive Signals and Exte… (Neuropsychopharmacology : offici…, recent_primary, 72×)",
+      "doi": "10.1038/npp.2017.189",
+      "pub_id": "pub_270fe3a4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3778160620574555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24840710537267913,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.14285714285714285,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06210177634316978,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.03571428571428571,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "citation_count": 72,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

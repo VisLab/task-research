@@ -1,0 +1,1706 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:21:31",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_directed_forgetting",
+    "name": "Directed Forgetting Task",
+    "aliases": [
+      "DF Task",
+      "Item-Method DF",
+      "List-Method DF"
+    ],
+    "category_id": "long_term_memory",
+    "short_definition": "Study-phase cues instruct participants to remember or forget specific items or lists; later memory tests index intentional forgetting.",
+    "description": "Participants study items (typically words) under instructions that each item should either be remembered or forgotten. In the item method, a remember or forget cue follows each individual item. In the list method, a single cue midway through the study phase instructs participants to forget everything studied so far. On a subsequent memory test, recall and recognition of forget-cued items is impaired relative to remember-cued items. The paradigm provides the primary laboratory tool for studying intentional forgetting and memory control, with theoretical implications for understanding inhibitory control over memory, context change, and selective rehearsal.",
+    "inclusion_test": {
+      "procedure": "Items are presented one at a time or in lists; after each item (item method) or after a full list (list method), a cue instructs the participant to remember or forget it. A final test probes all items.",
+      "manipulation": "Remember vs. forget cues; item vs. list method; retention interval; item type (words, pictures, emotional content).",
+      "measurement": "Recall/recognition accuracy for remember-cued vs. forget-cued items; directed forgetting effect (remember advantage); intrusion of forget items."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 23,
+      "picked": 23,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_09d822e9",
+      "doi": "10.1016/j.neuroimage.2021.117983",
+      "url": "https://doi.org/10.1016/j.neuroimage.2021.117983",
+      "openalex_id": null,
+      "pmid": "33762219",
+      "first_author": "Chiu",
+      "authors_display": "Chiu, Y. et al.",
+      "year": 2021,
+      "title": "Separation of item and context in item-method directed forgetting.",
+      "venue": "NeuroImage",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 16,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8258431",
+      "tldr": null,
+      "abstract": "Contextual information plays a critical role in directed forgetting (DF) of lists of items, whereas DF of individual items has been primarily associated with item-level processing. This study was designed to investigate whether context processing also contributes to the forgetting of individual items. Participants first viewed a series of words, with task-irrelevant scene images (used as \"context tags\") interspersed between them. Later, these words reappeared without the scenes and were followed by an instruction to remember or forget that word. Multivariate pattern analyses of fMRI data revealed that the reactivation of context information associated with the studied words (i.e., scene-related activity) was greater whereas the item-related information diminished after a forget instruction compared to a remember instruction. Critically, we found the magnitude of the separation between item information and context information predicted successful forgetting. These results suggest that the unbinding of an item from its context may support the intention to forget, and more generally they establish that contextual processing indeed contributes to item-method DF.",
+      "score": {
+        "composite": 0.5535090303471017,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Humans",
+        "Echo-Planar Imaging",
+        "Brain Mapping",
+        "Mental Recall",
+        "Pattern Recognition, Visual",
+        "Visual Perception",
+        "Reading",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Memory, Episodic"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_83b18672",
+      "doi": "10.1038/s41598-018-19570-0",
+      "url": "https://doi.org/10.1038/s41598-018-19570-0",
+      "openalex_id": null,
+      "pmid": "29348422",
+      "first_author": "Xie",
+      "authors_display": "Xie, H. et al.",
+      "year": 2018,
+      "title": "Individuals with depressive tendencies experience difficulty in forgetting negative material: two mechanisms revealed by ERP data in the directed forgetting paradigm.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 21,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41598-018-19570-0.pdf",
+      "tldr": null,
+      "abstract": "Although previous studies have shown that individuals with depressive tendencies have deficits in forgetting negative material, the detailed underlying neural mechanisms have not been elucidated. This study examined the intentional forgetting of negative and neutral material in individuals with depressive tendencies in two phases. In the study phase, the participants performed a directed forgetting task, where a total of 320 words were presented to them, each followed by an instructive cue to forget or remember the previously presented word. Subsequently, in the memory recognition test phase, the participants completed the \"old or new discrimination task\". The results indicated that individuals with depressive tendencies had difficulties suppressing the memory encoding of negative words, while the suppression of memory encoding of neutral words was relatively intact. Moreover, individuals with depressive tendencies displayed enhanced word-evoked P2 and late positive potential for negative items, as well as enhanced cue-evoked P1 and N2 for the negative items that were required to be forgotten, as compared to individuals without depressive tendencies. Based on these results, we propose two mechanisms that may contribute to the failure of forgetting negative material in mild depression: (1) inefficient memory suppression and early selective attention, and (2) excessive preliminary processing.",
+      "score": {
+        "composite": 0.5272409490146167,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Depression",
+        "Emotions",
+        "Memory",
+        "Reaction Time",
+        "Depressive Disorder",
+        "Evoked Potentials",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Self Report",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1b453ca4",
+      "doi": "10.1037/xge0000128",
+      "url": "https://doi.org/10.1037/xge0000128",
+      "openalex_id": null,
+      "pmid": "26709589",
+      "first_author": "Fawcett",
+      "authors_display": "Fawcett, J. et al.",
+      "year": 2016,
+      "title": "The representational consequences of intentional forgetting: Impairments to both the probability and fidelity of long-term memory.",
+      "venue": "Journal of experimental psychology. General",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 39,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1037/xge0000128",
+      "tldr": null,
+      "abstract": "We investigated whether intentional forgetting impacts only the likelihood of later retrieval from long-term memory or whether it also impacts the fidelity of those representations that are successfully retrieved. We accomplished this by combining an item-method directed forgetting task with a testing procedure and modeling approach inspired by the delayed-estimation paradigm used in the study of visual short-term memory (STM). Abstract or concrete colored images were each followed by a remember (R) or forget (F) instruction and sometimes by a visual probe requiring a speeded detection response (E1-E3). Memory was tested using an old-new (E1-E2) or remember-know-no (E3) recognition task followed by a continuous color judgment task (E2-E3); a final experiment included only the color judgment task (E4). Replicating the existing literature, more \"old\" or \"remember\" responses were made to R than F items and RTs to postinstruction visual probes were longer following F than R instructions. Color judgments were more accurate for successfully recognized or recollected R than F items (E2-E3); a mixture model confirmed a decrease to both the probability of retrieving the F items as well as the fidelity of the representation of those F items that were retrieved (E4). We conclude that intentional forgetting is an effortful process that not only reduces the likelihood of successfully encoding an item for later retrieval, but also produces an impoverished memory trace even when those items are retrieved; these findings draw a parallel between the control of memory representations within working and long-term memory.",
+      "score": {
+        "composite": 0.5158942739603152,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Likelihood Functions",
+        "Probability",
+        "Intention",
+        "Mental Recall",
+        "Pattern Recognition, Visual",
+        "Judgment",
+        "Attention",
+        "Reaction Time",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Repression, Psychology",
+        "Retention, Psychology",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3005d26a",
+      "doi": "10.3758/s13414-020-02220-x",
+      "url": "https://doi.org/10.3758/s13414-020-02220-x",
+      "openalex_id": null,
+      "pmid": "33409904",
+      "first_author": "Taylor",
+      "authors_display": "Taylor, T., & Hamm, J.",
+      "year": 2021,
+      "title": "Intention matters more than attention: Item-method directed forgetting of items at attended and unattended locations.",
+      "venue": "Attention, perception & psychophysics",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7787245",
+      "tldr": null,
+      "abstract": "This study embedded attentional cues in the study phase of an item-method directed forgetting task. We used an unpredictive onset cue (Experiment 1), a predictive onset cue (Experiment 2), or a predictive central cue (Experiments 3-6) to direct attention to the left or right. In Experiments 1-5, this was followed by a pink or blue study word that required a speeded colour discrimination; in Experiment 6, it was followed by a pink or blue word or nonword that required a lexical decision. Each study word was followed by an instruction to Remember or Forget. A yes-no recognition test confirmed better recognition of to-be-remembered words than to-be-forgotten words; a cueing effect confirmed the effectiveness of predictive cues in allocating attentional resources. There was, however, no evidence that the directed forgetting effect differed for attended and unattended words: Encoding depends more on the memory intention formed after a study word has disappeared than on the availability of processing resources when that word first appears.",
+      "score": {
+        "composite": 0.47250000000000003,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Intention",
+        "Cues",
+        "Memory",
+        "Mental Recall",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1247876b",
+      "doi": "10.1167/jov.22.10.8",
+      "url": "https://doi.org/10.1167/jov.22.10.8",
+      "openalex_id": null,
+      "pmid": "36083218",
+      "first_author": "Scotti",
+      "authors_display": "Scotti, P., & Maxcey, A.",
+      "year": 2022,
+      "title": "Directed forgetting of pictures of everyday objects.",
+      "venue": "Journal of vision",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9469030",
+      "tldr": null,
+      "abstract": "Directed forgetting is a laboratory task in which subjects are explicitly cued to forget certain items and remember others. Volitional control over the contents of memory has been used to study clinical disorders, with successful intentional control of memory being a hallmark of a healthy mind. Yet the degree of volitional forgetting over the content of visual long-term memory is unclear when compared to words. Different kinds of visual stimuli (e.g., abstract symbols, line drawings, scenes) may not equally be susceptible to voluntary control in memory, and intentional forgetting studies have shown both twice as much forgetting of pictures compared to words (think/no-think task) and half as much forgetting of pictures compared to words (directed forgetting task). In the present study, we systematically test volitional control over pictures of everyday objects using item-method directed forgetting procedures. We find that subjects are able to intentionally prioritize memory for pictures cued as to be remembered over pictures cued to be forgotten. Here we show that directed forgetting effects are observed using pictures of everyday objects (albeit to a weaker extent compared to directed forgetting of words), suggesting increased confidence for generalization of directed forgetting literature to real-world applications. However, we caution clinical applications of intentional memory control until the underlying direction causing this effect (upregulation of remember-cued items or downregulation of forget-cued items) is known.",
+      "score": {
+        "composite": 0.46579562944183156,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cues",
+        "Mental Recall",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_38c80773",
+      "doi": "10.1002/hbm.23840",
+      "url": "https://doi.org/10.1002/hbm.23840",
+      "openalex_id": null,
+      "pmid": "29080232",
+      "first_author": "Gamboa",
+      "authors_display": "Gamboa, O. et al.",
+      "year": 2018,
+      "title": "The challenge of forgetting: Neurobiological mechanisms of auditory directed forgetting.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Directed forgetting (DF) is considered an adaptive mechanism to cope with unwanted memories. Understanding it is crucial to develop treatments for disorders in which thought control is an issue. With an item-method DF paradigm in an auditory form, the underlying neurocognitive processes that support auditory DF were investigated. Subjects were asked to perform multi-modal encoding of word-stimuli before knowing whether to remember or forget each word. Using functional magnetic resonance imaging, we found that DF is subserved by a right frontal-parietal-cingulate network. Both qualitative and quantitative analyses of the activation of this network show converging evidence suggesting that DF is a complex process in which active inhibition, attentional switching, and working memory are needed to manipulate both unwanted and preferred items. These results indicate that DF is a complex inhibitory mechanism which requires the crucial involvement of brain areas outside prefrontal regions to operate over attentional and working memory processes. Hum Brain Mapp 39:249-263, 2018. © 2017 Wiley Periodicals, Inc.",
+      "score": {
+        "composite": 0.45066585927874236,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Language",
+        "Cognition",
+        "Memory",
+        "Auditory Perception",
+        "Attention",
+        "Neuropsychological Tests",
+        "Qualitative Research",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7cc23cf7",
+      "doi": "10.1371/journal.pone.0211280",
+      "url": "https://doi.org/10.1371/journal.pone.0211280",
+      "openalex_id": null,
+      "pmid": "30689674",
+      "first_author": "Wang",
+      "authors_display": "Wang, R. et al.",
+      "year": 2019,
+      "title": "Can self-referential information improve directed forgetting? Evidence from a multinomial processing tree model.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6349339",
+      "tldr": null,
+      "abstract": "A large body of research has shown that self-referential processing can enhance an individual's memory of information. However, there are many arguments about how self-referential processing affects directed forgetting (DF). In this study, two experiments were designed to investigate the DF effect and its internal psychological mechanism under explicit and implicit referential conditions using the item-method DF paradigm combined with the storage-retrieval MPT model. We compare the difference in the DF effect between self-referential and other-referential conditions and explain the reasons for the difference. Our results suggest that the item-method DF effect is the result of a selective rehearsal mechanism and a retrieval inhibition mechanism working together. Both self-reference and other-reference can cause DF in explicit referential processing or implicit referential processing, although the DF effect is stronger under the self-referential condition. Furthermore, the memory advantage effect of implicit self-referential processing is stronger than that of explicit self-referential processing.",
+      "score": {
+        "composite": 0.40840174096144427,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Learning",
+        "Cues",
+        "Memory",
+        "Mental Recall",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_01a9d21b",
+      "doi": "10.1016/j.neurobiolaging.2021.06.001",
+      "url": "https://doi.org/10.1016/j.neurobiolaging.2021.06.001",
+      "openalex_id": null,
+      "pmid": "34265506",
+      "first_author": "Eich",
+      "authors_display": "Eich, T. et al.",
+      "year": 2021,
+      "title": "Cortical thickness in the right inferior frontal gyrus mediates age-related performance differences on an item-method directed forgetting task.",
+      "venue": "Neurobiology of aging",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 9,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Evidence suggests that older adults have difficulty relative to younger adults in forgetting irrelevant information. Here we sought to understand the physical basis of this deficit by investigating the relationship between cortical thickness and intentional forgetting, using an item-method directed forgetting task. We tested younger (n = 44) and older (n = 54) adults' memories for words that they were instructed to either remember or to forget, and then extracted cortical thickness values from brain regions previously shown, using functional neuroimaging, to be associated with memory suppression, including the right inferior frontal gyrus, the right postcentral gyrus and the left superior/middle frontal gyrus. Results from a parallel mediation model indicated that variations in cortical thickness in the right inferior frontal gyrus, but not the right postcentral gyrus or left superior/middle frontal gyrus, partially explained age-related differences in directed forgetting: older adults with thinner cortices in this area showed worse forgetting ability. This is the first study to explore how neuromorphological differences affect the ability to intentionally suppress items in memory. The results suggest that age-related differences in directed forgetting may be partly driven by cortical thickness in a brain structure known to be functionally involved in directed forgetting, and inhibitory control more broadly, supporting a contribution of deficient inhibition to this phenomenon.",
+      "score": {
+        "composite": 0.40582851094799277,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Prefrontal Cortex",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Memory",
+        "Neuropsychological Tests",
+        "Aging",
+        "Aged",
+        "Female",
+        "Male",
+        "Neuroimaging"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_248d4a25",
+      "doi": "10.3389/fnbeh.2021.695416",
+      "url": "https://doi.org/10.3389/fnbeh.2021.695416",
+      "openalex_id": null,
+      "pmid": "34512283",
+      "first_author": "Jiménez-Balado",
+      "authors_display": "Jiménez-Balado, J. et al.",
+      "year": 2021,
+      "title": "Reduced Hippocampal GABA+ Is Associated With Poorer Episodic Memory in Healthy Older Women: A Pilot Study.",
+      "venue": "Frontiers in behavioral neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8427754",
+      "tldr": null,
+      "abstract": "<b>Background</b>: The current pilot study was designed to examine the association between hippocampal γ-aminobutyric acid (GABA) concentration and episodic memory in older individuals, as well as the impact of two major risk factors for Alzheimer's disease (AD)-female sex and Apolipoprotein ε4 (<i>ApoE</i> ε4) genotype-on this relationship. <b>Methods</b>: Twenty healthy, community-dwelling individuals aged 50-71 (11 women) took part in the study. Episodic memory was evaluated using a Directed Forgetting task, and GABA+ was measured in the right hippocampus using a Mescher-Garwood point-resolved magnetic resonance spectroscopy (MRS) sequence. Multiple linear regression models were used to quantify the relationship between episodic memory, GABA+, <i>ApoE ɛ4</i>, and sex, controlling for age and education. <b>Results</b>: While GABA+ did not interact with <i>ApoE</i> ɛ4 carrier status to influence episodic memory (<i>p</i> = 0.757), the relationship between GABA+ and episodic memory was moderated by sex: lower GABA+ predicted worse memory in women such that, for each standard deviation decrease in GABA+ concentration, memory scores were reduced by 11% (<i>p</i> = 0.001). <b>Conclusions</b>: This pilot study suggests that sex, but not <i>ApoE</i> ɛ4 genotype, moderates the relationship between hippocampal GABA+ and episodic memory, such that women with lower GABA+ concentration show worse memory performance. These findings, which must be interpreted with caution given the small sample size, may serve as a starting point for larger studies using multimodal neuroimaging to understand the contributions of GABA metabolism to age-related memory decline.",
+      "score": {
+        "composite": 0.3896260732128022,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_6e994007",
+      "doi": "10.3389/fpsyg.2020.01764",
+      "url": "https://doi.org/10.3389/fpsyg.2020.01764",
+      "openalex_id": null,
+      "pmid": "32849044",
+      "first_author": "Bowen",
+      "authors_display": "Bowen, H. et al.",
+      "year": 2020,
+      "title": "Influence of Reward Motivation on Directed Forgetting in Younger and Older Adults.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 15,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2020.01764/pdf",
+      "tldr": null,
+      "abstract": "An important feature of the memory system is the ability to forget, but aging is associated with declines in the ability to intentionally forget potentially due to declines in cognitive control. Despite cognitive deficits, older adults are sensitive to affective manipulations, such as reward motivation, and reward anticipation can improve older adults' memory performance. The goal of the current studies was to examine the effect of reward motivation on directed remembering and forgetting. Participants were healthy CloudResearch/Turk Prime workers aged 18-35 and 60-85. In Experiment 1, we conducted a typical item-method directed forgetting task using neutral words presented one at a time followed by a to-be-remembered (TBR) or to-be-forgotten (TBF) cue. A recognition memory test followed that included all words from the encoding task, as well as new words. We replicated prior findings of better memory for TBR compared to TBF items, but not typical age-related differences in recognition of TBF items. In Experiments 2-4, we repeated this paradigm except that in the second block of trials, each word was presented with a high ($0.75) or low ($0.01) reward cue indicating the value that could be earned if the item was successfully Remembered or Forgotten (depending on cue). During recognition, correct responses to target items (both TBR and TBF) resulted in the associated reward, but incorrect \"old\" responses resulted in a loss of $0.50. In three experiments, high rewards led to better memory for younger and older adults compared to low rewards, regardless of the directed cue to remember or forget the word. In Experiments 3 and 4, older adults showed typical deficits in directed forgetting, but this was across reward conditions. For older adults, there was no evidence that including reward motivation improved cognitive control abilities as high value reward anticipation did not improve directed forgetting. Instead, in line with hypotheses, high compared to low value reward",
+      "score": {
+        "composite": 0.38263152602464484,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_01163e0f",
+      "doi": "10.1523/jneurosci.0696-22.2023",
+      "url": "https://doi.org/10.1523/jneurosci.0696-22.2023",
+      "openalex_id": null,
+      "pmid": "36810228",
+      "first_author": "Hubbard",
+      "authors_display": "Hubbard, R., & Sahakyan, L.",
+      "year": 2023,
+      "title": "Differential Recruitment of Inhibitory Control Processes by Directed Forgetting and Thought Substitution.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 15,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Humans have the ability to intentionally forget information via different strategies, included suppression of encoding (directed forgetting) and mental replacement of the item to encode (thought substitution). These strategies may rely on different neural mechanisms; namely, encoding suppression may induce prefrontally mediated inhibition, whereas thought substitution is potentially accomplished through modulating contextual representations. Yet, few studies have directly related inhibitory processing to encoding suppression, or tested its involvement in thought substitution. Here, we directly tested whether encoding suppression recruits inhibitory mechanisms with a cross-task design, relating the behavioral and neural data from male and female participants in a Stop Signal task (a task specifically testing inhibitory processing) to a directed forgetting task with both encoding suppression (Forget) and thought substitution (Imagine) cues. Behaviorally, Stop Signal task performance (stop signal reaction times) was related to the magnitude of encoding suppression, but not thought substitution. Two complementary neural analyses corroborated the behavioral result. Namely, brain-behavior analysis demonstrated that the magnitude of right-frontal beta activity following stop signals was related to stop signal reaction times and successful encoding suppression, but not thought substitution; and classifiers trained to discriminate successful and unsuccessful stopping in the Stop Signal task could also classify successful and unsuccessful forgetting following Forget cues, but not Imagine cues. Importantly, inhibitory neural mechanisms were engaged following Forget cues at a later time than motor stopping. These findings not only support an inhibitory account of directed forgetting, and that thought substitution engages separate mechanisms, but also potentially identify a specific time in which inhibition occurs when suppressing encoding.<b>SIGNIFICANCE STATEMENT</b> Forgettin",
+      "score": {
+        "composite": 0.3526315260246448,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Cues",
+        "Memory",
+        "Mental Recall",
+        "Reaction Time",
+        "Female",
+        "Male",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5ec1abea",
+      "doi": "10.3389/fnins.2017.00757",
+      "url": "https://doi.org/10.3389/fnins.2017.00757",
+      "openalex_id": null,
+      "pmid": "29375295",
+      "first_author": "Gao",
+      "authors_display": "Gao, H. et al.",
+      "year": 2017,
+      "title": "Frontal Control Process in Intentional Forgetting: Electrophysiological Evidence.",
+      "venue": "Frontiers in neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fnins.2017.00757/pdf",
+      "tldr": null,
+      "abstract": "In this study, we aimed to seek for the neural evidence of the inhibition control process in directed forgetting (DF). We adopted a modified item-method DF paradigm, in which four kinds of cues were involved. In some trials, the words were followed by only a forgetting (F) cue. In the other trials, after a word was presented, a maintenance (M) cue was presented, followed by an explicit remembering (M-R) cue or an forgetting (M-F) cue. Data from 19 healthy adult participants showed that, (1) compared with the remembering cue (i.e., M-R cue), forgetting cues (i.e., M-F cue and F cue) evoked enhanced frontal N2 and reduced parietal P3 and late positive complex (LPC) components, indicating that the forgetting cues might trigger a more intensive cognitive control process and that fewer amounts of cognitive resources were recruited for the further rehearsal process. (2) Both the M cue and the F cue evoked enhanced N2 and decreased P3 and LPC components than the M-R or M-F cue. These results might indicate that compared with the M-R and M-F cues, both the M and F cues evoked a more intensive cognitive control process and decreased attentional resource allocation process. (3) The F cue evoked a decreased P2 component and an enhanced N2 component relative to the other cues (i.e., M-R, M-F, M), indicating that the F cue received fewer amounts of attentional resources and evoked a more intensive cognitive control process. Taken together, forgetting cues were associated with enhanced N2 activity relative to the maintenance rehearsal process or the remembering process, suggesting an enhanced cognitive control process under DF. This cognitive control process might reflect the role of inhibition in DF as attempting to suppress the ongoing encoding.",
+      "score": {
+        "composite": 0.3425986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_2eecf58c",
+      "doi": "10.3389/fpsyg.2015.01741",
+      "url": "https://doi.org/10.3389/fpsyg.2015.01741",
+      "openalex_id": null,
+      "pmid": "26635657",
+      "first_author": "Zwissler",
+      "authors_display": "Zwissler, B. et al.",
+      "year": 2015,
+      "title": "'Forget me (not)?' - Remembering Forget-Items Versus Un-Cued Items in Directed Forgetting.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (humans,participants)"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://pub.uni-bielefeld.de/record/2786230",
+      "tldr": null,
+      "abstract": "Humans need to be able to selectively control their memories. This capability is often investigated in directed forgetting (DF) paradigms. In item-method DF, individual items are presented and each is followed by either a forget- or remember-instruction. On a surprise test of all items, memory is then worse for to-be-forgotten items (TBF) compared to to-be-remembered items (TBR). This is thought to result mainly from selective rehearsal of TBR, although inhibitory mechanisms also appear to be recruited by this paradigm. Here, we investigate whether the mnemonic consequences of a forget instruction differ from the ones of incidental encoding, where items are presented without a specific memory instruction. Four experiments were conducted where un-cued items (UI) were interspersed and recognition performance was compared between TBR, TBF, and UI stimuli. Accuracy was encouraged via a performance-dependent monetary bonus. Experiments varied the number of items and their presentation speed and used either letter-cues or symbolic cues. Across all experiments, including perceptually fully counterbalanced variants, memory accuracy for TBF was reduced compared to TBR, but better than for UI. Moreover, participants made consistently fewer false alarms and used a very conservative response criterion when responding to TBF stimuli. Thus, the F-cue results in active processing and reduces false alarm rate, but this does not impair recognition memory beyond an un-cued baseline condition, where only incidental encoding occurs. Theoretical implications of these findings are discussed.",
+      "score": {
+        "composite": 0.33511895338914155,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7a1c0d20",
+      "doi": "10.3389/fpsyg.2022.1020915",
+      "url": "https://doi.org/10.3389/fpsyg.2022.1020915",
+      "openalex_id": null,
+      "pmid": "36825240",
+      "first_author": "Corlier",
+      "authors_display": "Corlier, F., & Eich, T.",
+      "year": 2022,
+      "title": "Principal component analysis suggests multiple dimensions of memory inhibition that are differentially affected by age.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9941998",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Cognitive inhibition is among the executive functions that decline early in the course of normal aging. Failures to be able to inhibit irrelevant information from memory may represent an essential factor of age-associated memory impairment. While a variety of elaborate behavioral tasks have been developed that presumably all index memory inhibition, the extent to which these different tasks measure the same underlying cognitive construct that declines with age has not been well explored.<h4>Methods</h4>In the current study, 100 and 75 cognitively healthy younger (<i>n</i> = 71; age = 30.7 ± 5.4 years, 56.7% female) and older (<i>n</i> = 104, age = 69.3 ± 5.9 years, 66.2% female) adults with equivalent educational attainment performed three computer-based memory inhibition tasks: the Retrieval Induced Forgetting task, the Suppress task, and the Directed Forgetting task. We conducted a principal component analysis using scores derived from different components of these tasks to explore whether and how the tasks relate to one another. We further investigated how age, sex and education, along with, in a subsample of the participants, a neuropsychological measure of episodic memory, impacted both the task scores individually, and the principal components derived from the exploratory analysis.<h4>Results</h4>We identified 3 distinct sources of variability which represent potentially independent cognitive processes: memory retrieval facilitation, and two memory inhibition processes that distinguished themselves by the degree of volitional initiation of memory suppression. Only the memory retrieval component correlated with a neuropsychologically-derived episodic memory score, and both memory inhibition principal components were age dependent.<h4>Conclusion</h4>Our findings provide support for a distinction in memory suppression processes between those 'instructed' to be performed and those which happen without explicit instruction. This distinction adds ",
+      "score": {
+        "composite": 0.3325328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_bec3deeb",
+      "doi": "10.3389/fpsyg.2014.01334",
+      "url": "https://doi.org/10.3389/fpsyg.2014.01334",
+      "openalex_id": null,
+      "pmid": "25477850",
+      "first_author": "Gallant",
+      "authors_display": "Gallant, S., & Yang, L.",
+      "year": 2014,
+      "title": "Positivity effect in source attributions of arousal-matched emotional and non-emotional words during item-based directed forgetting.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 13,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4235427",
+      "tldr": null,
+      "abstract": "Consistent with their emphasis on emotional goals, older adults often exhibit a positivity bias in attention and memory relative to their young counterparts (i.e., a positivity effect). The current study sought to determine how this age-related positivity effect would impact intentional forgetting of emotional words, a process critical to efficient operation of memory. Using an item-based directed forgetting task, 36 young and 36 older adults studied a series of arousal-equivalent words that varied in valence (i.e., positive, negative, and neutral). Each word was followed by a cue to either remember or forget the word. A subsequent \"tagging\" recognition task required classification of items as to-be-remembered (TBR), to-be-forgotten (TBF), or new as a measure of directed forgetting and source attribution in participants' memory. Neither young nor older adults' intentional forgetting was affected by the valence of words. A goal-consistent valence effect did, however, emerge in older adults' source attribution performance. Specifically, older adults assigned more TBR-cues to positive words and more TBF-cues to negative words. Results are discussed in light of existing literature on emotion and directed forgetting as well as the socioemotional selectivity theory underlying the age-related positivity effect.",
+      "score": {
+        "composite": 0.32069874078490357,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_bb68218b",
+      "doi": "10.1111/psyp.70119",
+      "url": "https://doi.org/10.1111/psyp.70119",
+      "openalex_id": null,
+      "pmid": "40751319",
+      "first_author": "Ding",
+      "authors_display": "Ding, H. et al.",
+      "year": 2025,
+      "title": "Pupil Fluctuations Signal Intentional Forgetting of Natural Scenes.",
+      "venue": "Psychophysiology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12317212",
+      "tldr": null,
+      "abstract": "Studies have revealed that information can be intentionally forgotten when instructed, commonly studied in the laboratory with the directed forgetting (DF) procedure. The current investigation examined pupillometric signals associated with intentional forgetting, as the pupil reflects the activity in the locus coeruleus-norepinephrine (LC-NE) system that is functionally involved in the neural correlates of intentional forgetting. Experiment 1 employed an item-method DF paradigm, where participants were presented with natural scenes, each followed by a memory cue to either remember (R) or forget (F) that scene. At test, participants were asked to judge whether the presented scene was the original studied version (i.e., \"Old\") or a mirrored variant (i.e., \"Lure\"). By comparing pupil dilation during test trials between R-cued and F-cued scenes for both hit and miss trials, we found greater pupil dilation for F-cued miss trials compared to R-cued miss trials, but no difference in pupil dilation between the cue conditions for hit trials. This suggests a unique pupillometric pattern linked to successful intentional forgetting. Experiment 2 was aimed at assessing if memory strength differences could provide an explanation for the observed effect. Instead of DF cues, we manipulated memory strength by repeating a subset of scenes, thereby converting all study items into R-cued items with different degrees of familiarity. We observed no difference in pupil dilation between strongly encoded and weakly encoded scenes at test, indicating that encoding strength by itself did not explain the difference in pupil dilation resulting from intentional forgetting. Together, these findings provide novel evidence that pupil fluctuations during retrieval index successful intentional forgetting.",
+      "score": {
+        "composite": 0.3084017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Pupil",
+        "Humans",
+        "Intention",
+        "Cues",
+        "Mental Recall",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_afcc8df4",
+      "doi": "10.3389/fnbeh.2013.00094",
+      "url": "https://doi.org/10.3389/fnbeh.2013.00094",
+      "openalex_id": null,
+      "pmid": "23966914",
+      "first_author": "Baumann",
+      "authors_display": "Baumann, M. et al.",
+      "year": 2013,
+      "title": "Directed forgetting in post-traumatic-stress-disorder: a study of refugee immigrants in Germany.",
+      "venue": "Frontiers in behavioral neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants,patients)"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3736047",
+      "tldr": null,
+      "abstract": "People with post-traumatic stress disorder (PTSD) often suffer from memory disturbances. In particular, previous studies suggest that PTSD patients perform atypically on tests of directed forgetting, which may be mediated by an altered emotional appraisal of the presented material. Also, a special role of dissociative symptoms in traumatized individuals' memory performance has been suggested. Here, we investigate these issues in traumatized immigrants in Germany. In an item-method directed forgetting task, pictures were presented individually, each followed by an instruction to either remember or forget it. Later, recognition memory was tested for all pictures, regardless of initial instruction. Overall, the PTSD group's discrimination accuracy was lower than the control group's, as PTSD participants produced fewer hits and more false alarms, but the groups did not differ in directed forgetting itself. Moreover, the more negatively participants evaluated the stimuli, the less they were able to discriminate old from new items. Participants with higher dissociation scores were particularly poor at recognizing to-be-forgotten items. Results confirm PTSD patients' general discrimination deficits, but provide no evidence for a distinct directed forgetting pattern in PTSD. Furthermore, data indicate that, in general, more negatively perceived items are discriminated with less accuracy than more positively appraised ones. Results are discussed in the larger context of emotion and stress-related modulations of episodic memory, with particular focus on the role of dissociative symptoms.",
+      "score": {
+        "composite": 0.3072080675084555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_932a304e",
+      "doi": "10.3389/fpsyg.2023.1296662",
+      "url": "https://doi.org/10.3389/fpsyg.2023.1296662",
+      "openalex_id": null,
+      "pmid": "38314250",
+      "first_author": "Chien",
+      "authors_display": "Chien, J., & Eich, T.",
+      "year": 2023,
+      "title": "Does stereotype threat influence age-related differences on directed forgetting tasks?",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10836358",
+      "tldr": null,
+      "abstract": "<h4>Objectives</h4>The Directed Forgetting paradigm has proven to be a powerful tool to explore motivated forgetting in the lab. Past work has shown that older adults are less able to intentionally suppress information from memory relative to younger adults, which is often attributed to deficits in inhibitory abilities. Instructions in traditional Directed Forgetting tasks contain terms that may elicit stereotype threat in older adults, which may negatively impact memory. Here, we tested whether the instructions in a Directed Forgetting task affected older adults' ability to appropriately control the contents of memory.<h4>Methods</h4>In two experiments that differed in the number of words presented (30 vs. 48 items), younger and older adults were randomized into one of four crossed Conditions of a Directed Forgetting task. At encoding, participants were either instructed to remember/ forget items, or to think about/not think about items. At test, they were either asked whether the memory probe was old or new, or whether they had seen it before (yes/no). Each experiment contained data from 100 younger (18- 40 years) and 98 older (60+ years) adults, with ~25 participants per Condition. All participants were recruited from Prolific and tested online.<h4>Results</h4>In neither Experiment 1 nor Experiment 2 did we find evidence of a stereotype threat effect, or age-related effects of directed forgetting. We did find that performance for to-be-forgotten items was worse in conditions with encoding instructions that contained words that might trigger stereotype threat relative to conditions that did not contain such words: when explicitly told to forget items, both older and younger adults forgot more items than did participants who were cued to not think about the words and put them out of mind. However, we found no such difference across the two different remember instructions: regardless of whether participants were told to remember or to think about items, recognition ",
+      "score": {
+        "composite": 0.2925,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_85fc651a",
+      "doi": "10.12779/dnd.2019.18.2.47",
+      "url": "https://doi.org/10.12779/dnd.2019.18.2.47",
+      "openalex_id": null,
+      "pmid": "31297135",
+      "first_author": "Oh",
+      "authors_display": "Oh, S. et al.",
+      "year": 2019,
+      "title": "Clustering and Switching Patterns in Semantic Fluency and Their Relationship to Working Memory in Mild Cognitive Impairment.",
+      "venue": "Dementia and neurocognitive disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6609534",
+      "tldr": null,
+      "abstract": "<h4>Background and purpose</h4>Semantic verbal fluency test is a neuropsychological assessment that can sensitively detect neuropathological changes. Considering its multifactorial features tapping various cognitive domains such as semantic memory, executive function, and working memory, it is necessary to examine verbal fluency performance in association with underlying cognitive functions. The objective of the current study was to investigate semantic fluency patterns of people with mild cognitive impairment (MCI) based on clustering and switching and their relationship with working memory.<h4>Methods</h4>Twenty-six individuals with MCI and 23 normal elderly adults participated in this study. A semantic verbal fluency test (animal version) was administered and the performance was analyzed using the following measures: number of correct words, cluster size, and number of switches. Scores of digit forward (DF) and backward span tasks were employed as working memory measures.<h4>Results</h4>Analyses of variance revealed significant group differences in the numbers of correct words and switches. Multivariate logistic regression and receiver-operating characteristic analyses showed that the number of switches more sensitively distinguished MCI existence than the number of correct words. Stepwise linear regression analysis showed that DF task and age significantly predicted the number of correct words while only the DF task significantly predicted the number of switches.<h4>Conclusions</h4>Decrement in semantic verbal fluency in MCI seems to be associated with impaired switching abilities. Working memory capacity might serve as the underlying cognitive factor related to decreased verbal fluency in MCI.",
+      "score": {
+        "composite": 0.28962607321280215,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_f3bf1bee",
+      "doi": "10.3389/fpsyg.2011.00235",
+      "url": "https://doi.org/10.3389/fpsyg.2011.00235",
+      "openalex_id": null,
+      "pmid": "21994497",
+      "first_author": "Blix",
+      "authors_display": "Blix, I., & Brennen, T.",
+      "year": 2011,
+      "title": "Intentional forgetting of emotional words after trauma: a study with victims of sexual assault.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2011.00235/pdf",
+      "tldr": null,
+      "abstract": "Following exposure to a trauma, people tend to experience intrusive thoughts and memories about the event. In order to investigate whether intrusive memories in the aftermath of trauma might be accounted for by an impaired ability to intentionally forget disturbing material, the present study used a modified Directed Forgetting task to examine intentional forgetting and intrusive recall of words in sexual assault victims and controls. By including words related to the trauma in addition to neutral, positive, and threat-related stimuli it was possible to test for trauma-specific effects. No difference between the Trauma and the Control group was found for correct recall of to-be-forgotten (F) words or to-be-remembered (R) words. However, when recalling words from R-list, the Trauma group mistakenly recalled significantly more trauma-specific words from F-list. \"Intrusive\" recall of F-trauma words when asked to recall R-words was related to symptoms of post-traumatic stress disorder reported on the Impact of Event Scale and the Post-traumatic Diagnostic Scale. The results are discussed in term of a source-monitoring account.",
+      "score": {
+        "composite": 0.2872080675084555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3d35d666",
+      "doi": "10.1177/17470218251364812",
+      "url": "https://doi.org/10.1177/17470218251364812",
+      "openalex_id": null,
+      "pmid": "40741782",
+      "first_author": "Taylor",
+      "authors_display": "Taylor, T., & Hourihan, K.",
+      "year": 2026,
+      "title": "Forgetting by any other name: The effect of instruction framing on item-method directed forgetting.",
+      "venue": "Quarterly journal of experimental psychology (2006)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12901663",
+      "tldr": null,
+      "abstract": "In a typical item-method directed forgetting task, study words are presented one at a time, each followed by an instruction to Remember or Forget. Subsequent recognition shows a directed forgetting effect, with better recognition of to-be-remembered words than to-be-forgotten words. This study determined whether recognition depends only on the intention to remember or forget or also on the words used to frame the trial-by-trial instructions or task. In Experiments 1 and 3, participants were instructed, trial-by-trial, to Remember and Forget, Remember and Don't Remember, Don't Forget and Forget, or were told that some words were Important and that others were Not Important. There was no compelling evidence that the directed forgetting effect was altered by the specific words used as these trial-by-trial instructions. However, in Experiment 2, a smaller directed forgetting effect occurred when the task was framed as requiring participants to Remember unless instructed otherwise, compared to when it was framed as requiring participants to Forget unless instructed otherwise. These findings emphasize the freedom that researchers have for deciding how to frame trial-by-trial instructions and the caution they must use in deciding how to frame the task itself.",
+      "score": {
+        "composite": 0.2575,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.5,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.075,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Analysis of Variance",
+        "Intention",
+        "Mental Recall",
+        "Students",
+        "Universities",
+        "Names",
+        "Vocabulary",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5f2890de",
+      "doi": "10.1155/2015/215971",
+      "url": "https://doi.org/10.1155/2015/215971",
+      "openalex_id": null,
+      "pmid": "25918456",
+      "first_author": "El Haj",
+      "authors_display": "El Haj, M. et al.",
+      "year": 2015,
+      "title": "\"Forget to whom you have told this proverb\": directed forgetting of destination memory in Alzheimer's disease.",
+      "venue": "Behavioural neurology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 19,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://downloads.hindawi.com/journals/bn/2015/215971.pdf",
+      "tldr": null,
+      "abstract": "Destination memory is the ability to remember the receiver of transmitted information. By means of a destination memory directed forgetting task, we investigated whether participants with Alzheimer's Disease (AD) were able to suppress irrelevant information in destination memory. Twenty-six AD participants and 30 healthy elderly subjects were asked to tell 10 different proverbs to 10 different celebrities (List 1). Afterwards, half of the participants were instructed to forget the destinations (i.e., the celebrities) whereas the other half were asked to keep them in mind. After telling 10 other proverbs to 10 other celebrities (List 2), participants were asked to read numbers aloud. Subsequently, all the participants were asked to remember the destinations of List 1 and List 2, regardless of the forget or remember instructions. The results show similar destination memory in AD participants who were asked to forget the destinations of List 1 and those who were asked to retain them. These findings are attributed to inhibitory deficits, by which AD participants have difficulties to suppress irrelevant information in destination memory.",
+      "score": {
+        "composite": 0.25586139245415396,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Alzheimer Disease",
+        "Cognition",
+        "Memory",
+        "Mental Recall",
+        "Task Performance and Analysis",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Retention, Psychology"
+      ]
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5e21f130",
+      "doi": "10.5334/pb.au",
+      "url": "https://doi.org/10.5334/pb.au",
+      "openalex_id": null,
+      "pmid": "30479406",
+      "first_author": "Collette",
+      "authors_display": "Collette, F. et al.",
+      "year": 2014,
+      "title": "The Role of Memory Traces Quality in Directed Forgetting: A Comparison of Young and Older Participants.",
+      "venue": "Psychologica Belgica",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://storage.googleapis.com/jnl-up-j-pb-files/journals/1/articles/188/submission/proof/188-1-523-1-10-20140623.pdf",
+      "tldr": null,
+      "abstract": "A reduced directed-forgetting (DF) effect in normal aging has frequently been observed with the item method. These results were interpreted as age-related difficulties in inhibiting the processing of irrelevant information. However, since the performance of older adults is usually lower on items to remember, the age effect on DF abilities could also be interpreted as reflecting memory problems. Consequently, the present study aimed at investigating the influence of memory traces quality on the magnitude of the DF effects in normal aging. We predicted that increasing the quality of memory traces (by increasing presentation times at encoding) would be associated with attenuated DF effects in older participants due to the increased difficulty of inhibiting highly activated memory traces. A classical item-method DF paradigm was administered to 48 young and 48 older participants under short and long encoding conditions. Memory performance for information to memorize and to suppress was assessed with recall and recognition procedures, as well as with a Remember/Know/Guess (RKG) paradigm. The results indicated that, when memory traces are equated between groups, DF effects observed with the recall, recognition and RKG procedures are of similar amplitude in both groups (all ps>0.05). This suggests that the decreased DF effect previously observed in older adults might not actually depend on their inhibitory abilities but may rather reflect quantitative and qualitative differences in episodic memory functioning.",
+      "score": {
+        "composite": 0.2284346224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.08,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

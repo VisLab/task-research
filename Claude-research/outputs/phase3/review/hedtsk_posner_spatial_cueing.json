@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_posner_spatial_cueing",
+    "name": "Posner Spatial Cueing Task",
+    "aliases": [
+      "Posner Task",
+      "Spatial Cueing Task"
+    ],
+    "category_id": "selective_and_sustained_attention",
+    "short_definition": "A central or peripheral cue indicates the likely target location; RT differences between valid, neutral, and invalid cues index covert spatial orienting.",
+    "description": "The Posner Spatial Cueing Task measures covert orienting of visual attention. Participants fixate on a central point with two peripheral locations marked. A cue stimulus appears (exogenous: at the target location; or endogenous: a central arrow) followed by a target stimulus at one of the peripheral locations. Cues can be valid (same location as target) or invalid (opposite location). The cueing effect (faster RT to validly cued targets vs. invalidly cued) reflects the cost and benefit of attentional orienting. The task dissociates different components of attention: engaging, disengaging, and shifting.",
+    "inclusion_test": {
+      "procedure": "A cue (peripheral flash or central arrow) indicates a likely target location; the target then appears at the cued or uncued location and participants detect or discriminate it.",
+      "manipulation": "Cue type (exogenous/peripheral vs. endogenous/central); cue validity (proportion valid trials); SOA; target task (detection vs. discrimination).",
+      "measurement": "RT difference between valid and invalid trials (attention effect); costs (invalid − neutral) and benefits (neutral − valid); IOR at long SOAs."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:47:57",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Posner 1980 — Orienting of Attention (Quarterly Journal of Experimenta…, historical, 9k×)",
+      "doi": "10.1080/00335558008248231",
+      "pub_id": "pub_da038724",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.6326460702207546,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5305842808830182,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.13264607022075456,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1980,
+      "venue": "Quarterly Journal of Experimental Psychology",
+      "citation_count": 9548,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Kasten 2020 — Hemisphere-specific, differential effects of lateralized, occipital-parietal … (Scientific reports, recent_primary, 40×)",
+      "doi": "10.1038/s41598-020-68992-2",
+      "pub_id": "pub_eb9fa066",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.577085017758763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 40,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Eldeeb 2021 — Trial by trial EEG based BCI for distress versus non distress classification … (Scientific reports, recent_primary, 10×)",
+      "doi": "10.1038/s41598-021-85362-8",
+      "pub_id": "pub_dd7bf87d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5680414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Dou 2021 — Irrelevant task suppresses the N170 of automatic attention allocation to fear… (Scientific reports, recent_primary, 5×)",
+      "doi": "10.1038/s41598-021-91237-9",
+      "pub_id": "pub_6d19acef",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5592679558009389,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Marzecová 2018 — Attentional gain is modulated by probabilistic feature expectations in a spat… (Scientific reports, recent_primary, 35×)",
+      "doi": "10.1038/s41598-017-18347-1",
+      "pub_id": "pub_94d0d2c2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5552025782685444,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Turoman 2021 — The development of attentional control mechanisms in multisensory environments. (Developmental cognitive neurosci…, recent_primary, 16×)",
+      "doi": "10.1016/j.dcn.2021.100930",
+      "pub_id": "pub_4c8aabfa",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.514342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Proskovec 2018 — Oscillatory dynamics in the dorsal and ventral attention networks during the … (Human brain mapping, recent_primary, 74×)",
+      "doi": "10.1002/hbm.23997",
+      "pub_id": "pub_e1071ded",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5058263331784407,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24997199938042958,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.062492999845107394,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Human brain mapping",
+      "citation_count": 74,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Markant 2014 — Leveling the playing field: attention mitigates the effects of intelligence o… (Cognition, foundational, 17×)",
+      "doi": "10.1016/j.cognition.2014.01.006",
+      "pub_id": "pub_24729da4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5051696967623832,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Cognition",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Zhang 2016 — A Normalization Framework for Emotional Attention. (PLoS biology, foundational, 33×)",
+      "doi": "10.1371/journal.pbio.1002578",
+      "pub_id": "pub_97f4a293",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4943752451865962,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "PLoS biology",
+      "citation_count": 33,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Tabibian 2023 — Patterns of attention deficit in relapsing and progressive phenotypes of mult… (Scientific reports, recent_primary, 3×)",
+      "doi": "10.1038/s41598-023-40327-x",
+      "pub_id": "pub_eb794866",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.49339909634565576,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Scientific reports",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Koçoğlu 2021 — The effect of directional social cues on saccadic eye movements in Parkinson'… (Experimental brain research, recent_primary, 2×)",
+      "doi": "10.1007/s00221-021-06034-7",
+      "pub_id": "pub_13f53a8f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.48923507429477764,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Experimental brain research",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Capotosto 2012 — Electrophysiological correlates of stimulus-driven reorienting deficits after… (Journal of cognitive neuroscience, foundational, 44×)",
+      "doi": "10.1162/jocn_a_00287",
+      "pub_id": "pub_9746110f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4817657780313868,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Arif 2022 — High-definition transcranial direct current stimulation of the occipital cort… (Human brain mapping, recent_primary, 12×)",
+      "doi": "10.1002/hbm.25764",
+      "pub_id": "pub_433d667b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4804594065461355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Human brain mapping",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Baldassarre 2014 — Large-scale changes in network interactions as a physiological signature of s… (Brain : a journal of neurology, foundational, 144×)",
+      "doi": "10.1093/brain/awu297",
+      "pub_id": "pub_f82ddf2f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.47870184379179626,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2881407085005183,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07203517712512958,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Brain : a journal of neurology",
+      "citation_count": 144,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Markant 2016 — Selective attention neutralizes the adverse effects of low socioeconomic stat… (Developmental cognitive neurosci…, foundational, 19×)",
+      "doi": "10.1016/j.dcn.2015.10.009",
+      "pub_id": "pub_6be49109",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4666947257874873,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Steinkamp 2022 — Simultaneous modeling of reaction times and brain dynamics in a spatial cuein… (Human brain mapping, recent_primary, 2×)",
+      "doi": "10.1002/hbm.25758",
+      "pub_id": "pub_9a3b07ad",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4592350742947776,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Human brain mapping",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Garland 2012 — Cue-elicited heart rate variability and attentional bias predict alcohol rela… (Psychopharmacology, foundational, 110×)",
+      "doi": "10.1007/s00213-011-2618-4",
+      "pub_id": "pub_5ed965c0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.45150090262400555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27267027716268905,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06816756929067226,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Psychopharmacology",
+      "citation_count": 110,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Lojowska 2024 — Threat-induced prosocial behavior: enhanced exogenous attention to protect ot… (Scientific reports, recent_primary, 0×)",
+      "doi": "10.1038/s41598-024-66787-3",
+      "pub_id": "pub_3d634675",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.44333333333333336,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Scientific reports",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Machner 2018 — The ipsilesional attention bias in right-hemisphere stroke patients as reveal… (Neuropsychology, recent_primary, 24×)",
+      "doi": "10.1037/neu0000493",
+      "pub_id": "pub_ba93a995",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4299245922169964,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Neuropsychology",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Wauthia 2022 — Neural responses associated with attentional engagement and disengagement fro… (PloS one, recent_primary, 3×)",
+      "doi": "10.1371/journal.pone.0261172",
+      "pub_id": "pub_6f1420cf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4233990963456557,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "PloS one",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Mostauli 2025 — Placebo treatment entails resource-dependent downregulation of negative inputs. (Scientific reports, recent_primary, 1×)",
+      "doi": "10.1038/s41598-025-93589-y",
+      "pub_id": "pub_86cea40c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.42336621483949455,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Scientific reports",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Wang 2021 — Awareness-Dependent Normalization Framework of Visual Bottom-up Attention. (The Journal of neuroscience : th…, recent_primary, 5×)",
+      "doi": "10.1523/jneurosci.1110-21.2021",
+      "pub_id": "pub_52f4f696",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.41926795580093884,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Greene 2009 — The neural correlates of social attention: automatic orienting to social and … (Psychological research, foundational, 59×)",
+      "doi": "10.1007/s00426-009-0233-3",
+      "pub_id": "pub_40efb11b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4125964667489316,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2370525336623931,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.059263133415598274,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Psychological research",
+      "citation_count": 59,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Gibb 2016 — Attentional biases in children of depressed mothers: An event-related potenti… (Journal of abnormal psychology, foundational, 20×)",
+      "doi": "10.1037/abn0000216",
+      "pub_id": "pub_e6ca36d8",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.40740093357352003,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Journal of abnormal psychology",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Stussi 2019 — Achievement motivation modulates Pavlovian aversive conditioning to goal-rele… (NPJ science of learning, recent_primary, 9×)",
+      "doi": "10.1038/s41539-019-0043-3",
+      "pub_id": "pub_11677060",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4066618442813261,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "NPJ science of learning",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Prasad 2015 — Effect of Exogenous Cues on Covert Spatial Orienting in Deaf and Normal Heari… (PloS one, foundational, 8×)",
+      "doi": "10.1371/journal.pone.0141324",
+      "pub_id": "pub_392110cb",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4051368152562219,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "PloS one",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Farahani 2019 — Effects of Chronic Sleep Restriction on the Brain Functional Network, as Reve… (Frontiers in neuroscience, recent_primary, 25×)",
+      "doi": "10.3389/fnins.2019.01087",
+      "pub_id": "pub_0e2516ff",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4004922880522967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Frontiers in neuroscience",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Kinney 2017 — Gender Difference in Attentional Bias Toward Negative and Positive Stimuli in… (Behavior therapy, foundational, 20×)",
+      "doi": "10.1016/j.beth.2016.06.002",
+      "pub_id": "pub_007d2aa0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.39740093357352,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Behavior therapy",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Chillemi 2019 — Endogenous orientation of visual attention in auditory space. (Journal of advanced research, recent_primary, 4×)",
+      "doi": "10.1016/j.jare.2019.01.010",
+      "pub_id": "pub_9de36e68",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3966289627751649,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Journal of advanced research",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Lin 2020 — The Effect of Autistic Traits on Social Orienting in Typically Developing Ind… (Frontiers in psychology, recent_primary, 7×)",
+      "doi": "10.3389/fpsyg.2020.00794",
+      "pub_id": "pub_abfea64f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.39343197785181694,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Frontiers in psychology",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

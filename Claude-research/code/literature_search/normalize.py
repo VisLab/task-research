@@ -73,6 +73,13 @@ class Candidate:
     tier: str | None = None               # "picked" | "reserve" | "excluded"
     exclusion_reason: str | None = None
     auto_role: str | None = None
+    # Publication-type list, populated from each source's vocabulary.
+    # OpenAlex: single value (e.g. "journal-article", "proceedings-article").
+    # Europe PMC: list of pubTypes (e.g. ["research-article", "review-article"]).
+    # Semantic Scholar: list (e.g. ["JournalArticle"], ["JournalArticle","Conference"]).
+    # Used by the tier classifier to exclude conference/proceedings papers
+    # even when a paper is also tagged JournalArticle (S2 frequently does both).
+    publication_types: list[str] = field(default_factory=list)
 
 
 # ---------------------------------------------------------------------------
@@ -174,10 +181,15 @@ def normalize_openalex(raw: dict) -> "Candidate | None":
     # Abstract
     abstract = reconstruct_abstract(raw.get("abstract_inverted_index"))
 
-    # Type flags
+    # Type flags. OpenAlex's `type` is a single string per work
+    # (e.g. "journal-article", "proceedings-article", "review",
+    # "book-chapter"). Captured into publication_types as a single-element
+    # list so the tier classifier can apply its allow/deny rules
+    # uniformly across sources.
     work_type = (raw.get("type") or "").lower()
     is_review = "review" in work_type
     is_meta_analysis = "meta" in work_type
+    publication_types_list = [work_type] if work_type else []
 
     # Citations
     citation_count = raw.get("cited_by_count")
@@ -233,6 +245,7 @@ def normalize_openalex(raw: dict) -> "Candidate | None":
         openalex_topics=openalex_topics,
         sources=["openalex"],
         raw_per_source={"openalex": raw},
+        publication_types=publication_types_list,
     )
 
 
@@ -343,6 +356,7 @@ def normalize_europepmc(raw: dict) -> "Candidate | None":
         openalex_topics=[],
         sources=["europepmc"],
         raw_per_source={"europepmc": raw},
+        publication_types=list(pub_types),
     )
 
 
@@ -449,4 +463,5 @@ def normalize_s2(raw: dict) -> "Candidate | None":
         openalex_topics=[],
         sources=["semanticscholar"],
         raw_per_source={"semanticscholar": raw},
+        publication_types=list(pub_types),
     )

@@ -1,0 +1,208 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:20:26",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_dictator_game",
+    "name": "Dictator Game Task",
+    "aliases": [
+      "Dictator Game",
+      "DG"
+    ],
+    "category_id": "social_cognition_and_strategic_social_choice",
+    "short_definition": "One-shot allocation task in which a proposer unilaterally divides an endowment between self and a passive receiver; indexes altruism and social preferences.",
+    "description": "One player (dictator) unilaterally decides how much of an endowment to give to an anonymous recipient, who has no power to reject. Despite having complete power, many dictators give 20-30% of their endowment, reflecting intrinsic fairness concerns. fMRI shows generous allocations activate reward regions (ventral striatum, OFC) and empathy regions (anterior insula, ACC), suggesting altruistic choices engage similar neural systems as personal reward.",
+    "inclusion_test": {
+      "procedure": "Participants in the dictator role are endowed with a sum and decide how much (if any) to give to an anonymous recipient; the recipient has no choice but to accept.",
+      "manipulation": "Endowment size; anonymity conditions; social distance; framing (give vs. take); group identity.",
+      "measurement": "Amount allocated to recipient; proportion of fair (50-50) splits; distribution of allocations across participants."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 2,
+      "picked": 2,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_81f43a20",
+      "doi": "10.1073/pnas.1802523115",
+      "url": "https://doi.org/10.1073/pnas.1802523115",
+      "openalex_id": null,
+      "pmid": "30061413",
+      "first_author": "Gao",
+      "authors_display": "Gao, X. et al.",
+      "year": 2018,
+      "title": "Distinguishing neural correlates of context-dependent advantageous- and disadvantageous-inequity aversion.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 69,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Humans can integrate social contextual information into decision-making processes to adjust their responses toward inequity. This context dependency emerges when individuals receive more (i.e., advantageous inequity) or less (i.e., disadvantageous inequity) than others. However, it is not clear whether context-dependent processing of advantageous and disadvantageous inequity involves differential neurocognitive mechanisms. Here, we used fMRI to address this question by combining an interactive game that modulates social contexts (e.g., interpersonal guilt) with computational models that enable us to characterize individual weights on inequity aversion. In each round, the participant played a dot estimation task with an anonymous coplayer. The coplayer would receive pain stimulation with 50% probability when either of them responded incorrectly. At the end of each round, the participant completed a variant of dictator game, which determined payoffs for him/herself and the coplayer. Computational modeling demonstrated the context dependency of inequity aversion: when causing pain to the coplayer (i.e., guilt context), participants cared more about the advantageous inequity and became more tolerant of the disadvantageous inequity, compared with other conditions. Consistently, neuroimaging results suggested the two types of inequity were associated with differential neurocognitive substrates. While the context-dependent processing of advantageous inequity was associated with social- and mentalizing-related processes, involving left anterior insula, right dorsolateral prefrontal cortex, and dorsomedial prefrontal cortex, the context-dependent processing of disadvantageous inequity was primarily associated with emotion- and conflict-related processes, involving left posterior insula, right amygdala, and dorsal anterior cingulate cortex. These results extend our understanding of decision-making processes related to inequity aversion.",
+      "score": {
+        "composite": 0.6064943702267351,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24597748090694052,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06149437022673513,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Humans",
+        "Social Behavior",
+        "Decision Making",
+        "Games, Experimental",
+        "Computer Simulation",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_5420d0f1",
+      "doi": "10.1006/game.1994.1021",
+      "url": "https://doi.org/10.1006/game.1994.1021",
+      "openalex_id": "https://openalex.org/W2081124617",
+      "pmid": null,
+      "first_author": "Forsythe",
+      "authors_display": "Robert Forsythe et al.",
+      "year": 1994,
+      "title": "Fairness in Simple Bargaining Experiments",
+      "venue": "Games and Economic Behavior",
+      "venue_tier": "specialty",
+      "publisher": "Elsevier BV",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 2379,
+      "influential_citation_count": null,
+      "fwci": 31.6684,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.492536282079998,
+        "breakdown": {
+          "raw": {
+            "citations": 0.450145128319992,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.112536282079998,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

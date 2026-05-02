@@ -1,0 +1,1140 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_random_dot_kinematogram",
+    "name": "Random Dot Kinematogram Task",
+    "aliases": [
+      "Dot Motion",
+      "Random Dot Kinematogram",
+      "RDK",
+      "Dot Motion Task"
+    ],
+    "category_id": "perceptual_decision_making_evidence_accumulation",
+    "short_definition": "A field of moving dots in which a variable fraction move coherently; direction judgments and RT under varying coherence support drift-diffusion modeling of perceptual decisions.",
+    "description": "The random dot kinematogram presents a field of moving dots in which a variable proportion move coherently in one direction while the remainder move randomly. Participants judge the direction of coherent motion, and the proportion of coherently moving dots parametrically controls task difficulty. This paradigm is the foundational tool for studying perceptual decision-making and has been central to establishing the neural basis of evidence accumulation, linking single-neuron recordings in area MT/V5 and LIP to drift-diffusion models of choice. It bridges sensory processing and decision-making in a way no other paradigm does as cleanly.",
+    "inclusion_test": {
+      "procedure": "A field of moving dots is displayed; a proportion move coherently in one direction while the rest move randomly. Participants judge the direction of coherent motion.",
+      "manipulation": "Coherence level (% coherent dots); speed-accuracy instructions; number of alternatives; reward asymmetry.",
+      "measurement": "Accuracy and RT as functions of coherence; psychometric and chronometric functions; drift rate and threshold parameters from diffusion model fits."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:50:26",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Löffler 2021 — A Hierarchical Attractor Network Model of perceptual versus intentional decis… (Nature communications, recent_primary, 3×)",
+      "doi": "10.1038/s41467-021-22017-2",
+      "pub_id": "pub_64c1cc34",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5700657630123225,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature communications",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Ebrahimi 2019 — Magnocellular Based Visual Motion Training Improves Reading in Persian. (Scientific reports, recent_primary, 14×)",
+      "doi": "10.1038/s41598-018-37753-7",
+      "pub_id": "pub_f2dc1c33",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5691973704032759,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Zylberberg 2018 — Counterfactual Reasoning Underlies the Learning of Priors in Decision Making. (Neuron, recent_primary, 44×)",
+      "doi": "10.1016/j.neuron.2018.07.035",
+      "pub_id": "pub_31639d7d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5250991113647202,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Neuron",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Andersen 2010 — Behavioral performance follows the time course of neural facilitation and sup… (Proceedings of the National Acad…, foundational, 161×)",
+      "doi": "10.1073/pnas.1002436107",
+      "pub_id": "pub_395a34f0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5136398453519385,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2945593814077538,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07363984535193845,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 161,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Waskom 2018 — Perceptual insensitivity to higher-order statistical moments of coherent rand… (Journal of vision, recent_primary, 6×)",
+      "doi": "10.1167/18.6.9",
+      "pub_id": "pub_b9fb98ac",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5081658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Journal of vision",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Holmes 2016 — A new framework for modeling decisions about changing information: The Piecew… (Cognitive psychology, foundational, 39×)",
+      "doi": "10.1016/j.cogpsych.2015.11.002",
+      "pub_id": "pub_5394c424",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5033942739603152,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Cognitive psychology",
+      "citation_count": 39,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Teng 2021 — The virtual loss function in the summary perception of motion and its limited… (Journal of vision, recent_primary, 4×)",
+      "doi": "10.1167/jov.21.5.2",
+      "pub_id": "pub_c17030f5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4832956294418316,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of vision",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Smith 2020 — Vision for the blind: visual psychophysics and blinded inference for decision… (Psychonomic bulletin & review, key_review, 14×)",
+      "doi": "10.3758/s13423-020-01742-7",
+      "pub_id": "pub_01bf6a30",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4791973704032758,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.2,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.05,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychonomic bulletin & review",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Marton 2019 — Validating a dimension of doubt in decision-making: A proposed endophenotype … (PloS one, recent_primary, 20×)",
+      "doi": "10.1371/journal.pone.0218182",
+      "pub_id": "pub_e774e5bf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4740676002401867,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Urner 2013 — Early visual learning induces long-lasting connectivity changes during rest i… (NeuroImage, foundational, 36×)",
+      "doi": "10.1016/j.neuroimage.2013.03.050",
+      "pub_id": "pub_cbbf13f5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.472265828329228,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2090633133169118,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05226582832922795,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "NeuroImage",
+      "citation_count": 36,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Boylan 2019 — Attention to a threat-related feature does not interfere with concurrent atte… (Psychophysiology, recent_primary, 11×)",
+      "doi": "10.1111/psyp.13332",
+      "pub_id": "pub_a87e6fc8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46596750397376674,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Psychophysiology",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Cai 2019 — Binocular global motion perception is improved by dichoptic segregation when … (Journal of vision, recent_primary, 4×)",
+      "doi": "10.1167/19.13.10",
+      "pub_id": "pub_7c3933e4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46329562944183156,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Journal of vision",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Wen 2023 — Identifying cortical areas that underlie the transformation from 2D retinal t… (NeuroImage, recent_primary, 3×)",
+      "doi": "10.1016/j.neuroimage.2023.119909",
+      "pub_id": "pub_4e7fbdaa",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46006576301232244,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "NeuroImage",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Bae 2022 — Perception of opposite-direction motion in random dot kinematograms. (Visual cognition, recent_primary, 13×)",
+      "doi": "10.1080/13506285.2022.2052216",
+      "pub_id": "pub_042d1a7c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4581987407849036,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Visual cognition",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Zavala 2016 — Decisions Made with Less Evidence Involve Higher Levels of Corticosubthalamic… (Journal of cognitive neuroscience, foundational, 21×)",
+      "doi": "10.1162/jocn_a_00934",
+      "pub_id": "pub_5501d357",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4447409490146167,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Wei 2023 — Increments in visual motion coherence are more readily detected than decrements. (Journal of vision, recent_primary, 19×)",
+      "doi": "10.1167/jov.23.5.18",
+      "pub_id": "pub_ce70f933",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.44336139245415396,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Journal of vision",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Dmochowski 2015 — Cortical Components of Reaction-Time during Perceptual Decisions in Humans. (PloS one, foundational, 29×)",
+      "doi": "10.1371/journal.pone.0143339",
+      "pub_id": "pub_510f602b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.43923025190943704,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "PloS one",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Gosseries 2018 — Parietal-Occipital Interactions Underlying Control- and Representation-Relate… (The Journal of neuroscience : th…, recent_primary, 44×)",
+      "doi": "10.1523/jneurosci.2747-17.2018",
+      "pub_id": "pub_2439fd5d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4350991113647202,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Geuzebroek 2023 — Balancing true and false detection of intermittent sensory targets by adjusti… (eLife, recent_primary, 7×)",
+      "doi": "10.7554/elife.83025",
+      "pub_id": "pub_af77c653",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4300986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2023,
+      "venue": "eLife",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Umekawa 2024 — Direction-selective adaptation from implied motion in infancy. (Journal of vision, recent_primary, 1×)",
+      "doi": "10.1167/jov.24.8.7",
+      "pub_id": "pub_723222dc",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4300328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.4,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.1,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Journal of vision",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Mulder 2013 — The speed and accuracy of perceptual decisions in a random-tone pitch task. (Attention, perception & psychoph…, foundational, 29×)",
+      "doi": "10.3758/s13414-013-0447-8",
+      "pub_id": "pub_9875436e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4292302519094371,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Takami 2024 — Transcranial static magnetic field stimulation over hMT+ inhibits visual moti… (Scientific reports, recent_primary, 2×)",
+      "doi": "10.1038/s41598-023-51097-x",
+      "pub_id": "pub_d8370b7d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.42590174096144434,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Scientific reports",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Stanley 2007 — Effects of agency on movement interference during observation of a moving dot… (Journal of experimental psycholo…, foundational, 78×)",
+      "doi": "10.1037/0096-1523.33.4.915",
+      "pub_id": "pub_587112e4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.42324508528728116,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2529803411491245,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06324508528728112,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2007,
+      "venue": "Journal of experimental psychology. Human perception and performance",
+      "citation_count": 78,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Jendele 2019 — PrankWeb: a web server for ligand binding site prediction and visualization. (Nucleic acids research, recent_primary, 271×)",
+      "doi": "10.1093/nar/gkz424",
+      "pub_id": "pub_d26d6f9f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4211405563717465,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32456222548698604,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08114055637174651,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nucleic acids research",
+      "citation_count": 271,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 35,
+      "label": "Poom 2019 — Grouping effects in numerosity perception under prolonged viewing conditions. (PloS one, recent_primary, 16×)",
+      "doi": "10.1371/journal.pone.0207502",
+      "pub_id": "pub_52f94947",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4210090303471017,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 37,
+      "label": "van Maanen 2012 — Similarity and number of alternatives in the random-dot motion paradigm. (Attention, perception & psychoph…, foundational, 21×)",
+      "doi": "10.3758/s13414-011-0267-7",
+      "pub_id": "pub_0500fed9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.41474094901461667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 39,
+      "label": "Santos 2012 — Anticipatory smooth eye movements with random-dot kinematograms. (Journal of vision, foundational, 12×)",
+      "doi": "10.1167/12.11.1",
+      "pub_id": "pub_eb68c97f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.40712607321280214,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Journal of vision",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 40,
+      "label": "Pamir 2021 — Neural correlates associated with impaired global motion perception in cerebr… (NeuroImage. Clinical, recent_primary, 20×)",
+      "doi": "10.1016/j.nicl.2021.102821",
+      "pub_id": "pub_7987196a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4040676002401867,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "NeuroImage. Clinical",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 42,
+      "label": "Marcos 2015 — Motor Cost Influences Perceptual Decisions. (PloS one, foundational, 48×)",
+      "doi": "10.1371/journal.pone.0144841",
+      "pub_id": "pub_25a3a2d4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3963317185574847,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "PloS one",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 43,
+      "label": "Okazawa 2021 — Linear Integration of Sensory Evidence over Space and Time Underlies Face Cat… (The Journal of neuroscience : th…, recent_primary, 11×)",
+      "doi": "10.1523/jneurosci.3055-20.2021",
+      "pub_id": "pub_848ba729",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.39596750397376673,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.2,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.05,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

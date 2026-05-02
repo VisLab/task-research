@@ -1,0 +1,2361 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:39:35",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_two_stage_decision",
+    "name": "Two-Stage Decision Task",
+    "aliases": [
+      "Two-Step Task",
+      "Daw Task",
+      "MB/MF Task"
+    ],
+    "category_id": "associative_learning_and_reinforcement",
+    "short_definition": "Sequential two-choice task with probabilistic transitions to second-stage states and drifting rewards; choice patterns dissociate model-based from model-free control.",
+    "description": "Participants make two sequential choices per trial. The first-stage choice leads (with fixed transition probabilities — 70% common, 30% rare) to one of two second-stage states, each containing its own pair of options. Second-stage options yield rewards with slowly drifting probabilities. Daw et al. (2011) designed this task to dissociate model-based reinforcement learning (using knowledge of the transition structure to plan) from model-free reinforcement learning (repeating previously rewarded actions regardless of transition type). The diagnostic signature is the interaction between reward and transition type on subsequent first-stage choices: model-based agents show opposite stay/switch patterns after common vs. rare transitions, while model-free agents show the same pattern regardless of transition type.",
+    "inclusion_test": {
+      "procedure": "First stage: choose between two options that lead probabilistically (70/30) to one of two second-stage choice sets. Second stage: choose between two options with drifting reward probabilities. This separates model-based from model-free learning.",
+      "manipulation": "Transition structure (common vs. rare); reward probability drift rate; reward magnitude.",
+      "measurement": "Stay probability as a function of previous trial outcome × transition type; model-based index; computational model fits (hybrid MB/MF learning rates, mixing weight)."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 32,
+      "picked": 27,
+      "reserve": 0,
+      "excluded": 5,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "non_human_subjects": 1,
+      "excluded_publisher": 4
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_8b706e42",
+      "doi": "10.1016/j.neuron.2011.02.027",
+      "url": "https://doi.org/10.1016/j.neuron.2011.02.027",
+      "openalex_id": "https://openalex.org/W2102803424",
+      "pmid": "21435563",
+      "first_author": "Daw",
+      "authors_display": "Nathaniel D. Daw et al.",
+      "year": 2011,
+      "title": "Model-Based Influences on Humans' Choices and Striatal Prediction Errors",
+      "venue": "Neuron",
+      "venue_tier": "flagship",
+      "publisher": "Cell Press",
+      "publication_types": [
+        "article",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1916,
+      "influential_citation_count": null,
+      "fwci": 28.3311,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "hybrid",
+      "oa_url": "http://www.cell.com/article/S0896627311001255/pdf",
+      "tldr": null,
+      "abstract": "The mesostriatal dopamine system is prominently implicated in model-free reinforcement learning, with fMRI BOLD signals in ventral striatum notably covarying with model-free prediction errors. However, latent learning and devaluation studies show that behavior also shows hallmarks of model-based planning, and the interaction between model-based and model-free values, prediction errors, and preferences is underexplored. We designed a multistep decision task in which model-based and model-free influences on human choice behavior could be distinguished. By showing that choices reflected both influences we could then test the purity of the ventral striatal BOLD signal as a model-free report. Contrary to expectations, the signal reflected both model-free and model-based predictions in proportions matching those that best explained choice behavior. These results challenge the notion of a separate model-free learner and suggest a more integrated computational architecture for high-level human decision-making.",
+      "score": {
+        "composite": 0.7594049070271796,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4376196281087184,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1094049070271796,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Basal Ganglia",
+        "Neurons",
+        "Humans",
+        "Dopamine",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Logistic Models",
+        "Choice Behavior",
+        "Neuropsychological Tests",
+        "Models, Neurological",
+        "Adult",
+        "Female",
+        "Male",
+        "Reinforcement, Psychology"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_66bfb348",
+      "doi": "10.1038/s41598-021-91179-2",
+      "url": "https://doi.org/10.1038/s41598-021-91179-2",
+      "openalex_id": null,
+      "pmid": "34099768",
+      "first_author": "Kasal",
+      "authors_display": "Kasal, M. et al.",
+      "year": 2021,
+      "title": "Fronto-striatal structures related with model-based control as an endophenotype for obsessive-compulsive disorder.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41598-021-91179-2.pdf",
+      "tldr": null,
+      "abstract": "Recent theories suggest a shift from model-based goal-directed to model-free habitual decision-making in obsessive-compulsive disorder (OCD). However, it is yet unclear, whether this shift in the decision process is heritable. We investigated 32 patients with OCD, 27 unaffected siblings (SIBs) and 31 healthy controls (HCs) using the two-step task. We computed behavioral and reaction time analyses and fitted a computational model to assess the balance between model-based and model-free control. 80 subjects also underwent structural imaging. We observed a significant ordered effect for the shift towards model-free control in the direction OCD > SIB > HC in our computational parameter of interest. However less directed analyses revealed no shift towards model-free control in OCDs. Nonetheless, we found evidence for reduced model-based control in OCDs compared to HCs and SIBs via 2nd stage reaction time analyses. In this measure SIBs also showed higher levels of model-based control than HCs. Across all subjects these effects were associated with the surface area of the left medial/right dorsolateral prefrontal cortex. Moreover, correlations between bilateral putamen/right caudate volumes and these effects varied as a function of group: they were negative in SIBs and OCDs, but positive in HCs. Associations between fronto-striatal regions and model-based reaction time effects point to a potential endophenotype for OCD.",
+      "score": {
+        "composite": 0.5325657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Corpus Striatum",
+        "Frontal Lobe",
+        "Neural Pathways",
+        "Humans",
+        "Regression Analysis",
+        "Siblings",
+        "Cognition",
+        "Reaction Time",
+        "Obsessive-Compulsive Disorder",
+        "Models, Neurological",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Endophenotypes"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_58264126",
+      "doi": "10.1038/s41598-022-05567-3",
+      "url": "https://doi.org/10.1038/s41598-022-05567-3",
+      "openalex_id": null,
+      "pmid": "35149713",
+      "first_author": "Doody",
+      "authors_display": "Doody, M. et al.",
+      "year": 2022,
+      "title": "Model-based learning retrospectively updates model-free values.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,participants)"
+      ],
+      "citation_count": 8,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8837618",
+      "tldr": null,
+      "abstract": "Reinforcement learning (RL) is widely regarded as divisible into two distinct computational strategies. Model-free learning is a simple RL process in which a value is associated with actions, whereas model-based learning relies on the formation of internal models of the environment to maximise reward. Recently, theoretical and animal work has suggested that such models might be used to train model-free behaviour, reducing the burden of costly forward planning. Here we devised a way to probe this possibility in human behaviour. We adapted a two-stage decision task and found evidence that model-based processes at the time of learning can alter model-free valuation in healthy individuals. We asked people to rate subjective value of an irrelevant feature that was seen at the time a model-based decision would have been made. These irrelevant feature value ratings were updated by rewards, but in a way that accounted for whether the selected action retrospectively ought to have been taken. This model-based influence on model-free value ratings was best accounted for by a reward prediction error that was calculated relative to the decision path that would most likely have led to the reward. This effect occurred independently of attention and was not present when participants were not explicitly told about the structure of the environment. These findings suggest that current conceptions of model-based and model-free learning require updating in favour of a more integrated approach. Our task provides an empirical handle for further study of the dialogue between these two learning systems in the future.",
+      "score": {
+        "composite": 0.5143034819228887,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4acb5e80",
+      "doi": "10.1038/s41598-022-21766-4",
+      "url": "https://doi.org/10.1038/s41598-022-21766-4",
+      "openalex_id": null,
+      "pmid": "36271279",
+      "first_author": "Gijsen",
+      "authors_display": "Gijsen, S. et al.",
+      "year": 2022,
+      "title": "Active inference and the two-step task.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9586964",
+      "tldr": null,
+      "abstract": "Sequential decision problems distill important challenges frequently faced by humans. Through repeated interactions with an uncertain world, unknown statistics need to be learned while balancing exploration and exploitation. Reinforcement learning is a prominent method for modeling such behaviour, with a prevalent application being the two-step task. However, recent studies indicate that the standard reinforcement learning model sometimes describes features of human task behaviour inaccurately and incompletely. We investigated whether active inference, a framework proposing a trade-off to the exploration-exploitation dilemma, could better describe human behaviour. Therefore, we re-analysed four publicly available datasets of the two-step task, performed Bayesian model selection, and compared behavioural model predictions. Two datasets, which revealed more model-based inference and behaviour indicative of directed exploration, were better described by active inference, while the models scored similarly for the remaining datasets. Learning using probability distributions appears to contribute to the improved model fits. Further, approximately half of all participants showed sensitivity to information gain as formulated under active inference, although behavioural exploration effects were not fully captured. These results contribute to the empirical validation of active inference as a model of human behaviour and the study of alternative models for the influential two-step task.",
+      "score": {
+        "composite": 0.5106658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Bayes Theorem",
+        "Uncertainty",
+        "Learning",
+        "Reinforcement, Psychology"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_43a9d46c",
+      "doi": "10.1038/s41398-020-0762-5",
+      "url": "https://doi.org/10.1038/s41398-020-0762-5",
+      "openalex_id": null,
+      "pmid": "32127520",
+      "first_author": "Voon",
+      "authors_display": "Voon, V. et al.",
+      "year": 2020,
+      "title": "The neurochemical substrates of habitual and goal-directed control.",
+      "venue": "Translational psychiatry",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 23,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41398-020-0762-5.pdf",
+      "tldr": null,
+      "abstract": "Our daily decisions are governed by the arbitration between goal-directed and habitual strategies. However, the neurochemical basis of this arbitration is unclear. We assessed the contribution of dopaminergic, serotonergic, and opioidergic systems to this balance across reward and loss domains. Thirty-nine participants (17 healthy controls, 15 patients with pathological gambling, and 7 with binge eating disorder) underwent positron emission tomography (PET) imaging with [<sup>18</sup>F]FDOPA, [<sup>11</sup>C]MADAM and [<sup>11</sup>C]carfentanil to assess presynaptic dopamine, and serotonin transporter and mu-opioid receptor binding potential. Separately, participants completed a modified two-step task, which quantifies the degree to which decision-making is influenced by goal-directed or habitual strategies. All participants completed a version with reward outcomes; healthy controls additionally completed a version with loss outcomes. In the context of rewarding outcomes, we found that greater serotonin transporter binding potential in prefrontal regions was associated with habitual control, while greater serotonin transporter binding potential in the putamen was marginally associated with goal-directed control; however, the findings were no longer significant when controlling for the opposing valence (loss). In blocks with loss outcomes, we found that the opioidergic system, specifically greater [<sup>11</sup>C]carfentanil binding potential, was positively associated with goal-directed control and negatively associated with habit-directed control. Our findings illuminate the complex neurochemical basis of goal-directed and habitual behavior, implicating differential roles for prefrontal and subcortical serotonin in decision-making across healthy and pathological populations.",
+      "score": {
+        "composite": 0.4885003854799279,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Positron-Emission Tomography",
+        "Gambling",
+        "Motivation",
+        "Goals",
+        "Reward"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7889da2e",
+      "doi": "10.1038/s41398-021-01642-x",
+      "url": "https://doi.org/10.1038/s41398-021-01642-x",
+      "openalex_id": null,
+      "pmid": "34741013",
+      "first_author": "Shahar",
+      "authors_display": "Shahar, N. et al.",
+      "year": 2021,
+      "title": "Assigning the right credit to the wrong action: compulsivity in the general population is associated with augmented outcome-irrelevant value-based learning.",
+      "venue": "Translational psychiatry",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8571313",
+      "tldr": null,
+      "abstract": "Compulsive behavior is enacted under a belief that a specific act controls the likelihood of an undesired future event. Compulsive behaviors are widespread in the general population despite having no causal relationship with events they aspire to influence. In the current study, we tested whether there is an increased tendency to assign value to aspects of a task that do not predict an outcome (i.e., outcome-irrelevant learning) among individuals with compulsive tendencies. We studied 514 healthy individuals who completed self-report compulsivity, anxiety, depression, and schizotypal measurements, and a well-established reinforcement-learning task (i.e., the two-step task). As expected, we found a positive relationship between compulsivity and outcome-irrelevant learning. Specifically, individuals who reported having stronger compulsive tendencies (e.g., washing, checking, grooming) also tended to assign value to response keys and stimuli locations that did not predict an outcome. Controlling for overall goal-directed abilities and the co-occurrence of anxious, depressive, or schizotypal tendencies did not impact these associations. These findings indicate that outcome-irrelevant learning processes may contribute to the expression of compulsivity in a general population setting. We highlight the need for future research on the formation of non-veridical action-outcome associations as a factor related to the occurrence and maintenance of compulsive behavior.",
+      "score": {
+        "composite": 0.4825986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Animals",
+        "Humans",
+        "Compulsive Behavior",
+        "Motivation",
+        "Anxiety Disorders",
+        "Obsessive-Compulsive Disorder",
+        "Reinforcement, Psychology"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f9ac9e5b",
+      "doi": "10.1038/s41593-023-01542-x",
+      "url": "https://doi.org/10.1038/s41593-023-01542-x",
+      "openalex_id": null,
+      "pmid": "38216649",
+      "first_author": "Blanco-Pozo",
+      "authors_display": "Blanco-Pozo, M. et al.",
+      "year": 2024,
+      "title": "Dopamine-independent effect of rewards on choices through hidden-state inference.",
+      "venue": "Nature neuroscience",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 23,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41593-023-01542-x.pdf",
+      "tldr": null,
+      "abstract": "Dopamine is implicated in adaptive behavior through reward prediction error (RPE) signals that update value estimates. There is also accumulating evidence that animals in structured environments can use inference processes to facilitate behavioral flexibility. However, it is unclear how these two accounts of reward-guided decision-making should be integrated. Using a two-step task for mice, we show that dopamine reports RPEs using value information inferred from task structure knowledge, alongside information about reward rate and movement. Nonetheless, although rewards strongly influenced choices and dopamine activity, neither activating nor inhibiting dopamine neurons at trial outcome affected future choice. These data were recapitulated by a neural network model where cortex learned to track hidden task states by predicting observations, while basal ganglia learned values and actions via RPEs. This shows that the influence of rewards on choices can stem from dopamine-independent information they convey about the world's state, not the dopaminergic RPEs they produce.",
+      "score": {
+        "composite": 0.46850038547992795,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Basal Ganglia",
+        "Animals",
+        "Mice",
+        "Dopamine",
+        "Dopamine Agents",
+        "Learning",
+        "Reward"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2edc957d",
+      "doi": "10.1371/journal.pcbi.1006803",
+      "url": "https://doi.org/10.1371/journal.pcbi.1006803",
+      "openalex_id": null,
+      "pmid": "30759077",
+      "first_author": "Shahar",
+      "authors_display": "Shahar, N. et al.",
+      "year": 2019,
+      "title": "Improving the reliability of model-based decision-making estimates in the two-stage decision task with reaction-times and drift-diffusion modeling.",
+      "venue": "PLoS computational biology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 108,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1006803&type=printable",
+      "tldr": null,
+      "abstract": "A well-established notion in cognitive neuroscience proposes that multiple brain systems contribute to choice behaviour. These include: (1) a model-free system that uses values cached from the outcome history of alternative actions, and (2) a model-based system that considers action outcomes and the transition structure of the environment. The widespread use of this distinction, across a range of applications, renders it important to index their distinct influences with high reliability. Here we consider the two-stage task, widely considered as a gold standard measure for the contribution of model-based and model-free systems to human choice. We tested the internal/temporal stability of measures from this task, including those estimated via an established computational model, as well as an extended model using drift-diffusion. Drift-diffusion modeling suggested that both choice in the first stage, and RTs in the second stage, are directly affected by a model-based/free trade-off parameter. Both parameter recovery and the stability of model-based estimates were poor but improved substantially when both choice and RT were used (compared to choice only), and when more trials (than conventionally used in research practice) were included in our analysis. The findings have implications for interpretation of past and future studies based on the use of the two-stage task, as well as for characterising the contribution of model-based processes to choice behaviour.",
+      "score": {
+        "composite": 0.46040439134234457,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2716175653693784,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0679043913423446,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Animals",
+        "Humans",
+        "Models, Statistical",
+        "Reproducibility of Results",
+        "Decision Making",
+        "Reaction Time",
+        "Computational Biology",
+        "Models, Psychological",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_0918978c",
+      "doi": "10.1038/tp.2015.165",
+      "url": "https://doi.org/10.1038/tp.2015.165",
+      "openalex_id": null,
+      "pmid": "26529423",
+      "first_author": "Voon",
+      "authors_display": "Voon, V. et al.",
+      "year": 2015,
+      "title": "Motivation and value influences in the relative balance of goal-directed and habitual behaviours in obsessive-compulsive disorder.",
+      "venue": "Translational psychiatry",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 73,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5068758",
+      "tldr": null,
+      "abstract": "Our decisions are based on parallel and competing systems of goal-directed and habitual learning, systems which can be impaired in pathological behaviours. Here we focus on the influence of motivation and compare reward and loss outcomes in subjects with obsessive-compulsive disorder (OCD) on model-based goal-directed and model-free habitual behaviours using the two-step task. We further investigate the relationship with acquisition learning using a one-step probabilistic learning task. Forty-eight OCD subjects and 96 healthy volunteers were tested on a reward and 30 OCD subjects and 53 healthy volunteers on the loss version of the two-step task. Thirty-six OCD subjects and 72 healthy volunteers were also tested on a one-step reversal task. OCD subjects compared with healthy volunteers were less goal oriented (model-based) and more habitual (model-free) to reward outcomes with a shift towards greater model-based and lower habitual choices to loss outcomes. OCD subjects also had enhanced acquisition learning to loss outcomes on the one-step task, which correlated with goal-directed learning in the two-step task. OCD subjects had greater stay behaviours or perseveration in the one-step task irrespective of outcome. Compulsion severity was correlated with habitual learning in the reward condition. Obsession severity was correlated with greater switching after loss outcomes. In healthy volunteers, we further show that greater reward magnitudes are associated with a shift towards greater goal-directed learning further emphasizing the role of outcome salience. Our results highlight an important influence of motivation on learning processes in OCD and suggest that distinct clinical strategies based on valence may be warranted.",
+      "score": {
+        "composite": 0.45479870983538917,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24919483934155667,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06229870983538917,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Habits",
+        "Motivation",
+        "Goals",
+        "Reward",
+        "Psychomotor Performance",
+        "Obsessive-Compulsive Disorder",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7cc37898",
+      "doi": "10.1371/journal.pcbi.1007944",
+      "url": "https://doi.org/10.1371/journal.pcbi.1007944",
+      "openalex_id": null,
+      "pmid": "32569311",
+      "first_author": "Miranda",
+      "authors_display": "Miranda, B. et al.",
+      "year": 2020,
+      "title": "Combined model-free and model-sensitive reinforcement learning in non-human primates.",
+      "venue": "PLoS computational biology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1007944&type=printable",
+      "tldr": null,
+      "abstract": "Contemporary reinforcement learning (RL) theory suggests that potential choices can be evaluated by strategies that may or may not be sensitive to the computational structure of tasks. A paradigmatic model-free (MF) strategy simply repeats actions that have been rewarded in the past; by contrast, model-sensitive (MS) strategies exploit richer information associated with knowledge of task dynamics. MF and MS strategies should typically be combined, because they have complementary statistical and computational strengths; however, this tradeoff between MF/MS RL has mostly only been demonstrated in humans, often with only modest numbers of trials. We trained rhesus monkeys to perform a two-stage decision task designed to elicit and discriminate the use of MF and MS methods. A descriptive analysis of choice behaviour revealed directly that the structure of the task (of MS importance) and the reward history (of MF and MS importance) significantly influenced both choice and response vigour. A detailed, trial-by-trial computational analysis confirmed that choices were made according to a combination of strategies, with a dominant influence of a particular form of model sensitivity that persisted over weeks of testing. The residuals from this model necessitated development of a new combined RL model which incorporates a particular credit assignment weighting procedure. Finally, response vigor exhibited a subtly different collection of MF and MS influences. These results provide new illumination onto RL behavioural processes in non-human primates.",
+      "score": {
+        "composite": 0.4451189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Animals",
+        "Primates",
+        "Humans",
+        "Decision Making",
+        "Computational Biology",
+        "Models, Theoretical"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_36503e33",
+      "doi": "10.1371/journal.pcbi.1007443",
+      "url": "https://doi.org/10.1371/journal.pcbi.1007443",
+      "openalex_id": null,
+      "pmid": "31725719",
+      "first_author": "Grosskurth",
+      "authors_display": "Grosskurth, E. et al.",
+      "year": 2019,
+      "title": "No substantial change in the balance between model-free and model-based control via training on the two-step task.",
+      "venue": "PLoS computational biology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 9,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6855413",
+      "tldr": null,
+      "abstract": "Human decisions can be habitual or goal-directed, also known as model-free (MF) or model-based (MB) control. Previous work suggests that the balance between the two decision systems is impaired in psychiatric disorders such as compulsion and addiction, via overreliance on MF control. However, little is known whether the balance can be altered through task training. Here, 20 healthy participants performed a well-established two-step task that differentiates MB from MF control, across five training sessions. We used computational modelling and functional near-infrared spectroscopy to assess changes in decision-making and brain hemodynamic over time. Mixed-effects modelling revealed overall no substantial changes in MF and MB behavior across training. Although our behavioral and brain findings show task-induced changes in learning rates, these parameters have no direct relation to either MF or MB control or the balance between the two systems, and thus do not support the assumption of training effects on MF or MB strategies. Our findings indicate that training on the two-step paradigm in its current form does not support a shift in the balance between MF and MB control. We discuss these results with respect to implications for restoring the balance between MF and MB control in psychiatric conditions.",
+      "score": {
+        "composite": 0.42582851094799273,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Spectroscopy, Near-Infrared",
+        "Brain Mapping",
+        "Motivation",
+        "Learning",
+        "Reward",
+        "Decision Making",
+        "Models, Theoretical",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Healthy Volunteers"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7aac5fab",
+      "doi": "10.1371/journal.pone.0195328",
+      "url": "https://doi.org/10.1371/journal.pone.0195328",
+      "openalex_id": null,
+      "pmid": "29614130",
+      "first_author": "Feher da Silva",
+      "authors_display": "Feher da Silva, C., & Hare, T.",
+      "year": 2018,
+      "title": "A note on the analysis of two-stage task results: How changes in task structure affect what model-free and model-based strategies predict about the effects of reward and transition on the stay probability.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5882146",
+      "tldr": null,
+      "abstract": "Many studies that aim to detect model-free and model-based influences on behavior employ two-stage behavioral tasks of the type pioneered by Daw and colleagues in 2011. Such studies commonly modify existing two-stage decision paradigms in order to better address a given hypothesis, which is an important means of scientific progress. It is, however, critical to fully appreciate the impact of any modified or novel experimental design features on the expected results. Here, we use two concrete examples to demonstrate that relatively small changes in the two-stage task design can substantially change the pattern of actions taken by model-free and model-based agents as a function of the reward outcomes and transitions on previous trials. In the first, we show that, under specific conditions, purely model-free agents will produce the reward by transition interactions typically thought to characterize model-based behavior on a two-stage task. The second example shows that model-based agents' behavior is driven by a main effect of transition-type in addition to the canonical reward by transition interaction whenever the reward probabilities of the final states do not sum to one. Together, these examples emphasize the task-dependence of model-free and model-based behavior and highlight the benefits of using computer simulations to determine what pattern of results to expect from both model-free and model-based agents performing a given two-stage decision task in order to design choice paradigms and analysis strategies best suited to the current question.",
+      "score": {
+        "composite": 0.4216973704032758,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Animals",
+        "Humans",
+        "Logistic Models",
+        "Probability",
+        "Reward",
+        "Decision Making",
+        "Psychological Tests",
+        "Algorithms",
+        "Models, Psychological",
+        "Computer Simulation"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_38f358d5",
+      "doi": "10.1371/journal.pcbi.1004648",
+      "url": "https://doi.org/10.1371/journal.pcbi.1004648",
+      "openalex_id": null,
+      "pmid": "26657806",
+      "first_author": "Akam",
+      "authors_display": "Akam, T. et al.",
+      "year": 2015,
+      "title": "Simple Plans or Sophisticated Habits? State, Transition and Learning Interactions in the Two-Step Task.",
+      "venue": "PLoS computational biology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 103,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1004648&type=printable",
+      "tldr": null,
+      "abstract": "The recently developed 'two-step' behavioural task promises to differentiate model-based from model-free reinforcement learning, while generating neurophysiologically-friendly decision datasets with parametric variation of decision variables. These desirable features have prompted its widespread adoption. Here, we analyse the interactions between a range of different strategies and the structure of transitions and outcomes in order to examine constraints on what can be learned from behavioural performance. The task involves a trade-off between the need for stochasticity, to allow strategies to be discriminated, and a need for determinism, so that it is worth subjects' investment of effort to exploit the contingencies optimally. We show through simulation that under certain conditions model-free strategies can masquerade as being model-based. We first show that seemingly innocuous modifications to the task structure can induce correlations between action values at the start of the trial and the subsequent trial events in such a way that analysis based on comparing successive trials can lead to erroneous conclusions. We confirm the power of a suggested correction to the analysis that can alleviate this problem. We then consider model-free reinforcement learning strategies that exploit correlations between where rewards are obtained and which actions have high expected value. These generate behaviour that appears model-based under these, and also more sophisticated, analyses. Exploiting the full potential of the two-step task as a tool for behavioural neuroscience requires an understanding of these issues.",
+      "score": {
+        "composite": 0.4197247177312858,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26889887092514314,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06722471773128579,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Models, Statistical",
+        "Habits",
+        "Reversal Learning",
+        "Choice Behavior",
+        "Task Performance and Analysis",
+        "Models, Neurological",
+        "Computer Simulation",
+        "Reinforcement, Psychology"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_57a34e12",
+      "doi": "10.7554/elife.90082",
+      "url": "https://doi.org/10.7554/elife.90082",
+      "openalex_id": null,
+      "pmid": "39240757",
+      "first_author": "Ger",
+      "authors_display": "Ger, Y. et al.",
+      "year": 2024,
+      "title": "Using recurrent neural network to estimate irreducible stochasticity in human choice behavior.",
+      "venue": "eLife",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.7554/elife.90082",
+      "tldr": null,
+      "abstract": "Theoretical computational models are widely used to describe latent cognitive processes. However, these models do not equally explain data across participants, with some individuals showing a bigger predictive gap than others. In the current study, we examined the use of theory-independent models, specifically recurrent neural networks (RNNs), to classify the source of a predictive gap in the observed data of a single individual. This approach aims to identify whether the low predictability of behavioral data is mainly due to noisy decision-making or misspecification of the theoretical model. First, we used computer simulation in the context of reinforcement learning to demonstrate that RNNs can be used to identify model misspecification in simulated agents with varying degrees of behavioral noise. Specifically, both prediction performance and the number of RNN training epochs (i.e., the point of early stopping) can be used to estimate the amount of stochasticity in the data. Second, we applied our approach to an empirical dataset where the actions of low IQ participants, compared with high IQ participants, showed lower predictability by a well-known theoretical model (i.e., Daw's hybrid model for the two-step task). Both the predictive gap and the point of early stopping of the RNN suggested that model misspecification is similar across individuals. This led us to a provisional conclusion that low IQ subjects are mostly noisier compared to their high IQ peers, rather than being more misspecified by the theoretical model. We discuss the implications and limitations of this approach, considering the growing literature in both theoretical and data-driven computational modeling in decision-making science.",
+      "score": {
+        "composite": 0.40843462246760553,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Stochastic Processes",
+        "Decision Making",
+        "Choice Behavior",
+        "Computer Simulation",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Reinforcement, Psychology",
+        "Neural Networks, Computer"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_26492018",
+      "doi": "10.1002/mp.14355",
+      "url": "https://doi.org/10.1002/mp.14355",
+      "openalex_id": null,
+      "pmid": "32583418",
+      "first_author": "Liang",
+      "authors_display": "Liang, X. et al.",
+      "year": 2020,
+      "title": "A deep learning framework for prostate localization in cone beam CT-guided radiotherapy.",
+      "venue": "Medical physics",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 15,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Purpose</h4>To develop a deep learning-based model for prostate planning target volume (PTV) localization on cone beam computed tomography (CBCT) to improve the workflow of CBCT-guided patient setup.<h4>Methods</h4>A two-step task-based residual network (T<sup>2</sup> RN) is proposed to automatically identify inherent landmarks in prostate PTV. The input to the T<sup>2</sup> RN is the pretreatment CBCT images of the patient, and the output is the deep learning-identified landmarks in the PTV. To ensure robust PTV localization, the T<sup>2</sup> RN model is trained by using over thousand sets of CT images with labeled landmarks, each of the CTs corresponds to a different scenario of patient position and/or anatomy distribution generated by synthetically changing the planning CT (pCT) image. The changes, including translation, rotation, and deformation, represent vast possible clinical situations of anatomy variations during a course of radiation therapy (RT). The trained patient-specific T<sup>2</sup> RN model is tested by using 240 CBCTs from six patients. The testing CBCTs consists of 120 original CBCTs and 120 synthetic CBCTs. The synthetic CBCTs are generated by applying rotation/translation transformations to each of the original CBCT.<h4>Results</h4>The systematic/random setup errors between the model prediction and the reference are found to be <0.25/2.46 mm and 0.14/1.41° in translation and rotation dimensions, respectively. Pearson's correlation coefficient between model prediction and the reference is higher than 0.94 in translation and rotation dimensions. The Bland-Altman plots show good agreement between the two techniques.<h4>Conclusions</h4>A novel T<sup>2</sup> RN deep learning technique is established to localize the prostate PTV for RT patient setup. Our results show that highly accurate marker-less prostate setup is achievable by leveraging the state-of-the-art deep learning strategy.",
+      "score": {
+        "composite": 0.4026315260246448,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prostate",
+        "Humans",
+        "Prostatic Neoplasms",
+        "Radiotherapy Planning, Computer-Assisted",
+        "Male",
+        "Cone-Beam Computed Tomography",
+        "Radiotherapy, Image-Guided",
+        "Deep Learning"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_8d0544b6",
+      "doi": "10.1371/journal.pcbi.1011206",
+      "url": "https://doi.org/10.1371/journal.pcbi.1011206",
+      "openalex_id": null,
+      "pmid": "37319256",
+      "first_author": "Sato",
+      "authors_display": "Sato, R. et al.",
+      "year": 2023,
+      "title": "Opponent learning with different representations in the cortico-basal ganglia pathways can develop obsession-compulsion cycle.",
+      "venue": "PLoS computational biology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10306209",
+      "tldr": null,
+      "abstract": "Obsessive-compulsive disorder (OCD) has been suggested to be associated with impairment of model-based behavioral control. Meanwhile, recent work suggested shorter memory trace for negative than positive prediction errors (PEs) in OCD. We explored relations between these two suggestions through computational modeling. Based on the properties of cortico-basal ganglia pathways, we modeled human as an agent having a combination of successor representation (SR)-based system that enables model-based-like control and individual representation (IR)-based system that only hosts model-free control, with the two systems potentially learning from positive and negative PEs in different rates. We simulated the agent's behavior in the environmental model used in the recent work that describes potential development of obsession-compulsion cycle. We found that the dual-system agent could develop enhanced obsession-compulsion cycle, similarly to the agent having memory trace imbalance in the recent work, if the SR- and IR-based systems learned mainly from positive and negative PEs, respectively. We then simulated the behavior of such an opponent SR+IR agent in the two-stage decision task, in comparison with the agent having only SR-based control. Fitting of the agents' behavior by the model weighing model-based and model-free control developed in the original two-stage task study resulted in smaller weights of model-based control for the opponent SR+IR agent than for the SR-only agent. These results reconcile the previous suggestions about OCD, i.e., impaired model-based control and memory trace imbalance, raising a novel possibility that opponent learning in model(SR)-based and model-free controllers underlies obsession-compulsion. Our model cannot explain the behavior of OCD patients in punishment, rather than reward, contexts, but it could be resolved if opponent SR+IR learning operates also in the recently revealed non-canonical cortico-basal ganglia-dopamine circuit for threat/",
+      "score": {
+        "composite": 0.38066585927874236,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Basal Ganglia",
+        "Humans",
+        "Obsessive Behavior",
+        "Punishment",
+        "Reward",
+        "Reinforcement, Psychology"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2175d522",
+      "doi": "10.1037/abn0000733",
+      "url": "https://doi.org/10.1037/abn0000733",
+      "openalex_id": null,
+      "pmid": "35230864",
+      "first_author": "Brown",
+      "authors_display": "Brown, V. et al.",
+      "year": 2022,
+      "title": "A double-blind study assessing the impact of orbitofrontal theta burst stimulation on goal-directed behavior.",
+      "venue": "Journal of psychopathology and clinical science",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Patients with disorders of compulsivity show impairments in goal-directed behavior, which have been linked to orbitofrontal cortex (OFC) dysfunction. We recently showed that continuous theta burst stimulation (cTBS), which reduces OFC activity, had a beneficial effect on compulsive behaviors both immediately and at 1 week follow-up compared with inhibitory TBS (iTBS). In this same sample, we investigated whether two behavioral measures of goal-directed control (devaluation success on a habit override task; model-based planning on the two-step task) were also affected by acute modulation of OFC activity. Overall, model-based planning and devaluation success were significantly related to each other and (for devaluation success) to symptoms in our transdiagnostic clinical sample. These measures were moderately to highly stable across time. In individuals with low levels of model-based planning, active cTBS improved devaluation success. Analogous to previously reported clinical effects, this effect was specific to cTBS and not iTBS. Overall, results suggested that measures of goal directed behavior are reliable but less affected by cTBS than clinical self-report. Future research should continue to examine longitudinal changes in behavioral measures to determine their temporal relationship with symptom improvement after treatment. (PsycInfo Database Record (c) 2022 APA, all rights reserved).",
+      "score": {
+        "composite": 0.3657956294418315,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Double-Blind Method",
+        "Motivation",
+        "Goals",
+        "Transcranial Magnetic Stimulation"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_cd10360a",
+      "doi": "10.3389/fnbeh.2016.00234",
+      "url": "https://doi.org/10.3389/fnbeh.2016.00234",
+      "openalex_id": null,
+      "pmid": "28066200",
+      "first_author": "Sjoerds",
+      "authors_display": "Sjoerds, Z. et al.",
+      "year": 2016,
+      "title": "Slips of Action and Sequential Decisions: A Cross-Validation Study of Tasks Assessing Habitual and Goal-Directed Action Control.",
+      "venue": "Frontiers in behavioral neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (humans)"
+      ],
+      "citation_count": 35,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5167743",
+      "tldr": null,
+      "abstract": "Instrumental learning and decision-making rely on two parallel systems: a goal-directed and a habitual system. In the past decade, several paradigms have been developed to study these systems in animals and humans by means of e.g., overtraining, devaluation procedures and sequential decision-making. These different paradigms are thought to measure the same constructs, but cross-validation has rarely been investigated. In this study we compared two widely used paradigms that assess aspects of goal-directed and habitual behavior. We correlated parameters from a two-step sequential decision-making task that assesses model-based (MB) and model-free (MF) learning with a slips-of-action paradigm that assesses the ability to suppress cue-triggered, learnt responses when the outcome has been devalued and is therefore no longer desirable. MB control during the two-step task showed a very moderately positive correlation with goal-directed devaluation sensitivity, whereas MF control did not show any associations. Interestingly, parameter estimates of MB and goal-directed behavior in the two tasks were positively correlated with higher-order cognitive measures (e.g., visual short-term memory). These cognitive measures seemed to (at least partly) mediate the association between MB control during sequential decision-making and goal-directed behavior after instructed devaluation. This study provides moderate support for a common framework to describe the propensity towards goal-directed behavior as measured with two frequently used tasks. However, we have to caution that the amount of shared variance between the goal-directed and MB system in both tasks was rather low, suggesting that each task does also pick up distinct aspects of goal-directed behavior. Further investigation of the commonalities and differences between the MF and habit systems as measured with these, and other, tasks is needed. Also, a follow-up cross-validation on the neural systems driving these constructs acr",
+      "score": {
+        "composite": 0.35436924493521105,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7f6c48f8",
+      "doi": "10.3389/fnint.2018.00030",
+      "url": "https://doi.org/10.3389/fnint.2018.00030",
+      "openalex_id": null,
+      "pmid": "30123115",
+      "first_author": "Hasz",
+      "authors_display": "Hasz, B., & Redish, A.",
+      "year": 2018,
+      "title": "Deliberation and Procedural Automation on a Two-Step Task for Rats.",
+      "venue": "Frontiers in integrative neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:animal (rat,rats,rodent,rodents)",
+        "token:human (humans)",
+        "decision:mixed→human"
+      ],
+      "citation_count": 32,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fnint.2018.00030/pdf",
+      "tldr": null,
+      "abstract": "Current theories suggest that decision-making arises from multiple, competing action-selection systems. Rodent studies dissociate deliberation and procedural behavior, and find a transition from procedural to deliberative behavior with experience. However, it remains unknown how this transition from deliberative to procedural control evolves within single trials, or within blocks of repeated choices. We adapted for rats a two-step task which has been used to dissociate model-based from model-free decisions in humans. We found that a mixture of model-based and model-free algorithms was more likely to explain rat choice strategies on the task than either model-based or model-free algorithms alone. This task contained two choices per trial, which provides a more complex and non-discrete per-trial choice structure. This task structure enabled us to evaluate how deliberative and procedural behavior evolved within-trial and within blocks of repeated choice sequences. We found that vicarious trial and error (VTE), a behavioral correlate of deliberation in rodents, was correlated between the two choice points on a given lap. We also found that behavioral stereotypy, a correlate of procedural automation, increased with the number of repeated choices. While VTE at the first choice point decreased [corrected] with the number of repeated choices, VTE at the second choice point did not, and only increased after unexpected transitions within the task. This suggests that deliberation at the beginning of trials may correspond to changes in choice patterns, while mid-trial deliberation may correspond to an interruption of a procedural process.",
+      "score": {
+        "composite": 0.35310980846989976,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_08a8935f",
+      "doi": "10.1111/adb.12505",
+      "url": "https://doi.org/10.1111/adb.12505",
+      "openalex_id": null,
+      "pmid": "28419776",
+      "first_author": "Doñamayor",
+      "authors_display": "Doñamayor, N. et al.",
+      "year": 2018,
+      "title": "The involuntary nature of binge drinking: goal directedness and awareness of intention.",
+      "venue": "Addiction biology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 26,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/adb.12505",
+      "tldr": null,
+      "abstract": "Binge drinking represents a public health issue and is a known risk factor in the development of alcohol use disorders. Previous studies have shown behavioural as well as neuroanatomical alterations associated with binge drinking. Here, we address the question of the automaticity or involuntary nature of the behaviour by assessing goal-directed behaviour and intentionality. In this study, we used a computational two-step task, designed to discern between model-based/goal-directed and model-free/habitual behaviours, and the classic Libet clock task, to study intention awareness, in a sample of 31 severe binge drinkers (BD) and 35 matched healthy volunteers. We observed that BD had impaired goal-directed behaviour in the two-step task compared with healthy volunteers. In the Libet clock task, BD showed delayed intention awareness. Further, we demonstrated that alcohol use severity, as reflected by the alcohol use disorders identification test, correlated with decreased conscious awareness of volitional intention in BD, although it was unrelated to performance on the two-step task. However, the time elapsed since the last drinking binge influenced the model-free scores, with BD showing less habitual behaviour after longer abstinence. Our findings suggest that the implementation of goal-directed strategies and the awareness of volitional intention are affected in current heavy alcohol users. However, the modulation of these impairments by alcohol use severity and abstinence suggests a state effect of alcohol use in these measures and that top-down volitional control might be ameliorated with alcohol use cessation.",
+      "score": {
+        "composite": 0.3502052228843329,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Alcoholism",
+        "Severity of Illness Index",
+        "Case-Control Studies",
+        "Goals",
+        "Intention",
+        "Awareness",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Binge Drinking"
+      ]
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_25b2ad37",
+      "doi": "10.1007/s40429-026-00715-5",
+      "url": "https://doi.org/10.1007/s40429-026-00715-5",
+      "openalex_id": null,
+      "pmid": "41767824",
+      "first_author": "van Timmeren",
+      "authors_display": "van Timmeren, T., & Clark, L.",
+      "year": 2026,
+      "title": "Does the Habit Theory of Addictions Extend to Disordered Gambling?",
+      "venue": "Current addiction reports",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12945966",
+      "tldr": null,
+      "abstract": "<h4>Purpose of review</h4>'Habit theory' is a pervasive framework that describes addiction as a transition from goal-directed use (e.g. of drugs) to habitual response, accompanied by a neurobiological shift in fronto-striatal brain circuitry. As a theory that has been explored in the context of substance addictions, this article evaluates the conceptual fit of habit theory to gambling behavior and gambling disorder, and summarizes recent empirical evidence.<h4>Recent findings</h4>Relevant research falls into two main themes. First, studies have compared behavioral markers of habit (e.g. the two-step task, Pavlovian-to-Instrumental Transfer effects) in groups with and without gambling problems. These studies find limited direct support for the hypothesis. Second, psychological research has begun to examine habit-like behaviors in naturalistic gambling. These studies find behavioral expressions consistent with habit formation, primarily during engagement with slot machines, but are yet to test key tenets of habit theory such as insensitivity to outcome devaluation.<h4>Summary</h4>Modern gambling products (e.g. slot machines, in-play sports betting) create rich learning environments that may be highly amenable to habit formation. Further research is needed to develop and validate new tools for testing habit formation and habit strength / persistence in the context of gambling.",
+      "score": {
+        "composite": 0.34750000000000003,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1ba4defa",
+      "doi": "10.1007/s10071-022-01740-3",
+      "url": "https://doi.org/10.1007/s10071-022-01740-3",
+      "openalex_id": null,
+      "pmid": "36652043",
+      "first_author": "Veit",
+      "authors_display": "Veit, A. et al.",
+      "year": 2023,
+      "title": "Emulative learning of a two-step task in free-ranging domestic pigs.",
+      "venue": "Animal cognition",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s10071-022-01740-3.pdf",
+      "tldr": null,
+      "abstract": "Previous research showed that young domestic pigs learn through observation of conspecifics by using social learning mechanisms like social facilitation, enhancement effects, and even object movement re-enactment. The latter suggests some form of emulative learning in which the observer learns about the object's movements and affordances. As it remains unclear whether pigs need a social agent to learn about objects, we provided 36 free-ranging domestic pigs with varying degrees of social to non-social demonstrations on how to solve a two-step manipulative foraging task: observers watched either a conspecific or a human demonstrator, or self-moving objects (\"ghost control\"), or a ghost control accompanied by an inactive conspecific bystander. In addition, 22 subjects that were previously tested without any demonstrator were used as a non-observer control. To solve the task, the subjects had to first remove a plug from its recess to then be able to slide a cover to the side, which would lay open a food compartment. Observers interacted longer with the relevant objects (plugs) and were more successful in solving the task compared to non-observers. We found no differences with regard to success between the four observer groups, indicating that the pigs mainly learned about the apparatus rather than about the actions. As the only common feature of the different demonstrations was the movement of the plug and the cover, we conclude the observer pigs learned primarily by emulation, suggesting that social agents are not necessary for pigs when learning through observation.",
+      "score": {
+        "composite": 0.33579562944183156,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Animals",
+        "Swine",
+        "Sus scrofa",
+        "Humans",
+        "Learning",
+        "Movement",
+        "Social Learning"
+      ]
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d583d6e7",
+      "doi": "10.1038/s41539-025-00397-0",
+      "url": "https://doi.org/10.1038/s41539-025-00397-0",
+      "openalex_id": null,
+      "pmid": "41520014",
+      "first_author": "Huang",
+      "authors_display": "Huang, Y. et al.",
+      "year": 2026,
+      "title": "Deciding for others diminishes model-based decision-making but depends on individual prosociality.",
+      "venue": "NPJ science of learning",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12881483",
+      "tldr": null,
+      "abstract": "Acting successfully in dynamic environments requires learning supported by two systems that differ in computational demand: a fast, model-free system that repeats rewarded actions, and a more effortful model-based system that uses a mental model of the task structure to guide flexible, goal-directed decisions. A key open question is whether people engage effortful model-based strategies to the same extent when deciding for themselves versus others, and which computations underpin self-other differences. Using a two-step task with reinforcement learning drift-diffusion modelling in 92 adults, we found that deciding for others slowed down model-free learning and reduced reliance on model-based strategies, with the latter partially mediated by differences in non-decision time. Moreover, individual differences in social value orientation predicted the self-other discrepancy in model-based decision-making, with more prosocial individuals showing smaller gaps. Together, these findings identify the computational mechanisms underpinning prosocial model-based decision-making and demonstrate how individual differences modulate this computation.",
+      "score": {
+        "composite": 0.2975,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_62cd2bef",
+      "doi": "10.2196/12159",
+      "url": "https://doi.org/10.2196/12159",
+      "openalex_id": null,
+      "pmid": "30478023",
+      "first_author": "Li",
+      "authors_display": "Li, F. et al.",
+      "year": 2018,
+      "title": "Extraction of Information Related to Adverse Drug Events from Electronic Health Record Notes: Design of an End-to-End Model Based on Deep Learning.",
+      "venue": "JMIR medical informatics",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (patients)"
+      ],
+      "citation_count": 42,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6288593",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Pharmacovigilance and drug-safety surveillance are crucial for monitoring adverse drug events (ADEs), but the main ADE-reporting systems such as Food and Drug Administration Adverse Event Reporting System face challenges such as underreporting. Therefore, as complementary surveillance, data on ADEs are extracted from electronic health record (EHR) notes via natural language processing (NLP). As NLP develops, many up-to-date machine-learning techniques are introduced in this field, such as deep learning and multi-task learning (MTL). However, only a few studies have focused on employing such techniques to extract ADEs.<h4>Objective</h4>We aimed to design a deep learning model for extracting ADEs and related information such as medications and indications. Since extraction of ADE-related information includes two steps-named entity recognition and relation extraction-our second objective was to improve the deep learning model using multi-task learning between the two steps.<h4>Methods</h4>We employed the dataset from the Medication, Indication and Adverse Drug Events (MADE) 1.0 challenge to train and test our models. This dataset consists of 1089 EHR notes of cancer patients and includes 9 entity types such as Medication, Indication, and ADE and 7 types of relations between these entities. To extract information from the dataset, we proposed a deep-learning model that uses a bidirectional long short-term memory (BiLSTM) conditional random field network to recognize entities and a BiLSTM-Attention network to extract relations. To further improve the deep-learning model, we employed three typical MTL methods, namely, hard parameter sharing, parameter regularization, and task relation learning, to build three MTL models, called HardMTL, RegMTL, and LearnMTL, respectively.<h4>Results</h4>Since extraction of ADE-related information is a two-step task, the result of the second step (ie, relation extraction) was used to compare all models. We used microaver",
+      "score": {
+        "composite": 0.29694107130498504,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 25,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_aa9284ce",
+      "doi": "10.3390/s21041315",
+      "url": "https://doi.org/10.3390/s21041315",
+      "openalex_id": null,
+      "pmid": "33673137",
+      "first_author": "Lee",
+      "authors_display": "Lee, H., & Choi, Y.",
+      "year": 2021,
+      "title": "Enhancing SSVEP-Based Brain-Computer Interface with Two-Step Task-Related Component Analysis.",
+      "venue": "Sensors (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/1424-8220/21/4/1315/pdf?version=1613987010",
+      "tldr": null,
+      "abstract": "Among various methods for frequency recognition of the steady-state visual evoked potential (SSVEP)-based brain-computer interface (BCI) study, a task-related component analysis (TRCA), which extracts discriminative spatial filters for classifying electroencephalogram (EEG) signals, has gathered much interest. The TRCA-based SSVEP method yields lower computational cost and higher classification performance compared to existing SSVEP methods. In spite of its utility, the TRCA-based SSVEP method still suffers from the degradation of the frequency recognition rate in cases where EEG signals with a short length window are used. To address this issue, here, we propose an improved strategy for decoding SSVEPs, which is insensitive to a window length by carrying out two-step TRCA. The proposed method reuses the spatial filters corresponding to target frequencies generated by the TRCA. Followingly, the proposed method accentuates features for target frequencies by correlating individual template and test data. For the evaluation of the performance of the proposed method, we used a benchmark dataset with 35 subjects and confirmed significantly improved performance comparing with other existing SSVEP methods. These results imply the suitability as an efficient frequency recognition strategy for SSVEP-based BCI applications.",
+      "score": {
+        "composite": 0.2925657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher",
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Photic Stimulation",
+        "Evoked Potentials, Visual",
+        "Algorithms",
+        "Physical Phenomena",
+        "Brain-Computer Interfaces"
+      ]
+    },
+    {
+      "rank": 26,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_189c309a",
+      "doi": "10.3390/medicines7080043",
+      "url": "https://doi.org/10.3390/medicines7080043",
+      "openalex_id": null,
+      "pmid": "32731339",
+      "first_author": "Sakai",
+      "authors_display": "Sakai, K. et al.",
+      "year": 2020,
+      "title": "Relationship between Motor Estimation Error and Physical Function in Patients with Parkinson's Disease.",
+      "venue": "Medicines (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants,patient,patients)"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7460417",
+      "tldr": null,
+      "abstract": "<b>Background</b>: Motor estimation error is an index of how accurately one's body movement is recognized. This study determines whether motor estimation error distance is a Parkinson's disease (PD)- or age-related disability using a two-step task. <b>Methods</b>: The participants were 19 PD patients and 58 elderly people with disabilities. A two-step prediction test and an actual two-step test were performed. The motor estimation error distance (prediction of two-step distance minus actual two-step distance) and error rate between the two groups were compared. We conducted a correlation analysis between the motor estimation error and clinical factor (e.g., Hoehn and Yahr stage (H & Y), Unified Parkinson's Disease Rating Scale (UPDRS)) related to PD. <b>Results</b>: The motor estimation error distance was not significantly different between the PD patient group and the elderly group with disabilities. However, significant correlations between motor estimation error and H & Y, and between motor estimation error and UPDRS part II, were observed. The error rate was significantly correlated with the Fall Efficacy Scale. <b>Conclusions</b>: The motor estimation error distance is influenced by both aging and PD.",
+      "score": {
+        "composite": 0.2857956294418315,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_74fc449b",
+      "doi": "10.1038/s44271-024-00123-3",
+      "url": "https://doi.org/10.1038/s44271-024-00123-3",
+      "openalex_id": null,
+      "pmid": "39242765",
+      "first_author": "Sankhe",
+      "authors_display": "Sankhe, P., & Haruno, M.",
+      "year": 2024,
+      "title": "Model-free decision-making underlies motor errors in rapid sequential movements under threat.",
+      "venue": "Communications psychology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11347585",
+      "tldr": null,
+      "abstract": "Our movements, especially sequential ones, are usually goal-directed, i.e., coupled with task-level goals. Consequently, cognitive strategies for decision-making and motor performance are likely to influence each other. However, evidence linking decision-making strategies and motor performance remains elusive. Here, we designed a modified version of the two-step task, named the two-step sequential movement task, where participants had to conduct rapid sequential finger movements to obtain rewards (n = 40). In the shock session, participants received an electrical shock if they made an erroneous or slow movement, while in the no-shock session, they only received zero reward. We found that participants who prioritised model-free decision-making committed more motor errors in the presence of the shock stimulus (shock sessions) than those who prioritised model-based decision-making. Using a mediation analysis, we also revealed a strong link between the balance of the model-based and the model-free learning strategies and sequential movement performances. These results suggested that model-free decision-making produces more motor errors than model-based decision-making in rapid sequential movements under the threat of stressful stimuli.",
+      "score": {
+        "composite": 0.2825,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f20489df",
+      "doi": "10.1111/adb.13356",
+      "url": "https://doi.org/10.1111/adb.13356",
+      "openalex_id": null,
+      "pmid": "38221809",
+      "first_author": "Robinson",
+      "authors_display": "Robinson, A. et al.",
+      "year": 2024,
+      "title": "Model-based and model-free mechanisms in methamphetamine use disorder.",
+      "venue": "Addiction biology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10898847",
+      "tldr": null,
+      "abstract": "People with methamphetamine use disorder (MUD) struggle to shift their behaviour from methamphetamine-orientated habits to goal-oriented choices. The model-based/model-free framework is well suited to understand this difficulty by unpacking the computational mechanisms that support experienced-based (model-free) and goal-directed (model-based) choices. We aimed to examine whether 1) participants with MUD differed from controls on behavioural proxies and/or computational mechanisms of model-based/model-free choices; 2) model-based/model-free decision-making correlated with MUD symptoms; and 3) model-based/model-free deficits improved over six weeks in the group with MUD. Participants with MUD and controls with similar age, IQ and socioeconomic status completed the Two-Step Task at treatment commencement (MUD n = 30, Controls n = 31) and six weeks later (MUD n = 23, Controls n = 26). We examined behavioural proxies of model-based/model-free decisions using mixed logistic regression, and their underlying mechanisms using computational modelling. At a behavioural level, participants with MUD were more likely to switch their choices following rewarded actions, although this pattern improved at follow up. At a computational level, groups were similar in their use of model-based mechanisms, but participants with MUD were less likely to apply model-free mechanisms and less likely to repeat rewarded actions. We did not find evidence that individual differences in model-based or model-free parameters were associated with greater severity of methamphetamine dependence, nor did we find that group differences in computational parameters changed between baseline and follow-up assessment. Decision-making challenges in people with MUD are likely related to difficulties in pursuing choices previously associated with positive outcomes.",
+      "score": {
+        "composite": 0.26256576301232243,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Amphetamine-Related Disorders",
+        "Methamphetamine",
+        "Motivation",
+        "Reward",
+        "Infant, Newborn"
+      ]
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_13f38e31",
+      "doi": "10.1016/j.xjmad.2025.100155",
+      "url": "https://doi.org/10.1016/j.xjmad.2025.100155",
+      "openalex_id": null,
+      "pmid": "41311671",
+      "first_author": "Eken",
+      "authors_display": "Eken, H. et al.",
+      "year": 2025,
+      "title": "Clinical and neurocognitive correlates of obsessive-compulsive personality disorder symptoms: A transdiagnostic study in individuals with compulsive behaviors.",
+      "venue": "Journal of mood and anxiety disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12651414",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Obsessive-Compulsive Personality Disorder (OCPD) is characterized by a lifelong pattern of excessive attention to detail, rigidity and perfectionism. Although OCPD was historically linked to Obsessive-Compulsive and Related Disorders (OCRDs), this connection lacks consistent evidence. Compulsive behaviors, core to OCRDs, are repetitive actions aimed at reducing distress. To elucidate mechanistic links between OCPD and compulsive behaviors, this study examined relationships between OCPD traits, OCRD symptom domains, and cognitive functioning.<h4>Methods</h4>In a transdiagnostic sample of 229 adults with reported compulsive behaviors (CBs) enrolled in a larger clinical trial, we assessed maladaptive OCPD traits using the Pathological Obsessive Compulsive Personality Scale (POPS) and examined their associations with a range of OCRD self-report scales, including measures of hair pulling and skin picking. We evaluated cognitive performance using two NIH toolbox tests and a \"two-step\" reinforcement learning task.<h4>Results</h4>OCPD symptom scores correlated positively with OCD symptom severity on the OCI-R (r = 0.42, p < .001) and YBOCS (r = 0.38, p < .001). Higher OCPD scores were also associated with having a larger number of discrete OCRD symptom domains (r = 0.39, p < .001), and with higher scores across the majority of OCRD scales examined. OCPD scores, unlike OCD scores, showed no significant association with Flanker test or two-step task performance.<h4>Discussion</h4>Severity of pathological OCPD traits was related to overall higher severity of OCD symptoms, and linked to several individual domains of OCRDs. Neurocognitive indices showed modest relationships with OCRD symptom severity but not with OCPD. These findings contribute to our understanding of how these phenotypes may co-occur, and help guide future research.",
+      "score": {
+        "composite": 0.2525,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 30,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_5e174446",
+      "doi": "10.3390/ani14030431",
+      "url": "https://doi.org/10.3390/ani14030431",
+      "openalex_id": null,
+      "pmid": "38338074",
+      "first_author": "Yang",
+      "authors_display": "Yang, L. et al.",
+      "year": 2024,
+      "title": "The Hippocampus in Pigeons Contributes to the Model-Based Valuation and the Relationship between Temporal Context States.",
+      "venue": "Animals : an open access journal from MDPI",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "token:animal (pigeon,pigeons)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10854895",
+      "tldr": null,
+      "abstract": "Model-based decision-making guides organism behavior by the representation of the relationships between different states. Previous studies have shown that the mammalian hippocampus (Hp) plays a key role in learning the structure of relationships among experiences. However, the hippocampal neural mechanisms of birds for model-based learning have rarely been reported. Here, we trained six pigeons to perform a two-step task and explore whether their Hp contributes to model-based learning. Behavioral performance and hippocampal multi-channel local field potentials (LFPs) were recorded during the task. We estimated the subjective values using a reinforcement learning model dynamically fitted to the pigeon's choice of behavior. The results show that the model-based learner can capture the behavioral choices of pigeons well throughout the learning process. Neural analysis indicated that high-frequency (12-100 Hz) power in Hp represented the temporal context states. Moreover, dynamic correlation and decoding results provided further support for the high-frequency dependence of model-based valuations. In addition, we observed a significant increase in hippocampal neural similarity at the low-frequency band (1-12 Hz) for common temporal context states after learning. Overall, our findings suggest that pigeons use model-based inferences to learn multi-step tasks, and multiple LFP frequency bands collaboratively contribute to model-based learning. Specifically, the high-frequency (12-100 Hz) oscillations represent model-based valuations, while the low-frequency (1-12 Hz) neural similarity is influenced by the relationship between temporal context states. These results contribute to our understanding of the neural mechanisms underlying model-based learning and broaden the scope of hippocampal contributions to avian behavior.",
+      "score": {
+        "composite": 0.1925328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 31,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a8e8d09a",
+      "doi": "10.5334/cpsy.101",
+      "url": "https://doi.org/10.5334/cpsy.101",
+      "openalex_id": null,
+      "pmid": "39959565",
+      "first_author": "Brands",
+      "authors_display": "Brands, A. et al.",
+      "year": 2025,
+      "title": "Signatures of Perseveration and Heuristic-Based Directed Exploration in Two-Step Sequential Decision Task Behaviour.",
+      "venue": "Computational psychiatry (Cambridge, Mass.)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11827566",
+      "tldr": null,
+      "abstract": "Processes formalized in classic Reinforcement Learning (RL) theory, such as model-based (MB) control, habit formation, and exploration have proven fertile in cognitive and computational neuroscience, as well as computational psychiatry. Dysregulations in MB control and exploration and their neurocomputational underpinnings play a key role across several psychiatric disorders. Yet, computational accounts mostly study these processes in isolation. The current study extended standard hybrid models of a widely-used sequential RL-task (two-step task; TST) employed to measure MB control. We implemented and compared different computational model extensions for this task to quantify potential exploration and perseveration mechanisms. In two independent data sets spanning two different variants of the task, an extended hybrid RL model with a higher-order perseveration and heuristic-based exploration mechanism provided the best fit. While a simpler model with complex perseveration only, was equally well equipped to describe the data, we found a robust positive effect of directed exploration on choice probabilities in stage one of the task. Posterior predictive checks further showed that the extended model reproduced choice patterns present in both data sets. Results are discussed with respect to implications for computational psychiatry and the search for neurocognitive endophenotypes.",
+      "score": {
+        "composite": 0.1684017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 32,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d3942afe",
+      "doi": "10.3390/diagnostics15202646",
+      "url": "https://doi.org/10.3390/diagnostics15202646",
+      "openalex_id": null,
+      "pmid": "41153319",
+      "first_author": "Marcaccini",
+      "authors_display": "Marcaccini, G. et al.",
+      "year": 2025,
+      "title": "From Prompts to Practice: Evaluating ChatGPT, Gemini, and Grok Against Plastic Surgeons in Local Flap Decision-Making.",
+      "venue": "Diagnostics (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12564864",
+      "tldr": null,
+      "abstract": "<b>Background</b>: Local flaps are a cornerstone of reconstructive plastic surgery for oncological skin defects, ensuring functional recovery and aesthetic integration. Their selection, however, varies with surgeon experience. Generative artificial intelligence has emerged as a potential decision-support tool, although its clinical role remains uncertain. <b>Methods</b>: We evaluated three generative AI platforms (ChatGPT-5 by OpenAI, Grok by xAI, and Gemini by Google DeepMind) in their free-access versions available in September 2025. Ten preoperative photographs of suspected cutaneous neoplastic lesions from diverse facial and limb sites were submitted to each platform in a two-step task: concise description of site, size, and tissue involvement, followed by the single most suitable local flap for reconstruction. Outputs were compared with the unanimous consensus of experienced plastic surgeons. <b>Results</b>: Performance differed across models. ChatGPT-5 consistently described lesion size accurately and achieved complete concordance with surgeons in flap selection. Grok showed intermediate performance, tending to recognise tissue planes better than lesion size and proposing flaps that were often acceptable but not always the preferred choice. Gemini estimated size well, yet was inconsistent for anatomical site, tissue involvement, and flap recommendation. When partially correct answers were considered acceptable, differences narrowed but the overall ranking remained unchanged. <b>Conclusion</b>: Generative AI can support reconstructive reasoning from clinical images with variable reliability. In this series, ChatGPT-5 was the most dependable for local flap planning, suggesting a potential role in education and preliminary decision-making. Larger studies using standardised image acquisition and explicit uncertainty reporting are needed to confirm clinical applicability and safety.",
+      "score": {
+        "composite": 0.1625328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    }
+  ]
+}

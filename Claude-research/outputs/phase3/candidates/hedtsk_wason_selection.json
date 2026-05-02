@@ -1,0 +1,1375 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:41:29",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_wason_selection",
+    "name": "Wason Selection Task",
+    "aliases": [
+      "Wason",
+      "Card Selection Task"
+    ],
+    "category_id": "reasoning_and_problem_solving",
+    "short_definition": "Four cards with letters and numbers under a conditional rule; participants choose cards to turn over to test the rule. Indexes conditional reasoning and content effects.",
+    "description": "The Wason Selection Task is the classic test of conditional reasoning. Participants see four cards, each showing information on both sides. A conditional rule is stated (e.g., \"If a card has an A on one side, then it has a 2 on the other\"). Cards show one side each (e.g., A, B, 2, 7), and participants must select which cards need to be turned over to test the rule. The correct answer is the card showing A (potentially confirming) and the card showing 7 (potentially falsifying), but most participants incorrectly select A and 2 (confirmation bias). When the rule is reframed in terms of social contracts (e.g., \"If you drink alcohol, you must be over 21\"), performance dramatically improves, supporting evolutionary theories of cheater-detection modules.",
+    "inclusion_test": {
+      "procedure": "Participants see four cards showing one side each and a conditional rule (if P then Q). They select which cards must be turned over to test the rule.",
+      "manipulation": "Rule content (abstract vs. deontic/social contract); rule polarity; number of rules; thematic context.",
+      "measurement": "Proportion selecting logically correct cards (P and not-Q); error patterns; facilitation from social-contract framing."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 18,
+      "picked": 17,
+      "reserve": 0,
+      "excluded": 1,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 1
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_e49bc16d",
+      "doi": "10.1002/hbm.22802",
+      "url": "https://doi.org/10.1002/hbm.22802",
+      "openalex_id": null,
+      "pmid": "25833189",
+      "first_author": "Hearne",
+      "authors_display": "Hearne, L. et al.",
+      "year": 2015,
+      "title": "Interactions between default mode and control networks as a function of increasing cognitive reasoning complexity.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 60,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Successful performance of challenging cognitive tasks depends on a consistent functional segregation of activity within the default-mode network, on the one hand, and control networks encompassing frontoparietal and cingulo-opercular areas on the other. Recent work, however, has suggested that in some cognitive control contexts nodes within the default-mode and control networks may actually cooperate to achieve optimal task performance. Here, we used functional magnetic resonance imaging to examine whether the ability to relate variables while solving a cognitive reasoning problem involves transient increases in connectivity between default-mode and control regions. Participants performed a modified version of the classic Wason selection task, in which the number of variables to be related is systematically varied across trials. As expected, areas within the default-mode network showed a parametric deactivation with increases in relational complexity, compared with neural activity in null trials. Critically, some of these areas also showed enhanced connectivity with task-positive control regions. Specifically, task-based connectivity between the striatum and the angular gyri, and between the thalamus and right temporal pole, increased as a function of relational complexity. These findings challenge the notion that functional segregation between regions within default-mode and control networks invariably support cognitive task performance, and reveal previously unknown roles for the striatum and thalamus in managing network dynamics during cognitive reasoning.",
+      "score": {
+        "composite": 0.5561690516186011,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23800953980773776,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05950238495193444,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Thalamus",
+        "Neostriatum",
+        "Cerebral Cortex",
+        "Nerve Net",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Thinking",
+        "Psychomotor Performance",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_57e1e7e4",
+      "doi": "10.1038/s41598-024-78053-7",
+      "url": "https://doi.org/10.1038/s41598-024-78053-7",
+      "openalex_id": null,
+      "pmid": "39537676",
+      "first_author": "Berthet",
+      "authors_display": "Berthet, V. et al.",
+      "year": 2024,
+      "title": "A common factor underlying individual differences in confirmation bias.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41598-024-78053-7.pdf",
+      "tldr": null,
+      "abstract": "When they are asked to test a given hypothesis, individuals tend to be biased towards confirming evidence. This phenomenon has been documented on different cognitive components: information search, weighing of evidence, and memory recall. However, the interpretation of these observations has been debated, and it remains unclear whether they truly reflect a confirmation bias (as opposed to e.g., a bias towards positive information). In the present study we aimed at evaluating whether these biases might be subtended by a common factor. We adapted three classic experimental paradigms on hypothesis testing (Wason selection task, 2-4-6 task, and interviewee task) and examined the relation between these biases using an individual differences approach. Participants (N = 200) completed a total of nine behavioral tasks, in which each component of confirmation bias was measured in each of the three experimental paradigms. Correlations and factor analyses within a multitrait-multimethod framework indicated greater convergence of bias scores within each component across paradigms, than within experimental paradigms. This suggests that a common factor underlies the different measurements of confirmation bias across experimental paradigms, at least to some extent. In these paradigms, thus, biases towards confirming evidence may truly reflect a confirmation bias.",
+      "score": {
+        "composite": 0.546732429678989,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Individuality",
+        "Cognition",
+        "Mental Recall",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Bias"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d3df66b1",
+      "doi": "10.1371/journal.pone.0236153",
+      "url": "https://doi.org/10.1371/journal.pone.0236153",
+      "openalex_id": null,
+      "pmid": "32726352",
+      "first_author": "Cresswell",
+      "authors_display": "Cresswell, C., & Speelman, C.",
+      "year": 2020,
+      "title": "Does mathematics training lead to better logical thinking and reasoning? A cross-sectional assessment from students to professors.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0236153&type=printable",
+      "tldr": null,
+      "abstract": "Mathematics is often promoted as endowing those who study it with transferable skills such as an ability to think logically and critically or to have improved investigative skills, resourcefulness and creativity in problem solving. However, there is scant evidence to back up such claims. This project tested participants with increasing levels of mathematics training on 11 well-studied rational and logical reasoning tasks aggregated from various psychological studies. These tasks, that included the Cognitive Reflection Test and the Wason Selection Task, are of particular interest as they have typically and reliably eluded participants in all studies, and results have been uncorrelated with general intelligence, education levels and other demographic information. The results in this study revealed that in general the greater the mathematics training of the participant, the more tasks were completed correctly, and that performance on some tasks was also associated with performance on others not traditionally associated. A ceiling effect also emerged. The work is deconstructed from the viewpoint of adding to the platform from which to approach the greater, and more scientifically elusive, question: are any skills associated with mathematics training innate or do they arise from skills transfer?",
+      "score": {
+        "composite": 0.526732429678989,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cross-Sectional Studies",
+        "Intelligence",
+        "Problem Solving",
+        "Thinking",
+        "Mathematics",
+        "Students",
+        "Logic",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Creativity"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a5ebd6e8",
+      "doi": "10.1177/0956797610384148",
+      "url": "https://doi.org/10.1177/0956797610384148",
+      "openalex_id": null,
+      "pmid": "20855897",
+      "first_author": "Ermer",
+      "authors_display": "Ermer, E., & Kiehl, K.",
+      "year": 2010,
+      "title": "Psychopaths are impaired in social exchange and precautionary reasoning.",
+      "venue": "Psychological science",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Psychopaths show a profound lack of morality and behavioral controls in the presence of intact general intellectual functioning. Two hallmarks of psychopathy are the persistent violation of social contracts (i.e., cheating) and chronic, impulsive risky behavior. These behaviors present a puzzle: Can psychopaths understand and reason about what counts as cheating or risky behavior in a particular situation? We tested incarcerated psychopaths' and incarcerated nonpsychopaths' reasoning about social contract rules, precautionary rules, and descriptive rules using the Wason selection task. Results were consistent with our hypotheses: Psychopaths (compared with matched nonpsychopaths) showed significant impairment on social contract rules and precautionary rules, but not on descriptive rules. These results cannot be accounted for by differences in intelligence, motivation, or general antisocial tendency. These findings suggest that examination of evolutionarily identified reasoning processes can be a fruitful research approach for identifying which specific mechanisms are impaired in psychopathy.",
+      "score": {
+        "composite": 0.5058640370699425,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.26666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.04,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Risk-Taking",
+        "Motivation",
+        "Intelligence",
+        "Moral Development",
+        "Interpersonal Relations",
+        "Problem Solving",
+        "Antisocial Personality Disorder",
+        "Personality Assessment",
+        "Social Control, Informal",
+        "Logic",
+        "Adult",
+        "Prisoners",
+        "Male"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_357a3c69",
+      "doi": "10.3389/fpsyg.2021.584689",
+      "url": "https://doi.org/10.3389/fpsyg.2021.584689",
+      "openalex_id": null,
+      "pmid": "33912097",
+      "first_author": "Bruckmaier",
+      "authors_display": "Bruckmaier, G. et al.",
+      "year": 2021,
+      "title": "Tversky and Kahneman's Cognitive Illusions: Who Can Solve Them, and Why?",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,participants)"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8075297",
+      "tldr": null,
+      "abstract": "In the present paper we empirically investigate the psychometric properties of some of the most famous statistical and logical cognitive illusions from the \"heuristics and biases\" research program by Daniel Kahneman and Amos Tversky, who nearly 50 years ago introduced fascinating brain teasers such as the famous Linda problem, the Wason card selection task, and so-called Bayesian reasoning problems (e.g., the mammography task). In the meantime, a great number of articles has been published that empirically examine single cognitive illusions, theoretically explaining people's faulty thinking, or proposing and experimentally implementing measures to foster insight and to make these problems accessible to the human mind. Yet these problems have thus far usually been empirically analyzed on an individual-item level only (e.g., by experimentally comparing participants' performance on various versions of one of these problems). In this paper, by contrast, we examine these illusions as a group and look at the ability to solve them as a psychological construct. Based on an sample of <i>N</i> = 2,643 Luxembourgian school students of age 16-18 we investigate the internal psychometric structure of these illusions (i.e., Are they substantially correlated? Do they form a reflexive or a formative construct?), their connection to related constructs (e.g., Are they distinguishable from intelligence or mathematical competence in a confirmatory factor analysis?), and the question of which of a person's abilities can predict the correct solution of these brain teasers (by means of a regression analysis).",
+      "score": {
+        "composite": 0.48483252594540904,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_e9e92293",
+      "doi": "10.1371/journal.pone.0123024",
+      "url": "https://doi.org/10.1371/journal.pone.0123024",
+      "openalex_id": null,
+      "pmid": "25849555",
+      "first_author": "Rossi",
+      "authors_display": "Rossi, S. et al.",
+      "year": 2015,
+      "title": "Helping reasoners succeed in the Wason selection task: when executive learning discourages heuristic response but does not necessarily encourage logic.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0123024&type=printable",
+      "tldr": null,
+      "abstract": "Reasoners make systematic logical errors by giving heuristic responses that reflect deviations from the logical norm. Influential studies have suggested first that our reasoning is often biased because we minimize cognitive effort to surpass a cognitive conflict between heuristic response from system 1 and analytic response from system 2 thinking. Additionally, cognitive control processes might be necessary to inhibit system 1 responses to activate a system 2 response. Previous studies have shown a significant effect of executive learning (EL) on adults who have transferred knowledge acquired on the Wason selection task (WST) to another isomorphic task, the rule falsification task (RFT). The original paradigm consisted of teaching participants to inhibit a classical matching heuristic that sufficed the first problem and led to significant EL transfer on the second problem. Interestingly, the reasoning tasks differed in inhibiting-heuristic metacognitive cost. Success on the WST requires half-suppression of the matching elements. In contrast, the RFT necessitates a global rejection of the matching elements for a correct answer. Therefore, metacognitive learning difficulty most likely differs depending on whether one uses the first or second task during the learning phase. We aimed to investigate this difficulty and various matching-bias inhibition effects in a new (reversed) paradigm. In this case, the transfer effect from the RFT to the WST could be more difficult because the reasoner learns to reject all matching elements in the first task. We observed that the EL leads to a significant reduction in matching selections on the WST without increasing logical performances. Interestingly, the acquired metacognitive knowledge was too \"strictly\" transferred and discouraged matching rather than encouraging logic. This finding underlines the complexity of learning transfer and adds new evidence to the pedagogy of reasoning.",
+      "score": {
+        "composite": 0.4666995481728278,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cognition",
+        "Learning",
+        "Thinking",
+        "Decision Making",
+        "Logic",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Executive Function",
+        "Heuristics",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_34f21887",
+      "doi": "10.1002/hbm.20114",
+      "url": "https://doi.org/10.1002/hbm.20114",
+      "openalex_id": null,
+      "pmid": "15852469",
+      "first_author": "Canessa",
+      "authors_display": "Canessa, N. et al.",
+      "year": 2005,
+      "title": "The effect of social content on deductive reasoning: an fMRI study.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 34,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Psychological studies of deductive reasoning have shown that subjects' performance is affected significantly by the content of the presented stimuli. Specifically, subjects find it easier to reason about contexts and situations with a social content. In the present study, the effect of content on brain activation was investigated with functional magnetic resonance imaging (fMRI) while subjects were solving two versions of the Wason selection task, which previous behavioral studies have shown to elicit a significant content effect. One version described an arbitrary relation between two actions (Descriptive: \"If someone does ..., then he does ...\"), whereas the other described an exchange of goods between two persons (Social-Exchange: \"If you give me ..., then I give you ...\"). Random-effect statistical analyses showed that compared to baseline, both tasks activated frontal medial cortex and left dorsolateral frontal and parietal regions, confirming the major role of the left hemisphere in deductive reasoning. In addition, although the two reasoning conditions were identical in logical form, the social-exchange task was also associated with right frontal and parietal activations, mirroring the left-sided activations common to both reasoning tasks. These results suggest that the recruitment of the right hemisphere is dependent on the content of the stimuli presented.",
+      "score": {
+        "composite": 0.45812815538724055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Problem Solving",
+        "Image Processing, Computer-Assisted",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_cf535f36",
+      "doi": "10.3389/fpsyg.2014.00570",
+      "url": "https://doi.org/10.3389/fpsyg.2014.00570",
+      "openalex_id": null,
+      "pmid": "24959160",
+      "first_author": "Jung",
+      "authors_display": "Jung, N. et al.",
+      "year": 2014,
+      "title": "How emotions affect logical reasoning: evidence from experiments with mood-manipulated participants, spider phobics, and people with exam anxiety.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 37,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4050437",
+      "tldr": null,
+      "abstract": "Recent experimental studies show that emotions can have a significant effect on the way we think, decide, and solve problems. This paper presents a series of four experiments on how emotions affect logical reasoning. In two experiments different groups of participants first had to pass a manipulated intelligence test. Their emotional state was altered by giving them feedback, that they performed excellent, poor or on average. Then they completed a set of logical inference problems (with if p, then q statements) either in a Wason selection task paradigm or problems from the logical propositional calculus. Problem content also had either a positive, negative or neutral emotional value. Results showed a clear effect of emotions on reasoning performance. Participants in negative mood performed worse than participants in positive mood, but both groups were outperformed by the neutral mood reasoners. Problem content also had an effect on reasoning performance. In a second set of experiments, participants with exam or spider phobia solved logical problems with contents that were related to their anxiety disorder (spiders or exams). Spider phobic participants' performance was lowered by the spider-content, while exam anxious participants were not affected by the exam-related problem content. Overall, unlike some previous studies, no evidence was found that performance is improved when emotion and content are congruent. These results have consequences for cognitive reasoning research and also for cognitively oriented psychotherapy and the treatment of disorders like depression and anxiety.",
+      "score": {
+        "composite": 0.4393185015619694,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2106073395812109,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05265183489530272,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9d2e0c84",
+      "doi": "10.1093/pnasnexus/pgae233",
+      "url": "https://doi.org/10.1093/pnasnexus/pgae233",
+      "openalex_id": null,
+      "pmid": "39015546",
+      "first_author": "Lampinen",
+      "authors_display": "Lampinen, A. et al.",
+      "year": 2024,
+      "title": "Language models, like humans, show content effects on reasoning tasks.",
+      "venue": "PNAS nexus",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,humans)"
+      ],
+      "citation_count": 23,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1093/pnasnexus/pgae233",
+      "tldr": null,
+      "abstract": "reasoning is a key ability for an intelligent system. Large language models (LMs) achieve above-chance performance on abstract reasoning tasks but exhibit many imperfections. However, human abstract reasoning is also imperfect. Human reasoning is affected by our real-world knowledge and beliefs, and shows notable \"content effects\"; humans reason more reliably when the semantic content of a problem supports the correct logical inferences. These content-entangled reasoning patterns are central to debates about the fundamental nature of human intelligence. Here, we investigate whether language models-whose prior expectations capture some aspects of human knowledge-similarly mix content into their answers to logic problems. We explored this question across three logical reasoning tasks: natural language inference, judging the logical validity of syllogisms, and the Wason selection task. We evaluate state of the art LMs, as well as humans, and find that the LMs reflect many of the same qualitative human patterns on these tasks-like humans, models answer more accurately when the semantic content of a task supports the logical inferences. These parallels are reflected in accuracy patterns, and in some lower-level features like the relationship between LM confidence over possible answers and human response times. However, in some cases the humans and models behave differently-particularly on the Wason task, where humans perform much worse than large models, and exhibit a distinct error pattern. Our findings have implications for understanding possible contributors to these human cognitive effects, as well as the factors that influence language model performance.",
+      "score": {
+        "composite": 0.4326670521465946,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1619c99c",
+      "doi": "10.3758/s13428-010-0057-5",
+      "url": "https://doi.org/10.3758/s13428-010-0057-5",
+      "openalex_id": null,
+      "pmid": "21302022",
+      "first_author": "Stringer",
+      "authors_display": "Stringer, S. et al.",
+      "year": 2011,
+      "title": "Bayesian inference for the information gain model.",
+      "venue": "Behavior research methods",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3098374",
+      "tldr": null,
+      "abstract": "One of the most popular paradigms to use for studying human reasoning involves the Wason card selection task. In this task, the participant is presented with four cards and a conditional rule (e.g., \"If there is an A on one side of the card, there is always a 2 on the other side\"). Participants are asked which cards should be turned to verify whether or not the rule holds. In this simple task, participants consistently provide answers that are incorrect according to formal logic. To account for these errors, several models have been proposed, one of the most prominent being the information gain model (Oaksford & Chater, Psychological Review, 101, 608-631, 1994). This model is based on the assumption that people independently select cards based on the expected information gain of turning a particular card. In this article, we present two estimation methods to fit the information gain model: a maximum likelihood procedure (programmed in R) and a bayesian procedure (programmed in WinBUGS). We compare the two procedures and illustrate the flexibility of the bayesian hierarchical procedure by applying it to data from a meta-analysis of the Wason task (Oaksford & Chater, Psychological Review, 101, 608-631, 1994). We also show that the goodness of fit of the information gain model can be assessed by inspecting the posterior predictives of the model. These bayesian procedures make it easy to apply the information gain model to empirical data. Supplemental materials may be downloaded along with this article from www.springerlink.com.",
+      "score": {
+        "composite": 0.43256840762811094,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Probability",
+        "Bayes Theorem",
+        "Problem Solving",
+        "Decision Making",
+        "Models, Psychological",
+        "Logic"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_0c173e09",
+      "doi": "10.1177/1474704917721713",
+      "url": "https://doi.org/10.1177/1474704917721713",
+      "openalex_id": null,
+      "pmid": "28783973",
+      "first_author": "Kornreich",
+      "authors_display": "Kornreich, C. et al.",
+      "year": 2017,
+      "title": "Conditional Reasoning in Schizophrenic Patients.",
+      "venue": "Evolutionary psychology : an international journal of evolutionary approaches to psychology and behavior",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10480914",
+      "tldr": null,
+      "abstract": "Conditional reasoning (if p then q) is used very frequently in everyday situations. Conditional reasoning is impaired in brain-lesion patients, psychopathy, alcoholism, and polydrug dependence. Many neurocognitive deficits have also been described in schizophrenia. We assessed conditional reasoning in 25 patients with schizophrenia, 25 depressive patients, and 25 controls, using the Wason selection task in three different domains: social contracts, precautionary rules, and descriptive rules. Control measures included depression, anxiety, and severity of schizophrenia measures as a Verbal Intelligence Scale. Patients with schizophrenia were significantly impaired on all conditional reasoning tasks compared to depressives and controls. However, the social contract and precautions tasks yielded better results than the descriptive tasks. Differences between groups disappeared for social contract but remained for precautions and descriptive tasks when verbal intelligence was used as a covariate. These results suggest that domain-specific reasoning mechanisms, proposed by evolutionary psychologists, are relatively resilient in the face of brain network disruptions that impair more general reasoning abilities. Nevertheless, patients with schizophrenia could encounter difficulties understanding precaution rules and social contracts in real-life situations resulting in unwise risk-taking and misunderstandings in the social world.",
+      "score": {
+        "composite": 0.424832525945409,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Severity of Illness Index",
+        "Depression",
+        "Anxiety",
+        "Intelligence",
+        "Social Perception",
+        "Thinking",
+        "Schizophrenia",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_4ac05a04",
+      "doi": "10.1111/j.1360-0443.2010.03346.x",
+      "url": "https://doi.org/10.1111/j.1360-0443.2010.03346.x",
+      "openalex_id": null,
+      "pmid": "21205056",
+      "first_author": "Kornreich",
+      "authors_display": "Kornreich, C. et al.",
+      "year": 2011,
+      "title": "Impaired conditional reasoning in alcoholics: a negative impact on social interactions and risky behaviors?",
+      "venue": "Addiction (Abingdon, England)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 22,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Aims</h4>To study the 'social brain' in alcoholics by investigating social contract reasoning, theory of mind and emotional intelligence.<h4>Design</h4>A behavioral study comparing recently detoxified alcoholics with normal, healthy controls.<h4>Setting</h4>Emotional intelligence and decoding of emotional non-verbal cues have been shown to be impaired in alcoholics. This study explores whether these deficits extend to conditional reasoning about social contracts.<h4>Participants</h4>Twenty-five recently detoxified alcoholics (17 men and eight women) were compared with 25 normal controls (17 men and eight women) matched for sex, age and education level.<h4>Measurements</h4>Wason selection task investigating conditional reasoning on three different rule types (social contract, precautionary and descriptive), revised Reading the Mind in the Eyes Test, Trait Emotional Intelligence Questionnaire (modified version) and additional control measures.<h4>Findings</h4>Conditional reasoning was impaired in alcoholics. Performance on descriptive rules was not above chance. Reasoning performance was markedly better on social contract and precautionary rules, but this performance was still significantly lower than in controls. Several emotional intelligence measures were lower in alcoholics compared to controls, but these were not correlated with reasoning performance.<h4>Conclusions</h4>Conditional reasoning, including reasoning about social contracts and emotional intelligence appear to be impaired in alcoholics. Impairment seems to be particularly severe on descriptive rules. Impairment in social contract reasoning might lead to misunderstandings and frustration in social interactions, and reasoning difficulties about precautionary rules might contribute to risky behaviors in this population.",
+      "score": {
+        "composite": 0.3820510277575655,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Alcoholism",
+        "Ethanol",
+        "Facial Expression",
+        "Analysis of Variance",
+        "Multivariate Analysis",
+        "Case-Control Studies",
+        "Risk-Taking",
+        "Interpersonal Relations",
+        "Problem Solving",
+        "Social Perception",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Theory of Mind",
+        "Emotional Intelligence",
+        "Alcoholics"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a4dd3fa5",
+      "doi": "10.1177/09622802231167437",
+      "url": "https://doi.org/10.1177/09622802231167437",
+      "openalex_id": null,
+      "pmid": "37021480",
+      "first_author": "Glimm",
+      "authors_display": "Glimm, E., & Robertson, D.",
+      "year": 2023,
+      "title": "Familywise error rate control for block response-adaptive randomization.",
+      "venue": "Statistical methods in medical research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.sagepub.com/doi/pdf/10.1177/09622802231167437",
+      "tldr": null,
+      "abstract": "Response-adaptive randomization allows the probabilities of allocating patients to treatments in a clinical trial to change based on the previously observed response data, in order to achieve different experimental goals. One concern over the use of such designs in practice, particularly from a regulatory viewpoint, is controlling the type I error rate. To address this, Robertson and Wason (Biometrics, 2019) proposed methodology that guarantees familywise error rate control for a large class of response-adaptive designs by re-weighting the usual z-test statistic. In this article, we propose an improvement of their method that is conceptually simpler, in the context where patients are allocated to the experimental treatment arms in a trial in blocks (i.e. groups) using response-adaptive randomization. We show the modified method guarantees that there will never be negative weights for the contribution of each block of data to the adjusted test statistics, and can also provide a substantial power advantage in practice.",
+      "score": {
+        "composite": 0.30923507429477765,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Probability",
+        "Random Allocation",
+        "Research Design"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_b8ff8100",
+      "doi": "10.2147/ndt.s448484",
+      "url": "https://doi.org/10.2147/ndt.s448484",
+      "openalex_id": null,
+      "pmid": "38496322",
+      "first_author": "Chen",
+      "authors_display": "Chen, C. et al.",
+      "year": 2024,
+      "title": "Neural Correlates of Cognitive Dysfunction in Conditional Reasoning in Schizophrenia: An Event-related Potential Study.",
+      "venue": "Neuropsychiatric disease and treatment",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants,patients)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10942016",
+      "tldr": null,
+      "abstract": "<h4>Purpose</h4>Schizophrenia patients show impaired conditional reasoning. This study was to investigate event-related potential (ERP) characteristics of the conditional reasoning in schizophrenia.<h4>Patients and methods</h4>Participants included 24 schizophrenia patients and 30 normal controls (NCs), and the measurements of ERPs were conducted during the Wason selection task.<h4>Results</h4>Results showed that NCs consistently outperformed schizophrenia patients in terms of accuracy. Among the different rule types of the task, the precautionary type experiment yielded the highest accuracy rates. In contrast, both the descriptive and abstract type experiments resulted in lower accuracy. The RTs of the abstract type experiment were the shortest among the four experiments. In the abstract type of the Wason selection task, the NCs exhibited higher amplitudes for both the N1 and P2 components compared to the schizophrenia patients. At the parietal lobe, the N2 amplitudes were higher for the social contract type of the task compared to the precautionary version. At the frontal lobe, the N2 amplitudes were highest for the abstract type of the task. In the abstract type, the N2 amplitude at the parietal lobe was higher than that at the central lobe. The NCs displayed lower amplitudes for both the P3 and slow wave compared to the schizophrenia patients. Differences were observed between the NC and schizophrenia groups in terms of the latencies for N1, P2, N2, P3 and slow wave components across different experiment types and regions of interest.<h4>Conclusion</h4>In conclusion, the observed ERP patterns provide valuable insights into the neural mechanisms underlying the Wason selection task, highlighting the differences between NCs and patients with schizophrenia.",
+      "score": {
+        "composite": 0.29669954817282784,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 15,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_750d35f2",
+      "doi": "10.3390/bs14080635",
+      "url": "https://doi.org/10.3390/bs14080635",
+      "openalex_id": null,
+      "pmid": "39199031",
+      "first_author": "Jacobs",
+      "authors_display": "Jacobs, J. et al.",
+      "year": 2024,
+      "title": "The Roles of Rule Type and Word Term in the Deductive Reasoning of Adults with and without Dyslexia.",
+      "venue": "Behavioral sciences (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.3390/bs14080635",
+      "tldr": null,
+      "abstract": "Despite its importance to everyday functioning, reasoning is underexplored in developmental dyslexia. The current study investigated verbal deductive reasoning on the Wason selection task, not previously used in dyslexia research despite its well-established pedigree. Reasoning rule was manipulated, with the conditional rules varying in the logical values presented. The word frequency and imageability of the word terms was also manipulated. Twenty-six adults with dyslexia and 31 adults without dyslexia completed Wason selection task problems. No group difference in reasoning accuracy or completion time was found. However, the participants were most accurate when reasoning with the rule type \"<i>If p, then not q</i>\" and least accurate with the rule type \"<i>If p then q</i>\". More trials were also answered correctly when the word terms were highly imageable but of average word frequency. These findings are in line with the general reasoning literature. Dyslexia status did not interact with either rule type or word term type. The study expands upon previous research by testing verbal deductive reasoning in dyslexia, highlighting the role of imageability in facilitating reasoning performance for all, regardless of the presence or absence of dyslexia. Implications for the design of educational materials are considered.",
+      "score": {
+        "composite": 0.2866666666666666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f6ddc121",
+      "doi": "10.25122/jml-2021-0215",
+      "url": "https://doi.org/10.25122/jml-2021-0215",
+      "openalex_id": null,
+      "pmid": "35928360",
+      "first_author": "Hashemi",
+      "authors_display": "Hashemi, S. et al.",
+      "year": 2022,
+      "title": "Set-shifting and inhibition interplay affect the rule-matching bias occurrence during conditional reasoning task.",
+      "venue": "Journal of medicine and life",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9321491",
+      "tldr": null,
+      "abstract": "The rule-matching bias is a common error during conditional reasoning tasks, which refers to a tendency to match responses with the lexical context in the conditional rule and leads to incorrect responses. Conditional reasoning is one of the higher-level cognitive abilities affected by many cognitive skills. We aimed to determine whether inhibition and set-shifting skills with rule-matching bias occurrence could be related and, if so, to what quantitative, at a statistically significant level. A total of 30 healthy university students aged 18 to 30 participated in this study. We used the Wason's Selection Task (WST) to measure conditional reasoning and investigated their inhibition and set-shifting skills with the Stroop and Wisconsin Card Sorting Test, respectively. Results showed a significant positive correlation between the number of correct responses to the Stroop test and the Wason Selection Card Test (p=0.614). There was a positive correlation between the number of correct responses to the Wisconsin Card Sorting Test and the Wason Selection Card Test (p=0.423). Participants with higher inhibition and set-shifting abilities showed better performance in the conditional reasoning test and lower rule-matching bias errors.",
+      "score": {
+        "composite": 0.2733662148394945,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cognition",
+        "Problem Solving"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_23c215bf",
+      "doi": "10.5498/wjp.v15.i12.111972",
+      "url": "https://doi.org/10.5498/wjp.v15.i12.111972",
+      "openalex_id": null,
+      "pmid": "41357946",
+      "first_author": "Li",
+      "authors_display": "Li, J. et al.",
+      "year": 2025,
+      "title": "Neural correlates of conditional reasoning dysfunction in major depression: An event-related potential study with the Wason selection task.",
+      "venue": "World journal of psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patients)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12679128",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Patients with major depression (MD) exhibit conditional reasoning dysfunction; however, no studies on the event-related potential (ERP) characteristics of conditional reasoning in MD have been reported.<h4>Aim</h4>To investigate the ERP characteristics of conditional reasoning in MD patients and explore the neural mechanism of cognitive processing.<h4>Methods</h4>Thirty-four patients with MD and 34 healthy controls (HCs) completed ERP measurements while performing the Wason selection task (WST). The cluster-based permutation test in FieldTrip was used to compare the differences in the mean amplitudes between the patients with MD and HCs on the ERP components under different experimental conditions. Behavioral data [accuracy (ACC) and reaction times (RTs)], the ERP P100 and late positive potentials (LPPs) were analyzed.<h4>Results</h4>Although the mean ACC was greater and the mean of RTs was shorter in HCs than in MD patients, the differences were not statistically significant. However, across both groups, the ACC in the precautionary WST was greater than that in the other tasks, and the RTs in the abstract task were greater than those in the other tasks. Importantly, compared with that of HCs, the P100 of the left centroparietal sites was significantly increased, and the early LPP was attenuated at parietal sites and increased at left frontocentral sites; the medium LPP and late LPP were increased at the left frontocentral sites.<h4>Conclusion</h4>Patients with MD have conditional reasoning dysfunction and exhibit abnormal ERP characteristics evoked by the WST, which suggests neural correlates of abnormalities in conditional reasoning function in MD patients.",
+      "score": {
+        "composite": 0.26669954817282787,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_6a7a2cfa",
+      "doi": "10.32598/bcn.2022.3752.3",
+      "url": "https://doi.org/10.32598/bcn.2022.3752.3",
+      "openalex_id": null,
+      "pmid": "38050565",
+      "first_author": "Seyyed Hashemi",
+      "authors_display": "Seyyed Hashemi, S. et al.",
+      "year": 2023,
+      "title": "The Brain Networks Basis for Deductive and Inductive Reasoning: A Functional Magnetic Resonance Imaging Study.",
+      "venue": "Basic and clinical neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10693809",
+      "tldr": null,
+      "abstract": "<h4>Introduction</h4>Frontoparietal (FPN) and cingulo-opercular network (CON) control cognitive functions needed in deductive and inductive reasoning via different functional frameworks. The FPN is a fast intuitive system while the CON is slow and analytical. The default-interventionist model presents a serial view of the interaction between intuitive and analytic cognitive systems. This study aims to examine the activity pattern of the FPN and CON from the perspective of the default-interventionist model via reasoning.<h4>Methods</h4>We employed functional magnetic resonance imaging (fMRI) to investigate cingulo-opercular and frontoparietal network activities in 24 healthy university students during Raven and Wason reasoning tasks. Due to the different operation times of the CON and FPN, the reaction time was assessed as a behavioral factor.<h4>Results</h4>During Raven's advanced progressive matrices (RAPM) test, both the CON and FPN were activated. Also, with the increase in the difficulty level of the Raven test, a linear increase in response time was observed. In contrast, during the Wason's selection task (WST) test, only the activity of FPN was observed.<h4>Conclusion</h4>The results of the study support the hypothesis that the default-interventionist model of dual-process theory provides an accurate explanation of the cognitive mechanisms involved in reasoning. Thus, the response method (intuitive/analytical) determines which cognitive skills and brain regions are involved in responding.<h4>Highlights</h4>The cingulo-opercular and fronto-parietal networks (FPNs) control cognitive functions and processes.The frontoparietal network is a fast intuitive system that utilizes short-time attention which is compatible with type 1 processing. In contrast, the cingulo-opercular network (CON) is an analytical time-consuming system that utilizes attention and working memory for a longer time, compatible with type 2 processing.The default-interventionist model of a dual-p",
+      "score": {
+        "composite": 0.24923507429477762,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

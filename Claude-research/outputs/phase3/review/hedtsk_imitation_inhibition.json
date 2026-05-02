@@ -1,0 +1,1141 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_imitation_inhibition",
+    "name": "Imitation-Inhibition Task",
+    "aliases": [
+      "Automatic Imitation Task",
+      "Automatic Imitation",
+      "Brass Imitation Task",
+      "Stimulus-Response Compatibility Imitation Task",
+      "Action Observation Compatibility Task"
+    ],
+    "category_id": "social_cognition_and_strategic_social_choice",
+    "short_definition": "Execute an instructed finger movement while observing a congruent or incongruent action performed by another person; the congruency effect (faster responses on congruent trials) indexes automatic imitation and the cost of inhibiting observed-action representations.",
+    "description": "The Imitation-Inhibition Task (Brass, Bekkering, Wohlschlager, & Prinz, 2000) measures the involuntary tendency to copy observed actions and the executive cost of suppressing that tendency. Participants are cued to perform a simple action (e.g., lift the index finger when a number '1' appears) while simultaneously viewing a task-irrelevant video of another person's hand performing either the same action (congruent), a different action (incongruent, e.g., lifting the middle finger), or no action (neutral/static hand). The congruency effect -- faster and more accurate responses on congruent than incongruent trials -- indexes automatic imitation, while the interference effect (incongruent minus neutral) specifically indexes the inhibitory cost of suppressing the observed action. The paradigm is grounded in common-coding / ideomotor theory (Prinz, 1997): perceiving an action activates the same motor representations as executing it, creating response conflict when the observed and instructed actions differ. The task has become a standard probe of the human mirror system and self-other distinction. The automatic imitation effect is modulated by animacy (stronger for human than robotic agents), social context (in-group vs. out-group models), empathy, and developmental stage (weaker in young children, inverted-U trajectory). Clinical applications include autism spectrum conditions (mixed findings on reduced automatic imitation) and schizophrenia (impaired self-other distinction).",
+    "inclusion_test": {
+      "procedure": "Participants perform an instructed action (e.g., finger lift) in response to a symbolic cue while simultaneously observing a task-irrelevant video or animation of another agent performing a congruent, incongruent, or neutral action.",
+      "manipulation": "Congruency (observed action matches vs. mismatches instructed action); agent type (human hand, robotic hand, non-biological stimulus); social context (in-group vs. out-group model); action type (finger lift, hand open/close, whole-arm movement); spatial compatibility control (orthogonal spatial arrangement to dissociate imitative from spatial compatibility).",
+      "measurement": "Congruency effect (RT and error rate difference: incongruent minus congruent); interference effect (incongruent minus neutral); facilitation effect (neutral minus congruent); congruency effect magnitude as individual-difference measure; EEG mu-suppression as neural index of motor simulation."
+    }
+  },
+  "candidates_run_date": "2026-04-29T19:03:42",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Cross 2021 — Intentional synchronisation affects automatic imitation and source memory. (Scientific reports, recent_primary, 8×)",
+      "doi": "10.1038/s41598-020-79796-9",
+      "pub_id": "pub_a3e97722",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.565136815256222,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Marshall 2018 — Motor signatures of emotional reactivity in frontotemporal dementia. (Scientific reports, recent_primary, 29×)",
+      "doi": "10.1038/s41598-018-19528-2",
+      "pub_id": "pub_ecdc6375",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5108969185761038,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Rauchbauer 2020 — Developmental trajectory of interpersonal motor alignment: Positive social ef… (Neuroscience and biobehavioral r…, key_review, 13×)",
+      "doi": "10.1016/j.neubiorev.2020.07.032",
+      "pub_id": "pub_846d9f20",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5098654074515703,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Neuroscience and biobehavioral reviews",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Trilla 2020 — Conditional effects of gaze on automatic imitation: the role of autistic traits. (Scientific reports, recent_primary, 5×)",
+      "doi": "10.1038/s41598-020-72513-6",
+      "pub_id": "pub_a2c82d63",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5076012891342722,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Rauchbauer 2018 — Event-related potentials of automatic imitation are modulated by ethnicity du… (Scientific reports, recent_primary, 7×)",
+      "doi": "10.1038/s41598-018-30926-4",
+      "pub_id": "pub_28b96175",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4917653111851503,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Genschow 2022 — Group membership does not modulate automatic imitation. (Psychological research, recent_primary, 8×)",
+      "doi": "10.1007/s00426-021-01526-1",
+      "pub_id": "pub_eb9eda44",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4751368152562219,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Psychological research",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Belot 2013 — Players of Matching Pennies automatically imitate opponents' gestures against… (Proceedings of the National Acad…, foundational, 32×)",
+      "doi": "10.1073/pnas.1209981110",
+      "pub_id": "pub_ef860b12",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.46227647513656644,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Turrini 2024 — Spike-timing-dependent plasticity induction reveals dissociable supplementary… (Proceedings of the National Acad…, recent_primary, 14×)",
+      "doi": "10.1073/pnas.2404925121",
+      "pub_id": "pub_5ffd36bd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.44086403706994254,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Newey 2019 — The influence of prosocial priming on visual perspective taking and automatic… (PloS one, recent_primary, 5×)",
+      "doi": "10.1371/journal.pone.0198867",
+      "pub_id": "pub_c4be79f7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.43926795580093886,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Farmer 2021 — Dynamic emotional expressions do not modulate responses to gestures. (Acta psychologica, key_review, 2×)",
+      "doi": "10.1016/j.actpsy.2020.103226",
+      "pub_id": "pub_823e5c00",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.437568407628111,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Acta psychologica",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Gleibs 2016 — Group Dynamics in Automatic Imitation. (PloS one, foundational, 21×)",
+      "doi": "10.1371/journal.pone.0162880",
+      "pub_id": "pub_2c519c71",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.42807428234795,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "PloS one",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Czekóová 2021 — Imitation or Polarity Correspondence? Behavioural and Neurophysiological Evid… (Cognitive, affective & behaviora…, recent_primary, 5×)",
+      "doi": "10.3758/s13415-020-00860-y",
+      "pub_id": "pub_7c8f2d82",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.41760128913427214,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cognitive, affective & behavioral neuroscience",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Butler 2015 — Investigating the Relationship between Stable Personality Characteristics and… (PloS one, foundational, 18×)",
+      "doi": "10.1371/journal.pone.0129651",
+      "pub_id": "pub_cd1a6142",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4159522867224748,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "PloS one",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Genschow 2017 — Mimicry and automatic imitation are not correlated. (PloS one, foundational, 41×)",
+      "doi": "10.1371/journal.pone.0183784",
+      "pub_id": "pub_295bac23",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.40576714841301453,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "PloS one",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Morrison 2020 — Automatic Imitation in Comorbid PTSD & Alcohol Use Disorder and Controls: an … (Psychoneuroendocrinology, recent_primary, 3×)",
+      "doi": "10.1016/j.psyneuen.2020.104787",
+      "pub_id": "pub_23f0e06e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.40339909634565574,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychoneuroendocrinology",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Corsi 2021 — Socio-cognitive processing in people with eating disorders: Computerized test… (The International journal of eat…, recent_primary, 14×)",
+      "doi": "10.1002/eat.23556",
+      "pub_id": "pub_97940b8f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3908640370699425,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "The International journal of eating disorders",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Simonsen 2019 — Enhanced Automatic Action Imitation and Intact Imitation-Inhibition in Schizo… (Schizophrenia bulletin, recent_primary, 10×)",
+      "doi": "10.1093/schbul/sby006",
+      "pub_id": "pub_8a035788",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.38637473417512214,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Schizophrenia bulletin",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Giesen 2022 — Reluctance against the machine: Retrieval of observational stimulus-response … (Psychonomic bulletin & review, recent_primary, 4×)",
+      "doi": "10.3758/s13423-022-02058-4",
+      "pub_id": "pub_529f0bf0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3849622961084982,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Psychonomic bulletin & review",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Press 2010 — Intact imitation of emotional facial actions in autism spectrum conditions. (Neuropsychologia, foundational, 65×)",
+      "doi": "10.1016/j.neuropsychologia.2010.07.012",
+      "pub_id": "pub_e8cd9bf5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.38230935664272764,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24257075990424393,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06064268997606098,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Neuropsychologia",
+      "citation_count": 65,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Emerson 2022 — A neural signature for combined action observation and motor imagery? An fNIR… (Brain and behavior, recent_primary, 10×)",
+      "doi": "10.1002/brb3.2407",
+      "pub_id": "pub_be5c04e8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3763747341751221,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Brain and behavior",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Gordon 2020 — Not So Automatic Imitation: Expectation of Incongruence Reduces Interference … (Journal of autism and developmen…, recent_primary, 8×)",
+      "doi": "10.1007/s10803-019-04355-9",
+      "pub_id": "pub_45a5b77b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3734701485895553,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Journal of autism and developmental disorders",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Roberts 2023 — Does the threat of COVID-19 modulate automatic imitation? (PloS one, recent_primary, 0×)",
+      "doi": "10.1371/journal.pone.0284936",
+      "pub_id": "pub_01372c7c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3733333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "PloS one",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Farmer 2016 — Status and Power Do Not Modulate Automatic Imitation of Intransitive Hand Mov… (PloS one, foundational, 7×)",
+      "doi": "10.1371/journal.pone.0151835",
+      "pub_id": "pub_b6bd37ec",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.37176531118515027,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "PloS one",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Wilt 2024 — Automatic imitation is modulated by stimulus clarity but not by animacy. (Attention, perception & psychoph…, recent_primary, 1×)",
+      "doi": "10.3758/s13414-024-02935-1",
+      "pub_id": "pub_960b9421",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.37169954817282785,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Riva 2023 — Age-related differences in interference control in the context of a finger-li… (Social cognitive and affective n…, recent_primary, 0×)",
+      "doi": "10.1093/scan/nsad034",
+      "pub_id": "pub_1d08e4d0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.37166666666666665,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Cracco 2022 — Evidence for a two-step model of social group influence. (iScience, recent_primary, 7×)",
+      "doi": "10.1016/j.isci.2022.104891",
+      "pub_id": "pub_ec3ad58e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3517653111851503,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "iScience",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Wilt 2023 — Automatic imitation of human and computer-generated vocal stimuli. (Psychonomic bulletin & review, recent_primary, 3×)",
+      "doi": "10.3758/s13423-022-02218-6",
+      "pub_id": "pub_9e391d64",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.35173242967898904,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Psychonomic bulletin & review",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Butler 2016 — The Influence of Facial Signals on the Automatic Imitation of Hand Actions. (Frontiers in psychology, foundational, 6×)",
+      "doi": "10.3389/fpsyg.2016.01653",
+      "pub_id": "pub_20883b90",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3514991926120757,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2016,
+      "venue": "Frontiers in psychology",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Eaves 2012 — Automatic imitation in rhythmical actions: kinematic fidelity and the effects… (PloS one, foundational, 22×)",
+      "doi": "10.1371/journal.pone.0046728",
+      "pub_id": "pub_d81e5463",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.34705102775756547,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "PloS one",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Shaw 2013 — Copying you copying me: interpersonal motor co-ordination influences automati… (PloS one, foundational, 5×)",
+      "doi": "10.1371/journal.pone.0084820",
+      "pub_id": "pub_a49b1ec2",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3376012891342722,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "PloS one",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

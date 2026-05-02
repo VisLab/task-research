@@ -1,0 +1,1141 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_probabilistic_selection",
+    "name": "Probabilistic Selection Task",
+    "aliases": [
+      "PST",
+      "Probabilistic Stimulus Selection Task",
+      "PSS",
+      "Frank Task",
+      "Probabilistic Selection"
+    ],
+    "category_id": "associative_learning_and_reinforcement",
+    "short_definition": "Learn to choose between stimulus pairs through probabilistic feedback, then select among novel recombinations; choose-A vs. avoid-B accuracy dissociates positive and negative reinforcement learning.",
+    "description": "The Probabilistic Selection Task, developed by Frank and colleagues, assesses the separable contributions of positive and negative reinforcement learning, linked to striatal Go and NoGo pathway function respectively. During training, participants learn to choose between pairs of stimuli (AB, CD, EF) where each stimulus has a fixed probability of reward (e.g., A=80%, B=20%). At test, stimuli are recombined into novel pairs (e.g., A vs. C, B vs. D). Choosing A in novel contexts indexes Go learning (approach from positive feedback), while avoiding B indexes NoGo learning (avoidance from negative feedback). The task was specifically designed to probe basal ganglia dopaminergic mechanisms and is sensitive to dopaminergic medication effects in Parkinson's disease.",
+    "inclusion_test": {
+      "procedure": "Participants learn to choose between stimulus pairs through probabilistic feedback (80/20 or 70/30 contingencies), then are tested on novel recombinations without feedback to dissociate Go learning (choose A) from NoGo learning (avoid B).",
+      "manipulation": "Feedback probability; number of training pairs; transfer test composition; dopaminergic manipulation (medication status in Parkinson's).",
+      "measurement": "Training accuracy; transfer test accuracy (choose-A vs. avoid-B dissociation); fit to actor-critic or opponent-actor learning models."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:49:09",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Frank 2004 — By Carrot or by Stick: Cognitive Reinforcement Learning in Parkinsonism (Science, historical, 2k×)",
+      "doi": "10.1126/science.1102941",
+      "pub_id": "pub_60b23cf1",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7101624393035646,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4406497572142585,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11016243930356462,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2004,
+      "venue": "Science",
+      "citation_count": 2019,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Ochnik 2021 — Mental health prevalence and predictors among university students in nine cou… (Scientific reports, recent_primary, 120×)",
+      "doi": "10.1038/s41598-021-97697-3",
+      "pub_id": "pub_4dbba6fd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5610828016835776,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2776645400676438,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06941613501691095,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 120,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Karges 2020 — Rationally designed ruthenium complexes for 1- and 2-photon photodynamic ther… (Nature communications, recent_primary, 154×)",
+      "doi": "10.1038/s41467-020-16993-0",
+      "pub_id": "pub_3b1b9da1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5546671606488708,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2920019759288165,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07300049398220412,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 154,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Marnetto 2020 — Ancestry deconvolution and partial polygenic score can improve susceptibility… (Nature communications, recent_primary, 97×)",
+      "doi": "10.1038/s41467-020-15464-w",
+      "pub_id": "pub_d8d7994b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5480312667303127,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26545840025458384,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06636460006364596,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 97,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Xu 2019 — An effector protein of the wheat stripe rust fungus targets chloroplasts and … (Nature communications, recent_primary, 169×)",
+      "doi": "10.1038/s41467-019-13487-6",
+      "pub_id": "pub_89672e24",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5460042079617611,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29735016518037777,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07433754129509444,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 169,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Di 2020 — An orthogonally regulatable DNA nanodevice for spatiotemporally controlled bi… (Science advances, recent_primary, 80×)",
+      "doi": "10.1126/sciadv.aba9381",
+      "pub_id": "pub_86ad1fcd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5452736305124439,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2544278553831089,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06360696384577723,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Science advances",
+      "citation_count": 80,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Zhang 2019 — An ancestral NB-LRR with duplicated 3'UTRs confers stripe rust resistance in … (Nature communications, recent_primary, 109×)",
+      "doi": "10.1038/s41467-019-11872-9",
+      "pub_id": "pub_568ebbd5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.539703245123115,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2721463138257929,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06803657845644823,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 109,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Chen 2019 — Elevated cytokine levels in tears and saliva of patients with primary Sjögren… (Scientific reports, recent_primary, 72×)",
+      "doi": "10.1038/s41598-019-43714-5",
+      "pub_id": "pub_52c6e886",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5337684430098365,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24840710537267913,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06210177634316978,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 72,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Teng 2022 — Supramolecular photodynamic agents for simultaneous oxidation of NADH and gen… (Nature communications, recent_primary, 114×)",
+      "doi": "10.1038/s41467-022-33924-3",
+      "pub_id": "pub_ad06c403",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.530346657199397,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2747199621309215,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06867999053273037,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Nature communications",
+      "citation_count": 114,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Liu 2022 — Golgi apparatus-targeted aggregation-induced emission luminogens for effectiv… (Nature communications, recent_primary, 111×)",
+      "doi": "10.1038/s41467-022-29872-7",
+      "pub_id": "pub_788d62fc",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5299640519700539,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2731895412135488,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0682973853033872,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Nature communications",
+      "citation_count": 111,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Shen 2022 — Defect engineering of layered double hydroxide nanosheets as inorganic photos… (Nature communications, recent_primary, 110×)",
+      "doi": "10.1038/s41467-022-31106-9",
+      "pub_id": "pub_c2bef474",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5298342359573389,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27267027716268905,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06816756929067226,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Nature communications",
+      "citation_count": 110,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Huot 2017 — Dual impact of elevated temperature on plant defence and bacterial virulence … (Nature communications, foundational, 168×)",
+      "doi": "10.1038/s41467-017-01674-2",
+      "pub_id": "pub_c9d05e1a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.525918813092271,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2970085857024173,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07425214642560432,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2017,
+      "venue": "Nature communications",
+      "citation_count": 168,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Rivnay 2016 — Structural control of mixed ionic and electronic transport in conducting poly… (Nature communications, foundational, 335×)",
+      "doi": "10.1038/ncomms11287",
+      "pub_id": "pub_f0c09fcf",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5258657929314982,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33679650505932607,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08419912626483152,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Nature communications",
+      "citation_count": 335,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Rivnay 2015 — High-performance transistors for bioelectronics through tuning of channel thi… (Science advances, foundational, 286×)",
+      "doi": "10.1126/sciadv.1400251",
+      "pub_id": "pub_c5d0d5a5",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5135842103708388,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32767017481668825,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08191754370417206,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Science advances",
+      "citation_count": 286,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Dubiella 2013 — Calcium-dependent protein kinase/NADPH oxidase activation circuit is required… (Proceedings of the National Acad…, foundational, 529×)",
+      "doi": "10.1073/pnas.1221294110",
+      "pub_id": "pub_acb26686",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.502462724812009,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3631842325813695,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09079605814534238,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2013,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 529,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Mirabeau 2013 — Molecular evolution of peptidergic signaling systems in bilaterians. (Proceedings of the National Acad…, foundational, 316×)",
+      "doi": "10.1073/pnas.1219956110",
+      "pub_id": "pub_103967c2",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4950232476690697,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33342632400961203,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08335658100240301,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 316,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Zheng 2013 — High genome heterozygosity and endemic genetic recombination in the wheat str… (Nature communications, foundational, 164×)",
+      "doi": "10.1038/ncomms3673",
+      "pub_id": "pub_bab5beae",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.485572104578398,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2956217516469253,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07390543791173132,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2013,
+      "venue": "Nature communications",
+      "citation_count": 164,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Verstappen 2021 — Epithelial-immune cell interplay in primary Sjögren syndrome salivary gland p… (Nature reviews. Rheumatology, key_review, 197×)",
+      "doi": "10.1038/s41584-021-00605-2",
+      "pub_id": "pub_22d1e94e",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.47821109760417196,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30617772375002117,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07654443093750529,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature reviews. Rheumatology",
+      "citation_count": 197,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Cheng 2021 — Multi-Functional Liposome: A Powerful Theranostic Nano-Platform Enhancing Pho… (Advanced science (Weinheim, Bade…, key_review, 133×)",
+      "doi": "10.1002/advs.202100876",
+      "pub_id": "pub_47c18c95",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4725599022264961,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2835729422393176,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0708932355598294,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "citation_count": 133,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "McFarland 2020 — Metal-based photosensitizers for photodynamic therapy: the future of multimod… (Current opinion in chemical biology, key_review, 218×)",
+      "doi": "10.1016/j.cbpa.2019.10.004",
+      "pub_id": "pub_928a6020",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.46967018397128074,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31201406921845637,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07800351730461409,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Current opinion in chemical biology",
+      "citation_count": 218,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Younis 2021 — Inorganic Nanomaterials with Intrinsic Singlet Oxygen Generation for Photodyn… (Advanced science (Weinheim, Bade…, key_review, 92×)",
+      "doi": "10.1002/advs.202102587",
+      "pub_id": "pub_f4909561",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4672732721684836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26242642200726757,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06560660550181689,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "citation_count": 92,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Feil 2005 — Comparison of the complete genome sequences of Pseudomonas syringae pv. syrin… (Proceedings of the National Acad…, foundational, 324×)",
+      "doi": "10.1073/pnas.0504930102",
+      "pub_id": "pub_27504d00",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.46705066542979856,
+        "breakdown": {
+          "raw": {
+            "citations": 0.334869328385861,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08371733209646524,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2005,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 324,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Liu 2021 — Association between perceived stress and depression among medical students du… (Journal of affective disorders, key_review, 87×)",
+      "doi": "10.1016/j.jad.2021.05.028",
+      "pub_id": "pub_6617306f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4664733786936058,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25922684810775637,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06480671202693909,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of affective disorders",
+      "citation_count": 87,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Imgenberg-Kreuz 2021 — Genetics and epigenetics in primary Sjögren's syndrome. (Rheumatology (Oxford, England), key_review, 83×)",
+      "doi": "10.1093/rheumatology/key330",
+      "pub_id": "pub_78ec259c",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.46580002991917574,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2565334530100364,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0641333632525091,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Rheumatology (Oxford, England)",
+      "citation_count": 83,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Nomura 2011 — Effector-triggered immunity blocks pathogen degradation of an immunity-associ… (Proceedings of the National Acad…, foundational, 166×)",
+      "doi": "10.1073/pnas.1103338108",
+      "pub_id": "pub_6d8fa602",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.46574649690959274,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2963193209717042,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07407983024292605,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.041666666666666664,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2011,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 166,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Fu 2021 — The emerging role of neutrophils in autoimmune-associated disorders: effector… (MedComm, key_review, 60×)",
+      "doi": "10.1002/mco2.69",
+      "pub_id": "pub_d4136792",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4611690516186011,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23800953980773776,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05950238495193444,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "MedComm",
+      "citation_count": 60,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Yang 2021 — Photosensitizer Nanoparticles Boost Photodynamic Therapy for Pancreatic Cance… (Nano-micro letters, key_review, 52×)",
+      "doi": "10.1007/s40820-020-00561-8",
+      "pub_id": "pub_74cff657",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4591342138640163,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2298701887893985,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.057467547197349624,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nano-micro letters",
+      "citation_count": 52,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Aiyegbusi 2021 — Renal Disease in Primary Sjögren's Syndrome. (Rheumatology and therapy, key_review, 51×)",
+      "doi": "10.1007/s40744-020-00264-x",
+      "pub_id": "pub_42a954c1",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.45885850289179125,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Rheumatology and therapy",
+      "citation_count": 51,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Li 2022 — Immunogenic Cell Death Activates the Tumor Immune Microenvironment to Boost t… (Advanced science (Weinheim, Bade…, key_review, 407×)",
+      "doi": "10.1002/advs.202201734",
+      "pub_id": "pub_ba5563ef",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4586760824936963,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3480376633081184,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0870094158270296,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Advanced science (Weinheim, Baden-Wurttemberg, Germany)",
+      "citation_count": 407,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Yoo 2021 — Connective tissue disease-related interstitial lung disease (CTD-ILD) and int… (European journal of radiology open, key_review, 38×)",
+      "doi": "10.1016/j.ejro.2020.100311",
+      "pub_id": "pub_d5471852",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.45469448084091313,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.16666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.041666666666666664,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "European journal of radiology open",
+      "citation_count": 38,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

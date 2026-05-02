@@ -1,0 +1,3488 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:16:10",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_affective_priming",
+    "name": "Affective Priming Task",
+    "aliases": [
+      "Evaluative Priming"
+    ],
+    "category_id": "emotion_perception_and_regulation",
+    "short_definition": "Target evaluation (good/bad) preceded by a briefly presented affective prime; response facilitation on congruent trials indexes automatic evaluation.",
+    "description": "Participants categorize target stimuli (e.g., judge words as \"good\" or \"bad\") that are immediately preceded by briefly presented prime stimuli (words, faces, or images) of matching or mismatching emotional valence. The affective priming effect (faster RT for congruent vs. incongruent prime-target pairs) reflects automatic activation of evaluative representations. Subliminal variants (very brief prime exposure) provide evidence for unconscious emotional processing.",
+    "inclusion_test": {
+      "procedure": "A briefly presented prime (word, face, or image with positive or negative valence) is followed by a target that participants evaluate as good/bad or classify.",
+      "manipulation": "Congruence between prime valence and target valence; prime duration and SOA.",
+      "measurement": "RT and accuracy for target evaluation; congruency effect (faster on congruent trials) indexes automatic affective evaluation."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 47,
+      "picked": 30,
+      "reserve": 14,
+      "excluded": 3,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 3
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_786f807a",
+      "doi": "10.1037/0022-3514.50.2.229",
+      "url": "https://doi.org/10.1037/0022-3514.50.2.229",
+      "openalex_id": "https://openalex.org/W4233684954",
+      "pmid": null,
+      "first_author": "Fázio",
+      "authors_display": "Russell H. Fázio et al.",
+      "year": 1986,
+      "title": "On the automatic activation of attitudes.",
+      "venue": "Journal of Personality and Social Psychology",
+      "venue_tier": "mainstream",
+      "publisher": "American Psychological Association",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1918,
+      "influential_citation_count": null,
+      "fwci": 13.5494,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.6494200002385522,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4376800009542088,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1094200002385522,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_17a0fd65",
+      "doi": "10.1038/s41598-019-44550-3",
+      "url": "https://doi.org/10.1038/s41598-019-44550-3",
+      "openalex_id": null,
+      "pmid": "31142806",
+      "first_author": "Papousek",
+      "authors_display": "Papousek, I. et al.",
+      "year": 2019,
+      "title": "Poor control of interference from negative content hampers the effectiveness of humour as a source of positive emotional experiences.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Observational Study"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41598-019-44550-3.pdf",
+      "tldr": null,
+      "abstract": "The brain-based ability to direct attention away from interfering negative information may co-determine to which degree one may benefit from humour as a source of positive emotional experiences. This should be particularly relevant when it comes to humour that implicates a target the joke makes fun of, which inherently entails rivalry between positive and negative emotional representations. One hundred healthy individuals completed a pictorial negative affective priming task and a nonverbal humour processing task. In line with the notion that during the elaborative processing of malicious jokes, interference from negative emotional representations hampers the experience of amusement, participants took more time to judge their amusement evoked by malicious compared to benign jokes. Lesser ability to distract attention from interfering negative emotional representations was associated with slower judgements of amusement following the processing of malicious jokes, as well as with lower amusement ratings. The time it took participants to comprehend the punch-lines was not affected, neither was the immediate, short-lived pleasure after having comprehended the humour, measured by characteristic transient cardiac activation. The findings suggest that the effective use of humour as a source of positive emotional experiences requires the ability to overcome the dark side of typical humour.",
+      "score": {
+        "composite": 0.5650328815061613,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electrocardiography",
+        "Comprehension",
+        "Attention",
+        "Heart Rate",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Wit and Humor as Topic",
+        "Young Adult",
+        "Pleasure",
+        "Healthy Volunteers",
+        "Emotional Regulation"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_0e73b17b",
+      "doi": "10.1093/scan/nsw167",
+      "url": "https://doi.org/10.1093/scan/nsw167",
+      "openalex_id": null,
+      "pmid": "27998994",
+      "first_author": "Kiefer",
+      "authors_display": "Kiefer, M. et al.",
+      "year": 2017,
+      "title": "Mechanisms of masked evaluative priming: task sets modulate behavioral and electrophysiological priming for picture and words differentially.",
+      "venue": "Social cognitive and affective neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 16,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5390755",
+      "tldr": null,
+      "abstract": "Research with the evaluative priming paradigm has shown that affective evaluation processes reliably influence cognition and behavior, even when triggered outside awareness. However, the precise mechanisms underlying such subliminal evaluative priming effects, response activation vs semantic processing, are matter of a debate. In this study, we determined the relative contribution of semantic processing and response activation to masked evaluative priming with pictures and words. To this end, we investigated the modulation of masked pictorial vs verbal priming by previously activated perceptual vs semantic task sets and assessed the electrophysiological correlates of priming using event-related potential (ERP) recordings. Behavioral and electrophysiological effects showed a differential modulation of pictorial and verbal subliminal priming by previously activated task sets: Pictorial priming was only observed during the perceptual but not during the semantic task set. Verbal priming, in contrast, was found when either task set was activated. Furthermore, only verbal priming was associated with a modulation of the N400 ERP component, an index of semantic processing, whereas a priming-related modulation of earlier ERPs, indexing visuo-motor S-R activation, was found for both picture and words. The results thus demonstrate that different neuro-cognitive processes contribute to unconscious evaluative priming depending on the stimulus format.",
+      "score": {
+        "composite": 0.5160090303471017,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Humans",
+        "Electroencephalography",
+        "Perceptual Masking",
+        "Pattern Recognition, Visual",
+        "Reaction Time",
+        "Evoked Potentials",
+        "Reading",
+        "Semantics",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Repetition Priming"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2fcc8507",
+      "doi": "10.1093/scan/nsaa005",
+      "url": "https://doi.org/10.1093/scan/nsaa005",
+      "openalex_id": null,
+      "pmid": "31993667",
+      "first_author": "Wang",
+      "authors_display": "Wang, Y. et al.",
+      "year": 2019,
+      "title": "Behavioral and neural evidence for an evaluative bias against other people's mundane interracial encounters.",
+      "venue": "Social cognitive and affective neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://academic.oup.com/scan/article-pdf/14/12/1329/33019162/nsaa005.pdf",
+      "tldr": null,
+      "abstract": "Evaluating other people's social encounters from a third-person perspective is an ubiquitous activity of daily life. Yet little is known about how these evaluations are affected by racial bias. To overcome this empirical lacuna, two experiments were conducted. The first experiment used evaluative priming to show that both Black (n = 44) and White Americans (n = 44) assess the same mundane encounters (e.g. two people chatting) less favorably when they involve a Black and a White individual rather than two Black or two White individuals. The second experiment used functional magnetic resonance imaging to demonstrate that both Black (n = 46) and White Americans (n = 42) respond with reduced social reward processing (i.e. lower activity in the ventral striatum) and enhanced mentalizing (e.g. higher activity in the bilateral temporal-parietal junction) toward so-called cross-race relative to same-race encounters. By combining unobtrusive measures from social psychology and social neuroscience, this work demonstrates that racial bias can affect impression formation even at the level of the dyad.",
+      "score": {
+        "composite": 0.5050328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Attitude",
+        "Prejudice",
+        "Adult",
+        "Female",
+        "Male",
+        "Racism",
+        "White People",
+        "Black or African American"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_084cf01b",
+      "doi": "10.1007/s00426-021-01536-z",
+      "url": "https://doi.org/10.1007/s00426-021-01536-z",
+      "openalex_id": null,
+      "pmid": "34115191",
+      "first_author": "Jansen",
+      "authors_display": "Jansen, P. et al.",
+      "year": 2022,
+      "title": "Are explicit and implicit affective attitudes toward different body shape categories related to the own body-satisfaction in young women? The role of mindfulness, self-compassion and social media activity.",
+      "venue": "Psychological research",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s00426-021-01536-z.pdf",
+      "tldr": null,
+      "abstract": "Implicit and explicit attitudes influence our behavior. Accordingly, it was the main goal of the paper to investigate if those attitudes are related to body image satisfaction. 134 young women between 18 and 34 years completed an explicit affective rating and an implicit affective priming task with pictures of women with different BMIs. Because it is well known that mindfulness, self-compassion and social media activity influence body image satisfaction, these variables were registered as well. The results confirmed an explicit positive affective bias toward pictures of slim women and a negative bias toward emaciated and obese body pictures. It adds to the literature that the explicit positive bias does not hold true for the strongest form of underweight, suggesting that instead of dividing different body shapes into two groups, different gradings of under- and overweight should be considered. Concerning the affective priming task, no significant differences between the different pictures could be carved out. Implicit and explicit affective attitudes were not related to the body satisfaction of the participating women. In line with former studies, body satisfaction was predicted by the actual-ideal weight discrepancy, the BMI, aspects of mindfulness and self-compassion. This study indicates that implicit and explicit affective attitudes toward underweight and overweight women are unrelated to the participants' body satisfaction.",
+      "score": {
+        "composite": 0.5009017409614442,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Somatotypes",
+        "Attitude",
+        "Personal Satisfaction",
+        "Female",
+        "Social Media",
+        "Mindfulness",
+        "Self-Compassion"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1b1ca754",
+      "doi": "10.1093/scan/nsu107",
+      "url": "https://doi.org/10.1093/scan/nsu107",
+      "openalex_id": null,
+      "pmid": "25140049",
+      "first_author": "Derks",
+      "authors_display": "Derks, B. et al.",
+      "year": 2015,
+      "title": "Social identity modifies face perception: an ERP study of social categorization.",
+      "venue": "Social cognitive and affective neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 19,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Two studies examined whether social identity processes, i.e. group identification and social identity threat, amplify the degree to which people attend to social category information in early perception [assessed with event-related brain potentials (ERPs)]. Participants were presented with faces of Muslims and non-Muslims in an evaluative priming task while ERPs were measured and implicit evaluative bias was assessed. Study 1 revealed that non-Muslims showed stronger differentiation between ingroup and outgroup faces in both early (N200) and later processing stages (implicit evaluations) when they identified more strongly with their ethnic group. Moreover, identification effects on implicit bias were mediated by intergroup differentiation in the N200. In Study 2, social identity threat (vs control) was manipulated among Muslims. Results revealed that high social identity threat resulted in stronger differentiation of Muslims from non-Muslims in early (N200) and late (implicit evaluations) processing stages, with N200 effects again predicting implicit bias. Combined, these studies reveal how seemingly bottom-up early social categorization processes are affected by individual and contextual variables that affect the meaning of social identity. Implications of these results for the social identity perspective as well as social cognitive theories of person perception are discussed.",
+      "score": {
+        "composite": 0.49836139245415395,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Face",
+        "Humans",
+        "Electroencephalography",
+        "Photic Stimulation",
+        "Social Identification",
+        "Ego",
+        "Social Perception",
+        "Evoked Potentials",
+        "Islam",
+        "Female",
+        "Male",
+        "Young Adult",
+        "White People"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_51082d0b",
+      "doi": "10.1371/journal.pone.0243929",
+      "url": "https://doi.org/10.1371/journal.pone.0243929",
+      "openalex_id": null,
+      "pmid": "33326458",
+      "first_author": "Jiang",
+      "authors_display": "Jiang, S. et al.",
+      "year": 2020,
+      "title": "Different influences of moral violation with and without physical impurity on face processing: An event-related potentials study.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0243929&type=printable",
+      "tldr": null,
+      "abstract": "It has been widely accepted that moral violations that involve impurity (such as spitting in public) induce the emotion of disgust, but there has been a debate about whether moral violations that do not involve impurity (such as swearing in public) also induce the same emotion. The answer to this question may have implication for understanding where morality comes from and how people make moral judgments. This study aimed to compared the neural mechanisms underlying two kinds of moral violation by using an affective priming task to test the effect of sentences depicting moral violation behaviors with and without physical impurity on subsequent detection of disgusted faces in a visual search task. After reading each sentence, participants completed the face search task. Behavioral and electrophysiological (event-related potential, or ERP) indices of affective priming (P2, N400, LPP) and attention allocation (N2pc) were analyzed. Results of behavioral data and ERP data showed that moral violations both with and without impurity promoted the detection of disgusted faces (RT, N2pc); moral violations without impurity impeded the detection of neutral faces (N400). No priming effect was found on P2 and LPP. The results suggest both types of moral violation influenced the processing of disgusted faces and neutral faces, but the neural activity with temporal characteristics was different.",
+      "score": {
+        "composite": 0.4850657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Face",
+        "Humans",
+        "Electroencephalography",
+        "Facial Expression",
+        "Behavior",
+        "Language",
+        "Emotions",
+        "Morals",
+        "Attention",
+        "Reaction Time",
+        "Evoked Potentials",
+        "Retrospective Moral Judgment",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Facial Recognition",
+        "Disgust"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_799256df",
+      "doi": "10.1038/s41380-024-02429-4",
+      "url": "https://doi.org/10.1038/s41380-024-02429-4",
+      "openalex_id": null,
+      "pmid": "38278993",
+      "first_author": "Klug",
+      "authors_display": "Klug, M. et al.",
+      "year": 2024,
+      "title": "Persistence of amygdala hyperactivity to subliminal negative emotion processing in the long-term course of depression.",
+      "venue": "Molecular psychiatry",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11189807",
+      "tldr": null,
+      "abstract": "Biased emotion processing has been suggested to underlie the etiology and maintenance of depression. Neuroimaging studies have shown mood-congruent alterations in amygdala activity in patients with acute depression, even during early, automatic stages of emotion processing. However, due to a lack of prospective studies over periods longer than 8 weeks, it is unclear whether these neurofunctional abnormalities represent a persistent correlate of depression even in remission. In this prospective case-control study, we aimed to examine brain functional correlates of automatic emotion processing in the long-term course of depression. In a naturalistic design, n = 57 patients with acute major depressive disorder (MDD) and n = 37 healthy controls (HC) were assessed with functional magnetic resonance imaging (fMRI) at baseline and after 2 years. Patients were divided into two subgroups according to their course of illness during the study period (n = 37 relapse, n = 20 no-relapse). During fMRI, participants underwent an affective priming task that assessed emotion processing of subliminally presented sad and happy compared to neutral face stimuli. A group × time × condition (3 × 2 × 2) ANOVA was performed for the amygdala as region-of-interest (ROI). At baseline, there was a significant group × condition interaction, resulting from amygdala hyperactivity to sad primes in patients with MDD compared to HC, whereas no difference between groups emerged for happy primes. In both patient subgroups, amygdala hyperactivity to sad primes persisted after 2 years, regardless of relapse or remission at follow-up. The results suggest that amygdala hyperactivity during automatic processing of negative stimuli persists during remission and represents a trait rather than a state marker of depression. Enduring neurofunctional abnormalities may reflect a consequence of or a vulnerability to depression.",
+      "score": {
+        "composite": 0.46419737040327586,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Amygdala",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Facial Expression",
+        "Brain Mapping",
+        "Case-Control Studies",
+        "Prospective Studies",
+        "Depression",
+        "Emotions",
+        "Subliminal Stimulation",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Major Depressive Disorder"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_4c189d02",
+      "doi": "10.3389/fpsyg.2022.911068",
+      "url": "https://doi.org/10.3389/fpsyg.2022.911068",
+      "openalex_id": null,
+      "pmid": "35874359",
+      "first_author": "Rohr",
+      "authors_display": "Rohr, M., & Wentura, D.",
+      "year": 2022,
+      "title": "How Emotion Relates to Language and Cognition, Seen Through the Lens of Evaluative Priming Paradigms.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human)"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2022.911068/pdf",
+      "tldr": null,
+      "abstract": "Affect and emotion are essential aspects of human life. These states or feelings signal personally relevant things or situations and color our memories and thoughts. Within the area of affective or emotion processing, evaluation-the assessment of the valence associated with a stimulus or event (i.e., its positivity or negativity)-is considered a fundamental process, representing an early and crucial stage in constructivist emotion theories. Valence evaluation is assumed to occur automatically when encountering a stimulus. But does this really apply always, even if we simply see a word? And if so, what exactly is processed or activated in memory? One approach to investigating this evaluative process uses behavioral priming paradigms and, first and foremost, the evaluative priming paradigm and its variants. In the present review, we delineate the insights gained from this paradigm about the relation of affect and emotion to cognition and language. Specifically, we reviewed the empirical evidence base with regard to this issue as well as the proposed theoretical models of valence evaluation, specifically with regard to the nature of the representations activated <i>via</i> such paradigms. It will become clear that affect and emotion are foremost (and, perhaps, even exclusively) triggered by evaluative priming paradigms in the sense that semantic affective knowledge is activated. This knowledge should be modeled as being active in working memory rather than in long-term memory as was assumed in former models. The emerging evidence concerning the processing of more specific emotion aspects gives rise to the assumption that the activation of these semantic aspects is related to their social importance. In that sense, the fast and (conditionally) automatic activation of valence and other emotion aspects in evaluative priming paradigms reveals something about affect and emotion: Valence and specific emotion aspects are so important for our daily life that encountering almos",
+      "score": {
+        "composite": 0.4631658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2237a6fb",
+      "doi": "10.1002/ejsp.2655",
+      "url": "https://doi.org/10.1002/ejsp.2655",
+      "openalex_id": null,
+      "pmid": "33071368",
+      "first_author": "Volpert-Esmond",
+      "authors_display": "Volpert-Esmond, H. et al.",
+      "year": 2020,
+      "title": "Dissociating Automatic Associations: Comparing Two Implicit Measurements of Race Bias.",
+      "venue": "European journal of social psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Weak correspondence across different implicit bias tasks may arise from the contribution of unique forms of automatic and controlled processes to response behavior. Here, we examined the correspondence between estimates of automatic and controlled processing derived from two sequential priming tasks with identical structure and timing designed to separately measure stereotypic (Weapons Identification Task; WIT) and evaluative (Affective Priming Task; APT) associations. Across two studies using predominantly White samples, three consistent patterns emerged in the data: (1) stereotypic bias was stronger for Black targets, whereas evaluative bias was stronger for White targets; (2) overall response accuracy bias correlated modestly across the two tasks; and (3) multinomial processing tree estimates of controlled processing corresponded much more strongly than estimates of automatic processing. These findings support models positing distinct learning and memory systems for different forms of race bias, and suggest that these differing forms contribute to estimates of automatic associations.",
+      "score": {
+        "composite": 0.4609017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1ca60cc2",
+      "doi": "10.1080/02699930903407948",
+      "url": "https://doi.org/10.1080/02699930903407948",
+      "openalex_id": null,
+      "pmid": "20300538",
+      "first_author": "Joormann",
+      "authors_display": "Joormann, J., & Gotlib, I.",
+      "year": 2010,
+      "title": "Emotion regulation in depression: relation to cognitive inhibition.",
+      "venue": "Cognition & emotion",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 655,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Depression is a disorder of impaired emotion regulation. Consequently, examining individual differences in the habitual use of emotion regulation strategies has considerable potential to inform models of this debilitating disorder. The aim of the current study was to identify cognitive processes that may be associated with the use of emotion regulation strategies and to elucidate their relation to depression. Depression has been found to be associated with difficulties in cognitive control and, more specifically, with difficulties inhibiting the processing of negative material. We used a negative affective priming task to assess the relations among inhibition and individual differences in the habitual use of rumination, reappraisal, and expressive suppression in clinically depressed, formerly depressed, and never-depressed participants. We found that depressed participants exhibited the predicted lack of inhibition when processing negative material. Moreover, within the group of depressed participants, reduced inhibition of negative material was associated with greater rumination. Across the entire sample, reduced inhibition of negative material was related to less use of reappraisal and more use of expressive suppression. Finally, within the formerly depressed group, less use of reappraisal, more use of rumination, and greater expressive suppression were related to higher levels of depressive symptoms. These findings suggest that individual differences in the use of emotion regulation strategies play an important role in depression, and that deficits in cognitive control are related to the use of maladaptive emotion regulation strategies in this disorder.",
+      "score": {
+        "composite": 0.4588832104500745,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37553284180029806,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.26666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09388321045007451,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.04,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Depression",
+        "Emotions",
+        "Individuality",
+        "Mental Processes",
+        "Cognition",
+        "Psychomotor Performance",
+        "Psychiatric Status Rating Scales",
+        "Adolescent",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_fd1751c9",
+      "doi": "10.1371/journal.pone.0163263",
+      "url": "https://doi.org/10.1371/journal.pone.0163263",
+      "openalex_id": null,
+      "pmid": "27636368",
+      "first_author": "Pan",
+      "authors_display": "Pan, F. et al.",
+      "year": 2016,
+      "title": "Different Stages, Different Signals: The Modulating Effect of Cognitive Conflict on Subsequent Processing.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5026368",
+      "tldr": null,
+      "abstract": "The present study used event-related potentials (ERPs) to investigate the function of signals induced by cognitive conflict during the detection stage and the resolution stage of perceptual processing. The study used a combination of the Stroop task and an affective priming task to examine the conflict priming effect when the stimulus onset asynchrony (SOA) was 200 ms or 800 ms. Behavioral results showed that the RTs were shorter for positive targets following congruent primes relative to incongruent primes, and for negative targets following incongruent primes relative to congruent primes when the SOA was 200 ms. ERP results showed that the N2 amplitudes (200-300 ms) for incongruent stimuli were significantly larger than for congruent stimuli in the Stroop task, which indicated a significant conflict effect. Moreover, the N400 amplitudes (500-700 ms) for positive targets after congruent primes were significantly lower than those after incongruent primes when the SOA was 200 ms, which showed a significant negative priming effect. While the SOA was 800 ms, behavioral results showed that the RTs were shorter for positive targets following incongruent primes relative to congruent primes. ERP results showed that the N2 amplitudes (200-300 ms) for incongruent stimuli were significantly larger than for congruent stimuli in the Stroop task, which indicated a significant conflict effect. The N400 amplitudes (1100-1300 ms) for the negative targets after congruent primes were significantly lower than those after incongruent primes when the SOA was 800 ms, which showed a significant positive priming effect. The results demonstrated that the functions of signals induced by cognitive conflict were reversed in two different cognitive processing stages.",
+      "score": {
+        "composite": 0.45316585927874237,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cognition",
+        "Evoked Potentials",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Stroop Test"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_36c2b42f",
+      "doi": "10.1371/journal.pone.0121564",
+      "url": "https://doi.org/10.1371/journal.pone.0121564",
+      "openalex_id": null,
+      "pmid": "25803444",
+      "first_author": "Spruyt",
+      "authors_display": "Spruyt, A., & Tibboel, H.",
+      "year": 2015,
+      "title": "On the automaticity of the evaluative priming effect in the valent/non-valent categorization task.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0121564&type=printable",
+      "tldr": null,
+      "abstract": "It has previously been argued (a) that automatic evaluative stimulus processing is critically dependent upon feature-specific attention allocation and (b) that evaluative priming effects can arise in the absence of dimensional overlap between the prime set and the response set. In line with both claims, research conducted at our lab revealed that the evaluative priming effect replicates in the valent/non-valent categorization task. This research was criticized, however, because non-automatic, strategic processes may have contributed to the emergence of this effect. We now report the results of a replication study in which the operation of non-automatic, strategic processes was controlled for. A clear-cut evaluative priming effect emerged, thus supporting initial claims concerning feature-specific attention allocation and dimensional overlap.",
+      "score": {
+        "composite": 0.44970806750845543,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Attention",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Stroop Test",
+        "Repetition Priming"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_e9005bd1",
+      "doi": "10.1007/s12264-018-0231-9",
+      "url": "https://doi.org/10.1007/s12264-018-0231-9",
+      "openalex_id": null,
+      "pmid": "29740753",
+      "first_author": "Zhang",
+      "authors_display": "Zhang, H. et al.",
+      "year": 2018,
+      "title": "Facial Expression Enhances Emotion Perception Compared to Vocal Prosody: Behavioral and fMRI Studies.",
+      "venue": "Neuroscience bulletin",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 11,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Facial and vocal expressions are essential modalities mediating the perception of emotion and social communication. Nonetheless, currently little is known about how emotion perception and its neural substrates differ across facial expression and vocal prosody. To clarify this issue, functional MRI scans were acquired in Study 1, in which participants were asked to discriminate the valence of emotional expression (angry, happy or neutral) from facial, vocal, or bimodal stimuli. In Study 2, we used an affective priming task (unimodal materials as primers and bimodal materials as target) and participants were asked to rate the intensity, valence, and arousal of the targets. Study 1 showed higher accuracy and shorter response latencies in the facial than in the vocal modality for a happy expression. Whole-brain analysis showed enhanced activation during facial compared to vocal emotions in the inferior temporal-occipital regions. Region of interest analysis showed a higher percentage signal change for facial than for vocal anger in the superior temporal sulcus. Study 2 showed that facial relative to vocal priming of anger had a greater influence on perceived emotion for bimodal targets, irrespective of the target valence. These findings suggest that facial expression is associated with enhanced emotion perception compared to equivalent vocal prosodies.",
+      "score": {
+        "composite": 0.4409675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Facial Expression",
+        "Brain Mapping",
+        "Emotions",
+        "Speech Perception",
+        "Social Perception",
+        "Psychomotor Performance",
+        "Adult",
+        "Female",
+        "Young Adult",
+        "Facial Recognition"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_3abee559",
+      "doi": "10.1371/journal.pone.0153910",
+      "url": "https://doi.org/10.1371/journal.pone.0153910",
+      "openalex_id": null,
+      "pmid": "27088244",
+      "first_author": "Enke",
+      "authors_display": "Enke, M. et al.",
+      "year": 2016,
+      "title": "From Memory to Attitude: The Neurocognitive Process beyond Euthanasia Acceptance.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4835050",
+      "tldr": null,
+      "abstract": "Numerous questionnaire studies on attitudes towards euthanasia produced conflicting results, precluding any general conclusion. This might be due to the fact that human behavior can be influenced by automatically triggered attitudes, which represent ingrained associations in memory and cannot be assessed by standard questionnaires, but require indirect measures such as reaction times (RT) or electroencephalographic recording (EEG). Event related potentials (ERPs) of the EEG and RT during an affective priming task were assessed to investigate the impact of automatically triggered attitudes and were compared to results of an explicit questionnaire. Explicit attitudes were ambivalent. Reaction time data showed neither positive nor negative associations towards euthanasia. ERP analyses revealed an N400 priming effect with lower mean amplitudes when euthanasia was associated with negative words. The euthanasia-related modulation of the N400 component shows an integration of the euthanasia object in negatively valenced associative neural networks. The integration of all measures suggests a bottom-up process of attitude activation, where automatically triggered negative euthanasia-relevant associations can become more ambiguous with increasing time in order to regulate the bias arising from automatic processes. These data suggest that implicit measures may make an important contribution to the understanding of euthanasia-related attitudes.",
+      "score": {
+        "composite": 0.4409017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Euthanasia",
+        "Attitude of Health Personnel",
+        "Attitude to Death",
+        "Memory",
+        "Reaction Time",
+        "Evoked Potentials",
+        "Education, Medical, Undergraduate",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Surveys and Questionnaires"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_01e7bc41",
+      "doi": "10.1371/journal.pone.0080154",
+      "url": "https://doi.org/10.1371/journal.pone.0080154",
+      "openalex_id": null,
+      "pmid": "24260350",
+      "first_author": "Flexas",
+      "authors_display": "Flexas, A. et al.",
+      "year": 2013,
+      "title": "Affective priming using facial expressions modulates liking for abstract art.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 17,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3833895",
+      "tldr": null,
+      "abstract": "We examined the influence of affective priming on the appreciation of abstract artworks using an evaluative priming task. Facial primes (showing happiness, disgust or no emotion) were presented under brief (Stimulus Onset Asynchrony, SOA = 20 ms) and extended (SOA = 300 ms) conditions. Differences in aesthetic liking for abstract paintings depending on the emotion expressed in the preceding primes provided a measure of the priming effect. The results showed that, for the extended SOA, artworks were liked more when preceded by happiness primes and less when preceded by disgust primes. Facial expressions of happiness, though not of disgust, exerted similar effects in the brief SOA condition. Subjective measures and a forced-choice task revealed no evidence of prime awareness in the suboptimal condition. Our results are congruent with findings showing that the affective transfer elicited by priming biases evaluative judgments, extending previous research to the domain of aesthetic appreciation.",
+      "score": {
+        "composite": 0.4368363634290498,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Face",
+        "Humans",
+        "Facial Expression",
+        "Emotions",
+        "Affect",
+        "Awareness",
+        "Judgment",
+        "Art",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a88ae45d",
+      "doi": "10.1371/journal.pone.0112990",
+      "url": "https://doi.org/10.1371/journal.pone.0112990",
+      "openalex_id": null,
+      "pmid": "25695426",
+      "first_author": "Iacono",
+      "authors_display": "Iacono, V. et al.",
+      "year": 2015,
+      "title": "Inhibition of personally-relevant angry faces moderates the effect of empathy on interpersonal functioning.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4334999",
+      "tldr": null,
+      "abstract": "While empathy is typically assumed to promote effective social interactions, it can sometimes be detrimental when it is unrestrained and overgeneralized. The present study explored whether cognitive inhibition would moderate the effect of empathy on social functioning. Eighty healthy young adults underwent two assessments six months apart. Participants' ability to suppress interference from distracting emotional stimuli was assessed using a Negative Affective Priming Task that included both generic and personally-relevant (i.e., participants' intimate partners) facial expressions of emotion. The UCLA Life Stress Interview and Empathy Quotient were administered to measure interpersonal functioning and empathy respectively. Multilevel modeling demonstrated that higher empathy was associated with worse concurrent interpersonal outcomes for individuals who showed weak inhibition of the personally-relevant depictions of anger. The effect of empathy on social functioning might be dependent on individuals' ability to suppress interference from meaningful emotional distractors in their environment.",
+      "score": {
+        "composite": 0.4350657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Facial Expression",
+        "Emotions",
+        "Anger",
+        "Empathy",
+        "Interpersonal Relations",
+        "Neuropsychological Tests",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_29c74e25",
+      "doi": "10.3389/fnhum.2018.00175",
+      "url": "https://doi.org/10.3389/fnhum.2018.00175",
+      "openalex_id": null,
+      "pmid": "29773984",
+      "first_author": "Jiang",
+      "authors_display": "Jiang, J. et al.",
+      "year": 2018,
+      "title": "Midfrontal Theta and Posterior Parietal Alpha Band Oscillations Support Conflict Resolution in a Masked Affective Priming Task.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subject)"
+      ],
+      "citation_count": 23,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5943601",
+      "tldr": null,
+      "abstract": "Past attempts to characterize the neural mechanisms of affective priming have conceptualized it in terms of classic cognitive conflict, but have not examined the neural oscillatory mechanisms of subliminal affective priming. Using behavioral and electroencephalogram (EEG) time frequency (TF) analysis, the current study examines the oscillatory dynamics of unconsciously triggered conflict in an emotional facial expressions version of the masked affective priming task. The results demonstrate that the power dynamics of conflict are characterized by increased midfrontal theta activity and suppressed parieto-occipital alpha activity. Across-subject and within-trial correlation analyses further confirmed this pattern. Phase synchrony and Granger causality analyses (GCAs) revealed that the fronto-parietal network was involved in unconscious conflict detection and resolution. Our findings support a response conflict account of affective priming, and reveal the role of the fronto-parietal network in unconscious conflict control.",
+      "score": {
+        "composite": 0.4310003854799279,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_e66893d2",
+      "doi": "10.1371/journal.pone.0055907",
+      "url": "https://doi.org/10.1371/journal.pone.0055907",
+      "openalex_id": null,
+      "pmid": "23409084",
+      "first_author": "Jiang",
+      "authors_display": "Jiang, J. et al.",
+      "year": 2013,
+      "title": "Unconsciously triggered emotional conflict by emotional facial expressions.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 11,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3567040",
+      "tldr": null,
+      "abstract": "The present study investigated whether emotional conflict and emotional conflict adaptation could be triggered by unconscious emotional information as assessed in a backward-masked affective priming task. Participants were instructed to identify the valence of a face (e.g., happy or sad) preceded by a masked happy or sad face. The results of two experiments revealed the emotional conflict effect but no emotional conflict adaptation effect. This demonstrates that emotional conflict can be triggered by unconsciously presented emotional information, but participants may not adjust their subsequent performance trial-by trial to reduce this conflict.",
+      "score": {
+        "composite": 0.4309675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Facial Expression",
+        "Emotions",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Conflict, Psychological",
+        "Unconscious, Psychology"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_b700e060",
+      "doi": "10.3389/fpsyg.2021.710880",
+      "url": "https://doi.org/10.3389/fpsyg.2021.710880",
+      "openalex_id": null,
+      "pmid": "34603135",
+      "first_author": "Appel",
+      "authors_display": "Appel, H. et al.",
+      "year": 2021,
+      "title": "\"I Know What I Like\" - Indecisiveness Is Unrelated to Behavioral Indicators of Evaluation Difficulties.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2021.710880/pdf",
+      "tldr": null,
+      "abstract": "Indecisiveness, the subjective inability to make satisfying decisions, is an individual difference trait that may impede effective actions. Mechanisms underlying indecisiveness are largely unknown. In four studies, we tested the prediction that indicators of evaluation difficulty were associated with indecisiveness in simple evaluations. Across studies, indecisiveness was measured via self-report while evaluation difficulties were derived behaviorally from three indicators: difficulty distinguishing between similar evaluation objects (i.e., standard deviation of evaluation ratings), evaluation duration (reaction times), and implicit evaluations (evaluative priming effect) using familiar everyday objects. Study 1 (<i>N</i> = 151) was based on attractiveness evaluations of portraits. Studies 2a (<i>N</i> = 201) and 2b (<i>N</i> = 211) used chocolate as evaluation objects and manipulated to what extent the evaluations were equivalent to a decision. In Study 3 (<i>N</i> = 80) evaluations were measured implicitly through evaluative priming using food pictures. Contrary to our predictions, indecisiveness showed no reliable association to any indicator of evaluation difficulty, regardless of type of evaluation object, equivalence of evaluation and decision, and whether evaluation difficulty was based on explicit or implicit evaluations. All null findings were supported by Bayes factors. These counterintuitive results are a first step toward investigating evaluation processes as potential mechanisms underlying indecisiveness, showing that for both explicit and implicit measurements, indecisiveness is not characterized by difficulties when evaluating familiar everyday objects.",
+      "score": {
+        "composite": 0.4250328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3fa1a9a2",
+      "doi": "10.3389/fpsyg.2018.00263",
+      "url": "https://doi.org/10.3389/fpsyg.2018.00263",
+      "openalex_id": null,
+      "pmid": "29755376",
+      "first_author": "Kucian",
+      "authors_display": "Kucian, K. et al.",
+      "year": 2018,
+      "title": "Relation Between Mathematical Performance, Math Anxiety, and Affective Priming in Children With and Without Developmental Dyscalculia.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5932531",
+      "tldr": null,
+      "abstract": "Many children show negative emotions related to mathematics and some even develop mathematics anxiety. The present study focused on the relation between negative emotions and arithmetical performance in children with and without developmental dyscalculia (DD) using an affective priming task. Previous findings suggested that arithmetic performance is influenced if an affective prime precedes the presentation of an arithmetic problem. In children with DD specifically, responses to arithmetic operations are supposed to be facilitated by both negative and mathematics-related primes (=<i>negative math priming effect</i>).We investigated mathematical performance, math anxiety, and the domain-general abilities of 172 primary school children (76 with DD and 96 controls). All participants also underwent an affective priming task which consisted of the decision whether a simple arithmetic operation (addition or subtraction) that was preceded by a prime (positive/negative/neutral or mathematics-related) was true or false. Our findings did not reveal a <i>negative math priming effect</i> in children with DD. Furthermore, when considering accuracy levels, gender, or math anxiety, the <i>negative math priming effect</i> could not be replicated. However, children with DD showed more math anxiety when explicitly assessed by a specific math anxiety interview and showed lower mathematical performance compared to controls. Moreover, math anxiety was equally present in boys and girls, even in the earliest stages of schooling, and interfered negatively with performance. In conclusion, mathematics is often associated with negative emotions that can be manifested in specific math anxiety, particularly in children with DD. Importantly, present findings suggest that in the assessed age group, it is more reliable to judge math anxiety and investigate its effects on mathematical performance explicitly by adequate questionnaires than by an affective math priming task.",
+      "score": {
+        "composite": 0.42212607321280216,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_30279c59",
+      "doi": "10.1371/journal.pone.0037011",
+      "url": "https://doi.org/10.1371/journal.pone.0037011",
+      "openalex_id": null,
+      "pmid": "22615873",
+      "first_author": "Paul",
+      "authors_display": "Paul, E. et al.",
+      "year": 2012,
+      "title": "Social anxiety modulates subliminal affective priming.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 9,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0037011&type=printable",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>It is well established that there is anxiety-related variation between observers in the very earliest, pre-attentive stage of visual processing of images such as emotionally expressive faces, often leading to enhanced attention to threat in a variety of disorders and traits. Whether there is also variation in early-stage affective (i.e. valenced) responses resulting from such images, however, is not yet known. The present study used the subliminal affective priming paradigm to investigate whether people varying in trait social anxiety also differ in their affective responses to very briefly presented, emotionally expressive face images.<h4>Methodology/principal findings</h4>Participants (n = 67) completed a subliminal affective priming task, in which briefly presented and smiling, neutral and angry faces were shown for 10 ms durations (below objective and subjective thresholds for visual discrimination), and immediately followed by a randomly selected Chinese character mask (2000 ms). Ratings of participants' liking for each Chinese character indicated the degree of valenced affective response made to the unseen emotive images. Participants' ratings of their liking for the Chinese characters were significantly influenced by the type of face image preceding them, with smiling faces generating more positive ratings than neutral and angry ones (F(2,128) = 3.107, p<0.05). Self-reported social anxiety was positively correlated with ratings of smiling relative to neutral-face primed characters (Pearson's r = .323, p<0.01). Individual variation in self-reported mood awareness was not associated with ratings.<h4>Conclusions</h4>Trait social anxiety is associated with individual variation in affective responding, even in response to the earliest, pre-attentive stage of visual image processing. However, the fact that these priming effects are limited to smiling and not angry (i.e. threatening) images leads us to propose that the pre-attentive processes invo",
+      "score": {
+        "composite": 0.4183285109479927,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Facial Expression",
+        "Pilot Projects",
+        "Social Behavior",
+        "Emotions",
+        "Anger",
+        "Anxiety",
+        "Individuality",
+        "Awareness",
+        "Pattern Recognition, Visual",
+        "Subliminal Stimulation",
+        "Visual Perception",
+        "Attention",
+        "Reaction Time",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1d3c8bcd",
+      "doi": "10.1002/brb3.405",
+      "url": "https://doi.org/10.1002/brb3.405",
+      "openalex_id": null,
+      "pmid": "26664790",
+      "first_author": "Koeneke",
+      "authors_display": "Koeneke, A. et al.",
+      "year": 2015,
+      "title": "The ANKK1/DRD2 locus is a genomic substrate for affective priming and recognition of angry faces.",
+      "venue": "Brain and behavior",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1002/brb3.405",
+      "tldr": null,
+      "abstract": "<h4>Introduction</h4>Ankyrin repeat and kinase domain containing I (ANKK1) and dopamine D2 receptor (DRD2) genes have been associated with psychopathic traits in clinical samples. On the other hand, individuals high in psychopathy show reduced affective priming and deficits in facial expression recognition. We have hypothesized that these emotion-related cognitive phenomena are associated with Taq IA (rs18000497) SNP (single nucleotide polymorphism) of the ANKK1 gene and with C957T (rs6277) SNP of the DRD2 gene.<h4>Methods</h4>We performed a genetic association analysis in 94 self-reported Caucasian healthy volunteers. The participants completed 144 trials of an affective priming task, in which primes and targets were emotional words. They also had to recognize 64 facial expressions of happiness, sadness, anger, and fear in an expression recognition task. Regarding the genetic analyses, Taq IA and C957T SNPs were genotyped.<h4>Results</h4>We found that the C957T SNP TT genotype was associated with a stronger priming effect and a better recognition of angry expressions. No associations were found for the Taq IA SNP. In addition, in silico analysis demonstrated that C957T SNP is a marker of a regulatory sequence at the 5' UTR of ANKK1 gene, thus suggesting the involvement of the whole ANKK1/DRD2 locus in cognitive-emotional processing.<h4>Conclusions</h4>These results suggest that affective priming and recognition of angry facial expressions are endophenotypes that lie on the pathway between the ANKK1/DRD2 locus and some deviant phenotypes.",
+      "score": {
+        "composite": 0.41506576301232245,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Receptors, Dopamine D2",
+        "Facial Expression",
+        "Emotions",
+        "Affect",
+        "Antisocial Personality Disorder",
+        "Polymorphism, Single Nucleotide",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Genetic Association Studies",
+        "Facial Recognition",
+        "Protein Serine-Threonine Kinases",
+        "White People"
+      ]
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5e6b6564",
+      "doi": "10.1016/j.pscychresns.2016.10.006",
+      "url": "https://doi.org/10.1016/j.pscychresns.2016.10.006",
+      "openalex_id": null,
+      "pmid": "27814457",
+      "first_author": "Tseng",
+      "authors_display": "Tseng, W. et al.",
+      "year": 2016,
+      "title": "Functional connectivity during masked and unmasked face emotion processing in bipolar disorder.",
+      "venue": "Psychiatry research. Neuroimaging",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Little is known regarding the neural connectivity and correlates during automatic, unconscious face emotion processing in individuals with bipolar disorder (BD). In this study, 14 adults with BD and 14 healthy volunteers (HV) underwent fMRI scanning while completing an affective priming task with unconsciously perceived and consciously perceived faces (angry, happy, neutral, blank oval). We found that, regardless of awareness level and emotion types, BD patients exhibited diminished functional connectivity between amygdala and ventromedial prefrontal cortex (vmPFC) compared to HV. This connectivity finding is present in the absence of activation differences in amygdala. In addition, in medial frontal gyrus, BD patients displayed greater activation while HV displayed less activation to angry and neutral faces compared to blank ovals. These results suggest that aberrant amygdala-vmPFC connectivity and neural dysfunction in areas implicated in appraisal and expression of emotions (medial frontal gyrus) may be the pathophysiological correlates of emotional processing in BD regardless of awareness level.",
+      "score": {
+        "composite": 0.4131658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Amygdala",
+        "Frontal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Facial Expression",
+        "Emotions",
+        "Bipolar Disorder",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Functional Neuroimaging"
+      ]
+    },
+    {
+      "rank": 25,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_d6aeee44",
+      "doi": "10.1016/j.jaac.2012.10.004",
+      "url": "https://doi.org/10.1016/j.jaac.2012.10.004",
+      "openalex_id": null,
+      "pmid": "23265635",
+      "first_author": "Singh",
+      "authors_display": "Singh, M. et al.",
+      "year": 2013,
+      "title": "Reward processing in adolescents with bipolar I disorder.",
+      "venue": "Journal of the American Academy of Child and Adolescent Psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 54,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Bipolar disorder (BD) is a debilitating psychiatric condition that commonly begins in adolescence, a developmental period that has been associated with increased reward seeking. Because youth with BD are especially vulnerable to negative risk-taking behaviors, understanding the neural mechanisms by which dysregulated affect interacts with the neurobehavioral processing of reward is clearly important. One way to clarify how manic symptoms evolve in BD is to \"prime\" the affect before presenting rewarding stimuli. The objective of this study was to investigate the neural effects of an affective priming task designed to positively induce mood before reward processing in adolescents with and without BD.<h4>Method</h4>Neural activity and behaviors during the anticipation of and response to monetary reward and loss after an affective prime were compared using functional magnetic resonance imaging in 13- to 18-year-old adolescents with a recent onset of BD-I (n = 24) and demographically matched healthy comparison youth (n = 24).<h4>Results</h4>Compared with the healthy control youth, youth with BD had speeded reaction times and showed decreased activation in the thalamus and inferior temporal gyrus while anticipating gains after priming but increased activations in the middle frontal gyrus and parietal cortices while anticipating losses after priming. Youth with BD also showed less activation in the inferior parietal lobule, thalamus, and superior frontal gyrus while receiving losses after priming.<h4>Conclusions</h4>Aberrant prefrontal and subcortical activations during reward processing suggest mechanisms that may underlie disordered self-awareness during goal pursuit and motivation in BD. Longitudinal studies are needed to examine whether this pattern of neural activation predicts a poorer long-term outcome.",
+      "score": {
+        "composite": 0.41300369695028705,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2320147878011481,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05800369695028702,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Amygdala",
+        "Thalamus",
+        "Nucleus Accumbens",
+        "Frontal Lobe",
+        "Parietal Lobe",
+        "Temporal Lobe",
+        "Nerve Net",
+        "Humans",
+        "Image Interpretation, Computer-Assisted",
+        "Magnetic Resonance Imaging",
+        "Affect",
+        "Motivation",
+        "Reward",
+        "Pattern Recognition, Visual",
+        "Arousal",
+        "Reaction Time",
+        "Bipolar Disorder",
+        "Reference Values",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Anticipation, Psychological"
+      ]
+    },
+    {
+      "rank": 26,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1e12c0ba",
+      "doi": "10.1177/01461672221150229",
+      "url": "https://doi.org/10.1177/01461672221150229",
+      "openalex_id": null,
+      "pmid": "36660861",
+      "first_author": "Axt",
+      "authors_display": "Axt, J. et al.",
+      "year": 2024,
+      "title": "A Comparative Investigation of the Predictive Validity of Four Indirect Measures of Bias and Prejudice.",
+      "venue": "Personality & social psychology bulletin",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11080383",
+      "tldr": null,
+      "abstract": "Although measures of implicit associations are influential in the prejudice literature, comparative tests of the predictive power of these measures are lacking. A large-scale (<i>N</i> > 100,000) analysis of four commonly used measures-the Implicit Association Test (IAT), Single-Category IAT (SC-IAT), evaluative priming task (EPT), and sorting paired features task (SPF)-across 10 intergroup domains and 250 outcomes found clear evidence for the superiority of the SC-IAT in predictive and incremental predictive validity. Follow-up analyses suggested that the SC-IAT benefited from an exclusive focus on associations toward stigmatized group members, as associations toward non-stigmatized group members diluted the predictive strength of relative measures like the IAT, SPF, and EPT. These results highlight how conclusions about predictive validity can vary drastically depending on the measure selected and reveal novel insights about the value of different measures when focusing on predictive than convergent validity.",
+      "score": {
+        "composite": 0.4109346224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Reproducibility of Results",
+        "Stereotyping",
+        "Prejudice",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c2d59e63",
+      "doi": "10.3389/fpsyg.2020.543596",
+      "url": "https://doi.org/10.3389/fpsyg.2020.543596",
+      "openalex_id": null,
+      "pmid": "33071861",
+      "first_author": "Serravalle",
+      "authors_display": "Serravalle, L. et al.",
+      "year": 2020,
+      "title": "Predicting Interpersonal Outcomes From Information Processing Tasks Using Personally Relevant and Generic Stimuli: A Methodology Study.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2020.543596/pdf",
+      "tldr": null,
+      "abstract": "Despite evidence of differential processing of personally relevant stimuli (PR), most studies investigating attentional biases in processing emotional content use generic stimuli. We sought to examine differences in the processing of PR, relative to generic, stimuli across information processing tasks and to validate their use in predicting concurrent interpersonal functioning. Fifty participants (25 female) viewed generic and PR (i.e., their intimate partner's face) emotional stimuli during tasks assessing selective attention (using a modified version of the Spatial Cueing Task) and inhibition (using the Negative Affective Priming task) of emotional content. Ratings of relationship quality were also collected. Evidence of increased selective attention during controlled and greater avoidance during automatic stages of processing emerged when viewing PR, relative to generic, emotional faces. We also found greater inhibition of PR sad faces. Finally, male, but not female, participants who displayed greater difficulty disengaging from the sad face of their partner reported more conflict in their relationships. Taken together, findings from information processing studies using generic emotional stimuli may not be representative of how we process PR stimuli in naturalistic settings.",
+      "score": {
+        "composite": 0.405,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_4fd4ce57",
+      "doi": "10.1016/j.brainres.2010.03.021",
+      "url": "https://doi.org/10.1016/j.brainres.2010.03.021",
+      "openalex_id": null,
+      "pmid": "20298681",
+      "first_author": "Zhang",
+      "authors_display": "Zhang, Q. et al.",
+      "year": 2010,
+      "title": "Neural correlates of cross-domain affective priming.",
+      "venue": "Brain research",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 52,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The affective priming effect has mostly been studied using reaction time (RT) measures; however, the neural bases of affective priming are not well established. To understand the neural correlates of cross-domain emotional stimuli presented rapidly, we obtained event-related potential (ERP) measures during an affective priming task using short SOA (stimulus onset asynchrony) conditions. Two sets of 480 picture-word pairs were presented at SOAs of either 150ms or 250ms between prime and target stimuli. Participants decided whether the valence of each target word was pleasant or unpleasant. Behavioral results from both SOA conditions were consistent with previous reports of affective priming, with longer RTs for incongruent than congruent pairs at SOAs of 150ms (771 vs. 738ms) and 250ms (765 vs. 720ms). ERP results revealed that the N400 effect (associated with incongruent pairs in affective processing) occurred at anterior scalp regions at an SOA of 150ms, and this effect was only observed for negative target words across the scalp at an SOA of 250ms. In contrast, late positive potentials (LPPs) (associated with attentional resource allocation) occurred across the scalp at an SOA of 250ms. LPPs were only observed for positive target words at posterior parts of the brain at an SOA of 150ms. Our finding of ERP signatures at very short SOAs provides the first neural evidence that affective pictures can exert an automatic influence on the evaluation of affective target words.",
+      "score": {
+        "composite": 0.4024675471973497,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2298701887893985,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057467547197349624,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Electroencephalography",
+        "Photic Stimulation",
+        "Affect",
+        "Verbal Learning",
+        "Visual Perception",
+        "Reaction Time",
+        "Neuropsychological Tests",
+        "Evoked Potentials",
+        "Semantics",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_7025d120",
+      "doi": "10.3389/fpsyg.2016.01330",
+      "url": "https://doi.org/10.3389/fpsyg.2016.01330",
+      "openalex_id": null,
+      "pmid": "27630604",
+      "first_author": "Xiao",
+      "authors_display": "Xiao, R. et al.",
+      "year": 2016,
+      "title": "Can We Distinguish Emotions from Faces? Investigation of Implicit and Explicit Processes of Peak Facial Expressions.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 8,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2016.01330/pdf",
+      "tldr": null,
+      "abstract": "Most previous studies on facial expression recognition have focused on the moderate emotions; to date, few studies have been conducted to investigate the explicit and implicit processes of peak emotions. In the current study, we used transiently peak intense expression images of athletes at the winning or losing point in competition as materials, and investigated the diagnosability of peak facial expressions at both implicit and explicit levels. In Experiment 1, participants were instructed to evaluate isolated faces, isolated bodies, and the face-body compounds, and eye-tracking movement was recorded. The results revealed that the isolated body and face-body congruent images were better recognized than isolated face and face-body incongruent images, indicating that the emotional information conveyed by facial cues was ambiguous, and the body cues influenced facial emotion recognition. Furthermore, eye movement records showed that the participants displayed distinct gaze patterns for the congruent and incongruent compounds. In Experiment 2A, the subliminal affective priming task was used, with faces as primes and bodies as targets, to investigate the unconscious emotion perception of peak facial expressions. The results showed that winning face prime facilitated reaction to winning body target, whereas losing face prime inhibited reaction to winning body target, suggesting that peak facial expressions could be perceived at the implicit level. In general, the results indicate that peak facial expressions cannot be consciously recognized but can be perceived at the unconscious level. In Experiment 2B, revised subliminal affective priming task and a strict awareness test were used to examine the validity of unconscious perception of peak facial expressions found in Experiment 2A. Results of Experiment 2B showed that reaction time to both winning body targets and losing body targets was influenced by the invisibly peak facial expression primes, which indicated the uncon",
+      "score": {
+        "composite": 0.3968034819228886,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_5b4adc47",
+      "doi": "10.1111/jsr.12728",
+      "url": "https://doi.org/10.1111/jsr.12728",
+      "openalex_id": null,
+      "pmid": "30033579",
+      "first_author": "Shaikh",
+      "authors_display": "Shaikh, N., & Coulthard, E.",
+      "year": 2019,
+      "title": "Nap-mediated benefit to implicit information processing across age using an affective priming paradigm.",
+      "venue": "Journal of sleep research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1111/jsr.12728",
+      "tldr": null,
+      "abstract": "Understanding how sleep-related information processing affects behaviour may allow targeted cognitive enhancement to improve quality of life. Previous evidence demonstrates that implicitly-presented cues are processed during subsequent sleep, resulting in enhanced cognition upon waking. We used a masked priming task to investigate this further. To assess sleep-mediated effects on reactions to implicitly presented primes, participants performed an Affective Priming Task pre-and-post 90 min of sleep, compared with an equal period of wakefulness. The Choice Reaction Time Task-a similar binary choice task but without the implicit aspect-was used as a control. Sixteen healthy participants across a range of ages were tested and sleep monitored using electroencephalogram. In stark contrast to the control task, in the Affective Priming Task reaction times significantly improved across all prime types after sleep, but not an equal period of wake. There was no significant change in reaction times on Choice Reaction Time Task after wakefulness or sleep. Rather than a general suppression of all primes, the data are more in keeping with specific strategic optimisation of prime processing during sleep. We plan future work to probe the mechanisms and neuroanatomical substrate of sleep-mediated prime processing.",
+      "score": {
+        "composite": 0.39506576301232244,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Sleep",
+        "Age Factors",
+        "Quality of Life",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Electronic Data Processing"
+      ]
+    },
+    {
+      "rank": 31,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_942766b6",
+      "doi": "10.3389/fpsyg.2022.871221",
+      "url": "https://doi.org/10.3389/fpsyg.2022.871221",
+      "openalex_id": null,
+      "pmid": "35769747",
+      "first_author": "Hauser",
+      "authors_display": "Hauser, D., & Schwarz, N.",
+      "year": 2022,
+      "title": "Implicit Bias Reflects the Company That Words Keep.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2022.871221/pdf",
+      "tldr": null,
+      "abstract": "In everyday language, concepts appear alongside (i.e., collocate with) related concepts. Societal biases often emerge in these collocations; e.g., female (vs. male) names collocate with art- (vs. science-) related concepts, and African American (vs. White American) names collocate with negative (vs. positive) concepts. It is unknown whether such collocations merely reflect societal biases or contribute to them. Concepts that are themselves neutral in valence but nevertheless collocate with valenced concepts provide a unique opportunity to address this question. For example, when asked, most people evaluate the concept \"cause\" as neutral, but \"cause\" is frequently followed by negative concepts (e.g., death, pain, and trouble). We use such semantically prosodic concepts to test the influence of collocation on the emergence of implicit bias: do neutral concepts that frequently collocate with valenced concepts have corresponding implicit bias? In evaluative priming tasks, participants evaluated positive/negative nouns (Study 1) or pictures (Study 2) after seeing verb primes that were (a) strongly valenced (e.g., hate and comfort), (b) neutral in valence but collocated with valenced concepts in corpora (e.g., ease and gain), or (c) neutral in valence and not collocated with valenced concepts in corpora (e.g., reply and describe). Throughout, neutral primes with positive (negative) collocates facilitated the evaluation of positive (negative) targets much like strongly valenced primes, whereas neutral primes without valenced collocates did not. That neutral concepts with valenced collocates parallel the influence of valenced concepts suggests that their collocations in natural language may be sufficient for fostering implicit bias. Societal implications of the causal embedding hypothesis are discussed.",
+      "score": {
+        "composite": 0.3950328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 32,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_e9f7fbaf",
+      "doi": "10.3389/fpubh.2017.00003",
+      "url": "https://doi.org/10.3389/fpubh.2017.00003",
+      "openalex_id": null,
+      "pmid": "28229068",
+      "first_author": "Wei",
+      "authors_display": "Wei, C. et al.",
+      "year": 2017,
+      "title": "The Characteristics of Emotional Response of Post-traumatic Stress Disorder and Post-traumatic Growth among Chinese Adults Exposed to an Explosion Incident.",
+      "venue": "Frontiers in public health",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5296354",
+      "tldr": null,
+      "abstract": "<h4>Purpose</h4>Post-traumatic stress disorder (PTSD) and post-traumatic growth (PTG) are two different outcomes that may occur after experiencing traumatic events. Meanwhile, the traumatic exposure level and emotion response played an important role in the process. The present study first evaluated the relationship between PTSD, PTG, and traumatic exposure level and then compared the characteristics of emotional response through response time of the affective priming paradigm.<h4>Methods</h4>For the purpose of evaluating the relationship between PTSD, PTG, and trauma exposure level, a sample of 2,395 participants completed measures of posttraumatic stress disorder Checklist-Civilian Version (PCL-C), Post-traumatic Growth Inventory (PTGI) and a trauma exposure-related survey, and Pearson's correlation analysis for the scales were conducted. In order to compare the characteristics of emotional response between PTSD and PTG, we randomly selected 90 participants and divided them into groups of PTSD, PTG, and control according the scores of PCL-C and PTGI, then the 90 participants were asked to do the affective priming task and the response time was recorded, at last analysis of variance was employed to analyze the data.<h4>Results</h4>The results indicated that PTSD was not correlated with PTG. It was positively correlated with the traumatic exposure level, but PTG was not observed in this phenomenon. Finally, the data of response time showed that PTSD required more time to do the priming task and PTG demonstrated no difference compared to the control group.<h4>Conclusion</h4>Combined with previous research findings, the relationship between PTSD and PTG may depend on the type and severity of the trauma, the exposure level, and other such parameters. In terms of positive outcome of trauma PTG displayed no changes of emotional performance from the perspective of behavior. The preliminary results suggested that PTG was more related to a self-reported or self-experienced ",
+      "score": {
+        "composite": 0.3850986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 33,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_154855b1",
+      "doi": "10.1037/pne0000027",
+      "url": "https://doi.org/10.1037/pne0000027",
+      "openalex_id": null,
+      "pmid": "26779324",
+      "first_author": "Wells",
+      "authors_display": "Wells, T. et al.",
+      "year": 2015,
+      "title": "Inhibition of Attention for Affective Material: Contributions by <i>HOMER1</i> Gene Variation.",
+      "venue": "Psychology & neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "https://doi.org/10.1037/pne0000027",
+      "tldr": null,
+      "abstract": "Failure to inhibit attention to irrelevant affective information has been linked to depression and rumination. However, few studies have investigated the biological bases of this process. Variation in the <i>HOMER1</i> gene was identified in a genome-wide association study as associated with major depressive disorder and is associated with executive functioning inefficiency. Several studies have linked variation in the <i>BDNF</i> gene with emotional and cognitive processes such as rumination. The current study examined the association between these two auspicious genetic variants and inhibition of attention for affective information. In Study 1, 60 psychiatrically healthy community participants completed a negative affective priming task with positive and negative words. <i>HOMER1</i> variation, but not <i>BDNF</i> variation, was associated with difficulty inhibiting irrelevant negative information. These results were replicated in a second study utilizing a sample of 97 psychiatrically healthy young adults. Implications for the current literature and future directions are discussed.",
+      "score": {
+        "composite": 0.3850328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 34,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c287f606",
+      "doi": "10.3389/fpsyg.2023.1158410",
+      "url": "https://doi.org/10.3389/fpsyg.2023.1158410",
+      "openalex_id": null,
+      "pmid": "37860298",
+      "first_author": "Winkelmair",
+      "authors_display": "Winkelmair, A., & Jansen, P.",
+      "year": 2023,
+      "title": "The positive impact of mindfulness interventions on the explicit and implicit affective attitudes toward vegetarian foods.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1158410/pdf?isPublishedV2=False",
+      "tldr": null,
+      "abstract": "<h4>Objectives</h4>The main goal of our intervention study was to investigate whether two conceptually different mindfulness interventions positively impacted the explicit and implicit affective evaluations of vegetarian foods. We included possible mediating variables (e.g., wellbeing) and related our results to the stage model of self-regulated behavioral change (SSBC).<h4>Methods</h4>We implemented a compassion and caring-based mental training (<i>N</i> = 31) and an adapted MBSR course (<i>N</i> = 34) as mindfulness interventions, and a stress-reduction course (<i>N</i> = 26) as the active control group. The curriculums consisted of 12 weekly group sessions á 75 min. All participants were tested pre- and post-intervention and 3 months after the last intervention session, answered questionnaires (mindfulness, compassion, wellbeing, items of the SSBC) and completed an explicit affective evaluation task and an affective priming task.<h4>Results</h4>There was an improvement in the explicit attitudes toward vegetarian foods regardless of the intervention group. In the SSBC, we found a link between the explicit attitudes toward vegetarian foods and the indicated stage in the model. Multiple regression analysis revealed social and personal norms and a vegetarian/vegan diet as the only significant predictors for goal intention in the SSBC.<h4>Conclusion</h4>The results of our study suggest that both conceptually different mindfulness interventions, as well as a stress-reduction program, have a positive impact on explicit affective attitudes toward vegetarian foods. We highlight the meaning of inner dimensions and transformation for change processes for a more sustainable diet and the role of social and personal norms.",
+      "score": {
+        "composite": 0.37829562944183154,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 35,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_f875db92",
+      "doi": "10.3389/fnhum.2012.00279",
+      "url": "https://doi.org/10.3389/fnhum.2012.00279",
+      "openalex_id": null,
+      "pmid": "23087633",
+      "first_author": "Rubinsten",
+      "authors_display": "Rubinsten, O. et al.",
+      "year": 2012,
+      "title": "Exploring the relationship between math anxiety and gender through implicit measurement.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 12,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3471121",
+      "tldr": null,
+      "abstract": "Math anxiety, defined as a negative affective response to mathematics, is suggested as a strong antecedent for the low visibility of women in the science and engineering workforce. However, the assumption of gender differences in math anxiety is still being studied and results are inconclusive, probably due to the use of explicit measures such as direct questionnaires. Thus, our primary objective was to investigate the effects of math anxiety on numerical processing in males and females by using a novel affective priming task as an indirect measure. Specifically, university students (23 males and 30 females) completed a priming task in which an arithmetic equation was preceded by one of four types of priming words (positive, neutral, negative, or related to mathematics). Participants were required to indicate whether the equation (simple math facts based on addition, subtraction, multiplication, or division) was true or false. People are typically found to respond to target stimuli more rapidly after presentation of an affectively related prime than after an affectively unrelated one. In the current study, shorter response latencies for positive as compared to negative affective primes were found in the male group. An affective priming effect was found in the female group as well, but with a reversed pattern. That is, significantly shorter response latencies were observed in the female group for negative as compared to positive targets. That is, for females, negative affective primes act as affectively related to simple arithmetic problems. In contrast, males associated positive affect with simple arithmetic. In addition, only females with lower or insignificant negative affect toward arithmetic study at faculties of mathematics and science. We discuss the advantages of examining pure anxiety factors with implicit measures which are free of response factors. In addition it is suggested that environmental factors may enhance the association between math achievements ",
+      "score": {
+        "composite": 0.36212607321280216,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 36,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_68967192",
+      "doi": "10.1016/j.jesp.2009.12.017",
+      "url": "https://doi.org/10.1016/j.jesp.2009.12.017",
+      "openalex_id": null,
+      "pmid": "20495619",
+      "first_author": "Bliss-Moreau",
+      "authors_display": "Bliss-Moreau, E. et al.",
+      "year": 2010,
+      "title": "I Like the Sound of Your Voice: Affective Learning about Vocal Signals.",
+      "venue": "Journal of experimental social psychology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,participants)"
+      ],
+      "citation_count": 8,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "This paper provides the first demonstration that the content of what a talker says is sufficient to imbue the acoustics of his voice with affective meaning. In two studies, participants listened to male talkers utter positive, negative, or neutral words. Next, participants completed a sequential evaluative priming task where a neutral word spoken by one of the same talkers was presented before each target word to be evaluated. We predicted, and found, that voices served as evaluative primes that influenced the speed with which participants evaluated the target words. These two experiments demonstrate that the human voice can take on affective meaning merely based on the positive or negative value of the words uttered by that voice. Implications for affective processing, the pragmatics of communication, and person-perception are discussed.",
+      "score": {
+        "composite": 0.35680348192288863,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 37,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ac710437",
+      "doi": "10.3758/s13428-024-02586-y",
+      "url": "https://doi.org/10.3758/s13428-024-02586-y",
+      "openalex_id": null,
+      "pmid": "39776377",
+      "first_author": "Segal-Gordon",
+      "authors_display": "Segal-Gordon, N., & Bar-Anan, Y.",
+      "year": 2025,
+      "title": "The Beyond Reality Image Collection (BRIC).",
+      "venue": "Behavior research methods",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11706899",
+      "tldr": null,
+      "abstract": "The Beyond Reality Image Collection (BRIC) is a set of 648 photos, some painted by an artist and some generated by artificial intelligence. Unlike previous photosets, the BRIC focused on nonrealistic visuals. This collection includes abstract and non-abstract paintings and nonrealistic photographs depicting objects, scenes, animals, humans, and fantastical creatures with varying degrees of unreal elements. We collected evaluative ratings of the photos, using a convenience sample of 16,208 participants in a total of 25,321 sessions. We used multiple evaluation measures: binary positive/negative and like/dislike categorization, seven-point ratings on these attributes, both under no time pressure and under time pressure, and evaluative priming scores. The mean evaluation of the photos on the different measures was highly correlated, but some photos consistently elicited a discrepant evaluative reaction between the measures. The BRIC is a valuable resource for eliciting evaluative reactions and can contribute to research on evaluative processes and affective responses.",
+      "score": {
+        "composite": 0.355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Photography",
+        "Artificial Intelligence",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 38,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_fb924c1e",
+      "doi": "10.3389/fpsyg.2015.00693",
+      "url": "https://doi.org/10.3389/fpsyg.2015.00693",
+      "openalex_id": null,
+      "pmid": "26074847",
+      "first_author": "Li",
+      "authors_display": "Li, D. et al.",
+      "year": 2015,
+      "title": "Association of affect with vertical position in L1 but not in L2 in unbalanced bilinguals.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4444649",
+      "tldr": null,
+      "abstract": "After judging the valence of the positive (e.g., happy) and the negative words (e.g., sad), the participants' response to the letter (q or p) was faster and slower, respectively, when the letter appeared at the upper end than at the lower end of the screen in Meier and Robinson's (2004) second experiment. To compare this metaphorical association of affect with vertical position in Chinese-English bilinguals' first language (L1) and second language (L2) (language), we conducted four experiments in an affective priming task. The targets were one set of positive or negative words (valence), which were shown vertically above or below the center of the screen (position). The primes, presented at the center of the screen, were affective words that were semantically related to the targets, affective words that were not semantically related to the targets, affective icon-pictures, and neutral strings in Experiment 1-4, respectively. In judging the targets' valence, the participants showed different patterns of interactions between language, valence, and position in reaction times across the experiments. We concluded that metaphorical association between affect and vertical position works in L1 but not in L2 for unbalanced bilinguals.",
+      "score": {
+        "composite": 0.355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 39,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d9095e73",
+      "doi": "10.3390/bs9100109",
+      "url": "https://doi.org/10.3390/bs9100109",
+      "openalex_id": null,
+      "pmid": "31615003",
+      "first_author": "Calvert",
+      "authors_display": "Calvert, G. et al.",
+      "year": 2019,
+      "title": "Providing Excellent Consumer Service Is Therapeutic: Insights from an Implicit Association Neuromarketing Study.",
+      "venue": "Behavioral sciences (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6826515",
+      "tldr": null,
+      "abstract": "This paper reports the results of a combined biometric and implicit affective priming study of the emotional consequences of being the provider or receiver of either positive or negative customer service experiences. The study was conducted in two stages. Study 1 captured the moment-by-moment implicit emotional and physiological responses associated with receiving and providing good customer service. Study 2 employed an affective priming task to evaluate the implicit associations with good and poor customer service in a large sample of 1200 respondents across three Western countries. Our results show that both giving and receiving good customer service was perceived as pleasurable (Study 1) and at the same time, was implicitly associated with positive feelings (Study 2). The authors discuss the implications of the research for service providers in terms of the impact of these interactions on employee wellbeing, staff retention rates and customer satisfaction.",
+      "score": {
+        "composite": 0.3450986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 40,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_f6961fb3",
+      "doi": "10.3389/fpsyg.2012.00106",
+      "url": "https://doi.org/10.3389/fpsyg.2012.00106",
+      "openalex_id": null,
+      "pmid": "22514545",
+      "first_author": "Bolders",
+      "authors_display": "Bolders, A. et al.",
+      "year": 2012,
+      "title": "Evaluative conditioning induces changes in sound valence.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3322609",
+      "tldr": null,
+      "abstract": "Through evaluative conditioning (EC) a stimulus can acquire an affective value by pairing it with another affective stimulus. While many sounds we encounter daily have acquired an affective value over life, EC has hardly been tested in the auditory domain. To get a more complete understanding of affective processing in auditory domain we examined EC of sound. In Experiment 1 we investigated whether the affective evaluation of short environmental sounds can be changed using affective words as unconditioned stimuli (US). Congruency effects on an affective priming task for conditioned sounds demonstrated successful EC. Subjective ratings for sounds paired with negative words changed accordingly. In Experiment 2 we investigated whether extinction occurs, i.e., whether the acquired valence remains stable after repeated presentation of the conditioned sound without the US. The acquired affective value remained present, albeit weaker, even after 40 extinction trials. These results provide clear evidence for EC effects in the auditory domain. We will argue that both associative as well as propositional processes are likely to underlie these effects.",
+      "score": {
+        "composite": 0.34506576301232245,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 41,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ed651b7c",
+      "doi": "10.1093/geronb/gbaf087",
+      "url": "https://doi.org/10.1093/geronb/gbaf087",
+      "openalex_id": null,
+      "pmid": "40329543",
+      "first_author": "Aiello",
+      "authors_display": "Aiello, M. et al.",
+      "year": 2025,
+      "title": "Food Inhibitory Control and Reward Responsiveness in Healthy Aging.",
+      "venue": "The journals of gerontology. Series B, Psychological sciences and social sciences",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12239630",
+      "tldr": null,
+      "abstract": "<h4>Objectives</h4>Living in a complex food environment, humans face numerous decisions and choices every day. These decisions necessitate cognitive resources and the ability to balance metabolic needs with gratification. This study sought to examine whether aging enhances responses to food stimuli due to reduced inhibitory control or reduces such responses due to a decline in the motivational system.<h4>Methods</h4>50 young adults, aged 20-30 years, and 55 older adults, aged 65-91 years, without obesity, were recruited. Participants were asked to rate explicitly liking, wanting, and healthiness of both high- and low-calorie foods on a Likert scale. Additionally, they completed an affective priming task measuring affective reactions toward foods and a food go/no-go task to assess inhibitory control.<h4>Results</h4>Older adults exhibit reduced food liking and wanting compared to young adults, but did not show increased impulsivity or implicit preference for high- and/or low-calorie foods. No significant relationship between perceived healthiness and reward responsiveness was observed in the older adult group.<h4>Discussion</h4>Our findings suggest that healthy aging is characterized by a diminished response to food due to low reward responsiveness. This is noteworthy, as the hedonic properties of foods are commonly believed to guide dietary choices. Understanding the relationship between age and food-related behavior is crucial for developing targeted dietary interventions for older adults, which could enhance their overall health and quality of life.",
+      "score": {
+        "composite": 0.34503288150616124,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Food Preferences",
+        "Motivation",
+        "Reward",
+        "Aging",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Healthy Aging",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 42,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c88748c5",
+      "doi": "10.3390/bs12010017",
+      "url": "https://doi.org/10.3390/bs12010017",
+      "openalex_id": null,
+      "pmid": "35049628",
+      "first_author": "Calvert",
+      "authors_display": "Calvert, G. et al.",
+      "year": 2022,
+      "title": "Race, Gender, and the U.S. Presidency: A Comparison of Implicit and Explicit Biases in the Electorate.",
+      "venue": "Behavioral sciences (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC8772753",
+      "tldr": null,
+      "abstract": "Recent U.S. elections have witnessed the Democrats nominating both black and female presidential candidates, as well as a black and female vice president. The increasing diversity of the U.S. political elite heightens the importance of understanding the psychological factors influencing voter support for, or opposition to, candidates of different races and genders. In this study, we investigated the relative strength of the implicit biases for and against hypothetical presidential candidates that varied by gender and race, using an evaluative priming paradigm on a broadly representative sample of U.S. citizens (n = 1076). Our main research question is: Do measures of implicit racial and gender biases predict political attitudes and voting better than measures of explicit prejudice? We find that measures of implicit bias are less strongly associated with political attitudes and voting than are explicit measures of sexist attitudes and modern racism. Moreover, once demographic characteristics and explicit prejudice are controlled statistically, measures of implicit bias provide little incremental predictive validity. Overall, explicit prejudice has a far stronger association with political preferences than does implicit bias.",
+      "score": {
+        "composite": 0.305,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 43,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_e3dbae39",
+      "doi": "10.1186/1744-9081-6-46",
+      "url": "https://doi.org/10.1186/1744-9081-6-46",
+      "openalex_id": null,
+      "pmid": "20633269",
+      "first_author": "Rubinsten",
+      "authors_display": "Rubinsten, O., & Tannock, R.",
+      "year": 2010,
+      "title": "Mathematics anxiety in children with developmental dyscalculia.",
+      "venue": "Behavioral and brain functions : BBF",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 34,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC2913999",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Math anxiety, defined as a negative affective response to mathematics, is known to have deleterious effects on math performance in the general population. However, the assumption that math anxiety is directly related to math performance, has not yet been validated. Thus, our primary objective was to investigate the effects of math anxiety on numerical processing in children with specific deficits in the acquisition of math skills (Developmental Dyscalculia; DD) by using a novel affective priming task as an indirect measure.<h4>Methods</h4>Participants (12 children with DD and 11 typically-developing peers) completed a novel priming task in which an arithmetic equation was preceded by one of four types of priming words (positive, neutral, negative or related to mathematics). Children were required to indicate whether the equation (simple math facts based on addition, subtraction, multiplication or division) was true or false. Typically, people respond to target stimuli more quickly after presentation of an affectively-related prime than after one that is unrelated affectively.<h4>Result</h4>Participants with DD responded faster to targets that were preceded by both negative primes and math-related primes. A reversed pattern was present in the control group.<h4>Conclusion</h4>These results reveal a direct link between emotions, arithmetic and low achievement in math. It is also suggested that arithmetic-affective priming might be used as an indirect measure of math anxiety.",
+      "score": {
+        "composite": 0.2764614887205739,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.04,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Case-Control Studies",
+        "Emotions",
+        "Anxiety",
+        "Mental Processes",
+        "Reaction Time",
+        "Psychological Tests",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male",
+        "Mathematical Concepts",
+        "Learning Disabilities"
+      ]
+    },
+    {
+      "rank": 44,
+      "tier": "reserve",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_0f770e63",
+      "doi": "10.1027/1618-3169/a000628",
+      "url": "https://doi.org/10.1027/1618-3169/a000628",
+      "openalex_id": null,
+      "pmid": "39665186",
+      "first_author": "Gurbuz",
+      "authors_display": "Gurbuz, E. et al.",
+      "year": 2024,
+      "title": "Independent Effects of Emotional Expression and Group Membership in the Evaluative Priming Task.",
+      "venue": "Experimental psychology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11770364",
+      "tldr": null,
+      "abstract": "Research on automatic evaluative responses to faces varying in emotional expression and ethnicity has yielded conflicting results. Some paradigms, like the Approach/Avoidance task, demonstrated interactive evaluation. In contrast, recent studies using the Evaluative Priming Task (EPT) yielded independent effects of expression and ethnicity. One key difference between these paradigms is the task relevance of the faces. In the EPT faces served solely as primes without direct relevance to the task. To examine whether increased task relevance could engender interactive processing in the EPT, we utilized a modified version of the \"bona fide pipeline\" EPT. In this adaptation, participants categorized the valence of target words succeeding prime faces followed by probe faces. Participants then judged whether the prime and probe faces depicted the same person, thereby adding task relevance to the prime faces. Experiment 1 revealed independent priming effects of emotion and ethnicity. Since error data and inverse efficiency scores provided evidence for an interactive evaluation, we replicated Experiment 1 using a sequential Bayes testing strategy. Experiment 2 confirmed that the effects of emotion and ethnicity remain independent, indicating that increased task relevance did not yield the integrated processing of emotion and ethnicity as initially hypothesized.",
+      "score": {
+        "composite": 0.26506576301232243,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Facial Expression",
+        "Bayes Theorem",
+        "Photic Stimulation",
+        "Emotions",
+        "Reaction Time",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Repetition Priming",
+        "Ethnicity"
+      ]
+    },
+    {
+      "rank": 45,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_eca99c29",
+      "doi": "10.1139/jpn.0742",
+      "url": "https://doi.org/10.1139/jpn.0742",
+      "openalex_id": null,
+      "pmid": "18043766",
+      "first_author": "Dannlowski",
+      "authors_display": "Dannlowski, U. et al.",
+      "year": 2007,
+      "title": "Amygdala reactivity to masked negative faces is associated with automatic judgmental bias in major depression: a 3 T fMRI study.",
+      "venue": "Journal of psychiatry & neuroscience : JPN",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 90,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>In a previous study, we demonstrated that amygdala reactivity to masked negative facial emotions predicts negative judgmental bias in healthy subjects. In the present study, we extended the paradigm to a sample of 35 inpatients suffering from depression to investigate the effect of amygdala reactivity on automatic negative judgmental bias and clinical characteristics in depression.<h4>Methods</h4>Amygdala activity was recorded in response to masked displays of angry, sad and happy facial expressions by means of functional magnetic resonance imaging at 3 T. In a subsequent experiment, the patients performed an affective priming task that characterizes automatic emotion processing by investigating the biasing effect of subliminally presented emotional faces on evaluative ratings to subsequently presented neutral stimuli.<h4>Results</h4>Significant associations between (right) amygdala reactivity and automatic negative judgmental bias were replicated in our patient sample (r=-0.59, p<0.001). Further, negatively biased evaluative processing was associated with severity and longer course of illness (r=-0.57, p=0.001).<h4>Conclusion</h4>Amygdala hyperactivity is a neural substrate of negatively biased automatic emotion processing that could be a determinant for a more severe disease course.",
+      "score": {
+        "composite": 0.26029193249154453,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2611677299661781,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06529193249154452,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.01,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Amygdala",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Facial Expression",
+        "Severity of Illness Index",
+        "Automatism",
+        "Perceptual Masking",
+        "Judgment",
+        "Diagnostic and Statistical Manual of Mental Disorders",
+        "Adult",
+        "Female",
+        "Male",
+        "Major Depressive Disorder"
+      ]
+    },
+    {
+      "rank": 46,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_6d66916a",
+      "doi": "10.1186/1471-2458-10-308",
+      "url": "https://doi.org/10.1186/1471-2458-10-308",
+      "openalex_id": null,
+      "pmid": "20525306",
+      "first_author": "Watts",
+      "authors_display": "Watts, K., & Cranney, J.",
+      "year": 2010,
+      "title": "Automatic evaluation of body-related words among young women: an experimental study.",
+      "venue": "BMC public health",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "http://www.biomedcentral.com/content/pdf/1471-2458-10-308.pdf",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Previous research has demonstrated that exposure to images depicting the thin female ideal has negative effects on some females' levels of body dissatisfaction. Much of this research, however, has utilised relatively long stimulus exposure times; thereby focusing on effortful and conscious processing of body-related stimuli. Relatively little is known about the nature of females' affective responses to the textual components of body-related stimuli, especially when these stimuli are only briefly encountered. The primary aim of the current research was to determine whether young women automatically evaluate body-related words and whether these responses are associated with body image concerns, including self-reported levels of appearance schematicity, thin internalisation, body dissatisfaction, and dietary restraint.<h4>Methods</h4>An affective priming task was used to investigate whether females automatically evaluate body-related words, and whether this is associated with self-reported body image concerns. In a within-participants experimental design, the valence congruence of the prime and target pairs was manipulated. Participants selected body words as primes in Experiment 1 (N = 27), while normatively selected body words were primes in Experiment 2 (N = 50). Each prime was presented briefly, followed by a target word which participants judged as \"good\" or \"bad\". The dependent variable was response latency to the target.<h4>Results</h4>Automatic evaluation was evident: responding to congruent pairs was faster than responding to incongruent pairs. Body image concerns were unrelated to automaticity.<h4>Conclusions</h4>The findings suggest that brief encounters with body words are likely to prompt automatic evaluation in all young women, and that this process proceeds unintentionally and efficiently, without conscious guidance.",
+      "score": {
+        "composite": 0.24090174096144432,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.04,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 47,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_e58f9c54",
+      "doi": "10.3390/bs15091268",
+      "url": "https://doi.org/10.3390/bs15091268",
+      "openalex_id": null,
+      "pmid": "41009298",
+      "first_author": "Wenk",
+      "authors_display": "Wenk, T. et al.",
+      "year": 2025,
+      "title": "Gaze and Evaluative Behavior of Patients with Borderline Personality Disorder in an Affective Priming Task.",
+      "venue": "Behavioral sciences (Basel, Switzerland)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants,patients)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12467696",
+      "tldr": null,
+      "abstract": "Borderline personality disorder (BPD) is associated with alterations in emotion processing. To date, no study has tested automatic emotion perception under conditions of unawareness of emotion stimuli. We administered a priming paradigm based on facial expressions and measured judgmental and gaze behavior during an evaluation task. A total of 31 patients with BPD and 31 non-patients (NPs) viewed a briefly shown emotional (angry, fearful, sad, or happy) or neutral face followed by a neutral facial expression (target). Areas of interest (AOI) were the eyes and the mouth. All participants included in our analysis were subjectively unaware of the emotional primes. Concerning evaluative ratings, no prime effects were observed. For early dwell time, a significant interaction between prime category and AOI was found. Both BPD patients and NPs dwelled longer on the eyes after the presentation of angry and fearful primes than of happy primes and dwelled longer on the mouth after the presentation of happy primes than of sad and neutral primes. Patients rated target faces more negatively. BPD patients, when compared to NPs, seem not to show alterations in automatic attention orienting due to covert facial emotions. Regardless of primes, individuals with BPD seem to be characterized by an increased negative interpretation of neutral facial expressions.",
+      "score": {
+        "composite": 0.215,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    }
+  ]
+}

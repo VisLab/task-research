@@ -1,0 +1,1139 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_stroop_color_word",
+    "name": "Stroop Color-Word Task",
+    "aliases": [
+      "Stroop",
+      "Color-Word Interference Test",
+      "CWIT"
+    ],
+    "category_id": "inhibitory_control_and_conflict_monitoring",
+    "short_definition": "Naming the ink color of color words while ignoring word meaning; RT and error costs on incongruent trials index selective attention and conflict control.",
+    "description": "The Stroop Color-Word Task is a classic measure of selective attention and cognitive control that requires participants to identify the ink color of printed words while ignoring the semantic content. In the standard version, participants view color names (e.g., \"RED,\" \"BLUE\") printed in incongruent ink colors and must respond with the ink color rather than reading the word. The task measures reaction time and accuracy across congruent trials (word and color match), incongruent trials (word and color conflict), and neutral trials. Performance reflects the ability to overcome automatic word-reading processes and requires engagement of executive control mechanisms. The Stroop interference effect (slowed RT on incongruent trials) is one of the most robust findings in cognitive psychology.",
+    "inclusion_test": {
+      "procedure": "Color words (RED, BLUE) are printed in incongruent ink colors; participants name the ink color while ignoring the word.",
+      "manipulation": "Congruency (congruent, incongruent, neutral); proportion congruent; response modality (vocal, manual); stimulus type (classic, spatial, numerical).",
+      "measurement": "Stroop interference effect (incongruent − congruent RT); facilitation (neutral − congruent); error rate; conflict adaptation (Gratton effect)."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:54:29",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Stroop 1935 — Studies of interference in serial verbal reactions. (Journal of Experimental Psychology, historical, 18k×)",
+      "doi": "10.1037/h0054651",
+      "pub_id": "pub_bf64f49f",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7420120256383753,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5680481025535012,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1420120256383753,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": null,
+      "year": 1935,
+      "venue": "Journal of Experimental Psychology",
+      "citation_count": 18237,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Freund 2021 — Neural Coding of Cognitive Control: The Representational Similarity Analysis … (Trends in cognitive sciences, key_review, 68×)",
+      "doi": "10.1016/j.tics.2021.03.011",
+      "pub_id": "pub_11b7789e",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6237861020523432,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24514440820937256,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06128610205234314,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Trends in cognitive sciences",
+      "citation_count": 68,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Li 2019 — Characterization of the hemodynamic response function in white matter tracts … (Nature communications, recent_primary, 121×)",
+      "doi": "10.1038/s41467-019-09076-2",
+      "pub_id": "pub_6f0cbf77",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5620352664580957,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27814106583238263,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06953526645809566,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 121,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Fu 2019 — Single-Neuron Correlates of Error Monitoring and Post-Error Adjustments in Hu… (Neuron, recent_primary, 98×)",
+      "doi": "10.1016/j.neuron.2018.11.016",
+      "pub_id": "pub_791ee20f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5590115494313441,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26604619772537635,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06651154943134409,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Neuron",
+      "citation_count": 98,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Shehab 2019 — Effects of short-term exposure to particulate matter air pollution on cogniti… (Scientific reports, recent_primary, 63×)",
+      "doi": "10.1038/s41598-019-44561-0",
+      "pub_id": "pub_31f8cf36",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5526972890369672,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24078915614786897,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06019728903696724,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 63,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Vanes 2019 — Neural correlates of positive and negative symptoms through the illness cours… (Scientific reports, recent_primary, 42×)",
+      "doi": "10.1038/s41598-019-51023-0",
+      "pub_id": "pub_2fa24b4f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.546941071304985,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 42,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Takeuchi 2018 — Shorter sleep duration and better sleep quality are associated with greater t… (Scientific reports, recent_primary, 41×)",
+      "doi": "10.1038/s41598-018-24226-0",
+      "pub_id": "pub_4447d77b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5366004817463479,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "To 2018 — Exploring the effects of anodal and cathodal high definition transcranial dir… (Scientific reports, recent_primary, 41×)",
+      "doi": "10.1038/s41598-018-22730-x",
+      "pub_id": "pub_13644ece",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5366004817463479,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Parris 2022 — The loci of Stroop effects: a critical review of methods and evidence for lev… (Psychological research, key_review, 57×)",
+      "doi": "10.1007/s00426-021-01554-x",
+      "pub_id": "pub_2efcef61",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5312724291894593,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23508971675783696,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05877242918945924,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Psychological research",
+      "citation_count": 57,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Cieslik 2015 — Three key regions for supervisory attentional control: evidence from neuroima… (Neuroscience and biobehavioral r…, key_review, 248×)",
+      "doi": "10.1016/j.neubiorev.2014.11.003",
+      "pub_id": "pub_8d38371e",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5223617561732533,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31944702469301334,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07986175617325333,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Neuroscience and biobehavioral reviews",
+      "citation_count": 248,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Lin 2020 — Strong Effort Manipulations Reduce Response Caution: A Preregistered Reinvent… (Psychological science, recent_primary, 46×)",
+      "doi": "10.1177/0956797620904990",
+      "pub_id": "pub_bfec48b8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5182285317643258,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22291412705730315,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05572853176432579,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychological science",
+      "citation_count": 46,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Bucur 2023 — Deep Brain Stimulation in Parkinson Disease: A Meta-analysis of the Long-term… (Neuropsychology review, key_review, 76×)",
+      "doi": "10.1007/s11065-022-09540-9",
+      "pub_id": "pub_cc515cf3",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5053739267871978,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25149570714879144,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06287392678719786,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Neuropsychology review",
+      "citation_count": 76,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Nyongesa 2019 — Assessing Executive Function in Adolescence: A Scoping Review of Existing Mea… (Frontiers in psychology, key_review, 63×)",
+      "doi": "10.3389/fpsyg.2019.00311",
+      "pub_id": "pub_cbf5646e",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5051972890369673,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24078915614786897,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06019728903696724,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Frontiers in psychology",
+      "citation_count": 63,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Joyal 2019 — Characterizing emotional Stroop interference in posttraumatic stress disorder… (PloS one, key_review, 45×)",
+      "doi": "10.1371/journal.pone.0214998",
+      "pub_id": "pub_33c1ea47",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.49791724259706005,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22166897038824016,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05541724259706004,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "PloS one",
+      "citation_count": 45,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Chang 2020 — Shared polygenic risk for ADHD, executive dysfunction and other psychiatric d… (Translational psychiatry, recent_primary, 41×)",
+      "doi": "10.1038/s41398-020-00872-9",
+      "pub_id": "pub_d3d9e1a7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.49660048174634785,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Translational psychiatry",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Torelli 2011 — Cognitive profile and brain morphological changes in obstructive sleep apnea. (NeuroImage, foundational, 211×)",
+      "doi": "10.1016/j.neuroimage.2010.09.065",
+      "pub_id": "pub_3eb685ff",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.49003331020967206,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31013324083868815,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07753331020967204,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "NeuroImage",
+      "citation_count": 211,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Hedge 2018 — The reliability paradox: Why robust cognitive tasks do not produce reliable i… (Behavior research methods, recent_primary, 793×)",
+      "doi": "10.3758/s13428-017-0935-1",
+      "pub_id": "pub_22567762",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4791466993623553,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3865867974494213,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09664669936235533,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Behavior research methods",
+      "citation_count": 793,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Krebs 2010 — The influence of reward associations on conflict processing in the Stroop task. (Cognition, foundational, 180×)",
+      "doi": "10.1016/j.cognition.2010.08.018",
+      "pub_id": "pub_7cc97416",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4777450650995763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30098026039830517,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07524506509957629,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Cognition",
+      "citation_count": 180,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Gruner 2017 — Cognitive inflexibility in Obsessive-Compulsive Disorder. (Neuroscience, key_review, 169×)",
+      "doi": "10.1016/j.neuroscience.2016.07.030",
+      "pub_id": "pub_2b7e98d6",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4768375412950945,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29735016518037777,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07433754129509444,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Neuroscience",
+      "citation_count": 169,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Silton 2010 — The time course of activity in dorsolateral prefrontal cortex and anterior ci… (NeuroImage, foundational, 164×)",
+      "doi": "10.1016/j.neuroimage.2009.12.061",
+      "pub_id": "pub_9f522b58",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.47640543791173134,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2956217516469253,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07390543791173132,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "NeuroImage",
+      "citation_count": 164,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Braver 2021 — The Dual Mechanisms of Cognitive Control Project. (Journal of cognitive neuroscience, recent_primary, 44×)",
+      "doi": "10.1162/jocn_a_01768",
+      "pub_id": "pub_81c39670",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46759911136472015,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Ahmadian 2019 — The Cerebellar Cognitive Affective Syndrome-a Meta-analysis. (Cerebellum (London, England), key_review, 80×)",
+      "doi": "10.1007/s12311-019-01060-2",
+      "pub_id": "pub_0a2a99bb",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4661069638457772,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2544278553831089,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06360696384577723,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Cerebellum (London, England)",
+      "citation_count": 80,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Schulte 2010 — Contribution of callosal connections to the interhemispheric integration of v… (Neuropsychology review, key_review, 133×)",
+      "doi": "10.1007/s11065-010-9130-1",
+      "pub_id": "pub_e4d4e4fb",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4633932355598294,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2835729422393176,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0708932355598294,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Neuropsychology review",
+      "citation_count": 133,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Harrison 2008 — Consistency and functional specialization in the default mode brain network. (Proceedings of the National Acad…, foundational, 265×)",
+      "doi": "10.1073/pnas.0711791105",
+      "pub_id": "pub_7e7f8343",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4633176941740451,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32327077669618043,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08081769417404511,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 265,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Trecroci 2020 — Mental fatigue impairs physical activity, technical and decision-making perfo… (PloS one, recent_primary, 65×)",
+      "doi": "10.1371/journal.pone.0238461",
+      "pub_id": "pub_e44ce832",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46314268997606095,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24257075990424393,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06064268997606098,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "PloS one",
+      "citation_count": 65,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Pardo 1990 — The anterior cingulate cortex mediates processing selection in the Stroop att… (Proceedings of the National Acad…, foundational, 836×)",
+      "doi": "10.1073/pnas.87.1.256",
+      "pub_id": "pub_207be0c9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4599100874247055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.389640349698822,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0974100874247055,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 1990,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 836,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Scarpina 2017 — The Stroop Color and Word Test. (Frontiers in psychology, key_review, 758×)",
+      "doi": "10.3389/fpsyg.2017.00557",
+      "pub_id": "pub_5db19221",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4584941695607986,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3839766782431944,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0959941695607986,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2017,
+      "venue": "Frontiers in psychology",
+      "citation_count": 758,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Shashidhara 2020 — Individual-subject Functional Localization Increases Univariate Activation bu… (Journal of cognitive neuroscience, recent_primary, 45×)",
+      "doi": "10.1162/jocn_a_01554",
+      "pub_id": "pub_e0a06e65",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.45791724259706,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22166897038824016,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05541724259706004,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 45,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Rouder 2023 — Why many studies of individual differences with inhibition tasks may not loca… (Psychonomic bulletin & review, key_review, 43×)",
+      "doi": "10.3758/s13423-023-02293-3",
+      "pub_id": "pub_8923f8ae",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.45727383052077786,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21909532208311155,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05477383052077789,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Psychonomic bulletin & review",
+      "citation_count": 43,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Carter 2000 — Parsing executive processes: strategic vs. evaluative functions of the anteri… (Proceedings of the National Acad…, foundational, 695×)",
+      "doi": "10.1073/pnas.97.4.1944",
+      "pub_id": "pub_32c38f1d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.457239933163226,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37895973265290395,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09473993316322599,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2000,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 695,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

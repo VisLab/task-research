@@ -1,0 +1,2389 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T13:13:45",
+  "item": {
+    "kind": "process",
+    "id": "hed_judgment_of_learning",
+    "name": "Judgment of learning",
+    "aliases": [],
+    "category_id": "awareness_agency_and_metacognition",
+    "definition": "Prediction of future memory performance made during or after encoding."
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 18,
+      "raw": 273,
+      "after_filters": 4,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 33,
+      "picked": 30,
+      "reserve": 0,
+      "excluded": 3,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 3
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_c584419e",
+      "doi": "10.1037/a0039923",
+      "url": "https://doi.org/10.1037/a0039923",
+      "openalex_id": "https://openalex.org/W2479323233",
+      "pmid": null,
+      "first_author": "Mitchum",
+      "authors_display": "Ainsley Mitchum et al.",
+      "year": 2016,
+      "title": "When asking the question changes the ultimate answer: Metamemory judgments change memory.",
+      "venue": "Journal of Experimental Psychology General",
+      "venue_tier": "flagship",
+      "publisher": "American Psychological Association",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 138,
+      "influential_citation_count": null,
+      "fwci": 5.3429,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Self-report measurements are ubiquitous in psychology, but they carry the potential of altering processes they are meant to measure. We assessed whether a common metamemory measure, judgments of learning, can change the ongoing process of memorizing and subsequent memory performance. Judgments of learning are a form of metamemory monitoring described as conscious reflection on one's own memory performance or encoding activities for the purpose of exerting strategic control over one's study and retrieval activities (T. O. Nelson & Narens, 1990). Much of the work examining the conscious monitoring of encoding relies heavily on a paradigm in which participants are asked to estimate the probability that they will recall a given item in a judgment of learning. In 5 experiments, we find effects of measuring judgments of learning on how people allocate their study time to difficult versus easy items, and on what they will recall. These results suggest that judgments of learning are partially constructed in response to the measurement question. The tendency of judgments of learning to alter performance places them in the company of other reactive verbal reporting methods, counseling researchers to consider incorporating control groups, creating alternative scales, and exploring other verbal reporting methods. Less directive methods of accessing participants' metacognition and other judgments should be considered as an alternative to response scales.",
+      "score": {
+        "composite": 0.7214234922319791,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28569396892791643,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07142349223197911,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Metacognition",
+        "Metacognition",
+        "Metacognition",
+        "Adult",
+        "Adult",
+        "Adult",
+        "Humans",
+        "Humans",
+        "Humans",
+        "Judgment",
+        "Judgment",
+        "Judgment",
+        "Learning",
+        "Learning",
+        "Learning",
+        "Mental Recall",
+        "Mental Recall",
+        "Mental Recall",
+        "Word Association Tests",
+        "Word Association Tests",
+        "Word Association Tests",
+        "Young Adult",
+        "Young Adult",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_7ceccffa",
+      "doi": "10.1037/a0035098",
+      "url": "https://doi.org/10.1037/a0035098",
+      "openalex_id": "https://openalex.org/W2142818066",
+      "pmid": null,
+      "first_author": "Ackerman",
+      "authors_display": "Rakefet Ackerman",
+      "year": 2013,
+      "title": "The diminishing criterion model for metacognitive regulation of time investment.",
+      "venue": "Journal of Experimental Psychology General",
+      "venue_tier": "flagship",
+      "publisher": "American Psychological Association",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 147,
+      "influential_citation_count": null,
+      "fwci": 5.4335,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "According to the Discrepancy Reduction Model for metacognitive regulation, people invest time in cognitive tasks in a goal-driven manner until their metacognitive judgment, either judgment of learning (JOL) or confidence, meets their preset goal. This stopping rule should lead to judgments above the goal, regardless of invested time. However, in many tasks, time is negatively correlated with JOL and confidence, with low judgments after effortful processing. This pattern has often been explained as stemming from bottom-up fluency effects on the judgments. While accepting this explanation for simple tasks, like memorizing pairs of familiar words, the proposed Diminishing Criterion Model (DCM) challenges this explanation for complex tasks, like problem solving. Under the DCM, people indeed invest effort in a goal-driven manner. However, investing more time leads to increasing compromise on the goal, resulting in negative time-judgment correlations. Experiment 1 exposed that with word-pair memorization, negative correlations are found only with minimal fluency and difficulty variability, whereas in problem solving, they are found consistently. As predicted, manipulations of low incentives (Experiment 2) and time pressure (Experiment 3) in problem solving revealed greater compromise as more time was invested in a problem. Although intermediate confidence ratings rose during the solving process, the result was negative time-confidence correlations (Experiments 3, 4, and 5), and this was not eliminated by the opportunity to respond \"don't know\" (Experiments 4 and 5). The results suggest that negative time-judgment correlations in complex tasks stem from top-down regulatory processes with a criterion that diminishes with invested time.",
+      "score": {
+        "composite": 0.6923315913415504,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28932636536620143,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07233159134155036,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ab9621f4",
+      "doi": "10.3758/s13421-021-01170-5",
+      "url": "https://doi.org/10.3758/s13421-021-01170-5",
+      "openalex_id": "https://openalex.org/W3136212011",
+      "pmid": "33811297",
+      "first_author": "Undorf",
+      "authors_display": "Monika Undorf, & Arndt Bröder",
+      "year": 2021,
+      "title": "Metamemory for pictures of naturalistic scenes: Assessment of accuracy and cue utilization",
+      "venue": "Memory & Cognition",
+      "venue_tier": "mainstream",
+      "publisher": "Springer Science+Business Media",
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": 1.6623,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "hybrid",
+      "oa_url": "https://link.springer.com/content/pdf/10.3758/s13421-021-01170-5.pdf",
+      "tldr": null,
+      "abstract": "Memory for naturalistic pictures is exceptionally good. However, little is known about people's ability to monitor the memorability of naturalistic pictures. We report the first systematic investigation into the accuracy and basis of metamemory in this domain. People studied pictures of naturalistic scenes, predicted their chances of recognizing each picture at a later test (judgment of learning, JOL), and completed a recognition memory test. Across three experiments, JOLs revealed substantial accuracy. This was due to people basing their JOLs on multiple cues, most of which predicted recognition memory. Identified cues include intrinsic picture attributes (e.g., peacefulness of scenes; scenes with or without persons) and extrinsic aspects of the study situation (e.g., presentation frequency; semantic distinctiveness of scenes with respect to the context). This work provides a better understanding of metamemory for pictures and it demonstrates close parallels between metamemory for naturalistic scenes and verbal materials.",
+      "score": {
+        "composite": 0.6426189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc",
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Learning",
+        "Cues",
+        "Judgment",
+        "Semantics",
+        "Metacognition"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d95cdc66",
+      "doi": "10.1080/02643294.2019.1707650",
+      "url": "https://doi.org/10.1080/02643294.2019.1707650",
+      "openalex_id": "https://openalex.org/W3000458822",
+      "pmid": null,
+      "first_author": "Irak",
+      "authors_display": "Metehan Irak et al.",
+      "year": 2019,
+      "title": "Comparing electrophysiological correlates of judgment of learning and feeling of knowing during face-name recognition",
+      "venue": "Cognitive Neuropsychology",
+      "venue_tier": "mainstream",
+      "publisher": "Taylor & Francis",
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 15,
+      "influential_citation_count": 1,
+      "fwci": 0.4864,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": "It is concluded that even though JOL and FOK judgments produced similar ERP wave forms temporal dynamics of these two judgments are different, which support the hypothesis that metacognitive judgments are linked to distributed neural substrates rather than strictly to frontal lobe function.",
+      "abstract": "We investigated the event-related potential (ERP) correlates of two metacognitive judgments, namely judgment of learning (JOL) and feeling of knowing (FOK) induced by a face-name recognition (FNR) task in 60 participants. The FNR produced N170 and P100 components at posterior, and an N100 component at anterior electrodes. Posterior P200, anterior N200 components were recorded during JOL and FOK judgments. Our data showed that ERP correlates of JOL and FOK emerge as rapidly as 200 ms following stimulus presentation, and these two metacognitive judgments are based on both perceptual fluency and conflict processes. However, these ERP components affected by the degree of JOL and FOK judgments. Thus, we concluded that even though JOL and FOK judgments produced similar ERP wave forms temporal dynamics of these two judgments are different. Also, our results support the hypothesis that metacognitive judgments are linked to distributed neural substrates rather than strictly to frontal lobe function.",
+      "score": {
+        "composite": 0.6351808482838867,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2207233931355466,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05518084828388665,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Facial Recognition",
+        "Facial Recognition",
+        "Facial Recognition",
+        "Metacognition",
+        "Metacognition",
+        "Metacognition",
+        "Adult",
+        "Adult",
+        "Adult",
+        "Electrophysiology",
+        "Electrophysiology",
+        "Electrophysiology",
+        "Evoked Potentials",
+        "Evoked Potentials",
+        "Evoked Potentials",
+        "Female",
+        "Female",
+        "Female",
+        "Humans",
+        "Humans",
+        "Humans",
+        "Judgment",
+        "Judgment",
+        "Judgment",
+        "Learning",
+        "Learning",
+        "Learning",
+        "Male",
+        "Male",
+        "Male",
+        "Mental Recall",
+        "Mental Recall",
+        "Mental Recall",
+        "Young Adult",
+        "Young Adult",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a3617115",
+      "doi": "10.3758/s13421-022-01381-4",
+      "url": "https://doi.org/10.3758/s13421-022-01381-4",
+      "openalex_id": "https://openalex.org/W4312224721",
+      "pmid": null,
+      "first_author": "Maxwell",
+      "authors_display": "Nicholas P. Maxwell, & Mark J. Huff",
+      "year": 2022,
+      "title": "Is discriminability a requirement for reactivity? Comparing the effects of mixed vs. pure list presentations on judgment of learning reactivity",
+      "venue": "Memory & Cognition",
+      "venue_tier": "mainstream",
+      "publisher": "Springer Science+Business Media",
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 17,
+      "influential_citation_count": 1,
+      "fwci": 1.6483,
+      "cited_by_percentile_year": 96.0,
+      "oa_status": "bronze",
+      "oa_url": "https://link.springer.com/content/pdf/10.3758/s13421-022-01381-4.pdf",
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.6268856856882916,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22754274275316655,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05688568568829164,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Cues",
+        "Cues",
+        "Cues",
+        "Humans",
+        "Humans",
+        "Humans",
+        "Judgment",
+        "Judgment",
+        "Judgment",
+        "Learning",
+        "Learning",
+        "Learning",
+        "Mental Recall",
+        "Mental Recall",
+        "Mental Recall"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_abc3fbd3",
+      "doi": "10.1371/journal.pone.0200888",
+      "url": "https://doi.org/10.1371/journal.pone.0200888",
+      "openalex_id": "https://openalex.org/W2883780548",
+      "pmid": "30028846",
+      "first_author": "Su",
+      "authors_display": "Ningxin Su et al.",
+      "year": 2018,
+      "title": "How font size affects judgments of learning: Simultaneous mediating effect of item-specific beliefs about fluency and moderating effect of beliefs about font size and memory",
+      "venue": "PLoS ONE",
+      "venue_tier": "mainstream",
+      "publisher": "Public Library of Science",
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "JournalArticle",
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 46,
+      "influential_citation_count": null,
+      "fwci": 1.6544,
+      "cited_by_percentile_year": 90.0,
+      "oa_status": "gold",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0200888&type=printable",
+      "tldr": "A major role of beliefs underlying the font-size effect is demonstrated, including pre-study global differentiated predictions as an indicator of preexisting beliefs about font size and memory and ease of learning judgments (EORs) as online generated item-specific beliefs about fluency.",
+      "abstract": "Numerous studies have provided experience-based or theory-based frameworks for the basis of judgment of learning (JOL). However, few studies have directly measured processing experience and beliefs related to the same cue in one experiment and examined their joint contribution to JOLs. The present study focused on font-size effects and aimed to examine the simultaneous contribution of processing fluency and beliefs to the effect of font size on JOLs. We directly measured processing fluency via self-paced study time. We also directly measured participants' beliefs via two approaches: pre-study global differentiated predictions (GPREDs) as an indicator of preexisting beliefs about font size and memory and ease of learning judgments (EORs) as online generated item-specific beliefs about fluency. In Experiment 1, EORs partially mediated the font-size effect, whereas self-paced study time did not. In Experiments 2a and 2b, EORs mediated the font-size effect; at the same time, beliefs about font size and memory moderated the font-size effect. In summary, the present study demonstrates a major role of beliefs underlying the font-size effect.",
+      "score": {
+        "composite": 0.6257285317643257,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22291412705730315,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05572853176432579,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc",
+          "semanticscholar",
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Memory",
+        "Mental Recall",
+        "Judgment",
+        "Culture",
+        "Writing",
+        "Metacognition"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_df250615",
+      "doi": "10.1007/s11409-023-09369-4",
+      "url": "https://doi.org/10.1007/s11409-023-09369-4",
+      "openalex_id": null,
+      "pmid": null,
+      "first_author": "Maxwell",
+      "authors_display": "Maxwell, N., & Huff, M.",
+      "year": 2023,
+      "title": "Judgment of learning reactivity reflects enhanced relational encoding on cued-recall but not recognition tests",
+      "venue": "Metacognition and Learning",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 11,
+      "influential_citation_count": 1,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "",
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.6210168262330086,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20406730493203415,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05101682623300854,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar",
+          "semanticscholar_citations"
+        ],
+        "stage_b_seed_pub_ids": [
+          "pub_5d555e90",
+          "pub_a3617115"
+        ]
+      }
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_705976e2",
+      "doi": "10.1007/s11409-020-09234-8",
+      "url": "https://doi.org/10.1007/s11409-020-09234-8",
+      "openalex_id": "https://openalex.org/W3044427123",
+      "pmid": null,
+      "first_author": "Yu",
+      "authors_display": "Yang Yu et al.",
+      "year": 2020,
+      "title": "The effect of value on judgment of learning in tradeoff learning condition: the mediating role of study time",
+      "venue": "Metacognition and Learning",
+      "venue_tier": "specialty",
+      "publisher": "Springer Science+Business Media",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": 0.6822,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.6091973704032758,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5be31f2c",
+      "doi": "10.3389/fpsyg.2015.01699",
+      "url": "https://doi.org/10.3389/fpsyg.2015.01699",
+      "openalex_id": null,
+      "pmid": "26617540",
+      "first_author": "Yang",
+      "authors_display": "Yang, H. et al.",
+      "year": 2015,
+      "title": "Differential Neural Correlates Underlie Judgment of Learning and Subsequent Memory Performance.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,participants)"
+      ],
+      "citation_count": 19,
+      "influential_citation_count": 4,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4637415",
+      "tldr": "During encoding, those judged as “will be remembered” showed stronger activities in the default-mode network, including the ventromedial prefrontal cortex (PFC) and posterior cingulate cortex, as well as weaker functional connectivity between the left dorsolateral PFC and the visual cortex.",
+      "abstract": "Judgment of learning (JOL) plays a pivotal role in self-regulated learning. Although the JOLs are in general accurate, important deviations from memory performance are often reported, especially when the JOLs are made immediately after learning. Nevertheless, existing studies have not clearly dissociated the neural processes underlying subjective JOL and objective memory. In the present study, participants were asked to study a list of words that would be tested 1 day later. Immediately after learning an item, participants predicted how likely they would remember that item. Critically, the JOL was performed on only half of the studied items to avoid its contamination on subsequent memory. We found that during encoding, compared to items later judged as \"will be forgotten,\" those judged as \"will be remembered\" showed stronger activities in the default-mode network, including the ventromedial prefrontal cortex (PFC) and posterior cingulate cortex, as well as weaker functional connectivity between the left dorsolateral PFC and the visual cortex. The exact opposite pattern was found when comparing items that were actually remembered with those that were later forgotten. These important neural dissociations between JOL and memory performance shed light on the neural mechanisms of human metamemory bias.",
+      "score": {
+        "composite": 0.6083048366169013,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3132193464676051,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07830483661690127,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc",
+          "semanticscholar",
+          "semanticscholar_citations"
+        ],
+        "stage_b_seed_pub_ids": [
+          "pub_89522c7b"
+        ]
+      }
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ebe2332d",
+      "doi": "10.1371/journal.pone.0241356",
+      "url": "https://doi.org/10.1371/journal.pone.0241356",
+      "openalex_id": null,
+      "pmid": "33216755",
+      "first_author": "Izaute",
+      "authors_display": "Izaute, M. et al.",
+      "year": 2020,
+      "title": "Metacognitive preserved generation strategy benefits for both younger and elderly participants with schizophrenia.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0241356&type=printable",
+      "tldr": null,
+      "abstract": "Cognitive memory and introspection disturbances are considered core features of schizophrenia. Moreover, it remains unclear whether or not participants with schizophrenia are more cognitively impaired with ageing than healthy participants. The aims of this study were to use a metacognitive approach to determine whether elderly participants with schizophrenia are able to improve their memory performance using a specific generation strategy and to evaluate the memory benefits for them using this strategy. 20 younger and 20 older participants with schizophrenia and their comparison participants matched for age, gender and education learned paired associates words with either reading or generation, rated judgment of learning (JOL) and performed cued recall. Participants with schizophrenia recalled fewer words than healthy comparison participants, but they benefited more from generation, and this difference was stable with ageing. Their JOL magnitude was lower than that of healthy comparison participants, but JOL accuracy was not affected by either age or the pathology. In spite of their memory deficit, elderly and younger participants with schizophrenia benefited remarkably from the memory generation strategy. This result gives some cause for optimism as to the possibility for participants with schizophrenia to reduce memory impairment if learning conditions lead them to encode deeply.",
+      "score": {
+        "composite": 0.6059017409614442,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Learning",
+        "Mental Recall",
+        "Judgment",
+        "Schizophrenia",
+        "Time Factors",
+        "Adult",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Metacognition"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a95b1a86",
+      "doi": "10.1002/brb3.1545",
+      "url": "https://doi.org/10.1002/brb3.1545",
+      "openalex_id": null,
+      "pmid": "32154659",
+      "first_author": "Giffard",
+      "authors_display": "Giffard, B. et al.",
+      "year": 2020,
+      "title": "The role of metamemory on cognitive complaints in cancer patients.",
+      "venue": "Brain and behavior",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/brb3.1545",
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Although cancer patients frequently report cognitive disturbances, it is commonly asserted a lack of association between cognitive complaints and neuropsychological test performances. Our goal was to better understand the relationships between subjective and objective cognitive scores through a metamemory monitoring assessment.<h4>Methods</h4>Sixty cancer patients currently treated by chemotherapy and/or targeted therapy, and 30 healthy controls (HC) were included. Cognitive complaint was assessed by FACT-cog, QAM and DEX questionnaires. One or more z-scores ≤-1.65 among these three questionnaires defined the presence of cognitive complaints. Objective cognitive performances assessed episodic memory, processing speed and executive functions/working memory (ESR paradigm, TMT, Stroop, n-back). Metamemory was assessed with a Judgment of Learning (JOL) task.<h4>Results</h4>Patients with cognitive complaints had significantly more depressive and anxiety symptoms (ps < .004), and lower performances on several cognitive tests (ps < .05) than both patients without complaints and HC. More specifically, analyses of the metamemory scores revealed that HC gave significantly more overestimations (\"Yes\" judgment and incorrect recall) than patients with cognitive complaints (p = .036). For these patients, JOL scores correlated positively with executive functioning (ps < .01).<h4>Conclusion</h4>Metamemory monitoring seems to be well-preserved during cancer. What is more, patients make less overestimation than HC, and they do not underestimate their memory. An accurate self-estimation of memory abilities in cancer patients, particularly those with mild cognitive deficits, may play an adaptive function. Our results suggest that the discrepancy frequently reported between cognitive complaints and objective cognitive scores may not be related to metamemory monitoring dysfunction.",
+      "score": {
+        "composite": 0.5981658592787423,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Neoplasms",
+        "Learning",
+        "Memory, Short-Term",
+        "Mental Recall",
+        "Judgment",
+        "Neuropsychological Tests",
+        "Adult",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Executive Function",
+        "Surveys and Questionnaires",
+        "Metacognition",
+        "Cognitive Dysfunction"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_5d555e90",
+      "doi": "10.1037/mac0000113",
+      "url": "https://doi.org/10.1037/mac0000113",
+      "openalex_id": "https://openalex.org/W4363678767",
+      "pmid": null,
+      "first_author": "Schäfer",
+      "authors_display": "Franziska Schäfer, & Monika Undorf",
+      "year": 2023,
+      "title": "On the educational relevance of immediate judgment of learning reactivity: No effects of predicting one’s memory for general knowledge facts.",
+      "venue": "Journal of Applied Research in Memory and Cognition",
+      "venue_tier": "unknown",
+      "publisher": "Elsevier BV",
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 18,
+      "influential_citation_count": 4,
+      "fwci": 7.2759,
+      "cited_by_percentile_year": 97.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.5775623975518889,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31024959020755527,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07756239755188882,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_e5aa76bd",
+      "doi": "10.1037/neu0000012",
+      "url": "https://doi.org/10.1037/neu0000012",
+      "openalex_id": null,
+      "pmid": "24548124",
+      "first_author": "Rosen",
+      "authors_display": "Rosen, H. et al.",
+      "year": 2014,
+      "title": "Metacognition in the behavioral variant of frontotemporal dementia and Alzheimer's disease.",
+      "venue": "Neuropsychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 49,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Impaired self-awareness is characteristic of nearly all dementias, including Alzheimer's disease (AD), but the deficit is most severe in the behavioral variant of frontotemporal dementia (bvFTD). The prominence of frontal pathology in bvFTD suggests that failure of online monitoring, the process by which individuals monitor their own cognitive processing in real time, is an important contributor. Metacognitive research offers several approaches to measure self-assessment, some more and others less sensitive to online monitoring. The goal of this study was to assess metacognition in bvFTD using several approaches, and to compare the results with those in AD.<h4>Method</h4>We examined metacognition in 12 patients with bvFTD, 14 with AD, and 35 healthy controls using feeling of knowing (FOK), ease of learning (EOL), judgment of learning (JOL), and retrospective confidence rating (CR) tasks, as well as response to feedback about performance.<h4>Results</h4>BvFTD and AD were both impaired at FOK compared with controls, although AD showed some sparing. Both groups were similarly impaired at CR and neither group was impaired at JOL after accounting for memory performance. Most striking, bvFTD patients failed to appropriately adjust their predictions about future memory performance even after receiving explicit feedback that they had performed worse than they expected.<h4>Conclusions</h4>Both bvFTD and AD show deficits in online monitoring, although the deficit appears more severe in bvFTD. The insensitivity of bvFTD patients to overt feedback may point to unique mechanisms, possibly frontally mediated, that add to their severe lack of self-awareness.",
+      "score": {
+        "composite": 0.5666241403898243,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Alzheimer Disease",
+        "Linear Models",
+        "Emotions",
+        "Learning",
+        "Mental Recall",
+        "Judgment",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Frontotemporal Dementia",
+        "Self-Assessment"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_89522c7b",
+      "doi": "10.1038/sj.npp.1300564",
+      "url": "https://doi.org/10.1038/sj.npp.1300564",
+      "openalex_id": null,
+      "pmid": "15483562",
+      "first_author": "Izaute",
+      "authors_display": "Izaute, M., & Bacon, E.",
+      "year": 2005,
+      "title": "Specific Effects of an Amnesic Drug: Effect of Lorazepam on Study Time Allocation and on Judgment of Learning",
+      "venue": "Neuropsychopharmacology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "JournalArticle",
+        "ClinicalTrial"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 24,
+      "influential_citation_count": 1,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "https://www.nature.com/articles/1300564.pdf",
+      "tldr": "The findings suggest that the lorazepam drug has a differential effect on the monitoring and the control processes involved in a learning task.",
+      "abstract": null,
+      "score": {
+        "composite": 0.5516405811429049,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24656232457161958,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.061640581142904896,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_241aff1f",
+      "doi": "10.3758/s13421-024-01638-0",
+      "url": "https://doi.org/10.3758/s13421-024-01638-0",
+      "openalex_id": null,
+      "pmid": "39312124",
+      "first_author": "Kaya",
+      "authors_display": "Kaya, S., & Mulligan, N.",
+      "year": 2024,
+      "title": "Metamemory judgments and design effects: Judgment of learning (JOL) reactivity in free recall is affected by study list structure",
+      "venue": "Memory & Cognition",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 5,
+      "influential_citation_count": 1,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "",
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.5509839447268473,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1639357789073893,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04098394472684733,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_cc4fd482",
+      "doi": "10.1007/s10803-016-2895-1",
+      "url": "https://doi.org/10.1007/s10803-016-2895-1",
+      "openalex_id": null,
+      "pmid": "27565653",
+      "first_author": "Grainger",
+      "authors_display": "Grainger, C. et al.",
+      "year": 2016,
+      "title": "Judgment of Learning Accuracy in High-functioning Adolescents and Adults with Autism Spectrum Disorder.",
+      "venue": "Journal of autism and developmental disorders",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 11,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s10803-016-2895-1.pdf",
+      "tldr": null,
+      "abstract": "This study explored whether adults and adolescents with autism spectrum disorder (ASD) demonstrate difficulties making metacognitive judgments, specifically judgments of learning. Across two experiments, the study examined whether individuals with ASD could accurately judge whether they had learnt a piece of information (in this case word pairs). In Experiment 1, adults with ASD demonstrated typical accuracy on a standard 'cue-alone' judgment of learning (JOL) task, compared to age- and IQ-matched neurotypical adults. Additionally, in Experiment 2, adolescents with ASD demonstrated typical accuracy on both a standard 'cue-alone' JOL task, and a 'cue-target' JOL task. These results suggest that JOL accuracy is unimpaired in ASD. These results have important implications for both theories of metacognition in ASD and educational practise.",
+      "score": {
+        "composite": 0.5459675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Learning",
+        "Judgment",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Theory of Mind",
+        "Metacognition",
+        "Autism Spectrum Disorder"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f3fb5892",
+      "doi": "10.1002/acp.4086",
+      "url": "https://doi.org/10.1002/acp.4086",
+      "openalex_id": null,
+      "pmid": null,
+      "first_author": "Ebersbach",
+      "authors_display": "Ebersbach, M. et al.",
+      "year": 2023,
+      "title": "Flickering presentations do affect the judgment of learning but not the learning outcome",
+      "venue": "Applied Cognitive Psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 4,
+      "influential_citation_count": 0,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "https://onlinelibrary.wiley.com/doi/pdfdirect/10.1002/acp.4086",
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.5432956294418315,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_d2432c4b",
+      "doi": "10.3758/bf03195916",
+      "url": "https://doi.org/10.3758/bf03195916",
+      "openalex_id": null,
+      "pmid": "17263076",
+      "first_author": "Overschelde",
+      "authors_display": "Overschelde, J., & Nelson, T.",
+      "year": 2006,
+      "title": "Delayed judgments of learning cause both a decrease in absolute accuracy (calibration) and an increase in relative accuracy (resolution)",
+      "venue": "Memory & Cognition",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 31,
+      "influential_citation_count": 5,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "https://link.springer.com/content/pdf/10.3758/BF03195916.pdf",
+      "tldr": "A version of the PRAM methodology that permits an analytical evaluation of judgment of learning (JOL) accuracy was used for the first time to assess absolute accuracy (specifically, calibration) from a new experiment in which Swahili-English translation equivalents were studied.",
+      "abstract": null,
+      "score": {
+        "composite": 0.5390663412322143,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3562653649288573,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08906634123221432,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_cdfeb194",
+      "doi": "10.1037/a0033050",
+      "url": "https://doi.org/10.1037/a0033050",
+      "openalex_id": null,
+      "pmid": "23876118",
+      "first_author": "Thomas",
+      "authors_display": "Thomas, A. et al.",
+      "year": 2013,
+      "title": "Metacognitive monitoring and dementia: how intrinsic and extrinsic cues influence judgments of learning in people with early-stage Alzheimer's disease.",
+      "venue": "Neuropsychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 9,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>The present research compared metamemorial monitoring processes among younger adults, nondemented older adults, and older adults diagnosed with early stage Dementia of the Alzheimer's Type (DAT).<h4>Method</h4>In three experiments we examined the influence of intrinsic and extrinsic cues on Judgment of Learning (JOL) accuracy. Changes in association strength between cue-target word pairs served as the intrinsic manipulation in Experiments 1 and 2. Changes in encoding orientation served as the extrinsic manipulation in Experiment 3.<h4>Results</h4>Across all experiments we found that young adults, nondemented older adults, and individuals in the early stages of DAT effectively used intrinsic and extrinsic factors to guide JOL predictions.<h4>Conclusions</h4>We conclude that while certain aspects of metacognition may be impaired in both the normal and demented older populations, these groups remain able to use theory-based processing, or general knowledge about how memory works, to make metamemory monitoring predictions.",
+      "score": {
+        "composite": 0.5333285109479928,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Dementia",
+        "Alzheimer Disease",
+        "Analysis of Variance",
+        "Association Learning",
+        "Cues",
+        "Mental Recall",
+        "Judgment",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Learning Disabilities"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_71517e91",
+      "doi": "10.3389/fnhum.2017.00399",
+      "url": "https://doi.org/10.3389/fnhum.2017.00399",
+      "openalex_id": null,
+      "pmid": "28824403",
+      "first_author": "Hu",
+      "authors_display": "Hu, X. et al.",
+      "year": 2017,
+      "title": "Individual Differences in the Accuracy of Judgments of Learning Are Related to the Gray Matter Volume and Functional Connectivity of the Left Mid-Insula.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5539074",
+      "tldr": null,
+      "abstract": "The judgment of learning (JOL) is an important form of prospective metamemory judgment, and the biological basis of the JOL process is an important topic in metamemory research. Although previous task-related functional magnetic resonance imaging (MRI) studies have examined the brain regions underlying the JOL process, the neural correlates of individual differences in JOL accuracy require further investigation. This study used structural and resting-state functional MRI to investigate whether individual differences in JOL accuracy are related to the gray matter (GM) volume and functional connectivity of the bilateral insula and medial Brodmann area (BA) 11, which are assumed to be related to JOL accuracy. We found that individual differences in JOL accuracy were related to the GM volume of the left mid-insula and to the functional connectivity between the left mid-insula and various other regions, including the left superior parietal lobule/precuneus, bilateral inferior parietal lobule/intraparietal sulcus, right frontal pole and left parahippocampal gyrus/fusiform gyrus/cerebellum. Further analyses indicated that the functional connectivity related to individual differences in JOL accuracy could be divided into two factors and might support information integration and selective attention processes underlying accurate JOLs. In addition, individual differences in JOL accuracy were not related to the GM volume or functional connectivity of the medial BA 11. Our findings provide novel evidence for the role of the left mid-insula and its functional connectivity in the JOL process.",
+      "score": {
+        "composite": 0.5300986445184837,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc",
+          "semanticscholar_citations"
+        ],
+        "stage_b_seed_pub_ids": [
+          "pub_5be31f2c"
+        ]
+      }
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_55019029",
+      "doi": "10.3389/fpsyg.2022.917576",
+      "url": "https://doi.org/10.3389/fpsyg.2022.917576",
+      "openalex_id": null,
+      "pmid": "36072052",
+      "first_author": "Yeung",
+      "authors_display": "Yeung, M.",
+      "year": 2022,
+      "title": "Stability and consistency of metamemory judgments within a session.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9443848",
+      "tldr": null,
+      "abstract": "There has been much interest in assessing individual and group differences in metamemory skills. These endeavors require or would benefit from enhanced knowledge about the stability and consistency of metamemory judgments over successive trials. However, few studies have examined these aspects. Thus, the present study investigated and compared the within-session stability and consistency of three major types of metamemory judgment: judgment of learning (JOL), feeling-of-knowing judgment (FOK), and retrospective confidence judgment (RCJ), using a single-task paradigm. A total of 38 healthy young adults (17 males, 21 females) completed three trials of a face-scene associative learning task designed to assess metamemory. In each trial, participants rated their JOLs while studying a new set of face-scene pairs, and then rated their FOKs and RCJs while their memory was being tested. The stability and consistency of the mean confidence ratings and the relationships between confidence rating and memory performance, indexed by two gamma estimates, were analyzed and compared across types of metamemory judgments. Over trials, there was a significant decrease in the mean rating for JOL but not for FOK or RCJ. Also, the gamma scores of JOL, but not that of FOK or RCJ, significantly improved with practice. Furthermore, for each type of metamemory judgment, the mean confidence rating showed excellent consistency across trials. Depending on the judgment type and gamma estimation method, the consistency of gamma scores ranged from poor to excellent. Thus, the present study clarified the temporal dynamics of various types of metamemory judgments and the consistency of metamemory measures.",
+      "score": {
+        "composite": 0.5300657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_2ffed250",
+      "doi": "10.3758/s13423-025-02816-0",
+      "url": "https://doi.org/10.3758/s13423-025-02816-0",
+      "openalex_id": "https://openalex.org/W4417341272",
+      "pmid": "41398129",
+      "first_author": "Wei",
+      "authors_display": "Yunfeng Wei et al.",
+      "year": 2025,
+      "title": "Making judgments of learning (JOLs) for oneself versus others: A review and proposed model",
+      "venue": "Psychonomic Bulletin & Review",
+      "venue_tier": "mainstream",
+      "publisher": "Springer Science+Business Media",
+      "publication_types": [
+        "review",
+        "review-article",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "hybrid",
+      "oa_url": "https://doi.org/10.3758/s13423-025-02816-0",
+      "tldr": null,
+      "abstract": "A judgment of learning (JOL) refers to an individual's evaluation and prediction of their own learning. Converging evidence suggests that making JOLs is an inferential process, with individuals basing their judgments on a variety of cues that may or may not be diagnostic of future performance. Compared to such JOLs for oneself, considerably less is known about making JOLs for others, but the existing evidence on this topic also supports an inferential-based process. Importantly, although there appears to be substantial overlap regarding the cues used to inform both types of judgments, there are likely cues utilized when forming JOLs for others that are not used when making JOLs for oneself. In the current article, we (1) review the extant literature on JOLs for oneself to understand the characteristics and underlying mechanisms of such judgments; (2) review existing literature regarding JOLs for others, highlighting the similarities and differences between these judgments and those made for oneself; and (3) propose a new model, adapted from Koriat's (Journal of Experimental Psychology: General, 126 (4), 349-370, Koriat, Journal of Experimental Psychology: General 126:349-370, 1997) cue-utilization framework, to describe how JOLs for others are made. Our new model provides a substantial theoretical contribution to the literature that can inform both basic and applied research focusing on JOLs for others.",
+      "score": {
+        "composite": 0.53,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Learning",
+        "Cues",
+        "Judgment",
+        "Models, Psychological",
+        "Metacognition"
+      ]
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_61f9240c",
+      "doi": "10.1007/s10648-024-09899-6",
+      "url": "https://doi.org/10.1007/s10648-024-09899-6",
+      "openalex_id": null,
+      "pmid": null,
+      "first_author": "Ha",
+      "authors_display": "Ha, H., & Lee, H.",
+      "year": 2024,
+      "title": "Evaluating the Judgment of Learning: its Limited Impact and the Power of Retrieval on Inductive Learning",
+      "venue": "Educational Psychology Review",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 5,
+      "influential_citation_count": 1,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "",
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.5109839447268474,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1639357789073893,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04098394472684733,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar",
+          "semanticscholar_citations"
+        ],
+        "stage_b_seed_pub_ids": [
+          "pub_5d555e90"
+        ]
+      }
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2522eaa8",
+      "doi": "10.1097/acm.0000000000002413",
+      "url": "https://doi.org/10.1097/acm.0000000000002413",
+      "openalex_id": "https://openalex.org/W2886113272",
+      "pmid": null,
+      "first_author": "Hauer",
+      "authors_display": "Karen E. Hauer, & Catherine R. Lucey",
+      "year": 2018,
+      "title": "Core Clerkship Grading: The Illusion of Objectivity",
+      "venue": "Academic Medicine",
+      "venue_tier": "unknown",
+      "publisher": "Lippincott Williams & Wilkins",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 67,
+      "influential_citation_count": null,
+      "fwci": 7.3512,
+      "cited_by_percentile_year": 97.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Core clerkship grading creates multiple challenges that produce high stress for medical students, interfere with learning, and create inequitable learning environments. Students and faculty alike succumb to the illusion of objectivity-that quantitative ratings converted to grades convey accurate measures of the complexity of clinical performance.Clerkship grading is the first high-stakes assessment within medical school and occurs just as students are newly immersed full-time in an environment in which patient care supersedes their needs as learners. Students earning high marks situate themselves to earn entry into competitive residency programs and selective specialties. However, there is no commonly accepted standard for how to assign clerkship grades, and the process is vulnerable to imprecision and bias. Rewarding learners for the speed with which they adapt inherently favors students who bring advantages acquired before medical school and discounts the goal of all learners achieving competence.The authors propose that, rather than focusing on assigning core clerkship grades, assessment of student performance should incorporate expert judgment of learning progress. Competency-based medical education is predicated on the articulation of stepwise expectations for learners, with the support and time allocated for each learner to meet those expectations. Concurrently, students should ideally review their own performance data with coaches to self-assess areas of relative strength and areas for further growth. Eliminating grades in favor of competency-based assessment for learning holds promise to engage learners in developing essential patient care and teamwork skills and to foster their development of lifelong learning habits.",
+      "score": {
+        "composite": 0.4910747933594241,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2442991734376964,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0610747933594241,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Clinical Clerkship",
+        "Clinical Clerkship",
+        "Clinical Clerkship",
+        "Clinical Competence",
+        "Clinical Competence",
+        "Clinical Competence",
+        "Education, Medical, Graduate",
+        "Education, Medical, Graduate",
+        "Education, Medical, Graduate",
+        "Education, Medical, Graduate",
+        "Education, Medical, Graduate",
+        "Education, Medical, Graduate",
+        "Educational Measurement",
+        "Educational Measurement",
+        "Educational Measurement",
+        "Educational Measurement",
+        "Educational Measurement",
+        "Educational Measurement",
+        "Humans",
+        "Humans",
+        "Humans",
+        "Observer Variation",
+        "Observer Variation",
+        "Observer Variation"
+      ]
+    },
+    {
+      "rank": 25,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c283dc40",
+      "doi": "10.3390/su151712921",
+      "url": "https://doi.org/10.3390/su151712921",
+      "openalex_id": "https://openalex.org/W4386221177",
+      "pmid": null,
+      "first_author": "Chang",
+      "authors_display": "Daniel Chang et al.",
+      "year": 2023,
+      "title": "Educational Design Principles of Using AI Chatbot That Supports Self-Regulated Learning in Education: Goal Setting, Feedback, and Personalization",
+      "venue": "Sustainability",
+      "venue_tier": "unknown",
+      "publisher": "Multidisciplinary Digital Publishing Institute",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 270,
+      "influential_citation_count": null,
+      "fwci": 72.6987,
+      "cited_by_percentile_year": 98.0,
+      "oa_status": "gold",
+      "oa_url": "https://www.mdpi.com/2071-1050/15/17/12921/pdf?version=1693121769",
+      "tldr": null,
+      "abstract": "The invention of ChatGPT and generative AI technologies presents educators with significant challenges, as concerns arise regarding students potentially exploiting these tools unethically, misrepresenting their work, or gaining academic merits without active participation in the learning process. To effectively navigate this shift, it is crucial to embrace AI as a contemporary educational trend and establish pedagogical principles for properly utilizing emerging technologies like ChatGPT to promote self-regulation. Rather than suppressing AI-driven tools, educators should foster collaborations among stakeholders, including educators, instructional designers, AI researchers, and developers. This paper proposes three key pedagogical principles for integrating AI chatbots in classrooms, informed by Zimmerman’s Self-Regulated Learning (SRL) framework and Judgment of Learning (JOL). We argue that the current conceptualization of AI chatbots in education is inadequate, so we advocate for the incorporation of goal setting (prompting), self-assessment and feedback, and personalization as three essential educational principles. First, we propose that teaching prompting is important for developing students’ SRL. Second, configuring reverse prompting in the AI chatbot’s capability will help to guide students’ SRL and monitoring for understanding. Third, developing a data-driven mechanism that enables an AI chatbot to provide learning analytics helps learners to reflect on learning and develop SRL strategies. By bringing in Zimmerman’s SRL framework with JOL, we aim to provide educators with guidelines for implementing AI in teaching and learning contexts, with a focus on promoting students’ self-regulation in higher education through AI-assisted pedagogy and instructional design.",
+      "score": {
+        "composite": 0.4810872436470378,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3243489745881512,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0810872436470378,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 26,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_061b351d",
+      "doi": "10.1103/physrevphyseducres.15.010105",
+      "url": "https://doi.org/10.1103/physrevphyseducres.15.010105",
+      "openalex_id": "https://openalex.org/W2910526748",
+      "pmid": null,
+      "first_author": "Zu",
+      "authors_display": "Tianlong Zu et al.",
+      "year": 2019,
+      "title": "Comparing retrieval-based practice and peer instruction in physics learning",
+      "venue": "Physical Review Physics Education Research",
+      "venue_tier": "unknown",
+      "publisher": "American Physical Society",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 16,
+      "influential_citation_count": null,
+      "fwci": 1.2181,
+      "cited_by_percentile_year": 90.0,
+      "oa_status": "gold",
+      "oa_url": "http://link.aps.org/pdf/10.1103/PhysRevPhysEducRes.15.010105",
+      "tldr": null,
+      "abstract": "Even though it has been shown that retrieval practice could foster deeper learning and better long-term retention in other domains such as psychology, it is rarely studied in the context of physics learning where students need to solve more complicated problems. To an even lesser degree is comparing retrieval-based learning with other active learning style methods adopted in the physics classroom. In this study, we compared the effects of retrieval-based learning and peer instruction based restudying on physics problem solving and transfer. In both conditions (retrieval and peer instruction), participants were first presented video lectures explaining the definition of speed and energy conservation. In the training session that immediately followed the video lectures, the retrieval condition was asked to recognize, recall, and apply the relevant physics concepts to solving problems; while the peer instruction condition was asked to discuss the two video lectures with each other in a group of three or four members. After this training, an immediate and a delayed (one-week) final test were administered. Both tests contained an initial task, isomorphic to the training materials, near transfer tasks, and far transfer tasks for each topic. Subjective judgment of learning (JOL) was collected immediately after watching the video lectures, after the training, and right before the delayed final test. We found a retention advantage of the retrieval practice for the initial tasks, but not for the near and far transfer tasks. We also found an advantage of the retrieval practice on far transfer on the immediate final test. Peer instruction training inflated the participants' JOL compared to the retrieval practice. Both JOL scores were significantly lower than after the video lecture but did not differ from before the delayed final test.",
+      "score": {
+        "composite": 0.4810090303471017,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a5e41e7c",
+      "doi": "10.1016/j.heliyon.2024.e40055",
+      "url": "https://doi.org/10.1016/j.heliyon.2024.e40055",
+      "openalex_id": null,
+      "pmid": "39559205",
+      "first_author": "Michalsky",
+      "authors_display": "Michalsky, T., & Bakrish, H.",
+      "year": 2024,
+      "title": "Contribution of metacognitive questions to accuracy of judgment of learning in a digital environment.",
+      "venue": "Heliyon",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11570305",
+      "tldr": "The findings highlight the contribution of metacognitive support to improved performance and judgment accuracy and strengthen the case for incorporating metacognitive practices when teaching literacy in a digital environment.",
+      "abstract": "Primary school pupils have difficulty making accurate judgments of learning (JOL) in a digital environment. In two studies, we examined the contribution of metacognitive self-questioning to JOL accuracy in the course of reading literacy (Study 1) and mathematical literacy (Study 2) digital learning programs. Both studies comprised a six-session intervention. In each session fifth-grade students studied a short text (Study 1, N = 65) or story containing mathematical components (Study 2, N = 72), then judged their comprehension by predicting their performance before completing a test. For the experimental groups, metacognitive questioning was incorporated into the study materials. In both studies the experimental groups improved over the six sessions in both performance and calibration (i.e., reducing the gap between judgment and performance). The findings highlight the contribution of metacognitive support to improved performance and judgment accuracy and strengthen the case for incorporating metacognitive practices when teaching literacy in a digital environment.",
+      "score": {
+        "composite": 0.47,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 28,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_91cfbb5a",
+      "doi": "10.3390/jintelligence11060101",
+      "url": "https://doi.org/10.3390/jintelligence11060101",
+      "openalex_id": null,
+      "pmid": "37367503",
+      "first_author": "Wang",
+      "authors_display": "Wang, X. et al.",
+      "year": 2023,
+      "title": "The Forward Effect of Delayed Judgments of Learning Is Influenced by Difficulty in Memory and Category Learning.",
+      "venue": "Journal of Intelligence",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 2,
+      "influential_citation_count": 2,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.mdpi.com/2079-3200/11/6/101/pdf?version=1685022493",
+      "tldr": null,
+      "abstract": "Delayed judgment of learning (JOL) is a widely used metacognitive monitoring strategy that can also enhance learning outcomes. However, the potential benefits of delayed JOL on subsequent learning of new material, known as the forward effect of delayed JOL, and its stability and underlying mechanisms have yet to be fully explored. In this study, we investigated the forward effect of delayed JOL using previously unexamined word pair materials and explored the boundary conditions of this effect by manipulating the difficulty of the materials. We also examined this effect within the context of category learning. Our findings demonstrate that delayed JOL significantly enhanced the retention of new information (Experiment 1A), while the forward effect of the delayed JOL occurred only for material with a certain degree of difficulty rather than for easy material (Experiment 1B). These findings were extended and replicated using category learning (Experiment 2). These results suggest that delayed JOL can be used as a preparation strategy for subsequent learning, particularly when faced with challenging materials. Our study provides novel insights into the potential benefits and limitations of delayed JOL and contributes to our understanding of the underlying mechanisms that govern metacognitive monitoring and learning strategies.",
+      "score": {
+        "composite": 0.43975435240361077,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15901740961444308,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03975435240361077,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_6ecbefe7",
+      "doi": "10.47743/asas-2024-2-774",
+      "url": "https://doi.org/10.47743/asas-2024-2-774",
+      "openalex_id": "https://openalex.org/W4407545454",
+      "pmid": null,
+      "first_author": "METIN",
+      "authors_display": "Ayşe Nur METIN",
+      "year": 2024,
+      "title": "A LITERATURE REVIEW ABOUT JUDGMENTS OF LEARNING, FEELING OF KNOWING, AND TIP OF TONGUE ON AGING EFFECT",
+      "venue": "Scientific Annals of the “Alexandru Ioan Cuza” University Iaşi New Series SOCIOLOGY AND SOCIAL WORK Section",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review",
+        "JournalArticle"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subject)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "bronze",
+      "oa_url": "http://anale.fssp.uaic.ro/index.php/asas/article/download/774/654",
+      "tldr": null,
+      "abstract": "The purpose of this study is to review previous research findings of the effect on aging in the domain of source monitoring i.e.: Judgment of Learning (JOL), Feeling of Knowing (FOK), Tip of Tongue (TOT). In the first part of the article, the global concept of metamemory is described which has one or two main components of monitoring (e.g., JOL, FOK). Then metacognitive monitoring in older adults from several research findings in the literature is examined. In this study, the difference between younger and older adults on source monitoring which is the subject of the study is also addressed. The recent theoretical and empirical advances on the effect of aging in source monitoring are considered. Previous studies that identified the effects of aging on source monitoring are examined. These studies are compared and interesting points that stood out are discussed. After discussing the strengths and weaknesses of the studies, the questions of where and how these studies can be used are also discussed.",
+      "score": {
+        "composite": 0.42,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_ee0f3e33",
+      "doi": "10.2190/j54f-b24d-thn7-h9ph",
+      "url": "https://doi.org/10.2190/j54f-b24d-thn7-h9ph",
+      "openalex_id": null,
+      "pmid": null,
+      "first_author": "Chen",
+      "authors_display": "Chen, G., & Fu, X.",
+      "year": 2003,
+      "title": "Effects of Multimodal Information on Learning Performance and Judgment of Learning",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 53,
+      "influential_citation_count": 2,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "http://ir.psych.ac.cn/bitstream/311026/6423/1/bj01224296.pdf",
+      "tldr": "The results showed that recall performance was better in word-only conditions than inword-plus-picture conditions in Experiment 1, and better in computer Conditions than in paper conditions in experiment 2.",
+      "abstract": null,
+      "score": {
+        "composite": 0.3915907158326606,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3263628633306424,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0815907158326606,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 31,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b9de61a1",
+      "doi": "10.2307/20445409",
+      "url": "https://doi.org/10.2307/20445409",
+      "openalex_id": null,
+      "pmid": "17892083",
+      "first_author": "Barnes",
+      "authors_display": "Barnes, K., & Dougherty, M.",
+      "year": 2007,
+      "title": "The effect of divided attention on global judgment of learning accuracy.",
+      "venue": "American Journal of Psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "JournalArticle",
+        "Study"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 23,
+      "influential_citation_count": 0,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "https://doi.org/10.2307/20445409",
+      "tldr": "Results indicate that participants consider conditions of encoding and retrieval but do not engage in recall when forming global JOLs, and suggest that people rely on extrinsic cues when making repeated, global metamemoryjudgments.",
+      "abstract": "This study examined the effect of divided attention (DA) on global judgment of learning (JOL) accuracy in a multitrial list learning paradigm. A word monitoring task was used to divide attention. Participants were assigned to an attention condition (DA at encoding, DA at judgment, DA at retrieval, or focused attention) and completed 4 learning trials, each comprising a study, judgment, and recall phase. Participants showed greater overconfidence in the DA at encoding (Trial 2) and DA at retrieval (Trials 1 and 2) conditions than in the focused attention condition. DA atjudgment did not affect JOL accuracy, and there was no effect of DA in Trials 3 and 4 on JOL accuracy across all attention conditions. Results indicate that participants consider conditions of encoding and retrieval but do not engage in recall when forming global JOLs. These findings suggest that people rely on extrinsic cues when making repeated, global metamemoryjudgments.",
+      "score": {
+        "composite": 0.38600038547992793,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.06666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.01,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 32,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2fe035d0",
+      "doi": "10.1123/jtpe.2023-0362",
+      "url": "https://doi.org/10.1123/jtpe.2023-0362",
+      "openalex_id": null,
+      "pmid": null,
+      "first_author": "Chatzipanteli",
+      "authors_display": "Chatzipanteli, A. et al.",
+      "year": 2025,
+      "title": "Judgment of Learning in a Motor Task",
+      "venue": "Journal of teaching in physical education",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": 0,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "",
+      "tldr": null,
+      "abstract": "Purpose: This study examined the judgments of learning in a motor task. Methods: Participants were 54 students, 33 fifth graders and 21 sixth graders. Students had to perform two trials in volleyball serve, one after the volleyball unit was complete and the second 10 days later. Before each trial, they had to estimate their score according to the American Alliance for Health, Physical Education, Recreation, and Dance test. Results: Statistical analysis showed that the majority of students overestimated their abilities. More specifically, fifth graders’ immediate judgments were more accurate than delayed ones, as they were more overconfident in the second trial. On the other hand, delayed judgments were more accurate in sixth graders, as they were more overconfident than fifth graders in the first trial. It should be noted, finally, that all students had better scores in their actual performances in the second trial. Conclusions: Physical educators and coaches could use judgments of learning to boost students’ ability to assess themselves more accurately and improve learning.",
+      "score": {
+        "composite": 0.3559017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 33,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_628eec19",
+      "doi": "10.3390/jintelligence13080099",
+      "url": "https://doi.org/10.3390/jintelligence13080099",
+      "openalex_id": null,
+      "pmid": "40863196",
+      "first_author": "Wu",
+      "authors_display": "Wu, M., & Was, C.",
+      "year": 2025,
+      "title": "Beyond the Prompt: Investigating Retrieval-Based Monitoring in Self-Regulated Learning.",
+      "venue": "Journal of Intelligence",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants,subject,subjects)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12387543",
+      "tldr": null,
+      "abstract": "Metacognitive monitoring plays a crucial role in self-regulated learning, as accurate monitoring enables effective control, which in turn impacts learning outcomes. Most studies on metacognitive monitoring have focused on learners' monitoring abilities when they are explicitly prompted to monitor. However, in real-world educational settings, learners are more often prompted to control their learning, such as deciding whether to allocate additional time to a learning target. The primary goal of this study was to investigate whether retrieval is engaged when learners are explicitly prompted to control their learning processes by making study decisions. To address this, three experiments were conducted. In Experiment 1, participants (N = 39) studied 70 Swahili-English word pairs in a learning task. Each trial displayed a word pair for 8 s, followed by a distractor task (a two-digit mental addition) and a study decision intervention (choose \"Study Again\" or \"Next\"). After learning, participants provided a global judgment of learning (JOL), estimating their overall recall accuracy. Finally, they completed a cued recall test (Swahili cue). Responses were scored for accuracy and analyzed alongside study decisions, study decision reaction time (RT), and metacognitive judgments. Reaction times (RTs) for study decisions correlated positively with test accuracy, global judgments of learning (JOLs), and judgments of confidence (JOCs), suggesting retrieval likely underlies these decisions. Experiment 2 (N = 74, between-subjects) compared memory performance and intervention response time between single-study, restudy, retrieval (explicit recall prompt), and study decision (study decision prompt) groups to have better control over study time and cognitive processes. Although no significant group differences in test accuracy emerged, the retrieval group took longer to respond than the study decision group. Within-subject analyses revealed similar recall accuracy patterns: participa",
+      "score": {
+        "composite": 0.33999999999999997,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    }
+  ]
+}

@@ -1,0 +1,1133 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "process",
+    "id": "hed_visual_form_recognition",
+    "name": "Visual form recognition",
+    "aliases": [
+      {
+        "name": "shape recognition"
+      }
+    ],
+    "category_id": "face_and_object_perception",
+    "definition": "Assignment of visual input to a shape category prior to semantic identification."
+  },
+  "candidates_run_date": "2026-04-29T16:05:45",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Afek 2020 — DNA mismatches reveal conformational penalties in protein-DNA recognition. (Nature, recent_primary, 106×)",
+      "doi": "10.1038/s41586-020-2843-2",
+      "pub_id": "pub_7ef2049b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6326363394522604,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2705453578090416,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0676363394522604,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature",
+      "citation_count": 106,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Girault 2017 — An on-chip imaging droplet-sorting system: a real-time shape recognition meth… (Scientific reports, foundational, 61×)",
+      "doi": "10.1038/srep40072",
+      "pub_id": "pub_9974c8a2",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5947377460465337,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23895098418613514,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.059737746046533785,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2017,
+      "venue": "Scientific reports",
+      "citation_count": 61,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Huang 2019 — Fluorescence spectral shape analysis for nucleotide identification. (Proceedings of the National Acad…, recent_primary, 7×)",
+      "doi": "10.1073/pnas.1820713116",
+      "pub_id": "pub_7fc0d541",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5850986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Wang 2022 — Fully conjugated azacorannulene dimer as large diaza[80]fullerene fragment. (Nature communications, recent_primary, 12×)",
+      "doi": "10.1038/s41467-022-29106-w",
+      "pub_id": "pub_2edbdf2b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5821260732128022,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Nature communications",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Mizrachi 2022 — Idiosyncratic selection of active touch for shape perception. (Scientific reports, recent_primary, 2×)",
+      "doi": "10.1038/s41598-022-06807-2",
+      "pub_id": "pub_5d134deb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5609017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Scientific reports",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Nicolau 2011 — Topology based data analysis identifies a subgroup of breast cancers with a u… (Proceedings of the National Acad…, foundational, 193×)",
+      "doi": "10.1073/pnas.1102826108",
+      "pub_id": "pub_cd0f25f7",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5512490250028164,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3049961000112652,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0762490250028163,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 193,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Schmidtmann 2015 — Shape recognition: convexities, concavities and things in between. (Scientific reports, foundational, 11×)",
+      "doi": "10.1038/srep17142",
+      "pub_id": "pub_43a1769f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5509675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2015,
+      "venue": "Scientific reports",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Nakamura 2012 — Universal brain systems for recognizing word shapes and handwriting gestures … (Proceedings of the National Acad…, foundational, 77×)",
+      "doi": "10.1073/pnas.1217749109",
+      "pub_id": "pub_fccb5ff9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5480606956804077,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2522427827216307,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06306069568040767,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 77,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Peng 2024 — Multifunctional human visual pathway-replicated hardware based on 2D materials. (Nature communications, recent_primary, 14×)",
+      "doi": "10.1038/s41467-024-52982-3",
+      "pub_id": "pub_b7c44b62",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5241973704032759,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Nature communications",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Simionato 2021 — Red blood cell phenotyping from 3D confocal images using artificial neural ne… (PLoS computational biology, recent_primary, 26×)",
+      "doi": "10.1371/journal.pcbi.1008934",
+      "pub_id": "pub_2c5abc86",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.522705222884333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PLoS computational biology",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Son 2008 — Simplicity and generalization: Short-cutting abstraction in children's object… (Cognition, foundational, 52×)",
+      "doi": "10.1016/j.cognition.2008.05.002",
+      "pub_id": "pub_b73c04c2",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5024675471973497,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2298701887893985,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057467547197349624,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "Cognition",
+      "citation_count": 52,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Pélegrin 2024 — Tactile shape discrimination for moving stimuli. (Scientific reports, recent_primary, 1×)",
+      "doi": "10.1038/s41598-024-58509-6",
+      "pub_id": "pub_6c6ad3e5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4950328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Scientific reports",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Singer 2014 — Short temporal asynchrony disrupts visual object recognition. (Journal of vision, foundational, 5×)",
+      "doi": "10.1167/14.5.7",
+      "pub_id": "pub_9b869419",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.49093462246760555,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Journal of vision",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Baker 2021 — Constant curvature modeling of abstract shape representation. (PloS one, recent_primary, 2×)",
+      "doi": "10.1371/journal.pone.0254719",
+      "pub_id": "pub_43e344f6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4909017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PloS one",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Lu 2019 — The Supramolecular Chemistry of Cycloparaphenylenes and Their Analogs. (Frontiers in chemistry, key_review, 48×)",
+      "doi": "10.3389/fchem.2019.00668",
+      "pub_id": "pub_d272f9e1",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.48133171855748474,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Frontiers in chemistry",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Stauth 2006 — Self-assembled single-crystal silicon circuits on plastic. (Proceedings of the National Acad…, foundational, 40×)",
+      "doi": "10.1073/pnas.0602893103",
+      "pub_id": "pub_e2e93074",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4787516844254297,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2006,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 40,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Adams 2021 — Topology Applied to Machine Learning: From Global to Local. (Frontiers in artificial intellig…, key_review, 8×)",
+      "doi": "10.3389/frai.2021.668302",
+      "pub_id": "pub_6fe0c65b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.47680348192288863,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Frontiers in artificial intelligence",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Aadland 2020 — Reflecting glory or deflecting stigma? The interplay between status and socia… (PloS one, recent_primary, 1×)",
+      "doi": "10.1371/journal.pone.0238651",
+      "pub_id": "pub_c0e96b51",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4750328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "PloS one",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Hatta 1980 — Comparison of lateral differences for digit and random form recognition in Ja… (Journal of Experimental Psycholo…, foundational, 29×)",
+      "doi": "10.1037//0096-1523.6.2.368",
+      "pub_id": "pub_fa47daad",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4742302519094371,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 1980,
+      "venue": "Journal of Experimental Psychology: Human Perception and Performance",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Rohs 2010 — Origins of specificity in protein-DNA recognition. (Annual review of biochemistry, key_review, 737×)",
+      "doi": "10.1146/annurev-biochem-060408-091030",
+      "pub_id": "pub_0a29ab9d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4705880478544795,
+        "breakdown": {
+          "raw": {
+            "citations": 0.382352191417918,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0955880478544795,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2010,
+      "venue": "Annual review of biochemistry",
+      "citation_count": 737,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Zheng 2004 — Sequential shape-and-solder-directed self-assembly of functional microsystems. (Proceedings of the National Acad…, foundational, 21×)",
+      "doi": "10.1073/pnas.0404437101",
+      "pub_id": "pub_058ae802",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4697409490146167,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2004,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Bogadhi 2020 — Task-Irrelevant Visual Forms Facilitate Covert and Overt Spatial Selection. (The Journal of neuroscience : th…, recent_primary, 15×)",
+      "doi": "10.1523/jneurosci.1593-20.2020",
+      "pub_id": "pub_77a7baa7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4651315260246448,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Li 2025 — AI-embodied multi-modal flexible electronic robots with programmable sensing,… (Nature communications, recent_primary, 1×)",
+      "doi": "10.1038/s41467-025-63881-6",
+      "pub_id": "pub_d1ae9d39",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46503288150616123,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2025,
+      "venue": "Nature communications",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Rosier 1997 — Positron-emission tomography imaging of long-term shape recognition challenges. (Proceedings of the National Acad…, foundational, 12×)",
+      "doi": "10.1073/pnas.94.14.7627",
+      "pub_id": "pub_902be564",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4621260732128022,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 1997,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "White 2018 — The role of shape recognition in figure/ground perception in infancy. (Psychonomic bulletin & review, recent_primary, 2×)",
+      "doi": "10.3758/s13423-018-1476-z",
+      "pub_id": "pub_159335cf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46090174096144426,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Psychonomic bulletin & review",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Shen 1999 — Neural correlates of visual form and visual spatial processing. (Human brain mapping, foundational, 51×)",
+      "doi": "10.1002/(sici)1097-0193(1999)8:1<60::aid-hbm5>3.0.co;2-6",
+      "pub_id": "pub_5ecc5c05",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4571352803878719,
+        "breakdown": {
+          "raw": {
+            "citations": 0.36854112155148755,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09213528038787189,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 1999,
+      "venue": "Human brain mapping",
+      "citation_count": 51,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Jaisankar 2025 — A fuzzy graph theoretic approach to face shape recognition using cubic outerp… (Scientific reports, recent_primary, 0×)",
+      "doi": "10.1038/s41598-025-27661-y",
+      "pub_id": "pub_be132f94",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.455,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Scientific reports",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Kalyuzhner 2025 — Visual cortex speckle imaging for shape recognition. (Scientific reports, recent_primary, 0×)",
+      "doi": "10.1038/s41598-025-26723-5",
+      "pub_id": "pub_a9ace54d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.455,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Scientific reports",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 35,
+      "label": "Bridge 2013 — Structural and functional changes across the visual cortex of a patient with … (The Journal of neuroscience : th…, foundational, 51×)",
+      "doi": "10.1523/jneurosci.4853-12.2013",
+      "pub_id": "pub_bde0cb87",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.45444062514323813,
+        "breakdown": {
+          "raw": {
+            "citations": 0.39776250057295254,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09944062514323813,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 51,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 36,
+      "label": "Shave 2015 — UFSRAT: Ultra-fast Shape Recognition with Atom Types--the discovery of novel … (PloS one, foundational, 12×)",
+      "doi": "10.1371/journal.pone.0116570",
+      "pub_id": "pub_97553112",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4521260732128021,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "PloS one",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

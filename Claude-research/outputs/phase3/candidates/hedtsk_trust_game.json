@@ -1,0 +1,215 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:39:17",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_trust_game",
+    "name": "Trust Game Task",
+    "aliases": [
+      "Trust Game",
+      "TG",
+      "Investment Game"
+    ],
+    "category_id": "social_cognition_and_strategic_social_choice",
+    "short_definition": "Two-stage exchange in which an investor transfers a fraction of an endowment (multiplied on receipt), and a trustee returns some fraction; amounts transferred index trust and reciprocity.",
+    "description": "A sequential two-player game in which the investor decides how much of an endowment to send to the trustee; the sent amount is multiplied (typically 3x), and the trustee decides how much to return. The investor faces a dilemma: trusting yields potentially higher mutual payoffs but risks exploitation. fMRI reveals that trust decisions engage theory-of-mind regions (medial PFC, temporoparietal junction) and reward regions (ventral striatum) that track mutual cooperation and reciprocity.",
+    "inclusion_test": {
+      "procedure": "An investor receives an endowment and chooses how much to send to a trustee; the amount is multiplied (typically tripled). The trustee decides how much to return to the investor.",
+      "manipulation": "Multiplication factor; endowment size; partner identity; reputation information; one-shot vs. repeated.",
+      "measurement": "Amount invested (trust); amount returned (trustworthiness); investment and return ratios."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 2,
+      "picked": 2,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_cf9e641b",
+      "doi": "10.1038/s41467-019-09161-6",
+      "url": "https://doi.org/10.1038/s41467-019-09161-6",
+      "openalex_id": null,
+      "pmid": "30940815",
+      "first_author": "van Baar",
+      "authors_display": "van Baar, J. et al.",
+      "year": 2019,
+      "title": "The computational and neural substrates of moral strategies in social decision-making.",
+      "venue": "Nature communications",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 107,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6445121",
+      "tldr": null,
+      "abstract": "Individuals employ different moral principles to guide their social decision-making, thus expressing a specific 'moral strategy'. Which computations characterize different moral strategies, and how might they be instantiated in the brain? Here, we tackle these questions in the context of decisions about reciprocity using a modified Trust Game. We show that different participants spontaneously and consistently employ different moral strategies. By mapping an integrative computational model of reciprocity decisions onto brain activity using inter-subject representational similarity analysis of fMRI data, we find markedly different neural substrates for the strategies of 'guilt aversion' and 'inequity aversion', even under conditions where the two strategies produce the same choices. We also identify a new strategy, 'moral opportunism', in which participants adaptively switch between guilt and inequity aversion, with a corresponding switch observed in their neural activation patterns. These findings provide a valuable view into understanding how different individuals may utilize different moral principles.",
+      "score": {
+        "composite": 0.5811043192299887,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2710839435866214,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06777098589665535,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Social Behavior",
+        "Affect",
+        "Morals",
+        "Decision Making",
+        "Choice Behavior",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_99b752bc",
+      "doi": "10.1006/game.1995.1027",
+      "url": "https://doi.org/10.1006/game.1995.1027",
+      "openalex_id": "https://openalex.org/W2045633722",
+      "pmid": null,
+      "first_author": "Berg",
+      "authors_display": "Joyce E. Berg et al.",
+      "year": 1995,
+      "title": "Trust, Reciprocity, and Social History",
+      "venue": "Games and Economic Behavior",
+      "venue_tier": "specialty",
+      "publisher": "Elsevier BV",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 5595,
+      "influential_citation_count": null,
+      "fwci": 29.406,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.5049111831501528,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4996447326006114,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12491118315015284,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

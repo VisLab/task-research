@@ -1,0 +1,388 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:27:05",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_monetary_incentive_delay",
+    "name": "Monetary Incentive Delay Task",
+    "aliases": [
+      "MID",
+      "Monetary Incentive Delay"
+    ],
+    "category_id": "reward_anticipation_and_motivation",
+    "short_definition": "Cue predicts potential monetary gain or loss; speeded target response determines outcome. Striatal activity to cues indexes reward anticipation.",
+    "description": "The Monetary Incentive Delay Task is the dominant paradigm for neuroimaging studies of reward anticipation and consumption. On each trial, a cue signals the potential outcome: reward (gain), loss avoidance, or neutral. After a variable delay period, participants respond to a briefly presented target; successful responses earn the reward (or avoid the loss). The critical contrast is neural activity during the anticipation period (cue-to-target), which robustly activates the ventral striatum/nucleus accumbens, versus the outcome period (after response), which more strongly engages ventromedial prefrontal cortex. The MID has been widely adopted in clinical neuroimaging of addiction, depression, and schizophrenia.",
+    "inclusion_test": {
+      "procedure": "A cue signals potential reward, loss, or neutral outcome; after a delay, a target appears and participants make a speeded response. Outcome depends on response speed.",
+      "manipulation": "Cue type (reward magnitude, loss magnitude, neutral); target duration (titrated to ~66% hit rate).",
+      "measurement": "RT by cue condition; fMRI activation in ventral striatum (anticipation) and medial PFC (outcome); hit rate."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 4,
+      "picked": 4,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_623af87b",
+      "doi": "10.1006/nimg.2000.0593",
+      "url": "https://doi.org/10.1006/nimg.2000.0593",
+      "openalex_id": "https://openalex.org/W1967922673",
+      "pmid": "10875899",
+      "first_author": "Knutson",
+      "authors_display": "Brian Knutson et al.",
+      "year": 2000,
+      "title": "FMRI Visualization of Brain Activity during a Monetary Incentive Delay Task",
+      "venue": "NeuroImage",
+      "venue_tier": "flagship",
+      "publisher": "Elsevier BV",
+      "publication_types": [
+        "article",
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1446,
+      "influential_citation_count": null,
+      "fwci": 3.6123,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.8553337100401874,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4213348401607497,
+            "venue": 1.0,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10533371004018742,
+            "venue": 0.2,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Gyrus Cinguli",
+        "Prosencephalon",
+        "Thalamus",
+        "Corpus Striatum",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Photic Stimulation",
+        "Punishment",
+        "Reward",
+        "Reaction Time",
+        "Cerebrovascular Circulation",
+        "Adult",
+        "Male"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_b9874bc9",
+      "doi": "10.1002/hbm.24184",
+      "url": "https://doi.org/10.1002/hbm.24184",
+      "openalex_id": null,
+      "pmid": "29696725",
+      "first_author": "Oldham",
+      "authors_display": "Oldham, S. et al.",
+      "year": 2018,
+      "title": "The anticipation and outcome phases of reward and loss processing: A neuroimaging meta-analysis of the monetary incentive delay task.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Meta-Analysis",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": true,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 318,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6055646",
+      "tldr": null,
+      "abstract": "The processing of rewards and losses are crucial to everyday functioning. Considerable interest has been attached to investigating the anticipation and outcome phases of reward and loss processing, but results to date have been inconsistent. It is unclear if anticipation and outcome of a reward or loss recruit similar or distinct brain regions. In particular, while the striatum has widely been found to be active when anticipating a reward, whether it activates in response to the anticipation of losses as well remains ambiguous. Furthermore, concerning the orbitofrontal/ventromedial prefrontal regions, activation is often observed during reward receipt. However, it is unclear if this area is active during reward anticipation as well. We ran an Activation Likelihood Estimation meta-analysis of 50 fMRI studies, which used the Monetary Incentive Delay Task (MIDT), to identify which brain regions are implicated in the anticipation of rewards, anticipation of losses, and the receipt of reward. Anticipating rewards and losses recruits overlapping areas including the striatum, insula, amygdala and thalamus, suggesting that a generalised neural system initiates motivational processes independent of valence. The orbitofrontal/ventromedial prefrontal regions were recruited only during the reward outcome, likely representing the value of the reward received. Our findings help to clarify the neural substrates of the different phases of reward and loss processing, and advance neurobiological models of these processes.",
+      "score": {
+        "composite": 0.7434476151917535,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3337904607670141,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08344761519175352,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Reward",
+        "Neuropsychological Tests",
+        "Anticipation, Psychological",
+        "Neuroimaging"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_d42ad146",
+      "doi": "10.1007/s11065-018-9385-5",
+      "url": "https://doi.org/10.1007/s11065-018-9385-5",
+      "openalex_id": null,
+      "pmid": "30255220",
+      "first_author": "Wilson",
+      "authors_display": "Wilson, R. et al.",
+      "year": 2018,
+      "title": "The Neural Substrate of Reward Anticipation in Health: A Meta-Analysis of fMRI Findings in the Monetary Incentive Delay Task.",
+      "venue": "Neuropsychology review",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Meta-Analysis",
+        "Systematic Review",
+        "review-article",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": true,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 157,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6327084",
+      "tldr": null,
+      "abstract": "The monetary incentive delay task breaks down reward processing into discrete stages for fMRI analysis. Here we look at anticipation of monetary gain and loss contrasted with neutral anticipation. We meta-analysed data from 15 original whole-brain group maps (n = 346) and report extensive areas of relative activation and deactivation throughout the whole brain. For both anticipation of gain and loss we report robust activation of the striatum, activation of key nodes of the putative salience network, including anterior cingulate and anterior insula, and more complex patterns of activation and deactivation in the central executive and default networks. On between-group comparison, we found significantly greater relative deactivation in the left inferior frontal gyrus associated with incentive valence. This meta-analysis provides a robust whole-brain map of a reward anticipation network in the healthy human brain.",
+      "score": {
+        "composite": 0.7332779667934424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2931118671737693,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07327796679344233,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Nerve Net",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Motivation",
+        "Reward",
+        "Anticipation, Psychological"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_06e428e8",
+      "doi": "10.1176/appi.ajp.2008.08081201",
+      "url": "https://doi.org/10.1176/appi.ajp.2008.08081201",
+      "openalex_id": null,
+      "pmid": "19411368",
+      "first_author": "Pizzagalli",
+      "authors_display": "Pizzagalli, D. et al.",
+      "year": 2009,
+      "title": "Reduced caudate and nucleus accumbens response to rewards in unmedicated individuals with major depressive disorder.",
+      "venue": "The American journal of psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 931,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Major depressive disorder is characterized by impaired reward processing, possibly due to dysfunction in the basal ganglia. However, few neuroimaging studies of depression have distinguished between anticipatory and consummatory phases of reward processing. Using functional MRI (fMRI) and a task that dissociates anticipatory and consummatory phases of reward processing, the authors tested the hypothesis that individuals with major depression would show reduced reward-related responses in basal ganglia structures.<h4>Method</h4>A monetary incentive delay task was presented to 30 unmedicated individuals with major depressive disorder and 31 healthy comparison subjects during fMRI scanning. Whole-brain analyses focused on neural responses to reward-predicting cues and rewarding outcomes (i.e., monetary gains). Secondary analyses focused on the relationship between anhedonic symptoms and basal ganglia volumes.<h4>Results</h4>Relative to comparison subjects, participants with major depression showed significantly weaker responses to gains in the left nucleus accumbens and the caudate bilaterally. Group differences in these regions were specific to rewarding outcomes and did not generalize to neutral or negative outcomes, although relatively reduced responses to monetary penalties in the major depression group emerged in other caudate regions. By contrast, evidence for group differences during reward anticipation was weaker, although participants with major depression showed reduced activation to reward cues in a small sector of the left posterior putamen. In the major depression group, anhedonic symptoms and depression severity were associated with reduced caudate volume bilaterally.<h4>Conclusions</h4>These results suggest that basal ganglia dysfunction in major depression may affect the consummatory phase of reward processing. Additionally, morphometric results suggest that anhedonia in major depression is related to caudate volume.",
+      "score": {
+        "composite": 0.4389662107440335,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3958648429761342,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.2,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09896621074403356,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.03,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Caudate Nucleus",
+        "Nucleus Accumbens",
+        "Humans",
+        "Citalopram",
+        "Antidepressive Agents",
+        "Magnetic Resonance Imaging",
+        "Severity of Illness Index",
+        "Reward",
+        "Reaction Time",
+        "Diagnostic and Statistical Manual of Mental Disorders",
+        "Adult",
+        "Female",
+        "Male",
+        "Surveys and Questionnaires",
+        "Major Depressive Disorder"
+      ]
+    }
+  ]
+}

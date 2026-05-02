@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_mismatch_negativity",
+    "name": "Mismatch Negativity Task",
+    "aliases": [
+      "MMN",
+      "Mismatch Negativity Paradigm"
+    ],
+    "category_id": "auditory_and_pre_attentive_deviance_processing",
+    "short_definition": "Passive auditory oddball in which rare deviant sounds elicit a negative ERP around 150–250 ms, indexing pre-attentive auditory change detection.",
+    "description": "Participants are passively exposed to repetitive acoustic stimuli (standard tones, 80%) occasionally interrupted by deviant tones (20%) differing in pitch, duration, or location. The MMN can be elicited without active attention. Recorded via EEG, the MMN appears as a negative deflection peaking at 100-250 ms after deviance onset at frontocentral sites. It reflects automatic, pre-attentive comparison between incoming input and a neural representation of the standard stimulus stored in sensory (echoic) memory. MMN is used as a biomarker of auditory processing capacity and has clinical applications in schizophrenia, coma prognosis, and language development research.",
+    "inclusion_test": {
+      "procedure": "A repetitive standard tone is occasionally replaced by a deviant tone differing in frequency, duration, or intensity. Participants typically ignore the sounds while reading or watching a silent video.",
+      "manipulation": "Deviant type (frequency, duration, intensity, phoneme); deviant probability; magnitude of deviance; ISI.",
+      "measurement": "MMN amplitude and latency (deviant-minus-standard difference wave, peaking 100–250 ms); scalp topography."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:43:40",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Kappenman 2021 — ERP CORE: An open resource for human event-related potential research. (NeuroImage, recent_primary, 139×)",
+      "doi": "10.1016/j.neuroimage.2020.117465",
+      "pub_id": "pub_1766c27d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6048605850662296,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2861090069315853,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07152725173289633,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "NeuroImage",
+      "citation_count": 139,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Näätänen 1978 — Early selective-attention effect on evoked potential reinterpreted (Acta Psychologica, historical, 2k×)",
+      "doi": "10.1016/0001-6918(78)90006-9",
+      "pub_id": "pub_62fdcd25",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.5944637448749671,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4578549794998685,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11446374487496712,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1978,
+      "venue": "Acta Psychologica",
+      "citation_count": 2718,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "McCleery 2019 — Parsing components of auditory predictive coding in schizophrenia using a rov… (Psychological medicine, recent_primary, 31×)",
+      "doi": "10.1017/s0033291718004087",
+      "pub_id": "pub_8ffb9488",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5868310741974727,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Psychological medicine",
+      "citation_count": 31,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Norton 2021 — EEG/ERP as a pragmatic method to expand the reach of infant-toddler neuroimag… (Developmental cognitive neurosci…, key_review, 32×)",
+      "doi": "10.1016/j.dcn.2021.100988",
+      "pub_id": "pub_9426f38d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5739431418032331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Kim 2020 — Mismatch negativity indices and functional outcomes in unipolar and bipolar d… (Scientific reports, recent_primary, 18×)",
+      "doi": "10.1038/s41598-020-69776-4",
+      "pub_id": "pub_b9d04b6b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5659522867224749,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Tsogli 2019 — When the statistical MMN meets the physical MMN. (Scientific reports, recent_primary, 23×)",
+      "doi": "10.1038/s41598-019-42066-4",
+      "pub_id": "pub_37c20a41",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5593337188132613,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Urios 2019 — Tadalafil Treatment Improves Inflammation, Cognitive Function, And Mismatch N… (Scientific reports, recent_primary, 21×)",
+      "doi": "10.1038/s41598-019-53136-y",
+      "pub_id": "pub_2a79b532",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5580742823479501,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Schwartz 2018 — Meta-analysis and systematic review of the literature characterizing auditory… (Neuroscience and biobehavioral r…, key_review, 82×)",
+      "doi": "10.1016/j.neubiorev.2018.01.008",
+      "pub_id": "pub_a23cf325",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5572933485451423,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25584006084723615,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06396001521180904,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Neuroscience and biobehavioral reviews",
+      "citation_count": 82,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Lainscsek 2019 — Nonlinear dynamics underlying sensory processing dysfunction in schizophrenia. (Proceedings of the National Acad…, recent_primary, 18×)",
+      "doi": "10.1073/pnas.1810572116",
+      "pub_id": "pub_89e5522e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5559522867224749,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Erickson 2016 — A Meta-Analysis of Mismatch Negativity in Schizophrenia: From Clinical Risk t… (Biological psychiatry, key_review, 294×)",
+      "doi": "10.1016/j.biopsych.2015.08.025",
+      "pub_id": "pub_8ce5708d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.555648823432455,
+        "breakdown": {
+          "raw": {
+            "citations": 0.329261960396487,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08231549009912174,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Biological psychiatry",
+      "citation_count": 294,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Kujala 2017 — Low-level neural auditory discrimination dysfunctions in specific language im… (Developmental cognitive neurosci…, key_review, 35×)",
+      "doi": "10.1016/j.dcn.2017.10.005",
+      "pub_id": "pub_2dcfacc4",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5352025782685443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Lakatos 2020 — The Thalamocortical Circuit of Auditory Mismatch Negativity. (Biological psychiatry, recent_primary, 75×)",
+      "doi": "10.1016/j.biopsych.2019.10.029",
+      "pub_id": "pub_29acb583",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5260180497347973,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25073886560585573,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06268471640146393,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Biological psychiatry",
+      "citation_count": 75,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Gil-da-Costa 2013 — Nonhuman primate model of schizophrenia using a noninvasive EEG method. (Proceedings of the National Acad…, foundational, 137×)",
+      "doi": "10.1073/pnas.1312264110",
+      "pub_id": "pub_687c754a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5246523168918377,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28527593423401737,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07131898355850434,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 137,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "King 2013 — Single-trial decoding of auditory novelty responses facilitates the detection… (NeuroImage, foundational, 122×)",
+      "doi": "10.1016/j.neuroimage.2013.07.013",
+      "pub_id": "pub_6efe7235",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5229867587202073,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27861370154749593,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06965342538687398,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "NeuroImage",
+      "citation_count": 122,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Takahashi 2013 — Neural substrates of normal and impaired preattentive sensory discrimination … (NeuroImage, foundational, 76×)",
+      "doi": "10.1016/j.neuroimage.2012.09.074",
+      "pub_id": "pub_cd210e03",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5162072601205312,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25149570714879144,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06287392678719786,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "NeuroImage",
+      "citation_count": 76,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Kim 2021 — Machine-learning-based diagnosis of drug-naive adult patients with attention-… (Translational psychiatry, recent_primary, 18×)",
+      "doi": "10.1038/s41398-021-01604-3",
+      "pub_id": "pub_58a40e93",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5159522867224748,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Translational psychiatry",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Francisco 2020 — Assessing auditory processing endophenotypes associated with Schizophrenia in… (Translational psychiatry, recent_primary, 22×)",
+      "doi": "10.1038/s41398-020-0764-3",
+      "pub_id": "pub_10588efa",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5087176944242321,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Translational psychiatry",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Weber 2022 — Auditory mismatch responses are differentially sensitive to changes in muscar… (eLife, recent_primary, 21×)",
+      "doi": "10.7554/elife.74835",
+      "pub_id": "pub_822e943a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.50807428234795,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "eLife",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Zaadnoordijk 2020 — From movement to action: An EEG study into the emerging sense of agency in ea… (Developmental cognitive neurosci…, recent_primary, 16×)",
+      "doi": "10.1016/j.dcn.2020.100760",
+      "pub_id": "pub_627236fc",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.504342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Developmental cognitive neuroscience",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Dalakas 2021 — Update on Intravenous Immunoglobulin in Neurology: Modulating Neuro-autoimmun… (Neurotherapeutics : the journal …, key_review, 65×)",
+      "doi": "10.1007/s13311-021-01108-4",
+      "pub_id": "pub_b0b69ec1",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5039760233093943,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24257075990424393,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06064268997606098,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Neurotherapeutics : the journal of the American Society for Experimental NeuroTherapeutics",
+      "citation_count": 65,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Ishishita 2019 — Deviance detection is the dominant component of auditory contextual processin… (Human brain mapping, recent_primary, 32×)",
+      "doi": "10.1002/hbm.24438",
+      "pub_id": "pub_fce734ed",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5039431418032331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Human brain mapping",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Hudac 2018 — Early enhanced processing and delayed habituation to deviance sounds in autis… (Brain and cognition, recent_primary, 57×)",
+      "doi": "10.1016/j.bandc.2018.03.004",
+      "pub_id": "pub_4e92b71f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5021057625227926,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23508971675783696,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05877242918945924,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Brain and cognition",
+      "citation_count": 57,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Brima 2019 — Auditory sensory memory span for duration is severely curtailed in females wi… (Translational psychiatry, recent_primary, 28×)",
+      "doi": "10.1038/s41398-019-0463-0",
+      "pub_id": "pub_c5460676",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5020728810166314,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Translational psychiatry",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Lee 2017 — Neural mechanisms of mismatch negativity dysfunction in schizophrenia. (Molecular psychiatry, foundational, 103×)",
+      "doi": "10.1038/mp.2017.3",
+      "pub_id": "pub_b8dc1a77",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.500558051064619,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26889887092514314,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06722471773128579,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Molecular psychiatry",
+      "citation_count": 103,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Koshiyama 2018 — Electrophysiological evidence for abnormal glutamate-GABA association followi… (Translational psychiatry, recent_primary, 49×)",
+      "doi": "10.1038/s41398-018-0261-0",
+      "pub_id": "pub_ee4f7555",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.49995747372315763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Translational psychiatry",
+      "citation_count": 49,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 35,
+      "label": "Fucci 2018 — Differential effects of non-dual and focused attention meditations on the for… (Neuropsychologia, recent_primary, 31×)",
+      "doi": "10.1016/j.neuropsychologia.2018.07.025",
+      "pub_id": "pub_5c391676",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.49349774086413933,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Neuropsychologia",
+      "citation_count": 31,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 36,
+      "label": "Tsang 2021 — Effects of Foods Fortified with Zinc, Alone or Cofortified with Multiple Micr… (Advances in nutrition (Bethesda,…, key_review, 27×)",
+      "doi": "10.1093/advances/nmab065",
+      "pub_id": "pub_92c42720",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4915649556243981,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Advances in nutrition (Bethesda, Md.)",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 37,
+      "label": "Garrido 2008 — The functional anatomy of the MMN: a DCM study of the roving paradigm. (NeuroImage, foundational, 364×)",
+      "doi": "10.1016/j.neuroimage.2008.05.018",
+      "pub_id": "pub_479b1635",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.48873073911833464,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3415896231400053,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08539740578500132,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "NeuroImage",
+      "citation_count": 364,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 38,
+      "label": "Xu 2024 — Lutetium texaphyrin: A photocatalyst that triggers pyroptosis via biomolecula… (Proceedings of the National Acad…, recent_primary, 20×)",
+      "doi": "10.1073/pnas.2314620121",
+      "pub_id": "pub_84bc979e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.48740093357352005,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2024,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 39,
+      "label": "Janz 2022 — Neurexin1α knockout rats display oscillatory abnormalities and sensory proces… (Translational psychiatry, recent_primary, 16×)",
+      "doi": "10.1038/s41398-022-02224-1",
+      "pub_id": "pub_75d25541",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.484342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Translational psychiatry",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

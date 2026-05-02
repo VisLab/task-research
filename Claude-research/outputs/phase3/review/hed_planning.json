@@ -1,0 +1,1129 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "process",
+    "id": "hed_planning",
+    "name": "Planning",
+    "aliases": [],
+    "category_id": "reasoning_and_problem_solving",
+    "definition": "Mental formulation of a sequence of actions toward a goal before execution."
+  },
+  "candidates_run_date": "2026-04-29T17:38:29",
+  "extracted_on": "2026-04-30T11:14:36",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Garrett 2020 — Integrated Task and Motion Planning (Annu. Rev. Control. Robotics Aut…, key_review, 660×)",
+      "doi": "10.1146/annurev-control-091420-084139",
+      "pub_id": "pub_4b824245",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.919907827922862,
+        "breakdown": {
+          "raw": {
+            "citations": 0.6796313116914479,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.16990782792286196,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Annu. Rev. Control. Robotics Auton. Syst.",
+      "citation_count": 660,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Schrittwieser 2019 — Mastering Atari, Go, chess and shogi by planning with a learned model (Nature, recent_primary, 2k×)",
+      "doi": "10.1038/s41586-020-03051-4",
+      "pub_id": "pub_9319bd6f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.9059607928423393,
+        "breakdown": {
+          "raw": {
+            "citations": 0.9038431713693572,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.2259607928423393,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Nature",
+      "citation_count": 2452,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Kim 2020 — The Psychology of Reaching: Action Selection, Movement Implementation, and Se… (Annual Review of Psychology, key_review, 88×)",
+      "doi": "10.1146/annurev-psych-010419-051053",
+      "pub_id": "pub_181d00c6",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8700195884376145,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3200783537504578,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08001958843761445,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Annual Review of Psychology",
+      "citation_count": 88,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Xiao 2020 — Motion planning and control for mobile robot navigation using machine learnin… (Autonomous Robots, key_review, 269×)",
+      "doi": "10.1007/s10514-022-10039-8",
+      "pub_id": "pub_16d94cdf",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8611323783508094,
+        "breakdown": {
+          "raw": {
+            "citations": 0.44452951340323726,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.11113237835080932,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Autonomous Robots",
+      "citation_count": 269,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Segler 2018 — Planning chemical syntheses with deep neural networks and symbolic AI (Nature, recent_primary, 1k×)",
+      "doi": "10.1038/nature25978",
+      "pub_id": "pub_af7957e6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8607149540068117,
+        "breakdown": {
+          "raw": {
+            "citations": 0.7628598160272471,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.19071495400681177,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Nature",
+      "citation_count": 1870,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Yeshurun 2021 — The default mode network: where the idiosyncratic self meets the shared socia… (Nature reviews. Neuroscience, key_review, 459×)",
+      "doi": "10.1038/s41583-020-00420-w",
+      "pub_id": "pub_61b0b3b6",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8387457535450528,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35498301418021116,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08874575354505279,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature reviews. Neuroscience",
+      "citation_count": 459,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Eigenbrodt 2021 — Diagnosis and management of migraine in ten steps. (Nature reviews. Neurology, key_review, 353×)",
+      "doi": "10.1038/s41582-021-00509-5",
+      "pub_id": "pub_73f3924f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8349544831248957,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3398179324995828,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0849544831248957,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature reviews. Neurology",
+      "citation_count": 353,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Hommel 2001 — The Theory of Event Coding (TEC): A framework for perception and action planning (Behavioral and Brain Sciences, key_review, 3k×)",
+      "doi": "10.1017/s0140525x01000103",
+      "pub_id": "pub_04a342f0",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8342432127824816,
+        "breakdown": {
+          "raw": {
+            "citations": 0.9369728511299265,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.2342432127824816,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2001,
+      "venue": "Behavioral and Brain Sciences",
+      "citation_count": 3059,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Coley 2019 — A robotic platform for flow synthesis of organic compounds informed by AI pla… (Science, recent_primary, 812×)",
+      "doi": "10.1126/science.aax1566",
+      "pub_id": "pub_151f2963",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8290510858711653,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5962043434846612,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1490510858711653,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Science",
+      "citation_count": 812,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Mugan 2020 — Spatial planning with long visual range benefits escape from visual predators… (Nature Communications, recent_primary, 44×)",
+      "doi": "10.1038/s41467-020-16102-1",
+      "pub_id": "pub_3f945b38",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8251977558832038,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3407910235328151,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08519775588320377,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Nature Communications",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Ho 2022 — Planning with Theory of Mind. (Trends in Cognitive Sciences, key_review, 103×)",
+      "doi": "10.1016/j.tics.2022.08.003",
+      "pub_id": "pub_6813995f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8221681618940331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4086726475761324,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.1021681618940331,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Trends in Cognitive Sciences",
+      "citation_count": 103,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Zhou 2021 — A review of motion planning algorithms for intelligent robots (Journal of Intelligent Manufactu…, key_review, 218×)",
+      "doi": "10.1007/s10845-021-01867-z",
+      "pub_id": "pub_7f2971bf",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8181021618230977,
+        "breakdown": {
+          "raw": {
+            "citations": 0.43240864729239087,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.10810216182309772,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Journal of Intelligent Manufacturing",
+      "citation_count": 218,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Kingston 2019 — Exploring implicit spaces for constrained sampling-based planning (Int. J. Robotics Res., key_review, 122×)",
+      "doi": "10.1177/0278364919868530",
+      "pub_id": "pub_d8033057",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.817358648271207,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4694345930848276,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.1173586482712069,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Int. J. Robotics Res.",
+      "citation_count": 122,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Bikbov 2020 — Global, regional, and national burden of chronic kidney disease, 1990–2017: a… (The Lancet, recent_primary, 6k×)",
+      "doi": "10.1016/s0140-6736(20)30045-3",
+      "pub_id": "pub_701dafc7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8169062350209342,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5076249400837365,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12690623502093412,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "The Lancet",
+      "citation_count": 6422,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Mattar 2022 — Planning in the brain. (Neuron, key_review, 97×)",
+      "doi": "10.1016/j.neuron.2021.12.018",
+      "pub_id": "pub_823cebb1",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8164632445821296,
+        "breakdown": {
+          "raw": {
+            "citations": 0.38585297832851834,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09646324458212958,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Neuron",
+      "citation_count": 97,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Cravens 2019 — Synthetic biology strategies for microbial biosynthesis of plant natural prod… (Nature communications, key_review, 263×)",
+      "doi": "10.1038/s41467-019-09848-w",
+      "pub_id": "pub_7d7a42b7",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8107084529883835,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3228338119535336,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0807084529883834,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 263,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Kikumoto 2019 — Conjunctive representations that integrate stimuli, responses, and rules are … (Proceedings of the National Acad…, recent_primary, 94×)",
+      "doi": "10.1073/pnas.1922166117",
+      "pub_id": "pub_78a690e6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8074281283516256,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5097125134065023,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12742812835162556,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 94,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Lisi 2019 — Gain control of saccadic eye movements is probabilistic (Proceedings of the National Acad…, recent_primary, 34×)",
+      "doi": "10.1073/pnas.1901963116",
+      "pub_id": "pub_c1c718e5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8053141001627404,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3012564006509615,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07531410016274037,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 34,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Joo 2018 — The hippocampal sharp wave-ripple in memory retrieval for immediate use and c… (Nature reviews. Neuroscience, key_review, 360×)",
+      "doi": "10.1038/s41583-018-0077-1",
+      "pub_id": "pub_212a490e",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.805237906778283,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3409516271131321,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08523790677828302,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature reviews. Neuroscience",
+      "citation_count": 360,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Pereira 2019 — Landmark-Based Approaches for Goal Recognition as Planning (Artificial Intelligence, recent_primary, 61×)",
+      "doi": "10.1016/j.artint.2019.103217",
+      "pub_id": "pub_87441df0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.801799847309217,
+        "breakdown": {
+          "raw": {
+            "citations": 0.447199389236868,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.111799847309217,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Artificial Intelligence",
+      "citation_count": 61,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Claussmann 2020 — A Review of Motion Planning for Highway Autonomous Driving (IEEE transactions on intelligent…, key_review, 587×)",
+      "doi": "10.1109/tits.2019.2913998",
+      "pub_id": "pub_2285eb70",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7995973337086069,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5983893348344274,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.14959733370860684,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "IEEE transactions on intelligent transportation systems (Print)",
+      "citation_count": 587,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Schwarting 2018 — Planning and Decision-Making for Autonomous Vehicles (Annu. Rev. Control. Robotics Aut…, key_review, 915×)",
+      "doi": "10.1146/annurev-control-060117-105157",
+      "pub_id": "pub_e648f2c3",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7986024540464438,
+        "breakdown": {
+          "raw": {
+            "citations": 0.674409816185775,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.16860245404644375,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Annu. Rev. Control. Robotics Auton. Syst.",
+      "citation_count": 915,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Vainio 2020 — Action inhibition and affordances associated with a non-target object: An int… (Neuroscience and Biobehavioral R…, key_review, 19×)",
+      "doi": "10.1016/j.neubiorev.2020.02.029",
+      "pub_id": "pub_ff365c52",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7972140038963205,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2688560155852817,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06721400389632043,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Neuroscience and Biobehavioral Reviews",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Hentout 2022 — A review of the literature on fuzzy-logic approaches for collision-free path … (Artificial Intelligence Review, key_review, 77×)",
+      "doi": "10.1007/s10462-022-10257-7",
+      "pub_id": "pub_30b3cf0b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7930606956804077,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2522427827216307,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06306069568040767,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Artificial Intelligence Review",
+      "citation_count": 77,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Kyu 2018 — Global, regional, and national disability-adjusted life-years (DALYs) for 359… (The Lancet, recent_primary, 4k×)",
+      "doi": "10.1016/s0140-6736(18)32335-3",
+      "pub_id": "pub_01e8dcce",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7906329026858431,
+        "breakdown": {
+          "raw": {
+            "citations": 0.48253161074337214,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12063290268584304,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "The Lancet",
+      "citation_count": 4163,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Buzsáki 2015 — Hippocampal sharp wave-ripple: A cognitive biomarker for episodic memory and … (Hippocampus, key_review, 1k×)",
+      "doi": "10.1002/hipo.22488",
+      "pub_id": "pub_781d71aa",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7884671825296056,
+        "breakdown": {
+          "raw": {
+            "citations": 0.873868730118422,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.2184671825296055,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Hippocampus",
+      "citation_count": 1348,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Vagale 2021 — Path planning and collision avoidance for autonomous surface vehicles I: a re… (Journal of Marine Science and Te…, key_review, 227×)",
+      "doi": "10.1007/s00773-020-00787-6",
+      "pub_id": "pub_9d34067b",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7862916802472413,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5051667209889648,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.1262916802472412,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Journal of Marine Science and Technology",
+      "citation_count": 227,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Karaman 2011 — Sampling-based algorithms for optimal motion planning (Int. J. Robotics Res., foundational, 5k×)",
+      "doi": "10.1177/0278364911406761",
+      "pub_id": "pub_7a94268b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.7845621629659967,
+        "breakdown": {
+          "raw": {
+            "citations": 1.0582486518639866,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.26456216296599666,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2011,
+      "venue": "Int. J. Robotics Res.",
+      "citation_count": 5379,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Ferguson 2021 — The developmental trajectories of executive function from adolescence to old … (Scientific reports, recent_primary, 316×)",
+      "doi": "10.1038/s41598-020-80866-1",
+      "pub_id": "pub_64150aad",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.783356581002403,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33342632400961203,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08335658100240301,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 316,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Gatto 2020 — Spread and dynamics of the COVID-19 epidemic in Italy: Effects of emergency c… (Proceedings of the National Acad…, recent_primary, 610×)",
+      "doi": "10.1073/pnas.2004978117",
+      "pub_id": "pub_46fed09b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.782854604977128,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3714184199085118,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09285460497712796,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 610,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

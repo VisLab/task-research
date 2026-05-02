@@ -1,0 +1,2682 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:39:52",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_ultimatum_game",
+    "name": "Ultimatum Game Task",
+    "aliases": [
+      "Ultimatum Game",
+      "UG"
+    ],
+    "category_id": "social_cognition_and_strategic_social_choice",
+    "short_definition": "Proposer offers a division of an endowment; responder accepts or rejects. Rejection of unfair offers indexes inequity aversion and strategic punishment.",
+    "description": "Two players divide a sum of money. The proposer suggests a division; the responder accepts (both get the proposed split) or rejects (both get nothing). Typically played with computer-controlled offers varying from fair (50-50) to unfair (90-10). Unfair offers activate the anterior insula (negative emotion, inequity aversion) and are rejected at high rates, even at personal cost. The task demonstrates the interplay between emotional reactions and rational economic considerations in social decision-making.",
+    "inclusion_test": {
+      "procedure": "A proposer splits a sum of money; the responder can accept (both keep their shares) or reject (neither gets anything).",
+      "manipulation": "Offer fairness (proportion offered); endowment size; proposer identity (human, computer); cultural context.",
+      "measurement": "Rejection rate as function of offer; minimum acceptable offer; proposer strategy (modal offer); fMRI anterior insula activation to unfair offers."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 34,
+      "picked": 30,
+      "reserve": 4,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_f22315cc",
+      "doi": "10.1016/0167-2681(82)90011-7",
+      "url": "https://doi.org/10.1016/0167-2681(82)90011-7",
+      "openalex_id": "https://openalex.org/W2045744884",
+      "pmid": null,
+      "first_author": "Güth",
+      "authors_display": "Werner Güth et al.",
+      "year": 1982,
+      "title": "An experimental analysis of ultimatum bargaining",
+      "venue": "Journal of Economic Behavior & Organization",
+      "venue_tier": "specialty",
+      "publisher": "Elsevier BV",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 4872,
+      "influential_citation_count": null,
+      "fwci": 0.6593,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.6029087630706899,
+        "breakdown": {
+          "raw": {
+            "citations": 0.49163505228275944,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12290876307068986,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_306b7591",
+      "doi": "10.1038/s41598-018-26656-2",
+      "url": "https://doi.org/10.1038/s41598-018-26656-2",
+      "openalex_id": null,
+      "pmid": "29844496",
+      "first_author": "Gabay",
+      "authors_display": "Gabay, A. et al.",
+      "year": 2018,
+      "title": "Psilocybin and MDMA reduce costly punishment in the Ultimatum Game.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 30,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5974271",
+      "tldr": null,
+      "abstract": "Disruptions in social decision-making are becoming evident in many psychiatric conditions. These are studied using paradigms investigating the psychological mechanisms underlying interpersonal interactions, such as the Ultimatum Game (UG). Rejection behaviour in the UG represents altruistic punishment - the costly punishment of norm violators - but the mechanisms underlying it require clarification. To investigate the psychopharmacology of UG behaviour, we carried out two studies with healthy participants, employing serotonergic agonists: psilocybin (open-label, within-participant design, N = 19) and 3,4-methylenedioxymethamphetamine (MDMA; placebo-controlled, double-blind, crossover design, N = 20). We found that both MDMA and psilocybin reduced rejection of unfair offers (odds ratio: 0.57 and 0.42, respectively). The reduction in rejection rate following MDMA was associated with increased prosociality (R<sup>2</sup> = 0.26, p = 0.025). In the MDMA study, we investigated third-party decision-making and proposer behaviour. MDMA did not reduce rejection in the third-party condition, but produced an increase in the amount offered to others (Cohen's d = 0.82). We argue that these compounds altered participants' conceptualisation of 'social reward', placing more emphasis on the direct relationship with interacting partners. With these compounds showing efficacy in drug-assisted psychotherapy, these studies are an important step in the further characterisation of their psychological effects.",
+      "score": {
+        "composite": 0.5947048645403726,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "N-Methyl-3,4-methylenedioxyamphetamine",
+        "Social Behavior",
+        "Altruism",
+        "Emotions",
+        "Interpersonal Relations",
+        "Punishment",
+        "Reward",
+        "Decision Making",
+        "Psychopharmacology",
+        "Games, Experimental",
+        "Socialization",
+        "Adult",
+        "Middle Aged",
+        "Male",
+        "Community-Based Participatory Research",
+        "Young Adult",
+        "Healthy Volunteers",
+        "Psilocybin",
+        "Rejection, Psychology"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_7185587b",
+      "doi": "10.1038/s41598-018-29233-9",
+      "url": "https://doi.org/10.1038/s41598-018-29233-9",
+      "openalex_id": null,
+      "pmid": "30022087",
+      "first_author": "Shaw",
+      "authors_display": "Shaw, D. et al.",
+      "year": 2018,
+      "title": "A dual-fMRI investigation of the iterated Ultimatum Game reveals that reciprocal behaviour is associated with neural alignment.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 28,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6051991",
+      "tldr": null,
+      "abstract": "Dyadic interactions often involve a dynamic process of mutual reciprocity; to steer a series of exchanges towards a desired outcome, both interactants must adapt their own behaviour according to that of their interaction partner. Understanding the brain processes behind such bidirectional reciprocity is therefore central to social neuroscience, but this requires measurement of both individuals' brains during real-world exchanges. We achieved this by performing functional magnetic resonance imaging (fMRI) on pairs of male individuals simultaneously while they interacted in a modified iterated Ultimatum Game (iUG). In this modification, both players could express their intent and maximise their own monetary gain by reciprocating their partner's behaviour - they could promote generosity through cooperation and/or discourage unfair play with retaliation. By developing a novel model of reciprocity adapted from behavioural economics, we then show that each player's choices can be predicted accurately by estimating expected utility (EU) not only in terms of immediate payoff, but also as a reaction to their opponent's prior behaviour. Finally, for the first time we reveal that brain signals implicated in social decision making are modulated by these estimates of EU, and become correlated more strongly between interacting players who reciprocate one another.",
+      "score": {
+        "composite": 0.5937395476832981,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Cooperative Behavior",
+        "Interpersonal Relations",
+        "Decision Making",
+        "Game Theory",
+        "Adult",
+        "Male",
+        "Young Adult",
+        "Economics, Behavioral"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_47f4af21",
+      "doi": "10.1073/pnas.1608085113",
+      "url": "https://doi.org/10.1073/pnas.1608085113",
+      "openalex_id": null,
+      "pmid": "27671627",
+      "first_author": "Dreher",
+      "authors_display": "Dreher, J. et al.",
+      "year": 2016,
+      "title": "Testosterone causes both prosocial and antisocial status-enhancing behaviors in human males.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 86,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Although popular discussion of testosterone's influence on males often centers on aggression and antisocial behavior, contemporary theorists have proposed that it instead enhances behaviors involved in obtaining and maintaining a high social status. Two central distinguishing but untested predictions of this theory are that testosterone selectively increases status-relevant aggressive behaviors, such as responses to provocation, but that it also promotes nonaggressive behaviors, such as generosity toward others, when they are appropriate for increasing status. Here, we tested these hypotheses in healthy young males by injecting testosterone enanthate or a placebo in a double-blind, between-subjects, randomized design (n = 40). Participants played a version of the Ultimatum Game that was modified so that, having accepted or rejected an offer from the proposer, participants then had the opportunity to punish or reward the proposer at a proportionate cost to themselves. We found that participants treated with testosterone were more likely to punish the proposer and that higher testosterone levels were specifically associated with increased punishment of proposers who made unfair offers, indicating that testosterone indeed potentiates aggressive responses to provocation. Furthermore, when participants administered testosterone received large offers, they were more likely to reward the proposer and also chose rewards of greater magnitude. This increased generosity in the absence of provocation indicates that testosterone can also cause prosocial behaviors that are appropriate for increasing status. These findings are inconsistent with a simple relationship between testosterone and aggression and provide causal evidence for a more complex role for testosterone in driving status-enhancing behaviors in males.",
+      "score": {
+        "composite": 0.5896412886447424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2585651545789694,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06464128864474235,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Testosterone",
+        "Regression Analysis",
+        "Social Behavior",
+        "Punishment",
+        "Reward",
+        "Choice Behavior",
+        "Reaction Time",
+        "Antisocial Personality Disorder",
+        "Game Theory",
+        "Adolescent",
+        "Adult",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_298f3887",
+      "doi": "10.1073/pnas.1523940113",
+      "url": "https://doi.org/10.1073/pnas.1523940113",
+      "openalex_id": null,
+      "pmid": "27140622",
+      "first_author": "Yamagishi",
+      "authors_display": "Yamagishi, T. et al.",
+      "year": 2016,
+      "title": "Cortical thickness of the dorsolateral prefrontal cortex predicts strategic choices in economic games.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 71,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Human prosociality has been traditionally explained in the social sciences in terms of internalized social norms. Recent neuroscientific studies extended this traditional view of human prosociality by providing evidence that prosocial choices in economic games require cognitive control of the impulsive pursuit of self-interest. However, this view is challenged by an intuitive prosociality view emphasizing the spontaneous and heuristic basis of prosocial choices in economic games. We assessed the brain structure of 411 players of an ultimatum game (UG) and a dictator game (DG) and measured the strategic reasoning ability of 386. According to the reflective norm-enforcement view of prosociality, only those capable of strategically controlling their selfish impulses give a fair share in the UG, but cognitive control capability should not affect behavior in the DG. Conversely, we support the intuitive prosociality view by showing for the first time, to our knowledge, that strategic reasoning and cortical thickness of the dorsolateral prefrontal cortex were not related to giving in the UG but were negatively related to giving in the DG. This implies that the uncontrolled choice in the DG is prosocial rather than selfish, and those who have a thicker dorsolateral prefrontal cortex and are capable of strategic reasoning (goal-directed use of the theory of mind) control this intuitive drive for prosociality as a means to maximize reward when there are no future implications of choices.",
+      "score": {
+        "composite": 0.5869021264413723,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24760850576548898,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.061902126441372246,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Cooperative Behavior",
+        "Personality",
+        "Cognition",
+        "Choice Behavior",
+        "Games, Experimental",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_7d3aef9d",
+      "doi": "10.1002/hbm.22649",
+      "url": "https://doi.org/10.1002/hbm.22649",
+      "openalex_id": null,
+      "pmid": "25327760",
+      "first_author": "Feng",
+      "authors_display": "Feng, C. et al.",
+      "year": 2015,
+      "title": "Neural signatures of fairness-related normative decision making in the ultimatum game: a coordinate-based meta-analysis.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Meta-Analysis",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": true,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 142,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The willingness to incur personal costs to enforce prosocial norms represents a hallmark of human civilization. Although recent neuroscience studies have used the ultimatum game to understand the neuropsychological mechanisms that underlie the enforcement of fairness norms; however, a precise characterization of the neural systems underlying fairness-related norm enforcement remains elusive. In this study, we used a coordinate-based meta-analysis on functional magnetic resonance imaging (fMRI) studies using the ultimatum game with the goal to provide an additional level of evidence for the refinement of the underlying neural architecture of this human puzzling behavior. Our results demonstrated a convergence of reported activation foci in brain networks associated with psychological components of fairness-related normative decision making, presumably reflecting a reflexive and intuitive system (System 1) and a reflective and deliberate system (System 2). System 1 (anterior insula, ventromedial prefrontal cortex [PFC]) may be associated with the reflexive and intuitive responses to norm violations, representing a motivation to punish norm violators. Those intuitive responses conflict with economic self-interest, encoded in the dorsal anterior cingulate cortex (ACC), which may engage cognitive control from a reflective and deliberate System 2 to resolve the conflict by either suppressing (ventrolateral PFC, dorsomedial PFC, left dorsolateral PFC, and rostral ACC) the intuitive responses or over-riding self-interest (right dorsolateral PFC). Taken together, we suggest that fairness-related norm enforcement recruits an intuitive system for rapid evaluation of norm violations and a deliberate system for integrating both social norms and self-interest to regulate the intuitive system in favor of more flexible decision making.",
+      "score": {
+        "composite": 0.5768341407212576,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2873365628850305,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07183414072125763,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Social Behavior",
+        "Decision Making",
+        "Games, Experimental"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_72045ca8",
+      "doi": "10.1093/scan/nsab032",
+      "url": "https://doi.org/10.1093/scan/nsab032",
+      "openalex_id": null,
+      "pmid": "33769539",
+      "first_author": "Hu",
+      "authors_display": "Hu, X., & Mai, X.",
+      "year": 2021,
+      "title": "Social value orientation modulates fairness processing during social decision-making: evidence from behavior and brain potentials.",
+      "venue": "Social cognitive and affective neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 51,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1093/scan/nsab032",
+      "tldr": null,
+      "abstract": "Social value orientation (SVO) characterizes stable individual differences by an inherent sense of fairness in outcome allocations. Using the event-related potential (ERP), this study investigated differences in fairness decision-making behavior and neural bases between individuals with prosocial and proself orientations using the Ultimatum Game (UG). Behavioral results indicated that prosocials were more prone to rejecting unfair offers with stronger negative emotional reactions compared with proselfs. ERP results revealed that prosocials showed a larger P2 when receiving fair offers than unfair ones in a very early processing stage, whereas such effect was absent in proselfs. In later processing stages, although both groups were sensitive to fairness as reflected by an enhanced medial frontal negativity (MFN) for unfair offers and a larger P3 for fair offers, prosocials exhibited a stronger fairness effect on these ERP components relative to proselfs. Furthermore, the fairness effect on the MFN mediated the SVO effect on rejecting unfair offers. Findings regarding emotional experiences, behavioral patterns and ERPs provide compelling evidence that SVO modulates fairness processing in social decision-making, whereas differences in neural responses to unfair vs fair offers as evidenced by the MFN appear to play important roles in the SVO effect on behavioral responses to unfairness.",
+      "score": {
+        "composite": 0.5721918362251246,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Electroencephalography",
+        "Social Behavior",
+        "Social Values",
+        "Decision Making",
+        "Games, Experimental"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_31b60407",
+      "doi": "10.1073/pnas.1206569109",
+      "url": "https://doi.org/10.1073/pnas.1206569109",
+      "openalex_id": null,
+      "pmid": "22615375",
+      "first_author": "Press",
+      "authors_display": "Press, W., & Dyson, F.",
+      "year": 2012,
+      "title": "Iterated Prisoner's Dilemma contains strategies that dominate any evolutionary opponent.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 200,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The two-player Iterated Prisoner's Dilemma game is a model for both sentient and evolutionary behaviors, especially including the emergence of cooperation. It is generally assumed that there exists no simple ultimatum strategy whereby one player can enforce a unilateral claim to an unfair share of rewards. Here, we show that such strategies unexpectedly do exist. In particular, a player X who is witting of these strategies can (i) deterministically set her opponent Y's score, independently of his strategy or response, or (ii) enforce an extortionate linear relation between her and his scores. Against such a player, an evolutionary player's best response is to accede to the extortion. Only a player with a theory of mind about his opponent can do better, in which case Iterated Prisoner's Dilemma is an Ultimatum Game.",
+      "score": {
+        "composite": 0.5617620950151125,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30704838006045004,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07676209501511251,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Game Theory",
+        "Models, Psychological",
+        "Prisoners"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_295e8750",
+      "doi": "10.1073/pnas.1214167110",
+      "url": "https://doi.org/10.1073/pnas.1214167110",
+      "openalex_id": null,
+      "pmid": "23341593",
+      "first_author": "Rand",
+      "authors_display": "Rand, D. et al.",
+      "year": 2013,
+      "title": "Evolution of fairness in the one-shot anonymous Ultimatum Game.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 89,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Classical economic models assume that people are fully rational and selfish, while experiments often point to different conclusions. A canonical example is the Ultimatum Game: one player proposes a division of a sum of money between herself and a second player, who either accepts or rejects. Based on rational self-interest, responders should accept any nonzero offer and proposers should offer the smallest possible amount. Traditional, deterministic models of evolutionary game theory agree: in the one-shot anonymous Ultimatum Game, natural selection favors low offers and demands. Experiments instead show a preference for fairness: often responders reject low offers and proposers make higher offers than needed to avoid rejection. Here we show that using stochastic evolutionary game theory, where agents make mistakes when judging the payoffs and strategies of others, natural selection favors fairness. Across a range of parameters, the average strategy matches the observed behavior: proposers offer between 30% and 50%, and responders demand between 25% and 40%. Rejecting low offers increases relative payoff in pairwise competition between two strategies and is favored when selection is sufficiently weak. Offering more than you demand increases payoff when many strategies are present simultaneously and is favored when mutation is sufficiently high. We also perform a behavioral experiment and find empirical support for these theoretical findings: uncertainty about the success of others is associated with higher demands and offers; and inconsistency in the behavior of others is associated with higher offers but not predictive of demands. In an uncertain world, fairness finishes first.",
+      "score": {
+        "composite": 0.5601319928708813,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26052797148352547,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06513199287088137,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Social Behavior",
+        "Social Values",
+        "Choice Behavior",
+        "Game Theory",
+        "Games, Experimental",
+        "Computer Simulation",
+        "Biological Evolution"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_7dfcf104",
+      "doi": "10.1073/pnas.1212126109",
+      "url": "https://doi.org/10.1073/pnas.1212126109",
+      "openalex_id": null,
+      "pmid": "23188801",
+      "first_author": "Yamagishi",
+      "authors_display": "Yamagishi, T. et al.",
+      "year": 2012,
+      "title": "Rejection of unfair offers in the ultimatum game is no evidence of strong reciprocity.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 104,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The strong reciprocity model of the evolution of human cooperation has gained some acceptance, partly on the basis of support from experimental findings. The observation that unfair offers in the ultimatum game are frequently rejected constitutes an important piece of the experimental evidence for strong reciprocity. In the present study, we have challenged the idea that the rejection response in the ultimatum game provides evidence of the assumption held by strong reciprocity theorists that negative reciprocity observed in the ultimatum game is inseparably related to positive reciprocity as the two sides of a preference for fairness. The prediction of an inseparable relationship between positive and negative reciprocity was rejected on the basis of the results of a series of experiments that we conducted using the ultimatum game, the dictator game, the trust game, and the prisoner's dilemma game. We did not find any correlation between the participants' tendencies to reject unfair offers in the ultimatum game and their tendencies to exhibit various prosocial behaviors in the other games, including their inclinations to positively reciprocate in the trust game. The participants' responses to postexperimental questions add support to the view that the rejection of unfair offers in the ultimatum game is a tacit strategy for avoiding the imposition of an inferior status.",
+      "score": {
+        "composite": 0.5523632296820182,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2694529187280729,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06736322968201823,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Models, Economic",
+        "Cooperative Behavior",
+        "Assertiveness",
+        "Social Values",
+        "Game Theory",
+        "Models, Psychological",
+        "Adult",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_f67e7e8f",
+      "doi": "10.1073/pnas.1009396107",
+      "url": "https://doi.org/10.1073/pnas.1009396107",
+      "openalex_id": null,
+      "pmid": "20876101",
+      "first_author": "Crockett",
+      "authors_display": "Crockett, M. et al.",
+      "year": 2010,
+      "title": "Serotonin selectively influences moral judgment and behavior through effects on harm aversion.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 236,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Aversive emotional reactions to real or imagined social harms infuse moral judgment and motivate prosocial behavior. Here, we show that the neurotransmitter serotonin directly alters both moral judgment and behavior through increasing subjects' aversion to personally harming others. We enhanced serotonin in healthy volunteers with citalopram (a selective serotonin reuptake inhibitor) and contrasted its effects with both a pharmacological control treatment and a placebo on tests of moral judgment and behavior. We measured the drugs' effects on moral judgment in a set of moral 'dilemmas' pitting utilitarian outcomes (e.g., saving five lives) against highly aversive harmful actions (e.g., killing an innocent person). Enhancing serotonin made subjects more likely to judge harmful actions as forbidden, but only in cases where harms were emotionally salient. This harm-avoidant bias after citalopram was also evident in behavior during the ultimatum game, in which subjects decide to accept or reject fair or unfair monetary offers from another player. Rejecting unfair offers enforces a fairness norm but also harms the other player financially. Enhancing serotonin made subjects less likely to reject unfair offers. Furthermore, the prosocial effects of citalopram varied as a function of trait empathy. Individuals high in trait empathy showed stronger effects of citalopram on moral judgment and behavior than individuals low in trait empathy. Together, these findings provide unique evidence that serotonin could promote prosocial behavior by enhancing harm aversion, a prosocial sentiment that directly affects both moral judgment and moral behavior.",
+      "score": {
+        "composite": 0.5441468262487255,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31658730499490173,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07914682624872543,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Serotonin",
+        "Citalopram",
+        "Placebos",
+        "Behavior",
+        "Social Behavior",
+        "Fear",
+        "Morals",
+        "Decision Making",
+        "Judgment",
+        "Neuropsychological Tests",
+        "Adult",
+        "Male",
+        "Selective Serotonin Reuptake Inhibitors"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_46705115",
+      "doi": "10.1093/scan/nsz005",
+      "url": "https://doi.org/10.1093/scan/nsz005",
+      "openalex_id": null,
+      "pmid": "30690558",
+      "first_author": "Speitel",
+      "authors_display": "Speitel, C. et al.",
+      "year": 2019,
+      "title": "Functions of the right DLPFC and right TPJ in proposers and responders in the ultimatum game.",
+      "venue": "Social cognitive and affective neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 28,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6399615",
+      "tldr": null,
+      "abstract": "Recent studies explored a network of brain regions involved in economic decision making. The present study focuses on two of those regions, each relevant for specific and distinct functions in economic decision making: the right temporoparietal junction (rTPJ) and the right dorsolateral prefrontal cortex (rDLPFC). In two experiments using transcranial direct current stimulation, we explored two proposed functions of these areas in bargaining situations using the ultimatum game (UG): understanding the others perspective and integration of fairness norms. Participants first took the role of the proposer and then the role of the responder. We showed that stimulation of the rTPJ only affected the proposer condition. Interestingly, inhibition of the rTPJ led to fairer offers, which strengthens the view that the role of the rTPJ in bargaining situations is to differentiate one's own from the other's perspective. Furthermore, we argue that the rDLPFC is most likely involved in suppressing self-interest when a person is confronted with a direct reward but does not play a role in long-term reward anticipation or integrating social fairness norms. We conclude that self-interest inhibition is shown only in responders, and that perspective taking seems to be a necessary specifically for proposers in the UG.",
+      "score": {
+        "composite": 0.543739547683298,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Brain Mapping",
+        "Decision Making",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Transcranial Direct Current Stimulation",
+        "Social Norms"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_daaa48ea",
+      "doi": "10.1038/s41562-024-01831-w",
+      "url": "https://doi.org/10.1038/s41562-024-01831-w",
+      "openalex_id": null,
+      "pmid": "38409356",
+      "first_author": "Batten",
+      "authors_display": "Batten, S. et al.",
+      "year": 2024,
+      "title": "Dopamine and serotonin in human substantia nigra track social context and value signals during economic exchange.",
+      "venue": "Nature human behaviour",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 33,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41562-024-01831-w.pdf",
+      "tldr": null,
+      "abstract": "Dopamine and serotonin are hypothesized to guide social behaviours. In humans, however, we have not yet been able to study neuromodulator dynamics as social interaction unfolds. Here, we obtained subsecond estimates of dopamine and serotonin from human substantia nigra pars reticulata during the ultimatum game. Participants, who were patients with Parkinson's disease undergoing awake brain surgery, had to accept or reject monetary offers of varying fairness from human and computer players. They rejected more offers in the human than the computer condition, an effect of social context associated with higher overall levels of dopamine but not serotonin. Regardless of the social context, relative changes in dopamine tracked trial-by-trial changes in offer value-akin to reward prediction errors-whereas serotonin tracked the current offer value. These results show that dopamine and serotonin fluctuations in one of the basal ganglia's main output structures reflect distinct social context and value signals.",
+      "score": {
+        "composite": 0.5360419118532629,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Substantia Nigra",
+        "Humans",
+        "Parkinson Disease",
+        "Dopamine",
+        "Serotonin",
+        "Social Behavior",
+        "Reward",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_95dc73ae",
+      "doi": "10.1093/scan/nsv092",
+      "url": "https://doi.org/10.1093/scan/nsv092",
+      "openalex_id": null,
+      "pmid": "26211014",
+      "first_author": "Tang",
+      "authors_display": "Tang, H. et al.",
+      "year": 2016,
+      "title": "Interpersonal brain synchronization in the right temporo-parietal junction during face-to-face economic exchange.",
+      "venue": "Social cognitive and affective neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 134,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In daily life, interpersonal interactions are influenced by uncertainty about other people's intentions. Face-to-face (FF) interaction reduces such uncertainty by providing external visible cues such as facial expression or body gestures and facilitates shared intentionality to promote belief of cooperative decisions and actual cooperative behaviors in interaction. However, so far little is known about interpersonal brain synchronization between two people engaged in naturally occurring FF interactions. In this study, we combined an adapted ultimatum game with functional near-infrared spectroscopy (fNIRS) hyperscanning to investigate how FF interaction impacts interpersonal brain synchronization during economic exchange. Pairs of strangers interacted repeatedly either FF or face-blocked (FB), while their activation was simultaneously measured in the right temporo-parietal junction (rTPJ) and the control region, right dorsolateral prefrontal cortex (rDLPFC). Behaviorally, FF interactions increased shared intentionality between strangers, leading more positive belief of cooperative decisions and more actual gains in the game. FNIRS results indicated increased interpersonal brain synchronizations during FF interactions in rTPJ (but not in rDLPFC) with greater shared intentionality between partners. These results highlighted the importance of rTPJ in collaborative social interactions during FF economic exchange and warrant future research that combines FF interactions with fNIRS hyperscanning to study social brain disorders such as autism.",
+      "score": {
+        "composite": 0.5360008523261645,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2840034093046579,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07100085232616447,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Parietal Lobe",
+        "Temporal Lobe",
+        "Humans",
+        "Spectroscopy, Near-Infrared",
+        "Cortical Synchronization",
+        "Facial Expression",
+        "Brain Mapping",
+        "Gestures",
+        "Cooperative Behavior",
+        "Intention",
+        "Interpersonal Relations",
+        "Dominance, Cerebral",
+        "Culture",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Functional Neuroimaging",
+        "Economics, Behavioral"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_fba46678",
+      "doi": "10.1073/pnas.0900636106",
+      "url": "https://doi.org/10.1073/pnas.0900636106",
+      "openalex_id": null,
+      "pmid": "19564602",
+      "first_author": "Yamagishi",
+      "authors_display": "Yamagishi, T. et al.",
+      "year": 2009,
+      "title": "The private rejection of unfair offers and emotional commitment.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 79,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In a series of experiments, we demonstrate that certain players of an economic game reject unfair offers even when this behavior increases rather than decreases inequity. A substantial proportion (30-40%, compared with 60-70% in the standard ultimatum game) of those who responded rejected unfair offers even when rejection reduced only their own earnings to 0, while not affecting the earnings of the person who proposed the unfair split (in an impunity game). Furthermore, even when the responders were not able to communicate their anger to the proposers by rejecting unfair offers in a private impunity game, a similar rate of rejection was observed. The rejection of unfair offers that increases inequity cannot be explained by the social preference for inequity aversion or reciprocity; however, it does provide support for the model of emotion as a commitment device. In this view, emotions such as anger or moral disgust lead people to disregard the immediate consequences of their behavior, committing them to behave consistently to preserve integrity and maintain a reputation over time as someone who is reliably committed to this behavior.",
+      "score": {
+        "composite": 0.5184271554664763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2537086218659055,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06342715546647637,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Social Behavior",
+        "Emotions",
+        "Decision Making",
+        "Game Theory",
+        "Games, Experimental",
+        "Socioeconomic Factors",
+        "Adult",
+        "Japan",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_e426b6a3",
+      "doi": "10.1017/ehs.2021.36",
+      "url": "https://doi.org/10.1017/ehs.2021.36",
+      "openalex_id": null,
+      "pmid": "37588562",
+      "first_author": "Akdeniz",
+      "authors_display": "Akdeniz, A., & van Veelen, M.",
+      "year": 2021,
+      "title": "The evolution of morality and the role of commitment.",
+      "venue": "Evolutionary human sciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,humans)"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10427333",
+      "tldr": null,
+      "abstract": "A considerable share of the literature on the evolution of human cooperation considers the question why we have not evolved to play the Nash equilibrium in prisoners' dilemmas or public goods games. In order to understand human morality and pro-social behaviour, we suggest that it would actually be more informative to investigate why we have not evolved to play the subgame perfect Nash equilibrium in sequential games, such as the ultimatum game and the trust game. The 'rationally irrational' behaviour that can evolve in such games gives a much better match with actual human behaviour, including elements of morality such as honesty, responsibility and sincerity, as well as the more hostile aspects of human nature, such as anger and vengefulness. The mechanism at work here is commitment, which does not need population structure, nor does it need interactions to be repeated. We argue that this shift in focus can not only help explain why humans have evolved to know wrong from right, but also why other animals, with similar population structures and similar rates of repetition, have not evolved similar moral sentiments. The suggestion that the evolutionary function of morality is to help us commit to otherwise irrational behaviour stems from the work of Robert Frank (<i>American Economic Review</i>, <i>77</i>(4), 593-604, 1987; <i>Passions within reason: The strategic role of the emotions</i>, WW Norton, 1988), which has played a surprisingly modest role in the scientific debate to date.",
+      "score": {
+        "composite": 0.5109346224676056,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_77fe6e0b",
+      "doi": "10.1093/scan/nss014",
+      "url": "https://doi.org/10.1093/scan/nss014",
+      "openalex_id": null,
+      "pmid": "22287263",
+      "first_author": "Corradi-Dell'Acqua",
+      "authors_display": "Corradi-Dell'Acqua, C. et al.",
+      "year": 2013,
+      "title": "Disentangling self- and fairness-related neural mechanisms involved in the ultimatum game: an fMRI study.",
+      "venue": "Social cognitive and affective neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 109,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Rejections of unfair offers in the ultimatum game (UG) are commonly assumed to reflect negative emotional arousal mediated by the anterior insula and medial prefrontal cortex. We aimed to disentangle those neural mechanisms associated with direct personal involvement ('I have been treated unfairly') from those associated with fairness considerations, such as the wish to discourage unfair behavior or social norm violations ('this person has been treated unfairly'). For this purpose, we used fMRI and asked participants to play the UG as responders either for themselves (myself) or on behalf of another person (third party). Unfair offers were equally often rejected in both conditions. Neuroimaging data revealed a dissociation between the medial prefrontal cortex, specifically associated with rejections in the myself condition, thus confirming its role in self-related emotional responses, and the left anterior insula, associated with rejections in both myself and third-party conditions, suggesting a role in promoting fair behavior also toward third parties. Our data extend the current understanding of the neural substrate of social decision making, by disentangling the structures sensitive to direct emotional involvement of the self from those implicated in pure fairness considerations.",
+      "score": {
+        "composite": 0.5030365784564482,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2721463138257929,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06803657845644823,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Social Behavior",
+        "Emotions",
+        "Interpersonal Relations",
+        "Decision Making",
+        "Games, Experimental",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b6b12172",
+      "doi": "10.1073/pnas.161155698",
+      "url": "https://doi.org/10.1073/pnas.161155698",
+      "openalex_id": null,
+      "pmid": "11553811",
+      "first_author": "Sigmund",
+      "authors_display": "Sigmund, K. et al.",
+      "year": 2001,
+      "title": "Reward and punishment.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 213,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Minigames capturing the essence of Public Goods experiments show that even in the absence of rationality assumptions, both punishment and reward will fail to bring about prosocial behavior. This result holds in particular for the well-known Ultimatum Game, which emerges as a special case. But reputation can induce fairness and cooperation in populations adapting through learning or imitation. Indeed, the inclusion of reputation effects in the corresponding dynamical models leads to the evolution of economically productive behavior, with agents contributing to the public good and either punishing those who do not or rewarding those who do. Reward and punishment correspond to two types of bifurcation with intriguing complementarity. The analysis suggests that reputation is essential for fostering social behavior among selfish agents, and that it is considerably more effective with punishment than with reward.",
+      "score": {
+        "composite": 0.5026692209584216,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3106768838336864,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0776692209584216,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Models, Economic",
+        "Behavior"
+      ]
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_783e066c",
+      "doi": "10.1073/pnas.0706642104",
+      "url": "https://doi.org/10.1073/pnas.0706642104",
+      "openalex_id": null,
+      "pmid": "17909184",
+      "first_author": "Wallace",
+      "authors_display": "Wallace, B. et al.",
+      "year": 2007,
+      "title": "Heritability of ultimatum game responder behavior.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Twin Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 76,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Experimental evidence suggests that many people are willing to deviate from materially maximizing strategies to punish unfair behavior. Even though little is known about the origins of such fairness preferences, it has been suggested that they have deep evolutionary roots and that they are crucial for maintaining and understanding cooperation among non-kin. Here we report the results of an ultimatum game, played for real monetary stakes, using twins recruited from the population-based Swedish Twin Registry as our subject pool. Employing standard structural equation modeling techniques, we estimate that >40% of the variation in subjects' rejection behavior is explained by additive genetic effects. Our estimates also suggest a very modest role for common environment as a source of phenotypic variation. Based on these findings, we argue that any attempt to explain observed ultimatum bargaining game behavior that ignores this genetic influence is incomplete.",
+      "score": {
+        "composite": 0.4978739267871979,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25149570714879144,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06287392678719786,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Likelihood Functions",
+        "Interpersonal Relations",
+        "Punishment",
+        "Genetics, Behavioral",
+        "Genetics, Medical",
+        "Phenotype",
+        "Play and Playthings",
+        "Sweden",
+        "Genetic Variation"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_32498ad6",
+      "doi": "10.1371/journal.pbio.1001054",
+      "url": "https://doi.org/10.1371/journal.pbio.1001054",
+      "openalex_id": null,
+      "pmid": "21559322",
+      "first_author": "Gospic",
+      "authors_display": "Gospic, K. et al.",
+      "year": 2011,
+      "title": "Limbic justice--amygdala involvement in immediate rejection in the Ultimatum Game.",
+      "venue": "PLoS biology",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 72,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1001054&type=printable",
+      "tldr": null,
+      "abstract": "Imaging studies have revealed a putative neural account of emotional bias in decision making. However, it has been difficult in previous studies to identify the causal role of the different sub-regions involved in decision making. The Ultimatum Game (UG) is a game to study the punishment of norm-violating behavior. In a previous influential paper on UG it was suggested that frontal insular cortex has a pivotal role in the rejection response. This view has not been reconciled with a vast literature that attributes a crucial role in emotional decision making to a subcortical structure (i.e., amygdala). In this study we propose an anatomy-informed model that may join these views. We also present a design that detects the functional anatomical response to unfair proposals in a subcortical network that mediates rapid reactive responses. We used a functional MRI paradigm to study the early components of decision making and challenged our paradigm with the introduction of a pharmacological intervention to perturb the elicited behavioral and neural response. Benzodiazepine treatment decreased the rejection rate (from 37.6% to 19.0%) concomitantly with a diminished amygdala response to unfair proposals, and this in spite of an unchanged feeling of unfairness and unchanged insular response. In the control group, rejection was directly linked to an increase in amygdala activity. These results allow a functional anatomical detection of the early neural components of rejection associated with the initial reactive emotional response. Thus, the act of immediate rejection seems to be mediated by the limbic system and is not solely driven by cortical processes, as previously suggested. Our results also prompt an ethical discussion as we demonstrated that a commonly used drug influences core functions in the human brain that underlie individual autonomy and economic decision making.",
+      "score": {
+        "composite": 0.49710177634316977,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24840710537267913,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06210177634316978,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Limbic System",
+        "Amygdala",
+        "Humans",
+        "Oxazepam",
+        "Magnetic Resonance Imaging",
+        "Statistics, Nonparametric",
+        "Decision Making",
+        "Neuropsychological Tests",
+        "Games, Experimental",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Rejection, Psychology"
+      ]
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_914b903f",
+      "doi": "10.1093/scan/nsq013",
+      "url": "https://doi.org/10.1093/scan/nsq013",
+      "openalex_id": null,
+      "pmid": "20350933",
+      "first_author": "Güroğlu",
+      "authors_display": "Güroğlu, B. et al.",
+      "year": 2010,
+      "title": "Unfair? It depends: neural correlates of fairness in social context.",
+      "venue": "Social cognitive and affective neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 100,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Fairness is a key concept in social interactions and is influenced by intentionality considerations. In this functional magnetic resonance imaging study, we investigated the neural correlates of fairness by focusing on responder behavior to unfair offers in an Ultimatum Game paradigm with conditions that differed in their intentionality constraints. Brain activity underlying rejection vs acceptance of unfair offers appeared highly dependent on intentionality. Rejection of unfair offers when the proposer had no-alternative as well as acceptance of offers when the proposer had a fair- or hyperfair-alternative was associated with activation in a network of regions including the insula and the dorsal medial prefrontal cortex. These activations were interpreted as neural responses to norm violations because they were mostly involved when behavior was inconsistent with socially accepted behavior patterns. Rejection of unfair offers in the no-alternative condition further resulted in activity in the anterior medial prefrontal cortex and the temporoparietal junction, which was interpreted in terms of higher moral mentalizing demands required in social decision-making when rejection could not be readily justified. Together, results highlight the significance of intentionality considerations in fairness-related social decision-making processes.",
+      "score": {
+        "composite": 0.47180104684941065,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2672041873976427,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06680104684941067,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Cerebral Cortex",
+        "Prefrontal Cortex",
+        "Parietal Lobe",
+        "Temporal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Social Behavior",
+        "Intention",
+        "Interpersonal Relations",
+        "Decision Making",
+        "Social Justice",
+        "Social Responsibility",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Theory of Mind"
+      ]
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_c29cdb9d",
+      "doi": "10.1016/j.neuropsychologia.2010.04.012",
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2010.04.012",
+      "openalex_id": null,
+      "pmid": "20403367",
+      "first_author": "Koenigs",
+      "authors_display": "Koenigs, M. et al.",
+      "year": 2010,
+      "title": "Economic decision-making in psychopathy: a comparison with ventromedial prefrontal lesion patients.",
+      "venue": "Neuropsychologia",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 97,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Psychopathy, which is characterized by a constellation of antisocial behavioral traits, may be subdivided on the basis of etiology: \"primary\" (low-anxious) psychopathy is viewed as a direct consequence of some core intrinsic deficit, whereas \"secondary\" (high-anxious) psychopathy is viewed as an indirect consequence of environmental factors or other psychopathology. Theories on the neurobiology of psychopathy have targeted dysfunction within ventromedial prefrontal cortex (vmPFC) as a putative mechanism, yet the relationship between vmPFC function and psychopathy subtype has not been fully explored. In this study, we administered two laboratory decision-making tasks (the Ultimatum Game and the Dictator Game) to a group of prisoners (n=47) to determine whether the different subtypes of psychopathy (primary vs. secondary) are associated with characteristic patterns of economic decision-making, and furthermore, whether either subtype exhibits similar performance to patients with vmPFC lesions. Comparing primary psychopaths (n=6) to secondary psychopaths (n=6) and non-psychopaths (n=22), we found that primary psychopathy was associated with significantly lower acceptance rates of unfair Ultimatum offers and lower offer amounts in the Dictator Game. Moreover, primary psychopaths were quantitatively similar to vmPFC lesion patients in their response patterns. These results support the purported connection between psychopathy and vmPFC dysfunction, bolster the distinction between primary and secondary psychopathy, and demonstrate the utility of laboratory economic decision-making tests in differentiating clinical subgroups.",
+      "score": {
+        "composite": 0.47136460006364594,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26545840025458384,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06636460006364596,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Brain Injuries",
+        "Anxiety",
+        "Reward",
+        "Decision Making",
+        "Choice Behavior",
+        "Psychopathology",
+        "Neuropsychological Tests",
+        "Games, Experimental",
+        "Crime",
+        "Economics",
+        "Adult",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_e6599c7f",
+      "doi": "10.1177/0269881120926673",
+      "url": "https://doi.org/10.1177/0269881120926673",
+      "openalex_id": null,
+      "pmid": "32538252",
+      "first_author": "Borissova",
+      "authors_display": "Borissova, A. et al.",
+      "year": 2021,
+      "title": "Acute effects of MDMA on trust, cooperative behaviour and empathy: A double-blind, placebo-controlled experiment.",
+      "venue": "Journal of psychopharmacology (Oxford, England)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Controlled Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 28,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://escholarship.org/uc/item/9c68d1ft",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>3,4-Methylenedioxymethamphetamine (MDMA) is being actively researched as an adjunct to psychotherapy. It may be beneficial to trust, empathy and cooperative behaviour due to its acute prosocial effects.<h4>Aim</h4>To test (a) the acute effects of MDMA on measures of empathy, trust and cooperative behaviour, and (b) subacute changes in mood three days after MDMA administration.<h4>Methods</h4>Twenty-five participants (<i>n</i>=7 female), participated in this double-blind, repeated-measures, placebo-controlled experiment. Participants attended two acute sessions, one week apart. Each acute session was followed by a subacute session three days later. Participants received placebo (100 mg ascorbic acid) during one acute session, and MDMA (100 mg MDMA-HCl) at the other, with order counterbalanced. Participants completed the following tasks assessing prosocial behaviour: a trust investment task, a trustworthy face rating task, an empathic stories task, a public project game, a dictator game and an ultimatum game. Participants reported subjective effects. Blood was taken pre-drug, 2 and 4 hours post-drug, and tested for plasma MDMA levels.<h4>Results</h4>MDMA acutely increased self-reported 'closeness to others' and 'euphoria' and increased plasma concentrations of MDMA. MDMA did not significantly change task-based empathy, trust or cooperative behaviour. Using Bayesian analyses, we found evidence that MDMA and placebo did not differ in their effects on empathy and cooperative behaviour. MDMA did not significantly change subacute mood and this was supported by our Bayesian analyses.<h4>Conclusion</h4>Despite augmentation in plasma MDMA levels and subjective drug effects, we found no increase in prosocial behaviour in a laboratory setting.",
+      "score": {
+        "composite": 0.44373954768329804,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "N-Methyl-3,4-methylenedioxyamphetamine",
+        "Hallucinogens",
+        "Bayes Theorem",
+        "Double-Blind Method",
+        "Social Behavior",
+        "Cooperative Behavior",
+        "Affect",
+        "Empathy",
+        "Trust",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_500b9322",
+      "doi": "10.1016/j.drugalcdep.2014.03.036",
+      "url": "https://doi.org/10.1016/j.drugalcdep.2014.03.036",
+      "openalex_id": null,
+      "pmid": "24814566",
+      "first_author": "Fecteau",
+      "authors_display": "Fecteau, S. et al.",
+      "year": 2014,
+      "title": "Modulation of smoking and decision-making behaviors with transcranial direct current stimulation in tobacco smokers: a preliminary study.",
+      "venue": "Drug and alcohol dependence",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 117,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Most tobacco smokers who wish to quit fail to reach their goal. One important, insufficiently emphasized aspect of addiction relates to the decision-making system, often characterized by dysfunctional cognitive control and a powerful drive for reward. Recent proof-of-principle studies indicate that transcranial direct current stimulation (tDCS) over the dorsolateral prefrontal cortex (DLPFC) can transiently modulate processes involved in decision-making, and reduce substance intake and craving for various addictions. We previously proposed that this beneficial effect of stimulation for reducing addictive behaviors is in part mediated by more reflective decision-making. The goal of this study was to test whether nicotine intake and decision-making behaviors are modulated by tDCS over the DLPFC in tobacco smokers who wished to quit smoking.<h4>Methods</h4>Subjects received two five-day tDCS regimens (active or sham). Stimulation was delivered over the right DLPFC at a 2 mA during 30 min. Nicotine cravings, cigarette consumption and decision-making were assessed before and after each session.<h4>Results</h4>Main findings include a significant decrease in the number of cigarettes smoked when participants received active as compared to sham stimulation. This effect lasted up to four days after the end of the stimulation regimen. In regards to decision-making, smokers rejected more often offers of cigarettes, but not offers of money, after they received active as compared to sham stimulation at the Ultimatum Game. No significant change was observed at the Risk Task with cigarettes or money as rewards.<h4>Conclusion</h4>Overall, these findings suggest that tDCS over the DLPFC may be beneficial for smoking reduction and induce reward sensitive effects.",
+      "score": {
+        "composite": 0.4340527421634514,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2762109686538056,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0690527421634514,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Carbon Monoxide",
+        "Cross-Over Studies",
+        "Double-Blind Method",
+        "Smoking",
+        "Risk-Taking",
+        "Reward",
+        "Decision Making",
+        "Games, Experimental",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Transcranial Direct Current Stimulation"
+      ]
+    },
+    {
+      "rank": 25,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_75970eea",
+      "doi": "10.1523/jneurosci.1642-12.2013",
+      "url": "https://doi.org/10.1523/jneurosci.1642-12.2013",
+      "openalex_id": null,
+      "pmid": "23325247",
+      "first_author": "Xiang",
+      "authors_display": "Xiang, T. et al.",
+      "year": 2013,
+      "title": "Computational substrates of norms and their violations during social exchange.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 133,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Social norms in humans constrain individual behaviors to establish shared expectations within a social group. Previous work has probed social norm violations and the feelings that such violations engender; however, a computational rendering of the underlying neural and emotional responses has been lacking. We probed norm violations using a two-party, repeated fairness game (ultimatum game) where proposers offer a split of a monetary resource to a responder who either accepts or rejects the offer. Using a norm-training paradigm where subject groups are preadapted to either high or low offers, we demonstrate that unpredictable shifts in expected offers creates a difference in rejection rates exhibited by the two responder groups for otherwise identical offers. We constructed an ideal observer model that identified neural correlates of norm prediction errors in the ventral striatum and anterior insula, regions that also showed strong responses to variance-prediction errors generated by the same model. Subjective feelings about offers correlated with these norm prediction errors, and the two signals displayed overlapping, but not identical, neural correlates in striatum, insula, and medial orbitofrontal cortex. These results provide evidence for the hypothesis that responses in anterior insula can encode information about social norm violations that correlate with changes in overt behavior (changes in rejection rates). Together, these results demonstrate that the brain regions involved in reward prediction and risk prediction are also recruited in signaling social norm violations.",
+      "score": {
+        "composite": 0.4258932355598294,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2835729422393176,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0708932355598294,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Brain Mapping",
+        "Social Behavior",
+        "Emotions",
+        "Interpersonal Relations",
+        "Image Processing, Computer-Assisted",
+        "Adolescent",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 26,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_480a67bb",
+      "doi": "10.1371/journal.pone.0008330",
+      "url": "https://doi.org/10.1371/journal.pone.0008330",
+      "openalex_id": null,
+      "pmid": "20016825",
+      "first_author": "Zak",
+      "authors_display": "Zak, P. et al.",
+      "year": 2009,
+      "title": "Testosterone administration decreases generosity in the ultimatum game.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 95,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC2789942",
+      "tldr": null,
+      "abstract": "How do human beings decide when to be selfish or selfless? In this study, we gave testosterone to 25 men to establish its impact on prosocial behaviors in a double-blind within-subjects design. We also confirmed participants' testosterone levels before and after treatment through blood draws. Using the Ultimatum Game from behavioral economics, we find that men with artificially raised T, compared to themselves on placebo, were 27% less generous towards strangers with money they controlled (95% CI placebo: (1.70, 2.72); 95% CI T: (.98, 2.30)). This effect scales with a man's level of total-, free-, and dihydro-testosterone (DHT). Men in the lowest decile of DHT were 560% more generous than men in the highest decile of DHT. We also found that men with elevated testosterone were more likely to use their own money punish those who were ungenerous toward them. Our results continue to hold after controlling for altruism. We conclude that elevated testosterone causes men to behave antisocially.",
+      "score": {
+        "composite": 0.4210661484922503,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26426459396900137,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.2,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06606614849225034,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.03,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Dihydrotestosterone",
+        "Testosterone",
+        "Placebos",
+        "Altruism",
+        "Decision Making",
+        "Games, Experimental",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 27,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_e235c6ff",
+      "doi": "10.3389/fpsyg.2026.1713778",
+      "url": "https://doi.org/10.3389/fpsyg.2026.1713778",
+      "openalex_id": null,
+      "pmid": "41736878",
+      "first_author": "Chowdhury",
+      "authors_display": "Chowdhury, A. et al.",
+      "year": 2026,
+      "title": "Characterizing Ultimatum Game responders: a scoping review of factors that influence decision-making through an evolutionary lens.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12926904",
+      "tldr": null,
+      "abstract": "The Ultimatum Game is a widely used tool for studying conflict resolution within a bargaining framework. This scoping review aims to comprehensively examine the various internal and external factors influencing the responder's behavior in this game and compile the <i>status quo</i> of the knowledge space. 31 pertinent research articles were identified from databases like Google Scholar, PubMed and JStor, using the following keywords \"ultimatum game,\" \"responder behavior,\" \"emotions and the ultimatum game,\" \"fairness in the ultimatum game,\" \"social norms and the ultimatum game,\" \"punishment game,\" \"impunity game,\" \"outside options in the ultimatum game.\" An analysis of the same yielded two broad domains of influencing factors: internal and external. Internal factors encompassed emotions, personality traits, and cognitive capabilities, showcasing their significant influence on decision-making. External factors, including ownership, social norms, power dynamics, outside options, gender, and attraction, revealed how the context of the game shaped responder choices. This review investigates how internal and external factors influence bargaining behavior within the Ultimatum Game, distinguishing between typical and atypical responder behavior. Invoking Kahneman's dual system theory offer insights into the evolutionary roots and modern cognitive processes guiding decision-making. The interplay between these systems reveals nuanced responses to fairness, reciprocity, and self-interest, challenging traditional economic models. While acknowledging the oversimplification of brain dynamics in these studies and also the need for cultural integration, the current review compiles a framework that advances our understanding of human behavior across disciplines, particularly for economics, psychology, and evolutionary biology. Refining this model promises deeper insights into decision-making processes amidst societal complexities.",
+      "score": {
+        "composite": 0.39,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.075,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_83074dd0",
+      "doi": "10.1037/a0019861",
+      "url": "https://doi.org/10.1037/a0019861",
+      "openalex_id": null,
+      "pmid": "21171757",
+      "first_author": "Crockett",
+      "authors_display": "Crockett, M. et al.",
+      "year": 2010,
+      "title": "Impulsive choice and altruistic punishment are correlated and increase in tandem with serotonin depletion.",
+      "venue": "Emotion (Washington, D.C.)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 82,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3009596",
+      "tldr": null,
+      "abstract": "Human cooperation may partly depend on the presence of individuals willing to incur personal costs to punish noncooperators. The psychological factors that motivate such 'altruistic punishment' are not fully understood; some have argued that altruistic punishment is a deliberate act of norm enforcement that requires self-control, while others claim that it is an impulsive act driven primarily by emotion. In the current study, we addressed this question by examining the relationship between impulsive choice and altruistic punishment in the ultimatum game. As the neurotransmitter serotonin has been implicated in both impulsive choice and altruistic punishment, we investigated the effects of manipulating serotonin on both measures. Across individuals, impulsive choice and altruistic punishment were correlated and increased following serotonin depletion. These findings imply that altruistic punishment reflects the absence rather than the presence of self control, and suggest that impulsive choice and altruistic punishment share common neural mechanisms.",
+      "score": {
+        "composite": 0.38896001521180906,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25584006084723615,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06396001521180904,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Serotonin",
+        "Amino Acids",
+        "Tryptophan",
+        "Double-Blind Method",
+        "Impulsive Behavior",
+        "Altruism",
+        "Punishment",
+        "Choice Behavior",
+        "Games, Experimental",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_2783072f",
+      "doi": "10.1037/a0020069",
+      "url": "https://doi.org/10.1037/a0020069",
+      "openalex_id": null,
+      "pmid": "21171756",
+      "first_author": "van't Wout",
+      "authors_display": "van't Wout, M. et al.",
+      "year": 2010,
+      "title": "The influence of emotion regulation on social interactive decision-making.",
+      "venue": "Emotion (Washington, D.C.)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 67,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Although adequate emotion regulation is considered to be essential in every day life, it is especially important in social interactions. However, the question as to what extent two different regulation strategies are effective in changing decision-making in a consequential socially interactive context remains unanswered. We investigated the effect of expressive suppression and emotional reappraisal on strategic decision-making in a social interactive task, that is, the Ultimatum Game. As hypothesized, participants in the emotional reappraisal condition accepted unfair offers more often than participants in the suppression and no-regulation condition. Additionally, the effect of emotional reappraisal influenced the amount of money participants proposed during a second interaction with partners that had treated them unfairly in a previous interaction. These results support and extend previous findings that emotional reappraisal as compared to expressive suppression, is a powerful regulation strategy that influences and changes how we interact with others even in the face of inequity.",
+      "score": {
+        "composite": 0.3860747933594241,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2442991734376964,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0610747933594241,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Emotions",
+        "Interpersonal Relations",
+        "Decision Making",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Repression, Psychology"
+      ]
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_3456de88",
+      "doi": "10.1126/science.1155577",
+      "url": "https://doi.org/10.1126/science.1155577",
+      "openalex_id": null,
+      "pmid": "18535210",
+      "first_author": "Crockett",
+      "authors_display": "Crockett, M. et al.",
+      "year": 2008,
+      "title": "Serotonin modulates behavioral reactions to unfairness.",
+      "venue": "Science (New York, N.Y.)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 231,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Serotonin (5-HT) has long been implicated in social behavior and impulsivity, but the mechanisms through which it modulates self-control remain unclear. We observed the effects of manipulating 5-HT function on behavior in the ultimatum game, where players must decide whether to accept or reject fair or unfair monetary offers from another player. Participants with depleted 5-HT levels rejected a greater proportion of unfair offers, but not fair offers, without showing changes in mood, fairness judgment, basic reward processing, or response inhibition. Our results suggest that 5-HT plays a critical role in regulating emotion during social decision-making.",
+      "score": {
+        "composite": 0.38383819220178167,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3153527688071267,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07883819220178168,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Serotonin",
+        "Social Behavior",
+        "Emotions",
+        "Social Perception",
+        "Decision Making",
+        "Games, Experimental",
+        "Adult",
+        "Male"
+      ]
+    },
+    {
+      "rank": 31,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_ae7de6b3",
+      "doi": "10.3389/fnins.2011.00049",
+      "url": "https://doi.org/10.3389/fnins.2011.00049",
+      "openalex_id": null,
+      "pmid": "21559066",
+      "first_author": "Kirk",
+      "authors_display": "Kirk, U. et al.",
+      "year": 2011,
+      "title": "Interoception drives increased rational decision-making in meditators playing the ultimatum game.",
+      "venue": "Frontiers in neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,participants)"
+      ],
+      "citation_count": 76,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3082218",
+      "tldr": null,
+      "abstract": "Human decision-making is often conceptualized as a competition between cognitive and emotional processes in the brain. Deviations from rational processes are believed to derive from inclusion of emotional factors in decision-making. Here, we investigate whether experienced Buddhist meditators are better equipped to regulate emotional processes compared with controls during economic decision-making in the Ultimatum Game. We show that meditators accept unfair offers on more than half of the trials, whereas controls only accept unfair offers on one-quarter of the trials. By applying fMRI we show that controls recruit the anterior insula during unfair offers. Such responses are powerful predictors of rejecting offers in social interaction. By contrast, meditators display attenuated activity in high-level emotional representations of the anterior insula and increased activity in the low-level interoceptive representations of the posterior insula. In addition we show that a subset of control participants who play rationally (i.e., accepts >85% unfair offers) recruits the dorsolateral prefrontal cortex presumably reflecting increased cognitive demands, whereas rational meditators by contrast display elevated activity in the somatosensory cortex and posterior superior temporal cortex. In summary, when assessing unfairness in the Ultimatum Game, meditators activate a different network of brain areas compared with controls enabling them to uncouple negative emotional reactions from their behavior. These findings highlight the clinically and socially important possibility that sustained training in mindfulness meditation may impact distinct domains of human decision-making.",
+      "score": {
+        "composite": 0.3778739267871979,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25149570714879144,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06287392678719786,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 32,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_9a9a9659",
+      "doi": "10.3389/fnhum.2011.00131",
+      "url": "https://doi.org/10.3389/fnhum.2011.00131",
+      "openalex_id": null,
+      "pmid": "22087088",
+      "first_author": "Wu",
+      "authors_display": "Wu, Y. et al.",
+      "year": 2011,
+      "title": "Social Comparison Affects Brain Responses to Fairness in Asset Division: An ERP Study with the Ultimatum Game.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 72,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3213677",
+      "tldr": null,
+      "abstract": "Previous studies have shown that social comparison influences individual's fairness consideration and other-regarding behavior. However, it is not clear how social comparison affects the brain activity in evaluating fairness during asset distribution. In this study, participants, acting as recipients in the ultimatum game, were informed not only of offers to themselves but also of the average amount of offers in other allocator-recipient dyads. Behavioral results showed that the participants were more likely to reject division schemes when they were offered less than the other recipients, especially when the offers were highly unequal. Event-related brain potentials recorded from the participants showed that highly unequal offers elicited more negative-going medial frontal negativity than moderately unequal offers in an early time window (270-360 ms) and this effect was not significantly modulated by social comparison. In a later time window (450-650 ms), however, the late positive potential (LPP) was more positive for moderately unequal offers than for highly unequal offers when the other recipients were offered less than the participants, whereas this distinction disappeared when the other recipients were offered the same as or more than the participants. These findings suggest that the brain activity in evaluating fairness in asset division entails both an earlier (semi-) automatic process in which the brain responds to fairness at an abstract level and a later appraisal process in which factors related to social comparison and fairness norms come into play.",
+      "score": {
+        "composite": 0.37710177634316977,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24840710537267913,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06210177634316978,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 33,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_073b7cda",
+      "doi": "10.1523/jneurosci.4606-06.2007",
+      "url": "https://doi.org/10.1523/jneurosci.4606-06.2007",
+      "openalex_id": null,
+      "pmid": "17251437",
+      "first_author": "Koenigs",
+      "authors_display": "Koenigs, M., & Tranel, D.",
+      "year": 2007,
+      "title": "Irrational economic decision-making after ventromedial prefrontal damage: evidence from the Ultimatum Game.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 276,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Emotion regulation is often critical for adaptive decision making. Here, we investigate whether emotion regulation defects following focal prefrontal brain damage are associated with exceptionally irrational economic decision making in situations of unfair treatment. In the Ultimatum Game, two players are given one opportunity to split a sum of money. One player (the proposer) offers a portion of the money to the second player (the responder) and keeps the rest. The responder can either accept the offer (in which case both players split the money as proposed) or reject the offer (in which case both players get nothing). Relatively low Ultimatum offers are often rejected, and this \"irrational\" behavior has been attributed to an emotional reaction to unfair treatment. Using the lesion method, we tested the hypothesis that damage to ventromedial prefrontal cortex (VMPC), an area critical for the modulation of emotional reactions, would result in exaggerated irrational economic decisions. Subjects acted as the responder to 22 different proposers who offered various splits of 10 dollars. Offers ranged from fair (give 5 dollars, keep 5 dollars) to extremely unfair (give 1 dollar, keep 9 dollars). The rejection rate of the VMPC group was higher than the rejection rates of the comparison groups for each of the most unfair offers (7 dollars/3 dollars, 8 dollars/2 dollars, 9 dollars/1 dollars). These results suggest that emotion regulation processes subserved by VMPC are a critical component of normal economic decision making.",
+      "score": {
+        "composite": 0.3764042137235153,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32561685489406117,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08140421372351529,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Emotions",
+        "Decision Making",
+        "Neuropsychological Tests",
+        "Games, Experimental",
+        "Economics",
+        "Adult",
+        "Aged",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 34,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_183c5a11",
+      "doi": "10.1098/rspb.2007.0546",
+      "url": "https://doi.org/10.1098/rspb.2007.0546",
+      "openalex_id": null,
+      "pmid": "17613451",
+      "first_author": "Burnham",
+      "authors_display": "Burnham, T.",
+      "year": 2007,
+      "title": "High-testosterone men reject low ultimatum game offers.",
+      "venue": "Proceedings. Biological sciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 91,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC1950304",
+      "tldr": null,
+      "abstract": "The ultimatum game is a simple negotiation with the interesting property that people frequently reject offers of 'free' money. These rejections contradict the standard view of economic rationality. This divergence between economic theory and human behaviour is important and has no broadly accepted cause. This study examines the relationship between ultimatum game rejections and testosterone. In a variety of species, testosterone is associated with male seeking dominance. If low ultimatum game offers are interpreted as challenges, then high-testosterone men may be more likely to reject such offers. In this experiment, men who reject low offers ($5 out of $40) have significantly higher testosterone levels than those who accept. In addition, high testosterone levels are associated with higher ultimatum game offers, but this second finding is not statistically significant.",
+      "score": {
+        "composite": 0.26045012410322127,
+        "breakdown": {
+          "raw": {
+            "citations": 0.261800496412885,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06545012410322125,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.01,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Testosterone",
+        "Choice Behavior",
+        "Game Theory",
+        "Male"
+      ]
+    }
+  ]
+}

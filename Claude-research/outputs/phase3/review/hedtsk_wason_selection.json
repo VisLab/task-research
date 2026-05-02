@@ -1,0 +1,657 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_wason_selection",
+    "name": "Wason Selection Task",
+    "aliases": [
+      "Wason",
+      "Card Selection Task"
+    ],
+    "category_id": "reasoning_and_problem_solving",
+    "short_definition": "Four cards with letters and numbers under a conditional rule; participants choose cards to turn over to test the rule. Indexes conditional reasoning and content effects.",
+    "description": "The Wason Selection Task is the classic test of conditional reasoning. Participants see four cards, each showing information on both sides. A conditional rule is stated (e.g., \"If a card has an A on one side, then it has a 2 on the other\"). Cards show one side each (e.g., A, B, 2, 7), and participants must select which cards need to be turned over to test the rule. The correct answer is the card showing A (potentially confirming) and the card showing 7 (potentially falsifying), but most participants incorrectly select A and 2 (confirmation bias). When the rule is reframed in terms of social contracts (e.g., \"If you drink alcohol, you must be over 21\"), performance dramatically improves, supporting evolutionary theories of cheater-detection modules.",
+    "inclusion_test": {
+      "procedure": "Participants see four cards showing one side each and a conditional rule (if P then Q). They select which cards must be turned over to test the rule.",
+      "manipulation": "Rule content (abstract vs. deontic/social contract); rule polarity; number of rules; thematic context.",
+      "measurement": "Proportion selecting logically correct cards (P and not-Q); error patterns; facilitation from social-contract framing."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:58:22",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 17
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Hearne 2015 — Interactions between default mode and control networks as a function of incre… (Human brain mapping, foundational, 60×)",
+      "doi": "10.1002/hbm.22802",
+      "pub_id": "pub_e49bc16d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5561690516186011,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23800953980773776,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05950238495193444,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Human brain mapping",
+      "citation_count": 60,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Berthet 2024 — A common factor underlying individual differences in confirmation bias. (Scientific reports, recent_primary, 3×)",
+      "doi": "10.1038/s41598-024-78053-7",
+      "pub_id": "pub_57e1e7e4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.546732429678989,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Scientific reports",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Cresswell 2020 — Does mathematics training lead to better logical thinking and reasoning? A cr… (PloS one, recent_primary, 3×)",
+      "doi": "10.1371/journal.pone.0236153",
+      "pub_id": "pub_d3df66b1",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.526732429678989,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "PloS one",
+      "citation_count": 3,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Ermer 2010 — Psychopaths are impaired in social exchange and precautionary reasoning. (Psychological science, foundational, 14×)",
+      "doi": "10.1177/0956797610384148",
+      "pub_id": "pub_a5ebd6e8",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5058640370699425,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.26666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.04,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Psychological science",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Bruckmaier 2021 — Tversky and Kahneman's Cognitive Illusions: Who Can Solve Them, and Why? (Frontiers in psychology, recent_primary, 6×)",
+      "doi": "10.3389/fpsyg.2021.584689",
+      "pub_id": "pub_357a3c69",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.48483252594540904,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Frontiers in psychology",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Rossi 2015 — Helping reasoners succeed in the Wason selection task: when executive learnin… (PloS one, foundational, 1×)",
+      "doi": "10.1371/journal.pone.0123024",
+      "pub_id": "pub_e9e92293",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4666995481728278,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "PloS one",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Canessa 2005 — The effect of social content on deductive reasoning: an fMRI study. (Human brain mapping, foundational, 34×)",
+      "doi": "10.1002/hbm.20114",
+      "pub_id": "pub_34f21887",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.45812815538724055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2005,
+      "venue": "Human brain mapping",
+      "citation_count": 34,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Jung 2014 — How emotions affect logical reasoning: evidence from experiments with mood-ma… (Frontiers in psychology, foundational, 37×)",
+      "doi": "10.3389/fpsyg.2014.00570",
+      "pub_id": "pub_cf535f36",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4393185015619694,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2106073395812109,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05265183489530272,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Frontiers in psychology",
+      "citation_count": 37,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Lampinen 2024 — Language models, like humans, show content effects on reasoning tasks. (PNAS nexus, recent_primary, 23×)",
+      "doi": "10.1093/pnasnexus/pgae233",
+      "pub_id": "pub_9d2e0c84",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4326670521465946,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "PNAS nexus",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Stringer 2011 — Bayesian inference for the information gain model. (Behavior research methods, foundational, 2×)",
+      "doi": "10.3758/s13428-010-0057-5",
+      "pub_id": "pub_1619c99c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.43256840762811094,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Behavior research methods",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Kornreich 2017 — Conditional Reasoning in Schizophrenic Patients. (Evolutionary psychology : an int…, foundational, 6×)",
+      "doi": "10.1177/1474704917721713",
+      "pub_id": "pub_0c173e09",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.424832525945409,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Evolutionary psychology : an international journal of evolutionary approaches to psychology and behavior",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Kornreich 2011 — Impaired conditional reasoning in alcoholics: a negative impact on social int… (Addiction (Abingdon, England), foundational, 22×)",
+      "doi": "10.1111/j.1360-0443.2010.03346.x",
+      "pub_id": "pub_4ac05a04",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3820510277575655,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.3333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.049999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Addiction (Abingdon, England)",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Glimm 2023 — Familywise error rate control for block response-adaptive randomization. (Statistical methods in medical r…, recent_primary, 2×)",
+      "doi": "10.1177/09622802231167437",
+      "pub_id": "pub_a4dd3fa5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.30923507429477765,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Statistical methods in medical research",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Chen 2024 — Neural Correlates of Cognitive Dysfunction in Conditional Reasoning in Schizo… (Neuropsychiatric disease and tre…, recent_primary, 1×)",
+      "doi": "10.2147/ndt.s448484",
+      "pub_id": "pub_b8ff8100",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.29669954817282784,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Neuropsychiatric disease and treatment",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Hashemi 2022 — Set-shifting and inhibition interplay affect the rule-matching bias occurrenc… (Journal of medicine and life, recent_primary, 1×)",
+      "doi": "10.25122/jml-2021-0215",
+      "pub_id": "pub_f6ddc121",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.2733662148394945,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Journal of medicine and life",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Li 2025 — Neural correlates of conditional reasoning dysfunction in major depression: A… (World journal of psychiatry, recent_primary, 1×)",
+      "doi": "10.5498/wjp.v15.i12.111972",
+      "pub_id": "pub_23c215bf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.26669954817282787,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "World journal of psychiatry",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Seyyed Hashemi 2023 — The Brain Networks Basis for Deductive and Inductive Reasoning: A Functional … (Basic and clinical neuroscience, recent_primary, 2×)",
+      "doi": "10.32598/bcn.2022.3752.3",
+      "pub_id": "pub_6a7a2cfa",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.24923507429477762,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2023,
+      "venue": "Basic and clinical neuroscience",
+      "citation_count": 2,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,1139 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_pavlovian_fear_conditioning",
+    "name": "Pavlovian Fear Conditioning Task",
+    "aliases": [
+      "Fear Conditioning",
+      "Classical Conditioning",
+      "FC"
+    ],
+    "category_id": "associative_learning_and_reinforcement",
+    "short_definition": "A neutral CS is paired with an aversive US (shock, loud sound); conditioned responses (SCR, startle, amygdala BOLD) index fear learning.",
+    "description": "A neutral conditioned stimulus (CS; auditory tone or visual cue) is paired with an aversive unconditioned stimulus (US; mild shock, loud noise). After conditioning, the CS alone elicits conditioned fear responses including skin conductance increases, heart rate changes, freezing (in animals), and subjective fear ratings (in humans). Extinction is measured in a subsequent phase where the CS is presented without the US. The task is fundamental to understanding emotional learning and has been used extensively to study the amygdala's role in fear acquisition and the prefrontal cortex's role in extinction.",
+    "inclusion_test": {
+      "procedure": "Participants view a neutral stimulus (CS+) paired with an aversive unconditioned stimulus (US, typically mild shock or loud noise); another stimulus (CS−) is never paired. Acquisition is followed by extinction (CS+ presented without US).",
+      "manipulation": "CS+/CS− discrimination; reinforcement schedule (partial vs. 100%); extinction timing; reinstatement/renewal context.",
+      "measurement": "Differential SCR (CS+ > CS−); startle potentiation; fMRI amygdala and vmPFC activation; fear ratings; extinction learning curve."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:47:15",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Suryadevara 2021 — Neutralizing and protective human monoclonal antibodies recognizing the N-ter… (Cell, recent_primary, 379×)",
+      "doi": "10.1016/j.cell.2021.03.029",
+      "pub_id": "pub_037b1245",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5984803458432955,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3439213833731819,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08598034584329547,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cell",
+      "citation_count": 379,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Winkler 2021 — Human neutralizing antibodies against SARS-CoV-2 require intact Fc effector f… (Cell, recent_primary, 352×)",
+      "doi": "10.1016/j.cell.2021.02.026",
+      "pub_id": "pub_80552694",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.597413537161537,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3396541486461482,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08491353716153704,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cell",
+      "citation_count": 352,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Li 2021 — In vitro and in vivo functions of SARS-CoV-2 infection-enhancing and neutrali… (Cell, recent_primary, 306×)",
+      "doi": "10.1016/j.cell.2021.06.021",
+      "pub_id": "pub_4adb3f0c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5953926185762644,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33157047430505726,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08289261857626432,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cell",
+      "citation_count": 306,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Hutchison 2013 — Dynamic functional connectivity: promise, issues, and interpretations. (NeuroImage, key_review, 2k×)",
+      "doi": "10.1016/j.neuroimage.2013.05.079",
+      "pub_id": "pub_5fede9c7",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5944403397256263,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4477613589025052,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.1119403397256263,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "NeuroImage",
+      "citation_count": 2283,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Logan 2021 — Rescue of a lysosomal storage disorder caused by Grn loss of function with a … (Cell, recent_primary, 202×)",
+      "doi": "10.1016/j.cell.2021.08.002",
+      "pub_id": "pub_96abbc70",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5894054069620405,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30762162784816166,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07690540696204042,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cell",
+      "citation_count": 202,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Andreano 2021 — Extremely potent human monoclonal antibodies from COVID-19 convalescent patie… (Cell, recent_primary, 197×)",
+      "doi": "10.1016/j.cell.2021.02.035",
+      "pub_id": "pub_9fef28a8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5890444309375054,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30617772375002117,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07654443093750529,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cell",
+      "citation_count": 197,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Quijano-Rubio 2021 — De novo design of modular and tunable protein biosensors. (Nature, recent_primary, 190×)",
+      "doi": "10.1038/s41586-021-03258-z",
+      "pub_id": "pub_f9a6ad75",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5885234455530527,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3040937822122107,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07602344555305267,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Nature",
+      "citation_count": 190,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Lei 2020 — Neutralization of SARS-CoV-2 spike pseudotyped virus by recombinant ACE2-Ig. (Nature communications, recent_primary, 346×)",
+      "doi": "10.1038/s41467-020-16048-4",
+      "pub_id": "pub_cf006760",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5871653987120763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33866159484830527,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08466539871207632,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 346,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Yamin 2021 — Fc-engineered antibody therapeutics with improved anti-SARS-CoV-2 efficacy. (Nature, recent_primary, 171×)",
+      "doi": "10.1038/s41586-021-04017-w",
+      "pub_id": "pub_f4b16d1a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5870068343173075,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29802733726922986,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07450683431730747,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature",
+      "citation_count": 171,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Atyeo 2021 — Compromised SARS-CoV-2-specific placental antibody transfer. (Cell, recent_primary, 165×)",
+      "doi": "10.1016/j.cell.2020.12.027",
+      "pub_id": "pub_32a32e58",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5864928967179702,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29597158687188097,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07399289671797024,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cell",
+      "citation_count": 165,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Yan 2019 — Reduced default mode network functional connectivity in patients with recurre… (Proceedings of the National Acad…, recent_primary, 620×)",
+      "doi": "10.1073/pnas.1900390116",
+      "pub_id": "pub_302392d0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5855895839752318,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37235833590092704,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09308958397523176,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 620,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Gu 2021 — Heritability and interindividual variability of regional structure-function c… (Nature communications, recent_primary, 152×)",
+      "doi": "10.1038/s41467-021-25184-4",
+      "pub_id": "pub_c6408c66",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5853125122699903,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29125004907996116,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07281251226999029,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature communications",
+      "citation_count": 152,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Maren 2013 — The contextual brain: implications for fear conditioning, extinction and psyc… (Nature reviews. Neuroscience, key_review, 1k×)",
+      "doi": "10.1038/nrn3492",
+      "pub_id": "pub_cea1b9d3",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5853043342490531,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4112173369962124,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.1028043342490531,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Nature reviews. Neuroscience",
+      "citation_count": 1214,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Zohar 2020 — Compromised Humoral Functional Evolution Tracks with SARS-CoV-2 Mortality. (Cell, recent_primary, 297×)",
+      "doi": "10.1016/j.cell.2020.10.052",
+      "pub_id": "pub_c67594a7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5849619438449672,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3298477753798688,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0824619438449672,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Cell",
+      "citation_count": 297,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Hanke 2020 — An alpaca nanobody neutralizes SARS-CoV-2 by blocking receptor interaction. (Nature communications, recent_primary, 289×)",
+      "doi": "10.1038/s41467-020-18174-5",
+      "pub_id": "pub_b841da69",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5845680586312908,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3282722345251632,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0820680586312908,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 289,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Selva 2021 — Systems serology detects functionally distinct coronavirus antibody features … (Nature communications, recent_primary, 144×)",
+      "doi": "10.1038/s41467-021-22236-7",
+      "pub_id": "pub_34995eef",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5845351771251296,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2881407085005183,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07203517712512958,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature communications",
+      "citation_count": 144,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "LeDoux 2014 — Coming to terms with fear. (Proceedings of the National Acad…, key_review, 499×)",
+      "doi": "10.1073/pnas.1400335111",
+      "pub_id": "pub_8be2b682",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5824526513378171,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3598106053512682,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08995265133781705,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 499,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Glasgow 2020 — Engineered ACE2 receptor traps potently neutralize SARS-CoV-2. (Proceedings of the National Acad…, recent_primary, 232×)",
+      "doi": "10.1073/pnas.2016093117",
+      "pub_id": "pub_9338f400",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5814004477317112,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31560179092684454,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07890044773171113,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 232,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Ibrahim 2021 — Diagnostic power of resting-state fMRI for detection of network connectivity … (Human brain mapping, key_review, 175×)",
+      "doi": "10.1002/hbm.25369",
+      "pub_id": "pub_ca6c135c",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5773395935331003,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29935837413240124,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07483959353310031,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Human brain mapping",
+      "citation_count": 175,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Saviola 2020 — Trait and state anxiety are mapped differently in the human brain. (Scientific reports, recent_primary, 156×)",
+      "doi": "10.1038/s41598-020-68008-z",
+      "pub_id": "pub_2d66128e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5756860656060147,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2927442624240585,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07318606560601462,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 156,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Provençal 2020 — Glucocorticoid exposure during hippocampal neurogenesis primes future stress … (Proceedings of the National Acad…, recent_primary, 149×)",
+      "doi": "10.1073/pnas.1820842116",
+      "pub_id": "pub_76039f2d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5750258813512686,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2901035254050744,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0725258813512686,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 149,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Milad 2012 — Fear extinction as a model for translational neuroscience: ten years of progr… (Annual review of psychology, key_review, 1k×)",
+      "doi": "10.1146/annurev.psych.121208.131631",
+      "pub_id": "pub_5a2d52e3",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5738255598712839,
+        "breakdown": {
+          "raw": {
+            "citations": 0.40530223948513555,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.10132555987128389,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Annual review of psychology",
+      "citation_count": 1096,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Reid 2019 — Advancing functional connectivity research from association to causation. (Nature neuroscience, recent_primary, 232×)",
+      "doi": "10.1038/s41593-019-0510-4",
+      "pub_id": "pub_90168a56",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5714004477317112,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31560179092684454,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07890044773171113,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature neuroscience",
+      "citation_count": 232,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Liégeois 2019 — Resting brain dynamics at different timescales capture distinct aspects of hu… (Nature communications, recent_primary, 222×)",
+      "doi": "10.1038/s41467-019-10317-7",
+      "pub_id": "pub_de7bbcc7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5707655043373253,
+        "breakdown": {
+          "raw": {
+            "citations": 0.313062017349301,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07826550433732525,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature communications",
+      "citation_count": 222,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Dixon 2018 — Heterogeneity within the frontoparietal control network and its relationship … (Proceedings of the National Acad…, recent_primary, 440×)",
+      "doi": "10.1073/pnas.1715766115",
+      "pub_id": "pub_4ad0b6a9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5706352004803734,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3525408019214935,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08813520048037338,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 440,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Jennewein 2019 — Fc Glycan-Mediated Regulation of Placental Antibody Transfer. (Cell, recent_primary, 180×)",
+      "doi": "10.1016/j.cell.2019.05.044",
+      "pub_id": "pub_833f1bbd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5677450650995763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30098026039830517,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07524506509957629,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Cell",
+      "citation_count": 180,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Cole 2019 — Task activations produce spurious but systematic inflation of task functional… (NeuroImage, recent_primary, 172×)",
+      "doi": "10.1016/j.neuroimage.2018.12.054",
+      "pub_id": "pub_89f112a2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5670907440502406,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2983629762009623,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07459074405024058,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "NeuroImage",
+      "citation_count": 172,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Zhang 2018 — Mxra8 is a receptor for multiple arthritogenic alphaviruses. (Nature, recent_primary, 334×)",
+      "doi": "10.1038/s41586-018-0121-3",
+      "pub_id": "pub_d36cd68f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5666559834954997,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33662393398199897,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08415598349549974,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature",
+      "citation_count": 334,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Ha 2019 — Differential control of human Treg and effector T cells in tumor immunity by … (Proceedings of the National Acad…, recent_primary, 163×)",
+      "doi": "10.1073/pnas.1812186116",
+      "pub_id": "pub_5bebb9e7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5663174474377521,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29526978975100837,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07381744743775209,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 163,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Sharp 2019 — Insights into IgM-mediated complement activation based on in situ structures … (Proceedings of the National Acad…, recent_primary, 151×)",
+      "doi": "10.1073/pnas.1901841116",
+      "pub_id": "pub_3357036d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5652175979076252,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2908703916305006,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07271759790762515,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 151,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

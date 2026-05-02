@@ -1,0 +1,3774 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:34:58",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_reversal_learning",
+    "name": "Reversal Learning Task",
+    "aliases": [
+      "PRL",
+      "Probabilistic Reversal Learning"
+    ],
+    "category_id": "associative_learning_and_reinforcement",
+    "short_definition": "After initial stimulus-reward learning, the contingencies switch; perseveration and reversal speed index behavioral flexibility.",
+    "description": "Participants learn a stimulus-outcome association (e.g., stimulus A is rewarded, B is not), then contingencies are reversed. Participants must flexibly adapt their behavior to the new associations. Performance measures include trials to criterion and perseverative errors (continued selection of the previously rewarded stimulus). The task can use deterministic or probabilistic contingencies. Neuroimaging consistently implicates the orbitofrontal cortex and ventrolateral prefrontal cortex in reversal learning, particularly for updating stimulus-outcome associations based on feedback.",
+    "inclusion_test": {
+      "procedure": "Participants learn to choose the rewarded stimulus over an unrewarded one. After reaching criterion, contingencies reverse — the previously correct stimulus becomes incorrect and vice versa.",
+      "manipulation": "Number of reversals; deterministic vs. probabilistic feedback; stimulus discriminability; serial vs. spatial reversals.",
+      "measurement": "Errors to criterion on initial discrimination and on reversals; perseverative errors (continuing to choose previously correct stimulus); reversal cost."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 46,
+      "picked": 26,
+      "reserve": 0,
+      "excluded": 20,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {
+      "non_human_subjects": 20
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_b96b1b13",
+      "doi": "10.1016/j.neuron.2019.05.042",
+      "url": "https://doi.org/10.1016/j.neuron.2019.05.042",
+      "openalex_id": null,
+      "pmid": "31253468",
+      "first_author": "Groman",
+      "authors_display": "Groman, S. et al.",
+      "year": 2019,
+      "title": "Orbitofrontal Circuits Control Multiple Reinforcement-Learning Processes.",
+      "venue": "Neuron",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 124,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Adaptive decision making in dynamic environments requires multiple reinforcement-learning steps that may be implemented by dissociable neural circuits. Here, we used a novel directionally specific viral ablation approach to investigate the function of several anatomically defined orbitofrontal cortex (OFC) circuits during adaptive, flexible decision making in rats trained on a probabilistic reversal learning task. Ablation of OFC neurons projecting to the nucleus accumbens selectively disrupted performance following a reversal, by disrupting the use of negative outcomes to guide subsequent choices. Ablation of amygdala neurons projecting to the OFC also impaired reversal performance, but due to disruptions in the use of positive outcomes to guide subsequent choices. Ablation of OFC neurons projecting to the amygdala, by contrast, enhanced reversal performance by destabilizing action values. Our data are inconsistent with a unitary function of the OFC in decision making. Rather, distinct OFC-amygdala-striatal circuits mediate distinct components of the action-value updating and maintenance necessary for decision making.",
+      "score": {
+        "composite": 0.7498868883254947,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27954755330197856,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06988688832549464,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Amygdala",
+        "Nucleus Accumbens",
+        "Prefrontal Cortex",
+        "Neurons",
+        "Animals",
+        "Rats",
+        "Diphtheria Toxin",
+        "Reward",
+        "Reversal Learning",
+        "Choice Behavior",
+        "Models, Neurological",
+        "Male",
+        "Feedback, Physiological",
+        "Reinforcement, Psychology"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_c79c96ec",
+      "doi": "10.1016/j.neuroimage.2014.09.018",
+      "url": "https://doi.org/10.1016/j.neuroimage.2014.09.018",
+      "openalex_id": null,
+      "pmid": "25234119",
+      "first_author": "Hauser",
+      "authors_display": "Hauser, T. et al.",
+      "year": 2015,
+      "title": "Cognitive flexibility in adolescence: neural and behavioral mechanisms of reward prediction error processing in adaptive decision making during development.",
+      "venue": "NeuroImage",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 136,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1016/j.neuroimage.2014.09.018",
+      "tldr": null,
+      "abstract": "Adolescence is associated with quickly changing environmental demands which require excellent adaptive skills and high cognitive flexibility. Feedback-guided adaptive learning and cognitive flexibility are driven by reward prediction error (RPE) signals, which indicate the accuracy of expectations and can be estimated using computational models. Despite the importance of cognitive flexibility during adolescence, only little is known about how RPE processing in cognitive flexibility deviates between adolescence and adulthood. In this study, we investigated the developmental aspects of cognitive flexibility by means of computational models and functional magnetic resonance imaging (fMRI). We compared the neural and behavioral correlates of cognitive flexibility in healthy adolescents (12-16years) to adults performing a probabilistic reversal learning task. Using a modified risk-sensitive reinforcement learning model, we found that adolescents learned faster from negative RPEs than adults. The fMRI analysis revealed that within the RPE network, the adolescents had a significantly altered RPE-response in the anterior insula. This effect seemed to be mainly driven by increased responses to negative prediction errors. In summary, our findings indicate that decision making in adolescence goes beyond merely increased reward-seeking behavior and provides a developmental perspective to the behavioral and neural mechanisms underlying cognitive flexibility in the context of reinforcement learning.",
+      "score": {
+        "composite": 0.7112137148152736,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2848548592610944,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0712137148152736,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Cognition",
+        "Learning",
+        "Reward",
+        "Decision Making",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_22004a04",
+      "doi": "10.1371/journal.pbio.3000908",
+      "url": "https://doi.org/10.1371/journal.pbio.3000908",
+      "openalex_id": null,
+      "pmid": "33108370",
+      "first_author": "Crawley",
+      "authors_display": "Crawley, D. et al.",
+      "year": 2020,
+      "title": "Modeling flexible behavior in childhood to adulthood shows age-dependent learning mechanisms and less optimal learning in autism in each age group.",
+      "venue": "PLoS biology",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 49,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7591042",
+      "tldr": null,
+      "abstract": "Flexible behavior is critical for everyday decision-making and has been implicated in restricted, repetitive behaviors (RRB) in autism spectrum disorder (ASD). However, how flexible behavior changes developmentally in ASD remains largely unknown. Here, we used a developmental approach and examined flexible behavior on a probabilistic reversal learning task in 572 children, adolescents, and adults (ASD N = 321; typical development [TD] N = 251). Using computational modeling, we quantified latent variables that index mechanisms underlying perseveration and feedback sensitivity. We then assessed these variables in relation to diagnosis, developmental stage, core autism symptomatology, and associated psychiatric symptoms. Autistic individuals showed on average more perseveration and less feedback sensitivity than TD individuals, and, across cases and controls, older age groups showed more feedback sensitivity than younger age groups. Computational modeling revealed that dominant learning mechanisms underpinning flexible behavior differed across developmental stages and reduced flexible behavior in ASD was driven by less optimal learning on average within each age group. In autistic children, perseverative errors were positively related to anxiety symptoms, and in autistic adults, perseveration (indexed by both task errors and model parameter estimates) was positively related to RRB. These findings provide novel insights into reduced flexible behavior in relation to clinical symptoms in ASD.",
+      "score": {
+        "composite": 0.7066241403898244,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Reproducibility of Results",
+        "Behavior",
+        "Learning",
+        "Task Performance and Analysis",
+        "Autistic Disorder",
+        "Intelligence Tests",
+        "Age Factors",
+        "Aging",
+        "Models, Biological",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1c9bb14a",
+      "doi": "10.1038/s41593-023-01485-3",
+      "url": "https://doi.org/10.1038/s41593-023-01485-3",
+      "openalex_id": null,
+      "pmid": "37957318",
+      "first_author": "Hattori",
+      "authors_display": "Hattori, R. et al.",
+      "year": 2023,
+      "title": "Meta-reinforcement learning via orbitofrontal cortex.",
+      "venue": "Nature neuroscience",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 39,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10689244",
+      "tldr": null,
+      "abstract": "The meta-reinforcement learning (meta-RL) framework, which involves RL over multiple timescales, has been successful in training deep RL models that generalize to new environments. It has been hypothesized that the prefrontal cortex may mediate meta-RL in the brain, but the evidence is scarce. Here we show that the orbitofrontal cortex (OFC) mediates meta-RL. We trained mice and deep RL models on a probabilistic reversal learning task across sessions during which they improved their trial-by-trial RL policy through meta-learning. Ca<sup>2+</sup>/calmodulin-dependent protein kinase II-dependent synaptic plasticity in OFC was necessary for this meta-learning but not for the within-session trial-by-trial RL in experts. After meta-learning, OFC activity robustly encoded value signals, and OFC inactivation impaired the RL behaviors. Longitudinal tracking of OFC activity revealed that meta-learning gradually shapes population value coding to guide the ongoing behavioral policy. Our results indicate that two distinct RL algorithms with distinct neural mechanisms and timescales coexist in OFC to support adaptive decision-making.",
+      "score": {
+        "composite": 0.6933942739603152,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Animals",
+        "Mice",
+        "Reward",
+        "Reversal Learning",
+        "Reinforcement, Psychology"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f8b64c04",
+      "doi": "10.1007/s00213-020-05454-7",
+      "url": "https://doi.org/10.1007/s00213-020-05454-7",
+      "openalex_id": null,
+      "pmid": "32025777",
+      "first_author": "Verharen",
+      "authors_display": "Verharen, J. et al.",
+      "year": 2020,
+      "title": "Modulation of value-based decision making behavior by subregions of the rat prefrontal cortex.",
+      "venue": "Psychopharmacology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 62,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7196947",
+      "tldr": null,
+      "abstract": "<h4>Rationale</h4>During value-based decision-making, organisms make choices on the basis of reward expectations, which have been formed during prior action-outcome learning. Although it is known that neuronal manipulations of different subregions of the rat prefrontal cortex (PFC) have qualitatively different effects on behavioral tasks involving value-based decision-making, it is unclear how these regions contribute to the underlying component processes.<h4>Objectives</h4>Assessing how different regions of the rodent PFC contribute to component processes of value-based decision-making behavior, including reward (or positive feedback) learning, punishment (or negative feedback) learning, response persistence, and exploration versus exploitation.<h4>Methods</h4>We performed behavioral modeling of data of rats in a probabilistic reversal learning task after pharmacological inactivation of five PFC subregions, to assess how inactivation of these different regions affected the structure of responding of animals in the task.<h4>Results</h4>Our results show reductions in reward and punishment learning after PFC subregion inactivation. The prelimbic, infralimbic, lateral orbital, and medial orbital PFC particularly contributed to punishment learning, and the prelimbic and lateral orbital PFC to reward learning. In addition, response persistence depended on the infralimbic and medial orbital PFC. As a result, pharmacological inactivation of the infralimbic and lateral orbitofrontal cortex reduced the number of reversals achieved, whereas inactivation of the prelimbic and medial orbitofrontal cortex decreased the number of rewards obtained. Finally, using simulated data, we explain discrepancies with a previous study and demonstrate complex, interacting relationships between conventional measures of probabilistic reversal learning performance, such as win-stay/lose-switch behavior, and component processes of value-based decision-making.<h4>Conclusions</h4>Together, our data",
+      "score": {
+        "composite": 0.689969341201631,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23987736480652397,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05996934120163099,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Animals",
+        "Rats",
+        "Rats, Long-Evans",
+        "GABA Agonists",
+        "Cognition",
+        "Reward",
+        "Reversal Learning",
+        "Decision Making",
+        "Male"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_15fffa24",
+      "doi": "10.1016/j.neuron.2020.03.024",
+      "url": "https://doi.org/10.1016/j.neuron.2020.03.024",
+      "openalex_id": null,
+      "pmid": "32315603",
+      "first_author": "Bartolo",
+      "authors_display": "Bartolo, R., & Averbeck, B.",
+      "year": 2020,
+      "title": "Prefrontal Cortex Predicts State Switches during Reversal Learning.",
+      "venue": "Neuron",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, N.I.H., Intramural",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 107,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Reinforcement learning allows organisms to predict future outcomes and to update their beliefs about value in the world. The dorsal-lateral prefrontal cortex (dlPFC) integrates information carried by reward circuits, which can be used to infer the current state of the world under uncertainty. Here, we explored the dlPFC computations related to updating current beliefs during stochastic reversal learning. We recorded the activity of populations up to 1,000 neurons, simultaneously, in two male macaques while they executed a two-armed bandit reversal learning task. Behavioral analyses using a Bayesian framework showed that animals inferred reversals and switched their choice preference rapidly, rather than slowly updating choice values, consistent with state inference. Furthermore, dlPFC neural populations accurately encoded choice preference switches. These results suggest that prefrontal neurons dynamically encode decisions associated with Bayesian subjective values, highlighting the role of the PFC in representing a belief about the current state of the world.",
+      "score": {
+        "composite": 0.6327709858966554,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2710839435866214,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06777098589665535,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Neurons",
+        "Animals",
+        "Macaca mulatta",
+        "Bayes Theorem",
+        "Reversal Learning",
+        "Choice Behavior",
+        "Male"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a9d71a55",
+      "doi": "10.3758/s13428-021-01739-7",
+      "url": "https://doi.org/10.3758/s13428-021-01739-7",
+      "openalex_id": null,
+      "pmid": "35167111",
+      "first_author": "Waltmann",
+      "authors_display": "Waltmann, M. et al.",
+      "year": 2022,
+      "title": "Sufficient reliability of the behavioral and computational readouts of a probabilistic reversal learning task.",
+      "venue": "Behavior research methods",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 45,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9729159",
+      "tldr": null,
+      "abstract": "Task-based measures that capture neurocognitive processes can help bridge the gap between brain and behavior. To transfer tasks to clinical application, reliability is a crucial benchmark because it imposes an upper bound to potential correlations with other variables (e.g., symptom or brain data). However, the reliability of many task readouts is low. In this study, we scrutinized the retest reliability of a probabilistic reversal learning task (PRLT) that is frequently used to characterize cognitive flexibility in psychiatric populations. We analyzed data from N = 40 healthy subjects, who completed the PRLT twice. We focused on how individual metrics are derived, i.e., whether data were partially pooled across participants and whether priors were used to inform estimates. We compared the reliability of the resulting indices across sessions, as well as the internal consistency of a selection of indices. We found good to excellent reliability for behavioral indices as derived from mixed-effects models that included data from both sessions. The internal consistency was good to excellent. For indices derived from computational modeling, we found excellent reliability when using hierarchical estimation with empirical priors and including data from both sessions. Our results indicate that the PRLT is well equipped to measure individual differences in cognitive flexibility in reinforcement learning. However, this depends heavily on hierarchical modeling of the longitudinal data (whether sessions are modeled separately or jointly), on estimation methods, and on the combination of parameters included in computational models. We discuss implications for the applicability of PRLT indices in psychiatric research and as diagnostic tools.",
+      "score": {
+        "composite": 0.62541724259706,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22166897038824016,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05541724259706004,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Reproducibility of Results",
+        "Reversal Learning"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_22699c75",
+      "doi": "10.1016/j.neuroscience.2019.01.062",
+      "url": "https://doi.org/10.1016/j.neuroscience.2019.01.062",
+      "openalex_id": null,
+      "pmid": "30742967",
+      "first_author": "Galaj",
+      "authors_display": "Galaj, E. et al.",
+      "year": 2019,
+      "title": "Persistent Alterations of Accumbal Cholinergic Interneurons and Cognitive Dysfunction after Adolescent Intermittent Ethanol Exposure.",
+      "venue": "Neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 36,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Adolescent binge drinking renders young drinkers vulnerable to alcohol use disorders in adulthood; therefore, understanding alcohol-induced brain damage and associated cognitive dysfunctions is of paramount importance. Here we investigated the effects of binge-like adolescent intermittent ethanol (AIE) exposure on nonspatial working memory, behavioral flexibility and cholinergic alterations in the nucleus accumbens (NAc) in male and female rats. On postnatal days P25-57 rats were intubated with water or ethanol (at a dose of 5 g/kg) on a 2-day-on/2-day-off cycle and were then tested in adulthood on social recognition and probabilistic reversal learning tasks. During the social recognition task AIE-treated rats spent similar amounts of time interacting with familiar and novel juveniles, indicating an impaired ability to sustain memory of the familiar juvenile. During probabilistic reversal learning, AIE-treated male and female rats showed behavioral inflexibility as indicated by a higher number of trials needed to complete three reversals within a session, longer response latencies for lever selection, and for males, a higher number of errors as compared to water-treated rats. AIE exposure also reduced the number of cholinergic interneurons in the NAc in males and females. These findings indicate AIE-related pathologies of accumbal cholinergic interneurons and long lasting cognitive-behavioral deficits, which may be associated with cortico-striatal hypofunction.",
+      "score": {
+        "composite": 0.6122658283292279,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2090633133169118,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05226582832922795,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Nucleus Accumbens",
+        "Interneurons",
+        "Animals",
+        "Rats",
+        "Rats, Sprague-Dawley",
+        "Ethanol",
+        "Memory, Short-Term",
+        "Age Factors",
+        "Female",
+        "Male",
+        "Cholinergic Neurons",
+        "Cognitive Dysfunction"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_b3917bda",
+      "doi": "10.1038/nn.4287",
+      "url": "https://doi.org/10.1038/nn.4287",
+      "openalex_id": null,
+      "pmid": "27110917",
+      "first_author": "Parker",
+      "authors_display": "Parker, N. et al.",
+      "year": 2016,
+      "title": "Reward and choice encoding in terminals of midbrain dopamine neurons depends on striatal target.",
+      "venue": "Nature neuroscience",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 307,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4882228",
+      "tldr": null,
+      "abstract": "Dopaminergic (DA) neurons in the midbrain provide rich topographic innervation of the striatum and are central to learning and to generating actions. Despite the importance of this DA innervation, it remains unclear whether and how DA neurons are specialized on the basis of the location of their striatal target. Thus, we sought to compare the function of subpopulations of DA neurons that target distinct striatal subregions in the context of an instrumental reversal learning task. We identified key differences in the encoding of reward and choice in dopamine terminals in dorsal versus ventral striatum: DA terminals in ventral striatum responded more strongly to reward consumption and reward-predicting cues, whereas DA terminals in dorsomedial striatum responded more strongly to contralateral choices. In both cases the terminals encoded a reward prediction error. Our results suggest that the DA modulation of the striatum is spatially organized to support the specialized function of the targeted subregion.",
+      "score": {
+        "composite": 0.6079396897995203,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33175875919808107,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08293968979952027,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Mesencephalon",
+        "Corpus Striatum",
+        "Animals",
+        "Mice, Inbred C57BL",
+        "Mice, Transgenic",
+        "Dopamine",
+        "Learning",
+        "Reward",
+        "Choice Behavior",
+        "Male",
+        "Dopaminergic Neurons"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_063053b0",
+      "doi": "10.1038/s41467-018-04055-5",
+      "url": "https://doi.org/10.1038/s41467-018-04055-5",
+      "openalex_id": null,
+      "pmid": "29686225",
+      "first_author": "Howard",
+      "authors_display": "Howard, J., & Kahnt, T.",
+      "year": 2018,
+      "title": "Identity prediction errors in the human midbrain update reward-identity expectations in the orbitofrontal cortex.",
+      "venue": "Nature communications",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 74,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5913228",
+      "tldr": null,
+      "abstract": "There is general consensus that dopaminergic midbrain neurons signal reward prediction errors, computed as the difference between expected and received reward value. However, recent work in rodents shows that these neurons also respond to errors related to inferred value and sensory features, indicating an expanded role for dopamine beyond learning cached values. Here we utilize a transreinforcer reversal learning task and functional magnetic resonance imaging (fMRI) to test whether prediction error signals in the human midbrain are evoked when the expected identity of an appetitive food odor reward is violated, while leaving value matched. We found that midbrain fMRI responses to identity and value errors are correlated, suggesting a common neural origin for these error signals. Moreover, changes in reward-identity expectations, encoded in the orbitofrontal cortex (OFC), are directly related to midbrain activity, demonstrating that identity-based error signals in the midbrain support the formation of outcome identity expectations in OFC.",
+      "score": {
+        "composite": 0.6074929998451074,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24997199938042958,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.062492999845107394,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Mesencephalon",
+        "Prefrontal Cortex",
+        "Humans",
+        "Dopamine",
+        "Magnetic Resonance Imaging",
+        "Reward",
+        "Reversal Learning",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Functional Neuroimaging",
+        "Dopaminergic Neurons",
+        "Healthy Volunteers"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_c910525a",
+      "doi": "10.1016/j.neubiorev.2016.03.004",
+      "url": "https://doi.org/10.1016/j.neubiorev.2016.03.004",
+      "openalex_id": null,
+      "pmid": "26959336",
+      "first_author": "Rizvi",
+      "authors_display": "Rizvi, S. et al.",
+      "year": 2016,
+      "title": "Assessing anhedonia in depression: Potentials and pitfalls.",
+      "venue": "Neuroscience and biobehavioral reviews",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 371,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The resurgence of interest in anhedonia within major depression has been fuelled by clinical trials demonstrating its utility in predicting antidepressant response as well as recent conceptualizations focused on the role and manifestation of anhedonia in depression. Historically, anhedonia has been understood as a \"loss of pleasure\", yet neuropsychological and neurobiological studies reveal a multifaceted reconceptualization that emphasizes different facets of hedonic function, including desire, effort/motivation, anticipation and consummatory pleasure. To ensure generalizability across studies, evaluation of the available subjective and objective methods to assess anhedonia is necessary. The majority of research regarding anhedonia and its neurobiological underpinnings comes from preclinical research, which uses primary reward (e.g. food) to probe hedonic responding. In contrast, behavioural studies in humans primarily use secondary reward (e.g. money) to measure many aspects of reward responding, including delay discounting, response bias, prediction error, probabilistic reversal learning, effort, anticipation and consummatory pleasure. The development of subjective scales to measure anhedonia has also increased in the last decade. This review will assess the current methodology to measure anhedonia, with a focus on scales and behavioural tasks in humans. Limitations of current work and recommendations for future studies are discussed.",
+      "score": {
+        "composite": 0.6006723685141393,
+        "breakdown": {
+          "raw": {
+            "citations": 0.34268947405655714,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08567236851413929,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Depression",
+        "Motivation",
+        "Reward",
+        "Anhedonia"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_35d47bc2",
+      "doi": "10.1016/j.neuron.2016.09.025",
+      "url": "https://doi.org/10.1016/j.neuron.2016.09.025",
+      "openalex_id": null,
+      "pmid": "27720488",
+      "first_author": "Costa",
+      "authors_display": "Costa, V. et al.",
+      "year": 2016,
+      "title": "Amygdala and Ventral Striatum Make Distinct Contributions to Reinforcement Learning.",
+      "venue": "Neuron",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 134,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Reinforcement learning (RL) theories posit that dopaminergic signals are integrated within the striatum to associate choices with outcomes. Often overlooked is that the amygdala also receives dopaminergic input and is involved in Pavlovian processes that influence choice behavior. To determine the relative contributions of the ventral striatum (VS) and amygdala to appetitive RL, we tested rhesus macaques with VS or amygdala lesions on deterministic and stochastic versions of a two-arm bandit reversal learning task. When learning was characterized with an RL model relative to controls, amygdala lesions caused general decreases in learning from positive feedback and choice consistency. By comparison, VS lesions only affected learning in the stochastic task. Moreover, the VS lesions hastened the monkeys' choice reaction times, which emphasized a speed-accuracy trade-off that accounted for errors in deterministic learning. These results update standard accounts of RL by emphasizing distinct contributions of the amygdala and VS to RL.",
+      "score": {
+        "composite": 0.5960008523261645,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2840034093046579,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07100085232616447,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Amygdala",
+        "Animals",
+        "Macaca mulatta",
+        "Logistic Models",
+        "Bayes Theorem",
+        "Learning",
+        "Reward",
+        "Reversal Learning",
+        "Decision Making",
+        "Choice Behavior",
+        "Reaction Time",
+        "Male",
+        "Ventral Striatum",
+        "Formative Feedback",
+        "Reinforcement, Psychology"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_07d45152",
+      "doi": "10.1016/j.bpsc.2022.03.013",
+      "url": "https://doi.org/10.1016/j.bpsc.2022.03.013",
+      "openalex_id": null,
+      "pmid": "35430406",
+      "first_author": "Sheffield",
+      "authors_display": "Sheffield, J. et al.",
+      "year": 2022,
+      "title": "Belief Updating and Paranoia in Individuals With Schizophrenia.",
+      "venue": "Biological psychiatry. Cognitive neuroscience and neuroimaging",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 37,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Persecutory delusions are among the most common delusions in schizophrenia and represent the extreme end of the paranoia continuum. Paranoia is accompanied by significant worry and distress. Identifying cognitive mechanisms underlying paranoia is critical for advancing treatment. We hypothesized that aberrant belief updating, which is related to paranoia in human and animal models, would also contribute to persecutory beliefs in individuals with schizophrenia.<h4>Methods</h4>Belief updating was assessed in 42 participants with schizophrenia and 44 healthy control participants using a 3-option probabilistic reversal learning task. Hierarchical Gaussian Filter was used to estimate computational parameters of belief updating. Paranoia was measured using the Positive and Negative Syndrome Scale and the revised Green et al. Paranoid Thoughts Scale. Unusual thought content was measured with the Psychosis Symptom Rating Scale and the Peters et al. Delusions Inventory. Worry was measured using the Dunn Worry Questionnaire.<h4>Results</h4>Paranoia was significantly associated with elevated win-switch rate and prior beliefs about volatility both in schizophrenia and across the whole sample. These relationships were specific to paranoia and did not extend to unusual thought content or measures of anxiety. We observed a significant indirect effect of paranoia on the relationship between prior beliefs about volatility and worry.<h4>Conclusions</h4>This work provides evidence that relationships between belief updating parameters and paranoia extend to schizophrenia, may be specific to persecutory beliefs, and contribute to theoretical models implicating worry in the maintenance of persecutory delusions.",
+      "score": {
+        "composite": 0.5826518348953027,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2106073395812109,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05265183489530272,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Delusions",
+        "Anxiety",
+        "Paranoid Disorders",
+        "Schizophrenia",
+        "Surveys and Questionnaires"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_6eb9fd7d",
+      "doi": "10.1016/j.neuroimage.2013.11.034",
+      "url": "https://doi.org/10.1016/j.neuroimage.2013.11.034",
+      "openalex_id": null,
+      "pmid": "24291614",
+      "first_author": "Schlagenhauf",
+      "authors_display": "Schlagenhauf, F. et al.",
+      "year": 2014,
+      "title": "Striatal dysfunction during reversal learning in unmedicated schizophrenia patients.",
+      "venue": "NeuroImage",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 204,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3991847",
+      "tldr": null,
+      "abstract": "Subjects with schizophrenia are impaired at reinforcement-driven reversal learning from as early as their first episode. The neurobiological basis of this deficit is unknown. We obtained behavioral and fMRI data in 24 unmedicated, primarily first episode, schizophrenia patients and 24 age-, IQ- and gender-matched healthy controls during a reversal learning task. We supplemented our fMRI analysis, focusing on learning from prediction errors, with detailed computational modeling to probe task solving strategy including an ability to deploy an internal goal directed model of the task. Patients displayed reduced functional activation in the ventral striatum (VS) elicited by prediction errors. However, modeling task performance revealed that a subgroup did not adjust their behavior according to an accurate internal model of the task structure, and these were also the more severely psychotic patients. In patients who could adapt their behavior, as well as in controls, task solving was best described by cognitive strategies according to a Hidden Markov Model. When we compared patients and controls who acted according to this strategy, patients still displayed a significant reduction in VS activation elicited by informative errors that precede salient changes of behavior (reversals). Thus, our study shows that VS dysfunction in schizophrenia patients during reward-related reversal learning remains a core deficit even when controlling for task solving strategies. This result highlights VS dysfunction is tightly linked to a reward-related reversal learning deficit in early, unmedicated schizophrenia patients.",
+      "score": {
+        "composite": 0.5820473138672613,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3081892554690449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07704731386726123,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Basal Ganglia",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Reward",
+        "Reversal Learning",
+        "Schizophrenia",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a70d817f",
+      "doi": "10.1037/a0031721",
+      "url": "https://doi.org/10.1037/a0031721",
+      "openalex_id": null,
+      "pmid": "23527643",
+      "first_author": "D'Cruz",
+      "authors_display": "D'Cruz, A. et al.",
+      "year": 2013,
+      "title": "Reduced behavioral flexibility in autism spectrum disorders.",
+      "venue": "Neuropsychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 187,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Restricted and repetitive behaviors, and a pronounced preference for behavioral and environmental consistency, are distinctive characteristics of autism spectrum disorders (ASD). Whether these clinical features of ASD are related to fundamental neuropsychological impairments in behavioral flexibility remains to be clarified.<h4>Method</h4>Forty-one individuals with ASD and 37 matched controls performed a probabilistic reversal learning task to assess behavioral flexibility. Participants learned to choose the correct stimulus location from a pair of locations to win points (acquisition). After making the correct choice over multiple trials, the rewarded stimulus location changed without warning (reversal). Feedback was provided on an 80:20 probabilistic schedule, with 80% of correct choices and 20% of incorrect choices randomly reinforced.<h4>Results</h4>ASD and control participants performed comparably during acquisition. At reversal, ASD participants initially chose the new correct location as quickly as controls, but then more frequently reverted back to the previously preferred response. The ASD group also more frequently shifted back to the previous response choice immediately following intermittent non-reinforcement of the new correct response. The number of regressive errors was positively correlated with independently ascertained clinical ratings of restricted and repetitive behaviors, but not other core features of ASD.<h4>Conclusions</h4>Restricted and repetitive behaviors in ASD are associated with neurocognitive deficits in flexible choice behavior. Preclinical research has established that frontostriatal circuitry supports flexibility on reversal learning tasks. Thus, alterations in this circuitry may contribute to behavioral rigidity in ASD and represent a target for therapeutic intervention.",
+      "score": {
+        "composite": 0.5757942947766482,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30317717910659286,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07579429477664822,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Case-Control Studies",
+        "Photic Stimulation",
+        "Probability Learning",
+        "Reversal Learning",
+        "Choice Behavior",
+        "Child Development Disorders, Pervasive",
+        "Age Factors",
+        "Adolescent",
+        "Adult",
+        "Child",
+        "Female",
+        "Male",
+        "Statistics as Topic",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ca56865f",
+      "doi": "10.1038/s41467-023-38671-7",
+      "url": "https://doi.org/10.1038/s41467-023-38671-7",
+      "openalex_id": null,
+      "pmid": "37322004",
+      "first_author": "Wang",
+      "authors_display": "Wang, B. et al.",
+      "year": 2023,
+      "title": "Human orbitofrontal cortex signals decision outcomes to sensory cortex during behavioral adaptations.",
+      "venue": "Nature communications",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 32,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC10272188",
+      "tldr": null,
+      "abstract": "The ability to respond flexibly to an ever-changing environment relies on the orbitofrontal cortex (OFC). However, how the OFC associates sensory information with predicted outcomes to enable flexible sensory learning in humans remains elusive. Here, we combine a probabilistic tactile reversal learning task with functional magnetic resonance imaging (fMRI) to investigate how lateral OFC (lOFC) interacts with the primary somatosensory cortex (S1) to guide flexible tactile learning in humans. fMRI results reveal that lOFC and S1 exhibit distinct task-dependent engagement: while the lOFC responds transiently to unexpected outcomes immediately following reversals, S1 is persistently engaged during re-learning. Unlike the contralateral stimulus-selective S1, activity in ipsilateral S1 mirrors the outcomes of behavior during re-learning, closely related to top-down signals from lOFC. These findings suggest that lOFC contributes to teaching signals to dynamically update representations in sensory areas, which implement computations critical for adaptive behavior.",
+      "score": {
+        "composite": 0.5656098084698998,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Parietal Lobe",
+        "Humans",
+        "Adaptation, Psychological",
+        "Cognition",
+        "Reversal Learning"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_fcd851e8",
+      "doi": "10.1007/s00213-019-05325-w",
+      "url": "https://doi.org/10.1007/s00213-019-05325-w",
+      "openalex_id": null,
+      "pmid": "31324936",
+      "first_author": "Kanen",
+      "authors_display": "Kanen, J. et al.",
+      "year": 2019,
+      "title": "Computational modelling reveals contrasting effects on reinforcement learning and cognitive flexibility in stimulant use disorder and obsessive-compulsive disorder: remediating effects of dopaminergic D2/3 receptor agents.",
+      "venue": "Psychopharmacology",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 72,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s00213-019-05325-w.pdf",
+      "tldr": null,
+      "abstract": "<h4>Rationale</h4>Disorders of compulsivity such as stimulant use disorder (SUD) and obsessive-compulsive disorder (OCD) are characterised by deficits in behavioural flexibility, some of which have been captured using probabilistic reversal learning (PRL) paradigms.<h4>Objectives</h4>This study used computational modelling to characterise the reinforcement learning processes underlying patterns of PRL behaviour observed in SUD and OCD and to show how the dopamine D<sub>2/3</sub> receptor agonist pramipexole and the D<sub>2/3</sub> antagonist amisulpride affected these responses.<h4>Methods</h4>We applied a hierarchical Bayesian method to PRL data across three groups: individuals with SUD, OCD, and healthy controls. Participants completed three sessions where they received placebo, pramipexole, and amisulpride, in a double-blind placebo-controlled, randomised design. We compared seven models using a bridge sampling estimate of the marginal likelihood.<h4>Results</h4>Stimulus-bound perseveration, a measure of the degree to which participants responded to the same stimulus as before irrespective of outcome, was significantly increased in SUD, but decreased in OCD, compared to controls (on placebo). Individuals with SUD also exhibited reduced reward-driven learning, whilst both the SUD and OCD groups showed increased learning from punishment (nonreward). Pramipexole and amisulpride had similar effects on the control and OCD groups; both increased punishment-driven learning. These D<sub>2/3</sub>-modulating drugs affected the SUD group differently, remediating reward-driven learning and reducing aspects of perseverative behaviour, amongst other effects.<h4>Conclusions</h4>We provide a parsimonious computational account of how perseverative tendencies and reward- and punishment-driven learning differentially contribute to PRL in SUD and OCD. D<sub>2/3</sub> agents modulated these processes and remediated deficits in SUD in particular, which may inform therapeutic effects.",
+      "score": {
+        "composite": 0.5571017763431698,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24840710537267913,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06210177634316978,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Substance-Related Disorders",
+        "Receptors, Dopamine D2",
+        "Dopamine Agonists",
+        "Dopamine Antagonists",
+        "Central Nervous System Stimulants",
+        "Double-Blind Method",
+        "Cognition",
+        "Reward",
+        "Reversal Learning",
+        "Obsessive-Compulsive Disorder",
+        "Models, Neurological",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Receptors, Dopamine D3",
+        "Young Adult",
+        "Dopamine D2 Receptor Antagonists",
+        "Reinforcement, Psychology"
+      ]
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_66bceca5",
+      "doi": "10.1038/nn.2904",
+      "url": "https://doi.org/10.1038/nn.2904",
+      "openalex_id": null,
+      "pmid": "21909088",
+      "first_author": "Li",
+      "authors_display": "Li, J. et al.",
+      "year": 2011,
+      "title": "Differential roles of human striatum and amygdala in associative learning.",
+      "venue": "Nature neuroscience",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 271,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Although the human amygdala and striatum have both been implicated in associative learning, only the striatum's contribution has been consistently computationally characterized. Using a reversal learning task, we found that amygdala blood oxygen level-dependent activity tracked associability as estimated by a computational model, and dissociated it from the striatal representation of reinforcement prediction error. These results extend the computational learning approach from striatum to amygdala, demonstrating their complementary roles in aversive learning.",
+      "score": {
+        "composite": 0.5561405563717465,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32456222548698604,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08114055637174651,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Amygdala",
+        "Corpus Striatum",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Likelihood Functions",
+        "Physical Stimulation",
+        "Emotions",
+        "Association Learning",
+        "Conditioning, Classical",
+        "Pattern Recognition, Visual",
+        "Galvanic Skin Response",
+        "Time Factors",
+        "Computer Simulation",
+        "Image Processing, Computer-Assisted",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 19,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_df9c6a5f",
+      "doi": "10.1038/s41398-019-0674-4",
+      "url": "https://doi.org/10.1038/s41398-019-0674-4",
+      "openalex_id": null,
+      "pmid": "31822658",
+      "first_author": "Dieterich",
+      "authors_display": "Dieterich, A. et al.",
+      "year": 2019,
+      "title": "Chronic corticosterone administration induces negative valence and impairs positive valence behaviors in mice.",
+      "venue": "Translational psychiatry",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 58,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41398-019-0674-4.pdf",
+      "tldr": null,
+      "abstract": "Behavioral approaches utilizing rodents to study mood disorders have focused primarily on negative valence behaviors associated with potential threat (anxiety-related behaviors). However, for disorders such as depression, positive valence behaviors that assess reward processing may be more translationally valid and predictive of antidepressant treatment outcome. Chronic corticosterone (CORT) administration is a well-validated pharmacological stressor that increases avoidance in negative valence behaviors associated with anxiety<sup>1-4</sup>. However, whether chronic stress paradigms such as CORT administration also lead to deficits in positive valence behaviors remains unclear. We treated male C57BL/6J mice with chronic CORT and assessed both negative and positive valence behaviors. We found that CORT induced avoidance in the open field and NSF. Interestingly, CORT also impaired instrumental acquisition, reduced sensitivity to a devalued outcome, reduced breakpoint in progressive ratio, and impaired performance in probabilistic reversal learning. Taken together, these results demonstrate that chronic CORT administration at the same dosage both induces avoidance in negative valence behaviors associated with anxiety and impairs positive valence behaviors associated with reward processing. These data suggest that CORT administration is a useful experimental system for preclinical approaches to studying stress-induced mood disorders.",
+      "score": {
+        "composite": 0.5540198606572901,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23607944262916078,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.059019860657290195,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Mice, Inbred C57BL",
+        "Mice",
+        "Disease Models, Animal",
+        "Steroids",
+        "Corticosterone",
+        "Behavior, Animal",
+        "Anxiety",
+        "Learning",
+        "Avoidance Learning",
+        "Reward",
+        "Male"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_fc89c3a4",
+      "doi": "10.1038/npp.2009.233",
+      "url": "https://doi.org/10.1038/npp.2009.233",
+      "openalex_id": null,
+      "pmid": "20107431",
+      "first_author": "Bari",
+      "authors_display": "Bari, A. et al.",
+      "year": 2010,
+      "title": "Serotonin modulates sensitivity to reward and negative feedback in a probabilistic reversal learning task in rats.",
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 245,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Depressed patients show cognitive deficits that may depend on an abnormal reaction to positive and negative feedback. The precise neurochemical mechanisms responsible for such cognitive abnormalities have not yet been clearly characterized, although serotoninergic dysfunction is frequently associated with depression. In three experiments described here, we investigated the effects of different manipulations of central serotonin (5-hydroxytryptamine, 5-HT) levels in rats performing a probabilistic reversal learning task that measures response to feedback. Increasing or decreasing 5-HT tone differentially affected behavioral indices of cognitive flexibility (reversals completed), reward sensitivity (win-stay), and reaction to negative feedback (lose-shift). A single low dose of the selective serotonin reuptake inhibitor citalopram (1 mg/kg) resulted in fewer reversals completed and increased lose-shift behavior. By contrast, a single higher dose of citalopram (10 mg/kg) exerted the opposite effect on both measures. Repeated (5 mg/kg, daily, 7 days) and subchronic (10 mg/kg, b.i.d., 5 days) administration of citalopram increased the number of reversals completed by the animals and increased the frequency of win-stay behavior, whereas global 5-HT depletion had the opposite effect on both indices. These results show that boosting 5-HT neurotransmission decreases negative feedback sensitivity and increases reward (positive feedback) sensitivity, whereas reducing it has the opposite effect. However, these effects depend on the nature of the manipulation used: acute manipulations of the 5-HT system modulate negative feedback sensitivity, whereas long-lasting treatments specifically affect reward sensitivity. These results parallel some of the findings in humans on effects of 5-HT manipulations and are relevant to hypotheses of altered response to feedback in depression.",
+      "score": {
+        "composite": 0.5296863068930352,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31874522757214074,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07968630689303519,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Rats",
+        "Serotonin",
+        "Citalopram",
+        "Drug Administration Schedule",
+        "Models, Statistical",
+        "Behavior, Animal",
+        "Learning",
+        "Avoidance Learning",
+        "Reward",
+        "Task Performance and Analysis",
+        "Cognition Disorders",
+        "Depressive Disorder",
+        "Neuropsychological Tests",
+        "Synaptic Transmission",
+        "Dose-Response Relationship, Drug",
+        "Male",
+        "Biofeedback, Psychology",
+        "Selective Serotonin Reuptake Inhibitors"
+      ]
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_c47dc785",
+      "doi": "10.1073/pnas.0905191106",
+      "url": "https://doi.org/10.1073/pnas.0905191106",
+      "openalex_id": null,
+      "pmid": "19822738",
+      "first_author": "Krugel",
+      "authors_display": "Krugel, L. et al.",
+      "year": 2009,
+      "title": "Genetic variation in dopaminergic neuromodulation influences the ability to rapidly and flexibly adapt decisions.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 173,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The ability to rapidly and flexibly adapt decisions to available rewards is crucial for survival in dynamic environments. Reward-based decisions are guided by reward expectations that are updated based on prediction errors, and processing of these errors involves dopaminergic neuromodulation in the striatum. To test the hypothesis that the COMT gene Val(158)Met polymorphism leads to interindividual differences in reward-based learning, we used the neuromodulatory role of dopamine in signaling prediction errors. We show a behavioral advantage for the phylogenetically ancestral Val/Val genotype in an instrumental reversal learning task that requires rapid and flexible adaptation of decisions to changing reward contingencies in a dynamic environment. Implementing a reinforcement learning model with a dynamic learning rate to estimate prediction error and learning rate for each trial, we discovered that a higher and more flexible learning rate underlies the advantage of the Val/Val genotype. Model-based fMRI analysis revealed that greater and more differentiated striatal fMRI responses to prediction errors reflect this advantage on the neurobiological level. Learning rate-dependent changes in effective connectivity between the striatum and prefrontal cortex were greater in the Val/Val than Met/Met genotype, suggesting that the advantage results from a downstream effect of the prefrontal cortex that is presumably mediated by differences in dopamine metabolism. These results show a critical role of dopamine in processing the weight a particular prediction error has on the expectation updating for the next decision, thereby providing important insights into neurobiological mechanisms underlying the ability to rapidly and flexibly adapt decisions to changing reward contingencies.",
+      "score": {
+        "composite": 0.5296741701509036,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2986966806036142,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07467417015090355,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Dopamine",
+        "Catechol O-Methyltransferase",
+        "Magnetic Resonance Imaging",
+        "Amino Acid Substitution",
+        "Learning",
+        "Reward",
+        "Genotype",
+        "Homozygote",
+        "Polymorphism, Single Nucleotide",
+        "Models, Neurological",
+        "Adult",
+        "Female",
+        "Male",
+        "Genetic Variation",
+        "Young Adult",
+        "Reinforcement, Psychology"
+      ]
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_eb1e9f90",
+      "doi": "10.1016/j.neuroimage.2008.05.049",
+      "url": "https://doi.org/10.1016/j.neuroimage.2008.05.049",
+      "openalex_id": null,
+      "pmid": "18586109",
+      "first_author": "Taylor Tavares",
+      "authors_display": "Taylor Tavares, J. et al.",
+      "year": 2008,
+      "title": "Neural basis of abnormal response to negative feedback in unmedicated mood disorders.",
+      "venue": "NeuroImage",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, N.I.H., Intramural",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 175,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Depressed individuals show hypersensitivity to negative feedback during cognitive testing, which can precipitate subsequent errors and thereby impair a broad range of cognitive abilities. We studied the neural mechanisms underlying this feedback hypersensitivity using functional magnetic resonance imaging (fMRI) with a reversal learning task that required subjects to ignore misleading negative feedback on some trials. Thirteen depressed subjects with major depressive disorder (MDD), 12 depressed subjects with bipolar disorder (BD) and 15 healthy controls participated. The MDD group, but not the BD group, demonstrated enhanced sensitivity to negative feedback compared to controls, as indicated by the rates of rule reversal following misleading negative feedback. In the control and BD groups, hemodynamic activity was significantly higher in the dorsomedial and ventrolateral prefrontal cortices during reversal shifting, and significantly lower in the right amygdala in response to negative feedback. The extent to which the amygdala showed less activity during negative feedback correlated inversely with the behavioral tendency to reverse after misleading feedback. This effect was not present in the MDD group, who also failed to recruit the prefrontal cortex during behavioral reversal. Hypersensitivity to negative feedback is present in unmedicated depressed patients with MDD. Disrupted top-down control by the prefrontal cortex of the amygdala may underlie this abnormal response to negative feedback in unipolar depression.",
+      "score": {
+        "composite": 0.5198395935331003,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29935837413240124,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07483959353310031,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Image Interpretation, Computer-Assisted",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Feedback, Psychological",
+        "Bipolar Disorder",
+        "Adolescent",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Major Depressive Disorder"
+      ]
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_f3ed0d86",
+      "doi": "10.1523/jneurosci.5195-08.2009",
+      "url": "https://doi.org/10.1523/jneurosci.5195-08.2009",
+      "openalex_id": null,
+      "pmid": "19321766",
+      "first_author": "Jocham",
+      "authors_display": "Jocham, G. et al.",
+      "year": 2009,
+      "title": "Dopamine DRD2 polymorphism alters reversal learning and associated neural activity.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 143,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In humans, presence of an A1 allele of the DRD2/ANKK1-TaqIa polymorphism is associated with reduced expression of dopamine (DA) D(2) receptors in the striatum. Recently, it was observed that carriers of the A1 allele (A1+ subjects) showed impaired learning from negative feedback in a reinforcement learning task. Here, using functional MRI (fMRI), we investigated carriers and noncarriers of the A1 allele while they performed a probabilistic reversal learning task. A1+ subjects showed subtle deficits in reversal learning. In particular, these deficits consisted of an impairment in sustaining the newly rewarded response after a reversal and in a generally decreased tendency to stick with a rewarded response. Both genetic groups showed increased fMRI signal in response to negative feedback in the rostral cingulate zone (RCZ) and anterior insula. Negative feedback that incurred a change in behavior additionally engaged the ventral striatum and a region of the midbrain consistent with the location of dopaminergic cell groups. The response of the RCZ to negative feedback increased as a function of preceding negative feedback. However, this graded response was not observed in the A1+ group. Furthermore, the A1+ group also showed diminished recruitment of the right ventral striatum and the right lateral orbitofrontal cortex (lOFC) during reversals. Together, these results suggest that a genetically driven reduction in DA D(2) receptors leads to deficient feedback integration in RCZ. This, in turn, was accompanied by impaired recruitment of the ventral striatum and the right lOFC during reversals, which might explain the behavioral differences between the genetic groups.",
+      "score": {
+        "composite": 0.5119350079475334,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2877400317901338,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07193500794753345,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Mesencephalon",
+        "Gyrus Cinguli",
+        "Basal Ganglia",
+        "Cerebral Cortex",
+        "Humans",
+        "Receptors, Dopamine D2",
+        "Magnetic Resonance Imaging",
+        "Feedback, Psychological",
+        "Probability Learning",
+        "Heterozygote",
+        "Polymorphism, Genetic",
+        "Adult",
+        "Male",
+        "Young Adult",
+        "Reinforcement, Psychology"
+      ]
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_2fb33588",
+      "doi": "10.1016/j.schres.2007.03.010",
+      "url": "https://doi.org/10.1016/j.schres.2007.03.010",
+      "openalex_id": null,
+      "pmid": "17482797",
+      "first_author": "Waltz",
+      "authors_display": "Waltz, J., & Gold, J.",
+      "year": 2007,
+      "title": "Probabilistic reversal learning impairments in schizophrenia: further evidence of orbitofrontal dysfunction.",
+      "venue": "Schizophrenia research",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 267,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Impairments in feedback processing and reinforcement learning appear to be prominent aspects of schizophrenia (SZ), which may relate to symptoms of the disorder. Evidence from cognitive neuroscience investigations indicates that disparate brain systems may underlie different kinds of feedback-driven learning. The ability to rapidly shift response tendencies in the face of negative feedback, when reinforcement contingencies are reversed, is an important type of learning thought to depend on ventral prefrontal cortex (PFC). Schizophrenia has long been associated with dysfunction in dorsolateral areas of PFC, but evidence for ventral PFC impairment in more mixed. In order to assess whether SZ patients experience particular difficulty in carrying out a cognitive function commonly linked to ventral PFC function, we administered to 34 patients and 26 controls a modified version of an established probabilistic reversal learning task from the experimental literature [Cools, R., Clark, L., Owen, A.M., Robbins, T.W., 2002. Defining the neural mechanisms of probabilistic reversal learning using event-related functional magnetic resonance imaging. J. Neurosci. 22, 4563-4567]. Although SZ patients and controls performed similarly on the initial acquisition of probabilistic contingencies, patients showed substantial learning impairments when reinforcement contingencies were reversed, achieving significantly fewer reversals [chi(2)(6)=15.717, p=0.008]. Even when analyses were limited to subjects who acquired all probabilistic contingencies initially (22 patients and 20 controls), patients achieved significantly fewer reversals [chi(2)(3)=9.408, p=0.024]. These results support the idea that ventral PFC dysfunction is a prevalent aspect of schizophrenic pathophysiology, which may contribute to deficits in reinforcement learning exhibited by patients. Further studies are required to investigate the roles of dopaminergic systems in these impairments.",
+      "score": {
+        "composite": 0.5009261170659907,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3237044682639625,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08092611706599062,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Basal Ganglia",
+        "Prefrontal Cortex",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Feedback, Psychological",
+        "Discrimination Learning",
+        "Probability Learning",
+        "Reward",
+        "Reversal Learning",
+        "Psychomotor Performance",
+        "Schizophrenia",
+        "Psychiatric Status Rating Scales",
+        "Schizophrenic Psychology",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 25,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_a3bae3ed",
+      "doi": "10.1016/j.bbr.2011.10.032",
+      "url": "https://doi.org/10.1016/j.bbr.2011.10.032",
+      "openalex_id": null,
+      "pmid": "22056750",
+      "first_author": "Amodeo",
+      "authors_display": "Amodeo, D. et al.",
+      "year": 2012,
+      "title": "Differences in BTBR T+ tf/J and C57BL/6J mice on probabilistic reversal learning and stereotyped behaviors.",
+      "venue": "Behavioural brain research",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 150,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Autism spectrum disorders (ASD) represent a class of neurodevelopmental disorders characterized by impairments in social interaction, verbal and non-verbal communication, as well as restricted interests and repetitive behavior. This latter class of symptoms often includes features such as compulsive behaviors and resistance to change. The BTBR T+ tf/J mouse strain has been used as an animal model to investigate the social communication and restricted interest features in ASD. Less is known about whether this mouse strain models cognitive flexibility deficits also observed in ASD. The present experiment investigated performance of BTBR T+ tf/J and C57BL/6J on two different spatial reversal learning tests (100% accurate feedback and 80/20 probabilistic feedback), as well as marble burying and grooming behavior. BTBR T+ tf/J and C57BL/6J mice exhibited similar performance on acquisition and reversal learning with 100% accurate feedback. BTBR T+ tf/J mice were impaired in probabilistic reversal learning compared to that of C57BL/6J mice. BTBR T+ tf/J mice also displayed increased stereotyped repetitive behaviors compared to that of C57BL/6J mice as shown by increased marble burying and grooming behavior. The present findings indicate that BTBR T+ tf/J mice exhibit similar features related to \"insistence on sameness\" in ASD that include not only stereotyped repetitive behaviors, but also alterations in behavioral flexibility. Thus, BTBR T+ tf/J mice can serve as a model to understand the neural mechanisms underlying alterations in behavioral flexibility, as well as to test potential treatments in alleviating these symptoms.",
+      "score": {
+        "composite": 0.4976220570432842,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29048822817313685,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07262205704328421,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Mice, Inbred C57BL",
+        "Mice",
+        "Mice, Mutant Strains",
+        "Disease Models, Animal",
+        "Probability",
+        "Feedback, Psychological",
+        "Stereotyped Behavior",
+        "Interpersonal Relations",
+        "Reversal Learning",
+        "Space Perception",
+        "Autistic Disorder",
+        "Discrimination, Psychological",
+        "Learning Disabilities"
+      ]
+    },
+    {
+      "rank": 26,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1cc5e33c",
+      "doi": "10.1093/cercor/bhz144",
+      "url": "https://doi.org/10.1093/cercor/bhz144",
+      "openalex_id": null,
+      "pmid": "31343680",
+      "first_author": "Hervig",
+      "authors_display": "Hervig, M. et al.",
+      "year": 2020,
+      "title": "Dissociable and Paradoxical Roles of Rat Medial and Lateral Orbitofrontal Cortex in Visual Serial Reversal Learning.",
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 58,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7132932",
+      "tldr": null,
+      "abstract": "Much evidence suggests that reversal learning is mediated by cortico-striatal circuitries with the orbitofrontal cortex (OFC) playing a prominent role. The OFC is a functionally heterogeneous region, but potential differential roles of lateral (lOFC) and medial (mOFC) portions in visual reversal learning have yet to be determined. We investigated the effects of pharmacological inactivation of mOFC and lOFC on a deterministic serial visual reversal learning task for rats. For reference, we also targeted other areas previously implicated in reversal learning: prelimbic (PrL) and infralimbic (IL) prefrontal cortex, and basolateral amygdala (BLA). Inactivating mOFC and lOFC produced opposite effects; lOFC impairing, and mOFC improving, performance in the early, perseverative phase specifically. Additionally, mOFC inactivation enhanced negative feedback sensitivity, while lOFC inactivation diminished feedback sensitivity in general. mOFC and lOFC inactivation also affected novel visual discrimination learning differently; lOFC inactivation paradoxically improved learning, and mOFC inactivation had no effect. We also observed dissociable roles of the OFC and the IL/PrL. Whereas the OFC inactivation affected only perseveration, IL/PrL inactivation improved learning overall. BLA inactivation did not affect perseveration, but improved the late phase of reversal learning. These results support opponent roles of the rodent mOFC and lOFC in deterministic visual reversal learning.",
+      "score": {
+        "composite": 0.4840198606572902,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23607944262916078,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.059019860657290195,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Animals",
+        "Rats",
+        "Reward",
+        "Reversal Learning",
+        "Visual Perception",
+        "Choice Behavior",
+        "Male",
+        "Basolateral Nuclear Complex"
+      ]
+    },
+    {
+      "rank": 27,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1f99c339",
+      "doi": "10.1016/j.nbd.2019.01.025",
+      "url": "https://doi.org/10.1016/j.nbd.2019.01.025",
+      "openalex_id": null,
+      "pmid": "30716470",
+      "first_author": "Amodeo",
+      "authors_display": "Amodeo, D. et al.",
+      "year": 2019,
+      "title": "Maternal immune activation impairs cognitive flexibility and alters transcription in frontal cortex.",
+      "venue": "Neurobiology of disease",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 53,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Background</h4>Epidemiological studies suggest that the risk of neurodevelopmental disorders such as autism spectrum disorder (ASD) and schizophrenia is increased by prenatal exposure to viral or bacterial infection during pregnancy. It is still unclear how activation of the maternal immune response interacts with underlying genetic factors to influence observed ASD phenotypes.<h4>Methods</h4>The current study investigated how maternal immune activation (MIA) in mice impacts gene expression in the frontal cortex in adulthood, and how these molecular changes relate to deficits in cognitive flexibility and social behavior, and increases in repetitive behavior that are prevalent in ASD. Poly(I:C) (20 mg/kg) was administered to dams on E12.5 and offspring were tested for social approach behavior, repetitive grooming, and probabilistic reversal learning in adulthood (n = 8 vehicle; n = 9 Poly(I:C)). We employed next-generation high-throughput mRNA sequencing (RNA-seq) to comprehensively investigate the transcriptome profile in frontal cortex of adult offspring of Poly(I:C)-exposed dams.<h4>Results</h4>Exposure to poly(I:C) during gestation impaired probabilistic reversal learning and decreased social approach in MIA offspring compared to controls. We found long-term effects of MIA on expression of 24 genes, including genes involved in glutamatergic neurotransmission, mTOR signaling and potassium ion channel activity. Correlations between gene expression and specific behavioral measures provided insight into genes that may be responsible for ASD-like behavioral alterations.<h4>Conclusions</h4>These findings suggest that MIA can lead to impairments in cognitive flexibility in mice similar to those exhibited in ASD individuals, and that these impairments are associated with altered gene expression in frontal cortex.",
+      "score": {
+        "composite": 0.47273810439049413,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23095241756197657,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05773810439049414,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Animals",
+        "Mice, Inbred C57BL",
+        "Mice",
+        "Pregnancy Complications, Infectious",
+        "Prenatal Exposure Delayed Effects",
+        "Behavior, Animal",
+        "Social Behavior",
+        "Cognition",
+        "Transcription, Genetic",
+        "Pregnancy",
+        "Female",
+        "Male",
+        "Neurodevelopmental Disorders"
+      ]
+    },
+    {
+      "rank": 28,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3ff3d318",
+      "doi": "10.1038/s41386-019-0454-0",
+      "url": "https://doi.org/10.1038/s41386-019-0454-0",
+      "openalex_id": null,
+      "pmid": "31254972",
+      "first_author": "Verharen",
+      "authors_display": "Verharen, J. et al.",
+      "year": 2019,
+      "title": "Differential contributions of striatal dopamine D1 and D2 receptors to component processes of value-based decision making.",
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 42,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Dopamine has been implicated in value-based learning and decision making by signaling reward prediction errors and facilitating cognitive flexibility, incentive motivation, and voluntary movement. Dopamine receptors can roughly be divided into the D1 and D2 subtypes, and it has been hypothesized that these two types of receptors have an opposite function in facilitating reward-related and aversion-related behaviors, respectively. Here, we tested the contribution of striatal dopamine D1 and D2 receptors to processes underlying value-based learning and decision making in rats, employing a probabilistic reversal learning paradigm. Using computational trial-by-trial analysis of task behavior after systemic or intracranial treatment with dopamine D1 and D2 receptor agonists and antagonists, we show that negative feedback learning can be modulated through D2 receptor signaling and positive feedback learning through D1 receptor signaling in the ventral striatum. Furthermore, stimulation of D2 receptors in the ventral or dorsolateral (but not dorsomedial) striatum promoted explorative choice behavior, suggesting an additional function of dopamine in these areas in value-based decision making. Finally, treatment with most dopaminergic drugs affected response latencies and number of trials completed, which was also seen after infusion of D2, but not D1 receptor-acting drugs into the striatum. Together, our data support the idea that dopamine D1 and D2 receptors have complementary functions in learning on the basis of emotionally valenced feedback, and provide evidence that dopamine facilitates value-based and motivated behaviors through distinct striatal regions.",
+      "score": {
+        "composite": 0.4694410713049851,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21776428521994023,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05444107130498506,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Neostriatum",
+        "Animals",
+        "Rats, Long-Evans",
+        "Receptors, Dopamine D1",
+        "Receptors, Dopamine D2",
+        "Reversal Learning",
+        "Decision Making",
+        "Models, Neurological",
+        "Male",
+        "Ventral Striatum"
+      ]
+    },
+    {
+      "rank": 29,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_cd8ac77c",
+      "doi": "10.1523/jneurosci.1394-18.2018",
+      "url": "https://doi.org/10.1523/jneurosci.1394-18.2018",
+      "openalex_id": null,
+      "pmid": "30559152",
+      "first_author": "Piray",
+      "authors_display": "Piray, P. et al.",
+      "year": 2019,
+      "title": "Emotionally Aversive Cues Suppress Neural Systems Underlying Optimal Learning in Socially Anxious Individuals.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 41,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Learning and decision-making are modulated by socio-emotional processing and such modulation is implicated in clinically relevant personality traits of social anxiety. The present study elucidates the computational and neural mechanisms by which emotionally aversive cues disrupt learning in socially anxious human individuals. Healthy volunteers with low or high trait social anxiety performed a reversal learning task requiring learning actions in response to angry or happy face cues. Choice data were best captured by a computational model in which learning rate was adjusted according to the history of surprises. High trait socially anxious individuals used a less-dynamic strategy for adjusting their learning rate in trials started with angry face cues and unlike the low social anxiety group, their dorsal anterior cingulate cortex (dACC) activity did not covary with the learning rate. Our results demonstrate that trait social anxiety is accompanied by disruption of optimal learning and dACC activity in threatening situations.<b>SIGNIFICANCE STATEMENT</b> Social anxiety is known to influence a broad range of cognitive functions. This study tests whether and how social anxiety affects human value-based learning as a function of uncertainty in the learning environment. The findings indicate that, in a threatening context evoked by an angry face, socially anxious individuals fail to benefit from a stable learning environment with highly predictable stimulus-response-outcome associations. Under those circumstances, socially anxious individuals failed to use their dorsal anterior cingulate cortex, a region known to adjust learning rate to environmental uncertainty. These findings open the way to modify neurobiological mechanisms of maladaptive learning in anxiety and depressive disorders.",
+      "score": {
+        "composite": 0.4691004817463479,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Gyrus Cinguli",
+        "Humans",
+        "Facial Expression",
+        "Brain Mapping",
+        "Bayes Theorem",
+        "Emotions",
+        "Anger",
+        "Anxiety",
+        "Happiness",
+        "Learning",
+        "Cues",
+        "Punishment",
+        "Reward",
+        "Choice Behavior",
+        "Models, Psychological",
+        "Adult",
+        "Female"
+      ]
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_e9dcd1df",
+      "doi": "10.1038/s41386-018-0229-z",
+      "url": "https://doi.org/10.1038/s41386-018-0229-z",
+      "openalex_id": null,
+      "pmid": "30305705",
+      "first_author": "Skandali",
+      "authors_display": "Skandali, N. et al.",
+      "year": 2018,
+      "title": "Dissociable effects of acute SSRI (escitalopram) on executive, learning and emotional functions in healthy humans.",
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 71,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41386-018-0229-z.pdf",
+      "tldr": null,
+      "abstract": "Serotonin is implicated in multiple executive functions including goal-directed learning, cognitive flexibility, response inhibition and emotional regulation. These functions are impaired in several psychiatric disorders, such as depression and obsessive-compulsive disorder. We tested the cognitive effects of the selective serotonin reuptake inhibitor escitalopram, using an acute and clinically relevant dose (20 mg), in 66 healthy male and female volunteers in a double-blind, placebo-controlled study. Participants performed a cognitive test battery including a probabilistic and reversal learning task, the CANTAB intra-dimensional/extra-dimensional shift test of cognitive flexibility, a response inhibition task with interleaved stop-signal and No-Go trials and tasks measuring emotional processing. We showed that acute escitalopram administration impaired learning and cognitive flexibility, but improved the ability to inhibit responses in stop-signal trials while leaving unaffected acute emotional processing. Our findings suggest a dissociation of effects of acute escitalopram on cognitive functions, possibly mediated by differential modulation of brain serotonin levels in distinct functional neural circuits.",
+      "score": {
+        "composite": 0.46690212644137224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24760850576548898,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.061902126441372246,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Citalopram",
+        "Double-Blind Method",
+        "Emotions",
+        "Cognition",
+        "Reversal Learning",
+        "Dissociative Disorders",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Executive Function",
+        "Selective Serotonin Reuptake Inhibitors"
+      ]
+    },
+    {
+      "rank": 31,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3cf726b1",
+      "doi": "10.1002/ajp.22924",
+      "url": "https://doi.org/10.1002/ajp.22924",
+      "openalex_id": null,
+      "pmid": "30281810",
+      "first_author": "Workman",
+      "authors_display": "Workman, K. et al.",
+      "year": 2019,
+      "title": "One-year change in cognitive flexibility and fine motor function in middle-aged male and female marmosets (Callithrix jacchus).",
+      "venue": "American journal of primatology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 31,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The common marmoset (Callithrix jacchus) is uniquely suited for longitudinal studies of cognitive aging, due to a relatively short lifespan, sophisticated cognitive abilities, and patterns of brain aging that resemble those of humans. We examined cognitive function and fine motor skills in male and female marmosets (mean age ∼5 at study entry) followed longitudinally for 2 years. Each year, monkeys were tested on a reversal learning task with three pairs of stimuli (n = 18, 9 females) and a fine motor task requiring them to grasp small rewards from two staircases (Hill and Valley test, n = 12, 6 females). There was little evidence for a decline in cognitive flexibility between the two time points, in part because of practice effects. However, independent of year of testing, females took longer than males to reach criterion in the reversals, indicating impaired cognitive flexibility. Motivation was unlikely to contribute to this effect, as males refused a greater percentage of trials than females in the reversals. With regards to motor function, females were significantly faster than males in the Hill and Valley task. From Year 1 to Year 2, a slight slowing of motor function was observed in both sexes, but accuracy decreased significantly in males only. This study (1) demonstrates that marmosets exhibit sex differences in cognitive flexibility and fine motor function that resemble those described in humans; (2) that changes in fine motor function can already be detected at middle-age; and (3) that males may experience greater age-related changes in fine motor skills than females. Additional data points will determine whether these sex and age differences persist over time.",
+      "score": {
+        "composite": 0.46516440753080607,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Callithrix",
+        "Cognition",
+        "Reversal Learning",
+        "Motor Skills",
+        "Sex Factors",
+        "Aging",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 32,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_92ce3b93",
+      "doi": "10.1371/journal.pone.0057257",
+      "url": "https://doi.org/10.1371/journal.pone.0057257",
+      "openalex_id": null,
+      "pmid": "23468948",
+      "first_author": "Waltz",
+      "authors_display": "Waltz, J. et al.",
+      "year": 2013,
+      "title": "The roles of reward, default, and executive control networks in set-shifting impairments in schizophrenia.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, N.I.H., Intramural",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 104,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3584128",
+      "tldr": null,
+      "abstract": "Patients with schizophrenia (SZ) show deficits on tasks of rapid reinforcement learning, like probabilistic reversal learning (PRL), but the neural bases for those impairments are not known. Recent evidence of relatively intact sensitivity to negative outcomes in the ventral striatum (VS) in many SZ patients suggests that PRL deficits may be largely attributable to processes downstream from feedback processing, involving both the activation of executive control task regions and deactivation of default mode network (DMN) components. We analyzed data from 29 chronic SZ patients and 21 matched normal controls (NCs) performing a PRL task in an MRI scanner. Subjects were presented with eight pairs of fractal stimuli, for 50 trials each. For each pair, subjects learned to choose the more frequently-rewarded (better) stimulus. Each time a criterion was reached, the better stimulus became the worse one, and the worse became the better. Responses to feedback events were assessed through whole-brain and regions-of-interest (ROI) analyses in DMN. We also assessed correlations between BOLD signal contrasts and clinical measures in SZs. Relative to NCs, SZ patients showed comparable deactivation of VS in response to negative feedback, but reduced deactivation of DMN components including medial prefrontal cortex (mPFC). The magnitudes of patients' punishment-evoked deactivations in VS and ventromedial PFC correlated significantly with clinical ratings for avolition/anhedonia. These findings suggest that schizophrenia is associated with a reduced ability to deactivate components of default mode networks, following the presentation of informative feedback and that motivational deficits in SZ relate closely to feedback-evoked activity in reward circuit components. These results also confirm a role for ventrolateral and dorsomedial PFC in the execution of response-set shifts.",
+      "score": {
+        "composite": 0.4623632296820182,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2694529187280729,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06736322968201823,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Chronic Disease",
+        "Magnetic Resonance Imaging",
+        "Probability",
+        "Case-Control Studies",
+        "Learning",
+        "Schizophrenic Psychology",
+        "Fractals",
+        "Feedback",
+        "Adult",
+        "Middle Aged",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 33,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_1c61d80e",
+      "doi": "10.1523/jneurosci.3366-15.2016",
+      "url": "https://doi.org/10.1523/jneurosci.3366-15.2016",
+      "openalex_id": null,
+      "pmid": "26865622",
+      "first_author": "Dalton",
+      "authors_display": "Dalton, G. et al.",
+      "year": 2016,
+      "title": "Multifaceted Contributions by Different Regions of the Orbitofrontal and Medial Prefrontal Cortex to Probabilistic Reversal Learning.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 149,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Different subregions of the prefrontal cortex (PFC) contribute to the ability to respond flexibly to changes in reward contingencies, with the medial versus orbitofrontal cortex (OFC) subregions contributing differentially to processes such as set-shifting and reversal learning. To date, the manner in which these regions may facilitate reversal learning in situations involving reward uncertainty remains relatively unexplored. We investigated the involvement of five distinct regions of the rat OFC (lateral and medial) and medial PFC (prelimbic, infralimbic, and anterior cingulate) on probabilistic reversal learning wherein \"correct\" versus \"incorrect\" responses were rewarded on 80% and 20% of trials, respectively. Contingencies were reversed repeatedly within a session. In well trained rats, inactivation of the medial or lateral OFC induced dissociable impairments in performance (indexed by fewer reversals completed) when outcomes were probabilistic, but not when they were assured. Medial OFC inactivation impaired probabilistic learning during the first discrimination, increased perseverative responding and reduced sensitivity to positive and negative feedback, suggestive of a deficit in incorporating information about previous action outcomes to guide subsequent behavior. Lateral OFC inactivation preferentially impaired performance during reversal phases. In contrast, prelimbic inactivation caused an apparent improvement in performance by increasing the number of reversals completed. This was associated with enhanced sensitivity to recently rewarded actions and reduced sensitivity to negative feedback. Infralimbic inactivation had no effect, whereas the anterior cingulate appeared to play a permissive role in this form of reversal learning. These results clarify the dissociable contributions of different regions of the frontal lobes to probabilistic learning.<h4>Significance statement</h4>The ability to adjust behavior in response to changes involving uncertain or p",
+      "score": {
+        "composite": 0.4575258813512686,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2901035254050744,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0725258813512686,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Limbic System",
+        "Frontal Lobe",
+        "Prefrontal Cortex",
+        "Animals",
+        "Rats",
+        "Rats, Long-Evans",
+        "Baclofen",
+        "Muscimol",
+        "GABA Agonists",
+        "Uncertainty",
+        "Feedback, Psychological",
+        "Conditioning, Operant",
+        "Discrimination Learning",
+        "Reward",
+        "Reversal Learning",
+        "Psychomotor Performance",
+        "Male"
+      ]
+    },
+    {
+      "rank": 34,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3ac93b0c",
+      "doi": "10.1523/jneurosci.0524-22.2022",
+      "url": "https://doi.org/10.1523/jneurosci.0524-22.2022",
+      "openalex_id": null,
+      "pmid": "36253083",
+      "first_author": "Bijlsma",
+      "authors_display": "Bijlsma, A. et al.",
+      "year": 2022,
+      "title": "Social Play Behavior Is Critical for the Development of Prefrontal Inhibitory Synapses and Cognitive Flexibility in Rats.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 35,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Sensory driven activity during early life is critical for setting up the proper connectivity of the sensory cortices. We ask here whether social play behavior, a particular form of social interaction that is highly abundant during postweaning development, is equally important for setting up connections in the developing prefrontal cortex (PFC). Young male rats were deprived from social play with peers during the period in life when social play behavior normally peaks [postnatal day 21-42] (SPD rats), followed by resocialization until adulthood. We recorded synaptic currents in layer 5 cells in slices from medial PFC of adult SPD and control rats and observed that inhibitory synaptic currents were reduced in SPD slices, while excitatory synaptic currents were unaffected. This was associated with a decrease in perisomatic inhibitory synapses from parvalbumin-positive GABAergic cells. In parallel experiments, adult SPD rats achieved more reversals in a probabilistic reversal learning (PRL) task, which depends on the integrity of the PFC, by using a more simplified cognitive strategy than controls. Interestingly, we observed that one daily hour of play during SPD partially rescued the behavioral performance in the PRL, but did not prevent the decrease in PFC inhibitory synaptic inputs. Our data demonstrate the importance of unrestricted social play for the development of inhibitory synapses in the PFC and cognitive skills in adulthood and show that specific synaptic alterations in the PFC can result in a complex behavioral outcome.<b>SIGNIFICANCE STATEMENT</b> This study addressed the question whether social play behavior in juvenile rats contributes to functional development of the prefrontal cortex (PFC). We found that rats that had been deprived from juvenile social play (social play deprivation - SPD) showed a reduction in inhibitory synapses in the PFC and a simplified strategy to solve a complex behavioral task in adulthood. Providing one daily hour of play during",
+      "score": {
+        "composite": 0.456869244935211,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Synapses",
+        "Animals",
+        "Rats",
+        "Parvalbumins",
+        "Cognition",
+        "Male",
+        "Neurogenesis"
+      ]
+    },
+    {
+      "rank": 35,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_d73c3742",
+      "doi": "10.1016/j.cortex.2015.11.004",
+      "url": "https://doi.org/10.1016/j.cortex.2015.11.004",
+      "openalex_id": null,
+      "pmid": "26673945",
+      "first_author": "Morris",
+      "authors_display": "Morris, L. et al.",
+      "year": 2016,
+      "title": "Fronto-striatal organization: Defining functional and microstructural substrates of behavioural flexibility.",
+      "venue": "Cortex; a journal devoted to the study of the nervous system and behavior",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 141,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1016/j.cortex.2015.11.004",
+      "tldr": null,
+      "abstract": "Discrete yet overlapping frontal-striatal circuits mediate broadly dissociable cognitive and behavioural processes. Using a recently developed multi-echo resting-state functional MRI (magnetic resonance imaging) sequence with greatly enhanced signal compared to noise ratios, we map frontal cortical functional projections to the striatum and striatal projections through the direct and indirect basal ganglia circuit. We demonstrate distinct limbic (ventromedial prefrontal regions, ventral striatum - VS, ventral tegmental area - VTA), motor (supplementary motor areas - SMAs, putamen, substantia nigra) and cognitive (lateral prefrontal and caudate) functional connectivity. We confirm the functional nature of the cortico-striatal connections, demonstrating correlates of well-established goal-directed behaviour (involving medial orbitofrontal cortex - mOFC and VS), probabilistic reversal learning (lateral orbitofrontal cortex - lOFC and VS) and attentional shifting (dorsolateral prefrontal cortex - dlPFC and VS) while assessing habitual model-free (SMA and putamen) behaviours on an exploratory basis. We further use neurite orientation dispersion and density imaging (NODDI) to show that more goal-directed model-based learning (MBc) is also associated with higher mOFC neurite density and habitual model-free learning (MFc) implicates neurite complexity in the putamen. This data highlights similarities between a computational account of MFc and conventional measures of habit learning. We highlight the intrinsic functional and structural architecture of parallel systems of behavioural control.",
+      "score": {
+        "composite": 0.4567325656490079,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2869302625960316,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0717325656490079,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Limbic System",
+        "Corpus Striatum",
+        "Frontal Lobe",
+        "Nerve Net",
+        "Neural Pathways",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Goals",
+        "Reversal Learning",
+        "Attention",
+        "Neuropsychological Tests",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 36,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_c50dcd83",
+      "doi": "10.1523/jneurosci.1989-14.2015",
+      "url": "https://doi.org/10.1523/jneurosci.1989-14.2015",
+      "openalex_id": null,
+      "pmid": "25673835",
+      "first_author": "Costa",
+      "authors_display": "Costa, V. et al.",
+      "year": 2015,
+      "title": "Reversal learning and dopamine: a bayesian perspective.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, N.I.H., Intramural",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 135,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Reversal learning has been studied as the process of learning to inhibit previously rewarded actions. Deficits in reversal learning have been seen after manipulations of dopamine and lesions of the orbitofrontal cortex. However, reversal learning is often studied in animals that have limited experience with reversals. As such, the animals are learning that reversals occur during data collection. We have examined a task regime in which monkeys have extensive experience with reversals and stable behavioral performance on a probabilistic two-arm bandit reversal learning task. We developed a Bayesian analysis approach to examine the effects of manipulations of dopamine on reversal performance in this regime. We find that the analysis can clarify the strategy of the animal. Specifically, at reversal, the monkeys switch quickly from choosing one stimulus to choosing the other, as opposed to gradually transitioning, which might be expected if they were using a naive reinforcement learning (RL) update of value. Furthermore, we found that administration of haloperidol affects the way the animals integrate prior knowledge into their choice behavior. Animals had a stronger prior on where reversals would occur on haloperidol than on levodopa (l-DOPA) or placebo. This strong prior was appropriate, because the animals had extensive experience with reversals occurring in the middle of the block. Overall, we find that Bayesian dissection of the behavior clarifies the strategy of the animals and reveals an effect of haloperidol on integration of prior information with evidence in favor of a choice reversal.",
+      "score": {
+        "composite": 0.44610767486558534,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28443069946234123,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07110767486558531,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Macaca mulatta",
+        "Dopamine",
+        "Levodopa",
+        "Haloperidol",
+        "Dopamine Agents",
+        "Dopamine Antagonists",
+        "Bayes Theorem",
+        "Conditioning, Operant",
+        "Reversal Learning",
+        "Choice Behavior",
+        "Algorithms",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 37,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4556d361",
+      "doi": "10.1038/s41386-022-01523-x",
+      "url": "https://doi.org/10.1038/s41386-022-01523-x",
+      "openalex_id": null,
+      "pmid": "36683090",
+      "first_author": "Langley",
+      "authors_display": "Langley, C. et al.",
+      "year": 2023,
+      "title": "Chronic escitalopram in healthy volunteers has specific effects on reinforcement sensitivity: a double-blind, placebo-controlled semi-randomised study.",
+      "venue": "Neuropsychopharmacology : official publication of the American College of Neuropsychopharmacology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 35,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9938113",
+      "tldr": null,
+      "abstract": "Several studies of the effects on cognition of selective serotonin reuptake inhibitors (SSRI), administered either acutely or sub-chronically in healthy volunteers, have found changes in learning and reinforcement outcomes. In contrast, to our knowledge, there have been no studies of chronic effects of escitalopram on cognition in healthy volunteers. This is important in view of its clinical use in major depressive disorder (MDD) and obsessive-compulsive disorder (OCD). Consequently, we aimed to investigate the chronic effect of the SSRI, escitalopram, on measures of 'cold' cognition (including inhibition, cognitive flexibility, memory) and 'hot cognition' including decision-making and particularly reinforcement learning. The study, conducted at the University of Copenhagen between May 2020 and October 2021, used a double-blind placebo-controlled design with 66 healthy volunteers, semi-randomised to receive either 20 mg of escitalopram (n = 32) or placebo (n = 34), balanced for age, sex and intelligence quotient (IQ) for at least 21 days. Questionnaires, neuropsychological tests and serum escitalopram measures were taken. We analysed group differences on the cognitive measures using linear regression models as well as innovative hierarchical Bayesian modelling of the Probabilistic Reversal Learning (PRL) task. The novel and important finding was that escitalopram reduced reinforcement sensitivity compared to placebo on both the Sequential Model-Based/Model-Free task and the PRL task. We found no other significant group differences on 'cold' or 'hot' cognition. These findings demonstrate that serotonin reuptake inhibition is involved in reinforcement learning in healthy individuals. Lower reinforcement sensitivity in response to chronic SSRI administration may reflect the 'blunting' effect often reported by patients with MDD treated with SSRIs. Trial Registration: NCT04239339 .",
+      "score": {
+        "composite": 0.42686924493521106,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Citalopram",
+        "Bayes Theorem",
+        "Double-Blind Method",
+        "Infant, Newborn",
+        "Healthy Volunteers",
+        "Escitalopram",
+        "Selective Serotonin Reuptake Inhibitors",
+        "Major Depressive Disorder"
+      ]
+    },
+    {
+      "rank": 38,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_ce7c1715",
+      "doi": "10.1176/appi.ajp.2009.09030407",
+      "url": "https://doi.org/10.1176/appi.ajp.2009.09030407",
+      "openalex_id": null,
+      "pmid": "20231320",
+      "first_author": "Dombrovski",
+      "authors_display": "Dombrovski, A. et al.",
+      "year": 2010,
+      "title": "Reward/Punishment reversal learning in older suicide attempters.",
+      "venue": "The American journal of psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 122,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Suicide rates are high in old age, and the contribution of cognitive risk factors remains poorly understood. Suicide may be viewed as an outcome of an altered decision process. The authors hypothesized that impairment in reward/punishment-based learning, a component of affective decision making, is associated with attempted suicide in late-life depression. They expected that suicide attempters would discount past reward/punishment history, focusing excessively on the most recent rewards and punishments. The authors further hypothesized that this impairment could be dissociated from executive abilities, such as forward planning.<h4>Method</h4>The authors assessed reward/punishment-based learning using the probabilistic reversal learning task in 65 individuals age 60 and older: suicide attempters, suicide ideators, nonsuicidal depressed elderly, and nondepressed comparison subjects. The authors used a reinforcement learning computational model to decompose reward/punishment processing over time. The Stockings of Cambridge test served as a control measure of executive function.<h4>Results</h4>Suicide attempters but not suicide ideators showed impaired probabilistic reversal learning compared to both nonsuicidal depressed elderly and nondepressed comparison subjects, after controlling for effects of education, global cognitive function, and substance use. Model-based analyses revealed that suicide attempters discounted previous history to a higher degree relative to comparison subjects, basing their choice largely on reward/punishment received on the last trial. Groups did not differ in their performance on the Stockings of Cambridge test.<h4>Conclusions</h4>Older suicide attempters display impaired reward/punishment-based learning. The authors propose a hypothesis that older suicide attempters make overly present-focused decisions, ignoring past experiences. Modification of this \"myopia for the past\" may have therapeutic potential.",
+      "score": {
+        "composite": 0.419653425386874,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27861370154749593,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.26666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06965342538687398,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.04,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Severity of Illness Index",
+        "Suicide, Attempted",
+        "Learning",
+        "Punishment",
+        "Reward",
+        "Cognition Disorders",
+        "Neuropsychological Tests",
+        "Models, Psychological",
+        "Aged",
+        "Female",
+        "Male",
+        "Reinforcement, Psychology",
+        "Major Depressive Disorder"
+      ]
+    },
+    {
+      "rank": 39,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_03ebf695",
+      "doi": "10.3758/s13420-018-0357-7",
+      "url": "https://doi.org/10.3758/s13420-018-0357-7",
+      "openalex_id": null,
+      "pmid": "30251103",
+      "first_author": "Piotti",
+      "authors_display": "Piotti, P. et al.",
+      "year": 2018,
+      "title": "Effect of age on discrimination learning, reversal learning, and cognitive bias in family dogs.",
+      "venue": "Learning & behavior",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 41,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Several studies on age-related cognitive decline in dogs involve laboratory dogs and prolonged training. We developed two spatial tasks that required a single 1-h session. We tested 107 medium-large sized dogs: \"young\" (N=41, aged 2.5-6.5 years) and \"old\" (N=66, aged 8-14.5 years). Our results indicated that, in a discrimination learning task and in a reversal learning task, young dogs learned significantly faster than the old dogs, indicating that these two tasks could successfully be used to investigate differences in spatial learning between young and old dogs. We also provide two novel findings. First, in the reversal learning, the dogs trained based on the location of stimuli learned faster than the dogs trained based on stimulus characteristics. Most old dogs did not learn the task within our cut-off of 50 trials. Training based on an object's location is therefore more appropriate for reversal learning tasks. Second, the contrast between the response to the positive and negative stimuli was narrower in old dogs, compared to young dogs, during the reversal learning task, as well as the cognitive bias test. This measure favors comparability between tasks and between studies. Following the cognitive bias test, we could not find any indication of differences in the positive and negative expectations between young and old dogs. Taken together, these findings do not support the hypothesis that old dogs have more negative expectations than young dogs and the use of the cognitive bias test in older dogs requires further investigation.",
+      "score": {
+        "composite": 0.4191004817463479,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Dogs",
+        "Cognition",
+        "Reversal Learning",
+        "Aging",
+        "Female",
+        "Male",
+        "Pets",
+        "Discrimination, Psychological"
+      ]
+    },
+    {
+      "rank": 40,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_cd24432f",
+      "doi": "10.1523/jneurosci.0091-11.2011",
+      "url": "https://doi.org/10.1523/jneurosci.0091-11.2011",
+      "openalex_id": null,
+      "pmid": "21775601",
+      "first_author": "Rudebeck",
+      "authors_display": "Rudebeck, P., & Murray, E.",
+      "year": 2011,
+      "title": "Dissociable effects of subtotal lesions within the macaque orbital prefrontal cortex on reward-guided behavior.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, N.I.H., Intramural",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 158,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The macaque orbital prefrontal cortex (PFo) has been implicated in a wide range of reward-guided behaviors essential for efficient foraging. The PFo, however, is not a homogeneous structure. Two major subregions, distinct by their cytoarchitecture and connections to other brain structures, compose the PFo. One subregion encompasses Walker's areas 11 and 13 and the other centers on Walker's area 14. Although it has been suggested that these subregions play dissociable roles in reward-guided behavior, direct neuropsychological evidence for this hypothesis is limited. To explore the independent contributions of PFo subregions to behavior, we studied rhesus monkeys (Macaca mulatta) with restricted excitotoxic lesions targeting either Walker's areas 11/13 or area 14. The performance of these two groups was compared to that of a group of unoperated controls on a series of reward-based tasks that has been shown to be sensitive to lesions of the PFo as a whole (Walker's areas 11, 13, and 14). Lesions of areas 11/13, but not area 14, disrupted the rapid updating of object value during selective satiation. In contrast, lesions targeting area 14, but not areas 11/13, impaired the ability of monkeys to learn to stop responding to a previously rewarded object. Somewhat surprisingly, neither lesion disrupted performance on a serial object reversal learning task, although aspiration lesions of the entire PFo produce severe deficits on this task. Our data indicate that anatomically defined subregions within macaque PFo make dissociable contributions to reward-guided behavior.",
+      "score": {
+        "composite": 0.4083692881587939,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2934771526351757,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07336928815879393,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Animals",
+        "Macaca mulatta",
+        "Ibotenic Acid",
+        "Excitatory Amino Acid Agonists",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Analysis of Variance",
+        "Behavior, Animal",
+        "Food Preferences",
+        "Conditioning, Operant",
+        "Discrimination Learning",
+        "Reinforcement Schedule",
+        "Reward",
+        "Reversal Learning",
+        "Reaction Time",
+        "Dissociative Disorders",
+        "Male",
+        "Extinction, Psychological"
+      ]
+    },
+    {
+      "rank": 41,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b5effd42",
+      "doi": "10.1523/jneurosci.1958-10.2010",
+      "url": "https://doi.org/10.1523/jneurosci.1958-10.2010",
+      "openalex_id": null,
+      "pmid": "21159958",
+      "first_author": "Tsuchida",
+      "authors_display": "Tsuchida, A. et al.",
+      "year": 2010,
+      "title": "Beyond reversal: a critical role for human orbitofrontal cortex in flexible learning from probabilistic feedback.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 154,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Damage to the orbitofrontal cortex (OFC) has been linked to impaired reinforcement processing and maladaptive behavior in changing environments across species. Flexible stimulus-outcome learning, canonically captured by reversal learning tasks, has been shown to rely critically on OFC in rats, monkeys, and humans. However, the precise role of OFC in this learning remains unclear. Furthermore, whether other frontal regions also contribute has not been definitively established, particularly in humans. In the present study, a reversal learning task with probabilistic feedback was administered to 39 patients with focal lesions affecting various sectors of the frontal lobes and to 51 healthy, demographically matched control subjects. Standard groupwise comparisons were supplemented with voxel-based lesion-symptom mapping to identify regions within the frontal lobes critical for task performance. Learning in this dynamic stimulus-reinforcement environment was considered both in terms of overall performance and at the trial-by-trial level. In this challenging, probabilistic context, OFC damage disrupted both initial and reversal learning. Trial-by-trial performance patterns suggest that OFC plays a critical role in interpreting feedback from a particular trial within the broader context of the outcome history across trials rather than in simply suppressing preexisting stimulus-outcome associations. The findings show that OFC, and not other prefrontal regions, plays a necessary role in flexible stimulus-reinforcement learning in humans.",
+      "score": {
+        "composite": 0.3980004939822041,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2920019759288165,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07300049398220412,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Frontal Lobe",
+        "Prefrontal Cortex",
+        "Humans",
+        "Brain Diseases",
+        "Tomography, X-Ray Computed",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Probability",
+        "Feedback, Psychological",
+        "Reversal Learning",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 42,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_285beaa9",
+      "doi": "10.1523/jneurosci.3266-08.2009",
+      "url": "https://doi.org/10.1523/jneurosci.3266-08.2009",
+      "openalex_id": null,
+      "pmid": "19369539",
+      "first_author": "Clatworthy",
+      "authors_display": "Clatworthy, P. et al.",
+      "year": 2009,
+      "title": "Dopamine release in dissociable striatal subregions predicts the different effects of oral methylphenidate on reversal learning and spatial working memory.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 172,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Previous data suggest that methylphenidate can have variable effects on different cognitive tasks both within and between individuals. This is thought to be underpinned by inverted U-shaped relationships between cognitive performance and dopaminergic activity in relatively separate fronto-striatal circuits and reflected by individual differences in trait impulsivity. Direct evidence for this is currently lacking. In this study, we demonstrate for the first time that therapeutic doses of oral methylphenidate administered to young healthy subjects result in different sized changes in D(2)/D(3) receptor availability in different regions of the human striatum and that the change in receptor availability within an individual subregion predicts cognitive performance on a particular task. Methylphenidate produced significantly different effects on reversal learning and spatial working memory tasks within individuals. Performance on the reversal learning task was predicted by the drug-induced change in D(2)/D(3) receptor availability in postcommissural caudate, measured using [(11)C]-raclopride radioligand PET imaging, whereas performance on the spatial working memory task was predicted by changes in receptor availability in the ventral striatum. Reversal learning performance was also predicted by subjects' trait impulsivity, such that the most impulsive individuals benefited more from methylphenidate, consistent with this drug's beneficial effects on cognition in attention deficit hyperactivity disorder.",
+      "score": {
+        "composite": 0.3895907440502406,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2983629762009623,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07459074405024058,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Corpus Striatum",
+        "Humans",
+        "Dopamine",
+        "Methylphenidate",
+        "Brain Mapping",
+        "Predictive Value of Tests",
+        "Photic Stimulation",
+        "Spatial Behavior",
+        "Memory",
+        "Reversal Learning",
+        "Adult",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 43,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_50eaa8e4",
+      "doi": "10.1523/jneurosci.2272-08.2008",
+      "url": "https://doi.org/10.1523/jneurosci.2272-08.2008",
+      "openalex_id": null,
+      "pmid": "18701696",
+      "first_author": "Rudebeck",
+      "authors_display": "Rudebeck, P., & Murray, E.",
+      "year": 2008,
+      "title": "Amygdala and orbitofrontal cortex lesions differentially influence choices during object reversal learning.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, N.I.H., Intramural",
+        "Comparative Study",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 120,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In nonhuman primates, interaction between the orbitofrontal cortex (OFC) and the amygdala (AMG) has been seen as critical for learning and subsequently changing associations between stimuli and reinforcement. However, it is still unclear what the precise role of the OFC is in altering these stimulus-reward associations, and recent research has questioned whether the AMG makes an essential contribution at all. To gain a better understanding of the role of these two structures in flexibly associating stimuli with reinforcement, we reanalyzed a set of previously published data from groups of monkeys with either OFC or AMG lesions that had been tested on an object reversal learning task. Based on trial-by-trial analyses of rewarded and unrewarded choices, we report two new findings. First, monkeys with OFC lesions were, compared with both control and AMG groups, unable to use correctly performed trials to optimally guide subsequent choices. Second, monkeys with AMG lesions showed the opposite pattern of behavior. This group benefited more than controls from correctly performed trials that followed an error. Finally, as has been reported by others, after a change in reward contingencies, monkeys with OFC lesions also showed a slightly greater tendency to choose the previously rewarded object. These findings demonstrate that the OFC and AMG make different contributions to object reversal learning not highlighted previously.",
+      "score": {
+        "composite": 0.37441613501691096,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2776645400676438,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06941613501691095,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Amygdala",
+        "Frontal Lobe",
+        "Prefrontal Cortex",
+        "Animals",
+        "Macaca mulatta",
+        "Photic Stimulation",
+        "Reversal Learning",
+        "Choice Behavior",
+        "Male"
+      ]
+    },
+    {
+      "rank": 44,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_7d57823d",
+      "doi": "10.1523/jneurosci.1010-06.2006",
+      "url": "https://doi.org/10.1523/jneurosci.1010-06.2006",
+      "openalex_id": null,
+      "pmid": "16899731",
+      "first_author": "Hampton",
+      "authors_display": "Hampton, A. et al.",
+      "year": 2006,
+      "title": "The role of the ventromedial prefrontal cortex in abstract state-based inference during decision making in humans.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 370,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Many real-life decision-making problems incorporate higher-order structure, involving interdependencies between different stimuli, actions, and subsequent rewards. It is not known whether brain regions implicated in decision making, such as the ventromedial prefrontal cortex (vmPFC), use a stored model of the task structure to guide choice (model-based decision making) or merely learn action or state values without assuming higher-order structure as in standard reinforcement learning. To discriminate between these possibilities, we scanned human subjects with functional magnetic resonance imaging while they performed a simple decision-making task with higher-order structure, probabilistic reversal learning. We found that neural activity in a key decision-making region, the vmPFC, was more consistent with a computational model that exploits higher-order structure than with simple reinforcement learning. These results suggest that brain regions, such as the vmPFC, use an abstract model of task structure to guide behavioral choice, computations that may underlie the human capacity for complex social interactions and abstract strategizing.",
+      "score": {
+        "composite": 0.370633406476092,
+        "breakdown": {
+          "raw": {
+            "citations": 0.342533625904368,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.085633406476092,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Cognition",
+        "Discrimination Learning",
+        "Reversal Learning",
+        "Decision Making",
+        "Task Performance and Analysis",
+        "Action Potentials",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 45,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_0e6f99c2",
+      "doi": "10.1176/appi.ajp.2011.11010137",
+      "url": "https://doi.org/10.1176/appi.ajp.2011.11010137",
+      "openalex_id": null,
+      "pmid": "22420038",
+      "first_author": "Robinson",
+      "authors_display": "Robinson, O. et al.",
+      "year": 2012,
+      "title": "Ventral striatum response during reward and punishment reversal learning in unmedicated major depressive disorder.",
+      "venue": "The American journal of psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, N.I.H., Intramural",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 183,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>Affective biases may underlie many of the key symptoms of major depressive disorder, from anhedonia to altered cognitive performance. Understanding the cause of these biases is therefore critical in the quest for improved treatments. Depression is associated, for example, with a negative affective bias in reversal learning. However, despite the fact that reversal learning is associated with striatal response in healthy individuals and depressed individuals exhibit attenuated striatal function on multiple tasks, studies to date have not demonstrated striatal involvement in the negative bias in reversal learning in depression. In this study, the authors sought to determine whether this may be because reversal learning tasks conventionally used to study behavior examine reversals only on the basis of unexpected punishment and therefore do not adequately separate reward- and punishment-based behavior.<h4>Method</h4>The authors used functional MRI to compare the hemodynamic response to a reversal learning task with mixed reward- and punishment-based reversal stages between individuals with unmedicated major depressive disorder (N=13) and healthy comparison subjects (N=14).<h4>Results</h4>Impaired reward (but not punishment) reversal accuracy was found alongside attenuated anteroventral striatal response to unexpected reward in depression.<h4>Conclusions</h4>Attenuated neurophysiological response of the anteroventral striatum may reflect dysfunction in circuits involving afferent projections from the orbitofrontal, limbic, and/or mesostriatal dopaminergic pathways, which conceivably may, together with the ventral striatum, underlie anhedonia in depression. Learning to appreciate and enjoy positive life experiences is critical for recovery from depression. This study pinpoints a neural target for such recovery.",
+      "score": {
+        "composite": 0.3204830056093825,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3019320224375298,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07548300560938245,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Basal Ganglia",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Psychophysiology",
+        "Behavioral Symptoms",
+        "Cognition",
+        "Punishment",
+        "Reward",
+        "Reversal Learning",
+        "Task Performance and Analysis",
+        "Reaction Time",
+        "Functional Neuroimaging",
+        "Anhedonia",
+        "Major Depressive Disorder"
+      ]
+    },
+    {
+      "rank": 46,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_e6a3f109",
+      "doi": "20026435",
+      "url": "https://doi.org/20026435",
+      "openalex_id": null,
+      "pmid": "12040063",
+      "first_author": "Cools",
+      "authors_display": "Cools, R. et al.",
+      "year": 2002,
+      "title": "Defining the neural mechanisms of probabilistic reversal learning using event-related functional magnetic resonance imaging.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 566,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Event-related functional magnetic resonance imaging was used to measure blood oxygenation level-dependent responses in 13 young healthy human volunteers during performance of a probabilistic reversal-learning task. The task allowed the separate investigation of the relearning of stimulus-reward associations and the reception of negative feedback. Significant signal change in the right ventrolateral prefrontal cortex was demonstrated on trials when subjects stopped responding to the previously relevant stimulus and shifted responding to the newly relevant stimulus. Significant signal change in the region of the ventral striatum was also observed on such reversal errors, from a region of interest analysis. The ventrolateral prefrontal cortex and ventral striatum were not significantly activated by the other, preceding reversal errors, or when subjects received negative feedback for correct responses. Moreover, the response on the final reversal error, before shifting, was not modulated by the number of preceding reversal errors, indicating that error-related activity does not simply accumulate in this network. The signal change in this ventral frontostriatal circuit is therefore associated with reversal learning and is uncontaminated by negative feedback. Overall, these data concur with findings in rodents and nonhuman primates of reversal-learning deficits after damage to ventral frontostriatal circuitry, and also support recent clinical findings using this task.",
+      "score": {
+        "composite": 0.2767728231245196,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3670912924980784,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0917728231245196,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Corpus Striatum",
+        "Prefrontal Cortex",
+        "Neurons",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Brain Mapping",
+        "Feedback, Psychological",
+        "Behavior",
+        "Probability Learning",
+        "Reward",
+        "Reversal Learning",
+        "Neural Inhibition",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    }
+  ]
+}

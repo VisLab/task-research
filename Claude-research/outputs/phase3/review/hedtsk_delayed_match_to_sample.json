@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_delayed_match_to_sample",
+    "name": "Delayed Match-to-Sample Task",
+    "aliases": [
+      "DMTS",
+      "DMS"
+    ],
+    "category_id": "short_term_and_working_memory",
+    "short_definition": "Sample stimulus followed by a delay and then a probe or choice array; response indicates whether the probe matches the sample. Indexes short-term memory maintenance.",
+    "description": "The Delayed Match-to-Sample (DMTS) task consists of three phases: sample, delay, and choice. During the sample phase, a stimulus is presented. Following a delay period (0-30 seconds), the participant must identify which of several test stimuli matches the original sample. Memory demands are manipulated by varying delay duration or the number of choice alternatives. The task has been fundamental in primate neuroscience for identifying the neural substrates of working memory, particularly delay-period persistent activity in prefrontal cortex.",
+    "inclusion_test": {
+      "procedure": "A sample stimulus is presented, followed by a retention interval (delay), then a test stimulus; participants indicate whether the test matches the sample.",
+      "manipulation": "Delay duration; sample complexity; number of test alternatives; interference during delay.",
+      "measurement": "Accuracy (proportion correct); RT; decay function across delay intervals."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:37:47",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 2,
+      "label": "Tomezsko 2020 — Determination of RNA structural diversity and its role in HIV-1 RNA splicing. (Nature, recent_primary, 204×)",
+      "doi": "10.1038/s41586-020-2253-5",
+      "pub_id": "pub_a75cc24e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6003806472005946,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3081892554690449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07704731386726123,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature",
+      "citation_count": 204,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Zheng 2020 — Bacteria are important dimethylsulfoniopropionate producers in marine aphotic… (Nature communications, recent_primary, 64×)",
+      "doi": "10.1038/s41467-020-18434-4",
+      "pub_id": "pub_59dad615",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5837550359879671,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24168681061853478,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.060421702654633695,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 64,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Veres 2020 — Global airborne sampling reveals a previously unobserved dimethyl sulfide oxi… (Proceedings of the National Acad…, recent_primary, 60×)",
+      "doi": "10.1073/pnas.1919344117",
+      "pub_id": "pub_e555c330",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5828357182852678,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23800953980773776,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05950238495193444,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 60,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Zubradt 2017 — DMS-MaPseq for genome-wide or targeted RNA structure probing in vivo. (Nature methods, foundational, 422×)",
+      "doi": "10.1038/nmeth.4057",
+      "pub_id": "pub_2fb8fa83",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5808653470205477,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3501280547488576,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0875320136872144,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Nature methods",
+      "citation_count": 422,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Kuerten 2020 — Autoantibodies against central nervous system antigens in a subset of B cell-… (Proceedings of the National Acad…, recent_primary, 48×)",
+      "doi": "10.1073/pnas.2011249117",
+      "pub_id": "pub_02c27196",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5796650518908181,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Su 2018 — Genome-wide RNA structurome reprogramming by acute heat shock globally regula… (Proceedings of the National Acad…, recent_primary, 95×)",
+      "doi": "10.1073/pnas.1807988115",
+      "pub_id": "pub_382255be",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5693994818255836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26426459396900137,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06606614849225034,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2018,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 95,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Sharma 2018 — A single N<sup>1</sup>-methyladenosine on the large ribosomal subunit rRNA im… (Scientific reports, recent_primary, 55×)",
+      "doi": "10.1038/s41598-018-30383-z",
+      "pub_id": "pub_e88e4c4a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5615978371305593,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23305801518890404,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05826450379722601,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 55,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Rouskin 2014 — Genome-wide probing of RNA structure reveals active unfolding of mRNA structu… (Nature, foundational, 747×)",
+      "doi": "10.1038/nature12894",
+      "pub_id": "pub_e855c5f4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.559116194201213,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3831314434715183,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09578286086787957,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Nature",
+      "citation_count": 747,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Kharel 2023 — Stress promotes RNA G-quadruplex folding in human cells. (Nature communications, recent_primary, 106×)",
+      "doi": "10.1038/s41467-023-35811-x",
+      "pub_id": "pub_d2ee352c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5409696727855937,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2705453578090416,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0676363394522604,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Nature communications",
+      "citation_count": 106,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Reynolds 2014 — Age-related variations in the methylome associated with gene expression in hu… (Nature communications, foundational, 173×)",
+      "doi": "10.1038/ncomms6366",
+      "pub_id": "pub_fd4dcfda",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5380075034842369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2986966806036142,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07467417015090355,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Nature communications",
+      "citation_count": 173,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Coyote-Maestas 2022 — Determinants of trafficking, conduction, and disease within a K<sup>+</sup> c… (eLife, recent_primary, 57×)",
+      "doi": "10.7554/elife.76903",
+      "pub_id": "pub_862e2197",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5221057625227926,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23508971675783696,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05877242918945924,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "eLife",
+      "citation_count": 57,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "De Feyter 2021 — Deuterium metabolic imaging - Back to the future. (Journal of magnetic resonance (S…, key_review, 101×)",
+      "doi": "10.1016/j.jmr.2021.106932",
+      "pub_id": "pub_75ea1c52",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5102769861480405,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2677746112588288,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0669436528147072,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Journal of magnetic resonance (San Diego, Calif. : 1997)",
+      "citation_count": 101,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Simpson 2021 — Early Aggressive Treatment Approaches for Multiple Sclerosis. (Current treatment options in neu…, key_review, 100×)",
+      "doi": "10.1007/s11940-021-00677-1",
+      "pub_id": "pub_06e29ee7",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.510134380182744,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2672041873976427,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06680104684941067,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Current treatment options in neurology",
+      "citation_count": 100,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Krysko 2021 — Treatment of Women with Multiple Sclerosis Planning Pregnancy. (Current treatment options in neu…, key_review, 63×)",
+      "doi": "10.1007/s11940-021-00666-4",
+      "pub_id": "pub_bb8dfc0c",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5035306223703006,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24078915614786897,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06019728903696724,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Current treatment options in neurology",
+      "citation_count": 63,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Sharifian-Dorche 2021 — COVID-19 and disease-modifying therapies in patients with demyelinating disea… (Multiple sclerosis and related d…, key_review, 61×)",
+      "doi": "10.1016/j.msard.2021.102800",
+      "pub_id": "pub_76a36165",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5030710793798672,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23895098418613514,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.059737746046533785,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Multiple sclerosis and related disorders",
+      "citation_count": 61,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Dahham 2021 — Economic Burden of Multiple Sclerosis in Low- and Middle-Income Countries: A … (PharmacoEconomics, key_review, 40×)",
+      "doi": "10.1007/s40273-021-01032-7",
+      "pub_id": "pub_63118315",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.497085017758763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21500673770171874,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.053751684425429685,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PharmacoEconomics",
+      "citation_count": 40,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Biolato 2021 — The Disease-Modifying Therapies of Relapsing-Remitting Multiple Sclerosis and… (CNS drugs, key_review, 35×)",
+      "doi": "10.1007/s40263-021-00842-9",
+      "pub_id": "pub_afd04dee",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.49520257826854436,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "CNS drugs",
+      "citation_count": 35,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Baranello 2021 — Prognostic Factors and Treatment-Effect Modifiers in Spinal Muscular Atrophy. (Clinical pharmacology and therap…, key_review, 32×)",
+      "doi": "10.1002/cpt.2247",
+      "pub_id": "pub_588b5840",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4939431418032331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Clinical pharmacology and therapeutics",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Schweitzer 2021 — Effects of disease-modifying therapy on peripheral leukocytes in patients wit… (Journal of neurology, key_review, 29×)",
+      "doi": "10.1007/s00415-019-09690-6",
+      "pub_id": "pub_ddf1096f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4925635852427704,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of neurology",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 35,
+      "label": "Coyle 2021 — Vaccine Considerations for Multiple Sclerosis in the COVID-19 Era. (Advances in therapy, key_review, 26×)",
+      "doi": "10.1007/s12325-021-01761-3",
+      "pub_id": "pub_7706c943",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.49103855621766623,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Advances in therapy",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 36,
+      "label": "Paulsen 2018 — Discoveries of Extrachromosomal Circles of DNA in Normal and Tumor Cells. (Trends in genetics : TIG, key_review, 201×)",
+      "doi": "10.1016/j.tig.2017.12.010",
+      "pub_id": "pub_f6258053",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.49016726168890523,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3073357134222876,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0768339283555719,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Trends in genetics : TIG",
+      "citation_count": 201,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 37,
+      "label": "Yamout 2021 — MENACTRIMS practice guideline for COVID-19 vaccination in patients with multi… (Multiple sclerosis and related d…, key_review, 24×)",
+      "doi": "10.1016/j.msard.2021.103225",
+      "pub_id": "pub_f320b772",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4899245922169964,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Multiple sclerosis and related disorders",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 38,
+      "label": "Giovannoni 2020 — A Systematic Review and Mixed Treatment Comparison of Pharmaceutical Interven… (Neurology and therapy, key_review, 45×)",
+      "doi": "10.1007/s40120-020-00212-5",
+      "pub_id": "pub_6ae67af1",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.48875057593039334,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22166897038824016,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05541724259706004,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Neurology and therapy",
+      "citation_count": 45,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 39,
+      "label": "Rostami Mansoor 2021 — Impact of disease-modifying drugs on the severity of  COVID-19 infection in m… (Journal of medical virology, key_review, 22×)",
+      "doi": "10.1002/jmv.26593",
+      "pub_id": "pub_5206bf4c",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4887176944242322,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of medical virology",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 40,
+      "label": "Ruiz 2019 — Resolution of inflammation during multiple sclerosis. (Seminars in immunopathology, key_review, 83×)",
+      "doi": "10.1007/s00281-019-00765-0",
+      "pub_id": "pub_74caa1a2",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4874666965858424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2565334530100364,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0641333632525091,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Seminars in immunopathology",
+      "citation_count": 83,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 41,
+      "label": "Mitchell 2019 — Probing RNA structure in vivo. (Current opinion in structural bi…, key_review, 81×)",
+      "doi": "10.1016/j.sbi.2019.07.008",
+      "pub_id": "pub_e91e75bb",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4871178992649242,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25513826372636356,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06378456593159089,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Current opinion in structural biology",
+      "citation_count": 81,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 42,
+      "label": "Cummings 2017 — Alzheimer's disease drug development pipeline: 2017. (Alzheimer's & dementia (New York…, key_review, 258×)",
+      "doi": "10.1016/j.trci.2017.05.002",
+      "pub_id": "pub_3bff4340",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.48376502094130364,
+        "breakdown": {
+          "raw": {
+            "citations": 0.32172675043188126,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08043168760797031,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Alzheimer's & dementia (New York, N. Y.)",
+      "citation_count": 258,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 43,
+      "label": "Chisari 2022 — Rituximab for the treatment of multiple sclerosis: a review. (Journal of neurology, key_review, 126×)",
+      "doi": "10.1007/s00415-020-10362-z",
+      "pub_id": "pub_90fe1565",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.48344997867964185,
+        "breakdown": {
+          "raw": {
+            "citations": 0.280466581385234,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0701166453463085,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Journal of neurology",
+      "citation_count": 126,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 44,
+      "label": "Liss 2021 — Practical recommendations for timely, accurate diagnosis of symptomatic Alzhe… (Journal of internal medicine, key_review, 178×)",
+      "doi": "10.1111/joim.13244",
+      "pub_id": "pub_4ab38723",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.47841757024056536,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30033694762892815,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07508423690723204,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of internal medicine",
+      "citation_count": 178,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 45,
+      "label": "Freeman 2022 — High-Efficacy Therapies for Treatment-Naïve Individuals with Relapsing-Remitt… (CNS drugs, key_review, 81×)",
+      "doi": "10.1007/s40263-022-00965-7",
+      "pub_id": "pub_bfdbd453",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.4771178992649242,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25513826372636356,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06378456593159089,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "CNS drugs",
+      "citation_count": 81,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

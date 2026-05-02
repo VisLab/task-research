@@ -1,0 +1,124 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T13:19:54",
+  "item": {
+    "kind": "process",
+    "id": "hed_self_monitoring",
+    "name": "Self-monitoring",
+    "aliases": [],
+    "category_id": "awareness_agency_and_metacognition",
+    "definition": "Ongoing evaluation of one's own performance against task goals and expected outcomes."
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 1,
+      "picked": 1,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_0d40e3d3",
+      "doi": "10.1016/s0079-7421(08)60053-5",
+      "url": "https://doi.org/10.1016/s0079-7421(08)60053-5",
+      "openalex_id": "https://openalex.org/W1598182466",
+      "pmid": null,
+      "first_author": "Nelson",
+      "authors_display": "Thomas O. Nelson",
+      "year": 1990,
+      "title": "Metamemory: A Theoretical Framework and New Findings",
+      "venue": "The Psychology of learning and motivation/The psychology of learning and motivation",
+      "venue_tier": "unknown",
+      "publisher": "Elsevier BV",
+      "publication_types": [
+        "book-chapter"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 2437,
+      "influential_citation_count": null,
+      "fwci": 5.7279,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.5728847897944096,
+        "breakdown": {
+          "raw": {
+            "citations": 0.45153915917763865,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11288478979440966,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

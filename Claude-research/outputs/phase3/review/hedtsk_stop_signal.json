@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_stop_signal",
+    "name": "Stop-Signal Task",
+    "aliases": [
+      "SST",
+      "Stop Task"
+    ],
+    "category_id": "inhibitory_control_and_conflict_monitoring",
+    "short_definition": "Choice RT task in which an occasional stop signal requires response cancellation; stop-signal reaction time (SSRT) estimates inhibitory latency.",
+    "description": "The Stop-Signal Task measures the ability to inhibit a prepotent motor response after it has been initiated. Participants perform a primary go task (button press to go signals) but on a subset of trials, a stop signal (auditory tone or visual cue) appears after a variable delay (stop-signal delay, SSD), instructing them to cancel their response. SSD is adjusted dynamically using a staircase procedure converging on 50% inhibition probability. The key measure is stop-signal reaction time (SSRT), estimated using the race model framework, which indexes the latency of the internal inhibitory process.",
+    "inclusion_test": {
+      "procedure": "On most trials, participants make a speeded response to a go stimulus. On a minority of trials, a stop signal (tone or visual cue) appears after the go stimulus, instructing them to withhold their response.",
+      "manipulation": "Stop-signal delay (SSD, adjusted by staircase); proportion of stop trials (typically 25%); go stimulus type.",
+      "measurement": "Stop-signal reaction time (SSRT, estimated via race model); go RT; probability of stopping at each SSD."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:54:29",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Logan 1984 — On the ability to inhibit thought and action: A theory of an act of control. (Psychological Review, historical, 2k×)",
+      "doi": "10.1037/0033-295x.91.3.295",
+      "pub_id": "pub_d21361e5",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7134094928180872,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4536379712723487,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11340949281808717,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": null,
+      "year": 1984,
+      "venue": "Psychological Review",
+      "citation_count": 2527,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Chaarani 2021 — Baseline brain function in the preadolescents of the ABCD Study. (Nature neuroscience, recent_primary, 99×)",
+      "doi": "10.1038/s41593-021-00867-9",
+      "pub_id": "pub_6bebc74a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5999903552293189,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2666280875839421,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06665702189598552,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Nature neuroscience",
+      "citation_count": 99,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Pfisterer 2020 — Identification of epilepsy-associated neuronal subtypes and gene expression u… (Nature communications, recent_primary, 167×)",
+      "doi": "10.1038/s41467-020-18752-7",
+      "pub_id": "pub_45d761ac",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5974995780920036,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29666497903468125,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07416624475867031,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 167,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Mosher 2021 — Distinct roles of dorsal and ventral subthalamic neurons in action selection … (Neuron, recent_primary, 79×)",
+      "doi": "10.1016/j.neuron.2020.12.025",
+      "pub_id": "pub_98b9e3bb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5967604887998097,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2537086218659055,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06342715546647637,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Neuron",
+      "citation_count": 79,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Liu 2020 — Cell type-differential modulation of prefrontal cortical GABAergic interneuro… (Science advances, recent_primary, 72×)",
+      "doi": "10.1126/sciadv.aay4073",
+      "pub_id": "pub_e41df435",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5854351096765031,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24840710537267913,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06210177634316978,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Science advances",
+      "citation_count": 72,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Fong 2019 — Dynamic functional connectivity during task performance and rest predicts ind… (NeuroImage, recent_primary, 134×)",
+      "doi": "10.1016/j.neuroimage.2018.11.057",
+      "pub_id": "pub_1fdf029b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5843341856594978,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2840034093046579,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07100085232616447,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "NeuroImage",
+      "citation_count": 134,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Jang 2020 — Distinct roles of parvalbumin and somatostatin interneurons in gating the syn… (Science advances, recent_primary, 64×)",
+      "doi": "10.1126/sciadv.aay5333",
+      "pub_id": "pub_54f9a0c9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5837550359879671,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24168681061853478,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.060421702654633695,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Science advances",
+      "citation_count": 64,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Li 2019 — FN1, SPARC, and SERPINE1 are highly expressed and significantly related to a … (Scientific reports, recent_primary, 115×)",
+      "doi": "10.1038/s41598-019-43924-x",
+      "pub_id": "pub_bb2ba007",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5821386440289538,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2752212427824818,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06880531069562044,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 115,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Boldog 2018 — Transcriptomic and morphophysiological evidence for a specialized human corti… (Nature neuroscience, recent_primary, 221×)",
+      "doi": "10.1038/s41593-018-0205-2",
+      "pub_id": "pub_a03df74f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5815337841301668,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31280180318733386,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07820045079683347,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature neuroscience",
+      "citation_count": 221,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Kim 2020 — Identification of recurrent FHL2-GLI2 oncogenic fusion in sclerosing stromal … (Nature communications, recent_primary, 51×)",
+      "doi": "10.1038/s41467-019-13806-x",
+      "pub_id": "pub_a7abd330",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5805251695584579,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2287673449004983,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057191836225124575,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 51,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Yoo 2018 — Connectome-based predictive modeling of attention: Comparing different functi… (NeuroImage, recent_primary, 159×)",
+      "doi": "10.1016/j.neuroimage.2017.11.010",
+      "pub_id": "pub_dd52176f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5767933703059709,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2938401478905503,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07346003697263757,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "NeuroImage",
+      "citation_count": 159,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Wang 2019 — Historical change of El Niño properties sheds light on future changes of extr… (Proceedings of the National Acad…, recent_primary, 56×)",
+      "doi": "10.1073/pnas.1911130116",
+      "pub_id": "pub_2f053fa8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5718540276839191,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Verbruggen 2019 — A consensus guide to capturing the ability to inhibit actions and impulsive b… (eLife, recent_primary, 609×)",
+      "doi": "10.7554/elife.46323",
+      "pub_id": "pub_24b25b80",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5661642292332606,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37132358359970885,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09283089589992721,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "eLife",
+      "citation_count": 609,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Fee 2017 — Somatostatin-Positive Gamma-Aminobutyric Acid Interneuron Deficits in Depress… (Biological psychiatry, key_review, 256×)",
+      "doi": "10.1016/j.biopsych.2017.05.024",
+      "pub_id": "pub_b40c370d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5636528158182107,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3212779299395097,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08031948248487743,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Biological psychiatry",
+      "citation_count": 256,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Cummings 2022 — Control of fear by discrete prefrontal GABAergic populations encoding valence… (Neuron, recent_primary, 56×)",
+      "doi": "10.1016/j.neuron.2022.07.004",
+      "pub_id": "pub_5067e638",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5618540276839191,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2022,
+      "venue": "Neuron",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Zeve 2022 — Robust differentiation of human enteroendocrine cells from intestinal stem ce… (Nature communications, recent_primary, 56×)",
+      "doi": "10.1038/s41467-021-27901-5",
+      "pub_id": "pub_adc38b8f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5618540276839191,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2340827774023433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05852069435058582,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Nature communications",
+      "citation_count": 56,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 43,
+      "label": "Erika-Florence 2014 — A functional network perspective on response inhibition and attentional control. (Nature communications, foundational, 184×)",
+      "doi": "10.1038/ncomms5073",
+      "pub_id": "pub_35a39f42",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5388947911043929,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30224583108423797,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07556145777105949,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Nature communications",
+      "citation_count": 184,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 46,
+      "label": "Wei 2012 — Complex shapes self-assembled from single-stranded DNA tiles. (Nature, foundational, 584×)",
+      "doi": "10.1038/nature11075",
+      "pub_id": "pub_e13d3055",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5355585179108556,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3689007383100893,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09222518457752232,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2012,
+      "venue": "Nature",
+      "citation_count": 584,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 47,
+      "label": "Jiang 2021 — Morphine coordinates SST and PV interneurons in the prelimbic cortex to disin… (Molecular psychiatry, recent_primary, 72×)",
+      "doi": "10.1038/s41380-019-0480-7",
+      "pub_id": "pub_8e96bd38",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5354351096765031,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24840710537267913,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06210177634316978,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Molecular psychiatry",
+      "citation_count": 72,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 49,
+      "label": "Bonnelle 2012 — Salience network integrity predicts default mode network function after traum… (Proceedings of the National Acad…, foundational, 447×)",
+      "doi": "10.1073/pnas.1113455109",
+      "pub_id": "pub_43f3295f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5316964816490429,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3534525932628385,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08836314831570963,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 447,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 52,
+      "label": "Griessner 2021 — Central amygdala circuit dynamics underlying the benzodiazepine anxiolytic ef… (Molecular psychiatry, recent_primary, 53×)",
+      "doi": "10.1038/s41380-018-0310-3",
+      "pub_id": "pub_9ca84636",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5310714377238275,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23095241756197657,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05773810439049414,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2021,
+      "venue": "Molecular psychiatry",
+      "citation_count": 53,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 53,
+      "label": "Rosenberg 2020 — Behavioral and Neural Signatures of Working Memory in Childhood. (The Journal of neuroscience : th…, recent_primary, 73×)",
+      "doi": "10.1523/jneurosci.2841-19.2020",
+      "pub_id": "pub_5b1e93eb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5289653765020558,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24919483934155667,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06229870983538917,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 73,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 56,
+      "label": "Carstensen 2021 — Socioemotional Selectivity Theory: The Role of Perceived Endings in Human Mot… (The Gerontologist, key_review, 218×)",
+      "doi": "10.1093/geront/gnab116",
+      "pub_id": "pub_112432d3",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5213368506379474,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31201406921845637,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07800351730461409,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "The Gerontologist",
+      "citation_count": 218,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 57,
+      "label": "Van Derveer 2021 — A Role for Somatostatin-Positive Interneurons in Neuro-Oscillatory and Inform… (Schizophrenia bulletin, key_review, 49×)",
+      "doi": "10.1093/schbul/sbaa184",
+      "pub_id": "pub_40e921c6",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5199574737231576,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Schizophrenia bulletin",
+      "citation_count": 49,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 58,
+      "label": "You 2024 — Systematic comparison of sequencing-based spatial transcriptomic methods. (Nature methods, recent_primary, 134×)",
+      "doi": "10.1038/s41592-024-02325-3",
+      "pub_id": "pub_2806686c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5143341856594978,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2840034093046579,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07100085232616447,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Nature methods",
+      "citation_count": 134,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 60,
+      "label": "Song 2021 — The role of neuropeptide somatostatin in the brain and its application in tre… (Experimental & molecular medicine, key_review, 107×)",
+      "doi": "10.1038/s12276-021-00580-4",
+      "pub_id": "pub_4a2e83d7",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5111043192299887,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2710839435866214,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06777098589665535,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Experimental & molecular medicine",
+      "citation_count": 107,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 61,
+      "label": "Nahmod 2019 — Later high school start times associated with longer actigraphic sleep durati… (Sleep, recent_primary, 52×)",
+      "doi": "10.1093/sleep/zsy212",
+      "pub_id": "pub_d052723d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.510800880530683,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2298701887893985,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057467547197349624,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Sleep",
+      "citation_count": 52,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 65,
+      "label": "Mossink 2022 — Cadherin-13 is a critical regulator of GABAergic modulation in human stem-cel… (Molecular psychiatry, recent_primary, 80×)",
+      "doi": "10.1038/s41380-021-01117-x",
+      "pub_id": "pub_45cb3973",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5069402971791106,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2544278553831089,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06360696384577723,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Molecular psychiatry",
+      "citation_count": 80,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 66,
+      "label": "Ide 2011 — A cerebellar thalamic cortical circuit for error-related cognitive control. (NeuroImage, foundational, 148×)",
+      "doi": "10.1016/j.neuroimage.2010.07.042",
+      "pub_id": "pub_662b1f3f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5057623956721393,
+        "breakdown": {
+          "raw": {
+            "citations": 0.289716249355224,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.072429062338806,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "NeuroImage",
+      "citation_count": 148,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 67,
+      "label": "Turner 2018 — A Meta-Analysis of Social Skills Training and Related Interventions for Psych… (Schizophrenia bulletin, key_review, 112×)",
+      "doi": "10.1093/schbul/sbx146",
+      "pub_id": "pub_bd07362d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5017593807140585,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2737041895229003,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06842604738072508,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Schizophrenia bulletin",
+      "citation_count": 112,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

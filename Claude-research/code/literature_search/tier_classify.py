@@ -29,6 +29,7 @@ from __future__ import annotations
 from collections import Counter
 
 from normalize import Candidate
+from triage_rules import classify_venue
 
 
 # Stable exclusion reason codes. The serializer copies these into the JSON
@@ -38,6 +39,189 @@ EXCL_UNKNOWN_SPEC  = "unknown_species"
 EXCL_NO_YEAR_NO_DOI = "no_year_no_doi"
 EXCL_BELOW_THRESHOLD = "below_score_threshold"
 EXCL_BELOW_RESERVE   = "below_reserve_cutoff"
+EXCL_CONFERENCE      = "conference_or_proceedings"
+EXCL_PREPRINT        = "preprint"
+EXCL_LOW_VENUE       = "low_quality_venue"
+EXCL_PUBLISHER       = "excluded_publisher"
+
+
+# Publication-type tokens that mark a candidate as a conference/proceedings
+# paper rather than a journal article. Match is case-insensitive substring;
+# any hit excludes the candidate, even when JournalArticle is also present
+# (S2 frequently double-tags hybrid venues like LNCS or Procedia).
+_CONFERENCE_PATTERNS: tuple[str, ...] = (
+    "conference",
+    "proceedings-article",
+    "proceedingsarticle",
+    "proceedings article",
+    "meeting-abstract",
+    "meeting abstract",
+    "meetingabstract",
+)
+
+# Venue-string fallback for conferences when the type tag is missing.
+# S2 frequently tags ICLR/NeurIPS/ICML/AAAI papers as JournalArticle,
+# so the type filter alone misses them. These substrings are matched
+# case-insensitively against the candidate's venue.
+#
+# Patterns are conservative — they don't appear in legitimate journal
+# names (so e.g. "Proceedings of the National Academy of Sciences" is
+# untouched, but "Proceedings of the IEEE/CVF Conference on..." is caught).
+# Add to this list when an ML/cog-sci conference proceeding leaks through.
+_CONFERENCE_VENUE_PATTERNS: tuple[str, ...] = (
+    "conference on",
+    "workshop on",
+    "international conference",
+    "annual conference",
+    "annual workshop",
+    "international workshop",
+    "advances in neural information processing systems",  # NeurIPS proceedings
+    "ieee/cvf",                                            # CVPR/ICCV/WACV
+    "ieee international conference",
+    "acm international conference",
+    "acm conference on",
+    "acm symposium on",
+    "european conference on",
+    "asian conference on",
+    "uist proceedings",                                    # ACM UIST
+    "chi conference",                                      # ACM CHI
+    "neurips proceedings",
+    "icml proceedings",
+    "iclr proceedings",
+)
+
+# Publication-type tokens that mark a candidate as a preprint. Different
+# sources use different vocabularies for "this hasn't been peer-reviewed
+# in a journal yet"; we match all of them.
+_PREPRINT_TYPE_PATTERNS: tuple[str, ...] = (
+    "preprint",
+    "posted-content",
+    "postedcontent",
+    "posted content",
+)
+
+# Venue substrings that identify a preprint server even when the type tag
+# is missing or wrong (S2 sometimes labels arXiv papers as JournalArticle).
+# Case-insensitive substring match.
+_PREPRINT_VENUE_PATTERNS: tuple[str, ...] = (
+    "arxiv",
+    "biorxiv",
+    "medrxiv",
+    "psyarxiv",
+    "chemrxiv",
+    "research square",
+    "researchsquare",
+    "ssrn",
+    "preprints.org",
+    "osf preprints",
+)
+
+
+def _is_conference_or_proceedings(c) -> bool:
+    """True if any signal flags this candidate as a conference / proceedings
+    paper.
+
+    Two signals, either is sufficient:
+      1. publication_types contains a conference-flavored tag.
+      2. The venue string contains a conference-suggestive substring (used
+         when sources fail to tag, which S2 does for ML conferences).
+    """
+    # Signal 1: type tags
+    for pt in (c.publication_types or []):
+        ptl = pt.lower()
+        for pattern in _CONFERENCE_PATTERNS:
+            if pattern in ptl:
+                return True
+
+    # Signal 2: venue string
+    venue = (c.venue or "").lower()
+    if venue:
+        for pattern in _CONFERENCE_VENUE_PATTERNS:
+            if pattern in venue:
+                return True
+    return False
+
+
+def _is_preprint(c) -> bool:
+    """True if the candidate is a preprint, by any of three signals.
+
+    1. publication_types contains a preprint-flavored tag.
+    2. DOI uses the arXiv canonical prefix `10.48550/arxiv`.
+    3. Venue string contains a known preprint-server name.
+    """
+    for pt in (c.publication_types or []):
+        ptl = pt.lower()
+        for pattern in _PREPRINT_TYPE_PATTERNS:
+            if pattern in ptl:
+                return True
+
+    doi = (c.doi or "").lower()
+    if doi.startswith("10.48550/arxiv"):
+        return True
+
+    venue = (c.venue or "").lower()
+    if not venue:
+        return False
+    for pattern in _PREPRINT_VENUE_PATTERNS:
+        if pattern in venue:
+            return True
+    return False
+
+
+def _is_low_quality_venue(c) -> bool:
+    """True if the venue is in the curated low/excluded tier
+    (predatory, mill, retracted-heavy, or otherwise off-strategy).
+    'unknown' venues are NOT excluded — too many legitimate journals
+    aren't in the curated list, so unknown is treated as neutral."""
+    return classify_venue(c.venue) == "low_or_excluded"
+
+
+# DOI prefixes for publishers we want to exclude wholesale, regardless of
+# venue or topic. Keep this list short and well-justified — each entry
+# rejects every paper from that publisher across the whole catalog.
+#
+# 2026-04-28: MDPI, Bentham, OMICS added at user request. Each prefix is
+# exclusive to its publisher, so the match is unambiguous (no journal at
+# a different publisher uses the same DOI prefix).
+_EXCLUDED_DOI_PREFIXES: tuple[str, ...] = (
+    "10.3390/",   # MDPI    (Sensors, Brain Sciences, IJMS, Behavioral Sciences, ...)
+    "10.2174/",   # Bentham (Bentham Science / Bentham Open)
+    "10.4172/",   # OMICS   (OMICS Publishing Group / OMICS International)
+)
+
+# Publisher-string fallback for records that lack a DOI but have a publisher
+# name. Matched as case-insensitive substring against c.publisher.
+#
+# Each entry must be specific enough to avoid false positives. Plain "omics"
+# is unsafe (catches "genomics"/"proteomics"/etc. in venue strings or in
+# legitimate journals that happen to have "omics" in their publisher name);
+# we match the longer "omics publishing" / "omics international" instead.
+_EXCLUDED_PUBLISHER_NAMES: tuple[str, ...] = (
+    "mdpi",
+    "bentham science",
+    "bentham open",
+    "omics publishing",
+    "omics international",
+)
+
+
+def _is_excluded_publisher(c) -> bool:
+    """True if the candidate's publisher is on the exclusion list.
+
+    Two signals, either is sufficient:
+      1. DOI starts with a publisher's exclusive DOI prefix.
+      2. Publisher string contains the publisher's name (case-insensitive).
+    """
+    doi = (c.doi or "").lower()
+    for prefix in _EXCLUDED_DOI_PREFIXES:
+        if doi.startswith(prefix):
+            return True
+    publisher = (c.publisher or "").lower()
+    if publisher:
+        for name in _EXCLUDED_PUBLISHER_NAMES:
+            if name in publisher:
+                return True
+    return False
 
 
 def assign_tiers(
@@ -65,6 +249,36 @@ def assign_tiers(
             c.tier = "excluded"
             c.exclusion_reason = EXCL_NO_YEAR_NO_DOI
             summary["exclusion_reasons"][EXCL_NO_YEAR_NO_DOI] += 1
+            continue
+
+        if _is_conference_or_proceedings(c):
+            # Even if the paper is also tagged JournalArticle, any
+            # conference/proceedings tag excludes it. The HED catalog is
+            # journal-and-review focused.
+            c.tier = "excluded"
+            c.exclusion_reason = EXCL_CONFERENCE
+            summary["exclusion_reasons"][EXCL_CONFERENCE] += 1
+            continue
+
+        if _is_preprint(c):
+            # arXiv, bioRxiv, etc. — kept out of the picked tier; reviewers
+            # can promote one back from reserve if a particular preprint
+            # is genuinely the canonical reference for an item.
+            c.tier = "excluded"
+            c.exclusion_reason = EXCL_PREPRINT
+            summary["exclusion_reasons"][EXCL_PREPRINT] += 1
+            continue
+
+        if _is_low_quality_venue(c):
+            c.tier = "excluded"
+            c.exclusion_reason = EXCL_LOW_VENUE
+            summary["exclusion_reasons"][EXCL_LOW_VENUE] += 1
+            continue
+
+        if _is_excluded_publisher(c):
+            c.tier = "excluded"
+            c.exclusion_reason = EXCL_PUBLISHER
+            summary["exclusion_reasons"][EXCL_PUBLISHER] += 1
             continue
 
         if c.human_subject is False:

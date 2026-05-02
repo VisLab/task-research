@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_visual_search",
+    "name": "Visual Search Task",
+    "aliases": [
+      "Feature Search",
+      "Conjunction Search"
+    ],
+    "category_id": "selective_and_sustained_attention",
+    "short_definition": "Detection of a target in a display of distractors; search slopes across set size dissociate feature (parallel) from conjunction (serial) search.",
+    "description": "Visual Search Tasks present participants with a display containing multiple items among which they must locate a target. In feature search, the target is defined by a single distinctive feature (e.g., a red item among blue) and \"pops out\" preattentively, with search time independent of set size. In conjunction search, the target is defined by a combination of features (e.g., a red square among red triangles and green squares) requiring serial, attention-dependent search with RT increasing linearly with set size. The task measures search efficiency, reaction time slopes, and accuracy, providing insights into parallel versus serial attentional processing.",
+    "inclusion_test": {
+      "procedure": "An array of items is displayed; participants search for a target defined by a feature or feature conjunction among distractors and indicate its presence/absence or identity.",
+      "manipulation": "Set size; target-distractor similarity; feature vs. conjunction target; target prevalence; display duration.",
+      "measurement": "RT × set size slope (search efficiency); intercept; accuracy; miss rate at low target prevalence."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:58:10",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Treisman 1980 — A feature-integration theory of attention (Cognitive Psychology, historical, 12k×)",
+      "doi": "10.1016/0010-0285(80)90005-5",
+      "pub_id": "pub_ee3d7d6a",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.736349229006789,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5453969160271559,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.13634922900678897,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1980,
+      "venue": "Cognitive Psychology",
+      "citation_count": 12332,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Wei 2019 — Differential brain mechanisms for processing distracting information in task-… (Human brain mapping, recent_primary, 11×)",
+      "doi": "10.1002/hbm.24358",
+      "pub_id": "pub_e68c814d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6559675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Human brain mapping",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Walter 2021 — Cognitive load influences oculomotor behavior in natural scenes. (Scientific reports, recent_primary, 25×)",
+      "doi": "10.1038/s41598-021-91845-5",
+      "pub_id": "pub_02f99699",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5804922880522967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Palmer 2011 — What are the shapes of response time distributions in visual search? (Journal of experimental psycholo…, foundational, 73×)",
+      "doi": "10.1037/a0020747",
+      "pub_id": "pub_f557c908",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5789653765020558,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24919483934155667,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06229870983538917,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Journal of experimental psychology. Human perception and performance",
+      "citation_count": 73,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Mirza 2019 — Introducing a Bayesian model of selective attention based on active inference. (Scientific reports, recent_primary, 47×)",
+      "doi": "10.1038/s41598-019-50138-8",
+      "pub_id": "pub_d6b25ab4",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5693666003194224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22413306794435656,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05603326698608914,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 47,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Julian 2018 — Human entorhinal cortex represents visual space using a boundary-anchored grid. (Nature neuroscience, recent_primary, 94×)",
+      "doi": "10.1038/s41593-017-0049-1",
+      "pub_id": "pub_f9a73829",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5692479161643064,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2636583313238922,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06591458283097305,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Nature neuroscience",
+      "citation_count": 94,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Manassi 2019 — Serial dependence in a simulated clinical visual search task. (Scientific reports, recent_primary, 39×)",
+      "doi": "10.1038/s41598-019-56315-z",
+      "pub_id": "pub_bae2f3a0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5667276072936485,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21357709584126067,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05339427396031517,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 39,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Grasso 2020 — Effects of different transcranial direct current stimulation protocols on vis… (Scientific reports, recent_primary, 15×)",
+      "doi": "10.1038/s41598-020-61626-7",
+      "pub_id": "pub_95fe7e5e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5634648593579782,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Beck 2018 — Whatever you do, don't look at the...: Evaluating guidance by an exclusionary… (Journal of experimental psycholo…, recent_primary, 50×)",
+      "doi": "10.1037/xhp0000485",
+      "pub_id": "pub_0bab8cb8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5602441046418793,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22764308523418395,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.056910771308545986,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Journal of experimental psychology. Human perception and performance",
+      "citation_count": 50,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Wan 2020 — Evaluation of eye movements and visual performance in patients with cataract. (Scientific reports, recent_primary, 11×)",
+      "doi": "10.1038/s41598-020-66817-w",
+      "pub_id": "pub_f6a6beeb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5593008373071,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Singh 2020 — The effect of optimistic expectancies on attention bias: Neural and behaviora… (Scientific reports, recent_primary, 11×)",
+      "doi": "10.1038/s41598-020-61440-1",
+      "pub_id": "pub_dadeed63",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5593008373071,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Merenstein 2023 — Age-related differences in frontoparietal activation for target and distracto… (Attention, perception & psychoph…, recent_primary, 11×)",
+      "doi": "10.3758/s13414-022-02640-x",
+      "pub_id": "pub_4c0c84ee",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5526341706404334,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Gaspar 2016 — Inability to suppress salient distractors predicts low visual working memory … (Proceedings of the National Acad…, foundational, 115×)",
+      "doi": "10.1073/pnas.1523471113",
+      "pub_id": "pub_f2b2f549",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5521386440289537,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2752212427824818,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06880531069562044,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 115,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Riddle 2019 — Causal Evidence for the Role of Neuronal Oscillations in Top-Down and Bottom-… (Journal of cognitive neuroscience, recent_primary, 45×)",
+      "doi": "10.1162/jocn_a_01376",
+      "pub_id": "pub_d4f8d11e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5520839092637266,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22166897038824016,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05541724259706004,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 45,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Merzon 2022 — Eye movement behavior in a real-world virtual reality task reveals ADHD in ch… (Scientific reports, recent_primary, 21×)",
+      "doi": "10.1038/s41598-022-24552-4",
+      "pub_id": "pub_b9f51cd6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5480742823479501,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Scientific reports",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Goldfarb 2016 — Memory-Guided Attention: Independent  Contributions of the Hippocampus and St… (Neuron, foundational, 84×)",
+      "doi": "10.1016/j.neuron.2015.12.014",
+      "pub_id": "pub_69404dd0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5476379931222666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2572186391557329,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06430465978893322,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Neuron",
+      "citation_count": 84,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Herbet 2022 — Contribution of the medial eye field network to the voluntary deployment of v… (Nature communications, recent_primary, 20×)",
+      "doi": "10.1038/s41467-022-28030-3",
+      "pub_id": "pub_d1dda51b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.54740093357352,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Nature communications",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "van Moorselaar 2020 — Neural mechanisms underlying expectation-dependent inhibition of distracting … (eLife, recent_primary, 55×)",
+      "doi": "10.7554/elife.61048",
+      "pub_id": "pub_2ba89eef",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5415978371305593,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23305801518890404,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05826450379722601,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "eLife",
+      "citation_count": 55,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Zhang 2018 — Attentional Guidance from Multiple Working Memory Representations: Evidence f… (Scientific reports, recent_primary, 13×)",
+      "doi": "10.1038/s41598-018-32144-4",
+      "pub_id": "pub_0646d900",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5415320741182369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Scientific reports",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Patel 2015 — Functional evolution of new and expanded attention networks in humans. (Proceedings of the National Acad…, foundational, 68×)",
+      "doi": "10.1073/pnas.1420395112",
+      "pub_id": "pub_8d9cc1dc",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5346194353856765,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24514440820937256,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06128610205234314,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 68,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Wang 2018 — Statistical regularities modulate attentional capture independent of search s… (Attention, perception & psychoph…, recent_primary, 79×)",
+      "doi": "10.3758/s13414-018-1562-3",
+      "pub_id": "pub_7886aede",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5267604887998097,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2537086218659055,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06342715546647637,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 79,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Sali 2014 — The role of reward prediction in the control of attention. (Journal of experimental psycholo…, foundational, 69×)",
+      "doi": "10.1037/a0037267",
+      "pub_id": "pub_acb6abc0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5248277035600685,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24597748090694052,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06149437022673513,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Journal of experimental psychology. Human perception and performance",
+      "citation_count": 69,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Jiang 2013 — Rapid acquisition but slow extinction of an attentional bias in space. (Journal of experimental psycholo…, foundational, 128×)",
+      "doi": "10.1037/a0027611",
+      "pub_id": "pub_36c488a0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5236761455997627,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2813712490657175,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07034281226642937,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Journal of experimental psychology. Human perception and performance",
+      "citation_count": 128,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Anderson 2013 — Persistence of value-driven attentional capture. (Journal of experimental psycholo…, foundational, 126×)",
+      "doi": "10.1037/a0030860",
+      "pub_id": "pub_b0744fec",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5234499786796418,
+        "breakdown": {
+          "raw": {
+            "citations": 0.280466581385234,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0701166453463085,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Journal of experimental psychology. Human perception and performance",
+      "citation_count": 126,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Kim 2021 — The influence of threat on the efficiency of goal-directed attentional control. (Psychological research, recent_primary, 29×)",
+      "doi": "10.1007/s00426-020-01321-4",
+      "pub_id": "pub_7a245286",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5225635852427704,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Psychological research",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Lee 2020 — Flexible weighting of target features based on distractor context. (Attention, perception & psychoph…, recent_primary, 14×)",
+      "doi": "10.3758/s13414-019-01910-5",
+      "pub_id": "pub_8624310c",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5225307037366091,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Bruckmaier 2020 — Attention and Capacity Limits in Perception: A Cellular Metabolism Account. (The Journal of neuroscience : th…, recent_primary, 41×)",
+      "doi": "10.1523/jneurosci.2368-19.2020",
+      "pub_id": "pub_c088d655",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5207671484130145,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2164019269853916,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0541004817463479,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 41,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Plebanek 2017 — Costs of Selective Attention: When Children Notice What Adults Miss. (Psychological science, foundational, 79×)",
+      "doi": "10.1177/0956797617693005",
+      "pub_id": "pub_d32eb92a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5167604887998097,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2537086218659055,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06342715546647637,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Psychological science",
+      "citation_count": 79,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Rich 2008 — Why do we miss rare targets? Exploring the boundaries of the low prevalence e… (Journal of vision, foundational, 57×)",
+      "doi": "10.1167/8.15.15",
+      "pub_id": "pub_72c40829",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5054390958561259,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23508971675783696,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.13333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05877242918945924,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.02,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "Journal of vision",
+      "citation_count": 57,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Bouhassoun 2022 — The forest, the trees, and the leaves across adulthood: Age-related changes o… (Attention, perception & psychoph…, recent_primary, 17×)",
+      "doi": "10.3758/s13414-021-02438-3",
+      "pub_id": "pub_6fa599d2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5051696967623831,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

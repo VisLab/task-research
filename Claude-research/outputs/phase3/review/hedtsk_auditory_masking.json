@@ -1,0 +1,399 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_auditory_masking",
+    "name": "Auditory Masking Task",
+    "aliases": [
+      "Tone-in-Noise Detection",
+      "Speech-in-Noise",
+      "Energetic Masking"
+    ],
+    "category_id": "auditory_and_pre_attentive_deviance_processing",
+    "short_definition": "Detect, discriminate, or identify a target sound in the presence of a masking sound; threshold shifts between masked and unmasked conditions index frequency selectivity, temporal resolution, and auditory scene analysis.",
+    "description": "A target sound (tone, speech token, or noise burst) is presented alongside, before, or after a masking sound, and participants detect, discriminate, or identify the target. By varying the temporal and spectral relationship between target and masker, the paradigm dissociates peripheral (energetic) masking — where masker and target excite overlapping auditory filters — from central (informational) masking — where the masker is spectrally remote but introduces perceptual uncertainty. Threshold shifts, psychometric functions, and comodulation masking release are the core dependent measures. The paradigm is foundational to auditory psychophysics and clinical audiology, and maps onto distinct subcortical and cortical processing stages.",
+    "inclusion_test": {
+      "procedure": "A target sound is presented alongside, before, or after a masker; participants detect, discriminate, or identify the target.",
+      "manipulation": "Temporal relation (simultaneous, forward, backward); spectral overlap between target and masker; masker type (noise, tones, speech, modulated); spatial separation.",
+      "measurement": "Detection threshold (masked vs. unmasked); threshold shift; psychometric function slope; speech reception threshold in noise."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:35:24",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 10
+  },
+  "decisions": [
+    {
+      "rank": 2,
+      "label": "Swaminathan 2015 — Musical training, individual differences and the cocktail party problem. (Scientific reports, foundational, 106×)",
+      "doi": "10.1038/srep11628",
+      "pub_id": "pub_35dd2024",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5201363394522605,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2705453578090416,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0676363394522604,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Scientific reports",
+      "citation_count": 106,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Rennies 2019 — Energetic and Informational Components of Speech-on-Speech Masking in Binaura… (Trends in hearing, recent_primary, 30×)",
+      "doi": "10.1177/2331216519854597",
+      "pub_id": "pub_5fdd436a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3622048645403726,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Trends in hearing",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Strauß 2014 — Cortical alpha oscillations as a tool for auditory selective inhibition. (Frontiers in human neuroscience, foundational, 119×)",
+      "doi": "10.3389/fnhum.2014.00350",
+      "pub_id": "pub_f667dbef",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3517960149217595,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2771840596870379,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06929601492175948,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2014,
+      "venue": "Frontiers in human neuroscience",
+      "citation_count": 119,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Zhang 2021 — Musical Experience Offsets Age-Related Decline in Understanding Speech-in-Noi… (Ear and hearing, recent_primary, 34×)",
+      "doi": "10.1097/aud.0000000000000921",
+      "pub_id": "pub_ea6ecc8a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.3239614887205739,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Ear and hearing",
+      "citation_count": 34,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Kidd 2019 — Determining the energetic and informational components of speech-on-speech ma… (The Journal of the Acoustical So…, recent_primary, 31×)",
+      "doi": "10.1121/1.5087555",
+      "pub_id": "pub_684eac9b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.32266440753080605,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "The Journal of the Acoustical Society of America",
+      "citation_count": 31,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Cubick 2018 — Listening through hearing aids affects spatial perception and speech intellig… (The Journal of the Acoustical So…, recent_primary, 26×)",
+      "doi": "10.1121/1.5078582",
+      "pub_id": "pub_9e2d887f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.31020522288433294,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "The Journal of the Acoustical Society of America",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Kidd 2016 — Determining the energetic and informational components of speech-on-speech ma… (The Journal of the Acoustical So…, foundational, 91×)",
+      "doi": "10.1121/1.4954748",
+      "pub_id": "pub_852d8d76",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.30795012410322126,
+        "breakdown": {
+          "raw": {
+            "citations": 0.261800496412885,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06545012410322125,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "The Journal of the Acoustical Society of America",
+      "citation_count": 91,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Rosen 2013 — Listening to speech in a background of other talkers: effects of talker numbe… (The Journal of the Acoustical So…, foundational, 131×)",
+      "doi": "10.1121/1.4794379",
+      "pub_id": "pub_81caedb2",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.28317557148222217,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28270228592888874,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07067557148222219,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.06999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "The Journal of the Acoustical Society of America",
+      "citation_count": 131,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Ihlefeld 2008 — Spatial release from energetic and informational masking in a selective speec… (The Journal of the Acoustical So…, foundational, 74×)",
+      "doi": "10.1121/1.2904826",
+      "pub_id": "pub_45b5184e",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.2249929998451074,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24997199938042958,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.062492999845107394,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.02,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "The Journal of the Acoustical Society of America",
+      "citation_count": 74,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Helfer 2008 — Aging and speech-on-speech masking. (Ear and hearing, foundational, 189×)",
+      "doi": "10.1097/aud.0b013e31815d638b",
+      "pub_id": "pub_da6460e9",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.21844746433713427,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3037898573485371,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07594746433713427,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.02,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "Ear and hearing",
+      "citation_count": 189,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

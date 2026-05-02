@@ -1,0 +1,1018 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:17:29",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_auditory_masking",
+    "name": "Auditory Masking Task",
+    "aliases": [
+      "Tone-in-Noise Detection",
+      "Speech-in-Noise",
+      "Energetic Masking"
+    ],
+    "category_id": "auditory_and_pre_attentive_deviance_processing",
+    "short_definition": "Detect, discriminate, or identify a target sound in the presence of a masking sound; threshold shifts between masked and unmasked conditions index frequency selectivity, temporal resolution, and auditory scene analysis.",
+    "description": "A target sound (tone, speech token, or noise burst) is presented alongside, before, or after a masking sound, and participants detect, discriminate, or identify the target. By varying the temporal and spectral relationship between target and masker, the paradigm dissociates peripheral (energetic) masking — where masker and target excite overlapping auditory filters — from central (informational) masking — where the masker is spectrally remote but introduces perceptual uncertainty. Threshold shifts, psychometric functions, and comodulation masking release are the core dependent measures. The paradigm is foundational to auditory psychophysics and clinical audiology, and maps onto distinct subcortical and cortical processing stages.",
+    "inclusion_test": {
+      "procedure": "A target sound is presented alongside, before, or after a masker; participants detect, discriminate, or identify the target.",
+      "manipulation": "Temporal relation (simultaneous, forward, backward); spectral overlap between target and masker; masker type (noise, tones, speech, modulated); spatial separation.",
+      "measurement": "Detection threshold (masked vs. unmasked); threshold shift; psychometric function slope; speech reception threshold in noise."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 12,
+      "picked": 10,
+      "reserve": 0,
+      "excluded": 2,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {
+      "non_human_subjects": 2
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_b366abfb",
+      "doi": "10.1016/j.neuron.2015.05.038",
+      "url": "https://doi.org/10.1016/j.neuron.2015.05.038",
+      "openalex_id": null,
+      "pmid": "26074005",
+      "first_author": "McGinley",
+      "authors_display": "McGinley, M. et al.",
+      "year": 2015,
+      "title": "Cortical Membrane Potential Signature of Optimal States for Sensory Signal Detection.",
+      "venue": "Neuron",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 651,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The neural correlates of optimal states for signal detection task performance are largely unknown. One hypothesis holds that optimal states exhibit tonically depolarized cortical neurons with enhanced spiking activity, such as occur during movement. We recorded membrane potentials of auditory cortical neurons in mice trained on a challenging tone-in-noise detection task while assessing arousal with simultaneous pupillometry and hippocampal recordings. Arousal measures accurately predicted multiple modes of membrane potential activity, including rhythmic slow oscillations at low arousal, stable hyperpolarization at intermediate arousal, and depolarization during phasic or tonic periods of hyper-arousal. Walking always occurred during hyper-arousal. Optimal signal detection behavior and sound-evoked responses, at both sub-threshold and spiking levels, occurred at intermediate arousal when pre-decision membrane potentials were stably hyperpolarized. These results reveal a cortical physiological signature of the classically observed inverted-U relationship between task performance and arousal and that optimal detection exhibits enhanced sensory-evoked responses and reduced background synaptic activity.",
+      "score": {
+        "composite": 0.5462946818047136,
+        "breakdown": {
+          "raw": {
+            "citations": 0.37517872721885437,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09379468180471359,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Auditory Cortex",
+        "Neurons",
+        "Animals",
+        "Mice",
+        "Auditory Perception",
+        "Arousal",
+        "Membrane Potentials",
+        "Signal Detection, Psychological"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_35dd2024",
+      "doi": "10.1038/srep11628",
+      "url": "https://doi.org/10.1038/srep11628",
+      "openalex_id": null,
+      "pmid": "26112910",
+      "first_author": "Swaminathan",
+      "authors_display": "Swaminathan, J. et al.",
+      "year": 2015,
+      "title": "Musical training, individual differences and the cocktail party problem.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 106,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4481518",
+      "tldr": null,
+      "abstract": "Are musicians better able to understand speech in noise than non-musicians? Recent findings have produced contradictory results. Here we addressed this question by asking musicians and non-musicians to understand target sentences masked by other sentences presented from different spatial locations, the classical 'cocktail party problem' in speech science. We found that musicians obtained a substantial benefit in this situation, with thresholds ~6 dB better than non-musicians. Large individual differences in performance were noted particularly for the non-musically trained group. Furthermore, in different conditions we manipulated the spatial location and intelligibility of the masking sentences, thus changing the amount of 'informational masking' (IM) while keeping the amount of 'energetic masking' (EM) relatively constant. When the maskers were unintelligible and spatially separated from the target (low in IM), musicians and non-musicians performed comparably. These results suggest that the characteristics of speech maskers and the amount of IM can influence the magnitude of the differences found between musicians and non-musicians in multiple-talker \"cocktail party\" environments. Furthermore, considering the task in terms of the EM-IM distinction provides a conceptual framework for future behavioral and neuroscientific studies which explore the underlying sensory and cognitive mechanisms contributing to enhanced \"speech-in-noise\" perception by musicians.",
+      "score": {
+        "composite": 0.5201363394522605,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2705453578090416,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0676363394522604,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Acoustic Stimulation",
+        "Analysis of Variance",
+        "Random Allocation",
+        "Individuality",
+        "Auditory Threshold",
+        "Perceptual Masking",
+        "Speech Perception",
+        "Psychomotor Performance",
+        "Hearing",
+        "Psychoacoustics",
+        "Noise",
+        "Music",
+        "Semantics",
+        "Adult",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "excluded",
+      "auto_role": "key_review",
+      "pub_id": "pub_b4e00d48",
+      "doi": "10.1016/j.mcn.2021.103692",
+      "url": "https://doi.org/10.1016/j.mcn.2021.103692",
+      "openalex_id": null,
+      "pmid": "34883241",
+      "first_author": "Henry",
+      "authors_display": "Henry, K.",
+      "year": 2022,
+      "title": "Animal models of hidden hearing loss: Does auditory-nerve-fiber loss cause real-world listening difficulties?",
+      "venue": "Molecular and cellular neurosciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Review",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 22,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Afferent innervation of the cochlea by the auditory nerve declines during aging and potentially after sound overexposure, producing the common pathology known as cochlear synaptopathy. Auditory-nerve-fiber loss is difficult to detect with the clinical audiogram and has been proposed to cause 'hidden hearing loss' including impaired speech-in-noise perception. While evidence that auditory-nerve-fiber loss causes hidden hearing loss in humans is controversial, behavioral animal models hold promise to rigorously test this hypothesis because neural lesions can be induced and histologically validated. Here, we review recent animal behavioral studies on the impact of auditory-nerve-fiber loss on perception in a range of species. We first consider studies of tinnitus and hyperacusis inferred from acoustic startle reflexes, followed by a review of operant-conditioning studies of the audiogram, temporal integration for tones of varying duration, temporal resolution of gaps in noise, and tone-in-noise detection. Studies quantifying the audiogram show that tone-in-quiet sensitivity is unaffected by auditory-nerve-fiber loss unless neural lesions exceed 80%, at which point large deficits are possible. Changes in other aspects of perception, which were typically investigated for moderate-to-severe auditory-nerve-fiber loss of 50-70%, appear heterogeneous across studies and might be small compared to impairment caused by hair-cell pathologies. Future studies should pursue recent findings that behavioral sensitivity to brief tones and silent gaps in noise may be particularly vulnerable to auditory-nerve-fiber loss. Furthermore, aspects of auditory perception linked to central inhibition and fine neural response timing, such as modulation masking release and spatial hearing, may be productive directions for further animal behavioral research.",
+      "score": {
+        "composite": 0.43788436109089884,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Cochlear Nerve",
+        "Animals",
+        "Hearing Loss",
+        "Models, Animal",
+        "Auditory Perception",
+        "Auditory Threshold",
+        "Evoked Potentials, Auditory, Brain Stem"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_5fdd436a",
+      "doi": "10.1177/2331216519854597",
+      "url": "https://doi.org/10.1177/2331216519854597",
+      "openalex_id": null,
+      "pmid": "31172880",
+      "first_author": "Rennies",
+      "authors_display": "Rennies, J. et al.",
+      "year": 2019,
+      "title": "Energetic and Informational Components of Speech-on-Speech Masking in Binaural Speech Intelligibility and Perceived Listening Effort.",
+      "venue": "Trends in hearing",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 30,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6557024",
+      "tldr": null,
+      "abstract": "Speech perception in complex sound fields can greatly benefit from different unmasking cues to segregate the target from interfering voices. This study investigated the role of three unmasking cues (spatial separation, gender differences, and masker time reversal) on speech intelligibility and perceived listening effort in normal-hearing listeners. Speech intelligibility and categorically scaled listening effort were measured for a female target talker masked by two competing talkers with no unmasking cues or one to three unmasking cues. In addition to natural stimuli, all measurements were also conducted with glimpsed speech-which was created by removing the time-frequency tiles of the speech mixture in which the maskers dominated the mixture-to estimate the relative amounts of informational and energetic masking as well as the effort associated with source segregation. The results showed that all unmasking cues as well as glimpsing improved intelligibility and reduced listening effort and that providing more than one cue was beneficial in overcoming informational masking. The reduction in listening effort due to glimpsing corresponded to increases in signal-to-noise ratio of 8 to 18 dB, indicating that a significant amount of listening effort was devoted to segregating the target from the maskers. Furthermore, the benefit in listening effort for all unmasking cues extended well into the range of positive signal-to-noise ratios at which speech intelligibility was at ceiling, suggesting that listening effort is a useful tool for evaluating speech-on-speech masking conditions at typical conversational levels.",
+      "score": {
+        "composite": 0.3622048645403726,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Hearing Tests",
+        "Speech Intelligibility",
+        "Cues",
+        "Auditory Perception",
+        "Perceptual Masking",
+        "Speech Perception",
+        "Sound",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Signal-To-Noise Ratio"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_f667dbef",
+      "doi": "10.3389/fnhum.2014.00350",
+      "url": "https://doi.org/10.3389/fnhum.2014.00350",
+      "openalex_id": null,
+      "pmid": "24904385",
+      "first_author": "Strauß",
+      "authors_display": "Strauß, A. et al.",
+      "year": 2014,
+      "title": "Cortical alpha oscillations as a tool for auditory selective inhibition.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 119,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4035601",
+      "tldr": null,
+      "abstract": "Listening to speech is often demanding because of signal degradations and the presence of distracting sounds (i.e., \"noise\"). The question how the brain achieves the task of extracting only relevant information from the mixture of sounds reaching the ear (i.e., \"cocktail party problem\") is still open. In analogy to recent findings in vision, we propose cortical alpha (~10 Hz) oscillations measurable using M/EEG as a pivotal mechanism to selectively inhibit the processing of noise to improve auditory selective attention to task-relevant signals. We review initial evidence of enhanced alpha activity in selective listening tasks, suggesting a significant role of alpha-modulated noise suppression in speech. We discuss the importance of dissociating between noise interference in the auditory periphery (i.e., energetic masking) and noise interference with more central cognitive aspects of speech processing (i.e., informational masking). Finally, we point out the adverse effects of age-related hearing loss and/or cognitive decline on auditory selective inhibition. With this perspective article, we set the stage for future studies on the inhibitory role of alpha oscillations for speech processing in challenging listening situations.",
+      "score": {
+        "composite": 0.3517960149217595,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2771840596870379,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06929601492175948,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_ea6ecc8a",
+      "doi": "10.1097/aud.0000000000000921",
+      "url": "https://doi.org/10.1097/aud.0000000000000921",
+      "openalex_id": null,
+      "pmid": "32826504",
+      "first_author": "Zhang",
+      "authors_display": "Zhang, L. et al.",
+      "year": 2021,
+      "title": "Musical Experience Offsets Age-Related Decline in Understanding Speech-in-Noise: Type of Training Does Not Matter, Working Memory Is the Key.",
+      "venue": "Ear and hearing",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 34,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objectives</h4>Speech comprehension under \"cocktail party\" scenarios deteriorates with age even in the absence of measurable hearing loss. Musical training is suggested to counteract the age-related decline in speech-in-noise (SIN) perception, yet which aspect of musical plasticity contributes to this compensation remains unclear. This study aimed to investigate the effects of musical experience and aging on SIN perception ability. We hypothesized a key mediation role of auditory working memory in ameliorating deficient SIN perception in older adults by musical training.<h4>Design</h4>Forty-eight older musicians, 29 older nonmusicians, 48 young musicians, and 24 young nonmusicians all with (near) normal peripheral hearing were recruited. The SIN task was recognizing nonsense speech sentences either perceptually colocated or separated with a noise masker (energetic masking) or a two-talker speech masker (informational masking). Auditory working memory was measured by auditory digit span. Path analysis was used to examine the direct and indirect effects of musical expertise and age on SIN perception performance.<h4>Results</h4>Older musicians outperformed older nonmusicians in auditory working memory and all SIN conditions (noise separation, noise colocation, speech separation, speech colocation), but such musician advantages were absent in young adults. Path analysis showed that age and musical training had opposite effects on auditory working memory, which played a significant mediation role in SIN perception. In addition, the type of musical training did not differentiate SIN perception regardless of age.<h4>Conclusions</h4>These results provide evidence that musical training offsets age-related speech perception deficit at adverse listening conditions by preserving auditory working memory. Our findings highlight auditory working memory in supporting speech perception amid competing noise in older adults, and underline musical training as a means of \"cognitive ",
+      "score": {
+        "composite": 0.3239614887205739,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20584595488229565,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05146148872057391,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Acoustic Stimulation",
+        "Speech",
+        "Comprehension",
+        "Memory, Short-Term",
+        "Speech Perception",
+        "Noise",
+        "Music"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_684eac9b",
+      "doi": "10.1121/1.5087555",
+      "url": "https://doi.org/10.1121/1.5087555",
+      "openalex_id": null,
+      "pmid": "30710924",
+      "first_author": "Kidd",
+      "authors_display": "Kidd, G. et al.",
+      "year": 2019,
+      "title": "Determining the energetic and informational components of speech-on-speech masking in listeners with sensorineural hearing loss.",
+      "venue": "The Journal of the Acoustical Society of America",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 31,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The ability to identify the words spoken by one talker masked by two or four competing talkers was tested in young-adult listeners with sensorineural hearing loss (SNHL). In a reference/baseline condition, masking speech was colocated with target speech, target and masker talkers were female, and the masker was intelligible. Three comparison conditions included replacing female masker talkers with males, time-reversal of masker speech, and spatial separation of sources. All three variables produced significant release from masking. To emulate energetic masking (EM), stimuli were subjected to ideal time-frequency segregation retaining only the time-frequency units where target energy exceeded masker energy. Subjects were then tested with these resynthesized \"glimpsed stimuli.\" For either two or four maskers, thresholds only varied about 3 dB across conditions suggesting that EM was roughly equal. Compared to normal-hearing listeners from an earlier study [Kidd, Mason, Swaminathan, Roverud, Clayton, and Best, J. Acoust. Soc. Am. 140, 132-144 (2016)], SNHL listeners demonstrated both greater energetic and informational masking as well as higher glimpsed thresholds. Individual differences were correlated across masking release conditions suggesting that listeners could be categorized according to their general ability to solve the task. Overall, both peripheral and central factors appear to contribute to the higher thresholds for SNHL listeners.",
+      "score": {
+        "composite": 0.32266440753080605,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20065763012322418,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.050164407530806046,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Hearing Loss, Sensorineural",
+        "Auditory Threshold",
+        "Perceptual Masking",
+        "Speech Perception",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_9e2d887f",
+      "doi": "10.1121/1.5078582",
+      "url": "https://doi.org/10.1121/1.5078582",
+      "openalex_id": null,
+      "pmid": "30522291",
+      "first_author": "Cubick",
+      "authors_display": "Cubick, J. et al.",
+      "year": 2018,
+      "title": "Listening through hearing aids affects spatial perception and speech intelligibility in normal-hearing listeners.",
+      "venue": "The Journal of the Acoustical Society of America",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 26,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6246072",
+      "tldr": null,
+      "abstract": "Cubick and Dau [(2016). Acta Acust. Acust. <b>102</b>, 547-557] showed that speech reception thresholds (SRTs) in noise, obtained with normal-hearing listeners, were significantly higher with hearing aids (HAs) than without. Some listeners reported a change in their spatial perception of the stimuli due to the HA processing, with auditory images often being broader and closer to the head or even internalized. The current study investigated whether worse speech intelligibility with HAs might be explained by distorted spatial perception and the resulting reduced ability to spatially segregate the target speech from the interferers. SRTs were measured in normal-hearing listeners with or without HAs in the presence of three interfering talkers or speech-shaped noises. Furthermore, listeners were asked to sketch their spatial perception of the acoustic scene. Consistent with the previous study, SRTs increased with HAs. Spatial release from masking was lower with HAs than without. The effects were similar for noise and speech maskers and appeared to be accounted for by changes to energetic masking. This interpretation was supported by results from a binaural speech intelligibility model. Even though the sketches indicated a change of spatial perception with HAs, no direct link between spatial perception and segregation of talkers could be shown.",
+      "score": {
+        "composite": 0.31020522288433294,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Hearing Aids",
+        "Speech Intelligibility",
+        "Auditory Perception",
+        "Auditory Threshold",
+        "Perceptual Masking",
+        "Speech Perception",
+        "Space Perception",
+        "Hearing",
+        "Noise",
+        "Adult",
+        "Population Groups",
+        "Australia",
+        "Female",
+        "Male",
+        "Persons with Hearing Disabilities"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_852d8d76",
+      "doi": "10.1121/1.4954748",
+      "url": "https://doi.org/10.1121/1.4954748",
+      "openalex_id": null,
+      "pmid": "27475139",
+      "first_author": "Kidd",
+      "authors_display": "Kidd, G. et al.",
+      "year": 2016,
+      "title": "Determining the energetic and informational components of speech-on-speech masking.",
+      "venue": "The Journal of the Acoustical Society of America",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 91,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5392100",
+      "tldr": null,
+      "abstract": "Identification of target speech was studied under masked conditions consisting of two or four independent speech maskers. In the reference conditions, the maskers were colocated with the target, the masker talkers were the same sex as the target, and the masker speech was intelligible. The comparison conditions, intended to provide release from masking, included different-sex target and masker talkers, time-reversal of the masker speech, and spatial separation of the maskers from the target. Significant release from masking was found for all comparison conditions. To determine whether these reductions in masking could be attributed to differences in energetic masking, ideal time-frequency segregation (ITFS) processing was applied so that the time-frequency units where the masker energy dominated the target energy were removed. The remaining target-dominated \"glimpses\" were reassembled as the stimulus. Speech reception thresholds measured using these resynthesized ITFS-processed stimuli were the same for the reference and comparison conditions supporting the conclusion that the amount of energetic masking across conditions was the same. These results indicated that the large release from masking found under all comparison conditions was due primarily to a reduction in informational masking. Furthermore, the large individual differences observed generally were correlated across the three masking release conditions.",
+      "score": {
+        "composite": 0.30795012410322126,
+        "breakdown": {
+          "raw": {
+            "citations": 0.261800496412885,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06545012410322125,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Speech",
+        "Speech Intelligibility",
+        "Auditory Threshold",
+        "Perceptual Masking",
+        "Speech Perception",
+        "Hearing",
+        "Sex Factors",
+        "Time Factors",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_81caedb2",
+      "doi": "10.1121/1.4794379",
+      "url": "https://doi.org/10.1121/1.4794379",
+      "openalex_id": null,
+      "pmid": "23556608",
+      "first_author": "Rosen",
+      "authors_display": "Rosen, S. et al.",
+      "year": 2013,
+      "title": "Listening to speech in a background of other talkers: effects of talker number and noise vocoding.",
+      "venue": "The Journal of the Acoustical Society of America",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 131,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Some of the most common interfering background sounds a listener experiences are the sounds of other talkers. In Experiment 1, recognition for natural Institute of Electrical and Electronics Engineers (IEEE) sentences was measured in normal-hearing adults at two fixed signal-to-noise ratios (SNRs) in 16 backgrounds with the same long-term spectrum: unprocessed speech babble (1, 2, 4, 8, and 16 talkers), noise-vocoded versions of the babbles (12 channels), noise modulated with the wide-band envelope of the speech babbles, and unmodulated noise. All talkers were adult males. For a given number of talkers, natural speech was always the most effective masker. The greatest changes in performance occurred as the number of talkers in the maskers increased from 1 to 2 or 4, with small changes thereafter. In Experiment 2, the same targets and maskers (1, 2, and 16 talkers) were used to measure speech reception thresholds (SRTs) adaptively. Periodicity in the target was also manipulated by noise-vocoding, which led to considerably higher SRTs. The greatest masking effect always occurred for the masker type most similar to the target, while the effects of the number of talkers were generally small. Implications are drawn with reference to glimpsing, informational vs energetic masking, overall SNR, and aspects of periodicity.",
+      "score": {
+        "composite": 0.28317557148222217,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28270228592888874,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07067557148222219,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.06999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Speech Reception Threshold Test",
+        "Acoustic Stimulation",
+        "Analysis of Variance",
+        "Cues",
+        "Perceptual Masking",
+        "Speech Perception",
+        "Noise",
+        "Periodicity",
+        "Time Factors",
+        "Signal Processing, Computer-Assisted",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Signal-To-Noise Ratio",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_45b5184e",
+      "doi": "10.1121/1.2904826",
+      "url": "https://doi.org/10.1121/1.2904826",
+      "openalex_id": null,
+      "pmid": "18537388",
+      "first_author": "Ihlefeld",
+      "authors_display": "Ihlefeld, A., & Shinn-Cunningham, B.",
+      "year": 2008,
+      "title": "Spatial release from energetic and informational masking in a selective speech identification task.",
+      "venue": "The Journal of the Acoustical Society of America",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 74,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "A masker can reduce target intelligibility both by interfering with the target's peripheral representation (\"energetic masking\") and/or by causing more central interference (\"informational masking\"). Intelligibility generally improves with increasing spatial separation between two sources, an effect known as spatial release from masking (SRM). Here, SRM was measured using two concurrent sine-vocoded talkers. Target and masker were each composed of eight different narrowbands of speech (with little spectral overlap). The broadband target-to-masker energy ratio (TMR) was varied, and response errors were used to assess the relative importance of energetic and informational masking. Performance improved with increasing TMR. SRM occurred at all TMRs; however, the pattern of errors suggests that spatial separation affected performance differently, depending on the dominant type of masking. Detailed error analysis suggests that informational masking occurred due to failures in either across-time linkage of target segments (streaming) or top-down selection of the target. Specifically, differences in the spatial cues in target and masker improved streaming and target selection. In contrast, level differences helped listeners select the target, but had little influence on streaming. These results demonstrate that at least two mechanisms (differentially affected by spatial and level cues) influence informational masking.",
+      "score": {
+        "composite": 0.2249929998451074,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24997199938042958,
+            "venue": 0.4,
+            "publisher": 0.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.062492999845107394,
+            "venue": 0.08000000000000002,
+            "publisher": 0.0,
+            "recency": 0.02,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Audiometry",
+        "Probability",
+        "Communication",
+        "Language",
+        "Speech",
+        "Speech Intelligibility",
+        "Perceptual Masking",
+        "Space Perception",
+        "Mathematics",
+        "Color",
+        "Reference Values",
+        "Adult",
+        "Massachusetts"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_da6460e9",
+      "doi": "10.1097/aud.0b013e31815d638b",
+      "url": "https://doi.org/10.1097/aud.0b013e31815d638b",
+      "openalex_id": null,
+      "pmid": "18091104",
+      "first_author": "Helfer",
+      "authors_display": "Helfer, K., & Freyman, R.",
+      "year": 2008,
+      "title": "Aging and speech-on-speech masking.",
+      "venue": "Ear and hearing",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 189,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objectives</h4>A common complaint of many older adults is difficulty communicating in situations where they must focus on one talker in the presence of other people speaking. In listening environments containing multiple talkers, age-related changes may be caused by increased sensitivity to energetic masking, increased susceptibility to informational masking (e.g., confusion between the target voice and masking voices), and/or cognitive deficits. The purpose of the present study was to tease out these contributions to the difficulties that older adults experience in speech-on-speech masking situations.<h4>Design</h4>Groups of younger, normal-hearing individuals and older adults with varying degrees of hearing sensitivity (n = 12 per group) participated in a study of sentence recognition in the presence of four types of maskers: a two-talker masker consisting of voices of the same sex as the target voice, a two-talker masker of voices of the opposite sex as the target, a signal-envelope-modulated noise derived from the two-talker complex, and a speech-shaped steady noise. Subjects also completed a voice discrimination task to determine the extent to which they were able to incidentally learn to tell apart the target voice from the same-sex masking voices and to examine whether this ability influenced speech-on-speech masking.<h4>Results</h4>Results showed that older adults had significantly poorer performance in the presence of all four types of maskers, with the largest absolute difference for the same-sex masking condition. When the data were analyzed in terms of relative group differences (i.e., adjusting for absolute performance) the greatest effect was found for the opposite-sex masker. Degree of hearing loss was significantly related to performance in several listening conditions. Some older subjects demonstrated a reduced ability to discriminate between the masking and target voices; performance on this task was not related to speech recognition ability.<h",
+      "score": {
+        "composite": 0.21844746433713427,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3037898573485371,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07594746433713427,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.02,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Hearing Loss",
+        "Audiometry, Speech",
+        "Communication",
+        "Perceptual Masking",
+        "Speech Perception",
+        "Aging",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male"
+      ]
+    }
+  ]
+}

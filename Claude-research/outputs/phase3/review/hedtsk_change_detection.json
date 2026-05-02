@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_change_detection",
+    "name": "Change Detection Task",
+    "aliases": [
+      "Luck-Vogel Task",
+      "VWM Capacity Task"
+    ],
+    "category_id": "short_term_and_working_memory",
+    "short_definition": "Brief sample array followed after a blank delay by a probe array; participant reports whether any item changed. Yields visual working memory capacity (K).",
+    "description": "The Change Detection Task, developed by Luck and Vogel (1997), is the standard paradigm for measuring visual working memory capacity. Participants briefly view a memory array of colored squares (typically 100–500 ms), followed by a blank retention interval (~900 ms), then a test array. On half the trials, one item changes color; participants report whether a change occurred. Performance is converted to a capacity estimate (K) using Cowan's formula: K = set size × (hit rate − false alarm rate). The task established that visual WM capacity is approximately 3–4 items in healthy adults and has been instrumental in research linking WM capacity to attention, intelligence, and neural oscillations.",
+    "inclusion_test": {
+      "procedure": "A brief memory array of colored squares (or oriented bars) is followed by a retention interval and a test array; participants indicate whether a change occurred.",
+      "manipulation": "Set size (number of items); retention interval; number of changes; feature complexity.",
+      "measurement": "Accuracy converted to capacity estimate K (Cowan's K or Pashler's K); RT."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:36:29",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 2,
+      "label": "Van der Stoep 2021 — The additive nature of the human multisensory evoked pupil response. (Scientific reports, recent_primary, 13×)",
+      "doi": "10.1038/s41598-020-80286-1",
+      "pub_id": "pub_d00ede75",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5715320741182369,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Mehrpour 2020 — Attention amplifies neural representations of changes in sensory input at the… (Nature communications, recent_primary, 24×)",
+      "doi": "10.1038/s41467-020-15989-0",
+      "pub_id": "pub_0bba1e03",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5699245922169964,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Nature communications",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Li 2021 — Dual n-back working memory training evinces superior transfer effects compare… (Scientific reports, recent_primary, 8×)",
+      "doi": "10.1038/s41598-021-82663-w",
+      "pub_id": "pub_8a891e8a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.565136815256222,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Sreenivasan 2019 — Subcortical connectivity correlates selectively with attention's effects on s… (Proceedings of the National Acad…, recent_primary, 22×)",
+      "doi": "10.1073/pnas.1902704116",
+      "pub_id": "pub_3655a300",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5587176944242321,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Dai 2019 — The reliability of estimating visual working memory capacity. (Scientific reports, recent_primary, 15×)",
+      "doi": "10.1038/s41598-019-39044-1",
+      "pub_id": "pub_910dbe85",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5534648593579782,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Sagar 2019 — Dissociable sensitivity and bias mechanisms mediate behavioral effects of exo… (Scientific reports, recent_primary, 11×)",
+      "doi": "10.1038/s41598-019-42759-w",
+      "pub_id": "pub_cbe399c2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5493008373071001,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Yoo 2021 — Uncertainty is maintained and used in working memory. (Journal of vision, recent_primary, 16×)",
+      "doi": "10.1167/jov.21.8.13",
+      "pub_id": "pub_10e9f1ff",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.534342363680435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of vision",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Mitsven 2018 — Visual short-term memory guides infants' visual attention. (Cognition, recent_primary, 5×)",
+      "doi": "10.1016/j.cognition.2018.04.016",
+      "pub_id": "pub_b18ce408",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5292679558009389,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Cognition",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Willett 2023 — Microsaccades are directed toward the midpoint between targets in a variably … (Proceedings of the National Acad…, recent_primary, 29×)",
+      "doi": "10.1073/pnas.2220552120",
+      "pub_id": "pub_55ca34a5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5225635852427704,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Buss 2014 — Probing the early development of visual working memory capacity with function… (NeuroImage, foundational, 50×)",
+      "doi": "10.1016/j.neuroimage.2013.05.034",
+      "pub_id": "pub_2173939c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5202441046418793,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22764308523418395,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.056910771308545986,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "NeuroImage",
+      "citation_count": 50,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Lobo 2021 — Can the causal role of brain oscillations be studied through rhythmic brain s… (Journal of vision, recent_primary, 5×)",
+      "doi": "10.1167/jov.21.12.2",
+      "pub_id": "pub_5f47490d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5192679558009389,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of vision",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Wang 2021 — Increasing perceptual separateness affects working memory for depth - re-allo… (Journal of vision, recent_primary, 5×)",
+      "doi": "10.1167/jov.21.7.8",
+      "pub_id": "pub_f3b17de7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5192679558009389,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Journal of vision",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Li 2020 — Implicitly and explicitly encoded features can guide attention in free viewing. (Journal of vision, recent_primary, 8×)",
+      "doi": "10.1167/jov.20.6.8",
+      "pub_id": "pub_1d380b70",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5151368152562219,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Journal of vision",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Hahn 2020 — Evidence for positive allosteric modulation of cognitive-enhancing effects of… (Psychopharmacology, recent_primary, 15×)",
+      "doi": "10.1007/s00213-019-05363-4",
+      "pub_id": "pub_e461034f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5034648593579781,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychopharmacology",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Rouse 2023 — Topological insights into the neural basis of flexible behavior. (Proceedings of the National Acad…, recent_primary, 7×)",
+      "doi": "10.1073/pnas.2219557120",
+      "pub_id": "pub_31ee1dd2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5034319778518169,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Jaiswal 2019 — Low delta and high alpha power are associated with better conflict control an… (Social cognitive and affective n…, recent_primary, 26×)",
+      "doi": "10.1093/scan/nsz038",
+      "pub_id": "pub_9e5fdae9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5010385562176662,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Linke 2011 — Stimulus-specific suppression preserves information in auditory short-term me… (Proceedings of the National Acad…, foundational, 71×)",
+      "doi": "10.1073/pnas.1102118108",
+      "pub_id": "pub_ffba7868",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.49523545977470557,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24760850576548898,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.061902126441372246,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 71,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Figueira 2017 — An unpleasant emotional state reduces working memory capacity: electrophysiol… (Social cognitive and affective n…, foundational, 29×)",
+      "doi": "10.1093/scan/nsx030",
+      "pub_id": "pub_33825696",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4825635852427704,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19692100763774825,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04923025190943706,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 29,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Sessa 2018 — Neural measures of the causal role of observers' facial mimicry on visual wor… (Social cognitive and affective n…, recent_primary, 14×)",
+      "doi": "10.1093/scan/nsy095",
+      "pub_id": "pub_0d13c9a5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.48253070373660917,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Ye 2024 — Perceptual encoding benefit of visual memorability on visual memory formation. (Cognition, recent_primary, 11×)",
+      "doi": "10.1016/j.cognition.2024.105810",
+      "pub_id": "pub_a0071f83",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.47930083730710005,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2024,
+      "venue": "Cognition",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Little 2015 — EEG measures reveal dual-task interference in postural performance in young a… (Experimental brain research, foundational, 65×)",
+      "doi": "10.1007/s00221-014-4111-x",
+      "pub_id": "pub_c7356a76",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4739760233093943,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24257075990424393,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06064268997606098,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Experimental brain research",
+      "citation_count": 65,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Ye 2023 — Alterations in working memory maintenance of fearful face distractors in depr… (Journal of vision, recent_primary, 12×)",
+      "doi": "10.1167/jov.23.1.10",
+      "pub_id": "pub_3c71e25b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4704594065461355,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Journal of vision",
+      "citation_count": 12,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Deng 2022 — Intermittent theta burst stimulation over the parietal cortex has a significa… (Human brain mapping, recent_primary, 5×)",
+      "doi": "10.1002/hbm.25708",
+      "pub_id": "pub_ada50ffd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46926795580093883,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Human brain mapping",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Zhao 2023 — Change localization: A highly reliable and sensitive measure of capacity in v… (Attention, perception & psychoph…, recent_primary, 10×)",
+      "doi": "10.3758/s13414-022-02586-0",
+      "pub_id": "pub_87199b9a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4680414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Prieto 2022 — Does perceptual grouping improve visuospatial working memory? Optimized proce… (Psychological research, recent_primary, 4×)",
+      "doi": "10.1007/s00426-021-01555-w",
+      "pub_id": "pub_0c82b5f0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46662896277516486,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Psychological research",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Ward 2020 — State anxiety reduces working memory capacity but does not impact filtering c… (Psychophysiology, recent_primary, 16×)",
+      "doi": "10.1111/psyp.13625",
+      "pub_id": "pub_3e8f71ec",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.46434236368043497,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16403612138840673,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04100903034710168,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Psychophysiology",
+      "citation_count": 16,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 35,
+      "label": "Xu 2018 — The reliability and stability of visual working memory capacity. (Behavior research methods, recent_primary, 61×)",
+      "doi": "10.3758/s13428-017-0886-6",
+      "pub_id": "pub_808beacd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4630710793798671,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23895098418613514,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.059737746046533785,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Behavior research methods",
+      "citation_count": 61,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 36,
+      "label": "Morgan 2023 — Gaze cueing, mental States, and the effect of autistic traits. (Attention, perception & psychoph…, recent_primary, 6×)",
+      "doi": "10.3758/s13414-021-02368-0",
+      "pub_id": "pub_9a56bab2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4614991926120757,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "Attention, perception & psychophysics",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 38,
+      "label": "Norris 2019 — Can short-term memory be trained? (Memory & cognition, recent_primary, 14×)",
+      "doi": "10.3758/s13421-019-00901-z",
+      "pub_id": "pub_2e3af360",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4525307037366092,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Memory & cognition",
+      "citation_count": 14,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 39,
+      "label": "Meconi 2014 — Individual differences in anxiety predict neural measures of visual working m… (Social cognitive and affective n…, foundational, 28×)",
+      "doi": "10.1093/scan/nst189",
+      "pub_id": "pub_516abfee",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.45207288101663134,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

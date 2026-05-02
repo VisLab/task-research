@@ -1,0 +1,1129 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "process",
+    "id": "hed_reward_prediction_error",
+    "name": "Reward prediction error",
+    "aliases": [],
+    "category_id": "associative_learning_and_reinforcement",
+    "definition": "Signed difference between received and expected reward, instantiated by phasic midbrain dopamine firing."
+  },
+  "candidates_run_date": "2026-04-29T15:26:35",
+  "extracted_on": "2026-04-30T11:14:37",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Cavanagh 2015 — Cortical delta activity reflects reward prediction error and related behavior… (NeuroImage, foundational, 132×)",
+      "doi": "10.1016/j.neuroimage.2015.02.007",
+      "pub_id": "pub_a47a8743",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.9209821017048512,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5239284068194046,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.13098210170485114,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2015,
+      "venue": "NeuroImage",
+      "citation_count": 132,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Lowet 2020 — Distributional Reinforcement Learning in the Brain. (Trends in Neurosciences, key_review, 60×)",
+      "doi": "10.1016/j.tins.2020.09.004",
+      "pub_id": "pub_1a321f50",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.9145517072111763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.298206828844705,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07455170721117625,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Trends in Neurosciences",
+      "citation_count": 60,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Kirsch 2022 — Disentangling performance-monitoring signals encoded in feedback-related EEG … (NeuroImage, recent_primary, 22×)",
+      "doi": "10.1016/j.neuroimage.2022.119322",
+      "pub_id": "pub_156d9f45",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8954830056093824,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3019320224375298,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07548300560938245,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "NeuroImage",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Sambrook 2018 — Model-free and model-based reward prediction errors in EEG (NeuroImage, recent_primary, 54×)",
+      "doi": "10.1016/j.neuroimage.2018.05.023",
+      "pub_id": "pub_f4530ab2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8930530192095288,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29221207683811534,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07305301920952884,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "NeuroImage",
+      "citation_count": 54,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Jocham 2014 — Differential Modulation of Reinforcement Learning by D2 Dopamine and NMDA Glu… (Journal of Neuroscience, foundational, 70×)",
+      "doi": "10.1523/jneurosci.0757-14.2014",
+      "pub_id": "pub_a0396741",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8868476509205722,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4273906036822885,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10684765092057212,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 70,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Glimcher 2011 — Understanding dopamine and reinforcement learning: The dopamine reward predic… (Proceedings of the National Acad…, key_review, 980×)",
+      "doi": "10.1073/pnas.1014269108",
+      "pub_id": "pub_9ac61188",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8859091940612577,
+        "breakdown": {
+          "raw": {
+            "citations": 0.7436367762450307,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.18590919406125767,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Proceedings of the National Academy of Sciences",
+      "citation_count": 980,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Gold 2019 — Musical reward prediction errors engage the nucleus accumbens and motivate le… (Proceedings of the National Acad…, recent_primary, 205×)",
+      "doi": "10.1073/pnas.1809855116",
+      "pub_id": "pub_19fce587",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8571177489862749,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3084709959450996,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0771177489862749,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Proceedings of the National Academy of Sciences",
+      "citation_count": 205,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Sambrook 2015 — A neural reward prediction error revealed by a meta-analysis of ERPs using gr… (Psychological bulletin, key_review, 372×)",
+      "doi": "10.1037/bul0000006",
+      "pub_id": "pub_935f1736",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8558026368964583,
+        "breakdown": {
+          "raw": {
+            "citations": 0.663210547585833,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.16580263689645824,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2015,
+      "venue": "Psychological bulletin",
+      "citation_count": 372,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Hauser 2017 — Increased fronto-striatal reward prediction errors moderate decision making i… (Psychological Medicine, foundational, 71×)",
+      "doi": "10.1017/s0033291716003305",
+      "pub_id": "pub_d2a4a9ca",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8541509153594858,
+        "breakdown": {
+          "raw": {
+            "citations": 0.41660366143794325,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10415091535948581,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2017,
+      "venue": "Psychological Medicine",
+      "citation_count": 71,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Gershman 2019 — Believing in dopamine (Nature reviews. Neuroscience, key_review, 242×)",
+      "doi": "10.1038/s41583-019-0220-7",
+      "pub_id": "pub_d2bd6e45",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8484106385086299,
+        "breakdown": {
+          "raw": {
+            "citations": 0.47364255403451927,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.11841063850862982,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Nature reviews. Neuroscience",
+      "citation_count": 242,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Sambrook 2016 — Principal components analysis of reward prediction errors in a reinforcement … (NeuroImage, foundational, 60×)",
+      "doi": "10.1016/j.neuroimage.2015.07.032",
+      "pub_id": "pub_508d2c26",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8484043186533426,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3936172746133708,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0984043186533427,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2016,
+      "venue": "NeuroImage",
+      "citation_count": 60,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Sambrook 2014 — A neural reward prediction error revealed by a meta-analysis of ERPs using gr… (Psychological Bulletin, key_review, 416×)",
+      "doi": "10.1037/bul0000006",
+      "pub_id": "pub_fcf52489",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8474166441338962,
+        "breakdown": {
+          "raw": {
+            "citations": 0.6696665765355847,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.16741664413389618,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Psychological Bulletin",
+      "citation_count": 416,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Talmi 2012 — An MEG signature corresponding to an axiomatic model of reward prediction error (NeuroImage, foundational, 46×)",
+      "doi": "10.1016/j.neuroimage.2011.06.051",
+      "pub_id": "pub_1aa2d153",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8395811432064922,
+        "breakdown": {
+          "raw": {
+            "citations": 0.318324572825969,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07958114320649225,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "NeuroImage",
+      "citation_count": 46,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Schultz 2016 — Reward functions of the basal ganglia (Journal of Neural Transmission, key_review, 248×)",
+      "doi": "10.1007/s00702-016-1510-0",
+      "pub_id": "pub_6edb7670",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8375669790575863,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5102679162303451,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.12756697905758627,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Journal of Neural Transmission",
+      "citation_count": 248,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Rutledge 2010 — Testing the Reward Prediction Error Hypothesis with an Axiomatic Model (Journal of Neuroscience, foundational, 264×)",
+      "doi": "10.1523/jneurosci.1747-10.2010",
+      "pub_id": "pub_0a4cfb88",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8322767221598336,
+        "breakdown": {
+          "raw": {
+            "citations": 0.5691068886393347,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.14227672215983367,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 264,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Collins 2017 — Working Memory Load Strengthens Reward Prediction Errors (Journal of Neuroscience, foundational, 112×)",
+      "doi": "10.1523/jneurosci.2700-16.2017",
+      "pub_id": "pub_4040a4ff",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8304881486434084,
+        "breakdown": {
+          "raw": {
+            "citations": 0.48195259457363315,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12048814864340829,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 112,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Diederen 2020 — Dopamine, Prediction Error and Beyond (The Neuroscientist, key_review, 101×)",
+      "doi": "10.1177/1073858420907591",
+      "pub_id": "pub_02cd1004",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8270422973331909,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3881691893327633,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09704229733319082,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "The Neuroscientist",
+      "citation_count": 101,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Hauser 2015 — Temporally Dissociable Contributions of Human Medial Prefrontal Subregions to… (Journal of Neuroscience, foundational, 45×)",
+      "doi": "10.1523/jneurosci.0560-15.2015",
+      "pub_id": "pub_4afd404a",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.8192698540392265,
+        "breakdown": {
+          "raw": {
+            "citations": 0.317079416156906,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0792698540392265,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 45,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Mihara 2023 — Remembering unexpected beauty: Contributions of the ventral striatum to the p… (NeuroImage, recent_primary, 5×)",
+      "doi": "10.1016/j.neuroimage.2023.120408",
+      "pub_id": "pub_68f9c3d0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8159346224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2023,
+      "venue": "NeuroImage",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Starita 2019 — Aberrant reward prediction error during Pavlovian appetitive learning in alex… (Social cognitive and affective n…, recent_primary, 7×)",
+      "doi": "10.1093/scan/nsz089",
+      "pub_id": "pub_f46e1c89",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8151479667777255,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18059186711090172,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04514796677772543,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Klaus 2019 — What, If, and When to Move: Basal Ganglia Circuits and Self-Paced Action Init… (Annual Review of Neuroscience, key_review, 309×)",
+      "doi": "10.1146/annurev-neuro-072116-031033",
+      "pub_id": "pub_28755c13",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8130333754883654,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3321335019534613,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08303337548836533,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Annual Review of Neuroscience",
+      "citation_count": 309,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Blain 2020 — Momentary subjective well-being depends on learning and not reward (eLife, recent_primary, 63×)",
+      "doi": "10.7554/elife.57977",
+      "pub_id": "pub_1ddab156",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8101972890369672,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24078915614786897,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06019728903696724,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "eLife",
+      "citation_count": 63,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Rouhani 2020 — Reward prediction errors create event boundaries in memory (Cognition, key_review, 121×)",
+      "doi": "10.1016/j.cognition.2020.104269",
+      "pub_id": "pub_473e2abb",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8095352664580957,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27814106583238263,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06953526645809566,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Cognition",
+      "citation_count": 121,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Morrens 2020 — Cue-Evoked Dopamine Promotes Conditioned Responding during Learning. (Neuron, recent_primary, 89×)",
+      "doi": "10.1016/j.neuron.2020.01.012",
+      "pub_id": "pub_9800d8be",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8028372157552143,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4513488630208572,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.1128372157552143,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Neuron",
+      "citation_count": 89,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Ergo 2020 — Reward Prediction Error and Declarative Memory (Trends in Cognitive Sciences, key_review, 69×)",
+      "doi": "10.1016/j.tics.2020.02.009",
+      "pub_id": "pub_10d23f23",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.8014943702267351,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24597748090694052,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06149437022673513,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Trends in Cognitive Sciences",
+      "citation_count": 69,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Wang 2019 — Beta-gamma oscillation reveals learning from unexpected reward in learners ve… (Neuropsychologia, recent_primary, 7×)",
+      "doi": "10.1016/j.neuropsychologia.2019.06.002",
+      "pub_id": "pub_62f2f2e2",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.8000986445184837,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.15000000000000002,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Neuropsychologia",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Watabe‐Uchida 2017 — Neural Circuitry of Reward Prediction Error (Annual Review of Neuroscience, key_review, 452×)",
+      "doi": "10.1146/annurev-neuro-072116-031109",
+      "pub_id": "pub_f2b28f1d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.7985237980047285,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35409519201891415,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08852379800472854,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "Annual Review of Neuroscience",
+      "citation_count": 452,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Talmi 2013 — The Feedback-Related Negativity Signals Salience Prediction Errors, Not Rewar… (Journal of Neuroscience, foundational, 223×)",
+      "doi": "10.1523/jneurosci.5695-12.2013",
+      "pub_id": "pub_4a1980fe",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.7983302668095484,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31332106723819364,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07833026680954841,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 223,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Parker 2016 — Reward and choice encoding in terminals of midbrain dopamine neurons depends … (Nature Neuroscience, foundational, 311×)",
+      "doi": "10.1038/nn.4287",
+      "pub_id": "pub_b3917bda",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.798168547373961,
+        "breakdown": {
+          "raw": {
+            "citations": 0.592674189495844,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.148168547373961,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2016,
+      "venue": "Nature Neuroscience",
+      "citation_count": 311,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 36,
+      "label": "Calderon 2020 — Signed Reward Prediction Errors in the Ventral Striatum Drive Episodic Memory (Journal of Neuroscience, recent_primary, 48×)",
+      "doi": "10.1523/jneurosci.1785-20.2020",
+      "pub_id": "pub_995aa1ff",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7963317185574847,
+        "breakdown": {
+          "raw": {
+            "citations": 0.225326874229939,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05633171855748475,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 48,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

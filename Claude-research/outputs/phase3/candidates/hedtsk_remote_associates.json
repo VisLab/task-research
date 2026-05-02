@@ -1,0 +1,206 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:34:42",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_remote_associates",
+    "name": "Remote Associates Task",
+    "aliases": [
+      "Remote Associates Test",
+      "RAT",
+      "Remote Associates"
+    ],
+    "category_id": "reasoning_and_problem_solving",
+    "short_definition": "Three cue words linked to a single fourth word; solution rate and solution time index semantic search and insight.",
+    "description": "The Remote Associates Test measures creative thinking through convergent semantic association. On each trial, participants are given three seemingly unrelated words (e.g., \"cottage,\" \"Swiss,\" \"cake\") and must find a single word that connects all three (answer: \"cheese\"). The task requires searching semantic memory broadly, suppressing dominant but incorrect associations, and recognizing the linking concept. RAT performance correlates with measures of creativity, insight problem-solving, and divergent thinking. The task has also been used to study the \"Aha!\" moment—the subjective experience of sudden insight—and its neural correlates in the right anterior superior temporal gyrus.",
+    "inclusion_test": {
+      "procedure": "Three seemingly unrelated words are presented (e.g., PINE, CRAB, SAUCE); participants find a single word that forms a compound or common phrase with each (APPLE).",
+      "manipulation": "Item difficulty (associative strength of solution to each cue); number of items; time limit.",
+      "measurement": "Number correct; RT to solution; solution probability as a function of associative strength."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 2,
+      "picked": 2,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_bcf8f649",
+      "doi": "10.1037/h0048850",
+      "url": "https://doi.org/10.1037/h0048850",
+      "openalex_id": "https://openalex.org/W2086438570",
+      "pmid": "14472013",
+      "first_author": "Mednick",
+      "authors_display": "Sarnoff A. Mednick",
+      "year": 1962,
+      "title": "The associative basis of the creative process.",
+      "venue": "Psychological Review",
+      "venue_tier": "flagship",
+      "publisher": "American Psychological Association",
+      "publication_types": [
+        "article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 4077,
+      "influential_citation_count": null,
+      "fwci": 26.8274,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The intent of this paper is the presentation of an associative interpretation of the process of creative thinking. The explanation is not directed to any specific field of application such as art or science but attempts to delineate processes that underlie all creative thought. The discussion will take the following form, (a) First, we will define creative thinking in associative terms and indicate three ways in which creative solutions may be achieved—serendipity, similarity, and mediation, (b) This definition will allow us to deduce those individual difference variables which will facilitate creative performance, (c) Consideration of the definition of the creative process has suggested an operational statement of the definition in the form of a test. The test will be briefly described along with some preliminary research results. (d) The paper will conclude with a discussion of predictions regarding the influence of certain experimentally manipulable variables upon the creative process. Creative individuals and the processes by which they manifest their creativity have excited a good deal of",
+      "score": {
+        "composite": 0.7203308297469837,
+        "breakdown": {
+          "raw": {
+            "citations": 0.481323318987935,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.12033082974698375,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Creativity"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_46afa858",
+      "doi": "10.3389/fnhum.2013.00330",
+      "url": "https://doi.org/10.3389/fnhum.2013.00330",
+      "openalex_id": null,
+      "pmid": "23847503",
+      "first_author": "Jung",
+      "authors_display": "Jung, R. et al.",
+      "year": 2013,
+      "title": "The structure of creative cognition in the human brain.",
+      "venue": "Frontiers in human neuroscience",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "review-article",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human)"
+      ],
+      "citation_count": 160,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC3703539",
+      "tldr": null,
+      "abstract": "Creativity is a vast construct, seemingly intractable to scientific inquiry-perhaps due to the vague concepts applied to the field of research. One attempt to limit the purview of creative cognition formulates the construct in terms of evolutionary constraints, namely that of blind variation and selective retention (BVSR). Behaviorally, one can limit the \"blind variation\" component to idea generation tests as manifested by measures of divergent thinking. The \"selective retention\" component can be represented by measures of convergent thinking, as represented by measures of remote associates. We summarize results from measures of creative cognition, correlated with structural neuroimaging measures including structural magnetic resonance imaging (sMRI), diffusion tensor imaging (DTI), and proton magnetic resonance spectroscopy (1H-MRS). We also review lesion studies, considered to be the \"gold standard\" of brain-behavioral studies. What emerges is a picture consistent with theories of disinhibitory brain features subserving creative cognition, as described previously (Martindale, 1981). We provide a perspective, involving aspects of the default mode network (DMN), which might provide a \"first approximation\" regarding how creative cognition might map on to the human brain.",
+      "score": {
+        "composite": 0.41688355370297453,
+        "breakdown": {
+          "raw": {
+            "citations": 0.29420088147856477,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07355022036964119,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

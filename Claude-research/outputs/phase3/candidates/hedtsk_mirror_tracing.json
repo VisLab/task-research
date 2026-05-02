@@ -1,0 +1,327 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:26:04",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_mirror_tracing",
+    "name": "Mirror Tracing Task",
+    "aliases": [
+      "MTT",
+      "Mirror Drawing",
+      "Mirror Tracing"
+    ],
+    "category_id": "motor_preparation_timing_and_execution",
+    "short_definition": "Tracing of a figure viewed only in a mirror; error and completion time across trials index visuomotor adaptation and procedural learning.",
+    "description": "The Mirror Tracing Task measures procedural motor learning and sensorimotor adaptation. Participants trace a shape (typically a star outline) while viewing their hand only through a mirror, which reverses the visual feedback left-right. This creates a conflict between visual and proprioceptive information that must be resolved through practice. Performance improves across trials as participants learn to adapt their motor commands to the reversed visual input. Measures include tracing time, number of errors (deviations from the path), and the rate of improvement across trials. The task is a classic demonstration that procedural/implicit memory is preserved in amnesia (H.M. could learn this task despite profound declarative memory loss).",
+    "inclusion_test": {
+      "procedure": "Participants trace a path (star, maze) while viewing their hand only through a mirror, which reverses visual-motor mapping. They must stay within path boundaries.",
+      "manipulation": "Path complexity; practice blocks; dominant vs. non-dominant hand.",
+      "measurement": "Tracing time; number of boundary errors; improvement across trials (learning curve)."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 3,
+      "picked": 3,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_bbb77c64",
+      "doi": "10.1073/pnas.0305404101",
+      "url": "https://doi.org/10.1073/pnas.0305404101",
+      "openalex_id": null,
+      "pmid": "14766981",
+      "first_author": "Gais",
+      "authors_display": "Gais, S., & Born, J.",
+      "year": 2004,
+      "title": "Low acetylcholine during slow-wave sleep is critical for declarative memory consolidation.",
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Controlled Clinical Trial",
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 257,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The neurotransmitter acetylcholine is considered essential for proper functioning of the hippocampus-dependent declarative memory system, and it represents a major neuropharmacological target for the treatment of memory deficits, such as those in Alzheimer's disease. During slow-wave sleep (SWS), however, declarative memory consolidation is particularly strong, while acetylcholine levels in the hippocampus drop to a minimum. Observations in rats led to the hypothesis that the low cholinergic tone during SWS is necessary for the replay of new memories in the hippocampus and their long-term storage in neocortical networks. However, this low tone should not affect nondeclarative memory systems. In this study, increasing central nervous cholinergic activation during SWS-rich sleep by posttrial infusion of 0.75 mg of the cholinesterase inhibitor physostigmine completely blocked SWS-related consolidation of declarative memories for word pairs in human subjects. The treatment did not interfere with consolidation of a nondeclarative mirror tracing task. Also, physostigmine did not alter memory consolidation during waking, when the endogenous central nervous cholinergic tone is maximal. These findings are in line with predictions that a low cholinergic tone during SWS is essential for declarative memory consolidation.",
+      "score": {
+        "composite": 0.5470423604392572,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3215027750903623,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08037569377259057,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Humans",
+        "Acetylcholine",
+        "Physostigmine",
+        "Hydrocortisone",
+        "Cholinesterase Inhibitors",
+        "Memory",
+        "Mental Recall",
+        "Wakefulness",
+        "Sleep",
+        "Adolescent",
+        "Adult",
+        "Male"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_bdfa5762",
+      "doi": "10.1017/s0954579409000042",
+      "url": "https://doi.org/10.1017/s0954579409000042",
+      "openalex_id": null,
+      "pmid": "19144222",
+      "first_author": "Stroud",
+      "authors_display": "Stroud, L. et al.",
+      "year": 2009,
+      "title": "Stress response and the adolescent transition: performance versus peer rejection stressors.",
+      "venue": "Development and psychopathology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 397,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Little is known about normative variation in stress response over the adolescent transition. This study examined neuroendocrine and cardiovascular responses to performance and peer rejection stressors over the adolescent transition in a normative sample. Participants were 82 healthy children (ages 7-12 years, n = 39, 22 females) and adolescents (ages 13-17, n = 43, 20 females) recruited through community postings. Following a habituation session, participants completed a performance (public speaking, mental arithmetic, mirror tracing) or peer rejection (exclusion challenges) stress session. Salivary cortisol, salivary alpha amylase (sAA), systolic and diastolic blood pressure (SBP, DBP), and heart rate were measured throughout. Adolescents showed significantly greater cortisol, sAA, SBP, and DBP stress response relative to children. Developmental differences were most pronounced in the performance stress session for cortisol and DBP and in the peer rejection session for sAA and SBP. Heightened physiological stress responses in typical adolescents may facilitate adaptation to new challenges of adolescence and adulthood. In high-risk adolescents, this normative shift may tip the balance toward stress response dysregulation associated with depression and other psychopathology. Specificity of physiological response by stressor type highlights the importance of a multisystem approach to the psychobiology of stress and may also have implications for understanding trajectories to psychopathology.",
+      "score": {
+        "composite": 0.35998356476444227,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3466009257244358,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08665023143110895,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Hydrocortisone",
+        "Stress, Psychological",
+        "Speech",
+        "Emotions",
+        "Affect",
+        "Peer Group",
+        "Puberty",
+        "Blood Pressure",
+        "Heart Rate",
+        "Mathematics",
+        "Adolescent",
+        "Child",
+        "Female",
+        "Male",
+        "Stress, Physiological",
+        "Psychology, Child",
+        "Psychology, Adolescent",
+        "Ethnicity",
+        "Racial Groups"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a640cece",
+      "doi": "10.1523/jneurosci.2725-04.2004",
+      "url": "https://doi.org/10.1523/jneurosci.2725-04.2004",
+      "openalex_id": null,
+      "pmid": "15525784",
+      "first_author": "Marshall",
+      "authors_display": "Marshall, L. et al.",
+      "year": 2004,
+      "title": "Transcranial direct current stimulation during sleep improves declarative memory.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Controlled Clinical Trial",
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 381,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "In humans, weak transcranial direct current stimulation (tDCS) modulates excitability in the motor, visual, and prefrontal cortex. Periods rich in slow-wave sleep (SWS) not only facilitate the consolidation of declarative memories, but in humans, SWS is also accompanied by a pronounced endogenous transcortical DC potential shift of negative polarity over frontocortical areas. To experimentally induce widespread extracellular negative DC potentials, we applied anodal tDCS (0.26 mA) [correction] repeatedly (over 30 min) bilaterally at frontocortical electrode sites during a retention period rich in SWS. Retention of declarative memories (word pairs) and also nondeclarative memories (mirror tracing skills) learned previously was tested after this period and compared with retention performance after placebo stimulation as well as after retention intervals of wakefulness. Compared with placebo stimulation, anodal tDCS during SWS-rich sleep distinctly increased the retention of word pairs (p < 0.005). When applied during the wake retention interval, tDCS did not affect declarative memory. Procedural memory was also not affected by tDCS. Mood was improved both after tDCS during sleep and during wake intervals. tDCS increased sleep depth toward the end of the stimulation period, whereas the average power in the faster frequency bands (,alpha, and beta) was reduced. Acutely, anodal tDCS increased slow oscillatory activity <3 Hz. We conclude that effects of tDCS involve enhanced generation of slow oscillatory EEG activity considered to facilitate processes of neuronal plasticity. Shifts in extracellular ionic concentration in frontocortical tissue (expressed as negative DC potentials during SWS) may facilitate sleep-dependent consolidation of declarative memories.",
+      "score": {
+        "composite": 0.3293896603925472,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3442253082368555,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08605632705921387,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Cerebral Cortex",
+        "Humans",
+        "Electroencephalography",
+        "Polysomnography",
+        "Cross-Over Studies",
+        "Double-Blind Method",
+        "Electric Stimulation",
+        "Memory",
+        "Mental Recall",
+        "Paired-Associate Learning",
+        "Wakefulness",
+        "Sleep",
+        "Sleep Stages",
+        "Adult",
+        "Male"
+      ]
+    }
+  ]
+}

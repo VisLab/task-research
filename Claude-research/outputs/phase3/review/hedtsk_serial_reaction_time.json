@@ -1,0 +1,1138 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_serial_reaction_time",
+    "name": "Serial Reaction Time Task",
+    "aliases": [
+      "SRTT",
+      "Serial RT"
+    ],
+    "category_id": "motor_preparation_timing_and_execution",
+    "short_definition": "Sequential key-press responses to cued locations; RT speedup on repeating vs random sequences indexes implicit sequence learning.",
+    "description": "The SRTT measures implicit motor sequence learning. Visual stimuli appear sequentially at different spatial locations, each corresponding to a response button. Participants respond as quickly as possible, unaware that stimuli follow a repeating sequence interspersed with random blocks. Learning is inferred from decreasing RT for the repeating sequence relative to random sequences. The dissociation between improved performance and lack of conscious awareness of the sequence structure is a hallmark of implicit learning and provides evidence for procedural memory systems.",
+    "inclusion_test": {
+      "procedure": "Stimuli appear at one of several spatial locations in a repeating (but covert) sequence; participants respond to each location with a spatially mapped keypress. Sequence awareness is typically not disclosed.",
+      "manipulation": "Sequence length and complexity; sequence vs. random blocks; explicit vs. implicit instruction; secondary task (dual-task interference).",
+      "measurement": "RT slowing when sequence is replaced by random order (sequence learning effect); explicit sequence knowledge (generation task, recognition); offline consolidation gains."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:53:12",
+  "extracted_on": "2026-04-30T11:14:39",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Nissen 1987 — Attentional requirements of learning: Evidence from performance measures (Cognitive Psychology, historical, 3k×)",
+      "doi": "10.1016/0010-0285(87)90002-8",
+      "pub_id": "pub_f58448b2",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7159498606480328,
+        "breakdown": {
+          "raw": {
+            "citations": 0.463799442592131,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11594986064803275,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": null,
+      "year": 1987,
+      "venue": "Cognitive Psychology",
+      "citation_count": 3012,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Rakowska 2021 — Long term effects of cueing procedural memory reactivation during NREM sleep. (NeuroImage, recent_primary, 26×)",
+      "doi": "10.1016/j.neuroimage.2021.118573",
+      "pub_id": "pub_0bffc07d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6643718895509996,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "NeuroImage",
+      "citation_count": 26,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Sehatpour 2020 — Network-level mechanisms underlying effects of transcranial direct current st… (NeuroImage, recent_primary, 21×)",
+      "doi": "10.1016/j.neuroimage.2020.117311",
+      "pub_id": "pub_a68809f3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6514076156812834,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "NeuroImage",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Steel 2019 — Differential impact of reward and punishment on functional connectivity after… (NeuroImage, recent_primary, 17×)",
+      "doi": "10.1016/j.neuroimage.2019.01.009",
+      "pub_id": "pub_976b5d0d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6385030300957165,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "NeuroImage",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Hardwick 2013 — A quantitative meta-analysis and review of motor learning in the human brain. (NeuroImage, key_review, 483×)",
+      "doi": "10.1016/j.neuroimage.2012.11.020",
+      "pub_id": "pub_ff197294",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5928152313625668,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3579275921169335,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08948189802923337,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "NeuroImage",
+      "citation_count": 483,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Cousins 2016 — Cued Reactivation of Motor Learning during Sleep Leads to Overnight Changes i… (PLoS biology, foundational, 69×)",
+      "doi": "10.1371/journal.pbio.1002451",
+      "pub_id": "pub_ebd2c823",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5881610368934018,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24597748090694052,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06149437022673513,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "PLoS biology",
+      "citation_count": 69,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Lascarrou 2021 — Predictors of negative first SARS-CoV-2 RT-PCR despite final diagnosis of COV… (Scientific reports, recent_primary, 20×)",
+      "doi": "10.1038/s41598-021-82192-6",
+      "pub_id": "pub_53942782",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5774009335735201,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Marin Bosch 2020 — Effect of acute physical exercise on motor sequence memory. (Scientific reports, recent_primary, 24×)",
+      "doi": "10.1038/s41598-020-72108-1",
+      "pub_id": "pub_5a829461",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5699245922169964,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Horváth 2020 — Divided attention does not affect the acquisition and consolidation of transi… (Scientific reports, recent_primary, 18×)",
+      "doi": "10.1038/s41598-020-79232-y",
+      "pub_id": "pub_848575cd",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5659522867224749,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Charlton 2019 — Chronic voluntary alcohol consumption causes persistent cognitive deficits an… (Scientific reports, recent_primary, 28×)",
+      "doi": "10.1038/s41598-019-55095-w",
+      "pub_id": "pub_1edbd4bf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5620728810166314,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 28,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Chen 2026 — Consistent cortico-basal ganglia-cerebellar activation in early motor sequenc… (Translational psychiatry, key_review, 0×)",
+      "doi": "10.1038/s41398-026-03851-8",
+      "pub_id": "pub_0c1b5249",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5316666666666666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 0.6666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.16666666666666666,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2026,
+      "venue": "Translational psychiatry",
+      "citation_count": 0,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Hay 2022 — Quantifying the impact of immune history and variant on SARS-CoV-2 viral kine… (eLife, recent_primary, 96×)",
+      "doi": "10.7554/elife.81849",
+      "pub_id": "pub_24df4e4f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5295494768299884,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2648645739866204,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0662161434966551,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "eLife",
+      "citation_count": 96,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Fitzroy 2021 — Encoding and consolidation of motor sequence learning in young and older adults. (Neurobiology of learning and memory, recent_primary, 24×)",
+      "doi": "10.1016/j.nlm.2021.107508",
+      "pub_id": "pub_3690f32e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5232579255503298,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Neurobiology of learning and memory",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 21,
+      "label": "Giustiniani 2021 — Functional Role of Cerebellar Gamma Frequency in Motor Sequences Learning: a … (Cerebellum (London, England), recent_primary, 23×)",
+      "doi": "10.1007/s12311-021-01255-6",
+      "pub_id": "pub_bd643db7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5226670521465946,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Cerebellum (London, England)",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Ma 2021 — High Gamma and Beta Temporal Interference Stimulation in the Human Motor Cort… (Frontiers in neuroscience, recent_primary, 60×)",
+      "doi": "10.3389/fnins.2021.800436",
+      "pub_id": "pub_5d8e86de",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.516169051618601,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23800953980773776,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05950238495193444,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Frontiers in neuroscience",
+      "citation_count": 60,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Marshall 2016 — Pharmacological Fingerprints of Contextual Uncertainty. (PLoS biology, foundational, 109×)",
+      "doi": "10.1371/journal.pbio.1002575",
+      "pub_id": "pub_db1dbd98",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5113699117897815,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2721463138257929,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06803657845644823,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "PLoS biology",
+      "citation_count": 109,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Lustig 2013 — CNTRICS final animal model task selection: control of attention. (Neuroscience and biobehavioral r…, key_review, 89×)",
+      "doi": "10.1016/j.neubiorev.2012.05.009",
+      "pub_id": "pub_30229249",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5084653262042147,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26052797148352547,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06513199287088137,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "Neuroscience and biobehavioral reviews",
+      "citation_count": 89,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Savic 2016 — How Transcranial Direct Current Stimulation Can Modulate Implicit Motor Seque… (Frontiers in human neuroscience, key_review, 32×)",
+      "doi": "10.3389/fnhum.2016.00026",
+      "pub_id": "pub_baa7e794",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5072764751365665,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2016,
+      "venue": "Frontiers in human neuroscience",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Jongkees 2019 — The Effect of Cerebellar tDCS on Sequential Motor Response Selection. (Cerebellum (London, England), recent_primary, 22×)",
+      "doi": "10.1007/s12311-019-01029-1",
+      "pub_id": "pub_72620f48",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5020510277575655,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Cerebellum (London, England)",
+      "citation_count": 22,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Chen 2020 — Exercise Reduces Competition between Procedural and Declarative Memory Systems. (eNeuro, recent_primary, 10×)",
+      "doi": "10.1523/eneuro.0070-20.2020",
+      "pub_id": "pub_07573de7",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5013747341751221,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "eNeuro",
+      "citation_count": 10,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Moisello 2009 — The serial reaction time task revisited: a study on motor sequence learning w… (Experimental brain research, foundational, 76×)",
+      "doi": "10.1007/s00221-008-1681-5",
+      "pub_id": "pub_c0e6459c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4995405934538645,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25149570714879144,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06287392678719786,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Experimental brain research",
+      "citation_count": 76,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 37,
+      "label": "Fresnoza 2020 — Age-Dependent Effect of Transcranial Alternating Current Stimulation on Motor… (Frontiers in aging neuroscience, recent_primary, 21×)",
+      "doi": "10.3389/fnagi.2020.00025",
+      "pub_id": "pub_8c1c9e6e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4914076156812833,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Frontiers in aging neuroscience",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 38,
+      "label": "Popik 2022 — Effects of ketamine optical isomers, psilocybin, psilocin and norpsilocin on … (Psychopharmacology, recent_primary, 24×)",
+      "doi": "10.1007/s00213-021-06020-5",
+      "pub_id": "pub_c671c9d9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4899245922169964,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Psychopharmacology",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 39,
+      "label": "Song 2008 — Perceptual sequence learning in a serial reaction time task. (Experimental brain research, foundational, 59×)",
+      "doi": "10.1007/s00221-008-1411-z",
+      "pub_id": "pub_a6fcb05c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.48592980008226494,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2370525336623931,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.059263133415598274,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "Experimental brain research",
+      "citation_count": 59,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 42,
+      "label": "Amitai 2010 — Disruption of performance in the five-choice serial reaction time task induce… (Biological psychiatry, key_review, 103×)",
+      "doi": "10.1016/j.biopsych.2010.03.004",
+      "pub_id": "pub_fa004a38",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.48055805106461913,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26889887092514314,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.26666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06722471773128579,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.04,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Biological psychiatry",
+      "citation_count": 103,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 43,
+      "label": "Sami 2014 — The time course of task-specific memory consolidation effects in resting stat… (The Journal of neuroscience : th…, foundational, 112×)",
+      "doi": "10.1523/jneurosci.4341-13.2014",
+      "pub_id": "pub_f27b5a18",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.47509271404739173,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2737041895229003,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06842604738072508,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "citation_count": 112,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 44,
+      "label": "Galea 2010 — Disruption of the dorsolateral prefrontal cortex facilitates the consolidatio… (Journal of cognitive neuroscience, foundational, 112×)",
+      "doi": "10.1162/jocn.2009.21259",
+      "pub_id": "pub_45335c85",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.47509271404739173,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2737041895229003,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.26666666666666666,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06842604738072508,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.04,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2010,
+      "venue": "Journal of cognitive neuroscience",
+      "citation_count": 112,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 45,
+      "label": "Tóth-Fáber 2021 — Regularity detection under stress: Faster extraction of probability-based reg… (PloS one, recent_primary, 15×)",
+      "doi": "10.1371/journal.pone.0253123",
+      "pub_id": "pub_6dd31582",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.47346485935797816,
+        "breakdown": {
+          "raw": {
+            "citations": 0.16052610409857934,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.040131526024644835,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PloS one",
+      "citation_count": 15,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 46,
+      "label": "Voon 2014 — Measuring \"waiting\" impulsivity in substance addictions and binge eating diso… (Biological psychiatry, foundational, 120×)",
+      "doi": "10.1016/j.biopsych.2013.05.013",
+      "pub_id": "pub_32c0928f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.4727494683502443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2776645400676438,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06941613501691095,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Biological psychiatry",
+      "citation_count": 120,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 47,
+      "label": "You 2020 — Efforts of subthalamic nucleus deep brain stimulation on cognitive spectrum: … (CNS neuroscience & therapeutics, recent_primary, 19×)",
+      "doi": "10.1111/cns.13392",
+      "pub_id": "pub_423a9b46",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.4700280591208206,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "CNS neuroscience & therapeutics",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

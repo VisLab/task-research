@@ -1,0 +1,664 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T13:09:55",
+  "item": {
+    "kind": "process",
+    "id": "hed_attentional_awareness",
+    "name": "Attentional awareness",
+    "aliases": [],
+    "category_id": "awareness_agency_and_metacognition",
+    "definition": "Awareness of the current focus and content of attention."
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 2,
+      "raw": 56,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 9,
+      "picked": 8,
+      "reserve": 0,
+      "excluded": 1,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 1
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_22727649",
+      "doi": "10.1016/j.cose.2023.103695",
+      "url": "https://doi.org/10.1016/j.cose.2023.103695",
+      "openalex_id": "https://openalex.org/W4390457517",
+      "pmid": null,
+      "first_author": "Marshall",
+      "authors_display": "Nina Marshall et al.",
+      "year": 2023,
+      "title": "Exploring the evidence for email phishing training: A scoping review",
+      "venue": "Computers & Security",
+      "venue_tier": "unknown",
+      "publisher": "Elsevier BV",
+      "publication_types": [
+        "review"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human)"
+      ],
+      "citation_count": 32,
+      "influential_citation_count": null,
+      "fwci": 14.3059,
+      "cited_by_percentile_year": 97.0,
+      "oa_status": "hybrid",
+      "oa_url": "https://doi.org/10.1016/j.cose.2023.103695",
+      "tldr": null,
+      "abstract": "Phishing emails are a pervasive threat to the security of confidential information. To mitigate this risk, a range of training measures have been developed to target the human factors involved in phishing email susceptibility. Despite the widespread use of anti-phishing training programs, there is no clear understanding of the extent to which these approaches have been assessed. The primary aim of this scoping review was to identify and describe the nature of available training interventions and their measurable outcomes on user susceptibility, as reported in published articles. Systematic searches identified 42 studies that met the inclusion criteria. Each study was critically analysed, and a standardised data extraction spreadsheet used to systemise the data that informed the descriptive narrative review. Findings revealed that near-term training impact is well documented, however evidence on the success of programs in driving sustained behavioral change is limited. Components of training design influencing the effectiveness of outcomes included training intensity, active approaches to learning, the provision of detailed feedback, and supplementing attentional awareness skills-based training with traditional cue-based approaches. Improved user resilience to phishing emails confirms the utility of training as an important defensive mechanism, although current approaches continue to leave trainees at risk.",
+      "score": {
+        "composite": 0.6006098084698998,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_b092cfd8",
+      "doi": "10.3389/fpsyg.2021.751679",
+      "url": "https://doi.org/10.3389/fpsyg.2021.751679",
+      "openalex_id": null,
+      "pmid": "34867640",
+      "first_author": "Gulla",
+      "authors_display": "Gulla, B., & Golonka, K.",
+      "year": 2021,
+      "title": "Exploring Protective Factors in Wellbeing: How Sensory Processing Sensitivity and Attention Awareness Interact With Resilience.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 7,
+      "influential_citation_count": 2,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2021.751679/pdf",
+      "tldr": "The regression analyses revealed that SPS is a significant predictor of resilience, but diverse aspects of sensitivity explain resilience differently, and attentional awareness was found to be a significant moderator that strengthens the positive relationship between sensing the subtle and tolerance of negative emotions.",
+      "abstract": "The aim of the study is to analyze the relationship between sensory processing sensitivity (SPS), attention awareness, and resilience and to determine whether attention awareness may moderate the relation between sensitivity and resilience. The sample consisted of 273 adults (239 women; <i>M</i> <sub>age</sub>=24.12, <i>SD</i>=6.59years). The <i>highly sensitive person scale</i>, the <i>resiliency assessment scale</i>, and the <i>mindful attention awareness scale</i> were used in the study. The results indicate significant relationships between SPS and resilience; emotional reactivity is especially associated with lower resilience, whereas sensing the subtle is associated with higher resilience. The regression analyses revealed that SPS is a significant predictor of resilience, but diverse aspects of sensitivity explain resilience differently. Attentional awareness was found to be a significant moderator that strengthens the positive relationship between sensing the subtle and tolerance of negative emotions. The consequences of high sensitivity include high levels of distress, anxiety, and a sense of overload; therefore, searching for protective factors is important to maintain the wellbeing of highly sensitive people. As one of the characteristics of highly sensitive persons, sensing the subtle may be an important resource that allows to them to deal effectively with difficult situations. Training on attention awareness and conscious presence may be an important way to deal with negative emotions and develop personal competences. The results indicate that these strategies may be of high significance for improving wellbeing and protecting highly sensitive persons against various stress factors.",
+      "score": {
+        "composite": 0.5939512559606501,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21580502384260034,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.053951255960650084,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_66bfaac2",
+      "doi": "10.3389/fpsyg.2018.02359",
+      "url": "https://doi.org/10.3389/fpsyg.2018.02359",
+      "openalex_id": null,
+      "pmid": "30555383",
+      "first_author": "Sørensen",
+      "authors_display": "Sørensen, L. et al.",
+      "year": 2018,
+      "title": "Dispositional Mindfulness and Attentional Control: The Specific Association Between the Mindfulness Facets of Non-judgment and Describing With Flexibility of Early Operating Orienting in Conflict Detection.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2018.02359/pdf",
+      "tldr": "The findings indicate that being mindful is associated with a more flexible and efficient orienting attention and a higher ability to disengage from salient stimuli that is irrelevant to pursue goal-directed behavior (conflict detection).",
+      "abstract": "<b>Background:</b> A state of mindfulness refers to a present-centered attentional awareness without judging. Being mindful seems to increase the ability to be flexible and adaptive in attention focus according to situational contingencies. The way mindfulness affects such attentional control is often measured with three different but interacting attentional networks of alerting (preparedness), orienting (selection of stimulus), and conflict detection (suppression of irrelevant stimuli). In the current study, the aim was to study the effects of dispositional mindfulness on these attention networks, and specifically the effects on the interactions between these attention networks. <b>Methods:</b> Fifty participants between 19 and 29 years old filled out the questionnaire Five Facet Mindfulness Questionnaire (FFMQ) and performed the revised version of the Attention Network Test (ANT-R). The five FFMQ facets of Describing, Non-Judgment, Orienting, Non-Reactivity, and Acting with Awareness were included as predictors in multiple linear regression analyses with the ANT-R scores of alerting, orienting, conflict detection, and the interaction scores of alerting by conflict detection and orienting by conflict detection as outcome variables, respectively. <b>Results:</b> Higher dispositional mindfulness as measured with the five FFMQ facets predicted interaction scores (faster reaction times) of orienting by conflict detection, but none of the other ANT-R scores. It was specifically the FFMQ facets of Describing and non-judgment that predicted this lower interaction score of orienting by conflict detection. <b>Conclusion:</b> Our findings indicate that being mindful is associated with a more flexible and efficient orienting attention. It is associated with a higher ability to disengage from salient stimuli that is irrelevant to pursue goal-directed behavior (conflict detection).",
+      "score": {
+        "composite": 0.5526189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2633f853",
+      "doi": "10.3389/fnint.2018.00060",
+      "url": "https://doi.org/10.3389/fnint.2018.00060",
+      "openalex_id": null,
+      "pmid": "30564105",
+      "first_author": "Wadden",
+      "authors_display": "Wadden, K. et al.",
+      "year": 2018,
+      "title": "Yoga Practitioners Uniquely Activate the Superior Parietal Lobule and Supramarginal Gyrus During Emotion Regulation.",
+      "venue": "Frontiers in integrative neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 28,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6289073",
+      "tldr": null,
+      "abstract": "Chronic stress contributes to both mental and physical illness. A high prevalence and cost of stress-related illnesses North America warrants investigation into alternative or complementary therapies which may help reduce adverse reactions to stressful stimuli. Emotion regulation is the process of monitoring and adjusting emotional responses to environmental stimuli and stressors. Individuals who participate in physical activity are less likely to have adverse responses to potentially stressful situations, potentially due to adaptions in emotion regulation. Yoga is a form of physical activity involving stretching exercises and meditation, that may lessen individuals' levels of stress and anxiety and improve emotion regulation. High-frequency heart rate variability (HF-HRV) is considered a measure of parasympathetic nervous system (PNS) activity during the emotion regulation. Measuring HRV and brain activity using functional magnetic resonance imaging (fMRI) offers a useful, noninvasive approach to evaluating \"neurovisceral\" components of emotion regulation. We aimed to determine whether yoga practitioners (YP) exhibit different patterns of brain activation compared to recreational athletes (RA) without current yoga experience, while viewing emotionally arousing visual stimuli. Our secondary aim was to examine potential differences across groups in HRV throughout the presentation of these stimuli. Analysis of fMRI data during exposure to emotion-evoking (EE) stimuli revealed that the YP group activated two unique brain areas, namely the superior parietal lobule and the supramarginal gyrus. These areas have been associated with attentional awareness and reduced egocentric bias, processes that have been implicated in emotion regulation by others. The RA group activated the inferior middle frontal cortex, an area associated with cognitive reappraisal during emotion regulation. The YP group also demonstrated a trend towards a higher ratio of low- to high-frequency HRV co",
+      "score": {
+        "composite": 0.538739547683298,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19495819073319218,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.048739547683298044,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_ded68691",
+      "doi": "10.1002/jts.70040",
+      "url": "https://doi.org/10.1002/jts.70040",
+      "openalex_id": null,
+      "pmid": "41543845",
+      "first_author": "Sinnott",
+      "authors_display": "Sinnott, S. et al.",
+      "year": 2026,
+      "title": "The impact of yoga on posttraumatic stress disorder symptom clusters: A systematic review and meta-analysis of randomized controlled trials.",
+      "venue": "Journal of traumatic stress",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Meta-Analysis",
+        "Systematic Review",
+        "review-article",
+        "Review",
+        "Journal Article"
+      ],
+      "is_review": true,
+      "is_meta_analysis": true,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC13044381",
+      "tldr": null,
+      "abstract": "Posttraumatic stress disorder (PTSD) is a disruptive, multifaceted disorder with an estimated lifetime prevalence of 8.3% in the U.S. population. Yoga has been shown to reduce PTSD symptoms overall, though little is known about its efficacy relative to specific PTSD symptom clusters. In this systematic review and meta-analysis, we examined the associations between yoga and symptom change in each DSM-5 PTSD symptom cluster. We hypothesized that yoga participation would be associated with significant reductions in each cluster, particularly alterations in arousal and reactivity/hyperarousal (AAR/H), relative to controls. We searched PubMed, PsycInfo, CINAHL, and SPORTDiscus for eligible studies published through October 2025. Studies that were yoga intervention randomized controlled trials, enrolled trauma survivors, and reported PTSD subscale scores were included. We computed standardized mean difference scores and used an NIH tool to assess risk of bias. In direct models (k = 9 studies), yoga led to small-medium reductions in intrusions, d = -0.31, p = .027, and total PTSD symptoms, d = -0.29, p = .030. When including age as a moderator, yoga also improved avoidance, d = -2.28, p = .003, and AAR/H symptoms, d = -1.92, p = .007. There was a substantial risk of bias across studies. Yoga showed the most robust effects for reducing intrusions and total PTSD symptoms, with efficacy in reducing avoidance and AAR/H symptoms when age was added as a moderator. Yoga's emphasis on mindfulness in the present moment may allow for attentional awareness that is protective against intrusions.",
+      "score": {
+        "composite": 0.535,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Yoga",
+        "Stress Disorders, Post-Traumatic",
+        "Randomized Controlled Trials as Topic"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_f8ac2542",
+      "doi": "10.1093/ecam/nel040",
+      "url": "https://doi.org/10.1093/ecam/nel040",
+      "openalex_id": null,
+      "pmid": "17173116",
+      "first_author": "Hankey",
+      "authors_display": "Hankey, A.",
+      "year": 2006,
+      "title": "Studies of advanced stages of meditation in the tibetan buddhist and vedic traditions. I: a comparison of general changes.",
+      "venue": "Evidence-based complementary and alternative medicine : eCAM",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (subject)"
+      ],
+      "citation_count": 22,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://downloads.hindawi.com/journals/ecam/2006/272973.pdf",
+      "tldr": null,
+      "abstract": "This article is the first of two comparing findings of studies of advanced practitioners of Tibetan Buddhist meditation in remote regions of the Himalayas, with established results on long-term practitioners of the Transcendental Meditation programs. Many parallel levels of improvement were found, in sensory acuity, perceptual style and cognitive function, indicating stabilization of aspects of attentional awareness. Together with observed increases in EEG coherence and aspects of brain function, such changes are consistent with growth towards a state of total brain functioning, i.e. development of full mental potential. They are usually accompanied by improved health parameters. How they may be seen to be consistent with growth of enlightenment will be the subject of a second article.",
+      "score": {
+        "composite": 0.45538436109089886,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1815374443635953,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04538436109089883,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 7,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_ddd48a19",
+      "doi": "10.3390/su8101040",
+      "url": "https://doi.org/10.3390/su8101040",
+      "openalex_id": null,
+      "pmid": "28008371",
+      "first_author": "Barrett",
+      "authors_display": "Barrett, B. et al.",
+      "year": 2016,
+      "title": "Mindful Climate Action: Health and Environmental Co-Benefits from Mindfulness-Based Behavioral Training.",
+      "venue": "Sustainability",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human)"
+      ],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5170843",
+      "tldr": null,
+      "abstract": "Greenhouse gases from human activities are causing climate change, creating risks for people around the globe. Behaviors involving transportation, diet, energy use, and purchasing drive greenhouse gas emissions, but are also related to health and well-being, providing opportunity for co-benefits. Replacing shorter automobile trips with walking or cycling, or eating plants rather than animals, for example, may increase personal health, while also reducing environmental impact. Mindfulness-based practices have been shown to enhance a variety of health outcomes, but have not been adapted towards environmental purposes. We designed the Mindful Climate Action (MCA) curriculum to help people improve their health while simultaneously lowering their carbon footprints. Combining mindfulness-based practices with the Stages of Change theory, the MCA program aims to: (1) improve personal health and well-being; (2) decrease energy use; (3) reduce automobile use; (4) increase active transport; (5) shift diet towards plant-based foods; and (6) reduce unnecessary purchasing. Mindfulness practices will foster attentional awareness, openness, and response flexibility, supporting positive behavior change. We plan to test MCA in a randomized controlled trial, with rigorous assessment of targeted outcomes. Our long-term goal is to refine and adapt the MCA program to a variety of audiences, in order to enhance public health and environmental sustainability.",
+      "score": {
+        "composite": 0.45406760024018666,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher"
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_cc97476b",
+      "doi": "10.1155/2022/1698918",
+      "url": "https://doi.org/10.1155/2022/1698918",
+      "openalex_id": null,
+      "pmid": "36065224",
+      "first_author": "Yu",
+      "authors_display": "Yu, S., & Fan, H.",
+      "year": 2022,
+      "title": "Analysis of the Effect of Mindfulness Behavior Intervention Combined with Progressive Breathing Training on Pulmonary Function Rehabilitation in Patients with Chronic Obstructive Pulmonary Disease.",
+      "venue": "Emergency medicine international",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Retracted Publication",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (patients,subjects)"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://downloads.hindawi.com/journals/emi/2022/1698918.pdf",
+      "tldr": null,
+      "abstract": "<h4>Purpose</h4>Studies have shown that 50%-70% of patients with chronic obstructive pulmonary disease (COPD) have fatigue in addition to respiratory symptoms, so relieving respiratory symptoms and reducing fatigue are the main treatment objectives for COPD patients. This study focuses on the effect of positive behavioral intervention combined with progressive breathing training on pulmonary function rehabilitation in patients with COPD.<h4>Methods</h4>86 patients who underwent COPD treatment in our hospital between August 2020 and December 2021 were selected as study subjects and were divided into control (<i>n</i> = 43) and study groups (<i>n</i> = 43) using the random number table method. Patients in the control group were given conventional care, treatment, and health guidance, while patients in the study group were given positive behavioral intervention combined with progressive breathing training on this basis. Patients in both groups were compared on the basis of Multidimensional Fatigue Inventory 20 (MFI-20) score, the Medical Coping Questionnaire (MCMQ score), the Massive Attentional Awareness Scale (MAAS) score, and pulmonary function indicators (including the percentage of forced expiratory volume one second (FEV1%), peak expiratory flow (PEF), forced vital capacity (FVC), and 6-min walk distance (6MWD)) and quality of life (MCMQ) scores before and after 12 weeks of intervention.<h4>Results</h4>After 12 weeks of intervention, the study group had higher MFI-20 scores (comprehensive fatigue, physical fatigue, reduced activity, decreased power, and mental fatigue), confrontation scores on the MCMQ scale, MAAS scores (observation, description, nonjudgmental to intrinsic experience, nonresponsiveness to intrinsic experience, and perceived behavior), FEV1%, PEF, FVC, and 6MWD levels than the control group (<i>P</i> < 0.05). The scores of avoidance and submission on the MCMQ scale, and all scores of quality of life (cough, expectoration, shortness of breath, che",
+      "score": {
+        "composite": 0.45006576301232243,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_5b359596",
+      "doi": "10.1111/pcn.13675",
+      "url": "https://doi.org/10.1111/pcn.13675",
+      "openalex_id": null,
+      "pmid": "38757554",
+      "first_author": "Siffredi",
+      "authors_display": "Siffredi, V. et al.",
+      "year": 2024,
+      "title": "Impact of a mindfulness-based intervention on neurobehavioral functioning and its association with large-scale brain networks in preterm young adolescents.",
+      "venue": "Psychiatry and clinical neurosciences",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://doi.org/10.1111/pcn.13675",
+      "tldr": null,
+      "abstract": "<h4>Aim</h4>Adolescents born very preterm (VPT; <32 weeks of gestation) face an elevated risk of executive, behavioral, and socioemotional difficulties. Evidence suggests beneficial effects of mindfulness-based intervention (MBI) on these abilities. This study seeks to investigate the association between the effects of MBI on executive, behavioral, and socioemotional functioning and reliable changes in large-scale brain networks dynamics during rest in VPT young adolescents who completed an 8-week MBI program.<h4>Methods</h4>Neurobehavioral assessments and resting-state functional magnetic resonance imaging were performed before and after MBI in 32 VPT young adolescents. Neurobehavioral abilities in VPT participants were compared with full-term controls. In the VPT group, dynamic functional connectivity was extracted by using the innovation-driven coactivation patterns framework. The reliable change index was used to quantify change after MBI. A multivariate data-driven approach was used to explore associations between MBI-related changes on neurobehavioral measures and temporal brain dynamics.<h4>Results</h4>Compared with term-born controls, VPT adolescents showed reduced executive and socioemotional functioning before MBI. After MBI, a significant improvement was observed for all measures that were previously reduced in the VPT group. The increase in executive functioning, only, was associated with reliable changes in the duration of activation of large-scale brain networks, including frontolimbic, amygdala-hippocampus, dorsolateral prefrontal, and visual networks.<h4>Conclusion</h4>The improvement in executive functioning after an MBI was associated with reliable changes in large-scale brain network dynamics during rest. These changes encompassed frontolimbic, amygdala-hippocampus, dorsolateral prefrontal, and visual networks that are related to different executive processes including self-regulation, attentional control, and attentional awareness of relevant sen",
+      "score": {
+        "composite": 0.4400328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Nerve Net",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Executive Function",
+        "Infant, Extremely Premature",
+        "Connectome",
+        "Mindfulness"
+      ]
+    }
+  ]
+}

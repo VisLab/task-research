@@ -1,0 +1,3310 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T15:20:00",
+  "item": {
+    "kind": "process",
+    "id": "hed_subgoaling",
+    "name": "Subgoaling",
+    "aliases": [],
+    "category_id": "reasoning_and_problem_solving",
+    "definition": "Decomposition of a goal into an ordered sequence of subgoals whose satisfaction advances the overall task; dissociable from means-ends search and often studied through hierarchical task analysis."
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 17,
+      "raw": 957,
+      "after_filters": 7,
+      "merged": 1
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 49,
+      "picked": 30,
+      "reserve": 11,
+      "excluded": 8,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {
+      "conference_or_proceedings": 7,
+      "preprint": 1
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_829028c9",
+      "doi": "10.1016/s0896-6273(03)00851-1",
+      "url": "https://doi.org/10.1016/s0896-6273(03)00851-1",
+      "openalex_id": "https://openalex.org/W2057351112",
+      "pmid": null,
+      "first_author": "Badre",
+      "authors_display": "David Badre, & Anthony D. Wagner",
+      "year": 2004,
+      "title": "Selection, Integration, and Conflict Monitoring",
+      "venue": "Neuron",
+      "venue_tier": "flagship",
+      "publisher": "Cell Press",
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 461,
+      "influential_citation_count": 16,
+      "fwci": 12.8162,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "bronze",
+      "oa_url": "http://www.cell.com/article/S0896627303008511/pdf",
+      "tldr": "Results reveal dissociable control processes in PFC, with mid-DLPFC selectively mediating resolution of response conflict and FPC further mediating subgoaling/integration.",
+      "abstract": null,
+      "score": {
+        "composite": 0.7003220947754559,
+        "breakdown": {
+          "raw": {
+            "citations": 0.6012883791018235,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.15032209477545588,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Adolescent",
+        "Adolescent",
+        "Adolescent",
+        "Adult",
+        "Adult",
+        "Adult",
+        "Attention",
+        "Attention",
+        "Attention",
+        "Brain Mapping",
+        "Brain Mapping",
+        "Brain Mapping",
+        "Choice Behavior",
+        "Choice Behavior",
+        "Choice Behavior",
+        "Cognition",
+        "Cognition",
+        "Cognition",
+        "Conflict, Psychological",
+        "Conflict, Psychological",
+        "Conflict, Psychological",
+        "Female",
+        "Female",
+        "Female",
+        "Humans",
+        "Humans",
+        "Humans",
+        "Functional Laterality",
+        "Functional Laterality",
+        "Functional Laterality",
+        "Magnetic Resonance Imaging",
+        "Magnetic Resonance Imaging",
+        "Magnetic Resonance Imaging",
+        "Male",
+        "Male",
+        "Male",
+        "Memory, Short-Term",
+        "Memory, Short-Term",
+        "Memory, Short-Term",
+        "Psychomotor Performance",
+        "Psychomotor Performance",
+        "Psychomotor Performance",
+        "Reaction Time",
+        "Reaction Time",
+        "Reaction Time",
+        "Mental Recall",
+        "Mental Recall",
+        "Mental Recall",
+        "Time Factors",
+        "Time Factors",
+        "Time Factors",
+        "Prefrontal Cortex",
+        "Prefrontal Cortex",
+        "Prefrontal Cortex",
+        "Prefrontal Cortex",
+        "Prefrontal Cortex",
+        "Prefrontal Cortex",
+        "In Vitro Techniques",
+        "In Vitro Techniques",
+        "In Vitro Techniques"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_6c1dabce",
+      "doi": "10.1371/journal.pcbi.1004864",
+      "url": "https://doi.org/10.1371/journal.pcbi.1004864",
+      "openalex_id": "https://openalex.org/W2339047734",
+      "pmid": "27074140",
+      "first_author": "Donnarumma",
+      "authors_display": "Francesco Donnarumma et al.",
+      "year": 2016,
+      "title": "Problem Solving as Probabilistic Inference with Subgoaling: Explaining Human Successes and Pitfalls in the Tower of Hanoi",
+      "venue": "PLoS Computational Biology",
+      "venue_tier": "mainstream",
+      "publisher": "Public Library of Science",
+      "publication_types": [
+        "article",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 66,
+      "influential_citation_count": 1,
+      "fwci": 13.5795,
+      "cited_by_percentile_year": 96.0,
+      "oa_status": "gold",
+      "oa_url": "https://journals.plos.org/ploscompbiol/article/file?id=10.1371/journal.pcbi.1004864&type=printable",
+      "tldr": "This study suggests that a probabilistic inference scheme enhanced with subgoals provides a comprehensive framework to study problem solving and its deficits.",
+      "abstract": "How do humans and other animals face novel problems for which predefined solutions are not available? Human problem solving links to flexible reasoning and inference rather than to slow trial-and-error learning. It has received considerable attention since the early days of cognitive science, giving rise to well known cognitive architectures such as SOAR and ACT-R, but its computational and brain mechanisms remain incompletely known. Furthermore, it is still unclear whether problem solving is a \"specialized\" domain or module of cognition, in the sense that it requires computations that are fundamentally different from those supporting perception and action systems. Here we advance a novel view of human problem solving as probabilistic inference with subgoaling. In this perspective, key insights from cognitive architectures are retained such as the importance of using subgoals to split problems into subproblems. However, here the underlying computations use probabilistic inference methods analogous to those that are increasingly popular in the study of perception and action systems. To test our model we focus on the widely used Tower of Hanoi (ToH) task, and show that our proposed method can reproduce characteristic idiosyncrasies of human problem solvers: their sensitivity to the \"community structure\" of the ToH and their difficulties in executing so-called \"counterintuitive\" movements. Our analysis reveals that subgoals have two key roles in probabilistic inference and problem solving. First, prior beliefs on (likely) useful subgoals carve the problem space and define an implicit metric for the problem at hand-a metric to which humans are sensitive. Second, subgoals are used as waypoints in the probabilistic problem solving inference and permit to find effective solutions that, when unavailable, lead to problem solving deficits. Our study thus suggests that a probabilistic inference scheme enhanced with subgoals provides a comprehensive framework to study problem s",
+      "score": {
+        "composite": 0.67590967631291,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30363870525164005,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07590967631291001,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar",
+          "semanticscholar_citations"
+        ],
+        "stage_b_seed_pub_ids": [
+          "pub_52811265"
+        ]
+      },
+      "mesh_terms": [
+        "Humans",
+        "Models, Statistical",
+        "Cognition",
+        "Problem Solving",
+        "Decision Making",
+        "Neuropsychological Tests",
+        "Computational Biology",
+        "Algorithms",
+        "Models, Psychological",
+        "Computer Simulation"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_d24ce4e7",
+      "doi": "10.1609/icaps.v30i1.6665",
+      "url": "https://doi.org/10.1609/icaps.v30i1.6665",
+      "openalex_id": "https://openalex.org/W3038087043",
+      "pmid": null,
+      "first_author": "Scala",
+      "authors_display": "Enrico Scala et al.",
+      "year": 2020,
+      "title": "Search-Guidance Mechanisms for Numeric Planning Through Subgoaling Relaxation",
+      "venue": "Proceedings of the International Conference on Automated Planning and Scheduling",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article",
+        "JournalArticle",
+        "Conference"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 10,
+      "influential_citation_count": 3,
+      "fwci": 0.5438,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "diamond",
+      "oa_url": "https://ojs.aaai.org/index.php/ICAPS/article/download/6665/6519",
+      "tldr": "This paper investigates how to further exploit a new decomposition based relaxation for numeric planning problems by introducing the notion of the multi-repetition relaxed plan, and defines novel heuristics that are able to provide great guidance in problems exhibiting a pronounced numeric structure.",
+      "abstract": "Recently, a new decomposition based relaxation has been proposed for numeric planning problems. Roughly, this relaxation is grounded on the identification of regression-based necessary conditions for the satisfaction of sets of numeric subgoals. So far, it has been used to define novel heuristics that are able to provide great guidance in problems exhibiting a pronounced numeric structure. This paper investigates how to further exploit this relaxation; it does so by introducing the notion of the multi-repetition relaxed plan. The multi-repetition plan annotates actions with the number of times such actions need to be executed. We use this structure for different purposes: extraction of a concrete relaxed plan based heuristic, definition of subgoaling based helpful actions, and definition of what we call up-to-jumping actions. Up-to-jumping actions allow us to deeply leverage from the metric structure of the problem and devise an informed search strategy that can collapse several decision steps. We experimentally analyze a forward state space planner equipped with these novel mechanisms across several planning benchmarks, showing the benefit of the ideas presented in the paper.",
+      "score": {
+        "composite": 0.614806712026939,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25922684810775637,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06480671202693909,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar",
+          "semanticscholar_citations"
+        ],
+        "stage_b_seed_pub_ids": [
+          "pub_be6a6a76",
+          "pub_c0a1bf5c"
+        ]
+      },
+      "exclusion_reason": "conference_or_proceedings"
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_5eb4a92e",
+      "doi": "10.1016/j.cogsys.2019.08.005",
+      "url": "https://doi.org/10.1016/j.cogsys.2019.08.005",
+      "openalex_id": "https://openalex.org/W2969927917",
+      "pmid": null,
+      "first_author": "Lieto",
+      "authors_display": "Antonio Lieto et al.",
+      "year": 2019,
+      "title": "Beyond subgoaling: A dynamic knowledge generation framework for creative problem solving in cognitive architectures",
+      "venue": "Cognitive Systems Research",
+      "venue_tier": "unknown",
+      "publisher": "Elsevier BV",
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 29,
+      "influential_citation_count": 1,
+      "fwci": 2.8862,
+      "cited_by_percentile_year": 95.0,
+      "oa_status": "green",
+      "oa_url": "http://hdl.handle.net/2318/1726157",
+      "tldr": "It is shown how a novel, goal-directed, dynamic knowledge generation mechanism obtained via a non monotonic reasoning procedure can be employed in the field of cognitive architectures in order to overcome situations like the impasse in SOAR by extending the possible options of its subgoaling procedures.",
+      "abstract": null,
+      "score": {
+        "composite": 0.6042795741686788,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2571182966747155,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06427957416867887,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_e8f139b6",
+      "doi": "10.1613/jair.1.11875",
+      "url": "https://doi.org/10.1613/jair.1.11875",
+      "openalex_id": "https://openalex.org/W3048427244",
+      "pmid": null,
+      "first_author": "Scala",
+      "authors_display": "Enrico Scala et al.",
+      "year": 2020,
+      "title": "Subgoaling Techniques for Satisficing and Optimal Numeric Planning",
+      "venue": "Journal of Artificial Intelligence Research",
+      "venue_tier": "unknown",
+      "publisher": "AI Access Foundation",
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 36,
+      "influential_citation_count": 9,
+      "fwci": 2.7427,
+      "cited_by_percentile_year": 97.0,
+      "oa_status": "diamond",
+      "oa_url": "https://www.jair.org/index.php/jair/article/download/11875/26598",
+      "tldr": "Novel subgoaling relaxations for automated planning with propositional and numeric state variables and numeric conditions are studied, with the aim of reaching a good trade-off between accuracy and computation costs within a heuristic state-space search planner.",
+      "abstract": "This paper studies novel subgoaling relaxations for automated planning with propositional and numeric state variables. Subgoaling relaxations address one source of complexity of the planning problem: the requirement to satisfy conditions simultaneously. The core idea is to relax this requirement by recursively decomposing conditions into atomic subgoals that are considered in isolation. Such relaxations are typically used for pruning, or as the basis for computing admissible or inadmissible heuristic estimates to guide optimal or satis_cing heuristic search planners. In the last decade or so, the subgoaling principle has underpinned the design of an abundance of relaxation-based heuristics whose formulations have greatly extended the reach of classical planning. This paper extends subgoaling relaxations to support numeric state variables and numeric conditions. We provide both theoretical and practical results, with the aim of reaching a good trade-o_ between accuracy and computation costs within a heuristic state-space search planner. Our experimental results validate the theoretical assumptions, and indicate that subgoaling substantially improves on the state of the art in optimal and satisficing numeric planning via forward state-space search.",
+      "score": {
+        "composite": 0.6022585947512171,
+        "breakdown": {
+          "raw": {
+            "citations": 0.40903437900486833,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10225859475121708,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar",
+          "semanticscholar_citations"
+        ],
+        "stage_b_seed_pub_ids": [
+          "pub_be6a6a76",
+          "pub_c0a1bf5c"
+        ]
+      }
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_5f813500",
+      "doi": "10.1007/s40593-023-00338-1",
+      "url": "https://doi.org/10.1007/s40593-023-00338-1",
+      "openalex_id": null,
+      "pmid": null,
+      "first_author": "Shabrina",
+      "authors_display": "Shabrina, P. et al.",
+      "year": 2022,
+      "title": "Investigating the Impact of Backward Strategy Learning in a Logic Tutor: Aiding Subgoal Learning Towards Improved Problem Solving",
+      "venue": "International Journal of Artificial Intelligence in Education",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 12,
+      "influential_citation_count": 0,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s40593-023-00338-1.pdf",
+      "tldr": null,
+      "abstract": "Learning to derive subgoals reduces the gap between experts and students and makes students prepared for future problem solving. Researchers have explored subgoal-labeled instructional materials in traditional problem solving and within tutoring systems to help novices learn to subgoal. However, only a little research is found on problem-solving strategies in relationship with subgoal learning. Also, these strategies are under-explored within computer-based tutors and learning environments. The backward problem-solving strategy is closely related to the process of subgoaling, where problem solving iteratively refines the goal into a new subgoal to reduce difficulty. In this paper, we explore a training strategy for backward strategy learning within an intelligent logic tutor that teaches logic-proof construction. The training session involved backward worked examples (BWE) and problem solving (BPS) to help students learn backward strategy towards improving their subgoaling and problem-solving skills. To evaluate the training strategy, we analyzed students’ 1) experience with and engagement in learning backward strategy, 2) performance and 3) proof construction approaches in new problems that they solved independently without tutor help after each level of training and in posttest. Our results showed that, when new problems were given to solve without any tutor help, students who were trained with both BWE and BPS outperformed students who received none of the treatment or only BWE during training. Additionally, students trained with both BWE and BPS derived subgoals during proof construction with significantly higher efficiency than the other two groups.",
+      "score": {
+        "composite": 0.5671260732128022,
+        "breakdown": {
+          "raw": {
+            "citations": 0.14850429285120864,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03712607321280216,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar_citations"
+        ],
+        "stage_b_seed_pub_ids": [
+          "pub_0262c2d7"
+        ]
+      }
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_c3d52163",
+      "doi": "10.1080/17470218.2012.702117",
+      "url": "https://doi.org/10.1080/17470218.2012.702117",
+      "openalex_id": "https://openalex.org/W2055477575",
+      "pmid": null,
+      "first_author": "Morgan",
+      "authors_display": "Phillip L. Morgan, & John Patrick",
+      "year": 2012,
+      "title": "Paying the price works: Increasing goal-state access cost improves problem solving and mitigates the effect of interruption",
+      "venue": "Quarterly Journal of Experimental Psychology",
+      "venue_tier": "mainstream",
+      "publisher": "SAGE Publishing",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 18,
+      "influential_citation_count": null,
+      "fwci": 5.9082,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "green",
+      "oa_url": "http://eprints.uwe.ac.uk/25702/",
+      "tldr": null,
+      "abstract": "The aim of this paper was to investigate whether it was possible to induce more internal planning in the four-disk Tower of Hanoi (ToH) in order not only to produce more efficient problem solving but also to make it more resistant to the negative effect of interruption. The theoretical frameworks of soft constraints and the memory for goals model underpinned Experiments 1 and 2. In both experiments, three goal-state access cost conditions were used: high (mouse movements and 2.5-s delay), medium (mouse movements) and low (goal state always available). In Experiment 1, more memory-based planning was induced by the high cost condition, which resulted in fewer moves to solution and the gradual development of an efficient subgoaling strategy, resulting in more perfect solutions. In Experiment 2, the same condition protected performance against a 10-s interruption irrespective of the interrupting task (blank screen, mental arithmetic, or three-disk ToH). The more memory-based planning strategy, induced by high access cost, presumably strengthened participants' goals during planning and problem solving, making them less susceptible to decay and interference from interruption. These novel results are discussed in the context of other recent studies.",
+      "score": {
+        "composite": 0.5526189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Adolescent",
+        "Adolescent",
+        "Adolescent",
+        "Adult",
+        "Adult",
+        "Adult",
+        "Analysis of Variance",
+        "Analysis of Variance",
+        "Analysis of Variance",
+        "Attention",
+        "Attention",
+        "Attention",
+        "Commerce",
+        "Commerce",
+        "Commerce",
+        "Costs and Cost Analysis",
+        "Costs and Cost Analysis",
+        "Costs and Cost Analysis",
+        "Female",
+        "Female",
+        "Female",
+        "Goals",
+        "Goals",
+        "Goals",
+        "Humans",
+        "Humans",
+        "Humans",
+        "Male",
+        "Male",
+        "Male",
+        "Memory",
+        "Memory",
+        "Memory",
+        "Movement",
+        "Movement",
+        "Movement",
+        "Neuropsychological Tests",
+        "Neuropsychological Tests",
+        "Neuropsychological Tests",
+        "Photic Stimulation",
+        "Photic Stimulation",
+        "Photic Stimulation",
+        "Problem Solving",
+        "Problem Solving",
+        "Problem Solving",
+        "Reaction Time",
+        "Reaction Time",
+        "Reaction Time",
+        "Young Adult",
+        "Young Adult",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c0a1bf5c",
+      "doi": "10.24963/ijcai.2018/665",
+      "url": "https://doi.org/10.24963/ijcai.2018/665",
+      "openalex_id": "https://openalex.org/W2807855971",
+      "pmid": null,
+      "first_author": "Li",
+      "authors_display": "Dongxu Li et al.",
+      "year": 2018,
+      "title": "Effect-Abstraction Based Relaxation for Linear Numeric Planning",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article",
+        "JournalArticle",
+        "Conference"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 19,
+      "influential_citation_count": 1,
+      "fwci": 0.9773,
+      "cited_by_percentile_year": 91.0,
+      "oa_status": "gold",
+      "oa_url": "https://www.ijcai.org/proceedings/2018/0665.pdf",
+      "tldr": "A heuristic developed on this effect-abstraction based relaxation leads to substantial improvements for a class of problems that are currently out of the reach of state-of-the-art numeric planners.",
+      "abstract": "This paper studies an effect-abstraction based relaxation for reasoning about linear numeric planning problems. The effect-abstraction decomposes non-constant linear numeric effects into actions with conditional effects over additive constant numeric effects. With little effort, on this compiled version, it is possible to use known subgoaling based relaxations and relative heuristics. The combination of these two steps leads to a novel relaxation based heuristic. Theoretically, the relaxation is proved tighter than previous interval based relaxation and leading to safe-pruning heuristics. Empirically, a heuristic developed on this relaxation leads to substantial improvements for a class of problems that are currently out of the reach of state-of-the-art numeric planners.",
+      "score": {
+        "composite": 0.5384107147133957,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2336428588535831,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.058410714713395775,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar",
+          "semanticscholar_citations"
+        ],
+        "stage_b_seed_pub_ids": [
+          "pub_be6a6a76"
+        ]
+      },
+      "exclusion_reason": "conference_or_proceedings"
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a0d86bf9",
+      "doi": "10.1007/s40593-023-00338-1",
+      "url": "https://doi.org/10.1007/s40593-023-00338-1",
+      "openalex_id": "https://openalex.org/W4386022375",
+      "pmid": null,
+      "first_author": "Shabrina",
+      "authors_display": "Preya Shabrina et al.",
+      "year": 2023,
+      "title": "Investigating the Impact of Backward Strategy Learning in a Logic Tutor: Aiding Subgoal Learning Towards Improved Problem Solving",
+      "venue": "International Journal of Artificial Intelligence in Education",
+      "venue_tier": "unknown",
+      "publisher": "Springer Science+Business Media",
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 9,
+      "influential_citation_count": null,
+      "fwci": 3.638,
+      "cited_by_percentile_year": 95.0,
+      "oa_status": "hybrid",
+      "oa_url": "https://link.springer.com/content/pdf/10.1007/s40593-023-00338-1.pdf",
+      "tldr": "A training strategy for backward strategy learning within an intelligent logic tutor that teaches logic-proof construction showed that, when new problems were given to solve without any tutor help, students who were trained with both BWE and BPS outperformed students who received none of the treatment or only BWE during training.",
+      "abstract": "Abstract Learning to derive subgoals reduces the gap between experts and students and makes students prepared for future problem solving. Researchers have explored subgoal-labeled instructional materials in traditional problem solving and within tutoring systems to help novices learn to subgoal. However, only a little research is found on problem-solving strategies in relationship with subgoal learning. Also, these strategies are under-explored within computer-based tutors and learning environments. The backward problem-solving strategy is closely related to the process of subgoaling, where problem solving iteratively refines the goal into a new subgoal to reduce difficulty. In this paper, we explore a training strategy for backward strategy learning within an intelligent logic tutor that teaches logic-proof construction. The training session involved backward worked examples (BWE) and problem solving (BPS) to help students learn backward strategy towards improving their subgoaling and problem-solving skills. To evaluate the training strategy, we analyzed students’ 1) experience with and engagement in learning backward strategy, 2) performance and 3) proof construction approaches in new problems that they solved independently without tutor help after each level of training and in posttest. Our results showed that, when new problems were given to solve without any tutor help, students who were trained with both BWE and BPS outperformed students who received none of the treatment or only BWE during training. Additionally, students trained with both BWE and BPS derived subgoals during proof construction with significantly higher efficiency than the other two groups.",
+      "score": {
+        "composite": 0.5333285109479927,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 10,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_be6a6a76",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2579850881",
+      "pmid": null,
+      "first_author": "Scala",
+      "authors_display": "Enrico Scala et al.",
+      "year": 2016,
+      "title": "Heuristics for numeric planning via subgoaling",
+      "venue": "ANU Open Research (Australian National University)",
+      "venue_tier": "unknown",
+      "publisher": "Australian National University",
+      "publication_types": [
+        "article",
+        "JournalArticle",
+        "Conference"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 33,
+      "influential_citation_count": 15,
+      "fwci": 3.5338,
+      "cited_by_percentile_year": 90.0,
+      "oa_status": "green",
+      "oa_url": "http://hdl.handle.net/1885/154197",
+      "tldr": "A new relaxation for hybrid planning with continuous numeric and propositional state variables based on subgoaling is presented, generalising the sub goaling principle underlying the hmax and hadd heuristics to such problems, and is believed to be the first admissible heuristic enabling cost-optimal numeric planning.",
+      "abstract": "The paper presents a new relaxation for hybrid planning with continuous numeric and propositional state variables based on subgoaling, generalising the subgoaling principle underlying the hmax and hadd heuristics to such problems. Our relaxation improves on existing interval-based relaxations by taking into account some negative interactions between effects when achieving a subgoal, resulting in better estimates. We show conditions on the planning model ensuring that this new relaxation leads to tractable, and, for the hmax version, admissible, heuristics. The new relaxation can be combined with the interval-based relaxation, to derive heuristics applicable to general numeric planning, while still providing more informed estimates for the subgoals that meet these conditions. Experiments show the effectiveness of its inadmissible and admissible version on satisficing and optimal numeric planning, respectively. As far as we know, this is the first admissible heuristic enabling cost-optimal numeric planning.",
+      "score": {
+        "composite": 0.5212392008902301,
+        "breakdown": {
+          "raw": {
+            "citations": 0.44495680356092054,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11123920089023014,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "conference_or_proceedings"
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_52811265",
+      "doi": "10.1098/rsif.2014.1335",
+      "url": "https://doi.org/10.1098/rsif.2014.1335",
+      "openalex_id": "https://openalex.org/W2101645771",
+      "pmid": "25652466",
+      "first_author": "Maisto",
+      "authors_display": "Domenico Maisto et al.",
+      "year": 2015,
+      "title": "<i>Divide et impera</i> : subgoaling reduces the complexity of probabilistic inference and problem solving",
+      "venue": "Journal of The Royal Society Interface",
+      "venue_tier": "unknown",
+      "publisher": "Royal Society",
+      "publication_types": [
+        "article",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 58,
+      "influential_citation_count": 3,
+      "fwci": 7.8745,
+      "cited_by_percentile_year": 94.0,
+      "oa_status": "bronze",
+      "oa_url": "https://royalsocietypublishing.org/doi/pdf/10.1098/rsif.2014.1335",
+      "tldr": "This work proposes that good subgoals are those that permit planning solutions and controlling behaviour using less information resources, thus yielding parsimony in inference and control and implements this principle using approximate probabilistic inference.",
+      "abstract": "It has long been recognized that humans (and possibly other animals) usually break problems down into smaller and more manageable problems using subgoals. Despite a general consensus that subgoaling helps problem solving, it is still unclear what the mechanisms guiding online subgoal selection are during the solution of novel problems for which predefined solutions are not available. Under which conditions does subgoaling lead to optimal behaviour? When is subgoaling better than solving a problem from start to finish? Which is the best number and sequence of subgoals to solve a given problem? How are these subgoals selected during online inference? Here, we present a computational account of subgoaling in problem solving. Following Occam's razor, we propose that good subgoals are those that permit planning solutions and controlling behaviour using less information resources, thus yielding parsimony in inference and control. We implement this principle using approximate probabilistic inference: subgoals are selected using a sampling method that considers the descriptive complexity of the resulting sub-problems. We validate the proposed method using a standard reinforcement learning benchmark (four-rooms scenario) and show that the proposed method requires less inferential steps and permits selecting more compact control programs compared to an equivalent procedure without subgoaling. Furthermore, we show that the proposed method offers a mechanistic explanation of the neuronal dynamics found in the prefrontal cortex of monkeys that solve planning problems. Our computational framework provides a novel integrative perspective on subgoaling and its adaptive advantages for planning, control and learning, such as for example lowering cognitive effort and working memory load.",
+      "score": {
+        "composite": 0.4891185051757738,
+        "breakdown": {
+          "raw": {
+            "citations": 0.35647402070309525,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08911850517577381,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Prefrontal Cortex",
+        "Neurons",
+        "Animals",
+        "Haplorhini",
+        "Humans",
+        "Monte Carlo Method",
+        "Probability",
+        "Bayes Theorem",
+        "Markov Chains",
+        "Learning",
+        "Problem Solving",
+        "Neurosciences",
+        "Algorithms",
+        "Computer Simulation",
+        "Internet"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_aa3c9f5e",
+      "doi": "10.1007/978-94-011-2426-3_5",
+      "url": "https://doi.org/10.1007/978-94-011-2426-3_5",
+      "openalex_id": null,
+      "pmid": null,
+      "first_author": "Akyürek",
+      "authors_display": "Akyürek, A.",
+      "year": 1992,
+      "title": "Means-Ends Planning: An Example Soar System",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Review"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 6,
+      "influential_citation_count": 0,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "",
+      "tldr": "A planner program is presented that interleaves a difference reduction process with Soar’s default mechanism for operator subgoaling that it modifies in order to map meansends analysis onto Soar, and is shown to produce \"macro-operators\" of a novel kind, called macrochunks, which may have important implications for explaining routine behavior.",
+      "abstract": null,
+      "score": {
+        "composite": 0.4881658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_0262c2d7",
+      "doi": null,
+      "url": null,
+      "openalex_id": null,
+      "pmid": null,
+      "first_author": "Laird",
+      "authors_display": "Laird, J. et al.",
+      "year": 2012,
+      "title": "Universal Subgoaling and Chunking: The Automatic Generation and Learning of Goal Hierarchies",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Review"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 30,
+      "influential_citation_count": 1,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": "",
+      "tldr": "A Universal Weak Method for Chunking As A General Learning Mechanism and an Update on the Seibel (1963) Task.",
+      "abstract": null,
+      "score": {
+        "composite": 0.48475418679961435,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2590167471984575,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06475418679961438,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_e6c78eb9",
+      "doi": "10.1016/0004-3702(87)90014-2",
+      "url": "https://doi.org/10.1016/0004-3702(87)90014-2",
+      "openalex_id": "https://openalex.org/W228810421",
+      "pmid": null,
+      "first_author": "Shrager",
+      "authors_display": "Jeff Shrager",
+      "year": 1987,
+      "title": "Universal subgoaling and chunking: The automatic generation and learning of goal hierarchies",
+      "venue": "Artificial Intelligence",
+      "venue_tier": "unknown",
+      "publisher": "Elsevier BV",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 38,
+      "influential_citation_count": null,
+      "fwci": 6.9058,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.46302781417424643,
+        "breakdown": {
+          "raw": {
+            "citations": 0.21211125669698583,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05302781417424646,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c0398ddc",
+      "doi": "10.48456/tr-67",
+      "url": "https://doi.org/10.48456/tr-67",
+      "openalex_id": "https://openalex.org/W2923229216",
+      "pmid": null,
+      "first_author": "Paulson",
+      "authors_display": "Lawrence C. Paulson",
+      "year": 2021,
+      "title": "Natural deduction theorem proving via higher-order resolution",
+      "venue": "CL Technical Reports",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "green",
+      "oa_url": "https://doi.org/10.48456/tr-67",
+      "tldr": null,
+      "abstract": "An experimental theorem prover is described. Like LCF it is embedded in the metalanguage ML and supports backward proof using tactics and tacticals. The prover allows a wide class of logics to be introduced using Church’s representation of quantifiers in the typed lambda-calculus. The inference rules are expressed as a set of generalized Horn clauses containing higher-order variables. Depth-first subgoaling along inference rules is essentially linear resolution, but using higher-order unification instead of first-order. This constitutes a higher-order Prolog interpreter. The rules of Martin Löf’s Constructive Type Theory have been entered into the Prover. Special tactics inspect a goal and decide which type theory rules may be appropriate, avoiding excessive backtracking. These tactics can automatically derive the types of many Type Theory expressions. Simple functions can be derived interactively.",
+      "score": {
+        "composite": 0.45999999999999996,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 16,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_760f37b0",
+      "doi": "10.1609/icaps.v21i1.13488",
+      "url": "https://doi.org/10.1609/icaps.v21i1.13488",
+      "openalex_id": "https://openalex.org/W2199261475",
+      "pmid": null,
+      "first_author": "Hernández",
+      "authors_display": "Carlos Hernández, & Jorge A. Baier",
+      "year": 2011,
+      "title": "Fast Subgoaling for Pathfinding via Real-Time Search",
+      "venue": "Proceedings of the International Conference on Automated Planning and Scheduling",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": 3.9472,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "diamond",
+      "oa_url": "https://ojs.aaai.org/index.php/ICAPS/article/download/13488/13337",
+      "tldr": null,
+      "abstract": "Real-time heuristic search is a standard approach to pathfind- ing when agents are required to make decisions in a bounded, very short period of time. An assumption usually made in the development and evaluation of real-time algorithms is that the environment is unknown. Nevertheless, in many interesting applications such as pathfinding for automnomous characters in video games, the environment is known in advance. Recent real-time search algorithms such as D LRTA* and kNN LRTA* exploit knowledge about the environment while pathfinding under real-time constraints. Key to those algorithms is the computation of subgoals in a preprocessing step. Subgoals are subsequently used in the online planning phase to obtain high-quality solutions. Preprocessing in those algorithms, however, requires significant computation. In this paper we propose a novel preprocessing algorithm that generates subgoals using a series of backward search episodes carried out from potential goals. The result of a single backward search episode is a tree of subgoals that we then use while planning online. We show the advantages of our approach over state-of-the-art algorithms by carrying out experiments on standard real-time search benchmarks.",
+      "score": {
+        "composite": 0.44919737040327584,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.3333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.049999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar_citations"
+        ],
+        "stage_b_seed_pub_ids": [
+          "pub_56ef2e4d"
+        ]
+      },
+      "exclusion_reason": "conference_or_proceedings"
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_2378bc1c",
+      "doi": "10.1093/comjnl/28.5.474",
+      "url": "https://doi.org/10.1093/comjnl/28.5.474",
+      "openalex_id": "https://openalex.org/W1991293669",
+      "pmid": null,
+      "first_author": "Paulson",
+      "authors_display": "Lawrence C. Paulson",
+      "year": 1985,
+      "title": "Lessons learned from LCF: A Survey of Natural Deduction Proofs",
+      "venue": "The Computer Journal",
+      "venue_tier": "unknown",
+      "publisher": "Oxford University Press",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 9,
+      "influential_citation_count": null,
+      "fwci": 3.4996,
+      "cited_by_percentile_year": null,
+      "oa_status": "bronze",
+      "oa_url": "https://academic.oup.com/comjnl/article-pdf/28/5/474/1290774/280474.pdf",
+      "tldr": null,
+      "abstract": "The LCF project has produced a family of interactive, programmable theorem-provers, particularly intended for verifying computer hardware and software. The introduction sketches basic concepts: the metalanguage ML, the logic PPLAMBDA, backwards proof, rewriting, and theory construction. A historical section surveys some LCF proofs. Several proofs involve denotational semantics, notably for compiler correctness. Functional programs for parsing and unification have been verified. Digital circuits have been proved correct, and some subsequently fabricated. There is an extensive bibliography of work related to LCF. The most dynamic issues at present are data types, subgoaling techniques, logics of computation, and the development of ML.",
+      "score": {
+        "composite": 0.44332851094799275,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1a4ef207",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W3014839058",
+      "pmid": null,
+      "first_author": "Larsson",
+      "authors_display": "Elin Larsson",
+      "year": 2019,
+      "title": "Design and Evaluation of a User Interface for a Program, Used in a Flight Test Environment of Electronic Warfare Systems, with Regards to Usability in Terms of Low Error Rate",
+      "venue": "KTH Publication Database DiVA (KTH Royal Institute of Technology)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "green",
+      "oa_url": "http://urn.kb.se/resolve?urn=urn:nbn:se:liu:diva-163201",
+      "tldr": null,
+      "abstract": "In todays society the amount of connected devices are increasing. Many of these devices are in need of an interface to enable interaction with users. These devices are built for solving tasks of varying degree of difficulty and the need for user-friendly interfaces are highly relevant. Errors is one attribute that needs to be considered when creating a user interface. Therefore, this thesis project investigates how one can design and evaluate a user interface, which is used in a flight test environment, with regards to usability in terms of low error rate. Based on requirements gathered in the requirements elicitation process together with inspiration from the anchor-based subgoaling design principle, a low-fidelity and a high-fidelity prototype is created. To evaluate these prototypes user testing together with the thinking aloud technique is used. Data regarding the number of errors made by each user, if they complete a task or not and the users general thoughts of the prototypes are also gathered. The whole process of implementation and evaluation is done in an iterative manner. The results show that the users are satisfied with the interface, complete or partially complete each task, make few errors and can recover from the mistakes they make. Based on the results, a conclusion from this thesis can be drawn that by using an iterative design, creating prototypes inspired by the anchor-based subgoaling design principle and conducting user tests together with the thinking aloud technique one can create and evaluate a user interface with regards to usability in terms of low error rate.",
+      "score": {
+        "composite": 0.44,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 19,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_badb96b4",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W7117851498",
+      "pmid": null,
+      "first_author": "Aso-Mollar",
+      "authors_display": "Ángel Aso-Mollar et al.",
+      "year": 2025,
+      "title": "Subgoaling Relaxation-based Heuristics for Numeric Planning with Infinite Actions",
+      "venue": "ArXiv.org",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "green",
+      "oa_url": "https://arxiv.org/pdf/2512.22367",
+      "tldr": null,
+      "abstract": "Numeric planning with control parameters extends the standard numeric planning model by introducing action parameters as free numeric variables that must be instantiated during planning. This results in a potentially infinite number of applicable actions in a state. In this setting, off-the-shelf numeric heuristics that leverage the action structure are not feasible. In this paper, we identify a tractable subset of these problems--namely, controllable, simple numeric problems--and propose an optimistic compilation approach that transforms them into simple numeric tasks. To do so, we abstract control-dependent expressions into bounded constant effects and relaxed preconditions. The proposed compilation makes it possible to effectively use subgoaling heuristics to estimate goal distance in numeric planning problems involving control parameters. Our results demonstrate that this approach is an effective and computationally feasible way of applying traditional numeric heuristics to settings with an infinite number of possible actions, pushing the boundaries of the current state of the art.",
+      "score": {
+        "composite": 0.43999999999999995,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.1,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar_citations"
+        ],
+        "stage_b_seed_pub_ids": [
+          "pub_e8f139b6",
+          "pub_d24ce4e7",
+          "pub_c0a1bf5c"
+        ]
+      },
+      "exclusion_reason": "preprint"
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a8148aff",
+      "doi": "10.1080/00986449208936019",
+      "url": "https://doi.org/10.1080/00986449208936019",
+      "openalex_id": "https://openalex.org/W2004692720",
+      "pmid": null,
+      "first_author": "Crooks",
+      "authors_display": "C.A. Crooks, & Sandro Macchietto",
+      "year": 1992,
+      "title": "A COMBINED MILP AND LOGIC-BASED APPROACH TO THE SYNTHESIS OF OPERATING PROCEDURES FOR BATCH PLANTS",
+      "venue": "Chemical Engineering Communications",
+      "venue_tier": "unknown",
+      "publisher": "Taylor & Francis",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 35,
+      "influential_citation_count": null,
+      "fwci": 8.2717,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Abstract Synthesizing a set of operating procedures for the safe and efficient transient operation of chemical plants is a difficult problem owing to the enormous number of possible combinations of actions in a typical plant. In most current industrial plant design practice, there are no formal methods for systematically transforming process specifications into operating procedures for the plant operators and into sequence control instructions for the control computers. There is much scope for a formalized computer-based procedure synthesis methodology to assist the design engineer/plant operator with both the formulation and assessment of procedures off-line and, eventually, with the on-line problem of procedure synthesis in response to unexpected situations A recently developed approach for operating procedure synthesis for multipurpose batch plants is considered. The modelling formalism used includes the separate definition of process operations, as State Task Networks, and of physical plant, at the level of detail of a piping and instrumentation diagram. In this paper, a subgoaling procedure is developed using the State Task Network representation which decomposes the procedure synthesis goals into simpler subgoals by means of an efficient Mixed Integer Linear Programming (MILP) technique. Detailed control sequences are then generated for each subgoal using a set of rules and algorithms specific for each type of subgoal. The procedure sequences thus generated are validated by simulation on a plant model with checking of physical and operational constraints at each new plant state. We have found that this hierarchical approach to the procedure synthesis problem greatly reduces the problem complexity The usefulness of the general approach and of the subgoaling procedure in particular are demonstrated through a multiproduct batch plant example.",
+      "score": {
+        "composite": 0.42186924493521105,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20747697974084414,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.051869244935211035,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 21,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_56ef2e4d",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W3098854198",
+      "pmid": null,
+      "first_author": "Bulitko",
+      "authors_display": "Vadim Bulitko et al.",
+      "year": 2010,
+      "title": "Casebased subgoaling in real-time heuristic search for video game pathfinding",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 37,
+      "influential_citation_count": null,
+      "fwci": 5.6014,
+      "cited_by_percentile_year": 90.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Real-time heuristic search algorithms satisfy a constant bound on the amount of planning per action, independent of problem size. As a result, they scale up well as problems become larger. This property would make them well suited for video games where Artificial Intelligence controlled agents must react quickly to user commands and to other agents ’ actions. On the downside, real-time search algorithms employ learning methods that frequently lead to poor solution quality and cause the agent to appear irrational by re-visiting the same problem states repeatedly. The situation changed recently with a new algorithm, D LRTA*, which attempted to eliminate learning by automatically selecting subgoals. D LRTA * is well poised for video games, except it has a complex and memory-demanding pre-computation phase during which it builds a database of subgoals. In this paper, we propose a simpler and more memory-efficient way of pre-computing subgoals thereby eliminating the main obstacle to applying state-of-the-art real-time search methods in video games. The new algorithm solves a number of randomly chosen problems off-line, compresses the solutions into a series of subgoals and stores them in a database. When presented with a novel problem on-line, it queries the database for the most similar previously solved case and uses its subgoals to solve the problem. In the domain of pathfinding on four large video game maps, the new algorithm delivers solutions eight times better while using 57 times less memory and requiring 14 % less pre-computation time. 1.",
+      "score": {
+        "composite": 0.4026518348953027,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2106073395812109,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.26666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05265183489530272,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.04,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 22,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5c551bb7",
+      "doi": "10.1111/0824-7935.00172",
+      "url": "https://doi.org/10.1111/0824-7935.00172",
+      "openalex_id": "https://openalex.org/W2168217230",
+      "pmid": null,
+      "first_author": "Levinson",
+      "authors_display": "Robert Levinson, & Gil Fuchs",
+      "year": 2001,
+      "title": "A Pattern‐Weight Formulation of Search Knowledge",
+      "venue": "Computational Intelligence",
+      "venue_tier": "unknown",
+      "publisher": "Wiley",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 8,
+      "influential_citation_count": null,
+      "fwci": 0.5451,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Pattern‐weight pairs (PWs) are a new form of search and planning knowledge. PWs are predicates over states coupled with a least upper bound on the distance from any state satisfying that predicate to any goal state. The relationship of PWs to more traditional forms of search knowledge is explored with emphasis on macros and subgoals. It is shown how PWs may be used to overcome some of the difficulties associated with macro‐tables and lead to shorter solution paths without replanning. An algorithm is given for converting a macro‐table to a more powerful PW set. Superiority over the Squeeze algorithm is demonstrated. It is also shown how PWs provide a mechanism for achieving dynamic subgoaling through the combination of knowledge from multiple alternative subgoal sequences. The flexibility and execution time reasoning provided by PWs may have significant use in reactive domains. The main cost associated with PWs is the cost of applying them at execution time. An associative retrieval algorithm is given that expedites this matching‐evaluation process. Empirical results are provided which demonstrate asymptotically improving performance with problem size of the PW technique over macro‐tables.",
+      "score": {
+        "composite": 0.4018034819228886,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 23,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_09d45d29",
+      "doi": "10.1177/003754979706800603",
+      "url": "https://doi.org/10.1177/003754979706800603",
+      "openalex_id": "https://openalex.org/W2056447877",
+      "pmid": null,
+      "first_author": "Jernigan",
+      "authors_display": "Stephen R. Jernigan et al.",
+      "year": 1997,
+      "title": "A Distributed Search and Simulation Method for Job Flow Scheduling",
+      "venue": "SIMULATION",
+      "venue_tier": "unknown",
+      "publisher": "SAGE Publishing",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 7,
+      "influential_citation_count": null,
+      "fwci": 3.4875,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Simulation serves as an effective decision support tool in flexible manufacturing systems for understanding and analyzing the effect of changes to the system environment. Due to the variety of situations that have to be evaluated, a generative scheduler for such a system must be more flexible than its realistic equal while still producing detailed and accurate schedules. This research presents a possible solution to this problem and is intended for use in a distributed, reactive, virtual environment. The solution exploits the advantages gained by using multiple processes in a distributed environment to create, simulate, and evaluate possible schedules. The system is designed on the premise that a distributed parallel search and simulation of competing schedules with accompanying heuristics and subgoaling will greatly reduce the search space and control the state space explosion. Moreover, the need for cycle and deadlock detection is eliminated, thereby decreasing the overall complexity and computational requirements.",
+      "score": {
+        "composite": 0.4000986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 24,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_84d40fd8",
+      "doi": "10.1145/357084.357085",
+      "url": "https://doi.org/10.1145/357084.357085",
+      "openalex_id": "https://openalex.org/W1966535250",
+      "pmid": null,
+      "first_author": "Harel",
+      "authors_display": "David Harel",
+      "year": 1980,
+      "title": "And/Or Programs: A New Approach to Structured Programming",
+      "venue": "ACM Transactions on Programming Languages and Systems",
+      "venue_tier": "unknown",
+      "publisher": "Association for Computing Machinery",
+      "publication_types": [
+        "article",
+        "JournalArticle"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 37,
+      "influential_citation_count": 3,
+      "fwci": 13.0718,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": "A simple tree-like programming/specification language is presented, the central idea is the dividing of conventional programming constructs into the two classes of and and or subgoaling, the subgoal tree itself constituting the program.",
+      "abstract": "A simple tree-like programming/specification language is presented. The central idea is the dividing of conventional programming constructs into the two classes of and and or subgoaling, the subgoal tree itself constituting the program. Programs written in the language can, in general, be both nondeterministic and parallel. The syntax and semantics of the language are defined, a method for verifying programs written in it is described, and the practical significance of programming in the language assessed. Finally, some directions for further research are indicated.",
+      "score": {
+        "composite": 0.3927504794137863,
+        "breakdown": {
+          "raw": {
+            "citations": 0.33100191765514536,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08275047941378634,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 25,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_b295a53b",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2122668024",
+      "pmid": null,
+      "first_author": "Laird",
+      "authors_display": "John E. Laird et al.",
+      "year": 2012,
+      "title": "Online Determination of Value-Function Structure and Action-value Estimates for Reinforcement Learning in a Cognitive Architecture",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": 0.8843,
+      "cited_by_percentile_year": 90.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "We describe how an agent can dynamically and incrementally determine the structure of a value function from background knowledge as a side effect of problem solving. The agent determines the value function as it performs the task, using background knowledge in novel situations to compute an expected value for decision making. That expected value becomes the initial estimate of the value function, and the features tested by the background knowledge form the structure of the value function. This approach is implemented in Soar, using its existing mechanisms, relying on its preference-based decision-making, impasse-driven subgoaling, explanation-based rule-learning (chunking), and reinforcement learning. We evaluate this approach on a multiplayer dice game in which three different types of background knowledge are used. 1.",
+      "score": {
+        "composite": 0.3859017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 26,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_c3c50a69",
+      "doi": "10.1111/1468-0394.00088",
+      "url": "https://doi.org/10.1111/1468-0394.00088",
+      "openalex_id": "https://openalex.org/W2003749638",
+      "pmid": null,
+      "first_author": "Boufriche-Boufaı̈da",
+      "authors_display": "Zizette Boufriche-Boufaı̈da",
+      "year": 1999,
+      "title": "An actor model for rule‐based systems",
+      "venue": "Expert Systems",
+      "venue_tier": "unknown",
+      "publisher": "Wiley",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Our research originates from a study of the possibilities of integrating rules and objects in knowledge‐based systems. In the present work, we are interested in the interactionist perspective of an object. The stepwise reasoning of a diagnostic expert system, possibly involving subgoaling and interactions with the environment, can be easily codified by means of production rules over proposition literals. This set of rules can be graphically represented in a network manner denoting the relations between the rules. The individual nodes in the network can be expressed by means of autonomous objects and their relations, interpreted as possible communications between them. The objects are given a structure and a proper behaviour and cooperate for performing logical reasoning by means of forward and backward chaining inference processes. Therefore, designing this system implies addressing several basic issues such as inter‐object communications and their synchronization. The problem here is not necessarily to develop a great intelligence locally but to develop strong networks of good communicators. This approach belongs to the interactionist representation current, where objects are called actors. In principle, the actors may carry out computation in parallel and provide a conceptual foundation for massively concurrent object‐oriented paradigms. From this point of view, a system allowing for the simultaneous investigation of several rules and premises in the forward or the backward chaining would be significantly more efficient.",
+      "score": {
+        "composite": 0.3800328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 27,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_d8efbad2",
+      "doi": "10.1609/aiide.v5i1.12349",
+      "url": "https://doi.org/10.1609/aiide.v5i1.12349",
+      "openalex_id": "https://openalex.org/W57724912",
+      "pmid": null,
+      "first_author": "Bulitko",
+      "authors_display": "Vadim Bulitko, & Yngvi Björnsson",
+      "year": 2009,
+      "title": "kNN LRTA*: Simple Subgoaling for Real-Time Search",
+      "venue": "Proceedings of the AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 13,
+      "influential_citation_count": null,
+      "fwci": 2.7031,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "bronze",
+      "oa_url": "https://ojs.aaai.org/index.php/AIIDE/article/download/12349/12208",
+      "tldr": null,
+      "abstract": "Real-time heuristic search algorithms satisfy a constant bound on the amount of planning per action, independent of problem size. As a result, they scale up well as problems become larger. This property would make them well suited for video games where Artificial Intelligence controlled agents must react quickly to user commands and to other agents' actions. On the downside, real-time search algorithms employ learning methods that frequently lead to poor solution quality and cause the agent to appear irrational by revisiting the same problem states repeatedly. The situation changed recently with a new algorithm, D LRTA*, which attempts to eliminate learning by automatically selecting subgoals. D LRTA* is well poised for video games except it has a complex and memory-demanding pre-computation phase during which it builds a database of subgoals. In this paper, we propose a simpler and more memory-efficient way of pre-computing subgoals thereby eliminating the main obstacle of applying state-of-the-art real-time search methods in video games. In the domain of pathfinding on eight video game maps, the new algorithm used approximately nine times less memory than D LRTA* while finding solutions 9% worse.",
+      "score": {
+        "composite": 0.37819874078490356,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.2,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.03,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "conference_or_proceedings"
+    },
+    {
+      "rank": 28,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_ca3cc88d",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2912834041",
+      "pmid": null,
+      "first_author": "Laird",
+      "authors_display": "John E. Laird",
+      "year": 1984,
+      "title": "Universal subgoaling",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 47,
+      "influential_citation_count": null,
+      "fwci": 11.4652,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The goal of this thesis is to develop a problem-solving architecture where all appropriate knowledge is brought to bear to control all aspects of problem-solving behavior. Such an architecture allows the creation of completely reflective problem solvers. We identify a specific capability called universal subgoaling that together with previous work on a universal weak method makes this possible. With universal subgoaling, subgoals arise whenever there is a difficulty in performing the problem-solving functions. In a subgoal, the problem solver brings its knowledge to bear to reason about and eliminate the difficulty. We identify a set of requirements that must be met by any problem-solving paradigm and architecture that realizes universal subgoaling. We then describe an implementation of universal subgoaling within Soar, a production system based on search in a problem space. We provide two dimensions of universal subgoaling: (1) Soar creates subgoals whenever difficulties arise in any aspect of problem solving, (2) it is possible to encode the knowledge required to produce the weak methods so that the knowledge is used whenever it is needed. As part of the second\r\ndemonstration, we provide a useful taxonomy of the weak methods based on the knowledge required to encode the in Soar.\r\n*This research was sponsored by the Defense Advanced Research Projects Agency (DOD), ARPA Order No. 3597, monitored by the Air Force Avionics Laboratory Under Contract F33615-78-C-1551. The views and conclusions contained in this document are those of the authors and should not be interpreted as representing the official policies, either expressed or implied, of the Defense Advanced Research Projects Agency or the US Government.",
+      "score": {
+        "composite": 0.3660332669860891,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22413306794435656,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05603326698608914,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 29,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_ed420c16",
+      "doi": "10.1109/dsn.2005.95",
+      "url": "https://doi.org/10.1109/dsn.2005.95",
+      "openalex_id": "https://openalex.org/W2121195169",
+      "pmid": null,
+      "first_author": "Reeder",
+      "authors_display": "Robert W. Reeder, & Roy A. Maxion",
+      "year": 2005,
+      "title": "User Interface Dependability through Goal-Error Prevention",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article",
+        "JournalArticle",
+        "Conference"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human,humans)"
+      ],
+      "citation_count": 26,
+      "influential_citation_count": null,
+      "fwci": 4.1336,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "User interfaces form a critical coupling between humans and computers. When the interface fails, the user fails, and the mission is lost. For example, in computer security applications, human-made configuration errors can expose entire systems to various forms of attack. To avoid interaction failures, a dependable user interface must facilitate the speedy and accurate completion of user tasks. Defects in the interface cause user errors (e.g., goal, plan, action and perception errors), which impinge on speed and accuracy goals, and can lead to mission failure. One source of user error is poor information representation in the interface. This can cause users to commit a specific class of errors - goal errors. A design principle (anchor-based subgoaling) for mitigating this cause was formulated. The principle was evaluated in the domain of setting Windows file permissions. The native Windows XP file permissions interface, which did not support anchor-based subgoaling, was compared to an alternative, called Salmon, which did. In an experiment with 24 users, Salmon achieved as much as a four-fold increase in accuracy for a representative task and a 94% reduction in the number of goal errors committed, compared to the XP interface.",
+      "score": {
+        "composite": 0.35770522288433293,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19082089153733173,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04770522288433293,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "conference_or_proceedings"
+    },
+    {
+      "rank": 30,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_deb9feca",
+      "doi": "10.1117/12.686163",
+      "url": "https://doi.org/10.1117/12.686163",
+      "openalex_id": "https://openalex.org/W1976026628",
+      "pmid": null,
+      "first_author": "Benjamin",
+      "authors_display": "D. Paul Benjamin et al.",
+      "year": 2006,
+      "title": "Embodying a cognitive model in a mobile robot",
+      "venue": "Proceedings of SPIE, the International Society for Optical Engineering/Proceedings of SPIE",
+      "venue_tier": "unknown",
+      "publisher": "SPIE",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 24,
+      "influential_citation_count": null,
+      "fwci": 2.75075978,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The ADAPT project is a collaboration of researchers in robotics, linguistics and artificial intelligence at three universities to create a cognitive architecture specifically designed to be embodied in a mobile robot. There are major respects in which existing cognitive architectures are inadequate for robot cognition. In particular, they lack support for true concurrency and for active perception. ADAPT addresses these deficiencies by modeling the world as a network of concurrent schemas, and modeling perception as problem solving. Schemas are represented using the RS (Robot Schemas) language, and are activated by spreading activation. RS provides a powerful language for distributed control of concurrent processes. Also, The formal semantics of RS provides the basis for the semantics of ADAPT's use of natural language. We have implemented the RS language in Soar, a mature cognitive architecture originally developed at CMU and used at a number of universities and companies. Soar's subgoaling and learning capabilities enable ADAPT to manage the complexity of its environment and to learn new schemas from experience. We describe the issues faced in developing an embodied cognitive architecture, and our implementation choices.",
+      "score": {
+        "composite": 0.35659125888366305,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18636503553465233,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046591258883663084,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 31,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a63bd59b",
+      "doi": "10.1061/jcemd4.coeng-15699",
+      "url": "https://doi.org/10.1061/jcemd4.coeng-15699",
+      "openalex_id": "https://openalex.org/W4409498470",
+      "pmid": null,
+      "first_author": "Ma",
+      "authors_display": "Qiuwen Ma, & Sai On Cheung",
+      "year": 2025,
+      "title": "Augmenting the Incentivizing Power of Target Cost Contracting in Integrated Project Delivery",
+      "venue": "Journal of Construction Engineering and Management",
+      "venue_tier": "unknown",
+      "publisher": "American Society of Civil Engineers",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": 1.8499,
+      "cited_by_percentile_year": 96.0,
+      "oa_status": "green",
+      "oa_url": "https://scholars.cityu.edu.hk/en/publications/augmenting-the-incentivizing-power-of-target-cost-contracting-in-",
+      "tldr": null,
+      "abstract": "Target cost contracts (TCCs) with risk/reward-sharing incentivizing arrangements are often used to promote performances in integrated project delivery (IPD) projects. However, setting the target cost can be challenging due to the diverse interests of team members and many uncertain cost influencing factors inherent in such projects. According to prospect theory and goal-setting theory, neither overly lenient nor unattainably high target costs would drive exceptional performance. This study proposes that the relationship between target cost and cost performance is an inverted asymmetrical V-shape, indicating that cost performance improves with more challenging targets up to a point, beyond which unreasonably challenging targets would render negative effect. To mitigate the risk of setting unreasonable targets, establishing cost targets within a zone that spans between the at-risk threshold and the shared-reward threshold can be an option. This zone is identified as neutral. Despite reducing the risk of unreasonable target costs, the incentivizing power of this neutral zone approach diminishes sharply once the cost exceeds the at-risk threshold. Strategies are proposed to augment the incentivizing power of neutral zone–based TCC for two types of agents: myopic and forward-looking. Complementing neutral zone with subgoaling strategy can significantly improve cost performance for myopic agents. Furthermore, the prospect of repeated business can incentivize the forward-looking agents to achieve the shared-reward threshold. This novel method is instrumental in establishing target costs at the early stages of IPD projects.",
+      "score": {
+        "composite": 0.3500328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 32,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_490dcbbf",
+      "doi": "10.5555/1946417.1946423",
+      "url": "https://doi.org/10.5555/1946417.1946423",
+      "openalex_id": "https://openalex.org/W3000185052",
+      "pmid": null,
+      "first_author": "BulitkoVadim",
+      "authors_display": "BulitkoVadim et al.",
+      "year": 2010,
+      "title": "Case-based subgoaling in real-time heuristic search for video game pathfinding",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Real-time heuristic search algorithms satisfy a constant bound on the amount of planning per action, independent of problem size. As a result, they scale up well as problems become larger. This pro...",
+      "score": {
+        "composite": 0.35,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.26666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.04,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 33,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_4c92ef00",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2136482993",
+      "pmid": null,
+      "first_author": "Zimmerman",
+      "authors_display": "Donald E. Zimmerman et al.",
+      "year": 1993,
+      "title": "A constraint reasoning system for automating sequence-specific resonance assignments from multidimensional protein NMR spectra.",
+      "venue": "PubMed",
+      "venue_tier": "unknown",
+      "publisher": "National Institutes of Health",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 14,
+      "influential_citation_count": null,
+      "fwci": 1.3833,
+      "cited_by_percentile_year": 90.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "AUTOASSIGN is a prototype expert system designed to aid in the determination of protein structure from nuclear magnetic resonance (NMR) measurements. In this paper we focus on one of the key steps of this process, the assignment of the observed NMR signals to specific atomic nuclei in the protein; i.e. the determination of sequence-specific resonance assignments. Recently developed triple-resonance (1H, 15N, and 13C) NMR experiments [Montelione et al., 1992] have provided an important breakthrough in this field, as the resulting data are more amenable to automated analysis than data sets generated using conventional strategies [Wuethrich, 1986]. The \"assignment problem\" can be stated as a constraint satisfaction problem (CSP) with some added complexities. There is very little internal structure to the problem, making it difficult to apply subgoaling and problem decomposition. Moreover, the data used to generate the constraints are incomplete, non-unique, and noisy, and constraints emerge dynamically as analysis progresses. The traditional inference engine is replaced by a set of very tightly-coupled modules which enforce extensive constraint propagation, with state information distributed over the objects whose relationships are being constrained. AUTOASSIGN provides correct and nearly complete resonance assignments with both simulated and real 3D triple-resonance data for a 72 amino acid protein.",
+      "score": {
+        "composite": 0.34919737040327586,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1567894816131034,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03919737040327585,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Amino Acids",
+        "Amino Acids",
+        "Amino Acids",
+        "Evaluation Studies as Topic",
+        "Evaluation Studies as Topic",
+        "Evaluation Studies as Topic",
+        "Expert Systems",
+        "Expert Systems",
+        "Expert Systems",
+        "Magnetic Resonance Spectroscopy",
+        "Magnetic Resonance Spectroscopy",
+        "Magnetic Resonance Spectroscopy",
+        "Protein Conformation",
+        "Protein Conformation",
+        "Protein Conformation",
+        "Software Design",
+        "Software Design",
+        "Software Design"
+      ]
+    },
+    {
+      "rank": 34,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_6444e85f",
+      "doi": "10.1109/icsmc.1990.142087",
+      "url": "https://doi.org/10.1109/icsmc.1990.142087",
+      "openalex_id": "https://openalex.org/W2117955612",
+      "pmid": null,
+      "first_author": "Liang",
+      "authors_display": "Pengfei Liang",
+      "year": 2002,
+      "title": "Problem decomposition and subgoaling in artificial neural networks",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 11,
+      "influential_citation_count": null,
+      "fwci": 3.0105,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "A general principle of problem decomposition and subgoaling is proposed for designing an artificial neural network (ANN) and its learning algorithms. The basic idea is divide-and-conquer. The principle is explored systematically, and it is shown through several examples that it should benefit the design of ANN and its learning algorithms in general. Three types of subgoal decomposabilities are identified: serial, parallel, and diameter-limited. It is shown that the scaling-up difficulties and that of decoding what structure to use for a problem may be solved or alleviated using the subgoal decomposition principle. A learning algorithm based on the principle is developed for training multilayer perceptrons to classify any nonlinearly separable clusters. Convergence to the correct classification is guaranteed if the patterns are separable. The algorithm simultaneously learns the structure and connection weights of the network. >",
+      "score": {
+        "composite": 0.34596750397376674,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 35,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_05ddb16b",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2167268917",
+      "pmid": null,
+      "first_author": "Matsubara",
+      "authors_display": "Shigeo Matsubara, & Toru Ishida",
+      "year": 1994,
+      "title": "Real-Time planning by interleaving real-time search with subgoaling",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 9,
+      "influential_citation_count": null,
+      "fwci": 1.6952,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Recently, real-time planning has been actively studied for solving problems in uncertain and dy-namic environments. RTA * is a real-time search algorithm that can provide a computational ba-sis for real-time planning. However, RTA * is not always efficient since obtaining effective heuristic functions is difficult when the problem becomes complicated. In order to keep the problem sim-ple enough for efficient search, we propose an algorithm called RTSS, which incorporates the STRIPS subgoaling function into RTA*. This algorithm interleaves subgoaling and real-time search processes by evaluating the goal complex-ity and the ease of operator execution. An anal-ysis using a simple model shows that the search cost can be significantly reduced by switching be-tween subgoaling and real-time search. Further-more, experiments on a robot task planning prob-lem show that RTSS can attain the goal without performing many superfluous actions, while other algorithms often tend to perform a blind search that hils to attain the goal.",
+      "score": {
+        "composite": 0.34332851094799277,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 36,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a20bf621",
+      "doi": "10.1609/icaps.v35i1.36125",
+      "url": "https://doi.org/10.1609/icaps.v35i1.36125",
+      "openalex_id": "https://openalex.org/W4414229875",
+      "pmid": null,
+      "first_author": "Scala",
+      "authors_display": "Enrico Scala, & Luigi Bonassi",
+      "year": 2025,
+      "title": "On Using Lazy Greedy Best-First Search with Subgoaling Relaxation in Numeric Planning Problems",
+      "venue": "Proceedings of the International Conference on Automated Planning and Scheduling",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article",
+        "JournalArticle",
+        "Conference"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "diamond",
+      "oa_url": "https://ojs.aaai.org/index.php/ICAPS/article/download/36125/38279",
+      "tldr": "This paper studies the use of lazy greedy best-first search for numeric planning problems in combination with relaxation-based heuristics, helpful actions, and up-to-jumping actions, and revisits linear abstractions by improving the balance between computation time and information.",
+      "abstract": "This paper studies the use of lazy greedy best-first search for numeric planning problems in combination with relaxation-based heuristics, helpful actions, and up-to-jumping actions. In particular, the new search schema that we study, whilst postponing evaluation of the heuristic at expansion time, focuses the search over those states that are reached by helpful and up-to-jumping actions. In addition, we revisit linear abstractions by improving the balance between computation time and information, providing guidance in non-simple numeric planning problems, too. The new search schema compares favorably over the IPC-23 benchmarks with alternative complete heuristic search planners from the literature.",
+      "score": {
+        "composite": 0.33999999999999997,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "conference_or_proceedings"
+    },
+    {
+      "rank": 37,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_abf04593",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W1549769655",
+      "pmid": null,
+      "first_author": "Blythe",
+      "authors_display": "Jim Blythe",
+      "year": 1996,
+      "title": "Event-based decompositions for reasoning about external change in planners",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": 2.1264,
+      "cited_by_percentile_year": 94.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "An increasing number of planners can handle uncertainty in the domain or in action outcomes. However, less work has addressed building plans when the planner&amp;apos;s world can change independently of the planning agent in an uncertain manner. In this paper, I model this change with external events that concisely represent some aspects of structure in the planner&amp;apos;s domain. This event model is given a formal semantics in terms of a Markov chain, but probabilistic computations from this chain would be intractable in real-world domains. I describe a technique, based on a reachability analysis of a graph built from the events, that allows abstractions of the Markov chain to be built to answer specific queries efficiently. I prove that the technique is correct. I have implemented a planner that uses this technique, and I show an example from a large planning domain. Introduction 1 An increasing number of subgoaling planners can handle uncertainty in the domain or in action outcomes, including (K...",
+      "score": {
+        "composite": 0.3381658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 38,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_e61f1464",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W203571468",
+      "pmid": null,
+      "first_author": "Dershowitz",
+      "authors_display": "Nachum Dershowitz, & Naomi Lindenstrauss",
+      "year": 1989,
+      "title": "Average Time Analyses Related to Logic Programming.",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": 0.5077,
+      "cited_by_percentile_year": 89.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Logic programs are known to be amenable to parallelization. Our work is an attempt to quantify the magnitude of speed-up one can expect from parallel execution of a logic program. To make average case analysis tractable we look separately at two aspects of logic program execution: the &amp;quot;subgoaling&amp;quot; aspect, which involves trying to prove a goal by using matching to reduce it to other goals and finally to true, and the &amp;quot;goal reduction&amp;quot; aspect, involving full unification. In the first case we assume that the and-or tree determined by a goal can be constructed by matching only, and show---using the generating function approach of Flajolet--- that the average cost of evaluating such trees in parallel tends to a constant as the size tends to infinity, but that the same is true, though with a larger constant, for &amp;quot;clever&amp;quot; sequential evaluation. For the second aspect we use the generating function methods to obtain partial results about unification, which suggest that, although unification may...",
+      "score": {
+        "composite": 0.3359346224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 39,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_856c7cb5",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W340017759",
+      "pmid": null,
+      "first_author": "VanLehn",
+      "authors_display": "Kurt VanLehn, & William E. Ball",
+      "year": 1987,
+      "title": "Understanding Algebra Equation Solving Strategies.",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (humans)"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Abstract : A task analysis of linear algebraic equation solving is presented. The problem space is shown to have an elegant mathematical form. Several strategies for searching the problem space are delineated, and their properties discussed. The forward search strategy, which appears to be the one most commonly taught in high-school textbooks, tends to generate non-optimal solution paths. An operator-subgoaling search strategy tends to generate shorter paths. Bundy and Welham's waterfall loop strategy is shown to be a variant of operator-subgoaling that is more amenable for use by humans. This task analysis suggests that the waterfall loop strategy may be better for teaching a high-school students than the forward search strategy.",
+      "score": {
+        "composite": 0.3259017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 40,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_6e946767",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2110918225",
+      "pmid": null,
+      "first_author": "Blommaert",
+      "authors_display": "Fjj Frans Blommaert, & Tjwm Ruud Janssen",
+      "year": 1999,
+      "title": "The satisfied user",
+      "venue": "IPO annual progress report",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "We interpret human-system interaction as a sequence of information-processing operations. According to computational cognition (Newell, 1990; Simon & Kaplan, 1989) and computational vision (Marr, 1982), information processing should be studied at three different levels of abstraction, that is, at the knowledge level, at the level of algorithm, and at the level of implementation. Human-system interaction is analysed at these levels with an emphasis on user satisfaction and effective and efficient goal achievement. It is concluded that user satisfaction has more or less independent components at these levels, namely, satisfaction evoked by adequate subgoaling, adequate problem-solving strategy, and adequate implementation.",
+      "score": {
+        "composite": 0.3200328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 41,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_fb9cfb65",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2147018612",
+      "pmid": null,
+      "first_author": "Burstall",
+      "authors_display": "R. M. Burstall",
+      "year": 1994,
+      "title": "Terms, proofs and refinement (Extended abstract)",
+      "venue": "Logic in Computer Science",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "We give a simple account of the connection between lambda teams and natural deduction proofs, showing how the terms can be rearranged into a form close to conventional proofs, and also to less conventional proofs. Creating proofs interactively by refinement can be seen as just keying in a lambda expression one symbol at a time in response to prompts from the machine. The aim is to convey some basic ideas to the uninitiated without technical or pragmatic detail. can get another way of writing proofs which mirrors the top down (subgoaling) style adopted by many interactive theorem provers. The trick is to write the lambda terms in reverse Polish notation and then adopt the Japanese (and Chinese) habit of writing down the page. To get the top down presentation we use forward Polish instead of reverse Polish. We see also that the process of interactively deriving a proof can be seen as starting with a desired type and then keying in a lambda term one symbol at a time in response to prompts from the machine proof assistant.",
+      "score": {
+        "composite": 0.3200328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 42,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_5115a688",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W104032098",
+      "pmid": null,
+      "first_author": "Reeder",
+      "authors_display": "Robert W. Reeder, & Roy A. Maxion",
+      "year": 2004,
+      "title": "Error Analysis of a Security-Oriented User Interface",
+      "venue": "School of Computing Science Technical Report Series",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (human,humans,subjects)"
+      ],
+      "citation_count": 1,
+      "influential_citation_count": null,
+      "fwci": 0.8079,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "User interfaces form a critical juncture between humans and computers. When the interface fails, the user fails, and the mission is lost. For example, in computer security applications, human-made configuration errors can expose entire systems to various forms of attack. To avoid interaction failures, a dependable user interface must facilitate user-task completion as quickly and as accurately as possible. Defects in the interface cause user errors (e.g., goal, plan, action and perception errors), that impinge on accuracy goals, and can lead to mission failure. This paper explores the causes of goal errors, asking what aspects of a user interface contribute to or detract from a user’s propensity to commit goal errors. A design principle (anchor-based subgoaling) was formulated for avoiding goal errors. Implementing this principle requires presenting the user with a salient representation, or anchor, of the goal state, and providing a framework to facilitate a user’s creation and pursuit of subgoals to complete a task. Two interfaces for setting user file permissions were tested: Windows XP and an alternative. The alternative supported anchor-based subgoaling, and Windows did not. Experiments with 24 human subjects demonstrated the increased effectiveness of the alternative interface, obtaining as much as a four-fold increase in accuracy in a representative user task, and a 94% reduction in the number of goal-error occurrences.",
+      "score": {
+        "composite": 0.3200328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 43,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_f7b420e5",
+      "doi": "10.1145/24671.1057626",
+      "url": "https://doi.org/10.1145/24671.1057626",
+      "openalex_id": "https://openalex.org/W117907596",
+      "pmid": null,
+      "first_author": "Murphy",
+      "authors_display": "Art Murphy et al.",
+      "year": 1987,
+      "title": "Book review: Universal Subgoaling and Chunking: The automatic generation and learning of goal hierarchies by John Laird, Paul Rosenbloom, and Alan Newell",
+      "venue": "ACM SIGART Bulletin",
+      "venue_tier": "unknown",
+      "publisher": "Association for Computing Machinery",
+      "publication_types": [
+        "article",
+        "JournalArticle",
+        "Review"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "bronze",
+      "oa_url": "https://dl.acm.org/doi/pdf/10.1145/24671.1057626",
+      "tldr": "This book is two Ph.D theses bound together in one volume and the first part (thesis) of the book is on developing a generalized problem solving architecture and the second part is to develop a generalized learning system.",
+      "abstract": "This book is two Ph.D theses bound together in one volume. The first thesis is by John Laird and is on \"Universal Subgoaling\" and the second thesis is on \"The chunking of goal hierarchies\" by Paul Rosenbloom. Alan Newell, their Ph.D advisor has an interesting preface, explaining how the respective thesis topics came into being. The first part (thesis) of the book is on developing a generalized problem solving architecture. The second part (thesis) is to develop a generalized learning system. The concluding section ties the loose ends together.",
+      "score": {
+        "composite": 0.31,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 44,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_acee35cc",
+      "doi": "10.1109/ictta.2004.1307878",
+      "url": "https://doi.org/10.1109/ictta.2004.1307878",
+      "openalex_id": "https://openalex.org/W1575092272",
+      "pmid": null,
+      "first_author": "Jamil",
+      "authors_display": "Momin Jamil, & AlauddinY. Alomary",
+      "year": 2004,
+      "title": "Two-staged scheme for sub-goaling decomposition and ordering for path search problem",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Problem consists of various states and solving a problem can be considered as searching the space within which these states exits. States are views of the problem and we start at the initial state and aim for the goal state with the help of ordering of the operators and searching technique. The problem space could also be viewed as a maze of states and in order to find the goal state we have to do a powerful search on this maze. We show how subgoaling strategy improves search efficiency to get desired goal fast and how it can be incorporated into conventional search methods. In order to improve search we have introduced two-staged scheme of subgoal decomposition and subgoal ordering. This scheme makes use of the guiding power of subgoaling strategies as form of augmented control knowledge in search. The implementation of A* heuristic search algorithm with subgoaling strategy called subgoaling decomposition A* (SDA*) is proposed and examined. The quantitative tradeoff between conventional A* and SDA* in solving some benchmark tasks is investigated to draw the effectiveness of the subgoaling strategies.",
+      "score": {
+        "composite": 0.31,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 45,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_5d14201d",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W772963581",
+      "pmid": null,
+      "first_author": "Allen",
+      "authors_display": "Robert H. Allen",
+      "year": 1989,
+      "title": "Production system chunking in SOAR: Case studies in automated learning",
+      "venue": "NASA STI Repository (National Aeronautics and Space Administration)",
+      "venue_tier": "unknown",
+      "publisher": "National Aeronautics and Space Administration",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "green",
+      "oa_url": "http://hdl.handle.net/2060/19890010689",
+      "tldr": null,
+      "abstract": "A preliminary study of SOAR, a general intelligent architecture for automated problem solving and learning, is presented. The underlying principles of universal subgoaling and chunking were applied to a simple, yet representative, problem in artificial intelligence. A number of problem space representations were examined and compared. It is concluded that learning is an inherent and beneficial aspect of problem solving. Additional studies are suggested in domains relevant to mission planning and to SOAR itself.",
+      "score": {
+        "composite": 0.31,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 46,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_9d858228",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2394766551",
+      "pmid": null,
+      "first_author": "Partsch",
+      "authors_display": "H Partsch",
+      "year": 1978,
+      "title": "[Clinical diagnosis of acute gonorrhic perihepatitis].",
+      "venue": "Munich Personal RePEc Archive (Ludwig Maximilian University of Munich)",
+      "venue_tier": "unknown",
+      "publisher": "Ludwig-Maximilians-Universität München",
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (human)"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "We interpret human-system interaction as a sequence of information-processing operations. According to computational cognition (Newell, 1990; Simon &amp;amp; Kaplan, 1989) and computational vision (Marr, 1982), information processing should be studied at three different levels of abstraction, that is, at the knowledge level, at the level of algorithm, and at the level of implementation. Human-system interaction is analysed at these levels with an emphasis on user satisfaction and effective and efficient goal achievement. It is concluded that user satisfaction has more or less independent components at these levels, namely, satisfaction evoked by adequate subgoaling, adequate problem-solving strategy, and adequate implementation.",
+      "score": {
+        "composite": 0.31,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 47,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_4e16cdaf",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W1567499143",
+      "pmid": null,
+      "first_author": "VanLehn",
+      "authors_display": "Kurt VanLehn, & Noboru Matsuda",
+      "year": 2004,
+      "title": "The impact of different proof strategies on learning geometry theorem proving",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Two problem solving strategies, forward chaining and backward chaining, were compared to see how they affect students' learning of geometry theorem proving with construction. It has been claimed that backward chaining is inappropriate for novice students due to its complexity. On the other hand, forward chaining may not be appropriate either for this particular task because it can explode combinatorially. In order to determine which strategy accelerates learning the most, an intelligent tutoring system was developed. It is unique in two ways: (1) It has a fine grained cognitive model of proof-writing, which captured both observable and unobservable inference steps. This allows the tutor to provide elaborate scaffolding. (2) Depending on the student's competence, the tutor provides a variety of scaffolding from showing precise steps to just prompting students for a next step. In other words, the students could learn proof-writing through both worked-out examples (by observing a model of proof-writing generated by the tutor) and problem solving (by writing proofs by themselves). 52 students were randomly assigned to one of the tutoring systems. They solved 11 geometry proof problems with and without construction with the aid from the intelligent tutor. The results show that (1) the students who learned forward chaining showed better performance on proof-writing than those who learned backward chaining, (2) both forward and backward chaining conditions wrote wrong proofs equally frequently, (3) both forward and backward chaining conditions seldom wrote redundant or wrong statements when they wrote correct proofs, (4) the major reason for the difficulty in applying backward chaining lay in the assertion of premises as unjustified propositions (i.e., subgoaling). These results provide theoretical implications for the design of tutoring systems for problem solving.",
+      "score": {
+        "composite": 0.31,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 48,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_6111dd9e",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W3021646734",
+      "pmid": null,
+      "first_author": "Benjamin",
+      "authors_display": "D. Paul Benjamin et al.",
+      "year": 2005,
+      "title": "Embodying a cognitive model in a mobile robot",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "The ADAPT project is a collaboration of researchers in robotics, linguistics and artificial intelligence at three universities to create a cognitive architecture specifically designed to be embodied in a mobile robot. There are major respects in which existing cognitive architectures are inadequate for robot cognition. In particular, they lack support for true concurrency and for active perception. ADAPT addresses these deficiencies by modeling the world as a network of concurrent schemas, and modeling perception as problem solving. Schemas are represented using the RS (Robot Schemas) language, and are activated by spreading activation. RS provides a powerful language for distributed control of concurrent processes. Also, The formal semantics of RS provides the basis for the semantics of ADAPT's use of natural language. We have implemented the RS language in Soar, a mature cognitive architecture originally developed at CMU and used at a number of universities and companies. Soar's subgoaling and learning capabilities enable ADAPT to manage the complexity of its environment and to learn new schemas from experience. We describe the issues faced in developing an embodied cognitive architecture, and our implementation choices.",
+      "score": {
+        "composite": 0.31,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 49,
+      "tier": "reserve",
+      "auto_role": "foundational",
+      "pub_id": "pub_114460f6",
+      "doi": null,
+      "url": null,
+      "openalex_id": "https://openalex.org/W2145732679",
+      "pmid": null,
+      "first_author": "Blythe",
+      "authors_display": "Jim Blythe",
+      "year": 1994,
+      "title": "Decision-Theoretic Subgoaling for Planning with External Events",
+      "venue": null,
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": 0.0,
+      "cited_by_percentile_year": null,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "I describe a planning methodology for domains with uncertainty in the form of external events that are not completely predictable. Under certain conditions, these events can be modelled as continuous-time Markov chains whose states are characterised by the planner&amp;apos;s domain predicates. Planning is goal-directed, but the subgoals are suggested by analysing the utility of the partial plan rather than being simply the open conditions of the operators in the plan, a technique I call &amp;quot;decision-theoretic subgoaling &amp;quot;. Other planners for uncertain domains can be viewed as performing decision-theoretic subgoaling, which I argue is a useful way to combine AI-based planning and decision theory 1 . 1 Introduction One of the central assumptions of classical planning is that the state resulting at some time after performing an action can be predicted completely and with certainty. This assumption permits a style of planning in which a goal, represented by a sentence in first-order ...",
+      "score": {
+        "composite": 0.31,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:41:44",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_weapons_identification",
+    "name": "Weapons Identification Task",
+    "aliases": [
+      "Shooter Bias Task",
+      "Weapons Task",
+      "Payne Task"
+    ],
+    "category_id": "social_cognition_and_strategic_social_choice",
+    "short_definition": "Speeded categorization of tools vs weapons primed by faces of varying race; congruence effects index implicit racial bias in perception.",
+    "description": "Participants view face primes (typically Black and White faces, presented briefly) followed by target objects that are either weapons (guns, knives) or non-threatening objects (tools, household items). Participants must rapidly classify the target object while ignoring the face prime. The paradigm measures implicit racial bias through two routes: behavioral errors (misclassifying tools as weapons more often after Black face primes) and EEG markers of error monitoring (enhanced ERN on racially biased error trials). The ERN enhancement on bias-consistent errors indicates that the anterior cingulate cortex detects the conflict between egalitarian goals and automatic stereotype-driven responses, with ERN amplitude predicting subsequent behavioral correction. This paradigm bridges social psychology, implicit cognition, and cognitive neuroscience by providing a neural signature of bias detection.",
+    "inclusion_test": {
+      "procedure": "A face (Black or White) is flashed briefly, followed by an object (weapon or tool); participants classify the object. Racial bias is indexed by differential accuracy or speed.",
+      "manipulation": "Face race; object type (weapon vs. tool); presentation duration; response deadline.",
+      "measurement": "Signal-detection measures of racial bias (criterion shift); error rate for weapon/tool by face race; RT differences; shooter bias (shoot/don't-shoot variants)."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 5,
+      "picked": 5,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_b19fbd10",
+      "doi": "10.1037//0022-3514.81.2.181",
+      "url": "https://doi.org/10.1037//0022-3514.81.2.181",
+      "openalex_id": "https://openalex.org/W2103408628",
+      "pmid": "11519925",
+      "first_author": "Payne",
+      "authors_display": "B. Keith Payne",
+      "year": 2001,
+      "title": "Prejudice and perception: The role of automatic and controlled processes in misperceiving a weapon.",
+      "venue": "Journal of Personality and Social Psychology",
+      "venue_tier": "mainstream",
+      "publisher": "American Psychological Association",
+      "publication_types": [
+        "article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 852,
+      "influential_citation_count": null,
+      "fwci": 36.0116,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Two experiments used a priming paradigm to investigate the influence of racial cues on the perceptual identification of weapons. In Experiment 1, participants identified guns faster when primed with Black faces compared with White faces. In Experiment 2, participants were required to respond quickly, causing the racial bias to shift from reaction time to accuracy. Participants misidentified tools as guns more often when primed with a Black face than with a White face. L. L. Jacoby's (1991) process dissociation procedure was applied to demonstrate that racial primes influenced automatic (A) processing, but not controlled (C) processing. The response deadline reduced the C estimate but not the A estimate. The motivation to control prejudice moderated the relationship between explicit prejudice and automatic bias. Implications are discussed on applied and theoretical levels.",
+      "score": {
+        "composite": 0.6376841668732756,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3907366674931022,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09768416687327555,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Stereotyping",
+        "Prejudice",
+        "Mental Processes",
+        "Cues",
+        "Form Perception",
+        "Reaction Time",
+        "Firearms",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_f5145517",
+      "doi": "10.3758/s13415-018-0639-8",
+      "url": "https://doi.org/10.3758/s13415-018-0639-8",
+      "openalex_id": null,
+      "pmid": "30225599",
+      "first_author": "Levsen",
+      "authors_display": "Levsen, M., & Bartholow, B.",
+      "year": 2018,
+      "title": "Neural and behavioral effects of regulating emotional responses to errors during an implicit racial bias task.",
+      "venue": "Cognitive, affective & behavioral neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 3,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Affect regulation plays a key role in several theories of racial bias reduction. Here, we tested whether engaging in emotion regulation strategies while performing an implicit racial bias task (Weapons Identification Task; WIT) would alter neural and behavioral manifestations of bias. Participants either suppressed or reappraised in a positive light the distress associated with making errors during the WIT, while an electroencephalogram (EEG) was recorded. We hypothesized that engaging in emotion regulation strategies would reduce the distress associated with making errors indicative of bias, resulting in smaller error-related negativity (ERN) amplitude during errors and increased expression of racial bias. Results of within-subjects comparisons (Experiment 1) generally supported these predictions. However, when emotion regulation strategies were manipulated between subjects (Experiment 2) there was no effect of suppression or reappraisal on bias expression. Across both experiments, engaging in emotion regulation led to larger ERNs for errors occurring on Black- relative to White-primed trials. In addition, a number of significant order effects were observed, indicating important differences in the effects of engaging in emotion regulation strategies when those strategies are attempted in participants' first versus second block of trials. No such order effects were evident when a second trial block was completed with no emotion regulation instructions. Findings are discussed in terms of the need for greater specificity in experimental tests of emotion regulation on error processing and cognitive performance.",
+      "score": {
+        "composite": 0.4025657630123224,
+        "breakdown": {
+          "raw": {
+            "citations": 0.08026305204928967,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.020065763012322418,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Electroencephalography",
+        "Stress, Psychological",
+        "Emotions",
+        "Cognition",
+        "Reaction Time",
+        "Adolescent",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Racism"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_65d9115e",
+      "doi": "10.1371/journal.pone.0177857",
+      "url": "https://doi.org/10.1371/journal.pone.0177857",
+      "openalex_id": null,
+      "pmid": "28591143",
+      "first_author": "Rivers",
+      "authors_display": "Rivers, A.",
+      "year": 2017,
+      "title": "The Weapons Identification Task: Recommendations for adequately powered research.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5462366",
+      "tldr": null,
+      "abstract": "This article synthesizes the extant literature on the Weapons Identification Task (WIT), a sequential priming paradigm developed to investigate the impact of racial priming on identification of stereotype-congruent and stereotype-irrelevant objects. Given recent controversy over the replicability of and statistical power required to detect priming effects, the aim of this synthesis is to systematically assess the literature in order to develop recommendations for statistical power in future research with the WIT paradigm. To develop these recommendations, the present article first quantitatively ascertains the magnitude of publication bias in the extant literature. Next, expected effect sizes and power recommendations are generated from the extant literature. Finally, a close conceptual replication of the WIT paradigm is conducted to prospectively test these recommendations. Racial priming effects are detected in this prospective test providing increased confidence in the WIT priming effect and credibility to the proposed recommendations for power.",
+      "score": {
+        "composite": 0.4006658592787423,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Analysis of Variance",
+        "Stereotyped Behavior",
+        "Psychology, Social",
+        "Reaction Time",
+        "Publications"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_2237a6fb",
+      "doi": "10.1002/ejsp.2655",
+      "url": "https://doi.org/10.1002/ejsp.2655",
+      "openalex_id": null,
+      "pmid": "33071368",
+      "first_author": "Volpert-Esmond",
+      "authors_display": "Volpert-Esmond, H. et al.",
+      "year": 2020,
+      "title": "Dissociating Automatic Associations: Comparing Two Implicit Measurements of Race Bias.",
+      "venue": "European journal of social psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Weak correspondence across different implicit bias tasks may arise from the contribution of unique forms of automatic and controlled processes to response behavior. Here, we examined the correspondence between estimates of automatic and controlled processing derived from two sequential priming tasks with identical structure and timing designed to separately measure stereotypic (Weapons Identification Task; WIT) and evaluative (Affective Priming Task; APT) associations. Across two studies using predominantly White samples, three consistent patterns emerged in the data: (1) stereotypic bias was stronger for Black targets, whereas evaluative bias was stronger for White targets; (2) overall response accuracy bias correlated modestly across the two tasks; and (3) multinomial processing tree estimates of controlled processing corresponded much more strongly than estimates of automatic processing. These findings support models positing distinct learning and memory systems for different forms of race bias, and suggest that these differing forms contribute to estimates of automatic associations.",
+      "score": {
+        "composite": 0.3984017409614443,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_29dd57c2",
+      "doi": "10.1016/j.jesp.2012.02.006",
+      "url": "https://doi.org/10.1016/j.jesp.2012.02.006",
+      "openalex_id": null,
+      "pmid": "22798699",
+      "first_author": "Stepanova",
+      "authors_display": "Stepanova, E. et al.",
+      "year": 2012,
+      "title": "Alcohol-related Cues Promote Automatic Racial Bias.",
+      "venue": "Journal of experimental social psychology",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "token:human (participants)"
+      ],
+      "citation_count": 13,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Previous research has shown that alcohol consumption can increase the expression of race bias by impairing control-related processes. The current study tested whether simple exposure to alcohol-related images can also increase bias, but via a different mechanism. Participants viewed magazine ads for either alcoholic or nonalcoholic beverages prior to completing Payne's (2001) Weapons Identification Task (WIT). As predicted, participants primed with alcohol ads exhibited greater race bias in the WIT than participants primed with neutral beverages. Process dissociation analyses indicated that these effects were due to automatic (relative to controlled) processes having a larger influence on behavior among alcohol-primed relative to neutral-primed participants. Structural equation modeling further showed that the alcohol-priming effect was mediated by increases in the influence of automatic associations on behavior. These data suggest an additional pathway by which alcohol can potentially harm inter-racial interactions, even when no beverage is consumed.",
+      "score": {
+        "composite": 0.32069874078490357,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    }
+  ]
+}

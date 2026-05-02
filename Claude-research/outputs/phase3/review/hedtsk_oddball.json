@@ -1,0 +1,1139 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_oddball",
+    "name": "Oddball Task",
+    "aliases": [
+      "P300 Task",
+      "Auditory Oddball",
+      "Visual Oddball"
+    ],
+    "category_id": "selective_and_sustained_attention",
+    "short_definition": "Sequence of standards with rare deviants or targets; deviants elicit a large positive ERP around 300 ms (P3a/P3b), indexing attention and context updating.",
+    "description": "Participants are presented with a stimulus stream containing frequent standard stimuli (80% of trials) and infrequent target (oddball) stimuli (20%) that differ in some dimension (pitch, color, shape). Participants respond (button press) to targets. Target detection elicits the P3b ERP component (300-600 ms, parietal maximum), reflecting stimulus evaluation and working memory updating. Novel or unexpected stimuli also elicit the P3a component (frontocentral), reflecting automatic attention capture. The paradigm is widely used as a biomarker of cognitive function and has clinical applications in ADHD, schizophrenia, and traumatic brain injury.",
+    "inclusion_test": {
+      "procedure": "A sequence of frequent standard stimuli is occasionally interrupted by rare target (and sometimes novel) stimuli; participants count or respond to targets.",
+      "manipulation": "Target probability (typically 10–20%); stimulus modality (auditory, visual); inclusion of novel non-target deviants; ISI.",
+      "measurement": "P3b amplitude and latency to targets; P3a to novels; target detection accuracy and RT; N2 component."
+    }
+  },
+  "candidates_run_date": "2026-04-29T18:46:09",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Sutton 1965 — Evoked-Potential Correlates of Stimulus Uncertainty (Science, historical, 3k×)",
+      "doi": "10.1126/science.150.3700.1187",
+      "pub_id": "pub_eae07891",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7161691737587828,
+        "breakdown": {
+          "raw": {
+            "citations": 0.46467669503513087,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.11616917375878272,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 1965,
+      "venue": "Science",
+      "citation_count": 3058,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Rubega 2021 — Cortical correlates in upright dynamic and static balance in the elderly. (Scientific reports, recent_primary, 30×)",
+      "doi": "10.1038/s41598-021-93556-3",
+      "pub_id": "pub_ccab885d",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6247048645403726,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Magliacano 2021 — Spontaneous eye blinking as a diagnostic marker in prolonged disorders of con… (Scientific reports, recent_primary, 21×)",
+      "doi": "10.1038/s41598-021-01858-3",
+      "pub_id": "pub_c5efcfe0",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6197409490146167,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Liebherr 2021 — EEG and behavioral correlates of attentional processing while walking and nav… (Scientific reports, recent_primary, 17×)",
+      "doi": "10.1038/s41598-021-01772-8",
+      "pub_id": "pub_11659444",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6168363634290498,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Keute 2019 — No modulation of pupil size and event-related pupil response by transcutaneou… (Scientific reports, recent_primary, 66×)",
+      "doi": "10.1038/s41598-019-47961-4",
+      "pub_id": "pub_29c09ab8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6158603540536682,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2434414162146728,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0608603540536682,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 66,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Reiser 2019 — Recording mobile EEG in an outdoor environment reveals cognitive-motor interf… (Scientific reports, recent_primary, 46×)",
+      "doi": "10.1038/s41598-019-49503-4",
+      "pub_id": "pub_abb5e46e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6107285317643258,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22291412705730315,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05572853176432579,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 46,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 7,
+      "label": "Miyagi 2020 — Psychological resilience is correlated with dynamic changes in functional con… (Scientific reports, recent_primary, 19×)",
+      "doi": "10.1038/s41598-020-74283-7",
+      "pub_id": "pub_ca828cb3",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.608361392454154,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17344556981661585,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04336139245415396,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 19,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Cortney Bradford 2019 — Effect of locomotor demands on cognitive processing. (Scientific reports, recent_primary, 32×)",
+      "doi": "10.1038/s41598-019-45396-5",
+      "pub_id": "pub_e4e3ee83",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6056098084698998,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Calhoun 2012 — A selective review of simulated driving studies: Combining naturalistic and h… (NeuroImage, key_review, 63×)",
+      "doi": "10.1016/j.neuroimage.2011.06.037",
+      "pub_id": "pub_f596b41d",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5951972890369672,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24078915614786897,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06019728903696724,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2012,
+      "venue": "NeuroImage",
+      "citation_count": 63,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Mather 2020 — Isometric exercise facilitates attention to salient events in women via the n… (NeuroImage, recent_primary, 49×)",
+      "doi": "10.1016/j.neuroimage.2020.116560",
+      "pub_id": "pub_8843ac15",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5591241403898243,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2264965615592972,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0566241403898243,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "NeuroImage",
+      "citation_count": 49,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 11,
+      "label": "Montes-Lourido 2021 — Pupillometry as a reliable metric of auditory detection and discrimination ac… (Scientific reports, recent_primary, 17×)",
+      "doi": "10.1038/s41598-021-82340-y",
+      "pub_id": "pub_e7b14c54",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5543363634290498,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Scientific reports",
+      "citation_count": 17,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Barber 2020 — Parasympathetic arousal-related cortical activity is associated with attentio… (NeuroImage, recent_primary, 27×)",
+      "doi": "10.1016/j.neuroimage.2019.116469",
+      "pub_id": "pub_3ca67946",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5507316222910648,
+        "breakdown": {
+          "raw": {
+            "citations": 0.19292648916425917,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04823162229106479,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "NeuroImage",
+      "citation_count": 27,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Sui 2011 — Discriminating schizophrenia and bipolar disorder by fusing fMRI and DTI in a… (NeuroImage, foundational, 180×)",
+      "doi": "10.1016/j.neuroimage.2011.05.055",
+      "pub_id": "pub_028e1aa4",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5502450650995763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30098026039830517,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07524506509957629,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "NeuroImage",
+      "citation_count": 180,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Ishishita 2019 — Deviance detection is the dominant component of auditory contextual processin… (Human brain mapping, recent_primary, 32×)",
+      "doi": "10.1002/hbm.24438",
+      "pub_id": "pub_fce734ed",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5456098084698998,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Human brain mapping",
+      "citation_count": 32,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Kim 2020 — Mismatch negativity indices and functional outcomes in unipolar and bipolar d… (Scientific reports, recent_primary, 18×)",
+      "doi": "10.1038/s41598-020-69776-4",
+      "pub_id": "pub_b9d04b6b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5451189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Scientific reports",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "McCusker 2020 — Multi-spectral oscillatory dynamics serving directed and divided attention. (NeuroImage, recent_primary, 18×)",
+      "doi": "10.1016/j.neuroimage.2020.116927",
+      "pub_id": "pub_4488a34e",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5451189533891415,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17047581355656605,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04261895338914151,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "NeuroImage",
+      "citation_count": 18,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 17,
+      "label": "Hudac 2018 — Early enhanced processing and delayed habituation to deviance sounds in autis… (Brain and cognition, recent_primary, 57×)",
+      "doi": "10.1016/j.bandc.2018.03.004",
+      "pub_id": "pub_4e92b71f",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5437724291894592,
+        "breakdown": {
+          "raw": {
+            "citations": 0.23508971675783696,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05877242918945924,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Brain and cognition",
+      "citation_count": 57,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 18,
+      "label": "Ragazzoni 2019 — \"Hit the missing stimulus\". A simultaneous EEG-fMRI study to localize the gen… (Scientific reports, recent_primary, 33×)",
+      "doi": "10.1038/s41598-019-39812-z",
+      "pub_id": "pub_f2766474",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.543541911853263,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "Scientific reports",
+      "citation_count": 33,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "Murray 2022 — Low doses of LSD reduce broadband oscillatory power and modulate event-relate… (Psychopharmacology, recent_primary, 50×)",
+      "doi": "10.1007/s00213-021-05991-9",
+      "pub_id": "pub_b604dcaf",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5419107713085459,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22764308523418395,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.056910771308545986,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Psychopharmacology",
+      "citation_count": 50,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 20,
+      "label": "Knolle 2018 — Brain responses to different types of salience in antipsychotic naïve first e… (Translational psychiatry, recent_primary, 30×)",
+      "doi": "10.1038/s41398-018-0250-3",
+      "pub_id": "pub_9a49b8e6",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5347048645403726,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1988194581614903,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.049704864540372574,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Translational psychiatry",
+      "citation_count": 30,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Debener 2015 — Unobtrusive ambulatory EEG using a smartphone and flexible printed electrodes… (Scientific reports, foundational, 209×)",
+      "doi": "10.1038/srep16743",
+      "pub_id": "pub_0707910c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5298961111881795,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30958444475271774,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07739611118817943,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Scientific reports",
+      "citation_count": 209,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 23,
+      "label": "Allen 2016 — Anterior insula coordinates hierarchical processing of tactile mismatch respo… (NeuroImage, foundational, 102×)",
+      "doi": "10.1016/j.neuroimage.2015.11.030",
+      "pub_id": "pub_14dbd73d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5295848674801137,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2683394699204547,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06708486748011368,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "NeuroImage",
+      "citation_count": 102,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Odriozola 2016 — Insula response and connectivity during social and non-social attention in ch… (Social cognitive and affective n…, foundational, 70×)",
+      "doi": "10.1093/scan/nsv126",
+      "pub_id": "pub_2e148bc7",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5266996841428466,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24679873657138676,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06169968414284669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Social cognitive and affective neuroscience",
+      "citation_count": 70,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 25,
+      "label": "Mantini 2009 — Large-scale brain networks account for sustained and transient activity durin… (NeuroImage, foundational, 123×)",
+      "doi": "10.1016/j.neuroimage.2008.08.019",
+      "pub_id": "pub_34d2f250",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.524770627552695,
+        "breakdown": {
+          "raw": {
+            "citations": 0.27908251021077995,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06977062755269499,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "NeuroImage",
+      "citation_count": 123,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "LoTemplio 2021 — Inter- and intra-individual coupling between pupillary, electrophysiological,… (Psychophysiology, recent_primary, 25×)",
+      "doi": "10.1111/psyp.13758",
+      "pub_id": "pub_5aa388f5",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5221589547189633,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Psychophysiology",
+      "citation_count": 25,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Goldman 2009 — Single-trial discrimination for integrating simultaneous EEG and fMRI: identi… (NeuroImage, foundational, 79×)",
+      "doi": "10.1016/j.neuroimage.2009.03.062",
+      "pub_id": "pub_94fb567d",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5184271554664763,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2537086218659055,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.2,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06342715546647637,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.03,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "NeuroImage",
+      "citation_count": 79,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Geerligs 2014 — Reduced specificity of functional connectivity in the aging brain during task… (Human brain mapping, foundational, 154×)",
+      "doi": "10.1002/hbm.22175",
+      "pub_id": "pub_2f6a68be",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5180004939822042,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2920019759288165,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07300049398220412,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Human brain mapping",
+      "citation_count": 154,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Avissar 2018 — Meta-analysis of mismatch negativity to simple versus complex deviants in sch… (Schizophrenia research, key_review, 73×)",
+      "doi": "10.1016/j.schres.2017.07.009",
+      "pub_id": "pub_7a59cb8f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5172987098353892,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24919483934155667,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06229870983538917,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Schizophrenia research",
+      "citation_count": 73,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Ethridge 2015 — Event-related potential and time-frequency endophenotypes for schizophrenia a… (Biological psychiatry, foundational, 69×)",
+      "doi": "10.1016/j.biopsych.2014.03.032",
+      "pub_id": "pub_4937a904",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5164943702267352,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24597748090694052,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06149437022673513,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Biological psychiatry",
+      "citation_count": 69,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Kim 2014 — Involvement of the dorsal and ventral attention networks in oddball stimulus … (Human brain mapping, key_review, 179×)",
+      "doi": "10.1002/hbm.22326",
+      "pub_id": "pub_42a5519f",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.5076648743770426,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30065949750817034,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 0.25,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.07516487437704258,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.0625,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Human brain mapping",
+      "citation_count": 179,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

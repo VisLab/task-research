@@ -1,0 +1,140 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_judgment_of_learning",
+    "name": "Judgment-of-Learning Task",
+    "aliases": [
+      "JOL Task",
+      "Judgment-of-Learning Paradigm",
+      "Metacognitive Prediction Task"
+    ],
+    "category_id": "awareness_agency_and_metacognition",
+    "short_definition": "After studying each item, participants predict the likelihood they will recall it on a later test; calibration and resolution of these predictions index metacognitive monitoring of encoding.",
+    "description": "The Judgment-of-Learning task measures the accuracy of metacognitive predictions made during or shortly after encoding. In the standard Nelson and Dunlosky (1991) paradigm, participants study word pairs and, after each pair (immediate) or after a delay (delayed), rate the likelihood (0-100%) that they will recall the target when given the cue on a later test. A cued recall test follows, and prediction accuracy is assessed through resolution (gamma correlation between judgments and recall) and calibration (mean judgment vs. mean recall). A landmark finding is the delayed-judgment-of-learning effect: predictions made after a brief delay are far more accurate than immediate ones, because delayed judgments rely on retrieval fluency (a valid cue) rather than short-term memory availability (a poor cue). Judgment-of-Learning research connects to self-regulated learning: learners use these judgments to allocate study time, select items for restudy, and decide when to terminate study. The paradigm is foundational in metamemory research and dissociates from Feeling-of-Knowing tasks in timing (post-encoding vs. post-retrieval-failure), prediction target (recall vs. recognition), and underlying basis (encoding fluency vs. partial retrieval).",
+    "inclusion_test": {
+      "procedure": "Participants study items (typically word pairs), then predict the likelihood of recalling each item on a future test; a subsequent recall test assesses prediction accuracy.",
+      "manipulation": "Judgment timing (immediate vs. delayed); item difficulty (related vs. unrelated pairs); encoding conditions (number of presentations, elaborative vs. rote); cue type (cue-only vs. cue-target at judgment); self-paced vs. fixed study time; reactivity (whether making judgments alters learning).",
+      "measurement": "Resolution (gamma correlation between judgments and recall); calibration (mean judgment - mean recall); over/underconfidence (signed calibration); absolute accuracy; judgment latency; study-time allocation as a behavioral consequence of judgments."
+    }
+  },
+  "candidates_run_date": "2026-04-29T19:01:08",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 3
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Nelson 1991 — When People's Judgments of Learning (JOLs) are Extremely Accurate at Predicti… (Psychological Science, historical, 578×)",
+      "doi": "10.1111/j.1467-9280.1991.tb00147.x",
+      "pub_id": "pub_b2a99ad8",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.6520759627569748,
+        "breakdown": {
+          "raw": {
+            "citations": 0.36830385102789903,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09207596275697476,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": null,
+      "year": 1991,
+      "venue": "Psychological Science",
+      "citation_count": 578,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Grainger 2016 — Judgment of Learning Accuracy in High-functioning Adolescents and Adults with… (Journal of autism and developmen…, foundational, 11×)",
+      "doi": "10.1007/s10803-016-2895-1",
+      "pub_id": "pub_cc4fd482",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.3584675039737667,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1438700158950669,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.035967503973766725,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Journal of autism and developmental disorders",
+      "citation_count": 11,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 3,
+      "label": "Navarro-Báez 2025 — Predicting the memorability of scene pictures: Improved accuracy through one'… (Quarterly journal of experimenta…, recent_primary, 1×)",
+      "doi": "10.1177/17470218241239829",
+      "pub_id": "pub_e3cf93be",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.22253288150616118,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 0.3,
+            "publisher": 0.6,
+            "recency": 0.19999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.06,
+            "publisher": 0.06,
+            "recency": 0.029999999999999992,
+            "relevance": 0.0625,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Quarterly journal of experimental psychology (2006)",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

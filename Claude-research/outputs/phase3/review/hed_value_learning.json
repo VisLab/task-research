@@ -1,0 +1,1129 @@
+{
+  "schema_version": "phase3_review_v1",
+  "item": {
+    "kind": "process",
+    "id": "hed_value_learning",
+    "name": "Value learning",
+    "aliases": [],
+    "category_id": "associative_learning_and_reinforcement",
+    "definition": "Acquisition of the expected value of stimuli, actions, or states from experience with outcomes."
+  },
+  "candidates_run_date": "2026-04-29T15:27:27",
+  "extracted_on": "2026-04-30T11:14:38",
+  "extraction": {
+    "max_picked": null,
+    "n_picked": 30
+  },
+  "decisions": [
+    {
+      "rank": 1,
+      "label": "Rangel 2008 — A framework for studying the neurobiology of value-based decision making (Nature reviews. Neuroscience, historical, 2k×)",
+      "doi": "10.1038/nrn2357",
+      "pub_id": "pub_e1ffe214",
+      "auto_role": "historical",
+      "score": {
+        "composite": 0.7813782196384065,
+        "breakdown": {
+          "raw": {
+            "citations": 0.44551287855362587,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.13333333333333333,
+            "relevance": 0.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.11137821963840647,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.02,
+            "relevance": 0.0,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "human_subject": true,
+      "year": 2008,
+      "venue": "Nature reviews. Neuroscience",
+      "citation_count": 2196,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 2,
+      "label": "Liu 2021 — Experience replay is associated with efficient nonlocal learning (Science, recent_primary, 200×)",
+      "doi": "10.1126/science.abf1357",
+      "pub_id": "pub_024f3b2b",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7767620950151125,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30704838006045004,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07676209501511251,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Science",
+      "citation_count": 200,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 4,
+      "label": "Kunimatsu 2021 — Environment-based object values learned by local network in the striatum tail. (Proceedings of the National Acad…, recent_primary, 9×)",
+      "doi": "10.1073/pnas.2013623118",
+      "pub_id": "pub_cb34f1fb",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7333285109479928,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "Proceedings of the National Academy of Sciences of the United States of America",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 5,
+      "label": "Juechems 2022 — Human value learning and representation reflect rational adaptation to task d… (Nature Human Behaviour, recent_primary, 23×)",
+      "doi": "10.1038/s41562-022-01360-4",
+      "pub_id": "pub_9090a1ab",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.716000385479928,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Nature Human Behaviour",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 6,
+      "label": "Duncan 2016 — Memory states influence value-based decisions. (Journal of Experimental Psycholo…, foundational, 93×)",
+      "doi": "10.1037/xge0000231",
+      "pub_id": "pub_ce073fe3",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.715761413270487,
+        "breakdown": {
+          "raw": {
+            "citations": 0.263045653081948,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.065761413270487,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2016,
+      "venue": "Journal of Experimental Psychology General",
+      "citation_count": 93,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 8,
+      "label": "Ben-Artzi 2022 — Working memory capacity estimates moderate value learning for outcome-irrelev… (Scientific reports, recent_primary, 8×)",
+      "doi": "10.1038/s41598-022-21832-x",
+      "pub_id": "pub_1650a58a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.7018034819228887,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Scientific reports",
+      "citation_count": 8,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 9,
+      "label": "Camille 2011 — Double Dissociation of Stimulus-Value and Action-Value Learning in Humans wit… (Journal of Neuroscience, foundational, 196×)",
+      "doi": "10.1523/jneurosci.3164-11.2011",
+      "pub_id": "pub_8e7f09d8",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.7003237541805928,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4012950167223709,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10032375418059272,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 196,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 10,
+      "label": "Cook 2019 — Catecholaminergic modulation of meta-learning (eLife, recent_primary, 52×)",
+      "doi": "10.7554/elife.51439",
+      "pub_id": "pub_dc988e18",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6974675471973496,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2298701887893985,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.057467547197349624,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2019,
+      "venue": "eLife",
+      "citation_count": 52,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 12,
+      "label": "Piray 2014 — Impulse Control Disorders in Parkinson's Disease Are Associated with Dysfunct… (Journal of Neuroscience, foundational, 81×)",
+      "doi": "10.1523/jneurosci.4063-13.2014",
+      "pub_id": "pub_bdb1650c",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6937845659315909,
+        "breakdown": {
+          "raw": {
+            "citations": 0.25513826372636356,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06378456593159089,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Journal of Neuroscience",
+      "citation_count": 81,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 13,
+      "label": "Christopoulos 2015 — With you or against you: social orientation dependent learning signals guide … (NeuroImage, foundational, 23×)",
+      "doi": "10.1016/j.neuroimage.2014.09.011",
+      "pub_id": "pub_a5c0c7e0",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6860003854799279,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18400154191971174,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.046000385479927935,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "NeuroImage",
+      "citation_count": 23,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 14,
+      "label": "Montague 2006 — IMAGING VALUATION MODELS IN HUMAN CHOICE (Annual Review of Neuroscience, key_review, 377×)",
+      "doi": "10.1146/annurev.neuro.29.051605.112903",
+      "pub_id": "pub_43e12bc2",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6859039636692366,
+        "breakdown": {
+          "raw": {
+            "citations": 0.34361585467694605,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.08590396366923651,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2006,
+      "venue": "Annual Review of Neuroscience",
+      "citation_count": 377,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 15,
+      "label": "Becker 2020 — Value-based attention capture: Differential effects of loss and gain continge… (Journal of vision, recent_primary, 7×)",
+      "doi": "10.1167/jov.20.5.4",
+      "pub_id": "pub_a425e30a",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6800986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Journal of vision",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 16,
+      "label": "Smith 2022 — Children's value-based decision making. (Scientific reports, recent_primary, 1×)",
+      "doi": "10.1038/s41598-022-09894-3",
+      "pub_id": "pub_aed6db17",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6800328815061613,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "Scientific reports",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 19,
+      "label": "FitzGerald 2013 — Characterising reward outcome signals in sensory cortex. (NeuroImage, foundational, 20×)",
+      "doi": "10.1016/j.neuroimage.2013.06.061",
+      "pub_id": "pub_16d55b80",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6640676002401867,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2013,
+      "venue": "NeuroImage",
+      "citation_count": 20,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 22,
+      "label": "Harrison 2015 — A Neurocomputational Account of How Inflammation Enhances Sensitivity to Puni… (Biological Psychiatry, foundational, 184×)",
+      "doi": "10.1016/j.biopsych.2015.07.018",
+      "pub_id": "pub_162353c1",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6555614577710595,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30224583108423797,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07556145777105949,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2015,
+      "venue": "Biological Psychiatry",
+      "citation_count": 184,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 24,
+      "label": "Moeller 2021 — An association between prediction errors and risk-seeking: Theory and behavio… (PLoS Computational Biology, recent_primary, 21×)",
+      "doi": "10.1371/journal.pcbi.1009213",
+      "pub_id": "pub_b9fd2067",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6447409490146166,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PLoS Computational Biology",
+      "citation_count": 21,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 26,
+      "label": "Yi 2026 — Computational and neural mechanisms underlying the influence of action afford… (Nature communications, recent_primary, 1×)",
+      "doi": "10.1038/s41467-025-67858-3",
+      "pub_id": "pub_f421a5f8",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6350328815061612,
+        "breakdown": {
+          "raw": {
+            "citations": 0.040131526024644835,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.5,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.010032881506161209,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.075,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2026,
+      "venue": "Nature communications",
+      "citation_count": 1,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 27,
+      "label": "Daw 2014 — Multiple Systems for Value Learning (?, key_review, 86×)",
+      "doi": "10.1016/b978-0-12-416008-8.00021-8",
+      "pub_id": "pub_4ab0eece",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.634739933163226,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3789597326529039,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09473993316322597,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": null,
+      "citation_count": 86,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 28,
+      "label": "Nicolle 2011 — Optimistic biases in observational learning of value. (Cognition, foundational, 7×)",
+      "doi": "10.1016/j.cognition.2011.02.004",
+      "pub_id": "pub_f436728f",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6300986445184836,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12039457807393449,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03009864451848362,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2011,
+      "venue": "Cognition",
+      "citation_count": 7,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 29,
+      "label": "Zhu 2021 — Computational modeling of choice-induced preference change: A Reinforcement-L… (PloS one, recent_primary, 6×)",
+      "doi": "10.1371/journal.pone.0244434",
+      "pub_id": "pub_93fb9096",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6281658592787424,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2021,
+      "venue": "PloS one",
+      "citation_count": 6,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 30,
+      "label": "Stauffer 2018 — The biological and behavioral computations that influence dopamine responses (Current Opinion in Neurobiology, key_review, 4×)",
+      "doi": "10.1016/j.conb.2018.02.005",
+      "pub_id": "pub_d482b7f9",
+      "auto_role": "key_review",
+      "score": {
+        "composite": 0.6232956294418316,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2018,
+      "venue": "Current Opinion in Neurobiology",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 31,
+      "label": "Raymond 2009 — Selective Visual Attention and Motivation (Psychological Science, foundational, 275×)",
+      "doi": "10.1111/j.1467-9280.2009.02391.x",
+      "pub_id": "pub_af94a278",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6213518650646656,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3254074602586622,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.2,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08135186506466555,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.03,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2009,
+      "venue": "Psychological Science",
+      "citation_count": 275,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 32,
+      "label": "Romero Pinto 2025 — Tonic dopamine and biases in value learning linked through a biologically ins… (Nature communications, recent_primary, 5×)",
+      "doi": "10.1038/s41467-025-62280-1",
+      "pub_id": "pub_ed1af537",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6209839447268474,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1639357789073893,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.19999999999999996,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04098394472684733,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.029999999999999992,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2025,
+      "venue": "Nature communications",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 33,
+      "label": "Stoianov 2016 — Prefrontal Goal Codes Emerge as Latent States in Probabilistic Value Learning (Journal of Cognitive Neuroscience, foundational, 44×)",
+      "doi": "10.1162/jocn_a_00886",
+      "pub_id": "pub_6a966b70",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.6050991113647202,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6666666666666666,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2016,
+      "venue": "Journal of Cognitive Neuroscience",
+      "citation_count": 44,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 34,
+      "label": "Song 2022 — Humans combine value learning and hypothesis testing strategically in multi-d… (PLoS computational biology, recent_primary, 9×)",
+      "doi": "10.1371/journal.pcbi.1010699",
+      "pub_id": "pub_dc7c8312",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6033285109479928,
+        "breakdown": {
+          "raw": {
+            "citations": 0.13331404379197104,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03332851094799276,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2022,
+      "venue": "PLoS computational biology",
+      "citation_count": 9,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 35,
+      "label": "Kube 2020 — Enhanced Go and NoGo Learning in Individuals With Obesity. (Frontiers in behavioral neurosci…, recent_primary, 4×)",
+      "doi": "10.3389/fnbeh.2020.00015",
+      "pub_id": "pub_00af2161",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6032956294418316,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Frontiers in behavioral neuroscience",
+      "citation_count": 4,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 36,
+      "label": "Vo 2014 — Dorsal striatum is necessary for stimulus-value but not action-value learning… (Brain : a journal of neurology, foundational, 24×)",
+      "doi": "10.1093/brain/awu277",
+      "pub_id": "pub_bd29cba7",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.601640581142905,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24656232457161958,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.5333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.061640581142904896,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.08,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.05,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2014,
+      "venue": "Brain : a journal of neurology",
+      "citation_count": 24,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 37,
+      "label": "Chen 2020 — Remote sensing image quality evaluation based on deep support value learning … (Signal Processing Image Communic…, recent_primary, 33×)",
+      "doi": "10.1016/j.image.2020.115783",
+      "pub_id": "pub_44b71672",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.6010419118532628,
+        "breakdown": {
+          "raw": {
+            "citations": 0.20416764741305157,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05104191185326289,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": null,
+      "year": 2020,
+      "venue": "Signal Processing Image Communication",
+      "citation_count": 33,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 38,
+      "label": "Colas 2017 — Distinct prediction errors in mesostriatal circuits of the human brain mediat… (PLoS computational biology, foundational, 13×)",
+      "doi": "10.1371/journal.pcbi.1005810",
+      "pub_id": "pub_c447e72b",
+      "auto_role": "foundational",
+      "score": {
+        "composite": 0.5981987407849035,
+        "breakdown": {
+          "raw": {
+            "citations": 0.15279496313961433,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.03819874078490358,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2017,
+      "venue": "PLoS computational biology",
+      "citation_count": 13,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    },
+    {
+      "rank": 39,
+      "label": "Rittmo 2020 — Vicarious Value Learning: Knowledge transfer through affective processing on … (Acta Psychologica, recent_primary, 5×)",
+      "doi": "10.1016/j.actpsy.2020.103134",
+      "pub_id": "pub_0539d8f9",
+      "auto_role": "recent_primary",
+      "score": {
+        "composite": 0.5959346224676055,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "human_subject": true,
+      "year": 2020,
+      "venue": "Acta Psychologica",
+      "citation_count": 5,
+      "action": null,
+      "role_override": null,
+      "notes": null
+    }
+  ]
+}

@@ -1,0 +1,1661 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:38:13",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_think_no_think",
+    "name": "Think/No-Think Task",
+    "aliases": [
+      "TNT Task",
+      "Think No-Think"
+    ],
+    "category_id": "long_term_memory",
+    "short_definition": "Cue words are presented with instructions to either retrieve or suppress their learned associate; later memory for suppressed items indexes retrieval-induced forgetting through inhibition.",
+    "description": "Participants first learn cue-target word pairs (e.g., \"ordeal–roach\"). In the critical phase, cues are presented and participants are instructed either to recall the target (Think) or to prevent the target from coming to mind (No-Think). On a final test, suppressed (No-Think) items show reduced recall relative to baseline items that were learned but not presented during the critical phase. Anderson and Green (2001) introduced this paradigm as a memory analog of the Go/No-Go motor inhibition task, arguing that just as people can stop a motor action, they can suppress retrieval of unwanted memories. The paradigm has become central to research on memory suppression, PTSD, and the role of prefrontal control over hippocampal memory retrieval.",
+    "inclusion_test": {
+      "procedure": "Participants learn cue-target word pairs to criterion. In the critical phase, cues are presented and participants either actively recall the target (think) or suppress retrieval (no-think). A final test probes all pairs.",
+      "manipulation": "Think vs. no-think vs. baseline (not presented in critical phase); number of suppression repetitions; independent probe test (IP: novel cue for same target).",
+      "measurement": "Suppression-induced forgetting (baseline − no-think recall); think benefit (think − baseline); IP test (demonstrates inhibitory vs. associative interference account)."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 21,
+      "picked": 20,
+      "reserve": 0,
+      "excluded": 1,
+      "landmarks_found": 1,
+      "landmarks_total": 1
+    },
+    "exclusion_reasons": {
+      "excluded_publisher": 1
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "historical",
+      "pub_id": "pub_ca2edc96",
+      "doi": "10.1038/35066572",
+      "url": "https://doi.org/10.1038/35066572",
+      "openalex_id": "https://openalex.org/W1621211351",
+      "pmid": "11268212",
+      "first_author": "Anderson",
+      "authors_display": "Michael C. Anderson, & Collin Green",
+      "year": 2001,
+      "title": "Suppressing unwanted memories by executive control",
+      "venue": "Nature",
+      "venue_tier": "flagship",
+      "publisher": "Nature Portfolio",
+      "publication_types": [
+        "article",
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 1133,
+      "influential_citation_count": null,
+      "fwci": 8.0564,
+      "cited_by_percentile_year": 99.0,
+      "oa_status": "closed",
+      "oa_url": null,
+      "tldr": null,
+      "abstract": null,
+      "score": {
+        "composite": 0.7018057046306808,
+        "breakdown": {
+          "raw": {
+            "citations": 0.4072228185227233,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.10180570463068082,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.0,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.3
+        }
+      },
+      "provenance": {
+        "sources": [
+          "openalex",
+          "europepmc",
+          "semanticscholar"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cognition",
+        "Learning",
+        "Cues",
+        "Memory",
+        "Mental Recall",
+        "Repression, Psychology"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_3f01aeee",
+      "doi": "10.1016/j.neuropsychologia.2017.11.033",
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2017.11.033",
+      "openalex_id": null,
+      "pmid": "29199109",
+      "first_author": "Guo",
+      "authors_display": "Guo, Y. et al.",
+      "year": 2018,
+      "title": "A supramodal role of the basal ganglia in memory and motor inhibition: Meta-analytic evidence.",
+      "venue": "Neuropsychologia",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Meta-Analysis",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": true,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 98,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5759998",
+      "tldr": null,
+      "abstract": "The ability to stop actions and thoughts is essential for goal-directed behaviour. Neuroimaging research has revealed that stopping actions and thoughts engage similar cortical mechanisms, including the ventro- and dorso-lateral prefrontal cortex. However, whether and how these abilities require similar subcortical mechanisms remains unexplored. Specifically of interest are the basal ganglia, subcortical structures long-known for their motor functions, but less so for their role in cognition. To investigate the potential common mechanisms in the basal ganglia underlying action and thought stopping, we conducted meta-analyses using fMRI data from the Go/No-Go, Stop-signal, and Think/No-Think tasks. All three tasks require active stopping of prepotent actions or thoughts. To localise basal ganglia activations, we performed high-resolution manual segmentations of striatal subregions. We found that all three tasks recovered clusters in the basal ganglia, although the specific localisation of these clusters differed. Although the Go/No-Go and Stop-signal tasks are often interchangeably used for measuring action stopping, their cluster locations in the basal ganglia did not significantly overlap. These different localised clusters suggest that the Go/No-Go and Stop-signal tasks may recruit distinct basal ganglia stopping processes, and therefore should not be treated equivalently. More importantly, the basal ganglia cluster recovered from the Think/No-Think task largely co-localised with that from the Stop-signal task, but not the Go/No-Go task, possibly indicating that the Think/No-Think and Stop-signal tasks share a common striatal circuitry involved in the cancellation of unwanted thoughts and actions. The greater similarity of the Think/No-Think task to the Stop-Signal rather than Go/No-Go task also was echoed at the cortical level, which revealed highly overlapping and largely right lateralized set of regions including the anterior DLPFC, VLPFC, Pre-SMA and ACC. Over",
+      "score": {
+        "composite": 0.5598448827646774,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26604619772537635,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06651154943134409,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Basal Ganglia",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Motor Activity",
+        "Memory",
+        "Psychomotor Performance",
+        "Executive Function",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_78831933",
+      "doi": "10.1038/s41598-018-31400-x",
+      "url": "https://doi.org/10.1038/s41598-018-31400-x",
+      "openalex_id": null,
+      "pmid": "30177846",
+      "first_author": "Waldhauser",
+      "authors_display": "Waldhauser, G. et al.",
+      "year": 2018,
+      "title": "The neural dynamics of deficient memory control in heavily traumatized refugees.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 21,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC6120867",
+      "tldr": null,
+      "abstract": "Victims of war, torture and natural catastrophes are prone to develop posttraumatic stress disorder (PTSD). These individuals experience the recurrent, involuntary intrusion of traumatic memories. What neurocognitive mechanisms are driving this memory disorder? Here we show that PTSD symptoms in heavily traumatized refugees are related to deficits in the effective control of memory retrieval. In a think/no-think task, PTSD patients were unable to forget memories that they had previously tried to suppress when compared to control participants with the same trauma history but without PTSD. Deficits in voluntary forgetting were clinically relevant since they correlated with memory intrusions in everyday life. Magnetoencephalography (MEG) recorded during suppression attempts revealed that PTSD patients were unable to downregulate signatures of sensory long-term memory traces in the gamma frequency band (70-120 Hz). Thus, our data suggest that the inability to suppress unwanted memories through modulation of gamma activity is related to PTSD symptom severity.",
+      "score": {
+        "composite": 0.5480742823479501,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Memory Disorders",
+        "Magnetoencephalography",
+        "Severity of Illness Index",
+        "Mental Recall",
+        "Stress Disorders, Post-Traumatic",
+        "Adolescent",
+        "Adult",
+        "Refugees",
+        "Female",
+        "Male",
+        "Memory, Long-Term",
+        "Gamma Rhythm",
+        "Surveys and Questionnaires"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_19d69034",
+      "doi": "10.1038/s41598-023-37447-9",
+      "url": "https://doi.org/10.1038/s41598-023-37447-9",
+      "openalex_id": null,
+      "pmid": "37414828",
+      "first_author": "Ashton",
+      "authors_display": "Ashton, S. et al.",
+      "year": 2023,
+      "title": "A mindful approach to controlling intrusive thoughts.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.nature.com/articles/s41598-023-37447-9.pdf",
+      "tldr": null,
+      "abstract": "Intrusive thoughts of negative experiences can pose a threat to our well-being. To some extent, unwanted memories can be intentionally controlled via an executive control mechanism that downregulates the occurrence of intrusions. Mindfulness training can improve executive control. It is not known whether mindfulness training can be used as an intervention to improve intentional memory control and reduce intrusions. To this end, 148 healthy participants completed a 10-day app-based mindfulness training or an active control task. At baseline, inhibitory control and working memory were assessed as measures of executive functioning. Post-mindfulness training, intrusions were assessed via the Think/No-Think task. It was expected that mindfulness training would reduce intrusions. Furthermore, we hypothesised that this would be moderated by baseline executive functioning. Results revealed that, contrary to our hypothesis, both groups increased equally in dispositional mindfulness between baseline and post-test. As such, our exploratory analysis revealed that higher dispositional mindfulness across both groups resulted in fewer intrusions and enhanced the ability to downregulate intrusions over time. Furthermore, this effect was moderated by inhibitory control at baseline. These results provide insight into factors that can improve the ability to control unwanted memories, which could have considerable implications for treatments in psychopathologies characterized by the frequent occurrence of intrusive thoughts. PROTOCOL REGISTRATION: The stage 1 protocol for this Registered Report was accepted in principle on 11th March, 2022. The protocol, as accepted by the journal, can be found at: https://doi.org/10.17605/OSF.IO/U8SJN .",
+      "score": {
+        "composite": 0.49926795580093886,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cognition",
+        "Memory, Short-Term",
+        "Stress Disorders, Post-Traumatic",
+        "Executive Function",
+        "Mindfulness"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_cfca5b79",
+      "doi": "10.1016/j.neubiorev.2012.02.012",
+      "url": "https://doi.org/10.1016/j.neubiorev.2012.02.012",
+      "openalex_id": null,
+      "pmid": "22374224",
+      "first_author": "Depue",
+      "authors_display": "Depue, B.",
+      "year": 2012,
+      "title": "A neuroanatomical model of prefrontal inhibitory modulation of memory retrieval.",
+      "venue": "Neuroscience and biobehavioral reviews",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Review",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": true,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 70,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Memory of past experience is essential for guiding goal-related behavior. Being able to control accessibility of memory through modulation of retrieval enables humans to flexibly adapt to their environment. Understanding the specific neural pathways of how this control is achieved has largely eluded cognitive neuroscience. Accordingly, in the current paper I review literature that examines the overt control over retrieval in order to reduce accessibility. I first introduce three hypotheses of inhibition of retrieval. These hypotheses involve: (i) attending to other stimuli as a form of diversionary attention, (ii) inhibiting the specific individual neural representation of the memory, and (iii) inhibiting the hippocampus and retrieval process more generally to prevent reactivation of the representation. I then analyze literature taken from the White Bear Suppression, Directed Forgetting and Think/No-Think tasks to provide evidence for these hypotheses. Finally, a neuroanatomical model is developed to indicate three pathways from PFC to the hippocampal complex that support inhibition of memory retrieval. Describing these neural pathways increases our understanding of control over memory in general.",
+      "score": {
+        "composite": 0.49503301747618,
+        "breakdown": {
+          "raw": {
+            "citations": 0.24679873657138676,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.06169968414284669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Prefrontal Cortex",
+        "Neural Pathways",
+        "Humans",
+        "Brain Mapping",
+        "Mental Recall",
+        "Models, Neurological",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_0af4a37c",
+      "doi": "10.1007/s00426-019-01225-y",
+      "url": "https://doi.org/10.1007/s00426-019-01225-y",
+      "openalex_id": null,
+      "pmid": "31324973",
+      "first_author": "Noreen",
+      "authors_display": "Noreen, S. et al.",
+      "year": 2020,
+      "title": "Investigating the mediating effect of working memory on intentional forgetting in dysphoria.",
+      "venue": "Psychological research",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Comparative Study",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 5,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC7515956",
+      "tldr": null,
+      "abstract": "Our aim was to determine if deficits in intentional forgetting that are associated with depression and dysphoria (subclinical depression) could be explained, at least in part, by variations in working memory function. Sixty dysphoric and 61 non-dysphoric participants completed a modified version of the think/no-think (TNT) task and a measure of complex working memory (the operation span task). The TNT task involved participants learning a series of emotional cue-target word pairs, before being presented with a subset of the cues and asked to either recall the associated target (think) or to prevent it from coming to mind (no think) by thinking about a substitute target word. Participants were subsequently asked to recall the targets to all cues (regardless of previous recall instructions). As expected, after controlling for anxiety, we found that dysphoric individuals exhibited impaired forgetting relative to the non-dysphoric participants. Also as expected, we found that superior working memory function was associated with more successful forgetting. Critically, in the dysphoric group, we found that working memory mediated the effect of depression on intentional forgetting. That is, depression influenced forgetting indirectly via its effect on working memory. However, under conditions of repeated suppression, there was also a direct effect of depression on forgetting. These findings represent an important development in the understanding of impaired forgetting in depression and also suggest that working memory training might be a viable intervention for improving the ability of depressed individuals to prevent unwanted memories from coming to mind.",
+      "score": {
+        "composite": 0.48926795580093885,
+        "breakdown": {
+          "raw": {
+            "citations": 0.10373848987042207,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.025934622467605518,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Emotions",
+        "Cues",
+        "Memory, Short-Term",
+        "Mental Recall",
+        "Thinking",
+        "Anxiety Disorders",
+        "Mood Disorders",
+        "Adult",
+        "Female",
+        "Male"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_1247876b",
+      "doi": "10.1167/jov.22.10.8",
+      "url": "https://doi.org/10.1167/jov.22.10.8",
+      "openalex_id": null,
+      "pmid": "36083218",
+      "first_author": "Scotti",
+      "authors_display": "Scotti, P., & Maxcey, A.",
+      "year": 2022,
+      "title": "Directed forgetting of pictures of everyday objects.",
+      "venue": "Journal of vision",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9469030",
+      "tldr": null,
+      "abstract": "Directed forgetting is a laboratory task in which subjects are explicitly cued to forget certain items and remember others. Volitional control over the contents of memory has been used to study clinical disorders, with successful intentional control of memory being a hallmark of a healthy mind. Yet the degree of volitional forgetting over the content of visual long-term memory is unclear when compared to words. Different kinds of visual stimuli (e.g., abstract symbols, line drawings, scenes) may not equally be susceptible to voluntary control in memory, and intentional forgetting studies have shown both twice as much forgetting of pictures compared to words (think/no-think task) and half as much forgetting of pictures compared to words (directed forgetting task). In the present study, we systematically test volitional control over pictures of everyday objects using item-method directed forgetting procedures. We find that subjects are able to intentionally prioritize memory for pictures cued as to be remembered over pictures cued to be forgotten. Here we show that directed forgetting effects are observed using pictures of everyday objects (albeit to a weaker extent compared to directed forgetting of words), suggesting increased confidence for generalization of directed forgetting literature to real-world applications. However, we caution clinical applications of intentional memory control until the underlying direction causing this effect (upregulation of remember-cued items or downregulation of forget-cued items) is known.",
+      "score": {
+        "composite": 0.4866289627751649,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cues",
+        "Mental Recall",
+        "Recognition, Psychology"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_43790fc5",
+      "doi": "10.1016/j.neuropsychologia.2016.07.008",
+      "url": "https://doi.org/10.1016/j.neuropsychologia.2016.07.008",
+      "openalex_id": null,
+      "pmid": "27396675",
+      "first_author": "Hellerstedt",
+      "authors_display": "Hellerstedt, R. et al.",
+      "year": 2016,
+      "title": "Tracking the intrusion of unwanted memories into awareness with event-related potentials.",
+      "venue": "Neuropsychologia",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 44,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC5010041",
+      "tldr": null,
+      "abstract": "Involuntary retrieval of unwanted memories is a common symptom in several clinical disorders, including post-traumatic stress disorder. With an aim to track the temporal dynamics of such memory intrusions, we recorded electrophysiological measures of brain activity while participants engaged in a Think/No-Think task. We presented the left hand word (the cue) of previously encoded word pairs in green or red font. We asked participants to think of the associated right hand word (the associate) when the cue appeared in green (Think condition) and to avoid thinking of the associate when the cue appeared in red (No-Think condition). To isolate cases when participants experienced an intrusive memory, at the end of each trial, participants judged whether the response had come to mind; we classified memories that came to mind during No-Think trials, despite efforts to stop retrieval, as intrusions. In an event-related potential (ERP) analysis, we observed a negative going slow wave (NSW) effect that indexed the duration of a trace in mnemonic awareness; whereas voluntary retrieval and maintenance of the associate was related to a sustained NSW that lasted throughout the 3-s recording epoch, memory intrusions generated short-lived NSWs that were rapidly truncated. Based on these findings, we hypothesize that the intrusion-NSW reflects the associate briefly penetrating working memory. More broadly, these findings exploit the high temporal resolution of ERPs to track the online dynamics of memory intrusions.",
+      "score": {
+        "composite": 0.47843244469805346,
+        "breakdown": {
+          "raw": {
+            "citations": 0.22039644545888062,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.6666666666666666,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.055099111364720156,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.09999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Brain Mapping",
+        "Awareness",
+        "Memory",
+        "Verbal Learning",
+        "Thinking",
+        "Neuropsychological Tests",
+        "Evoked Potentials",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Memory, Episodic",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_446749e7",
+      "doi": "10.3758/s13428-024-02349-9",
+      "url": "https://doi.org/10.3758/s13428-024-02349-9",
+      "openalex_id": null,
+      "pmid": "38379115",
+      "first_author": "Nardo",
+      "authors_display": "Nardo, D., & Anderson, M.",
+      "year": 2024,
+      "title": "Everything you ever wanted to know about the Think/No-Think task, but forgot to ask.",
+      "venue": "Behavior research methods",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 17,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://link.springer.com/content/pdf/10.3758/s13428-024-02349-9.pdf",
+      "tldr": null,
+      "abstract": "The Think/No-Think (TNT) task has just celebrated 20 years since its inception, and its use has been growing as a tool to investigate the mechanisms underlying memory control and its neural underpinnings. Here, we present a theoretical and practical guide for designing, implementing, and running TNT studies. For this purpose, we provide a step-by-step description of the structure of the TNT task, methodological choices that can be made, parameters that can be chosen, instruments available, aspects to be aware of, systematic information about how to run a study and analyze the data. Importantly, we provide a TNT training package (as Supplementary Material), that is, a series of multimedia materials (e.g., tutorial videos, informative HTML pages, MATLAB code to run experiments, questionnaires, scoring sheets, etc.) to complement this method paper and facilitate a deeper understanding of the TNT task, its rationale, and how to set it up in practice. Given the recent discussion about the replication crisis in the behavioral sciences, we hope that this contribution will increase standardization, reliability, and replicability across laboratories.",
+      "score": {
+        "composite": 0.4685030300957165,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1673454537161993,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.6666666666666666,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.041836363429049825,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.16666666666666666,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Reproducibility of Results",
+        "Memory",
+        "Thinking"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_e62ffbe8",
+      "doi": "10.1162/jocn_a_01642",
+      "url": "https://doi.org/10.1162/jocn_a_01642",
+      "openalex_id": null,
+      "pmid": "33078991",
+      "first_author": "Castiglione",
+      "authors_display": "Castiglione, A., & Aron, A.",
+      "year": 2021,
+      "title": "Unwanted Memory Intrusions Recruit Broad Motor Suppression.",
+      "venue": "Journal of cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 8,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Quickly preventing the retrieval of (inappropriate) long-term memories might recruit a similar control mechanism as rapid action-stopping. A very specific characteristic of rapid action-stopping is \"global motor suppression\": When a single response is rapidly stopped, there is a broad skeletomotor suppression. This is shown by the technique of TMS placed over a task-irrelevant part of the primary motor cortex (M1) to measure motor-evoked potentials. Here, we used this same TMS method to test if rapidly preventing long-term memory retrieval also shows this broad skeletomotor suppression effect. Twenty human participants underwent a Think/No-Think task. In the first phase, they learned word pairs. In the second phase, they received the left-hand word as a cue and had to either retrieve the associated right-hand word (\"Think\") or stop retrieval (\"No-Think\"). At the end of each trial, they reported whether they had experienced an intrusion of the associated memory. Behaviorally, on No-Think trials, they reported fewer intrusions than Think trials, and the reporting of intrusions decreased with practice. Physiologically, we observed that the motor-evoked potential, measured from the hand (which was irrelevant to the task), was reduced on No-Think trials in the time frame of 300-500 msec, especially on trials where they did report an intrusion. This unexpected result contradicted our preregistered prediction that we would find such a decrease on No-Think trials where the intrusion was not reported. These data suggest that one form of executive control over (inappropriate) long-term memory retrieval is a rapid and broad stop, akin to action-stopping, that is triggered by the intrusion itself.",
+      "score": {
+        "composite": 0.4651368152562219,
+        "breakdown": {
+          "raw": {
+            "citations": 0.12721392769155446,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 1.0,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.031803481922888614,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.15,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Motor Cortex",
+        "Humans",
+        "Evoked Potentials, Motor",
+        "Executive Function"
+      ]
+    },
+    {
+      "rank": 11,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_c6502b01",
+      "doi": "10.1038/s41598-024-60378-y",
+      "url": "https://doi.org/10.1038/s41598-024-60378-y",
+      "openalex_id": null,
+      "pmid": "38740808",
+      "first_author": "Vitkova",
+      "authors_display": "Vitkova, V. et al.",
+      "year": 2024,
+      "title": "Long-lasting negativity in the left motoric brain structures during word memory inhibition in the Think/No-Think paradigm.",
+      "venue": "Scientific reports",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 2,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC11091218",
+      "tldr": null,
+      "abstract": "In this study, we investigated the electrical brain responses in a high-density EEG array (64 electrodes) elicited specifically by the word memory cue in the Think/No-Think paradigm in 46 participants. In a first step, we corroborated previous findings demonstrating sustained and reduced brain electrical frontal and parietal late potentials elicited by memory cues following the No-Think (NT) instructions as compared to the Think (T) instructions. The topographical analysis revealed that such reduction was significant 1000 ms after memory cue onset and that it was long-lasting for 1000 ms. In a second step, we estimated the underlying brain generators with a distributed method (swLORETA) which does not preconceive any localization in the gray matter. This method revealed that the cognitive process related to the inhibition of memory retrieval involved classical motoric cerebral structures with the left primary motor cortex (M1, BA4), thalamus, and premotor cortex (BA6). Also, the right frontal-polar cortex was involved in the T condition which we interpreted as an indication of its role in the maintaining of a cognitive set during remembering, by the selection of one cognitive mode of processing, Think, over the other, No-Think, across extended periods of time, as it might be necessary for the successful execution of the Think/No-Think task.",
+      "score": {
+        "composite": 0.45923507429477767,
+        "breakdown": {
+          "raw": {
+            "citations": 0.06360696384577723,
+            "venue": 1.0,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.015901740961444307,
+            "venue": 0.2,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Motor Cortex",
+        "Humans",
+        "Electroencephalography",
+        "Brain Mapping",
+        "Memory",
+        "Thinking",
+        "Evoked Potentials",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 12,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_3eae205e",
+      "doi": "10.1093/cercor/bhz017",
+      "url": "https://doi.org/10.1093/cercor/bhz017",
+      "openalex_id": null,
+      "pmid": "30806454",
+      "first_author": "Castiglione",
+      "authors_display": "Castiglione, A. et al.",
+      "year": 2019,
+      "title": "Preventing a Thought from Coming to Mind Elicits Increased Right Frontal Beta Just as Stopping Action Does.",
+      "venue": "Cerebral cortex (New York, N.Y. : 1991)",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 95,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://academic.oup.com/cercor/article-pdf/29/5/2160/28352370/bhz017.pdf",
+      "tldr": null,
+      "abstract": "In the stop-signal task, an electrophysiological signature of action-stopping is increased early right frontal beta band power for successful vs. failed stop trials. Here we tested whether the requirement to stop an unwanted thought from coming to mind also elicits this signature. We recorded scalp EEG during a Think/No-Think task and a subsequent stop signal task in 42 participants. In the Think/No-Think task, participants first learned word pairs. In a second phase, they received the left-hand word as a reminder and were cued either to retrieve the associated right-hand word (\"Think\") or to stop retrieval (\"No-Think\"). At the end of each trial, participants reported whether they had experienced an intrusion of the associated memory. Finally, they received the left-hand reminder word and were asked to recall its associated target. Behaviorally, there was worse final recall for items in the No-Think condition, and decreased intrusions with practice for No-Think trials. For EEG, we reproduced increased early right frontal beta power for successful vs. failed action stopping. Critically, No-Think trials also elicited increased early right frontal beta power and this was stronger for trials without intrusion. These results suggest that preventing a thought from coming to mind also recruits fast prefrontal stopping.",
+      "score": {
+        "composite": 0.4393994818255837,
+        "breakdown": {
+          "raw": {
+            "citations": 0.26426459396900137,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.8666666666666667,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06606614849225034,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.13,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Beta Rhythm",
+        "Memory",
+        "Thinking",
+        "Psychomotor Performance",
+        "Adolescent",
+        "Adult",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Executive Function",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 13,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_a3e45026",
+      "doi": "10.3758/s13415-022-01029-5",
+      "url": "https://doi.org/10.3758/s13415-022-01029-5",
+      "openalex_id": null,
+      "pmid": "35986196",
+      "first_author": "Satish",
+      "authors_display": "Satish, A. et al.",
+      "year": 2022,
+      "title": "EEG evidence that morally relevant autobiographical memories can be suppressed.",
+      "venue": "Cognitive, affective & behavioral neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC9622558",
+      "tldr": null,
+      "abstract": "Remembering unpleasant events can trigger negative feelings. Fortunately, research indicates that unwanted retrieval can be suppressed to prevent memories from intruding into awareness, improving our mental state. The current scientific understanding of retrieval suppression, however, is based mostly on simpler memories, such as associations between words or pictures, which may not reflect how people control unpleasant memory intrusions in everyday life. Here, we investigated the neural and behavioural dynamics of suppressing personal and emotional autobiographical memories using a modified version of the Think/No-Think task. We asked participants to suppress memories of their own past immoral actions, which were hypothesised to be both highly intrusive and motivating to suppress. We report novel evidence from behavioural, ERP, and EEG oscillation measures that autobiographical memory retrieval can be suppressed and suggest that autobiographical suppression recruits similar neurocognitive mechanisms as suppression of simple laboratory associations. Suppression did fail sometimes, and EEG oscillations indicated that such memory intrusions occurred from lapses in sustained control. Importantly, however, participants improved at limiting intrusions with repeated practice. Furthermore, both behavioural and EEG evidence indicated that intentional suppression may be more difficult for memories of our morally wrong actions than memories of our morally right actions. The findings elucidate the neurocognitive correlates of autobiographical retrieval suppression and have implications for theories of morally motivated memory control.",
+      "score": {
+        "composite": 0.4380414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.8,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.12,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Emotions",
+        "Cognition",
+        "Mental Recall",
+        "Memory, Episodic"
+      ]
+    },
+    {
+      "rank": 14,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_6f41d4e5",
+      "doi": "10.1371/journal.pone.0134951",
+      "url": "https://doi.org/10.1371/journal.pone.0134951",
+      "openalex_id": null,
+      "pmid": "26270470",
+      "first_author": "Noreen",
+      "authors_display": "Noreen, S., & MacLeod, M.",
+      "year": 2015,
+      "title": "What Do We Really Know about Cognitive Inhibition? Task Demands and Inhibitory Effects across a Range of Memory and Behavioural Tasks.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Clinical Trial",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 32,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4536050",
+      "tldr": null,
+      "abstract": "Our study explores inhibitory control across a range of widely recognised memory and behavioural tasks. Eighty-seven never-depressed participants completed a series of tasks designed to measure inhibitory control in memory and behaviour. Specifically, a variant of the selective retrieval-practice and the Think/No-Think tasks were employed as measures of memory inhibition. The Stroop-Colour Naming and the Go/No-Go tasks were used as measures of behavioural inhibition. Participants completed all 4 tasks. Task presentation order was counterbalanced across 3 separate testing sessions for each participant. Standard inhibitory forgetting effects emerged on both memory tasks but the extent of forgetting across these tasks was not correlated. Furthermore, there was no relationship between memory inhibition tasks and either of the main behavioural inhibition measures. At a time when cognitive inhibition continues to gain acceptance as an explanatory mechanism, our study raises fundamental questions about what we actually know about inhibition and how it is affected by the processing demands of particular inhibitory tasks.",
+      "score": {
+        "composite": 0.4239431418032331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2024392338795991,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.05060980846989978,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Cognition",
+        "Memory",
+        "Adult",
+        "Female",
+        "Male",
+        "Behavior Rating Scale",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 15,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_a5ad0f54",
+      "doi": "10.1037/a0038611",
+      "url": "https://doi.org/10.1037/a0038611",
+      "openalex_id": null,
+      "pmid": "25602491",
+      "first_author": "Murray",
+      "authors_display": "Murray, B. et al.",
+      "year": 2015,
+      "title": "Older adults can suppress unwanted memories when given an appropriate strategy.",
+      "venue": "Psychology and aging",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 21,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4360753",
+      "tldr": null,
+      "abstract": "Memory suppression refers to the ability to exclude distracting memories from conscious awareness, and this ability can be assessed with the think/no-think paradigm. Recent research with older adults has provided evidence suggesting both intact and deficient memory suppression. The present studies seek to understand the conditions contributing to older adults' ability to suppress memories voluntarily. We report 2 experiments indicating that the specificity of the think/no-think task instructions contributes to older adults' suppression success: When older adults receive open-ended instructions that require them to develop a retrieval suppression strategy on their own, they show diminished memory suppression compared with younger adults. Conversely, when older adults receive focused instructions directing them to a strategy thought to better isolate inhibitory control, they show suppression-induced forgetting similar to that exhibited by younger adults. Younger adults demonstrate memory suppression regardless of the specificity of the instructions given, suggesting that the ability to select a successful suppression strategy spontaneously may be compromised in older adults. If so, this deficit may be associated with diminished control over unwanted memories in naturalistic settings if impeded strategy development reduces the successful deployment of inhibitory control.",
+      "score": {
+        "composite": 0.39807428234795006,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17896379605846674,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.6,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.044740949014616685,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.09,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Awareness",
+        "Memory",
+        "Thinking",
+        "Age Factors",
+        "Aging",
+        "Aged",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 16,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_9de293ec",
+      "doi": "10.1162/jocn_a_00228",
+      "url": "https://doi.org/10.1162/jocn_a_00228",
+      "openalex_id": null,
+      "pmid": "22452558",
+      "first_author": "Metcalfe",
+      "authors_display": "Metcalfe, J. et al.",
+      "year": 2012,
+      "title": "Neural correlates of people's hypercorrection of their false beliefs.",
+      "venue": "Journal of cognitive neuroscience",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 20,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Despite the intuition that strongly held beliefs are particularly difficult to change, the data on error correction indicate that general information errors that people commit with a high degree of belief are especially easy to correct. This finding is called the hypercorrection effect. The hypothesis was tested that the reason for hypercorrection stems from enhanced attention and encoding that results from a metacognitive mismatch between the person's confidence in their responses and the true answer. This experiment, which is the first to use imaging to investigate the hypercorrection effect, provided support for this hypothesis, showing that both metacognitive mismatch conditions-that in which high confidence accompanies a wrong answer and that in which low confidence accompanies a correct answer-revealed anterior cingulate and medial frontal gyrus activations. Only in the high confidence error condition, however, was an error that conflicted with the true answer mentally present. And only the high confidence error condition yielded activations in the right TPJ and the right dorsolateral pFC. These activations suggested that, during the correction process after error commission, people (1) were entertaining both the false belief as well as the true belief (as in theory of mind tasks, which also manifest the right TPJ activation) and (2) may have been suppressing the unwanted, incorrect information that they had, themselves, produced (as in think/no-think tasks, which also manifest dorsolateral pFC activation). These error-specific processes as well as enhanced attention because of metacognitive mismatch appear to be implicated.",
+      "score": {
+        "composite": 0.38740093357352,
+        "breakdown": {
+          "raw": {
+            "citations": 0.17627040096074675,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.04406760024018669,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Mental Processes",
+        "Psychomotor Performance",
+        "Reaction Time",
+        "Culture",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Biofeedback, Psychology"
+      ]
+    },
+    {
+      "rank": 17,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_19bf53de",
+      "doi": "10.3389/fpsyg.2020.01616",
+      "url": "https://doi.org/10.3389/fpsyg.2020.01616",
+      "openalex_id": null,
+      "pmid": "32848997",
+      "first_author": "Niessen",
+      "authors_display": "Niessen, C. et al.",
+      "year": 2020,
+      "title": "Stop Thinking: An Experience Sampling Study on Suppressing Distractive Thoughts at Work.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": null,
+      "species_evidence": [],
+      "citation_count": 4,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://www.frontiersin.org/articles/10.3389/fpsyg.2020.01616/pdf",
+      "tldr": null,
+      "abstract": "In modern work environments, it can be difficult for workers to avoid becoming distracted from their current task. This study investigates person-situation interactions to predict thought control activities (kind of self-control), which aim to stop distracting thoughts that enter the mind. Specifically, it was examined (1) how challenging work demands (time pressure, task complexity) activate workers' thought control to stop distractive thoughts (<i>n</i> <sub>level</sub> <sub>2</sub> = 143) and relate to the effort to do so (<i>n</i> <sub>level</sub> <sub>2</sub> = 91) in daily working life and (2) how these relationships differ according workers' general cognitive ability to suppress unwanted thoughts. To understand these person-situation interactions, an experience sampling study was combined with a laboratory task assessing the ability to suppress unwanted thoughts (think/no-think task). Multilevel modeling revealed that workers' engage more often and more intensively in thought control activities at a moderate level of time pressure but only when they had a higher general ability to suppress unwanted thoughts. For workers with a lower ability to suppress unwanted thoughts, increasing time pressure was negatively related to thought control activities, even at very low levels of time pressure. Thus, whether time pressure activates or hinders thought control depends on individuals' ability to suppress distractive thoughts.",
+      "score": {
+        "composite": 0.3866289627751649,
+        "breakdown": {
+          "raw": {
+            "citations": 0.09318251776732617,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.9333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.023295629441831542,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.13999999999999999,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 18,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_baf11fe9",
+      "doi": "10.1037/a0023214",
+      "url": "https://doi.org/10.1037/a0023214",
+      "openalex_id": null,
+      "pmid": "21517183",
+      "first_author": "Murray",
+      "authors_display": "Murray, B. et al.",
+      "year": 2011,
+      "title": "Effects of emotion and age on performance during a think/no-think memory task.",
+      "venue": "Psychology and aging",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 25,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Recent studies have demonstrated that young adults can voluntarily suppress information from memory when directed to. After learning novel word pairings to criterion, participants are shown individual words and instructed either to \"think\" about the associated word, or to put it out of mind entirely (\"no-think\"). When given a surprise cued recall test, participants typically show impaired recall for no-think words relative to think or \"control\" (un-manipulated) words. The present study investigated whether this controlled suppression effect persists in an aged population, and examined how the emotionality of the to-be-suppressed word affects suppression ability. Data from four experiments using the think/no-think task demonstrate that older and younger adults can suppress information when directed to (Experiment 1), and the age groups do not differ significantly in this ability. Experiments 2 through 4 demonstrate that both age groups can suppress words that are emotional (positive or negative valence) or neutral. The suppression effect also persists even if participants are tested using independent probe words that are semantically related to the target words but were not the studied cue words (Experiments 3 and 4). These data suggest that the cognitive functioning necessary to suppress information from memory is present in older adulthood, and that both emotional and neutral information can be successfully suppressed from memory.",
+      "score": {
+        "composite": 0.3604922880522967,
+        "breakdown": {
+          "raw": {
+            "citations": 0.18863581887585346,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.047158954718963364,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Humans",
+        "Analysis of Variance",
+        "Emotions",
+        "Cues",
+        "Memory",
+        "Paired-Associate Learning",
+        "Thinking",
+        "Decision Making",
+        "Neuropsychological Tests",
+        "Age Factors",
+        "Aging",
+        "Semantics",
+        "Adolescent",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Repression, Psychology"
+      ]
+    },
+    {
+      "rank": 19,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_065d2827",
+      "doi": "10.1002/hipo.20952",
+      "url": "https://doi.org/10.1002/hipo.20952",
+      "openalex_id": null,
+      "pmid": "21656873",
+      "first_author": "Depue",
+      "authors_display": "Depue, B., & Banich, M.",
+      "year": 2012,
+      "title": "Increased inhibition and enhancement of memory retrieval are associated with reduced hippocampal volume.",
+      "venue": "Hippocampus",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 10,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Putative control of encoding and retrieval processes have been linked to communication between the lateral prefrontal cortex (LPFC) and the hippocampus. Moreover, correlations between the LPFC (e.g., MFG) and hippocampus have predicted individuals' ability to inhibit memory retrieval. Anatomically, differences in volume of the hippocampus have been related to changes in long-term episodic memories. Although the relationship between these ideas is clear, few studies have examined the association of how anatomy may affect the role of control over brain regions involved in distint memory processes. The current study sought to examine hippocampal volume and its relationship to LPFC control over the hippocampus. Using an automated cortical/subcortical segmentation technique (FIRST) on brain imaging gata from the Think/No-Think task, we show that hippocampal volume is associated to changes in both enhancement and inhibitory processes of memory retrival.",
+      "score": {
+        "composite": 0.3580414008417888,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1388322700338219,
+            "venue": 0.4,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.034708067508455474,
+            "venue": 0.08000000000000002,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Prefrontal Cortex",
+        "Humans",
+        "Brain Mapping",
+        "Mental Recall",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Memory, Long-Term",
+        "Memory, Episodic",
+        "Inhibition, Psychological"
+      ]
+    },
+    {
+      "rank": 20,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_639d2bce",
+      "doi": "10.3389/fpsyg.2014.01396",
+      "url": "https://doi.org/10.3389/fpsyg.2014.01396",
+      "openalex_id": null,
+      "pmid": "25520692",
+      "first_author": "Nemeth",
+      "authors_display": "Nemeth, V. et al.",
+      "year": 2014,
+      "title": "The impact of intermediate-term alcohol abstinence on memory retrieval and suppression.",
+      "venue": "Frontiers in psychology",
+      "venue_tier": "specialty",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "phrase:human-positive",
+        "token:human (participants,patients)"
+      ],
+      "citation_count": 6,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC4251290",
+      "tldr": null,
+      "abstract": "<h4>Background</h4>The nature of episodic memory deficit in intermediate-term abstinence from alcohol in alcohol dependence (AD) is not yet clarified. Deficits in inhibitory control are commonly reported in substance use disorders. However, much less is known about cognitive control suppressing interference from memory. The Think/No-think (TNT) paradigm is a well established method to investigate inhibition of associative memory retrieval.<h4>Methods</h4>Thirty-six unmedicated patients with AD and 36 healthy controls (HCs) performed the TNT task. Thirty image-word pairs were trained up to a predefined accuracy level. Cued recall was examined in three conditions: Think (T) for items instructed to-be-remembered, No-think (NT) assessing the ability to suppress retrieval and Baseline (B) for general relational memory. Premorbid IQ, clinical variables and impulsivity measures were quantified.<h4>Results</h4>AD patients had a significantly increased demand for training. Baseline memory abilities and effect of practice on retrieval were not markedly different between the groups. We found a significant main effect of group (HC vs. AD) × condition (B, T, and NT) and a significant difference in mean NT-B scores for the two groups.<h4>Discussion</h4>AD and HC groups did not differ essentially in their baseline memory abilities. Also, the instruction to focus on retrieval improved episodic memory performance in both groups. Crucially, control participants were able to suppress relational words in the NT condition supporting the critical effect of cognitive control processes over inhibition of retrieval. In contrast to this, the ability of AD patients to suppress retrieval was found to be impaired.",
+      "score": {
+        "composite": 0.3314991926120757,
+        "breakdown": {
+          "raw": {
+            "citations": 0.1126634371149695,
+            "venue": 0.4,
+            "publisher": 0.6,
+            "recency": 0.5333333333333333,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.028165859278742374,
+            "venue": 0.08000000000000002,
+            "publisher": 0.06,
+            "recency": 0.08,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      }
+    },
+    {
+      "rank": 21,
+      "tier": "excluded",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_e291220a",
+      "doi": "10.3390/nu17152523",
+      "url": "https://doi.org/10.3390/nu17152523",
+      "openalex_id": null,
+      "pmid": "40806107",
+      "first_author": "Qi",
+      "authors_display": "Qi, Q. et al.",
+      "year": 2025,
+      "title": "Decreased Memory Suppression Ability in Restrained Eaters on Food Information-Evidence from ERP Experiment.",
+      "venue": "Nutrients",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 0,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC12348271",
+      "tldr": null,
+      "abstract": "<b>Background/Objectives:</b> Food-related memory influences appetite regulation, with memory inhibition potentially reducing cravings. While obesity is linked to inhibitory deficits, how restrained eating affects memory suppression in healthy-weight individuals remains unclear. This study examined the cognitive and neural mechanisms of food-memory suppression in young women. <b>Methods:</b> Forty-two female participants completed a think/no-think task with high-/low-calorie food cues while an EEG was recorded. Event-related potentials (ERPs) were assessed and time-frequency analyses (theta/beta oscillations) were performed. <b>Results:</b> Restrained eaters showed reduced memory control for both food types. The ERP analysis revealed significant N200 amplitude differences between think/no-think conditions (<i>p</i> = 0.03) and a significant interaction between food calories and think/no-think conditions (<i>p</i> = 0.032). Theta oscillations differed by group, food calories, and conditions (<i>p</i> = 0.038), while beta oscillations reflected food-cue processing variations. <b>Conclusions:</b> In conclusion, restrained eaters exhibit distinct neural processing and attenuated food-memory suppression. These results elucidate the neurocognitive mechanisms underlying dietary behavior, suggesting that targeted interventions for maladaptive eating could strengthen memory inhibition.",
+      "score": {
+        "composite": 0.1733333333333333,
+        "breakdown": {
+          "raw": {
+            "citations": 0.0,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.19999999999999996,
+            "relevance": 0.3333333333333333,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.029999999999999992,
+            "relevance": 0.08333333333333333,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "excluded_publisher",
+      "mesh_terms": [
+        "Humans",
+        "Electroencephalography",
+        "Feeding Behavior",
+        "Cues",
+        "Memory",
+        "Evoked Potentials",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Young Adult"
+      ]
+    }
+  ]
+}

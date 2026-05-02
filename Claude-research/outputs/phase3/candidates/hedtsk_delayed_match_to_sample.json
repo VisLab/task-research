@@ -1,0 +1,891 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T16:20:08",
+  "item": {
+    "kind": "task",
+    "id": "hedtsk_delayed_match_to_sample",
+    "name": "Delayed Match-to-Sample Task",
+    "aliases": [
+      "DMTS",
+      "DMS",
+      "Delayed Match-to-Sample"
+    ],
+    "category_id": "short_term_and_working_memory",
+    "short_definition": "Sample stimulus followed by a delay and then a probe or choice array; response indicates whether the probe matches the sample. Indexes short-term memory maintenance.",
+    "description": "The Delayed Match-to-Sample (DMTS) task consists of three phases: sample, delay, and choice. During the sample phase, a stimulus is presented. Following a delay period (0-30 seconds), the participant must identify which of several test stimuli matches the original sample. Memory demands are manipulated by varying delay duration or the number of choice alternatives. The task has been fundamental in primate neuroscience for identifying the neural substrates of working memory, particularly delay-period persistent activity in prefrontal cortex.",
+    "inclusion_test": {
+      "procedure": "A sample stimulus is presented, followed by a retention interval (delay), then a test stimulus; participants indicate whether the test matches the sample.",
+      "manipulation": "Delay duration; sample complexity; number of test alternatives; interference during delay.",
+      "measurement": "Accuracy (proportion correct); RT; decay function across delay intervals."
+    }
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 10,
+      "picked": 6,
+      "reserve": 0,
+      "excluded": 4,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {
+      "non_human_subjects": 4
+    }
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_0fa8c0d5",
+      "doi": "10.1523/jneurosci.2130-16.2016",
+      "url": "https://doi.org/10.1523/jneurosci.2130-16.2016",
+      "openalex_id": null,
+      "pmid": "28077711",
+      "first_author": "Daume",
+      "authors_display": "Daume, J. et al.",
+      "year": 2017,
+      "title": "Phase-Amplitude Coupling and Long-Range Phase Synchronization Reveal Frontotemporal Interactions during Visual Working Memory.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 145,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "It has been suggested that cross-frequency phase-amplitude coupling (PAC), particularly in temporal brain structures, serves as a neural mechanism for coordinated working memory storage. In this magnetoencephalography study, we show that during visual working memory maintenance, temporal cortex regions, which exhibit enhanced PAC, interact with prefrontal cortex via enhanced low-frequency phase synchronization. Healthy human participants were engaged in a visual delayed match-to-sample task with pictures of natural objects. During the delay period, we observed increased spectral power of beta (20-28 Hz) and gamma (40-94 Hz) bands as well as decreased power of theta/alpha band (7-9 Hz) oscillations in visual sensory areas. Enhanced PAC between the phases of theta/alpha and the amplitudes of beta oscillations was found in the left inferior temporal cortex (IT), an area known to be involved in visual object memory. Furthermore, the IT was functionally connected to the prefrontal cortex by increased low-frequency phase synchronization within the theta/alpha band. Together, these results point to a mechanism in which the combination of PAC and long-range phase synchronization subserves enhanced large-scale brain communication. They suggest that distant brain regions might coordinate their activity in the low-frequency range to engage local stimulus-related processing in higher frequencies via the combination of long-range, within-frequency phase synchronization and local cross-frequency PAC.<h4>Significance statement</h4>Working memory maintenance, like other cognitive functions, requires the coordinated engagement of brain areas in local and large-scale networks. However, the mechanisms by which spatially distributed brain regions share and combine information remain primarily unknown. We show that the combination of long-range, low-frequency phase synchronization and local cross-frequency phase-amplitude coupling might serve as a mechanism to coordinate memory processe",
+      "score": {
+        "composite": 0.592134657849331,
+        "breakdown": {
+          "raw": {
+            "citations": 0.28853863139732394,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.7333333333333333,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07213465784933099,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.10999999999999999,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Temporal Lobe",
+        "Humans",
+        "Electroencephalography",
+        "Cortical Synchronization",
+        "Magnetoencephalography",
+        "Random Allocation",
+        "Photic Stimulation",
+        "Memory, Short-Term",
+        "Visual Perception",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 2,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_44ec2c2f",
+      "doi": "10.1371/journal.pbio.0030299",
+      "url": "https://doi.org/10.1371/journal.pbio.0030299",
+      "openalex_id": null,
+      "pmid": "16104830",
+      "first_author": "Porrino",
+      "authors_display": "Porrino, L. et al.",
+      "year": 2005,
+      "title": "Facilitation of task performance and removal of the effects of sleep deprivation by an ampakine (CX717) in nonhuman primates.",
+      "venue": "PLoS biology",
+      "venue_tier": "flagship",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, U.S. Gov't, P.H.S.",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 114,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC1188239",
+      "tldr": null,
+      "abstract": "The deleterious effects of prolonged sleep deprivation on behavior and cognition are a concern in modern society. Persons at risk for impaired performance and health-related issues resulting from prolonged sleep loss would benefit from agents capable of reducing these detrimental effects at the time they are sleep deprived. Agents capable of improving cognition by enhancing brain activity under normal circumstances may also have the potential to reduce the harmful or unwanted effects of sleep deprivation. The significant prevalence of excitatory alpha-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid (AMPA) glutamatergic receptors in the brain provides a basis for implementing a class of drugs that could act to alter or remove the effects of sleep deprivation. The ampakine CX717 (Cortex Pharmaceuticals), a positive allosteric modulator of AMPA receptors, was tested for its ability to enhance performance of a cognitive, delayed match-to-sample task under normal circumstances in well-trained monkeys, as well as alleviate the detrimental effects of 30-36 h of sleep deprivation. CX717 produced a dose-dependent enhancement of task performance under normal alert testing conditions. Concomitant measures of regional cerebral metabolic rates for glucose (CMRglc) during the task, utilizing positron emission tomography, revealed increased activity in prefrontal cortex, dorsal striatum, and medial temporal lobe (including hippocampus) that was significantly enhanced over normal alert conditions following administration of CX717. A single night of sleep deprivation produced severe impairments in performance in the same monkeys, accompanied by significant alterations in task-related CMRglc in these same brain regions. However, CX717 administered to sleep-deprived monkeys produced a striking removal of the behavioral impairment and returned performance to above-normal levels even though animals were sleep deprived. Consistent with this recovery, CMRglc in all but one brain region",
+      "score": {
+        "composite": 0.5786799905327303,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2747199621309215,
+            "venue": 1.0,
+            "publisher": 0.6,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06867999053273037,
+            "venue": 0.2,
+            "publisher": 0.06,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Macaca mulatta",
+        "Sleep Deprivation",
+        "Disease Models, Animal",
+        "Receptors, AMPA",
+        "Nootropic Agents",
+        "Behavior, Animal",
+        "Memory, Short-Term",
+        "Task Performance and Analysis",
+        "Wakefulness",
+        "Dose-Response Relationship, Drug",
+        "Male",
+        "Conditioning, Psychological"
+      ]
+    },
+    {
+      "rank": 3,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_1b9711eb",
+      "doi": "10.1523/jneurosci.0421-12.2012",
+      "url": "https://doi.org/10.1523/jneurosci.0421-12.2012",
+      "openalex_id": null,
+      "pmid": "22956832",
+      "first_author": "Roux",
+      "authors_display": "Roux, F. et al.",
+      "year": 2012,
+      "title": "Gamma-band activity in human prefrontal cortex codes for the number of relevant items maintained in working memory.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Randomized Controlled Trial",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 241,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Previous studies in electrophysiology have provided consistent evidence for a relationship between neural oscillations in different frequency bands and the maintenance of information in working memory (WM). While the amplitude and cross-frequency coupling of neural oscillations have been shown to be modulated by the number of items retained during WM, interareal phase synchronization has been associated with the integration of distributed activity during WM maintenance. Together, these findings provided important insights into the oscillatory dynamics of cortical networks during WM. However, little is known about the cortical regions and frequencies that underlie the specific maintenance of behaviorally relevant information in WM. In the current study, we addressed this question with magnetoencephalography and a delayed match-to-sample task involving distractors in 25 human participants. Using spectral analysis and beamforming, we found a WM load-related increase in the gamma band (60-80 Hz) that was localized to the right intraparietal lobule and left Brodmann area 9 (BA9). WM-load related changes were also detected at alpha frequencies (10-14 Hz) in Brodmann area 6, but did not covary with the number of relevant WM-items. Finally, we decoded gamma-band source activity with a linear discriminant analysis and found that gamma-band activity in left BA9 predicted the number of target items maintained in WM. While the present data show that WM maintenance involves activity in the alpha and gamma band, our results highlight the specific contribution of gamma band delay activity in prefrontal cortex for the maintenance of behaviorally relevant items.",
+      "score": {
+        "composite": 0.5494490165230722,
+        "breakdown": {
+          "raw": {
+            "citations": 0.31779606609228866,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.4,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07944901652307217,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.06,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Prefrontal Cortex",
+        "Humans",
+        "Magnetoencephalography",
+        "Brain Mapping",
+        "Photic Stimulation",
+        "Memory, Short-Term",
+        "Psychomotor Performance",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Brain Waves"
+      ]
+    },
+    {
+      "rank": 4,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_6922106e",
+      "doi": "10.1523/jneurosci.19-01-00431.1999",
+      "url": "https://doi.org/10.1523/jneurosci.19-01-00431.1999",
+      "openalex_id": null,
+      "pmid": "9870971",
+      "first_author": "McAdams",
+      "authors_display": "McAdams, C., & Maunsell, J.",
+      "year": 1999,
+      "title": "Effects of attention on orientation-tuning functions of single neurons in macaque cortical area V4.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 833,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "We examined how attention affected the orientation tuning of 262 isolated neurons in extrastriate area V4 and 135 neurons in area V1 of two rhesus monkeys. The animals were trained to perform a delayed match-to-sample task in which oriented stimuli were presented in the receptive field of the neuron being recorded. On some trials the animals were instructed to pay attention to those stimuli, and on other trials they were instructed to pay attention to other stimuli outside the receptive field. In this way, orientation-tuning curves could be constructed from neuronal responses collected in two behavioral states: one in which those stimuli were attended by the animal and one in which those stimuli were ignored by the animal. We fit Gaussians to the neuronal responses to twelve different orientations for each behavioral state. Although attention enhanced the responses of V4 neurons (median 26% increase) and V1 neurons (median 8% increase), selectivity, as measured by the width of its orientation-tuning curve, was not systematically altered by attention. The effects of attention were consistent with a multiplicative scaling of the driven response to all orientations. We also found that attention did not cause systematic changes in the undriven activity of the neurons.",
+      "score": {
+        "composite": 0.5073581146995846,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3894324587983385,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.09735811469958462,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Visual Cortex",
+        "Neurons",
+        "Animals",
+        "Macaca mulatta",
+        "Linear Models",
+        "Orientation",
+        "Attention",
+        "Psychophysics",
+        "Male"
+      ]
+    },
+    {
+      "rank": 5,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_8f9fd41d",
+      "doi": "10.1523/jneurosci.3807-04.2004",
+      "url": "https://doi.org/10.1523/jneurosci.3807-04.2004",
+      "openalex_id": null,
+      "pmid": "15590925",
+      "first_author": "Schon",
+      "authors_display": "Schon, K. et al.",
+      "year": 2004,
+      "title": "Persistence of parahippocampal representation in the absence of stimulus input enhances long-term encoding: a functional magnetic resonance imaging study of subsequent memory after a delayed match-to-sample task.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, U.S. Gov't, P.H.S.",
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 149,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Recent theoretical models based on cellular processes in parahippocampal structures show that persistent neuronal spiking in the absence of stimulus input is important for encoding. The goal of this study was to examine in humans how sustained activity in the parahippocampal gyrus may underlie long-term encoding as well as active maintenance of novel information. The relationship between long-term encoding and active maintenance of novel information during brief memory delays was studied using functional magnetic resonance imaging (fMRI) in humans performing a delayed matching-to-sample (DMS) task and a post-scan subsequent recognition memory task of items encountered during DMS task performance. Multiple regression analyses revealed fMRI activity in parahippocampal structures associated with the active maintenance of trial-unique visual information during a brief memory delay. In addition to a role in active maintenance, we found that the subsequent memory for the sample stimuli as measured by the post-scan subsequent recognition memory task correlated with activity in the parahippocampal gyrus during the delay period. The results provide direct evidence that encoding mechanisms are engaged during brief memory delays when novel information is actively maintained. The relationship between active maintenance during the delay period and long-term subsequent memory is consistent with current theoretical models and experimental data that suggest that long-term encoding is enhanced by sustained parahippocampal activity.",
+      "score": {
+        "composite": 0.4825258813512686,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2901035254050744,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.0,
+            "relevance": 1.0,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.0725258813512686,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.0,
+            "relevance": 0.25,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Parahippocampal Gyrus",
+        "Temporal Lobe",
+        "Humans",
+        "Magnetic Resonance Imaging",
+        "Regression Analysis",
+        "Photic Stimulation",
+        "Cues",
+        "Memory",
+        "Task Performance and Analysis",
+        "Time Factors",
+        "Adolescent",
+        "Adult",
+        "Female",
+        "Male",
+        "Retention, Psychology"
+      ]
+    },
+    {
+      "rank": 6,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_4144b16a",
+      "doi": "10.1371/journal.pone.0004263",
+      "url": "https://doi.org/10.1371/journal.pone.0004263",
+      "openalex_id": null,
+      "pmid": "19173008",
+      "first_author": "Gross",
+      "authors_display": "Gross, H. et al.",
+      "year": 2009,
+      "title": "Number-based visual generalisation in the honeybee.",
+      "venue": "PloS one",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 115,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": "open",
+      "oa_url": "https://europepmc.org/articles/PMC2629729",
+      "tldr": null,
+      "abstract": "Although the numerical abilities of many vertebrate species have been investigated in the scientific literature, there are few convincing accounts of invertebrate numerical competence. Honeybees, Apis mellifera, by virtue of their other impressive cognitive feats, are a prime candidate for investigations of this nature. We therefore used the well-established delayed match-to-sample paradigm, to test the limits of honeybees' ability to match two visual patterns solely on the basis of the shared number of elements in the two patterns. Using a y-maze, we found that bees can not only differentiate between patterns containing two and three elements, but can also use this prior knowledge to differentiate three from four, without any additional training. However, bees trained on the two versus three task could not distinguish between higher numbers, such as four versus five, four versus six, or five versus six. Control experiments confirmed that the bees were not using cues such as the colour of the exact configuration of the visual elements, the combined area or edge length of the elements, or illusory contours formed by the elements. To our knowledge, this is the first report of number-based visual generalisation by an invertebrate.",
+      "score": {
+        "composite": 0.42380531069562044,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2752212427824818,
+            "venue": 0.7,
+            "publisher": 0.6,
+            "recency": 0.2,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06880531069562044,
+            "venue": 0.13999999999999999,
+            "publisher": 0.06,
+            "recency": 0.03,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Animals",
+        "Bees",
+        "Photic Stimulation",
+        "Orientation",
+        "Cues",
+        "Pattern Recognition, Visual",
+        "Visual Perception",
+        "Olfactory Perception",
+        "Generalization, Psychological"
+      ]
+    },
+    {
+      "rank": 7,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_64abdb61",
+      "doi": "10.1523/jneurosci.5641-10.2011",
+      "url": "https://doi.org/10.1523/jneurosci.5641-10.2011",
+      "openalex_id": null,
+      "pmid": "21430150",
+      "first_author": "Garrett",
+      "authors_display": "Garrett, D. et al.",
+      "year": 2011,
+      "title": "The importance of being variable.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 390,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "New work suggests that blood oxygen level-dependent (BOLD) signal variability can be a much more powerful index of human age than mean activation, and that older brains are actually less variable than younger brains. However, little is known of how BOLD variability and task performance may relate. In the current study, we examined BOLD variability in relation to age, and reaction time speed and consistency in healthy younger (20-30 years) and older (56-85 years) adults on three cognitive tasks (perceptual matching, attentional cueing, and delayed match-to-sample). Results indicated that younger, faster, and more consistent performers exhibited significantly higher brain variability across tasks, and showed greater variability-based regional differentiation compared with older, poorer-performing adults. Also, when we compared brain variability- and typical mean-based effects, the respective spatial patterns were essentially orthogonal across brain measures, and any regions that did overlap were largely opposite in directionality of effect. These findings help establish the functional basis of BOLD variability, and further support the statistical and spatial differentiation between BOLD variability and BOLD mean. We thus argue that the precise nature of relations between aging, cognition, and brain function is underappreciated by using mean-based brain measures exclusively.",
+      "score": {
+        "composite": 0.42139339143800053,
+        "breakdown": {
+          "raw": {
+            "citations": 0.34557356575200204,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.3333333333333333,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.08639339143800051,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.049999999999999996,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Humans",
+        "Oxygen",
+        "Magnetic Resonance Imaging",
+        "Data Interpretation, Statistical",
+        "Least-Squares Analysis",
+        "Cognition",
+        "Cues",
+        "Psychomotor Performance",
+        "Attention",
+        "Reaction Time",
+        "Aging",
+        "Adult",
+        "Aged",
+        "Aged, 80 and over",
+        "Middle Aged",
+        "Female",
+        "Male",
+        "Young Adult"
+      ]
+    },
+    {
+      "rank": 8,
+      "tier": "excluded",
+      "auto_role": "foundational",
+      "pub_id": "pub_08629954",
+      "doi": "10.1523/jneurosci.3878-07.2007",
+      "url": "https://doi.org/10.1523/jneurosci.3878-07.2007",
+      "openalex_id": null,
+      "pmid": "18160631",
+      "first_author": "Deadwyler",
+      "authors_display": "Deadwyler, S. et al.",
+      "year": 2007,
+      "title": "Systemic and nasal delivery of orexin-A (Hypocretin-1) reduces the effects of sleep deprivation on cognitive performance in nonhuman primates.",
+      "venue": "The Journal of neuroscience : the official journal of the Society for Neuroscience",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": false,
+      "species_evidence": [
+        "mesh:Animals (no Humans)"
+      ],
+      "citation_count": 188,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Hypocretin-1 (orexin-A) was administered to sleep-deprived (30-36 h) rhesus monkeys immediately preceding testing on a multi-image delayed match-to-sample (DMS) short-term memory task. The DMS task used multiple delays and stimulus images and effectively measures cognitive defects produced by sleep deprivation (Porrino et al., 2005). Two methods of administration of orexin-A were tested, intravenous injections (2.5-10.0 microg/kg, i.v.) and a novel method developed for nasal delivery via an atomizer spray mist to the nostrils (dose estimated 1.0 microg/kg). Results showed that orexin-A delivered via the intravenous and nasal routes significantly improved performance in sleep-deprived monkeys; however, the nasal delivery method was significantly more effective than the highest dose (10 microg/kg) of intravenous orexin-A tested. The improvement in performance by orexin-A was specific to trials classified as high versus low cognitive load as determined by performance difficulty under normal testing conditions. Except for the maximum intravenous dose (10 microg/kg), neither delivery method affected task performance in alert non-sleep-deprived animals. The improved performance in sleep-deprived animals was accompanied by orexin-A related alterations in local cerebral glucose metabolism (CMRglc) in specific brain regions shown previously to be engaged by the task and impaired by sleep deprivation (Porrino et al., 2005). Consistent with the differential effects on performance, nasal delivered orexin-A produced a more pronounced reversal of sleep deprivation induced changes in brain metabolic activity (CMRglc) than intravenous orexin-A. These findings provide strong evidence for the effectiveness of intranasal orexin-A in alleviating cognitive deficits produced by loss of sleep.",
+      "score": {
+        "composite": 0.3708710821630753,
+        "breakdown": {
+          "raw": {
+            "citations": 0.30348432865230124,
+            "venue": 0.3,
+            "publisher": 1.0,
+            "recency": 0.06666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07587108216307531,
+            "venue": 0.06,
+            "publisher": 0.1,
+            "recency": 0.01,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "exclusion_reason": "non_human_subjects",
+      "mesh_terms": [
+        "Cerebral Cortex",
+        "Animals",
+        "Macaca mulatta",
+        "Sleep Deprivation",
+        "Fluorodeoxyglucose F18",
+        "Glucose",
+        "Intracellular Signaling Peptides and Proteins",
+        "Neuropeptides",
+        "Sympathomimetics",
+        "Positron-Emission Tomography",
+        "Brain Mapping",
+        "Administration, Intranasal",
+        "Injections, Intravenous",
+        "Analysis of Variance",
+        "Behavior, Animal",
+        "Task Performance and Analysis",
+        "Psychomotor Performance",
+        "Cognition Disorders",
+        "Dose-Response Relationship, Drug",
+        "Male",
+        "Orexins"
+      ]
+    },
+    {
+      "rank": 9,
+      "tier": "picked",
+      "auto_role": "recent_primary",
+      "pub_id": "pub_4d834bdd",
+      "doi": "10.1088/1741-2552/aaaed7",
+      "url": "https://doi.org/10.1088/1741-2552/aaaed7",
+      "openalex_id": null,
+      "pmid": "29589592",
+      "first_author": "Hampson",
+      "authors_display": "Hampson, R. et al.",
+      "year": 2018,
+      "title": "Developing a hippocampal neural prosthetic to facilitate human memory encoding and recall.",
+      "venue": "Journal of neural engineering",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Research Support, U.S. Gov't, Non-P.H.S.",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 77,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Objective</h4>We demonstrate here the first successful implementation in humans of a proof-of-concept system for restoring and improving memory function via facilitation of memory encoding using the patient's own hippocampal spatiotemporal neural codes for memory. Memory in humans is subject to disruption by drugs, disease and brain injury, yet previous attempts to restore or rescue memory function in humans typically involved only nonspecific, modulation of brain areas and neural systems related to memory retrieval.<h4>Approach</h4>We have constructed a model of processes by which the hippocampus encodes memory items via spatiotemporal firing of neural ensembles that underlie the successful encoding of short-term memory. A nonlinear multi-input, multi-output (MIMO) model of hippocampal CA3 and CA1 neural firing is computed that predicts activation patterns of CA1 neurons during the encoding (sample) phase of a delayed match-to-sample (DMS) human short-term memory task.<h4>Main results</h4>MIMO model-derived electrical stimulation delivered to the same CA1 locations during the sample phase of DMS trials facilitated short-term/working memory by 37% during the task. Longer term memory retention was also tested in the same human subjects with a delayed recognition (DR) task that utilized images from the DMS task, along with images that were not from the task. Across the subjects, the stimulated trials exhibited significant improvement (35%) in both short-term and long-term retention of visual information.<h4>Significance</h4>These results demonstrate the facilitation of memory encoding which is an important feature for the construction of an implantable neural prosthetic to improve human memory.",
+      "score": {
+        "composite": 0.36806069568040767,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2522427827216307,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.8,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.06306069568040767,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.12,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Hippocampus",
+        "Humans",
+        "Electrodes, Implanted",
+        "Memory, Short-Term",
+        "Mental Recall",
+        "Psychomotor Performance",
+        "Neural Prostheses"
+      ]
+    },
+    {
+      "rank": 10,
+      "tier": "picked",
+      "auto_role": "key_review",
+      "pub_id": "pub_ec462d73",
+      "doi": "10.1001/archgenpsychiatry.2009.91",
+      "url": "https://doi.org/10.1001/archgenpsychiatry.2009.91",
+      "openalex_id": null,
+      "pmid": "19652121",
+      "first_author": "Minzenberg",
+      "authors_display": "Minzenberg, M. et al.",
+      "year": 2009,
+      "title": "Meta-analysis of 41 functional neuroimaging studies of executive function in schizophrenia.",
+      "venue": "Archives of general psychiatry",
+      "venue_tier": "unknown",
+      "publisher": null,
+      "publication_types": [
+        "Meta-Analysis",
+        "research-article",
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ],
+      "is_review": false,
+      "is_meta_analysis": true,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 825,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "<h4>Context</h4>Prefrontal cortical dysfunction is frequently reported in schizophrenia. It remains unclear whether this represents the coincidence of several prefrontal region- and process-specific impairments or a more unitary dysfunction in a superordinate cognitive control network. Whether these impairments are properly considered reflective of hypofrontality vs hyperfrontality remains unresolved.<h4>Objectives</h4>To test whether common nodes of the cognitive control network exhibit altered activity across functional neuroimaging studies of executive cognition in schizophrenia and to evaluate the direction of these effects.<h4>Data sources</h4>PubMed database.<h4>Study selection</h4>Forty-one English-language, peer-reviewed articles published prior to February 2007 were included. All reports used functional neuroimaging during executive function performance by adult patients with schizophrenia and reported whole-brain analyses in standard stereotactic space. Tasks primarily included the delayed match-to-sample, N-back, AX-CPT, and Stroop tasks.<h4>Data extraction</h4>Activation likelihood estimation modeling reported activation maxima as the center of a 3-dimensional gaussian function in the meta-analysis, with statistical thresholding and correction for multiple comparisons.<h4>Data synthesis</h4>In within-group analyses, healthy controls and patients activated a similarly distributed cortical-subcortical network, prominently including the dorsolateral prefrontal cortex (PFC), ventrolateral PFC, anterior cingulate cortex (ACC), and thalamus. In between-group analyses, patients showed reduced activation in the left dorsolateral PFC, rostral/dorsal ACC, left thalamus (with significant co-occurrence of these areas), and inferior/posterior cortical areas. Increased activation was observed in several midline cortical areas. Activation within groups varied modestly by task.<h4>Conclusions</h4>Healthy adults and schizophrenic patients activate a qualitatively similar",
+      "score": {
+        "composite": 0.36221860144219375,
+        "breakdown": {
+          "raw": {
+            "citations": 0.3888744057687751,
+            "venue": 0.3,
+            "publisher": 0.0,
+            "recency": 0.2,
+            "relevance": 0.5,
+            "review": 1.0
+          },
+          "weighted": {
+            "citations": 0.09721860144219377,
+            "venue": 0.06,
+            "publisher": 0.0,
+            "recency": 0.03,
+            "relevance": 0.125,
+            "review": 0.05
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Gyrus Cinguli",
+        "Mediodorsal Thalamic Nucleus",
+        "Prefrontal Cortex",
+        "Humans",
+        "Positron-Emission Tomography",
+        "Magnetic Resonance Imaging",
+        "Cognition Disorders",
+        "Schizophrenia",
+        "Neuropsychological Tests",
+        "Adult",
+        "Functional Laterality"
+      ]
+    }
+  ]
+}

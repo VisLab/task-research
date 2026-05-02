@@ -1,0 +1,152 @@
+{
+  "schema_version": "phase3_candidates_v1",
+  "generated": "2026-04-30T15:56:33",
+  "item": {
+    "kind": "process",
+    "id": "hed_in_group_out_group_processing",
+    "name": "In-group/out-group processing",
+    "aliases": [
+      {
+        "name": "intergroup processing"
+      }
+    ],
+    "category_id": "social_cognition_and_strategic_social_choice",
+    "definition": "Differential processing of members of one's own group versus other groups."
+  },
+  "run": {
+    "sources": [
+      "openalex",
+      "europepmc",
+      "semanticscholar"
+    ],
+    "passes": [
+      "all_years",
+      "recent",
+      "reviews"
+    ],
+    "stage_b": {
+      "seeds": 0,
+      "raw": 0,
+      "after_filters": 0,
+      "merged": 0
+    },
+    "filters": {
+      "species": "human_only_or_unknown",
+      "publication_types_stage_a": [
+        "JournalArticle",
+        "Review",
+        "Dataset",
+        "MetaAnalysis"
+      ],
+      "publication_types_stage_b": [
+        "journalarticle",
+        "review",
+        "metaanalysis",
+        "dataset"
+      ]
+    },
+    "tier_thresholds": {
+      "n_picked": 30,
+      "n_reserve": 30,
+      "drop_unknown_species": false,
+      "min_picked_score": null
+    },
+    "totals": {
+      "deduped": 1,
+      "picked": 1,
+      "reserve": 0,
+      "excluded": 0,
+      "landmarks_found": 0,
+      "landmarks_total": 0
+    },
+    "exclusion_reasons": {}
+  },
+  "candidates": [
+    {
+      "rank": 1,
+      "tier": "picked",
+      "auto_role": "foundational",
+      "pub_id": "pub_5a654076",
+      "doi": "10.1002/hbm.22133",
+      "url": "https://doi.org/10.1002/hbm.22133",
+      "openalex_id": null,
+      "pmid": "22807311",
+      "first_author": "Azevedo",
+      "authors_display": "Azevedo, R. et al.",
+      "year": 2013,
+      "title": "Their pain is not our pain: brain and autonomic correlates of empathic resonance with the pain of same and different race individuals.",
+      "venue": "Human brain mapping",
+      "venue_tier": "mainstream",
+      "publisher": null,
+      "publication_types": [
+        "Research Support, Non-U.S. Gov't",
+        "research-article",
+        "Journal Article"
+      ],
+      "is_review": false,
+      "is_meta_analysis": false,
+      "human_subject": true,
+      "species_evidence": [
+        "mesh:Humans"
+      ],
+      "citation_count": 134,
+      "influential_citation_count": null,
+      "fwci": null,
+      "cited_by_percentile_year": null,
+      "oa_status": null,
+      "oa_url": null,
+      "tldr": null,
+      "abstract": "Recent advances in social neuroscience research have unveiled the neurophysiological correlates of race and intergroup processing. However, little is known about the neural mechanisms underlying intergroup empathy. Combining event-related fMRI with measurements of pupil dilation as an index of autonomic reactivity, we explored how race and group membership affect empathy-related responses. White and Black subjects were presented with video clips depicting white, black, and unfamiliar violet-skinned hands being either painfully penetrated by a syringe or being touched by a Q-tip. Both hemodynamic activity within areas known to be involved in the processing of first and third-person emotional experiences of pain, i.e., bilateral anterior insula, and autonomic reactivity were greater for the pain experienced by own-race compared to that of other-race and violet models. Interestingly, greater implicit racial bias predicted increased activity within the left anterior insula during the observation of own-race pain relative to other-race pain. Our findings highlight the close link between group-based segregation and empathic processing. Moreover, they demonstrate the relative influence of culturally acquired implicit attitudes and perceived similarity/familiarity with the target in shaping emotional responses to others' physical pain.",
+      "score": {
+        "composite": 0.5060008523261644,
+        "breakdown": {
+          "raw": {
+            "citations": 0.2840034093046579,
+            "venue": 0.7,
+            "publisher": 1.0,
+            "recency": 0.4666666666666667,
+            "relevance": 0.5,
+            "review": 0.0
+          },
+          "weighted": {
+            "citations": 0.07100085232616447,
+            "venue": 0.13999999999999999,
+            "publisher": 0.1,
+            "recency": 0.06999999999999999,
+            "relevance": 0.125,
+            "review": 0.0
+          },
+          "stage_b_bump": 0.0,
+          "landmark_bonus": 0.0
+        }
+      },
+      "provenance": {
+        "sources": [
+          "europepmc"
+        ],
+        "stage_b_seed_pub_ids": []
+      },
+      "mesh_terms": [
+        "Brain",
+        "Autonomic Nervous System",
+        "Pupil",
+        "Humans",
+        "Pain",
+        "Oxygen",
+        "Pain Measurement",
+        "Brain Mapping",
+        "Physical Stimulation",
+        "Empathy",
+        "Individuality",
+        "Image Processing, Computer-Assisted",
+        "Adult",
+        "Female",
+        "Male",
+        "Young Adult",
+        "Racism",
+        "White People",
+        "Black People"
+      ]
+    }
+  ]
+}
