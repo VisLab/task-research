@@ -93,8 +93,8 @@
 
     "reference": {
       "type": "object",
-      "required": ["roles"],
-      "description": "Same shape as the reference object in process_details.schema.json. Most fields commonly null; only roles is strictly required.",
+      "required": ["roles", "ids", "oa_status"],
+      "description": "Same shape as the reference object in process_details.schema.json. Identifiers live in a nested 'ids' block (see id_set definition there); 'url' and 'pub_id' stay at the top level. Schema reorganised 2026-05-19; see .status/plan_2026-05-19_rec1_v2.md.",
       "properties": {
         "roles": {
           "type": "array",
@@ -110,14 +110,89 @@
         "volume": { "type": ["string", "null"] },
         "issue": { "type": ["string", "null"] },
         "pages": { "type": ["string", "null"] },
-        "doi": { "type": ["string", "null"] },
-        "openalex_id": { "type": ["string", "null"] },
-        "pmid": { "type": ["string", "null"] },
+        "ids": { "$ref": "#/definitions/id_set" },
         "url": { "type": ["string", "null"] },
+        "pub_id": { "type": ["string", "null"] },
+        "oa_status": { "$ref": "#/definitions/oa_status" },
+        "pdf_locations": {
+          "type": "array",
+          "description": "Discovered PDF locations; see process_details.schema.json#/definitions/pdf_location for the per-item shape. Populated by enrich_pdf_locations.py.",
+          "items": { "$ref": "#/definitions/pdf_location" }
+        },
+        "local_artifacts": { "$ref": "#/definitions/local_artifacts" },
         "citation_string": { "type": ["string", "null"] },
         "source": { "type": ["string", "null"] },
         "confidence": { "type": ["string", "null"] },
         "verified_on": { "type": ["string", "null"] }
+      }
+    },
+
+    "id_set": {
+      "type": "object",
+      "description": "Nested block of external identifiers; mirrors process_details.schema.json#/definitions/id_set. additionalProperties:false to catch typos.",
+      "additionalProperties": false,
+      "properties": {
+        "doi":         { "type": ["string", "null"] },
+        "openalex_id": { "type": ["string", "null"] },
+        "pmid":        { "type": ["string", "null"] },
+        "pmcid":       { "type": ["string", "null"] },
+        "s2_id":       { "type": ["string", "null"] },
+        "arxiv_id":    { "type": ["string", "null"] }
+      }
+    },
+
+    "oa_status": {
+      "type": "string",
+      "enum": [
+        "gold",
+        "hybrid",
+        "green",
+        "bronze",
+        "closed",
+        "diamond",
+        "unknown"
+      ],
+      "description": "Open-access status enum following OpenAlex's vocabulary, plus 'unknown' for refs not yet enriched. See process_details.schema.json#/definitions/oa_status for the design rationale around the bronze case."
+    },
+
+    "pdf_location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "source"],
+      "description": "A single known PDF location; mirrors process_details.schema.json#/definitions/pdf_location. See that schema for full field documentation.",
+      "properties": {
+        "url":     { "type": "string", "minLength": 1 },
+        "source":  { "type": "string" },
+        "version": { "type": ["string", "null"] },
+        "is_oa":   { "type": ["boolean", "null"] },
+        "license": { "type": ["string", "null"] }
+      }
+    },
+
+    "local_artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "On-disk PDF and/or Markdown acquired for this publication; mirrors process_details.schema.json#/definitions/local_artifacts. See that schema for the design rationale (independent licences per artifact).",
+      "properties": {
+        "pdf": { "$ref": "#/definitions/local_artifact_entry" },
+        "markdown": { "$ref": "#/definitions/local_artifact_entry" }
+      }
+    },
+
+    "local_artifact_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "source_type", "license"],
+      "description": "One acquired artifact; see process_details.schema.json#/definitions/local_artifact_entry for field documentation.",
+      "properties": {
+        "path":            { "type": "string", "minLength": 1 },
+        "source_url":      { "type": ["string", "null"] },
+        "source_type":     { "type": "string" },
+        "license":         { "type": "string" },
+        "acquired_on":     { "type": "string" },
+        "acquired_via":    { "type": ["string", "null"] },
+        "converter":       { "type": ["string", "null"] },
+        "is_publishable":  { "type": ["boolean", "null"] }
       }
     },
 

@@ -28,6 +28,8 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
+
+from reference_compat import ref_doi  # noqa: E402
 from identity import build_pub_id
 from triage_rules import (
     classify_venue,
@@ -82,7 +84,7 @@ def triage_ref(
     title = ref.get("title")
     venue = ref.get("venue") or ref.get("journal") or ""
     venue_type = ref.get("venue_type")
-    doi = ref.get("doi")
+    doi = ref_doi(ref)
     confidence = ref.get("confidence", "none")
     citation_string = ref.get("citation_string", "")
 

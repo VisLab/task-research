@@ -39,6 +39,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 from fos_map import fields_of_study_set
 from identity import build_pub_id
+from reference_compat import ref_doi, ref_pub_id
 from search_queries import build_plans_from_json, filter_plans_by_ids, POC_ITEM_IDS, ItemQueryPlan
 from normalize import Candidate, normalize_openalex, normalize_europepmc, normalize_s2
 from rank_and_select import (
@@ -370,10 +371,10 @@ def lookup_missing_landmarks(
     new_candidates: list[Candidate] = []
 
     for ref in hist_refs:
-        doi = (ref.get("doi") or "").lower().strip()
+        doi = (ref_doi(ref) or "").lower().strip()
         if not doi:
             continue
-        if doi in existing_dois or ref.get("pub_id", "") in existing_pubids:
+        if doi in existing_dois or (ref_pub_id(ref) or "") in existing_pubids:
             continue
 
         logger.info("landmark supplementary lookup: doi=%s", doi)
@@ -484,7 +485,7 @@ def main() -> None:
 
         hist_refs    = historical_map.get(plan.item_id, [])
         hist_pub_ids = {r["pub_id"] for r in hist_refs}
-        hist_dois    = {(r.get("doi") or "").lower() for r in hist_refs if r.get("doi")}
+        hist_dois    = {(ref_doi(r) or "").lower() for r in hist_refs if ref_doi(r)}
 
         candidates, stage_b_stats = run_item(
             item=plan,
@@ -550,7 +551,7 @@ def main() -> None:
         hist_hits = sum(
             1 for r in hist_refs
             if r["pub_id"] in all_cand_pub_ids
-            or (r.get("doi") and r["doi"].lower() in all_cand_dois)
+            or (ref_doi(r) and ref_doi(r).lower() in all_cand_dois)
         )
         n_picked = tier_summary["picked"]
         n_reserve = tier_summary["reserve"]

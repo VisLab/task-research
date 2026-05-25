@@ -19,6 +19,7 @@ from datetime import date
 from pathlib import Path
 
 from normalize import Candidate
+from reference_compat import ref_doi
 from search_queries import ItemQueryPlan
 from rank_and_select import composite_score
 
@@ -142,7 +143,7 @@ def _build_landmark_section(
     for lm in landmark_entries:
         citation = lm.get("citation", "?")
         pub_id   = lm.get("pub_id", "?")
-        doi      = lm.get("doi")
+        doi      = ref_doi(lm)
         found    = (pub_id in all_pub_ids) or (doi and doi.lower() in all_dois)
         status   = "YES" if found else "NOT FOUND \u2014 query may need broadening"
         lines.append(f"| {citation} | {pub_id} | {status} |")

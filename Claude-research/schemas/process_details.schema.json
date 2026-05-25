@@ -114,8 +114,8 @@
 
     "reference": {
       "type": "object",
-      "required": ["roles"],
-      "description": "Bibliographic reference. Many fields are commonly null in real-world data; only roles is strictly required at the schema level. Cross-checks against the publications.json store happen elsewhere.",
+      "required": ["roles", "ids", "oa_status"],
+      "description": "Bibliographic reference. Identifier fields (DOI / PMID / PMCID / OpenAlex / S2 / ArXiv) are grouped under a nested 'ids' block following the schema reorganisation of 2026-05-19 (see .status/plan_2026-05-19_rec1_v2.md). The 'url' field stays at the top level — it's a location, not an identifier. 'pub_id' is the content-addressed cross-repo key (built from lastname + year + title via identity.build_pub_id); it stays at the top level too because it's not an external handle.",
       "properties": {
         "roles": {
           "type": "array",
@@ -131,14 +131,110 @@
         "volume": { "type": ["string", "null"] },
         "issue": { "type": ["string", "null"] },
         "pages": { "type": ["string", "null"] },
-        "doi": { "type": ["string", "null"] },
-        "openalex_id": { "type": ["string", "null"] },
-        "pmid": { "type": ["string", "null"] },
+        "ids": { "$ref": "#/definitions/id_set" },
         "url": { "type": ["string", "null"] },
+        "pub_id": { "type": ["string", "null"] },
+        "oa_status": { "$ref": "#/definitions/oa_status" },
+        "pdf_locations": {
+          "type": "array",
+          "description": "Discovered PDF locations from OpenAlex / Unpaywall / Semantic Scholar. Populated by enrich_pdf_locations.py. Used by Phase 7 acquisition to choose the best available source. Optional; absent on refs not yet enriched.",
+          "items": { "$ref": "#/definitions/pdf_location" }
+        },
+        "local_artifacts": { "$ref": "#/definitions/local_artifacts" },
         "citation_string": { "type": ["string", "null"] },
         "source": { "type": ["string", "null"] },
         "confidence": { "type": ["string", "null"] },
         "verified_on": { "type": ["string", "null"] }
+      }
+    },
+
+    "id_set": {
+      "type": "object",
+      "description": "Nested block of external identifiers for a publication. Shape mirrors opencite's IDSet to keep cross-tool interop trivial. All fields optional; missing values are null. additionalProperties:false to catch typos in hand-edits.",
+      "additionalProperties": false,
+      "properties": {
+        "doi":         { "type": ["string", "null"] },
+        "openalex_id": { "type": ["string", "null"] },
+        "pmid":        { "type": ["string", "null"] },
+        "pmcid":       { "type": ["string", "null"] },
+        "s2_id":       { "type": ["string", "null"] },
+        "arxiv_id":    { "type": ["string", "null"] }
+      }
+    },
+
+    "oa_status": {
+      "type": "string",
+      "enum": [
+        "gold",
+        "hybrid",
+        "green",
+        "bronze",
+        "closed",
+        "diamond",
+        "unknown"
+      ],
+      "description": "Open-access status enum following OpenAlex's vocabulary, plus 'unknown' for refs not yet enriched. Distinct from 'is_oa' (a boolean) because 'bronze' (free-to-read but no open licence) is not redistributable and must not collapse into the same bucket as 'gold' (CC-BY hosted by publisher)."
+    },
+
+    "pdf_location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["url", "source"],
+      "description": "A single known PDF location for this publication. Shape mirrors opencite's PDFLocation. License is a normalised SPDX-style string (see code/literature_search/license_policy.py); version is OpenAlex's publishedVersion/acceptedVersion/submittedVersion enum.",
+      "properties": {
+        "url":     { "type": "string", "minLength": 1 },
+        "source":  {
+          "type": "string",
+          "description": "Where this URL came from. Free-form to allow new sources without schema bumps; conventional values: openalex, s2, unpaywall, pmc, biorxiv, medrxiv, arxiv, doi, elsevier_api, wiley_tdm, springer_api, manual_library."
+        },
+        "version": {
+          "type": ["string", "null"],
+          "description": "publishedVersion / acceptedVersion / submittedVersion (OpenAlex vocabulary), or null if unknown."
+        },
+        "is_oa":   { "type": ["boolean", "null"] },
+        "license": {
+          "type": ["string", "null"],
+          "description": "SPDX-style normalised licence (cc-by, cc-by-sa, cc-by-nc, cc-by-nc-sa, cc-by-nd, cc-by-nc-nd, cc0, public-domain, proprietary, unknown). See license_policy.normalise_license. null is allowed during partial enrichment but discouraged after; prefer 'unknown'."
+        }
+      }
+    },
+
+    "local_artifacts": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "On-disk artifacts (PDF and/or Markdown) acquired for this publication. PDF and Markdown carry independent licences because they may come from different source URLs (e.g. publisher PDF via library + CC-BY Markdown via PMC BioC). Optional; absent until something has been acquired.",
+      "properties": {
+        "pdf": { "$ref": "#/definitions/local_artifact_entry" },
+        "markdown": { "$ref": "#/definitions/local_artifact_entry" }
+      }
+    },
+
+    "local_artifact_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["path", "source_type", "license"],
+      "description": "One acquired artifact (PDF or Markdown). Path is workspace-relative (e.g. 'HED-PDFs/Smith_2008_x_abc12345.pdf'). is_publishable is derived from license via license_policy.is_publishable; downstream tooling MUST recompute rather than trust a stale stored value, so it's optional here as a cache.",
+      "properties": {
+        "path":            { "type": "string", "minLength": 1 },
+        "source_url":      { "type": ["string", "null"] },
+        "source_type":     {
+          "type": "string",
+          "description": "How this artifact was obtained. Conventional values: auto_openalex, auto_unpaywall, auto_s2, auto_pmc_bioc, manual_library, manual_conversion, pmc_bioc, markitdown, mistral. Free-form to allow future sources."
+        },
+        "license":         { "type": "string" },
+        "acquired_on":     { "type": "string", "description": "ISO date (YYYY-MM-DD)." },
+        "acquired_via":    {
+          "type": ["string", "null"],
+          "description": "auto | manual | null (legacy). Indicates whether the artifact was acquired by an automated script or by a curator action."
+        },
+        "converter":       {
+          "type": ["string", "null"],
+          "description": "Markdown only. Identifies which converter produced the file: pmc_bioc, markitdown, mistral, manual."
+        },
+        "is_publishable":  {
+          "type": ["boolean", "null"],
+          "description": "Cached value of license_policy.is_publishable(license). Optional; downstream tooling should recompute rather than trust this."
+        }
       }
     },
 
