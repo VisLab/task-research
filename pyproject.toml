@@ -45,6 +45,22 @@ test = [
     "coverage>=7.0.0",
     "pytest>=8.0.0",
 ]
+# PDF -> Markdown conversion (used by literature_search/convert.py).
+# marker-pdf is a layout-aware ML-based converter — much better than
+# markitdown for academic papers (preserves equations, tables, multi-
+# column layout), but heavier (first run downloads ~5 GB of model
+# weights to ~/.cache/marker).  GPU acceleration auto-detected.
+pdf = [
+    "marker-pdf>=1.0.0",
+]
+
+
+[tool.pytest.ini_options]
+# Register custom markers so unrecognised-marker warnings stay quiet.
+markers = [
+    "network: tests that hit a live network API; skip with -m 'not network'",
+    "slow: tests that import heavy dependencies or take noticeable wall time",
+]
 
 
 [tool.typos.files]
