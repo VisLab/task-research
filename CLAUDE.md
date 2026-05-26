@@ -14,9 +14,13 @@ For setup and how-to-run instructions, see the top-level `README.md`.
 
 A structured catalog of ~172 cognitive processes and ~103 experimental tasks,
 stored in `Claude-research/process_details.json` and
-`Claude-research/task_details.json`. The long-term goal is a
+`Claude-research/task_details.json`. A short-term goal is a
 systematically-searched reference list for each item, backed by a
 `publications.json` store and a local Zotero library.
+A second goal is to analyze the markdown versions of the papers and
+extract information about the tasks described and map it to the tasks
+and processes and possibly augment the tasks and/or processes to accommodate
+the tasks. The ultimate goal is to create task models to assist in HED annotation.
 
 Active workstream: **literature search** (Phases 1–9). See
 `Claude-research/instructions/literature_search_plan_2026-04-21.md` for the
@@ -186,11 +190,21 @@ do not always agree.
 
 ### Rule of thumb
 ```
-Read  workspace files  →  Read tool (Windows path)
-Write workspace files  →  Write or Edit tool (Windows path)
-Run code / system ops  →  bash (Linux path via mount)
-Temporary work         →  bash writes to .scratch/ (immediately visible)
+Read workspace files           →  Read tool (Windows path)
+Write workspace files          →  Write or Edit tool (Windows path)
+Run user's tests / scripts     →  DON'T — give the user a labelled
+                                   command and wait for output
+System ops (ls, wc, git)       →  bash (Linux path via mount)
+Temporary work                 →  bash writes to .scratch/ (immediately visible)
 ```
+
+The sandbox Python is not the user's `.venv`, the bash mount can serve
+truncated views of workspace files (including files Claude has not
+touched), and any pytest result obtained from inside the sandbox is
+not authoritative. The user runs everything locally in git bash with
+`.venv` active and pastes output back. Closing receipts for PR-D
+(2026-05-25) and PR-B (2026-05-26) both got bogged down because the
+agent substituted sandbox runs for real ones.
 
 ### Path translation
 The workspace root maps to the Linux mount as:
@@ -221,6 +235,22 @@ what is left for the next session.
 Also write a thinking/design summary to `.status/` for any non-trivial
 design decision, using the same date convention. These complement the session
 report and explain the *why* behind choices.
+
+---
+
+## Communicating during a session
+
+Label every shell command, code block, or diff Claude proposes for the
+user to run, and refer back by label. Stable conventions:
+
+- `Diagnostic A`, `Diagnostic B`, … for read-only investigations.
+- `Fix 1`, `Fix 2`, … for code changes.
+- `Command 1`, `Command 2`, … when the commands come from a doc.
+- `Step PR-X-Commit N` for git-workflow steps.
+
+One label per block, one command (or tight chunk) per label, one expected
+result. The user runs commands and pastes output; without labels, the
+conversation turns into "which thing did you mean?"
 
 ---
 
