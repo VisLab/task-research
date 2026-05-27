@@ -22,6 +22,12 @@ extract information about the tasks described and map it to the tasks
 and processes and possibly augment the tasks and/or processes to accommodate
 the tasks. The ultimate goal is to create task models to assist in HED annotation.
 
+With this in mind, try to avoid producing overly complex reports
+(clarity is important -- the tendency towards excessive verbiage is not appreciated).
+If you develop a multistep plan also include a descriptive title with each step
+and a clear and concise description of the purpose of the plan.
+Don't refer to something as step R11.3A21 and expect me to know what this is.
+
 Active workstream: **literature search** (Phases 1–9). See
 `Claude-research/instructions/literature_search_plan_2026-04-21.md` for the
 full plan.
