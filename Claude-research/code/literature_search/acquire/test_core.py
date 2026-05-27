@@ -21,6 +21,8 @@ _HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(_HERE))
 
 from core import (  # noqa: E402
+    artifact_dir,
+    canonical_artifact_filename,
     has_recorded_failure,
     iter_refs,
     record_failure,
@@ -281,3 +283,149 @@ class TestRecordFailure:
         )
         assert ref["local_artifacts"]["pdf"]["path"] == "HED-PDFs/Foo.pdf"
         assert ref["local_artifacts"]["markdown"]["path"] is None
+
+    def test_clears_success_fields_on_forced_re_acquire(self) -> None:
+        # A prior successful acquisition; a forced re-run fails and
+        # records the failure.  All success-only keys must be wiped so
+        # the slot reflects a clean failure state.  This is the
+        # symmetric of TestRecordSuccess.test_clears_failure_fields.
+        ref = {"local_artifacts": {"pdf": {
+            "path":           "HED-PDFs/OldFile.pdf",
+            "source_url":     "https://old.example.com/x.pdf",
+            "source_type":    "auto_openalex",
+            "license":        "cc-by",
+            "acquired_on":    "2025-12-01T00:00:00Z",
+            "acquired_via":   "auto",
+            "is_publishable": True,
+            "converter":      "pmc_bioc",
+        }}}
+        record_failure(
+            ref, "pdf",
+            tried=["openalex", "unpaywall"],
+            reason="forced re-acquire returned 404 from every source",
+            when="2026-05-27T12:00:00Z",
+        )
+        pdf = ref["local_artifacts"]["pdf"]
+        # Failure shape present:
+        assert pdf["path"]         is None
+        assert pdf["last_attempt"] == "2026-05-27T12:00:00Z"
+        assert pdf["attempts"]     == 1
+        assert pdf["tried"]        == ["openalex", "unpaywall"]
+        assert pdf["reason"].startswith("forced re-acquire")
+        # Every success-only key dropped:
+        for key in ("source_url", "source_type", "license", "acquired_on",
+                    "acquired_via", "is_publishable", "converter"):
+            assert key not in pdf, f"stale success key remained: {key}"
+
+
+class TestRecordSuccessIsPublishable:
+    """Optional ``is_publishable`` cache stamp."""
+
+    def test_is_publishable_not_set_when_kwarg_omitted(self) -> None:
+        # Default behaviour is unchanged: callers that don't supply
+        # is_publishable get an entry without that key.
+        ref: dict = {}
+        record_success(
+            ref, "pdf",
+            path="x.pdf", source_url="x", source_type="pmc", license="cc-by",
+            when="2026-05-27T12:00:00Z",
+        )
+        assert "is_publishable" not in ref["local_artifacts"]["pdf"]
+
+    def test_is_publishable_true_stamped(self) -> None:
+        ref: dict = {}
+        record_success(
+            ref, "pdf",
+            path="x.pdf", source_url="x", source_type="pmc", license="cc-by",
+            is_publishable=True, when="2026-05-27T12:00:00Z",
+        )
+        assert ref["local_artifacts"]["pdf"]["is_publishable"] is True
+
+    def test_is_publishable_false_stamped(self) -> None:
+        ref: dict = {}
+        record_success(
+            ref, "pdf",
+            path="x.pdf", source_url="x", source_type="pmc", license="cc-by-nc",
+            is_publishable=False, when="2026-05-27T12:00:00Z",
+        )
+        assert ref["local_artifacts"]["pdf"]["is_publishable"] is False
+
+
+# ---------------------------------------------------------------------------
+# Artifact filing helpers
+# ---------------------------------------------------------------------------
+
+class TestArtifactDir:
+
+    def test_pdf_directory(self) -> None:
+        assert artifact_dir(Path("/repo"), "pdf") == Path("/repo/HED-PDFs")
+
+    def test_markdown_directory_is_private(self) -> None:
+        # Auto-acquisition always writes to private; the public split
+        # is a separate publish step (plan v2 §4 D5).
+        assert (artifact_dir(Path("/repo"), "markdown")
+                == Path("/repo/HED-Markdown-private"))
+
+    def test_unknown_kind_raises(self) -> None:
+        try:
+            artifact_dir(Path("/repo"), "audio")  # type: ignore[arg-type]
+        except ValueError as exc:
+            assert "audio" in str(exc)
+        else:
+            raise AssertionError("expected ValueError")
+
+    def test_accepts_string_repo_root(self) -> None:
+        # The function coerces ``repo_root`` via ``Path(...)`` so a
+        # string from argparse works without forcing the caller to wrap.
+        assert artifact_dir("/repo", "pdf") == Path("/repo/HED-PDFs")  # type: ignore[arg-type]
+
+
+class TestCanonicalArtifactFilename:
+
+    def _ref(self) -> dict:
+        return {
+            "authors": "Fleming, S. M., & Lau, H. C.",
+            "year":    2014,
+            "title":   "How to measure metacognition",
+        }
+
+    def test_pdf_filename_shape(self) -> None:
+        name = canonical_artifact_filename(self._ref(), "pdf")
+        # build_pdf_filename pattern: <Last>_<Year>_<TitleCamel>_<hash8>.pdf
+        assert name.startswith("Fleming_2014_HowToMeasureMetacognition_")
+        assert name.endswith(".pdf")
+        # The trailing hash is 8 hex chars.
+        stem = name[:-4]
+        assert len(stem.split("_")[-1]) == 8
+
+    def test_markdown_filename_shares_stem_with_pdf(self) -> None:
+        ref = self._ref()
+        pdf = canonical_artifact_filename(ref, "pdf")
+        md  = canonical_artifact_filename(ref, "markdown")
+        assert pdf[:-4] == md[:-3]      # same stem, different extension
+        assert md.endswith(".md")
+
+    def test_handles_missing_fields(self) -> None:
+        # Empty ref still produces a filename rather than crashing.
+        # The underlying helpers substitute Anonymous / nodate /
+        # UntitledNonLatin.
+        name = canonical_artifact_filename({}, "pdf")
+        assert name.startswith("Anonymous_nodate_UntitledNonLatin_")
+        assert name.endswith(".pdf")
+
+    def test_first_author_split_on_comma(self) -> None:
+        # Catalog ``authors`` strings use "Last, First, & Other" form;
+        # the first comma-separated token is the first-author family
+        # name.
+        ref = {"authors": "Salamone, J. D., Correa, M., et al.",
+               "year": 2007, "title": "Effort-related functions"}
+        name = canonical_artifact_filename(ref, "pdf")
+        assert name.startswith("Salamone_2007_EffortRelatedFunctions_")
+
+    def test_unknown_kind_raises(self) -> None:
+        try:
+            canonical_artifact_filename(self._ref(), "audio")  # type: ignore[arg-type]
+        except ValueError as exc:
+            assert "audio" in str(exc)
+        else:
+            raise AssertionError("expected ValueError")

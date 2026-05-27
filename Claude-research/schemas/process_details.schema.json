@@ -212,10 +212,12 @@
     "local_artifact_entry": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["path", "source_type", "license"],
-      "description": "One acquired artifact (PDF or Markdown). Path is workspace-relative (e.g. 'HED-PDFs/Smith_2008_x_abc12345.pdf'). is_publishable is derived from license via license_policy.is_publishable; downstream tooling MUST recompute rather than trust a stale stored value, so it's optional here as a cache.",
+      "description": "One on-disk artifact OR a failure-record placeholder. Two shapes share the same slot: (1) Success: 'path' is a non-empty workspace-relative string (e.g. 'HED-PDFs/Smith_2008_x_abc12345.pdf'); 'source_type' and 'license' are required. is_publishable is a cached derivation of license; downstream tooling MUST recompute rather than trust a stale stored value, so it is optional here. (2) Failure (D-E2 locked 2026-05-27 — see .status/pr_e_execution_2026-05-26.md §3.5): 'path' is null and 'last_attempt' is required, accompanied by 'attempts', 'tried', and 'reason' so the auto-acquisition orchestrator can record that we tried and nothing landed. The if/then/else clause below enforces the two shapes.",
       "properties": {
-        "path":            { "type": "string", "minLength": 1 },
+        "path":            {
+          "type": ["string", "null"],
+          "description": "Workspace-relative artifact path, or null on a recorded failure."
+        },
         "source_url":      { "type": ["string", "null"] },
         "source_type":     {
           "type": "string",
@@ -234,7 +236,38 @@
         "is_publishable":  {
           "type": ["boolean", "null"],
           "description": "Cached value of license_policy.is_publishable(license). Optional; downstream tooling should recompute rather than trust this."
+        },
+        "last_attempt":    {
+          "type": "string",
+          "description": "Failure record only. ISO 8601 UTC timestamp of the most recent acquisition attempt."
+        },
+        "attempts":        {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Failure record only. Cumulative attempt count across re-runs."
+        },
+        "tried":           {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Failure record only. Source tags (e.g. 'openalex', 'unpaywall', 'pmc') visited on the most recent attempt."
+        },
+        "reason":          {
+          "type": "string",
+          "description": "Failure record only. Human-readable summary of why nothing landed."
         }
+      },
+      "if": {
+        "properties": { "path": { "type": "string" } },
+        "required": ["path"]
+      },
+      "then": {
+        "required": ["source_type", "license"],
+        "properties": {
+          "path": { "type": "string", "minLength": 1 }
+        }
+      },
+      "else": {
+        "required": ["last_attempt"]
       }
     },
 

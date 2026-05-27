@@ -182,17 +182,33 @@
     "local_artifact_entry": {
       "type": "object",
       "additionalProperties": false,
-      "required": ["path", "source_type", "license"],
-      "description": "One acquired artifact; see process_details.schema.json#/definitions/local_artifact_entry for field documentation.",
+      "description": "One acquired artifact OR a failure-record placeholder; see process_details.schema.json#/definitions/local_artifact_entry for full field documentation and the D-E2 design rationale (success/failure two-shape design locked 2026-05-27).",
       "properties": {
-        "path":            { "type": "string", "minLength": 1 },
+        "path":            { "type": ["string", "null"] },
         "source_url":      { "type": ["string", "null"] },
         "source_type":     { "type": "string" },
         "license":         { "type": "string" },
         "acquired_on":     { "type": "string" },
         "acquired_via":    { "type": ["string", "null"] },
         "converter":       { "type": ["string", "null"] },
-        "is_publishable":  { "type": ["boolean", "null"] }
+        "is_publishable":  { "type": ["boolean", "null"] },
+        "last_attempt":    { "type": "string" },
+        "attempts":        { "type": "integer", "minimum": 1 },
+        "tried":           { "type": "array", "items": { "type": "string" } },
+        "reason":          { "type": "string" }
+      },
+      "if": {
+        "properties": { "path": { "type": "string" } },
+        "required": ["path"]
+      },
+      "then": {
+        "required": ["source_type", "license"],
+        "properties": {
+          "path": { "type": "string", "minLength": 1 }
+        }
+      },
+      "else": {
+        "required": ["last_attempt"]
       }
     },
 
