@@ -360,11 +360,35 @@ class TestArtifactDir:
     def test_pdf_directory(self) -> None:
         assert artifact_dir(Path("/repo"), "pdf") == Path("/repo/HED-PDFs")
 
-    def test_markdown_directory_is_private(self) -> None:
-        # Auto-acquisition always writes to private; the public split
-        # is a separate publish step (plan v2 §4 D5).
+    def test_markdown_directory_defaults_to_private(self) -> None:
+        # Plan v2 §4 D5 amended 2026-05-28: Markdown routes at licence
+        # boundary.  When ``is_publishable`` isn't supplied the
+        # conservative default is private (the caller hasn't told us
+        # the licence policy says yes).
         assert (artifact_dir(Path("/repo"), "markdown")
                 == Path("/repo/HED-Markdown-private"))
+
+    def test_markdown_public_when_is_publishable_true(self) -> None:
+        # Explicit True from a caller that has run
+        # ``license_policy.is_publishable(license_stamp)`` routes the
+        # write into the committed public directory.
+        assert (artifact_dir(Path("/repo"), "markdown", is_publishable=True)
+                == Path("/repo/HED-Markdown-public"))
+
+    def test_markdown_private_when_is_publishable_false(self) -> None:
+        # Explicit False is symmetric with the default-private case;
+        # we test both to lock the boundary explicitly.
+        assert (artifact_dir(Path("/repo"), "markdown", is_publishable=False)
+                == Path("/repo/HED-Markdown-private"))
+
+    def test_pdf_ignores_is_publishable(self) -> None:
+        # The single HED-PDFs/ store is licence-agnostic — the
+        # maintainer stores reading copies even for proprietary papers.
+        # Passing any ``is_publishable`` value through must not change
+        # the directory.
+        for flag in (None, True, False):
+            assert (artifact_dir(Path("/repo"), "pdf", is_publishable=flag)
+                    == Path("/repo/HED-PDFs"))
 
     def test_unknown_kind_raises(self) -> None:
         try:

@@ -18,8 +18,10 @@ What's in here:
   record_success               Mutate ref to record a successful acquisition.
   record_failure               Mutate ref to record a failed attempt (path: null
                                plus diagnostic fields, per D-E2 locked 2026-05-27).
-  artifact_dir                 ``repo_root / "HED-PDFs"`` or
-                               ``repo_root / "HED-Markdown-private"`` for ``kind``.
+  artifact_dir                 ``repo_root / "HED-PDFs"`` for ``"pdf"``;
+                               ``HED-Markdown-public/`` or ``HED-Markdown-private/``
+                               for ``"markdown"`` depending on ``is_publishable``
+                               (plan v2 §4 D5 amended 2026-05-28).
   canonical_artifact_filename  Bare filename per ``identity.build_pdf_filename``
                                (D-E6 locked 2026-05-27); ``.md`` extension for
                                Markdown.
@@ -289,20 +291,47 @@ def record_failure(
 # Artifact filing
 # ---------------------------------------------------------------------------
 
-# Per plan v2 §4 D5 (decided 2026-05-19) and §3.4: PDFs land in
-# ``HED-PDFs/``; Markdowns land in ``HED-Markdown-private/`` on
-# acquisition.  A separate ``publish_markdown`` step (deferred follow-
-# up) moves licence-compliant Markdowns into ``HED-Markdown-public/``.
-# Auto-acquisition therefore only ever writes into the private dir
-# for Markdown.
-_ARTIFACT_DIRS: dict[ArtifactKind, str] = {
-    "pdf":      "HED-PDFs",
-    "markdown": "HED-Markdown-private",
-}
+# Per plan v2 §4 D5 (decided 2026-05-19; amended 2026-05-28 during PR-E
+# session 3): PDFs always land in ``HED-PDFs/`` (single store; the
+# licence stamp governs what may be derived from a PDF, but the PDF
+# itself is stored even for proprietary papers for the maintainer's
+# reading use).  Markdowns route at licence boundary on acquisition:
+#
+#     is_publishable=True   ->  HED-Markdown-public/   (committed)
+#     is_publishable=False  ->  HED-Markdown-private/  (gitignored)
+#     is_publishable=None   ->  HED-Markdown-private/  (conservative default)
+#
+# The directory placement is a cache of the catalog's ``is_publishable``
+# field, not a second source of truth.  ``publish_markdown.py`` is
+# re-scoped from "promote private to public" to a *reconcile* tool
+# (deferred to the plan §12 maintenance follow-up): it walks
+# ``HED-Markdown-public/`` against the current ``license_policy``,
+# moves no-longer-publishable files back to ``-private/``, and updates
+# the catalog.  See the dated amendment at plan v2 §4 D5.
+
+_PDF_DIR              = "HED-PDFs"
+_MARKDOWN_PUBLIC_DIR  = "HED-Markdown-public"
+_MARKDOWN_PRIVATE_DIR = "HED-Markdown-private"
 
 
-def artifact_dir(repo_root: Path, kind: ArtifactKind) -> Path:
+def artifact_dir(
+    repo_root: Path,
+    kind: ArtifactKind,
+    is_publishable: bool | None = None,
+) -> Path:
     """Return the directory under ``repo_root`` where ``kind`` lands.
+
+    For ``kind="pdf"``, ``is_publishable`` is ignored — the single
+    ``HED-PDFs/`` store is licence-agnostic.
+
+    For ``kind="markdown"``:
+        ``is_publishable=True``                -> ``HED-Markdown-public/``
+        ``is_publishable=False`` or ``None``   -> ``HED-Markdown-private/``
+
+    ``None`` defaults to the private location: when publishability isn't
+    known the conservative choice is to not publish.  Callers that have
+    computed ``license_policy.is_publishable(license)`` should pass the
+    explicit ``True`` / ``False``.
 
     Does not create the directory; callers should
     ``mkdir(parents=True, exist_ok=True)`` before writing.
@@ -310,9 +339,14 @@ def artifact_dir(repo_root: Path, kind: ArtifactKind) -> Path:
     Raises ``ValueError`` for unknown kinds (the caller is hitting an
     unimplemented code path, not a runtime data issue).
     """
-    if kind not in _ARTIFACT_DIRS:
-        raise ValueError(f"unknown artifact kind: {kind!r}")
-    return Path(repo_root) / _ARTIFACT_DIRS[kind]
+    root = Path(repo_root)
+    if kind == "pdf":
+        return root / _PDF_DIR
+    if kind == "markdown":
+        if is_publishable is True:
+            return root / _MARKDOWN_PUBLIC_DIR
+        return root / _MARKDOWN_PRIVATE_DIR
+    raise ValueError(f"unknown artifact kind: {kind!r}")
 
 
 def _first_author_family(authors_str: str | None) -> str | None:
