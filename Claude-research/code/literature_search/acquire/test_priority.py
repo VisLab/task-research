@@ -16,7 +16,13 @@ from pathlib import Path
 _HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(_HERE))
 
-from priority import classify_url, priority_key, walk_locations  # noqa: E402
+from priority import (  # noqa: E402
+    classify_url,
+    fetcher_for,
+    priority_key,
+    synthesize_candidates,
+    walk_locations,
+)
 
 
 # ---------------------------------------------------------------------------
@@ -72,6 +78,12 @@ class TestClassifyURL:
         assert classify_url("https://www.frontiersin.org/articles/10.3389/fpsyg.2011.00255/pdf") == "other"
         assert classify_url("http://citeseerx.ist.psu.edu/viewdoc/...") == "other"
 
+    def test_academic_commons(self) -> None:
+        # PR-F: AC needs its own tag so the orchestrator can route
+        # to the browser fetcher.
+        assert classify_url("https://academiccommons.columbia.edu/doi/10.7916/d8rv0nsn") == "ac"
+        assert classify_url("https://academiccommons.columbia.edu/doi/10.7916/d8rv0nsn/download") == "ac"
+
     def test_empty_and_invalid(self) -> None:
         assert classify_url("") == "other"
         assert classify_url(None) == "other"  # type: ignore[arg-type]
@@ -109,6 +121,20 @@ class TestPriorityKey:
         oa = priority_key(loc("https://repo.uni.edu/p.pdf", is_oa=True))
         non_oa = priority_key(loc("https://repo.uni.edu/q.pdf", is_oa=False))
         assert oa < non_oa
+
+    def test_ac_outranks_doi(self) -> None:
+        # PR-F: synthesized AC URLs must beat the bare doi.org resolver
+        # so the browser fetcher gets a shot before content negotiation.
+        ac = priority_key(loc("https://academiccommons.columbia.edu/doi/10.7916/x"))
+        doi = priority_key(loc("https://doi.org/10.7916/x"))
+        assert ac < doi
+
+    def test_ac_same_tier_as_other(self) -> None:
+        # AC sorts at the repository tier; stable-sort lets curators
+        # control which repository goes first via input order.
+        ac = priority_key(loc("https://academiccommons.columbia.edu/doi/10.7916/x"))
+        other = priority_key(loc("https://hdl.handle.net/x/y"))
+        assert ac[0] == other[0]
 
 
 # ---------------------------------------------------------------------------
@@ -215,3 +241,187 @@ class TestWalkLocations:
         entry = loc("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/")
         out = walk_locations([entry])
         assert out[0] is entry
+
+
+# ---------------------------------------------------------------------------
+# synthesize_candidates  (PR-F)
+# ---------------------------------------------------------------------------
+
+# AC DOI shared across these tests.  The 10.7916/ prefix is registered
+# exclusively to Columbia University Libraries — see priority.py
+# _AC_DOI_RESOLVER_RE.
+_AC_DOI = "10.7916/d8rv0nsn"
+_AC_DOI_URL = f"https://doi.org/{_AC_DOI}"
+_AC_LANDING_URL = f"https://academiccommons.columbia.edu/doi/{_AC_DOI}"
+
+
+class TestSynthesizeCandidates:
+
+    def test_empty_input(self) -> None:
+        assert synthesize_candidates(None) == []
+        assert synthesize_candidates([]) == []
+
+    def test_no_ac_doi_no_synthesis(self) -> None:
+        locs = [loc("https://doi.org/10.1038/nn1560")]
+        out = synthesize_candidates(locs)
+        assert out == locs
+        # Returns a fresh list, not the input itself.
+        assert out is not locs
+
+    def test_ac_doi_synthesises_landing_url(self) -> None:
+        locs = [loc(_AC_DOI_URL, source="openalex", license="cc-by")]
+        out = synthesize_candidates(locs)
+
+        assert len(out) == 2
+        synthetic = out[1]
+        assert synthetic["url"] == _AC_LANDING_URL
+        assert synthetic["source"] == "synthesized:ac"
+        assert synthetic["license"] == "cc-by"
+        assert synthetic["is_oa"] is True
+
+    def test_existing_ac_entry_blocks_synthesis(self) -> None:
+        # If we already have an AC URL (in any shape) the synthesis
+        # step does nothing.  Avoids redundant browser calls.
+        locs = [
+            loc(_AC_DOI_URL),
+            loc(f"{_AC_LANDING_URL}/download", source="manual"),
+        ]
+        out = synthesize_candidates(locs)
+        assert len(out) == 2
+        assert all("synthesized" not in (loc_.get("source") or "") for loc_ in out)
+
+    def test_inherits_version_and_license_from_source_doi_entry(self) -> None:
+        locs = [
+            loc(_AC_DOI_URL,
+                source="unpaywall",
+                version="acceptedManuscript",
+                license="cc-by-nc-nd",
+                is_oa=True),
+        ]
+        out = synthesize_candidates(locs)
+        synthetic = out[-1]
+        assert synthetic["version"] == "acceptedManuscript"
+        assert synthetic["license"] == "cc-by-nc-nd"
+
+    def test_only_one_synthesis_per_ref(self) -> None:
+        # Two AC DOIs (unusual) → at most one synthesis.
+        other_ac_doi_url = "https://doi.org/10.7916/abc123"
+        locs = [
+            loc(_AC_DOI_URL),
+            loc(other_ac_doi_url),
+        ]
+        out = synthesize_candidates(locs)
+        synthetics = [x for x in out if x.get("source") == "synthesized:ac"]
+        assert len(synthetics) == 1
+
+    def test_non_ac_doi_with_7916_lookalike_not_synthesised(self) -> None:
+        # 10.7916/ is the AC prefix; nothing else should trigger
+        # synthesis even if the URL shape rhymes.
+        locs = [
+            loc("https://doi.org/10.7916abc"),                # missing slash
+            loc("https://doi.org/10.7917/x"),                  # wrong prefix
+            loc("https://doi.org/10.7916/x?ref=y"),           # query rejected
+            loc("https://doi.org/10.7916/x/extra"),           # extra path rejected
+        ]
+        out = synthesize_candidates(locs)
+        assert out == locs
+        assert all(loc_.get("source") != "synthesized:ac" for loc_ in out)
+
+    def test_dx_doi_org_subdomain_synthesises(self) -> None:
+        # Historical dx.doi.org subdomain is still in some catalog rows.
+        locs = [loc(f"https://dx.doi.org/{_AC_DOI}")]
+        out = synthesize_candidates(locs)
+        assert any(loc_.get("source") == "synthesized:ac" for loc_ in out)
+
+    def test_non_dict_entries_ignored(self) -> None:
+        # Defensive: corrupt pdf_locations entries should not crash.
+        # synthesize_candidates preserves input order and identity, so
+        # the non-dict element passes through unchanged — filter for
+        # dicts before reading .source on the result.
+        locs = ["not a dict", loc(_AC_DOI_URL)]  # type: ignore[list-item]
+        out = synthesize_candidates(locs)
+        synthetics = [
+            x for x in out
+            if isinstance(x, dict) and x.get("source") == "synthesized:ac"
+        ]
+        assert len(synthetics) == 1
+
+    def test_input_not_mutated(self) -> None:
+        locs = [loc(_AC_DOI_URL)]
+        original_length = len(locs)
+        synthesize_candidates(locs)
+        assert len(locs) == original_length
+
+
+# ---------------------------------------------------------------------------
+# fetcher_for  (PR-F)
+# ---------------------------------------------------------------------------
+
+class TestFetcherFor:
+
+    def test_ac_routes_to_browser(self) -> None:
+        assert fetcher_for(loc(_AC_LANDING_URL)) == "browser"
+
+    def test_pmc_routes_to_plain(self) -> None:
+        assert fetcher_for(loc("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/")) == "plain"
+
+    def test_publisher_routes_to_plain(self) -> None:
+        assert fetcher_for(loc("https://www.frontiersin.org/x.pdf")) == "plain"
+
+    def test_doi_resolver_routes_to_plain(self) -> None:
+        # Bare doi.org needs content negotiation, not a browser.
+        assert fetcher_for(loc("https://doi.org/10.1038/nn1560")) == "plain"
+
+    def test_preprint_routes_to_plain(self) -> None:
+        assert fetcher_for(loc("https://arxiv.org/pdf/2104.12345.pdf")) == "plain"
+
+    def test_synthesised_ac_entry_routes_to_browser(self) -> None:
+        # End-to-end check: walk_locations -> synthesize -> fetcher_for
+        # all line up.
+        locs = [loc(_AC_DOI_URL)]
+        out = walk_locations(locs)
+        # The bare doi.org entry stays in the walk; the synthesised AC
+        # entry routes to the browser.
+        synthetic = [x for x in out if x.get("source") == "synthesized:ac"]
+        assert len(synthetic) == 1
+        assert fetcher_for(synthetic[0]) == "browser"
+
+    def test_non_dict_routes_to_plain(self) -> None:
+        assert fetcher_for("not a dict") == "plain"  # type: ignore[arg-type]
+        assert fetcher_for({}) == "plain"
+
+
+# ---------------------------------------------------------------------------
+# walk_locations integration with synthesis  (PR-F)
+# ---------------------------------------------------------------------------
+
+class TestWalkLocationsWithSynthesis:
+
+    def test_ac_doi_synthesises_and_ranks_before_bare_doi(self) -> None:
+        # The original input has only the bare doi.org entry.  After
+        # synthesis + sort, the AC landing URL must come ahead of the
+        # doi.org resolver — the bar PR-F's plan v2 §14 sets.
+        locs = [loc(_AC_DOI_URL)]
+        out = walk_locations(locs)
+        urls = [x["url"] for x in out]
+        assert urls == [_AC_LANDING_URL, _AC_DOI_URL]
+
+    def test_ac_synthesis_loses_to_pmc(self) -> None:
+        # AC sits at the repository tier; PMC still wins overall.
+        locs = [
+            loc(_AC_DOI_URL),
+            loc("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/"),
+        ]
+        out = walk_locations(locs)
+        assert classify_url(out[0]["url"]) == "pmc"
+
+    def test_no_synthesis_when_existing_ac_url_already_in_locations(self) -> None:
+        # Existing AC landing URL + AC-managed DOI → synthesise nothing.
+        locs = [
+            loc(_AC_DOI_URL),
+            loc(_AC_LANDING_URL, source="openalex"),
+        ]
+        out = walk_locations(locs)
+        # Both original entries make it through; no synthesised entry added.
+        urls = [x["url"] for x in out]
+        assert sorted(urls) == sorted([_AC_DOI_URL, _AC_LANDING_URL])

@@ -53,6 +53,15 @@ test = [
 pdf = [
     "marker-pdf>=1.0.0",
 ]
+# Browser-based fetcher for WAF-protected OA repositories (Columbia
+# Academic Commons and similar; see acquire/fetch_browser.py).
+# Playwright drives a headless Chromium so the WAF challenges
+# resolve and the meta-tag PDF URL becomes reachable.  After
+# `pip install -e ".[browser]"` run `playwright install chromium`
+# to fetch the browser binary (~150 MiB).
+browser = [
+    "playwright>=1.40.0",
+]
 
 
 [tool.pytest.ini_options]
@@ -60,6 +69,7 @@ pdf = [
 markers = [
     "network: tests that hit a live network API; skip with -m 'not network'",
     "slow: tests that import heavy dependencies or take noticeable wall time",
+    "browser: tests that launch a real Chromium via Playwright; skip with -m 'not browser'",
 ]
 
 

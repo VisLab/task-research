@@ -135,10 +135,19 @@ pip install -e .
 
 # Optional: dev tools (ruff, typos, mdformat) and test tools (pytest, coverage)
 pip install -e ".[dev,test]"
+
+# Optional: browser-based fetcher (Playwright + headless Chromium) for
+# WAF-protected OA repositories like Columbia Academic Commons.  After
+# the pip install, fetch the Chromium binary (~150 MiB):
+pip install -e ".[browser]"
+playwright install chromium
 ```
 
 The runtime dependencies (`requests`, `jsonschema`) are declared in
-`pyproject.toml` and pulled in by `pip install -e .`.
+`pyproject.toml` and pulled in by `pip install -e .`.  The `[pdf]`
+and `[browser]` extras pull in heavier optional dependencies
+(marker-pdf for PDF→Markdown conversion; Playwright for the browser
+fetcher used by `acquire/fetch_browser.py`).
 
 To verify the install:
 
