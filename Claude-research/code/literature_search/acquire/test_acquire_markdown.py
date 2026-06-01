@@ -879,3 +879,277 @@ class TestMainIntegration:
                     bioc_fn=_empty_callable_must_not_run,
                     convert_fn=_empty_callable_must_not_run)
         assert rc == 2
+
+
+# ---------------------------------------------------------------------------
+# PR-G: BioC-path image handling (plan v2 §13, locked 2026-05-30)
+# ---------------------------------------------------------------------------
+
+def _bioc_with_figures(*figures: tuple[str, str],
+                       license: str | None = "CC-BY",
+                       pmcid: str = "PMC4097944") -> dict:
+    """Build a BioC dict whose first document carries figure passages.
+
+    Each ``(figure_id, filename)`` tuple becomes a passage with
+    ``infons.id`` and ``infons.file`` set so the vendored
+    ``extract_figure_files`` picks it up.  Filename must have an
+    image extension (`.jpg`, `.png`, etc.) per
+    ``vendored.opencite.pmc_convert._is_image_file``.
+    """
+    infons: dict = {"journal-title": "Frontiers in Human Neuroscience"}
+    if license is not None:
+        infons["license"] = license
+    passages: list[dict] = [{
+        "infons": {"section_type": "TITLE", "type": "front"},
+        "text": "How to measure metacognition",
+    }]
+    for fig_id, fig_filename in figures:
+        passages.append({
+            "infons": {"id": fig_id, "file": fig_filename,
+                       "type": "fig_caption"},
+            "text": f"Caption for {fig_id}",
+        })
+    return {
+        "documents": [{"id": "test", "infons": infons, "passages": passages}],
+        "source": "PMC",
+        "_pmcid": pmcid,
+        "_source": "pmc_bioc",
+    }
+
+
+def _assets_dir_for(result_dest: Path) -> Path:
+    """Compute the assets-dir path for a Markdown destination."""
+    return result_dest.parent / f"{result_dest.stem}.assets"
+
+
+class TestAttemptOneRefImages:
+    """BioC path: bioc_fn called with images_dir; image bytes fetched
+    via image_fetch_fn; assets dir written only when at least one
+    image lands."""
+
+    def test_bioc_fn_called_with_assets_dirname(self, tmp_path: Path) -> None:
+        # Capture bioc_fn call and confirm the images_dir kwarg matches
+        # the canonical Markdown filename's stem + ".assets".
+        ref = _ref(pmcid="PMC4097944", doi=POC_FLEMING)
+        bioc_q = _queue(FAKE_MD_BIOC)
+        M.attempt_one_ref(
+            ref, repo_root=tmp_path, write=True, bioc_only=False,
+            cache_dir=tmp_path / "cache",
+            lookup_fn=_queue(_bioc_with_figures()),  # no figures
+            bioc_fn=bioc_q,
+            convert_fn=_empty_callable_must_not_run,
+            image_fetch_fn=_empty_callable_must_not_run,
+        )
+        _args, kwargs = bioc_q.calls[0]
+        assert "images_dir" in kwargs
+        # Canonical Markdown filename for the Fleming-shaped ref starts
+        # with "Fleming_2014_…" and ends with ".md"; images_dir is the
+        # stem + ".assets".
+        assert kwargs["images_dir"].startswith("Fleming_2014_")
+        assert kwargs["images_dir"].endswith(".assets")
+        # No "/" or "\" — bioc_to_markdown joins with "/" itself.
+        assert "/" not in kwargs["images_dir"]
+        assert "\\" not in kwargs["images_dir"]
+
+    def test_no_figures_no_assets_dir(self, tmp_path: Path) -> None:
+        ref = _ref(pmcid="PMC4097944", doi=POC_FLEMING)
+        result = M.attempt_one_ref(
+            ref, repo_root=tmp_path, write=True, bioc_only=False,
+            cache_dir=tmp_path / "cache",
+            lookup_fn=_queue(_bioc_with_figures()),  # no figures
+            bioc_fn=_queue(FAKE_MD_BIOC),
+            convert_fn=_empty_callable_must_not_run,
+            image_fetch_fn=_empty_callable_must_not_run,
+        )
+        assert result.kind == "success"
+        assert not _assets_dir_for(result.dest_path).exists()
+
+    def test_all_fetches_succeed_writes_assets_dir(self, tmp_path: Path) -> None:
+        ref = _ref(pmcid="PMC4097944", doi=POC_FLEMING)
+        bioc = _bioc_with_figures(("F1", "gr1.jpg"), ("F2", "gr2.png"))
+        fetched = {"gr1.jpg": b"\xff\xd8\xff\xe0JPEG1",
+                   "gr2.png": b"\x89PNG\r\n\x1a\nPNG2"}
+
+        def fake_fetch(pmcid: str, filename: str) -> bytes | None:
+            return fetched.get(filename)
+
+        result = M.attempt_one_ref(
+            ref, repo_root=tmp_path, write=True, bioc_only=False,
+            cache_dir=tmp_path / "cache",
+            lookup_fn=_queue(bioc),
+            bioc_fn=_queue(FAKE_MD_BIOC),
+            convert_fn=_empty_callable_must_not_run,
+            image_fetch_fn=fake_fetch,
+        )
+        assert result.kind == "success"
+        assets = _assets_dir_for(result.dest_path)
+        assert assets.exists()
+        assert (assets / "gr1.jpg").read_bytes() == fetched["gr1.jpg"]
+        assert (assets / "gr2.png").read_bytes() == fetched["gr2.png"]
+
+    def test_all_fetches_fail_no_assets_dir(self, tmp_path: Path) -> None:
+        # All image fetches return None → no assets dir created,
+        # but the .md still lands as a success.
+        ref = _ref(pmcid="PMC4097944", doi=POC_FLEMING)
+        bioc = _bioc_with_figures(("F1", "gr1.jpg"))
+
+        def fail_fetch(pmcid: str, filename: str) -> bytes | None:
+            return None
+
+        result = M.attempt_one_ref(
+            ref, repo_root=tmp_path, write=True, bioc_only=False,
+            cache_dir=tmp_path / "cache",
+            lookup_fn=_queue(bioc),
+            bioc_fn=_queue(FAKE_MD_BIOC),
+            convert_fn=_empty_callable_must_not_run,
+            image_fetch_fn=fail_fetch,
+        )
+        assert result.kind == "success"
+        assert not _assets_dir_for(result.dest_path).exists()
+        # The .md was still written.
+        assert result.dest_path.exists()
+
+    def test_partial_failure_writes_only_successful_images(self,
+                                                            tmp_path: Path) -> None:
+        ref = _ref(pmcid="PMC4097944", doi=POC_FLEMING)
+        bioc = _bioc_with_figures(("F1", "gr1.jpg"), ("F2", "gr2.jpg"))
+
+        def selective_fetch(pmcid: str, filename: str) -> bytes | None:
+            return b"OK1" if filename == "gr1.jpg" else None
+
+        result = M.attempt_one_ref(
+            ref, repo_root=tmp_path, write=True, bioc_only=False,
+            cache_dir=tmp_path / "cache",
+            lookup_fn=_queue(bioc),
+            bioc_fn=_queue(FAKE_MD_BIOC),
+            convert_fn=_empty_callable_must_not_run,
+            image_fetch_fn=selective_fetch,
+        )
+        assets = _assets_dir_for(result.dest_path)
+        assert assets.exists()
+        assert (assets / "gr1.jpg").read_bytes() == b"OK1"
+        assert not (assets / "gr2.jpg").exists()
+
+    def test_image_fetch_fn_called_with_raw_pmcid_and_filename(self,
+                                                                tmp_path: Path) -> None:
+        # We pass pmcid_raw (the input string) — fetch_image normalises
+        # internally.  Filename is whatever the BioC document carries.
+        ref = _ref(pmcid="pmc 4097944", doi=POC_FLEMING)  # non-canonical on purpose
+        bioc = _bioc_with_figures(("F1", "gr1.jpg"))
+        seen: list[tuple] = []
+
+        def capturing_fetch(pmcid: str, filename: str) -> bytes | None:
+            seen.append((pmcid, filename))
+            return b"OK"
+
+        M.attempt_one_ref(
+            ref, repo_root=tmp_path, write=True, bioc_only=False,
+            cache_dir=tmp_path / "cache",
+            lookup_fn=_queue(bioc),
+            bioc_fn=_queue(FAKE_MD_BIOC),
+            convert_fn=_empty_callable_must_not_run,
+            image_fetch_fn=capturing_fetch,
+        )
+        assert seen == [("pmc 4097944", "gr1.jpg")]
+
+    def test_pdf_fallback_path_does_not_call_image_fetch_fn(self,
+                                                             tmp_path: Path) -> None:
+        # marker-pdf path is unchanged by PR-G — no image fetching,
+        # no assets dir.  The injected image_fetch_fn must NOT be
+        # called.  Salamone-shaped ref: no pmcid, PDF on disk.
+        pdf_path = tmp_path / "HED-PDFs" / "Salamone_test.pdf"
+        pdf_path.parent.mkdir(parents=True, exist_ok=True)
+        pdf_path.write_bytes(b"%PDF-1.4")
+        ref = _ref(
+            pdf_local={"path": "HED-PDFs/Salamone_test.pdf", "license": "unknown"},
+        )
+        result = M.attempt_one_ref(
+            ref, repo_root=tmp_path, write=True, bioc_only=False,
+            cache_dir=tmp_path / "cache",
+            lookup_fn=_empty_callable_must_not_run,
+            bioc_fn=_empty_callable_must_not_run,
+            convert_fn=_queue(FAKE_MD_PDF),
+            image_fetch_fn=_empty_callable_must_not_run,  # would crash if called
+        )
+        assert result.kind == "success"
+        assert result.converter == "marker-pdf"
+        assert not _assets_dir_for(result.dest_path).exists()
+
+
+class TestMainImagesEndToEnd:
+    """End-to-end via main(): image_fetch_fn threads through and the
+    assets dir lands next to the Markdown in HED-Markdown-public/."""
+
+    def test_main_threads_image_fetch_fn_and_writes_assets(self,
+                                                            tmp_path: Path) -> None:
+        ref = _ref(pmcid="PMC4097944", doi=POC_FLEMING)
+        ws = _make_workspace(
+            tmp_path,
+            processes=[{"process_id": "hed_test", "references": [ref]}],
+            tasks=[],
+        )
+        bioc = _bioc_with_figures(("F1", "gr1.jpg"))
+
+        def fake_fetch(pmcid: str, filename: str) -> bytes | None:
+            return b"\xff\xd8\xff\xe0JPEG"
+
+        rc = M.main(
+            ["--mode", "poc", "--workspace", str(ws), "--write"],
+            lookup_fn=_queue(bioc),
+            bioc_fn=_queue(FAKE_MD_BIOC),
+            convert_fn=_empty_callable_must_not_run,
+            image_fetch_fn=fake_fetch,
+        )
+        assert rc == 0
+        # Find the Markdown and confirm its sibling assets dir exists.
+        mds = list((tmp_path / "HED-Markdown-public").glob("*.md"))
+        assert len(mds) == 1
+        md_path = mds[0]
+        assets = md_path.parent / f"{md_path.stem}.assets"
+        assert assets.exists()
+        assert (assets / "gr1.jpg").read_bytes() == b"\xff\xd8\xff\xe0JPEG"
+
+
+# ---------------------------------------------------------------------------
+# PR-G: _write_markdown_with_assets unit tests
+# ---------------------------------------------------------------------------
+
+class TestWriteMarkdownWithAssets:
+    """Direct tests on the I/O primitive that backs _file_markdown."""
+
+    def test_writes_md_with_no_images_no_assets_dir(self, tmp_path: Path) -> None:
+        dest = tmp_path / "out.md"
+        M._write_markdown_with_assets("hello\n", {}, dest)
+        assert dest.read_text(encoding="utf-8") == "hello\n"
+        assert not (tmp_path / "out.assets").exists()
+
+    def test_writes_md_and_assets_when_images_present(self,
+                                                       tmp_path: Path) -> None:
+        dest = tmp_path / "out.md"
+        images = {"a.png": b"\x89PNG", "b.jpg": b"\xff\xd8\xff"}
+        M._write_markdown_with_assets("hi\n", images, dest)
+        assert dest.read_text(encoding="utf-8") == "hi\n"
+        assets = tmp_path / "out.assets"
+        assert assets.exists()
+        assert (assets / "a.png").read_bytes() == b"\x89PNG"
+        assert (assets / "b.jpg").read_bytes() == b"\xff\xd8\xff"
+
+    def test_skips_non_bytes_values_silently(self, tmp_path: Path) -> None:
+        # Defensive: a None / str sneaks into the images dict.  The
+        # helper writes only the bytes-shaped entries and does not
+        # crash.
+        dest = tmp_path / "out.md"
+        images = {"good.png": b"PNG", "bad.png": None,  # type: ignore[dict-item]
+                  "also_bad.png": "not bytes"}           # type: ignore[dict-item]
+        M._write_markdown_with_assets("text\n", images, dest)
+        assets = tmp_path / "out.assets"
+        assert (assets / "good.png").exists()
+        assert not (assets / "bad.png").exists()
+        assert not (assets / "also_bad.png").exists()
+
+    def test_does_not_create_empty_assets_dir(self, tmp_path: Path) -> None:
+        # Dict with only non-bytes entries → no directory created.
+        dest = tmp_path / "out.md"
+        images = {"bad.png": None}  # type: ignore[dict-item]
+        M._write_markdown_with_assets("text\n", images, dest)
+        assert not (tmp_path / "out.assets").exists()

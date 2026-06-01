@@ -114,10 +114,13 @@ from core import (  # noqa: E402
 from priority import classify_url  # noqa: E402
 
 # Sibling-module imports (live in literature_search/).
-from clients.pmc import lookup_by_pmcid  # noqa: E402
+from clients.pmc import fetch_image, lookup_by_pmcid  # noqa: E402
 from convert import convert_pdf  # noqa: E402
 from license_policy import is_publishable, normalise_license  # noqa: E402
-from vendored.opencite.pmc_convert import bioc_to_markdown  # noqa: E402
+from vendored.opencite.pmc_convert import (  # noqa: E402
+    bioc_to_markdown,
+    extract_figure_files,
+)
 
 
 logger = logging.getLogger(__name__)
@@ -262,13 +265,63 @@ def _pmc_landing_url(bioc: dict, fallback_pmcid: str) -> str:
 # ---------------------------------------------------------------------------
 
 LookupFn = Callable[[str, Path], "dict | None"]
-BiocFn   = Callable[[dict], str]
+# PR-G: BiocFn now accepts an optional ``images_dir`` keyword that
+# the BioC path passes (``<basename>.assets``).  Loosened to
+# ``Callable[..., str]`` so the type signature does not force every
+# caller / mock to declare the kwarg.
+BiocFn   = Callable[..., str]
 ConvertFn = Callable[[str], str]
+# PR-G: image-bytes fetcher; ``None`` on any failure (the caller
+# logs and skips the image).  Production callable is
+# :func:`clients.pmc.fetch_image`.
+ImageFetchFn = Callable[..., "bytes | None"]
 
 
 # ---------------------------------------------------------------------------
 # Per-ref attempt
 # ---------------------------------------------------------------------------
+
+def _write_markdown_with_assets(
+    md_text: str,
+    images: dict[str, bytes],
+    dest_md_path: Path,
+) -> None:
+    """Write ``md_text`` to ``dest_md_path``; if ``images`` is
+    non-empty, also create ``<basename>.assets/`` alongside and drop
+    each image inside.
+
+    PR-G (D-G1, D-G9 locked 2026-05-30):
+      *  The ``.md`` is always written (the orchestrator's success
+         path needs the file on disk).
+      *  ``<basename>.assets/`` is created **only** when at least
+         one image actually lands.  Empty / missing image dict ⇒ no
+         directory created.
+      *  Asset filenames come straight from the image-dict keys
+         (figure filenames from the BioC document); the function
+         does not rename, transcode, or rewrite.
+
+    Defensive: skips dict entries whose values are not non-empty
+    ``bytes`` / ``bytearray`` — a missing-image stub like
+    ``None`` should never reach this helper but if it does we'd
+    rather quietly skip than write a zero-byte file.
+    """
+    dest_md_path.write_text(md_text, encoding="utf-8")
+    if not images:
+        return
+    written = 0
+    assets_dir = dest_md_path.parent / f"{dest_md_path.stem}.assets"
+    for filename, blob in images.items():
+        if not isinstance(blob, (bytes, bytearray)) or not blob:
+            continue
+        if not assets_dir.exists():
+            # Create the dir lazily so a dict full of unusable blobs
+            # does not leave an empty <basename>.assets/ behind.
+            assets_dir.mkdir(parents=True, exist_ok=True)
+        (assets_dir / filename).write_bytes(bytes(blob))
+        written += 1
+    if written:
+        logger.info("wrote %d image(s) to %s", written, assets_dir)
+
 
 def _file_markdown(
     *,
@@ -279,6 +332,7 @@ def _file_markdown(
     source_type: str,
     converter: str,
     license_norm: str,
+    images: dict[str, bytes] | None = None,
 ) -> AttemptResult:
     """Write ``md_text`` to disk and return a success ``AttemptResult``.
 
@@ -287,13 +341,18 @@ def _file_markdown(
     amendment).  Filename is canonical per ``identity.build_pdf_filename``
     with a ``.md`` extension so the PDF and Markdown for the same
     paper collate together.
+
+    PR-G: when ``images`` is non-empty, also creates the
+    ``<basename>.assets/`` sibling and writes each image inside.
+    The marker-pdf path leaves ``images`` as the default ``None`` and
+    therefore writes no assets dir (deferred follow-up).
     """
     is_pub = is_publishable(license_norm)
     dest_dir = artifact_dir(repo_root, "markdown", is_publishable=is_pub)
     dest_dir.mkdir(parents=True, exist_ok=True)
     filename = canonical_artifact_filename(ref, "markdown")
     dest_path = dest_dir / filename
-    dest_path.write_text(md_text, encoding="utf-8")
+    _write_markdown_with_assets(md_text, images or {}, dest_path)
     return AttemptResult(
         kind="success",
         dest_path=dest_path,
@@ -315,6 +374,7 @@ def attempt_one_ref(
     lookup_fn: LookupFn = lookup_by_pmcid,
     bioc_fn: BiocFn = bioc_to_markdown,
     convert_fn: ConvertFn = convert_pdf,
+    image_fetch_fn: ImageFetchFn = fetch_image,
 ) -> AttemptResult:
     """Top-level per-ref entry point.
 
@@ -360,16 +420,43 @@ def attempt_one_ref(
     if has_pmcid:
         bioc = lookup_fn(pmcid_raw, cache_dir)
         if bioc and isinstance(bioc, dict) and bioc.get("documents"):
+            # PR-G (D-G4 locked 2026-05-30): hand bioc_to_markdown the
+            # relative assets-dir prefix so its image refs come out as
+            # ``<basename>.assets/<filename>`` rather than bare
+            # filenames.  Computing the basename up front so the
+            # converter call and the asset-write site stay in sync.
+            md_filename = canonical_artifact_filename(ref, "markdown")
+            assets_dirname = f"{Path(md_filename).stem}.assets"
             try:
-                md_text = bioc_fn(bioc["documents"][0])
+                md_text = bioc_fn(bioc["documents"][0],
+                                  images_dir=assets_dirname)
             except Exception as exc:  # defensive — converter is in-process
                 tried.append("pmc_bioc")
                 notes.append(f"pmc_bioc: render raised {type(exc).__name__}: {exc}")
             else:
+                # PR-G: fetch image bytes for the figures the BioC
+                # document references.  Failures (404, network,
+                # non-image content-type) are logged and the image
+                # is skipped; missing images leave the Markdown
+                # link unresolved (renderer shows a broken-image
+                # icon).  No catalog signal — D-G6.
+                images: dict[str, bytes] = {}
+                for _fig_id, fig_filename in extract_figure_files(
+                        bioc["documents"][0]):
+                    blob = image_fetch_fn(pmcid_raw, fig_filename)
+                    if blob:
+                        images[fig_filename] = blob
+                    else:
+                        logger.warning(
+                            "pmc_image miss: pmcid=%s filename=%s",
+                            pmcid_raw, fig_filename,
+                        )
+
                 license_norm = _license_for_bioc(bioc, ref)
                 source_url = _pmc_landing_url(bioc, pmcid_raw)
                 return _file_markdown(
                     ref=ref, repo_root=repo_root, md_text=md_text,
+                    images=images,
                     source_url=source_url,
                     source_type="auto_pmc_bioc",
                     converter="pmc_bioc",
@@ -486,15 +573,17 @@ def main(
     lookup_fn: LookupFn | None = None,
     bioc_fn: BiocFn | None = None,
     convert_fn: ConvertFn | None = None,
+    image_fetch_fn: ImageFetchFn | None = None,
 ) -> int:
     """CLI entry point.
 
-    The three ``*_fn`` kwargs are programmatic injection points for
+    The four ``*_fn`` kwargs are programmatic injection points for
     tests; production callers omit them and the real
-    ``lookup_by_pmcid`` / ``bioc_to_markdown`` / ``convert_pdf`` are
-    used.  Captured here (not as ``attempt_one_ref`` defaults) because
-    Python evaluates default args at definition time, making it
-    impossible for tests to swap them otherwise.
+    ``lookup_by_pmcid`` / ``bioc_to_markdown`` / ``convert_pdf`` /
+    ``fetch_image`` are used.  Captured here (not as
+    ``attempt_one_ref`` defaults) because Python evaluates default
+    args at definition time, making it impossible for tests to swap
+    them otherwise.
     """
     args = _parse_args(argv)
     logging.basicConfig(
@@ -505,6 +594,9 @@ def main(
     lookup_callable: LookupFn = lookup_fn if lookup_fn is not None else lookup_by_pmcid
     bioc_callable:   BiocFn   = bioc_fn   if bioc_fn   is not None else bioc_to_markdown
     convert_callable: ConvertFn = convert_fn if convert_fn is not None else convert_pdf
+    image_fetch_callable: ImageFetchFn = (
+        image_fetch_fn if image_fetch_fn is not None else fetch_image
+    )
 
     ws = Path(args.workspace).resolve()
     repo_root = ws.parent
@@ -562,6 +654,7 @@ def main(
             lookup_fn=lookup_callable,
             bioc_fn=bioc_callable,
             convert_fn=convert_callable,
+            image_fetch_fn=image_fetch_callable,
         )
 
         label = f"[{owner_id}#{ref_idx}]"
