@@ -88,7 +88,8 @@ from core import (  # noqa: E402
     should_skip,
 )
 from fetch import FetchResult, fetch_bytes  # noqa: E402
-from priority import walk_locations  # noqa: E402
+from fetch_browser import fetch_via_browser  # noqa: E402
+from priority import fetcher_for, walk_locations  # noqa: E402
 
 # Sibling-module imports (live in literature_search/).
 from license_policy import is_publishable, normalise_license  # noqa: E402
@@ -178,6 +179,14 @@ def _save_catalog(
 # Production callers leave it as the default.
 FetchFn = Callable[..., FetchResult]
 
+# The browser fetcher (PR-F, plan v2 §14) shares the FetchResult
+# return type but has a narrower kwarg surface than fetch_bytes — no
+# per-host throttle (Playwright's per-call browser launch is its own
+# implicit throttle) and no session reuse.  Same alias type is enough
+# for the dispatch site below; the parameter sets diverge inside the
+# dispatcher, not at the type level.
+BrowserFetchFn = Callable[..., FetchResult]
+
 
 def _plan_walk(ref: dict, *, allow_paywalled: bool) -> list[dict]:
     """Return the priority-ordered list of candidate locations for ``ref``.
@@ -194,11 +203,19 @@ def _attempt_walk(
     *,
     repo_root: Path,
     fetch_fn: FetchFn,
+    browser_fetch_fn: BrowserFetchFn = fetch_via_browser,
     timeout: float,
     max_bytes: int,
     host_throttle_sec: float,
 ) -> AttemptResult:
     """Walk ``candidates`` until one returns PDF bytes; save and return.
+
+    PR-F dispatches per candidate via :func:`priority.fetcher_for`:
+    ``"ac"``-classed hosts route to ``browser_fetch_fn``; everything
+    else routes to ``fetch_fn``.  Both fetchers return a
+    :class:`FetchResult` with identical semantics for ``error`` /
+    ``status`` / ``content_type`` / ``body``, so the rest of the loop
+    body (content-type sniff, error handling, save) is unchanged.
 
     On total exhaustion (or on an empty candidate list) returns a
     failure result with ``tried`` and ``reason`` populated for
@@ -217,12 +234,23 @@ def _attempt_walk(
         source_tag = loc.get("source") or "unknown"
         tried.append(source_tag)
 
-        result = fetch_fn(
-            url,
-            timeout=timeout,
-            max_bytes=max_bytes,
-            host_throttle_sec=host_throttle_sec,
-        )
+        # PR-F: pick the fetcher by host class.  The browser fetcher
+        # has no host_throttle_sec parameter — Playwright's launch
+        # cost is its own throttle, and passing the kwarg through
+        # would clutter the call site without changing behaviour.
+        if fetcher_for(loc) == "browser":
+            result = browser_fetch_fn(
+                url,
+                timeout=timeout,
+                max_bytes=max_bytes,
+            )
+        else:
+            result = fetch_fn(
+                url,
+                timeout=timeout,
+                max_bytes=max_bytes,
+                host_throttle_sec=host_throttle_sec,
+            )
 
         if result.error:
             notes.append(f"{source_tag}: {result.error}")
@@ -260,6 +288,7 @@ def attempt_one_ref(
     write: bool,
     allow_paywalled: bool,
     fetch_fn: FetchFn = fetch_bytes,
+    browser_fetch_fn: BrowserFetchFn = fetch_via_browser,
     timeout: float = 30.0,
     max_bytes: int = 50 * 1024 * 1024,
     host_throttle_sec: float = 1.0,
@@ -269,7 +298,10 @@ def attempt_one_ref(
     Dry-run (``write=False``) returns a ``"would_walk"`` result with
     the priority-ordered candidates; no network, no disk.
 
-    Wet-run (``write=True``) calls :func:`_attempt_walk`.
+    Wet-run (``write=True``) calls :func:`_attempt_walk` which
+    dispatches per candidate to either ``fetch_fn`` (plain HTTP) or
+    ``browser_fetch_fn`` (Playwright) based on
+    :func:`priority.fetcher_for`.
     """
     candidates = _plan_walk(ref, allow_paywalled=allow_paywalled)
     if not write:
@@ -278,6 +310,7 @@ def attempt_one_ref(
         ref, candidates,
         repo_root=repo_root,
         fetch_fn=fetch_fn,
+        browser_fetch_fn=browser_fetch_fn,
         timeout=timeout,
         max_bytes=max_bytes,
         host_throttle_sec=host_throttle_sec,
@@ -346,14 +379,21 @@ def _format_candidate_line(loc: dict) -> str:
     return f"    - {src:<24} {ver:<18} {lic:<14} {loc.get('url')}"
 
 
-def main(argv: list[str] | None = None, *, fetch_fn: FetchFn | None = None) -> int:
+def main(
+    argv: list[str] | None = None,
+    *,
+    fetch_fn: FetchFn | None = None,
+    browser_fetch_fn: BrowserFetchFn | None = None,
+) -> int:
     """CLI entry point.
 
-    ``fetch_fn`` is a programmatic injection point for tests; production
-    callers omit it and the default :func:`fetch.fetch_bytes` is used.
-    Captured here (not as an ``attempt_one_ref`` default) because
-    Python evaluates default args at function-definition time, which
-    makes monkey-patching ``fetch_bytes`` from a test impossible.
+    ``fetch_fn`` and ``browser_fetch_fn`` are programmatic injection
+    points for tests; production callers omit both and the defaults
+    (:func:`fetch.fetch_bytes` and
+    :func:`fetch_browser.fetch_via_browser`) are used.  Captured here
+    (not as ``attempt_one_ref`` defaults) because Python evaluates
+    default args at function-definition time, which makes
+    monkey-patching either fetcher from a test impossible.
     """
     args = _parse_args(argv)
     logging.basicConfig(
@@ -362,6 +402,9 @@ def main(argv: list[str] | None = None, *, fetch_fn: FetchFn | None = None) -> i
     )
 
     fetch_callable: FetchFn = fetch_fn if fetch_fn is not None else fetch_bytes
+    browser_fetch_callable: BrowserFetchFn = (
+        browser_fetch_fn if browser_fetch_fn is not None else fetch_via_browser
+    )
 
     ws = Path(args.workspace).resolve()
     repo_root = ws.parent
@@ -410,6 +453,7 @@ def main(argv: list[str] | None = None, *, fetch_fn: FetchFn | None = None) -> i
             write=args.write,
             allow_paywalled=args.allow_paywalled,
             fetch_fn=fetch_callable,
+            browser_fetch_fn=browser_fetch_callable,
             timeout=args.timeout,
             max_bytes=args.max_bytes,
             host_throttle_sec=args.host_throttle_sec,

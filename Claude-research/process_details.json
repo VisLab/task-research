@@ -714,19 +714,19 @@
           "local_artifacts": {
             "pdf": {
               "path": null,
-              "last_attempt": "2026-05-28T20:04:34Z",
-              "attempts": 1,
+              "last_attempt": "2026-05-30T15:01:52Z",
+              "attempts": 2,
               "tried": [
                 "openalex",
                 "openalex",
                 "openalex"
               ],
-              "reason": "openalex: HTTP 520; openalex: not PDF (text/html); openalex: not PDF (text/html)"
+              "reason": "openalex: HTTP 404; openalex: not PDF (text/html); openalex: not PDF (text/html)"
             },
             "markdown": {
               "path": null,
-              "last_attempt": "2026-05-28T20:16:33Z",
-              "attempts": 1,
+              "last_attempt": "2026-05-30T15:08:06Z",
+              "attempts": 2,
               "tried": [],
               "reason": "no PMC and no on-disk PDF"
             }
@@ -893,19 +893,19 @@
           "local_artifacts": {
             "pdf": {
               "path": null,
-              "last_attempt": "2026-05-28T20:04:42Z",
-              "attempts": 1,
+              "last_attempt": "2026-05-30T15:01:55Z",
+              "attempts": 2,
               "tried": [
                 "openalex",
                 "openalex",
                 "openalex"
               ],
-              "reason": "openalex: HTTP 520; openalex: not PDF (text/html); openalex: not PDF (text/html)"
+              "reason": "openalex: HTTP 404; openalex: not PDF (text/html); openalex: not PDF (text/html)"
             },
             "markdown": {
               "path": null,
-              "last_attempt": "2026-05-28T20:16:33Z",
-              "attempts": 1,
+              "last_attempt": "2026-05-30T15:08:06Z",
+              "attempts": 2,
               "tried": [],
               "reason": "no PMC and no on-disk PDF"
             }
@@ -12821,22 +12821,23 @@
           ],
           "local_artifacts": {
             "pdf": {
-              "path": null,
-              "last_attempt": "2026-05-28T20:04:48Z",
-              "attempts": 1,
-              "tried": [
-                "openalex",
-                "openalex",
-                "openalex,unpaywall"
-              ],
-              "reason": "openalex: not PDF (text/html); openalex: not PDF (text/html); openalex,unpaywall: not PDF (text/html)"
+              "path": "HED-PDFs/Salamone_2007_EffortRelatedFunctionsOfNucleusAccumbensDopamineAndAssociatedForebrainCircuits_f9452924.pdf",
+              "source_url": "https://academiccommons.columbia.edu/doi/10.7916/D8CV4VQB/download",
+              "source_type": "auto_synthesized:ac",
+              "license": "unknown",
+              "acquired_on": "2026-05-30T15:02:02Z",
+              "acquired_via": "auto",
+              "is_publishable": false
             },
             "markdown": {
-              "path": null,
-              "last_attempt": "2026-05-28T20:16:34Z",
-              "attempts": 1,
-              "tried": [],
-              "reason": "no PMC and no on-disk PDF"
+              "path": "HED-Markdown-private/Salamone_2007_EffortRelatedFunctionsOfNucleusAccumbensDopamineAndAssociatedForebrainCircuits_f9452924.md",
+              "source_url": "https://academiccommons.columbia.edu/doi/10.7916/D8CV4VQB/download",
+              "source_type": "auto_markdown_from_pdf",
+              "license": "unknown",
+              "acquired_on": "2026-05-30T15:10:34Z",
+              "acquired_via": "auto",
+              "converter": "marker-pdf",
+              "is_publishable": false
             }
           }
         },

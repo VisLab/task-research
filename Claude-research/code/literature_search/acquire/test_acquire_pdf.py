@@ -543,3 +543,197 @@ class TestMainIntegration:
         rc = M.main(["--mode", "poc", "--workspace", str(ws)],
                     fetch_fn=_queue_fetch())
         assert rc == 2
+
+
+# ---------------------------------------------------------------------------
+# PR-F: per-candidate fetcher dispatch
+# ---------------------------------------------------------------------------
+
+# AC landing URL used by these tests.  Real-world value would carry an
+# AC DOI under 10.7916/.  priority.classify_url returns "ac" for any
+# academiccommons.columbia.edu URL, regardless of DOI.
+AC_LANDING_URL = "https://academiccommons.columbia.edu/doi/10.7916/d8rv0nsn"
+
+# AC-managed DOI on the bare resolver — triggers
+# priority.synthesize_candidates to add an AC landing URL behind it.
+AC_DOI_RESOLVER_URL = "https://doi.org/10.7916/d8rv0nsn"
+
+
+def _queue_two_fetchers(
+    plain_results: list[FetchResult] | None = None,
+    browser_results: list[FetchResult] | None = None,
+) -> tuple[object, object]:
+    """Build a pair of fake fetchers; each records the URLs it received.
+
+    Each fake serves its queued ``FetchResult`` list in order.  Asking
+    for more responses than were queued raises so a test that routes
+    a call to the wrong fetcher fails loudly rather than silently.
+    """
+    plain_pending = list(plain_results or [])
+    browser_pending = list(browser_results or [])
+
+    plain_calls: list[dict] = []
+    browser_calls: list[dict] = []
+
+    def fake_plain(url: str, **kwargs) -> FetchResult:
+        plain_calls.append({"url": url, **kwargs})
+        if not plain_pending:
+            raise AssertionError(f"plain fetcher called unexpectedly ({url})")
+        return plain_pending.pop(0)
+
+    def fake_browser(url: str, **kwargs) -> FetchResult:
+        browser_calls.append({"url": url, **kwargs})
+        if not browser_pending:
+            raise AssertionError(f"browser fetcher called unexpectedly ({url})")
+        return browser_pending.pop(0)
+
+    fake_plain.calls = plain_calls            # type: ignore[attr-defined]
+    fake_browser.calls = browser_calls        # type: ignore[attr-defined]
+    return fake_plain, fake_browser
+
+
+class TestDispatch:
+    """Per-candidate fetcher routing via :func:`priority.fetcher_for`.
+
+    Plain (non-AC) candidates must route to ``fetch_fn``; AC candidates
+    must route to ``browser_fetch_fn``.  Each test injects both
+    fetchers explicitly and asserts the call list on each.
+    """
+
+    def test_plain_candidate_uses_fetch_fn_only(self, tmp_path: Path) -> None:
+        ref = _ref(_loc("https://example.com/a.pdf", source="openalex"))
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        plain, browser = _queue_two_fetchers(
+            plain_results=[_pdf_response("https://example.com/a.pdf")],
+        )
+
+        result = M._attempt_walk(
+            ref, cands, repo_root=tmp_path,
+            fetch_fn=plain, browser_fetch_fn=browser,
+            timeout=5, max_bytes=1024, host_throttle_sec=0,
+        )
+
+        assert result.kind == "success"
+        assert len(plain.calls) == 1                 # type: ignore[attr-defined]
+        assert len(browser.calls) == 0               # type: ignore[attr-defined]
+
+    def test_ac_candidate_uses_browser_fetch_fn_only(self, tmp_path: Path) -> None:
+        ref = _ref(_loc(AC_LANDING_URL, source="openalex"))
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        plain, browser = _queue_two_fetchers(
+            browser_results=[_pdf_response(AC_LANDING_URL)],
+        )
+
+        result = M._attempt_walk(
+            ref, cands, repo_root=tmp_path,
+            fetch_fn=plain, browser_fetch_fn=browser,
+            timeout=5, max_bytes=1024, host_throttle_sec=0,
+        )
+
+        assert result.kind == "success"
+        assert len(browser.calls) == 1               # type: ignore[attr-defined]
+        assert len(plain.calls) == 0                 # type: ignore[attr-defined]
+        # The browser fetcher does NOT receive host_throttle_sec —
+        # Playwright's launch cost is its own implicit throttle.
+        assert "host_throttle_sec" not in browser.calls[0]  # type: ignore[attr-defined]
+
+    def test_synthesised_ac_entry_routes_to_browser(self, tmp_path: Path) -> None:
+        # Input: a bare doi.org/10.7916/<id> resolver URL only.
+        # priority.synthesize_candidates appends an AC landing URL
+        # behind it; the AC entry sorts ahead of the doi.org entry by
+        # tier, so the browser fetcher is tried first.
+        ref = _ref(_loc(AC_DOI_RESOLVER_URL, source="openalex"))
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        plain, browser = _queue_two_fetchers(
+            browser_results=[_pdf_response(AC_LANDING_URL)],
+        )
+
+        result = M._attempt_walk(
+            ref, cands, repo_root=tmp_path,
+            fetch_fn=plain, browser_fetch_fn=browser,
+            timeout=5, max_bytes=1024, host_throttle_sec=0,
+        )
+
+        assert result.kind == "success"
+        assert result.source_tag == "synthesized:ac"
+        assert len(browser.calls) == 1               # type: ignore[attr-defined]
+        # The doi.org fallback was not tried — the browser route
+        # succeeded first.
+        assert len(plain.calls) == 0                 # type: ignore[attr-defined]
+
+    def test_mixed_walk_dispatches_per_candidate(self, tmp_path: Path) -> None:
+        # PMC fails (HTML), then AC succeeds via browser.  Verifies
+        # the dispatch picks the right fetcher per candidate, not
+        # per ref.
+        ref = _ref(
+            _loc("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/pdf",
+                 source="pmc"),
+            _loc(AC_LANDING_URL, source="openalex"),
+        )
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        plain, browser = _queue_two_fetchers(
+            plain_results=[_html_response()],
+            browser_results=[_pdf_response(AC_LANDING_URL)],
+        )
+
+        result = M._attempt_walk(
+            ref, cands, repo_root=tmp_path,
+            fetch_fn=plain, browser_fetch_fn=browser,
+            timeout=5, max_bytes=1024, host_throttle_sec=0,
+        )
+
+        assert result.kind == "success"
+        assert result.source_tag == "openalex"
+        assert len(plain.calls) == 1                 # type: ignore[attr-defined]
+        assert len(browser.calls) == 1               # type: ignore[attr-defined]
+        # Order: PMC tried first (plain), then AC (browser).
+        assert plain.calls[0]["url"].startswith("https://www.ncbi.nlm.nih.gov/")  # type: ignore[attr-defined]
+        assert browser.calls[0]["url"] == AC_LANDING_URL                          # type: ignore[attr-defined]
+
+    def test_browser_fetcher_failure_recorded_with_tried(self, tmp_path: Path) -> None:
+        # Browser returns a non-PDF response → walk continues.  Here
+        # there is no fallback candidate, so the result is a failure
+        # with "synthesized:ac" on the tried list.
+        ref = _ref(_loc(AC_LANDING_URL, source="openalex"))
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        plain, browser = _queue_two_fetchers(
+            browser_results=[_html_response(AC_LANDING_URL)],
+        )
+
+        result = M._attempt_walk(
+            ref, cands, repo_root=tmp_path,
+            fetch_fn=plain, browser_fetch_fn=browser,
+            timeout=5, max_bytes=1024, host_throttle_sec=0,
+        )
+
+        assert result.kind == "failure"
+        assert result.tried == ["openalex"]
+        assert "not PDF" in result.reason
+
+    def test_main_threads_browser_fetch_fn(self, tmp_path: Path) -> None:
+        # End-to-end via main(): a synthetic catalog with one AC ref
+        # gets acquired through the injected browser fetcher; the
+        # plain fetcher is never called.
+        ref = _ref(_loc(AC_LANDING_URL, source="openalex"), doi=POC_FLEMING)
+        ws = _make_workspace(
+            tmp_path,
+            processes=[{"process_id": "hed_test", "references": [ref]}],
+            tasks=[],
+        )
+        plain, browser = _queue_two_fetchers(
+            browser_results=[_pdf_response(AC_LANDING_URL)],
+        )
+
+        rc = M.main(
+            ["--mode", "poc", "--workspace", str(ws), "--write",
+             "--host-throttle-sec", "0"],
+            fetch_fn=plain, browser_fetch_fn=browser,
+        )
+
+        assert rc == 0
+        assert len(browser.calls) == 1               # type: ignore[attr-defined]
+        assert len(plain.calls) == 0                 # type: ignore[attr-defined]
+        procs, _ = _read_catalog(ws)
+        la = procs["processes"][0]["references"][0]["local_artifacts"]["pdf"]
+        assert la["path"].startswith("HED-PDFs/")
+        assert la["source_type"] == "auto_openalex"
