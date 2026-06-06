@@ -266,6 +266,13 @@ def fetcher_for(loc: dict) -> str:
     Today only the ``"ac"`` host class needs the browser fetcher;
     future WAF'd repositories get added here as they surface.
 
+    PMC landing URLs were briefly routed to the browser (PR-H4,
+    2026-06-03) but reverted (PR-H5, 2026-06-04) when the run showed
+    that Playwright's ``context.request.get`` can't supply the
+    browser-mediated session PMC's PDF download requires.  PMC PDFs
+    are now discovered via the OA Web Service instead — see
+    :func:`clients.pmc.lookup_oa_pdf_url`.
+
     Non-dict input or missing URL → ``"plain"`` (the plain fetcher
     handles the empty-URL short-circuit itself).
     """

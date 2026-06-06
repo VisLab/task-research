@@ -89,7 +89,9 @@ from core import (  # noqa: E402
 )
 from fetch import FetchResult, fetch_bytes  # noqa: E402
 from fetch_browser import fetch_via_browser  # noqa: E402
+from landing_parser import extract_pdf_url  # noqa: E402
 from priority import fetcher_for, walk_locations  # noqa: E402
+from shortcuts import synthesize_id_shortcuts  # noqa: E402
 
 # Sibling-module imports (live in literature_search/).
 from license_policy import is_publishable, normalise_license  # noqa: E402
@@ -188,13 +190,195 @@ FetchFn = Callable[..., FetchResult]
 BrowserFetchFn = Callable[..., FetchResult]
 
 
-def _plan_walk(ref: dict, *, allow_paywalled: bool) -> list[dict]:
+def _plan_walk(
+    ref: dict,
+    *,
+    allow_paywalled: bool,
+    cache_dir: Path | None = None,
+    oa_lookup_fn: Callable[[str, Path], "str | None"] | None = None,
+) -> list[dict]:
     """Return the priority-ordered list of candidate locations for ``ref``.
 
-    Wrapper around :func:`priority.walk_locations` so the dry-run
-    output and the wet-run loop see the same list.
+    Combines, in order, three sources of PDF candidate URLs:
+
+      1.  Cataloged ``pdf_locations`` (populated by PR-D's
+          ``enrich_pdf_locations.py`` from OpenAlex / Unpaywall / S2).
+      2.  ID-derived synthesized shortcuts (PR-H2 — arXiv direct,
+          bioRxiv direct).
+      3.  PR-H5 (2026-06-04) — PMC OA Web Service lookup for refs
+          with ``ids.pmcid``.  The OA service returns the canonical
+          OA download URL for articles in the PMC Open Access
+          subset; non-OA-subset refs (e.g. NIH-deposited manuscripts
+          that publishers restrict) return an ``idIsNotOpenAccess``
+          error and produce no candidate.
+
+    Synthesized candidates whose URL already exists in the cataloged
+    list are dropped to avoid double-walks.
+
+    Both lists pass through :func:`priority.walk_locations` so the
+    same filter/sort/dispatch pipeline applies uniformly.
+
+    Arguments
+    ---------
+    ``cache_dir``
+        Required for the OA Web Service lookup.  When ``None`` (e.g.
+        in unit tests that don't exercise the OA path) the OA step
+        is skipped entirely.
+    ``oa_lookup_fn``
+        Test-injection seam.  Defaults to
+        :func:`clients.pmc.lookup_oa_pdf_url`.  Tests pass a stub.
     """
-    return walk_locations(ref.get("pdf_locations"), allow_paywalled=allow_paywalled)
+    cataloged = list(ref.get("pdf_locations") or [])
+    synthesized = synthesize_id_shortcuts(ref)
+
+    # PR-H5: append the OA Web Service URL when we have a pmcid and
+    # the lookup hasn't been disabled (tests pass cache_dir=None).
+    pmcid = ((ref.get("ids") or {}).get("pmcid") or "").strip()
+    if pmcid and cache_dir is not None:
+        if oa_lookup_fn is None:
+            # Lazy import keeps the clients package off the
+            # import path during unit tests that monkey-patch
+            # _plan_walk without needing clients.pmc.
+            from clients.pmc import lookup_oa_pdf_url  # noqa: E402
+            oa_lookup_fn = lookup_oa_pdf_url
+        oa_url = oa_lookup_fn(pmcid, cache_dir)
+        if oa_url:
+            synthesized.append({
+                "url": oa_url,
+                "source": "pmc_oa",
+                "version": None,
+                "is_oa": True,
+                "license": None,
+            })
+
+    cataloged_urls = {
+        (loc.get("url") or "").strip()
+        for loc in cataloged
+        if isinstance(loc, dict)
+    }
+    extras = [
+        loc for loc in synthesized
+        if (loc.get("url") or "").strip() not in cataloged_urls
+    ]
+
+    return walk_locations(cataloged + extras, allow_paywalled=allow_paywalled)
+
+
+def _save_pdf_result(
+    ref: dict,
+    result: FetchResult,
+    *,
+    repo_root: Path,
+    source_url_fallback: str,
+    source_tag: str,
+    license_raw: str | None,
+) -> AttemptResult:
+    """Persist ``result.body`` to disk and return a success ``AttemptResult``.
+
+    Extracted from the per-candidate loop in :func:`_attempt_walk` so
+    both the direct-PDF path and the PR-H1 landing-extraction path
+    share the same save logic (canonical filename, ``HED-PDFs/``
+    destination, license normalisation).
+    """
+    dest_dir = artifact_dir(repo_root, "pdf")
+    dest_dir.mkdir(parents=True, exist_ok=True)
+    filename = canonical_artifact_filename(ref, "pdf")
+    dest_path = dest_dir / filename
+    dest_path.write_bytes(result.body)
+    return AttemptResult(
+        kind="success",
+        dest_path=dest_path,
+        source_url=result.url or source_url_fallback,
+        source_tag=source_tag,
+        license_norm=normalise_license(license_raw),
+    )
+
+
+def _try_landing_extraction(
+    ref: dict,
+    loc: dict,
+    primary: FetchResult,
+    *,
+    source_tag: str,
+    repo_root: Path,
+    fetch_fn: FetchFn,
+    timeout: float,
+    max_bytes: int,
+    host_throttle_sec: float,
+    tried: list[str],
+    notes: list[str],
+) -> AttemptResult | None:
+    """PR-H1: try to extract a real PDF URL from a landing-page response.
+
+    Called from :func:`_attempt_walk` when the primary fetch returned
+    ``text/html`` and a non-empty body.  Parses the HTML for
+    ``<meta name="citation_pdf_url">`` (and the rarer
+    ``<link rel="alternate" type="application/pdf">``); if one is
+    found, fetches that URL via ``fetch_fn`` and saves the result if
+    it's a PDF.
+
+    Mutates ``tried`` and ``notes`` in place — ``tried`` gets a
+    ``"<source_tag>+landing"`` entry whenever an extraction is
+    attempted (regardless of outcome); ``notes`` gets a diagnostic
+    line on failure.
+
+    Returns a success :class:`AttemptResult` if the extracted URL
+    yielded a PDF.  Returns ``None`` if the page had no parseable PDF
+    URL, in which case the caller should fall through to its usual
+    "not PDF" note for the primary fetch.  Returns ``None`` after
+    recording a per-extraction failure note as well — same disposition
+    (caller continues walking), but the failure is logged.
+
+    Always uses the plain ``fetch_fn`` for the secondary fetch, never
+    the browser fetcher: citation_pdf_url URLs point at static PDF
+    files, never at WAF'd landing pages.
+    """
+    if not primary.content_type.startswith("text/html"):
+        return None
+    if not primary.body:
+        return None
+
+    # Note: PMC URLs no longer reach this code path — they are
+    # routed through the Playwright fetcher (priority.fetcher_for
+    # returns "browser" for PMC landing URLs after PR-H4) because
+    # PMC's new viewer is JS-rendered and gates plain HTTP clients
+    # behind reCAPTCHA.  The PMC-specific PDF extraction now lives
+    # in fetch_browser.py's in-page JS evaluator.
+    pdf_url = extract_pdf_url(primary.body, primary.url)
+    if not pdf_url:
+        return None
+
+    landing_tag = f"{source_tag}+landing"
+    tried.append(landing_tag)
+
+    landing = fetch_fn(
+        pdf_url,
+        timeout=timeout,
+        max_bytes=max_bytes,
+        host_throttle_sec=host_throttle_sec,
+    )
+
+    if (not landing.error
+            and landing.status == 200
+            and landing.is_pdf()):
+        return _save_pdf_result(
+            ref, landing,
+            repo_root=repo_root,
+            source_url_fallback=pdf_url,
+            source_tag=landing_tag,
+            license_raw=loc.get("license"),
+        )
+
+    if landing.error:
+        notes.append(f"{landing_tag}: {landing.error}")
+    elif landing.status != 200:
+        notes.append(f"{landing_tag}: HTTP {landing.status}")
+    else:
+        notes.append(
+            f"{landing_tag}: not PDF "
+            f"({landing.content_type or 'no content-type'})"
+        )
+    return None
 
 
 def _attempt_walk(
@@ -216,6 +400,12 @@ def _attempt_walk(
     :class:`FetchResult` with identical semantics for ``error`` /
     ``status`` / ``content_type`` / ``body``, so the rest of the loop
     body (content-type sniff, error handling, save) is unchanged.
+
+    PR-H1 (2026-06-01): when a primary fetch returns ``text/html``,
+    :func:`_try_landing_extraction` parses the body for a
+    citation_pdf_url meta tag and fetches that URL as a secondary
+    candidate.  Successful extractions stamp the source as
+    ``"<original-source>+landing"``.
 
     On total exhaustion (or on an empty candidate list) returns a
     failure result with ``tried`` and ``reason`` populated for
@@ -258,23 +448,41 @@ def _attempt_walk(
         if result.status != 200:
             notes.append(f"{source_tag}: HTTP {result.status}")
             continue
-        if not result.is_pdf():
-            notes.append(f"{source_tag}: not PDF ({result.content_type or 'no content-type'})")
-            continue
 
-        # Got PDF bytes.  Save to HED-PDFs/<canonical>.pdf.
-        dest_dir = artifact_dir(repo_root, "pdf")
-        dest_dir.mkdir(parents=True, exist_ok=True)
-        filename = canonical_artifact_filename(ref, "pdf")
-        dest_path = dest_dir / filename
-        dest_path.write_bytes(result.body)
+        # Direct PDF path — most common when the URL is from
+        # arxiv.org/pdf/..., PMC's /pdf/ endpoint, or any source
+        # that hands us a real PDF URL up front.
+        if result.is_pdf():
+            return _save_pdf_result(
+                ref, result,
+                repo_root=repo_root,
+                source_url_fallback=url,
+                source_tag=source_tag,
+                license_raw=loc.get("license"),
+            )
 
-        return AttemptResult(
-            kind="success",
-            dest_path=dest_path,
-            source_url=result.url or url,
+        # PR-H1 landing-page extraction.  If the response body looks
+        # like a publisher landing page, try the citation_pdf_url
+        # meta tag.  Success returns here with an augmented source
+        # tag; non-success records a per-extraction note and falls
+        # through.
+        landing_success = _try_landing_extraction(
+            ref, loc, result,
             source_tag=source_tag,
-            license_norm=normalise_license(loc.get("license")),
+            repo_root=repo_root,
+            fetch_fn=fetch_fn,
+            timeout=timeout,
+            max_bytes=max_bytes,
+            host_throttle_sec=host_throttle_sec,
+            tried=tried,
+            notes=notes,
+        )
+        if landing_success is not None:
+            return landing_success
+
+        notes.append(
+            f"{source_tag}: not PDF "
+            f"({result.content_type or 'no content-type'})"
         )
 
     reason = "; ".join(notes) if notes else "all candidates exhausted"
@@ -292,6 +500,8 @@ def attempt_one_ref(
     timeout: float = 30.0,
     max_bytes: int = 50 * 1024 * 1024,
     host_throttle_sec: float = 1.0,
+    cache_dir: Path | None = None,
+    oa_lookup_fn: Callable[[str, Path], "str | None"] | None = None,
 ) -> AttemptResult:
     """Top-level per-ref entry point.
 
@@ -302,8 +512,17 @@ def attempt_one_ref(
     dispatches per candidate to either ``fetch_fn`` (plain HTTP) or
     ``browser_fetch_fn`` (Playwright) based on
     :func:`priority.fetcher_for`.
+
+    PR-H5 (2026-06-04): ``cache_dir`` and ``oa_lookup_fn`` are
+    forwarded to :func:`_plan_walk` so refs with ``ids.pmcid`` get
+    a PMC OA Web Service lookup appended to their candidate list.
+    Tests that don't exercise the OA path leave ``cache_dir`` at
+    its default of ``None`` and the lookup is skipped.
     """
-    candidates = _plan_walk(ref, allow_paywalled=allow_paywalled)
+    candidates = _plan_walk(
+        ref, allow_paywalled=allow_paywalled,
+        cache_dir=cache_dir, oa_lookup_fn=oa_lookup_fn,
+    )
     if not write:
         return AttemptResult(kind="would_walk", candidates=list(candidates))
     return _attempt_walk(
@@ -365,6 +584,9 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
                    help="Per-request HTTP timeout in seconds.")
     p.add_argument("--max-bytes", type=int, default=50 * 1024 * 1024,
                    help="Max response body size in bytes.")
+    p.add_argument("--cache-dir", default="<auto>",
+                   help="PMC OA Web Service cache root.  Resolves via "
+                        "--cache-dir > $HED_CACHE_DIR > <workspace>/outputs/cache.")
     p.add_argument("--host-throttle-sec", type=float, default=1.0,
                    help="Minimum gap between same-host requests.")
     p.add_argument("--verbose", "-v", action="store_true")
@@ -408,8 +630,14 @@ def main(
 
     ws = Path(args.workspace).resolve()
     repo_root = ws.parent
+    # PR-H5: resolve the cache root for OA Web Service lookups in
+    # _plan_walk.  Uses the same convention as core.resolve_cache_dir
+    # so PR-D's and PR-E's caches share storage.
+    from core import resolve_cache_dir  # noqa: E402  (local — avoids cycle)
+    cache_dir = resolve_cache_dir(getattr(args, "cache_dir", "<auto>"), ws)
     logger.info("workspace : %s", ws)
     logger.info("repo_root : %s", repo_root)
+    logger.info("cache_dir : %s", cache_dir)
     logger.info("mode      : %s  write=%s  force=%s  retry-failed=%s",
                 args.mode, args.write, args.force, args.retry_failed)
 
@@ -457,6 +685,7 @@ def main(
             timeout=args.timeout,
             max_bytes=args.max_bytes,
             host_throttle_sec=args.host_throttle_sec,
+            cache_dir=cache_dir,
         )
 
         label = f"[{owner_id}#{ref_idx}]"

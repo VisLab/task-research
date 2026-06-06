@@ -80,6 +80,7 @@ from __future__ import annotations
 import logging
 import re
 import time
+import xml.etree.ElementTree as ET
 from pathlib import Path
 
 try:
@@ -93,6 +94,19 @@ from cache import cache_get_or_fetch
 logger = logging.getLogger(__name__)
 
 _BASE = "https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json"
+
+# PMC OA Web Service — returns XML listing the OA-distributable
+# download URLs (PDF + TGZ + source XML) for articles in the PMC
+# Open Access subset.  PR-H5 (2026-06-04): this is the principled
+# way to discover PMC PDF URLs.  The old approach (guessing
+# /pmc/articles/<PMCID>/pdf/) was broken by the 2024 PMC viewer
+# migration; the new viewer gates plain HTTP behind reCAPTCHA and
+# JS, but the OA service is a separate XML API designed for
+# programmatic access and is not captcha-gated.  Articles not in
+# the OA subset (e.g. NIH-deposited manuscripts whose publisher
+# retains restrictions) return an ``idIsNotOpenAccess`` error —
+# we cache that as a miss and skip the ref.
+_OA_BASE = "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi"
 
 # Landing-page URL on the new PMC domain.  The old
 # www.ncbi.nlm.nih.gov/pmc/articles/<PMCID>/ URL also works but
@@ -275,6 +289,114 @@ def lookup_by_pmcid(
 
     logger.info("source=pmc pmcid=%s status=200", canonical)
     return cached
+
+
+# ---------------------------------------------------------------------------
+# PMC OA Web Service (PR-H5, 2026-06-04)
+# ---------------------------------------------------------------------------
+
+def _normalise_oa_href(href: str) -> str:
+    """Convert FTP-scheme hrefs to HTTPS.
+
+    The OA service historically returned ``ftp://ftp.ncbi.nlm.nih.gov/...``
+    URLs; the same paths are reachable over HTTPS at the same host
+    and our HTTP fetcher doesn't speak FTP.  Other schemes pass
+    through unchanged.
+    """
+    s = (href or "").strip()
+    if s.lower().startswith("ftp://"):
+        return "https://" + s[len("ftp://"):]
+    return s
+
+
+def lookup_oa_pdf_url(
+    pmcid: str,
+    cache_dir: Path,
+    email: str = "hedannotation@gmail.com",
+) -> str | None:
+    """Return the OA PDF download URL for ``pmcid``, or None.
+
+    Queries the PMC OA Web Service::
+
+        GET https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=<PMCID>
+
+    Response is XML.  On an OA-subset hit the body contains one or
+    more ``<link format="..." href="...">`` entries; we pick the
+    first ``href`` whose ``format`` starts with ``"pdf"``.  On a
+    non-OA-subset ref the body carries
+    ``<error code="idIsNotOpenAccess">``; we cache that as a miss
+    and return None.
+
+    Caching is via :func:`cache.cache_get_or_fetch` with
+    ``stable=True`` — OA status of a published article doesn't
+    change, so the response is good indefinitely.
+
+    Returns:
+      The HTTPS PDF URL on success.
+      ``None`` on: invalid PMCID, network error, non-OA-subset,
+      OA-subset article with no PDF link in the response.
+    """
+    canonical = _normalise_pmcid(pmcid)
+    if not canonical:
+        logger.info("source=pmc_oa pmcid=%r status=invalid", pmcid)
+        return None
+
+    url = f"{_OA_BASE}?id={canonical}"
+    headers = {"User-Agent": f"hed-task/1.0 (mailto:{email})"}
+
+    def _fetch() -> dict | None:
+        _throttle("www.ncbi.nlm.nih.gov")
+        try:
+            resp = requests.get(url, headers=headers, timeout=15)
+        except requests.RequestException as exc:
+            logger.info("pmc_oa network error %s: %s", canonical, exc)
+            return None  # don't cache transient failures
+        if resp.status_code != 200:
+            logger.info("pmc_oa HTTP %d for %s", resp.status_code, canonical)
+            return {}  # cache as miss
+        try:
+            root = ET.fromstring(resp.text)
+        except ET.ParseError as exc:
+            logger.info("pmc_oa XML parse error %s: %s", canonical, exc)
+            return {}
+        err = root.find(".//error")
+        if err is not None:
+            return {"_error_code": err.get("code") or "",
+                    "_error_text": (err.text or "").strip()}
+        links = []
+        for link_el in root.findall(".//link"):
+            links.append({
+                "format": link_el.get("format", "") or "",
+                "href":   link_el.get("href", "") or "",
+            })
+        return {"links": links}
+
+    cached = cache_get_or_fetch(
+        cache_dir=cache_dir,
+        source="pmc_oa",
+        key=canonical,
+        fetch=_fetch,
+        stable=True,
+    )
+    if not cached:
+        logger.info("source=pmc_oa pmcid=%s status=not_found", canonical)
+        return None
+    if cached.get("_error_code"):
+        logger.info("source=pmc_oa pmcid=%s status=%s",
+                    canonical, cached["_error_code"])
+        return None
+
+    for link in cached.get("links") or []:
+        fmt = (link.get("format") or "").lower()
+        if fmt.startswith("pdf"):
+            href = _normalise_oa_href(link.get("href") or "")
+            if href:
+                logger.info("source=pmc_oa pmcid=%s status=200 href=%s",
+                            canonical, href)
+                return href
+
+    logger.info("source=pmc_oa pmcid=%s status=200_no_pdf_link", canonical)
+    return None
 
 
 # ---------------------------------------------------------------------------

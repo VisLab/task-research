@@ -363,7 +363,20 @@ class TestFetcherFor:
         assert fetcher_for(loc(_AC_LANDING_URL)) == "browser"
 
     def test_pmc_routes_to_plain(self) -> None:
-        assert fetcher_for(loc("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/")) == "plain"
+        # PR-H5 (2026-06-04): PMC URLs are NOT routed to the browser
+        # any more.  PR-H4 tried that and Playwright couldn't supply
+        # the browser-mediated session PMC's PDF endpoint demands.
+        # PMC PDFs are now discovered via the OA Web Service from
+        # acquire_pdf._plan_walk.
+        assert fetcher_for(loc(
+            "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/"
+        )) == "plain"
+        assert fetcher_for(loc(
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC1/"
+        )) == "plain"
+        assert fetcher_for(loc(
+            "https://pmc.ncbi.nlm.nih.gov/articles/PMC1/pdf/foo.pdf"
+        )) == "plain"
 
     def test_publisher_routes_to_plain(self) -> None:
         assert fetcher_for(loc("https://www.frontiersin.org/x.pdf")) == "plain"

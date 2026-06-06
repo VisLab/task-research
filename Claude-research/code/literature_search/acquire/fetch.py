@@ -14,7 +14,8 @@ PR-E expects:
      repository we hit in practice.  Tests pass ``host_throttle_sec=0``.
   2. Content-type sniff — the caller decides what to do with the body
      based on ``content_type`` (the orchestrator only saves bytes when
-     it sees ``application/pdf``).
+     it sees ``application/pdf`` OR the body starts with ``%PDF-`` —
+     see ``FetchResult.is_pdf`` for the PR-H2 magic-byte fallback).
   3. Size cap — body reads stop at ``max_bytes`` so a misconfigured
      URL that streams forever can't fill the disk.
 
@@ -53,6 +54,14 @@ logger = logging.getLogger(__name__)
 _last_call: dict[str, float] = {}
 
 
+# PDF file magic bytes — the literal ASCII prefix every PDF starts
+# with (``%PDF-`` followed by a version such as ``1.4``).  Used by
+# ``FetchResult.is_pdf`` to catch PDFs served with the wrong
+# Content-Type (octet-stream and friends).  See the docstring on
+# ``FetchResult.is_pdf`` for rationale.
+_PDF_MAGIC_BYTES: bytes = b"%PDF-"
+
+
 # ---------------------------------------------------------------------------
 # Result type
 # ---------------------------------------------------------------------------
@@ -81,13 +90,26 @@ class FetchResult:
     def is_pdf(self) -> bool:
         """True if the response advertises a PDF body.
 
-        Convenience for the orchestrator's content-type sniff.  Matches
-        the ``application/pdf`` media type only; some publishers send
-        ``application/octet-stream`` for PDFs, but treating that as PDF
-        is a footgun (it also covers zip files, tarballs, etc.), so we
-        require the explicit type.
+        Two signals are accepted (PR-H2 amended 2026-06-01):
+
+          1. ``Content-Type`` header starts with ``application/pdf``.
+          2. Body starts with the ``%PDF-`` magic bytes.
+
+        The magic-byte check catches publishers who serve PDFs with
+        a generic content-type (``application/octet-stream``,
+        ``binary/octet-stream``, or — once observed — ``text/plain``).
+        Trusting ``application/octet-stream`` alone would be a footgun
+        (it also covers zip files, tarballs, etc.); requiring the
+        magic-byte prefix removes the ambiguity.
+
+        Either signal is sufficient.  The pre-PR-H2 implementation
+        accepted only the Content-Type signal, which is why the
+        2026-06-01 wet-run logged a small number of real PDFs as
+        "not PDF".
         """
-        return self.content_type.startswith("application/pdf")
+        if self.content_type.startswith("application/pdf"):
+            return True
+        return self.body[:5] == _PDF_MAGIC_BYTES
 
 
 # ---------------------------------------------------------------------------

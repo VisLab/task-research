@@ -58,8 +58,13 @@ def _loc(url: str, *, source: str = "openalex",
             "license": license, "is_oa": is_oa}
 
 
-def _ref(*locs: dict, doi: str = "10.x/test") -> dict:
-    """Build a minimal ref with the catalog shape acquire_pdf reads."""
+def _ref(*locs: dict, doi: str | None = None) -> dict:
+    """Build a minimal ref with the catalog shape acquire_pdf reads.
+
+    Default ``doi=None`` so synthesize_id_shortcuts (PR-H2) does NOT
+    inject a ``synthesized:doi`` candidate.  Tests that want to
+    exercise DOI-based behaviour pass ``doi=<some-doi>`` explicitly.
+    """
     return {
         "authors": "Smith, J., & Jones, K.",
         "year": 2008,
@@ -406,7 +411,8 @@ class TestMainIntegration:
     def test_wet_run_records_failure_for_empty_locations(self,
                                                         tmp_path: Path) -> None:
         # Daw-shaped ref: pdf_locations empty -> failure record per
-        # PRE-E2-Q1.
+        # PRE-E2-Q1.  POC_DAW is a 10.1038/ DOI so no preprint-prefix
+        # shortcut fires; the walk has zero candidates.
         ws = _make_workspace(
             tmp_path,
             processes=[{
@@ -662,11 +668,12 @@ class TestDispatch:
         assert len(plain.calls) == 0                 # type: ignore[attr-defined]
 
     def test_mixed_walk_dispatches_per_candidate(self, tmp_path: Path) -> None:
-        # PMC fails (HTML), then AC succeeds via browser.  Verifies
-        # the dispatch picks the right fetcher per candidate, not
-        # per ref.
+        # PMC PDF URL fails (HTML), then AC succeeds via browser.
+        # Verifies the dispatch picks the right fetcher per candidate,
+        # not per ref.  PMC URLs route plain (PR-H5 reverted PR-H4's
+        # browser routing); AC URLs route to browser.
         ref = _ref(
-            _loc("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/pdf",
+            _loc("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/pdf/foo.pdf",
                  source="pmc"),
             _loc(AC_LANDING_URL, source="openalex"),
         )
@@ -737,3 +744,318 @@ class TestDispatch:
         la = procs["processes"][0]["references"][0]["local_artifacts"]["pdf"]
         assert la["path"].startswith("HED-PDFs/")
         assert la["source_type"] == "auto_openalex"
+
+
+# ---------------------------------------------------------------------------
+# PR-H1 — Landing-page PDF extraction
+# ---------------------------------------------------------------------------
+
+def _html_with_citation_pdf_url(pdf_url: str,
+                                page_url: str = "https://landing.example.com/abs") -> FetchResult:
+    """An HTML landing page advertising a citation_pdf_url meta tag."""
+    body = (
+        '<html><head>'
+        f'<meta name="citation_pdf_url" content="{pdf_url}">'
+        '</head><body>landing</body></html>'
+    ).encode("utf-8")
+    return FetchResult(status=200, url=page_url, content_type="text/html",
+                       body=body, error=None, headers={})
+
+
+class TestLandingExtraction:
+    """PR-H1: when a candidate returns text/html, look for citation_pdf_url."""
+
+    def test_landing_extracts_and_fetches_pdf(self, tmp_path: Path) -> None:
+        ref = _ref(_loc("https://landing.example.com/abs",
+                        source="openalex"))
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        fake = _queue_fetch(
+            _html_with_citation_pdf_url(
+                "https://cdn.example.com/file.pdf",
+                page_url="https://landing.example.com/abs",
+            ),
+            _pdf_response("https://cdn.example.com/file.pdf"),
+        )
+
+        result = M._attempt_walk(
+            ref, cands, repo_root=tmp_path, fetch_fn=fake,
+            timeout=5, max_bytes=1024, host_throttle_sec=0,
+        )
+
+        assert result.kind == "success"
+        # Source tag carries the +landing provenance suffix.
+        assert result.source_tag == "openalex+landing"
+        # Two fetches: the landing GET and the PDF GET.
+        assert len(fake.calls) == 2
+        assert fake.calls[0]["url"] == "https://landing.example.com/abs"
+        assert fake.calls[1]["url"] == "https://cdn.example.com/file.pdf"
+
+    def test_landing_with_no_meta_tag_falls_through(self,
+                                                    tmp_path: Path) -> None:
+        # HTML body with no citation_pdf_url: extraction returns None
+        # and no secondary fetch is made; walk continues to next candidate.
+        ref = _ref(
+            _loc("https://landing.example.com/abs", source="openalex"),
+            _loc("https://repo.example.com/file.pdf", source="unpaywall"),
+        )
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        # The default _html_response body has no meta tag.
+        fake = _queue_fetch(_html_response(), _pdf_response())
+        result = M._attempt_walk(
+            ref, cands, repo_root=tmp_path, fetch_fn=fake,
+            timeout=5, max_bytes=1024, host_throttle_sec=0,
+        )
+        # Should land on the second candidate, not via +landing.
+        assert result.kind == "success"
+        assert result.source_tag == "unpaywall"
+        assert len(fake.calls) == 2
+
+    def test_landing_extraction_secondary_also_html_fails(self,
+                                                          tmp_path: Path) -> None:
+        # Primary HTML has a citation_pdf_url; secondary fetch returns
+        # HTML (not a PDF).  Record both failures in the reason and
+        # fall through to the next candidate.
+        ref = _ref(
+            _loc("https://landing.example.com/abs", source="openalex"),
+        )
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        fake = _queue_fetch(
+            _html_with_citation_pdf_url("https://cdn.example.com/file.pdf"),
+            _html_response("https://cdn.example.com/file.pdf"),
+        )
+        result = M._attempt_walk(
+            ref, cands, repo_root=tmp_path, fetch_fn=fake,
+            timeout=5, max_bytes=1024, host_throttle_sec=0,
+        )
+        assert result.kind == "failure"
+        # tried records both the original tag and the +landing extension.
+        assert "openalex" in result.tried
+        assert "openalex+landing" in result.tried
+        # Reason has the +landing failure note.
+        assert "openalex+landing" in result.reason
+
+    def test_pmc_oa_success_via_plain_fetcher(self, tmp_path: Path) -> None:
+        # PR-H5: _plan_walk synthesizes a pmc_oa candidate from the
+        # OA Web Service.  The URL is on ftp.ncbi.nlm.nih.gov (or
+        # similar plain-HTTP host); the plain fetcher walks it.
+        ref = {
+            "ids": {"pmcid": "PMC4097944", "doi": None, "arxiv_id": None,
+                    "pmid": None, "openalex_id": None, "s2_id": None},
+            "pdf_locations": [],
+        }
+        oa_url = ("https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/"
+                  "08/56/fnhum-08-00443.pdf")
+        cands = M._plan_walk(
+            ref, allow_paywalled=False, cache_dir=tmp_path,
+            oa_lookup_fn=lambda pmcid, cd: oa_url,
+        )
+        assert len(cands) == 1
+        assert cands[0]["source"] == "pmc_oa"
+        assert cands[0]["url"] == oa_url
+
+        plain, browser = _queue_two_fetchers(
+            plain_results=[_pdf_response(oa_url)],
+        )
+        result = M._attempt_walk(
+            ref, cands, repo_root=tmp_path,
+            fetch_fn=plain, browser_fetch_fn=browser,
+            timeout=5, max_bytes=1024, host_throttle_sec=0,
+        )
+        assert result.kind == "success"
+        assert result.source_tag == "pmc_oa"
+        assert len(plain.calls) == 1                  # type: ignore[attr-defined]
+        assert len(browser.calls) == 0                # type: ignore[attr-defined]
+
+    def test_landing_extraction_accepts_magic_bytes(self,
+                                                    tmp_path: Path) -> None:
+        # The extracted URL serves a PDF with octet-stream Content-Type;
+        # PR-H2's magic-byte check should recover it.
+        ref = _ref(_loc("https://landing.example.com/abs", source="openalex"))
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        octet_pdf = FetchResult(
+            status=200, url="https://cdn.example.com/file.pdf",
+            content_type="application/octet-stream",
+            body=PDF_BYTES, error=None, headers={},
+        )
+        fake = _queue_fetch(
+            _html_with_citation_pdf_url("https://cdn.example.com/file.pdf"),
+            octet_pdf,
+        )
+        result = M._attempt_walk(
+            ref, cands, repo_root=tmp_path, fetch_fn=fake,
+            timeout=5, max_bytes=1024, host_throttle_sec=0,
+        )
+        assert result.kind == "success"
+        assert result.source_tag == "openalex+landing"
+
+
+# ---------------------------------------------------------------------------
+# PR-H2 — Shortcut URL synthesis in _plan_walk
+# ---------------------------------------------------------------------------
+
+class TestPlanWalkShortcuts:
+    """PR-H2: _plan_walk combines pdf_locations with ID-derived shortcuts.
+
+    Note: ``synthesized:pmc`` and ``synthesized:doi`` were retired on
+    2026-06-02 (see ``.status/session_2026-06-02_pmc_shortcut.md``)
+    after the wet-run showed 0 ref-level recoveries from either.
+    Only ``synthesized:arxiv`` and ``synthesized:biorxiv`` remain.
+    """
+
+    def test_arxiv_id_appends_arxiv_pdf_url(self) -> None:
+        ref = {
+            "ids": {"arxiv_id": "2104.12345", "doi": None,
+                    "pmcid": None, "pmid": None,
+                    "openalex_id": None, "s2_id": None},
+            "pdf_locations": [],
+        }
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        urls = [c["url"] for c in cands]
+        assert "https://arxiv.org/pdf/2104.12345" in urls
+
+    def test_biorxiv_doi_appends_full_pdf_url(self) -> None:
+        ref = {
+            "ids": {"doi": "10.1101/2024.01.01.000001", "arxiv_id": None,
+                    "pmcid": None, "pmid": None,
+                    "openalex_id": None, "s2_id": None},
+            "pdf_locations": [],
+        }
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        urls = [c["url"] for c in cands]
+        assert any("biorxiv.org/content" in u and "full.pdf" in u for u in urls)
+
+    def test_non_biorxiv_doi_no_shortcut(self) -> None:
+        # 2026-06-02: the doi.org fallback was retired.  A plain DOI
+        # ref with no preprint signal yields zero shortcuts.
+        ref = {
+            "ids": {"doi": "10.1234/foo", "arxiv_id": None,
+                    "pmcid": None, "pmid": None,
+                    "openalex_id": None, "s2_id": None},
+            "pdf_locations": [_loc("https://repo.example.com/file.pdf",
+                                   source="openalex")],
+        }
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        urls = [c["url"] for c in cands]
+        assert urls == ["https://repo.example.com/file.pdf"]
+
+    def test_pmcid_no_static_shortcut(self) -> None:
+        # PR-H5: synthesize_id_shortcuts no longer emits a PMC
+        # candidate.  The OA Web Service handles that (see
+        # TestPlanWalkPMCOA below).
+        ref = {
+            "ids": {"pmcid": "PMC9999999", "doi": None, "arxiv_id": None,
+                    "pmid": None, "openalex_id": None, "s2_id": None},
+            "pdf_locations": [_loc("https://repo.example.com/file.pdf",
+                                   source="openalex")],
+        }
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        urls = [c["url"] for c in cands]
+        assert urls == ["https://repo.example.com/file.pdf"]
+
+
+class TestPlanWalkPMCOA:
+    """PR-H5: _plan_walk calls clients.pmc.lookup_oa_pdf_url for
+    refs with ids.pmcid and a non-None cache_dir.  The OA hit is
+    appended as a ``pmc_oa`` candidate; OA misses produce no
+    candidate.
+    """
+
+    def test_oa_hit_appended_as_candidate(self, tmp_path: Path) -> None:
+        ref = {
+            "ids": {"pmcid": "PMC4097944", "doi": None, "arxiv_id": None,
+                    "pmid": None, "openalex_id": None, "s2_id": None},
+            "pdf_locations": [],
+        }
+        # Stub OA lookup returns a known-good URL.
+        cands = M._plan_walk(
+            ref, allow_paywalled=False, cache_dir=tmp_path,
+            oa_lookup_fn=lambda pmcid, cd: (
+                "https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/"
+                "08/56/fnhum-08-00443.pdf"
+            ),
+        )
+        sources = [c.get("source") for c in cands]
+        assert "pmc_oa" in sources
+        oa = next(c for c in cands if c["source"] == "pmc_oa")
+        assert oa["url"].endswith("/fnhum-08-00443.pdf")
+        assert oa["is_oa"] is True
+
+    def test_oa_miss_yields_no_candidate(self, tmp_path: Path) -> None:
+        ref = {
+            "ids": {"pmcid": "PMC4598943", "doi": None, "arxiv_id": None,
+                    "pmid": None, "openalex_id": None, "s2_id": None},
+            "pdf_locations": [_loc("https://repo.example.com/file.pdf",
+                                   source="openalex")],
+        }
+        cands = M._plan_walk(
+            ref, allow_paywalled=False, cache_dir=tmp_path,
+            oa_lookup_fn=lambda pmcid, cd: None,
+        )
+        sources = [c.get("source") for c in cands]
+        assert "pmc_oa" not in sources
+
+    def test_no_cache_dir_skips_oa_lookup(self) -> None:
+        # Tests without cache infrastructure pass cache_dir=None and
+        # the OA lookup is skipped entirely (no stub needed).
+        called = []
+        def stub(pmcid, cd):
+            called.append(pmcid)
+            return "https://example.com/x.pdf"
+        ref = {
+            "ids": {"pmcid": "PMC4097944", "doi": None, "arxiv_id": None,
+                    "pmid": None, "openalex_id": None, "s2_id": None},
+            "pdf_locations": [],
+        }
+        cands = M._plan_walk(
+            ref, allow_paywalled=False, cache_dir=None, oa_lookup_fn=stub,
+        )
+        assert called == []
+        assert cands == []  # no cataloged URL, no synth, no OA
+
+    def test_no_pmcid_skips_oa_lookup(self, tmp_path: Path) -> None:
+        called = []
+        def stub(pmcid, cd):
+            called.append(pmcid)
+            return "https://example.com/x.pdf"
+        ref = {
+            "ids": {"pmcid": None, "doi": None, "arxiv_id": None,
+                    "pmid": None, "openalex_id": None, "s2_id": None},
+            "pdf_locations": [],
+        }
+        M._plan_walk(
+            ref, allow_paywalled=False, cache_dir=tmp_path, oa_lookup_fn=stub,
+        )
+        assert called == []
+
+    def test_oa_url_already_cataloged_deduped(self, tmp_path: Path) -> None:
+        # If PR-D's enrichment somehow already produced the same OA
+        # URL, the synthesized:pmc_oa candidate is dropped so we
+        # don't walk it twice.
+        oa_url = ("https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/"
+                  "08/56/fnhum-08-00443.pdf")
+        ref = {
+            "ids": {"pmcid": "PMC4097944", "doi": None, "arxiv_id": None,
+                    "pmid": None, "openalex_id": None, "s2_id": None},
+            "pdf_locations": [_loc(oa_url, source="openalex")],
+        }
+        cands = M._plan_walk(
+            ref, allow_paywalled=False, cache_dir=tmp_path,
+            oa_lookup_fn=lambda pmcid, cd: oa_url,
+        )
+        urls = [c["url"] for c in cands]
+        assert urls.count(oa_url) == 1
+        sources = [c.get("source") for c in cands]
+        # The kept entry is the cataloged one (openalex), not the
+        # synthesized:pmc_oa.
+        assert "pmc_oa" not in sources
+
+    def test_no_ids_no_shortcuts(self) -> None:
+        ref = {
+            "ids": {"doi": None, "arxiv_id": None, "pmcid": None,
+                    "pmid": None, "openalex_id": None, "s2_id": None},
+            "pdf_locations": [_loc("https://repo.example.com/file.pdf",
+                                   source="openalex")],
+        }
+        cands = M._plan_walk(ref, allow_paywalled=False)
+        urls = [c["url"] for c in cands]
+        assert urls == ["https://repo.example.com/file.pdf"]

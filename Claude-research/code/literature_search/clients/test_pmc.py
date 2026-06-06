@@ -484,3 +484,127 @@ class TestThrottleSharing:
 
         # Two sleeps (one per same-host follow-up call).
         assert fake_sleep.call_count == 2
+
+
+# ---------------------------------------------------------------------------
+# PR-H5 — PMC OA Web Service (lookup_oa_pdf_url + _normalise_oa_href)
+# ---------------------------------------------------------------------------
+
+# OA Web Service response shapes (XML).  Trimmed to the essentials —
+# real responses include responseDate, request URL, etc.
+OA_XML_PDF_OK = """\
+<OA>
+  <responseDate>2026-06-04 08:30:17</responseDate>
+  <records>
+    <record id="PMC4097944" license="CC BY">
+      <link format="tgz" href="ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/08/56/PMC4097944.tar.gz"/>
+      <link format="pdf" href="ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/08/56/fnhum-08-00443.pdf"/>
+    </record>
+  </records>
+</OA>
+"""
+
+OA_XML_NOT_OA = """\
+<OA>
+  <responseDate>2026-06-04 08:30:17</responseDate>
+  <error code="idIsNotOpenAccess">identifier 'PMC4598943' is not Open Access</error>
+</OA>
+"""
+
+OA_XML_PDF_MISSING = """\
+<OA>
+  <responseDate>2026-06-04 08:30:17</responseDate>
+  <records>
+    <record id="PMC0000000">
+      <link format="tgz" href="ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_package/01/02/PMC0000000.tar.gz"/>
+    </record>
+  </records>
+</OA>
+"""
+
+
+class TestNormaliseOaHref:
+
+    def test_ftp_scheme_promoted_to_https(self):
+        assert P._normalise_oa_href(
+            "ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/x/y/z.pdf"
+        ) == "https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/x/y/z.pdf"
+
+    def test_https_passes_through(self):
+        assert P._normalise_oa_href("https://x/y.pdf") == "https://x/y.pdf"
+
+    def test_empty_input(self):
+        assert P._normalise_oa_href("") == ""
+        assert P._normalise_oa_href("   ") == ""
+
+
+def _stub_requests_get(monkeypatch, *, text: str, status: int = 200):
+    """Replace requests.get with a stub that records calls and returns
+    a FakeResp-shaped object exposing the attributes lookup_oa_pdf_url
+    relies on (status_code, text).
+    """
+    class _Resp:
+        def __init__(self) -> None:
+            self.status_code = status
+            self.text = text
+
+    calls: list[dict] = []
+
+    def fake_get(url, **kwargs):
+        calls.append({"url": url, **kwargs})
+        return _Resp()
+
+    monkeypatch.setattr(P.requests, "get", fake_get)
+    return calls
+
+
+class TestLookupOaPdfUrl:
+
+    def test_oa_hit_returns_https_pdf_url(self, tmp_path: Path, monkeypatch):
+        _stub_requests_get(monkeypatch, text=OA_XML_PDF_OK)
+        out = P.lookup_oa_pdf_url("PMC4097944", tmp_path)
+        assert out == (
+            "https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/08/56/fnhum-08-00443.pdf"
+        )
+
+    def test_not_oa_returns_none(self, tmp_path: Path, monkeypatch):
+        _stub_requests_get(monkeypatch, text=OA_XML_NOT_OA)
+        assert P.lookup_oa_pdf_url("PMC4598943", tmp_path) is None
+
+    def test_oa_response_without_pdf_link_returns_none(self,
+                                                       tmp_path: Path,
+                                                       monkeypatch):
+        _stub_requests_get(monkeypatch, text=OA_XML_PDF_MISSING)
+        assert P.lookup_oa_pdf_url("PMC0000000", tmp_path) is None
+
+    def test_invalid_pmcid_returns_none(self, tmp_path: Path, monkeypatch):
+        calls = _stub_requests_get(monkeypatch, text=OA_XML_PDF_OK)
+        assert P.lookup_oa_pdf_url("not-a-pmcid", tmp_path) is None
+        # No network call should have been made.
+        assert calls == []
+
+    def test_normalises_bare_digit_pmcid(self, tmp_path: Path, monkeypatch):
+        calls = _stub_requests_get(monkeypatch, text=OA_XML_PDF_OK)
+        P.lookup_oa_pdf_url("4097944", tmp_path)
+        assert "id=PMC4097944" in calls[0]["url"]
+
+    def test_caches_response(self, tmp_path: Path, monkeypatch):
+        # Second call with the same PMCID should hit the cache and
+        # skip the network entirely.
+        calls = _stub_requests_get(monkeypatch, text=OA_XML_PDF_OK)
+        P.lookup_oa_pdf_url("PMC4097944", tmp_path)
+        P.lookup_oa_pdf_url("PMC4097944", tmp_path)
+        assert len(calls) == 1
+
+    def test_network_error_returns_none_and_does_not_cache(self,
+                                                            tmp_path: Path,
+                                                            monkeypatch):
+        def fake_get(url, **kwargs):
+            raise requests.ConnectionError("DNS failure")
+        monkeypatch.setattr(P.requests, "get", fake_get)
+        assert P.lookup_oa_pdf_url("PMC4097944", tmp_path) is None
+        # Now swap to a working stub — the second call should hit
+        # the network (no negative-cache).
+        _stub_requests_get(monkeypatch, text=OA_XML_PDF_OK)
+        out2 = P.lookup_oa_pdf_url("PMC4097944", tmp_path)
+        assert out2 is not None

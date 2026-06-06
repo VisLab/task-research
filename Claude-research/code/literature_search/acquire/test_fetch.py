@@ -156,11 +156,51 @@ def test_is_pdf_false_for_html_response():
     assert r.body == b"<html>landing page</html>"
 
 
-def test_is_pdf_false_for_octet_stream():
-    # application/octet-stream is also used for zip files etc.; we
-    # require the explicit PDF media type to avoid false positives.
+def test_is_pdf_true_for_octet_stream_with_magic_bytes():
+    # PR-H2 (2026-06-01): we accept either the application/pdf
+    # Content-Type or the %PDF- magic byte prefix.  octet-stream
+    # was previously rejected outright; now we trust the body.
     resp = FakeResp(headers={"Content-Type": "application/octet-stream"},
-                    body=b"%PDF-1.4 maybe")
+                    body=b"%PDF-1.4\n...rest of pdf...")
+    r = F.fetch_bytes("https://example.com/x",
+                      session=FakeSession(response=resp), host_throttle_sec=0)
+    assert r.is_pdf() is True
+
+
+def test_is_pdf_false_for_octet_stream_without_magic_bytes():
+    # Without %PDF- prefix the octet-stream body is treated as
+    # non-PDF (zip, tarball, JPEG, etc.).  Belt-and-braces against
+    # the footgun mentioned in is_pdf's docstring.
+    resp = FakeResp(headers={"Content-Type": "application/octet-stream"},
+                    body=b"PK\x03\x04...zip archive...")
+    r = F.fetch_bytes("https://example.com/x",
+                      session=FakeSession(response=resp), host_throttle_sec=0)
+    assert r.is_pdf() is False
+
+
+def test_is_pdf_true_for_text_plain_with_magic_bytes():
+    # Some misconfigured servers serve PDFs as text/plain.  Magic-byte
+    # detection rescues them.
+    resp = FakeResp(headers={"Content-Type": "text/plain"},
+                    body=b"%PDF-1.5 body")
+    r = F.fetch_bytes("https://example.com/x",
+                      session=FakeSession(response=resp), host_throttle_sec=0)
+    assert r.is_pdf() is True
+
+
+def test_is_pdf_false_for_short_body_without_magic():
+    # A body too short to carry the magic prefix and a generic
+    # content-type should not be mistaken for a PDF.
+    resp = FakeResp(headers={"Content-Type": "application/octet-stream"},
+                    body=b"PDF")  # 3 bytes, doesn't match %PDF-
+    r = F.fetch_bytes("https://example.com/x",
+                      session=FakeSession(response=resp), host_throttle_sec=0)
+    assert r.is_pdf() is False
+
+
+def test_is_pdf_false_for_empty_body_without_magic():
+    resp = FakeResp(headers={"Content-Type": "text/html"},
+                    body=b"")
     r = F.fetch_bytes("https://example.com/x",
                       session=FakeSession(response=resp), host_throttle_sec=0)
     assert r.is_pdf() is False
