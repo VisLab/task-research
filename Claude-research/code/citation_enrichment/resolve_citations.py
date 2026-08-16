@@ -22,7 +22,7 @@ Pre-1900 refs are short-circuited to source="historical", confidence="low".
 Dependencies: requests, standard library only. No pyalex, no crossrefapi.
 
 Part of citation-enrichment workstream, Phase B (process references).
-See .status/task_citation_enrich_processes_instructions.md for full spec.
+The full task spec is recorded in the maintainer's notes.
 """
 
 import hashlib

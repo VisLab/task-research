@@ -10,12 +10,11 @@ response.
 
 Pure cache-read pass.  No new network calls in the common case: PR-D
 left every DOI's response on disk under ``<cache_root>/<source>/stable/``
-per ``.status/cache_convention.md``.  If a cached response is absent
+per the shared cache convention (owned by hed-metadata-toolkit).  If a cached response is absent
 (a DOI PR-D didn't process) the underlying ``lookup_by_doi`` clients
 hit the live API once, exactly as PR-D would have.
 
-Source-priority rules (see
-``.status/id_enrichment_execution_2026-05-27.md`` §3):
+Source-priority rules (recorded in the maintainer's notes):
 
   openalex_id   OpenAlex ``id`` field (strip prefix)
   pmid          OpenAlex ``ids.pmid`` first, S2 ``externalIds.PubMed`` fallback
@@ -68,15 +67,15 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from reference_compat import ref_doi  # noqa: E402
 
-from clients.openalex import lookup_by_doi as oa_lookup  # noqa: E402
-from clients.semanticscholar import lookup_by_doi as s2_lookup  # noqa: E402
+from hed_metadata_toolkit.clients.openalex import lookup_by_doi as oa_lookup  # noqa: E402
+from hed_metadata_toolkit.clients.semanticscholar import lookup_by_doi as s2_lookup  # noqa: E402
 
 
 logger = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
-# Cache-directory resolution (per .status/cache_convention.md §3)
+# Cache-directory resolution (per the shared cache convention)
 # ---------------------------------------------------------------------------
 
 def resolve_cache_dir(arg_value: str, workspace: Path) -> Path:

@@ -19,7 +19,7 @@ Field is inserted after `pmid` in each object so the order reads:
 
 Run from the workspace root:
     python outputs\\add_url_field.py
-    python outputs\\add_url_field.py --workspace "H:\\Research\\TaskResearch\\Claude-research"
+    python outputs\\add_url_field.py --workspace "<workspace-root>"
     python outputs\\add_url_field.py --dry-run   # report counts, don't write
 
 Written by Claude Sonnet, 2026-04-20.

@@ -30,7 +30,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 from reference_compat import ref_doi  # noqa: E402
-from identity import build_pub_id
+from hed_metadata_toolkit.citation_identity import build_pub_id
 from triage_rules import (
     classify_venue,
     publisher_tier_from_doi,

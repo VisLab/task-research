@@ -39,7 +39,7 @@ AC-specific behaviour:
   the fetcher pulls the direct PDF URL from the rendered DOM's
   ``<meta name="citation_pdf_url">`` tag.  If that tag is absent,
   it falls back to ``<landing>/download``.  Both routes match the
-  reference implementation in ``.status/ac_with_playwright.py``.
+  maintainer's reference implementation.
   Other hosts can also be passed; the meta-tag extraction is
   generic (it works on any host whose landing page advertises
   ``citation_pdf_url``).

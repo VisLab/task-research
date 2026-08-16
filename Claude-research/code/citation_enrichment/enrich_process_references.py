@@ -10,7 +10,7 @@ outputs/process_details.enriched.json, and prints a resolution summary.
 
 Usage (from the workspace root or the outputs/ directory):
     python outputs/enrich_process_references.py
-    python outputs/enrich_process_references.py --workspace "H:\\Research\\TaskResearch\\Claude-research"
+    python outputs/enrich_process_references.py --workspace "<workspace-root>"
     python outputs/enrich_process_references.py --write-back   # update process_details.json in place
 
 Requires: resolve_citations.py in the same directory (outputs/).

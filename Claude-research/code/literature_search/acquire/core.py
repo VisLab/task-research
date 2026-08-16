@@ -10,7 +10,8 @@ this module's.
 What's in here:
 
   resolve_cache_dir            Reuse the convention from enrich_pdf_locations.py
-                               (per .status/cache_convention.md §3).
+                               (per the shared cache convention,
+                               owned by hed-metadata-toolkit).
   iter_refs                    Walk the catalog in scope, yielding
                                ``(owner_id, ref_index, ref)``.
   should_skip                  Idempotency: is this ref's artifact already on disk?
@@ -27,7 +28,7 @@ What's in here:
                                Markdown.
 
 The success/failure recorders implement the schema shape locked in
-``.status/pr_e_execution_2026-05-26.md`` §3.5 / D-E2: a single
+the PR-E execution record (maintainer's notes) §3.5 / D-E2: a single
 ``local_artifacts.{kind}`` object whose ``path`` is either a non-null
 string (successful acquisition) or null (failure record carrying
 ``last_attempt``, ``attempts``, ``tried``, ``reason`` for the
@@ -53,7 +54,7 @@ _PARENT = Path(__file__).resolve().parent.parent
 if str(_PARENT) not in sys.path:
     sys.path.insert(0, str(_PARENT))
 
-from identity import build_pdf_filename  # noqa: E402
+from hed_metadata_toolkit.citation_identity import build_pdf_filename  # noqa: E402
 
 
 # Two kinds of artifact land separately in the catalog; the helpers
@@ -64,8 +65,8 @@ ArtifactKind = Literal["pdf", "markdown"]
 
 
 # ---------------------------------------------------------------------------
-# Cache directory resolution (mirrors enrich_pdf_locations.py /
-# .status/cache_convention.md §3)
+# Cache directory resolution (mirrors enrich_pdf_locations.py and the
+# shared cache convention)
 # ---------------------------------------------------------------------------
 
 def resolve_cache_dir(arg_value: str, workspace: Path) -> Path:

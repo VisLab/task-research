@@ -11,7 +11,7 @@ Workflow per CLAUDE.md:
   3. Verify JSON validity, process count, and that every targeted process
      was found and updated.
   4. Only with --write does the staged copy replace the canonical file.
-  5. A decision note is written to .status/.
+  5. A decision note is recorded in the maintainer's notes.
 
 Usage:
     # Dry run (default) — writes only to .scratch/, prints summary.

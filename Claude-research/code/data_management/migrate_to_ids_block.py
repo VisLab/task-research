@@ -2,7 +2,7 @@
 """
 migrate_to_ids_block.py — One-shot migration of reference shape.
 
-Schema change of 2026-05-19 (see .status/plan_2026-05-19_rec1_v2.md):
+Schema change of 2026-05-19 (plan recorded in the maintainer's notes):
 
   Before:
     {

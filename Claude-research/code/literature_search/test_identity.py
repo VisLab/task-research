@@ -18,7 +18,11 @@ import re
 
 import pytest
 
-from identity import build_canonical_string, build_pdf_filename, build_pub_id
+from hed_metadata_toolkit.citation_identity import (
+    build_canonical_string,
+    build_pdf_filename,
+    build_pub_id,
+)
 
 # ---------------------------------------------------------------------------
 # Fixture table  (15 rows × 3 columns)

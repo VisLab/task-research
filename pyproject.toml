@@ -31,6 +31,11 @@ classifiers = [
 requires-python = ">=3.10"
 
 dependencies = [
+    # hed-metadata-toolkit (shared API clients, cache, citation identity) is
+    # also required but is installed separately as an editable install from
+    # its own checkout: pip install -e <path-to-hed-metadata-toolkit>
+    # A committed path dependency is not portable; switch to a pinned Git URL
+    # or PyPI release once the toolkit is published.
     "requests>=2.28.0",
     "jsonschema>=4.0.0",
 ]

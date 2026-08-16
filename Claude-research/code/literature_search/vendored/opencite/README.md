@@ -57,8 +57,7 @@ Vendored code is NOT regenerated automatically.  To refresh:
 3. Apply any upstream improvements that make sense for us.
 4. Update the per-file attribution header with the new commit hash.
 5. Update `NOTICE.md` at the repo root.
-6. Write a session note in `.status/` describing what changed and
-   why.
+6. Record what changed and why in the maintainer's notes.
 
 Refresh is a deliberate maintainer action, not a CI task.
 

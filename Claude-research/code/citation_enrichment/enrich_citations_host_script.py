@@ -8,7 +8,7 @@ network egress to the citation APIs.
 
 Usage:
     python outputs\\enrich_citations_host_script.py
-    python outputs\\enrich_citations_host_script.py --workspace "H:\\Research\\TaskResearch\\Claude-research"
+    python outputs\\enrich_citations_host_script.py --workspace "<workspace-root>"
     python outputs\\enrich_citations_host_script.py --write-back
     python outputs\\enrich_citations_host_script.py --dry-run
 
@@ -39,8 +39,7 @@ preserved unchanged.  Their stale cache files (if any) are deleted on the
 first pass so the old false-positive result cannot contaminate future runs.
 
 Written by Claude Sonnet, 2026-04-20.
-See .status/citation_enrichment_blocked_2026-04-20.md for context.
-See .status/false_positive_corrections_2026-04-20.md for the 4 manual fixes.
+Context and the 4 manual fixes are recorded in the maintainer's notes.
 """
 
 import argparse
@@ -621,7 +620,7 @@ def main():
         description=(
             "Enrich process_details.json citation references using CrossRef / "
             "OpenAlex / Europe PMC / Semantic Scholar.\n\n"
-            "Run from the workspace root (H:\\Research\\TaskResearch\\Claude-research) "
+            "Run from the workspace root "
             "or pass --workspace explicitly."
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,

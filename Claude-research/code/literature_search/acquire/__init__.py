@@ -20,8 +20,8 @@ Both lean on:
     core.py               Catalog walk, idempotency, success/failure recording.
     priority.py           Pure ordering of pdf_locations[] entries.
 
-POC reference set (D-E3, locked 2026-05-27 — see
-`.status/pr_e_execution_2026-05-26.md` §11):
+POC reference set (D-E3, locked 2026-05-27; recorded in the
+maintainer's notes):
 
     Fleming & Lau 2014   gold OA + PMC + CC-BY (PMC-BioC fast path)
     Salamone et al. 2007 green OA, no PMC      (repository walk)

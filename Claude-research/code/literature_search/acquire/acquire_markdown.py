@@ -114,7 +114,7 @@ from core import (  # noqa: E402
 from priority import classify_url  # noqa: E402
 
 # Sibling-module imports (live in literature_search/).
-from clients.pmc import fetch_image, lookup_by_pmcid  # noqa: E402
+from hed_metadata_toolkit.clients.pmc import fetch_image, lookup_by_pmcid  # noqa: E402
 from convert import convert_pdf  # noqa: E402
 from license_policy import is_publishable, normalise_license  # noqa: E402
 from vendored.opencite.pmc_convert import (  # noqa: E402

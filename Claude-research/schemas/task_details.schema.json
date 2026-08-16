@@ -94,7 +94,7 @@
     "reference": {
       "type": "object",
       "required": ["roles", "ids", "oa_status"],
-      "description": "Same shape as the reference object in process_details.schema.json. Identifiers live in a nested 'ids' block (see id_set definition there); 'url' and 'pub_id' stay at the top level. Schema reorganised 2026-05-19; see .status/plan_2026-05-19_rec1_v2.md.",
+      "description": "Same shape as the reference object in process_details.schema.json. Identifiers live in a nested 'ids' block (see id_set definition there); 'url' and 'pub_id' stay at the top level.",
       "properties": {
         "roles": {
           "type": "array",

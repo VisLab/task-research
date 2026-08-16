@@ -18,15 +18,15 @@ Pure functions; no I/O.  This is the only module that owns the
 licence vocabulary and the publishability predicate — change the
 policy here, re-derive ``is_publishable`` flags downstream.
 
-Policy as of 2026-05-19 (see .status/plan_2026-05-19_rec1_v2.md §10
-decision 8):
+Policy as of 2026-05-19 (maintainer decision 8, recorded in the
+maintainer's notes):
 
   PUBLISHABLE_LICENSES = {cc-by, cc-by-sa, cc0, public-domain}
 
   CC-BY-NC family is deliberately excluded by default.  The boundary
   between "non-commercial use" and "open redistribution" is contested,
   so any inclusion of CC-BY-NC content requires a per-case override
-  recorded in .status/license_overrides.md.
+  recorded in the maintainer's notes.
 """
 
 from __future__ import annotations
@@ -59,7 +59,7 @@ __all__ = [
 #: with a paper).  Permitted in ``PUBLISHABLE_LICENSES`` because the
 #: MIT licence permits redistribution with attribution + licence-text
 #: preservation, which is the same obligation CC-BY imposes (decision
-#: 2026-05-23; see ``.status/decision_2026-05-23_mit_publishable.md``).
+#: 2026-05-23, recorded in the maintainer's notes).
 KNOWN_LICENSES: frozenset[str] = frozenset({
     "cc-by",
     "cc-by-sa",
@@ -81,14 +81,13 @@ KNOWN_LICENSES: frozenset[str] = frozenset({
 #: CC-BY-NC family is **not** included; HED's downstream uses are
 #: not unambiguously non-commercial, and the contested boundary is
 #: not worth automating away.  Override per-case if and when it
-#: matters (see .status/license_overrides.md).
+#: matters (record the override in the maintainer's notes).
 #:
 #: ``mit`` IS included as of 2026-05-23.  The MIT licence permits
 #: redistribution with copyright-notice + licence-text preservation;
 #: the publish step must include both alongside the Markdown.  This
 #: is the same attribution mechanism CC-BY needs, so no new policy
-#: machinery is required.  See
-#: ``.status/decision_2026-05-23_mit_publishable.md``.
+#: machinery is required (decision 2026-05-23, maintainer's notes).
 PUBLISHABLE_LICENSES: frozenset[str] = frozenset({
     "cc-by",
     "cc-by-sa",

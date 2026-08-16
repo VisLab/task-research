@@ -38,7 +38,7 @@ except ImportError:
 sys.path.insert(0, str(Path(__file__).parent))
 
 from fos_map import fields_of_study_set
-from identity import build_pub_id
+from hed_metadata_toolkit.citation_identity import build_pub_id
 from reference_compat import ref_doi, ref_pub_id
 from search_queries import build_plans_from_json, filter_plans_by_ids, POC_ITEM_IDS, ItemQueryPlan
 from normalize import Candidate, normalize_openalex, normalize_europepmc, normalize_s2
@@ -52,9 +52,9 @@ from tier_classify import assign_tiers
 from serialize_candidates import write_candidates_json
 from present_candidates import write_item_markdown, write_index  # legacy, retained until phase3_render.py replaces it
 
-from clients.openalex import search_works, lookup_by_doi as oa_lookup
-from clients.europepmc import search as epmc_search, lookup_by_doi as epmc_lookup
-from clients.semanticscholar import (
+from hed_metadata_toolkit.clients.openalex import search_works, lookup_by_doi as oa_lookup
+from hed_metadata_toolkit.clients.europepmc import search as epmc_search, lookup_by_doi as epmc_lookup
+from hed_metadata_toolkit.clients.semanticscholar import (
     search as s2_search,
     lookup_by_doi as s2_lookup,
     fetch_citations,

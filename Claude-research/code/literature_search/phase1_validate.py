@@ -35,9 +35,8 @@ Cache:
     retry the live API for any source that returned a server error.
 
 Written by Claude Sonnet, 2026-04-22.
-See .status/citation_enrichment_blocked_2026-04-22.md for context.
-DOI correction note: Badre paper is 2008, not 2012 as originally in the plan.
-See .status/session_2026-04-21_literature_search_phase1.md for details.
+DOI correction note: Badre paper is 2008, not 2012 as originally in the plan
+(details in the maintainer's notes).
 """
 
 import argparse
@@ -49,7 +48,7 @@ _HERE = Path(__file__).resolve().parent
 if str(_HERE) not in sys.path:
     sys.path.insert(0, str(_HERE))
 
-from identity import build_canonical_string, build_pdf_filename, build_pub_id
+from hed_metadata_toolkit.citation_identity import build_canonical_string, build_pdf_filename, build_pub_id
 
 # ---------------------------------------------------------------------------
 # Test papers
@@ -259,7 +258,7 @@ def main() -> None:
         print("ERROR: 'requests' is not installed.  Run:  pip install requests")
         sys.exit(1)
 
-    from clients import openalex, crossref, europepmc, semanticscholar, unpaywall
+    from hed_metadata_toolkit.clients import openalex, crossref, europepmc, semanticscholar, unpaywall
 
     email = "hedannotation@gmail.com"
 

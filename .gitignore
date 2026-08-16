@@ -137,8 +137,18 @@ site/
 /.venv/
 config.py
 
-# VS Code
-.vscode/
+# VS Code (shared settings.json is committed; everything else is personal)
+.vscode/*
+!.vscode/settings.json
+
+# Claude Code (machine-specific local settings; shared settings.json is committed)
+.claude/settings.local.json
+
+# Personal per-repo Claude Code notes (imports .status/local-environment.md)
+CLAUDE.local.md
+
+# Real tokens and machine values; .env.example is the committed documentation
+.env
 
 ############
 ## Windows

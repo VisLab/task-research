@@ -2,8 +2,8 @@
 """
 extract_process_details_from_md.py
 
-Phase 2 of the JSON-as-source-of-truth migration. Plan:
-    ../.status/json_as_source_of_truth_plan_2026-04-17.md
+Phase 2 of the JSON-as-source-of-truth migration (plan recorded in the
+maintainer's notes).
 
 Reads (authoritative as of the pre-flip state):
     ../process_reference.md     per-process definitions + citations + category grouping

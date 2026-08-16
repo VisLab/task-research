@@ -7,7 +7,7 @@ For each catalog reference, this script:
 
 1.  Looks up the DOI via the three cached clients we already have
     — OpenAlex, Unpaywall, Semantic Scholar.  Cache layout follows
-    ``.status/cache_convention.md``: ``--cache-dir`` arg → ``$HED_CACHE_DIR``
+    the shared cache convention: ``--cache-dir`` arg → ``$HED_CACHE_DIR``
     env var → ``outputs/cache/``.  Lookups are ``stable=True`` so a
     DOI's response is fetched once and served indefinitely.
 2.  Extracts each response's "where can the PDF be obtained" hints into
@@ -74,16 +74,16 @@ from license_policy import (  # noqa: E402
 )
 from reference_compat import ref_doi  # noqa: E402
 
-from clients.openalex import lookup_by_doi as oa_lookup  # noqa: E402
-from clients.unpaywall import lookup_by_doi as up_lookup  # noqa: E402
-from clients.semanticscholar import lookup_by_doi as s2_lookup  # noqa: E402
+from hed_metadata_toolkit.clients.openalex import lookup_by_doi as oa_lookup  # noqa: E402
+from hed_metadata_toolkit.clients.unpaywall import lookup_by_doi as up_lookup  # noqa: E402
+from hed_metadata_toolkit.clients.semanticscholar import lookup_by_doi as s2_lookup  # noqa: E402
 
 
 logger = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
-# Cache directory resolution (per .status/cache_convention.md §3)
+# Cache directory resolution (per the shared cache convention)
 # ---------------------------------------------------------------------------
 
 def resolve_cache_dir(arg_value: str, workspace: Path) -> Path:

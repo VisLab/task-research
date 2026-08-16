@@ -239,7 +239,7 @@ def _plan_walk(
             # Lazy import keeps the clients package off the
             # import path during unit tests that monkey-patch
             # _plan_walk without needing clients.pmc.
-            from clients.pmc import lookup_oa_pdf_url  # noqa: E402
+            from hed_metadata_toolkit.clients.pmc import lookup_oa_pdf_url  # noqa: E402
             oa_lookup_fn = lookup_oa_pdf_url
         oa_url = oa_lookup_fn(pmcid, cache_dir)
         if oa_url:

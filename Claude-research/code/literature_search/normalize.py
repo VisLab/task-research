@@ -27,7 +27,7 @@ Imports:
 import re
 from dataclasses import dataclass, field
 
-from identity import build_pub_id
+from hed_metadata_toolkit.citation_identity import build_pub_id
 
 
 # ---------------------------------------------------------------------------

@@ -897,7 +897,7 @@ class TestPlanWalkShortcuts:
     """PR-H2: _plan_walk combines pdf_locations with ID-derived shortcuts.
 
     Note: ``synthesized:pmc`` and ``synthesized:doi`` were retired on
-    2026-06-02 (see ``.status/session_2026-06-02_pmc_shortcut.md``)
+    2026-06-02 (recorded in the maintainer's notes)
     after the wet-run showed 0 ref-level recoveries from either.
     Only ``synthesized:arxiv`` and ``synthesized:biorxiv`` remain.
     """

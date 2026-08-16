@@ -30,7 +30,7 @@ from unittest.mock import patch
 
 import pytest
 
-from cache import cache_get_or_fetch
+from hed_metadata_toolkit.cache import cache_get_or_fetch
 
 
 # ---------------------------------------------------------------------------

@@ -321,8 +321,8 @@ As of 2026-04-19, 19 of 172 processes have `task_count = 0` (no linked tasks). S
 **Current state:** Resolved. Citation enrichment pass (Phase B) run 2026-04-20. 390/404
 references now have structured metadata (title, authors, venue, venue_type, doi, etc.).
 14 unresolved — all classic books or obscure manuals with no CrossRef/OpenAlex record;
-documented in `.status/citation_gaps_2026-04-20.md` §2.2. 4 false-positive matches
-identified in spot-check and documented in §2.3 of the same file; these need manual
+documented in the maintainer's citation-gaps notes. 4 false-positive matches
+identified in spot-check and documented in the same notes; these need manual
 correction. Original `journal`, `year`, and `citation_string` fields preserved on all refs.
 
 **Recommended action:** Correct the 4 false positives (§2.3 of gaps doc). Attempt manual
@@ -345,7 +345,7 @@ Proceed to Phase C (task reference enrichment) once process pass is approved.
 
 ## 8. Resolved Decisions (Summary)
 
-The following decisions are documented in detail in `.status_2/decisions_log.md`, `.status_2/umbrella_decisions.md`, and `.status_2/side_findings_resolutions.md`. They are summarized here for reference.
+The following decisions are documented in detail in the maintainer's decision notes. They are summarized here for reference.
 
 ### Umbrella drops
 

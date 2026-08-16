@@ -74,7 +74,7 @@ _HERE = Path(__file__).resolve().parent
 if str(_HERE) not in sys.path:
     sys.path.insert(0, str(_HERE))
 
-from cache import cache_get_or_fetch  # noqa: E402
+from hed_metadata_toolkit.cache import cache_get_or_fetch  # noqa: E402
 
 
 logger = logging.getLogger(__name__)

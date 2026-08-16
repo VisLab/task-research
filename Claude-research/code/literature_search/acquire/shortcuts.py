@@ -14,8 +14,8 @@ PMC PDFs are handled in :func:`acquire_pdf._plan_walk` by calling
 the PMC OA Web Service (:func:`clients.pmc.lookup_oa_pdf_url`).
 The OA service is the principled way to discover PMC PDF URLs for
 OA-subset articles; non-OA-subset articles cannot be downloaded
-programmatically regardless of approach.  See
-``.status/session_2026-06-04_pmc_oa.md`` for the design.
+programmatically regardless of approach.  The design is recorded in
+the maintainer's notes.
 
 These shortcuts are appended to whatever PR-D produced.  The
 orchestrator's :func:`acquire_pdf._plan_walk` calls

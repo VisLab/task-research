@@ -243,7 +243,7 @@
         },
         {
           "path": "code/literature_search/triage_existing_refs.py",
-          "description": "Phase 2 triage script: applies triage_rules.py to current references, writes a report to .status/.",
+          "description": "Phase 2 triage script: applies triage_rules.py to current references, writes a Markdown report to the path passed via --output.",
           "status": "current"
         },
         {
@@ -452,7 +452,7 @@
       "title": "Git-Ignored Locations",
       "intro": "Listed for orientation only. Not tracked in version control.",
       "files": [
-        { "path": "../.status/", "description": "Session reports, decision notes, and historical thinking documents. Lives at the task-research/ parent level (not inside Claude-research/) and is gitignored. Filenames follow session_YYYY-MM-DD_<topic>.md and decision_YYYY-MM-DD_<topic>.md conventions.", "status": "ignored", "type": "directory" },
+        { "path": "../.status/", "description": "Maintainer working notes (plans, dated notes, decisions, archive). Lives at the task-research/ parent level (not inside Claude-research/) and is gitignored - local to one machine, absent from clones.", "status": "ignored", "type": "directory" },
         { "path": "code/.apikeys", "description": "API keys (S2_API_KEY, NCBI_API_KEY). One KEY=value per line. Gitignored. Never log contents.", "status": "ignored" },
         { "path": ".scratch/", "description": "Disposable temporary work files. Cleaned up between sessions.", "status": "ignored", "type": "directory" }
       ]

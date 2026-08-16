@@ -26,9 +26,9 @@ from pathlib import Path
 # Infrastructure imports (siblings in outputs/literature_search/)
 # ---------------------------------------------------------------------------
 sys.path.insert(0, str(Path(__file__).parent))
-from identity import build_pub_id
-from clients import crossref as crossref_client
-from clients import openalex as openalex_client
+from hed_metadata_toolkit.citation_identity import build_pub_id
+from hed_metadata_toolkit.clients import crossref as crossref_client
+from hed_metadata_toolkit.clients import openalex as openalex_client
 
 logging.basicConfig(level=logging.WARNING, format="%(levelname)s %(message)s")
 logger = logging.getLogger(__name__)

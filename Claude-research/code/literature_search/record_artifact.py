@@ -93,7 +93,7 @@ from typing import Iterable
 # from the workspace root and as a module-style invocation.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from identity import build_pdf_filename  # noqa: E402
+from hed_metadata_toolkit.citation_identity import build_pdf_filename  # noqa: E402
 from license_policy import is_publishable, normalise_license  # noqa: E402
 from reference_compat import ref_doi, ref_pmid, ref_pub_id  # noqa: E402
 

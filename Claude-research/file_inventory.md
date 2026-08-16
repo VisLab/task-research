@@ -102,7 +102,7 @@ Phase 1 through Phase 9 literature-search pipeline. Library modules and runnable
 | `code/literature_search/rank_and_select.py` | Phase 3 ranking and selection: phrase-gate filter, scoring, candidate ranking. | current |
 | `code/literature_search/present_candidates.py` | Renders Phase 3 ranked candidates as markdown files in outputs/phase3/candidates/ for human review. | current |
 | `code/literature_search/triage_rules.py` | Rule definitions for triaging existing references (specialty journals, generic-too-broad patterns, malformed-entry detectors). | current |
-| `code/literature_search/triage_existing_refs.py` | Phase 2 triage script: applies triage_rules.py to current references, writes a report to .status/. | current |
+| `code/literature_search/triage_existing_refs.py` | Phase 2 triage script: applies triage_rules.py to current references, writes a Markdown report to the path passed via --output. | current |
 | `code/literature_search/resolve_landmarks.py` | Resolves the curated historical-landmark list against current references; flags missing landmarks. | current |
 | `code/literature_search/apply_drops.py` | Applies DROP marks from human review back into process_details.json / task_details.json. Refuses to drop references with role=historical without an explicit override. | current |
 | `code/literature_search/phase1_validate.py` | Phase 1 end-to-end infrastructure validation: hits all 5 API clients for 7 test papers, verifies pub_id determinism, checks cache idempotence. | current |
@@ -224,7 +224,7 @@ Listed for orientation only. Not tracked in version control.
 |------|-------------|--------|
 | `code/.apikeys` | API keys (S2_API_KEY, NCBI_API_KEY). One KEY=value per line. Gitignored. Never log contents. | ignored |
 
-- **`../.status/`** — Session reports, decision notes, and historical thinking documents. Lives at the task-research/ parent level (not inside Claude-research/) and is gitignored. Filenames follow session_YYYY-MM-DD_<topic>.md and decision_YYYY-MM-DD_<topic>.md conventions.
+- **`../.status/`** — Maintainer working notes (plans, dated notes, decisions, archive). Lives at the task-research/ parent level (not inside Claude-research/) and is gitignored - local to one machine, absent from clones.
 - **`.scratch/`** — Disposable temporary work files. Cleaned up between sessions.
 
 ---

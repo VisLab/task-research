@@ -291,8 +291,8 @@ def test_mit_known_and_publishable() -> None:
     """MIT is tracked as a distinct licence and is publishable.
 
     Decision 2026-05-23: MIT permits redistribution with attribution
-    + licence-text preservation, same obligation as CC-BY.  See
-    ``.status/decision_2026-05-23_mit_publishable.md``.
+    + licence-text preservation, same obligation as CC-BY (decision 2026-05-23,
+    maintainer's notes).
     """
     assert "mit" in KNOWN_LICENSES
     assert "mit" in PUBLISHABLE_LICENSES

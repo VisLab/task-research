@@ -127,7 +127,7 @@ def test_pmc_bioc_fetch_pmc7327471(tmp_path: Path) -> None:
     """
     # Import here so the module-level import doesn't fire if the test
     # collection runs without the ``network`` marker enabled.
-    from clients.pmc import lookup_by_pmcid
+    from hed_metadata_toolkit.clients.pmc import lookup_by_pmcid
 
     cache_dir = tmp_path / "cache"
     result = lookup_by_pmcid("PMC7327471", cache_dir)
