@@ -19,10 +19,9 @@ from datetime import date
 from pathlib import Path
 
 from normalize import Candidate
+from rank_and_select import composite_score
 from reference_compat import ref_doi
 from search_queries import ItemQueryPlan
-from rank_and_select import composite_score
-
 
 TODAY = date.today().isoformat()
 
@@ -56,11 +55,11 @@ def _score_str(score: float) -> str:
 
 def _row(n: str, cand: Candidate, score: float, role: str) -> str:
     title_trunc = _trunc_title(cand.title)
-    doi_cell    = _doi_link(cand.doi)
-    first_auth  = cand.first_author_family or "?"
-    year        = str(cand.year) if cand.year else "?"
-    venue       = (cand.venue or "?")[:35]
-    cites       = str(cand.citation_count) if cand.citation_count is not None else "?"
+    doi_cell = _doi_link(cand.doi)
+    first_auth = cand.first_author_family or "?"
+    year = str(cand.year) if cand.year else "?"
+    venue = (cand.venue or "?")[:35]
+    cites = str(cand.citation_count) if cand.citation_count is not None else "?"
     return (
         f"| {n} | {doi_cell} | {first_auth} | {year} | {venue} | "
         f"{cites} | {_score_str(score)} | {role} | {title_trunc} |"
@@ -118,10 +117,10 @@ def _build_section(
     lines = [f"## {header}", "", _TABLE_HEADER]
     details = []
     for i, cand in enumerate(candidates[:display_limit]):
-        score  = composite_score(cand, item, today_year, landmark_pub_ids)
+        score = composite_score(cand, item, today_year, landmark_pub_ids)
         suffix = pick_suffix if cand.pub_id in picked_ids else ""
-        n      = f"{i + 1}{suffix}"
-        role   = _suggest_role(cand, today_year)
+        n = f"{i + 1}{suffix}"
+        role = _suggest_role(cand, today_year)
         lines.append(_row(n, cand, score, role))
         details.append(_detail_block(n, cand))
     lines.append("")
@@ -134,18 +133,19 @@ def _build_landmark_section(
     all_candidates: list[Candidate],
 ) -> str:
     all_pub_ids = {c.pub_id for c in all_candidates}
-    all_dois    = {c.doi for c in all_candidates if c.doi}
+    all_dois = {c.doi for c in all_candidates if c.doi}
     lines = [
-        "## 4. Landmark check", "",
+        "## 4. Landmark check",
+        "",
         "| Landmark citation | Landmark pub_id | Found in candidates? |",
         "| --- | --- | --- |",
     ]
     for lm in landmark_entries:
         citation = lm.get("citation", "?")
-        pub_id   = lm.get("pub_id", "?")
-        doi      = ref_doi(lm)
-        found    = (pub_id in all_pub_ids) or (doi and doi.lower() in all_dois)
-        status   = "YES" if found else "NOT FOUND \u2014 query may need broadening"
+        pub_id = lm.get("pub_id", "?")
+        doi = ref_doi(lm)
+        found = (pub_id in all_pub_ids) or (doi and doi.lower() in all_dois)
+        status = "YES" if found else "NOT FOUND \u2014 query may need broadening"
         lines.append(f"| {citation} | {pub_id} | {status} |")
     return "\n".join(lines)
 
@@ -166,7 +166,7 @@ def write_item_markdown(
     out_path = output_dir / f"{item.item_id}.md"
 
     landmark_pub_ids = {e.get("pub_id", "") for e in landmark_entries}
-    found_ids  = {c.pub_id for c in found_picks}
+    found_ids = {c.pub_id for c in found_picks}
     recent_ids = {c.pub_id for c in recent_picks}
 
     from rank_and_select import composite_score as _cs
@@ -174,40 +174,37 @@ def write_item_markdown(
     def fscore(c: Candidate) -> float:
         return _cs(c, item, today_year, landmark_pub_ids, neutralize_recency=True)
 
-    found_display   = sorted(all_sorted, key=fscore, reverse=True)
+    found_display = sorted(all_sorted, key=fscore, reverse=True)
     recent_year_min = today_year - 8
-    recent_display  = sorted(
+    recent_display = sorted(
         [c for c in all_sorted if c.year is not None and c.year >= recent_year_min],
         key=lambda c: _cs(c, item, today_year, landmark_pub_ids),
         reverse=True,
     )
 
-    alias_str = ", ".join(
-        a if isinstance(a, str) else (a.get("name") or "")
-        for a in item.aliases
-    ) if item.aliases else "none"
-    topic_str = (
-        ", ".join(item.openalex_topic_ids) if item.openalex_topic_ids
-        else "none (no crosswalk)"
+    alias_str = (
+        ", ".join(a if isinstance(a, str) else (a.get("name") or "") for a in item.aliases) if item.aliases else "none"
     )
-    n_total  = len(all_sorted)
+    topic_str = ", ".join(item.openalex_topic_ids) if item.openalex_topic_ids else "none (no crosswalk)"
+    n_total = len(all_sorted)
     n_picked = len(found_picks) + len(recent_picks)
 
     lines: list[str] = [
-        f"# Candidates \u2014 {item.item_id}", "",
+        f"# Candidates \u2014 {item.item_id}",
+        "",
         f"**Kind:** {item.item_kind}",
         f"**Primary name:** {item.primary_name}",
         f"**Aliases:** {alias_str}",
         f"**Generated:** {TODAY}",
-        f"**Sources queried:** openalex, europepmc, semanticscholar",
-        f"**Stage B expansion:** {stage_b_n_seeds} seeds, "
-        f"{stage_b_n_kept} citing papers kept after filters",
-        f"**Passes:** all_years, recent, reviews",
+        "**Sources queried:** openalex, europepmc, semanticscholar",
+        f"**Stage B expansion:** {stage_b_n_seeds} seeds, {stage_b_n_kept} citing papers kept after filters",
+        "**Passes:** all_years, recent, reviews",
         f"**Topic filter:** {topic_str}",
         f"**Candidates (total after dedup):** {n_total}",
         f"**Picked (P=top slot, R=recent slot):** {n_picked}",
         "",
-        "## How to review", "",
+        "## How to review",
+        "",
         "Each candidate has `[ ] KEEP` and `[ ] DROP` checkboxes and a `role:` field.",
         "Tick KEEP on every candidate you want in the final reference list.",
         "Leave blank to silently drop. The `Suggested` column is the ranker's best",
@@ -217,28 +214,32 @@ def write_item_markdown(
     ]
 
     # Section 1: Top candidates (score-ranked)
-    lines.append(_build_section(
-        header="1. Top candidates (score-ranked)",
-        candidates=found_display,
-        picked_ids=found_ids,
-        pick_suffix="P",
-        item=item,
-        today_year=today_year,
-        landmark_pub_ids=landmark_pub_ids,
-        display_limit=25,
-    ))
+    lines.append(
+        _build_section(
+            header="1. Top candidates (score-ranked)",
+            candidates=found_display,
+            picked_ids=found_ids,
+            pick_suffix="P",
+            item=item,
+            today_year=today_year,
+            landmark_pub_ids=landmark_pub_ids,
+            display_limit=25,
+        )
+    )
 
     # Section 2: Recent
-    lines.append(_build_section(
-        header=f"2. Recent candidates (top 25, year >= {recent_year_min})",
-        candidates=recent_display,
-        picked_ids=recent_ids,
-        pick_suffix="R",
-        item=item,
-        today_year=today_year,
-        landmark_pub_ids=landmark_pub_ids,
-        display_limit=25,
-    ))
+    lines.append(
+        _build_section(
+            header=f"2. Recent candidates (top 25, year >= {recent_year_min})",
+            candidates=recent_display,
+            picked_ids=recent_ids,
+            pick_suffix="R",
+            item=item,
+            today_year=today_year,
+            landmark_pub_ids=landmark_pub_ids,
+            display_limit=25,
+        )
+    )
 
     # Section 3: Audit tail
     lines.append("## 3. All deduplicated candidates (audit tail)")
@@ -246,10 +247,10 @@ def write_item_markdown(
     lines.append(_TABLE_HEADER)
     picked_all = found_ids | recent_ids
     for i, cand in enumerate(all_sorted[:100]):
-        score  = _cs(cand, item, today_year, landmark_pub_ids)
+        score = _cs(cand, item, today_year, landmark_pub_ids)
         suffix = "*" if cand.pub_id in picked_all else ""
-        n      = f"{i + 1}{suffix}"
-        role   = _suggest_role(cand, today_year)
+        n = f"{i + 1}{suffix}"
+        role = _suggest_role(cand, today_year)
         lines.append(_row(n, cand, score, role))
     lines.append("")
 
@@ -267,16 +268,18 @@ def write_index(
     candidates_dir: Path,
 ) -> None:
     lines = [
-        f"# Candidate index \u2014 {TODAY}", "",
+        f"# Candidate index \u2014 {TODAY}",
+        "",
         "Generated by Phase 3 systematic search.",
         "172 processes + 103 tasks = 275 items expected.",
         "",
-        "## Summary", "",
+        "## Summary",
+        "",
         "| # | item_id | kind | candidates | picked | landmark hits |",
         "| - | ------- | ---- | ---------- | ------ | ------------- |",
     ]
     for i, row in enumerate(items):
-        lm_hits  = row.get("n_landmarks", 0)
+        lm_hits = row.get("n_landmarks", 0)
         lm_total = row.get("n_lm_total", 0)
         lines.append(
             f"| {i + 1} | {row['item_id']} | {row['kind']} | "

@@ -42,9 +42,10 @@ from __future__ import annotations
 
 import os
 import sys
+from collections.abc import Iterable
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Iterable, Literal
+from typing import Literal
 
 # ``identity.build_pdf_filename`` lives one directory up.  Add the
 # parent to sys.path on import so ``canonical_artifact_filename`` can
@@ -55,7 +56,6 @@ if str(_PARENT) not in sys.path:
     sys.path.insert(0, str(_PARENT))
 
 from hed_metadata_toolkit.citation_identity import build_pdf_filename  # noqa: E402
-
 
 # Two kinds of artifact land separately in the catalog; the helpers
 # below are kind-agnostic — they take the literal "pdf" or "markdown"
@@ -68,6 +68,7 @@ ArtifactKind = Literal["pdf", "markdown"]
 # Cache directory resolution (mirrors enrich_pdf_locations.py and the
 # shared cache convention)
 # ---------------------------------------------------------------------------
+
 
 def resolve_cache_dir(arg_value: str, workspace: Path) -> Path:
     """Resolve the cache root: ``--cache-dir`` > ``$HED_CACHE_DIR`` >
@@ -90,6 +91,7 @@ def resolve_cache_dir(arg_value: str, workspace: Path) -> Path:
 # ---------------------------------------------------------------------------
 # Catalog walk
 # ---------------------------------------------------------------------------
+
 
 def iter_refs(
     processes: dict,
@@ -141,6 +143,7 @@ def iter_refs(
 # Idempotency
 # ---------------------------------------------------------------------------
 
+
 def should_skip(ref: dict, kind: ArtifactKind, force: bool = False) -> bool:
     """Return True if this ref already has a successful ``kind`` artifact.
 
@@ -173,6 +176,7 @@ def has_recorded_failure(ref: dict, kind: ArtifactKind) -> bool:
 # Record success and failure
 # ---------------------------------------------------------------------------
 
+
 def _utcnow_iso() -> str:
     """UTC timestamp in ISO 8601, seconds precision, trailing ``Z``."""
     return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
@@ -189,8 +193,13 @@ _FAILURE_KEYS: tuple[str, ...] = ("last_attempt", "attempts", "tried", "reason")
 # ``--force`` re-acquisition that fails would leave a stale
 # ``source_url`` / ``license`` from the prior successful run.
 _SUCCESS_KEYS: tuple[str, ...] = (
-    "source_url", "source_type", "license",
-    "acquired_on", "acquired_via", "converter", "is_publishable",
+    "source_url",
+    "source_type",
+    "license",
+    "acquired_on",
+    "acquired_via",
+    "converter",
+    "is_publishable",
 )
 
 
@@ -310,8 +319,8 @@ def record_failure(
 # moves no-longer-publishable files back to ``-private/``, and updates
 # the catalog.  See the dated amendment at plan v2 §4 D5.
 
-_PDF_DIR              = "HED-PDFs"
-_MARKDOWN_PUBLIC_DIR  = "HED-Markdown-public"
+_PDF_DIR = "HED-PDFs"
+_MARKDOWN_PUBLIC_DIR = "HED-Markdown-public"
 _MARKDOWN_PRIVATE_DIR = "HED-Markdown-private"
 
 
@@ -377,9 +386,9 @@ def canonical_artifact_filename(ref: dict, kind: ArtifactKind) -> str:
     ``UntitledNonLatin`` for absent inputs).
     """
     family = _first_author_family(ref.get("authors"))
-    year   = ref.get("year")
-    title  = ref.get("title")
-    fname  = build_pdf_filename(family, year, title)
+    year = ref.get("year")
+    title = ref.get("title")
+    fname = build_pdf_filename(family, year, title)
     if kind == "pdf":
         return fname
     if kind == "markdown":

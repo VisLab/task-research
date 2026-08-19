@@ -35,7 +35,7 @@ based POC used by enrich_*.py.  See D-E3 rationale.
 # distinct paths through priority.py and core.py.  Lower-cased and
 # stripped to match cache keys.
 POC_REF_DOIS: tuple[str, ...] = (
-    "10.3389/fnhum.2014.00443",   # Fleming & Lau 2014  (gold, PMC4097944, cc-by)
+    "10.3389/fnhum.2014.00443",  # Fleming & Lau 2014  (gold, PMC4097944, cc-by)
     "10.1007/s00213-006-0668-9",  # Salamone et al. 2007 (green, no PMC)
-    "10.1038/nn1560",             # Daw, Niv & Dayan 2005 (closed, no PMC)
+    "10.1038/nn1560",  # Daw, Niv & Dayan 2005 (closed, no PMC)
 )

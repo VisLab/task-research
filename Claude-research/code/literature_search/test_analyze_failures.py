@@ -30,7 +30,6 @@ if str(_HERE) not in sys.path:
     sys.path.insert(0, str(_HERE))
 
 from analyze_failures import (  # noqa: E402
-    Bucket,
     Failure,
     bucket_by_pattern,
     bucket_by_reason_component,
@@ -38,23 +37,29 @@ from analyze_failures import (  # noqa: E402
     format_json_sidecar,
     format_markdown_report,
     iter_failed_refs,
-    main as analyze_failures_main,
     normalize_reason,
     normalize_reason_component,
     reason_components,
     split_reason,
 )
-
+from analyze_failures import (  # noqa: E402
+    main as analyze_failures_main,
+)
 
 # ---------------------------------------------------------------------------
 # Catalog fixtures
 # ---------------------------------------------------------------------------
 
+
 def _ref_failure(doi: str | None, tried: list[str], reason: str) -> dict:
     return {
         "ids": {
-            "doi": doi, "openalex_id": None, "pmid": None,
-            "pmcid": None, "s2_id": None, "arxiv_id": None,
+            "doi": doi,
+            "openalex_id": None,
+            "pmid": None,
+            "pmcid": None,
+            "s2_id": None,
+            "arxiv_id": None,
         },
         "local_artifacts": {
             "pdf": {
@@ -98,8 +103,8 @@ def _catalog(*refs: dict) -> tuple[dict, list]:
 # split_reason
 # ---------------------------------------------------------------------------
 
-class TestSplitReason:
 
+class TestSplitReason:
     def test_plain_single(self) -> None:
         assert split_reason("no candidate locations") == ["no candidate locations"]
 
@@ -115,9 +120,7 @@ class TestSplitReason:
         ]
 
     def test_mixed_inside_and_outside_parens(self) -> None:
-        assert split_reason(
-            "openalex: not PDF (text/html; charset=utf-8); unpaywall: HTTP 403"
-        ) == [
+        assert split_reason("openalex: not PDF (text/html; charset=utf-8); unpaywall: HTTP 403") == [
             "openalex: not PDF (text/html; charset=utf-8)",
             "unpaywall: HTTP 403",
         ]
@@ -139,31 +142,25 @@ class TestSplitReason:
 # normalize_reason_component
 # ---------------------------------------------------------------------------
 
-class TestNormalizeReasonComponent:
 
+class TestNormalizeReasonComponent:
     def test_lowercases(self) -> None:
         assert normalize_reason_component("HTTP 403") == "http 403"
 
     def test_strips_url(self) -> None:
-        out = normalize_reason_component(
-            "openalex: redirect to https://example.com/landing.html"
-        )
+        out = normalize_reason_component("openalex: redirect to https://example.com/landing.html")
         assert "<url>" in out
         assert "example.com" not in out
 
     def test_url_inside_parens_does_not_swallow_close(self) -> None:
-        out = normalize_reason_component(
-            "openalex: forwarded (target https://x.com/p) and stopped"
-        )
+        out = normalize_reason_component("openalex: forwarded (target https://x.com/p) and stopped")
         # The URL regex must not eat the trailing ')' — without that
         # safeguard the rest of the message would be lost.
         assert "<url>" in out
         assert "and stopped" in out
 
     def test_byte_count_collapsed(self) -> None:
-        out = normalize_reason_component(
-            "openalex: body exceeds max_bytes=52428800"
-        )
+        out = normalize_reason_component("openalex: body exceeds max_bytes=52428800")
         assert "=<n>" in out
         assert "52428800" not in out
 
@@ -173,22 +170,15 @@ class TestNormalizeReasonComponent:
         assert "403" in out
 
     def test_content_type_params_stripped(self) -> None:
-        out = normalize_reason_component(
-            "openalex: not PDF (text/html; charset=utf-8)"
-        )
+        out = normalize_reason_component("openalex: not PDF (text/html; charset=utf-8)")
         assert "(text/html)" in out
         assert "charset" not in out
 
     def test_content_type_no_params_preserved(self) -> None:
-        assert (
-            normalize_reason_component("openalex: not PDF (text/html)")
-            == "openalex: not pdf (text/html)"
-        )
+        assert normalize_reason_component("openalex: not PDF (text/html)") == "openalex: not pdf (text/html)"
 
     def test_exception_message_collapsed(self) -> None:
-        out = normalize_reason_component(
-            "openalex: ConnectionError: connection refused on port 443"
-        )
+        out = normalize_reason_component("openalex: ConnectionError: connection refused on port 443")
         assert "connectionerror" in out
         assert "port" not in out
         assert "refused" not in out
@@ -197,9 +187,7 @@ class TestNormalizeReasonComponent:
         # ``\b`` matches between ``.`` and a word char, so qualified
         # exception names like ``requests.exceptions.ConnectionError``
         # still bucket cleanly on the type name.
-        out = normalize_reason_component(
-            "openalex: requests.exceptions.ConnectionError: refused"
-        )
+        out = normalize_reason_component("openalex: requests.exceptions.ConnectionError: refused")
         # The exception regex matches the leaf type name; the prefix
         # remains in the string.  Either way "refused" must be gone.
         assert "refused" not in out
@@ -217,8 +205,8 @@ class TestNormalizeReasonComponent:
 # normalize_reason (compound)
 # ---------------------------------------------------------------------------
 
-class TestNormalizeReason:
 
+class TestNormalizeReason:
     def test_compound_joins_with_pipe(self) -> None:
         assert (
             normalize_reason("openalex: HTTP 403; unpaywall: not PDF (text/html)")
@@ -227,9 +215,7 @@ class TestNormalizeReason:
 
     def test_compound_with_inside_paren_semicolon(self) -> None:
         assert (
-            normalize_reason(
-                "openalex: not PDF (text/html; charset=utf-8); unpaywall: HTTP 403"
-            )
+            normalize_reason("openalex: not PDF (text/html; charset=utf-8); unpaywall: HTTP 403")
             == "openalex: not pdf (text/html) | unpaywall: http 403"
         )
 
@@ -244,12 +230,10 @@ class TestNormalizeReason:
 # reason_components
 # ---------------------------------------------------------------------------
 
-class TestReasonComponents:
 
+class TestReasonComponents:
     def test_splits_and_normalizes_each(self) -> None:
-        assert reason_components(
-            "openalex: HTTP 403; unpaywall: not PDF (text/html; charset=utf-8)"
-        ) == [
+        assert reason_components("openalex: HTTP 403; unpaywall: not PDF (text/html; charset=utf-8)") == [
             "openalex: http 403",
             "unpaywall: not pdf (text/html)",
         ]
@@ -262,8 +246,8 @@ class TestReasonComponents:
 # iter_failed_refs
 # ---------------------------------------------------------------------------
 
-class TestIterFailedRefs:
 
+class TestIterFailedRefs:
     def test_yields_failure_refs_only(self) -> None:
         procs, tasks = _catalog(
             _ref_failure("10.x/a", ["openalex"], "openalex: HTTP 403"),
@@ -290,15 +274,23 @@ class TestIterFailedRefs:
         assert f.tried == ()
 
     def test_walks_processes_and_tasks(self) -> None:
-        procs = {"processes": [
-            {"process_id": "p1", "references": [
-                _ref_failure("10.x/p", ["openalex"], "x"),
-            ]},
-        ]}
+        procs = {
+            "processes": [
+                {
+                    "process_id": "p1",
+                    "references": [
+                        _ref_failure("10.x/p", ["openalex"], "x"),
+                    ],
+                },
+            ]
+        }
         tasks = [
-            {"hedtsk_id": "t1", "references": [
-                _ref_failure("10.x/t", ["openalex"], "x"),
-            ]},
+            {
+                "hedtsk_id": "t1",
+                "references": [
+                    _ref_failure("10.x/t", ["openalex"], "x"),
+                ],
+            },
         ]
         out = [(f.owner_id, f.ref_idx) for f in iter_failed_refs(procs, tasks, "pdf")]
         assert out == [("p1", 0), ("t1", 0)]
@@ -345,6 +337,7 @@ class TestIterFailedRefs:
 # Bucketing
 # ---------------------------------------------------------------------------
 
+
 def _f(doi: str, tried: list[str], reason_raw: str) -> Failure:
     return Failure(
         owner_id="owner",
@@ -358,7 +351,6 @@ def _f(doi: str, tried: list[str], reason_raw: str) -> Failure:
 
 
 class TestBucketByTried:
-
     def test_counts_and_groups(self) -> None:
         fs = [
             _f("10.x/1", ["openalex"], "X"),
@@ -376,11 +368,9 @@ class TestBucketByTried:
 
 
 class TestBucketByReasonComponent:
-
     def test_compound_reason_counts_each_component(self) -> None:
         fs = [
-            _f("10.x/1", ["openalex", "unpaywall"],
-               "openalex: HTTP 403; unpaywall: not PDF (text/html)"),
+            _f("10.x/1", ["openalex", "unpaywall"], "openalex: HTTP 403; unpaywall: not PDF (text/html)"),
             _f("10.x/2", ["openalex"], "openalex: HTTP 403"),
         ]
         out = bucket_by_reason_component(fs)
@@ -394,7 +384,6 @@ class TestBucketByReasonComponent:
 
 
 class TestBucketByPattern:
-
     def test_distinct_tried_sets_distinct_keys(self) -> None:
         fs = [
             _f("10.x/1", ["openalex"], "openalex: HTTP 403"),
@@ -419,8 +408,8 @@ class TestBucketByPattern:
 # Report formatting
 # ---------------------------------------------------------------------------
 
-class TestFormatMarkdownReport:
 
+class TestFormatMarkdownReport:
     def test_three_tables_present(self) -> None:
         fs = [_f("10.x/1", ["openalex"], "openalex: HTTP 403")]
         md = format_markdown_report(fs, "pdf", limit=10, when="2026-06-01")
@@ -431,10 +420,7 @@ class TestFormatMarkdownReport:
         assert "2026-06-01" in md
 
     def test_limit_respected_with_overflow_row(self) -> None:
-        fs = [
-            _f(f"10.x/{i}", [f"src{i}"], f"src{i}: some-reason-{i}")
-            for i in range(30)
-        ]
+        fs = [_f(f"10.x/{i}", [f"src{i}"], f"src{i}: some-reason-{i}") for i in range(30)]
         md = format_markdown_report(fs, "pdf", limit=5, when="2026-06-01")
         assert "25 more buckets" in md
 
@@ -451,7 +437,6 @@ class TestFormatMarkdownReport:
 
 
 class TestFormatJSONSidecar:
-
     def test_structure(self) -> None:
         fs = [_f("10.x/1", ["openalex"], "openalex: HTTP 403")]
         sidecar = json.loads(format_json_sidecar(fs, "pdf", when="2026-06-01"))
@@ -469,28 +454,36 @@ class TestFormatJSONSidecar:
 # End-to-end CLI smoke test
 # ---------------------------------------------------------------------------
 
-class TestCLI:
 
+class TestCLI:
     def test_writes_md_and_json(self, tmp_path: Path) -> None:
         """End-to-end: stage a minimal catalog, run main(), check files."""
-        procs = {"processes": [{"process_id": "p1", "references": [
-            _ref_failure("10.x/a", ["openalex"], "openalex: HTTP 403"),
-            _ref_failure("10.x/b", [], "no candidate locations"),
-            _ref_success("10.x/c"),
-        ]}]}
+        procs = {
+            "processes": [
+                {
+                    "process_id": "p1",
+                    "references": [
+                        _ref_failure("10.x/a", ["openalex"], "openalex: HTTP 403"),
+                        _ref_failure("10.x/b", [], "no candidate locations"),
+                        _ref_success("10.x/c"),
+                    ],
+                }
+            ]
+        }
         tasks: list = []
-        (tmp_path / "process_details.json").write_text(
-            json.dumps(procs), encoding="utf-8"
-        )
-        (tmp_path / "task_details.json").write_text(
-            json.dumps(tasks), encoding="utf-8"
-        )
+        (tmp_path / "process_details.json").write_text(json.dumps(procs), encoding="utf-8")
+        (tmp_path / "task_details.json").write_text(json.dumps(tasks), encoding="utf-8")
 
-        rc = analyze_failures_main([
-            "--kind", "pdf",
-            "--workspace", str(tmp_path),
-            "--output-dir", "outputs/analysis",
-        ])
+        rc = analyze_failures_main(
+            [
+                "--kind",
+                "pdf",
+                "--workspace",
+                str(tmp_path),
+                "--output-dir",
+                "outputs/analysis",
+            ]
+        )
         assert rc == 0
 
         out_dir = tmp_path / "outputs" / "analysis"
@@ -503,21 +496,36 @@ class TestCLI:
         assert sidecar["total"] == 2  # only failures, not the success ref
 
     def test_no_failures_exits_1(self, tmp_path: Path) -> None:
-        procs = {"processes": [{"process_id": "p1", "references": [
-            _ref_success("10.x/a"),
-        ]}]}
-        (tmp_path / "process_details.json").write_text(
-            json.dumps(procs), encoding="utf-8"
-        )
+        procs = {
+            "processes": [
+                {
+                    "process_id": "p1",
+                    "references": [
+                        _ref_success("10.x/a"),
+                    ],
+                }
+            ]
+        }
+        (tmp_path / "process_details.json").write_text(json.dumps(procs), encoding="utf-8")
         (tmp_path / "task_details.json").write_text("[]", encoding="utf-8")
 
-        rc = analyze_failures_main([
-            "--kind", "pdf", "--workspace", str(tmp_path),
-        ])
+        rc = analyze_failures_main(
+            [
+                "--kind",
+                "pdf",
+                "--workspace",
+                str(tmp_path),
+            ]
+        )
         assert rc == 1
 
     def test_missing_catalog_exits_2(self, tmp_path: Path) -> None:
-        rc = analyze_failures_main([
-            "--kind", "pdf", "--workspace", str(tmp_path),
-        ])
+        rc = analyze_failures_main(
+            [
+                "--kind",
+                "pdf",
+                "--workspace",
+                str(tmp_path),
+            ]
+        )
         assert rc == 2

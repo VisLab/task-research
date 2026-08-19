@@ -29,13 +29,13 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from reference_compat import ref_doi  # noqa: E402
 from hed_metadata_toolkit.citation_identity import build_pub_id
+from reference_compat import ref_doi  # noqa: E402
 from triage_rules import (
-    classify_venue,
-    publisher_tier_from_doi,
-    matches_test_manual,
     LANDMARK_IDS,
+    classify_venue,
+    matches_test_manual,
+    publisher_tier_from_doi,
 )
 
 TODAY = date.today().isoformat()
@@ -43,6 +43,7 @@ TODAY = date.today().isoformat()
 # ---------------------------------------------------------------------------
 # First-author extraction from the JSON `authors` field
 # ---------------------------------------------------------------------------
+
 
 def _first_author_family(authors_str: str | None) -> str | None:
     """Extract first-author family name from strings like
@@ -60,14 +61,15 @@ def _family_lc(family: str | None) -> str:
     if not family:
         return ""
     import unicodedata
+
     nfkd = unicodedata.normalize("NFKD", family.lower())
-    return re.sub(r"[^a-z]", "", "".join(c for c in nfkd
-                                         if unicodedata.combining(c) == 0))
+    return re.sub(r"[^a-z]", "", "".join(c for c in nfkd if unicodedata.combining(c) == 0))
 
 
 # ---------------------------------------------------------------------------
 # Triage rule engine (rules applied in order; first match wins)
 # ---------------------------------------------------------------------------
+
 
 def triage_ref(
     owner_id: str,
@@ -99,8 +101,9 @@ def triage_ref(
 
     # --- Rule a: KEEP — landmark override (primary: pub_id match) ---
     if pub_id and (owner_id, pub_id) in landmark_set:
-        return _decision("KEEP", "landmark_override", owner_id, array_name,
-                         idx, ref, pub_id, citation_string, venue, year)
+        return _decision(
+            "KEEP", "landmark_override", owner_id, array_name, idx, ref, pub_id, citation_string, venue, year
+        )
 
     # --- Rule a2: KEEP — landmark override (secondary: author+year match) ---
     # Used for landmark entries whose title was missing in the MD, which means
@@ -108,61 +111,88 @@ def triage_ref(
     # does not match the pub_id computed from the JSON title.
     flc = _family_lc(family)
     if flc and year is not None and (owner_id, flc, year) in landmark_secondary:
-        return _decision("KEEP", "landmark_override",
-                         owner_id, array_name, idx, ref, pub_id,
-                         citation_string, venue, year)
+        return _decision(
+            "KEEP", "landmark_override", owner_id, array_name, idx, ref, pub_id, citation_string, venue, year
+        )
 
     # --- Rule b: DROP — test manual / handbook ---
     if matches_test_manual(ref):
-        return _decision("DROP", "test_manual", owner_id, array_name,
-                         idx, ref, pub_id, citation_string, venue, year)
+        return _decision("DROP", "test_manual", owner_id, array_name, idx, ref, pub_id, citation_string, venue, year)
 
     # --- Rule c: DROP — year < 1960, not a landmark ---
     if year is not None and year < 1960:
-        return _decision("DROP", "pre_1960_non_landmark", owner_id, array_name,
-                         idx, ref, pub_id, citation_string, venue, year)
+        return _decision(
+            "DROP", "pre_1960_non_landmark", owner_id, array_name, idx, ref, pub_id, citation_string, venue, year
+        )
 
     # --- Rule d: REVIEW — technical report ---
     if venue_type == "report":
-        return _decision("REVIEW", "technical_report_needs_citation_check",
-                         owner_id, array_name, idx, ref, pub_id,
-                         citation_string, venue, year)
+        return _decision(
+            "REVIEW",
+            "technical_report_needs_citation_check",
+            owner_id,
+            array_name,
+            idx,
+            ref,
+            pub_id,
+            citation_string,
+            venue,
+            year,
+        )
 
     # --- Rule e: KEEP — flagship or mainstream venue ---
     venue_tier = classify_venue(venue)
     if venue_tier in ("flagship", "mainstream"):
-        return _decision("KEEP", f"venue_in_allowlist_{venue_tier}",
-                         owner_id, array_name, idx, ref, pub_id,
-                         citation_string, venue, year)
+        return _decision(
+            "KEEP",
+            f"venue_in_allowlist_{venue_tier}",
+            owner_id,
+            array_name,
+            idx,
+            ref,
+            pub_id,
+            citation_string,
+            venue,
+            year,
+        )
 
     # --- Rule f: KEEP — Tier A or B publisher ---
     pub_tier = publisher_tier_from_doi(doi)
     if pub_tier in ("A", "B"):
-        return _decision("KEEP", f"publisher_tier_{pub_tier}",
-                         owner_id, array_name, idx, ref, pub_id,
-                         citation_string, venue, year)
+        return _decision(
+            "KEEP", f"publisher_tier_{pub_tier}", owner_id, array_name, idx, ref, pub_id, citation_string, venue, year
+        )
 
     # --- Rule g: REVIEW — book chapter, not landmark ---
     if venue_type == "book_chapter":
-        return _decision("REVIEW", "book_chapter_non_landmark",
-                         owner_id, array_name, idx, ref, pub_id,
-                         citation_string, venue, year)
+        return _decision(
+            "REVIEW", "book_chapter_non_landmark", owner_id, array_name, idx, ref, pub_id, citation_string, venue, year
+        )
 
     # --- Rule h: REVIEW — unresolved / unknown venue ---
     if confidence == "none" or venue_tier == "unknown":
-        return _decision("REVIEW", "unknown_venue",
-                         owner_id, array_name, idx, ref, pub_id,
-                         citation_string, venue, year)
+        return _decision(
+            "REVIEW", "unknown_venue", owner_id, array_name, idx, ref, pub_id, citation_string, venue, year
+        )
 
     # --- Rule i: default REVIEW ---
-    return _decision("REVIEW", "default_needs_review",
-                     owner_id, array_name, idx, ref, pub_id,
-                     citation_string, venue, year)
+    return _decision(
+        "REVIEW", "default_needs_review", owner_id, array_name, idx, ref, pub_id, citation_string, venue, year
+    )
 
 
-def _decision(decision: str, reason: str, owner_id: str, array_name: str,
-              idx: int, ref: dict, pub_id: str | None,
-              citation_string: str, venue: str, year: int | None) -> dict:
+def _decision(
+    decision: str,
+    reason: str,
+    owner_id: str,
+    array_name: str,
+    idx: int,
+    ref: dict,
+    pub_id: str | None,
+    citation_string: str,
+    venue: str,
+    year: int | None,
+) -> dict:
     return {
         "decision": decision,
         "reason": reason,
@@ -180,6 +210,7 @@ def _decision(decision: str, reason: str, owner_id: str, array_name: str,
 # ---------------------------------------------------------------------------
 # Helpers for iterating (owner_id, array_name, idx, ref) tuples
 # ---------------------------------------------------------------------------
+
 
 def iter_process_refs(processes: list[dict]):
     for proc in processes:
@@ -229,13 +260,13 @@ def build_triage_md(
 ) -> str:
     rows = sorted(rows, key=lambda r: (r["owner_id"], r["array_name"], r["idx"]))
 
-    drops   = [r for r in rows if r["decision"] == "DROP"]
+    drops = [r for r in rows if r["decision"] == "DROP"]
     reviews = [r for r in rows if r["decision"] == "REVIEW"]
-    keeps   = [r for r in rows if r["decision"] == "KEEP"]
+    keeps = [r for r in rows if r["decision"] == "KEEP"]
 
-    n_total  = len(rows)
-    n_keep   = len(keeps)
-    n_drop   = len(drops)
+    n_total = len(rows)
+    n_keep = len(keeps)
+    n_drop = len(drops)
     n_review = len(reviews)
 
     lines = []
@@ -311,20 +342,22 @@ def build_triage_md(
     lines.append("If you disagree, change `DROP` to `KEEP` in that cell.")
     lines.append("")
     lines.append(_row("#", "HED concept", "ref list", "title", "citation", "venue", "year", "reason", "status", "pos"))
-    lines.append(_row("---","---","---","---","---","---","---","---","---","---"))
+    lines.append(_row("---", "---", "---", "---", "---", "---", "---", "---", "---", "---"))
     for n, r in enumerate(drops, 1):
-        lines.append(_row(
-            str(n),
-            r["owner_id"],
-            r["array_name"],
-            _trunc(r.get("title") or "", 80),
-            _trunc(r["citation"] or r.get("pub_id") or "(no citation)"),
-            _trunc(r["venue"] or "(none)", 45),
-            str(r["year"] or ""),
-            r["reason"],
-            "DROP",
-            str(r["idx"]),
-        ))
+        lines.append(
+            _row(
+                str(n),
+                r["owner_id"],
+                r["array_name"],
+                _trunc(r.get("title") or "", 80),
+                _trunc(r["citation"] or r.get("pub_id") or "(no citation)"),
+                _trunc(r["venue"] or "(none)", 45),
+                str(r["year"] or ""),
+                r["reason"],
+                "DROP",
+                str(r["idx"]),
+            )
+        )
     lines.append("")
 
     # --- Section 2: Items flagged for review ---
@@ -333,42 +366,45 @@ def build_triage_md(
     lines.append("Replace `DECIDE` in the `status` column with `KEEP` or `DROP` for each row.")
     lines.append("")
     lines.append(_row("#", "HED concept", "ref list", "title", "citation", "venue", "year", "reason", "status", "pos"))
-    lines.append(_row("---","---","---","---","---","---","---","---","---","---"))
+    lines.append(_row("---", "---", "---", "---", "---", "---", "---", "---", "---", "---"))
     for n, r in enumerate(reviews, 1):
-        lines.append(_row(
-            str(n),
-            r["owner_id"],
-            r["array_name"],
-            _trunc(r.get("title") or "", 80),
-            _trunc(r["citation"] or r.get("pub_id") or "(no citation)"),
-            _trunc(r["venue"] or "(none)", 45),
-            str(r["year"] or ""),
-            r["reason"],
-            "DECIDE",
-            str(r["idx"]),
-        ))
+        lines.append(
+            _row(
+                str(n),
+                r["owner_id"],
+                r["array_name"],
+                _trunc(r.get("title") or "", 80),
+                _trunc(r["citation"] or r.get("pub_id") or "(no citation)"),
+                _trunc(r["venue"] or "(none)", 45),
+                str(r["year"] or ""),
+                r["reason"],
+                "DECIDE",
+                str(r["idx"]),
+            )
+        )
     lines.append("")
 
     # --- Section 3: Confirmed keeps ---
     lines.append("## 3. Confirmed keeps (for audit)")
     lines.append("")
     lines.append(_row("#", "HED concept", "ref list", "title", "citation", "venue", "year", "reason"))
-    lines.append(_row("---","---","---","---","---","---","---","---"))
+    lines.append(_row("---", "---", "---", "---", "---", "---", "---", "---"))
     for n, r in enumerate(keeps, 1):
-        lines.append(_row(
-            str(n),
-            r["owner_id"],
-            r["array_name"],
-            _trunc(r.get("title") or "", 80),
-            _trunc(r["citation"] or r.get("pub_id") or "(no citation)"),
-            _trunc(r["venue"] or "(none)", 45),
-            str(r["year"] or ""),
-            r["reason"],
-        ))
+        lines.append(
+            _row(
+                str(n),
+                r["owner_id"],
+                r["array_name"],
+                _trunc(r.get("title") or "", 80),
+                _trunc(r["citation"] or r.get("pub_id") or "(no citation)"),
+                _trunc(r["venue"] or "(none)", 45),
+                str(r["year"] or ""),
+                r["reason"],
+            )
+        )
     lines.append("")
 
     return "\n".join(lines)
-
 
 
 def build_gap_section(
@@ -387,9 +423,9 @@ def build_gap_section(
         # Primary match: pub_id in owner's reference set
         primary_hit = pid and pid in owner_pids
         # Secondary match: (owner_id, author_lc, year) matched in secondary set
-        secondary_hit = (oid, family_lc, yr) in landmark_secondary and \
-                        any(True for (o, a, y) in landmark_secondary
-                            if o == oid and a == family_lc and y == yr)
+        secondary_hit = (oid, family_lc, yr) in landmark_secondary and any(
+            True for (o, a, y) in landmark_secondary if o == oid and a == family_lc and y == yr
+        )
         if not primary_hit and not secondary_hit:
             gaps.append(e)
 
@@ -405,11 +441,14 @@ def build_gap_section(
     lines.append(_row("owner_id", "kind", "landmark citation", "pub_id"))
     lines.append(_row("---", "---", "---", "---"))
     for e in sorted(gaps, key=lambda x: (x["id"], x.get("citation", ""))):
-        lines.append(_row(
-            e["id"], e["kind"],
-            _trunc(e.get("citation", ""), 60),
-            e.get("pub_id") or "(unresolved)",
-        ))
+        lines.append(
+            _row(
+                e["id"],
+                e["kind"],
+                _trunc(e.get("citation", ""), 60),
+                e.get("pub_id") or "(unresolved)",
+            )
+        )
     lines.append("")
     lines.append(f"Total gaps: {len(gaps)} / {len(landmark_entries)} landmark entries")
     lines.append("")
@@ -420,12 +459,13 @@ def build_gap_section(
 # Main
 # ---------------------------------------------------------------------------
 
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Triage existing references")
     ap.add_argument("--processes", default="_inputs/process_details.json")
-    ap.add_argument("--tasks",     default="_inputs/task_details.json")
-    ap.add_argument("--landmark",  default="landmark_refs.json")
-    ap.add_argument("--output",    default=f"reference_triage_{TODAY}.md")
+    ap.add_argument("--tasks", default="_inputs/task_details.json")
+    ap.add_argument("--landmark", default="landmark_refs.json")
+    ap.add_argument("--output", default=f"reference_triage_{TODAY}.md")
     args = ap.parse_args()
 
     script_dir = Path(__file__).parent
@@ -436,17 +476,17 @@ def main() -> None:
 
     proc_path = _resolve(args.processes)
     task_path = _resolve(args.tasks)
-    lm_path   = _resolve(args.landmark)
-    out_path  = _resolve(args.output)
+    lm_path = _resolve(args.landmark)
+    out_path = _resolve(args.output)
 
     # --- Load data ---
-    p_data    = json.loads(proc_path.read_text(encoding="utf-8"))
+    p_data = json.loads(proc_path.read_text(encoding="utf-8"))
     processes = p_data.get("processes", [])
 
     t_data = json.loads(task_path.read_text(encoding="utf-8"))
-    tasks  = t_data if isinstance(t_data, list) else t_data.get("tasks", [])
+    tasks = t_data if isinstance(t_data, list) else t_data.get("tasks", [])
 
-    lm_data          = json.loads(lm_path.read_text(encoding="utf-8"))
+    lm_data = json.loads(lm_path.read_text(encoding="utf-8"))
     landmark_entries = lm_data.get("entries", [])
 
     # --- Build landmark sets ---
@@ -464,7 +504,7 @@ def main() -> None:
             landmark_set.add((oid, pid))
         # Always populate secondary (author+year) to catch title mismatches
         family_lc = _family_lc(e.get("first_author_family", ""))
-        yr        = e.get("year")
+        yr = e.get("year")
         if oid and family_lc and yr is not None:
             landmark_secondary.add((oid, family_lc, yr))
 
@@ -476,29 +516,24 @@ def main() -> None:
 
     for owner_id, arr_name, idx, ref in iter_process_refs(processes):
         family = _first_author_family(ref.get("authors"))
-        title  = ref.get("title")
+        title = ref.get("title")
         if not family and not title:
-            malformed.append({"owner_id": owner_id, "arr": arr_name,
-                               "idx": idx, "ref": ref})
+            malformed.append({"owner_id": owner_id, "arr": arr_name, "idx": idx, "ref": ref})
             continue
-        row = triage_ref(owner_id, arr_name, idx, ref,
-                         landmark_set, landmark_secondary)
+        row = triage_ref(owner_id, arr_name, idx, ref, landmark_set, landmark_secondary)
         rows.append(row)
 
     for owner_id, arr_name, idx, ref in iter_task_refs(tasks):
         family = _first_author_family(ref.get("authors"))
-        title  = ref.get("title")
+        title = ref.get("title")
         if not family and not title:
-            malformed.append({"owner_id": owner_id, "arr": arr_name,
-                               "idx": idx, "ref": ref})
+            malformed.append({"owner_id": owner_id, "arr": arr_name, "idx": idx, "ref": ref})
             continue
-        row = triage_ref(owner_id, arr_name, idx, ref,
-                         landmark_set, landmark_secondary)
+        row = triage_ref(owner_id, arr_name, idx, ref, landmark_set, landmark_secondary)
         rows.append(row)
 
     if malformed:
-        print(f"\nWARNING: {len(malformed)} malformed references "
-              f"(no authors AND no title):", file=sys.stderr)
+        print(f"\nWARNING: {len(malformed)} malformed references (no authors AND no title):", file=sys.stderr)
         for m in malformed[:10]:
             print(f"  {m['owner_id']} {m['arr']}[{m['idx']}]", file=sys.stderr)
 
@@ -511,10 +546,8 @@ def main() -> None:
             all_pub_ids_by_owner.setdefault(oid, set()).add(pid)
 
     # --- Build Markdown ---
-    md_body     = build_triage_md(rows, landmark_entries, len(processes),
-                                  len(tasks), TODAY)
-    gap_section = build_gap_section(landmark_entries, all_pub_ids_by_owner,
-                                    landmark_secondary)
+    md_body = build_triage_md(rows, landmark_entries, len(processes), len(tasks), TODAY)
+    gap_section = build_gap_section(landmark_entries, all_pub_ids_by_owner, landmark_secondary)
     full_md = md_body + gap_section
 
     out_path.write_text(full_md, encoding="utf-8")
@@ -522,15 +555,15 @@ def main() -> None:
     # --- Counters ---
     decision_reason = Counter((r["decision"], r["reason"]) for r in rows)
 
-    landmark_keep_owners = {r["owner_id"] for r in rows
-                            if r["decision"] == "KEEP"
-                            and r["reason"] == "landmark_override"}
+    landmark_keep_owners = {
+        r["owner_id"] for r in rows if r["decision"] == "KEEP" and r["reason"] == "landmark_override"
+    }
     landmark_owner_set = {e["id"] for e in landmark_entries}
-    missing_coverage   = landmark_owner_set - landmark_keep_owners
+    missing_coverage = landmark_owner_set - landmark_keep_owners
 
-    total_keep   = sum(v for (d,_),v in decision_reason.items() if d=="KEEP")
-    total_drop   = sum(v for (d,_),v in decision_reason.items() if d=="DROP")
-    total_review = sum(v for (d,_),v in decision_reason.items() if d=="REVIEW")
+    total_keep = sum(v for (d, _), v in decision_reason.items() if d == "KEEP")
+    total_drop = sum(v for (d, _), v in decision_reason.items() if d == "DROP")
+    total_review = sum(v for (d, _), v in decision_reason.items() if d == "REVIEW")
 
     print(f"\nPhase 2 triage \u2014 {TODAY}")
     print(f"processes scanned:   {len(processes)}")
@@ -539,31 +572,37 @@ def main() -> None:
     if malformed:
         print(f"  malformed (skipped): {len(malformed)}")
     print("decisions:")
-    print(f"  KEEP  (landmark_override):             {decision_reason.get(('KEEP','landmark_override'),0)}")
-    print(f"  KEEP  (venue flagship):                {decision_reason.get(('KEEP','venue_in_allowlist_flagship'),0)}")
-    print(f"  KEEP  (venue mainstream):              {decision_reason.get(('KEEP','venue_in_allowlist_mainstream'),0)}")
-    print(f"  KEEP  (publisher Tier A):              {decision_reason.get(('KEEP','publisher_tier_A'),0)}")
-    print(f"  KEEP  (publisher Tier B):              {decision_reason.get(('KEEP','publisher_tier_B'),0)}")
+    print(f"  KEEP  (landmark_override):             {decision_reason.get(('KEEP', 'landmark_override'), 0)}")
+    print(f"  KEEP  (venue flagship):                {decision_reason.get(('KEEP', 'venue_in_allowlist_flagship'), 0)}")
+    print(
+        f"  KEEP  (venue mainstream):              {decision_reason.get(('KEEP', 'venue_in_allowlist_mainstream'), 0)}"
+    )
+    print(f"  KEEP  (publisher Tier A):              {decision_reason.get(('KEEP', 'publisher_tier_A'), 0)}")
+    print(f"  KEEP  (publisher Tier B):              {decision_reason.get(('KEEP', 'publisher_tier_B'), 0)}")
     print(f"  KEEP  total:                           {total_keep}")
-    print(f"  DROP  (test_manual):                   {decision_reason.get(('DROP','test_manual'),0)}")
-    print(f"  DROP  (pre_1960_non_landmark):         {decision_reason.get(('DROP','pre_1960_non_landmark'),0)}")
+    print(f"  DROP  (test_manual):                   {decision_reason.get(('DROP', 'test_manual'), 0)}")
+    print(f"  DROP  (pre_1960_non_landmark):         {decision_reason.get(('DROP', 'pre_1960_non_landmark'), 0)}")
     print(f"  DROP  total:                           {total_drop}")
-    print(f"  REVIEW (report):                       {decision_reason.get(('REVIEW','technical_report_needs_citation_check'),0)}")
-    print(f"  REVIEW (book_chapter):                 {decision_reason.get(('REVIEW','book_chapter_non_landmark'),0)}")
-    print(f"  REVIEW (unknown_venue):                {decision_reason.get(('REVIEW','unknown_venue'),0)}")
-    print(f"  REVIEW (default):                      {decision_reason.get(('REVIEW','default_needs_review'),0)}")
+    print(
+        f"  REVIEW (report):                       {decision_reason.get(('REVIEW', 'technical_report_needs_citation_check'), 0)}"
+    )
+    print(f"  REVIEW (book_chapter):                 {decision_reason.get(('REVIEW', 'book_chapter_non_landmark'), 0)}")
+    print(f"  REVIEW (unknown_venue):                {decision_reason.get(('REVIEW', 'unknown_venue'), 0)}")
+    print(f"  REVIEW (default):                      {decision_reason.get(('REVIEW', 'default_needs_review'), 0)}")
     print(f"  REVIEW total:                          {total_review}")
-    print(f"landmark coverage: {len(landmark_keep_owners)} / {len(landmark_owner_set)} "
-          f"owner_ids have >= 1 KEEP(landmark)")
+    print(
+        f"landmark coverage: {len(landmark_keep_owners)} / {len(landmark_owner_set)} owner_ids have >= 1 KEEP(landmark)"
+    )
     if missing_coverage:
         sample = sorted(missing_coverage)[:8]
-        print(f"  (owners with no landmark match in data — {len(missing_coverage)} total): "
-              + ", ".join(sample)
-              + (" ..." if len(missing_coverage) > 8 else ""))
+        print(
+            f"  (owners with no landmark match in data — {len(missing_coverage)} total): "
+            + ", ".join(sample)
+            + (" ..." if len(missing_coverage) > 8 else "")
+        )
     rev_default = decision_reason.get(("REVIEW", "default_needs_review"), 0)
     if rev_default > 100:
-        print(f"\nFLAG: {rev_default} in default_needs_review (>100); "
-              "consider a new rule.", file=sys.stderr)
+        print(f"\nFLAG: {rev_default} in default_needs_review (>100); consider a new rule.", file=sys.stderr)
     print(f"\nWrote {out_path}")
 
 

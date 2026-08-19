@@ -20,44 +20,25 @@ Imports:
 # ---------------------------------------------------------------------------
 
 _FOS_MAP: dict[str, str] = {
-    "associative_learning_and_reinforcement":
-        "Neuroscience,Psychology,Computer Science",
-    "auditory_and_pre_attentive_deviance_processing":
-        "Neuroscience,Psychology",
-    "awareness_agency_and_metacognition":
-        "Neuroscience,Psychology,Philosophy",
-    "cognitive_flexibility_and_higher_order_executive_function":
-        "Neuroscience,Psychology",
-    "emotion_perception_and_regulation":
-        "Neuroscience,Psychology,Medicine",
-    "face_and_object_perception":
-        "Neuroscience,Psychology,Computer Science",
-    "implicit_and_statistical_learning":
-        "Neuroscience,Psychology,Computer Science",
-    "inhibitory_control_and_conflict_monitoring":
-        "Neuroscience,Psychology,Medicine",
-    "language_comprehension_and_production":
-        "Neuroscience,Psychology,Linguistics",
-    "long_term_memory":
-        "Neuroscience,Psychology",
-    "motor_preparation_timing_and_execution":
-        "Neuroscience,Psychology,Biology",
-    "perceptual_decision_making_evidence_accumulation":
-        "Neuroscience,Psychology",
-    "reasoning_and_problem_solving":
-        "Neuroscience,Psychology,Philosophy,Computer Science",
-    "reward_anticipation_and_motivation":
-        "Neuroscience,Psychology,Medicine",
-    "selective_and_sustained_attention":
-        "Neuroscience,Psychology",
-    "short_term_and_working_memory":
-        "Neuroscience,Psychology",
-    "social_cognition_and_strategic_social_choice":
-        "Neuroscience,Psychology,Economics",
-    "spatial_cognition_and_navigation":
-        "Neuroscience,Psychology,Biology",
-    "value_based_decision_making_under_risk_and_uncertainty":
-        "Neuroscience,Psychology,Economics,Computer Science",
+    "associative_learning_and_reinforcement": "Neuroscience,Psychology,Computer Science",
+    "auditory_and_pre_attentive_deviance_processing": "Neuroscience,Psychology",
+    "awareness_agency_and_metacognition": "Neuroscience,Psychology,Philosophy",
+    "cognitive_flexibility_and_higher_order_executive_function": "Neuroscience,Psychology",
+    "emotion_perception_and_regulation": "Neuroscience,Psychology,Medicine",
+    "face_and_object_perception": "Neuroscience,Psychology,Computer Science",
+    "implicit_and_statistical_learning": "Neuroscience,Psychology,Computer Science",
+    "inhibitory_control_and_conflict_monitoring": "Neuroscience,Psychology,Medicine",
+    "language_comprehension_and_production": "Neuroscience,Psychology,Linguistics",
+    "long_term_memory": "Neuroscience,Psychology",
+    "motor_preparation_timing_and_execution": "Neuroscience,Psychology,Biology",
+    "perceptual_decision_making_evidence_accumulation": "Neuroscience,Psychology",
+    "reasoning_and_problem_solving": "Neuroscience,Psychology,Philosophy,Computer Science",
+    "reward_anticipation_and_motivation": "Neuroscience,Psychology,Medicine",
+    "selective_and_sustained_attention": "Neuroscience,Psychology",
+    "short_term_and_working_memory": "Neuroscience,Psychology",
+    "social_cognition_and_strategic_social_choice": "Neuroscience,Psychology,Economics",
+    "spatial_cognition_and_navigation": "Neuroscience,Psychology,Biology",
+    "value_based_decision_making_under_risk_and_uncertainty": "Neuroscience,Psychology,Economics,Computer Science",
 }
 
 _FOS_DEFAULT = "Neuroscience,Psychology"

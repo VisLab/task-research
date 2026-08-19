@@ -17,35 +17,33 @@ if str(_HERE) not in sys.path:
     sys.path.insert(0, str(_HERE))
 
 from enrich_no_doi import (  # noqa: E402
-    DEFAULT_THRESHOLDS,
     Score,
     Thresholds,
     apply_high_matches,
-    format_markdown_report,
     iter_no_doi_refs,
-    main as enrich_main,
-    normalize_title,
     parse_surnames,
     pick_best,
-    run_enrich,
     score_candidate,
     title_similarity,
     year_delta,
 )
-
+from enrich_no_doi import (  # noqa: E402
+    main as enrich_main,
+)
 
 # ---------------------------------------------------------------------------
 # parse_surnames
 # ---------------------------------------------------------------------------
 
-class TestParseSurnames:
 
+class TestParseSurnames:
     def test_single_author(self):
         assert parse_surnames("Shanks, D. R.") == ["shanks"]
 
     def test_two_authors_ampersand(self):
         assert parse_surnames("Staddon, J. E. R., & Cerutti, D. T.") == [
-            "staddon", "cerutti",
+            "staddon",
+            "cerutti",
         ]
 
     def test_three_authors(self):
@@ -71,11 +69,13 @@ class TestParseSurnames:
 # normalize_title and title_similarity
 # ---------------------------------------------------------------------------
 
-class TestTitleSimilarity:
 
+class TestTitleSimilarity:
     def test_identical(self):
-        assert title_similarity("Learning: From Association to Cognition",
-                                "Learning: From Association to Cognition") == 1.0
+        assert (
+            title_similarity("Learning: From Association to Cognition", "Learning: From Association to Cognition")
+            == 1.0
+        )
 
     def test_subtitle_dropped(self):
         # Catalog has the full title; OpenAlex sometimes returns the main
@@ -88,16 +88,13 @@ class TestTitleSimilarity:
         assert sim < 0.3  # low — different content words elsewhere
 
     def test_word_order_doesnt_matter(self):
-        assert title_similarity("From Association to Cognition",
-                                "Cognition to Association From") == 1.0
+        assert title_similarity("From Association to Cognition", "Cognition to Association From") == 1.0
 
     def test_punctuation_normalised(self):
-        assert title_similarity("Coming to terms with fear",
-                                "Coming, to: terms (with) fear!") == 1.0
+        assert title_similarity("Coming to terms with fear", "Coming, to: terms (with) fear!") == 1.0
 
     def test_diacritics_normalised(self):
-        assert title_similarity("Naïve Bayes Classifier",
-                                "Naive Bayes Classifier") == 1.0
+        assert title_similarity("Naïve Bayes Classifier", "Naive Bayes Classifier") == 1.0
 
     def test_empty(self):
         assert title_similarity("", "Anything") == 0.0
@@ -107,16 +104,15 @@ class TestTitleSimilarity:
     def test_stopwords_dropped(self):
         # "the" appears in both but adds no signal; the content words
         # match completely.
-        assert title_similarity("Learning the Cognition",
-                                "The Cognition Learning") == 1.0
+        assert title_similarity("Learning the Cognition", "The Cognition Learning") == 1.0
 
 
 # ---------------------------------------------------------------------------
 # year_delta
 # ---------------------------------------------------------------------------
 
-class TestYearDelta:
 
+class TestYearDelta:
     def test_exact(self):
         assert year_delta(2010, 2010) == 0
 
@@ -136,8 +132,8 @@ class TestYearDelta:
 # score_candidate (the heart)
 # ---------------------------------------------------------------------------
 
-class TestScoreCandidate:
 
+class TestScoreCandidate:
     def test_high_exact_match(self):
         s = score_candidate(
             ref_title="Learning: From Association to Cognition",
@@ -233,8 +229,7 @@ class TestScoreCandidate:
         assert s.tier == "med"
 
     def test_custom_thresholds(self):
-        t = Thresholds(high_title=0.5, high_year_delta=5,
-                       high_require_author=False)
+        t = Thresholds(high_title=0.5, high_year_delta=5, high_require_author=False)
         s = score_candidate(
             ref_title="Operant Conditioning",
             ref_year=2003,
@@ -253,11 +248,10 @@ class TestScoreCandidate:
 # pick_best
 # ---------------------------------------------------------------------------
 
-class TestPickBest:
 
+class TestPickBest:
     def _ref(self, title, year, authors):
-        return {"title": title, "year": year, "authors": authors,
-                "ids": {"doi": None}}
+        return {"title": title, "year": year, "authors": authors, "ids": {"doi": None}}
 
     def _cand_work(self, *, doi, title, year, surnames, citations=0):
         # OpenAlex Works response shape, minimal.
@@ -266,10 +260,7 @@ class TestPickBest:
             "doi": f"https://doi.org/{doi}" if doi else None,
             "title": title,
             "publication_year": year,
-            "authorships": [
-                {"author": {"display_name": f"X {s.title()}"}}
-                for s in surnames
-            ],
+            "authorships": [{"author": {"display_name": f"X {s.title()}"}} for s in surnames],
             "cited_by_count": citations,
         }
 
@@ -281,10 +272,12 @@ class TestPickBest:
     def test_picks_high_over_med(self):
         ref = self._ref("Operant Conditioning", 2003, "Staddon, J., & Cerutti, D.")
         cands = [
-            self._cand_work(doi="10.x/1", title="Operant Conditioning",
-                            year=2003, surnames=["jones"], citations=500),  # MED
-            self._cand_work(doi="10.x/2", title="Operant Conditioning",
-                            year=2003, surnames=["staddon"], citations=100),  # HIGH
+            self._cand_work(
+                doi="10.x/1", title="Operant Conditioning", year=2003, surnames=["jones"], citations=500
+            ),  # MED
+            self._cand_work(
+                doi="10.x/2", title="Operant Conditioning", year=2003, surnames=["staddon"], citations=100
+            ),  # HIGH
         ]
         best, score = pick_best(ref, cands)
         assert best["doi"] == "10.x/2"
@@ -293,10 +286,12 @@ class TestPickBest:
     def test_ties_broken_by_citation_count(self):
         ref = self._ref("Operant Conditioning", 2003, "Staddon, J.")
         cands = [
-            self._cand_work(doi="10.x/low", title="Operant Conditioning",
-                            year=2003, surnames=["staddon"], citations=10),
-            self._cand_work(doi="10.x/high", title="Operant Conditioning",
-                            year=2003, surnames=["staddon"], citations=999),
+            self._cand_work(
+                doi="10.x/low", title="Operant Conditioning", year=2003, surnames=["staddon"], citations=10
+            ),
+            self._cand_work(
+                doi="10.x/high", title="Operant Conditioning", year=2003, surnames=["staddon"], citations=999
+            ),
         ]
         best, _ = pick_best(ref, cands)
         assert best["doi"] == "10.x/high"
@@ -304,10 +299,10 @@ class TestPickBest:
     def test_candidate_without_doi_skipped(self):
         ref = self._ref("Operant Conditioning", 2003, "Staddon, J.")
         cands = [
-            self._cand_work(doi=None, title="Operant Conditioning",
-                            year=2003, surnames=["staddon"], citations=999),
-            self._cand_work(doi="10.x/has-doi", title="Operant Conditioning",
-                            year=2003, surnames=["staddon"], citations=10),
+            self._cand_work(doi=None, title="Operant Conditioning", year=2003, surnames=["staddon"], citations=999),
+            self._cand_work(
+                doi="10.x/has-doi", title="Operant Conditioning", year=2003, surnames=["staddon"], citations=10
+            ),
         ]
         best, _ = pick_best(ref, cands)
         assert best["doi"] == "10.x/has-doi"
@@ -317,25 +312,31 @@ class TestPickBest:
 # iter_no_doi_refs
 # ---------------------------------------------------------------------------
 
-class TestIterNoDoiRefs:
 
+class TestIterNoDoiRefs:
     def test_yields_only_no_doi(self):
-        procs = {"processes": [{
-            "process_id": "p1",
-            "references": [
-                {"ids": {"doi": "10.x/has"}, "title": "Has DOI"},
-                {"ids": {"doi": None}, "title": "No DOI"},
-                {"ids": {"doi": ""}, "title": "Empty DOI"},
-                {"ids": {}, "title": "Missing DOI field"},
-            ],
-        }]}
+        procs = {
+            "processes": [
+                {
+                    "process_id": "p1",
+                    "references": [
+                        {"ids": {"doi": "10.x/has"}, "title": "Has DOI"},
+                        {"ids": {"doi": None}, "title": "No DOI"},
+                        {"ids": {"doi": ""}, "title": "Empty DOI"},
+                        {"ids": {}, "title": "Missing DOI field"},
+                    ],
+                }
+            ]
+        }
         out = [r["title"] for _, _, r in iter_no_doi_refs(procs, [])]
         assert out == ["No DOI", "Empty DOI", "Missing DOI field"]
 
     def test_walks_processes_and_tasks(self):
-        procs = {"processes": [
-            {"process_id": "p1", "references": [{"ids": {"doi": None}}]},
-        ]}
+        procs = {
+            "processes": [
+                {"process_id": "p1", "references": [{"ids": {"doi": None}}]},
+            ]
+        }
         tasks = [
             {"hedtsk_id": "t1", "references": [{"ids": {"doi": None}}]},
         ]
@@ -347,26 +348,38 @@ class TestIterNoDoiRefs:
 # apply_high_matches
 # ---------------------------------------------------------------------------
 
-class TestApplyHighMatches:
 
+class TestApplyHighMatches:
     def _make_match(self, owner_id, idx, doi, openalex_id, tier="high"):
         from enrich_no_doi import Match
+
         return Match(
-            ref_owner_id=owner_id, ref_idx=idx,
-            ref_title="", ref_year=None, ref_authors="",
-            candidate={"doi": doi, "openalex_id": openalex_id,
-                       "title": "", "year": None, "surnames": [],
-                       "cited_by_count": 0},
-            score=Score(title_sim=1.0, year_delta=0,
-                        author_match=True, tier=tier),
+            ref_owner_id=owner_id,
+            ref_idx=idx,
+            ref_title="",
+            ref_year=None,
+            ref_authors="",
+            candidate={
+                "doi": doi,
+                "openalex_id": openalex_id,
+                "title": "",
+                "year": None,
+                "surnames": [],
+                "cited_by_count": 0,
+            },
+            score=Score(title_sim=1.0, year_delta=0, author_match=True, tier=tier),
             tier=tier,
         )
 
     def test_stamps_doi_and_openalex_id(self):
-        procs = {"processes": [{
-            "process_id": "p1",
-            "references": [{"ids": {"doi": None}}],
-        }]}
+        procs = {
+            "processes": [
+                {
+                    "process_id": "p1",
+                    "references": [{"ids": {"doi": None}}],
+                }
+            ]
+        }
         matches = [self._make_match("p1", 0, "10.x/a", "W123")]
         n = apply_high_matches(matches, procs, [])
         assert n == 1
@@ -375,10 +388,14 @@ class TestApplyHighMatches:
         assert ref["ids"]["openalex_id"] == "W123"
 
     def test_med_not_stamped(self):
-        procs = {"processes": [{
-            "process_id": "p1",
-            "references": [{"ids": {"doi": None}}],
-        }]}
+        procs = {
+            "processes": [
+                {
+                    "process_id": "p1",
+                    "references": [{"ids": {"doi": None}}],
+                }
+            ]
+        }
         matches = [self._make_match("p1", 0, "10.x/a", "W123", tier="med")]
         n = apply_high_matches(matches, procs, [])
         assert n == 0
@@ -390,41 +407,48 @@ class TestApplyHighMatches:
 # End-to-end CLI smoke test
 # ---------------------------------------------------------------------------
 
-class TestCLI:
 
+class TestCLI:
     def _stage_workspace(self, tmp_path: Path):
-        procs = {"processes": [{
-            "process_id": "hed_test",
-            "references": [
+        procs = {
+            "processes": [
                 {
-                    "authors": "Shanks, D. R.",
-                    "year": 2010,
-                    "title": "Learning: From Association to Cognition",
-                    "ids": {"doi": None},
-                },
-                {
-                    "authors": "Pavlov, I. P.",
-                    "year": 1927,
-                    "title": "Conditioned reflexes",
-                    "ids": {"doi": None},
-                },
-            ],
-        }]}
-        (tmp_path / "process_details.json").write_text(
-            json.dumps(procs), encoding="utf-8")
+                    "process_id": "hed_test",
+                    "references": [
+                        {
+                            "authors": "Shanks, D. R.",
+                            "year": 2010,
+                            "title": "Learning: From Association to Cognition",
+                            "ids": {"doi": None},
+                        },
+                        {
+                            "authors": "Pavlov, I. P.",
+                            "year": 1927,
+                            "title": "Conditioned reflexes",
+                            "ids": {"doi": None},
+                        },
+                    ],
+                }
+            ]
+        }
+        (tmp_path / "process_details.json").write_text(json.dumps(procs), encoding="utf-8")
         (tmp_path / "task_details.json").write_text("[]", encoding="utf-8")
 
     def _fake_fetch(self, title, year):
         # Return OpenAlex-shaped JSON for the Shanks ref; nothing for Pavlov.
         if "Learning" in title:
-            return {"results": [{
-                "id": "https://openalex.org/W4097944001",
-                "doi": "https://doi.org/10.1146/annurev.psych.093008.100422",
-                "title": "Learning: From Association to Cognition",
-                "publication_year": 2010,
-                "authorships": [{"author": {"display_name": "David R Shanks"}}],
-                "cited_by_count": 500,
-            }]}
+            return {
+                "results": [
+                    {
+                        "id": "https://openalex.org/W4097944001",
+                        "doi": "https://doi.org/10.1146/annurev.psych.093008.100422",
+                        "title": "Learning: From Association to Cognition",
+                        "publication_year": 2010,
+                        "authorships": [{"author": {"display_name": "David R Shanks"}}],
+                        "cited_by_count": 500,
+                    }
+                ]
+            }
         return {"results": []}
 
     def test_dry_run_writes_report_no_catalog_change(self, tmp_path: Path):

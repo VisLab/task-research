@@ -39,6 +39,7 @@ TODAY = date.today().isoformat()
 # MD parser
 # ---------------------------------------------------------------------------
 
+
 def _first_author_family(citation: str) -> str:
     """Extract first-author family name from a citation string like
     'Eriksen & Eriksen (1974)' or 'Botvinick, Braver, ... & Cohen (2001)'."""
@@ -102,27 +103,29 @@ def parse_landmark_md(md_text: str) -> list[dict]:
         title_missing = title is None
 
         if title_missing:
-            print(f"WARNING: {id_val}: title_missing_in_md (citation: {citation!r})",
-                  file=sys.stderr)
+            print(f"WARNING: {id_val}: title_missing_in_md (citation: {citation!r})", file=sys.stderr)
             title = family  # fallback
 
-        entries.append({
-            "id": id_val,
-            "kind": kind,
-            "citation": citation,
-            "first_author_family": family,
-            "year": year,
-            "md_title": title,
-            "title_missing": title_missing,
-            "confidence": conf,
-            "book_chapter_exception": "[book_chapter_exception]" in citation,
-        })
+        entries.append(
+            {
+                "id": id_val,
+                "kind": kind,
+                "citation": citation,
+                "first_author_family": family,
+                "year": year,
+                "md_title": title,
+                "title_missing": title_missing,
+                "confidence": conf,
+                "book_chapter_exception": "[book_chapter_exception]" in citation,
+            }
+        )
     return entries
 
 
 # ---------------------------------------------------------------------------
 # Resolution
 # ---------------------------------------------------------------------------
+
 
 def resolve_entry(entry: dict, cache_dir: Path) -> dict:
     """Attempt CrossRef + OpenAlex lookup; return enriched dict."""
@@ -170,8 +173,7 @@ def resolve_entry(entry: dict, cache_dir: Path) -> dict:
                         oa_year = int(pub_date)
                     if oa_year and oa_year != year:
                         warnings.append(
-                            f"{entry['id']}: openalex year {oa_year} != "
-                            f"crossref year {year}; kept crossref"
+                            f"{entry['id']}: openalex year {oa_year} != crossref year {year}; kept crossref"
                         )
                     resolution_status = "resolved"
 
@@ -186,7 +188,7 @@ def resolve_entry(entry: dict, cache_dir: Path) -> dict:
         "first_author_family": family,
         "year": year,
         "title": canonical_title,
-        "venue": entry.get("md_title", ""),   # MD display title (may include venue)
+        "venue": entry.get("md_title", ""),  # MD display title (may include venue)
         "doi": doi,
         "confidence": entry["confidence"],
         "book_chapter_exception": entry["book_chapter_exception"],
@@ -201,23 +203,18 @@ def resolve_entry(entry: dict, cache_dir: Path) -> dict:
 # Main
 # ---------------------------------------------------------------------------
 
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Resolve landmark references")
-    ap.add_argument("--md-file", default="_inputs/landmark_refs.md",
-                    help="Path to landmark_refs_2026-04-22.md")
-    ap.add_argument("--cache-dir", default="cache",
-                    help="Cache directory (relative to this script or absolute)")
-    ap.add_argument("--output", default="landmark_refs.json",
-                    help="Output JSON file")
+    ap.add_argument("--md-file", default="_inputs/landmark_refs.md", help="Path to landmark_refs_2026-04-22.md")
+    ap.add_argument("--cache-dir", default="cache", help="Cache directory (relative to this script or absolute)")
+    ap.add_argument("--output", default="landmark_refs.json", help="Output JSON file")
     args = ap.parse_args()
 
     script_dir = Path(__file__).parent
-    md_path = Path(args.md_file) if Path(args.md_file).is_absolute() \
-        else script_dir / args.md_file
-    cache_dir = Path(args.cache_dir) if Path(args.cache_dir).is_absolute() \
-        else script_dir / args.cache_dir
-    output_path = Path(args.output) if Path(args.output).is_absolute() \
-        else script_dir / args.output
+    md_path = Path(args.md_file) if Path(args.md_file).is_absolute() else script_dir / args.md_file
+    cache_dir = Path(args.cache_dir) if Path(args.cache_dir).is_absolute() else script_dir / args.cache_dir
+    output_path = Path(args.output) if Path(args.output).is_absolute() else script_dir / args.output
 
     md_text = md_path.read_text(encoding="utf-8")
     entries = parse_landmark_md(md_text)
@@ -243,8 +240,7 @@ def main() -> None:
         "generated_on": TODAY,
         "entries": resolved,
     }
-    output_path.write_text(json.dumps(output, ensure_ascii=False, indent=2),
-                           encoding="utf-8")
+    output_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # --- Summary ---
     print(f"\nLandmark resolution — {TODAY}")

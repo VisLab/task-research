@@ -38,9 +38,9 @@ ALIAS_ADDITIONS = [
 
 def normalize_name(name):
     """Normalize a task name for fuzzy matching."""
-    name = re.sub(r"\s*\([^)]*\)\s*", " ", name)   # strip parentheticals
-    name = re.sub(r"\s+", " ", name.lower().strip()) # lowercase + collapse ws
-    name = re.sub(r"\s+(task|test)$", "", name)      # strip trailing task/test
+    name = re.sub(r"\s*\([^)]*\)\s*", " ", name)  # strip parentheticals
+    name = re.sub(r"\s+", " ", name.lower().strip())  # lowercase + collapse ws
+    name = re.sub(r"\s+(task|test)$", "", name)  # strip trailing task/test
     return name
 
 
@@ -57,9 +57,7 @@ def parse_audit(audit_path):
     # Task section headers: ### N. Canonical Name (`hedtsk_id`)
     task_header_re = re.compile(r"^###\s+\d+\.\s+(.+?)(?:\s+\(`hedtsk_[^`]+`\))?$")
     # DROP table rows — accept both '| DROP |' and '| **DROP** |'
-    drop_row_re = re.compile(
-        r"^\|\s*\d+\s*\|\s*(.+?)\s*\|\s*\*{0,2}DROP\*{0,2}\s*\|"
-    )
+    drop_row_re = re.compile(r"^\|\s*\d+\s*\|\s*(.+?)\s*\|\s*\*{0,2}DROP\*{0,2}\s*\|")
 
     drops_by_task = {}
     current_task = None
@@ -96,8 +94,7 @@ def build_match_map(audit_tasks, json_tasks):
         else:
             # Substring fallback
             found = next(
-                (tid for jnorm, tid in norm_to_id.items()
-                 if jnorm in norm or norm in jnorm),
+                (tid for jnorm, tid in norm_to_id.items() if jnorm in norm or norm in jnorm),
                 None,
             )
             if found:
@@ -125,21 +122,16 @@ def apply_drops(tasks, drops_by_task, match_map):
 
         task = tasks[id_to_idx[match_map[audit_name]]]
         existing = {v["name"] for v in task.get("variations", [])}
-        removed   = [n for n in drop_names if n in existing]
+        removed = [n for n in drop_names if n in existing]
         not_found = [n for n in drop_names if n not in existing]
 
         if removed:
-            task["variations"] = [
-                v for v in task["variations"] if v["name"] not in set(removed)
-            ]
+            task["variations"] = [v for v in task["variations"] if v["name"] not in set(removed)]
 
-        total_removed   += len(removed)
+        total_removed += len(removed)
         total_not_found += len(not_found)
 
-        entry = (
-            f"{task['canonical_name']} ({task['hedtsk_id']}): "
-            f"{len(existing)} → {len(task.get('variations', []))}"
-        )
+        entry = f"{task['canonical_name']} ({task['hedtsk_id']}): {len(existing)} → {len(task.get('variations', []))}"
         if removed:
             entry += f"  [dropped: {removed}]"
         if not_found:
@@ -167,14 +159,10 @@ def apply_alias_additions(tasks, alias_additions):
         aliases = task.setdefault("aliases", [])
 
         if alias in aliases:
-            report.append(
-                f"ALIAS already present: '{alias}' in {task['canonical_name']}"
-            )
+            report.append(f"ALIAS already present: '{alias}' in {task['canonical_name']}")
         else:
             aliases.append(alias)
-            report.append(
-                f"ALIAS added: '{alias}' → {task['canonical_name']} ({hedtsk_id})"
-            )
+            report.append(f"ALIAS added: '{alias}' → {task['canonical_name']} ({hedtsk_id})")
 
     return report
 
@@ -202,28 +190,26 @@ def main():
         return
 
     # --- Apply drops ---
-    drop_report, total_removed, total_not_found = apply_drops(
-        tasks, drops_by_task, match_map
-    )
+    drop_report, total_removed, total_not_found = apply_drops(tasks, drops_by_task, match_map)
 
     total_vars_after = sum(len(t.get("variations", [])) for t in tasks)
 
-    print(f"\n--- Drop results ---")
+    print("\n--- Drop results ---")
     print(f"Variations removed : {total_removed}")
     print(f"Names not in JSON  : {total_not_found}")
     print(f"Total variations   : {total_vars_before} → {total_vars_after}")
-    print(f"\n--- Per-task detail ---")
+    print("\n--- Per-task detail ---")
     for line in drop_report:
         print(f"  {line}")
 
     # --- Apply alias additions ---
-    print(f"\n--- Alias additions ---")
+    print("\n--- Alias additions ---")
     alias_report = apply_alias_additions(tasks, ALIAS_ADDITIONS)
     for line in alias_report:
         print(f"  {line}")
 
     # --- Sanity checks ---
-    print(f"\n--- Sanity checks ---")
+    print("\n--- Sanity checks ---")
     expected_removed = 7
     if total_removed != expected_removed:
         print(
@@ -240,7 +226,7 @@ def main():
         )
 
     expected_aliases = len(ALIAS_ADDITIONS)
-    aliases_added = sum(1 for l in alias_report if l.startswith("ALIAS added"))
+    aliases_added = sum(1 for line in alias_report if line.startswith("ALIAS added"))
     print(
         f"OK: {aliases_added}/{expected_aliases} alias addition(s) applied"
         if aliases_added == expected_aliases
@@ -256,10 +242,7 @@ def main():
         json.dumps(tasks, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
-    print(
-        f"Updated task_details.json written "
-        f"({total_vars_after} variations, {aliases_added} alias(es) added)"
-    )
+    print(f"Updated task_details.json written ({total_vars_after} variations, {aliases_added} alias(es) added)")
 
 
 if __name__ == "__main__":

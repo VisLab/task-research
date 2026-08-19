@@ -56,13 +56,12 @@ from __future__ import annotations
 
 import logging
 import re
-from typing import Callable, ContextManager, Mapping
-from urllib.parse import urlparse
+from collections.abc import Callable, Mapping
+from contextlib import AbstractContextManager
 
 # Reuse the same FetchResult dataclass so callers can swap fetchers
 # without a type translation step.
 from fetch import FetchResult
-
 
 logger = logging.getLogger(__name__)
 
@@ -81,9 +80,7 @@ DEFAULT_MAX_BYTES: int = 50 * 1024 * 1024
 
 # Match :data:`fetch.DEFAULT_USER_AGENT` so server logs see the
 # same caller identity regardless of which fetcher made the call.
-DEFAULT_USER_AGENT: str = (
-    "hed-acquire/1.0 (https://github.com/hed-standard; mailto:hedannotation@gmail.com)"
-)
+DEFAULT_USER_AGENT: str = "hed-acquire/1.0 (https://github.com/hed-standard; mailto:hedannotation@gmail.com)"
 
 # Playwright's standard "load-state-finished" wait strategy.  AC's
 # WAF challenge resolves once the page goes quiet on the network;
@@ -115,6 +112,7 @@ _AC_LANDING_RE: re.Pattern[str] = re.compile(
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
 
 def _ac_fallback_url(landing_url: str) -> str | None:
     """If ``landing_url`` is an AC landing-page URL, return the
@@ -170,7 +168,7 @@ def _is_blank_url(url: object) -> bool:
 
 # A no-arg callable returning a Playwright context manager.  Default
 # (production) is ``sync_playwright``; tests pass a stub.
-PlaywrightFactory = Callable[[], ContextManager]
+PlaywrightFactory = Callable[[], AbstractContextManager]
 
 
 def fetch_via_browser(
@@ -213,26 +211,23 @@ def fetch_via_browser(
     redirect handling.
     """
     if _is_blank_url(url):
-        return FetchResult(status=0, url=url or "", content_type="", body=b"",
-                           error="empty or non-string url")
+        return FetchResult(status=0, url=url or "", content_type="", body=b"", error="empty or non-string url")
 
     # ---- Deferred Playwright import.
     if playwright_factory is None:
         try:
             from playwright.sync_api import sync_playwright  # noqa: WPS433
         except ImportError as exc:
-            return FetchResult(status=0, url=url, content_type="", body=b"",
-                               error=f"playwright not installed: {exc}")
+            return FetchResult(status=0, url=url, content_type="", body=b"", error=f"playwright not installed: {exc}")
         playwright_factory = sync_playwright
 
     timeout_ms = int(timeout * 1000)
 
     try:
         factory_ctx = playwright_factory()
-    except Exception as exc:                          # noqa: BLE001 - intentional
+    except Exception as exc:  # noqa: BLE001 - intentional
         logger.info("fetch_via_browser factory error %s: %s", url, exc)
-        return FetchResult(status=0, url=url, content_type="", body=b"",
-                           error=f"{type(exc).__name__}: factory")
+        return FetchResult(status=0, url=url, content_type="", body=b"", error=f"{type(exc).__name__}: factory")
 
     try:
         with factory_ctx as p:
@@ -245,36 +240,35 @@ def fetch_via_browser(
                 try:
                     page.goto(url, timeout=timeout_ms)
                     page.wait_for_load_state(wait_until, timeout=timeout_ms)
-                except Exception as exc:              # noqa: BLE001
+                except Exception as exc:  # noqa: BLE001
                     logger.info("navigation error %s: %s", url, exc)
-                    return FetchResult(status=0, url=url, content_type="",
-                                       body=b"",
-                                       error=f"{_exc_tag(exc)}: navigation")
+                    return FetchResult(
+                        status=0, url=url, content_type="", body=b"", error=f"{_exc_tag(exc)}: navigation"
+                    )
 
                 # ---- Stage 2: locate the direct PDF URL.
                 try:
                     pdf_url = page.evaluate(_CITATION_PDF_URL_JS)
-                except Exception as exc:              # noqa: BLE001
+                except Exception as exc:  # noqa: BLE001
                     logger.info("evaluate error %s: %s", url, exc)
-                    return FetchResult(status=0, url=url, content_type="",
-                                       body=b"",
-                                       error=f"{type(exc).__name__}: evaluate")
+                    return FetchResult(
+                        status=0, url=url, content_type="", body=b"", error=f"{type(exc).__name__}: evaluate"
+                    )
 
                 if not isinstance(pdf_url, str) or not pdf_url.strip():
                     pdf_url = _ac_fallback_url(url)
 
                 if not pdf_url:
-                    return FetchResult(status=0, url=url, content_type="",
-                                       body=b"", error="no pdf url found")
+                    return FetchResult(status=0, url=url, content_type="", body=b"", error="no pdf url found")
 
                 # ---- Stage 3: download via the trusted browser context.
                 try:
                     resp = context.request.get(pdf_url, timeout=timeout_ms)
-                except Exception as exc:              # noqa: BLE001
+                except Exception as exc:  # noqa: BLE001
                     logger.info("download error %s: %s", pdf_url, exc)
-                    return FetchResult(status=0, url=pdf_url, content_type="",
-                                       body=b"",
-                                       error=f"{_exc_tag(exc)}: download")
+                    return FetchResult(
+                        status=0, url=pdf_url, content_type="", body=b"", error=f"{_exc_tag(exc)}: download"
+                    )
 
                 status = getattr(resp, "status", 0) or 0
                 headers = dict(getattr(resp, "headers", {}) or {})
@@ -284,51 +278,66 @@ def fetch_via_browser(
                 if ok is None:
                     ok = 200 <= status < 300
                 if not ok:
-                    return FetchResult(status=status, url=pdf_url,
-                                       content_type=content_type, body=b"",
-                                       error=f"download status {status}",
-                                       headers=headers)
+                    return FetchResult(
+                        status=status,
+                        url=pdf_url,
+                        content_type=content_type,
+                        body=b"",
+                        error=f"download status {status}",
+                        headers=headers,
+                    )
 
                 try:
                     body = resp.body()
-                except Exception as exc:              # noqa: BLE001
+                except Exception as exc:  # noqa: BLE001
                     logger.info("body() error %s: %s", pdf_url, exc)
-                    return FetchResult(status=status, url=pdf_url,
-                                       content_type=content_type, body=b"",
-                                       error=f"{type(exc).__name__}: body",
-                                       headers=headers)
+                    return FetchResult(
+                        status=status,
+                        url=pdf_url,
+                        content_type=content_type,
+                        body=b"",
+                        error=f"{type(exc).__name__}: body",
+                        headers=headers,
+                    )
 
                 if not isinstance(body, (bytes, bytearray)):
-                    return FetchResult(status=status, url=pdf_url,
-                                       content_type=content_type, body=b"",
-                                       error="body is not bytes",
-                                       headers=headers)
+                    return FetchResult(
+                        status=status,
+                        url=pdf_url,
+                        content_type=content_type,
+                        body=b"",
+                        error="body is not bytes",
+                        headers=headers,
+                    )
                 body = bytes(body)
 
                 if len(body) > max_bytes:
-                    return FetchResult(status=status, url=pdf_url,
-                                       content_type=content_type, body=b"",
-                                       error=f"body exceeds max_bytes={max_bytes}",
-                                       headers=headers)
+                    return FetchResult(
+                        status=status,
+                        url=pdf_url,
+                        content_type=content_type,
+                        body=b"",
+                        error=f"body exceeds max_bytes={max_bytes}",
+                        headers=headers,
+                    )
 
-                return FetchResult(status=status, url=pdf_url,
-                                   content_type=content_type, body=body,
-                                   error=None, headers=headers)
+                return FetchResult(
+                    status=status, url=pdf_url, content_type=content_type, body=body, error=None, headers=headers
+                )
             finally:
                 # ``browser.close()`` is harmless if launch failed
                 # because we'd have raised before reaching this block;
                 # if launch succeeded we always want it closed.
                 try:
                     browser.close()
-                except Exception:                     # noqa: BLE001
+                except Exception:  # noqa: BLE001
                     logger.debug("browser.close() raised; ignored", exc_info=True)
-    except Exception as exc:                          # noqa: BLE001 - intentional
+    except Exception as exc:  # noqa: BLE001 - intentional
         # Anything that escapes the inner try / with — context-manager
         # exit failure, launch failure, etc. — surfaces as an opaque
         # FetchResult-shaped error rather than propagating.
         logger.info("fetch_via_browser unexpected error %s: %s", url, exc)
-        return FetchResult(status=0, url=url, content_type="", body=b"",
-                           error=f"{type(exc).__name__}: {exc}")
+        return FetchResult(status=0, url=url, content_type="", body=b"", error=f"{type(exc).__name__}: {exc}")
 
 
 __all__ = [

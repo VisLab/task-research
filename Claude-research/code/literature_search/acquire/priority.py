@@ -37,9 +37,8 @@ module's.
 from __future__ import annotations
 
 import re
-from typing import Sequence
+from collections.abc import Sequence
 from urllib.parse import urlparse
-
 
 # ---------------------------------------------------------------------------
 # Host classification
@@ -128,13 +127,13 @@ def classify_url(url: str | None) -> str:
 # landing URL beats the bare ``doi.org`` resolver (40) by tier alone,
 # which is the only ordering constraint PR-F's plan v2 §14 imposes.
 _HOST_PRIORITY: dict[str, int] = {
-    "pmc":            10,
-    "biorxiv":        20,
-    "medrxiv":        20,
-    "arxiv":          20,
-    "ac":             30,
-    "other":          30,   # repositories, publisher OA pages
-    "doi":            40,   # content negotiation, last resort
+    "pmc": 10,
+    "biorxiv": 20,
+    "medrxiv": 20,
+    "arxiv": 20,
+    "ac": 30,
+    "other": 30,  # repositories, publisher OA pages
+    "doi": 40,  # content negotiation, last resort
     "pubmed_landing": 999,  # filtered out by walk_locations; this is defensive
 }
 
@@ -223,9 +222,7 @@ def synthesize_candidates(pdf_locations: Sequence[dict] | None) -> list[dict]:
     # the existing entry classifies as ``"ac"`` and routes to the
     # browser fetcher via :func:`fetcher_for`.
     for loc in pdf_locations:
-        if (isinstance(loc, dict)
-                and isinstance(loc.get("url"), str)
-                and _AC_HOST_SUBSTRING in loc["url"].lower()):
+        if isinstance(loc, dict) and isinstance(loc.get("url"), str) and _AC_HOST_SUBSTRING in loc["url"].lower():
             return out
 
     # Otherwise: look for an AC-managed DOI on doi.org and synthesise.
@@ -241,13 +238,15 @@ def synthesize_candidates(pdf_locations: Sequence[dict] | None) -> list[dict]:
         if not m:
             continue
         ac_doi = m.group(2)
-        out.append({
-            "url":     f"https://academiccommons.columbia.edu/doi/{ac_doi}",
-            "source":  "synthesized:ac",
-            "version": loc.get("version"),
-            "is_oa":   loc.get("is_oa", True),
-            "license": loc.get("license"),
-        })
+        out.append(
+            {
+                "url": f"https://academiccommons.columbia.edu/doi/{ac_doi}",
+                "source": "synthesized:ac",
+                "version": loc.get("version"),
+                "is_oa": loc.get("is_oa", True),
+                "license": loc.get("license"),
+            }
+        )
         break
 
     return out
@@ -256,6 +255,7 @@ def synthesize_candidates(pdf_locations: Sequence[dict] | None) -> list[dict]:
 # ---------------------------------------------------------------------------
 # Fetcher dispatch (PR-F)
 # ---------------------------------------------------------------------------
+
 
 def fetcher_for(loc: dict) -> str:
     """Return ``"browser"`` for hosts that require the Playwright

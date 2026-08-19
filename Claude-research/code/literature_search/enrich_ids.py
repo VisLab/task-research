@@ -59,17 +59,15 @@ import re
 import shutil
 import sys
 from collections import Counter
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Iterable
 
 # Allow direct invocation: ``python code/literature_search/enrich_ids.py``.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from reference_compat import ref_doi  # noqa: E402
-
 from hed_metadata_toolkit.clients.openalex import lookup_by_doi as oa_lookup  # noqa: E402
 from hed_metadata_toolkit.clients.semanticscholar import lookup_by_doi as s2_lookup  # noqa: E402
-
+from reference_compat import ref_doi  # noqa: E402
 
 logger = logging.getLogger(__name__)
 
@@ -77,6 +75,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 # Cache-directory resolution (per the shared cache convention)
 # ---------------------------------------------------------------------------
+
 
 def resolve_cache_dir(arg_value: str, workspace: Path) -> Path:
     """Resolve the cache root: arg > $HED_CACHE_DIR > <workspace>/outputs/cache."""
@@ -97,8 +96,8 @@ def resolve_cache_dir(arg_value: str, workspace: Path) -> Path:
 # of the URL form; they also tolerate already-stripped values (a bare
 # "W2003876547" passes through unchanged because the prefix is optional).
 _RE_OPENALEX = re.compile(r"^(?:https?://openalex\.org/)?(W\d+)$", re.I)
-_RE_PMID     = re.compile(r"^(?:https?://(?:www\.)?(?:pubmed\.)?ncbi\.nlm\.nih\.gov/(?:pubmed/)?)?(\d+)$", re.I)
-_RE_PMCID    = re.compile(r"^(?:https?://(?:www\.)?(?:pmc\.)?ncbi\.nlm\.nih\.gov/pmc/articles/)?(?:PMC)?(\d+)/?$", re.I)
+_RE_PMID = re.compile(r"^(?:https?://(?:www\.)?(?:pubmed\.)?ncbi\.nlm\.nih\.gov/(?:pubmed/)?)?(\d+)$", re.I)
+_RE_PMCID = re.compile(r"^(?:https?://(?:www\.)?(?:pmc\.)?ncbi\.nlm\.nih\.gov/pmc/articles/)?(?:PMC)?(\d+)/?$", re.I)
 
 
 def _strip_prefix(value: object, pattern: re.Pattern[str]) -> str | None:
@@ -175,6 +174,7 @@ def extract_ids_from_s2(resp: dict | None) -> dict[str, str]:
 # Merge + apply
 # ---------------------------------------------------------------------------
 
+
 def merge_id_sets(oa: dict[str, str], s2: dict[str, str]) -> dict[str, str]:
     """Combine OpenAlex and S2 candidate IDs.
 
@@ -182,8 +182,8 @@ def merge_id_sets(oa: dict[str, str], s2: dict[str, str]) -> dict[str, str]:
     S2 fills the slots OpenAlex doesn't surface (``s2_id``,
     ``arxiv_id``).
     """
-    merged = dict(s2)        # start from S2 so OA can overwrite shared keys
-    merged.update(oa)        # OpenAlex slots win on conflict
+    merged = dict(s2)  # start from S2 so OA can overwrite shared keys
+    merged.update(oa)  # OpenAlex slots win on conflict
     # Ensure S2-only keys survive even though OA wrote nothing for them
     for k in ("s2_id", "arxiv_id"):
         if k in s2 and k not in merged:
@@ -228,6 +228,7 @@ def apply_to_ref(ref: dict, candidates: dict[str, str]) -> tuple[int, list[Confl
 # Per-reference enrichment
 # ---------------------------------------------------------------------------
 
+
 def enrich_one_reference(
     ref: dict,
     cache_dir: Path,
@@ -260,8 +261,7 @@ def enrich_one_reference(
 try:
     from search_queries import POC_ITEM_IDS as _SQ_POC
 except Exception:
-    _SQ_POC = ("hed_response_inhibition", "hed_working_memory_updating",
-               "hedtsk_stroop_color_word")
+    _SQ_POC = ("hed_response_inhibition", "hed_working_memory_updating", "hedtsk_stroop_color_word")
 
 POC_ITEM_IDS: tuple[str, ...] = tuple(_SQ_POC)
 
@@ -299,23 +299,25 @@ def _iter_items(
 # Driver
 # ---------------------------------------------------------------------------
 
+
 def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--mode", choices=["poc", "single", "full"], required=True,
-                   help="poc=3 sample items, single=--ids, full=every item.")
-    p.add_argument("--ids", default="",
-                   help="Comma-separated owner IDs for --mode single.")
-    p.add_argument("--workspace", default=".",
-                   help="Workspace root (Claude-research/). Default: cwd.")
-    p.add_argument("--cache-dir", default="<auto>",
-                   help="Cache root. Default: $HED_CACHE_DIR or "
-                        "<workspace>/outputs/cache.")
-    p.add_argument("--email", default="hedannotation@gmail.com",
-                   help="Polite-pool email for OpenAlex.")
-    p.add_argument("--write", action="store_true",
-                   help="Persist changes to process_details.json and task_details.json.")
-    p.add_argument("--limit", type=int, default=0,
-                   help="Cap the number of references processed (0 = no cap).")
+    p.add_argument(
+        "--mode",
+        choices=["poc", "single", "full"],
+        required=True,
+        help="poc=3 sample items, single=--ids, full=every item.",
+    )
+    p.add_argument("--ids", default="", help="Comma-separated owner IDs for --mode single.")
+    p.add_argument("--workspace", default=".", help="Workspace root (Claude-research/). Default: cwd.")
+    p.add_argument(
+        "--cache-dir", default="<auto>", help="Cache root. Default: $HED_CACHE_DIR or <workspace>/outputs/cache."
+    )
+    p.add_argument("--email", default="hedannotation@gmail.com", help="Polite-pool email for OpenAlex.")
+    p.add_argument(
+        "--write", action="store_true", help="Persist changes to process_details.json and task_details.json."
+    )
+    p.add_argument("--limit", type=int, default=0, help="Cap the number of references processed (0 = no cap).")
     p.add_argument("--verbose", "-v", action="store_true")
     return p.parse_args(argv)
 
@@ -349,8 +351,8 @@ def main(argv: list[str] | None = None) -> int:
     items_iter = list(_iter_items(processes, tasks, args.mode, ids_arg))
     logger.info("items in scope (%s): %d", args.mode, len(items_iter))
 
-    n_refs_seen      = 0
-    n_refs_with_doi  = 0
+    n_refs_seen = 0
+    n_refs_with_doi = 0
     fills_per_slot: Counter[str] = Counter()
     all_conflicts: list[tuple[str, str, Conflict]] = []  # (owner_id, doi, conflict)
 
@@ -360,7 +362,9 @@ def main(argv: list[str] | None = None) -> int:
             if args.limit and n_refs_with_doi >= args.limit:
                 break
             n_filled, conflicts, had_doi = enrich_one_reference(
-                ref, cache_dir, args.email,
+                ref,
+                cache_dir,
+                args.email,
             )
             if not had_doi:
                 continue
@@ -402,11 +406,9 @@ def main(argv: list[str] | None = None) -> int:
 
     if all_conflicts:
         print()
-        print(f"Conflicts ({len(all_conflicts)}) — existing value KEPT; "
-              f"candidate logged for review:")
+        print(f"Conflicts ({len(all_conflicts)}) — existing value KEPT; candidate logged for review:")
         for owner_id, doi, (slot, existing, cand) in all_conflicts[:20]:
-            print(f"  [{owner_id}] doi={doi}  {slot}: existing={existing!r}  "
-                  f"candidate={cand!r}")
+            print(f"  [{owner_id}] doi={doi}  {slot}: existing={existing!r}  candidate={cand!r}")
         if len(all_conflicts) > 20:
             print(f"  ... and {len(all_conflicts) - 20} more")
 

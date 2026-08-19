@@ -65,9 +65,7 @@ import argparse
 import json
 import shutil
 import sys
-from collections.abc import Iterable
 from pathlib import Path
-
 
 # ---------------------------------------------------------------------------
 # Field handling
@@ -77,17 +75,23 @@ from pathlib import Path
 # The ids block ALWAYS has all six keys after migration, with null for
 # missing values.  This uniform shape simplifies code reading the block.
 _FLAT_ID_FIELDS = ("doi", "openalex_id", "pmid")
-_NEW_ID_FIELDS  = ("pmcid", "s2_id", "arxiv_id")
-_ALL_ID_FIELDS  = _FLAT_ID_FIELDS + _NEW_ID_FIELDS
+_NEW_ID_FIELDS = ("pmcid", "s2_id", "arxiv_id")
+_ALL_ID_FIELDS = _FLAT_ID_FIELDS + _NEW_ID_FIELDS
 
 # Field ordering for the migrated reference.  We preserve any existing
 # key order then insert `ids`/`url`/`pub_id`/`oa_status` in a deterministic
 # position so the resulting JSON is diff-friendly.
 _PREFERRED_ORDER = (
     # bibliographic core
-    "title", "authors", "year",
-    "journal", "venue", "venue_type",
-    "volume", "issue", "pages",
+    "title",
+    "authors",
+    "year",
+    "journal",
+    "venue",
+    "venue_type",
+    "volume",
+    "issue",
+    "pages",
     # identity block (new)
     "ids",
     "url",
@@ -95,7 +99,9 @@ _PREFERRED_ORDER = (
     "oa_status",
     # provenance and editorial
     "citation_string",
-    "source", "confidence", "verified_on",
+    "source",
+    "confidence",
+    "verified_on",
     # role vocabulary (required by schema)
     "roles",
 )
@@ -226,6 +232,7 @@ def migrate_tasks(data: list) -> tuple[list, int]:
 # Diff / round-trip verification
 # ---------------------------------------------------------------------------
 
+
 def collect_all_refs(data: object) -> list[dict]:
     """Flatten every reference in a catalog payload into a single list."""
     refs: list[dict] = []
@@ -253,20 +260,16 @@ def compare_refs_pre_post(
     """
     problems: list[str] = []
     if len(pre_refs) != len(post_refs):
-        problems.append(
-            f"reference count changed: {len(pre_refs)} → {len(post_refs)}"
-        )
+        problems.append(f"reference count changed: {len(pre_refs)} → {len(post_refs)}")
         return problems
 
-    for i, (pre, post) in enumerate(zip(pre_refs, post_refs)):
+    for i, (pre, post) in enumerate(zip(pre_refs, post_refs, strict=False)):
         # ID fields must round-trip exactly.
         for fld in _FLAT_ID_FIELDS:
             pre_val = _normalise_id(pre.get(fld))
             post_val = _normalise_id((post.get("ids") or {}).get(fld))
             if pre_val != post_val:
-                problems.append(
-                    f"ref[{i}] {fld}: {pre_val!r} → {post_val!r}"
-                )
+                problems.append(f"ref[{i}] {fld}: {pre_val!r} → {post_val!r}")
 
         # Non-ID fields must be preserved verbatim.
         skip = set(_FLAT_ID_FIELDS) | {"ids", "pub_id", "oa_status"}
@@ -274,9 +277,7 @@ def compare_refs_pre_post(
             if key in skip:
                 continue
             if post.get(key) != val:
-                problems.append(
-                    f"ref[{i}] {key}: value changed during migration"
-                )
+                problems.append(f"ref[{i}] {key}: value changed during migration")
 
     return problems
 
@@ -284,6 +285,7 @@ def compare_refs_pre_post(
 # ---------------------------------------------------------------------------
 # Diff display (for --diff)
 # ---------------------------------------------------------------------------
+
 
 def show_first_diff(pre_refs: list[dict], post_refs: list[dict]) -> str:
     """Pretty-print the first pre/post pair for human review."""
@@ -297,6 +299,7 @@ def show_first_diff(pre_refs: list[dict], post_refs: list[dict]) -> str:
 # ---------------------------------------------------------------------------
 # Driver
 # ---------------------------------------------------------------------------
+
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
@@ -323,8 +326,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--write",
         action="store_true",
-        help="Overwrite the source files with migrated output. "
-             "Default is dry-run.",
+        help="Overwrite the source files with migrated output. Default is dry-run.",
     )
     p.add_argument(
         "--diff",
@@ -364,10 +366,10 @@ def main() -> int:
     tasks_post, n_task_refs = migrate_tasks(tasks_pre)
 
     # ---- Verify
-    pre_refs  = collect_all_refs(proc_pre) + collect_all_refs(tasks_pre)
+    pre_refs = collect_all_refs(proc_pre) + collect_all_refs(tasks_pre)
     post_refs = collect_all_refs(proc_post) + collect_all_refs(tasks_post)
 
-    print(f"references seen:")
+    print("references seen:")
     print(f"  in {src_proc.name}:  {n_proc_refs}")
     print(f"  in {src_tasks.name}: {n_task_refs}")
     print(f"  total: {len(pre_refs)} → {len(post_refs)}")
@@ -383,7 +385,7 @@ def main() -> int:
     print("verification: ok (every pre ref round-trips to a post ref)")
 
     # ---- Stage to .scratch
-    staged_proc  = scratch / src_proc.name
+    staged_proc = scratch / src_proc.name
     staged_tasks = scratch / src_tasks.name
     write_staged(staged_proc, proc_post)
     write_staged(staged_tasks, tasks_post)
@@ -396,22 +398,26 @@ def main() -> int:
         print("=" * 72)
         print(f"DIFF — {src_proc.name}")
         print("=" * 72)
-        print(show_first_diff(
-            collect_all_refs(proc_pre),
-            collect_all_refs(proc_post),
-        ))
+        print(
+            show_first_diff(
+                collect_all_refs(proc_pre),
+                collect_all_refs(proc_post),
+            )
+        )
         print()
         print("=" * 72)
         print(f"DIFF — {src_tasks.name}")
         print("=" * 72)
-        print(show_first_diff(
-            collect_all_refs(tasks_pre),
-            collect_all_refs(tasks_post),
-        ))
+        print(
+            show_first_diff(
+                collect_all_refs(tasks_pre),
+                collect_all_refs(tasks_post),
+            )
+        )
 
     # ---- Persist (only with --write)
     if args.write:
-        shutil.copyfile(staged_proc,  src_proc)
+        shutil.copyfile(staged_proc, src_proc)
         shutil.copyfile(staged_tasks, src_tasks)
         print()
         print(f"wrote: {src_proc.relative_to(ws)}")

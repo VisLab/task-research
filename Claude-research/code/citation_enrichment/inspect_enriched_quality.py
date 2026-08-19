@@ -1,4 +1,4 @@
-"""
+r"""
 inspect_enriched_quality.py
 Run from the workspace root on Windows:
     python outputs\inspect_enriched_quality.py
@@ -10,40 +10,46 @@ Reads task_details.enriched.json and reports:
   4. doi=null but url has a doi.org link (verification-stripped DOIs)
   5. Overall statistics
 """
-import json, re, unicodedata
+
+import json
+import re
+import unicodedata
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent
-ENRICHED   = SCRIPT_DIR / "task_details.enriched.json"
+ENRICHED = SCRIPT_DIR / "task_details.enriched.json"
+
 
 def surnames_from(text):
     """Extract lowercased surnames from an author string."""
-    text = re.sub(r'\s*\[.*', '', text)   # strip [Updated: ...] etc.
+    text = re.sub(r"\s*\[.*", "", text)  # strip [Updated: ...] etc.
     parts = re.split(r"[,&.]|\bet al\b|\band\b", text, flags=re.IGNORECASE)
     result = []
     for p in parts:
         p = p.strip()
-        if len(p) > 2 and not re.match(r'^[A-Z]\.?$', p):
+        if len(p) > 2 and not re.match(r"^[A-Z]\.?$", p):
             w = unicodedata.normalize("NFKD", p.lower())
             if w:
                 result.append(w)
     return result
 
+
 def authors_overlap(cs_authors, res_authors):
     """Return True if any surname from cs_authors appears in res_authors."""
     if not cs_authors or not res_authors:
-        return True   # can't compare; don't flag
+        return True  # can't compare; don't flag
     cs_sn = surnames_from(cs_authors)
     re_sn = surnames_from(res_authors)
     return any(s in r or r in s for s in cs_sn for r in re_sn)
+
 
 with open(ENRICHED, encoding="utf-8") as fh:
     tasks = json.load(fh)
 
 false_positives = []
-unresolved      = []
-html_entities   = []
-doi_stripped    = []
+unresolved = []
+html_entities = []
+doi_stripped = []
 
 total = 0
 for task in tasks:
@@ -53,50 +59,66 @@ for task in tasks:
             if not isinstance(ref, dict):
                 continue
             total += 1
-            cs      = ref.get("citation_string", "")
-            src     = ref.get("source", "")
-            conf    = ref.get("confidence", "")
-            res_au  = ref.get("authors", "")
-            doi     = ref.get("doi")
-            url     = ref.get("url", "")
+            cs = ref.get("citation_string", "")
+            src = ref.get("source", "")
+            conf = ref.get("confidence", "")
+            res_au = ref.get("authors", "")
+            doi = ref.get("doi")
+            url = ref.get("url", "")
 
             # Extract author portion of citation_string (before first '(YYYY)')
-            cs_au_m = re.match(r'^([^(]+)\s*\(\d{4}', cs)
-            cs_au   = cs_au_m.group(1).strip() if cs_au_m else ""
+            cs_au_m = re.match(r"^([^(]+)\s*\(\d{4}", cs)
+            cs_au = cs_au_m.group(1).strip() if cs_au_m else ""
 
             # 1. False positives
             if src not in ("unresolved", "historical") and cs_au and res_au:
                 if not authors_overlap(cs_au, res_au):
-                    false_positives.append({
-                        "task": tid, "ref_key": rk,
-                        "cs_au": cs_au[:60], "res_au": res_au[:60],
-                        "res_title": ref.get("title","")[:70],
-                        "citation_string": cs[:90],
-                    })
+                    false_positives.append(
+                        {
+                            "task": tid,
+                            "ref_key": rk,
+                            "cs_au": cs_au[:60],
+                            "res_au": res_au[:60],
+                            "res_title": ref.get("title", "")[:70],
+                            "citation_string": cs[:90],
+                        }
+                    )
 
             # 2. Unresolved
             if src == "unresolved":
-                unresolved.append({
-                    "task": tid, "ref_key": rk, "citation_string": cs[:100],
-                    "year": ref.get("year"),
-                })
+                unresolved.append(
+                    {
+                        "task": tid,
+                        "ref_key": rk,
+                        "citation_string": cs[:100],
+                        "year": ref.get("year"),
+                    }
+                )
 
             # 3. HTML entities in venue/journal
             for field in ("venue", "journal"):
                 v = ref.get(field) or ""
                 if "&amp;" in v or "&#" in v or "&lt;" in v or "&gt;" in v:
-                    html_entities.append({
-                        "task": tid, "ref_key": rk, "field": field, "value": v,
-                    })
+                    html_entities.append(
+                        {
+                            "task": tid,
+                            "ref_key": rk,
+                            "field": field,
+                            "value": v,
+                        }
+                    )
                     break
 
             # 4. doi=null but url is a doi.org link (verification-stripped DOIs)
             if doi is None and url and url.startswith("https://doi.org/"):
-                doi_stripped.append({
-                    "task": tid, "ref_key": rk,
-                    "inferred_doi": url.replace("https://doi.org/", ""),
-                    "citation_string": cs[:80],
-                })
+                doi_stripped.append(
+                    {
+                        "task": tid,
+                        "ref_key": rk,
+                        "inferred_doi": url.replace("https://doi.org/", ""),
+                        "citation_string": cs[:80],
+                    }
+                )
 
 # -----------------------------------------------------------------------
 print("=" * 70)

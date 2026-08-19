@@ -31,14 +31,13 @@ Options:
 import argparse
 import json
 import re
-import sys
 import unicodedata
 from pathlib import Path
-
 
 # ---------------------------------------------------------------------------
 # Author extraction helpers
 # ---------------------------------------------------------------------------
+
 
 def _normalise(s: str) -> str:
     """Lowercase, strip diacritics, keep only a-z and hyphen.
@@ -79,6 +78,7 @@ def _ref_family(ref: dict) -> str:
 # Landmark matching
 # ---------------------------------------------------------------------------
 
+
 def build_landmark_lookup(landmark_refs_path: Path) -> set[tuple[str, str, str]]:
     """Return set of (owner_id, author_family_lower, year_str) from landmark_refs.json.
 
@@ -89,9 +89,9 @@ def build_landmark_lookup(landmark_refs_path: Path) -> set[tuple[str, str, str]]
     entries = data.get("entries", data) if isinstance(data, dict) else data
     lookup: set[tuple[str, str, str]] = set()
     for e in entries:
-        owner  = e.get("id", "")
+        owner = e.get("id", "")
         family = _normalise(e.get("first_author_family") or "")
-        year   = str(e.get("year") or "")
+        year = str(e.get("year") or "")
         if owner and family and year:
             lookup.add((owner, family, year))
     return lookup
@@ -100,13 +100,14 @@ def build_landmark_lookup(landmark_refs_path: Path) -> set[tuple[str, str, str]]
 def is_landmark(owner_id: str, ref: dict, lookup: set) -> bool:
     """Return True if this reference matches a landmark entry for owner_id."""
     family = _ref_family(ref)
-    year   = str(ref.get("year") or "")
+    year = str(ref.get("year") or "")
     return (owner_id, family, year) in lookup
 
 
 # ---------------------------------------------------------------------------
 # Deduplication
 # ---------------------------------------------------------------------------
+
 
 def _ref_key(ref: dict) -> str:
     """Stable dedup key: prefer doi, fall back to normalised citation_string."""
@@ -127,7 +128,7 @@ def merge_ref_arrays(*arrays: list[dict]) -> list[dict]:
     seen: set[str] = set()
     result: list[dict] = []
     for arr in arrays:
-        for ref in (arr or []):
+        for ref in arr or []:
             key = _ref_key(ref)
             if key not in seen:
                 seen.add(key)
@@ -139,11 +140,12 @@ def merge_ref_arrays(*arrays: list[dict]) -> list[dict]:
 # Per-item migration
 # ---------------------------------------------------------------------------
 
+
 def migrate_process(proc: dict, landmark_lookup: set) -> dict:
     """Return a new process dict with the merged references schema."""
     owner_id = proc["process_id"]
     fund = proc.pop("fundamental_references", []) or []
-    rec  = proc.pop("recent_references", []) or []
+    rec = proc.pop("recent_references", []) or []
     refs = merge_ref_arrays(fund, rec)
 
     for ref in refs:
@@ -177,10 +179,11 @@ def migrate_task(task: dict, landmark_lookup: set) -> dict:
 # Summary helpers
 # ---------------------------------------------------------------------------
 
+
 def summarise(label: str, items: list[dict], id_field: str) -> None:
     total_refs = 0
     historical = 0
-    unknown    = 0
+    unknown = 0
     for item in items:
         for ref in item.get("references", []):
             roles = ref.get("roles", [])
@@ -189,31 +192,31 @@ def summarise(label: str, items: list[dict], id_field: str) -> None:
                 historical += 1
             else:
                 unknown += 1
-    print(f"  {label}: {len(items)} items, {total_refs} refs "
-          f"({historical} historical, {unknown} unknown)")
+    print(f"  {label}: {len(items)} items, {total_refs} refs ({historical} historical, {unknown} unknown)")
 
 
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Migrate reference arrays to unified schema.")
-    ap.add_argument("--workspace",     default=".",
-                    help="Workspace root (default: current directory)")
-    ap.add_argument("--landmark-refs", default="outputs/literature_search/landmark_refs.json",
-                    help="Path to landmark_refs.json (relative to workspace)")
-    ap.add_argument("--write",         action="store_true",
-                    help="Write output to process_details.json / task_details.json")
-    ap.add_argument("--dry-run",       action="store_true",
-                    help="(default) Print summary; write only to .scratch/")
+    ap.add_argument("--workspace", default=".", help="Workspace root (default: current directory)")
+    ap.add_argument(
+        "--landmark-refs",
+        default="outputs/literature_search/landmark_refs.json",
+        help="Path to landmark_refs.json (relative to workspace)",
+    )
+    ap.add_argument("--write", action="store_true", help="Write output to process_details.json / task_details.json")
+    ap.add_argument("--dry-run", action="store_true", help="(default) Print summary; write only to .scratch/")
     args = ap.parse_args()
 
     ws = Path(args.workspace)
     landmark_path = ws / args.landmark_refs
-    pd_path       = ws / "process_details.json"
-    td_path       = ws / "task_details.json"
-    scratch       = ws / ".scratch"
+    pd_path = ws / "process_details.json"
+    td_path = ws / "task_details.json"
+    scratch = ws / ".scratch"
     scratch.mkdir(exist_ok=True)
 
     # Load
@@ -224,11 +227,11 @@ def main() -> None:
     td_data = json.loads(td_path.read_text(encoding="utf-8"))
 
     processes = pd_data.get("processes", [])
-    tasks     = td_data if isinstance(td_data, list) else td_data.get("tasks", [])
+    tasks = td_data if isinstance(td_data, list) else td_data.get("tasks", [])
 
     # Migrate
     migrated_procs = [migrate_process(p, landmark_lookup) for p in processes]
-    migrated_tasks = [migrate_task(t, landmark_lookup)    for t in tasks]
+    migrated_tasks = [migrate_task(t, landmark_lookup) for t in tasks]
 
     pd_data["processes"] = migrated_procs
     if isinstance(td_data, list):
@@ -239,13 +242,15 @@ def main() -> None:
     # Summary
     print("\nMigration summary:")
     summarise("process_details", migrated_procs, "process_id")
-    summarise("task_details",    migrated_tasks,  "hedtsk_id")
+    summarise("task_details", migrated_tasks, "hedtsk_id")
 
     # Spot-check: how many got historical?
-    hist_procs = [(p["process_id"], r.get("citation_string","")[:60])
-                  for p in migrated_procs
-                  for r in p.get("references", [])
-                  if "historical" in r.get("roles", [])]
+    hist_procs = [
+        (p["process_id"], r.get("citation_string", "")[:60])
+        for p in migrated_procs
+        for r in p.get("references", [])
+        if "historical" in r.get("roles", [])
+    ]
     print(f"\n  Historical references found: {len(hist_procs)}")
     for pid, cs in hist_procs[:10]:
         print(f"    {pid}: {cs}")
@@ -255,7 +260,7 @@ def main() -> None:
     # Validate JSON round-trip
     pd_json = json.dumps(pd_data, ensure_ascii=False, indent=2)
     td_json = json.dumps(td_data, ensure_ascii=False, indent=2)
-    json.loads(pd_json)   # raises if invalid
+    json.loads(pd_json)  # raises if invalid
     json.loads(td_json)
 
     # Always write to .scratch/ for inspection
@@ -263,7 +268,7 @@ def main() -> None:
     scratch_td = scratch / "task_details_migrated.json"
     scratch_pd.write_text(pd_json, encoding="utf-8")
     scratch_td.write_text(td_json, encoding="utf-8")
-    print(f"\nStaged to:")
+    print("\nStaged to:")
     print(f"  {scratch_pd}")
     print(f"  {scratch_td}")
 

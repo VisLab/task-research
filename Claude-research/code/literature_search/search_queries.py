@@ -19,12 +19,11 @@ Imports:
 """
 
 import json
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from datetime import date
 from pathlib import Path
 
 from fos_map import fields_of_study_for_category, fields_of_study_set
-
 
 TODAY_YEAR: int = date.today().year
 RECENT_YEAR_MIN: int = TODAY_YEAR - 8
@@ -34,28 +33,30 @@ RECENT_YEAR_MIN: int = TODAY_YEAR - 8
 # Data class
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class ItemQueryPlan:
-    item_id: str               # hed_* or hedtsk_*
-    item_kind: str             # "process" or "task"
+    item_id: str  # hed_* or hedtsk_*
+    item_kind: str  # "process" or "task"
     primary_name: str
-    aliases: list              # list[str] for tasks; list[dict] for processes
-    description: str           # used for query_relevance scoring; also the
-                               # canonical "definition" for processes / the
-                               # `description` field for tasks
-    openalex_topic_ids: list   # [] when crosswalk unavailable
-    category_id: str | None    # primary category_id (None for multi-category tasks)
-    fos_set: set               # pre-computed FoS set for Stage B filtering
-    passes: dict               # "all_years" | "recent" | "reviews"
+    aliases: list  # list[str] for tasks; list[dict] for processes
+    description: str  # used for query_relevance scoring; also the
+    # canonical "definition" for processes / the
+    # `description` field for tasks
+    openalex_topic_ids: list  # [] when crosswalk unavailable
+    category_id: str | None  # primary category_id (None for multi-category tasks)
+    fos_set: set  # pre-computed FoS set for Stage B filtering
+    passes: dict  # "all_years" | "recent" | "reviews"
     # Identity-block extras propagated through to the candidates-JSON output
     # so each per-item file is self-contained (added 2026-04-28).
-    short_definition: str | None = None     # tasks only
-    inclusion_test: dict | None = None      # tasks only — {procedure, manipulation, measurement}
+    short_definition: str | None = None  # tasks only
+    inclusion_test: dict | None = None  # tasks only — {procedure, manipulation, measurement}
 
 
 # ---------------------------------------------------------------------------
 # Alias normalisation
 # ---------------------------------------------------------------------------
+
 
 def _alias_strings(aliases: list) -> list:
     """Return a flat list of alias strings regardless of input type.
@@ -79,6 +80,7 @@ def _alias_strings(aliases: list) -> list:
 # ---------------------------------------------------------------------------
 # Query construction helpers
 # ---------------------------------------------------------------------------
+
 
 def _phrases(name: str, aliases: list) -> list[str]:
     """Return the primary name plus all alias strings as a flat list.
@@ -132,16 +134,24 @@ def _build_passes(
         # to be foundational or a key review over any time horizon).
         "all_years": {
             "openalex": {
-                "phrases": phrase_list, "topic_ids": topic_ids_arg,
-                "year_min": None, "year_max": None,
-                "pub_type": "article_review", "max_results": 100,
+                "phrases": phrase_list,
+                "topic_ids": topic_ids_arg,
+                "year_min": None,
+                "year_max": None,
+                "pub_type": "article_review",
+                "max_results": 100,
             },
             "europepmc": {
-                "phrases": phrase_list, "year_min": None, "year_max": None,
-                "pub_type": "research_article", "max_results": 100,
+                "phrases": phrase_list,
+                "year_min": None,
+                "year_max": None,
+                "pub_type": "research_article",
+                "max_results": 100,
             },
             "semanticscholar": {
-                "queries": s2_qs, "year_min": None, "year_max": None,
+                "queries": s2_qs,
+                "year_min": None,
+                "year_max": None,
                 "max_results": 100,
                 "fields_of_study": fields_of_study,
                 "min_citation_count": 20,
@@ -152,16 +162,24 @@ def _build_passes(
         # S2: no minCitationCount (recent papers legitimately have low counts).
         "recent": {
             "openalex": {
-                "phrases": phrase_list, "topic_ids": topic_ids_arg,
-                "year_min": RECENT_YEAR_MIN, "year_max": None,
-                "pub_type": "article_review", "max_results": 100,
+                "phrases": phrase_list,
+                "topic_ids": topic_ids_arg,
+                "year_min": RECENT_YEAR_MIN,
+                "year_max": None,
+                "pub_type": "article_review",
+                "max_results": 100,
             },
             "europepmc": {
-                "phrases": phrase_list, "year_min": RECENT_YEAR_MIN, "year_max": None,
-                "pub_type": "research_article", "max_results": 100,
+                "phrases": phrase_list,
+                "year_min": RECENT_YEAR_MIN,
+                "year_max": None,
+                "pub_type": "research_article",
+                "max_results": 100,
             },
             "semanticscholar": {
-                "queries": s2_qs, "year_min": RECENT_YEAR_MIN, "year_max": None,
+                "queries": s2_qs,
+                "year_min": RECENT_YEAR_MIN,
+                "year_max": None,
                 "max_results": 100,
                 "fields_of_study": fields_of_study,
                 "min_citation_count": None,
@@ -171,16 +189,24 @@ def _build_passes(
         # Review-type filter -- guarantees reviews appear for the selection rule.
         "reviews": {
             "openalex": {
-                "phrases": phrase_list, "topic_ids": topic_ids_arg,
-                "year_min": None, "year_max": None,
-                "pub_type": "review", "max_results": 100,
+                "phrases": phrase_list,
+                "topic_ids": topic_ids_arg,
+                "year_min": None,
+                "year_max": None,
+                "pub_type": "review",
+                "max_results": 100,
             },
             "europepmc": {
-                "phrases": phrase_list, "year_min": None, "year_max": None,
-                "pub_type": "review_article", "max_results": 100,
+                "phrases": phrase_list,
+                "year_min": None,
+                "year_max": None,
+                "pub_type": "review_article",
+                "max_results": 100,
             },
             "semanticscholar": {
-                "queries": s2_qs, "year_min": None, "year_max": None,
+                "queries": s2_qs,
+                "year_min": None,
+                "year_max": None,
                 "max_results": 100,
                 "fields_of_study": fields_of_study,
                 "min_citation_count": None,
@@ -194,8 +220,8 @@ def _build_passes(
 # Public entry point
 # ---------------------------------------------------------------------------
 
-def build_plans_from_json(process_details_path, task_details_path,
-                          openalex_crosswalk_path=None):
+
+def build_plans_from_json(process_details_path, task_details_path, openalex_crosswalk_path=None):
     """Build one ItemQueryPlan for every process and every task.
 
     Args:
@@ -209,8 +235,7 @@ def build_plans_from_json(process_details_path, task_details_path,
     crosswalk = {}
     if openalex_crosswalk_path and Path(openalex_crosswalk_path).exists():
         try:
-            crosswalk = json.loads(
-                Path(openalex_crosswalk_path).read_text(encoding="utf-8"))
+            crosswalk = json.loads(Path(openalex_crosswalk_path).read_text(encoding="utf-8"))
         except Exception:
             crosswalk = {}
 
@@ -234,14 +259,19 @@ def build_plans_from_json(process_details_path, task_details_path,
         fos_str = fields_of_study_for_category(cat_id)
         fos = fields_of_study_set(cat_id)
 
-        plans.append(ItemQueryPlan(
-            item_id=item_id, item_kind="process",
-            primary_name=name, aliases=aliases,
-            description=description, openalex_topic_ids=topic_ids,
-            category_id=cat_id,
-            fos_set=fos,
-            passes=_build_passes(name, aliases, topic_ids, fos_str),
-        ))
+        plans.append(
+            ItemQueryPlan(
+                item_id=item_id,
+                item_kind="process",
+                primary_name=name,
+                aliases=aliases,
+                description=description,
+                openalex_topic_ids=topic_ids,
+                category_id=cat_id,
+                fos_set=fos,
+                passes=_build_passes(name, aliases, topic_ids, fos_str),
+            )
+        )
 
     # --- Tasks ---
     t_data = json.loads(Path(task_details_path).read_text(encoding="utf-8"))
@@ -271,16 +301,21 @@ def build_plans_from_json(process_details_path, task_details_path,
                 primary_cat = cat
                 break
 
-        plans.append(ItemQueryPlan(
-            item_id=item_id, item_kind="task",
-            primary_name=name, aliases=aliases,
-            description=description, openalex_topic_ids=topic_ids,
-            category_id=primary_cat,
-            fos_set=fos,
-            passes=_build_passes(name, aliases, topic_ids, fos_str),
-            short_definition=task.get("short_definition"),
-            inclusion_test=task.get("inclusion_test"),
-        ))
+        plans.append(
+            ItemQueryPlan(
+                item_id=item_id,
+                item_kind="task",
+                primary_name=name,
+                aliases=aliases,
+                description=description,
+                openalex_topic_ids=topic_ids,
+                category_id=primary_cat,
+                fos_set=fos,
+                passes=_build_passes(name, aliases, topic_ids, fos_str),
+                short_definition=task.get("short_definition"),
+                inclusion_test=task.get("inclusion_test"),
+            )
+        )
 
     return plans
 
@@ -296,7 +331,7 @@ def filter_plans_by_ids(plans, item_ids):
 # ---------------------------------------------------------------------------
 
 POC_ITEM_IDS = [
-    "hed_response_inhibition",   # well-studied process, classic landmarks
+    "hed_response_inhibition",  # well-studied process, classic landmarks
     "hedtsk_stroop_color_word",  # task with multiple aliases, MacLeod 1991
     "hed_model_based_learning",  # modern-skewed, RL / comp-psychiatry venues
 ]

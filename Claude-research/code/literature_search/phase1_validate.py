@@ -48,7 +48,11 @@ _HERE = Path(__file__).resolve().parent
 if str(_HERE) not in sys.path:
     sys.path.insert(0, str(_HERE))
 
-from hed_metadata_toolkit.citation_identity import build_canonical_string, build_pdf_filename, build_pub_id
+from hed_metadata_toolkit.citation_identity import (  # noqa: E402
+    build_canonical_string,
+    build_pdf_filename,
+    build_pub_id,
+)
 
 # ---------------------------------------------------------------------------
 # Test papers
@@ -125,6 +129,7 @@ PAPERS = [
 # ---------------------------------------------------------------------------
 # Metadata extraction helpers
 # ---------------------------------------------------------------------------
+
 
 def _extract_openalex(rec: dict) -> tuple[str | None, int | None, str | None]:
     authors = rec.get("authorships", [])
@@ -210,14 +215,9 @@ def check_agreement(
             continue
         family, year, _title = extractor(rec)
         if family and expected_family.lower() not in (family or "").lower():
-            warnings.append(
-                f"{label}: {src} first_author={family!r} "
-                f"(expected contains {expected_family!r})"
-            )
+            warnings.append(f"{label}: {src} first_author={family!r} (expected contains {expected_family!r})")
         if year and year != expected_year:
-            warnings.append(
-                f"{label}: {src} year={year} (expected {expected_year})"
-            )
+            warnings.append(f"{label}: {src} year={year} (expected {expected_year})")
     return warnings
 
 
@@ -225,17 +225,18 @@ def check_agreement(
 # Main
 # ---------------------------------------------------------------------------
 
+
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Phase 1 validation — resolve 7 papers through 5 API clients."
+    parser = argparse.ArgumentParser(description="Phase 1 validation — resolve 7 papers through 5 API clients.")
+    parser.add_argument(
+        "--workspace", default=".", help="Path to Claude-research workspace root (default: current directory)"
     )
-    parser.add_argument("--workspace", default=".",
-        help="Path to Claude-research workspace root (default: current directory)")
-    parser.add_argument("--cache-dir", default="outputs/cache",
-        help="Cache directory relative to workspace (default: outputs/cache, "
-             "shared with phase3_search.py).")
-    parser.add_argument("--verbose", "-v", action="store_true",
-        help="Enable DEBUG logging")
+    parser.add_argument(
+        "--cache-dir",
+        default="outputs/cache",
+        help="Cache directory relative to workspace (default: outputs/cache, shared with phase3_search.py).",
+    )
+    parser.add_argument("--verbose", "-v", action="store_true", help="Enable DEBUG logging")
     args = parser.parse_args()
 
     logging.basicConfig(
@@ -258,7 +259,7 @@ def main() -> None:
         print("ERROR: 'requests' is not installed.  Run:  pip install requests")
         sys.exit(1)
 
-    from hed_metadata_toolkit.clients import openalex, crossref, europepmc, semanticscholar, unpaywall
+    from hed_metadata_toolkit.clients import crossref, europepmc, openalex, semanticscholar, unpaywall
 
     email = "hedannotation@gmail.com"
 
@@ -289,25 +290,25 @@ def main() -> None:
         canonical = build_canonical_string(family, year, title)
         filename = build_pdf_filename(family, year, title)
 
-        rows.append({
-            "label": label,
-            "doi": doi,
-            "used_src": used_src,
-            "family": family,
-            "year": year,
-            "title": title,
-            "pub_id": pub_id,
-            "canonical": canonical,
-            "filename": filename,
-            "results": results,
-            "modern_oa": paper["modern_oa"],
-            "expected_family": paper["expected_first_author"],
-            "expected_year": paper["expected_year"],
-        })
-
-        warnings = check_agreement(
-            label, results, paper["expected_first_author"], paper["expected_year"]
+        rows.append(
+            {
+                "label": label,
+                "doi": doi,
+                "used_src": used_src,
+                "family": family,
+                "year": year,
+                "title": title,
+                "pub_id": pub_id,
+                "canonical": canonical,
+                "filename": filename,
+                "results": results,
+                "modern_oa": paper["modern_oa"],
+                "expected_family": paper["expected_first_author"],
+                "expected_year": paper["expected_year"],
+            }
         )
+
+        warnings = check_agreement(label, results, paper["expected_first_author"], paper["expected_year"])
         all_warnings.extend(warnings)
 
     # --- Summary table ---
@@ -339,8 +340,10 @@ def main() -> None:
             else:
                 oa_note = "; unpaywall=MISSING"
         missing_note = f" [MISSING from: {', '.join(sources_missing)}]" if sources_missing else ""
-        print(f"  {row['label']:<20}: {', '.join(sources_ok)} agree on "
-              f"first_author={row['family']!r}, year={row['year']}{oa_note}{missing_note}")
+        print(
+            f"  {row['label']:<20}: {', '.join(sources_ok)} agree on "
+            f"first_author={row['family']!r}, year={row['year']}{oa_note}{missing_note}"
+        )
     print()
 
     # --- Modern OA assertions ---
@@ -356,9 +359,7 @@ def main() -> None:
             oa_errors.append(f"{row['label']}: Unpaywall returned None (client may be broken)")
             continue
         if not up.get("is_oa"):
-            oa_errors.append(
-                f"{row['label']}: Unpaywall is_oa=False (expected True for this OA paper)"
-            )
+            oa_errors.append(f"{row['label']}: Unpaywall is_oa=False (expected True for this OA paper)")
         best = up.get("best_oa_location") or {}
         oa_url = best.get("url_for_pdf") or best.get("url")
         if not oa_url:

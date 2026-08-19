@@ -65,12 +65,11 @@ from __future__ import annotations
 
 from typing import Any
 
-
 # Canonical URL templates.  Kept as module-level constants so they
 # appear together for easy maintenance.
 
-_ARXIV_PDF_TMPL    = "https://arxiv.org/pdf/{arxiv_id}"
-_BIORXIV_PDF_TMPL  = "https://www.biorxiv.org/content/{doi}v1.full.pdf"
+_ARXIV_PDF_TMPL = "https://arxiv.org/pdf/{arxiv_id}"
+_BIORXIV_PDF_TMPL = "https://www.biorxiv.org/content/{doi}v1.full.pdf"
 
 _BIORXIV_DOI_PREFIX = "10.1101/"
 
@@ -112,13 +111,13 @@ def _normalize_arxiv_id(raw: str) -> str | None:
         return None
     # ``arxiv:`` URL scheme used by some metadata sources.
     if s.lower().startswith("arxiv:"):
-        s = s[len("arxiv:"):].strip()
+        s = s[len("arxiv:") :].strip()
     # ``arxiv.org/abs/<id>`` or ``arxiv.org/pdf/<id>`` URL form.
     lower = s.lower()
     for marker in ("/abs/", "/pdf/"):
         idx = lower.find(marker)
         if idx >= 0:
-            s = s[idx + len(marker):]
+            s = s[idx + len(marker) :]
             break
     # Strip any trailing ``.pdf`` and version suffix (``v1``, ``v2``...).
     if s.lower().endswith(".pdf"):
@@ -136,11 +135,9 @@ def _normalize_doi(raw: str) -> str | None:
     s = (raw or "").strip().lower()
     if not s:
         return None
-    for prefix in ("https://doi.org/", "http://doi.org/",
-                   "https://dx.doi.org/", "http://dx.doi.org/",
-                   "doi:"):
+    for prefix in ("https://doi.org/", "http://doi.org/", "https://dx.doi.org/", "http://dx.doi.org/", "doi:"):
         if s.startswith(prefix):
-            s = s[len(prefix):]
+            s = s[len(prefix) :]
             break
     if not s.startswith("10.") or "/" not in s:
         return None
@@ -169,17 +166,21 @@ def synthesize_id_shortcuts(ref: dict) -> list[dict[str, Any]]:
 
     arxiv_id = _normalize_arxiv_id(ids.get("arxiv_id") or "")
     if arxiv_id:
-        out.append(_location(
-            url=_ARXIV_PDF_TMPL.format(arxiv_id=arxiv_id),
-            source="synthesized:arxiv",
-        ))
+        out.append(
+            _location(
+                url=_ARXIV_PDF_TMPL.format(arxiv_id=arxiv_id),
+                source="synthesized:arxiv",
+            )
+        )
 
     doi = _normalize_doi(ids.get("doi") or "")
     if doi and doi.startswith(_BIORXIV_DOI_PREFIX):
-        out.append(_location(
-            url=_BIORXIV_PDF_TMPL.format(doi=doi),
-            source="synthesized:biorxiv",
-        ))
+        out.append(
+            _location(
+                url=_BIORXIV_PDF_TMPL.format(doi=doi),
+                source="synthesized:biorxiv",
+            )
+        )
 
     return out
 

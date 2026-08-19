@@ -32,8 +32,7 @@ maintainer's notes):
 from __future__ import annotations
 
 import re
-from typing import Iterable
-
+from collections.abc import Iterable
 
 __all__ = [
     "KNOWN_LICENSES",
@@ -60,19 +59,21 @@ __all__ = [
 #: MIT licence permits redistribution with attribution + licence-text
 #: preservation, which is the same obligation CC-BY imposes (decision
 #: 2026-05-23, recorded in the maintainer's notes).
-KNOWN_LICENSES: frozenset[str] = frozenset({
-    "cc-by",
-    "cc-by-sa",
-    "cc-by-nc",
-    "cc-by-nc-sa",
-    "cc-by-nd",
-    "cc-by-nc-nd",
-    "cc0",
-    "public-domain",
-    "mit",
-    "proprietary",
-    "unknown",
-})
+KNOWN_LICENSES: frozenset[str] = frozenset(
+    {
+        "cc-by",
+        "cc-by-sa",
+        "cc-by-nc",
+        "cc-by-nc-sa",
+        "cc-by-nd",
+        "cc-by-nc-nd",
+        "cc0",
+        "public-domain",
+        "mit",
+        "proprietary",
+        "unknown",
+    }
+)
 
 
 #: Licences whose terms permit re-hosting derived artifacts (e.g. a
@@ -88,13 +89,15 @@ KNOWN_LICENSES: frozenset[str] = frozenset({
 #: the publish step must include both alongside the Markdown.  This
 #: is the same attribution mechanism CC-BY needs, so no new policy
 #: machinery is required (decision 2026-05-23, maintainer's notes).
-PUBLISHABLE_LICENSES: frozenset[str] = frozenset({
-    "cc-by",
-    "cc-by-sa",
-    "cc0",
-    "public-domain",
-    "mit",
-})
+PUBLISHABLE_LICENSES: frozenset[str] = frozenset(
+    {
+        "cc-by",
+        "cc-by-sa",
+        "cc0",
+        "public-domain",
+        "mit",
+    }
+)
 
 
 # ---------------------------------------------------------------------------
@@ -106,12 +109,12 @@ PUBLISHABLE_LICENSES: frozenset[str] = frozenset({
 # reports an unknown that should clearly be classifiable.
 _EXPLICIT_ALIASES: dict[str, str] = {
     # Public domain forms
-    "pd":              "public-domain",
-    "publicdomain":    "public-domain",
-    "public domain":   "public-domain",
+    "pd": "public-domain",
+    "publicdomain": "public-domain",
+    "public domain": "public-domain",
     # CC0 forms
-    "cc-zero":         "cc0",
-    "cc-0":            "cc0",
+    "cc-zero": "cc0",
+    "cc-0": "cc0",
     # No alias entries are needed for CC-BY-* with the separators stripped
     # (e.g. ``"ccby"``, ``"ccbyncnd"``); ``_CC_NO_SEPARATOR_RE`` below
     # reinserts the hyphens during preprocessing, so the canonical
@@ -120,10 +123,10 @@ _EXPLICIT_ALIASES: dict[str, str] = {
     # These mean "the publisher chose to make this article free to read,
     # under their own terms" — i.e. bronze OA equivalent.  Not
     # redistributable by default.
-    "publisher-specific-oa":  "proprietary",
-    "publisher-specific":     "proprietary",
-    "acs-specific-tdm":       "proprietary",
-    "elsevier-specific-oa":   "proprietary",
+    "publisher-specific-oa": "proprietary",
+    "publisher-specific": "proprietary",
+    "acs-specific-tdm": "proprietary",
+    "elsevier-specific-oa": "proprietary",
     # Unpaywall's "other-oa" means "OA but with an open licence we
     # didn't recognise" — safest to leave as unknown for human review.
     "other-oa": "unknown",
@@ -249,6 +252,7 @@ def normalise_license(raw: object) -> str:
 # Predicates
 # ---------------------------------------------------------------------------
 
+
 def is_publishable(license: object) -> bool:
     """True if ``license`` permits redistribution of derived artifacts.
 
@@ -325,6 +329,7 @@ def is_intentionally_unknown(raw: object) -> bool:
 # ---------------------------------------------------------------------------
 # Bulk classification (for enrichment-time review)
 # ---------------------------------------------------------------------------
+
 
 def classify_strings(raws: Iterable[object]) -> dict[str, list[str]]:
     """Bucket a collection of raw licence strings by normalised value.

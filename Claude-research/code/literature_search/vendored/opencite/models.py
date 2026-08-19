@@ -47,14 +47,7 @@ class IDSet:
     arxiv_id: str = ""
 
     def has_any(self) -> bool:
-        return bool(
-            self.doi
-            or self.pmid
-            or self.pmcid
-            or self.openalex_id
-            or self.s2_id
-            or self.arxiv_id
-        )
+        return bool(self.doi or self.pmid or self.pmcid or self.openalex_id or self.s2_id or self.arxiv_id)
 
     def best_lookup_id(self) -> tuple[IDType, str]:
         """Return the most useful ID for cross-API lookup.

@@ -26,9 +26,6 @@ from __future__ import annotations
 import json
 import sys
 from pathlib import Path
-from typing import Sequence
-
-import pytest
 
 # Make ``acquire/`` and its parent (``literature_search/``) importable
 # when pytest runs the file directly.  Matches the convention used by
@@ -39,9 +36,8 @@ for p in (_HERE, _PARENT):
     if str(p) not in sys.path:
         sys.path.insert(0, str(p))
 
-import acquire_pdf as M  # noqa: E402  module under test
+import acquire_pdf as M  # noqa: E402, N812  module under test
 from fetch import FetchResult  # noqa: E402
-
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -50,12 +46,11 @@ from fetch import FetchResult  # noqa: E402
 PDF_BYTES = b"%PDF-1.7\n%fake pdf body\n"
 
 
-def _loc(url: str, *, source: str = "openalex",
-         version: str = "publishedVersion", license: str = "cc-by",
-         is_oa: bool = True) -> dict:
+def _loc(
+    url: str, *, source: str = "openalex", version: str = "publishedVersion", license: str = "cc-by", is_oa: bool = True
+) -> dict:
     """Build a synthetic ``pdf_locations[]`` entry."""
-    return {"url": url, "source": source, "version": version,
-            "license": license, "is_oa": is_oa}
+    return {"url": url, "source": source, "version": version, "license": license, "is_oa": is_oa}
 
 
 def _ref(*locs: dict, doi: str | None = None) -> dict:
@@ -90,31 +85,29 @@ def _queue_fetch(*results: FetchResult):
 
 
 def _pdf_response(url: str = "https://example.com/x.pdf") -> FetchResult:
-    return FetchResult(status=200, url=url, content_type="application/pdf",
-                       body=PDF_BYTES, error=None, headers={})
+    return FetchResult(status=200, url=url, content_type="application/pdf", body=PDF_BYTES, error=None, headers={})
 
 
 def _html_response(url: str = "https://example.com/landing") -> FetchResult:
-    return FetchResult(status=200, url=url, content_type="text/html",
-                       body=b"<html>landing</html>", error=None, headers={})
+    return FetchResult(
+        status=200, url=url, content_type="text/html", body=b"<html>landing</html>", error=None, headers={}
+    )
 
 
 def _network_error(url: str = "https://example.com/x") -> FetchResult:
-    return FetchResult(status=0, url=url, content_type="", body=b"",
-                       error="ConnectionError: DNS failure", headers={})
+    return FetchResult(status=0, url=url, content_type="", body=b"", error="ConnectionError: DNS failure", headers={})
 
 
 def _http_404(url: str = "https://example.com/x") -> FetchResult:
-    return FetchResult(status=404, url=url, content_type="text/plain",
-                       body=b"not found", error=None, headers={})
+    return FetchResult(status=404, url=url, content_type="text/plain", body=b"not found", error=None, headers={})
 
 
 # ---------------------------------------------------------------------------
 # _source_type_for
 # ---------------------------------------------------------------------------
 
-class TestSourceTypeStamp:
 
+class TestSourceTypeStamp:
     def test_single_source(self) -> None:
         assert M._source_type_for("openalex") == "auto_openalex"
 
@@ -133,16 +126,21 @@ class TestSourceTypeStamp:
 # _attempt_walk
 # ---------------------------------------------------------------------------
 
-class TestAttemptWalk:
 
+class TestAttemptWalk:
     def test_first_candidate_success(self, tmp_path: Path) -> None:
         ref = _ref(_loc("https://example.com/a.pdf", source="openalex"))
         cands = M._plan_walk(ref, allow_paywalled=False)
         fake = _queue_fetch(_pdf_response("https://example.com/a-final.pdf"))
 
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path, fetch_fn=fake,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
 
         assert result.kind == "success"
@@ -168,8 +166,13 @@ class TestAttemptWalk:
         fake = _queue_fetch(_html_response(), _pdf_response())
 
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path, fetch_fn=fake,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
 
         assert result.kind == "success"
@@ -184,8 +187,13 @@ class TestAttemptWalk:
         cands = M._plan_walk(ref, allow_paywalled=False)
         fake = _queue_fetch(_http_404(), _pdf_response())
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path, fetch_fn=fake,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
         assert result.kind == "success"
 
@@ -197,8 +205,13 @@ class TestAttemptWalk:
         cands = M._plan_walk(ref, allow_paywalled=False)
         fake = _queue_fetch(_network_error(), _pdf_response())
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path, fetch_fn=fake,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
         assert result.kind == "success"
 
@@ -210,8 +223,13 @@ class TestAttemptWalk:
         cands = M._plan_walk(ref, allow_paywalled=False)
         fake = _queue_fetch(_html_response(), _html_response())
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path, fetch_fn=fake,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
         assert result.kind == "failure"
         assert result.tried == ["openalex", "unpaywall"]
@@ -223,16 +241,18 @@ class TestAttemptWalk:
         pdfs = list((tmp_path / "HED-PDFs").glob("*")) if (tmp_path / "HED-PDFs").exists() else []
         assert pdfs == []
 
-    def test_empty_candidates_records_no_candidate_locations(self,
-                                                             tmp_path: Path) -> None:
+    def test_empty_candidates_records_no_candidate_locations(self, tmp_path: Path) -> None:
         # PRE-E2-Q1 (resolved 2026-05-27): record failure for refs whose
         # pdf_locations is empty/all-paywalled, so the maintainer sees a
         # complete inventory of "still needs manual".
         result = M._attempt_walk(
-            {"pdf_locations": []}, [],
+            {"pdf_locations": []},
+            [],
             repo_root=tmp_path,
             fetch_fn=_queue_fetch(),
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
         assert result.kind == "failure"
         assert result.tried == []
@@ -249,21 +269,30 @@ class TestAttemptWalk:
         # Only one fetch queued; if walk continued past the first PDF
         # the test would fail with "fetch called more times than queued".
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path, fetch_fn=fake,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
         assert result.kind == "success"
         assert len(fake.calls) == 1
 
     def test_license_normalised_through_record(self, tmp_path: Path) -> None:
         # license_policy.normalise_license maps "CC-BY 4.0" -> "cc-by".
-        ref = _ref(_loc("https://example.com/x.pdf",
-                        source="openalex", license="CC-BY 4.0"))
+        ref = _ref(_loc("https://example.com/x.pdf", source="openalex", license="CC-BY 4.0"))
         cands = M._plan_walk(ref, allow_paywalled=False)
         fake = _queue_fetch(_pdf_response())
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path, fetch_fn=fake,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
         assert result.license_norm == "cc-by"
 
@@ -272,14 +301,20 @@ class TestAttemptWalk:
 # attempt_one_ref dry-run/wet-run split
 # ---------------------------------------------------------------------------
 
-class TestAttemptOneRefDryRun:
 
+class TestAttemptOneRefDryRun:
     def test_dry_run_returns_would_walk_without_fetching(self, tmp_path: Path) -> None:
         ref = _ref(_loc("https://example.com/x.pdf"))
         fake = _queue_fetch()  # would error if called
         result = M.attempt_one_ref(
-            ref, repo_root=tmp_path, write=False, allow_paywalled=False,
-            fetch_fn=fake, timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            repo_root=tmp_path,
+            write=False,
+            allow_paywalled=False,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
         assert result.kind == "would_walk"
         assert result.candidates is not None
@@ -288,26 +323,36 @@ class TestAttemptOneRefDryRun:
         # No HED-PDFs/ created.
         assert not (tmp_path / "HED-PDFs").exists()
 
-    def test_dry_run_empty_pdf_locations_still_returns_would_walk(self,
-                                                                 tmp_path: Path) -> None:
+    def test_dry_run_empty_pdf_locations_still_returns_would_walk(self, tmp_path: Path) -> None:
         ref = _ref()  # no locations
         fake = _queue_fetch()
         result = M.attempt_one_ref(
-            ref, repo_root=tmp_path, write=False, allow_paywalled=False,
-            fetch_fn=fake, timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            repo_root=tmp_path,
+            write=False,
+            allow_paywalled=False,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
         # Dry-run reports the empty walk; the failure-record path only
         # fires on wet-run.
         assert result.kind == "would_walk"
         assert result.candidates == []
 
-    def test_wet_run_with_pdf_writes_file_and_returns_success(self,
-                                                              tmp_path: Path) -> None:
+    def test_wet_run_with_pdf_writes_file_and_returns_success(self, tmp_path: Path) -> None:
         ref = _ref(_loc("https://example.com/x.pdf"))
         fake = _queue_fetch(_pdf_response())
         result = M.attempt_one_ref(
-            ref, repo_root=tmp_path, write=True, allow_paywalled=False,
-            fetch_fn=fake, timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            repo_root=tmp_path,
+            write=True,
+            allow_paywalled=False,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
         assert result.kind == "success"
         assert result.dest_path is not None and result.dest_path.exists()
@@ -322,12 +367,10 @@ class TestAttemptOneRefDryRun:
 # the package's import path.
 POC_FLEMING = "10.3389/fnhum.2014.00443"
 POC_SALAMONE = "10.1007/s00213-006-0668-9"
-POC_DAW      = "10.1038/nn1560"
+POC_DAW = "10.1038/nn1560"
 
 
-def _make_workspace(tmp_path: Path,
-                    processes: list[dict],
-                    tasks: list[dict]) -> Path:
+def _make_workspace(tmp_path: Path, processes: list[dict], tasks: list[dict]) -> Path:
     """Materialise a synthetic workspace with the two catalog files.
 
     The workspace sits under ``tmp_path/Claude-research`` so that the
@@ -336,10 +379,8 @@ def _make_workspace(tmp_path: Path,
     """
     ws = tmp_path / "Claude-research"
     ws.mkdir(parents=True, exist_ok=True)
-    (ws / "process_details.json").write_text(
-        json.dumps({"processes": processes}, indent=2), encoding="utf-8")
-    (ws / "task_details.json").write_text(
-        json.dumps(tasks, indent=2), encoding="utf-8")
+    (ws / "process_details.json").write_text(json.dumps({"processes": processes}, indent=2), encoding="utf-8")
+    (ws / "task_details.json").write_text(json.dumps(tasks, indent=2), encoding="utf-8")
     return ws
 
 
@@ -350,24 +391,22 @@ def _read_catalog(ws: Path) -> tuple[dict, list]:
 
 
 class TestMainIntegration:
-
-    def test_poc_dry_run_does_not_modify_catalog(self,
-                                                 tmp_path: Path,
-                                                 capsys) -> None:
+    def test_poc_dry_run_does_not_modify_catalog(self, tmp_path: Path, capsys) -> None:
         # Synthetic catalog with one Fleming-shaped ref matching the
         # POC DOI; main() in dry-run mode should leave catalog untouched.
         ws = _make_workspace(
             tmp_path,
-            processes=[{
-                "process_id": "hed_test",
-                "references": [_ref(_loc("https://example.com/x.pdf"),
-                                    doi=POC_FLEMING)],
-            }],
+            processes=[
+                {
+                    "process_id": "hed_test",
+                    "references": [_ref(_loc("https://example.com/x.pdf"), doi=POC_FLEMING)],
+                }
+            ],
             tasks=[],
         )
-        rc = M.main(["--mode", "poc", "--workspace", str(ws),
-                     "--host-throttle-sec", "0"],
-                    fetch_fn=_queue_fetch())  # empty: must not be called
+        rc = M.main(
+            ["--mode", "poc", "--workspace", str(ws), "--host-throttle-sec", "0"], fetch_fn=_queue_fetch()
+        )  # empty: must not be called
         assert rc == 0
         procs, _ = _read_catalog(ws)
         ref = procs["processes"][0]["references"][0]
@@ -378,21 +417,19 @@ class TestMainIntegration:
         assert "1 candidate(s)" in out
         assert "dry-run complete" in out
 
-    def test_poc_wet_run_saves_pdf_and_stamps_success(self,
-                                                      tmp_path: Path,
-                                                      capsys) -> None:
+    def test_poc_wet_run_saves_pdf_and_stamps_success(self, tmp_path: Path, capsys) -> None:
         ws = _make_workspace(
             tmp_path,
-            processes=[{
-                "process_id": "hed_test",
-                "references": [_ref(_loc("https://example.com/x.pdf"),
-                                    doi=POC_FLEMING)],
-            }],
+            processes=[
+                {
+                    "process_id": "hed_test",
+                    "references": [_ref(_loc("https://example.com/x.pdf"), doi=POC_FLEMING)],
+                }
+            ],
             tasks=[],
         )
         rc = M.main(
-            ["--mode", "poc", "--workspace", str(ws), "--write",
-             "--host-throttle-sec", "0"],
+            ["--mode", "poc", "--workspace", str(ws), "--write", "--host-throttle-sec", "0"],
             fetch_fn=_queue_fetch(_pdf_response()),
         )
         assert rc == 0
@@ -408,22 +445,22 @@ class TestMainIntegration:
         assert la["acquired_via"] == "auto"
         assert la["is_publishable"] is True
 
-    def test_wet_run_records_failure_for_empty_locations(self,
-                                                        tmp_path: Path) -> None:
+    def test_wet_run_records_failure_for_empty_locations(self, tmp_path: Path) -> None:
         # Daw-shaped ref: pdf_locations empty -> failure record per
         # PRE-E2-Q1.  POC_DAW is a 10.1038/ DOI so no preprint-prefix
         # shortcut fires; the walk has zero candidates.
         ws = _make_workspace(
             tmp_path,
-            processes=[{
-                "process_id": "hed_test",
-                "references": [_ref(doi=POC_DAW)],
-            }],
+            processes=[
+                {
+                    "process_id": "hed_test",
+                    "references": [_ref(doi=POC_DAW)],
+                }
+            ],
             tasks=[],
         )
         rc = M.main(
-            ["--mode", "poc", "--workspace", str(ws), "--write",
-             "--host-throttle-sec", "0"],
+            ["--mode", "poc", "--workspace", str(ws), "--write", "--host-throttle-sec", "0"],
             fetch_fn=_queue_fetch(),
         )
         assert rc == 0
@@ -443,47 +480,50 @@ class TestMainIntegration:
         # --force, no --retry-failed): ref is skipped, nothing changes.
         ws = _make_workspace(
             tmp_path,
-            processes=[{
-                "process_id": "hed_test",
-                "references": [_ref(_loc("https://example.com/x.pdf"),
-                                    doi=POC_FLEMING)],
-            }],
+            processes=[
+                {
+                    "process_id": "hed_test",
+                    "references": [_ref(_loc("https://example.com/x.pdf"), doi=POC_FLEMING)],
+                }
+            ],
             tasks=[],
         )
         # Run 1
-        M.main(["--mode", "poc", "--workspace", str(ws), "--write",
-                "--host-throttle-sec", "0"],
-               fetch_fn=_queue_fetch(_pdf_response()))
+        M.main(
+            ["--mode", "poc", "--workspace", str(ws), "--write", "--host-throttle-sec", "0"],
+            fetch_fn=_queue_fetch(_pdf_response()),
+        )
         before, _ = _read_catalog(ws)
         # Run 2 — fetch queue is empty; if walk fires the test fails.
-        rc = M.main(["--mode", "poc", "--workspace", str(ws), "--write",
-                     "--host-throttle-sec", "0"],
-                    fetch_fn=_queue_fetch())
+        rc = M.main(
+            ["--mode", "poc", "--workspace", str(ws), "--write", "--host-throttle-sec", "0"], fetch_fn=_queue_fetch()
+        )
         assert rc == 0
         after, _ = _read_catalog(ws)
         assert before == after
 
-    def test_wet_run_skips_refs_with_prior_failure_by_default(self,
-                                                              tmp_path: Path) -> None:
+    def test_wet_run_skips_refs_with_prior_failure_by_default(self, tmp_path: Path) -> None:
         # Stage a ref that already has a failure record; default flags
         # must skip it (no fetch, no change).
         ref = _ref(_loc("https://example.com/x.pdf"), doi=POC_FLEMING)
-        ref["local_artifacts"] = {"pdf": {
-            "path": None,
-            "last_attempt": "2026-05-01T00:00:00Z",
-            "attempts": 1,
-            "tried": ["openalex"],
-            "reason": "earlier attempt",
-        }}
+        ref["local_artifacts"] = {
+            "pdf": {
+                "path": None,
+                "last_attempt": "2026-05-01T00:00:00Z",
+                "attempts": 1,
+                "tried": ["openalex"],
+                "reason": "earlier attempt",
+            }
+        }
         ws = _make_workspace(
             tmp_path,
             processes=[{"process_id": "hed_test", "references": [ref]}],
             tasks=[],
         )
         before, _ = _read_catalog(ws)
-        rc = M.main(["--mode", "poc", "--workspace", str(ws), "--write",
-                     "--host-throttle-sec", "0"],
-                    fetch_fn=_queue_fetch())  # empty: must not be called
+        rc = M.main(
+            ["--mode", "poc", "--workspace", str(ws), "--write", "--host-throttle-sec", "0"], fetch_fn=_queue_fetch()
+        )  # empty: must not be called
         assert rc == 0
         after, _ = _read_catalog(ws)
         assert before == after
@@ -492,22 +532,24 @@ class TestMainIntegration:
         # Same setup, but --retry-failed makes the orchestrator try
         # again.  This time we supply a successful fetch.
         ref = _ref(_loc("https://example.com/x.pdf"), doi=POC_FLEMING)
-        ref["local_artifacts"] = {"pdf": {
-            "path": None,
-            "last_attempt": "2026-05-01T00:00:00Z",
-            "attempts": 2,
-            "tried": ["openalex"],
-            "reason": "earlier attempt",
-        }}
+        ref["local_artifacts"] = {
+            "pdf": {
+                "path": None,
+                "last_attempt": "2026-05-01T00:00:00Z",
+                "attempts": 2,
+                "tried": ["openalex"],
+                "reason": "earlier attempt",
+            }
+        }
         ws = _make_workspace(
             tmp_path,
             processes=[{"process_id": "hed_test", "references": [ref]}],
             tasks=[],
         )
-        rc = M.main(["--mode", "poc", "--workspace", str(ws),
-                     "--write", "--retry-failed",
-                     "--host-throttle-sec", "0"],
-                    fetch_fn=_queue_fetch(_pdf_response()))
+        rc = M.main(
+            ["--mode", "poc", "--workspace", str(ws), "--write", "--retry-failed", "--host-throttle-sec", "0"],
+            fetch_fn=_queue_fetch(_pdf_response()),
+        )
         assert rc == 0
         procs, _ = _read_catalog(ws)
         la = procs["processes"][0]["references"][0]["local_artifacts"]["pdf"]
@@ -519,23 +561,25 @@ class TestMainIntegration:
     def test_force_flag_re_acquires_successful_refs(self, tmp_path: Path) -> None:
         # Pre-existing success entry; --force re-acquires.
         ref = _ref(_loc("https://example.com/x.pdf"), doi=POC_FLEMING)
-        ref["local_artifacts"] = {"pdf": {
-            "path": "HED-PDFs/stale.pdf",
-            "source_url": "https://stale.example.com/",
-            "source_type": "auto_openalex",
-            "license": "cc-by",
-            "acquired_on": "2025-12-01T00:00:00Z",
-            "acquired_via": "auto",
-        }}
+        ref["local_artifacts"] = {
+            "pdf": {
+                "path": "HED-PDFs/stale.pdf",
+                "source_url": "https://stale.example.com/",
+                "source_type": "auto_openalex",
+                "license": "cc-by",
+                "acquired_on": "2025-12-01T00:00:00Z",
+                "acquired_via": "auto",
+            }
+        }
         ws = _make_workspace(
             tmp_path,
             processes=[{"process_id": "hed_test", "references": [ref]}],
             tasks=[],
         )
-        rc = M.main(["--mode", "poc", "--workspace", str(ws),
-                     "--write", "--force",
-                     "--host-throttle-sec", "0"],
-                    fetch_fn=_queue_fetch(_pdf_response("https://new.example.com/x.pdf")))
+        rc = M.main(
+            ["--mode", "poc", "--workspace", str(ws), "--write", "--force", "--host-throttle-sec", "0"],
+            fetch_fn=_queue_fetch(_pdf_response("https://new.example.com/x.pdf")),
+        )
         assert rc == 0
         procs, _ = _read_catalog(ws)
         la = procs["processes"][0]["references"][0]["local_artifacts"]["pdf"]
@@ -546,8 +590,7 @@ class TestMainIntegration:
     def test_returns_2_when_catalog_missing(self, tmp_path: Path) -> None:
         ws = tmp_path / "missing-workspace"
         ws.mkdir()
-        rc = M.main(["--mode", "poc", "--workspace", str(ws)],
-                    fetch_fn=_queue_fetch())
+        rc = M.main(["--mode", "poc", "--workspace", str(ws)], fetch_fn=_queue_fetch())
         assert rc == 2
 
 
@@ -593,8 +636,8 @@ def _queue_two_fetchers(
             raise AssertionError(f"browser fetcher called unexpectedly ({url})")
         return browser_pending.pop(0)
 
-    fake_plain.calls = plain_calls            # type: ignore[attr-defined]
-    fake_browser.calls = browser_calls        # type: ignore[attr-defined]
+    fake_plain.calls = plain_calls  # type: ignore[attr-defined]
+    fake_browser.calls = browser_calls  # type: ignore[attr-defined]
     return fake_plain, fake_browser
 
 
@@ -614,14 +657,19 @@ class TestDispatch:
         )
 
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path,
-            fetch_fn=plain, browser_fetch_fn=browser,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=plain,
+            browser_fetch_fn=browser,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
 
         assert result.kind == "success"
-        assert len(plain.calls) == 1                 # type: ignore[attr-defined]
-        assert len(browser.calls) == 0               # type: ignore[attr-defined]
+        assert len(plain.calls) == 1  # type: ignore[attr-defined]
+        assert len(browser.calls) == 0  # type: ignore[attr-defined]
 
     def test_ac_candidate_uses_browser_fetch_fn_only(self, tmp_path: Path) -> None:
         ref = _ref(_loc(AC_LANDING_URL, source="openalex"))
@@ -631,14 +679,19 @@ class TestDispatch:
         )
 
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path,
-            fetch_fn=plain, browser_fetch_fn=browser,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=plain,
+            browser_fetch_fn=browser,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
 
         assert result.kind == "success"
-        assert len(browser.calls) == 1               # type: ignore[attr-defined]
-        assert len(plain.calls) == 0                 # type: ignore[attr-defined]
+        assert len(browser.calls) == 1  # type: ignore[attr-defined]
+        assert len(plain.calls) == 0  # type: ignore[attr-defined]
         # The browser fetcher does NOT receive host_throttle_sec —
         # Playwright's launch cost is its own implicit throttle.
         assert "host_throttle_sec" not in browser.calls[0]  # type: ignore[attr-defined]
@@ -655,17 +708,22 @@ class TestDispatch:
         )
 
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path,
-            fetch_fn=plain, browser_fetch_fn=browser,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=plain,
+            browser_fetch_fn=browser,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
 
         assert result.kind == "success"
         assert result.source_tag == "synthesized:ac"
-        assert len(browser.calls) == 1               # type: ignore[attr-defined]
+        assert len(browser.calls) == 1  # type: ignore[attr-defined]
         # The doi.org fallback was not tried — the browser route
         # succeeded first.
-        assert len(plain.calls) == 0                 # type: ignore[attr-defined]
+        assert len(plain.calls) == 0  # type: ignore[attr-defined]
 
     def test_mixed_walk_dispatches_per_candidate(self, tmp_path: Path) -> None:
         # PMC PDF URL fails (HTML), then AC succeeds via browser.
@@ -673,8 +731,7 @@ class TestDispatch:
         # not per ref.  PMC URLs route plain (PR-H5 reverted PR-H4's
         # browser routing); AC URLs route to browser.
         ref = _ref(
-            _loc("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/pdf/foo.pdf",
-                 source="pmc"),
+            _loc("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/pdf/foo.pdf", source="pmc"),
             _loc(AC_LANDING_URL, source="openalex"),
         )
         cands = M._plan_walk(ref, allow_paywalled=False)
@@ -684,18 +741,23 @@ class TestDispatch:
         )
 
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path,
-            fetch_fn=plain, browser_fetch_fn=browser,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=plain,
+            browser_fetch_fn=browser,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
 
         assert result.kind == "success"
         assert result.source_tag == "openalex"
-        assert len(plain.calls) == 1                 # type: ignore[attr-defined]
-        assert len(browser.calls) == 1               # type: ignore[attr-defined]
+        assert len(plain.calls) == 1  # type: ignore[attr-defined]
+        assert len(browser.calls) == 1  # type: ignore[attr-defined]
         # Order: PMC tried first (plain), then AC (browser).
         assert plain.calls[0]["url"].startswith("https://www.ncbi.nlm.nih.gov/")  # type: ignore[attr-defined]
-        assert browser.calls[0]["url"] == AC_LANDING_URL                          # type: ignore[attr-defined]
+        assert browser.calls[0]["url"] == AC_LANDING_URL  # type: ignore[attr-defined]
 
     def test_browser_fetcher_failure_recorded_with_tried(self, tmp_path: Path) -> None:
         # Browser returns a non-PDF response → walk continues.  Here
@@ -708,9 +770,14 @@ class TestDispatch:
         )
 
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path,
-            fetch_fn=plain, browser_fetch_fn=browser,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=plain,
+            browser_fetch_fn=browser,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
 
         assert result.kind == "failure"
@@ -732,14 +799,14 @@ class TestDispatch:
         )
 
         rc = M.main(
-            ["--mode", "poc", "--workspace", str(ws), "--write",
-             "--host-throttle-sec", "0"],
-            fetch_fn=plain, browser_fetch_fn=browser,
+            ["--mode", "poc", "--workspace", str(ws), "--write", "--host-throttle-sec", "0"],
+            fetch_fn=plain,
+            browser_fetch_fn=browser,
         )
 
         assert rc == 0
-        assert len(browser.calls) == 1               # type: ignore[attr-defined]
-        assert len(plain.calls) == 0                 # type: ignore[attr-defined]
+        assert len(browser.calls) == 1  # type: ignore[attr-defined]
+        assert len(plain.calls) == 0  # type: ignore[attr-defined]
         procs, _ = _read_catalog(ws)
         la = procs["processes"][0]["references"][0]["local_artifacts"]["pdf"]
         assert la["path"].startswith("HED-PDFs/")
@@ -750,24 +817,20 @@ class TestDispatch:
 # PR-H1 — Landing-page PDF extraction
 # ---------------------------------------------------------------------------
 
-def _html_with_citation_pdf_url(pdf_url: str,
-                                page_url: str = "https://landing.example.com/abs") -> FetchResult:
+
+def _html_with_citation_pdf_url(pdf_url: str, page_url: str = "https://landing.example.com/abs") -> FetchResult:
     """An HTML landing page advertising a citation_pdf_url meta tag."""
     body = (
-        '<html><head>'
-        f'<meta name="citation_pdf_url" content="{pdf_url}">'
-        '</head><body>landing</body></html>'
-    ).encode("utf-8")
-    return FetchResult(status=200, url=page_url, content_type="text/html",
-                       body=body, error=None, headers={})
+        f'<html><head><meta name="citation_pdf_url" content="{pdf_url}"></head><body>landing</body></html>'
+    ).encode()
+    return FetchResult(status=200, url=page_url, content_type="text/html", body=body, error=None, headers={})
 
 
 class TestLandingExtraction:
     """PR-H1: when a candidate returns text/html, look for citation_pdf_url."""
 
     def test_landing_extracts_and_fetches_pdf(self, tmp_path: Path) -> None:
-        ref = _ref(_loc("https://landing.example.com/abs",
-                        source="openalex"))
+        ref = _ref(_loc("https://landing.example.com/abs", source="openalex"))
         cands = M._plan_walk(ref, allow_paywalled=False)
         fake = _queue_fetch(
             _html_with_citation_pdf_url(
@@ -778,8 +841,13 @@ class TestLandingExtraction:
         )
 
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path, fetch_fn=fake,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
 
         assert result.kind == "success"
@@ -790,8 +858,7 @@ class TestLandingExtraction:
         assert fake.calls[0]["url"] == "https://landing.example.com/abs"
         assert fake.calls[1]["url"] == "https://cdn.example.com/file.pdf"
 
-    def test_landing_with_no_meta_tag_falls_through(self,
-                                                    tmp_path: Path) -> None:
+    def test_landing_with_no_meta_tag_falls_through(self, tmp_path: Path) -> None:
         # HTML body with no citation_pdf_url: extraction returns None
         # and no secondary fetch is made; walk continues to next candidate.
         ref = _ref(
@@ -802,16 +869,20 @@ class TestLandingExtraction:
         # The default _html_response body has no meta tag.
         fake = _queue_fetch(_html_response(), _pdf_response())
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path, fetch_fn=fake,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
         # Should land on the second candidate, not via +landing.
         assert result.kind == "success"
         assert result.source_tag == "unpaywall"
         assert len(fake.calls) == 2
 
-    def test_landing_extraction_secondary_also_html_fails(self,
-                                                          tmp_path: Path) -> None:
+    def test_landing_extraction_secondary_also_html_fails(self, tmp_path: Path) -> None:
         # Primary HTML has a citation_pdf_url; secondary fetch returns
         # HTML (not a PDF).  Record both failures in the reason and
         # fall through to the next candidate.
@@ -824,8 +895,13 @@ class TestLandingExtraction:
             _html_response("https://cdn.example.com/file.pdf"),
         )
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path, fetch_fn=fake,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
         assert result.kind == "failure"
         # tried records both the original tag and the +landing extension.
@@ -839,14 +915,21 @@ class TestLandingExtraction:
         # OA Web Service.  The URL is on ftp.ncbi.nlm.nih.gov (or
         # similar plain-HTTP host); the plain fetcher walks it.
         ref = {
-            "ids": {"pmcid": "PMC4097944", "doi": None, "arxiv_id": None,
-                    "pmid": None, "openalex_id": None, "s2_id": None},
+            "ids": {
+                "pmcid": "PMC4097944",
+                "doi": None,
+                "arxiv_id": None,
+                "pmid": None,
+                "openalex_id": None,
+                "s2_id": None,
+            },
             "pdf_locations": [],
         }
-        oa_url = ("https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/"
-                  "08/56/fnhum-08-00443.pdf")
+        oa_url = "https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/08/56/fnhum-08-00443.pdf"
         cands = M._plan_walk(
-            ref, allow_paywalled=False, cache_dir=tmp_path,
+            ref,
+            allow_paywalled=False,
+            cache_dir=tmp_path,
             oa_lookup_fn=lambda pmcid, cd: oa_url,
         )
         assert len(cands) == 1
@@ -857,33 +940,45 @@ class TestLandingExtraction:
             plain_results=[_pdf_response(oa_url)],
         )
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path,
-            fetch_fn=plain, browser_fetch_fn=browser,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=plain,
+            browser_fetch_fn=browser,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
         assert result.kind == "success"
         assert result.source_tag == "pmc_oa"
-        assert len(plain.calls) == 1                  # type: ignore[attr-defined]
-        assert len(browser.calls) == 0                # type: ignore[attr-defined]
+        assert len(plain.calls) == 1  # type: ignore[attr-defined]
+        assert len(browser.calls) == 0  # type: ignore[attr-defined]
 
-    def test_landing_extraction_accepts_magic_bytes(self,
-                                                    tmp_path: Path) -> None:
+    def test_landing_extraction_accepts_magic_bytes(self, tmp_path: Path) -> None:
         # The extracted URL serves a PDF with octet-stream Content-Type;
         # PR-H2's magic-byte check should recover it.
         ref = _ref(_loc("https://landing.example.com/abs", source="openalex"))
         cands = M._plan_walk(ref, allow_paywalled=False)
         octet_pdf = FetchResult(
-            status=200, url="https://cdn.example.com/file.pdf",
+            status=200,
+            url="https://cdn.example.com/file.pdf",
             content_type="application/octet-stream",
-            body=PDF_BYTES, error=None, headers={},
+            body=PDF_BYTES,
+            error=None,
+            headers={},
         )
         fake = _queue_fetch(
             _html_with_citation_pdf_url("https://cdn.example.com/file.pdf"),
             octet_pdf,
         )
         result = M._attempt_walk(
-            ref, cands, repo_root=tmp_path, fetch_fn=fake,
-            timeout=5, max_bytes=1024, host_throttle_sec=0,
+            ref,
+            cands,
+            repo_root=tmp_path,
+            fetch_fn=fake,
+            timeout=5,
+            max_bytes=1024,
+            host_throttle_sec=0,
         )
         assert result.kind == "success"
         assert result.source_tag == "openalex+landing"
@@ -892,6 +987,7 @@ class TestLandingExtraction:
 # ---------------------------------------------------------------------------
 # PR-H2 — Shortcut URL synthesis in _plan_walk
 # ---------------------------------------------------------------------------
+
 
 class TestPlanWalkShortcuts:
     """PR-H2: _plan_walk combines pdf_locations with ID-derived shortcuts.
@@ -904,9 +1000,14 @@ class TestPlanWalkShortcuts:
 
     def test_arxiv_id_appends_arxiv_pdf_url(self) -> None:
         ref = {
-            "ids": {"arxiv_id": "2104.12345", "doi": None,
-                    "pmcid": None, "pmid": None,
-                    "openalex_id": None, "s2_id": None},
+            "ids": {
+                "arxiv_id": "2104.12345",
+                "doi": None,
+                "pmcid": None,
+                "pmid": None,
+                "openalex_id": None,
+                "s2_id": None,
+            },
             "pdf_locations": [],
         }
         cands = M._plan_walk(ref, allow_paywalled=False)
@@ -915,9 +1016,14 @@ class TestPlanWalkShortcuts:
 
     def test_biorxiv_doi_appends_full_pdf_url(self) -> None:
         ref = {
-            "ids": {"doi": "10.1101/2024.01.01.000001", "arxiv_id": None,
-                    "pmcid": None, "pmid": None,
-                    "openalex_id": None, "s2_id": None},
+            "ids": {
+                "doi": "10.1101/2024.01.01.000001",
+                "arxiv_id": None,
+                "pmcid": None,
+                "pmid": None,
+                "openalex_id": None,
+                "s2_id": None,
+            },
             "pdf_locations": [],
         }
         cands = M._plan_walk(ref, allow_paywalled=False)
@@ -928,11 +1034,15 @@ class TestPlanWalkShortcuts:
         # 2026-06-02: the doi.org fallback was retired.  A plain DOI
         # ref with no preprint signal yields zero shortcuts.
         ref = {
-            "ids": {"doi": "10.1234/foo", "arxiv_id": None,
-                    "pmcid": None, "pmid": None,
-                    "openalex_id": None, "s2_id": None},
-            "pdf_locations": [_loc("https://repo.example.com/file.pdf",
-                                   source="openalex")],
+            "ids": {
+                "doi": "10.1234/foo",
+                "arxiv_id": None,
+                "pmcid": None,
+                "pmid": None,
+                "openalex_id": None,
+                "s2_id": None,
+            },
+            "pdf_locations": [_loc("https://repo.example.com/file.pdf", source="openalex")],
         }
         cands = M._plan_walk(ref, allow_paywalled=False)
         urls = [c["url"] for c in cands]
@@ -943,10 +1053,15 @@ class TestPlanWalkShortcuts:
         # candidate.  The OA Web Service handles that (see
         # TestPlanWalkPMCOA below).
         ref = {
-            "ids": {"pmcid": "PMC9999999", "doi": None, "arxiv_id": None,
-                    "pmid": None, "openalex_id": None, "s2_id": None},
-            "pdf_locations": [_loc("https://repo.example.com/file.pdf",
-                                   source="openalex")],
+            "ids": {
+                "pmcid": "PMC9999999",
+                "doi": None,
+                "arxiv_id": None,
+                "pmid": None,
+                "openalex_id": None,
+                "s2_id": None,
+            },
+            "pdf_locations": [_loc("https://repo.example.com/file.pdf", source="openalex")],
         }
         cands = M._plan_walk(ref, allow_paywalled=False)
         urls = [c["url"] for c in cands]
@@ -962,17 +1077,22 @@ class TestPlanWalkPMCOA:
 
     def test_oa_hit_appended_as_candidate(self, tmp_path: Path) -> None:
         ref = {
-            "ids": {"pmcid": "PMC4097944", "doi": None, "arxiv_id": None,
-                    "pmid": None, "openalex_id": None, "s2_id": None},
+            "ids": {
+                "pmcid": "PMC4097944",
+                "doi": None,
+                "arxiv_id": None,
+                "pmid": None,
+                "openalex_id": None,
+                "s2_id": None,
+            },
             "pdf_locations": [],
         }
         # Stub OA lookup returns a known-good URL.
         cands = M._plan_walk(
-            ref, allow_paywalled=False, cache_dir=tmp_path,
-            oa_lookup_fn=lambda pmcid, cd: (
-                "https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/"
-                "08/56/fnhum-08-00443.pdf"
-            ),
+            ref,
+            allow_paywalled=False,
+            cache_dir=tmp_path,
+            oa_lookup_fn=lambda pmcid, cd: "https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/08/56/fnhum-08-00443.pdf",
         )
         sources = [c.get("source") for c in cands]
         assert "pmc_oa" in sources
@@ -982,13 +1102,20 @@ class TestPlanWalkPMCOA:
 
     def test_oa_miss_yields_no_candidate(self, tmp_path: Path) -> None:
         ref = {
-            "ids": {"pmcid": "PMC4598943", "doi": None, "arxiv_id": None,
-                    "pmid": None, "openalex_id": None, "s2_id": None},
-            "pdf_locations": [_loc("https://repo.example.com/file.pdf",
-                                   source="openalex")],
+            "ids": {
+                "pmcid": "PMC4598943",
+                "doi": None,
+                "arxiv_id": None,
+                "pmid": None,
+                "openalex_id": None,
+                "s2_id": None,
+            },
+            "pdf_locations": [_loc("https://repo.example.com/file.pdf", source="openalex")],
         }
         cands = M._plan_walk(
-            ref, allow_paywalled=False, cache_dir=tmp_path,
+            ref,
+            allow_paywalled=False,
+            cache_dir=tmp_path,
             oa_lookup_fn=lambda pmcid, cd: None,
         )
         sources = [c.get("source") for c in cands]
@@ -998,32 +1125,47 @@ class TestPlanWalkPMCOA:
         # Tests without cache infrastructure pass cache_dir=None and
         # the OA lookup is skipped entirely (no stub needed).
         called = []
+
         def stub(pmcid, cd):
             called.append(pmcid)
             return "https://example.com/x.pdf"
+
         ref = {
-            "ids": {"pmcid": "PMC4097944", "doi": None, "arxiv_id": None,
-                    "pmid": None, "openalex_id": None, "s2_id": None},
+            "ids": {
+                "pmcid": "PMC4097944",
+                "doi": None,
+                "arxiv_id": None,
+                "pmid": None,
+                "openalex_id": None,
+                "s2_id": None,
+            },
             "pdf_locations": [],
         }
         cands = M._plan_walk(
-            ref, allow_paywalled=False, cache_dir=None, oa_lookup_fn=stub,
+            ref,
+            allow_paywalled=False,
+            cache_dir=None,
+            oa_lookup_fn=stub,
         )
         assert called == []
         assert cands == []  # no cataloged URL, no synth, no OA
 
     def test_no_pmcid_skips_oa_lookup(self, tmp_path: Path) -> None:
         called = []
+
         def stub(pmcid, cd):
             called.append(pmcid)
             return "https://example.com/x.pdf"
+
         ref = {
-            "ids": {"pmcid": None, "doi": None, "arxiv_id": None,
-                    "pmid": None, "openalex_id": None, "s2_id": None},
+            "ids": {"pmcid": None, "doi": None, "arxiv_id": None, "pmid": None, "openalex_id": None, "s2_id": None},
             "pdf_locations": [],
         }
         M._plan_walk(
-            ref, allow_paywalled=False, cache_dir=tmp_path, oa_lookup_fn=stub,
+            ref,
+            allow_paywalled=False,
+            cache_dir=tmp_path,
+            oa_lookup_fn=stub,
         )
         assert called == []
 
@@ -1031,15 +1173,22 @@ class TestPlanWalkPMCOA:
         # If PR-D's enrichment somehow already produced the same OA
         # URL, the synthesized:pmc_oa candidate is dropped so we
         # don't walk it twice.
-        oa_url = ("https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/"
-                  "08/56/fnhum-08-00443.pdf")
+        oa_url = "https://ftp.ncbi.nlm.nih.gov/pub/pmc/oa_pdf/08/56/fnhum-08-00443.pdf"
         ref = {
-            "ids": {"pmcid": "PMC4097944", "doi": None, "arxiv_id": None,
-                    "pmid": None, "openalex_id": None, "s2_id": None},
+            "ids": {
+                "pmcid": "PMC4097944",
+                "doi": None,
+                "arxiv_id": None,
+                "pmid": None,
+                "openalex_id": None,
+                "s2_id": None,
+            },
             "pdf_locations": [_loc(oa_url, source="openalex")],
         }
         cands = M._plan_walk(
-            ref, allow_paywalled=False, cache_dir=tmp_path,
+            ref,
+            allow_paywalled=False,
+            cache_dir=tmp_path,
             oa_lookup_fn=lambda pmcid, cd: oa_url,
         )
         urls = [c["url"] for c in cands]
@@ -1051,10 +1200,8 @@ class TestPlanWalkPMCOA:
 
     def test_no_ids_no_shortcuts(self) -> None:
         ref = {
-            "ids": {"doi": None, "arxiv_id": None, "pmcid": None,
-                    "pmid": None, "openalex_id": None, "s2_id": None},
-            "pdf_locations": [_loc("https://repo.example.com/file.pdf",
-                                   source="openalex")],
+            "ids": {"doi": None, "arxiv_id": None, "pmcid": None, "pmid": None, "openalex_id": None, "s2_id": None},
+            "pdf_locations": [_loc("https://repo.example.com/file.pdf", source="openalex")],
         }
         cands = M._plan_walk(ref, allow_paywalled=False)
         urls = [c["url"] for c in cands]

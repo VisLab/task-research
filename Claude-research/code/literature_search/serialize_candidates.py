@@ -23,14 +23,12 @@ Public entry points:
 from __future__ import annotations
 
 import json
-from dataclasses import asdict
 from datetime import datetime
 from pathlib import Path
 
 from normalize import Candidate
 from search_queries import ItemQueryPlan
 from triage_rules import classify_venue
-
 
 SCHEMA_VERSION = "phase3_candidates_v1"
 
@@ -39,6 +37,7 @@ SCHEMA_VERSION = "phase3_candidates_v1"
 # Item identity block — duplicated into both candidates and review files
 # so each is self-contained.
 # ---------------------------------------------------------------------------
+
 
 def build_item_block(item: ItemQueryPlan) -> dict:
     """Return the `item` block of the candidates JSON.
@@ -52,7 +51,7 @@ def build_item_block(item: ItemQueryPlan) -> dict:
     `short_definition` and `inclusion_test` are also populated.
     """
     block: dict = {
-        "kind": item.item_kind,                # "process" | "task"
+        "kind": item.item_kind,  # "process" | "task"
         "id": item.item_id,
         "name": item.primary_name,
         "aliases": list(item.aliases or []),
@@ -79,6 +78,7 @@ def build_item_block(item: ItemQueryPlan) -> dict:
 # ---------------------------------------------------------------------------
 # Per-candidate serialization
 # ---------------------------------------------------------------------------
+
 
 def _candidate_to_json(c: Candidate, rank: int) -> dict:
     """Serialize one Candidate to its JSON representation."""
@@ -117,11 +117,7 @@ def _candidate_to_json(c: Candidate, rank: int) -> dict:
         },
         "provenance": {
             "sources": list(c.sources),
-            "stage_b_seed_pub_ids": [
-                e.get("seed_pub_id")
-                for e in c.stage_b_edges
-                if e.get("seed_pub_id")
-            ],
+            "stage_b_seed_pub_ids": [e.get("seed_pub_id") for e in c.stage_b_edges if e.get("seed_pub_id")],
         },
     }
     if c.tier == "excluded":
@@ -134,6 +130,7 @@ def _candidate_to_json(c: Candidate, rank: int) -> dict:
 # ---------------------------------------------------------------------------
 # Top-level write
 # ---------------------------------------------------------------------------
+
 
 def build_candidates_json(
     item: ItemQueryPlan,

@@ -85,9 +85,9 @@ import argparse
 import json
 import shutil
 import sys
+from collections.abc import Iterable
 from datetime import date
 from pathlib import Path
-from typing import Iterable
 
 # Allow running both as "python code/literature_search/record_artifact.py"
 # from the workspace root and as a module-style invocation.
@@ -97,10 +97,10 @@ from hed_metadata_toolkit.citation_identity import build_pdf_filename  # noqa: E
 from license_policy import is_publishable, normalise_license  # noqa: E402
 from reference_compat import ref_doi, ref_pmid, ref_pub_id  # noqa: E402
 
-
 # ---------------------------------------------------------------------------
 # Paths
 # ---------------------------------------------------------------------------
+
 
 def _resolve_workspace(arg: str) -> Path:
     """Workspace root (Claude-research/)."""
@@ -127,6 +127,7 @@ def _artifact_suffix(kind: str) -> str:
 # ---------------------------------------------------------------------------
 # Catalog I/O
 # ---------------------------------------------------------------------------
+
 
 def _load_catalog(workspace: Path) -> tuple[dict, list, Path, Path]:
     """Load both process_details.json and task_details.json."""
@@ -157,6 +158,7 @@ def _save_catalog(
 # ---------------------------------------------------------------------------
 # Reference lookup
 # ---------------------------------------------------------------------------
+
 
 def _iter_all_refs(
     processes: dict,
@@ -204,15 +206,14 @@ def _find_matching_refs(
 ) -> list[tuple[str, dict]]:
     """Return every (owner_id, reference) matching any identifier given."""
     return [
-        (owner, r)
-        for owner, r in _iter_all_refs(processes, tasks)
-        if _matches(r, doi=doi, pub_id=pub_id, pmid=pmid)
+        (owner, r) for owner, r in _iter_all_refs(processes, tasks) if _matches(r, doi=doi, pub_id=pub_id, pmid=pmid)
     ]
 
 
 # ---------------------------------------------------------------------------
 # Canonical filename
 # ---------------------------------------------------------------------------
+
 
 def _canonical_stem(ref: dict) -> str:
     """Derive the canonical filename stem from a reference.
@@ -221,9 +222,9 @@ def _canonical_stem(ref: dict) -> str:
     so the same stem can be used for both PDF and Markdown.
     """
     family = _first_author_family(ref.get("authors"))
-    year   = ref.get("year")
-    title  = ref.get("title")
-    fname  = build_pdf_filename(family, year, title)
+    year = ref.get("year")
+    title = ref.get("title")
+    fname = build_pdf_filename(family, year, title)
     # build_pdf_filename emits "<stem>.pdf"; drop the suffix.
     if fname.lower().endswith(".pdf"):
         fname = fname[:-4]
@@ -246,6 +247,7 @@ def _first_author_family(authors_str: str | None) -> str | None:
 # local_artifacts construction
 # ---------------------------------------------------------------------------
 
+
 def _build_artifact_entry(
     *,
     kind: str,
@@ -258,12 +260,12 @@ def _build_artifact_entry(
     """Construct a local_artifact_entry dict for the catalog."""
     norm = normalise_license(license_raw)
     entry: dict = {
-        "path":           rel_path,
-        "source_url":     source_url,
-        "source_type":    source_type,
-        "license":        norm,
-        "acquired_on":    date.today().isoformat(),
-        "acquired_via":   "manual",
+        "path": rel_path,
+        "source_url": source_url,
+        "source_type": source_type,
+        "license": norm,
+        "acquired_on": date.today().isoformat(),
+        "acquired_via": "manual",
         "is_publishable": is_publishable(norm),
     }
     if kind == "markdown":
@@ -275,6 +277,7 @@ def _build_artifact_entry(
 # Driver
 # ---------------------------------------------------------------------------
 
+
 def _make_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(
         prog="record_artifact",
@@ -283,44 +286,52 @@ def _make_parser() -> argparse.ArgumentParser:
     sub = p.add_subparsers(dest="kind", required=True)
 
     def _add_common(sp: argparse.ArgumentParser) -> None:
-        sp.add_argument("--file", required=True,
-                        help="Source file on your disk to be copied into the canonical location.")
-        sp.add_argument("--license", required=True,
-                        help="SPDX-style licence (cc-by, cc-by-nc-nd, proprietary, cc0, ...). "
-                             "Use 'proprietary' for publisher PDFs obtained via library/TDM routes. "
-                             "See license_policy.normalise_license.")
+        sp.add_argument(
+            "--file", required=True, help="Source file on your disk to be copied into the canonical location."
+        )
+        sp.add_argument(
+            "--license",
+            required=True,
+            help="SPDX-style licence (cc-by, cc-by-nc-nd, proprietary, cc0, ...). "
+            "Use 'proprietary' for publisher PDFs obtained via library/TDM routes. "
+            "See license_policy.normalise_license.",
+        )
         sp.add_argument("--doi", help="DOI of the publication.")
         sp.add_argument("--pub-id", help="pub_id of the publication (if known).")
         sp.add_argument("--pmid", help="PubMed ID of the publication.")
-        sp.add_argument("--source-url",
-                        help="URL the file came from (kept verbatim for provenance).")
-        sp.add_argument("--source-type", default=None,
-                        help="Short tag identifying the acquisition route. "
-                             "Defaults: pdf→manual_library, markdown→manual_conversion.")
-        sp.add_argument("--workspace", default=".",
-                        help="Workspace root (Claude-research/). Default: current directory.")
-        sp.add_argument("--force", action="store_true",
-                        help="Overwrite an existing local_artifacts entry or destination file.")
-        sp.add_argument("--dry-run", action="store_true",
-                        help="Do everything except copy the file and write the catalog back.")
+        sp.add_argument("--source-url", help="URL the file came from (kept verbatim for provenance).")
+        sp.add_argument(
+            "--source-type",
+            default=None,
+            help="Short tag identifying the acquisition route. "
+            "Defaults: pdf→manual_library, markdown→manual_conversion.",
+        )
+        sp.add_argument(
+            "--workspace", default=".", help="Workspace root (Claude-research/). Default: current directory."
+        )
+        sp.add_argument(
+            "--force", action="store_true", help="Overwrite an existing local_artifacts entry or destination file."
+        )
+        sp.add_argument(
+            "--dry-run", action="store_true", help="Do everything except copy the file and write the catalog back."
+        )
 
     pdf = sub.add_parser("pdf", help="Record a PDF acquisition.")
     _add_common(pdf)
 
     md = sub.add_parser("markdown", help="Record a Markdown acquisition.")
     _add_common(md)
-    md.add_argument("--converter", default=None,
-                    help="Which converter produced the Markdown (pmc_bioc / markitdown / "
-                         "mistral / manual). Default: manual.")
+    md.add_argument(
+        "--converter",
+        default=None,
+        help="Which converter produced the Markdown (pmc_bioc / markitdown / mistral / manual). Default: manual.",
+    )
     return p
 
 
 def _validate_identifiers(args: argparse.Namespace) -> None:
     if not (args.doi or args.pub_id or args.pmid):
-        raise SystemExit(
-            "ERROR: must supply at least one identifier "
-            "(--doi, --pub-id, or --pmid)."
-        )
+        raise SystemExit("ERROR: must supply at least one identifier (--doi, --pub-id, or --pmid).")
 
 
 def _default_source_type(kind: str) -> str:
@@ -343,7 +354,7 @@ def main(argv: list[str] | None = None) -> int:
 
     workspace = _resolve_workspace(args.workspace)
     repo_root = _repo_root(workspace)
-    art_dir   = _artifact_dir(repo_root, kind)
+    art_dir = _artifact_dir(repo_root, kind)
 
     # Ensure target directory exists; mkdir is cheap and idempotent.
     art_dir.mkdir(parents=True, exist_ok=True)
@@ -357,8 +368,11 @@ def main(argv: list[str] | None = None) -> int:
 
     # ---- Find matching references
     matches = _find_matching_refs(
-        processes, tasks,
-        doi=args.doi, pub_id=args.pub_id, pmid=args.pmid,
+        processes,
+        tasks,
+        doi=args.doi,
+        pub_id=args.pub_id,
+        pmid=args.pmid,
     )
     if not matches:
         print(
@@ -373,7 +387,7 @@ def main(argv: list[str] | None = None) -> int:
     # using the first one keeps the result deterministic.
     stem = _canonical_stem(matches[0][1])
     dest_path = art_dir / f"{stem}{_artifact_suffix(kind)}"
-    rel_path  = f"{art_dir.name}/{dest_path.name}"
+    rel_path = f"{art_dir.name}/{dest_path.name}"
 
     # ---- Existence check: refuse to overwrite without --force.
     if dest_path.exists() and not args.force:

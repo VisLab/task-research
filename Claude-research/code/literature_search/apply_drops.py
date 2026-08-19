@@ -23,10 +23,10 @@ import sys
 from collections import defaultdict
 from pathlib import Path
 
-
 # ---------------------------------------------------------------------------
 # Parse triage file → set of (owner_id, array_name, pos) to drop
 # ---------------------------------------------------------------------------
+
 
 def parse_drops(triage_path: Path) -> set[tuple[str, str, int]]:
     """Return the set of (owner_id, array_name, pos) for every DROP row
@@ -45,7 +45,7 @@ def parse_drops(triage_path: Path) -> set[tuple[str, str, int]]:
     if not m:
         raise ValueError("Could not find '## 1.' in triage file")
     end = m3.start() if m3 else len(text)
-    scope = text[m.start():end]
+    scope = text[m.start() : end]
 
     for line in scope.splitlines():
         line = line.strip()
@@ -58,17 +58,16 @@ def parse_drops(triage_path: Path) -> set[tuple[str, str, int]]:
         # Skip header rows and separator rows
         if cells[0] == "#" or re.match(r"^-+$", cells[0]):
             continue
-        owner_id   = cells[1]
+        owner_id = cells[1]
         array_name = cells[2]
-        status     = cells[8]
-        pos_str    = cells[9]
+        status = cells[8]
+        pos_str = cells[9]
         if status.strip() != "DROP":
             continue
         try:
             pos = int(pos_str)
         except ValueError:
-            print(f"WARNING: could not parse pos {pos_str!r} for {owner_id} {array_name}",
-                  file=sys.stderr)
+            print(f"WARNING: could not parse pos {pos_str!r} for {owner_id} {array_name}", file=sys.stderr)
             continue
         drops.add((owner_id, array_name, pos))
 
@@ -78,6 +77,7 @@ def parse_drops(triage_path: Path) -> set[tuple[str, str, int]]:
 # ---------------------------------------------------------------------------
 # Apply drops
 # ---------------------------------------------------------------------------
+
 
 def apply_to_processes(data: dict, drops: set[tuple[str, str, int]]) -> tuple[dict, int]:
     """Remove flagged references from process_details.json structure.
@@ -96,13 +96,11 @@ def apply_to_processes(data: dict, drops: set[tuple[str, str, int]]) -> tuple[di
             if not positions_to_drop:
                 continue
             original = proc.get(arr_name, [])
-            kept = [ref for i, ref in enumerate(original)
-                    if i not in positions_to_drop]
+            kept = [ref for i, ref in enumerate(original) if i not in positions_to_drop]
             n_dropped = len(original) - len(kept)
             if n_dropped != len(positions_to_drop):
                 print(
-                    f"WARNING: {pid}/{arr_name}: expected to drop "
-                    f"{len(positions_to_drop)} but dropped {n_dropped}",
+                    f"WARNING: {pid}/{arr_name}: expected to drop {len(positions_to_drop)} but dropped {n_dropped}",
                     file=sys.stderr,
                 )
             proc[arr_name] = kept
@@ -126,13 +124,11 @@ def apply_to_tasks(data: list, drops: set[tuple[str, str, int]]) -> tuple[list, 
             if not positions_to_drop:
                 continue
             original = task.get(arr_name, [])
-            kept = [ref for i, ref in enumerate(original)
-                    if i not in positions_to_drop]
+            kept = [ref for i, ref in enumerate(original) if i not in positions_to_drop]
             n_dropped = len(original) - len(kept)
             if n_dropped != len(positions_to_drop):
                 print(
-                    f"WARNING: {tid}/{arr_name}: expected to drop "
-                    f"{len(positions_to_drop)} but dropped {n_dropped}",
+                    f"WARNING: {tid}/{arr_name}: expected to drop {len(positions_to_drop)} but dropped {n_dropped}",
                     file=sys.stderr,
                 )
             task[arr_name] = kept
@@ -144,13 +140,14 @@ def apply_to_tasks(data: list, drops: set[tuple[str, str, int]]) -> tuple[list, 
 # Main
 # ---------------------------------------------------------------------------
 
+
 def main() -> None:
     ap = argparse.ArgumentParser(description="Apply triage DROP decisions to JSON files")
-    ap.add_argument("--triage",        required=True)
-    ap.add_argument("--processes",     required=True)
-    ap.add_argument("--tasks",         required=True)
+    ap.add_argument("--triage", required=True)
+    ap.add_argument("--processes", required=True)
+    ap.add_argument("--tasks", required=True)
     ap.add_argument("--out-processes", required=True)
-    ap.add_argument("--out-tasks",     required=True)
+    ap.add_argument("--out-tasks", required=True)
     args = ap.parse_args()
 
     script_dir = Path(__file__).parent
@@ -159,11 +156,11 @@ def main() -> None:
         path = Path(p)
         return path if path.is_absolute() else script_dir / path
 
-    triage_path   = resolve(args.triage)
-    proc_in       = resolve(args.processes)
-    task_in       = resolve(args.tasks)
-    proc_out      = resolve(args.out_processes)
-    task_out      = resolve(args.out_tasks)
+    triage_path = resolve(args.triage)
+    proc_in = resolve(args.processes)
+    task_in = resolve(args.tasks)
+    proc_out = resolve(args.out_processes)
+    task_out = resolve(args.out_tasks)
 
     proc_out.parent.mkdir(parents=True, exist_ok=True)
     task_out.parent.mkdir(parents=True, exist_ok=True)
@@ -174,7 +171,7 @@ def main() -> None:
     print(f"  DROP decisions parsed: {len(drops)}")
 
     process_drops = sum(1 for (o, a, p) in drops if not o.startswith("hedtsk_"))
-    task_drops    = sum(1 for (o, a, p) in drops if o.startswith("hedtsk_"))
+    task_drops = sum(1 for (o, a, p) in drops if o.startswith("hedtsk_"))
     print(f"  Process drops: {process_drops}  Task drops: {task_drops}")
 
     # Load JSON

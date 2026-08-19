@@ -100,11 +100,7 @@ def bioc_to_markdown(
             continue
 
         # For body sections, emit a default heading if no explicit title seen
-        if (
-            section_type in _SECTION_HEADINGS
-            and section_type != current_section
-            and ptype == "paragraph"
-        ):
+        if section_type in _SECTION_HEADINGS and section_type != current_section and ptype == "paragraph":
             heading = _SECTION_HEADINGS[section_type]
             if heading not in seen_section_titles:
                 seen_section_titles.add(heading)
@@ -230,9 +226,7 @@ def extract_metadata(document: dict) -> dict:
 
 def _is_image_file(filename: str) -> bool:
     """Check if a filename is an image (not XML or other data)."""
-    return bool(
-        re.search(r"\.(jpg|jpeg|png|gif|svg|tiff|tif|bmp|webp)$", filename, re.I)
-    )
+    return bool(re.search(r"\.(jpg|jpeg|png|gif|svg|tiff|tif|bmp|webp)$", filename, re.I))
 
 
 def _format_table_text(text: str) -> str:

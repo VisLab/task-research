@@ -36,10 +36,10 @@ import json
 import sys
 from pathlib import Path
 
-
 # ---------------------------------------------------------------------------
 # Small render helpers
 # ---------------------------------------------------------------------------
+
 
 def _trunc(s: str | None, n: int) -> str:
     if not s:
@@ -58,7 +58,7 @@ def _format_cites(n: int | None) -> str:
     if n is None:
         return "—"
     if n >= 1000:
-        return f"{n//1000}k"
+        return f"{n // 1000}k"
     return str(n)
 
 
@@ -93,6 +93,7 @@ def _badges(c: dict) -> str:
 # ---------------------------------------------------------------------------
 # Decision lookup
 # ---------------------------------------------------------------------------
+
 
 def build_decision_lookup(review_doc: dict | None) -> dict[str, dict]:
     """Map (DOI lower / pub_id) → decision dict for fast row-level lookup."""
@@ -130,6 +131,7 @@ def _decision_label(d: dict | None) -> str:
 # Section renderers
 # ---------------------------------------------------------------------------
 
+
 def render_header(cand_doc: dict) -> str:
     item = cand_doc.get("item") or {}
     out: list[str] = []
@@ -148,7 +150,7 @@ def render_header(cand_doc: dict) -> str:
         out.append("")
     if item.get("inclusion_test"):
         it = item["inclusion_test"]
-        out.append(f"_Inclusion test._")
+        out.append("_Inclusion test._")
         for k in ("procedure", "manipulation", "measurement"):
             if it.get(k):
                 out.append(f"- **{k.capitalize()}.** {it[k]}")
@@ -186,11 +188,12 @@ def render_run_block(cand_doc: dict) -> str:
         ("Generated", cand_doc.get("generated", "?")),
         ("Sources", ", ".join(run.get("sources") or [])),
         ("Passes", ", ".join(run.get("passes") or [])),
-        ("Picked / Reserve / Excluded",
-         f"{totals.get('picked', '?')} / {totals.get('reserve', '?')} / {totals.get('excluded', '?')}"),
+        (
+            "Picked / Reserve / Excluded",
+            f"{totals.get('picked', '?')} / {totals.get('reserve', '?')} / {totals.get('excluded', '?')}",
+        ),
         ("Total candidates (post-dedup)", str(totals.get("deduped", "?"))),
-        ("Historical landmarks found",
-         f"{totals.get('landmarks_found', '?')} / {totals.get('landmarks_total', '?')}"),
+        ("Historical landmarks found", f"{totals.get('landmarks_found', '?')} / {totals.get('landmarks_total', '?')}"),
     ]
     if excl.get("non_human_subjects"):
         rows.append(("Excluded for non-human subjects", str(excl["non_human_subjects"])))
@@ -409,6 +412,7 @@ def render_review_orphans(review_doc: dict | None) -> str:
 # Top-level render
 # ---------------------------------------------------------------------------
 
+
 def render_item(
     cand_doc: dict,
     review_doc: dict | None,
@@ -429,25 +433,26 @@ def render_item(
 # CLI
 # ---------------------------------------------------------------------------
 
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--workspace", default=".")
     ap.add_argument("--candidates-dir", default="outputs/phase3/candidates")
-    ap.add_argument("--review-dir",     default="outputs/phase3/review")
-    ap.add_argument("--rendered-dir",   default="outputs/phase3/rendered")
-    ap.add_argument("--item", default="",
-                    help="Single item_id; default is all candidates files.")
-    ap.add_argument("--include-excluded", action="store_true",
-                    help="Also list non-human exclusions in the rendered output "
-                         "(for auditing the species filter).")
-    ap.add_argument("--dry-run", action="store_true",
-                    help="Render but do not write files.")
+    ap.add_argument("--review-dir", default="outputs/phase3/review")
+    ap.add_argument("--rendered-dir", default="outputs/phase3/rendered")
+    ap.add_argument("--item", default="", help="Single item_id; default is all candidates files.")
+    ap.add_argument(
+        "--include-excluded",
+        action="store_true",
+        help="Also list non-human exclusions in the rendered output (for auditing the species filter).",
+    )
+    ap.add_argument("--dry-run", action="store_true", help="Render but do not write files.")
     args = ap.parse_args()
 
     ws = Path(args.workspace).resolve()
     cand_dir = ws / args.candidates_dir
-    rev_dir  = ws / args.review_dir
-    out_dir  = ws / args.rendered_dir
+    rev_dir = ws / args.review_dir
+    out_dir = ws / args.rendered_dir
 
     if not cand_dir.exists():
         print(f"ERROR: candidates dir not found: {cand_dir}", file=sys.stderr)
@@ -494,11 +499,11 @@ def main() -> int:
                 with review_path.open("r", encoding="utf-8") as f:
                     review_doc = json.load(f)
             except json.JSONDecodeError as exc:
-                print(f"  WARN: review file {review_path} does not parse: {exc}",
-                      file=sys.stderr)
+                print(f"  WARN: review file {review_path} does not parse: {exc}", file=sys.stderr)
 
         md_text = render_item(
-            cand_doc, review_doc,
+            cand_doc,
+            review_doc,
             include_excluded_full=args.include_excluded,
         )
 

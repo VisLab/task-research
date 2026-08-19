@@ -87,20 +87,20 @@ import json
 import logging
 import shutil
 import sys
+from collections.abc import Callable
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Callable
 
 # Make sibling modules importable when invoked as a script.
-_HERE = Path(__file__).resolve().parent          # …/acquire
-_PARENT = _HERE.parent                            # …/literature_search
+_HERE = Path(__file__).resolve().parent  # …/acquire
+_PARENT = _HERE.parent  # …/literature_search
 for p in (_HERE, _PARENT):
     if str(p) not in sys.path:
         sys.path.insert(0, str(p))
 
 # Local package imports.
 from __init__ import POC_REF_DOIS  # noqa: E402
-
+from convert import convert_pdf  # noqa: E402
 from core import (  # noqa: E402
     artifact_dir,
     canonical_artifact_filename,
@@ -111,17 +111,15 @@ from core import (  # noqa: E402
     resolve_cache_dir,
     should_skip,
 )
-from priority import classify_url  # noqa: E402
 
 # Sibling-module imports (live in literature_search/).
 from hed_metadata_toolkit.clients.pmc import fetch_image, lookup_by_pmcid  # noqa: E402
-from convert import convert_pdf  # noqa: E402
 from license_policy import is_publishable, normalise_license  # noqa: E402
+from priority import classify_url  # noqa: E402
 from vendored.opencite.pmc_convert import (  # noqa: E402
     bioc_to_markdown,
     extract_figure_files,
 )
-
 
 logger = logging.getLogger(__name__)
 
@@ -129,6 +127,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 # Per-attempt result
 # ---------------------------------------------------------------------------
+
 
 @dataclass
 class AttemptResult:
@@ -149,6 +148,7 @@ class AttemptResult:
                               without a PMCID.  Not a failure; the ref
                               is out of scope for the run.
     """
+
     kind: str
     # success
     dest_path: Path | None = None
@@ -167,6 +167,7 @@ class AttemptResult:
 # ---------------------------------------------------------------------------
 # Catalog I/O (staged-write convention, mirrors acquire_pdf.py)
 # ---------------------------------------------------------------------------
+
 
 def _load_catalog(workspace: Path) -> tuple[dict, list, Path, Path]:
     p_path = workspace / "process_details.json"
@@ -212,6 +213,7 @@ def _save_catalog(
 # ---------------------------------------------------------------------------
 # Licence sourcing for the BioC path
 # ---------------------------------------------------------------------------
+
 
 def _license_for_bioc(bioc: dict, ref: dict) -> str:
     """Return the normalised licence stamp for a BioC-derived Markdown.
@@ -269,7 +271,7 @@ LookupFn = Callable[[str, Path], "dict | None"]
 # the BioC path passes (``<basename>.assets``).  Loosened to
 # ``Callable[..., str]`` so the type signature does not force every
 # caller / mock to declare the kwarg.
-BiocFn   = Callable[..., str]
+BiocFn = Callable[..., str]
 ConvertFn = Callable[[str], str]
 # PR-G: image-bytes fetcher; ``None`` on any failure (the caller
 # logs and skips the image).  Production callable is
@@ -280,6 +282,7 @@ ImageFetchFn = Callable[..., "bytes | None"]
 # ---------------------------------------------------------------------------
 # Per-ref attempt
 # ---------------------------------------------------------------------------
+
 
 def _write_markdown_with_assets(
     md_text: str,
@@ -406,12 +409,11 @@ def attempt_one_ref(
     pdf_path_str = pdf_block.get("path")
 
     has_pmcid = isinstance(pmcid_raw, str) and bool(pmcid_raw.strip())
-    has_pdf   = isinstance(pdf_path_str, str) and bool(pdf_path_str.strip())
+    has_pdf = isinstance(pdf_path_str, str) and bool(pdf_path_str.strip())
 
     # ---- Dry-run: describe the wet-run plan without acting.
     if not write:
-        return AttemptResult(kind="would_walk",
-                             plan=_dry_run_plan(has_pmcid, has_pdf, bioc_only))
+        return AttemptResult(kind="would_walk", plan=_dry_run_plan(has_pmcid, has_pdf, bioc_only))
 
     tried: list[str] = []
     notes: list[str] = []
@@ -428,8 +430,7 @@ def attempt_one_ref(
             md_filename = canonical_artifact_filename(ref, "markdown")
             assets_dirname = f"{Path(md_filename).stem}.assets"
             try:
-                md_text = bioc_fn(bioc["documents"][0],
-                                  images_dir=assets_dirname)
+                md_text = bioc_fn(bioc["documents"][0], images_dir=assets_dirname)
             except Exception as exc:  # defensive — converter is in-process
                 tried.append("pmc_bioc")
                 notes.append(f"pmc_bioc: render raised {type(exc).__name__}: {exc}")
@@ -441,21 +442,23 @@ def attempt_one_ref(
                 # link unresolved (renderer shows a broken-image
                 # icon).  No catalog signal — D-G6.
                 images: dict[str, bytes] = {}
-                for _fig_id, fig_filename in extract_figure_files(
-                        bioc["documents"][0]):
+                for _fig_id, fig_filename in extract_figure_files(bioc["documents"][0]):
                     blob = image_fetch_fn(pmcid_raw, fig_filename)
                     if blob:
                         images[fig_filename] = blob
                     else:
                         logger.warning(
                             "pmc_image miss: pmcid=%s filename=%s",
-                            pmcid_raw, fig_filename,
+                            pmcid_raw,
+                            fig_filename,
                         )
 
                 license_norm = _license_for_bioc(bioc, ref)
                 source_url = _pmc_landing_url(bioc, pmcid_raw)
                 return _file_markdown(
-                    ref=ref, repo_root=repo_root, md_text=md_text,
+                    ref=ref,
+                    repo_root=repo_root,
+                    md_text=md_text,
                     images=images,
                     source_url=source_url,
                     source_type="auto_pmc_bioc",
@@ -464,8 +467,7 @@ def attempt_one_ref(
                 )
         else:
             tried.append("pmc_bioc")
-            notes.append("pmc_bioc: no BioC document available "
-                         "(not in PMC OA subset, or transient error)")
+            notes.append("pmc_bioc: no BioC document available (not in PMC OA subset, or transient error)")
 
     # ---- Step 2: --bioc-only short-circuit.
     if bioc_only:
@@ -490,24 +492,32 @@ def attempt_one_ref(
             # PDF-fallback refs in the run will fail the same way.
             notes.append(f"marker-pdf: not installed ({exc})")
             return AttemptResult(
-                kind="failure", tried=tried, reason="; ".join(notes),
+                kind="failure",
+                tried=tried,
+                reason="; ".join(notes),
             )
         except FileNotFoundError as exc:
             notes.append(f"marker-pdf: PDF missing on disk ({exc})")
             return AttemptResult(
-                kind="failure", tried=tried, reason="; ".join(notes),
+                kind="failure",
+                tried=tried,
+                reason="; ".join(notes),
             )
         except Exception as exc:  # defensive — covers marker runtime errors
             notes.append(f"marker-pdf: {type(exc).__name__}: {exc}")
             return AttemptResult(
-                kind="failure", tried=tried, reason="; ".join(notes),
+                kind="failure",
+                tried=tried,
+                reason="; ".join(notes),
             )
 
         # Markdown derived from a PDF inherits the PDF's licence stamp.
         license_norm = normalise_license(pdf_block.get("license"))
         source_url = pdf_block.get("source_url") or ""
         return _file_markdown(
-            ref=ref, repo_root=repo_root, md_text=md_text,
+            ref=ref,
+            repo_root=repo_root,
+            md_text=md_text,
             source_url=source_url,
             source_type="auto_markdown_from_pdf",
             converter="marker-pdf",
@@ -538,31 +548,41 @@ def _dry_run_plan(has_pmcid: bool, has_pdf: bool, bioc_only: bool) -> str:
 # CLI driver
 # ---------------------------------------------------------------------------
 
+
 def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--mode", choices=["poc", "single", "full"], required=True,
-                   help="poc=D-E3 POC DOIs, single=--ids, full=every ref.")
-    p.add_argument("--ids", default="",
-                   help="Comma-separated owner IDs for --mode single.")
-    p.add_argument("--workspace", default=".",
-                   help="Workspace root (Claude-research/).  Default: cwd.")
-    p.add_argument("--cache-dir", default="<auto>",
-                   help="PMC BioC cache root.  Resolves via "
-                        "--cache-dir > $HED_CACHE_DIR > <workspace>/outputs/cache.")
-    p.add_argument("--write", action="store_true",
-                   help="Fetch BioC, run converters, save Markdown, "
-                        "persist catalog.  Default is dry-run (plan only).")
-    p.add_argument("--force", action="store_true",
-                   help="Re-acquire refs with an existing successful Markdown.")
-    p.add_argument("--retry-failed", action="store_true",
-                   help="Include refs with a recorded failure record.  "
-                        "Default skips them to keep re-runs fast.")
-    p.add_argument("--bioc-only", action="store_true",
-                   help="Restrict to the PMC BioC fast path.  Refs without "
-                        "ids.pmcid are skipped (not failure-recorded); refs "
-                        "whose BioC lookup fails are recorded as failures.")
-    p.add_argument("--limit", type=int, default=0,
-                   help="Cap on number of refs processed (0 = no cap).")
+    p.add_argument(
+        "--mode",
+        choices=["poc", "single", "full"],
+        required=True,
+        help="poc=D-E3 POC DOIs, single=--ids, full=every ref.",
+    )
+    p.add_argument("--ids", default="", help="Comma-separated owner IDs for --mode single.")
+    p.add_argument("--workspace", default=".", help="Workspace root (Claude-research/).  Default: cwd.")
+    p.add_argument(
+        "--cache-dir",
+        default="<auto>",
+        help="PMC BioC cache root.  Resolves via --cache-dir > $HED_CACHE_DIR > <workspace>/outputs/cache.",
+    )
+    p.add_argument(
+        "--write",
+        action="store_true",
+        help="Fetch BioC, run converters, save Markdown, persist catalog.  Default is dry-run (plan only).",
+    )
+    p.add_argument("--force", action="store_true", help="Re-acquire refs with an existing successful Markdown.")
+    p.add_argument(
+        "--retry-failed",
+        action="store_true",
+        help="Include refs with a recorded failure record.  Default skips them to keep re-runs fast.",
+    )
+    p.add_argument(
+        "--bioc-only",
+        action="store_true",
+        help="Restrict to the PMC BioC fast path.  Refs without "
+        "ids.pmcid are skipped (not failure-recorded); refs "
+        "whose BioC lookup fails are recorded as failures.",
+    )
+    p.add_argument("--limit", type=int, default=0, help="Cap on number of refs processed (0 = no cap).")
     p.add_argument("--verbose", "-v", action="store_true")
     return p.parse_args(argv)
 
@@ -592,11 +612,9 @@ def main(
     )
 
     lookup_callable: LookupFn = lookup_fn if lookup_fn is not None else lookup_by_pmcid
-    bioc_callable:   BiocFn   = bioc_fn   if bioc_fn   is not None else bioc_to_markdown
+    bioc_callable: BiocFn = bioc_fn if bioc_fn is not None else bioc_to_markdown
     convert_callable: ConvertFn = convert_fn if convert_fn is not None else convert_pdf
-    image_fetch_callable: ImageFetchFn = (
-        image_fetch_fn if image_fetch_fn is not None else fetch_image
-    )
+    image_fetch_callable: ImageFetchFn = image_fetch_fn if image_fetch_fn is not None else fetch_image
 
     ws = Path(args.workspace).resolve()
     repo_root = ws.parent
@@ -605,10 +623,14 @@ def main(
     logger.info("workspace : %s", ws)
     logger.info("repo_root : %s", repo_root)
     logger.info("cache_dir : %s", cache_dir)
-    logger.info("mode      : %s  write=%s  bioc-only=%s  "
-                "force=%s  retry-failed=%s",
-                args.mode, args.write, args.bioc_only,
-                args.force, args.retry_failed)
+    logger.info(
+        "mode      : %s  write=%s  bioc-only=%s  force=%s  retry-failed=%s",
+        args.mode,
+        args.write,
+        args.bioc_only,
+        args.force,
+        args.retry_failed,
+    )
 
     try:
         processes, tasks, p_path, t_path = _load_catalog(ws)
@@ -629,16 +651,18 @@ def main(
     n_capped = 0
 
     for owner_id, ref_idx, ref in iter_refs(
-        processes, tasks,
-        mode=args.mode, ids=ids, poc_dois=POC_REF_DOIS,
+        processes,
+        tasks,
+        mode=args.mode,
+        ids=ids,
+        poc_dois=POC_REF_DOIS,
     ):
         n_in_scope += 1
 
         if should_skip(ref, "markdown", force=args.force):
             n_skipped_done += 1
             continue
-        if (has_recorded_failure(ref, "markdown")
-                and not args.retry_failed and not args.force):
+        if has_recorded_failure(ref, "markdown") and not args.retry_failed and not args.force:
             n_skipped_prior_failure += 1
             continue
         if args.limit and (n_success + n_failure + n_dryrun) >= args.limit:
@@ -672,7 +696,8 @@ def main(
             assert outcome.dest_path is not None
             rel_path = f"{outcome.dest_path.parent.name}/{outcome.dest_path.name}"
             record_success(
-                ref, "markdown",
+                ref,
+                "markdown",
                 path=rel_path,
                 source_url=outcome.source_url,
                 source_type=outcome.source_type,
@@ -680,11 +705,13 @@ def main(
                 converter=outcome.converter,
                 is_publishable=outcome.is_publishable_flag,
             )
-            print(f"  {label} OK  saved {outcome.dest_path.parent.name}/"
-                  f"{outcome.dest_path.name} "
-                  f"(converter={outcome.converter}, "
-                  f"licence={outcome.license_norm}, "
-                  f"publishable={outcome.is_publishable_flag})")
+            print(
+                f"  {label} OK  saved {outcome.dest_path.parent.name}/"
+                f"{outcome.dest_path.name} "
+                f"(converter={outcome.converter}, "
+                f"licence={outcome.license_norm}, "
+                f"publishable={outcome.is_publishable_flag})"
+            )
 
         elif outcome.kind == "failure":
             n_failure += 1

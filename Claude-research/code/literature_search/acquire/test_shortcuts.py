@@ -20,20 +20,25 @@ from shortcuts import (  # noqa: E402
 )
 
 
-def _ref(*, doi=None, arxiv_id=None, pmcid=None, pmid=None,
-         openalex_id=None, s2_id=None):
-    return {"ids": {
-        "doi": doi, "arxiv_id": arxiv_id, "pmcid": pmcid,
-        "pmid": pmid, "openalex_id": openalex_id, "s2_id": s2_id,
-    }}
+def _ref(*, doi=None, arxiv_id=None, pmcid=None, pmid=None, openalex_id=None, s2_id=None):
+    return {
+        "ids": {
+            "doi": doi,
+            "arxiv_id": arxiv_id,
+            "pmcid": pmcid,
+            "pmid": pmid,
+            "openalex_id": openalex_id,
+            "s2_id": s2_id,
+        }
+    }
 
 
 # ---------------------------------------------------------------------------
 # ID normalizers
 # ---------------------------------------------------------------------------
 
-class TestNormalizeArxivId:
 
+class TestNormalizeArxivId:
     def test_bare_modern(self):
         assert _normalize_arxiv_id("2104.12345") == "2104.12345"
 
@@ -45,15 +50,11 @@ class TestNormalizeArxivId:
         assert _normalize_arxiv_id("ARXIV:2104.12345") == "2104.12345"
 
     def test_url_abs_form(self):
-        assert _normalize_arxiv_id(
-            "https://arxiv.org/abs/2104.12345"
-        ) == "2104.12345"
+        assert _normalize_arxiv_id("https://arxiv.org/abs/2104.12345") == "2104.12345"
 
     def test_url_pdf_form(self):
         # ``...pdf/<id>.pdf`` — extract id, drop .pdf.
-        assert _normalize_arxiv_id(
-            "https://arxiv.org/pdf/2104.12345.pdf"
-        ) == "2104.12345"
+        assert _normalize_arxiv_id("https://arxiv.org/pdf/2104.12345.pdf") == "2104.12345"
 
     def test_empty(self):
         assert _normalize_arxiv_id("") is None
@@ -61,7 +62,6 @@ class TestNormalizeArxivId:
 
 
 class TestNormalizeDoi:
-
     def test_plain(self):
         assert _normalize_doi("10.1234/foo") == "10.1234/foo"
 
@@ -69,8 +69,7 @@ class TestNormalizeDoi:
         assert _normalize_doi("10.1234/FOO") == "10.1234/foo"
 
     def test_strips_doi_url_prefix(self):
-        for prefix in ("https://doi.org/", "http://doi.org/",
-                       "https://dx.doi.org/", "doi:"):
+        for prefix in ("https://doi.org/", "http://doi.org/", "https://dx.doi.org/", "doi:"):
             assert _normalize_doi(prefix + "10.1234/foo") == "10.1234/foo"
 
     def test_rejects_non_doi_strings(self):
@@ -83,8 +82,8 @@ class TestNormalizeDoi:
 # synthesize_id_shortcuts — per-id-class behaviour
 # ---------------------------------------------------------------------------
 
-class TestSynthesizeIdShortcuts:
 
+class TestSynthesizeIdShortcuts:
     def test_empty_ref_returns_empty(self):
         assert synthesize_id_shortcuts(_ref()) == []
 
@@ -115,26 +114,27 @@ class TestSynthesizeIdShortcuts:
         out = synthesize_id_shortcuts(_ref(doi="10.1101/2023.05.01.abc"))
         sources = [loc["source"] for loc in out]
         assert sources == ["synthesized:biorxiv"]
-        assert out[0]["url"] == (
-            "https://www.biorxiv.org/content/10.1101/2023.05.01.abc"
-            "v1.full.pdf"
-        )
+        assert out[0]["url"] == ("https://www.biorxiv.org/content/10.1101/2023.05.01.abcv1.full.pdf")
 
     def test_arxiv_and_biorxiv_both(self):
         # A ref carrying both an arXiv id and a 10.1101/ DOI gets
         # both shortcuts.  (Unusual in practice, but the function
         # shouldn't drop one in favour of the other.)
-        out = synthesize_id_shortcuts(_ref(
-            arxiv_id="2104.12345",
-            doi="10.1101/2023.05.01.abc",
-        ))
+        out = synthesize_id_shortcuts(
+            _ref(
+                arxiv_id="2104.12345",
+                doi="10.1101/2023.05.01.abc",
+            )
+        )
         sources = [loc["source"] for loc in out]
         assert sources == ["synthesized:arxiv", "synthesized:biorxiv"]
 
     def test_arxiv_url_form_in_ids_block(self):
-        out = synthesize_id_shortcuts(_ref(
-            arxiv_id="https://arxiv.org/abs/2104.12345",
-        ))
+        out = synthesize_id_shortcuts(
+            _ref(
+                arxiv_id="https://arxiv.org/abs/2104.12345",
+            )
+        )
         assert out[0]["url"] == "https://arxiv.org/pdf/2104.12345"
 
     def test_no_mutation_of_ref(self):

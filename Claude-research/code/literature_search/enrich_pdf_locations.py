@@ -60,13 +60,16 @@ import os
 import shutil
 import sys
 from collections import Counter
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Iterable
 
 # Allow direct invocation (python code/literature_search/enrich_pdf_locations.py)
 # and ensure sibling modules (clients/, identity, etc.) are importable.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
+from hed_metadata_toolkit.clients.openalex import lookup_by_doi as oa_lookup  # noqa: E402
+from hed_metadata_toolkit.clients.semanticscholar import lookup_by_doi as s2_lookup  # noqa: E402
+from hed_metadata_toolkit.clients.unpaywall import lookup_by_doi as up_lookup  # noqa: E402
 from license_policy import (  # noqa: E402
     classify_strings,
     is_intentionally_unknown,
@@ -74,17 +77,13 @@ from license_policy import (  # noqa: E402
 )
 from reference_compat import ref_doi  # noqa: E402
 
-from hed_metadata_toolkit.clients.openalex import lookup_by_doi as oa_lookup  # noqa: E402
-from hed_metadata_toolkit.clients.unpaywall import lookup_by_doi as up_lookup  # noqa: E402
-from hed_metadata_toolkit.clients.semanticscholar import lookup_by_doi as s2_lookup  # noqa: E402
-
-
 logger = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
 # Cache directory resolution (per the shared cache convention)
 # ---------------------------------------------------------------------------
+
 
 def resolve_cache_dir(arg_value: str, workspace: Path) -> Path:
     """Resolve the cache root.
@@ -109,6 +108,7 @@ def resolve_cache_dir(arg_value: str, workspace: Path) -> Path:
 # ---------------------------------------------------------------------------
 # Per-source PDF-location extraction
 # ---------------------------------------------------------------------------
+
 
 def _normalise_url(url: str | None) -> str:
     """Light URL canonicalisation for dedup: strip whitespace, lowercase host."""
@@ -137,10 +137,10 @@ def _make_location(
     if not url or not isinstance(url, str) or not url.strip():
         return None
     return {
-        "url":     url.strip(),
-        "source":  source,
+        "url": url.strip(),
+        "source": source,
         "version": version if isinstance(version, str) and version else None,
-        "is_oa":   bool(is_oa) if is_oa is not None else None,
+        "is_oa": bool(is_oa) if is_oa is not None else None,
         "license": normalise_license(license_raw),
     }
 
@@ -199,7 +199,7 @@ def extract_unpaywall_locations(resp: dict | None) -> tuple[list[dict], str, lis
             url=url,
             source="unpaywall",
             version=loc.get("version"),
-            is_oa=True,                              # Unpaywall only lists OA copies
+            is_oa=True,  # Unpaywall only lists OA copies
             license_raw=lic,
         )
         if entry:
@@ -222,7 +222,7 @@ def extract_s2_locations(resp: dict | None) -> tuple[list[dict], list[str]]:
         entry = _make_location(
             url=pdf.get("url"),
             source="s2",
-            version=pdf.get("status"),               # S2's analogue of "version"
+            version=pdf.get("status"),  # S2's analogue of "version"
             is_oa=resp.get("isOpenAccess"),
             license_raw=lic,
         )
@@ -241,9 +241,11 @@ _KNOWN_OA_STATUSES = {"gold", "hybrid", "green", "bronze", "closed", "diamond", 
 
 def _pick_oa_status(openalex_val: str, unpaywall_val: str) -> str:
     """Choose oa_status: prefer OpenAlex (richer vocabulary), fall back to Unpaywall."""
+
     def _clean(v: str) -> str:
         s = (v or "").strip().lower()
         return s if s in _KNOWN_OA_STATUSES else ""
+
     return _clean(openalex_val) or _clean(unpaywall_val) or "unknown"
 
 
@@ -282,6 +284,7 @@ def merge_locations(*chunks: list[dict]) -> list[dict]:
 # Enrichment driver
 # ---------------------------------------------------------------------------
 
+
 def enrich_one_reference(
     ref: dict,
     cache_dir: Path,
@@ -301,7 +304,7 @@ def enrich_one_reference(
 
     oa_locs, oa_status_oa, oa_raw_lic = extract_openalex_locations(oa_resp)
     up_locs, oa_status_up, up_raw_lic = extract_unpaywall_locations(up_resp)
-    s2_locs, s2_raw_lic                = extract_s2_locations(s2_resp)
+    s2_locs, s2_raw_lic = extract_s2_locations(s2_resp)
 
     locations = merge_locations(oa_locs, up_locs, s2_locs)
     oa_status = _pick_oa_status(oa_status_oa, oa_status_up)
@@ -366,24 +369,32 @@ def _iter_items(
 # Driver
 # ---------------------------------------------------------------------------
 
+
 def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--mode", choices=["poc", "single", "full"], required=True,
-                   help="poc=3 sample items, single=--ids, full=every item.")
-    p.add_argument("--ids", default="",
-                   help="Comma-separated owner IDs for --mode single.")
-    p.add_argument("--workspace", default=".",
-                   help="Workspace root (Claude-research/). Default: cwd.")
-    p.add_argument("--cache-dir", default="<auto>",
-                   help="Cache root. Default: $HED_CACHE_DIR or "
-                        "<workspace>/outputs/cache.")
-    p.add_argument("--email", default="hedannotation@gmail.com",
-                   help="Polite-pool email for Crossref/OpenAlex/Unpaywall.")
-    p.add_argument("--write", action="store_true",
-                   help="Persist changes to process_details.json and task_details.json.")
-    p.add_argument("--limit", type=int, default=0,
-                   help="Cap the number of references processed (0 = no cap). "
-                        "Useful for incremental dry-runs of --mode full.")
+    p.add_argument(
+        "--mode",
+        choices=["poc", "single", "full"],
+        required=True,
+        help="poc=3 sample items, single=--ids, full=every item.",
+    )
+    p.add_argument("--ids", default="", help="Comma-separated owner IDs for --mode single.")
+    p.add_argument("--workspace", default=".", help="Workspace root (Claude-research/). Default: cwd.")
+    p.add_argument(
+        "--cache-dir", default="<auto>", help="Cache root. Default: $HED_CACHE_DIR or <workspace>/outputs/cache."
+    )
+    p.add_argument(
+        "--email", default="hedannotation@gmail.com", help="Polite-pool email for Crossref/OpenAlex/Unpaywall."
+    )
+    p.add_argument(
+        "--write", action="store_true", help="Persist changes to process_details.json and task_details.json."
+    )
+    p.add_argument(
+        "--limit",
+        type=int,
+        default=0,
+        help="Cap the number of references processed (0 = no cap). Useful for incremental dry-runs of --mode full.",
+    )
     p.add_argument("--verbose", "-v", action="store_true")
     return p.parse_args(argv)
 
@@ -418,14 +429,14 @@ def main(argv: list[str] | None = None) -> int:
     logger.info("items in scope (%s): %d", args.mode, len(items_iter))
 
     # Walk every reference inside the in-scope items.
-    n_refs_seen      = 0
-    n_refs_with_doi  = 0
-    n_refs_changed   = 0
+    n_refs_seen = 0
+    n_refs_with_doi = 0
+    n_refs_changed = 0
     n_locations_total = 0
     oa_status_counter: Counter[str] = Counter()
     all_raw_licenses: list[str] = []
 
-    for owner_id, item in items_iter:
+    for _owner_id, item in items_iter:
         for ref in item.get("references") or []:
             n_refs_seen += 1
             if not ref_doi(ref):
@@ -449,7 +460,7 @@ def main(argv: list[str] | None = None) -> int:
     print(f"  with DOI (processed)       : {n_refs_with_doi}")
     print(f"  changed (vs prior state)   : {n_refs_changed}")
     print(f"  total pdf_locations stored : {n_locations_total}")
-    print(f"  oa_status distribution     :")
+    print("  oa_status distribution     :")
     for status, n in oa_status_counter.most_common():
         print(f"    {status:10s}  {n}")
 
@@ -458,21 +469,17 @@ def main(argv: list[str] | None = None) -> int:
     license_buckets = classify_strings(all_raw_licenses)
     print("Licence normalisation (raw → bucket counts):")
     for bucket, raws in sorted(license_buckets.items()):
-        print(f"  {bucket:18s}  {len(raws):4d}   examples: "
-              + ", ".join(raws[:3]))
+        print(f"  {bucket:18s}  {len(raws):4d}   examples: " + ", ".join(raws[:3]))
     if "unknown" in license_buckets:
         # Split the unknown bucket: strings that are intentionally aliased
         # to "unknown" (e.g. Unpaywall's ``other-oa``) are documented
         # decisions and do not need human review.  Only the truly
         # unclassified strings should be flagged.
-        intentional   = [r for r in license_buckets["unknown"]
-                         if is_intentionally_unknown(r)]
-        needs_review  = [r for r in license_buckets["unknown"]
-                         if not is_intentionally_unknown(r)]
+        intentional = [r for r in license_buckets["unknown"] if is_intentionally_unknown(r)]
+        needs_review = [r for r in license_buckets["unknown"] if not is_intentionally_unknown(r)]
         if intentional:
             print()
-            print(f"  {len(intentional)} raw string(s) intentionally classified as 'unknown' "
-                  f"(no action needed):")
+            print(f"  {len(intentional)} raw string(s) intentionally classified as 'unknown' (no action needed):")
             for raw in intentional:
                 print(f"    {raw!r}")
         if needs_review:

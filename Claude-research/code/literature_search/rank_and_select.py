@@ -28,24 +28,22 @@ from normalize import Candidate
 from search_queries import ItemQueryPlan
 from triage_rules import classify_venue, publisher_tier_from_doi
 
-
 # ---------------------------------------------------------------------------
 # §8.1 score weights (locked — do not modify without user sign-off)
 # ---------------------------------------------------------------------------
-W_CITATION           = 0.25
-W_VENUE              = 0.20
-W_PUBLISHER          = 0.10
-W_RECENCY            = 0.15
-W_RELEVANCE          = 0.25
-W_REVIEW             = 0.05
+W_CITATION = 0.25
+W_VENUE = 0.20
+W_PUBLISHER = 0.10
+W_RECENCY = 0.15
+W_RELEVANCE = 0.25
+W_REVIEW = 0.05
 # Sum of base weights == 1.00
 
-W_INFLUENCE_INTENT   = 0.05   # per strong Stage-B edge; capped at INFLUENCE_INTENT_CAP
-INFLUENCE_INTENT_CAP = 3      # maximum edges counted toward the bump
-LM_BONUS             = 0.30   # landmark bonus for historical pub_ids
+W_INFLUENCE_INTENT = 0.05  # per strong Stage-B edge; capped at INFLUENCE_INTENT_CAP
+INFLUENCE_INTENT_CAP = 3  # maximum edges counted toward the bump
+LM_BONUS = 0.30  # landmark bonus for historical pub_ids
 
-VENUE_SCORES     = {"flagship": 1.0, "mainstream": 0.7, "specialty": 0.4,
-                    "low_or_excluded": 0.0, "unknown": 0.3}
+VENUE_SCORES = {"flagship": 1.0, "mainstream": 0.7, "specialty": 0.4, "low_or_excluded": 0.0, "unknown": 0.3}
 PUBLISHER_SCORES = {"A": 1.0, "B": 0.6, "C": 0.0, None: 0.0}
 
 
@@ -53,8 +51,7 @@ PUBLISHER_SCORES = {"A": 1.0, "B": 0.6, "C": 0.0, None: 0.0}
 # Tokenisation (shared by phrase gate and relevance scorer)
 # ---------------------------------------------------------------------------
 
-_STOP_WORDS = frozenset(["", "the", "a", "an", "of", "and", "in", "to", "for",
-                          "with", "on", "at", "by", "from", "as"])
+_STOP_WORDS = frozenset(["", "the", "a", "an", "of", "and", "in", "to", "for", "with", "on", "at", "by", "from", "as"])
 
 
 def _tokenize(text: str) -> set[str]:
@@ -64,6 +61,7 @@ def _tokenize(text: str) -> set[str]:
 # ---------------------------------------------------------------------------
 # Phrase list extraction
 # ---------------------------------------------------------------------------
+
 
 def _alias_text(a) -> str:
     """Extract a plain string from an alias regardless of whether it is a str
@@ -103,7 +101,7 @@ def _phrase_list(item: ItemQueryPlan) -> list[str]:
     always included regardless of length.
     """
     phrases: list[str] = [item.primary_name]
-    for a in (item.aliases or []):
+    for a in item.aliases or []:
         s = _alias_text(a).strip()
         if not s:
             continue
@@ -117,6 +115,7 @@ def _phrase_list(item: ItemQueryPlan) -> list[str]:
 # ---------------------------------------------------------------------------
 # Component helpers
 # ---------------------------------------------------------------------------
+
 
 def _log_norm(count: int) -> float:
     """Map a citation count to [0, 1] via log scale.
@@ -136,7 +135,7 @@ def _citation_component(cand: Candidate) -> float:
     as a backstop for papers S2's classifier has not yet tagged.
     """
     total = _log_norm(cand.citation_count or 0)
-    infl  = _log_norm(cand.influential_citation_count or 0)
+    infl = _log_norm(cand.influential_citation_count or 0)
     return 0.4 * total + 0.6 * infl
 
 
@@ -145,7 +144,7 @@ def _recency_score(cand: Candidate, today_year: int) -> float:
     year = cand.year
     if year is None:
         return 0.0
-    peak       = today_year - 5
+    peak = today_year - 5
     zero_below = today_year - 20
     if year >= today_year:
         return 0.5  # treat future-stamped records as neutral
@@ -170,11 +169,7 @@ def _relevance_score(cand: Candidate, item: ItemQueryPlan) -> float:
     phrases = _phrase_list(item)
     if not phrases:
         return 0.0
-    text = (
-        (cand.title or "") + " " +
-        (cand.abstract or "") + " " +
-        (cand.tldr or "")
-    ).lower()
+    text = ((cand.title or "") + " " + (cand.abstract or "") + " " + (cand.tldr or "")).lower()
     hits = 0
     for phrase in phrases:
         p = phrase.lower().strip()
@@ -233,6 +228,7 @@ def _influence_intent_bump(cand: Candidate) -> float:
 # Composite score (public)
 # ---------------------------------------------------------------------------
 
+
 def composite_score(
     cand: Candidate,
     item: ItemQueryPlan,
@@ -252,7 +248,11 @@ def composite_score(
     shorter call site when components aren't needed.
     """
     return score_with_components(
-        cand, item, today_year, landmark_pub_ids, neutralize_recency,
+        cand,
+        item,
+        today_year,
+        landmark_pub_ids,
+        neutralize_recency,
     )["composite"]
 
 
@@ -294,19 +294,19 @@ def score_with_components(
     equals `composite`.
     """
     citations = _citation_component(cand)
-    venue     = _venue_score(cand)
+    venue = _venue_score(cand)
     publisher = _publisher_score(cand)
-    recency   = 0.5 if neutralize_recency else _recency_score(cand, today_year)
+    recency = 0.5 if neutralize_recency else _recency_score(cand, today_year)
     relevance = _relevance_score(cand, item)
-    review    = _review_bonus(cand)
+    review = _review_bonus(cand)
 
     weighted = {
-        "citations":  W_CITATION   * citations,
-        "venue":      W_VENUE      * venue,
-        "publisher":  W_PUBLISHER  * publisher,
-        "recency":    W_RECENCY    * recency,
-        "relevance":  W_RELEVANCE  * relevance,
-        "review":     W_REVIEW     * review,
+        "citations": W_CITATION * citations,
+        "venue": W_VENUE * venue,
+        "publisher": W_PUBLISHER * publisher,
+        "recency": W_RECENCY * recency,
+        "relevance": W_RELEVANCE * relevance,
+        "review": W_REVIEW * review,
     }
     stage_b_bump = _influence_intent_bump(cand)
     landmark_bonus = LM_BONUS if cand.pub_id in landmark_pub_ids else 0.0
@@ -316,16 +316,16 @@ def score_with_components(
     return {
         "composite": composite,
         "components": {
-            "citations":  citations,
-            "venue":      venue,
-            "publisher":  publisher,
-            "recency":    recency,
-            "relevance":  relevance,
-            "review":     review,
+            "citations": citations,
+            "venue": venue,
+            "publisher": publisher,
+            "recency": recency,
+            "relevance": relevance,
+            "review": review,
         },
         "weighted": weighted,
-        "stage_b_bump":      stage_b_bump,
-        "landmark_bonus":    landmark_bonus,
+        "stage_b_bump": stage_b_bump,
+        "landmark_bonus": landmark_bonus,
         "neutralize_recency": neutralize_recency,
     }
 
@@ -333,6 +333,7 @@ def score_with_components(
 # ---------------------------------------------------------------------------
 # Post-retrieval phrase gate
 # ---------------------------------------------------------------------------
+
 
 def phrase_gate(
     candidates: list[Candidate],
@@ -361,11 +362,7 @@ def phrase_gate(
             kept.append(c)
             continue
 
-        text = (
-            (c.title or "") + " " +
-            (c.abstract or "") + " " +
-            (c.tldr or "")
-        ).lower()
+        text = ((c.title or "") + " " + (c.abstract or "") + " " + (c.tldr or "")).lower()
 
         matched = False
         for p in phrases:
@@ -387,6 +384,7 @@ def phrase_gate(
 # ---------------------------------------------------------------------------
 # Auto-role assignment
 # ---------------------------------------------------------------------------
+
 
 def assign_auto_role(cand: Candidate, today_year: int, landmark_pub_ids: set[str]) -> str:
     """Assign a coarse role label to a candidate.
@@ -418,6 +416,7 @@ def assign_auto_role(cand: Candidate, today_year: int, landmark_pub_ids: set[str
 # Stage B seed selection
 # ---------------------------------------------------------------------------
 
+
 def select_citation_seeds(
     candidates: list[Candidate],
     historical_pub_ids: set[str],
@@ -436,11 +435,7 @@ def select_citation_seeds(
       - Candidates without an s2_paper_id: we cannot call the citations
         endpoint without a paperId.
     """
-    pool = [
-        c for c in candidates
-        if c.pub_id not in historical_pub_ids
-        and c.s2_paper_id
-    ]
+    pool = [c for c in candidates if c.pub_id not in historical_pub_ids and c.s2_paper_id]
     pool.sort(
         key=lambda c: c.influential_citation_count or 0,
         reverse=True,
@@ -451,6 +446,7 @@ def select_citation_seeds(
 # ---------------------------------------------------------------------------
 # Deduplication
 # ---------------------------------------------------------------------------
+
 
 def dedup_candidates(candidates: list[Candidate]) -> list[Candidate]:
     """Deduplicate candidates across sources.
@@ -486,25 +482,26 @@ def _merge(group: list[Candidate]) -> Candidate:
     if len(group) == 1:
         return group[0]
 
-    oa_rec  = next((c for c in group if "openalex"       in c.sources), None)
-    epm_rec = next((c for c in group if "europepmc"      in c.sources), None)
-    s2_rec  = next((c for c in group if "semanticscholar" in c.sources
-                    or "semanticscholar_citations" in c.sources), None)
+    oa_rec = next((c for c in group if "openalex" in c.sources), None)
+    epm_rec = next((c for c in group if "europepmc" in c.sources), None)
+    s2_rec = next(
+        (c for c in group if "semanticscholar" in c.sources or "semanticscholar_citations" in c.sources), None
+    )
 
     base = oa_rec or epm_rec or s2_rec or group[0]
 
     # Prefer EuropePMC for pmid and mesh_terms.
-    pmid       = (epm_rec and epm_rec.pmid)       or base.pmid
+    pmid = (epm_rec and epm_rec.pmid) or base.pmid
     mesh_terms = (epm_rec and epm_rec.mesh_terms) or base.mesh_terms
 
     # Prefer S2 for influential_citation_count, tldr, s2_paper_id.
-    inf_cites   = (s2_rec and s2_rec.influential_citation_count) or base.influential_citation_count
-    tldr        = (s2_rec and s2_rec.tldr)         or base.tldr
-    s2_paper_id = (s2_rec and s2_rec.s2_paper_id)  or base.s2_paper_id
+    inf_cites = (s2_rec and s2_rec.influential_citation_count) or base.influential_citation_count
+    tldr = (s2_rec and s2_rec.tldr) or base.tldr
+    s2_paper_id = (s2_rec and s2_rec.s2_paper_id) or base.s2_paper_id
 
     # Prefer OpenAlex for OA info.
     oa_status = (oa_rec and oa_rec.oa_status) or base.oa_status
-    oa_url    = (oa_rec and oa_rec.oa_url)    or base.oa_url
+    oa_url = (oa_rec and oa_rec.oa_url) or base.oa_url
 
     # Union source lists.
     all_sources: list[str] = []
@@ -530,7 +527,7 @@ def _merge(group: list[Candidate]) -> Candidate:
     all_pub_types: list[str] = []
     seen_pub_types: set[str] = set()
     for c in group:
-        for pt in (c.publication_types or []):
+        for pt in c.publication_types or []:
             key = pt.lower()
             if key not in seen_pub_types:
                 all_pub_types.append(pt)
@@ -559,6 +556,7 @@ def _merge(group: list[Candidate]) -> Candidate:
 # ---------------------------------------------------------------------------
 # Selection
 # ---------------------------------------------------------------------------
+
 
 def _try_add(
     cand: Candidate,
@@ -596,6 +594,7 @@ def select_candidates(
         No single first_author_family appears more than 3 times in the
         combined picked set (25 candidates total).
     """
+
     def fscore(c: Candidate) -> float:
         return composite_score(c, item, today_year, landmark_pub_ids, neutralize_recency=True)
 
@@ -608,10 +607,11 @@ def select_candidates(
     author_count: dict[str, int] = {}
 
     # --- Top picks (up to 5): landmarks pinned, rest by fscore ---
-    landmarks    = [c for c in all_sorted if c.pub_id in landmark_pub_ids]
+    landmarks = [c for c in all_sorted if c.pub_id in landmark_pub_ids]
     non_landmark = sorted(
         [c for c in all_sorted if c.pub_id not in landmark_pub_ids],
-        key=fscore, reverse=True,
+        key=fscore,
+        reverse=True,
     )
 
     top_picks: list[Candidate] = []
@@ -632,13 +632,10 @@ def select_candidates(
         if len(recent_picks) >= 20:
             break
         added = _try_add(c, recent_picks, author_count)
-        
+
     if review_count < 3:
-        already_picked = set(id(c) for c in top_picks + recent_picks)
-        review_backfill = [
-            c for c in all_sorted
-            if (c.is_review or c.is_meta_analysis) and id(c) not in already_picked
-        ]
+        already_picked = {id(c) for c in top_picks + recent_picks}
+        review_backfill = [c for c in all_sorted if (c.is_review or c.is_meta_analysis) and id(c) not in already_picked]
         for c in review_backfill:
             if review_count >= 3:
                 break

@@ -64,11 +64,11 @@ import logging
 import re
 import sys
 from collections import OrderedDict
+from collections.abc import Iterable, Iterator
 from dataclasses import dataclass, field
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Iterable, Iterator, Literal
-
+from typing import Literal
 
 ArtifactKind = Literal["pdf", "markdown"]
 
@@ -184,6 +184,7 @@ def reason_components(reason: str) -> list[str]:
 # Failure extraction
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class Failure:
     """One ref's failure record, with normalized reason fields.
@@ -193,9 +194,10 @@ class Failure:
     consumer wanting to do its own normalization should not have to
     re-read the catalog).
     """
-    owner_id: str           # process_id or hedtsk_id
-    ref_idx: int            # position within the owner's references list
-    doi: str                # may be "" for no-DOI refs
+
+    owner_id: str  # process_id or hedtsk_id
+    ref_idx: int  # position within the owner's references list
+    doi: str  # may be "" for no-DOI refs
     tried: tuple[str, ...]
     reason_raw: str
     reason_normalized: str
@@ -263,6 +265,7 @@ def iter_failed_refs(
 # Bucketing
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class Bucket:
     """One bucket of failures sharing a key.
@@ -275,6 +278,7 @@ class Bucket:
     full ref-ID list if a caller needs to enumerate all refs in a
     bucket.
     """
+
     key: str
     count: int = 0
     ref_ids: list[str] = field(default_factory=list)
@@ -304,7 +308,7 @@ def bucket_by_tried(failures: Iterable[Failure]) -> dict[str, Bucket]:
     the report's ordering is deterministic even before the
     count-sort).
     """
-    out: "OrderedDict[str, Bucket]" = OrderedDict()
+    out: OrderedDict[str, Bucket] = OrderedDict()
     for f in failures:
         key = _format_tried(f.tried)
         b = out.setdefault(key, Bucket(key=key))
@@ -321,7 +325,7 @@ def bucket_by_reason_component(failures: Iterable[Failure]) -> dict[str, Bucket]
     triggered the same component twice (it shouldn't, in practice,
     because each candidate produces one note).
     """
-    out: "OrderedDict[str, Bucket]" = OrderedDict()
+    out: OrderedDict[str, Bucket] = OrderedDict()
     for f in failures:
         if not f.components:
             # Reasons that fail to split (empty reason, whitespace
@@ -342,7 +346,7 @@ def bucket_by_pattern(failures: Iterable[Failure]) -> dict[str, Bucket]:
     The finest cut.  Bucket key has shape
     ``"<tried-set> :: <normalized-reason>"``.
     """
-    out: "OrderedDict[str, Bucket]" = OrderedDict()
+    out: OrderedDict[str, Bucket] = OrderedDict()
     for f in failures:
         tried_part = _format_tried(f.tried)
         reason_part = f.reason_normalized or "(empty)"
@@ -355,6 +359,7 @@ def bucket_by_pattern(failures: Iterable[Failure]) -> dict[str, Bucket]:
 # ---------------------------------------------------------------------------
 # Report formatting
 # ---------------------------------------------------------------------------
+
 
 def _sorted_buckets(buckets: dict[str, Bucket]) -> list[Bucket]:
     """Sort buckets by count desc, then key asc for stable ordering."""
@@ -390,10 +395,7 @@ def format_markdown_report(
     lines.append("")
     lines.append(f"Total failed refs: **{total}**.")
     lines.append("")
-    lines.append(
-        "Buckets are sorted by count desc.  See the JSON sidecar for "
-        "full ref-ID lists per bucket."
-    )
+    lines.append("Buckets are sorted by count desc.  See the JSON sidecar for full ref-ID lists per bucket.")
     lines.append("")
 
     # --- Table 1
@@ -413,8 +415,7 @@ def format_markdown_report(
     lines.append("## By normalized reason component")
     lines.append("")
     lines.append(
-        "Compound reasons split on `;`; each component counted "
-        "independently.  This is the candidate-level cut."
+        "Compound reasons split on `;`; each component counted independently.  This is the candidate-level cut."
     )
     lines.append("")
     lines.append("| Count | Reason component | Sample DOIs |")
@@ -428,9 +429,7 @@ def format_markdown_report(
     # --- Table 3
     lines.append("## By (tried, normalized reason) pattern")
     lines.append("")
-    lines.append(
-        "Finest cut.  Top rows are the design input for recovery passes."
-    )
+    lines.append("Finest cut.  Top rows are the design input for recovery passes.")
     lines.append("")
     lines.append("| Count | Pattern | Sample DOIs |")
     lines.append("|---:|---|---|")
@@ -476,17 +475,9 @@ def format_json_sidecar(
         "kind": kind,
         "when": when,
         "total": len(failures),
-        "by_tried": [
-            _serialize_bucket(b) for b in _sorted_buckets(bucket_by_tried(failures))
-        ],
-        "by_component": [
-            _serialize_bucket(b)
-            for b in _sorted_buckets(bucket_by_reason_component(failures))
-        ],
-        "by_pattern": [
-            _serialize_bucket(b)
-            for b in _sorted_buckets(bucket_by_pattern(failures))
-        ],
+        "by_tried": [_serialize_bucket(b) for b in _sorted_buckets(bucket_by_tried(failures))],
+        "by_component": [_serialize_bucket(b) for b in _sorted_buckets(bucket_by_reason_component(failures))],
+        "by_pattern": [_serialize_bucket(b) for b in _sorted_buckets(bucket_by_pattern(failures))],
     }
     return json.dumps(payload, indent=2, ensure_ascii=False)
 
@@ -494,6 +485,7 @@ def format_json_sidecar(
 # ---------------------------------------------------------------------------
 # CLI driver
 # ---------------------------------------------------------------------------
+
 
 def _utc_today() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
@@ -534,8 +526,7 @@ def _parse_args(argv: list[str] | None) -> argparse.Namespace:
         "--limit",
         type=int,
         default=25,
-        help="Cap on rows printed per table in the Markdown report. "
-             "Default: 25.  JSON sidecar carries the full lists.",
+        help="Cap on rows printed per table in the Markdown report. Default: 25.  JSON sidecar carries the full lists.",
     )
     p.add_argument(
         "--stdout",

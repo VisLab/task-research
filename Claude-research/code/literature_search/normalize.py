@@ -24,15 +24,14 @@ Imports:
     from normalize import Candidate, normalize_openalex, normalize_europepmc, normalize_s2
 """
 
-import re
 from dataclasses import dataclass, field
 
 from hed_metadata_toolkit.citation_identity import build_pub_id
 
-
 # ---------------------------------------------------------------------------
 # Candidate dataclass
 # ---------------------------------------------------------------------------
+
 
 @dataclass
 class Candidate:
@@ -42,23 +41,23 @@ class Candidate:
     pmid: str | None
     title: str
     first_author_family: str | None
-    last_author_family: str | None        # best-effort; None when not extractable
-    authors_display: str                  # "Badre, D., & Nee, D. E."
+    last_author_family: str | None  # best-effort; None when not extractable
+    authors_display: str  # "Badre, D., & Nee, D. E."
     year: int | None
     venue: str | None
     publisher: str | None
-    abstract: str | None                  # reconstructed or raw; capped at 2000 chars
+    abstract: str | None  # reconstructed or raw; capped at 2000 chars
     is_review: bool
     is_meta_analysis: bool
     citation_count: int | None
-    fwci: float | None                    # OpenAlex field-weighted citation impact
+    fwci: float | None  # OpenAlex field-weighted citation impact
     cited_by_percentile_year: float | None  # OpenAlex min-percentile (0-100)
     influential_citation_count: int | None  # Semantic Scholar
     oa_status: str | None
     oa_url: str | None
     # v3 additions
-    tldr: str | None = None               # S2 TLDR text; None for non-S2 records
-    s2_paper_id: str | None = None        # S2 paperId; required for Stage B seeds
+    tldr: str | None = None  # S2 TLDR text; None for non-S2 records
+    s2_paper_id: str | None = None  # S2 paperId; required for Stage B seeds
     mesh_terms: list[str] = field(default_factory=list)
     openalex_topics: list[dict] = field(default_factory=list)
     sources: list[str] = field(default_factory=list)
@@ -68,9 +67,9 @@ class Candidate:
     # v4 additions (JSON-pipeline refactor; populated post-ranking)
     composite_score: float | None = None
     score_components: dict = field(default_factory=dict)
-    human_subject: bool | None = None     # None == not yet classified or unknown
+    human_subject: bool | None = None  # None == not yet classified or unknown
     species_evidence: list[str] = field(default_factory=list)  # for audit
-    tier: str | None = None               # "picked" | "reserve" | "excluded"
+    tier: str | None = None  # "picked" | "reserve" | "excluded"
     exclusion_reason: str | None = None
     auto_role: str | None = None
     # Publication-type list, populated from each source's vocabulary.
@@ -85,6 +84,7 @@ class Candidate:
 # ---------------------------------------------------------------------------
 # Abstract reconstruction
 # ---------------------------------------------------------------------------
+
 
 def reconstruct_abstract(inverted_index: dict | None) -> str | None:
     """Reconstruct readable text from OpenAlex abstract_inverted_index.
@@ -114,6 +114,7 @@ def reconstruct_abstract(inverted_index: dict | None) -> str | None:
 # Author helpers
 # ---------------------------------------------------------------------------
 
+
 def _authors_display(names: list[str]) -> str:
     """Format a name list as a brief display string."""
     if not names:
@@ -131,13 +132,14 @@ def _clean_doi(doi_raw: str | None) -> str | None:
     doi = doi_raw.lower().strip()
     for prefix in ("https://doi.org/", "http://doi.org/", "doi:"):
         if doi.startswith(prefix):
-            doi = doi[len(prefix):]
+            doi = doi[len(prefix) :]
     return doi or None
 
 
 # ---------------------------------------------------------------------------
 # OpenAlex normalization
 # ---------------------------------------------------------------------------
+
 
 def normalize_openalex(raw: dict) -> "Candidate | None":
     """Normalize an OpenAlex Works record.  Returns None if title is missing."""
@@ -172,11 +174,7 @@ def normalize_openalex(raw: dict) -> "Candidate | None":
     primary_loc = raw.get("primary_location") or {}
     source = primary_loc.get("source") or {}
     venue = source.get("display_name") or None
-    publisher = (
-        source.get("host_organization_name")
-        or source.get("publisher")
-        or None
-    )
+    publisher = source.get("host_organization_name") or source.get("publisher") or None
 
     # Abstract
     abstract = reconstruct_abstract(raw.get("abstract_inverted_index"))
@@ -209,10 +207,7 @@ def normalize_openalex(raw: dict) -> "Candidate | None":
     oa_url = oa.get("oa_url")
 
     # MeSH (OpenAlex exposes this via mesh field)
-    mesh_terms = [
-        m.get("descriptor_name", "") for m in (raw.get("mesh") or [])
-        if m.get("descriptor_name")
-    ]
+    mesh_terms = [m.get("descriptor_name", "") for m in (raw.get("mesh") or []) if m.get("descriptor_name")]
 
     openalex_topics = raw.get("topics") or []
 
@@ -239,8 +234,8 @@ def normalize_openalex(raw: dict) -> "Candidate | None":
         influential_citation_count=None,
         oa_status=oa_status,
         oa_url=oa_url,
-        tldr=None,          # OpenAlex does not provide TLDR
-        s2_paper_id=None,   # OpenAlex does not provide S2 paperId
+        tldr=None,  # OpenAlex does not provide TLDR
+        s2_paper_id=None,  # OpenAlex does not provide S2 paperId
         mesh_terms=mesh_terms,
         openalex_topics=openalex_topics,
         sources=["openalex"],
@@ -252,6 +247,7 @@ def normalize_openalex(raw: dict) -> "Candidate | None":
 # ---------------------------------------------------------------------------
 # Europe PMC normalization
 # ---------------------------------------------------------------------------
+
 
 def normalize_europepmc(raw: dict) -> "Candidate | None":
     """Normalize a Europe PMC core record.  Returns None if title is missing."""
@@ -322,10 +318,7 @@ def normalize_europepmc(raw: dict) -> "Candidate | None":
     mh_list = (raw.get("meshHeadingList") or {}).get("meshHeading") or []
     if isinstance(mh_list, dict):
         mh_list = [mh_list]
-    mesh_terms = [
-        m.get("descriptorName", "") for m in mh_list
-        if isinstance(m, dict) and m.get("descriptorName")
-    ]
+    mesh_terms = [m.get("descriptorName", "") for m in mh_list if isinstance(m, dict) and m.get("descriptorName")]
 
     pub_id = build_pub_id(first_author_family, year, title)
 
@@ -350,8 +343,8 @@ def normalize_europepmc(raw: dict) -> "Candidate | None":
         influential_citation_count=None,
         oa_status=oa_status,
         oa_url=oa_url,
-        tldr=None,          # EuropePMC does not provide TLDR
-        s2_paper_id=None,   # EuropePMC does not provide S2 paperId
+        tldr=None,  # EuropePMC does not provide TLDR
+        s2_paper_id=None,  # EuropePMC does not provide S2 paperId
         mesh_terms=mesh_terms,
         openalex_topics=[],
         sources=["europepmc"],
@@ -363,6 +356,7 @@ def normalize_europepmc(raw: dict) -> "Candidate | None":
 # ---------------------------------------------------------------------------
 # Semantic Scholar normalization
 # ---------------------------------------------------------------------------
+
 
 def normalize_s2(raw: dict) -> "Candidate | None":
     """Normalize a Semantic Scholar paper record.  Returns None if title is missing.

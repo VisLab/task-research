@@ -53,7 +53,6 @@ import sys
 from datetime import datetime
 from pathlib import Path
 
-
 SCHEMA_VERSION = "phase3_review_v1"
 
 
@@ -61,11 +60,12 @@ SCHEMA_VERSION = "phase3_review_v1"
 # Label rendering — what the reviewer sees in `decisions[i].label`
 # ---------------------------------------------------------------------------
 
+
 def _format_citations(n: int | None) -> str:
     if n is None:
         return ""
     if n >= 1000:
-        return f"{n//1000}k×"
+        return f"{n // 1000}k×"
     return f"{n}×"
 
 
@@ -86,12 +86,12 @@ def build_label(c: dict) -> str:
     Format: "FirstAuthor YEAR — Title... (Venue, role, NNN×)"
     """
     first = c.get("first_author") or "?"
-    year  = c.get("year") or "????"
+    year = c.get("year") or "????"
     title = (c.get("title") or "").strip()
     if len(title) > 80:
         title = title[:77] + "…"
     venue = _venue_short(c.get("venue"))
-    role  = c.get("auto_role") or "?"
+    role = c.get("auto_role") or "?"
     cites = _format_citations(c.get("citation_count"))
 
     badges_parts: list[str] = [venue, role]
@@ -106,29 +106,31 @@ def build_label(c: dict) -> str:
 # Decision-row construction
 # ---------------------------------------------------------------------------
 
+
 def build_decision_row(c: dict) -> dict:
     """Pre-populated decision row for one picked candidate."""
     return {
-        "rank":          c.get("rank"),
-        "label":         build_label(c),
-        "doi":           c.get("doi"),
-        "pub_id":        c.get("pub_id"),
-        "auto_role":     c.get("auto_role"),
-        "score":         c.get("score"),     # full breakdown carried forward
+        "rank": c.get("rank"),
+        "label": build_label(c),
+        "doi": c.get("doi"),
+        "pub_id": c.get("pub_id"),
+        "auto_role": c.get("auto_role"),
+        "score": c.get("score"),  # full breakdown carried forward
         "human_subject": c.get("human_subject"),
-        "year":          c.get("year"),
-        "venue":         c.get("venue"),
+        "year": c.get("year"),
+        "venue": c.get("venue"),
         "citation_count": c.get("citation_count"),
         # Decision fields — null by default (= accept the auto pick).
-        "action":         None,
-        "role_override":  None,
-        "notes":          None,
+        "action": None,
+        "role_override": None,
+        "notes": None,
     }
 
 
 # ---------------------------------------------------------------------------
 # Rebase
 # ---------------------------------------------------------------------------
+
 
 def _decision_key(entry: dict) -> str | None:
     """Return the matching key for a decision row.
@@ -148,11 +150,7 @@ def _decision_key(entry: dict) -> str | None:
 
 def _is_human_decision(entry: dict) -> bool:
     """A decision is 'human' if any of action / role_override / notes is set."""
-    return bool(
-        entry.get("action") is not None
-        or entry.get("role_override") is not None
-        or entry.get("notes")
-    )
+    return bool(entry.get("action") is not None or entry.get("role_override") is not None or entry.get("notes"))
 
 
 def rebase_decisions(
@@ -195,52 +193,55 @@ def rebase_decisions(
             continue
         key = _decision_key(prior)
         if not key:
-            previously_decided.append({
-                **prior,
-                "rebase_note": "could not match (no DOI or pub_id)",
-                "current_tier": None,
-            })
+            previously_decided.append(
+                {
+                    **prior,
+                    "rebase_note": "could not match (no DOI or pub_id)",
+                    "current_tier": None,
+                }
+            )
             continue
 
         # Survivor in picked tier: carry user fields forward.
         if key in new_by_key:
             target = new_by_key[key]
-            target["action"]        = prior.get("action")
+            target["action"] = prior.get("action")
             target["role_override"] = prior.get("role_override")
-            target["notes"]         = prior.get("notes")
+            target["notes"] = prior.get("notes")
             continue
 
         # Still in candidates but in a different tier?
         existing = current_candidates_by_key.get(key)
         if existing is not None:
             current_tier = existing.get("tier")
-            previously_decided.append({
-                **{k: v for k, v in prior.items() if k != "score"},
-                "current_tier":  current_tier,
-                "current_rank":  existing.get("rank"),
-                "rebase_note": (
-                    f"previously picked; now in {current_tier!r}. "
-                    "Phase 6 ignores non-picked entries; promote it back "
-                    "if you still want it included."
-                ),
-            })
+            previously_decided.append(
+                {
+                    **{k: v for k, v in prior.items() if k != "score"},
+                    "current_tier": current_tier,
+                    "current_rank": existing.get("rank"),
+                    "rebase_note": (
+                        f"previously picked; now in {current_tier!r}. "
+                        "Phase 6 ignores non-picked entries; promote it back "
+                        "if you still want it included."
+                    ),
+                }
+            )
             continue
 
         # Gone entirely.
-        previously_decided.append({
-            **{k: v for k, v in prior.items() if k != "score"},
-            "current_tier":  None,
-            "current_rank":  None,
-            "rebase_note": (
-                "no longer in current candidates (filter, query, or source "
-                "no longer returns it)."
-            ),
-        })
+        previously_decided.append(
+            {
+                **{k: v for k, v in prior.items() if k != "score"},
+                "current_tier": None,
+                "current_rank": None,
+                "rebase_note": ("no longer in current candidates (filter, query, or source no longer returns it)."),
+            }
+        )
 
     # Also rebase any prior previously_decided entries — drop ones that
     # have come back into picked (rare but possible) and otherwise carry
     # them forward.
-    for prior_orphan in (prior_review.get("previously_decided", []) or []):
+    for prior_orphan in prior_review.get("previously_decided", []) or []:
         key = _decision_key(prior_orphan)
         if not key:
             continue
@@ -248,9 +249,9 @@ def rebase_decisions(
             # The orphan came back into picked. Promote its preserved
             # decision into the live decisions list.
             target = new_by_key[key]
-            target["action"]        = prior_orphan.get("action")
+            target["action"] = prior_orphan.get("action")
             target["role_override"] = prior_orphan.get("role_override")
-            target["notes"]         = prior_orphan.get("notes")
+            target["notes"] = prior_orphan.get("notes")
             continue
         previously_decided.append(prior_orphan)
 
@@ -260,6 +261,7 @@ def rebase_decisions(
 # ---------------------------------------------------------------------------
 # Per-item processing
 # ---------------------------------------------------------------------------
+
 
 def extract_one(
     candidates_path: Path,
@@ -305,39 +307,37 @@ def extract_one(
                 prior_review = json.load(f)
         except json.JSONDecodeError as exc:
             print(
-                f"WARN: existing review file {review_path} does not parse: {exc}; "
-                f"starting from a fresh skeleton.",
+                f"WARN: existing review file {review_path} does not parse: {exc}; starting from a fresh skeleton.",
                 file=sys.stderr,
             )
             prior_review = None
 
     decisions, previously_decided = rebase_decisions(
-        new_decisions, prior_review, by_key,
+        new_decisions,
+        prior_review,
+        by_key,
     )
 
     review_doc: dict = {
-        "schema_version":      SCHEMA_VERSION,
-        "item":                item,
+        "schema_version": SCHEMA_VERSION,
+        "item": item,
         "candidates_run_date": cand_doc.get("generated"),
-        "extracted_on":        datetime.now().isoformat(timespec="seconds"),
+        "extracted_on": datetime.now().isoformat(timespec="seconds"),
         "extraction": {
             "max_picked": max_picked,
-            "n_picked":   len(decisions),
+            "n_picked": len(decisions),
         },
-        "decisions":           decisions,
+        "decisions": decisions,
     }
     if previously_decided:
         review_doc["previously_decided"] = previously_decided
 
     summary = {
-        "item_id":             item_id,
-        "n_decisions":         len(decisions),
+        "item_id": item_id,
+        "n_decisions": len(decisions),
         "n_previously_decided": len(previously_decided),
-        "n_carried_forward":   sum(
-            1 for d in decisions
-            if d.get("action") is not None
-            or d.get("role_override") is not None
-            or d.get("notes")
+        "n_carried_forward": sum(
+            1 for d in decisions if d.get("action") is not None or d.get("role_override") is not None or d.get("notes")
         ),
     }
 
@@ -354,27 +354,33 @@ def extract_one(
 # CLI driver
 # ---------------------------------------------------------------------------
 
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--workspace", default=".",
-                    help="Workspace root (default: cwd)")
-    ap.add_argument("--candidates-dir", default="outputs/phase3/candidates",
-                    help="Where the candidates JSONs live (relative to workspace).")
-    ap.add_argument("--review-dir", default="outputs/phase3/review",
-                    help="Where to write review JSONs (relative to workspace).")
-    ap.add_argument("--item", default="",
-                    help="Single item_id to process; default is all candidates files.")
-    ap.add_argument("--max-picked", type=int, default=None,
-                    help="Override the n_picked from the candidates run. "
-                         "If set, only the top N picked candidates appear "
-                         "in the review file.")
-    ap.add_argument("--dry-run", action="store_true",
-                    help="Print summary but do not write review files.")
+    ap.add_argument("--workspace", default=".", help="Workspace root (default: cwd)")
+    ap.add_argument(
+        "--candidates-dir",
+        default="outputs/phase3/candidates",
+        help="Where the candidates JSONs live (relative to workspace).",
+    )
+    ap.add_argument(
+        "--review-dir", default="outputs/phase3/review", help="Where to write review JSONs (relative to workspace)."
+    )
+    ap.add_argument("--item", default="", help="Single item_id to process; default is all candidates files.")
+    ap.add_argument(
+        "--max-picked",
+        type=int,
+        default=None,
+        help="Override the n_picked from the candidates run. "
+        "If set, only the top N picked candidates appear "
+        "in the review file.",
+    )
+    ap.add_argument("--dry-run", action="store_true", help="Print summary but do not write review files.")
     args = ap.parse_args()
 
     ws = Path(args.workspace).resolve()
     cand_dir = ws / args.candidates_dir
-    rev_dir  = ws / args.review_dir
+    rev_dir = ws / args.review_dir
 
     if not cand_dir.exists():
         print(f"ERROR: candidates dir not found: {cand_dir}", file=sys.stderr)
@@ -397,22 +403,25 @@ def main() -> int:
     print()
 
     total_decisions = 0
-    total_carried   = 0
-    total_orphans   = 0
+    total_carried = 0
+    total_orphans = 0
     for cf in cand_files:
         if not cf.exists():
             print(f"  MISSING: {cf}")
             continue
         try:
             out_path, summary = extract_one(
-                cf, rev_dir, write=write, max_picked=args.max_picked,
+                cf,
+                rev_dir,
+                write=write,
+                max_picked=args.max_picked,
             )
         except (ValueError, KeyError) as exc:
             print(f"  ERROR processing {cf.name}: {exc}", file=sys.stderr)
             continue
         total_decisions += summary["n_decisions"]
-        total_carried   += summary["n_carried_forward"]
-        total_orphans   += summary["n_previously_decided"]
+        total_carried += summary["n_carried_forward"]
+        total_orphans += summary["n_previously_decided"]
         print(
             f"  {summary['item_id']:40s}  "
             f"decisions={summary['n_decisions']:3d}  "

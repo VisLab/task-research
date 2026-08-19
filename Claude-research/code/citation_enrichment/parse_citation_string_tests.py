@@ -8,8 +8,9 @@ synthetic variants.  Run with:
     python outputs\\parse_citation_string_tests.py
 """
 
-import sys
 import os
+import sys
+
 sys.path.insert(0, os.path.dirname(__file__))
 
 from parse_citation_string import parse
@@ -104,7 +105,7 @@ test(
     authors="Lang, P. J., Bradley, M. M., & Cuthbert, B. N.",
     year=1997,
     title="International Affective Picture System (IAPS): Technical Manual and Affective Ratings",
-    venue_type="report",   # NIMH = report
+    venue_type="report",  # NIMH = report
     parse_quality="clean_report",
 )
 

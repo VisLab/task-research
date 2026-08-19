@@ -13,17 +13,17 @@ Writes: parse_dryrun_report.md  (in this directory)
 
 import json
 import sys
-from pathlib import Path
 from collections import defaultdict
+from pathlib import Path
 
 # Locate files relative to this script.
-SCRIPT_DIR   = Path(__file__).parent
-TASK_FILE    = SCRIPT_DIR.parent / "task_details.json"
-REPORT_FILE  = SCRIPT_DIR / "parse_dryrun_report.md"
+SCRIPT_DIR = Path(__file__).parent
+TASK_FILE = SCRIPT_DIR.parent / "task_details.json"
+REPORT_FILE = SCRIPT_DIR / "parse_dryrun_report.md"
 
 # Import the parser from the same directory.
 sys.path.insert(0, str(SCRIPT_DIR))
-from parse_citation_string import parse
+from parse_citation_string import parse  # noqa: E402
 
 # -----------------------------------------------------------------------
 # Load data
@@ -38,11 +38,10 @@ print(f"Loaded {len(tasks)} tasks from {TASK_FILE.name}")
 # Parse every reference string
 # -----------------------------------------------------------------------
 
-CATEGORIES = ["clean_journal", "clean_book", "clean_chapter",
-               "clean_report", "has_doi", "malformed"]
+CATEGORIES = ["clean_journal", "clean_book", "clean_chapter", "clean_report", "has_doi", "malformed"]
 
-results_by_cat  = defaultdict(list)   # category -> list of (task_id, string, ParsedCitation)
-all_strings     = []                  # (task_id, ref_key, string)
+results_by_cat = defaultdict(list)  # category -> list of (task_id, string, ParsedCitation)
+all_strings = []  # (task_id, ref_key, string)
 
 for task in tasks:
     tid = task.get("hedtsk_id", "?")
@@ -65,7 +64,7 @@ print(f"Parsed {total} reference strings.\n")
 lines = []
 lines.append("# Citation String Parse Dry-Run Report")
 lines.append("")
-lines.append(f"**Task file:** `task_details.json`  ")
+lines.append("**Task file:** `task_details.json`  ")
 lines.append(f"**Tasks:** {len(tasks)}  ")
 lines.append(f"**Total reference strings:** {total}")
 lines.append("")
@@ -83,8 +82,10 @@ malformed_n = len(results_by_cat["malformed"])
 malformed_pct = 100.0 * malformed_n / total if total else 0
 threshold_ok = malformed_pct < 5.0
 lines.append("")
-lines.append(f"**Malformed rate: {malformed_pct:.1f}%** "
-             f"({'OK - below 5% threshold' if threshold_ok else 'FAIL - exceeds 5% threshold; fix parser'})")
+lines.append(
+    f"**Malformed rate: {malformed_pct:.1f}%** "
+    f"({'OK - below 5% threshold' if threshold_ok else 'FAIL - exceeds 5% threshold; fix parser'})"
+)
 
 # -----------------------------------------------------------------------
 # Examples per category (up to 5 each)
@@ -98,7 +99,7 @@ for cat in CATEGORIES:
     rows = results_by_cat[cat]
     lines.append(f"### {cat} ({len(rows)} refs)")
     lines.append("")
-    for (tid, rk, s, pc) in rows[:5]:
+    for tid, rk, s, pc in rows[:5]:
         short = s if len(s) <= 120 else s[:117] + "..."
         lines.append(f"- `{tid}` ({rk})  ")
         lines.append(f"  `{short}`  ")
@@ -114,7 +115,7 @@ for cat in CATEGORIES:
             lines.append(f"  -> (year={pc.year}, title=`{pc.title[:50]}`)")
         lines.append("")
     if len(rows) > 5:
-        lines.append(f"  *...and {len(rows)-5} more.*")
+        lines.append(f"  *...and {len(rows) - 5} more.*")
         lines.append("")
 
 # -----------------------------------------------------------------------
@@ -126,7 +127,7 @@ if results_by_cat["malformed"]:
     lines.append("")
     lines.append("| Task | Ref key | String (truncated) |")
     lines.append("|---|---|---|")
-    for (tid, rk, s, pc) in results_by_cat["malformed"]:
+    for tid, rk, s, _pc in results_by_cat["malformed"]:
         short = s[:100].replace("|", "\\|") if s else ""
         lines.append(f"| {tid} | {rk} | `{short}` |")
     lines.append("")
@@ -144,7 +145,7 @@ print()
 print("Category breakdown:")
 for cat in CATEGORIES:
     n = len(results_by_cat[cat])
-    print(f"  {cat:20s}: {n:4d}  ({100.0*n/total:.1f}%)" if total else f"  {cat}: {n}")
+    print(f"  {cat:20s}: {n:4d}  ({100.0 * n / total:.1f}%)" if total else f"  {cat}: {n}")
 print()
 if not threshold_ok:
     print("ACTION REQUIRED: malformed rate exceeds 5%. Fix parse_citation_string.py before continuing.")

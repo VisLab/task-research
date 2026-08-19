@@ -58,15 +58,15 @@ import shutil
 import sys
 import time
 import unicodedata
-from dataclasses import dataclass, field
+from collections.abc import Callable, Iterator
+from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any, Callable, Iterator
 
 try:
     import requests
-except ImportError:  # pragma: no cover - environment misconfig
-    raise ImportError("'requests' is required: pip install requests")
+except ImportError as err:  # pragma: no cover - environment misconfig
+    raise ImportError("'requests' is required: pip install requests") from err
 
 # Local imports.  Catalog handling and cache helpers already live in the
 # package; we reuse them rather than duplicate.
@@ -75,7 +75,6 @@ if str(_HERE) not in sys.path:
     sys.path.insert(0, str(_HERE))
 
 from hed_metadata_toolkit.cache import cache_get_or_fetch  # noqa: E402
-
 
 logger = logging.getLogger(__name__)
 
@@ -87,10 +86,25 @@ logger = logging.getLogger(__name__)
 # Common stop-words to drop from a title before similarity scoring.
 # Kept short on purpose — large stop-word lists tend to hurt more than
 # they help on short academic titles.
-_TITLE_STOPWORDS: frozenset[str] = frozenset({
-    "a", "an", "and", "as", "at", "by", "for", "from", "in", "of",
-    "on", "or", "the", "to", "with",
-})
+_TITLE_STOPWORDS: frozenset[str] = frozenset(
+    {
+        "a",
+        "an",
+        "and",
+        "as",
+        "at",
+        "by",
+        "for",
+        "from",
+        "in",
+        "of",
+        "on",
+        "or",
+        "the",
+        "to",
+        "with",
+    }
+)
 
 
 def parse_surnames(authors: str) -> list[str]:
@@ -127,12 +141,10 @@ def parse_surnames(authors: str) -> list[str]:
 # Title normalisation + similarity
 # ---------------------------------------------------------------------------
 
+
 def _ascii_fold(text: str) -> str:
     """Strip diacritics to ASCII (so naïve == naive for matching)."""
-    return "".join(
-        c for c in unicodedata.normalize("NFKD", text)
-        if not unicodedata.combining(c)
-    )
+    return "".join(c for c in unicodedata.normalize("NFKD", text) if not unicodedata.combining(c))
 
 
 def normalize_title(title: str) -> set[str]:
@@ -174,6 +186,7 @@ def title_similarity(a: str, b: str) -> float:
 # Scoring
 # ---------------------------------------------------------------------------
 
+
 # Confidence tiers — tuned conservatively.  See module docstring for
 # rationale.  Tuning point: if HIGH proves too strict in practice the
 # maintainer can drop ``high_title`` to 0.85 and re-run.
@@ -192,9 +205,9 @@ DEFAULT_THRESHOLDS = Thresholds()
 @dataclass
 class Score:
     title_sim: float
-    year_delta: int | None      # absolute; None if either year missing
+    year_delta: int | None  # absolute; None if either year missing
     author_match: bool
-    tier: str                   # "high", "med", "low"
+    tier: str  # "high", "med", "low"
 
 
 def year_delta(ref_year: int | None, cand_year: int | None) -> int | None:
@@ -228,22 +241,21 @@ def score_candidate(
     author_match = bool(ref_set & cand_set)
 
     # Decide tier.
-    if (title_sim >= thresholds.high_title
-            and delta is not None
-            and delta <= thresholds.high_year_delta
-            and (author_match or not thresholds.high_require_author)):
+    if (
+        title_sim >= thresholds.high_title
+        and delta is not None
+        and delta <= thresholds.high_year_delta
+        and (author_match or not thresholds.high_require_author)
+    ):
         tier = "high"
-    elif (title_sim >= thresholds.med_title
-          and (
-              (delta is not None and delta <= thresholds.med_year_delta)
-              or author_match
-          )):
+    elif title_sim >= thresholds.med_title and (
+        (delta is not None and delta <= thresholds.med_year_delta) or author_match
+    ):
         tier = "med"
     else:
         tier = "low"
 
-    return Score(title_sim=title_sim, year_delta=delta,
-                 author_match=author_match, tier=tier)
+    return Score(title_sim=title_sim, year_delta=delta, author_match=author_match, tier=tier)
 
 
 # ---------------------------------------------------------------------------
@@ -307,12 +319,10 @@ def _do_openalex_search(
     try:
         resp = requests.get(_OPENALEX_BASE, params=params, timeout=20)
     except requests.RequestException as exc:
-        logger.info("openalex network error for title=%r year=%r: %s",
-                    title[:60], year, exc)
+        logger.info("openalex network error for title=%r year=%r: %s", title[:60], year, exc)
         return None
     if resp.status_code != 200:
-        logger.info("openalex HTTP %d for title=%r year=%r",
-                    resp.status_code, title[:60], year)
+        logger.info("openalex HTTP %d for title=%r year=%r", resp.status_code, title[:60], year)
         return None
     try:
         return resp.json()
@@ -362,13 +372,13 @@ def search_openalex(
 # Candidate extraction from OpenAlex response
 # ---------------------------------------------------------------------------
 
+
 def _strip_doi_prefix(doi_raw: str) -> str:
     """Strip the ``https://doi.org/`` prefix OpenAlex prepends."""
     s = (doi_raw or "").strip().lower()
-    for prefix in ("https://doi.org/", "http://doi.org/",
-                   "https://dx.doi.org/", "doi:"):
+    for prefix in ("https://doi.org/", "http://doi.org/", "https://dx.doi.org/", "doi:"):
         if s.startswith(prefix):
-            return s[len(prefix):]
+            return s[len(prefix) :]
     return s
 
 
@@ -380,7 +390,7 @@ def _extract_candidate_metadata(work: dict) -> dict:
     if openalex_url.startswith("https://openalex.org/"):
         openalex_id = openalex_url.split("/")[-1]
     surnames: list[str] = []
-    for au in (work.get("authorships") or []):
+    for au in work.get("authorships") or []:
         name = ((au or {}).get("author") or {}).get("display_name") or ""
         if not name:
             continue
@@ -402,17 +412,19 @@ def _extract_candidate_metadata(work: dict) -> dict:
 # Picking the best match
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class Match:
     """The best match for a ref, with its score and tier."""
+
     ref_owner_id: str
     ref_idx: int
     ref_title: str
     ref_year: int | None
     ref_authors: str
-    candidate: dict | None           # _extract_candidate_metadata shape
-    score: Score | None              # None if no candidates found
-    tier: str = "no_match"           # "high", "med", "low", "no_match"
+    candidate: dict | None  # _extract_candidate_metadata shape
+    score: Score | None  # None if no candidates found
+    tier: str = "no_match"  # "high", "med", "low", "no_match"
 
 
 def pick_best(
@@ -466,6 +478,7 @@ def pick_best(
 # Catalog walk
 # ---------------------------------------------------------------------------
 
+
 def iter_no_doi_refs(processes: dict, tasks: list) -> Iterator[tuple[str, int, dict]]:
     """Yield (owner_id, ref_idx, ref) for every ref with no DOI."""
     items: list[tuple[str, dict]] = []
@@ -484,6 +497,7 @@ def iter_no_doi_refs(processes: dict, tasks: list) -> Iterator[tuple[str, int, d
 # ---------------------------------------------------------------------------
 # Catalog I/O (staged write convention from CLAUDE.md)
 # ---------------------------------------------------------------------------
+
 
 def _load_catalog(workspace: Path) -> tuple[dict, list, Path, Path]:
     p_path = workspace / "process_details.json"
@@ -525,6 +539,7 @@ def _save_catalog(
 # Report writers
 # ---------------------------------------------------------------------------
 
+
 def _utc_today() -> str:
     return datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
@@ -542,14 +557,15 @@ def format_markdown_report(matches: list[Match], *, write_mode: bool) -> str:
     lines.append("")
     lines.append("| Tier | Count | Auto-action |")
     lines.append("|---|---:|---|")
-    lines.append(f"| HIGH (auto-stamp candidate)        | {len(by_tier['high'])} "
-                 f"| {'Stamped' if write_mode else 'WOULD stamp (rerun with --write)'} |")
-    lines.append(f"| MED  (human review needed)         | {len(by_tier['med'])} "
-                 f"| Listed below for manual review |")
-    lines.append(f"| LOW  (weak match, skipped)         | {len(by_tier['low'])} "
-                 f"| Not stamped |")
-    lines.append(f"| no_match (no candidates returned)  | {len(by_tier['no_match'])} "
-                 f"| Genuine gap — title not in OpenAlex |")
+    lines.append(
+        f"| HIGH (auto-stamp candidate)        | {len(by_tier['high'])} "
+        f"| {'Stamped' if write_mode else 'WOULD stamp (rerun with --write)'} |"
+    )
+    lines.append(f"| MED  (human review needed)         | {len(by_tier['med'])} | Listed below for manual review |")
+    lines.append(f"| LOW  (weak match, skipped)         | {len(by_tier['low'])} | Not stamped |")
+    lines.append(
+        f"| no_match (no candidates returned)  | {len(by_tier['no_match'])} | Genuine gap — title not in OpenAlex |"
+    )
     lines.append("")
 
     for tier_label, header in [
@@ -569,19 +585,13 @@ def format_markdown_report(matches: list[Match], *, write_mode: bool) -> str:
             ref_id = f"`{m.ref_owner_id}#{m.ref_idx}`"
             title = (m.ref_title or "")[:60]
             if m.candidate is None:
-                lines.append(
-                    f"| {ref_id} | {m.ref_year or '?'} | {title} | — | — | — | — |"
-                )
+                lines.append(f"| {ref_id} | {m.ref_year or '?'} | {title} | — | — | — | — |")
             else:
                 doi = m.candidate.get("doi") or "—"
                 ts = f"{m.score.title_sim:.2f}" if m.score else "—"
-                yd = (str(m.score.year_delta) if m.score and m.score.year_delta is not None
-                      else "—")
+                yd = str(m.score.year_delta) if m.score and m.score.year_delta is not None else "—"
                 am = "✓" if (m.score and m.score.author_match) else "—"
-                lines.append(
-                    f"| {ref_id} | {m.ref_year or '?'} | {title} "
-                    f"| `{doi}` | {ts} | {yd} | {am} |"
-                )
+                lines.append(f"| {ref_id} | {m.ref_year or '?'} | {title} | `{doi}` | {ts} | {yd} | {am} |")
         lines.append("")
 
     return "\n".join(lines)
@@ -601,23 +611,25 @@ def format_json_sidecar(matches: list[Match]) -> str:
                 "author_match": m.score.author_match,
                 "tier": m.score.tier,
             }
-        out.append({
-            "ref_owner_id": m.ref_owner_id,
-            "ref_idx": m.ref_idx,
-            "ref_title": m.ref_title,
-            "ref_year": m.ref_year,
-            "ref_authors": m.ref_authors,
-            "candidate": cand,
-            "score": score,
-            "tier": m.tier,
-        })
-    return json.dumps({"when": _utc_today(), "matches": out},
-                      indent=2, ensure_ascii=False)
+        out.append(
+            {
+                "ref_owner_id": m.ref_owner_id,
+                "ref_idx": m.ref_idx,
+                "ref_title": m.ref_title,
+                "ref_year": m.ref_year,
+                "ref_authors": m.ref_authors,
+                "candidate": cand,
+                "score": score,
+                "tier": m.tier,
+            }
+        )
+    return json.dumps({"when": _utc_today(), "matches": out}, indent=2, ensure_ascii=False)
 
 
 # ---------------------------------------------------------------------------
 # Orchestration
 # ---------------------------------------------------------------------------
+
 
 def run_enrich(
     processes: dict,
@@ -643,7 +655,8 @@ def run_enrich(
         ref_year = ref.get("year")
 
         cand_works = search_openalex(
-            ref_title, ref_year,
+            ref_title,
+            ref_year,
             cache_dir=cache_dir,
             mailto=mailto,
             fetch_fn=fetch_fn,
@@ -655,20 +668,22 @@ def run_enrich(
         else:
             tier = score.tier
 
-        matches.append(Match(
-            ref_owner_id=owner_id,
-            ref_idx=idx,
-            ref_title=ref_title,
-            ref_year=ref_year,
-            ref_authors=ref.get("authors") or "",
-            candidate=best,
-            score=score,
-            tier=tier,
-        ))
+        matches.append(
+            Match(
+                ref_owner_id=owner_id,
+                ref_idx=idx,
+                ref_title=ref_title,
+                ref_year=ref_year,
+                ref_authors=ref.get("authors") or "",
+                candidate=best,
+                score=score,
+                tier=tier,
+            )
+        )
 
-        logger.info("[%s#%d] tier=%s title=%r%s",
-                    owner_id, idx, tier, ref_title[:60],
-                    f" -> doi={best['doi']}" if best else "")
+        logger.info(
+            "[%s#%d] tier=%s title=%r%s", owner_id, idx, tier, ref_title[:60], f" -> doi={best['doi']}" if best else ""
+        )
     return matches
 
 
@@ -694,8 +709,7 @@ def apply_high_matches(
             continue
         refs = by_owner.get(m.ref_owner_id, [])
         if m.ref_idx >= len(refs):
-            logger.warning("ref index out of range: %s#%d",
-                           m.ref_owner_id, m.ref_idx)
+            logger.warning("ref index out of range: %s#%d", m.ref_owner_id, m.ref_idx)
             continue
         ref = refs[m.ref_idx]
         ids = ref.setdefault("ids", {})
@@ -710,23 +724,27 @@ def apply_high_matches(
 # CLI driver
 # ---------------------------------------------------------------------------
 
+
 def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--workspace", default=".",
-                   help="Workspace root (Claude-research/).  Default: cwd.")
-    p.add_argument("--cache-dir", default="<auto>",
-                   help="Cache root.  Resolves via --cache-dir > "
-                        "$HED_CACHE_DIR > <workspace>/outputs/cache.")
-    p.add_argument("--output-dir", default="outputs/analysis",
-                   help="Workspace-relative output for report + JSON sidecar.")
-    p.add_argument("--write", action="store_true",
-                   help="Auto-stamp ids.doi on HIGH-confidence matches.  "
-                        "Default is dry-run (compute matches, write report, "
-                        "leave catalog unchanged).")
-    p.add_argument("--limit", type=int, default=0,
-                   help="Cap on number of no-DOI refs processed (0 = no cap).")
-    p.add_argument("--mailto", default="",
-                   help="Override the mailto string sent to OpenAlex.")
+    p.add_argument("--workspace", default=".", help="Workspace root (Claude-research/).  Default: cwd.")
+    p.add_argument(
+        "--cache-dir",
+        default="<auto>",
+        help="Cache root.  Resolves via --cache-dir > $HED_CACHE_DIR > <workspace>/outputs/cache.",
+    )
+    p.add_argument(
+        "--output-dir", default="outputs/analysis", help="Workspace-relative output for report + JSON sidecar."
+    )
+    p.add_argument(
+        "--write",
+        action="store_true",
+        help="Auto-stamp ids.doi on HIGH-confidence matches.  "
+        "Default is dry-run (compute matches, write report, "
+        "leave catalog unchanged).",
+    )
+    p.add_argument("--limit", type=int, default=0, help="Cap on number of no-DOI refs processed (0 = no cap).")
+    p.add_argument("--mailto", default="", help="Override the mailto string sent to OpenAlex.")
     p.add_argument("--verbose", "-v", action="store_true")
     return p.parse_args(argv)
 
@@ -768,7 +786,8 @@ def main(
         return 2
 
     matches = run_enrich(
-        processes, tasks,
+        processes,
+        tasks,
         cache_dir=cache_dir,
         mailto=mailto,
         limit=args.limit,

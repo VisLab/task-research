@@ -48,16 +48,19 @@ def load_process_vocabulary():
 
 # ---- task_names.json ----
 
+
 def generate_task_names(tasks):
     entries = []
     for t in tasks:
-        entries.append({
-            "hedtsk_id": t["hedtsk_id"],
-            "canonical_name": t["canonical_name"],
-            "short_definition": t.get("short_definition", ""),
-            "aliases": t.get("aliases", []),
-            "variation_names": [v["name"] for v in t.get("variations", [])],
-        })
+        entries.append(
+            {
+                "hedtsk_id": t["hedtsk_id"],
+                "canonical_name": t["canonical_name"],
+                "short_definition": t.get("short_definition", ""),
+                "aliases": t.get("aliases", []),
+                "variation_names": [v["name"] for v in t.get("variations", [])],
+            }
+        )
     # Sort alphabetically by canonical_name
     entries.sort(key=lambda e: e["canonical_name"])
     return {
@@ -73,6 +76,7 @@ def generate_task_names(tasks):
 
 # ---- process_task_index.json (thin reverse-index — NOT the authoritative process_details.json) ----
 
+
 def generate_process_task_index(tasks, process_vocab):
     # Build reverse index: process_id → list of tasks
     reverse = {}
@@ -80,22 +84,26 @@ def generate_process_task_index(tasks, process_vocab):
         for pid in t.get("hed_process_ids", []):
             if pid not in reverse:
                 reverse[pid] = []
-            reverse[pid].append({
-                "hedtsk_id": t["hedtsk_id"],
-                "canonical_name": t["canonical_name"],
-            })
+            reverse[pid].append(
+                {
+                    "hedtsk_id": t["hedtsk_id"],
+                    "canonical_name": t["canonical_name"],
+                }
+            )
 
     # Build process entries, sorted alphabetically by process_id
     processes = []
     for pid in sorted(reverse.keys()):
         name = process_vocab.get(pid, pid.replace("hed_", "").replace("_", " ").capitalize())
         tasks_list = sorted(reverse[pid], key=lambda x: x["canonical_name"])
-        processes.append({
-            "process_id": pid,
-            "process_name": name,
-            "tasks": tasks_list,
-            "task_count": len(tasks_list),
-        })
+        processes.append(
+            {
+                "process_id": pid,
+                "process_name": name,
+                "tasks": tasks_list,
+                "task_count": len(tasks_list),
+            }
+        )
 
     return {
         "description": (
@@ -115,6 +123,7 @@ def generate_process_task_index(tasks, process_vocab):
 
 
 # ---- process_task_crossref.md ----
+
 
 def generate_crossref(tasks, process_vocab):
     lines = [
@@ -147,6 +156,7 @@ def generate_crossref(tasks, process_vocab):
 
 
 # ---- main ----
+
 
 def main():
     tasks = load_tasks()

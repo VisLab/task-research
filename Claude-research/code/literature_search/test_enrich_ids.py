@@ -25,24 +25,23 @@ from enrich_ids import (  # noqa: E402
     merge_id_sets,
 )
 
-
 # ---------------------------------------------------------------------------
 # Fixtures (paper-shaped, not necessarily real)
 # ---------------------------------------------------------------------------
 
 OPENALEX_FULL = {
-    "id":  "https://openalex.org/W2003876547",
+    "id": "https://openalex.org/W2003876547",
     "doi": "https://doi.org/10.3389/fnhum.2014.00443",
     "ids": {
         "openalex": "https://openalex.org/W2003876547",
-        "doi":      "https://doi.org/10.3389/fnhum.2014.00443",
-        "pmid":     "https://pubmed.ncbi.nlm.nih.gov/25076880",
-        "pmcid":    "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4097944",
+        "doi": "https://doi.org/10.3389/fnhum.2014.00443",
+        "pmid": "https://pubmed.ncbi.nlm.nih.gov/25076880",
+        "pmcid": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4097944",
     },
 }
 
 OPENALEX_NO_PMCID = {
-    "id":  "https://openalex.org/W17225164",
+    "id": "https://openalex.org/W17225164",
     "ids": {"pmid": "https://pubmed.ncbi.nlm.nih.gov/17225164"},
 }
 
@@ -54,11 +53,11 @@ OPENALEX_BARE = {
 S2_FULL = {
     "paperId": "fedcba9876543210",
     "externalIds": {
-        "DOI":           "10.3389/fnhum.2014.00443",
-        "PubMed":        "25076880",
-        "PubMedCentral": "4097944",           # bare digits — must be PMC-prefixed
-        "ArXiv":         "1234.5678",
-        "MAG":           "2003876547",
+        "DOI": "10.3389/fnhum.2014.00443",
+        "PubMed": "25076880",
+        "PubMedCentral": "4097944",  # bare digits — must be PMC-prefixed
+        "ArXiv": "1234.5678",
+        "MAG": "2003876547",
     },
 }
 
@@ -77,12 +76,13 @@ S2_MINIMAL = {
 # extract_ids_from_openalex
 # ---------------------------------------------------------------------------
 
+
 def test_extract_openalex_ids_full() -> None:
     got = extract_ids_from_openalex(OPENALEX_FULL)
     assert got == {
         "openalex_id": "W2003876547",
-        "pmid":        "25076880",
-        "pmcid":       "PMC4097944",
+        "pmid": "25076880",
+        "pmcid": "PMC4097944",
     }
 
 
@@ -90,7 +90,7 @@ def test_extract_openalex_ids_partial() -> None:
     got = extract_ids_from_openalex(OPENALEX_NO_PMCID)
     assert got == {
         "openalex_id": "W17225164",
-        "pmid":        "17225164",
+        "pmid": "17225164",
     }
 
 
@@ -108,12 +108,13 @@ def test_extract_openalex_ids_empty_or_none() -> None:
 # extract_ids_from_s2
 # ---------------------------------------------------------------------------
 
+
 def test_extract_s2_ids_full() -> None:
     got = extract_ids_from_s2(S2_FULL)
     assert got == {
-        "s2_id":    "fedcba9876543210",
-        "pmid":     "25076880",
-        "pmcid":    "PMC4097944",    # PMC-prefixed
+        "s2_id": "fedcba9876543210",
+        "pmid": "25076880",
+        "pmcid": "PMC4097944",  # PMC-prefixed
         "arxiv_id": "1234.5678",
     }
 
@@ -137,21 +138,22 @@ def test_extract_s2_ids_empty_or_none() -> None:
 # merge_id_sets
 # ---------------------------------------------------------------------------
 
+
 def test_merge_openalex_wins_pmid_pmcid() -> None:
     oa = {"openalex_id": "W1", "pmid": "111", "pmcid": "PMC222"}
     s2 = {"s2_id": "p1", "pmid": "999", "pmcid": "PMC888", "arxiv_id": "1.2"}
     got = merge_id_sets(oa, s2)
     assert got == {
         "openalex_id": "W1",
-        "pmid":        "111",      # OA wins
-        "pmcid":       "PMC222",   # OA wins
-        "s2_id":       "p1",
-        "arxiv_id":    "1.2",
+        "pmid": "111",  # OA wins
+        "pmcid": "PMC222",  # OA wins
+        "s2_id": "p1",
+        "arxiv_id": "1.2",
     }
 
 
 def test_merge_s2_fills_when_openalex_silent() -> None:
-    oa = {"openalex_id": "W1", "pmid": "111"}            # no pmcid
+    oa = {"openalex_id": "W1", "pmid": "111"}  # no pmcid
     s2 = {"s2_id": "p1", "pmcid": "PMC222", "arxiv_id": "1.2"}
     got = merge_id_sets(oa, s2)
     assert got["pmcid"] == "PMC222"
@@ -164,17 +166,23 @@ def test_merge_s2_fills_when_openalex_silent() -> None:
 # apply_to_ref
 # ---------------------------------------------------------------------------
 
+
 def _empty_ids_ref() -> dict:
-    return {"ids": {
-        "doi": "10.x/y", "openalex_id": None, "pmid": None,
-        "pmcid": None, "s2_id": None, "arxiv_id": None,
-    }}
+    return {
+        "ids": {
+            "doi": "10.x/y",
+            "openalex_id": None,
+            "pmid": None,
+            "pmcid": None,
+            "s2_id": None,
+            "arxiv_id": None,
+        }
+    }
 
 
 def test_apply_fills_all_null_slots() -> None:
     ref = _empty_ids_ref()
-    cands = {"openalex_id": "W1", "pmid": "111", "pmcid": "PMC222",
-             "s2_id": "p1", "arxiv_id": "1.2"}
+    cands = {"openalex_id": "W1", "pmid": "111", "pmcid": "PMC222", "s2_id": "p1", "arxiv_id": "1.2"}
     n_filled, conflicts = apply_to_ref(ref, cands)
     assert n_filled == 5
     assert conflicts == []
@@ -187,8 +195,8 @@ def test_apply_never_overwrites_existing() -> None:
     ref["ids"]["pmid"] = "preexisting"
     cands = {"openalex_id": "W1", "pmid": "fresh", "pmcid": "PMC222"}
     n_filled, conflicts = apply_to_ref(ref, cands)
-    assert ref["ids"]["pmid"] == "preexisting"   # untouched
-    assert ref["ids"]["openalex_id"] == "W1"     # null slot filled
+    assert ref["ids"]["pmid"] == "preexisting"  # untouched
+    assert ref["ids"]["openalex_id"] == "W1"  # null slot filled
     assert ref["ids"]["pmcid"] == "PMC222"
     assert n_filled == 2
     assert conflicts == [("pmid", "preexisting", "fresh")]
@@ -196,12 +204,16 @@ def test_apply_never_overwrites_existing() -> None:
 
 def test_apply_idempotent_on_already_filled_ref() -> None:
     ref = _empty_ids_ref()
-    ref["ids"].update({
-        "openalex_id": "W1", "pmid": "111", "pmcid": "PMC222",
-        "s2_id": "p1", "arxiv_id": "1.2",
-    })
-    cands = {"openalex_id": "W1", "pmid": "111", "pmcid": "PMC222",
-             "s2_id": "p1", "arxiv_id": "1.2"}
+    ref["ids"].update(
+        {
+            "openalex_id": "W1",
+            "pmid": "111",
+            "pmcid": "PMC222",
+            "s2_id": "p1",
+            "arxiv_id": "1.2",
+        }
+    )
+    cands = {"openalex_id": "W1", "pmid": "111", "pmcid": "PMC222", "s2_id": "p1", "arxiv_id": "1.2"}
     n_filled, conflicts = apply_to_ref(ref, cands)
     assert n_filled == 0
     assert conflicts == []

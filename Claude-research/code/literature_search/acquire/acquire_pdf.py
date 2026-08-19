@@ -63,22 +63,20 @@ import json
 import logging
 import shutil
 import sys
+from collections.abc import Callable, Sequence
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Callable, Sequence
 
 # Make sibling modules importable when invoked as a script.
-_HERE = Path(__file__).resolve().parent          # …/acquire
-_PARENT = _HERE.parent                            # …/literature_search
+_HERE = Path(__file__).resolve().parent  # …/acquire
+_PARENT = _HERE.parent  # …/literature_search
 for p in (_HERE, _PARENT):
     if str(p) not in sys.path:
         sys.path.insert(0, str(p))
 
 # Local package imports.
 from __init__ import POC_REF_DOIS  # noqa: E402
-
 from core import (  # noqa: E402
-    ArtifactKind,
     artifact_dir,
     canonical_artifact_filename,
     has_recorded_failure,
@@ -90,12 +88,11 @@ from core import (  # noqa: E402
 from fetch import FetchResult, fetch_bytes  # noqa: E402
 from fetch_browser import fetch_via_browser  # noqa: E402
 from landing_parser import extract_pdf_url  # noqa: E402
-from priority import fetcher_for, walk_locations  # noqa: E402
-from shortcuts import synthesize_id_shortcuts  # noqa: E402
 
 # Sibling-module imports (live in literature_search/).
 from license_policy import is_publishable, normalise_license  # noqa: E402
-
+from priority import fetcher_for, walk_locations  # noqa: E402
+from shortcuts import synthesize_id_shortcuts  # noqa: E402
 
 logger = logging.getLogger(__name__)
 
@@ -103,6 +100,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 # Per-attempt result
 # ---------------------------------------------------------------------------
+
 
 @dataclass
 class AttemptResult:
@@ -118,19 +116,21 @@ class AttemptResult:
       ``"would_walk"`` Dry-run only: ``candidates`` is the
                        priority-ordered list that *would* be tried.
     """
+
     kind: str
-    candidates: list[dict] | None = None       # would_walk
-    dest_path: Path | None = None              # success
-    source_url: str = ""                       # success
-    source_tag: str = ""                       # success (e.g. "openalex,unpaywall")
-    license_norm: str = "unknown"              # success
-    tried: list[str] | None = None             # failure
-    reason: str = ""                           # failure
+    candidates: list[dict] | None = None  # would_walk
+    dest_path: Path | None = None  # success
+    source_url: str = ""  # success
+    source_tag: str = ""  # success (e.g. "openalex,unpaywall")
+    license_norm: str = "unknown"  # success
+    tried: list[str] | None = None  # failure
+    reason: str = ""  # failure
 
 
 # ---------------------------------------------------------------------------
 # Catalog I/O (staged-write convention, mirrors enrich_pdf_locations.py)
 # ---------------------------------------------------------------------------
+
 
 def _load_catalog(workspace: Path) -> tuple[dict, list, Path, Path]:
     p_path = workspace / "process_details.json"
@@ -195,7 +195,7 @@ def _plan_walk(
     *,
     allow_paywalled: bool,
     cache_dir: Path | None = None,
-    oa_lookup_fn: Callable[[str, Path], "str | None"] | None = None,
+    oa_lookup_fn: Callable[[str, Path], str | None] | None = None,
 ) -> list[dict]:
     """Return the priority-ordered list of candidate locations for ``ref``.
 
@@ -240,26 +240,22 @@ def _plan_walk(
             # import path during unit tests that monkey-patch
             # _plan_walk without needing clients.pmc.
             from hed_metadata_toolkit.clients.pmc import lookup_oa_pdf_url  # noqa: E402
+
             oa_lookup_fn = lookup_oa_pdf_url
         oa_url = oa_lookup_fn(pmcid, cache_dir)
         if oa_url:
-            synthesized.append({
-                "url": oa_url,
-                "source": "pmc_oa",
-                "version": None,
-                "is_oa": True,
-                "license": None,
-            })
+            synthesized.append(
+                {
+                    "url": oa_url,
+                    "source": "pmc_oa",
+                    "version": None,
+                    "is_oa": True,
+                    "license": None,
+                }
+            )
 
-    cataloged_urls = {
-        (loc.get("url") or "").strip()
-        for loc in cataloged
-        if isinstance(loc, dict)
-    }
-    extras = [
-        loc for loc in synthesized
-        if (loc.get("url") or "").strip() not in cataloged_urls
-    ]
+    cataloged_urls = {(loc.get("url") or "").strip() for loc in cataloged if isinstance(loc, dict)}
+    extras = [loc for loc in synthesized if (loc.get("url") or "").strip() not in cataloged_urls]
 
     return walk_locations(cataloged + extras, allow_paywalled=allow_paywalled)
 
@@ -358,11 +354,10 @@ def _try_landing_extraction(
         host_throttle_sec=host_throttle_sec,
     )
 
-    if (not landing.error
-            and landing.status == 200
-            and landing.is_pdf()):
+    if not landing.error and landing.status == 200 and landing.is_pdf():
         return _save_pdf_result(
-            ref, landing,
+            ref,
+            landing,
             repo_root=repo_root,
             source_url_fallback=pdf_url,
             source_tag=landing_tag,
@@ -374,10 +369,7 @@ def _try_landing_extraction(
     elif landing.status != 200:
         notes.append(f"{landing_tag}: HTTP {landing.status}")
     else:
-        notes.append(
-            f"{landing_tag}: not PDF "
-            f"({landing.content_type or 'no content-type'})"
-        )
+        notes.append(f"{landing_tag}: not PDF ({landing.content_type or 'no content-type'})")
     return None
 
 
@@ -454,7 +446,8 @@ def _attempt_walk(
         # that hands us a real PDF URL up front.
         if result.is_pdf():
             return _save_pdf_result(
-                ref, result,
+                ref,
+                result,
                 repo_root=repo_root,
                 source_url_fallback=url,
                 source_tag=source_tag,
@@ -467,7 +460,9 @@ def _attempt_walk(
         # tag; non-success records a per-extraction note and falls
         # through.
         landing_success = _try_landing_extraction(
-            ref, loc, result,
+            ref,
+            loc,
+            result,
             source_tag=source_tag,
             repo_root=repo_root,
             fetch_fn=fetch_fn,
@@ -480,10 +475,7 @@ def _attempt_walk(
         if landing_success is not None:
             return landing_success
 
-        notes.append(
-            f"{source_tag}: not PDF "
-            f"({result.content_type or 'no content-type'})"
-        )
+        notes.append(f"{source_tag}: not PDF ({result.content_type or 'no content-type'})")
 
     reason = "; ".join(notes) if notes else "all candidates exhausted"
     return AttemptResult(kind="failure", tried=tried, reason=reason)
@@ -501,7 +493,7 @@ def attempt_one_ref(
     max_bytes: int = 50 * 1024 * 1024,
     host_throttle_sec: float = 1.0,
     cache_dir: Path | None = None,
-    oa_lookup_fn: Callable[[str, Path], "str | None"] | None = None,
+    oa_lookup_fn: Callable[[str, Path], str | None] | None = None,
 ) -> AttemptResult:
     """Top-level per-ref entry point.
 
@@ -520,13 +512,16 @@ def attempt_one_ref(
     its default of ``None`` and the lookup is skipped.
     """
     candidates = _plan_walk(
-        ref, allow_paywalled=allow_paywalled,
-        cache_dir=cache_dir, oa_lookup_fn=oa_lookup_fn,
+        ref,
+        allow_paywalled=allow_paywalled,
+        cache_dir=cache_dir,
+        oa_lookup_fn=oa_lookup_fn,
     )
     if not write:
         return AttemptResult(kind="would_walk", candidates=list(candidates))
     return _attempt_walk(
-        ref, candidates,
+        ref,
+        candidates,
         repo_root=repo_root,
         fetch_fn=fetch_fn,
         browser_fetch_fn=browser_fetch_fn,
@@ -539,6 +534,7 @@ def attempt_one_ref(
 # ---------------------------------------------------------------------------
 # Source-type stamp
 # ---------------------------------------------------------------------------
+
 
 def _source_type_for(source_tag: str) -> str:
     """Compose the ``source_type`` value stored on the catalog entry.
@@ -559,36 +555,42 @@ def _source_type_for(source_tag: str) -> str:
 # CLI driver
 # ---------------------------------------------------------------------------
 
+
 def _parse_args(argv: list[str] | None) -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--mode", choices=["poc", "single", "full"], required=True,
-                   help="poc=D-E3 POC DOIs, single=--ids, full=every ref.")
-    p.add_argument("--ids", default="",
-                   help="Comma-separated owner IDs for --mode single.")
-    p.add_argument("--workspace", default=".",
-                   help="Workspace root (Claude-research/).  Default: cwd.")
-    p.add_argument("--write", action="store_true",
-                   help="Fetch bytes, save PDFs, persist catalog.  "
-                        "Default is dry-run (print planned walk only).")
-    p.add_argument("--force", action="store_true",
-                   help="Re-acquire refs with an existing successful PDF.")
-    p.add_argument("--retry-failed", action="store_true",
-                   help="Include refs with a recorded failure record.  "
-                        "Default skips them to keep re-runs fast.")
-    p.add_argument("--allow-paywalled", action="store_true",
-                   help="Pass through to walk_locations: include "
-                        "candidates whose licence is 'proprietary'.")
-    p.add_argument("--limit", type=int, default=0,
-                   help="Cap on number of refs processed (0 = no cap).")
-    p.add_argument("--timeout", type=float, default=30.0,
-                   help="Per-request HTTP timeout in seconds.")
-    p.add_argument("--max-bytes", type=int, default=50 * 1024 * 1024,
-                   help="Max response body size in bytes.")
-    p.add_argument("--cache-dir", default="<auto>",
-                   help="PMC OA Web Service cache root.  Resolves via "
-                        "--cache-dir > $HED_CACHE_DIR > <workspace>/outputs/cache.")
-    p.add_argument("--host-throttle-sec", type=float, default=1.0,
-                   help="Minimum gap between same-host requests.")
+    p.add_argument(
+        "--mode",
+        choices=["poc", "single", "full"],
+        required=True,
+        help="poc=D-E3 POC DOIs, single=--ids, full=every ref.",
+    )
+    p.add_argument("--ids", default="", help="Comma-separated owner IDs for --mode single.")
+    p.add_argument("--workspace", default=".", help="Workspace root (Claude-research/).  Default: cwd.")
+    p.add_argument(
+        "--write",
+        action="store_true",
+        help="Fetch bytes, save PDFs, persist catalog.  Default is dry-run (print planned walk only).",
+    )
+    p.add_argument("--force", action="store_true", help="Re-acquire refs with an existing successful PDF.")
+    p.add_argument(
+        "--retry-failed",
+        action="store_true",
+        help="Include refs with a recorded failure record.  Default skips them to keep re-runs fast.",
+    )
+    p.add_argument(
+        "--allow-paywalled",
+        action="store_true",
+        help="Pass through to walk_locations: include candidates whose licence is 'proprietary'.",
+    )
+    p.add_argument("--limit", type=int, default=0, help="Cap on number of refs processed (0 = no cap).")
+    p.add_argument("--timeout", type=float, default=30.0, help="Per-request HTTP timeout in seconds.")
+    p.add_argument("--max-bytes", type=int, default=50 * 1024 * 1024, help="Max response body size in bytes.")
+    p.add_argument(
+        "--cache-dir",
+        default="<auto>",
+        help="PMC OA Web Service cache root.  Resolves via --cache-dir > $HED_CACHE_DIR > <workspace>/outputs/cache.",
+    )
+    p.add_argument("--host-throttle-sec", type=float, default=1.0, help="Minimum gap between same-host requests.")
     p.add_argument("--verbose", "-v", action="store_true")
     return p.parse_args(argv)
 
@@ -624,9 +626,7 @@ def main(
     )
 
     fetch_callable: FetchFn = fetch_fn if fetch_fn is not None else fetch_bytes
-    browser_fetch_callable: BrowserFetchFn = (
-        browser_fetch_fn if browser_fetch_fn is not None else fetch_via_browser
-    )
+    browser_fetch_callable: BrowserFetchFn = browser_fetch_fn if browser_fetch_fn is not None else fetch_via_browser
 
     ws = Path(args.workspace).resolve()
     repo_root = ws.parent
@@ -634,12 +634,14 @@ def main(
     # _plan_walk.  Uses the same convention as core.resolve_cache_dir
     # so PR-D's and PR-E's caches share storage.
     from core import resolve_cache_dir  # noqa: E402  (local — avoids cycle)
+
     cache_dir = resolve_cache_dir(getattr(args, "cache_dir", "<auto>"), ws)
     logger.info("workspace : %s", ws)
     logger.info("repo_root : %s", repo_root)
     logger.info("cache_dir : %s", cache_dir)
-    logger.info("mode      : %s  write=%s  force=%s  retry-failed=%s",
-                args.mode, args.write, args.force, args.retry_failed)
+    logger.info(
+        "mode      : %s  write=%s  force=%s  retry-failed=%s", args.mode, args.write, args.force, args.retry_failed
+    )
 
     try:
         processes, tasks, p_path, t_path = _load_catalog(ws)
@@ -659,16 +661,18 @@ def main(
     n_capped = 0
 
     for owner_id, ref_idx, ref in iter_refs(
-        processes, tasks,
-        mode=args.mode, ids=ids, poc_dois=POC_REF_DOIS,
+        processes,
+        tasks,
+        mode=args.mode,
+        ids=ids,
+        poc_dois=POC_REF_DOIS,
     ):
         n_in_scope += 1
 
         if should_skip(ref, "pdf", force=args.force):
             n_skipped_done += 1
             continue
-        if (has_recorded_failure(ref, "pdf")
-                and not args.retry_failed and not args.force):
+        if has_recorded_failure(ref, "pdf") and not args.retry_failed and not args.force:
             n_skipped_prior_failure += 1
             continue
         if args.limit and (n_success + n_failure + n_dryrun) >= args.limit:
@@ -704,15 +708,18 @@ def main(
             assert outcome.dest_path is not None
             rel_path = f"{outcome.dest_path.parent.name}/{outcome.dest_path.name}"
             record_success(
-                ref, "pdf",
+                ref,
+                "pdf",
                 path=rel_path,
                 source_url=outcome.source_url,
                 source_type=_source_type_for(outcome.source_tag),
                 license=outcome.license_norm,
                 is_publishable=is_publishable(outcome.license_norm),
             )
-            print(f"  {label} OK  saved {outcome.dest_path.name} "
-                  f"(src={outcome.source_tag}, licence={outcome.license_norm})")
+            print(
+                f"  {label} OK  saved {outcome.dest_path.name} "
+                f"(src={outcome.source_tag}, licence={outcome.license_norm})"
+            )
 
         elif outcome.kind == "failure":
             n_failure += 1

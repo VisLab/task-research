@@ -43,7 +43,6 @@ import logging
 from html.parser import HTMLParser
 from urllib.parse import urljoin
 
-
 logger = logging.getLogger(__name__)
 
 
@@ -61,9 +60,7 @@ class _PDFTagFinder(HTMLParser):
         super().__init__(convert_charrefs=True)
         self.pdf_url: str | None = None
 
-    def handle_starttag(
-        self, tag: str, attrs: list[tuple[str, str | None]]
-    ) -> None:
+    def handle_starttag(self, tag: str, attrs: list[tuple[str, str | None]]) -> None:
         if self.pdf_url is not None:
             return
 

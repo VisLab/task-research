@@ -24,8 +24,10 @@ from __future__ import annotations
 
 # Data models
 from .models import IDSet, IDType, PDFLocation
+
 # URL / identifier parsing
 from .url_parsers import parse_identifier
+
 # BioC JSON -> Markdown converter (the real value-add from opencite)
 from .pmc_convert import bioc_to_markdown, extract_figure_files, extract_metadata
 

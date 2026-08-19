@@ -52,10 +52,10 @@ from vendored.opencite import (  # noqa: E402
     parse_identifier,
 )
 
-
 # ---------------------------------------------------------------------------
 # 1.  PDFLocation dataclass
 # ---------------------------------------------------------------------------
+
 
 def test_pdf_location_instantiation() -> None:
     """PDFLocation loads, required field works, optionals default sensibly."""
@@ -82,6 +82,7 @@ def test_pdf_location_instantiation() -> None:
 # 2.  parse_identifier — bioRxiv URL and a few extra cases
 # ---------------------------------------------------------------------------
 
+
 def test_parse_biorxiv_url() -> None:
     """parse_identifier extracts the DOI from a bioRxiv content URL."""
     url = "https://www.biorxiv.org/content/10.1101/2021.01.01.425001v2"
@@ -97,13 +98,13 @@ def test_parse_identifier_extra_smoke_cases() -> None:
     a refresh that breaks one of the recognisers.
     """
     cases: list[tuple[str, IDType, str]] = [
-        ("10.1038/nature12373",                        IDType.DOI, "10.1038/nature12373"),
-        ("PMC2486527",                                 IDType.PMCID, "PMC2486527"),
-        ("pmid:12345678",                              IDType.PMID, "12345678"),
-        ("arxiv:2106.15928",                           IDType.ARXIV, "2106.15928"),
-        ("2106.15928v3",                               IDType.ARXIV, "2106.15928"),
-        ("W2034567890",                                IDType.OPENALEX, "W2034567890"),
-        ("https://arxiv.org/abs/2106.15928v2",         IDType.ARXIV, "2106.15928"),
+        ("10.1038/nature12373", IDType.DOI, "10.1038/nature12373"),
+        ("PMC2486527", IDType.PMCID, "PMC2486527"),
+        ("pmid:12345678", IDType.PMID, "12345678"),
+        ("arxiv:2106.15928", IDType.ARXIV, "2106.15928"),
+        ("2106.15928v3", IDType.ARXIV, "2106.15928"),
+        ("W2034567890", IDType.OPENALEX, "W2034567890"),
+        ("https://arxiv.org/abs/2106.15928v2", IDType.ARXIV, "2106.15928"),
     ]
     for raw, expected_type, expected_value in cases:
         got_type, got_value = parse_identifier(raw)
@@ -114,6 +115,7 @@ def test_parse_identifier_extra_smoke_cases() -> None:
 # ---------------------------------------------------------------------------
 # 3.  PMC BioC fetch + bioc_to_markdown (live network)
 # ---------------------------------------------------------------------------
+
 
 @pytest.mark.network
 def test_pmc_bioc_fetch_pmc7327471(tmp_path: Path) -> None:
@@ -137,8 +139,7 @@ def test_pmc_bioc_fetch_pmc7327471(tmp_path: Path) -> None:
     assert result.get("_pmcid") == "PMC7327471"
 
     documents = result.get("documents")
-    assert isinstance(documents, list) and documents, \
-        "BioC response missing 'documents' list"
+    assert isinstance(documents, list) and documents, "BioC response missing 'documents' list"
 
     md = bioc_to_markdown(documents[0])
     assert isinstance(md, str)

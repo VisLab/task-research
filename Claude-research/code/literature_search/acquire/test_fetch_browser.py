@@ -29,24 +29,21 @@ import pytest
 _HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(_HERE))
 
-import fetch_browser as FB  # noqa: E402  module under test
-
+import fetch_browser as FB  # noqa: E402, N812  module under test
 
 # ---------------------------------------------------------------------------
 # Pure helpers
 # ---------------------------------------------------------------------------
 
-class TestACFallback:
 
+class TestACFallback:
     def test_landing_url_gets_download_suffix(self) -> None:
         url = "https://academiccommons.columbia.edu/doi/10.7916/d8rv0nsn"
-        assert FB._ac_fallback_url(url) == \
-            "https://academiccommons.columbia.edu/doi/10.7916/d8rv0nsn/download"
+        assert FB._ac_fallback_url(url) == "https://academiccommons.columbia.edu/doi/10.7916/d8rv0nsn/download"
 
     def test_landing_url_trailing_slash_tolerated(self) -> None:
         url = "https://academiccommons.columbia.edu/doi/10.7916/abc123/"
-        assert FB._ac_fallback_url(url) == \
-            "https://academiccommons.columbia.edu/doi/10.7916/abc123/download"
+        assert FB._ac_fallback_url(url) == "https://academiccommons.columbia.edu/doi/10.7916/abc123/download"
 
     def test_non_ac_url_returns_none(self) -> None:
         # Non-AC repository URLs have no fallback; the caller surfaces
@@ -62,25 +59,27 @@ class TestACFallback:
 
     def test_non_string_input(self) -> None:
         assert FB._ac_fallback_url(None) is None  # type: ignore[arg-type]
-        assert FB._ac_fallback_url(123) is None   # type: ignore[arg-type]
+        assert FB._ac_fallback_url(123) is None  # type: ignore[arg-type]
 
 
 class TestExcTag:
-
     def test_timeout_class_tagged_playwright_timeout(self) -> None:
         class TimeoutError(Exception):  # noqa: N818
             pass
+
         assert FB._exc_tag(TimeoutError("x")) == "playwright_timeout"
 
     def test_non_timeout_class_uses_class_name(self) -> None:
         class ConnectError(Exception):
             pass
+
         assert FB._exc_tag(ConnectError("x")) == "ConnectError"
 
 
 # ---------------------------------------------------------------------------
 # Stub Playwright surface
 # ---------------------------------------------------------------------------
+
 
 class _StubResponse:
     """Stands in for a Playwright ``APIResponse``.
@@ -123,8 +122,7 @@ class _StubRequest:
     assertions.
     """
 
-    def __init__(self, response: _StubResponse | None = None,
-                 get_exc: Exception | None = None) -> None:
+    def __init__(self, response: _StubResponse | None = None, get_exc: Exception | None = None) -> None:
         self._response = response or _StubResponse()
         self._get_exc = get_exc
         self.last_get: dict[str, Any] | None = None
@@ -183,8 +181,7 @@ class _StubContext:
     Holds the ``request`` stub and the page returned by ``new_page``.
     """
 
-    def __init__(self, page: _StubPage, request: _StubRequest,
-                 user_agent: str | None = None) -> None:
+    def __init__(self, page: _StubPage, request: _StubRequest, user_agent: str | None = None) -> None:
         self._page = page
         self.request = request
         self.user_agent = user_agent
@@ -218,7 +215,6 @@ class _StubBrowser:
 
 
 class _StubChromium:
-
     def __init__(self, browser: _StubBrowser, launch_exc: Exception | None = None) -> None:
         self._browser = browser
         self._launch_exc = launch_exc
@@ -232,7 +228,6 @@ class _StubChromium:
 
 
 class _StubPW:
-
     def __init__(self, chromium: _StubChromium) -> None:
         self.chromium = chromium
 
@@ -268,8 +263,7 @@ def _build_factory(
     The handle dict is populated with references to the page, browser,
     context, etc. so tests can read what was called.
     """
-    page = _StubPage(meta_url=meta_url, goto_exc=goto_exc,
-                     wait_exc=wait_exc, evaluate_exc=evaluate_exc)
+    page = _StubPage(meta_url=meta_url, goto_exc=goto_exc, wait_exc=wait_exc, evaluate_exc=evaluate_exc)
     request = _StubRequest(response=response, get_exc=get_exc)
     context = _StubContext(page=page, request=request)
     browser = _StubBrowser(context=context)
@@ -281,8 +275,12 @@ def _build_factory(
         return cm
 
     handle = {
-        "page": page, "request": request, "context": context,
-        "browser": browser, "chromium": chromium, "cm": cm,
+        "page": page,
+        "request": request,
+        "context": context,
+        "browser": browser,
+        "chromium": chromium,
+        "cm": cm,
     }
     return factory, handle
 
@@ -297,13 +295,10 @@ PDF_BYTES = b"%PDF-1.7\n%fake body\n"
 
 
 class TestFetchViaBrowserSuccess:
-
     def test_meta_tag_url_used_when_present(self) -> None:
         factory, h = _build_factory(
             meta_url=META_PDF_URL,
-            response=_StubResponse(status=200,
-                                   headers={"content-type": "application/pdf"},
-                                   body=PDF_BYTES),
+            response=_StubResponse(status=200, headers={"content-type": "application/pdf"}, body=PDF_BYTES),
         )
         r = FB.fetch_via_browser(LANDING_URL, playwright_factory=factory)
 
@@ -324,9 +319,7 @@ class TestFetchViaBrowserSuccess:
     def test_meta_missing_falls_back_to_ac_download_url(self) -> None:
         factory, h = _build_factory(
             meta_url=None,
-            response=_StubResponse(status=200,
-                                   headers={"content-type": "application/pdf"},
-                                   body=PDF_BYTES),
+            response=_StubResponse(status=200, headers={"content-type": "application/pdf"}, body=PDF_BYTES),
         )
         r = FB.fetch_via_browser(LANDING_URL, playwright_factory=factory)
 
@@ -338,19 +331,16 @@ class TestFetchViaBrowserSuccess:
     def test_user_agent_passes_through_to_context(self) -> None:
         factory, h = _build_factory(
             meta_url=META_PDF_URL,
-            response=_StubResponse(headers={"content-type": "application/pdf"},
-                                   body=PDF_BYTES),
+            response=_StubResponse(headers={"content-type": "application/pdf"}, body=PDF_BYTES),
         )
         custom_ua = "hed-test/1.0"
-        FB.fetch_via_browser(LANDING_URL,
-                             playwright_factory=factory, user_agent=custom_ua)
+        FB.fetch_via_browser(LANDING_URL, playwright_factory=factory, user_agent=custom_ua)
         assert h["browser"].last_context_kwargs.get("user_agent") == custom_ua
 
     def test_timeout_seconds_converted_to_milliseconds(self) -> None:
         factory, h = _build_factory(
             meta_url=META_PDF_URL,
-            response=_StubResponse(headers={"content-type": "application/pdf"},
-                                   body=PDF_BYTES),
+            response=_StubResponse(headers={"content-type": "application/pdf"}, body=PDF_BYTES),
         )
         FB.fetch_via_browser(LANDING_URL, playwright_factory=factory, timeout=5.0)
         # Playwright expects ms; the wrapper multiplies by 1000.
@@ -364,9 +354,7 @@ class TestFetchViaBrowserSuccess:
         # the bytes.
         factory, _ = _build_factory(
             meta_url=META_PDF_URL,
-            response=_StubResponse(status=200,
-                                   headers={"content-type": "text/html"},
-                                   body=b"<html>not a pdf</html>"),
+            response=_StubResponse(status=200, headers={"content-type": "text/html"}, body=b"<html>not a pdf</html>"),
         )
         r = FB.fetch_via_browser(LANDING_URL, playwright_factory=factory)
 
@@ -394,6 +382,7 @@ class TestFetchViaBrowserSuccess:
 # Failure shapes
 # ---------------------------------------------------------------------------
 
+
 class _StubTimeoutError(Exception):
     """Stand-in for ``playwright.sync_api.TimeoutError`` — class name
     contains ``"Timeout"`` so :func:`fetch_browser._exc_tag` maps it to
@@ -402,7 +391,6 @@ class _StubTimeoutError(Exception):
 
 
 class TestFetchViaBrowserFailures:
-
     def test_empty_url_short_circuits(self) -> None:
         # No factory call needed; the URL check fires first.
         r = FB.fetch_via_browser("   ")
@@ -433,6 +421,7 @@ class TestFetchViaBrowserFailures:
     def test_navigation_non_timeout_uses_class_name(self) -> None:
         class ConnectError(Exception):
             pass
+
         factory, _ = _build_factory(goto_exc=ConnectError("dns"))
         r = FB.fetch_via_browser(LANDING_URL, playwright_factory=factory)
         assert r.error == "ConnectError: navigation"
@@ -447,6 +436,7 @@ class TestFetchViaBrowserFailures:
     def test_evaluate_raises(self) -> None:
         class EvalError(Exception):
             pass
+
         factory, _ = _build_factory(evaluate_exc=EvalError("page crashed"))
         r = FB.fetch_via_browser(LANDING_URL, playwright_factory=factory)
         assert r.error == "EvalError: evaluate"
@@ -454,8 +444,7 @@ class TestFetchViaBrowserFailures:
     def test_no_meta_no_fallback_url(self) -> None:
         # Non-AC landing URL + no meta tag → no fallback synthesised.
         factory, _ = _build_factory(meta_url=None)
-        r = FB.fetch_via_browser("https://hdl.handle.net/2066/99614",
-                                 playwright_factory=factory)
+        r = FB.fetch_via_browser("https://hdl.handle.net/2066/99614", playwright_factory=factory)
         assert r.status == 0
         assert r.error == "no pdf url found"
 
@@ -471,9 +460,7 @@ class TestFetchViaBrowserFailures:
     def test_download_status_non_2xx_returns_download_status_error(self) -> None:
         factory, _ = _build_factory(
             meta_url=META_PDF_URL,
-            response=_StubResponse(status=403,
-                                   headers={"content-type": "text/html"},
-                                   body=b"forbidden"),
+            response=_StubResponse(status=403, headers={"content-type": "text/html"}, body=b"forbidden"),
         )
         r = FB.fetch_via_browser(LANDING_URL, playwright_factory=factory)
         assert r.status == 403
@@ -481,29 +468,27 @@ class TestFetchViaBrowserFailures:
         assert r.body == b""
 
     def test_body_raises_returns_body_tagged_error(self) -> None:
-        class StreamReset(Exception):
+        class StreamResetError(Exception):
             pass
+
         factory, _ = _build_factory(
             meta_url=META_PDF_URL,
-            response=_StubResponse(status=200,
-                                   headers={"content-type": "application/pdf"},
-                                   body_exc=StreamReset("connection reset")),
+            response=_StubResponse(
+                status=200, headers={"content-type": "application/pdf"}, body_exc=StreamResetError("connection reset")
+            ),
         )
         r = FB.fetch_via_browser(LANDING_URL, playwright_factory=factory)
         assert r.status == 200
-        assert r.error == "StreamReset: body"
+        assert r.error == "StreamResetError: body"
         assert r.body == b""
 
     def test_body_oversize_returns_max_bytes_error(self) -> None:
         big = b"\x00" * 5000
         factory, _ = _build_factory(
             meta_url=META_PDF_URL,
-            response=_StubResponse(status=200,
-                                   headers={"content-type": "application/pdf"},
-                                   body=big),
+            response=_StubResponse(status=200, headers={"content-type": "application/pdf"}, body=big),
         )
-        r = FB.fetch_via_browser(LANDING_URL,
-                                 playwright_factory=factory, max_bytes=2048)
+        r = FB.fetch_via_browser(LANDING_URL, playwright_factory=factory, max_bytes=2048)
         assert r.status == 200
         assert r.error == "body exceeds max_bytes=2048"
         assert r.body == b""
@@ -513,9 +498,7 @@ class TestFetchViaBrowserFailures:
         # not silently encode; surface a clear error.
         factory, _ = _build_factory(
             meta_url=META_PDF_URL,
-            response=_StubResponse(status=200,
-                                   headers={"content-type": "application/pdf"},
-                                   body="this is a string"),  # type: ignore[arg-type]
+            response=_StubResponse(status=200, headers={"content-type": "application/pdf"}, body="this is a string"),  # type: ignore[arg-type]
         )
         r = FB.fetch_via_browser(LANDING_URL, playwright_factory=factory)
         assert r.error == "body is not bytes"
@@ -531,6 +514,7 @@ class TestFetchViaBrowserFailures:
 # ---------------------------------------------------------------------------
 # Default factory (ImportError path)
 # ---------------------------------------------------------------------------
+
 
 def test_import_error_when_playwright_not_installed(monkeypatch: pytest.MonkeyPatch) -> None:
     """Force the deferred Playwright import to fail; expect a clean

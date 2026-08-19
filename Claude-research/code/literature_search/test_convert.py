@@ -45,6 +45,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 # 1.  Import-error message (no marker-pdf needed)
 # ---------------------------------------------------------------------------
 
+
 def test_convert_pdf_import_error_message(monkeypatch, tmp_path: Path) -> None:
     """When marker-pdf is missing, our wrapper raises a helpful ImportError.
 
@@ -81,6 +82,7 @@ def test_convert_pdf_import_error_message(monkeypatch, tmp_path: Path) -> None:
 # 2.  PDF -> Markdown round-trip (slow; opt-in)
 # ---------------------------------------------------------------------------
 
+
 @pytest.mark.slow
 def test_convert_pdf_roundtrip(tmp_path: Path) -> None:
     """Run a tiny PDF through the marker-pdf wrapper end-to-end.
@@ -96,9 +98,7 @@ def test_convert_pdf_roundtrip(tmp_path: Path) -> None:
     marker-pdf has regressed; either is worth investigating before
     PR-E builds on top of this wrapper.
     """
-    pytest.importorskip(
-        "marker", reason='install with: pip install -e ".[pdf]"'
-    )
+    pytest.importorskip("marker", reason='install with: pip install -e ".[pdf]"')
 
     from convert import convert_pdf
 

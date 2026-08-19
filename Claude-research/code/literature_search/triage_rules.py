@@ -16,30 +16,30 @@ import re
 
 PUBLISHER_TIERS: dict[str, str] = {
     # Tier A — flagship publishers
-    "10.1016": "A",   # Elsevier
-    "10.1007": "A",   # Springer Nature
-    "10.1038": "A",   # Nature publishing
-    "10.1002": "A",   # Wiley
-    "10.1037": "A",   # APA
-    "10.1523": "A",   # Society for Neuroscience
-    "10.1073": "A",   # PNAS
-    "10.1126": "A",   # AAAS (Science)
-    "10.1093": "A",   # Oxford University Press
-    "10.1017": "A",   # Cambridge University Press
-    "10.1146": "A",   # Annual Reviews
+    "10.1016": "A",  # Elsevier
+    "10.1007": "A",  # Springer Nature
+    "10.1038": "A",  # Nature publishing
+    "10.1002": "A",  # Wiley
+    "10.1037": "A",  # APA
+    "10.1523": "A",  # Society for Neuroscience
+    "10.1073": "A",  # PNAS
+    "10.1126": "A",  # AAAS (Science)
+    "10.1093": "A",  # Oxford University Press
+    "10.1017": "A",  # Cambridge University Press
+    "10.1146": "A",  # Annual Reviews
     # Tier B — mainstream, accepted with modest discount
-    "10.1177": "B",   # SAGE
-    "10.1080": "B",   # Taylor & Francis
-    "10.1371": "B",   # PLOS
-    "10.3389": "B",   # Frontiers (per-journal caveat)
-    "10.1101": "B",   # bioRxiv (preprint caveat)
-    "10.3758": "B",   # Psychonomic Society
-    "10.1162": "B",   # MIT Press (Journal of Cognitive Neuroscience)
-    "10.1167": "B",   # ARVO (Journal of Vision)
-    "10.7554": "B",   # eLife Sciences
-    "10.1152": "B",   # American Physiological Society
-    "10.1111": "B",   # Wiley-Blackwell (Psychophysiology, etc.)
-    "10.1068": "B",   # Pion / Sage (Perception)
+    "10.1177": "B",  # SAGE
+    "10.1080": "B",  # Taylor & Francis
+    "10.1371": "B",  # PLOS
+    "10.3389": "B",  # Frontiers (per-journal caveat)
+    "10.1101": "B",  # bioRxiv (preprint caveat)
+    "10.3758": "B",  # Psychonomic Society
+    "10.1162": "B",  # MIT Press (Journal of Cognitive Neuroscience)
+    "10.1167": "B",  # ARVO (Journal of Vision)
+    "10.7554": "B",  # eLife Sciences
+    "10.1152": "B",  # American Physiological Society
+    "10.1111": "B",  # Wiley-Blackwell (Psychophysiology, etc.)
+    "10.1068": "B",  # Pion / Sage (Perception)
 }
 
 
@@ -52,12 +52,13 @@ PUBLISHER_TIERS: dict[str, str] = {
 # Both sides of a comparison use _prep(); exact set membership then works
 # regardless of punctuation, "and"/"&", or "The " prefix variations.
 
+
 def _prep(v: str) -> str:
     v = v.lower()
-    v = re.sub(r"[^a-z0-9 ]", " ", v)   # & : , . → space
-    v = re.sub(r"\band\b", " ", v)       # "and" → space (same as &)
+    v = re.sub(r"[^a-z0-9 ]", " ", v)  # & : , . → space
+    v = re.sub(r"\band\b", " ", v)  # "and" → space (same as &)
     v = re.sub(r"\s+", " ", v).strip()
-    if v.startswith("the "):             # strip leading "the"
+    if v.startswith("the "):  # strip leading "the"
         v = v[4:]
     return v
 
@@ -124,7 +125,7 @@ VENUE_TIERS: dict[str, set[str]] = {
         # Vision / perception
         "Journal of Vision",
         "Attention, Perception, & Psychophysics",
-        "Perception & Psychophysics",   # older name
+        "Perception & Psychophysics",  # older name
         # eLife
         "eLife",
         # Lancet
@@ -134,7 +135,6 @@ VENUE_TIERS: dict[str, set[str]] = {
         "PLoS Biology",
         "PLOS Biology",
     },
-
     # ---- MAINSTREAM ----
     "mainstream": {
         # Psychophysiology / body of work
@@ -203,7 +203,6 @@ VENUE_TIERS: dict[str, set[str]] = {
         # Personality & social
         "Personality and Social Psychology Bulletin",
     },
-
     # ---- SPECIALTY ----
     "specialty": {
         "Journal of Experimental Child Psychology",
@@ -249,7 +248,6 @@ VENUE_TIERS: dict[str, set[str]] = {
         "Neuroscience",
         "Journal of Experimental Analysis of Behavior",
         "Journal of the Experimental Analysis of Behavior",
-        "Learning and Motivation",
         "Games and Economic Behavior",
         "Journal of Economic Literature",
         "Journal of Economic Behavior and Organization",
@@ -279,7 +277,6 @@ VENUE_TIERS: dict[str, set[str]] = {
         "Clinical Neuropsychologist",
         "Applied Neuropsychology",
         "Applied Neuropsychology: Adult",
-        "Neuropsychological Rehabilitation",
         "Neuropsychology Review",
         # Aging / gerontology
         "Aging, Neuropsychology, and Cognition",
@@ -407,7 +404,6 @@ VENUE_TIERS: dict[str, set[str]] = {
         "Journal of Communication Disorders",
         "Journal of Economic Psychology",
     },
-
     # ---- LOW OR EXCLUDED ----
     "low_or_excluded": {
         # Beall-listed or known-quality-concern journals go here as discovered.
@@ -433,10 +429,10 @@ TEST_MANUAL_PATTERNS: list[re.Pattern] = [
     re.compile(r"\bWMS(-[IVX]+)?\b", re.IGNORECASE),
     re.compile(r"\bD-KEFS\b", re.IGNORECASE),
     re.compile(r"\bDelis.Kaplan\b", re.IGNORECASE),
-    re.compile(r"\bIAPS\b"),                          # International Affective Picture System
+    re.compile(r"\bIAPS\b"),  # International Affective Picture System
     re.compile(r"\bKDEF\b"),
     re.compile(r"Raven'?s?\s+Progressive\s+Matrices\s+Manual", re.IGNORECASE),
-    re.compile(r"\bRAVLT\b"),                         # Rey Auditory Verbal Learning Test
+    re.compile(r"\bRAVLT\b"),  # Rey Auditory Verbal Learning Test
 ]
 
 # LANDMARK_IDS is a set of (owner_id, pub_id) pairs loaded at runtime.
@@ -446,6 +442,7 @@ LANDMARK_IDS: set[tuple[str, str]] = set()
 # ---------------------------------------------------------------------------
 # Public classifiers
 # ---------------------------------------------------------------------------
+
 
 def classify_venue(venue_str: str | None) -> str:
     """Return 'flagship' | 'mainstream' | 'specialty' | 'low_or_excluded' | 'unknown'.
@@ -479,9 +476,9 @@ def publisher_tier_from_doi(doi: str | None) -> str | None:
     doi = doi.lower().strip()
     # Strip URL prefix first, then extract the registrant component (10.XXXX)
     if doi.startswith("https://doi.org/"):
-        doi = doi[len("https://doi.org/"):]
+        doi = doi[len("https://doi.org/") :]
     elif doi.startswith("http://doi.org/"):
-        doi = doi[len("http://doi.org/"):]
+        doi = doi[len("http://doi.org/") :]
     prefix = doi.split("/")[0] if "/" in doi else doi
     tier = PUBLISHER_TIERS.get(prefix)
     return tier if tier is not None else "C"
@@ -504,6 +501,7 @@ def matches_test_manual(ref: dict) -> bool:
 # Bootstrap helper — print venue classification table for all venues in data
 # ---------------------------------------------------------------------------
 
+
 def print_venue_check(process_refs: list[dict], task_refs: list[dict]) -> None:
     """Print a sorted table of (venue_string → tier) for every unique venue
     found in the reference objects.  Used during sub-phase 2.2 to verify
@@ -525,17 +523,19 @@ def print_venue_check(process_refs: list[dict], task_refs: list[dict]) -> None:
 
 if __name__ == "__main__":
     # Bootstrap mode: print venue check for _inputs/ JSON files.
-    import json, sys
+    import json
     from pathlib import Path
+
     script_dir = Path(__file__).parent
     p_path = script_dir / "_inputs" / "process_details.json"
     t_path = script_dir / "_inputs" / "task_details.json"
     p_data = json.loads(p_path.read_text(encoding="utf-8"))
     t_data = json.loads(t_path.read_text(encoding="utf-8"))
-    p_refs = [ref for proc in p_data.get("processes", [])
-              for arr in ("fundamental_references", "recent_references")
-              for ref in proc.get(arr, [])]
-    t_refs = [ref for task in t_data
-              for arr in ("key_references", "recent_references")
-              for ref in task.get(arr, [])]
+    p_refs = [
+        ref
+        for proc in p_data.get("processes", [])
+        for arr in ("fundamental_references", "recent_references")
+        for ref in proc.get(arr, [])
+    ]
+    t_refs = [ref for task in t_data for arr in ("key_references", "recent_references") for ref in task.get(arr, [])]
     print_venue_check(p_refs, t_refs)

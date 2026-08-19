@@ -4,10 +4,12 @@ fix_process_html_entities.py  —  decode &amp; etc. in process_details.json ven
 Run from workspace root:
     python outputs\fix_process_html_entities.py
 """
-import html, json
+
+import html
+import json
 from pathlib import Path
 
-WORKSPACE    = Path(__file__).parent.parent
+WORKSPACE = Path(__file__).parent.parent
 PROCESS_FILE = WORKSPACE / "process_details.json"
 
 with open(PROCESS_FILE, encoding="utf-8") as fh:

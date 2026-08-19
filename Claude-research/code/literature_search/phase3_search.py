@@ -37,30 +37,36 @@ except ImportError:
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from fos_map import fields_of_study_set
 from hed_metadata_toolkit.citation_identity import build_pub_id
-from reference_compat import ref_doi, ref_pub_id
-from search_queries import build_plans_from_json, filter_plans_by_ids, POC_ITEM_IDS, ItemQueryPlan
-from normalize import Candidate, normalize_openalex, normalize_europepmc, normalize_s2
-from rank_and_select import (
-    dedup_candidates, select_candidates,
-    phrase_gate, select_citation_seeds,
-    score_with_components, assign_auto_role,
-)
-from species import classify_candidate
-from tier_classify import assign_tiers
-from serialize_candidates import write_candidates_json
-from present_candidates import write_item_markdown, write_index  # legacy, retained until phase3_render.py replaces it
-
-from hed_metadata_toolkit.clients.openalex import search_works, lookup_by_doi as oa_lookup
-from hed_metadata_toolkit.clients.europepmc import search as epmc_search, lookup_by_doi as epmc_lookup
+from hed_metadata_toolkit.clients.europepmc import lookup_by_doi as epmc_lookup
+from hed_metadata_toolkit.clients.europepmc import search as epmc_search
+from hed_metadata_toolkit.clients.openalex import lookup_by_doi as oa_lookup
+from hed_metadata_toolkit.clients.openalex import search_works
 from hed_metadata_toolkit.clients.semanticscholar import (
-    search as s2_search,
-    lookup_by_doi as s2_lookup,
     fetch_citations,
 )
+from hed_metadata_toolkit.clients.semanticscholar import (
+    lookup_by_doi as s2_lookup,
+)
+from hed_metadata_toolkit.clients.semanticscholar import (
+    search as s2_search,
+)
+from normalize import Candidate, normalize_europepmc, normalize_openalex, normalize_s2
+from present_candidates import write_index  # legacy, retained until phase3_render.py replaces it
+from rank_and_select import (
+    assign_auto_role,
+    dedup_candidates,
+    phrase_gate,
+    score_with_components,
+    select_citation_seeds,
+)
+from reference_compat import ref_doi, ref_pub_id
+from search_queries import POC_ITEM_IDS, ItemQueryPlan, build_plans_from_json, filter_plans_by_ids
+from serialize_candidates import write_candidates_json
+from species import classify_candidate
+from tier_classify import assign_tiers
 
-TODAY      = date.today().isoformat()
+TODAY = date.today().isoformat()
 TODAY_YEAR = date.today().year
 
 logging.basicConfig(
@@ -152,14 +158,18 @@ def _run_stage_b(
     if not seeds:
         return {
             "_merged_pool": stage_a_pool,
-            "n_seeds": 0, "n_raw": 0, "n_after_type_fos": 0,
-            "n_after_gate": 0, "n_merged": 0, "n_bumped_nonzero": 0,
+            "n_seeds": 0,
+            "n_raw": 0,
+            "n_after_type_fos": 0,
+            "n_after_gate": 0,
+            "n_merged": 0,
+            "n_bumped_nonzero": 0,
         }
 
     item_fos = item.fos_set
 
     citing_by_paperid: dict[str, dict] = {}
-    edges_by_paperid:  dict[str, list[dict]] = {}
+    edges_by_paperid: dict[str, list[dict]] = {}
     n_raw_total = 0
 
     for seed in seeds:
@@ -176,8 +186,8 @@ def _run_stage_b(
             if not pid:
                 continue
             edge = {
-                "seed_pub_id":    seed.pub_id,
-                "intents":        result.get("intents") or [],
+                "seed_pub_id": seed.pub_id,
+                "intents": result.get("intents") or [],
                 "is_influential": bool(result.get("isInfluential")),
             }
             if pid not in citing_by_paperid:
@@ -206,7 +216,7 @@ def _run_stage_b(
     n_after_type_fos = len(type_fos_kept)
 
     b_candidates: list[Candidate] = []
-    for pid, paper, edges in type_fos_kept:
+    for _pid, paper, edges in type_fos_kept:
         c = normalize_s2(paper)
         if not c:
             continue
@@ -234,27 +244,31 @@ def _run_stage_b(
 
     _STRONG = {"background", "methodology", "extension"}
     n_bumped_nonzero = sum(
-        1 for c in merged_pool
+        1
+        for c in merged_pool
         if any(
-            e.get("is_influential") or
-            {str(i).lower() for i in (e.get("intents") or [])}.intersection(_STRONG)
+            e.get("is_influential") or {str(i).lower() for i in (e.get("intents") or [])}.intersection(_STRONG)
             for e in c.stage_b_edges
         )
     )
 
     logger.info(
-        "[stage_b] seeds=%d raw=%d after_type_fos=%d after_gate=%d "
-        "merged=%d bumped_nonzero=%d",
-        n_seeds, n_raw_total, n_after_type_fos, n_after_gate, n_merged, n_bumped_nonzero,
+        "[stage_b] seeds=%d raw=%d after_type_fos=%d after_gate=%d merged=%d bumped_nonzero=%d",
+        n_seeds,
+        n_raw_total,
+        n_after_type_fos,
+        n_after_gate,
+        n_merged,
+        n_bumped_nonzero,
     )
 
     return {
-        "_merged_pool":     merged_pool,
-        "n_seeds":          n_seeds,
-        "n_raw":            n_raw_total,
+        "_merged_pool": merged_pool,
+        "n_seeds": n_seeds,
+        "n_raw": n_raw_total,
         "n_after_type_fos": n_after_type_fos,
-        "n_after_gate":     n_after_gate,
-        "n_merged":         n_merged,
+        "n_after_gate": n_after_gate,
+        "n_merged": n_merged,
         "n_bumped_nonzero": n_bumped_nonzero,
     }
 
@@ -335,13 +349,18 @@ def run_item(
                     raw_candidates.append(c)
             logger.info(
                 "[%s] pass=%s semanticscholar raw=%d (across %d queries)",
-                item.item_id, pass_name, min(len(s2_all), s2_cap), len(s2_queries),
+                item.item_id,
+                pass_name,
+                min(len(s2_all), s2_cap),
+                len(s2_queries),
             )
 
     stage_a_pool = dedup_candidates(raw_candidates)
     logger.info(
         "[%s] stage_a pre-dedup=%d post-dedup=%d",
-        item.item_id, len(raw_candidates), len(stage_a_pool),
+        item.item_id,
+        len(raw_candidates),
+        len(stage_a_pool),
     )
 
     stage_a_pool = phrase_gate(stage_a_pool, item, hist_pub_ids, hist_dois)
@@ -366,7 +385,7 @@ def lookup_missing_landmarks(
     s2_api_key: str | None,
 ) -> list[Candidate]:
     """Fetch any historical reference not already in the candidate pool via DOI lookup."""
-    existing_dois   = {c.doi for c in existing_candidates if c.doi}
+    existing_dois = {c.doi for c in existing_candidates if c.doi}
     existing_pubids = {c.pub_id for c in existing_candidates}
     new_candidates: list[Candidate] = []
 
@@ -408,9 +427,7 @@ def lookup_missing_landmarks(
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(
-        description="Phase 3 systematic per-item literature search (host runner)."
-    )
+    parser = argparse.ArgumentParser(description="Phase 3 systematic per-item literature search (host runner).")
     parser.add_argument("--mode", choices=["poc", "full", "single"], required=True)
     parser.add_argument("--ids", default="")
     parser.add_argument("--workspace", default=".")
@@ -419,22 +436,22 @@ def main() -> None:
     parser.add_argument("--index", default="")
     parser.add_argument("--apikeys", default="code/.apikeys")
     parser.add_argument("--sources", default="openalex,europepmc,semanticscholar")
-    parser.add_argument("--passes", default="all_years,recent,reviews",
-                        help="Comma-separated passes to run (all_years, recent, reviews).")
+    parser.add_argument(
+        "--passes",
+        default="all_years,recent,reviews",
+        help="Comma-separated passes to run (all_years, recent, reviews).",
+    )
     parser.add_argument("--write", action="store_true")
     parser.add_argument("--force-refresh", action="store_true")
     args = parser.parse_args()
 
-    ws           = Path(args.workspace)
-    cache_dir    = ws / args.cache_dir
-    output_dir   = ws / args.output_dir
+    ws = Path(args.workspace)
+    cache_dir = ws / args.cache_dir
+    output_dir = ws / args.output_dir
     apikeys_path = ws / args.apikeys
-    index_path   = (
-        Path(args.index) if args.index
-        else ws / ".status" / f"candidates_index_{TODAY}.md"
-    )
-    process_path   = ws / "process_details.json"
-    task_path      = ws / "task_details.json"
+    index_path = Path(args.index) if args.index else ws / ".status" / f"candidates_index_{TODAY}.md"
+    process_path = ws / "process_details.json"
+    task_path = ws / "task_details.json"
     crosswalk_path = ws / "outputs" / "phase2" / "openalex_crosswalk.json"
 
     s2_api_key = load_api_key("S2_API_KEY", apikeys_path)
@@ -474,18 +491,18 @@ def main() -> None:
     logger.info("Running %d items in mode=%s.", len(plans), args.mode)
 
     sources = [s.strip() for s in args.sources.split(",")]
-    passes  = [p.strip() for p in args.passes.split(",")]
+    passes = [p.strip() for p in args.passes.split(",")]
 
-    t_start    = time.monotonic()
+    t_start = time.monotonic()
     index_rows: list[dict] = []
 
     for plan in plans:
         logger.info("--- Processing %s (%s) ---", plan.item_id, plan.primary_name)
         item_start = time.monotonic()
 
-        hist_refs    = historical_map.get(plan.item_id, [])
+        hist_refs = historical_map.get(plan.item_id, [])
         hist_pub_ids = {r["pub_id"] for r in hist_refs}
-        hist_dois    = {(ref_doi(r) or "").lower() for r in hist_refs if ref_doi(r)}
+        hist_dois = {(ref_doi(r) or "").lower() for r in hist_refs if ref_doi(r)}
 
         candidates, stage_b_stats = run_item(
             item=plan,
@@ -507,14 +524,15 @@ def main() -> None:
             s2_api_key=s2_api_key,
         )
         if landmark_extras:
-            logger.info("[%s] landmark lookup added %d candidate(s)",
-                        plan.item_id, len(landmark_extras))
+            logger.info("[%s] landmark lookup added %d candidate(s)", plan.item_id, len(landmark_extras))
             candidates = dedup_candidates(candidates + landmark_extras)
 
         # ---- Score every candidate, capturing both composite and components.
         for c in candidates:
             score = score_with_components(
-                c, plan, today_year=TODAY_YEAR,
+                c,
+                plan,
+                today_year=TODAY_YEAR,
                 landmark_pub_ids=hist_pub_ids,
             )
             c.composite_score = score["composite"]
@@ -523,9 +541,9 @@ def main() -> None:
             # re-score) and the weighted contributions (read off which terms
             # dominated). Stage-B and landmark bumps are kept separate.
             c.score_components = {
-                "raw":            score["components"],
-                "weighted":       score["weighted"],
-                "stage_b_bump":   score["stage_b_bump"],
+                "raw": score["components"],
+                "weighted": score["weighted"],
+                "stage_b_bump": score["stage_b_bump"],
                 "landmark_bonus": score["landmark_bonus"],
             }
             c.auto_role = assign_auto_role(c, TODAY_YEAR, hist_pub_ids)
@@ -547,49 +565,57 @@ def main() -> None:
 
         # ---- Stats for index / summary line.
         all_cand_pub_ids = {c.pub_id for c in candidates}
-        all_cand_dois    = {c.doi   for c in candidates if c.doi}
+        all_cand_dois = {c.doi for c in candidates if c.doi}
         hist_hits = sum(
-            1 for r in hist_refs
-            if r["pub_id"] in all_cand_pub_ids
-            or (ref_doi(r) and ref_doi(r).lower() in all_cand_dois)
+            1
+            for r in hist_refs
+            if r["pub_id"] in all_cand_pub_ids or (ref_doi(r) and ref_doi(r).lower() in all_cand_dois)
         )
         n_picked = tier_summary["picked"]
         n_reserve = tier_summary["reserve"]
         n_excluded = tier_summary["excluded"]
         n_excluded_non_human = tier_summary["exclusion_reasons"].get("non_human_subjects", 0)
 
-        index_rows.append({
-            "item_id":      plan.item_id,
-            "kind":         plan.item_kind,
-            "n_candidates": len(candidates),
-            "n_picked":     n_picked,
-            "n_reserve":    n_reserve,
-            "n_excluded":   n_excluded,
-            "n_excluded_non_human": n_excluded_non_human,
-            "n_landmarks":  hist_hits,
-            "n_lm_total":   len(hist_refs),
-        })
+        index_rows.append(
+            {
+                "item_id": plan.item_id,
+                "kind": plan.item_kind,
+                "n_candidates": len(candidates),
+                "n_picked": n_picked,
+                "n_reserve": n_reserve,
+                "n_excluded": n_excluded,
+                "n_excluded_non_human": n_excluded_non_human,
+                "n_landmarks": hist_hits,
+                "n_lm_total": len(hist_refs),
+            }
+        )
 
         elapsed = time.monotonic() - item_start
         logger.info(
             "[%s] candidates=%d picked=%d reserve=%d excluded=%d "
             "(non_human=%d) hist_found=%d/%d stage_b_seeds=%d stage_b_merged=%d wall=%.1fs",
-            plan.item_id, len(candidates),
-            n_picked, n_reserve, n_excluded, n_excluded_non_human,
-            hist_hits, len(hist_refs),
-            stage_b_stats.get("n_seeds", 0), stage_b_stats.get("n_merged", 0),
+            plan.item_id,
+            len(candidates),
+            n_picked,
+            n_reserve,
+            n_excluded,
+            n_excluded_non_human,
+            hist_hits,
+            len(hist_refs),
+            stage_b_stats.get("n_seeds", 0),
+            stage_b_stats.get("n_merged", 0),
             elapsed,
         )
 
         if args.write:
             run_metadata = {
                 "sources": sources,
-                "passes":  passes,
+                "passes": passes,
                 "stage_b": {
-                    "seeds":         stage_b_stats.get("n_seeds", 0),
-                    "raw":           stage_b_stats.get("n_raw", 0),
+                    "seeds": stage_b_stats.get("n_seeds", 0),
+                    "raw": stage_b_stats.get("n_raw", 0),
                     "after_filters": stage_b_stats.get("n_after_gate", 0),
-                    "merged":        stage_b_stats.get("n_merged", 0),
+                    "merged": stage_b_stats.get("n_merged", 0),
                 },
                 "filters": {
                     "species": "human_only_or_unknown",
@@ -603,9 +629,9 @@ def main() -> None:
                     "min_picked_score": None,
                 },
                 "totals": {
-                    "deduped":  len(candidates),
-                    "picked":   n_picked,
-                    "reserve":  n_reserve,
+                    "deduped": len(candidates),
+                    "picked": n_picked,
+                    "reserve": n_reserve,
                     "excluded": n_excluded,
                     "landmarks_found": hist_hits,
                     "landmarks_total": len(hist_refs),
@@ -633,9 +659,9 @@ def main() -> None:
     print(f"Phase 3 search complete — mode={args.mode}")
     print(f"  Items processed    : {len(plans)}")
     print(f"  Candidates (dedup) : {sum(r['n_candidates'] for r in index_rows)}")
-    print(f"  Picked             : {sum(r['n_picked']     for r in index_rows)}")
-    hist_found = sum(r['n_landmarks'] for r in index_rows)
-    hist_total = sum(r['n_lm_total']  for r in index_rows)
+    print(f"  Picked             : {sum(r['n_picked'] for r in index_rows)}")
+    hist_found = sum(r["n_landmarks"] for r in index_rows)
+    hist_total = sum(r["n_lm_total"] for r in index_rows)
     print(f"  Historical found   : {hist_found}/{hist_total}")
     print(f"  Wall time          : {wall:.1f}s")
     if not args.write:

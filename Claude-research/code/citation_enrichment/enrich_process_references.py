@@ -32,19 +32,27 @@ _SCRIPT_DIR = Path(__file__).parent.resolve()
 if str(_SCRIPT_DIR) not in sys.path:
     sys.path.insert(0, str(_SCRIPT_DIR))
 
-from resolve_citations import resolve_reference, ResolvedReference  # noqa: E402
-
-import requests
+import requests  # noqa: E402
+from resolve_citations import resolve_reference  # noqa: E402
 
 USER_AGENT = "hed-task/1.0 (mailto:hedannotation@gmail.com)"
 TODAY = "2026-04-20"
 
 # Fields added by the resolver (never overwrite originals: journal, year, citation_string)
 RESOLVER_FIELDS = (
-    "authors", "title", "venue", "venue_type",
-    "volume", "issue", "pages",
-    "doi", "openalex_id", "pmid",
-    "source", "confidence", "verified_on",
+    "authors",
+    "title",
+    "venue",
+    "venue_type",
+    "volume",
+    "issue",
+    "pages",
+    "doi",
+    "openalex_id",
+    "pmid",
+    "source",
+    "confidence",
+    "verified_on",
 )
 
 
@@ -74,10 +82,7 @@ def enrich_ref(ref: dict, cache_dir: Path, session: requests.Session) -> dict:
 
 
 def count_refs(processes: list) -> int:
-    return sum(
-        len(p.get("fundamental_references", [])) + len(p.get("recent_references", []))
-        for p in processes
-    )
+    return sum(len(p.get("fundamental_references", [])) + len(p.get("recent_references", [])) for p in processes)
 
 
 def main():
@@ -89,8 +94,7 @@ def main():
         type=Path,
         default=None,
         help=(
-            "Path to Claude-research workspace root "
-            "(default: parent of the outputs/ directory where this script lives)"
+            "Path to Claude-research workspace root (default: parent of the outputs/ directory where this script lives)"
         ),
     )
     parser.add_argument(
@@ -111,11 +115,11 @@ def main():
     )
     args = parser.parse_args()
 
-    workspace  = args.workspace  or _SCRIPT_DIR.parent
-    cache_dir  = args.cache_dir  or (_SCRIPT_DIR / "citation_cache")
+    workspace = args.workspace or _SCRIPT_DIR.parent
+    cache_dir = args.cache_dir or (_SCRIPT_DIR / "citation_cache")
     input_path = workspace / "process_details.json"
     working_path = _SCRIPT_DIR / "process_details.working.json"
-    output_path  = _SCRIPT_DIR / "process_details.enriched.json"
+    output_path = _SCRIPT_DIR / "process_details.enriched.json"
 
     print("=" * 60)
     print("enrich_process_references.py")
@@ -157,7 +161,7 @@ def main():
 
     # Resolution counters
     conf_counts: dict[str, int] = {"high": 0, "medium": 0, "low": 0, "none": 0}
-    src_counts:  dict[str, int] = {}
+    src_counts: dict[str, int] = {}
     done = 0
     unresolved_list: list[tuple[str, str]] = []  # (process_id, citation_string)
 
@@ -204,7 +208,9 @@ def main():
     # Summary
     resolved = conf_counts["high"] + conf_counts["medium"] + conf_counts["low"]
     unresolved = conf_counts["none"]
-    pct = lambda n: f"{100 * n // total_refs}%" if total_refs else "0%"
+
+    def pct(n):
+        return f"{100 * n // total_refs}%" if total_refs else "0%"
 
     print()
     print("=" * 40)
@@ -230,8 +236,7 @@ def main():
     print()
     if not args.write_back:
         print(
-            "To update process_details.json, re-run with --write-back, "
-            "or copy process_details.enriched.json manually."
+            "To update process_details.json, re-run with --write-back, or copy process_details.enriched.json manually."
         )
     print("Done.")
 

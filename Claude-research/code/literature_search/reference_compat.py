@@ -44,7 +44,6 @@ from __future__ import annotations
 
 from typing import Any
 
-
 __all__ = [
     "ref_doi",
     "ref_pmid",
@@ -62,6 +61,7 @@ __all__ = [
 # ---------------------------------------------------------------------------
 # Internal: read one ID field with new-shape-first, old-shape fallback
 # ---------------------------------------------------------------------------
+
 
 def _read_id(ref: dict[str, Any], field: str) -> str | None:
     """Return ``ref["ids"][field]`` if set, else ``ref[field]`` if set, else None.
@@ -91,6 +91,7 @@ def _read_id(ref: dict[str, Any], field: str) -> str | None:
 # ---------------------------------------------------------------------------
 # Per-ID accessors
 # ---------------------------------------------------------------------------
+
 
 def ref_doi(ref: dict[str, Any]) -> str | None:
     """Return the DOI (e.g. ``10.xxxx/yyy``), or None if not set."""
@@ -127,6 +128,7 @@ def ref_arxiv_id(ref: dict[str, Any]) -> str | None:
 # Aggregate accessors
 # ---------------------------------------------------------------------------
 
+
 def ref_ids(ref: dict[str, Any]) -> dict[str, str | None]:
     """Return all six identifier fields as a dict.  Missing values are None.
 
@@ -135,12 +137,12 @@ def ref_ids(ref: dict[str, Any]) -> dict[str, str | None]:
     available ID).
     """
     return {
-        "doi":         ref_doi(ref),
+        "doi": ref_doi(ref),
         "openalex_id": ref_openalex_id(ref),
-        "pmid":        ref_pmid(ref),
-        "pmcid":       ref_pmcid(ref),
-        "s2_id":       ref_s2_id(ref),
-        "arxiv_id":    ref_arxiv_id(ref),
+        "pmid": ref_pmid(ref),
+        "pmcid": ref_pmcid(ref),
+        "s2_id": ref_s2_id(ref),
+        "arxiv_id": ref_arxiv_id(ref),
     }
 
 

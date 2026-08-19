@@ -28,7 +28,6 @@ import json
 import sys
 from pathlib import Path
 
-
 # ---------------------------------------------------------------------------
 # Byte-level
 # ---------------------------------------------------------------------------
@@ -46,9 +45,7 @@ def check_byte_level(path: Path) -> list[str]:
     stripped = raw.rstrip()
     if not stripped.endswith(b"]"):
         tail = raw[-30:].decode("utf-8", errors="replace")
-        errors.append(
-            f"file does not end at a closing bracket; last 30 chars: {tail!r}"
-        )
+        errors.append(f"file does not end at a closing bracket; last 30 chars: {tail!r}")
 
     return errors
 
@@ -62,10 +59,7 @@ def check_schema(data, schema: dict) -> list[str]:
     try:
         from jsonschema import Draft7Validator
     except ImportError as e:
-        raise SystemExit(
-            "ERROR: the `jsonschema` package is required.\n"
-            "Install it with: pip install jsonschema"
-        ) from e
+        raise SystemExit("ERROR: the `jsonschema` package is required.\nInstall it with: pip install jsonschema") from e
 
     validator = Draft7Validator(schema)
     errors = []
@@ -108,9 +102,7 @@ def check_process_id_refs(tasks: list, process_ids: set[str] | None) -> list[str
         ctx = f"tasks[{i}] {t.get('canonical_name', '?')!r}"
         for j, pid in enumerate(t.get("hed_process_ids", []) or []):
             if pid not in process_ids:
-                errors.append(
-                    f"{ctx} hed_process_ids[{j}]: {pid!r} not in process_details.json"
-                )
+                errors.append(f"{ctx} hed_process_ids[{j}]: {pid!r} not in process_details.json")
     return errors
 
 
@@ -126,11 +118,7 @@ def load_process_ids(path: Path) -> set[str] | None:
             data = json.load(f)
     except (json.JSONDecodeError, OSError):
         return None
-    return {
-        p["process_id"]
-        for p in data.get("processes", [])
-        if isinstance(p, dict) and "process_id" in p
-    }
+    return {p["process_id"] for p in data.get("processes", []) if isinstance(p, dict) and "process_id" in p}
 
 
 # ---------------------------------------------------------------------------
@@ -154,10 +142,7 @@ def parse_args() -> argparse.Namespace:
     p.add_argument(
         "--processes",
         default="process_details.json",
-        help=(
-            "process_details.json path for hed_process_ids cross-check "
-            "(skipped if unreadable)."
-        ),
+        help=("process_details.json path for hed_process_ids cross-check (skipped if unreadable)."),
     )
     return p.parse_args()
 
@@ -217,21 +202,14 @@ def main() -> int:
         return 1
 
     n_tasks = len(data) if isinstance(data, list) else 0
-    n_refs = (
-        sum(len(t.get("references", [])) for t in data)
-        if isinstance(data, list)
-        else 0
-    )
+    n_refs = sum(len(t.get("references", [])) for t in data) if isinstance(data, list) else 0
 
     print(f"OK: {src.name}")
     print(f"  schema:     {schema_path.name}")
     print(f"  tasks:      {n_tasks}")
     print(f"  references: {n_refs}")
     if process_ref_skipped:
-        print(
-            "  note: hed_process_ids cross-check skipped "
-            "(process_details.json missing or unreadable)"
-        )
+        print("  note: hed_process_ids cross-check skipped (process_details.json missing or unreadable)")
     return 0
 
 

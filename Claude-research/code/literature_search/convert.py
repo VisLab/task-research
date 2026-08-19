@@ -84,6 +84,7 @@ def convert_pdf(
 # Internal — kept private so the public surface stays one function.
 # ---------------------------------------------------------------------------
 
+
 def _load_converter():
     """Instantiate marker-pdf's PdfConverter, loading or downloading models.
 
@@ -98,10 +99,7 @@ def _load_converter():
         from marker.converters.pdf import PdfConverter
         from marker.models import create_model_dict
     except ImportError as exc:
-        raise ImportError(
-            "marker-pdf is required for PDF conversion.  Install with: "
-            'pip install -e ".[pdf]"'
-        ) from exc
+        raise ImportError('marker-pdf is required for PDF conversion.  Install with: pip install -e ".[pdf]"') from exc
 
     return PdfConverter(artifact_dict=create_model_dict())
 

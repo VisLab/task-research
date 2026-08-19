@@ -52,7 +52,6 @@ import time
 import unicodedata
 from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Optional
 
 try:
     import requests
@@ -69,48 +68,74 @@ USER_AGENT = "hed-task/1.0 (mailto:hedannotation@gmail.com)"
 MAILTO = "hedannotation@gmail.com"
 RATE_LIMIT_SEC = 0.2  # minimum gap between calls to the same host
 
-BIOMED_TOKENS = frozenset([
-    "neuroimage", "j neurosci", "neuron", "nature neuroscience",
-    "nat neurosci", "pnas", "plos", "biol psychiatry", "cereb cortex",
-    "hippocampus", "brain", "psychol rev", "jama", "lancet", "pmc",
-])
+BIOMED_TOKENS = frozenset(
+    [
+        "neuroimage",
+        "j neurosci",
+        "neuron",
+        "nature neuroscience",
+        "nat neurosci",
+        "pnas",
+        "plos",
+        "biol psychiatry",
+        "cereb cortex",
+        "hippocampus",
+        "brain",
+        "psychol rev",
+        "jama",
+        "lancet",
+        "pmc",
+    ]
+)
 
 _last_call: dict[str, float] = {}
 
 # Fields we add; we never overwrite these originals: journal, year, citation_string
 RESOLVER_FIELDS = (
-    "authors", "title", "venue", "venue_type",
-    "volume", "issue", "pages",
-    "doi", "openalex_id", "pmid", "url",
-    "source", "confidence", "verified_on",
+    "authors",
+    "title",
+    "venue",
+    "venue_type",
+    "volume",
+    "issue",
+    "pages",
+    "doi",
+    "openalex_id",
+    "pmid",
+    "url",
+    "source",
+    "confidence",
+    "verified_on",
 )
 
 # ---------------------------------------------------------------------------
 # Data class
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class ResolvedReference:
-    authors:      Optional[str] = None
-    year:         Optional[int] = None
-    title:        Optional[str] = None
-    venue:        Optional[str] = None
-    venue_type:   Optional[str] = None
-    volume:       Optional[str] = None
-    issue:        Optional[str] = None
-    pages:        Optional[str] = None
-    doi:          Optional[str] = None
-    openalex_id:  Optional[str] = None
-    pmid:         Optional[str] = None
-    url:          Optional[str] = None
-    source:       str = "unresolved"
-    confidence:   str = "none"
-    verified_on:  Optional[str] = None
+    authors: str | None = None
+    year: int | None = None
+    title: str | None = None
+    venue: str | None = None
+    venue_type: str | None = None
+    volume: str | None = None
+    issue: str | None = None
+    pages: str | None = None
+    doi: str | None = None
+    openalex_id: str | None = None
+    pmid: str | None = None
+    url: str | None = None
+    source: str = "unresolved"
+    confidence: str = "none"
+    verified_on: str | None = None
 
 
 # ---------------------------------------------------------------------------
 # Utilities
 # ---------------------------------------------------------------------------
+
 
 def _normalize(s: str) -> str:
     return unicodedata.normalize("NFKD", s.lower())
@@ -120,7 +145,7 @@ def _strip_md(s: str) -> str:
     return re.sub(r"[*_`\[\]]", " ", s)
 
 
-def _stable_key(citation_string: str, journal: Optional[str], year: Optional[int]) -> str:
+def _stable_key(citation_string: str, journal: str | None, year: int | None) -> str:
     return json.dumps([citation_string, journal, year], sort_keys=True)
 
 
@@ -145,7 +170,7 @@ def _extract_surnames(citation_string: str) -> list[str]:
         for word in part.strip().split():
             word = word.rstrip(".,;:")
             if re.match(r"^[A-Za-z]\.?$", word):
-                continue   # skip bare initial
+                continue  # skip bare initial
             if len(word) > 1:
                 surnames.append(_normalize(word))
                 break
@@ -155,18 +180,15 @@ def _extract_surnames(citation_string: str) -> list[str]:
 def _author_match(citation_string: str, api_authors: list[dict]) -> bool:
     surnames = _extract_surnames(citation_string)
     if not surnames:
-        return True   # can't extract — be permissive
-    families = [
-        _normalize(a.get("family") or a.get("name") or "")
-        for a in api_authors
-    ]
+        return True  # can't extract — be permissive
+    families = [_normalize(a.get("family") or a.get("name") or "") for a in api_authors]
     families = [f for f in families if f]
     if not families:
-        return True   # no author data — be permissive
+        return True  # no author data — be permissive
     return any(s in f or f in s for s in surnames for f in families)
 
 
-def _is_biomed(citation_string: str, journal: Optional[str]) -> bool:
+def _is_biomed(citation_string: str, journal: str | None) -> bool:
     h = _normalize((citation_string or "") + " " + (journal or ""))
     return any(t in h for t in BIOMED_TOKENS)
 
@@ -176,28 +198,28 @@ def _is_biomed(citation_string: str, journal: Optional[str]) -> bool:
 # ---------------------------------------------------------------------------
 
 _CR_TYPE = {
-    "journal-article":     "journal",
-    "book":                "book",
-    "book-chapter":        "book_chapter",
-    "monograph":           "book",
-    "edited-book":         "book",
-    "reference-entry":     "book_chapter",
+    "journal-article": "journal",
+    "book": "book",
+    "book-chapter": "book_chapter",
+    "monograph": "book",
+    "edited-book": "book",
+    "reference-entry": "book_chapter",
     "proceedings-article": "proceedings",
-    "report":              "report",
-    "posted-content":      "preprint",
-    "dissertation":        "other",
+    "report": "report",
+    "posted-content": "preprint",
+    "dissertation": "other",
 }
 
 _OA_TYPE = {
-    "journal-article":     "journal",
-    "article":             "journal",
-    "book":                "book",
-    "book-chapter":        "book_chapter",
+    "journal-article": "journal",
+    "article": "journal",
+    "book": "book",
+    "book-chapter": "book_chapter",
     "proceedings-article": "proceedings",
-    "report":              "report",
-    "preprint":            "preprint",
-    "dissertation":        "other",
-    "dataset":             "other",
+    "report": "report",
+    "preprint": "preprint",
+    "dissertation": "other",
+    "dataset": "other",
 }
 
 
@@ -205,11 +227,12 @@ _OA_TYPE = {
 # Author formatting
 # ---------------------------------------------------------------------------
 
-def _fmt_crossref_authors(authors: list[dict]) -> Optional[str]:
+
+def _fmt_crossref_authors(authors: list[dict]) -> str | None:
     parts = []
     for a in authors:
         family = (a.get("family") or "").strip()
-        given  = (a.get("given")  or "").strip()
+        given = (a.get("given") or "").strip()
         if family and given:
             initials = " ".join(f"{w[0]}." for w in given.split() if w)
             parts.append(f"{family}, {initials}")
@@ -222,7 +245,7 @@ def _fmt_crossref_authors(authors: list[dict]) -> Optional[str]:
     return ", ".join(parts[:-1]) + ", & " + parts[-1]
 
 
-def _fmt_openalex_authors(authorships: list[dict]) -> Optional[str]:
+def _fmt_openalex_authors(authorships: list[dict]) -> str | None:
     parts = []
     for a in authorships:
         name = ((a.get("author") or {}).get("display_name") or a.get("display_name") or "").strip()
@@ -239,7 +262,8 @@ def _fmt_openalex_authors(authorships: list[dict]) -> Optional[str]:
 # HTTP helper
 # ---------------------------------------------------------------------------
 
-def _get(url: str, params: dict, host: str, session: requests.Session) -> Optional[requests.Response]:
+
+def _get(url: str, params: dict, host: str, session: requests.Session) -> requests.Response | None:
     now = time.monotonic()
     wait = RATE_LIMIT_SEC - (now - _last_call.get(host, 0.0))
     if wait > 0:
@@ -262,7 +286,7 @@ def _get(url: str, params: dict, host: str, session: requests.Session) -> Option
             return None
 
         if resp.status_code >= 400:
-            return None   # 4xx other than 429: no retry
+            return None  # 4xx other than 429: no retry
 
         return resp
 
@@ -281,7 +305,8 @@ def _verify_doi(doi: str, session: requests.Session) -> bool:
 # Per-source lookups
 # ---------------------------------------------------------------------------
 
-def _try_crossref(cs: str, year: Optional[int], session: requests.Session) -> Optional[ResolvedReference]:
+
+def _try_crossref(cs: str, year: int | None, session: requests.Session) -> ResolvedReference | None:
     params: dict = {"query.bibliographic": cs, "rows": "3", "mailto": MAILTO}
     if year:
         params["filter"] = f"from-pub-date:{year},until-pub-date:{year}"
@@ -327,7 +352,7 @@ def _try_crossref(cs: str, year: Optional[int], session: requests.Session) -> Op
     return None
 
 
-def _try_openalex(cs: str, year: Optional[int], session: requests.Session) -> Optional[ResolvedReference]:
+def _try_openalex(cs: str, year: int | None, session: requests.Session) -> ResolvedReference | None:
     stripped = re.sub(r"\s+", " ", _strip_md(cs)).strip()
     params: dict = {"search": stripped, "per-page": "3", "mailto": MAILTO}
     if year:
@@ -349,8 +374,7 @@ def _try_openalex(cs: str, year: Optional[int], session: requests.Session) -> Op
 
         authorships = item.get("authorships", [])
         api_authors = [
-            {"family": ((a.get("author") or {}).get("display_name") or "").rsplit(" ", 1)[-1]}
-            for a in authorships
+            {"family": ((a.get("author") or {}).get("display_name") or "").rsplit(" ", 1)[-1]} for a in authorships
         ]
         if api_authors and not _author_match(cs, api_authors):
             continue
@@ -381,8 +405,9 @@ def _try_openalex(cs: str, year: Optional[int], session: requests.Session) -> Op
     return None
 
 
-def _try_europepmc(cs: str, year: Optional[int], journal: Optional[str],
-                   session: requests.Session) -> Optional[ResolvedReference]:
+def _try_europepmc(
+    cs: str, year: int | None, journal: str | None, session: requests.Session
+) -> ResolvedReference | None:
     if not _is_biomed(cs, journal):
         return None
     query = cs if not year else f"{cs} AND PUB_YEAR:{year}"
@@ -417,9 +442,10 @@ def _try_europepmc(cs: str, year: Optional[int], journal: Optional[str],
             authors_str = "; ".join(p for p in parts if p) or None
 
         pmid_val = str(item.get("pmid")) if item.get("pmid") else None
-        doi_val  = item.get("doi") or None
+        doi_val = item.get("doi") or None
         url = (
-            f"https://europepmc.org/article/MED/{pmid_val}" if pmid_val
+            f"https://europepmc.org/article/MED/{pmid_val}"
+            if pmid_val
             else (f"https://doi.org/{doi_val}" if doi_val else None)
         )
         return ResolvedReference(
@@ -438,11 +464,9 @@ def _try_europepmc(cs: str, year: Optional[int], journal: Optional[str],
     return None
 
 
-def _try_semanticscholar(cs: str, year: Optional[int],
-                         session: requests.Session) -> Optional[ResolvedReference]:
+def _try_semanticscholar(cs: str, year: int | None, session: requests.Session) -> ResolvedReference | None:
     stripped = re.sub(r"\s+", " ", _strip_md(cs)).strip()
-    params: dict = {"query": stripped, "limit": "3",
-                    "fields": "externalIds,title,authors,venue,year"}
+    params: dict = {"query": stripped, "limit": "3", "fields": "externalIds,title,authors,venue,year"}
     if year:
         params["year"] = str(year)
 
@@ -466,10 +490,7 @@ def _try_semanticscholar(cs: str, year: Optional[int],
             continue
 
         ss_authors = item.get("authors", [])
-        api_authors = [
-            {"family": a.get("name", "").rsplit(" ", 1)[-1]}
-            for a in ss_authors if a.get("name")
-        ]
+        api_authors = [{"family": a.get("name", "").rsplit(" ", 1)[-1]} for a in ss_authors if a.get("name")]
         if api_authors and not _author_match(cs, api_authors):
             continue
 
@@ -503,10 +524,11 @@ def _try_semanticscholar(cs: str, year: Optional[int],
 # Core resolver
 # ---------------------------------------------------------------------------
 
+
 def resolve_reference(
     citation_string: str,
-    journal: Optional[str],
-    year: Optional[int],
+    journal: str | None,
+    year: int | None,
     cache_dir: Path,
     session: requests.Session,
 ) -> ResolvedReference:
@@ -527,13 +549,11 @@ def resolve_reference(
 
     # Historical shortcut
     if year and year < 1900:
-        result = ResolvedReference(year=year, source="historical",
-                                   confidence="low", verified_on=TODAY)
-        cpath.write_text(json.dumps(asdict(result), ensure_ascii=False, indent=2),
-                         encoding="utf-8")
+        result = ResolvedReference(year=year, source="historical", confidence="low", verified_on=TODAY)
+        cpath.write_text(json.dumps(asdict(result), ensure_ascii=False, indent=2), encoding="utf-8")
         return result
 
-    result: Optional[ResolvedReference] = None
+    result: ResolvedReference | None = None
     result = _try_crossref(citation_string, year, session)
     if result is None:
         result = _try_openalex(citation_string, year, session)
@@ -548,8 +568,7 @@ def resolve_reference(
             result.doi = None
 
     if result is None:
-        result = ResolvedReference(year=year, source="unresolved",
-                                   confidence="none", verified_on=TODAY)
+        result = ResolvedReference(year=year, source="unresolved", confidence="none", verified_on=TODAY)
 
     # URL fallback: if no source-specific URL was set, synthesize from doi or pmid.
     if result.url is None:
@@ -558,14 +577,14 @@ def resolve_reference(
         elif result.pmid:
             result.url = f"https://pubmed.ncbi.nlm.nih.gov/{result.pmid}/"
 
-    cpath.write_text(json.dumps(asdict(result), ensure_ascii=False, indent=2),
-                     encoding="utf-8")
+    cpath.write_text(json.dumps(asdict(result), ensure_ascii=False, indent=2), encoding="utf-8")
     return result
 
 
 # ---------------------------------------------------------------------------
 # Reference enrichment
 # ---------------------------------------------------------------------------
+
 
 def enrich_ref(ref: dict, cache_dir: Path, session: requests.Session) -> dict:
     """Merge resolver output into ref, preserving original fields.
@@ -615,6 +634,7 @@ def enrich_ref(ref: dict, cache_dir: Path, session: requests.Session) -> dict:
 # Main
 # ---------------------------------------------------------------------------
 
+
 def main():
     parser = argparse.ArgumentParser(
         description=(
@@ -650,8 +670,8 @@ def main():
     args = parser.parse_args()
 
     script_dir = Path(__file__).parent.resolve()
-    workspace  = args.workspace  or script_dir.parent
-    cache_dir  = args.cache_dir  or (script_dir / "citation_cache")
+    workspace = args.workspace or script_dir.parent
+    cache_dir = args.cache_dir or (script_dir / "citation_cache")
     input_path = workspace / "process_details.json"
     output_path = script_dir / "process_details.enriched.json"
 
@@ -673,10 +693,7 @@ def main():
     raw = input_path.read_text(encoding="utf-8")
     data = json.loads(raw)
     processes = data.get("processes", [])
-    total_refs = sum(
-        len(p.get("fundamental_references", [])) + len(p.get("recent_references", []))
-        for p in processes
-    )
+    total_refs = sum(len(p.get("fundamental_references", [])) + len(p.get("recent_references", [])) for p in processes)
     print(f"Loaded {len(processes)} processes, {total_refs} references.")
     print()
 
@@ -690,7 +707,7 @@ def main():
 
     # Counters
     conf_counts: dict[str, int] = {"high": 0, "medium": 0, "low": 0, "none": 0}
-    src_counts:  dict[str, int] = {}
+    src_counts: dict[str, int] = {}
     done = 0
     skipped_manual = 0
     unresolved_list: list[tuple[str, str]] = []
@@ -745,7 +762,9 @@ def main():
     # manual entries are excluded from auto-resolution counts
     auto_total = total_refs - skipped_manual
     resolved = conf_counts["high"] + conf_counts["medium"] + conf_counts["low"]
-    pct = lambda n, d=auto_total: f"{100 * n // d}%" if d else "N/A"
+
+    def pct(n, d=auto_total):
+        return f"{100 * n // d}%" if d else "N/A"
 
     print()
     print("=" * 50)
@@ -790,7 +809,7 @@ def main():
         print("  2. That session will re-read the updated JSON, spot-check 10 refs,")
         print("     and regenerate derived files via outputs/regenerate_derived_files.py.")
     else:
-        print(f"Skipped write-back. Enriched file is at:")
+        print("Skipped write-back. Enriched file is at:")
         print(f"  {output_path}")
         print()
         print("When ready, copy it to process_details.json, then run Phase 4.")

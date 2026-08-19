@@ -31,18 +31,17 @@ from collections import Counter
 from normalize import Candidate
 from triage_rules import classify_venue
 
-
 # Stable exclusion reason codes. The serializer copies these into the JSON
 # output verbatim; downstream tools may filter on them.
-EXCL_NON_HUMAN     = "non_human_subjects"
-EXCL_UNKNOWN_SPEC  = "unknown_species"
+EXCL_NON_HUMAN = "non_human_subjects"
+EXCL_UNKNOWN_SPEC = "unknown_species"
 EXCL_NO_YEAR_NO_DOI = "no_year_no_doi"
 EXCL_BELOW_THRESHOLD = "below_score_threshold"
-EXCL_BELOW_RESERVE   = "below_reserve_cutoff"
-EXCL_CONFERENCE      = "conference_or_proceedings"
-EXCL_PREPRINT        = "preprint"
-EXCL_LOW_VENUE       = "low_quality_venue"
-EXCL_PUBLISHER       = "excluded_publisher"
+EXCL_BELOW_RESERVE = "below_reserve_cutoff"
+EXCL_CONFERENCE = "conference_or_proceedings"
+EXCL_PREPRINT = "preprint"
+EXCL_LOW_VENUE = "low_quality_venue"
+EXCL_PUBLISHER = "excluded_publisher"
 
 
 # Publication-type tokens that mark a candidate as a conference/proceedings
@@ -76,15 +75,15 @@ _CONFERENCE_VENUE_PATTERNS: tuple[str, ...] = (
     "annual workshop",
     "international workshop",
     "advances in neural information processing systems",  # NeurIPS proceedings
-    "ieee/cvf",                                            # CVPR/ICCV/WACV
+    "ieee/cvf",  # CVPR/ICCV/WACV
     "ieee international conference",
     "acm international conference",
     "acm conference on",
     "acm symposium on",
     "european conference on",
     "asian conference on",
-    "uist proceedings",                                    # ACM UIST
-    "chi conference",                                      # ACM CHI
+    "uist proceedings",  # ACM UIST
+    "chi conference",  # ACM CHI
     "neurips proceedings",
     "icml proceedings",
     "iclr proceedings",
@@ -127,7 +126,7 @@ def _is_conference_or_proceedings(c) -> bool:
          when sources fail to tag, which S2 does for ML conferences).
     """
     # Signal 1: type tags
-    for pt in (c.publication_types or []):
+    for pt in c.publication_types or []:
         ptl = pt.lower()
         for pattern in _CONFERENCE_PATTERNS:
             if pattern in ptl:
@@ -149,7 +148,7 @@ def _is_preprint(c) -> bool:
     2. DOI uses the arXiv canonical prefix `10.48550/arxiv`.
     3. Venue string contains a known preprint-server name.
     """
-    for pt in (c.publication_types or []):
+    for pt in c.publication_types or []:
         ptl = pt.lower()
         for pattern in _PREPRINT_TYPE_PATTERNS:
             if pattern in ptl:
@@ -184,9 +183,9 @@ def _is_low_quality_venue(c) -> bool:
 # exclusive to its publisher, so the match is unambiguous (no journal at
 # a different publisher uses the same DOI prefix).
 _EXCLUDED_DOI_PREFIXES: tuple[str, ...] = (
-    "10.3390/",   # MDPI    (Sensors, Brain Sciences, IJMS, Behavioral Sciences, ...)
-    "10.2174/",   # Bentham (Bentham Science / Bentham Open)
-    "10.4172/",   # OMICS   (OMICS Publishing Group / OMICS International)
+    "10.3390/",  # MDPI    (Sensors, Brain Sciences, IJMS, Behavioral Sciences, ...)
+    "10.2174/",  # Bentham (Bentham Science / Bentham Open)
+    "10.4172/",  # OMICS   (OMICS Publishing Group / OMICS International)
 )
 
 # Publisher-string fallback for records that lack a DOI but have a publisher
@@ -314,19 +313,12 @@ def assign_tiers(
             picked_count += 1
             continue
 
-        if (
-            picked_count < n_picked
-            and (min_picked_score is None or (c.composite_score or 0.0) >= min_picked_score)
-        ):
+        if picked_count < n_picked and (min_picked_score is None or (c.composite_score or 0.0) >= min_picked_score):
             c.tier = "picked"
             picked_count += 1
             continue
 
-        if (
-            picked_count < n_picked
-            and min_picked_score is not None
-            and (c.composite_score or 0.0) < min_picked_score
-        ):
+        if picked_count < n_picked and min_picked_score is not None and (c.composite_score or 0.0) < min_picked_score:
             # Slot was available but score too low; this candidate falls
             # to reserve or excluded depending on whether reserve has space.
             if reserve_count < n_reserve:
@@ -347,8 +339,8 @@ def assign_tiers(
         c.exclusion_reason = EXCL_BELOW_RESERVE
         summary["exclusion_reasons"][EXCL_BELOW_RESERVE] += 1
 
-    summary["picked"]   = sum(1 for c in ranked if c.tier == "picked")
-    summary["reserve"]  = sum(1 for c in ranked if c.tier == "reserve")
+    summary["picked"] = sum(1 for c in ranked if c.tier == "picked")
+    summary["reserve"] = sum(1 for c in ranked if c.tier == "reserve")
     summary["excluded"] = sum(1 for c in ranked if c.tier == "excluded")
     summary["exclusion_reasons"] = dict(summary["exclusion_reasons"])
     return summary

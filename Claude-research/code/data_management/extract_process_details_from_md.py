@@ -38,8 +38,6 @@ import re
 from dataclasses import dataclass, field
 from datetime import date
 from pathlib import Path
-from typing import Optional
-
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -58,11 +56,12 @@ OUT_REPORT = SCRIPT_DIR / "phase2_extraction_report.md"
 # Data types
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class Reference:
     title: str
     journal: str
-    year: Optional[int]
+    year: int | None
     citation_string: str
 
 
@@ -93,6 +92,7 @@ class CategoryEntry:
 # ---------------------------------------------------------------------------
 # Slug
 # ---------------------------------------------------------------------------
+
 
 def slugify(name: str) -> str:
     """
@@ -131,7 +131,7 @@ def parse_one_citation(raw: str) -> Reference:
     # Strip trailing period only if it terminates the sentence cleanly
     if citation.endswith(".") and not citation.endswith("..."):
         citation = citation[:-1]
-    year: Optional[int] = None
+    year: int | None = None
     m = YEAR_RE.search(citation)
     if m:
         year = int(m.group(1))
@@ -180,8 +180,8 @@ def parse_process_reference(path: Path):
     """Return (categories_in_order: list[str], processes: list[ProcessEntry])."""
     categories_in_order: list = []
     processes: list = []
-    current_category: Optional[str] = None
-    current: Optional[ProcessEntry] = None
+    current_category: str | None = None
+    current: ProcessEntry | None = None
 
     def flush():
         nonlocal current
@@ -257,9 +257,7 @@ def parse_process_reference(path: Path):
 # ---------------------------------------------------------------------------
 
 CATEGORY_HEAD_RE = re.compile(r"^## (.+?)(?:\s+\((\d+)\))?\s*$")
-CATEGORY_FIELD_RE = re.compile(
-    r"^\*\*(Scope|Out of scope|Issues|History)\.\*\*\s*(.*)$"
-)
+CATEGORY_FIELD_RE = re.compile(r"^\*\*(Scope|Out of scope|Issues|History)\.\*\*\s*(.*)$")
 FIELD_MAP = {
     "Scope": "scope",
     "Out of scope": "out_of_scope",
@@ -270,7 +268,7 @@ FIELD_MAP = {
 
 def parse_process_categories(path: Path) -> list:
     entries: list = []
-    current: Optional[CategoryEntry] = None
+    current: CategoryEntry | None = None
 
     for raw in path.read_text(encoding="utf-8").splitlines():
         line = raw.rstrip()
@@ -310,6 +308,7 @@ def parse_process_categories(path: Path) -> list:
 # Existing tasks[] loader
 # ---------------------------------------------------------------------------
 
+
 def load_existing_tasks(path: Path) -> dict:
     """
     Load the per-process tasks[] reverse index from the existing derived
@@ -320,15 +319,19 @@ def load_existing_tasks(path: Path) -> dict:
     authoritative task_details.json later.
     """
     if not path.exists():
-        print(f"NOTE: {path} not found -- emitting empty tasks[] fields. "
-              f"Populate via sync_process_details_tasks.py (Phase 4).")
+        print(
+            f"NOTE: {path} not found -- emitting empty tasks[] fields. "
+            f"Populate via sync_process_details_tasks.py (Phase 4)."
+        )
         return {}
     try:
         data = json.loads(path.read_text(encoding="utf-8"))
     except json.JSONDecodeError as e:
-        print(f"NOTE: {path} could not be parsed ({e}). "
-              f"Emitting empty tasks[] fields; populate via "
-              f"sync_process_details_tasks.py (Phase 4).")
+        print(
+            f"NOTE: {path} could not be parsed ({e}). "
+            f"Emitting empty tasks[] fields; populate via "
+            f"sync_process_details_tasks.py (Phase 4)."
+        )
         return {}
     out = {}
     for p in data.get("processes", []):
@@ -342,6 +345,7 @@ def load_existing_tasks(path: Path) -> dict:
 # ---------------------------------------------------------------------------
 # Assembly
 # ---------------------------------------------------------------------------
+
 
 def ref_to_dict(r: Reference) -> dict:
     return {
@@ -427,7 +431,7 @@ def is_probably_book(citation: str) -> bool:
     m = ITALIC_RE.search(citation)
     if not m:
         return False
-    tail = citation[m.end():]
+    tail = citation[m.end() :]
     # A journal citation usually has a volume:page pattern after the italic,
     # optionally prefixed by an issue number in parens. If none, assume book.
     return not VOL_PAGES_RE.match(tail)
@@ -442,22 +446,15 @@ def build_report(
     lines.append("# Phase 2 extraction report")
     lines.append("")
     lines.append(f"**Date:** {date.today().isoformat()}")
-    lines.append(
-        "**Script:** `outputs/extract_process_details_from_md.py`"
-    )
-    lines.append(
-        "**Output JSON:** `process_details.enriched.json` (at repo root — for review)"
-    )
+    lines.append("**Script:** `outputs/extract_process_details_from_md.py`")
+    lines.append("**Output JSON:** `process_details.enriched.json` (at repo root — for review)")
     lines.append("")
 
     lines.append("## Counts")
     lines.append("")
     lines.append(f"- Categories: {enriched['total_categories']}")
     lines.append(f"- Processes: {enriched['total_processes']}")
-    lines.append(
-        f"- Processes linked to at least one task: "
-        f"{enriched['total_processes_used_by_tasks']}"
-    )
+    lines.append(f"- Processes linked to at least one task: {enriched['total_processes_used_by_tasks']}")
     lines.append(f"- Unique tasks referenced: {enriched['total_tasks']}")
     lines.append("")
 
@@ -470,9 +467,7 @@ def build_report(
         md_count = c.process_count
         derived = cat_counts.get(c.category_id, 0)
         mismatch = "" if md_count == derived else f" — MISMATCH (MD: {md_count})"
-        lines.append(
-            f"- **{c.name}** (`{c.category_id}`): {derived}{mismatch}"
-        )
+        lines.append(f"- **{c.name}** (`{c.category_id}`): {derived}{mismatch}")
     lines.append("")
 
     # Reference counts
@@ -490,9 +485,7 @@ def build_report(
     lines.append("")
 
     # Book-like flagged references
-    lines.append(
-        "## References where italicized run is likely a book (not journal)"
-    )
+    lines.append("## References where italicized run is likely a book (not journal)")
     lines.append("")
     lines.append(
         "Heuristic: no `volume:pages` pattern follows the italicized run. These will "
@@ -532,10 +525,7 @@ def build_report(
     no_tasks = [p for p in processes if p.task_count == 0]
     lines.append("## Processes with no linked tasks (pre-provisioned rows)")
     lines.append("")
-    lines.append(
-        f"**Total:** {len(no_tasks)} "
-        f"(catalog documentation expects ~22 pre-provisioned rows)."
-    )
+    lines.append(f"**Total:** {len(no_tasks)} (catalog documentation expects ~22 pre-provisioned rows).")
     lines.append("")
     for p in no_tasks:
         lines.append(f"- `{p.process_id}` ({p.process_name})")
@@ -545,8 +535,8 @@ def build_report(
     lines.append("## Spot checks")
     lines.append("")
     lines.append(
-        "Run `diff <(python3 -c 'import json; d=json.load(open(\"process_details.enriched.json\")); "
-        "print(next(p[\"definition\"] for p in d[\"processes\"] if p[\"process_id\"]==\"hed_working_memory_updating\"))') "
+        'Run `diff <(python3 -c \'import json; d=json.load(open("process_details.enriched.json")); '
+        'print(next(p["definition"] for p in d["processes"] if p["process_id"]=="hed_working_memory_updating"))\') '
         "<(grep -A 1 '^### Working memory updating' process_reference.md | tail -1 | "
         "sed -E 's/\\*\\*Definition\\.\\*\\* //')` "
         "to confirm no definition drift."
@@ -559,6 +549,7 @@ def build_report(
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+
 
 def main():
     categories_in_order, processes = parse_process_reference(PROCESS_REFERENCE)
@@ -576,8 +567,7 @@ def main():
     ref_cats = categories_in_order
     cat_names = [c.name for c in categories]
     if ref_cats != cat_names:
-        print("WARNING: category ordering differs between process_reference.md "
-              "and process_categories.md")
+        print("WARNING: category ordering differs between process_reference.md and process_categories.md")
         print("  process_reference.md order:", ref_cats)
         print("  process_categories.md order:", cat_names)
 

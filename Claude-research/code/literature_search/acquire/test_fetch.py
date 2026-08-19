@@ -10,8 +10,8 @@ avoids monkey-patching ``requests`` at module scope.
 from __future__ import annotations
 
 import sys
+from collections.abc import Iterable
 from pathlib import Path
-from typing import Iterable
 from unittest.mock import patch
 
 import pytest
@@ -22,12 +22,12 @@ import requests
 _HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(_HERE))
 
-import fetch as F  # noqa: E402  the module under test
-
+import fetch as F  # noqa: E402, N812  the module under test
 
 # ---------------------------------------------------------------------------
 # Fake response + session
 # ---------------------------------------------------------------------------
+
 
 class FakeResp:
     """Minimal stand-in for a ``requests.Response``.
@@ -115,6 +115,7 @@ def _clean_throttle():
 # Happy paths
 # ---------------------------------------------------------------------------
 
+
 def test_successful_pdf_fetch_populates_all_fields():
     body = b"%PDF-1.7\n%fake\n"
     resp = FakeResp(
@@ -140,17 +141,14 @@ def test_content_type_strips_parameters_and_lowercases():
         headers={"Content-Type": "Application/PDF; charset=binary"},
         body=b"%PDF-1.4",
     )
-    r = F.fetch_bytes("https://example.com/x",
-                      session=FakeSession(response=resp), host_throttle_sec=0)
+    r = F.fetch_bytes("https://example.com/x", session=FakeSession(response=resp), host_throttle_sec=0)
     assert r.content_type == "application/pdf"
     assert r.is_pdf() is True
 
 
 def test_is_pdf_false_for_html_response():
-    resp = FakeResp(headers={"Content-Type": "text/html; charset=utf-8"},
-                    body=b"<html>landing page</html>")
-    r = F.fetch_bytes("https://example.com/x",
-                      session=FakeSession(response=resp), host_throttle_sec=0)
+    resp = FakeResp(headers={"Content-Type": "text/html; charset=utf-8"}, body=b"<html>landing page</html>")
+    r = F.fetch_bytes("https://example.com/x", session=FakeSession(response=resp), host_throttle_sec=0)
     assert r.is_pdf() is False
     # HTML body is still returned so the caller can log it.
     assert r.body == b"<html>landing page</html>"
@@ -160,10 +158,8 @@ def test_is_pdf_true_for_octet_stream_with_magic_bytes():
     # PR-H2 (2026-06-01): we accept either the application/pdf
     # Content-Type or the %PDF- magic byte prefix.  octet-stream
     # was previously rejected outright; now we trust the body.
-    resp = FakeResp(headers={"Content-Type": "application/octet-stream"},
-                    body=b"%PDF-1.4\n...rest of pdf...")
-    r = F.fetch_bytes("https://example.com/x",
-                      session=FakeSession(response=resp), host_throttle_sec=0)
+    resp = FakeResp(headers={"Content-Type": "application/octet-stream"}, body=b"%PDF-1.4\n...rest of pdf...")
+    r = F.fetch_bytes("https://example.com/x", session=FakeSession(response=resp), host_throttle_sec=0)
     assert r.is_pdf() is True
 
 
@@ -171,44 +167,37 @@ def test_is_pdf_false_for_octet_stream_without_magic_bytes():
     # Without %PDF- prefix the octet-stream body is treated as
     # non-PDF (zip, tarball, JPEG, etc.).  Belt-and-braces against
     # the footgun mentioned in is_pdf's docstring.
-    resp = FakeResp(headers={"Content-Type": "application/octet-stream"},
-                    body=b"PK\x03\x04...zip archive...")
-    r = F.fetch_bytes("https://example.com/x",
-                      session=FakeSession(response=resp), host_throttle_sec=0)
+    resp = FakeResp(headers={"Content-Type": "application/octet-stream"}, body=b"PK\x03\x04...zip archive...")
+    r = F.fetch_bytes("https://example.com/x", session=FakeSession(response=resp), host_throttle_sec=0)
     assert r.is_pdf() is False
 
 
 def test_is_pdf_true_for_text_plain_with_magic_bytes():
     # Some misconfigured servers serve PDFs as text/plain.  Magic-byte
     # detection rescues them.
-    resp = FakeResp(headers={"Content-Type": "text/plain"},
-                    body=b"%PDF-1.5 body")
-    r = F.fetch_bytes("https://example.com/x",
-                      session=FakeSession(response=resp), host_throttle_sec=0)
+    resp = FakeResp(headers={"Content-Type": "text/plain"}, body=b"%PDF-1.5 body")
+    r = F.fetch_bytes("https://example.com/x", session=FakeSession(response=resp), host_throttle_sec=0)
     assert r.is_pdf() is True
 
 
 def test_is_pdf_false_for_short_body_without_magic():
     # A body too short to carry the magic prefix and a generic
     # content-type should not be mistaken for a PDF.
-    resp = FakeResp(headers={"Content-Type": "application/octet-stream"},
-                    body=b"PDF")  # 3 bytes, doesn't match %PDF-
-    r = F.fetch_bytes("https://example.com/x",
-                      session=FakeSession(response=resp), host_throttle_sec=0)
+    resp = FakeResp(headers={"Content-Type": "application/octet-stream"}, body=b"PDF")  # 3 bytes, doesn't match %PDF-
+    r = F.fetch_bytes("https://example.com/x", session=FakeSession(response=resp), host_throttle_sec=0)
     assert r.is_pdf() is False
 
 
 def test_is_pdf_false_for_empty_body_without_magic():
-    resp = FakeResp(headers={"Content-Type": "text/html"},
-                    body=b"")
-    r = F.fetch_bytes("https://example.com/x",
-                      session=FakeSession(response=resp), host_throttle_sec=0)
+    resp = FakeResp(headers={"Content-Type": "text/html"}, body=b"")
+    r = F.fetch_bytes("https://example.com/x", session=FakeSession(response=resp), host_throttle_sec=0)
     assert r.is_pdf() is False
 
 
 # ---------------------------------------------------------------------------
 # Error paths
 # ---------------------------------------------------------------------------
+
 
 def test_network_exception_surfaces_as_error_with_status_zero():
     sess = FakeSession(raise_exc=requests.ConnectionError("DNS failure"))
@@ -230,11 +219,8 @@ def test_timeout_exception_surfaces_as_error():
 def test_http_error_status_is_returned_normally():
     # 404 / 500 etc. are domain-level concerns, not errors at this
     # layer; the orchestrator decides whether to retry.
-    resp = FakeResp(status=404,
-                    headers={"Content-Type": "text/plain"},
-                    body=b"not found")
-    r = F.fetch_bytes("https://example.com/x",
-                      session=FakeSession(response=resp), host_throttle_sec=0)
+    resp = FakeResp(status=404, headers={"Content-Type": "text/plain"}, body=b"not found")
+    r = F.fetch_bytes("https://example.com/x", session=FakeSession(response=resp), host_throttle_sec=0)
     assert r.status == 404
     assert r.error is None
     assert r.body == b"not found"
@@ -247,8 +233,7 @@ def test_stream_exception_mid_body_returns_error():
         body=b"x",  # body is irrelevant; the stream error fires first
         stream_error=requests.ConnectionError("connection reset mid-stream"),
     )
-    r = F.fetch_bytes("https://example.com/x",
-                      session=FakeSession(response=resp), host_throttle_sec=0)
+    r = F.fetch_bytes("https://example.com/x", session=FakeSession(response=resp), host_throttle_sec=0)
     # Status header came back fine, but the body couldn't be drained.
     assert r.status == 200
     assert r.body == b""
@@ -257,9 +242,7 @@ def test_stream_exception_mid_body_returns_error():
 
 def test_oversize_body_aborts_with_error_and_empty_body():
     body = b"\x00" * 4096
-    resp = FakeResp(status=200,
-                    headers={"Content-Type": "application/pdf"},
-                    body=body, chunk_size=1024)
+    resp = FakeResp(status=200, headers={"Content-Type": "application/pdf"}, body=body, chunk_size=1024)
     r = F.fetch_bytes(
         "https://example.com/x",
         session=FakeSession(response=resp),
@@ -290,6 +273,7 @@ def test_non_string_url_short_circuits():
 # ---------------------------------------------------------------------------
 # Headers and request shape
 # ---------------------------------------------------------------------------
+
 
 def test_user_agent_default_includes_contact_email():
     # Tests the constant rather than the over-the-wire request because
@@ -328,12 +312,15 @@ def test_request_uses_streaming_and_redirects():
 # Throttle
 # ---------------------------------------------------------------------------
 
+
 def test_throttle_sleeps_on_same_host_within_window():
     resp = FakeResp(headers={"Content-Type": "application/pdf"}, body=b"")
     sess = FakeSession(responses=[resp, resp])
 
-    with patch.object(F.time, "sleep") as fake_sleep, \
-         patch.object(F.time, "monotonic", side_effect=[10.0, 10.0, 10.2, 10.7, 10.7]):
+    with (
+        patch.object(F.time, "sleep") as fake_sleep,
+        patch.object(F.time, "monotonic", side_effect=[10.0, 10.0, 10.2, 10.7, 10.7]),
+    ):
         # Call 1: throttle sees no prior state -> no sleep; records t=10.0
         # Call 2: monotonic=10.2; gap=0.2; throttle_sec=1.0 -> sleeps 0.8
         F.fetch_bytes("https://example.com/a", session=sess, host_throttle_sec=1.0)
@@ -348,8 +335,10 @@ def test_throttle_does_not_sleep_when_gap_already_elapsed():
     resp = FakeResp(headers={"Content-Type": "application/pdf"}, body=b"")
     sess = FakeSession(responses=[resp, resp])
 
-    with patch.object(F.time, "sleep") as fake_sleep, \
-         patch.object(F.time, "monotonic", side_effect=[10.0, 10.0, 12.0, 12.0, 12.0]):
+    with (
+        patch.object(F.time, "sleep") as fake_sleep,
+        patch.object(F.time, "monotonic", side_effect=[10.0, 10.0, 12.0, 12.0, 12.0]),
+    ):
         F.fetch_bytes("https://example.com/a", session=sess, host_throttle_sec=1.0)
         F.fetch_bytes("https://example.com/b", session=sess, host_throttle_sec=1.0)
 
@@ -361,9 +350,10 @@ def test_throttle_per_host_independent():
     sess = FakeSession(responses=[resp, resp])
 
     # Two calls to different hosts -> no inter-host throttling.
-    with patch.object(F.time, "sleep") as fake_sleep, \
-         patch.object(F.time, "monotonic",
-                      side_effect=[10.0, 10.0, 10.1, 10.1, 10.1]):
+    with (
+        patch.object(F.time, "sleep") as fake_sleep,
+        patch.object(F.time, "monotonic", side_effect=[10.0, 10.0, 10.1, 10.1, 10.1]),
+    ):
         F.fetch_bytes("https://a.example.com/x", session=sess, host_throttle_sec=1.0)
         F.fetch_bytes("https://b.example.com/x", session=sess, host_throttle_sec=1.0)
 
@@ -389,9 +379,7 @@ def test_reset_throttle_clears_state():
     # value here and patch sleep so the test stays fast.
     resp = FakeResp(headers={"Content-Type": "application/pdf"}, body=b"")
     with patch.object(F.time, "sleep"):
-        F.fetch_bytes("https://example.com/x",
-                      session=FakeSession(response=resp),
-                      host_throttle_sec=0.01)
+        F.fetch_bytes("https://example.com/x", session=FakeSession(response=resp), host_throttle_sec=0.01)
     assert F._last_call  # populated
     F.reset_throttle()
     assert F._last_call == {}

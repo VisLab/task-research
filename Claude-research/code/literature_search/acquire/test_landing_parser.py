@@ -15,39 +15,26 @@ if str(_HERE) not in sys.path:
 
 from landing_parser import extract_pdf_url  # noqa: E402
 
-
 # ---------------------------------------------------------------------------
 # citation_pdf_url meta tag
 # ---------------------------------------------------------------------------
 
-class TestCitationPdfUrl:
 
+class TestCitationPdfUrl:
     def test_simple_absolute(self):
-        html = (
-            "<html><head>"
-            '<meta name="citation_pdf_url" content="https://pub.example/a.pdf">'
-            "</head></html>"
-        )
-        assert extract_pdf_url(html, "https://pub.example/article/123") == (
-            "https://pub.example/a.pdf"
-        )
+        html = '<html><head><meta name="citation_pdf_url" content="https://pub.example/a.pdf"></head></html>'
+        assert extract_pdf_url(html, "https://pub.example/article/123") == ("https://pub.example/a.pdf")
 
     def test_relative_resolved_against_base(self):
-        html = (
-            '<meta name="citation_pdf_url" content="/article/123.pdf">'
-        )
+        html = '<meta name="citation_pdf_url" content="/article/123.pdf">'
         assert extract_pdf_url(html, "https://pub.example/landing/article/123") == (
             "https://pub.example/article/123.pdf"
         )
 
     def test_protocol_relative_resolved(self):
-        html = (
-            '<meta name="citation_pdf_url" content="//cdn.example/a.pdf">'
-        )
+        html = '<meta name="citation_pdf_url" content="//cdn.example/a.pdf">'
         # urljoin respects scheme of the base.
-        assert extract_pdf_url(html, "https://pub.example/x") == (
-            "https://cdn.example/a.pdf"
-        )
+        assert extract_pdf_url(html, "https://pub.example/x") == ("https://cdn.example/a.pdf")
 
     def test_case_insensitive_name(self):
         html = '<META Name="Citation_PDF_URL" Content="https://x/y.pdf">'
@@ -73,39 +60,26 @@ class TestCitationPdfUrl:
 # <link rel="alternate" type="application/pdf">
 # ---------------------------------------------------------------------------
 
-class TestLinkAlternate:
 
+class TestLinkAlternate:
     def test_link_rel_alternate(self):
-        html = (
-            '<link rel="alternate" type="application/pdf" '
-            'href="https://x/y.pdf">'
-        )
+        html = '<link rel="alternate" type="application/pdf" href="https://x/y.pdf">'
         assert extract_pdf_url(html, "https://x") == "https://x/y.pdf"
 
     def test_link_relative_href_resolved(self):
         html = '<link rel="alternate" type="application/pdf" href="full.pdf">'
-        assert extract_pdf_url(html, "https://x/articles/123/") == (
-            "https://x/articles/123/full.pdf"
-        )
+        assert extract_pdf_url(html, "https://x/articles/123/") == ("https://x/articles/123/full.pdf")
 
     def test_link_case_insensitive_attrs(self):
-        html = (
-            '<LINK REL="Alternate" TYPE="Application/PDF" '
-            'HREF="https://x/y.pdf">'
-        )
+        html = '<LINK REL="Alternate" TYPE="Application/PDF" HREF="https://x/y.pdf">'
         assert extract_pdf_url(html, "https://x") == "https://x/y.pdf"
 
     def test_link_wrong_rel_ignored(self):
-        html = (
-            '<link rel="canonical" type="application/pdf" '
-            'href="https://x/y.pdf">'
-        )
+        html = '<link rel="canonical" type="application/pdf" href="https://x/y.pdf">'
         assert extract_pdf_url(html, "https://x") is None
 
     def test_link_wrong_type_ignored(self):
-        html = (
-            '<link rel="alternate" type="text/html" href="https://x/y.html">'
-        )
+        html = '<link rel="alternate" type="text/html" href="https://x/y.html">'
         assert extract_pdf_url(html, "https://x") is None
 
 
@@ -113,8 +87,8 @@ class TestLinkAlternate:
 # Precedence and document-order behaviour
 # ---------------------------------------------------------------------------
 
-class TestOrdering:
 
+class TestOrdering:
     def test_meta_before_link_wins_when_both_present(self):
         html = (
             '<meta name="citation_pdf_url" content="https://x/meta.pdf">'
@@ -137,8 +111,8 @@ class TestOrdering:
 # Edge cases
 # ---------------------------------------------------------------------------
 
-class TestEdgeCases:
 
+class TestEdgeCases:
     def test_no_pdf_signal_returns_none(self):
         html = "<html><head><title>No PDF here</title></head></html>"
         assert extract_pdf_url(html, "https://x") is None
@@ -155,38 +129,26 @@ class TestEdgeCases:
         assert extract_pdf_url(None, "https://x") is None  # type: ignore[arg-type]
 
     def test_utf8_bytes_handled(self):
-        html = (
-            '<meta name="citation_pdf_url" content="https://x/article-α.pdf">'
-        ).encode("utf-8")
-        assert extract_pdf_url(html, "https://x") == (
-            "https://x/article-α.pdf"
-        )
+        html = ('<meta name="citation_pdf_url" content="https://x/article-α.pdf">').encode()
+        assert extract_pdf_url(html, "https://x") == ("https://x/article-α.pdf")
 
     def test_latin1_fallback_on_decode_error(self):
         # A byte that's not valid utf-8 in the document body: parser
         # should not blow up — fallback decoder takes over.
-        html = (
-            b'<meta name="citation_pdf_url" content="https://x/y.pdf">'
-            b'<p>nasty byte \xff here</p>'
-        )
+        html = b'<meta name="citation_pdf_url" content="https://x/y.pdf"><p>nasty byte \xff here</p>'
         assert extract_pdf_url(html, "https://x") == "https://x/y.pdf"
 
     def test_malformed_html_doesnt_crash(self):
         # Wildly broken HTML — html.parser is forgiving; we should
         # either find the tag or return None, never raise.
-        html = (
-            "<html><head><<meta name=\"citation_pdf_url\""
-            " content=\"https://x/y.pdf\"></head></html"
-        )
+        html = '<html><head><<meta name="citation_pdf_url" content="https://x/y.pdf"></head></html'
         # Best-effort: the parser may still find the meta tag.  Either
         # outcome is acceptable; what matters is no exception escapes.
         result = extract_pdf_url(html, "https://x")
         assert result is None or result == "https://x/y.pdf"
 
     def test_no_base_url_keeps_absolute(self):
-        html = (
-            '<meta name="citation_pdf_url" content="https://x/y.pdf">'
-        )
+        html = '<meta name="citation_pdf_url" content="https://x/y.pdf">'
         assert extract_pdf_url(html, "") == "https://x/y.pdf"
 
     def test_no_base_url_relative_input_yields_relative_output(self):
@@ -246,11 +208,9 @@ ELIFE_FIXTURE = """
 
 
 class TestRealisticFixtures:
-
     def test_elsevier(self):
         assert extract_pdf_url(ELSEVIER_FIXTURE, "https://www.sciencedirect.com/science/article/pii/X") == (
-            "https://www.sciencedirect.com/science/article/pii/"
-            "S0000000000000001/pdfft?md5=abc&pid=1-s2.0.pdf"
+            "https://www.sciencedirect.com/science/article/pii/S0000000000000001/pdfft?md5=abc&pid=1-s2.0.pdf"
         )
 
     def test_apa(self):

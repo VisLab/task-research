@@ -32,7 +32,6 @@ import time
 import unicodedata
 from dataclasses import asdict, dataclass
 from pathlib import Path
-from typing import Optional
 
 import requests
 
@@ -43,15 +42,29 @@ import requests
 TODAY = "2026-04-20"
 USER_AGENT = "hed-task/1.0 (mailto:hedannotation@gmail.com)"
 MAILTO = "hedannotation@gmail.com"
-RATE_LIMIT_SEC = 0.2   # minimum gap between calls to the same host
+RATE_LIMIT_SEC = 0.2  # minimum gap between calls to the same host
 
 # Tokens that indicate a reference is biomedical enough to try Europe PMC.
 # Matched case-insensitively against the full citation_string + journal.
-BIOMED_TOKENS = frozenset([
-    "neuroimage", "j neurosci", "neuron", "nature neuroscience",
-    "nat neurosci", "pnas", "plos", "biol psychiatry", "cereb cortex",
-    "hippocampus", "brain", "psychol rev", "jama", "lancet", "pmc",
-])
+BIOMED_TOKENS = frozenset(
+    [
+        "neuroimage",
+        "j neurosci",
+        "neuron",
+        "nature neuroscience",
+        "nat neurosci",
+        "pnas",
+        "plos",
+        "biol psychiatry",
+        "cereb cortex",
+        "hippocampus",
+        "brain",
+        "psychol rev",
+        "jama",
+        "lancet",
+        "pmc",
+    ]
+)
 
 # Per-host monotonic timestamp of last outgoing request (for rate limiting)
 _last_call: dict[str, float] = {}
@@ -61,31 +74,34 @@ _last_call: dict[str, float] = {}
 # Data class
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class ResolvedReference:
     """Structured output of a citation resolution attempt."""
-    authors: Optional[str] = None
-    year: Optional[int] = None
-    title: Optional[str] = None
-    venue: Optional[str] = None
+
+    authors: str | None = None
+    year: int | None = None
+    title: str | None = None
+    venue: str | None = None
     # one of: journal | book | book_chapter | proceedings | report | preprint | other
-    venue_type: Optional[str] = None
-    volume: Optional[str] = None
-    issue: Optional[str] = None
-    pages: Optional[str] = None
-    doi: Optional[str] = None
-    openalex_id: Optional[str] = None
-    pmid: Optional[str] = None
+    venue_type: str | None = None
+    volume: str | None = None
+    issue: str | None = None
+    pages: str | None = None
+    doi: str | None = None
+    openalex_id: str | None = None
+    pmid: str | None = None
     # one of: crossref | openalex | europepmc | semanticscholar | unresolved | historical
     source: str = "unresolved"
     # one of: high | medium | low | none
     confidence: str = "none"
-    verified_on: Optional[str] = None
+    verified_on: str | None = None
 
 
 # ---------------------------------------------------------------------------
 # Utility helpers
 # ---------------------------------------------------------------------------
+
 
 def _normalize(s: str) -> str:
     """Lowercase + NFKD unicode normalization."""
@@ -97,7 +113,7 @@ def _strip_md(s: str) -> str:
     return re.sub(r"[*_`\[\]]", " ", s)
 
 
-def _stable_key(citation_string: str, journal: Optional[str], year: Optional[int]) -> str:
+def _stable_key(citation_string: str, journal: str | None, year: int | None) -> str:
     return json.dumps([citation_string, journal, year], sort_keys=True)
 
 
@@ -145,10 +161,7 @@ def _author_match(citation_string: str, api_authors: list[dict]) -> bool:
     surnames = _extract_surnames(citation_string)
     if not surnames:
         return True  # No surnames extracted — be permissive
-    api_families = [
-        _normalize(a.get("family") or a.get("name") or "")
-        for a in api_authors
-    ]
+    api_families = [_normalize(a.get("family") or a.get("name") or "") for a in api_authors]
     api_families = [f for f in api_families if f]
     if not api_families:
         return True  # No author data in API — be permissive
@@ -159,7 +172,7 @@ def _author_match(citation_string: str, api_authors: list[dict]) -> bool:
     return False
 
 
-def _is_biomed(citation_string: str, journal: Optional[str]) -> bool:
+def _is_biomed(citation_string: str, journal: str | None) -> bool:
     haystack = _normalize((citation_string or "") + " " + (journal or ""))
     return any(token in haystack for token in BIOMED_TOKENS)
 
@@ -169,28 +182,28 @@ def _is_biomed(citation_string: str, journal: Optional[str]) -> bool:
 # ---------------------------------------------------------------------------
 
 _CROSSREF_TYPE_MAP = {
-    "journal-article":    "journal",
-    "book":               "book",
-    "book-chapter":       "book_chapter",
-    "monograph":          "book",
-    "edited-book":        "book",
-    "reference-entry":    "book_chapter",
-    "proceedings-article":"proceedings",
-    "report":             "report",
-    "posted-content":     "preprint",
-    "dissertation":       "other",
+    "journal-article": "journal",
+    "book": "book",
+    "book-chapter": "book_chapter",
+    "monograph": "book",
+    "edited-book": "book",
+    "reference-entry": "book_chapter",
+    "proceedings-article": "proceedings",
+    "report": "report",
+    "posted-content": "preprint",
+    "dissertation": "other",
 }
 
 _OPENALEX_TYPE_MAP = {
-    "journal-article":    "journal",
-    "article":            "journal",
-    "book":               "book",
-    "book-chapter":       "book_chapter",
-    "proceedings-article":"proceedings",
-    "report":             "report",
-    "preprint":           "preprint",
-    "dissertation":       "other",
-    "dataset":            "other",
+    "journal-article": "journal",
+    "article": "journal",
+    "book": "book",
+    "book-chapter": "book_chapter",
+    "proceedings-article": "proceedings",
+    "report": "report",
+    "preprint": "preprint",
+    "dissertation": "other",
+    "dataset": "other",
 }
 
 
@@ -206,11 +219,12 @@ def _openalex_venue_type(oa_type: str) -> str:
 # Author formatting helpers
 # ---------------------------------------------------------------------------
 
+
 def _fmt_authors_crossref(cr_authors: list[dict]) -> str:
     parts = []
     for a in cr_authors:
         family = (a.get("family") or "").strip()
-        given  = (a.get("given")  or "").strip()
+        given = (a.get("given") or "").strip()
         if family and given:
             initials = " ".join(f"{w[0]}." for w in given.split() if w)
             parts.append(f"{family}, {initials}")
@@ -241,12 +255,13 @@ def _fmt_authors_openalex(authorships: list[dict]) -> str:
 # HTTP helper
 # ---------------------------------------------------------------------------
 
+
 def _get(
     url: str,
     params: dict,
     host: str,
     session: requests.Session,
-) -> Optional[requests.Response]:
+) -> requests.Response | None:
     """
     Rate-limited GET with retry on 429 / 5xx.
     Returns None on any unrecoverable failure.
@@ -288,6 +303,7 @@ def _get(
 # DOI verification
 # ---------------------------------------------------------------------------
 
+
 def _verify_doi(doi: str, session: requests.Session) -> bool:
     """HEAD request to https://doi.org/<doi>; accept 2xx or 3xx."""
     try:
@@ -305,11 +321,12 @@ def _verify_doi(doi: str, session: requests.Session) -> bool:
 # Per-source lookup functions
 # ---------------------------------------------------------------------------
 
+
 def _try_crossref(
     citation_string: str,
-    year: Optional[int],
+    year: int | None,
     session: requests.Session,
-) -> Optional[ResolvedReference]:
+) -> ResolvedReference | None:
     params: dict = {
         "query.bibliographic": citation_string,
         "rows": "3",
@@ -364,9 +381,9 @@ def _try_crossref(
 
 def _try_openalex(
     citation_string: str,
-    year: Optional[int],
+    year: int | None,
     session: requests.Session,
-) -> Optional[ResolvedReference]:
+) -> ResolvedReference | None:
     stripped = re.sub(r"\s+", " ", _strip_md(citation_string)).strip()
     params: dict = {
         "search": stripped,
@@ -393,8 +410,7 @@ def _try_openalex(
         authorships = item.get("authorships", [])
         # Build a family-name list for matching
         api_authors = [
-            {"family": (a.get("author") or {}).get("display_name", "").rsplit(" ", 1)[-1]}
-            for a in authorships
+            {"family": (a.get("author") or {}).get("display_name", "").rsplit(" ", 1)[-1]} for a in authorships
         ]
         if api_authors and not _author_match(citation_string, api_authors):
             continue
@@ -428,10 +444,10 @@ def _try_openalex(
 
 def _try_europepmc(
     citation_string: str,
-    year: Optional[int],
-    journal: Optional[str],
+    year: int | None,
+    journal: str | None,
     session: requests.Session,
-) -> Optional[ResolvedReference]:
+) -> ResolvedReference | None:
     if not _is_biomed(citation_string, journal):
         return None
 
@@ -472,10 +488,7 @@ def _try_europepmc(
 
         authors_str = None
         if author_list:
-            parts = [
-                f"{a.get('lastName', '')}, {a.get('initials', '')}".strip(", ")
-                for a in author_list
-            ]
+            parts = [f"{a.get('lastName', '')}, {a.get('initials', '')}".strip(", ") for a in author_list]
             authors_str = "; ".join(p for p in parts if p) or None
 
         return ResolvedReference(
@@ -495,9 +508,9 @@ def _try_europepmc(
 
 def _try_semanticscholar(
     citation_string: str,
-    year: Optional[int],
+    year: int | None,
     session: requests.Session,
-) -> Optional[ResolvedReference]:
+) -> ResolvedReference | None:
     stripped = re.sub(r"\s+", " ", _strip_md(citation_string)).strip()
     params: dict = {
         "query": stripped,
@@ -527,10 +540,7 @@ def _try_semanticscholar(
             continue
 
         ss_authors = item.get("authors", [])
-        api_authors = [
-            {"family": a.get("name", "").rsplit(" ", 1)[-1]}
-            for a in ss_authors if a.get("name")
-        ]
+        api_authors = [{"family": a.get("name", "").rsplit(" ", 1)[-1]} for a in ss_authors if a.get("name")]
         if api_authors and not _author_match(citation_string, api_authors):
             continue
 
@@ -560,12 +570,13 @@ def _try_semanticscholar(
 # Public API
 # ---------------------------------------------------------------------------
 
+
 def resolve_reference(
     citation_string: str,
-    journal: Optional[str],
-    year: Optional[int],
+    journal: str | None,
+    year: int | None,
     cache_dir: Path,
-    session: Optional[requests.Session] = None,
+    session: requests.Session | None = None,
 ) -> ResolvedReference:
     """
     Resolve a citation string to a structured ResolvedReference.
@@ -611,7 +622,7 @@ def resolve_reference(
         session.headers["User-Agent"] = USER_AGENT
 
     try:
-        result: Optional[ResolvedReference] = None
+        result: ResolvedReference | None = None
 
         result = _try_crossref(citation_string, year, session)
 

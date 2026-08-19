@@ -34,7 +34,6 @@ import json
 import sys
 from pathlib import Path
 
-
 # ---------------------------------------------------------------------------
 # Byte-level
 # ---------------------------------------------------------------------------
@@ -54,9 +53,7 @@ def check_byte_level(path: Path) -> list[str]:
     stripped = raw.rstrip()
     if not stripped.endswith(b"}"):
         tail = raw[-30:].decode("utf-8", errors="replace")
-        errors.append(
-            f"file does not end at a closing brace; last 30 chars: {tail!r}"
-        )
+        errors.append(f"file does not end at a closing brace; last 30 chars: {tail!r}")
 
     return errors
 
@@ -76,10 +73,7 @@ def check_schema(data: dict, schema: dict) -> list[str]:
     try:
         from jsonschema import Draft7Validator
     except ImportError as e:
-        raise SystemExit(
-            "ERROR: the `jsonschema` package is required.\n"
-            "Install it with: pip install jsonschema"
-        ) from e
+        raise SystemExit("ERROR: the `jsonschema` package is required.\nInstall it with: pip install jsonschema") from e
 
     validator = Draft7Validator(schema)
     errors = []
@@ -99,15 +93,9 @@ def check_header_counts(data: dict) -> list[str]:
     n_cats = len(data.get("categories", []))
     n_procs = len(data.get("processes", []))
     if data.get("total_categories") != n_cats:
-        errors.append(
-            f"total_categories header ({data.get('total_categories')}) "
-            f"!= actual ({n_cats})"
-        )
+        errors.append(f"total_categories header ({data.get('total_categories')}) != actual ({n_cats})")
     if data.get("total_processes") != n_procs:
-        errors.append(
-            f"total_processes header ({data.get('total_processes')}) "
-            f"!= actual ({n_procs})"
-        )
+        errors.append(f"total_processes header ({data.get('total_processes')}) != actual ({n_procs})")
     return errors
 
 
@@ -128,11 +116,7 @@ def check_process_cross_refs(data: dict) -> list[str]:
     within a process; task_count matches."""
     errors: list[str] = []
     procs = data.get("processes", [])
-    valid_cat_ids = {
-        c["category_id"]
-        for c in data.get("categories", [])
-        if "category_id" in c
-    }
+    valid_cat_ids = {c["category_id"] for c in data.get("categories", []) if "category_id" in c}
 
     seen_ids: set[str] = set()
     seen_names: set[str] = set()
@@ -156,9 +140,7 @@ def check_process_cross_refs(data: dict) -> list[str]:
         cid = p.get("category_id")
         if cid is not None:
             if cid not in valid_cat_ids:
-                errors.append(
-                    f"{ctx}: category_id {cid!r} not defined in categories"
-                )
+                errors.append(f"{ctx}: category_id {cid!r} not defined in categories")
             else:
                 actual_cat_counts[cid] = actual_cat_counts.get(cid, 0) + 1
 
@@ -188,9 +170,7 @@ def check_process_cross_refs(data: dict) -> list[str]:
         declared = c.get("process_count")
         actual = actual_cat_counts.get(cid, 0)
         if declared != actual:
-            errors.append(
-                f"category {cid!r}: process_count ({declared}) != actual ({actual})"
-            )
+            errors.append(f"category {cid!r}: process_count ({declared}) != actual ({actual})")
 
     return errors
 

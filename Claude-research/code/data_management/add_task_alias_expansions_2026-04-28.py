@@ -51,7 +51,6 @@ import json
 import sys
 from pathlib import Path
 
-
 # ---------------------------------------------------------------------------
 # Additions. Keys are hedtsk_id; values are lists of new alias strings.
 # Each entry is a multi-word phrase (so it survives the phrase-gate filter)
@@ -102,15 +101,16 @@ ADDITIONS: dict[str, list[str]] = {
     "hedtsk_stop_signal": ["Stop-Signal", "Stop Signal"],
     "hedtsk_sustained_attention_to_response": ["Sustained Attention to Response"],
     "hedtsk_tower_of_london": ["Tower of London"],
-    "hedtsk_trail_making": [],   # already has "Trail Making Test"
-    "hedtsk_trust_game": [],     # already has "Trust Game"
-    "hedtsk_ultimatum_game": [], # already has "Ultimatum Game"
+    "hedtsk_trail_making": [],  # already has "Trail Making Test"
+    "hedtsk_trust_game": [],  # already has "Trust Game"
+    "hedtsk_ultimatum_game": [],  # already has "Ultimatum Game"
 }
 
 
 # ---------------------------------------------------------------------------
 # Application
 # ---------------------------------------------------------------------------
+
 
 def apply_additions(tasks: list[dict]) -> tuple[list[dict], list[str]]:
     """Mutate `tasks` in place. Return (tasks, log_lines)."""
@@ -143,10 +143,8 @@ def apply_additions(tasks: list[dict]) -> tuple[list[dict], list[str]]:
 
 def parse_args() -> argparse.Namespace:
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("--workspace", default=".",
-                   help="Workspace root (default: cwd)")
-    p.add_argument("--write", action="store_true",
-                   help="Write changes to task_details.json (default: dry run)")
+    p.add_argument("--workspace", default=".", help="Workspace root (default: cwd)")
+    p.add_argument("--write", action="store_true", help="Write changes to task_details.json (default: dry run)")
     return p.parse_args()
 
 

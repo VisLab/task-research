@@ -44,11 +44,9 @@ NEW_ALIASES: dict[str, list[dict]] = {
         {"name": "classical conditioning"},
         {"name": "Pavlovian"},
     ],
-
     # auditory_and_pre_attentive_deviance_processing (2)
     "Auditory tone discrimination": [{"name": "tone discrimination"}],
     "Pitch perception": [{"name": "pitch processing"}],
-
     # awareness_agency_and_metacognition (5)
     "Interoceptive awareness": [{"name": "interoception"}],
     "Mind wandering": [
@@ -57,18 +55,15 @@ NEW_ALIASES: dict[str, list[dict]] = {
     ],
     "Perceptual awareness": [{"name": "conscious perception"}],
     "Self-referential processing": [{"name": "self-referential"}],
-
     # cognitive_flexibility_and_higher_order_executive_function (2 added to
     # existing aliases on Set shifting)
     "Set shifting": [
         {"name": "task switching"},
         {"name": "task-switching"},
     ],
-
     # emotion_perception_and_regulation (2)
     "Affective priming": [{"name": "evaluative priming"}],
     "Cognitive reappraisal": [{"name": "reappraisal"}],
-
     # face_and_object_perception (6)
     "Biological motion perception": [
         {
@@ -81,7 +76,6 @@ NEW_ALIASES: dict[str, list[dict]] = {
     "Olfactory perception": [{"name": "olfaction"}],
     "Visual form recognition": [{"name": "shape recognition"}],
     "Visual object recognition": [{"name": "object recognition"}],
-
     # inhibitory_control_and_conflict_monitoring (3)
     "Interference control": [{"name": "interference resolution"}],
     "Response inhibition": [
@@ -91,12 +85,10 @@ NEW_ALIASES: dict[str, list[dict]] = {
             "note": "more common in motor-control and oculomotor literatures",
         },
     ],
-
     # language_comprehension_and_production (3)
     "Lexical access": [{"name": "lexical retrieval"}],
     "Sentence comprehension": [{"name": "sentence processing"}],
     "Syntactic parsing": [{"name": "syntactic processing"}],
-
     # long_term_memory (7)
     "Consolidation": [{"name": "memory consolidation"}],
     "Declarative memory": [{"name": "explicit memory"}],
@@ -110,7 +102,6 @@ NEW_ALIASES: dict[str, list[dict]] = {
             "note": "Johnson, Hashtroudi & Lindsay (1993) tradition",
         },
     ],
-
     # motor_preparation_timing_and_execution (8)
     "Antisaccade": [{"name": "anti-saccade"}],
     "Motor planning": [{"name": "movement planning"}],
@@ -120,10 +111,8 @@ NEW_ALIASES: dict[str, list[dict]] = {
     "Saccade": [{"name": "saccadic"}],
     "Visuomotor adaptation": [{"name": "sensorimotor adaptation"}],
     "Vocal-motor control": [{"name": "speech motor control"}],
-
     # reasoning_and_problem_solving (1)
     "Causal reasoning": [{"name": "causal inference"}],
-
     # short_term_and_working_memory (1)
     "Verbal working memory": [
         {
@@ -131,10 +120,8 @@ NEW_ALIASES: dict[str, list[dict]] = {
             "note": "Baddeley working memory model",
         },
     ],
-
     # social_cognition_and_strategic_social_choice (1)
     "In-group/out-group processing": [{"name": "intergroup processing"}],
-
     # value_based_decision_making_under_risk_and_uncertainty (4)
     "Delay discounting": [{"name": "temporal discounting"}],
     "Intertemporal choice": [{"name": "intertemporal decision making"}],
@@ -183,16 +170,12 @@ def apply_aliases(processes: list[dict]) -> tuple[list[dict], list[str], list[st
         added_to_this = []
         for alias in new_aliases:
             if alias["name"] in existing_names:
-                applied.append(
-                    f"  [skip] {target_name} already has alias '{alias['name']}'"
-                )
+                applied.append(f"  [skip] {target_name} already has alias '{alias['name']}'")
                 continue
             existing.append(alias)
             added_to_this.append(alias["name"])
         if added_to_this:
-            applied.append(
-                f"  [add]  {target_name}: {', '.join(repr(a) for a in added_to_this)}"
-            )
+            applied.append(f"  [add]  {target_name}: {', '.join(repr(a) for a in added_to_this)}")
         proc["aliases"] = existing
 
     missing = [name for name in NEW_ALIASES if name not in found]
@@ -218,8 +201,7 @@ def main() -> int:
     original_count = len(data["processes"])
     if original_total != original_count:
         print(
-            f"WARN: header total_processes ({original_total}) != "
-            f"len(processes) ({original_count})",
+            f"WARN: header total_processes ({original_total}) != len(processes) ({original_count})",
             file=sys.stderr,
         )
 
@@ -250,9 +232,7 @@ def main() -> int:
     # Verify staged JSON parses.
     with staged.open("r", encoding="utf-8") as f:
         verified = json.load(f)
-    assert len(verified["processes"]) == original_count, (
-        "staged file has wrong process count"
-    )
+    assert len(verified["processes"]) == original_count, "staged file has wrong process count"
 
     # Report.
     print(f"Source:   {src}")

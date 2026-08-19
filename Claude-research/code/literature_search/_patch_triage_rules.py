@@ -16,10 +16,9 @@ directly rather than via an ANCHOR-based string replacement.
 import argparse
 from pathlib import Path
 
-
 ANCHOR = '        "Experimental Economics",\n    },'
 
-ADDITIONS = '''\
+ADDITIONS = """\
         "Experimental Economics",
         # Additional specialty journals
         "Journal of Applied Physiology",
@@ -48,13 +47,12 @@ ADDITIONS = '''\
         "Journal of Child Language",
         "Journal of Communication Disorders",
         "Journal of Economic Psychology",
-    },'''
+    },"""
 
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="DEPRECATED one-off patch (already applied).")
-    ap.add_argument("--workspace", default=".",
-                    help="Workspace root (default: current directory)")
+    ap.add_argument("--workspace", default=".", help="Workspace root (default: current directory)")
     args = ap.parse_args()
 
     path = Path(args.workspace).resolve() / "code" / "literature_search" / "triage_rules.py"

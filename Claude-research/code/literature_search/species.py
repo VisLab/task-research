@@ -52,29 +52,48 @@ _HUMAN_PHRASES: tuple[str, ...] = (
     "in patients",
     "clinical population",
 )
-_HUMAN_TOKENS: frozenset[str] = frozenset({
-    "human", "humans",
-    "patient", "patients",
-    "subject", "subjects",      # weak; only counted if no animal token present
-    "participant", "participants",
-})
+_HUMAN_TOKENS: frozenset[str] = frozenset(
+    {
+        "human",
+        "humans",
+        "patient",
+        "patients",
+        "subject",
+        "subjects",  # weak; only counted if no animal token present
+        "participant",
+        "participants",
+    }
+)
 
 # Decisive non-human signals when present without a stronger human signal.
 # These are the actual species/model words; specific lab-animal contexts.
-_ANIMAL_TOKENS: frozenset[str] = frozenset({
-    "rat", "rats",
-    "mouse", "mice",
-    "rodent", "rodents",
-    "macaque", "macaques",
-    "monkey", "monkeys",
-    "marmoset", "marmosets",
-    "zebrafish", "drosophila",
-    "c.elegans",                 # also matches "c. elegans" via tokenization
-    "rabbit", "rabbits",
-    "pigeon", "pigeons",
-    "ferret", "ferrets",
-    "vole", "voles",
-})
+_ANIMAL_TOKENS: frozenset[str] = frozenset(
+    {
+        "rat",
+        "rats",
+        "mouse",
+        "mice",
+        "rodent",
+        "rodents",
+        "macaque",
+        "macaques",
+        "monkey",
+        "monkeys",
+        "marmoset",
+        "marmosets",
+        "zebrafish",
+        "drosophila",
+        "c.elegans",  # also matches "c. elegans" via tokenization
+        "rabbit",
+        "rabbits",
+        "pigeon",
+        "pigeons",
+        "ferret",
+        "ferrets",
+        "vole",
+        "voles",
+    }
+)
 # Compound phrases that look animal but are actually human-relative.
 # When one of these appears, the matched animal token is NOT counted.
 _QUALIFYING_PHRASES: tuple[str, ...] = (
@@ -102,6 +121,7 @@ _MESH_ANIMAL_FLAG = "animals"
 # ---------------------------------------------------------------------------
 # Public API
 # ---------------------------------------------------------------------------
+
 
 def classify_human_subject(
     title: str | None,
@@ -184,6 +204,7 @@ def classify_human_subject(
 # ---------------------------------------------------------------------------
 # Convenience wrapper for Candidate objects
 # ---------------------------------------------------------------------------
+
 
 def classify_candidate(cand) -> tuple[bool | None, list[str]]:
     """Pull the relevant fields off a Candidate and call classify_human_subject."""

@@ -35,8 +35,8 @@ from __future__ import annotations
 
 import logging
 import time
+from collections.abc import Mapping
 from dataclasses import dataclass, field
-from typing import Mapping
 from urllib.parse import urlparse
 
 try:
@@ -66,6 +66,7 @@ _PDF_MAGIC_BYTES: bytes = b"%PDF-"
 # Result type
 # ---------------------------------------------------------------------------
 
+
 @dataclass
 class FetchResult:
     """Outcome of one :func:`fetch_bytes` call.
@@ -80,6 +81,7 @@ class FetchResult:
     response (network exception or size guard); None on every HTTP
     response, even 5xx.
     """
+
     status: int
     url: str
     content_type: str
@@ -115,6 +117,7 @@ class FetchResult:
 # ---------------------------------------------------------------------------
 # Throttle
 # ---------------------------------------------------------------------------
+
 
 def _host_of(url: str) -> str:
     """Lower-case host component of ``url``; ``""`` if unparseable."""
@@ -163,9 +166,7 @@ DEFAULT_HOST_THROTTLE_SEC: float = 1.0
 # Crossref, PMC, etc. ask requesters to identify themselves in the UA;
 # this string carries the contact email so admins can reach us if our
 # traffic ever looks like abuse.
-DEFAULT_USER_AGENT = (
-    "hed-acquire/1.0 (https://github.com/hed-standard; mailto:hedannotation@gmail.com)"
-)
+DEFAULT_USER_AGENT = "hed-acquire/1.0 (https://github.com/hed-standard; mailto:hedannotation@gmail.com)"
 
 
 def fetch_bytes(
@@ -177,7 +178,7 @@ def fetch_bytes(
     allow_redirects: bool = True,
     user_agent: str = DEFAULT_USER_AGENT,
     extra_headers: Mapping[str, str] | None = None,
-    session: "requests.Session | None" = None,
+    session: requests.Session | None = None,
 ) -> FetchResult:
     """GET ``url`` and return a :class:`FetchResult`.
 
@@ -195,8 +196,7 @@ def fetch_bytes(
     fresh ``requests.get`` call is used.
     """
     if not isinstance(url, str) or not url.strip():
-        return FetchResult(status=0, url=url or "", content_type="", body=b"",
-                           error="empty or non-string url")
+        return FetchResult(status=0, url=url or "", content_type="", body=b"", error="empty or non-string url")
 
     host = _host_of(url)
     _throttle(host, host_throttle_sec)
@@ -220,8 +220,7 @@ def fetch_bytes(
         )
     except requests.RequestException as exc:
         logger.info("fetch network error %s: %s", url, exc)
-        return FetchResult(status=0, url=url, content_type="", body=b"",
-                           error=f"{type(exc).__name__}: {exc}")
+        return FetchResult(status=0, url=url, content_type="", body=b"", error=f"{type(exc).__name__}: {exc}")
 
     # Pull the headers we need before we start draining the stream.
     raw_ctype = resp.headers.get("Content-Type", "") or ""
@@ -250,16 +249,23 @@ def fetch_bytes(
             resp.close()
         finally:
             pass
-        return FetchResult(status=status, url=final_url, content_type=content_type,
-                           body=b"", error=f"{type(exc).__name__}: {exc}",
-                           headers=dict(resp.headers))
+        return FetchResult(
+            status=status,
+            url=final_url,
+            content_type=content_type,
+            body=b"",
+            error=f"{type(exc).__name__}: {exc}",
+            headers=dict(resp.headers),
+        )
 
     headers_out = dict(resp.headers)
     resp.close()
 
     if oversize:
         return FetchResult(
-            status=status, url=final_url, content_type=content_type,
+            status=status,
+            url=final_url,
+            content_type=content_type,
             body=b"",
             error=f"body exceeds max_bytes={max_bytes}",
             headers=headers_out,

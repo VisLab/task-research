@@ -24,10 +24,10 @@ from priority import (  # noqa: E402
     walk_locations,
 )
 
-
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
 
 def loc(
     url: str,
@@ -39,10 +39,10 @@ def loc(
 ) -> dict:
     """Build a pdf_locations[] entry with sensible defaults."""
     return {
-        "url":     url,
-        "source":  source,
+        "url": url,
+        "source": source,
         "version": version,
-        "is_oa":   is_oa,
+        "is_oa": is_oa,
         "license": license,
     }
 
@@ -51,8 +51,8 @@ def loc(
 # classify_url
 # ---------------------------------------------------------------------------
 
-class TestClassifyURL:
 
+class TestClassifyURL:
     def test_pmc_hosts(self) -> None:
         assert classify_url("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4097944/") == "pmc"
         assert classify_url("https://pmc.ncbi.nlm.nih.gov/articles/PMC4097944/") == "pmc"
@@ -93,8 +93,8 @@ class TestClassifyURL:
 # priority_key
 # ---------------------------------------------------------------------------
 
-class TestPriorityKey:
 
+class TestPriorityKey:
     def test_pmc_outranks_other(self) -> None:
         pmc = priority_key(loc("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/"))
         other = priority_key(loc("https://hdl.handle.net/x/y"))
@@ -141,8 +141,8 @@ class TestPriorityKey:
 # walk_locations
 # ---------------------------------------------------------------------------
 
-class TestWalkLocations:
 
+class TestWalkLocations:
     def test_pmc_before_publisher_repository(self) -> None:
         locs = [
             loc("https://www.frontiersin.org/articles/10.3389/fnhum.2014.00443/pdf"),
@@ -194,8 +194,8 @@ class TestWalkLocations:
 
     def test_missing_or_empty_url_dropped(self) -> None:
         locs = [
-            {"url": "",   "source": "openalex", "version": None, "is_oa": True,  "license": "unknown"},
-            {"url": None, "source": "openalex", "version": None, "is_oa": True,  "license": "unknown"},
+            {"url": "", "source": "openalex", "version": None, "is_oa": True, "license": "unknown"},
+            {"url": None, "source": "openalex", "version": None, "is_oa": True, "license": "unknown"},
             loc("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/"),
         ]
         out = walk_locations(locs)
@@ -206,7 +206,7 @@ class TestWalkLocations:
         # Defensive: a corrupt pdf_locations[] containing a non-dict
         # element should not crash; just skip it.
         locs = [
-            "not a dict",                                                  # type: ignore[list-item]
+            "not a dict",  # type: ignore[list-item]
             loc("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/"),
         ]
         out = walk_locations(locs)
@@ -256,7 +256,6 @@ _AC_LANDING_URL = f"https://academiccommons.columbia.edu/doi/{_AC_DOI}"
 
 
 class TestSynthesizeCandidates:
-
     def test_empty_input(self) -> None:
         assert synthesize_candidates(None) == []
         assert synthesize_candidates([]) == []
@@ -292,11 +291,7 @@ class TestSynthesizeCandidates:
 
     def test_inherits_version_and_license_from_source_doi_entry(self) -> None:
         locs = [
-            loc(_AC_DOI_URL,
-                source="unpaywall",
-                version="acceptedManuscript",
-                license="cc-by-nc-nd",
-                is_oa=True),
+            loc(_AC_DOI_URL, source="unpaywall", version="acceptedManuscript", license="cc-by-nc-nd", is_oa=True),
         ]
         out = synthesize_candidates(locs)
         synthetic = out[-1]
@@ -318,10 +313,10 @@ class TestSynthesizeCandidates:
         # 10.7916/ is the AC prefix; nothing else should trigger
         # synthesis even if the URL shape rhymes.
         locs = [
-            loc("https://doi.org/10.7916abc"),                # missing slash
-            loc("https://doi.org/10.7917/x"),                  # wrong prefix
-            loc("https://doi.org/10.7916/x?ref=y"),           # query rejected
-            loc("https://doi.org/10.7916/x/extra"),           # extra path rejected
+            loc("https://doi.org/10.7916abc"),  # missing slash
+            loc("https://doi.org/10.7917/x"),  # wrong prefix
+            loc("https://doi.org/10.7916/x?ref=y"),  # query rejected
+            loc("https://doi.org/10.7916/x/extra"),  # extra path rejected
         ]
         out = synthesize_candidates(locs)
         assert out == locs
@@ -340,10 +335,7 @@ class TestSynthesizeCandidates:
         # dicts before reading .source on the result.
         locs = ["not a dict", loc(_AC_DOI_URL)]  # type: ignore[list-item]
         out = synthesize_candidates(locs)
-        synthetics = [
-            x for x in out
-            if isinstance(x, dict) and x.get("source") == "synthesized:ac"
-        ]
+        synthetics = [x for x in out if isinstance(x, dict) and x.get("source") == "synthesized:ac"]
         assert len(synthetics) == 1
 
     def test_input_not_mutated(self) -> None:
@@ -357,8 +349,8 @@ class TestSynthesizeCandidates:
 # fetcher_for  (PR-F)
 # ---------------------------------------------------------------------------
 
-class TestFetcherFor:
 
+class TestFetcherFor:
     def test_ac_routes_to_browser(self) -> None:
         assert fetcher_for(loc(_AC_LANDING_URL)) == "browser"
 
@@ -368,15 +360,9 @@ class TestFetcherFor:
         # the browser-mediated session PMC's PDF endpoint demands.
         # PMC PDFs are now discovered via the OA Web Service from
         # acquire_pdf._plan_walk.
-        assert fetcher_for(loc(
-            "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/"
-        )) == "plain"
-        assert fetcher_for(loc(
-            "https://pmc.ncbi.nlm.nih.gov/articles/PMC1/"
-        )) == "plain"
-        assert fetcher_for(loc(
-            "https://pmc.ncbi.nlm.nih.gov/articles/PMC1/pdf/foo.pdf"
-        )) == "plain"
+        assert fetcher_for(loc("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1/")) == "plain"
+        assert fetcher_for(loc("https://pmc.ncbi.nlm.nih.gov/articles/PMC1/")) == "plain"
+        assert fetcher_for(loc("https://pmc.ncbi.nlm.nih.gov/articles/PMC1/pdf/foo.pdf")) == "plain"
 
     def test_publisher_routes_to_plain(self) -> None:
         assert fetcher_for(loc("https://www.frontiersin.org/x.pdf")) == "plain"
@@ -408,8 +394,8 @@ class TestFetcherFor:
 # walk_locations integration with synthesis  (PR-F)
 # ---------------------------------------------------------------------------
 
-class TestWalkLocationsWithSynthesis:
 
+class TestWalkLocationsWithSynthesis:
     def test_ac_doi_synthesises_and_ranks_before_bare_doi(self) -> None:
         # The original input has only the bare doi.org entry.  After
         # synthesis + sort, the AC landing URL must come ahead of the

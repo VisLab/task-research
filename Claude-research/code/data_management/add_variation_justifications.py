@@ -28,15 +28,16 @@ import sys
 from pathlib import Path
 
 SCRIPT_DIR = Path(__file__).parent.resolve()
-REPO_ROOT  = SCRIPT_DIR.parent
+REPO_ROOT = SCRIPT_DIR.parent
 
 TASK_DETAILS = REPO_ROOT / "task_details.json"
-AUDIT_FILE   = REPO_ROOT / ".status" / "task_variation_audit.md"
+AUDIT_FILE = REPO_ROOT / ".status" / "task_variation_audit.md"
 
 
 # ---------------------------------------------------------------------------
 # Parsing
 # ---------------------------------------------------------------------------
+
 
 def parse_audit(audit_path: Path) -> dict[str, dict[str, str]]:
     """
@@ -74,7 +75,7 @@ def parse_audit(audit_path: Path) -> dict[str, dict[str, str]]:
         if cols[1] in ("#", "") or cols[1].startswith("-"):
             continue
 
-        verdict = cols[3].strip("*").strip()   # handles both KEEP and **DROP**
+        verdict = cols[3].strip("*").strip()  # handles both KEEP and **DROP**
         if verdict != "KEEP":
             continue
 
@@ -92,6 +93,7 @@ def parse_audit(audit_path: Path) -> dict[str, dict[str, str]]:
 # Application
 # ---------------------------------------------------------------------------
 
+
 def apply_justifications(
     tasks: list[dict],
     audit: dict[str, dict[str, str]],
@@ -106,8 +108,8 @@ def apply_justifications(
     id_to_task = {t["hedtsk_id"]: t for t in tasks}
 
     total_added = 0
-    unmatched_audit: list[str] = []      # audit KEEP names not found in JSON
-    no_audit_entry: list[str] = []       # JSON variation names with no audit KEEP entry
+    unmatched_audit: list[str] = []  # audit KEEP names not found in JSON
+    no_audit_entry: list[str] = []  # JSON variation names with no audit KEEP entry
 
     for hedtsk_id, keep_map in audit.items():
         task = id_to_task.get(hedtsk_id)
@@ -119,7 +121,7 @@ def apply_justifications(
         # Build a case-insensitive lookup for variation name → variation dict
         # (exact match preferred; fallback to casefold)
         var_by_name: dict[str, dict] = {v["name"]: v for v in task.get("variations", [])}
-        var_by_cf:   dict[str, dict] = {v["name"].casefold(): v for v in task.get("variations", [])}
+        var_by_cf: dict[str, dict] = {v["name"].casefold(): v for v in task.get("variations", [])}
 
         for audit_name, justification in keep_map.items():
             var = var_by_name.get(audit_name) or var_by_cf.get(audit_name.casefold())
@@ -143,11 +145,12 @@ def apply_justifications(
 # Main
 # ---------------------------------------------------------------------------
 
+
 def main() -> None:
     print("=== Add Variation Justifications ===\n")
 
     # Load
-    raw   = TASK_DETAILS.read_bytes().rstrip(b"\x00")
+    raw = TASK_DETAILS.read_bytes().rstrip(b"\x00")
     tasks = json.loads(raw)
     total_vars = sum(len(t.get("variations", [])) for t in tasks)
     print(f"Loaded {len(tasks)} tasks, {total_vars} variations from task_details.json")
@@ -161,7 +164,7 @@ def main() -> None:
     total_added, unmatched_audit, no_audit_entry = apply_justifications(tasks, audit)
 
     # Report
-    print(f"\n--- Results ---")
+    print("\n--- Results ---")
     print(f"Justifications added : {total_added}")
 
     if unmatched_audit:
@@ -198,7 +201,7 @@ def main() -> None:
         json.dumps(tasks, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
     )
-    print(f"Updated task_details.json written")
+    print("Updated task_details.json written")
 
 
 if __name__ == "__main__":

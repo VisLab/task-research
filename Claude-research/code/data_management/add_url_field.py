@@ -34,19 +34,29 @@ from pathlib import Path
 # ---------------------------------------------------------------------------
 
 MANUAL_URLS: dict[str, str] = {
-    "O'Keefe & Nadel (1978) *The Hippocampus as a Cognitive Map*":
-        "https://repository.arizona.edu/handle/10150/620894",
-    "Braver et al. (2021) *Journal of Cognitive Neuroscience* doi:10.1162/jocn_a_01768":
-        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10069323/",
+    "O'Keefe & Nadel (1978) *The Hippocampus as a Cognitive Map*": "https://repository.arizona.edu/handle/10150/620894",
+    "Braver et al. (2021) *Journal of Cognitive Neuroscience* doi:10.1162/jocn_a_01768": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10069323/",
 }
 
 # Desired field order for a reference object.
 FIELD_ORDER = [
-    "title", "journal", "year", "citation_string",
-    "authors", "venue", "venue_type",
-    "volume", "issue", "pages",
-    "doi", "openalex_id", "pmid", "url",
-    "source", "confidence", "verified_on",
+    "title",
+    "journal",
+    "year",
+    "citation_string",
+    "authors",
+    "venue",
+    "venue_type",
+    "volume",
+    "issue",
+    "pages",
+    "doi",
+    "openalex_id",
+    "pmid",
+    "url",
+    "source",
+    "confidence",
+    "verified_on",
 ]
 
 
@@ -111,18 +121,21 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
     )
     parser.add_argument(
-        "--workspace", type=Path, default=None,
+        "--workspace",
+        type=Path,
+        default=None,
         help="Path to Claude-research workspace root (default: parent of outputs/)",
     )
     parser.add_argument(
-        "--dry-run", action="store_true",
+        "--dry-run",
+        action="store_true",
         help="Report counts without writing.",
     )
     args = parser.parse_args()
 
     script_dir = Path(__file__).parent.resolve()
-    workspace  = args.workspace or script_dir.parent
-    path       = workspace / "process_details.json"
+    workspace = args.workspace or script_dir.parent
+    path = workspace / "process_details.json"
 
     if not path.exists():
         print(f"ERROR: {path} not found.")
@@ -144,7 +157,7 @@ def main():
             refs = process.get(ref_key, [])
             patched, added, manual = patch_refs(refs)
             process[ref_key] = patched
-            total_refs  += len(patched)
+            total_refs += len(patched)
             total_added += added
             total_manual += manual
             for ref in patched:
