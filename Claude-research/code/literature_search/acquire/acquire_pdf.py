@@ -163,10 +163,10 @@ def _save_catalog(
     scratch.mkdir(parents=True, exist_ok=True)
     staged_p = scratch / p_path.name
     staged_t = scratch / t_path.name
-    with staged_p.open("w", encoding="utf-8") as f:
+    with staged_p.open("w", encoding="utf-8", newline="\n") as f:
         json.dump(processes, f, indent=2, ensure_ascii=False)
         f.write("\n")
-    with staged_t.open("w", encoding="utf-8") as f:
+    with staged_t.open("w", encoding="utf-8", newline="\n") as f:
         json.dump(tasks, f, indent=2, ensure_ascii=False)
         f.write("\n")
     shutil.copyfile(staged_p, p_path)

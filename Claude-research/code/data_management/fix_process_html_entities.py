@@ -27,6 +27,6 @@ for process in data.get("processes", []):
 
 print(f"Fields unescaped: {fixed}")
 
-with open(PROCESS_FILE, "w", encoding="utf-8") as fh:
+with open(PROCESS_FILE, "w", encoding="utf-8", newline="\n") as fh:
     json.dump(data, fh, ensure_ascii=False, indent=2)
 print(f"Written: {PROCESS_FILE}")

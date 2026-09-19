@@ -201,12 +201,14 @@ def main() -> None:
     proc_out.write_text(
         json.dumps(proc_data, ensure_ascii=False, indent=2),
         encoding="utf-8",
+        newline="\n",
     )
 
     print(f"Writing {task_out} …")
     task_out.write_text(
         json.dumps(task_data, ensure_ascii=False, indent=2),
         encoding="utf-8",
+        newline="\n",
     )
 
     print("Done.")

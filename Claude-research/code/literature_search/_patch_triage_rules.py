@@ -60,7 +60,7 @@ def main() -> int:
 
     if ANCHOR in src:
         new_src = src.replace(ANCHOR, ADDITIONS, 1)
-        path.write_text(new_src, encoding="utf-8")
+        path.write_text(new_src, encoding="utf-8", newline="\n")
         print("Patch applied.")
         return 0
 

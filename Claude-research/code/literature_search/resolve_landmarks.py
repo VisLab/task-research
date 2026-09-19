@@ -240,7 +240,7 @@ def main() -> None:
         "generated_on": TODAY,
         "entries": resolved,
     }
-    output_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
+    output_path.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8", newline="\n")
 
     # --- Summary ---
     print(f"\nLandmark resolution — {TODAY}")

@@ -113,7 +113,7 @@ def process_file(input_path: str, output_path: str):
 
     # Write output
     output = json.dumps(tasks, indent=2, ensure_ascii=False) + "\n"
-    with open(output_path, "w", encoding="utf-8") as f:
+    with open(output_path, "w", encoding="utf-8", newline="\n") as f:
         f.write(output)
 
     print(f"Processed {len(tasks)} tasks")
@@ -153,7 +153,7 @@ def process_file_regex(input_path: str, output_path: str):
 
         output_lines.append(line)
 
-    with open(output_path, "w", encoding="utf-8") as f:
+    with open(output_path, "w", encoding="utf-8", newline="\n") as f:
         f.writelines(output_lines)
 
     print(f"Regex fallback: {changes} line-level changes")

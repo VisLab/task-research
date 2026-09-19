@@ -258,7 +258,7 @@ def write_item_markdown(
     lines.append(_build_landmark_section(landmark_entries, all_sorted))
     lines.append("")
 
-    out_path.write_text("\n".join(lines), encoding="utf-8")
+    out_path.write_text("\n".join(lines), encoding="utf-8", newline="\n")
     return out_path
 
 
@@ -291,4 +291,4 @@ def write_index(
     for row in items:
         rel = candidates_dir / f"{row['item_id']}.md"
         lines.append(f"- [{row['item_id']}]({rel})")
-    index_path.write_text("\n".join(lines), encoding="utf-8")
+    index_path.write_text("\n".join(lines), encoding="utf-8", newline="\n")

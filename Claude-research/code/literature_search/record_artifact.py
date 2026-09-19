@@ -149,7 +149,7 @@ def _save_catalog(
     """Atomic-ish write: stage to a sibling tmp file, then rename."""
     for data, path in ((processes, p_path), (tasks, t_path)):
         tmp = path.with_suffix(path.suffix + ".tmp")
-        with tmp.open("w", encoding="utf-8") as f:
+        with tmp.open("w", encoding="utf-8", newline="\n") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
             f.write("\n")
         tmp.replace(path)

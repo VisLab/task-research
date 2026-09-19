@@ -583,9 +583,10 @@ def main():
     OUT_JSON.write_text(
         json.dumps(enriched, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     report = build_report(enriched, categories, processes)
-    OUT_REPORT.write_text(report, encoding="utf-8")
+    OUT_REPORT.write_text(report, encoding="utf-8", newline="\n")
 
     # Terse stdout summary
     print(f"Wrote {OUT_JSON}")

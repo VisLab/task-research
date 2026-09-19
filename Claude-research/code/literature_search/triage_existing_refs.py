@@ -550,7 +550,7 @@ def main() -> None:
     gap_section = build_gap_section(landmark_entries, all_pub_ids_by_owner, landmark_secondary)
     full_md = md_body + gap_section
 
-    out_path.write_text(full_md, encoding="utf-8")
+    out_path.write_text(full_md, encoding="utf-8", newline="\n")
 
     # --- Counters ---
     decision_reason = Counter((r["decision"], r["reason"]) for r in rows)

@@ -187,7 +187,7 @@ def main():
         return
 
     out = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
-    path.write_text(out, encoding="utf-8")
+    path.write_text(out, encoding="utf-8", newline="\n")
     print()
     print(f"Written: {path}")
 

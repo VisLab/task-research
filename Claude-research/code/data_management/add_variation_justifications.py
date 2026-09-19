@@ -200,6 +200,7 @@ def main() -> None:
     TASK_DETAILS.write_text(
         json.dumps(tasks, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     print("Updated task_details.json written")
 

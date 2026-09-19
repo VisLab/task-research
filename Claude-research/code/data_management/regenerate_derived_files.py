@@ -224,6 +224,7 @@ def main():
     OUT_TASK_NAMES.write_text(
         json.dumps(tn, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     print(f"Wrote {OUT_TASK_NAMES.name}: {tn['total_tasks']} tasks")
 
@@ -232,18 +233,19 @@ def main():
     OUT_PROCESS_INDEX.write_text(
         json.dumps(pi, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     print(f"Wrote {OUT_PROCESS_INDEX.name}: {pi['total_processes']} processes, {pi['total_tasks']} tasks")
 
     # 3. process_task_crossref.md
     xref = generate_crossref(tasks, process_vocab)
-    OUT_CROSSREF.write_text(xref, encoding="utf-8")
+    OUT_CROSSREF.write_text(xref, encoding="utf-8", newline="\n")
     xref_count = xref.count("### `hedtsk_")
     print(f"Wrote {OUT_CROSSREF.name}: {xref_count} task entries")
 
     # 4. file_inventory.md
     inv_md = generate_file_inventory_md(inventory)
-    OUT_INVENTORY_MD.write_text(inv_md, encoding="utf-8")
+    OUT_INVENTORY_MD.write_text(inv_md, encoding="utf-8", newline="\n")
     section_count = inv_md.count("\n## ")
     print(f"Wrote {OUT_INVENTORY_MD.name}: {section_count} sections")
 

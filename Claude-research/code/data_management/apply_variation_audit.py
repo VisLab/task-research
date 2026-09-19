@@ -235,12 +235,13 @@ def main():
 
     # --- Write output ---
     backup = TASK_DETAILS.with_suffix(".pre_2026_04_21_audit_backup.json")
-    backup.write_text(TASK_DETAILS.read_text(encoding="utf-8"), encoding="utf-8")
+    backup.write_text(TASK_DETAILS.read_text(encoding="utf-8"), encoding="utf-8", newline="\n")
     print(f"\nBackup written: {backup.name}")
 
     TASK_DETAILS.write_text(
         json.dumps(tasks, indent=2, ensure_ascii=False) + "\n",
         encoding="utf-8",
+        newline="\n",
     )
     print(f"Updated task_details.json written ({total_vars_after} variations, {aliases_added} alias(es) added)")
 

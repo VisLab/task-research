@@ -227,7 +227,7 @@ def main() -> int:
 
     # Stage to .scratch/ first.
     staged_text = json.dumps(data, indent=2, ensure_ascii=False) + "\n"
-    staged.write_text(staged_text, encoding="utf-8")
+    staged.write_text(staged_text, encoding="utf-8", newline="\n")
 
     # Verify staged JSON parses.
     with staged.open("r", encoding="utf-8") as f:
@@ -246,7 +246,7 @@ def main() -> int:
     print()
 
     if args.write:
-        src.write_text(staged_text, encoding="utf-8")
+        src.write_text(staged_text, encoding="utf-8", newline="\n")
         print(f"WROTE: {src}")
     else:
         print("Dry run only. Re-run with --write to apply.")

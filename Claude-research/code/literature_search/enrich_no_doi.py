@@ -525,10 +525,10 @@ def _save_catalog(
     scratch.mkdir(parents=True, exist_ok=True)
     staged_p = scratch / p_path.name
     staged_t = scratch / t_path.name
-    with staged_p.open("w", encoding="utf-8") as f:
+    with staged_p.open("w", encoding="utf-8", newline="\n") as f:
         json.dump(processes, f, indent=2, ensure_ascii=False)
         f.write("\n")
-    with staged_t.open("w", encoding="utf-8") as f:
+    with staged_t.open("w", encoding="utf-8", newline="\n") as f:
         json.dump(tasks, f, indent=2, ensure_ascii=False)
         f.write("\n")
     shutil.copyfile(staged_p, p_path)
@@ -806,8 +806,8 @@ def main(
     today = _utc_today()
     md_path = out_dir / f"enrich_no_doi_{today}.md"
     json_path = out_dir / f"enrich_no_doi_{today}.json"
-    md_path.write_text(md, encoding="utf-8")
-    json_path.write_text(js, encoding="utf-8")
+    md_path.write_text(md, encoding="utf-8", newline="\n")
+    json_path.write_text(js, encoding="utf-8", newline="\n")
 
     tier_counts: dict[str, int] = {"high": 0, "med": 0, "low": 0, "no_match": 0}
     for m in matches:

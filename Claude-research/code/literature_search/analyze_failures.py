@@ -575,10 +575,11 @@ def main(argv: list[str] | None = None) -> int:
     md_path = out_dir / f"failures_{args.kind}_{today}.md"
     json_path = out_dir / f"failures_{args.kind}_{today}.json"
 
-    md_path.write_text(md, encoding="utf-8")
+    md_path.write_text(md, encoding="utf-8", newline="\n")
     json_path.write_text(
         format_json_sidecar(failures, args.kind),
         encoding="utf-8",
+        newline="\n",
     )
 
     print(f"wrote: {md_path}")

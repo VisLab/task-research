@@ -266,15 +266,15 @@ def main() -> None:
     # Always write to .scratch/ for inspection
     scratch_pd = scratch / "process_details_migrated.json"
     scratch_td = scratch / "task_details_migrated.json"
-    scratch_pd.write_text(pd_json, encoding="utf-8")
-    scratch_td.write_text(td_json, encoding="utf-8")
+    scratch_pd.write_text(pd_json, encoding="utf-8", newline="\n")
+    scratch_td.write_text(td_json, encoding="utf-8", newline="\n")
     print("\nStaged to:")
     print(f"  {scratch_pd}")
     print(f"  {scratch_td}")
 
     if args.write:
-        pd_path.write_text(pd_json, encoding="utf-8")
-        td_path.write_text(td_json, encoding="utf-8")
+        pd_path.write_text(pd_json, encoding="utf-8", newline="\n")
+        td_path.write_text(td_json, encoding="utf-8", newline="\n")
         print("\nWritten to workspace root. Migration complete.")
     else:
         print("\nDry-run: workspace root files NOT changed. Pass --write to apply.")

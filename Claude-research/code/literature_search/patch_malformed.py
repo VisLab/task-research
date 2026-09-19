@@ -226,7 +226,7 @@ def main():
         print(f"  WARNING: expected {expected_drop} drops, got {n_dropped}")
 
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
+    out.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8", newline="\n")
     print(f"\nWrote {out}")
 
 

@@ -74,7 +74,7 @@ def convert_pdf(
 
     if output_path is not None:
         out = Path(output_path)
-        out.write_text(md_text, encoding="utf-8")
+        out.write_text(md_text, encoding="utf-8", newline="\n")
         logger.info("Markdown written to %s", out)
 
     return md_text
