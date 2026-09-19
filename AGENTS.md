@@ -90,8 +90,11 @@ python code/literature_search/phase3_search.py --mode poc --write
 - `hed-metadata-toolkit` - the shared base layer (API clients, cache, citation
   identity) this repo imports. Installed editable from its own checkout, not
   vendored here.
-- `hed-task` - the public catalog site generated from this research; the
-  authority for task and process definitions.
+- `hed-task` - the public catalog site and, since 2026-09-19, the home of the
+  catalog: task and process records are edited there by pull request. This
+  repo's copies were imported once (`README.md`, "Hand-off to hed-task") and
+  are not the authority; a bulk refresh would go through hed-task's
+  `src/import_catalog.py`.
 - `nemar-metadata` - sibling metadata-curation repo; NEMAR dataset citations
   are the intended grounding for this repo's references.
 

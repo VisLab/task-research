@@ -165,6 +165,38 @@ cd Claude-research
 python code/data_management/regenerate_derived_files.py
 ```
 
+## Hand-off to hed-task
+
+Since 2026-09-19 the public catalog lives in `hed-task`
+(https://github.com/hed-standard/hed-task, `data/task_details.json` and
+`data/process_details.json`) and is edited there by pull request. This workspace
+is the record of the citation search that produced the references, and the place
+to run any further bulk literature work. Its two catalog files were imported into
+hed-task on 2026-09-18; do not edit a task or process here expecting the site to
+change.
+
+If a bulk refresh from this workspace is ever wanted again, the path is:
+
+1. Here: make sure every reference carries a real `roles` value. The site
+   publishes `historical` references under "Key references" (tasks) and
+   "Fundamental references" (processes) and everything else under "Further
+   references". `code/data_management/set_historical_roles.py` restored the roles
+   from the April export once (dry run by default, `--write` to apply); new
+   references should get their role when they are added.
+2. Here: `python code/data_management/validate_tasks.py` and
+   `python code/data_management/validate_catalog.py` must pass.
+3. In a hed-task checkout: `python src/import_catalog.py --source <path to this
+   repo>/Claude-research --check`, then the same without `--check`. The import
+   validates against `schemas/`, drops the fields that belong to the literature
+   pipeline (`pdf_locations`, `local_artifacts`, `pub_id`) and `atlas_id` (hed-task
+   keeps its own curated Atlas mapping), assigns `variation_id` to every variation,
+   and writes hed-task's `data/`. It never writes back here.
+4. In hed-task: `python src/generate_docs.py`, which validates the catalog again
+   and regenerates the pages; then commit data and pages together.
+
+Nothing in hed-task reads this repository at build time, so this workspace can stay
+private and the site builds without it.
+
 ## Literature pipeline
 
 ### API keys
